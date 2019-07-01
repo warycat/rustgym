@@ -1,10 +1,10 @@
-struct Solution{}
+struct Solution {}
 
 use std::collections::HashMap;
 
-impl Solution{
+impl Solution {
     fn roman_to_int(s: String) -> i32 {
-        let map : HashMap<char, i32>= vec![
+        let map: HashMap<char, i32> = vec![
             ('I', 1),
             ('V', 5),
             ('X', 10),
@@ -12,14 +12,16 @@ impl Solution{
             ('C', 100),
             ('D', 500),
             ('M', 1000),
-        ].into_iter().collect();
+        ]
+        .into_iter()
+        .collect();
         let mut sum = 0;
         let mut last = 0;
-        for c in s.chars(){
+        for c in s.chars() {
             if let Some(&v) = map.get(&c) {
                 if v > last {
                     sum += v - last - last;
-                }else{
+                } else {
                     sum += v
                 }
                 last = v;

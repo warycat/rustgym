@@ -1,29 +1,26 @@
-struct Solution{}
+struct Solution {}
 
 #[derive(PartialEq, Eq, Clone, Debug)]
 struct ListNode {
-    val:i32,
+    val: i32,
     next: Option<Box<ListNode>>,
 }
 
 impl ListNode {
-    fn new(val:i32) -> Box<Self>{
-        let node = ListNode{
-            val,
-            next:None,
-        };
+    fn new(val: i32) -> Box<Self> {
+        let node = ListNode { val, next: None };
         Box::new(node)
     }
 }
 
-impl Solution{
+impl Solution {
     fn reverse_list(head: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
         let mut p = head;
         let mut prev = None;
         while let Some(mut node) = p {
-                p = node.next;
-                node.next = prev;
-                prev = Some(node);
+            p = node.next;
+            node.next = prev;
+            prev = Some(node);
         }
         prev
     }
@@ -66,6 +63,6 @@ fn three_nodes() {
     let l6 = ListNode::new(1);
     l5.next = Some(l6);
     l4.next = Some(l5);
-    
+
     assert_eq!(Solution::reverse_list(Some(l1)), Some(l4));
 }

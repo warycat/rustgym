@@ -1,19 +1,19 @@
-struct Solution{}
+struct Solution {}
 
-impl Solution{
+impl Solution {
     fn reverse(x: i32) -> i32 {
         let mut abs = x.abs();
         let sign = x.signum();
-        let mut y : i32= 0;
+        let mut y: i32 = 0;
         while abs > 0 {
-            if let Some(v) = y.checked_mul(10){
+            if let Some(v) = y.checked_mul(10) {
                 y = v;
-            }else{
+            } else {
                 return 0;
             }
-            if let Some(v) = y.checked_add(abs % 10){
+            if let Some(v) = y.checked_add(abs % 10) {
                 y = v;
-            }else{
+            } else {
                 return 0;
             }
             abs = abs / 10;

@@ -1,13 +1,13 @@
-struct Solution{}
+struct Solution {}
 
-impl Solution{
+impl Solution {
     fn longest_common_prefix(strs: Vec<String>) -> String {
         if strs.is_empty() {
             return String::from("");
         }
         let ss: Vec<Vec<char>> = strs.iter().map(|s| s.chars().collect()).collect();
         let n = ss.iter().map(|s| s.len()).min().unwrap();
-        let mut prefix : Vec<char> = vec![];
+        let mut prefix: Vec<char> = vec![];
         for i in 0..n {
             let c = ss[0][i];
             if ss.iter().all(|s| s[i] == c) {
@@ -22,6 +22,9 @@ impl Solution{
 
 #[test]
 fn test() {
-    let ss: Vec<String> = vec!["flower","flow","flight"].iter().map(|&s| String::from(s)).collect();
+    let ss: Vec<String> = vec!["flower", "flow", "flight"]
+        .iter()
+        .map(|&s| String::from(s))
+        .collect();
     assert_eq!(Solution::longest_common_prefix(ss), String::from("fl"));
 }

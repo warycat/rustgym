@@ -1,25 +1,25 @@
-struct Solution{}
+struct Solution {}
 
-impl Solution{
+impl Solution {
     fn pivot_index(num: Vec<i32>) -> i32 {
         let n = num.len();
         if n == 0 {
             return -1;
         }
-        let mut presum = vec![0;n];
+        let mut presum = vec![0; n];
         for i in 0..n {
             if i == 0 {
                 presum[0] = num[0]
-            }else{
+            } else {
                 presum[i] = presum[i - 1] + num[i];
             }
         }
-        for i in 0..n{
+        for i in 0..n {
             let mut left = 0;
-            let total = presum[n-1];
+            let total = presum[n - 1];
             let middle = num[i];
             if i > 0 {
-                left = presum[i-1];
+                left = presum[i - 1];
             }
             if left * 2 + middle == total {
                 return i as i32;

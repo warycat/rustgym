@@ -77,7 +77,6 @@ impl WordSearch {
     }
 }
 
-
 #[test]
 fn test_empty_board() {
     let board = vec![];
