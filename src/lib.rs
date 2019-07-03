@@ -26,7 +26,17 @@ mod _38_count_and_say;
 //
 mod _53_maximum_subarray;
 //
+mod _66_plus_one;
+//
+mod _67_add_binary;
+//
+mod _69_sqrt;
+//
+mod _70_climbing_stairs;
+//
 mod _79_word_search;
+//
+mod _83_remove_duplicates_from_sorted_list;
 //
 mod _118_pascal_triangle;
 //
