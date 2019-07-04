@@ -13,23 +13,18 @@ impl ListNode {
 }
 
 impl Solution {
-    fn delete_duplicates(head: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
-        let mut v: Vec<i32> = vec![];
-        let mut curr = head;
-        while let Some(p) = curr {
-            v.push(p.val);
-            curr = p.next;
+    fn delete_duplicates(mut head: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
+        let mut p = head.as_mut();
+        while let Some(n) = p {
+            while let Some(m) = n.next.as_mut(){
+                if m.val != n.val {
+                    break;
+                }
+                n.next = m.next.take();
+            }
+            p = n.next.as_mut();
         }
-        v.dedup();
-        let mut res = None;
-        for &i in v.iter().rev() {
-            let node = ListNode {
-                val: i as i32,
-                next: res,
-            };
-            res = Some(Box::new(node));
-        }
-        res
+        head
     }
 }
 
