@@ -38,6 +38,12 @@ mod _79_word_search;
 //
 mod _83_remove_duplicates_from_sorted_list;
 //
+mod _88_merge_sorted_array;
+//
+mod _100_same_tree;
+//
+mod _101_symmetric_tree;
+//
 mod _118_pascal_triangle;
 //
 mod _206_reverse_linked_list;
