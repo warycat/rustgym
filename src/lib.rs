@@ -74,6 +74,8 @@ mod _167_two_sum_2;
 //
 mod _168_excel_sheet_column_title;
 //
+mod _169_majority_element;
+//
 mod _206_reverse_linked_list;
 //
 mod _724_find_pivot_index;
