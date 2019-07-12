@@ -76,6 +76,14 @@ mod _168_excel_sheet_column_title;
 //
 mod _169_majority_element;
 //
+mod _170_two_sum_3;
+//
 mod _206_reverse_linked_list;
+//
+mod _243_shortest_word_distance;
+//
+mod _346_moving_average_from_data_stream;
+//
+mod _359_logger_rate_limiter;
 //
 mod _724_find_pivot_index;
