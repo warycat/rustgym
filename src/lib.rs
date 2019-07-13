@@ -78,12 +78,32 @@ mod _169_majority_element;
 //
 mod _170_two_sum_3;
 //
+mod _189_rotate_array;
+//
+mod _203_remove_linked_list_elements;
+//
 mod _206_reverse_linked_list;
 //
+mod _226_invert_binary_tree;
+//
+mod _232_implent_queue_using_stacks;
+//
+mod _242_valid_anagram;
+//
 mod _243_shortest_word_distance;
+//
+mod _266_palindrome_permutation;
+//
+mod _283_move_zeros;
 //
 mod _346_moving_average_from_data_stream;
 //
 mod _359_logger_rate_limiter;
 //
 mod _724_find_pivot_index;
+//
+mod _844_backspace_string_compare;
+//
+mod _977_squares_of_a_sorted_array;
+//
+mod _1064_fixed_point;
