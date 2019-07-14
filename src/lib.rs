@@ -96,11 +96,25 @@ mod _266_palindrome_permutation;
 //
 mod _283_move_zeros;
 //
+mod _286_walls_and_gates;
+//
 mod _346_moving_average_from_data_stream;
 //
 mod _359_logger_rate_limiter;
 //
+mod _438_find_all_anagrams_in_a_string;
+//
+mod _461_hamming_distance;
+//
+mod _606_construct_string_from_binary_tree;
+//
+mod _706_design_hash_map;
+//
 mod _724_find_pivot_index;
+//
+mod _733_flood_fill;
+//
+mod _747_largest_number_at_least_twice_of_others;
 //
 mod _844_backspace_string_compare;
 //
