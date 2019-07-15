@@ -78,7 +78,11 @@ mod _169_majority_element;
 //
 mod _170_two_sum_3;
 //
+mod _171_excel_sheet_column_number;
+//
 mod _189_rotate_array;
+//
+mod _202_happy_number;
 //
 mod _203_remove_linked_list_elements;
 //
@@ -98,9 +102,21 @@ mod _283_move_zeros;
 //
 mod _286_walls_and_gates;
 //
+mod _290_word_pattern;
+//
+mod _339_nested_list_weight_sum;
+//
+mod _342_power_of_four;
+//
 mod _346_moving_average_from_data_stream;
 //
+mod _349_intersection_of_two_arrays;
+//
+mod _350_intersection_of_two_arrays_2;
+//
 mod _359_logger_rate_limiter;
+//
+mod _437_path_sum_3;
 //
 mod _438_find_all_anagrams_in_a_string;
 //
