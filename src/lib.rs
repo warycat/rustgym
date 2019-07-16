@@ -2,6 +2,10 @@
 //
 mod _1_two_sum;
 //
+mod _2_add_two_numbers;
+//
+mod _3_longest_substring_without_repeating_characters;
+//
 mod _7_reverse_integer;
 //
 mod _9_palindrome_number;
@@ -21,6 +25,8 @@ mod _27_remove_element;
 mod _28_implement_str_str;
 //
 mod _35_search_insert_position;
+//
+mod _36_valid_sudoku;
 //
 mod _38_count_and_say;
 //
