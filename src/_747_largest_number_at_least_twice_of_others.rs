@@ -1,4 +1,4 @@
-struct Solution {}
+struct Solution;
 
 impl Solution {
     fn dominant_index(nums: Vec<i32>) -> i32 {

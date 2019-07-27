@@ -1,4 +1,4 @@
-struct Solution {}
+struct Solution;
 
 impl Solution {
     fn is_valid(s: String) -> bool {

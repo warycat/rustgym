@@ -1,4 +1,4 @@
-struct Solution{}
+struct Solution;
 
 impl Solution{
     fn length_of_last_word(s: String) -> i32 {

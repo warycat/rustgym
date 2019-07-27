@@ -1,4 +1,4 @@
-struct Solution {}
+struct Solution;
 
 impl Solution {
     pub fn fixed_point(a: Vec<i32>) -> i32 {

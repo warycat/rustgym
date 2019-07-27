@@ -88,6 +88,8 @@ mod _171_excel_sheet_column_number;
 //
 mod _189_rotate_array;
 //
+mod _198_house_robber;
+//
 mod _202_happy_number;
 //
 mod _203_remove_linked_list_elements;

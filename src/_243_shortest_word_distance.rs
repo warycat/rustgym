@@ -1,4 +1,4 @@
-struct Solution {}
+struct Solution;
 
 use std::collections::HashMap;
 use std::i32;

@@ -1,4 +1,4 @@
-struct Solution {}
+struct Solution;
 
 impl Solution {
     fn max_profit(prices: Vec<i32>) -> i32 {

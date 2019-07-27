@@ -1,4 +1,4 @@
-struct Solution {}
+struct Solution;
 
 impl Solution {
     fn convert_to_title(mut n: i32) -> String {

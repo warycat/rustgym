@@ -1,4 +1,4 @@
-struct Solution {}
+struct Solution;
 
 impl Solution {
     fn longest_common_prefix(strs: Vec<String>) -> String {

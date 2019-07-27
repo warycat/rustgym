@@ -1,4 +1,4 @@
-struct Solution {}
+struct Solution;
 
 impl Solution {
     fn remove_duplicates(nums: &mut Vec<i32>) -> i32 {

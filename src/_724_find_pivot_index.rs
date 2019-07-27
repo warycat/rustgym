@@ -1,4 +1,4 @@
-struct Solution {}
+struct Solution;
 
 impl Solution {
     fn pivot_index(num: Vec<i32>) -> i32 {

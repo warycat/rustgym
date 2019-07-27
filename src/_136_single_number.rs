@@ -1,4 +1,4 @@
-struct Solution {}
+struct Solution;
 
 impl Solution {
     fn single_number(nums: Vec<i32>) -> i32 {

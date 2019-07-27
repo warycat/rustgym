@@ -1,4 +1,4 @@
-struct Solution {}
+struct Solution;
 
 struct TreeNode {
     val: i32,

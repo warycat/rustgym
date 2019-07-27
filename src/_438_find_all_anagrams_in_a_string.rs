@@ -1,4 +1,4 @@
-struct Solution {}
+struct Solution;
 
 impl Solution {
     fn find_anagrams(s: String, p: String) -> Vec<i32> {

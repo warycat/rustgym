@@ -1,4 +1,4 @@
-struct Solution {}
+struct Solution;
 
 impl Solution {
     fn get_row(row_index: i32) -> Vec<i32> {

@@ -1,4 +1,4 @@
-struct Solution {}
+struct Solution;
 
 impl Solution {
     fn rotate(nums: &mut Vec<i32>, k: i32) {

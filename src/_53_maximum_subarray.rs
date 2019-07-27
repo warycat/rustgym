@@ -1,4 +1,4 @@
-pub struct Solution {}
+pub struct Solution;
 
 use std::cmp::max;
 use std::i32::MIN;

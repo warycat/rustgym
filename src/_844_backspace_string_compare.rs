@@ -1,4 +1,4 @@
-struct Solution {}
+struct Solution;
 
 impl Solution {
     fn backspace_compare(s: String, t: String) -> bool {

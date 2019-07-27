@@ -1,4 +1,4 @@
-struct Solution {}
+struct Solution;
 
 impl Solution {
     fn digit_square_sum(mut x: i32) -> i32 {

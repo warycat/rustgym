@@ -1,4 +1,4 @@
-struct Solution {}
+struct Solution;
 
 impl Solution {
     fn str_str(haystack: String, needle: String) -> i32 {

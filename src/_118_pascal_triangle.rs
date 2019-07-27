@@ -1,4 +1,4 @@
-struct Solution {}
+struct Solution;
 
 impl Solution {
     fn generate(nums_rows: i32) -> Vec<Vec<i32>> {

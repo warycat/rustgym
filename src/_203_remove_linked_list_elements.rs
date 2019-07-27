@@ -1,4 +1,4 @@
-struct Solution {}
+struct Solution;
 
 #[derive(Eq, PartialEq, Clone, Debug)]
 struct ListNode {

@@ -1,4 +1,4 @@
-struct Solution {}
+struct Solution;
 
 #[derive(PartialEq, Eq, Debug)]
 struct TreeNode {

@@ -1,4 +1,4 @@
-struct Solution {}
+struct Solution;
 
 impl Solution {
     fn exist(board: Vec<Vec<char>>, word: String) -> bool {

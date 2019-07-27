@@ -1,4 +1,4 @@
-struct Solution {}
+struct Solution;
 
 impl Solution {
     fn majority_element(nums: Vec<i32>) -> i32 {

@@ -1,4 +1,4 @@
-struct Solution {}
+struct Solution;
 
 impl Solution {
     fn sorted_squares(a: Vec<i32>) -> Vec<i32> {

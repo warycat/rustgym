@@ -1,4 +1,4 @@
-struct Solution {}
+struct Solution;
 
 impl Solution {
     fn move_zeroes(nums: &mut Vec<i32>) {

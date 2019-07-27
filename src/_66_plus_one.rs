@@ -1,4 +1,4 @@
-struct Solution {}
+struct Solution;
 
 impl Solution {
     fn plus_one(digits: Vec<i32>) -> Vec<i32> {

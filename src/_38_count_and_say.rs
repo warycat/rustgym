@@ -1,4 +1,4 @@
-struct Solution {}
+struct Solution;
 
 struct Pair {
     pub digit: char,
