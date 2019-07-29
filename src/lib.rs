@@ -96,13 +96,21 @@ mod _203_remove_linked_list_elements;
 //
 mod _206_reverse_linked_list;
 //
+mod _217_contains_duplicate;
+//
+mod _219_contains_duplicate_2;
+//
 mod _226_invert_binary_tree;
 //
 mod _232_implent_queue_using_stacks;
 //
+mod _246_strobogrammantic_number;
+//
 mod _242_valid_anagram;
 //
 mod _243_shortest_word_distance;
+//
+mod _252_meeting_rooms;
 //
 mod _266_palindrome_permutation;
 //
@@ -124,6 +132,8 @@ mod _350_intersection_of_two_arrays_2;
 //
 mod _359_logger_rate_limiter;
 //
+mod _415_add_strings;
+//
 mod _437_path_sum_3;
 //
 mod _438_find_all_anagrams_in_a_string;
@@ -131,6 +141,8 @@ mod _438_find_all_anagrams_in_a_string;
 mod _461_hamming_distance;
 //
 mod _606_construct_string_from_binary_tree;
+//
+mod _657_robot_return_to_origin;
 //
 mod _706_design_hash_map;
 //
@@ -143,5 +155,7 @@ mod _747_largest_number_at_least_twice_of_others;
 mod _844_backspace_string_compare;
 //
 mod _977_squares_of_a_sorted_array;
+//
+mod _1041_robot_bounded_in_circle;
 //
 mod _1064_fixed_point;
