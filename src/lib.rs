@@ -110,6 +110,8 @@ mod _242_valid_anagram;
 //
 mod _243_shortest_word_distance;
 //
+mod _251_flatten_2d_vector;
+//
 mod _252_meeting_rooms;
 //
 mod _266_palindrome_permutation;
