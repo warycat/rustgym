@@ -30,6 +30,8 @@ mod _36_valid_sudoku;
 //
 mod _38_count_and_say;
 //
+mod _39_combination_sum;
+//
 mod _53_maximum_subarray;
 //
 mod _66_plus_one;
@@ -155,6 +157,8 @@ mod _733_flood_fill;
 mod _747_largest_number_at_least_twice_of_others;
 //
 mod _755_pour_water;
+//
+mod _756_pyramid_transition_matrix;
 //
 mod _787_cheapest_flights_within_k_stops;
 //
