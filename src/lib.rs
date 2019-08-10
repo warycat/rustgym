@@ -164,6 +164,8 @@ mod _787_cheapest_flights_within_k_stops;
 //
 mod _844_backspace_string_compare;
 //
+mod _937_reorder_log_files;
+//
 mod _977_squares_of_a_sorted_array;
 //
 mod _1041_robot_bounded_in_circle;
