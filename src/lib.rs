@@ -106,6 +106,8 @@ mod _226_invert_binary_tree;
 //
 mod _232_implent_queue_using_stacks;
 //
+mod _234_palindrome_linked_list;
+//
 mod _246_strobogrammantic_number;
 //
 mod _242_valid_anagram;
@@ -128,19 +130,27 @@ mod _339_nested_list_weight_sum;
 //
 mod _342_power_of_four;
 //
+mod _344_reverse_string;
+//
 mod _346_moving_average_from_data_stream;
 //
 mod _349_intersection_of_two_arrays;
 //
 mod _350_intersection_of_two_arrays_2;
 //
+mod _387_first_unique_character_in_a_string;
+//
 mod _359_logger_rate_limiter;
+//
+mod _412_fizz_buzz;
 //
 mod _415_add_strings;
 //
 mod _437_path_sum_3;
 //
 mod _438_find_all_anagrams_in_a_string;
+//
+mod _443_string_compression;
 //
 mod _461_hamming_distance;
 //
@@ -149,6 +159,8 @@ mod _606_construct_string_from_binary_tree;
 mod _657_robot_return_to_origin;
 //
 mod _706_design_hash_map;
+//
+mod _716_max_stack;
 //
 mod _724_find_pivot_index;
 //
@@ -160,9 +172,17 @@ mod _755_pour_water;
 //
 mod _756_pyramid_transition_matrix;
 //
+mod _771_jewels_and_stones;
+//
 mod _787_cheapest_flights_within_k_stops;
 //
+mod _811_subdomain_visit_count;
+//
+mod _819_most_common_word;
+//
 mod _844_backspace_string_compare;
+//
+mod _929_unique_email_addresses;
 //
 mod _937_reorder_log_files;
 //
