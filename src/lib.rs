@@ -120,6 +120,8 @@ mod _251_flatten_2d_vector;
 //
 mod _252_meeting_rooms;
 //
+mod _256_paint_house;
+//
 mod _266_palindrome_permutation;
 //
 mod _268_missing_number;
@@ -160,17 +162,25 @@ mod _448_find_all_numbers_disappeared_in_an_array;
 //
 mod _461_hamming_distance;
 //
+mod _463_island_perimeter;
+//
 mod _509_fibonacci_number;
 //
 mod _543_diameter_of_binary_tree;
 //
 mod _557_reverse_words_in_a_string_3;
 //
+mod _572_subtree_of_another_tree;
+//
+mod _605_can_place_flowers;
+//
 mod _606_construct_string_from_binary_tree;
 //
 mod _657_robot_return_to_origin;
 //
 mod _680_valid_palindrome_2;
+//
+mod _697_degree_of_an_array;
 //
 mod _706_design_hash_map;
 //
@@ -194,6 +204,8 @@ mod _811_subdomain_visit_count;
 //
 mod _819_most_common_word;
 //
+mod _836_rectangle_overlap;
+//
 mod _844_backspace_string_compare;
 //
 mod _929_unique_email_addresses;
@@ -205,6 +217,8 @@ mod _953_verifying_an_alien_dictionary;
 mod _977_squares_of_a_sorted_array;
 //
 mod _1002_find_common_characters;
+//
+mod _1010_pairs_of_songs_with_total_durations_divisible_by_60;
 //
 mod _1041_robot_bounded_in_circle;
 //
