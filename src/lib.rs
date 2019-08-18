@@ -110,6 +110,8 @@ mod _225_implement_stack_using_queues;
 //
 mod _226_invert_binary_tree;
 //
+mod _231_power_of_two;
+//
 mod _232_implent_queue_using_stacks;
 //
 mod _234_palindrome_linked_list;
@@ -198,6 +200,8 @@ mod _628_maximum_product_of_three_numbers;
 //
 mod _657_robot_return_to_origin;
 //
+mod _665_non_decreasing_array;
+//
 mod _680_valid_palindrome_2;
 //
 mod _686_repeated_string_match;
@@ -226,13 +230,19 @@ mod _771_jewels_and_stones;
 //
 mod _787_cheapest_flights_within_k_stops;
 //
+mod _804_unique_morse_code_words;
+//
 mod _811_subdomain_visit_count;
 //
 mod _819_most_common_word;
 //
+mod _821_shortest_distance_to_a_character;
+//
 mod _836_rectangle_overlap;
 //
 mod _844_backspace_string_compare;
+//
+mod _896_monotonic_array;
 //
 mod _929_unique_email_addresses;
 //
