@@ -122,6 +122,8 @@ mod _243_shortest_word_distance;
 //
 mod _251_flatten_2d_vector;
 //
+mod _257_binary_tree_paths;
+//
 mod _252_meeting_rooms;
 //
 mod _256_paint_house;
@@ -168,13 +170,19 @@ mod _443_string_compression;
 //
 mod _448_find_all_numbers_disappeared_in_an_array;
 //
+mod _453_minimum_moves_to_equal_array_elements;
+//
 mod _461_hamming_distance;
 //
 mod _463_island_perimeter;
 //
 mod _482_license_key_formatting;
 //
+mod _507_perfect_number;
+//
 mod _509_fibonacci_number;
+//
+mod _538_convert_bst_to_greater_tree;
 //
 mod _543_diameter_of_binary_tree;
 //
@@ -192,7 +200,11 @@ mod _657_robot_return_to_origin;
 //
 mod _680_valid_palindrome_2;
 //
+mod _686_repeated_string_match;
+//
 mod _697_degree_of_an_array;
+//
+mod _704_binary_search;
 //
 mod _706_design_hash_map;
 //
@@ -232,6 +244,8 @@ mod _953_verifying_an_alien_dictionary;
 //
 mod _977_squares_of_a_sorted_array;
 //
+mod _994_rotting_oranges;
+//
 mod _1002_find_common_characters;
 //
 mod _1021_remove_outermost_parentheses;
@@ -239,5 +253,7 @@ mod _1021_remove_outermost_parentheses;
 mod _1010_pairs_of_songs_with_total_durations_divisible_by_60;
 //
 mod _1041_robot_bounded_in_circle;
+//
+mod _1047_remove_all_adjacent_duplicates_in_string;
 //
 mod _1064_fixed_point;
