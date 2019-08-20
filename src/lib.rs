@@ -134,6 +134,8 @@ mod _266_palindrome_permutation;
 //
 mod _268_missing_number;
 //
+mod _270_closest_binary_search_tree_value;
+//
 mod _283_move_zeros;
 //
 mod _286_walls_and_gates;
@@ -180,6 +182,8 @@ mod _463_island_perimeter;
 //
 mod _482_license_key_formatting;
 //
+mod _496_next_greater_element_1;
+//
 mod _507_perfect_number;
 //
 mod _509_fibonacci_number;
@@ -190,11 +194,17 @@ mod _543_diameter_of_binary_tree;
 //
 mod _557_reverse_words_in_a_string_3;
 //
+mod _561_array_partition_1;
+//
 mod _572_subtree_of_another_tree;
+//
+mod _581_shortest_unsorted_continuous_subarray;
 //
 mod _605_can_place_flowers;
 //
 mod _606_construct_string_from_binary_tree;
+//
+mod _617_merge_two_binary_trees;
 //
 mod _628_maximum_product_of_three_numbers;
 //
@@ -209,6 +219,8 @@ mod _686_repeated_string_match;
 mod _697_degree_of_an_array;
 //
 mod _704_binary_search;
+//
+mod _705_design_hash_set;
 //
 mod _706_design_hash_map;
 //
@@ -251,6 +263,8 @@ mod _937_reorder_log_files;
 mod _938_range_sum_of_bst;
 //
 mod _953_verifying_an_alien_dictionary;
+//
+mod _965_univalued_binary_tree;
 //
 mod _977_squares_of_a_sorted_array;
 //
