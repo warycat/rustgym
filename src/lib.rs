@@ -148,6 +148,8 @@ mod _342_power_of_four;
 //
 mod _344_reverse_string;
 //
+mod _345_reverse_vowels_of_a_string;
+//
 mod _346_moving_average_from_data_stream;
 //
 mod _349_intersection_of_two_arrays;
@@ -163,6 +165,8 @@ mod _387_first_unique_character_in_a_string;
 mod _359_logger_rate_limiter;
 //
 mod _412_fizz_buzz;
+//
+mod _414_third_maximum_number;
 //
 mod _415_add_strings;
 //
@@ -187,6 +191,8 @@ mod _496_next_greater_element_1;
 mod _507_perfect_number;
 //
 mod _509_fibonacci_number;
+//
+mod _532_k_diff_pairs_in_an_array;
 //
 mod _538_convert_bst_to_greater_tree;
 //
@@ -242,6 +248,8 @@ mod _771_jewels_and_stones;
 //
 mod _787_cheapest_flights_within_k_stops;
 //
+mod _788_rotated_digits;
+//
 mod _804_unique_morse_code_words;
 //
 mod _811_subdomain_visit_count;
@@ -254,7 +262,15 @@ mod _836_rectangle_overlap;
 //
 mod _844_backspace_string_compare;
 //
+mod _852_peak_index_in_a_mountain_array;
+//
+mod _867_transpose_matrix;
+//
+mod _876_middle_of_the_linked_list;
+//
 mod _896_monotonic_array;
+//
+mod _905_sort_array_by_parity;
 //
 mod _929_unique_email_addresses;
 //
