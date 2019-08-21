@@ -39,12 +39,12 @@ impl Solution {
 
 #[test]
 fn name() {
-    // let nums = vec![3, 2, 1];
-    // assert_eq!(Solution::third_max(nums), 1);
-    // let nums = vec![1, 2];
-    // assert_eq!(Solution::third_max(nums), 2);
-    // let nums = vec![2, 2, 3, 1];
-    // assert_eq!(Solution::third_max(nums), 1);
+    let nums = vec![3, 2, 1];
+    assert_eq!(Solution::third_max(nums), 1);
+    let nums = vec![1, 2];
+    assert_eq!(Solution::third_max(nums), 2);
+    let nums = vec![2, 2, 3, 1];
+    assert_eq!(Solution::third_max(nums), 1);
     let nums = vec![1, 2, 2, 5, 3, 5];
     assert_eq!(Solution::third_max(nums), 2);
 }
