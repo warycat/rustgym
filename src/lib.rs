@@ -126,6 +126,8 @@ mod _251_flatten_2d_vector;
 //
 mod _257_binary_tree_paths;
 //
+mod _258_add_digits;
+//
 mod _252_meeting_rooms;
 //
 mod _256_paint_house;
@@ -141,6 +143,8 @@ mod _283_move_zeros;
 mod _286_walls_and_gates;
 //
 mod _290_word_pattern;
+//
+mod _303_range_sum_query;
 //
 mod _339_nested_list_weight_sum;
 //
@@ -163,6 +167,8 @@ mod _383_ransom_note;
 mod _387_first_unique_character_in_a_string;
 //
 mod _359_logger_rate_limiter;
+//
+mod _409_longest_palindrome;
 //
 mod _412_fizz_buzz;
 //
@@ -196,6 +202,8 @@ mod _532_k_diff_pairs_in_an_array;
 //
 mod _538_convert_bst_to_greater_tree;
 //
+mod _541_reverse_string_2;
+//
 mod _543_diameter_of_binary_tree;
 //
 mod _557_reverse_words_in_a_string_3;
@@ -218,6 +226,10 @@ mod _657_robot_return_to_origin;
 //
 mod _665_non_decreasing_array;
 //
+mod _674_longest_continuous_increasing_subsequence;
+//
+mod _669_trim_a_binary_search_tree;
+//
 mod _680_valid_palindrome_2;
 //
 mod _686_repeated_string_match;
@@ -238,7 +250,11 @@ mod _724_find_pivot_index;
 //
 mod _733_flood_fill;
 //
+mod _746_min_cost_climbing_stairs;
+//
 mod _747_largest_number_at_least_twice_of_others;
+//
+mod _751_ip_to_cidr;
 //
 mod _755_pour_water;
 //
@@ -249,6 +265,8 @@ mod _771_jewels_and_stones;
 mod _787_cheapest_flights_within_k_stops;
 //
 mod _788_rotated_digits;
+//
+mod _796_rotate_string;
 //
 mod _804_unique_morse_code_words;
 //
