@@ -222,6 +222,8 @@ mod _617_merge_two_binary_trees;
 //
 mod _628_maximum_product_of_three_numbers;
 //
+mod _653_two_sum_4;
+//
 mod _657_robot_return_to_origin;
 //
 mod _665_non_decreasing_array;
@@ -229,6 +231,8 @@ mod _665_non_decreasing_array;
 mod _674_longest_continuous_increasing_subsequence;
 //
 mod _669_trim_a_binary_search_tree;
+//
+mod _671_second_minimum_node_in_a_binary_tree;
 //
 mod _680_valid_palindrome_2;
 //
@@ -278,6 +282,8 @@ mod _821_shortest_distance_to_a_character;
 //
 mod _836_rectangle_overlap;
 //
+mod _840_magic_squares_in_grid;
+//
 mod _844_backspace_string_compare;
 //
 mod _852_peak_index_in_a_mountain_array;
@@ -292,6 +298,8 @@ mod _905_sort_array_by_parity;
 //
 mod _929_unique_email_addresses;
 //
+mod _933_number_of_recent_calls;
+//
 mod _937_reorder_log_files;
 //
 mod _938_range_sum_of_bst;
@@ -303,6 +311,8 @@ mod _965_univalued_binary_tree;
 mod _977_squares_of_a_sorted_array;
 //
 mod _994_rotting_oranges;
+//
+mod _999_available_captures_for_rook;
 //
 mod _1002_find_common_characters;
 //
