@@ -226,6 +226,8 @@ mod _653_two_sum_4;
 //
 mod _657_robot_return_to_origin;
 //
+mod _661_image_smoother;
+//
 mod _665_non_decreasing_array;
 //
 mod _674_longest_continuous_increasing_subsequence;
@@ -264,6 +266,8 @@ mod _755_pour_water;
 //
 mod _756_pyramid_transition_matrix;
 //
+mod _758_bold_words_in_string;
+//
 mod _771_jewels_and_stones;
 //
 mod _787_cheapest_flights_within_k_stops;
@@ -280,6 +284,8 @@ mod _819_most_common_word;
 //
 mod _821_shortest_distance_to_a_character;
 //
+mod _832_flipping_an_image;
+//
 mod _836_rectangle_overlap;
 //
 mod _840_magic_squares_in_grid;
@@ -289,6 +295,8 @@ mod _844_backspace_string_compare;
 mod _852_peak_index_in_a_mountain_array;
 //
 mod _867_transpose_matrix;
+//
+mod _874_walking_robot_simulation;
 //
 mod _876_middle_of_the_linked_list;
 //
@@ -318,9 +326,13 @@ mod _1002_find_common_characters;
 //
 mod _1021_remove_outermost_parentheses;
 //
+mod _1025_divisor_game;
+//
 mod _1010_pairs_of_songs_with_total_durations_divisible_by_60;
 //
 mod _1041_robot_bounded_in_circle;
+//
+mod _1046_last_stone_weight;
 //
 mod _1047_remove_all_adjacent_duplicates_in_string;
 //
