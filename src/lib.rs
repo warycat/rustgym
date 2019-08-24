@@ -168,6 +168,8 @@ mod _387_first_unique_character_in_a_string;
 //
 mod _359_logger_rate_limiter;
 //
+mod _404_sum_of_left_leaves;
+//
 mod _409_longest_palindrome;
 //
 mod _412_fizz_buzz;
@@ -248,6 +250,8 @@ mod _705_design_hash_set;
 //
 mod _706_design_hash_map;
 //
+mod _707_design_linked_list;
+//
 mod _709_to_lower_case;
 //
 mod _716_max_stack;
@@ -312,6 +316,8 @@ mod _937_reorder_log_files;
 //
 mod _938_range_sum_of_bst;
 //
+mod _942_di_string_match;
+//
 mod _953_verifying_an_alien_dictionary;
 //
 mod _965_univalued_binary_tree;
@@ -325,6 +331,8 @@ mod _999_available_captures_for_rook;
 mod _1002_find_common_characters;
 //
 mod _1021_remove_outermost_parentheses;
+//
+mod _1022_sum_root_to_leaf_binary_number;
 //
 mod _1025_divisor_game;
 //
