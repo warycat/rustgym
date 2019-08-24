@@ -188,9 +188,13 @@ mod _448_find_all_numbers_disappeared_in_an_array;
 //
 mod _453_minimum_moves_to_equal_array_elements;
 //
+mod _459_repeated_substring_pattern;
+//
 mod _461_hamming_distance;
 //
 mod _463_island_perimeter;
+//
+mod _475_heaters;
 //
 mod _482_license_key_formatting;
 //
@@ -256,7 +260,11 @@ mod _709_to_lower_case;
 //
 mod _716_max_stack;
 //
+mod _717_1bit_and_2bit_characters;
+//
 mod _724_find_pivot_index;
+//
+mod _728_self_dividing_numbers;
 //
 mod _733_flood_fill;
 //
@@ -318,7 +326,11 @@ mod _938_range_sum_of_bst;
 //
 mod _942_di_string_match;
 //
+mod _949_largest_time_for_given_digits;
+//
 mod _953_verifying_an_alien_dictionary;
+//
+mod _961_n_repeated_element_in_size_2n_array;
 //
 mod _965_univalued_binary_tree;
 //
