@@ -160,13 +160,15 @@ mod _349_intersection_of_two_arrays;
 //
 mod _350_intersection_of_two_arrays_2;
 //
+mod _359_logger_rate_limiter;
+//
 mod _371_sum_of_two_integers;
 //
 mod _383_ransom_note;
 //
 mod _387_first_unique_character_in_a_string;
 //
-mod _359_logger_rate_limiter;
+mod _392_is_subsequence;
 //
 mod _404_sum_of_left_leaves;
 //
@@ -198,11 +200,15 @@ mod _475_heaters;
 //
 mod _482_license_key_formatting;
 //
+mod _485_max_consecutive_ones;
+//
 mod _496_next_greater_element_1;
 //
 mod _507_perfect_number;
 //
 mod _509_fibonacci_number;
+//
+mod _521_longest_uncommon_subsequence_1;
 //
 mod _532_k_diff_pairs_in_an_array;
 //
@@ -220,6 +226,8 @@ mod _572_subtree_of_another_tree;
 //
 mod _581_shortest_unsorted_continuous_subarray;
 //
+mod _604_design_compressed_string_iterator;
+//
 mod _605_can_place_flowers;
 //
 mod _606_construct_string_from_binary_tree;
@@ -227,6 +235,8 @@ mod _606_construct_string_from_binary_tree;
 mod _617_merge_two_binary_trees;
 //
 mod _628_maximum_product_of_three_numbers;
+//
+mod _637_average_of_levels_in_binary_tree;
 //
 mod _653_two_sum_4;
 //
@@ -272,6 +282,8 @@ mod _746_min_cost_climbing_stairs;
 //
 mod _747_largest_number_at_least_twice_of_others;
 //
+mod _748_shortest_completing_word;
+//
 mod _751_ip_to_cidr;
 //
 mod _755_pour_water;
@@ -316,6 +328,8 @@ mod _896_monotonic_array;
 //
 mod _905_sort_array_by_parity;
 //
+mod _922_sort_array_by_parity_2;
+//
 mod _929_unique_email_addresses;
 //
 mod _933_number_of_recent_calls;
@@ -357,3 +371,5 @@ mod _1046_last_stone_weight;
 mod _1047_remove_all_adjacent_duplicates_in_string;
 //
 mod _1064_fixed_point;
+//
+mod _1108_defanging_an_ip_address;
