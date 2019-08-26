@@ -170,7 +170,11 @@ mod _387_first_unique_character_in_a_string;
 //
 mod _392_is_subsequence;
 //
+mod _401_binary_watch;
+//
 mod _404_sum_of_left_leaves;
+//
+mod _405_convert_a_number_to_hexadecimal;
 //
 mod _409_longest_palindrome;
 //
@@ -307,6 +311,8 @@ mod _796_rotate_string;
 mod _804_unique_morse_code_words;
 //
 mod _811_subdomain_visit_count;
+//
+mod _812_largest_triangle_area;
 //
 mod _819_most_common_word;
 //
