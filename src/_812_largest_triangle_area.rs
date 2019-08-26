@@ -3,7 +3,6 @@ struct Solution;
 impl Solution {
     fn largest_triangle_area(points: Vec<Vec<i32>>) -> f64 {
         let mut res: f64 = 0f64;
-        let n = points.len();
         for i in &points {
             for j in &points {
                 for k in &points {
