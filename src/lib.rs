@@ -256,7 +256,11 @@ mod _680_valid_palindrome_2;
 //
 mod _686_repeated_string_match;
 //
+mod _687_longest_univalue_path;
+//
 mod _697_degree_of_an_array;
+//
+mod _700_search_in_a_binary_search_tree;
 //
 mod _704_binary_search;
 //
