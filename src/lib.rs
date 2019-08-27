@@ -88,6 +88,8 @@ mod _170_two_sum_3;
 //
 mod _171_excel_sheet_column_number;
 //
+mod _172_factorial_trailing_zeroes;
+//
 mod _189_rotate_array;
 //
 mod _198_house_robber;
@@ -162,6 +164,8 @@ mod _350_intersection_of_two_arrays_2;
 //
 mod _359_logger_rate_limiter;
 //
+mod _367_valid_perfect_square;
+//
 mod _371_sum_of_two_integers;
 //
 mod _383_ransom_note;
@@ -207,6 +211,8 @@ mod _482_license_key_formatting;
 mod _485_max_consecutive_ones;
 //
 mod _496_next_greater_element_1;
+//
+mod _504_base_7;
 //
 mod _507_perfect_number;
 //
@@ -302,6 +308,8 @@ mod _758_bold_words_in_string;
 //
 mod _771_jewels_and_stones;
 //
+mod _784_letter_case_permutation;
+//
 mod _787_cheapest_flights_within_k_stops;
 //
 mod _788_rotated_digits;
@@ -333,6 +341,8 @@ mod _867_transpose_matrix;
 mod _874_walking_robot_simulation;
 //
 mod _876_middle_of_the_linked_list;
+//
+mod _888_fair_candy_swap;
 //
 mod _896_monotonic_array;
 //
@@ -374,6 +384,8 @@ mod _1025_divisor_game;
 //
 mod _1010_pairs_of_songs_with_total_durations_divisible_by_60;
 //
+mod _1029_two_city_scheduling;
+//
 mod _1041_robot_bounded_in_circle;
 //
 mod _1046_last_stone_weight;
@@ -383,3 +395,5 @@ mod _1047_remove_all_adjacent_duplicates_in_string;
 mod _1064_fixed_point;
 //
 mod _1108_defanging_an_ip_address;
+//
+mod _1122_relative_sort_array;
