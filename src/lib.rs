@@ -212,6 +212,8 @@ mod _485_max_consecutive_ones;
 //
 mod _496_next_greater_element_1;
 //
+mod _500_keyboard_row;
+//
 mod _504_base_7;
 //
 mod _507_perfect_number;
@@ -292,6 +294,8 @@ mod _728_self_dividing_numbers;
 //
 mod _733_flood_fill;
 //
+mod _734_sentence_similarity;
+//
 mod _746_min_cost_climbing_stairs;
 //
 mod _747_largest_number_at_least_twice_of_others;
@@ -337,6 +341,8 @@ mod _844_backspace_string_compare;
 mod _852_peak_index_in_a_mountain_array;
 //
 mod _867_transpose_matrix;
+//
+mod _872_leaf_similar_trees;
 //
 mod _874_walking_robot_simulation;
 //
