@@ -254,6 +254,8 @@ mod _617_merge_two_binary_trees;
 //
 mod _628_maximum_product_of_three_numbers;
 //
+mod _633_sum_of_square_numbers;
+//
 mod _637_average_of_levels_in_binary_tree;
 //
 mod _653_two_sum_4;
@@ -315,6 +317,8 @@ mod _755_pour_water;
 mod _756_pyramid_transition_matrix;
 //
 mod _758_bold_words_in_string;
+//
+mod _766_toeplitiz_matrix;
 //
 mod _771_jewels_and_stones;
 //
@@ -388,6 +392,8 @@ mod _965_univalued_binary_tree;
 //
 mod _977_squares_of_a_sorted_array;
 //
+mod _989_add_to_array_form_of_integer;
+//
 mod _994_rotting_oranges;
 //
 mod _999_available_captures_for_rook;
@@ -417,6 +423,8 @@ mod _1051_height_checker;
 mod _1064_fixed_point;
 //
 mod _1071_greatest_common_divisor_of_strings;
+//
+mod _1089_duplicate_zeros;
 //
 mod _1108_defanging_an_ip_address;
 //
