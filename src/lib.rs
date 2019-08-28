@@ -146,6 +146,8 @@ mod _286_walls_and_gates;
 //
 mod _290_word_pattern;
 //
+mod _292_nim_game;
+//
 mod _303_range_sum_query;
 //
 mod _339_nested_list_weight_sum;
@@ -240,6 +242,8 @@ mod _557_reverse_words_in_a_string_3;
 //
 mod _561_array_partition_1;
 //
+mod _563_binary_tree_tilt;
+//
 mod _572_subtree_of_another_tree;
 //
 mod _581_shortest_unsorted_continuous_subarray;
@@ -304,6 +308,8 @@ mod _733_flood_fill;
 //
 mod _734_sentence_similarity;
 //
+mod _744_find_smallest_letter_greater_than_target;
+//
 mod _746_min_cost_climbing_stairs;
 //
 mod _747_largest_number_at_least_twice_of_others;
@@ -364,9 +370,13 @@ mod _876_middle_of_the_linked_list;
 //
 mod _888_fair_candy_swap;
 //
+mod _892_surface_area_of_3d_shapes;
+//
 mod _896_monotonic_array;
 //
 mod _905_sort_array_by_parity;
+//
+mod _908_smallest_range_1;
 //
 mod _922_sort_array_by_parity_2;
 //
@@ -389,6 +399,8 @@ mod _953_verifying_an_alien_dictionary;
 mod _961_n_repeated_element_in_size_2n_array;
 //
 mod _965_univalued_binary_tree;
+//
+mod _976_largest_perimeter_triangle;
 //
 mod _977_squares_of_a_sorted_array;
 //
@@ -427,5 +439,7 @@ mod _1071_greatest_common_divisor_of_strings;
 mod _1089_duplicate_zeros;
 //
 mod _1108_defanging_an_ip_address;
+//
+mod _1119_remove_vowels_from_a_string;
 //
 mod _1122_relative_sort_array;
