@@ -134,6 +134,8 @@ mod _252_meeting_rooms;
 //
 mod _256_paint_house;
 //
+mod _263_ugly_number;
+//
 mod _266_palindrome_permutation;
 //
 mod _268_missing_number;
@@ -173,6 +175,8 @@ mod _371_sum_of_two_integers;
 mod _383_ransom_note;
 //
 mod _387_first_unique_character_in_a_string;
+//
+mod _389_find_the_difference;
 //
 mod _392_is_subsequence;
 //
@@ -246,6 +250,8 @@ mod _563_binary_tree_tilt;
 //
 mod _572_subtree_of_another_tree;
 //
+mod _575_distribute_candies;
+//
 mod _581_shortest_unsorted_continuous_subarray;
 //
 mod _604_design_compressed_string_iterator;
@@ -261,6 +267,8 @@ mod _628_maximum_product_of_three_numbers;
 mod _633_sum_of_square_numbers;
 //
 mod _637_average_of_levels_in_binary_tree;
+//
+mod _645_set_mismatch;
 //
 mod _653_two_sum_4;
 //
@@ -378,6 +386,8 @@ mod _905_sort_array_by_parity;
 //
 mod _908_smallest_range_1;
 //
+mod _917_reverse_only_letters;
+//
 mod _922_sort_array_by_parity_2;
 //
 mod _929_unique_email_addresses;
@@ -413,6 +423,8 @@ mod _999_available_captures_for_rook;
 mod _1002_find_common_characters;
 //
 mod _1005_maximize_sum_of_array_after_k_negations;
+//
+mod _1013_partition_array_into_three_parts_with_equal_sum;
 //
 mod _1021_remove_outermost_parentheses;
 //
