@@ -168,6 +168,8 @@ mod _350_intersection_of_two_arrays_2;
 //
 mod _359_logger_rate_limiter;
 //
+mod _326_power_of_three;
+//
 mod _367_valid_perfect_square;
 //
 mod _371_sum_of_two_integers;
@@ -216,6 +218,8 @@ mod _463_island_perimeter;
 //
 mod _475_heaters;
 //
+mod _476_number_complement;
+//
 mod _482_license_key_formatting;
 //
 mod _485_max_consecutive_ones;
@@ -223,6 +227,8 @@ mod _485_max_consecutive_ones;
 mod _496_next_greater_element_1;
 //
 mod _500_keyboard_row;
+//
+mod _501_find_mode_in_binary_search_tree;
 //
 mod _504_base_7;
 //
@@ -233,6 +239,8 @@ mod _507_perfect_number;
 mod _509_fibonacci_number;
 //
 mod _521_longest_uncommon_subsequence_1;
+//
+mod _530_minimum_absolute_difference_in_bst;
 //
 mod _532_k_diff_pairs_in_an_array;
 //
@@ -257,6 +265,8 @@ mod _575_distribute_candies;
 mod _581_shortest_unsorted_continuous_subarray;
 //
 mod _594_longest_harmonious_subsequence;
+//
+mod _599_minimum_index_sum_of_two_lists;
 //
 mod _604_design_compressed_string_iterator;
 //
@@ -339,6 +349,8 @@ mod _758_bold_words_in_string;
 mod _766_toeplitiz_matrix;
 //
 mod _771_jewels_and_stones;
+//
+mod _783_minimum_distance_between_bst_nodes;
 //
 mod _784_letter_case_permutation;
 //
@@ -445,6 +457,8 @@ mod _1022_sum_root_to_leaf_binary_number;
 mod _1025_divisor_game;
 //
 mod _1029_two_city_scheduling;
+//
+mod _1030_matrix_cells_in_distance_order;
 //
 mod _1041_robot_bounded_in_circle;
 //
