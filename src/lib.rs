@@ -282,6 +282,8 @@ mod _633_sum_of_square_numbers;
 //
 mod _637_average_of_levels_in_binary_tree;
 //
+mod _643_maximum_average_subarray_1;
+//
 mod _645_set_mismatch;
 //
 mod _653_two_sum_4;
@@ -321,6 +323,10 @@ mod _709_to_lower_case;
 mod _716_max_stack;
 //
 mod _717_1bit_and_2bit_characters;
+//
+mod _720_longest_word_in_dictionary_trie;
+//
+mod _720_longest_word_in_dictionary_set;
 //
 mod _724_find_pivot_index;
 //
@@ -380,6 +386,8 @@ mod _840_magic_squares_in_grid;
 //
 mod _844_backspace_string_compare;
 //
+mod _849_maximize_distance_to_closest_person;
+//
 mod _852_peak_index_in_a_mountain_array;
 //
 mod _859_buddy_strings;
@@ -406,9 +414,13 @@ mod _905_sort_array_by_parity;
 //
 mod _908_smallest_range_1;
 //
+mod _914_x_of_a_kind_in_a_deck_of_cards;
+//
 mod _917_reverse_only_letters;
 //
 mod _922_sort_array_by_parity_2;
+//
+mod _925_long_pressed_name;
 //
 mod _929_unique_email_addresses;
 //
@@ -421,6 +433,8 @@ mod _938_range_sum_of_bst;
 mod _941_valid_mountain_array;
 //
 mod _942_di_string_match;
+//
+mod _944_delete_columns_to_make_sorted;
 //
 mod _949_largest_time_for_given_digits;
 //
@@ -469,6 +483,8 @@ mod _1046_last_stone_weight;
 mod _1047_remove_all_adjacent_duplicates_in_string;
 //
 mod _1051_height_checker;
+//
+mod _1056_confusing_number;
 //
 mod _1064_fixed_point;
 //
