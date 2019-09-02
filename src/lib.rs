@@ -202,6 +202,8 @@ mod _437_path_sum_3;
 //
 mod _438_find_all_anagrams_in_a_string;
 //
+mod _441_arranging_coins;
+//
 mod _443_string_compression;
 //
 mod _447_number_of_boomerangs;
@@ -346,6 +348,8 @@ mod _748_shortest_completing_word;
 //
 mod _751_ip_to_cidr;
 //
+mod _754_reach_a_number;
+//
 mod _755_pour_water;
 //
 mod _756_pyramid_transition_matrix;
@@ -367,6 +371,8 @@ mod _788_rotated_digits;
 mod _796_rotate_string;
 //
 mod _804_unique_morse_code_words;
+//
+mod _806_number_of_lines_to_write_string;
 //
 mod _811_subdomain_visit_count;
 //
@@ -407,6 +413,8 @@ mod _883_projection_area_of_3d_shapes;
 mod _888_fair_candy_swap;
 //
 mod _892_surface_area_of_3d_shapes;
+//
+mod _893_groups_of_special_equivalent_string;
 //
 mod _896_monotonic_array;
 //
@@ -492,8 +500,12 @@ mod _1071_greatest_common_divisor_of_strings;
 //
 mod _1089_duplicate_zeros;
 //
+mod _1103_distribute_candies_to_people;
+//
 mod _1108_defanging_an_ip_address;
 //
 mod _1119_remove_vowels_from_a_string;
 //
 mod _1122_relative_sort_array;
+//
+mod _1137_n_th_tribonacci_number;
