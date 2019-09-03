@@ -356,6 +356,8 @@ mod _756_pyramid_transition_matrix;
 //
 mod _758_bold_words_in_string;
 //
+mod _762_prime_number_of_set_bits_in_binary_representation;
+//
 mod _766_toeplitiz_matrix;
 //
 mod _771_jewels_and_stones;
@@ -470,6 +472,8 @@ mod _1005_maximize_sum_of_array_after_k_negations;
 //
 mod _1010_pairs_of_songs_with_total_durations_divisible_by_60;
 //
+mod _1018_binary_prefix_divisible_by_5;
+//
 mod _1013_partition_array_into_three_parts_with_equal_sum;
 //
 mod _1021_remove_outermost_parentheses;
@@ -509,3 +513,7 @@ mod _1119_remove_vowels_from_a_string;
 mod _1122_relative_sort_array;
 //
 mod _1137_n_th_tribonacci_number;
+//
+mod _1165_single_row_keyboard;
+//
+mod _1170_compare_strings_by_frequency_of_the_smallest_character;
