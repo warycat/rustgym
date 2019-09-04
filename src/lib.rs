@@ -198,6 +198,8 @@ mod _414_third_maximum_number;
 //
 mod _415_add_strings;
 //
+mod _434_number_of_segments_in_a_string;
+//
 mod _437_path_sum_3;
 //
 mod _438_find_all_anagrams_in_a_string;
@@ -260,6 +262,8 @@ mod _561_array_partition_1;
 //
 mod _563_binary_tree_tilt;
 //
+mod _566_reshape_the_matrix;
+//
 mod _572_subtree_of_another_tree;
 //
 mod _575_distribute_candies;
@@ -296,13 +300,15 @@ mod _661_image_smoother;
 //
 mod _665_non_decreasing_array;
 //
-mod _674_longest_continuous_increasing_subsequence;
-//
 mod _669_trim_a_binary_search_tree;
 //
 mod _671_second_minimum_node_in_a_binary_tree;
 //
+mod _674_longest_continuous_increasing_subsequence;
+//
 mod _680_valid_palindrome_2;
+//
+mod _682_baseball_game;
 //
 mod _686_repeated_string_match;
 //
@@ -356,6 +362,8 @@ mod _756_pyramid_transition_matrix;
 //
 mod _758_bold_words_in_string;
 //
+mod _760_find_anagram_mappings;
+//
 mod _762_prime_number_of_set_bits_in_binary_representation;
 //
 mod _766_toeplitiz_matrix;
@@ -403,6 +411,8 @@ mod _859_buddy_strings;
 mod _860_lemonade_change;
 //
 mod _867_transpose_matrix;
+//
+mod _868_binary_gap;
 //
 mod _872_leaf_similar_trees;
 //
@@ -511,6 +521,8 @@ mod _1108_defanging_an_ip_address;
 mod _1119_remove_vowels_from_a_string;
 //
 mod _1122_relative_sort_array;
+//
+mod _1128_number_of_equivalent_domino_pairs;
 //
 mod _1137_n_th_tribonacci_number;
 //
