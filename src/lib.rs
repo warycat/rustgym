@@ -198,6 +198,8 @@ mod _414_third_maximum_number;
 //
 mod _415_add_strings;
 //
+mod _422_valid_word_square;
+//
 mod _434_number_of_segments_in_a_string;
 //
 mod _437_path_sum_3;
@@ -496,6 +498,10 @@ mod _1029_two_city_scheduling;
 //
 mod _1030_matrix_cells_in_distance_order;
 //
+mod _1033_moving_stones_until_consecutive;
+//
+mod _1037_valid_boomerang;
+//
 mod _1041_robot_bounded_in_circle;
 //
 mod _1042_flower_planting_with_no_adjacent;
@@ -512,6 +518,8 @@ mod _1064_fixed_point;
 //
 mod _1071_greatest_common_divisor_of_strings;
 //
+mod _1078_occurrences_after_bigram;
+//
 mod _1089_duplicate_zeros;
 //
 mod _1103_distribute_candies_to_people;
@@ -524,8 +532,20 @@ mod _1122_relative_sort_array;
 //
 mod _1128_number_of_equivalent_domino_pairs;
 //
+mod _1133_largest_unique_number;
+//
 mod _1137_n_th_tribonacci_number;
+//
+mod _1150_check_if_a_number_is_majority_element_in_a_sorted_array;
+//
+mod _1154_day_of_the_year;
+//
+mod _1160_find_words_that_can_be_formed_by_characters;
 //
 mod _1165_single_row_keyboard;
 //
 mod _1170_compare_strings_by_frequency_of_the_smallest_character;
+//
+mod _1175_prime_arrangements;
+//
+mod _1176_diet_plan_performance;
