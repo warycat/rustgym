@@ -466,6 +466,8 @@ mod _961_n_repeated_element_in_size_2n_array;
 //
 mod _965_univalued_binary_tree;
 //
+mod _970_powerful_integers;
+//
 mod _976_largest_perimeter_triangle;
 //
 mod _977_squares_of_a_sorted_array;
@@ -481,6 +483,8 @@ mod _999_available_captures_for_rook;
 mod _1002_find_common_characters;
 //
 mod _1005_maximize_sum_of_array_after_k_negations;
+//
+mod _1009_complement_of_base_10_integer;
 //
 mod _1010_pairs_of_songs_with_total_durations_divisible_by_60;
 //
@@ -516,15 +520,21 @@ mod _1056_confusing_number;
 //
 mod _1064_fixed_point;
 //
+mod _1065_index_pairs_of_a_string;
+//
 mod _1071_greatest_common_divisor_of_strings;
 //
 mod _1078_occurrences_after_bigram;
+//
+mod _1085_sum_of_digits_in_the_minmum_number;
 //
 mod _1089_duplicate_zeros;
 //
 mod _1103_distribute_candies_to_people;
 //
 mod _1108_defanging_an_ip_address;
+//
+mod _1118_number_of_days_in_a_month;
 //
 mod _1119_remove_vowels_from_a_string;
 //
@@ -533,6 +543,8 @@ mod _1122_relative_sort_array;
 mod _1128_number_of_equivalent_domino_pairs;
 //
 mod _1133_largest_unique_number;
+//
+mod _1134_armstrong_number;
 //
 mod _1137_n_th_tribonacci_number;
 //
