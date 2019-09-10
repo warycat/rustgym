@@ -8,9 +8,7 @@ impl Solution {
             res.push(vec![]);
             for j in 0..=i {
                 let uj = j as usize;
-                if j == 0 {
-                    res[ui].push(1);
-                } else if j == i {
+                if j == 0 || j == i {
                     res[ui].push(1);
                 } else {
                     let prev = &res[ui - 1];

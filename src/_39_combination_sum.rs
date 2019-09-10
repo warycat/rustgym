@@ -10,7 +10,7 @@ impl Solution {
     }
     fn backtrack(
         res: &mut Vec<Vec<i32>>,
-        candidates: &Vec<i32>,
+        candidates: &[i32],
         combination: &mut Vec<i32>,
         target: i32,
         begin: usize,

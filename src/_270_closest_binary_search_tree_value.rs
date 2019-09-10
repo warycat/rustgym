@@ -45,7 +45,7 @@ impl Tree {
     fn preorder(link: &Link, diff: &mut f64, res: &mut i32, target: f64) {
         if let Some(node) = link {
             let node = node.borrow();
-            let val = node.val as f64;
+            let val = f64::from(node.val);
             let delta = (val - target).abs();
             if delta < *diff {
                 *diff = delta;
@@ -75,5 +75,5 @@ fn test() {
         TreeNode::branch(2, TreeNode::leaf(1), TreeNode::leaf(3)),
         TreeNode::leaf(5),
     );
-    assert_eq!(Solution::closest_value(root, 3.714286), 4);
+    assert_eq!(Solution::closest_value(root, 3.714_286), 4);
 }

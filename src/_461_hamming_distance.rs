@@ -5,8 +5,8 @@ impl Solution {
         let mut z = x ^ y;
         let mut sum = 0;
         for _ in 0..32 {
-            sum = sum + (z & 1);
-            z = z >> 1;
+            sum += z & 1;
+            z >>= 1;
         }
         sum
     }

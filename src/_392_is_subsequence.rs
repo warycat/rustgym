@@ -7,7 +7,7 @@ impl Solution {
         let n = s.len();
         let m = t.len();
         while i < n && j < m {
-            if s[i..i + 1] == t[j..j + 1] {
+            if s[i..=i] == t[j..=j] {
                 i += 1;
                 j += 1;
             } else {

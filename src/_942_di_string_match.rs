@@ -3,7 +3,7 @@ struct Solution;
 impl Solution {
     fn di_string_match(s: String) -> Vec<i32> {
         let n = s.len() + 1;
-        let nums: Vec<i32> = (0..n).into_iter().map(|i| i as i32).collect();
+        let nums: Vec<i32> = (0..n).map(|i| i as i32).collect();
         let mut res: Vec<i32> = vec![];
         let mut l = 0;
         let mut r = n - 1;

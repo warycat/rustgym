@@ -11,7 +11,7 @@ impl Solution {
         let mut res: usize = 1;
         while i < n {
             while j + 1 < n && nums[j + 1] > nums[j] {
-                j = j + 1;
+                j += 1;
             }
             res = usize::max(j - i + 1, res);
             i = j + 1;

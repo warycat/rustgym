@@ -22,7 +22,7 @@ impl Solution {
                         return false;
                     }
                     v *= 10;
-                    v += (abbr[j] as u8 - '0' as u8) as usize;
+                    v += (abbr[j] as u8 - b'0') as usize;
                     j += 1;
                 }
                 i += v;

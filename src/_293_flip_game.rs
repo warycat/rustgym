@@ -5,7 +5,7 @@ impl Solution {
         let mut res: Vec<String> = vec![];
         let n = s.len();
         for i in 1..n {
-            if &s[i - 1..i + 1] == "++" {
+            if &s[i - 1..=i] == "++" {
                 res.push(format!("{}{}{}", &s[0..i - 1], "--", &s[i + 1..]));
             }
         }

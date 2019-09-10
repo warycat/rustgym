@@ -4,12 +4,12 @@ impl Solution {
     fn add_strings(nums1: String, nums2: String) -> String {
         let s1: Vec<i32> = nums1
             .chars()
-            .map(|x| ((x as u8) - ('0' as u8)) as i32)
+            .map(|x| i32::from((x as u8) - b'0'))
             .rev()
             .collect();
         let s2: Vec<i32> = nums2
             .chars()
-            .map(|x| ((x as u8) - ('0' as u8)) as i32)
+            .map(|x| i32::from((x as u8) - b'0'))
             .rev()
             .collect();
         let mut carry = 0;
@@ -25,7 +25,7 @@ impl Solution {
             }
             v += carry;
             carry = v / 10;
-            s3.push(((v % 10) as u8 + '0' as u8) as char);
+            s3.push(((v % 10) as u8 + b'0') as char);
             i += 1;
         }
         let res: String = s3.iter().rev().collect();

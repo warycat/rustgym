@@ -14,7 +14,7 @@ impl Solution {
         }
         let mut res: Vec<String> = vec![];
         for i in 0..26 {
-            let c: u8 = 'a' as u8 + i;
+            let c: u8 = b'a' + i;
             let mut min = usize::MAX;
             for j in 0..n {
                 let count = counts[j][c as usize];

@@ -5,7 +5,7 @@ impl Solution {
         let mut lines = 0;
         let mut start = 0;
         for b in s.bytes() {
-            let w = widths[(b - 'a' as u8) as usize];
+            let w = widths[(b - b'a') as usize];
             if start + w > 100 {
                 lines += 1;
                 start = w;

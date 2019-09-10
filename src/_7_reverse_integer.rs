@@ -16,7 +16,7 @@ impl Solution {
             } else {
                 return 0;
             }
-            abs = abs / 10;
+            abs /= 10;
         }
         y * sign
     }
@@ -24,12 +24,12 @@ impl Solution {
 
 #[test]
 fn overflow() {
-    assert_eq!(Solution::reverse(2147483647), 0);
+    assert_eq!(Solution::reverse(2_147_483_647), 0);
 }
 
 #[test]
 fn pass() {
-    assert_eq!(Solution::reverse(123456789), 987654321);
+    assert_eq!(Solution::reverse(123_456_789), 987_654_321);
 }
 
 #[test]

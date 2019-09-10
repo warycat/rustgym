@@ -3,7 +3,7 @@ struct Solution;
 impl Solution {
     fn reach_number(target: i32) -> i32 {
         let target = target.abs();
-        let n = (((2 * target as i64) as f64 + 0.25).sqrt() - 0.5).ceil() as i32;
+        let n = (((2 * i64::from(target)) as f64 + 0.25).sqrt() - 0.5).ceil() as i32;
         let sum = n * (n + 1) / 2;
         if sum == target {
             n

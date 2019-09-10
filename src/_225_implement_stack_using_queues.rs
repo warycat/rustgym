@@ -30,7 +30,7 @@ impl MyStack {
     }
 
     fn empty(&self) -> bool {
-        self.queue.len() == 0
+        self.queue.is_empty()
     }
 }
 

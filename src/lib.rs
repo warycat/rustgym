@@ -1,4 +1,8 @@
+#![deny(clippy::all)]
 #![allow(dead_code)]
+#![allow(clippy::many_single_char_names)]
+#![allow(clippy::collapsible_if)]
+#![allow(clippy::needless_range_loop)]
 //
 mod _1_two_sum;
 //

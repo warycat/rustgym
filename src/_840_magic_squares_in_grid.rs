@@ -1,7 +1,7 @@
 struct Solution;
 
 impl Solution {
-    fn is_magic(grid: &Vec<Vec<i32>>, r: usize, c: usize) -> bool {
+    fn is_magic(grid: &[Vec<i32>], r: usize, c: usize) -> bool {
         let mut xor = 0;
         for i in 1..10 {
             xor ^= i;

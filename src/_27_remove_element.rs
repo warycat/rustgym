@@ -7,7 +7,7 @@ impl Solution {
         for i in 0..n {
             if nums[i] != val {
                 nums[size] = nums[i];
-                size = size + 1;
+                size += 1;
             }
         }
         size as i32

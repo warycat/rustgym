@@ -5,7 +5,7 @@ impl Solution {
         let mut v: Vec<char> = vec![];
         while n > 0 {
             let x = ((n - 1) % 26) as u8;
-            let c = (x + 'A' as u8) as char;
+            let c = (x + b'A') as char;
             v.insert(0, c);
             n = (n - 1) / 26;
         }

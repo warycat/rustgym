@@ -6,13 +6,12 @@ impl Solution {
             return "0".to_string();
         }
         let mut base_7: Vec<char> = vec![];
-        let mut minus: bool = false;
+        let minus: bool = num < 0;
         if num < 0 {
             num = -num;
-            minus = true;
         }
         while num > 0 {
-            let c = ((num % 7) as u8 + '0' as u8) as char;
+            let c = ((num % 7) as u8 + b'0') as char;
             base_7.push(c);
             num /= 7;
         }

@@ -21,7 +21,7 @@ impl Solution {
             let c1 = hm1[&x];
             let c2 = hm2[&x];
             let min = i32::min(c1, c2);
-            (0..min).into_iter().for_each(|_| {
+            (0..min).for_each(|_| {
                 res.push(x);
             });
         });

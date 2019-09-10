@@ -10,8 +10,8 @@ impl Solution {
                         - j[0] * i[1]
                         - k[0] * j[1]
                         - i[0] * k[1])
-                        .abs() as f64
-                        / 2f64;
+                        .abs();
+                    let area = f64::from(area) / 2f64;
                     res = f64::max(area, res);
                 }
             }

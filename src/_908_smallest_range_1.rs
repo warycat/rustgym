@@ -2,7 +2,7 @@ struct Solution;
 
 impl Solution {
     fn smallest_range_i(a: Vec<i32>, k: i32) -> i32 {
-        if a.len() == 0 {
+        if a.is_empty() {
             return 0;
         }
         let max = a.iter().max().unwrap();

@@ -19,11 +19,7 @@ impl Solution {
                     sum += 1;
                 }
             }
-            if sum == 0 {
-                false
-            } else {
-                true
-            }
+            sum != 0
         } else {
             let mut pair: Vec<usize> = vec![];
             for i in 0..n {

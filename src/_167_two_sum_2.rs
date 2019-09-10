@@ -9,11 +9,11 @@ impl Solution {
                 return vec![(left + 1) as i32, (right + 1) as i32];
             }
             if nums[left] + nums[right] < target {
-                left = left + 1;
+                left += 1;
                 continue;
             }
             if nums[left] + nums[right] > target {
-                right = right - 1;
+                right -= 1;
                 continue;
             }
         }

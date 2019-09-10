@@ -39,7 +39,7 @@ impl WordSearch {
             n,
             m,
             visited,
-            board: board,
+            board,
             word,
         })
     }

@@ -16,7 +16,7 @@ impl Count {
 
     fn completes(&self, other: &Count) -> bool {
         for i in 0..26 {
-            let c: usize = ('a' as u8 + i) as usize;
+            let c: usize = (b'a' + i) as usize;
             if self.v[c] < other.v[c] {
                 return false;
             }

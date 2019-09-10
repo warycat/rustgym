@@ -2,7 +2,7 @@ struct MyHashMap {
     v: Vec<i32>,
 }
 
-const LIMIT: usize = 1000000;
+const LIMIT: usize = 1_000_000;
 
 impl MyHashMap {
     fn new() -> Self {

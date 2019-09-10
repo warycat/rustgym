@@ -13,7 +13,7 @@ impl Solution {
         for w in words {
             let mut s: String = "".to_string();
             for c in w.chars() {
-                let m = map[(c as u8 - 'a' as u8) as usize];
+                let m = map[(c as u8 - b'a') as usize];
                 s += m;
             }
             morse.insert(s);

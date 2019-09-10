@@ -13,7 +13,7 @@ impl Time {
     fn is_valid(&self) -> bool {
         self.hour < 24 && self.minute < 60
     }
-    fn from_digits(a: &Vec<i32>) -> Self {
+    fn from_digits(a: &[i32]) -> Self {
         Self::new(a[0] * 10 + a[1], a[2] * 10 + a[3])
     }
     fn to_minutes(&self) -> i32 {

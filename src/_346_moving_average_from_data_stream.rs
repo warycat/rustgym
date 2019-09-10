@@ -16,14 +16,14 @@ impl MovingAverage {
     }
 
     fn next(&mut self, val: i32) -> f64 {
-        self.sum = self.sum + val;
+        self.sum += val;
         self.queue.push_back(val);
         if self.queue.len() > self.size {
             if let Some(front) = self.queue.pop_front() {
-                self.sum = self.sum - front;
+                self.sum -= front;
             }
         }
-        self.sum as f64 / self.queue.len() as f64
+        f64::from(self.sum) / self.queue.len() as f64
     }
 }
 

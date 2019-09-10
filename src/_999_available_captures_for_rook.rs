@@ -13,7 +13,7 @@ enum Direction {
 }
 
 impl Solution {
-    fn search_rook(board: &Vec<Vec<char>>) -> Chess {
+    fn search_rook(board: &[Vec<char>]) -> Chess {
         for r in 0..8 {
             for c in 0..8 {
                 if board[r][c] == 'R' {
@@ -23,7 +23,7 @@ impl Solution {
         }
         unreachable!()
     }
-    fn search_pawn(board: &Vec<Vec<char>>, rook: &Chess, direction: Direction) -> bool {
+    fn search_pawn(board: &[Vec<char>], rook: &Chess, direction: Direction) -> bool {
         let mut r = rook.r;
         let mut c = rook.c;
 

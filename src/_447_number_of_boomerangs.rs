@@ -3,7 +3,7 @@ struct Solution;
 use std::collections::HashMap;
 
 impl Solution {
-    fn distance_square(a: &Vec<i32>, b: &Vec<i32>) -> i32 {
+    fn distance_square(a: &[i32], b: &[i32]) -> i32 {
         (a[0] - b[0]) * (a[0] - b[0]) + (a[1] - b[1]) * (a[1] - b[1])
     }
     fn number_of_boomerangs(points: Vec<Vec<i32>>) -> i32 {

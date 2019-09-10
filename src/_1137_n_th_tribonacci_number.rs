@@ -16,5 +16,5 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(Solution::tribonacci(25), 1389537);
+    assert_eq!(Solution::tribonacci(25), 1_389_537);
 }

@@ -11,7 +11,7 @@ impl Solution {
                 count[d] = 1;
             }
         }
-        count.iter().fold(0, |sum, x| sum + x) <= 1
+        count.iter().sum::<usize>() <= 1
     }
 }
 

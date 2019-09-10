@@ -12,11 +12,11 @@ impl Solution {
         }
         for i in 0..p.len() {
             let c = s[i] as usize - 'a' as usize;
-            ss[c] = ss[c] + 1;
+            ss[c] += 1;
         }
         for i in 0..p.len() {
             let c = p[i] as usize - 'a' as usize;
-            sp[c] = sp[c] + 1;
+            sp[c] += 1;
         }
         if ss == sp {
             res.push(0);
@@ -24,8 +24,8 @@ impl Solution {
         for i in 1..=(s.len() - p.len()) {
             let c = s[i - 1] as usize - 'a' as usize;
             let d = s[..][i + p.len() - 1] as usize - 'a' as usize;
-            ss[c] = ss[c] - 1;
-            ss[d] = ss[d] + 1;
+            ss[c] -= 1;
+            ss[d] += 1;
             if ss == sp {
                 res.push(i as i32);
             }

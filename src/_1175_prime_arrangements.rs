@@ -29,12 +29,12 @@ impl Solution {
         let primes = Self::number_of_primes(n as usize);
         let mut product = 1i64;
         for i in 1..=primes {
-            product *= i as i64;
-            product %= 1000000007;
+            product *= i64::from(i);
+            product %= 1_000_000_007;
         }
         for i in 1..=(n - primes) {
-            product *= i as i64;
-            product %= 1000000007;
+            product *= i64::from(i);
+            product %= 1_000_000_007;
         }
         product as i32
     }
@@ -43,5 +43,5 @@ impl Solution {
 #[test]
 fn test() {
     assert_eq!(Solution::num_prime_arrangements(5), 12);
-    assert_eq!(Solution::num_prime_arrangements(100), 682289015);
+    assert_eq!(Solution::num_prime_arrangements(100), 682_289_015);
 }

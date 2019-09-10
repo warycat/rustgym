@@ -29,7 +29,7 @@ impl TreeNode {
             let right = &node.right;
             let left_sum = Self::dfs(left, tilt);
             let right_sum = Self::dfs(right, tilt);
-            *tilt = *tilt + (left_sum - right_sum).abs();
+            *tilt += (left_sum - right_sum).abs();
             node.val + left_sum + right_sum
         } else {
             0

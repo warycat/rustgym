@@ -1,7 +1,7 @@
 struct Solution;
 
 impl Solution {
-    fn permutation(s: &Vec<char>, n: usize, i: usize, t: &mut String, res: &mut Vec<String>) {
+    fn permutation(s: &[char], n: usize, i: usize, t: &mut String, res: &mut Vec<String>) {
         if i == n {
             res.push(t.clone());
         } else {

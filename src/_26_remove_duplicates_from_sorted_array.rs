@@ -12,7 +12,7 @@ impl Solution {
             if nums[i] != last {
                 last = nums[i];
                 nums[size] = nums[i];
-                size = size + 1;
+                size += 1;
             }
         }
         size as i32

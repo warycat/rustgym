@@ -7,19 +7,19 @@ impl Solution {
         for x in nums {
             if let Some(y) = num {
                 if x == y {
-                    count = count + 1;
+                    count += 1;
                 } else {
-                    count = count - 1;
+                    count -= 1;
                     if count == 0 {
                         num = None;
                     }
                 }
             } else {
                 num = Some(x);
-                count = count + 1;
+                count += 1;
             }
         }
-        return num.unwrap();
+        num.unwrap()
     }
 }
 

@@ -5,7 +5,7 @@ struct MyHashSet {
 impl MyHashSet {
     fn new() -> Self {
         MyHashSet {
-            table: vec![false; 1000000],
+            table: vec![false; 1_000_000],
         }
     }
     fn add(&mut self, key: i32) {

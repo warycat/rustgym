@@ -38,7 +38,7 @@ impl Trie {
     fn insert(&mut self, s: String) {
         let mut link = &mut self.root;
         for c in s.chars() {
-            link = link.children.entry(c).or_insert(TrieNode::new());
+            link = link.children.entry(c).or_insert_with(TrieNode::new);
         }
         link.end = true;
     }

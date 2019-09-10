@@ -1,7 +1,7 @@
 struct Solution;
 
 impl Solution {
-    fn smooth(m: &Vec<Vec<i32>>, r: usize, c: usize, h: usize, w: usize) -> i32 {
+    fn smooth(m: &[Vec<i32>], r: usize, c: usize, h: usize, w: usize) -> i32 {
         let mut sum = 0;
         let mut n = 0;
         if r > 0 && c > 0 {

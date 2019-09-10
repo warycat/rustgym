@@ -9,7 +9,7 @@ impl Solution {
             let w = word.len();
             for i in 0..=(n - w) {
                 let ss = &s[i..i + w];
-                if ss == &word {
+                if ss == word {
                     for j in 0..w {
                         bold[i + j] = true;
                     }

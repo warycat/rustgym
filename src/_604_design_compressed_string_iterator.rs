@@ -27,7 +27,7 @@ impl StringIterator {
             let mut m: usize = 0;
             while i < n && s[i].is_numeric() {
                 m *= 10;
-                m += (s[i] as u8 - '0' as u8) as usize;
+                m += (s[i] as u8 - b'0') as usize;
                 i += 1;
             }
             pairs.push(Pair::new(c, m));

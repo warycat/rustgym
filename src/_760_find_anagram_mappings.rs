@@ -7,12 +7,12 @@ impl Solution {
         let mut hs: HashMap<i32, Vec<i32>> = HashMap::new();
         let n = a.len();
         for (i, &x) in b.iter().enumerate() {
-            let indexes = hs.entry(x).or_insert(vec![]);
+            let indexes = hs.entry(x).or_insert_with(Vec::new);
             indexes.push(i as i32);
         }
         let mut res: Vec<i32> = vec![0; n];
         for (i, &x) in a.iter().enumerate() {
-            let indexes = hs.entry(x).or_insert(vec![]);
+            let indexes = hs.entry(x).or_insert_with(Vec::new);
             res[i] = indexes.pop().unwrap();
         }
         res

@@ -6,7 +6,7 @@ impl Solution {
         let mut diffs: Vec<i32> = costs.iter().map(|v| v[0] - v[1]).collect();
         diffs.sort_unstable();
         let sum_of_b = costs.iter().fold(0, |sum, v| sum + v[1]);
-        let sum_of_diff = diffs.iter().take(n / 2).fold(0, |sum, diff| sum + diff);
+        let sum_of_diff: i32 = diffs.iter().take(n / 2).sum();
         sum_of_b + sum_of_diff
     }
 }

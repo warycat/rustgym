@@ -14,7 +14,7 @@ impl Solution {
             sum -= nums[i - k];
             max = i32::max(sum, max);
         }
-        max as f64 / k as f64
+        f64::from(max) / k as f64
     }
 }
 
@@ -22,5 +22,8 @@ impl Solution {
 fn test() {
     let nums = vec![1, 12, -5, -6, 50, 3];
     let k = 4;
-    assert_eq!(Solution::find_max_average(nums, k), 12.75);
+    assert_eq!(
+        Solution::find_max_average(nums, k) - 12.75 < std::f64::EPSILON,
+        true
+    );
 }

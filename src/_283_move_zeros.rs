@@ -8,7 +8,7 @@ impl Solution {
             if x != 0 {
                 nums[i] = 0;
                 nums[j] = x;
-                j = j + 1;
+                j += 1;
             }
         }
     }

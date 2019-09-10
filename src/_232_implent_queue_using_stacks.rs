@@ -39,7 +39,7 @@ impl MyQueue {
     }
 
     fn empty(&self) -> bool {
-        self.stack.len() == 0
+        self.stack.is_empty()
     }
 }
 

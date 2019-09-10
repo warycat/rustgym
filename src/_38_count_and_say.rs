@@ -6,30 +6,36 @@ struct Pair {
 }
 
 impl Solution {
-    fn count_and_say(n: i32) -> String {
-        fn next(nums: String) -> String {
-            let mut pairs: Vec<Pair> = vec![];
-            for c in nums.chars() {
-                if let Some(p) = pairs.last_mut() {
-                    if p.digit == c {
-                        p.count = p.count + 1;
-                    } else {
-                        pairs.push(Pair { digit: c, count: 1 });
-                    }
+    fn next(nums: String) -> String {
+        let mut prev: Option<Pair> = None;
+        let mut s = String::from("");
+        for c in nums.chars() {
+            if let Some(prev_pair) = prev {
+                if prev_pair.digit == c {
+                    prev = Some(Pair {
+                        digit: c,
+                        count: prev_pair.count + 1,
+                    });
                 } else {
-                    pairs.push(Pair { digit: c, count: 1 });
+                    s.push_str(&prev_pair.count.to_string());
+                    s.push_str(&prev_pair.digit.to_string());
+                    prev = Some(Pair { digit: c, count: 1 });
                 }
+            } else {
+                prev = Some(Pair { digit: c, count: 1 });
             }
-            let mut s = String::from("");
-            for p in pairs {
-                s.push_str(&p.count.to_string());
-                s.push_str(&p.digit.to_string());
-            }
-            s
         }
+        if let Some(prev_pair) = prev {
+            s.push_str(&prev_pair.count.to_string());
+            s.push_str(&prev_pair.digit.to_string());
+        }
+        s
+    }
+
+    fn count_and_say(n: i32) -> String {
         match n {
             1 => String::from("1"),
-            2...30 => next(Solution::count_and_say(n - 1)),
+            2..=30 => Self::next(Solution::count_and_say(n - 1)),
             _ => String::from(""),
         }
     }

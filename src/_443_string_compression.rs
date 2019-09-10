@@ -34,7 +34,7 @@ impl Solution {
         }
         let mut size: usize = 0;
         while count > 0 {
-            let d: u8 = count as u8 % 10u8 + '0' as u8;
+            let d: u8 = count as u8 % 10u8 + b'0';
             chars[index + size] = d as char;
             size += 1;
             count /= 10;

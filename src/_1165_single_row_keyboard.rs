@@ -4,12 +4,12 @@ impl Solution {
     fn calculate_time(keyboard: String, word: String) -> i32 {
         let mut indexes: Vec<i32> = vec![0; 26];
         for (i, b) in keyboard.bytes().enumerate() {
-            indexes[(b - 'a' as u8) as usize] = i as i32;
+            indexes[(b - b'a') as usize] = i as i32;
         }
         let mut prev = 0;
         let mut sum = 0;
         for b in word.bytes() {
-            let index = indexes[(b - 'a' as u8) as usize];
+            let index = indexes[(b - b'a') as usize];
             sum += (index - prev).abs();
             prev = index;
         }
