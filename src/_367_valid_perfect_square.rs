@@ -2,8 +2,8 @@ struct Solution;
 
 impl Solution {
     fn is_perfect_square(num: i32) -> bool {
-        let mut r: i64 = i64::from(num);
-        let x: i64 = i64::from(num);
+        let mut r: i64 = num as i64;
+        let x: i64 = num as i64;
         while r * r > x {
             r = (r + x / r) / 2;
         }

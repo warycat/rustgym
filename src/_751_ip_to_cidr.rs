@@ -4,13 +4,13 @@ use std::net::Ipv4Addr;
 
 impl Solution {
     fn ip_to_cidr(ip: String, n: i32) -> Vec<String> {
-        let mut range = i64::from(n);
+        let mut range = n as i64;
         let mut res: Vec<String> = vec![];
         let addr: Ipv4Addr = ip.parse().unwrap();
         let mut ip: i64 = 0;
         for &byte in addr.octets().iter() {
             ip <<= 8;
-            ip |= i64::from(byte);
+            ip |= byte as i64;
         }
         while range > 0 {
             let mut step = ip & -ip;

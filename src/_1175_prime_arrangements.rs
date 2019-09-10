@@ -29,11 +29,11 @@ impl Solution {
         let primes = Self::number_of_primes(n as usize);
         let mut product = 1i64;
         for i in 1..=primes {
-            product *= i64::from(i);
+            product *= i as i64;
             product %= 1_000_000_007;
         }
         for i in 1..=(n - primes) {
-            product *= i64::from(i);
+            product *= i as i64;
             product %= 1_000_000_007;
         }
         product as i32

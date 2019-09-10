@@ -45,7 +45,7 @@ impl Tree {
     fn preorder(link: &Link, diff: &mut f64, res: &mut i32, target: f64) {
         if let Some(node) = link {
             let node = node.borrow();
-            let val = f64::from(node.val);
+            let val = node.val as f64;
             let delta = (val - target).abs();
             if delta < *diff {
                 *diff = delta;

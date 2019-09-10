@@ -3,13 +3,13 @@ struct Solution;
 impl Solution {
     fn add_strings(nums1: String, nums2: String) -> String {
         let s1: Vec<i32> = nums1
-            .chars()
-            .map(|x| i32::from((x as u8) - b'0'))
+            .bytes()
+            .map(|x| (x - b'0') as i32)
             .rev()
             .collect();
         let s2: Vec<i32> = nums2
-            .chars()
-            .map(|x| i32::from((x as u8) - b'0'))
+            .bytes()
+            .map(|x| (x - b'0') as i32)
             .rev()
             .collect();
         let mut carry = 0;

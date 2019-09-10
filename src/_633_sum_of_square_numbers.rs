@@ -5,10 +5,10 @@ impl Solution {
         if c == 0 {
             return true;
         }
-        let x = (f64::from(c)).sqrt() as i32;
+        let x = (c as f64).sqrt() as i32;
         for a in 0..=x {
             let bb = c - a * a;
-            let b = (f64::from(bb)).sqrt() as i32;
+            let b = (bb as f64).sqrt() as i32;
             if bb == b * b {
                 return true;
             }

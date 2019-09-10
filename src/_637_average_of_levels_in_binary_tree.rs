@@ -44,7 +44,7 @@ impl Solution {
         TreeNode::dfs(&root, 0, &mut levels);
         levels
             .iter()
-            .map(|v| v.iter().map(|&x| f64::from(x)).sum::<f64>() as f64 / v.len() as f64)
+            .map(|v| v.iter().map(|&x| x as f64).sum::<f64>() as f64 / v.len() as f64)
             .collect()
     }
 }

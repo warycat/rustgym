@@ -23,7 +23,7 @@ impl MovingAverage {
                 self.sum -= front;
             }
         }
-        f64::from(self.sum) / self.queue.len() as f64
+        self.sum as f64 / self.queue.len() as f64
     }
 }
 
