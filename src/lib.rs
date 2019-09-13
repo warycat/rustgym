@@ -344,6 +344,8 @@ mod _697_degree_of_an_array;
 //
 mod _700_search_in_a_binary_search_tree;
 //
+mod _703_kth_largest_element_in_a_stream;
+//
 mod _704_binary_search;
 //
 mod _705_design_hash_set;
@@ -593,3 +595,9 @@ mod _1170_compare_strings_by_frequency_of_the_smallest_character;
 mod _1175_prime_arrangements;
 //
 mod _1176_diet_plan_performance;
+//
+mod _1180_count_substring_with_only_one_distinct_letter;
+//
+mod _1184_distance_between_bus_stops;
+//
+mod _1185_day_of_the_week;
