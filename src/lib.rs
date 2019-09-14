@@ -12,6 +12,8 @@ mod _2_add_two_numbers;
 //
 mod _3_longest_substring_without_repeating_characters;
 //
+mod _5_longest_palindromic_substring;
+//
 mod _7_reverse_integer;
 //
 mod _9_palindrome_number;
