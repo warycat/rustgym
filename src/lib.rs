@@ -82,6 +82,8 @@ mod _125_valid_palindrome;
 //
 mod _136_single_number;
 //
+mod _146_lru_cache;
+//
 mod _155_min_stack;
 //
 mod _167_two_sum_2;
