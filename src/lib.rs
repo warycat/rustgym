@@ -22,6 +22,8 @@ mod _13_roman_to_integer;
 //
 mod _14_longest_common_prefix;
 //
+mod _15_three_sum;
+//
 mod _20_valid_parentheses;
 //
 mod _21_merge_two_sorted_lists;
@@ -103,6 +105,8 @@ mod _172_factorial_trailing_zeroes;
 mod _189_rotate_array;
 //
 mod _198_house_robber;
+//
+mod _200_number_of_islands;
 //
 mod _202_happy_number;
 //
@@ -605,3 +609,5 @@ mod _1180_count_substring_with_only_one_distinct_letter;
 mod _1184_distance_between_bus_stops;
 //
 mod _1185_day_of_the_week;
+//
+mod _1189_maximum_number_of_balloons;
