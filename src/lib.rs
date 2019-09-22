@@ -18,6 +18,8 @@ mod _7_reverse_integer;
 //
 mod _9_palindrome_number;
 //
+mod _11_container_with_most_water;
+//
 mod _13_roman_to_integer;
 //
 mod _14_longest_common_prefix;
@@ -27,6 +29,8 @@ mod _15_three_sum;
 mod _20_valid_parentheses;
 //
 mod _21_merge_two_sorted_lists;
+//
+mod _22_generate_parentheses;
 //
 mod _26_remove_duplicates_from_sorted_array;
 //
@@ -43,6 +47,8 @@ mod _36_valid_sudoku;
 mod _38_count_and_say;
 //
 mod _39_combination_sum;
+//
+mod _49_group_anagrams;
 //
 mod _53_maximum_subarray;
 //
@@ -151,6 +157,8 @@ mod _257_binary_tree_paths;
 mod _258_add_digits;
 //
 mod _252_meeting_rooms;
+//
+mod _253_meeting_rooms_2;
 //
 mod _256_paint_house;
 //
@@ -291,6 +299,8 @@ mod _543_diameter_of_binary_tree;
 mod _551_student_attendance_record_1;
 //
 mod _557_reverse_words_in_a_string_3;
+//
+mod _560_subarray_sum_equals_k;
 //
 mod _561_array_partition_1;
 //
