@@ -34,6 +34,8 @@ mod _27_remove_element;
 //
 mod _28_implement_str_str;
 //
+mod _33_search_in_rotated_sorted_array;
+//
 mod _35_search_insert_position;
 //
 mod _36_valid_sudoku;
@@ -43,6 +45,8 @@ mod _38_count_and_say;
 mod _39_combination_sum;
 //
 mod _53_maximum_subarray;
+//
+mod _56_merge_intervals;
 //
 mod _66_plus_one;
 //
@@ -132,6 +136,8 @@ mod _232_implent_queue_using_stacks;
 //
 mod _234_palindrome_linked_list;
 //
+mod _238_product_of_array_except_self;
+//
 mod _246_strobogrammantic_number;
 //
 mod _242_valid_anagram;
@@ -161,6 +167,8 @@ mod _276_paint_fence;
 mod _283_move_zeros;
 //
 mod _286_walls_and_gates;
+//
+mod _289_game_of_life;
 //
 mod _290_word_pattern;
 //
@@ -509,6 +517,8 @@ mod _961_n_repeated_element_in_size_2n_array;
 mod _965_univalued_binary_tree;
 //
 mod _970_powerful_integers;
+//
+mod _973_k_closest_points_to_origin;
 //
 mod _976_largest_perimeter_triangle;
 //
