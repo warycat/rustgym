@@ -52,6 +52,8 @@ mod _49_group_anagrams;
 //
 mod _53_maximum_subarray;
 //
+mod _54_spiral_matrix;
+//
 mod _56_merge_intervals;
 //
 mod _66_plus_one;
@@ -207,6 +209,8 @@ mod _326_power_of_three;
 mod _367_valid_perfect_square;
 //
 mod _371_sum_of_two_integers;
+//
+mod _380_insert_delete_get_random_o1;
 //
 mod _383_ransom_note;
 //
@@ -631,3 +635,7 @@ mod _1184_distance_between_bus_stops;
 mod _1185_day_of_the_week;
 //
 mod _1189_maximum_number_of_balloons;
+//
+mod _1197_minimum_knight_moves;
+//
+mod _1197_minimum_knight_moves_math;
