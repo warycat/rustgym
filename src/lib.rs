@@ -26,6 +26,8 @@ mod _14_longest_common_prefix;
 //
 mod _15_three_sum;
 //
+mod _17_letter_combinations_of_a_phone_number;
+//
 mod _20_valid_parentheses;
 //
 mod _21_merge_two_sorted_lists;
@@ -69,6 +71,8 @@ mod _79_word_search;
 mod _83_remove_duplicates_from_sorted_list;
 //
 mod _88_merge_sorted_array;
+//
+mod _91_decode_ways;
 //
 mod _100_same_tree;
 //
@@ -219,6 +223,8 @@ mod _387_first_unique_character_in_a_string;
 mod _389_find_the_difference;
 //
 mod _392_is_subsequence;
+//
+mod _394_decode_string;
 //
 mod _401_binary_watch;
 //
