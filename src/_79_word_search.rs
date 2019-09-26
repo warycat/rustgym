@@ -51,7 +51,6 @@ impl WordSearch {
         if k == self.word.len() - 1 {
             return true;
         } else {
-            println!("{:?}", self);
             self.visited[i][j] = true;
             if (j > 0 && self.dfs(i, j - 1, k + 1))
                 || (j < self.m - 1 && self.dfs(i, j + 1, k + 1))

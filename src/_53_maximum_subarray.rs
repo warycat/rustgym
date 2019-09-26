@@ -1,20 +1,18 @@
-pub struct Solution;
+struct Solution;
 
-use std::cmp::max;
 use std::i32::MIN;
 
 impl Solution {
     fn max_sub_array(nums: Vec<i32>) -> i32 {
-        let n = nums.len();
-        let mut sums = vec![0; n];
+        let mut prev: Option<i32> = None;
         let mut res = MIN;
-        for i in 0..n {
-            if i == 0 {
-                sums[0] = nums[0];
+        for x in nums {
+            if let Some(sum) = prev {
+                prev = Some(i32::max(x, sum + x));
             } else {
-                sums[i] = max(nums[i], sums[i - 1] + nums[i])
+                prev = Some(x);
             }
-            res = max(res, sums[i])
+            res = i32::max(res, prev.unwrap());
         }
         res
     }
