@@ -645,3 +645,9 @@ mod _1189_maximum_number_of_balloons;
 mod _1197_minimum_knight_moves;
 //
 mod _1197_minimum_knight_moves_math;
+//
+mod _1200_minimum_absolute_difference;
+//
+mod _1207_unique_number_of_occurrences;
+//
+mod _1217_play_with_chips;

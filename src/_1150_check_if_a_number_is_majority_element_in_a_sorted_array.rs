@@ -13,10 +13,10 @@ impl Solution {
                 last = Some(i);
             }
         }
-        if first.is_none() {
-            false
+        if let Some(first) = first {
+            last.unwrap() - first + 1 > n / 2
         } else {
-            last.unwrap() - first.unwrap() + 1 > n / 2
+            false
         }
     }
 }

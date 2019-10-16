@@ -7,7 +7,7 @@ impl Solution {
         for i in 0..n {
             for j in 0..n {
                 if grid[i][j] > 0 {
-                    res += 2 + 4 * grid[i][j];;
+                    res += 2 + 4 * grid[i][j];
                 }
             }
         }
