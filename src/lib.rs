@@ -642,6 +642,8 @@ mod _1185_day_of_the_week;
 //
 mod _1189_maximum_number_of_balloons;
 //
+mod _1196_how_many_apples_can_you_put_into_the_basket;
+//
 mod _1197_minimum_knight_moves;
 //
 mod _1197_minimum_knight_moves_math;
@@ -650,4 +652,8 @@ mod _1200_minimum_absolute_difference;
 //
 mod _1207_unique_number_of_occurrences;
 //
+mod _1213_intersection_of_three_sorted_arrays;
+//
 mod _1217_play_with_chips;
+//
+mod _1221_split_a_string_in_balanced_strings;
