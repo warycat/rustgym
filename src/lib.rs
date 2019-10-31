@@ -657,3 +657,7 @@ mod _1213_intersection_of_three_sorted_arrays;
 mod _1217_play_with_chips;
 //
 mod _1221_split_a_string_in_balanced_strings;
+//
+mod _1228_missing_number_in_arithmetic_progression;
+//
+mod _1232_check_if_it_is_a_straight_line;
