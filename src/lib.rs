@@ -661,3 +661,5 @@ mod _1221_split_a_string_in_balanced_strings;
 mod _1228_missing_number_in_arithmetic_progression;
 //
 mod _1232_check_if_it_is_a_straight_line;
+//
+mod _1243_array_transformation;
