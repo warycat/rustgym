@@ -663,3 +663,13 @@ mod _1228_missing_number_in_arithmetic_progression;
 mod _1232_check_if_it_is_a_straight_line;
 //
 mod _1243_array_transformation;
+//
+mod _1252_cells_with_odd_values_in_a_matrix;
+//
+mod _1260_shift_2d_grid;
+//
+mod _1266_minimum_time_visition_all_points;
+//
+mod _1271_hexspeak;
+//
+mod _1275_find_winner_on_a_tic_tac_toe_game;
