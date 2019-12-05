@@ -40,6 +40,8 @@ mod _27_remove_element;
 //
 mod _28_implement_str_str;
 //
+mod _31_next_permutation;
+//
 mod _33_search_in_rotated_sorted_array;
 //
 mod _35_search_insert_position;
@@ -101,6 +103,8 @@ mod _122_best_time_to_buy_and_sell_stock_2;
 mod _125_valid_palindrome;
 //
 mod _136_single_number;
+//
+mod _139_word_break;
 //
 mod _146_lru_cache;
 //
@@ -191,6 +195,10 @@ mod _292_nim_game;
 mod _293_flip_game;
 //
 mod _303_range_sum_query;
+//
+mod _322_coin_change;
+//
+mod _332_reconstruct_itinerary;
 //
 mod _339_nested_list_weight_sum;
 //
@@ -302,6 +310,8 @@ mod _532_k_diff_pairs_in_an_array;
 //
 mod _538_convert_bst_to_greater_tree;
 //
+mod _539_minimum_time_difference;
+//
 mod _541_reverse_string_2;
 //
 mod _543_diameter_of_binary_tree;
@@ -335,6 +345,8 @@ mod _604_design_compressed_string_iterator;
 mod _605_can_place_flowers;
 //
 mod _606_construct_string_from_binary_tree;
+//
+mod _609_find_duplicate_file_in_system;
 //
 mod _617_merge_two_binary_trees;
 //
@@ -555,6 +567,8 @@ mod _999_available_captures_for_rook;
 mod _1002_find_common_characters;
 //
 mod _1005_maximize_sum_of_array_after_k_negations;
+//
+mod _1007_minimum_domino_rotations_for_equal_row;
 //
 mod _1009_complement_of_base_10_integer;
 //
