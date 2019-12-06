@@ -17,7 +17,7 @@ impl Solution {
             .collect();
         let mut hm: HashMap<String, usize> = HashMap::new();
         for word in p.split_whitespace() {
-            let e = hm.entry(word.to_string()).or_insert(0);
+            let e = hm.entry(word.to_string()).or_default();
             *e += 1;
         }
         let mut max = 0;

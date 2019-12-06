@@ -5,9 +5,9 @@ use std::collections::HashSet;
 
 impl Solution {
     fn unique_occurrences(arr: Vec<i32>) -> bool {
-        let mut hm = HashMap::new();
+        let mut hm: HashMap<i32, i32> = HashMap::new();
         for x in arr {
-            *hm.entry(x).or_insert(0) += 1;
+            *hm.entry(x).or_default() += 1;
         }
         let mut hs = HashSet::new();
         for x in hm.values() {

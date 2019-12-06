@@ -4,15 +4,15 @@ use std::collections::BTreeMap;
 
 impl Solution {
     fn arrays_intersection(arr1: Vec<i32>, arr2: Vec<i32>, arr3: Vec<i32>) -> Vec<i32> {
-        let mut btm = BTreeMap::new();
+        let mut btm: BTreeMap<i32, i32> = BTreeMap::new();
         for x in arr1 {
-            *btm.entry(x).or_insert(0) += 1;
+            *btm.entry(x).or_default() += 1;
         }
         for x in arr2 {
-            *btm.entry(x).or_insert(0) += 1;
+            *btm.entry(x).or_default() += 1;
         }
         for x in arr3 {
-            *btm.entry(x).or_insert(0) += 1;
+            *btm.entry(x).or_default() += 1;
         }
         let mut res = vec![];
         for (k, v) in btm {

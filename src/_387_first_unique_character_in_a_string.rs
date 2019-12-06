@@ -6,7 +6,7 @@ impl Solution {
     fn first_uniq_char(s: String) -> i32 {
         let mut hm: HashMap<char, i32> = HashMap::new();
         for c in s.chars() {
-            let e = hm.entry(c).or_insert(0);
+            let e = hm.entry(c).or_default();
             *e += 1;
         }
         for (i, c) in s.chars().enumerate() {

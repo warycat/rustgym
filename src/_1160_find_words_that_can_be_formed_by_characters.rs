@@ -6,7 +6,7 @@ impl Solution {
     fn str_2_hs(s: &str) -> HashMap<char, i32> {
         let mut hs: HashMap<char, i32> = HashMap::new();
         for c in s.chars() {
-            *hs.entry(c).or_insert(0) += 1;
+            *hs.entry(c).or_default() += 1;
         }
         hs
     }
@@ -18,7 +18,7 @@ impl Solution {
             let mut chars = chars.clone();
             let mut valid = true;
             for c in w.chars() {
-                let count = chars.entry(c).or_insert(0);
+                let count = chars.entry(c).or_default();
                 *count -= 1;
                 if *count < 0 {
                     valid = false;

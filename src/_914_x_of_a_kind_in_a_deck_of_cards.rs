@@ -15,7 +15,7 @@ impl Solution {
         let mut hm: HashMap<i32, i32> = HashMap::new();
         let mut max = 0;
         for x in deck {
-            let count = hm.entry(x).or_insert(0);
+            let count = hm.entry(x).or_default();
             *count += 1;
         }
         for &v in hm.values() {

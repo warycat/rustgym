@@ -18,7 +18,7 @@ impl Solution {
                 let a = &points[i];
                 let b = &points[j];
                 let distance_square = Self::distance_square(a, b);
-                let ea = hm.entry(distance_square).or_insert(0);
+                let ea = hm.entry(distance_square).or_default();
                 *ea += 1;
             }
             for &value in hm.values() {

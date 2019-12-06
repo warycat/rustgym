@@ -7,10 +7,10 @@ impl Solution {
         let mut text_count: HashMap<char, usize> = HashMap::new();
         let mut ballon_count: HashMap<char, usize> = HashMap::new();
         for c in "balloon".chars() {
-            *ballon_count.entry(c).or_insert(0) += 1;
+            *ballon_count.entry(c).or_default() += 1;
         }
         for c in text.chars() {
-            *text_count.entry(c).or_insert(0) += 1;
+            *text_count.entry(c).or_default() += 1;
         }
 
         let mut min = text.len();

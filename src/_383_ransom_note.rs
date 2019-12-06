@@ -12,7 +12,7 @@ impl Solution {
             return true;
         }
         for c in magazine.chars() {
-            let e = hm.entry(c).or_insert(0);
+            let e = hm.entry(c).or_default();
             *e += 1;
         }
         for c in ransom_note.chars() {

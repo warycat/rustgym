@@ -6,7 +6,7 @@ impl Solution {
     fn largest_unique_number(a: Vec<i32>) -> i32 {
         let mut btm: BTreeMap<i32, i32> = BTreeMap::new();
         for x in a {
-            *btm.entry(x).or_insert(0) += 1;
+            *btm.entry(x).or_default() += 1;
         }
         for (&k, &v) in btm.iter().rev() {
             if v == 1 {

@@ -9,7 +9,7 @@ impl Solution {
         for s in cpdomains {
             let (domains, count) = Solution::parse(s);
             for domain in domains {
-                let e = hm.entry(domain).or_insert(0);
+                let e = hm.entry(domain).or_default();
                 *e += count;
             }
         }

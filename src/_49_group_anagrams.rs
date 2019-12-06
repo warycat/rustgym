@@ -8,7 +8,7 @@ impl Solution {
         for s in strs {
             let mut v: Vec<char> = s.chars().collect();
             v.sort_unstable();
-            let group = group_hm.entry(v).or_insert_with(Vec::new);
+            let group = group_hm.entry(v).or_default();
             group.push(s);
         }
         let mut res: Vec<Vec<String>> = vec![];

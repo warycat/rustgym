@@ -6,10 +6,10 @@ impl Solution {
     fn uncommon_from_sentences(a: String, b: String) -> Vec<String> {
         let mut hs: BTreeMap<&str, i32> = BTreeMap::new();
         a.split_whitespace().for_each(|s| {
-            *hs.entry(s).or_insert(0) += 1;
+            *hs.entry(s).or_default() += 1;
         });
         b.split_whitespace().for_each(|s| {
-            *hs.entry(s).or_insert(0) += 1;
+            *hs.entry(s).or_default() += 1;
         });
         let mut res: Vec<String> = vec![];
         for (s, &v) in hs.iter() {

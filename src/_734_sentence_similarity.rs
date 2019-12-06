@@ -11,19 +11,19 @@ impl Solution {
     ) -> bool {
         let mut hm: HashMap<String, HashSet<String>> = HashMap::new();
         for word in &words1 {
-            let e = hm.entry(word.to_string()).or_insert_with(HashSet::new);
+            let e = hm.entry(word.to_string()).or_default();
             e.insert(word.to_string());
         }
         for word in &words2 {
-            let e = hm.entry(word.to_string()).or_insert_with(HashSet::new);
+            let e = hm.entry(word.to_string()).or_default();
             e.insert(word.to_string());
         }
         for pair in &pairs {
             let a = pair[0].to_string();
             let b = pair[1].to_string();
-            let e = hm.entry(a.to_string()).or_insert_with(HashSet::new);
+            let e = hm.entry(a.to_string()).or_default();
             e.insert(b.to_string());
-            let e = hm.entry(b.to_string()).or_insert_with(HashSet::new);
+            let e = hm.entry(b.to_string()).or_default();
             e.insert(a.to_string());
         }
         let n = words1.len();

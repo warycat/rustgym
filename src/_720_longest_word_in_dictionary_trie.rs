@@ -2,7 +2,7 @@ struct Solution;
 
 use std::collections::BTreeMap;
 
-#[derive(Debug, PartialEq, Eq, Clone)]
+#[derive(Debug, PartialEq, Eq, Clone, Default)]
 struct TrieNode {
     children: BTreeMap<char, TrieNode>,
     end: bool,
@@ -38,7 +38,7 @@ impl Trie {
     fn insert(&mut self, s: String) {
         let mut link = &mut self.root;
         for c in s.chars() {
-            link = link.children.entry(c).or_insert_with(TrieNode::new);
+            link = link.children.entry(c).or_default();
         }
         link.end = true;
     }

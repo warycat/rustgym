@@ -6,7 +6,7 @@ impl Solution {
     fn f(s: &str) -> i32 {
         let mut a: BTreeMap<char, i32> = BTreeMap::new();
         for c in s.chars() {
-            *a.entry(c).or_insert(0) += 1;
+            *a.entry(c).or_default() += 1;
         }
         *a.values().next().unwrap()
     }

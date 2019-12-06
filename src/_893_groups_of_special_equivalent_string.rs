@@ -15,9 +15,9 @@ impl Count {
         let mut odd: BTreeMap<char, usize> = BTreeMap::new();
         for (i, c) in s.chars().enumerate() {
             if i % 2 == 0 {
-                *even.entry(c).or_insert(0) += 1;
+                *even.entry(c).or_default() += 1;
             } else {
-                *odd.entry(c).or_insert(0) += 1;
+                *odd.entry(c).or_default() += 1;
             }
         }
         Count { even, odd }

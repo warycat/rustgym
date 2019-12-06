@@ -6,11 +6,11 @@ impl Solution {
     fn find_the_difference(s: String, t: String) -> char {
         let mut hm: HashMap<char, i32> = HashMap::new();
         for c in t.chars() {
-            let e = hm.entry(c).or_insert(0);
+            let e = hm.entry(c).or_default();
             *e += 1;
         }
         for c in s.chars() {
-            let e = hm.entry(c).or_insert(0);
+            let e = hm.entry(c).or_default();
             *e -= 1;
         }
         for (&c, &v) in hm.iter() {

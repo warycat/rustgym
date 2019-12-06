@@ -10,7 +10,7 @@ impl Solution {
         let mut hm: HashMap<i32, i32> = HashMap::new();
         if k == 0 {
             for x in nums {
-                let e = hm.entry(x).or_insert(0);
+                let e = hm.entry(x).or_default();
                 if let 1 = *e {
                     res += 1;
                 }

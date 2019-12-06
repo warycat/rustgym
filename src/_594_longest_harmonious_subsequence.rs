@@ -7,7 +7,7 @@ impl Solution {
         let mut hs: HashMap<i32, i32> = HashMap::new();
         let mut max = 0;
         for &x in &nums {
-            let e = hs.entry(x).or_insert(0);
+            let e = hs.entry(x).or_default();
             *e += 1;
         }
         for (x, u) in &hs {

@@ -11,7 +11,7 @@ impl Solution {
         for x in nums {
             sum += x;
             res += hm.get(&(sum - k)).unwrap_or(&0);
-            *hm.entry(sum).or_insert(0) += 1;
+            *hm.entry(sum).or_default() += 1;
         }
         res
     }
