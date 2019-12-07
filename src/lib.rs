@@ -112,6 +112,8 @@ mod _146_lru_cache;
 //
 mod _155_min_stack;
 //
+mod _166_fraction_to_recurring_decimal;
+//
 mod _167_two_sum_2;
 //
 mod _168_excel_sheet_column_title;
@@ -233,6 +235,8 @@ mod _387_first_unique_character_in_a_string;
 mod _389_find_the_difference;
 //
 mod _392_is_subsequence;
+//
+mod _393_utf8_validation;
 //
 mod _394_decode_string;
 //
@@ -631,6 +635,8 @@ mod _1119_remove_vowels_from_a_string;
 mod _1122_relative_sort_array;
 //
 mod _1128_number_of_equivalent_domino_pairs;
+//
+mod _1130_minimum_cost_tree_from_leaf_values;
 //
 mod _1133_largest_unique_number;
 //
