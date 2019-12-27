@@ -130,6 +130,8 @@ mod _189_rotate_array;
 //
 mod _198_house_robber;
 //
+mod _199_binary_tree_right_side_view;
+//
 mod _200_number_of_islands;
 //
 mod _202_happy_number;
@@ -697,3 +699,11 @@ mod _1266_minimum_time_visition_all_points;
 mod _1271_hexspeak;
 //
 mod _1275_find_winner_on_a_tic_tac_toe_game;
+//
+mod _1281_subtract_the_product_and_sum_of_digits_of_an_integer;
+//
+mod _1287_element_appearing_more_than_25_in_sorted_array;
+//
+mod _1290_convert_binary_number_in_a_linked_list_to_integer;
+//
+mod _1295_find_numbers_with_even_number_of_digits;
