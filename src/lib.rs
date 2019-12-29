@@ -5,6 +5,7 @@
 #![allow(clippy::needless_range_loop)]
 #![allow(clippy::float_cmp)]
 #![allow(clippy::cast_lossless)]
+#![allow(clippy::unreadable_literal)]
 //
 mod _1_two_sum;
 //
@@ -51,6 +52,8 @@ mod _36_valid_sudoku;
 mod _38_count_and_say;
 //
 mod _39_combination_sum;
+//
+mod _46_permutations;
 //
 mod _49_group_anagrams;
 //
@@ -160,11 +163,11 @@ mod _234_palindrome_linked_list;
 //
 mod _238_product_of_array_except_self;
 //
-mod _246_strobogrammantic_number;
-//
 mod _242_valid_anagram;
 //
 mod _243_shortest_word_distance;
+//
+mod _246_strobogrammantic_number;
 //
 mod _251_flatten_2d_vector;
 //
@@ -707,3 +710,5 @@ mod _1287_element_appearing_more_than_25_in_sorted_array;
 mod _1290_convert_binary_number_in_a_linked_list_to_integer;
 //
 mod _1295_find_numbers_with_even_number_of_digits;
+//
+mod _1299_replace_elements_with_greatest_element_on_right_side;
