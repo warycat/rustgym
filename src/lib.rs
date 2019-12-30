@@ -151,6 +151,8 @@ mod _217_contains_duplicate;
 //
 mod _219_contains_duplicate_2;
 //
+mod _221_maximal_square;
+//
 mod _225_implement_stack_using_queues;
 //
 mod _226_invert_binary_tree;
@@ -665,6 +667,8 @@ mod _1176_diet_plan_performance;
 //
 mod _1180_count_substring_with_only_one_distinct_letter;
 //
+mod _1181_before_and_after_puzzle;
+//
 mod _1184_distance_between_bus_stops;
 //
 mod _1185_day_of_the_week;
@@ -712,3 +716,5 @@ mod _1290_convert_binary_number_in_a_linked_list_to_integer;
 mod _1295_find_numbers_with_even_number_of_digits;
 //
 mod _1299_replace_elements_with_greatest_element_on_right_side;
+//
+mod _1304_find_n_unique_integers_sum_up_to_zero;
