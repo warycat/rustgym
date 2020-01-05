@@ -329,6 +329,8 @@ mod _541_reverse_string_2;
 //
 mod _543_diameter_of_binary_tree;
 //
+mod _547_friend_circles;
+//
 mod _551_student_attendance_record_1;
 //
 mod _557_reverse_words_in_a_string_3;
