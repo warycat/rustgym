@@ -365,6 +365,8 @@ mod _609_find_duplicate_file_in_system;
 //
 mod _617_merge_two_binary_trees;
 //
+mod _621_task_scheduler;
+//
 mod _624_maximum_distance_in_arrays;
 //
 mod _628_maximum_product_of_three_numbers;
@@ -618,6 +620,8 @@ mod _1042_flower_planting_with_no_adjacent;
 mod _1046_last_stone_weight;
 //
 mod _1047_remove_all_adjacent_duplicates_in_string;
+//
+mod _1048_longest_string_chain;
 //
 mod _1051_height_checker;
 //
