@@ -11,7 +11,6 @@ impl Solution {
             .map(|s| Solution::translate(s, &mapping))
             .collect();
         let mut sorted: Vec<String> = words.to_vec();
-        println!("{:?}", words);
         sorted.sort();
         words == sorted
     }

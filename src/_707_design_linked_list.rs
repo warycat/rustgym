@@ -103,8 +103,6 @@ fn test() {
     assert_eq!(obj.get(1), 3);
     let mut obj = MyLinkedList::new();
     obj.add_at_head(1);
-    println!("{:?}", obj);
     obj.add_at_index(1, 2);
-    println!("{:?}", obj);
     assert_eq!(obj.get(1), 2);
 }

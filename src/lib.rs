@@ -79,6 +79,8 @@ mod _88_merge_sorted_array;
 //
 mod _91_decode_ways;
 //
+mod _98_validate_binary_search_tree;
+//
 mod _100_same_tree;
 //
 mod _101_symmetric_tree;
@@ -157,6 +159,8 @@ mod _225_implement_stack_using_queues;
 //
 mod _226_invert_binary_tree;
 //
+mod _227_basic_calculator_2;
+//
 mod _231_power_of_two;
 //
 mod _232_implent_queue_using_stacks;
@@ -228,6 +232,10 @@ mod _350_intersection_of_two_arrays_2;
 mod _359_logger_rate_limiter;
 //
 mod _326_power_of_three;
+//
+mod _362_design_hit_counter;
+//
+mod _364_nested_list_weight_sum_2;
 //
 mod _367_valid_perfect_square;
 //
