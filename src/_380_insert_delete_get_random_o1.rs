@@ -1,5 +1,5 @@
+use crate::util::*;
 use std::collections::HashMap;
-use std::time::{SystemTime, UNIX_EPOCH};
 
 struct RandomizedSet {
     indexes: HashMap<i32, usize>,
@@ -36,12 +36,7 @@ impl RandomizedSet {
         }
     }
     fn get_random(&self) -> i32 {
-        let nanos = SystemTime::now()
-            .duration_since(UNIX_EPOCH)
-            .unwrap()
-            .subsec_nanos();
-
-        self.values[nanos as usize % self.values.len()]
+        self.values[random() as usize % self.values.len()]
     }
 }
 

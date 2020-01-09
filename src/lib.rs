@@ -232,6 +232,8 @@ mod _345_reverse_vowels_of_a_string;
 //
 mod _346_moving_average_from_data_stream;
 //
+mod _347_top_k_frequent_elements;
+//
 mod _348_design_tic_tac_toe;
 //
 mod _349_intersection_of_two_arrays;
@@ -335,6 +337,8 @@ mod _509_fibonacci_number;
 mod _520_detect_captial;
 //
 mod _521_longest_uncommon_subsequence_1;
+//
+mod _528_random_pick_with_weight;
 //
 mod _530_minimum_absolute_difference_in_bst;
 //
@@ -597,6 +601,8 @@ mod _977_squares_of_a_sorted_array;
 mod _981_time_based_key_value_store;
 //
 mod _985_sum_of_even_numbers_after_queries;
+//
+mod _986_interval_list_intersections;
 //
 mod _989_add_to_array_form_of_integer;
 //

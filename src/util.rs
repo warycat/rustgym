@@ -1,3 +1,5 @@
+use std::time::{SystemTime, UNIX_EPOCH};
+
 #[derive(PartialEq, Eq, Clone, Debug)]
 pub struct ListNode {
     pub val: i32,
@@ -20,4 +22,11 @@ impl ListNode {
     pub fn node(val: i32, next: ListLink) -> ListLink {
         Some(Box::new(ListNode { val, next }))
     }
+}
+
+pub fn random() -> u32 {
+    SystemTime::now()
+        .duration_since(UNIX_EPOCH)
+        .unwrap()
+        .subsec_nanos()
 }
