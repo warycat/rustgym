@@ -86,6 +86,8 @@ mod _88_merge_sorted_array;
 //
 mod _91_decode_ways;
 //
+mod _93_restore_ip_addresses;
+//
 mod _98_validate_binary_search_tree;
 //
 mod _100_same_tree;
@@ -167,6 +169,8 @@ mod _225_implement_stack_using_queues;
 mod _226_invert_binary_tree;
 //
 mod _227_basic_calculator_2;
+//
+mod _228_summary_ranges;
 //
 mod _231_power_of_two;
 //
@@ -423,6 +427,8 @@ mod _682_baseball_game;
 mod _686_repeated_string_match;
 //
 mod _687_longest_univalue_path;
+//
+mod _692_top_k_frequent_words;
 //
 mod _693_binary_number_with_alternating_bits;
 //
