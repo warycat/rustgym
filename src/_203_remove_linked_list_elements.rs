@@ -1,21 +1,8 @@
 struct Solution;
-
-#[derive(Eq, PartialEq, Clone, Debug)]
-struct ListNode {
-    val: i32,
-    next: List,
-}
-
-type List = Option<Box<ListNode>>;
-
-impl ListNode {
-    fn node(val: i32, next: List) -> List {
-        Some(Box::new(ListNode { val, next }))
-    }
-}
+use crate::util::*;
 
 impl Solution {
-    fn remove_elements(mut head: List, val: i32) -> List {
+    fn remove_elements(mut head: ListLink, val: i32) -> ListLink {
         let mut p = &mut head;
         while p.is_some() {
             if p.as_ref().unwrap().val == val {
@@ -30,25 +17,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let input = ListNode::node(
-        1,
-        ListNode::node(
-            2,
-            ListNode::node(
-                6,
-                ListNode::node(
-                    3,
-                    ListNode::node(4, ListNode::node(5, ListNode::node(6, None))),
-                ),
-            ),
-        ),
-    );
-    let output = ListNode::node(
-        1,
-        ListNode::node(
-            2,
-            ListNode::node(3, ListNode::node(4, ListNode::node(5, None))),
-        ),
-    );
+    let input = ListNode::list(vec![1, 2, 6, 3, 4, 5, 6]);
+    let output = ListNode::list(vec![1, 2, 3, 4, 5]);
     assert_eq!(Solution::remove_elements(input, 6), output);
 }

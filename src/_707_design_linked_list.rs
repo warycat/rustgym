@@ -1,20 +1,8 @@
-#[derive(Debug, PartialEq, Eq, Clone)]
-struct ListNode {
-    val: i32,
-    next: Link,
-}
-
-type Link = Option<Box<ListNode>>;
-
-impl ListNode {
-    fn node(val: i32, next: Link) -> Link {
-        Some(Box::new(ListNode { val, next }))
-    }
-}
+use crate::util::*;
 
 #[derive(Debug, PartialEq, Eq, Clone)]
 struct MyLinkedList {
-    head: Link,
+    head: ListLink,
 }
 
 impl MyLinkedList {
@@ -27,7 +15,7 @@ impl MyLinkedList {
             return -1;
         }
         let mut i = 0;
-        let mut link: &Link = &self.head;
+        let mut link: &ListLink = &self.head;
         while let Some(node) = link {
             if i == index {
                 return node.val;
@@ -43,7 +31,7 @@ impl MyLinkedList {
     }
 
     fn add_at_tail(&mut self, val: i32) {
-        let mut link: &mut Link = &mut self.head;
+        let mut link: &mut ListLink = &mut self.head;
         while let Some(node) = link {
             link = &mut node.next;
         }
@@ -55,7 +43,7 @@ impl MyLinkedList {
             self.add_at_head(val);
         } else {
             let mut i = 0;
-            let mut link: &mut Link = &mut self.head;
+            let mut link: &mut ListLink = &mut self.head;
             while let Some(node) = link {
                 if index == i + 1 {
                     node.next = ListNode::node(val, node.next.take());
@@ -73,7 +61,7 @@ impl MyLinkedList {
             return;
         }
         let mut i = 0;
-        let mut link: &mut Link = &mut self.head;
+        let mut link: &mut ListLink = &mut self.head;
         loop {
             match link {
                 None => {

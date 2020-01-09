@@ -1,26 +1,13 @@
 struct Solution;
-
-#[derive(PartialEq, Eq, Clone, Debug)]
-struct ListNode {
-    val: i32,
-    next: Link,
-}
-
-type Link = Option<Box<ListNode>>;
-
-impl ListNode {
-    fn node(val: i32, next: Link) -> Link {
-        Some(Box::new(ListNode { val, next }))
-    }
-}
+use crate::util::*;
 
 #[derive(PartialEq, Eq, Clone, Debug)]
 struct List {
-    head: Link,
+    head: ListLink,
 }
 
 impl List {
-    fn list(head: Link) -> Self {
+    fn new(head: ListLink) -> Self {
         List { head }
     }
 
@@ -51,8 +38,8 @@ impl Iterator for IntoIter {
 }
 
 impl Solution {
-    fn is_palindrome(head: Link) -> bool {
-        let list = List::list(head);
+    fn is_palindrome(head: ListLink) -> bool {
+        let list = List::new(head);
         let vec: Vec<i32> = list.into_iter().collect();
         for (i, &v) in vec.iter().rev().enumerate() {
             if v != vec[i] {
@@ -65,6 +52,6 @@ impl Solution {
 
 #[test]
 fn test() {
-    let head: Link = ListNode::node(1, ListNode::node(2, ListNode::node(3, None)));
+    let head = ListNode::list(vec![1, 2, 3]);
     assert_eq!(Solution::is_palindrome(head), false);
 }

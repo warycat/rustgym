@@ -1,21 +1,8 @@
 struct Solution;
-
-#[derive(PartialEq, Eq, Clone, Debug)]
-struct ListNode {
-    val: i32,
-    next: Link,
-}
-
-impl ListNode {
-    fn node(val: i32, next: Link) -> Link {
-        Some(Box::new(ListNode { next, val }))
-    }
-}
-
-type Link = Option<Box<ListNode>>;
+use crate::util::*;
 
 impl Solution {
-    fn merge_two_lists(l1: Link, l2: Link) -> Link {
+    fn merge_two_lists(l1: ListLink, l2: ListLink) -> ListLink {
         if l1.is_none() {
             return l2;
         }
@@ -36,17 +23,8 @@ impl Solution {
 
 #[test]
 fn test() {
-    let a = ListNode::node(1, ListNode::node(2, ListNode::node(4, None)));
-    let b = ListNode::node(1, ListNode::node(3, ListNode::node(4, None)));
-    let c = ListNode::node(
-        1,
-        ListNode::node(
-            1,
-            ListNode::node(
-                2,
-                ListNode::node(3, ListNode::node(4, ListNode::node(4, None))),
-            ),
-        ),
-    );
+    let a = ListNode::list(vec![1, 2, 4]);
+    let b = ListNode::list(vec![1, 3, 4]);
+    let c = ListNode::list(vec![1, 1, 2, 3, 4, 4]);
     assert_eq!(Solution::merge_two_lists(a, b), c);
 }

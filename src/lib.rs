@@ -6,6 +6,9 @@
 #![allow(clippy::float_cmp)]
 #![allow(clippy::cast_lossless)]
 #![allow(clippy::unreadable_literal)]
+
+//
+mod util;
 //
 mod _1_two_sum;
 //
@@ -35,6 +38,8 @@ mod _21_merge_two_sorted_lists;
 //
 mod _22_generate_parentheses;
 //
+mod _24_swap_nodes_in_pairs;
+//
 mod _26_remove_duplicates_from_sorted_array;
 //
 mod _27_remove_element;
@@ -54,6 +59,8 @@ mod _38_count_and_say;
 mod _39_combination_sum;
 //
 mod _46_permutations;
+//
+mod _48_rotate_image;
 //
 mod _49_group_anagrams;
 //
@@ -225,6 +232,8 @@ mod _345_reverse_vowels_of_a_string;
 //
 mod _346_moving_average_from_data_stream;
 //
+mod _348_design_tic_tac_toe;
+//
 mod _349_intersection_of_two_arrays;
 //
 mod _350_intersection_of_two_arrays_2;
@@ -282,6 +291,8 @@ mod _438_find_all_anagrams_in_a_string;
 mod _441_arranging_coins;
 //
 mod _443_string_compression;
+//
+mod _445_add_two_numbers_2;
 //
 mod _447_number_of_boomerangs;
 //

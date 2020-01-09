@@ -1,21 +1,8 @@
 struct Solution;
-
-#[derive(PartialEq, Eq, Clone, Debug)]
-struct ListNode {
-    val: i32,
-    next: List,
-}
-
-impl ListNode {
-    fn node(val: i32, next: List) -> List {
-        Some(Box::new(ListNode { val, next }))
-    }
-}
-
-type List = Option<Box<ListNode>>;
+use crate::util::*;
 
 impl Solution {
-    fn reverse_list(head: List) -> List {
+    fn reverse_list(head: ListLink) -> ListLink {
         let mut p = head;
         let mut prev = None;
         while let Some(mut node) = p {
@@ -28,27 +15,17 @@ impl Solution {
 }
 
 #[test]
-fn none() {
-    assert_eq!(Solution::reverse_list(None), None);
-}
-
-#[test]
-fn one_node() {
-    let a = ListNode::node(1, None);
-    let b = ListNode::node(1, None);
-    assert_eq!(Solution::reverse_list(a), b);
-}
-
-#[test]
-fn two_nodes() {
-    let a = ListNode::node(1, ListNode::node(2, None));
-    let b = ListNode::node(2, ListNode::node(1, None));
-    assert_eq!(Solution::reverse_list(a), b);
-}
-
-#[test]
-fn three_nodes() {
-    let a = ListNode::node(1, ListNode::node(2, ListNode::node(3, None)));
-    let b = ListNode::node(3, ListNode::node(2, ListNode::node(1, None)));
-    assert_eq!(Solution::reverse_list(a), b);
+fn test() {
+    let head = ListNode::list(vec![]);
+    let res = ListNode::list(vec![]);
+    assert_eq!(Solution::reverse_list(head), res);
+    let head = ListNode::list(vec![1]);
+    let res = ListNode::list(vec![1]);
+    assert_eq!(Solution::reverse_list(head), res);
+    let head = ListNode::list(vec![1, 2]);
+    let res = ListNode::list(vec![2, 1]);
+    assert_eq!(Solution::reverse_list(head), res);
+    let head = ListNode::list(vec![1, 2, 3]);
+    let res = ListNode::list(vec![3, 2, 1]);
+    assert_eq!(Solution::reverse_list(head), res);
 }
