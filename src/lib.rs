@@ -158,6 +158,8 @@ mod _205_isomorphic_strings;
 //
 mod _206_reverse_linked_list;
 //
+mod _210_course_schedule_2;
+//
 mod _217_contains_duplicate;
 //
 mod _219_contains_duplicate_2;
@@ -342,6 +344,8 @@ mod _520_detect_captial;
 //
 mod _521_longest_uncommon_subsequence_1;
 //
+mod _525_contiguous_array;
+//
 mod _528_random_pick_with_weight;
 //
 mod _530_minimum_absolute_difference_in_bst;
@@ -431,6 +435,8 @@ mod _687_longest_univalue_path;
 mod _692_top_k_frequent_words;
 //
 mod _693_binary_number_with_alternating_bits;
+//
+mod _695_max_area_of_island;
 //
 mod _696_count_binary_substrings;
 //
