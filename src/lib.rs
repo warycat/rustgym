@@ -18,11 +18,15 @@ mod _3_longest_substring_without_repeating_characters;
 //
 mod _5_longest_palindromic_substring;
 //
+mod _6_zigzag_conversion;
+//
 mod _7_reverse_integer;
 //
 mod _9_palindrome_number;
 //
 mod _11_container_with_most_water;
+//
+mod _12_integer_to_roman;
 //
 mod _13_roman_to_integer;
 //
@@ -49,6 +53,8 @@ mod _28_implement_str_str;
 mod _31_next_permutation;
 //
 mod _33_search_in_rotated_sorted_array;
+//
+mod _34_find_first_and_last_position_of_elements_in_sorted_array;
 //
 mod _35_search_insert_position;
 //
@@ -77,6 +83,8 @@ mod _67_add_binary;
 mod _69_sqrt;
 //
 mod _70_climbing_stairs;
+//
+mod _78_subsets;
 //
 mod _79_word_search;
 //
@@ -121,6 +129,8 @@ mod _127_word_ladder;
 mod _136_single_number;
 //
 mod _139_word_break;
+//
+mod _143_reorder_list;
 //
 mod _146_lru_cache;
 //
@@ -473,6 +483,8 @@ mod _733_flood_fill;
 mod _734_sentence_similarity;
 //
 mod _735_asteroid_collision;
+//
+mod _739_daily_temperatures;
 //
 mod _744_find_smallest_letter_greater_than_target;
 //
