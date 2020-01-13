@@ -1,30 +1,13 @@
 struct Solution;
+use crate::util::*;
 
-#[derive(Debug, PartialEq, Eq, Clone)]
-struct TreeNode {
-    val: i32,
-    left: Link,
-    right: Link,
+trait Leaves {
+    fn dfs(&self, leaves: &mut Vec<i32>);
 }
 
-use std::cell::RefCell;
-use std::rc::Rc;
-
-type Link = Option<Rc<RefCell<TreeNode>>>;
-
-impl TreeNode {
-    fn branch(val: i32, left: Link, right: Link) -> Link {
-        Some(Rc::new(RefCell::new(TreeNode { val, left, right })))
-    }
-    fn leaf(val: i32) -> Link {
-        Some(Rc::new(RefCell::new(TreeNode {
-            val,
-            left: None,
-            right: None,
-        })))
-    }
-    fn dfs(link: &Link, leaves: &mut Vec<i32>) {
-        if let Some(node) = link {
+impl Leaves for TreeLink {
+    fn dfs(&self, leaves: &mut Vec<i32>) {
+        if let Some(node) = self {
             let node = node.borrow();
             let left = &node.left;
             let right = &node.right;
@@ -39,34 +22,26 @@ impl TreeNode {
 }
 
 impl Solution {
-    fn leaf_similar(root1: Link, root2: Link) -> bool {
+    fn leaf_similar(root1: TreeLink, root2: TreeLink) -> bool {
         let mut leaves1: Vec<i32> = vec![];
         let mut leaves2: Vec<i32> = vec![];
-        TreeNode::dfs(&root1, &mut leaves1);
-        TreeNode::dfs(&root2, &mut leaves2);
+        root1.dfs(&mut leaves1);
+        root2.dfs(&mut leaves2);
         leaves1 == leaves2
     }
 }
 
 #[test]
 fn test() {
-    let root1 = TreeNode::branch(
+    let root1 = tree!(
         3,
-        TreeNode::branch(
-            5,
-            TreeNode::leaf(6),
-            TreeNode::branch(2, TreeNode::leaf(7), TreeNode::leaf(4)),
-        ),
-        TreeNode::branch(1, TreeNode::leaf(9), TreeNode::leaf(8)),
+        tree!(5, tree!(6), tree!(2, tree!(7), tree!(4))),
+        tree!(1, tree!(9), tree!(8))
     );
-    let root2 = TreeNode::branch(
+    let root2 = tree!(
         4,
-        TreeNode::branch(
-            5,
-            TreeNode::leaf(6),
-            TreeNode::branch(2, TreeNode::leaf(7), TreeNode::leaf(4)),
-        ),
-        TreeNode::branch(1, TreeNode::leaf(9), TreeNode::leaf(8)),
+        tree!(5, tree!(6), tree!(2, tree!(7), tree!(4))),
+        tree!(1, tree!(9), tree!(8))
     );
     assert_eq!(Solution::leaf_similar(root1, root2), true);
 }

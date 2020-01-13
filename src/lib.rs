@@ -8,6 +8,7 @@
 #![allow(clippy::unreadable_literal)]
 
 //
+#[macro_use]
 mod util;
 //
 mod _1_two_sum;
@@ -21,6 +22,8 @@ mod _5_longest_palindromic_substring;
 mod _6_zigzag_conversion;
 //
 mod _7_reverse_integer;
+//
+mod _8_string_to_integer;
 //
 mod _9_palindrome_number;
 //
@@ -84,6 +87,8 @@ mod _69_sqrt;
 //
 mod _70_climbing_stairs;
 //
+mod _71_simplify_path;
+//
 mod _78_subsets;
 //
 mod _79_word_search;
@@ -103,6 +108,8 @@ mod _100_same_tree;
 mod _101_symmetric_tree;
 //
 mod _104_maximum_depth_of_binary_tree;
+//
+mod _105_construct_binary_tree_from_preorder_and_inorder_traversal;
 //
 mod _107_binary_tree_level_order_traversal_2;
 //
@@ -149,6 +156,8 @@ mod _170_two_sum_3;
 mod _171_excel_sheet_column_number;
 //
 mod _172_factorial_trailing_zeroes;
+//
+mod _173_binary_search_tree_iterator;
 //
 mod _189_rotate_array;
 //

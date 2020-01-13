@@ -1,34 +1,17 @@
 struct Solution;
+use crate::util::*;
 
-#[derive(Debug, PartialEq, Eq, Clone)]
-struct TreeNode {
-    val: i32,
-    left: Link,
-    right: Link,
+trait Inorder {
+    fn inorder(self, next: TreeLink) -> TreeLink;
 }
 
-use std::cell::RefCell;
-use std::rc::Rc;
-
-type Link = Option<Rc<RefCell<TreeNode>>>;
-
-impl TreeNode {
-    fn branch(val: i32, left: Link, right: Link) -> Link {
-        Some(Rc::new(RefCell::new(TreeNode { val, left, right })))
-    }
-    fn leaf(val: i32) -> Link {
-        Some(Rc::new(RefCell::new(TreeNode {
-            val,
-            left: None,
-            right: None,
-        })))
-    }
-    fn inorder(link: Link, next: Link) -> Link {
-        if let Some(node) = link.as_ref() {
+impl Inorder for TreeLink {
+    fn inorder(self, next: TreeLink) -> TreeLink {
+        if let Some(node) = self.as_ref() {
             let mut node = node.borrow_mut();
             let left = node.left.take();
             let right = node.right.take();
-            let res = Self::inorder(left, link.clone());
+            let res = Self::inorder(left, self.clone());
             node.right = Self::inorder(right, next);
             res
         } else {
@@ -38,50 +21,38 @@ impl TreeNode {
 }
 
 impl Solution {
-    fn increasing_bst(root: Link) -> Link {
-        TreeNode::inorder(root, None)
+    fn increasing_bst(root: TreeLink) -> TreeLink {
+        root.inorder(None)
     }
 }
 
 #[test]
 fn test() {
-    let root = TreeNode::branch(
+    let root = tree!(
         5,
-        TreeNode::branch(
-            3,
-            TreeNode::branch(2, TreeNode::leaf(1), None),
-            TreeNode::leaf(4),
-        ),
-        TreeNode::branch(
-            6,
-            None,
-            TreeNode::branch(8, TreeNode::leaf(7), TreeNode::leaf(9)),
-        ),
+        tree!(3, tree!(2, tree!(1), None), tree!(4)),
+        tree!(6, None, tree!(8, tree!(7), tree!(9)))
     );
-    let res = TreeNode::branch(
+    let res = tree!(
         1,
         None,
-        TreeNode::branch(
+        tree!(
             2,
             None,
-            TreeNode::branch(
+            tree!(
                 3,
                 None,
-                TreeNode::branch(
+                tree!(
                     4,
                     None,
-                    TreeNode::branch(
+                    tree!(
                         5,
                         None,
-                        TreeNode::branch(
-                            6,
-                            None,
-                            TreeNode::branch(7, None, TreeNode::branch(8, None, TreeNode::leaf(9))),
-                        ),
-                    ),
-                ),
-            ),
-        ),
+                        tree!(6, None, tree!(7, None, tree!(8, None, tree!(9))))
+                    )
+                )
+            )
+        )
     );
     assert_eq!(Solution::increasing_bst(root), res);
 }

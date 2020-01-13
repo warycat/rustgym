@@ -1,37 +1,14 @@
 struct Solution;
-
-struct TreeNode {
-    val: i32,
-    left: Tree,
-    right: Tree,
-}
-
-impl TreeNode {
-    fn branch(val: i32, left: Tree, right: Tree) -> Tree {
-        Some(Rc::new(RefCell::new(TreeNode { val, left, right })))
-    }
-    fn leaf(val: i32) -> Tree {
-        Some(Rc::new(RefCell::new(TreeNode {
-            val,
-            left: None,
-            right: None,
-        })))
-    }
-}
-
-use std::cell::RefCell;
+use crate::util::*;
 use std::collections::VecDeque;
-use std::rc::Rc;
-
-type Tree = Option<Rc<RefCell<TreeNode>>>;
 
 struct Pair {
-    tree: Tree,
+    tree: TreeLink,
     level: usize,
 }
 
 impl Solution {
-    fn level_order_bottom(root: Tree) -> Vec<Vec<i32>> {
+    fn level_order_bottom(root: TreeLink) -> Vec<Vec<i32>> {
         let mut levels: Vec<Vec<i32>> = vec![];
         let mut queue: VecDeque<Pair> = VecDeque::new();
         if root.is_some() {
@@ -73,11 +50,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let tree = TreeNode::branch(
-        3,
-        TreeNode::leaf(9),
-        TreeNode::branch(20, TreeNode::leaf(15), TreeNode::leaf(7)),
-    );
+    let tree = tree!(3, tree!(9), tree!(20, tree!(15), tree!(7)));
     let nodes = vec![vec![15, 7], vec![9, 20], vec![3]];
     assert_eq!(Solution::level_order_bottom(tree), nodes);
 }

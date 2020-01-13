@@ -1,30 +1,14 @@
 struct Solution;
+use crate::util::*;
+use std::i32;
 
-struct TreeNode {
-    val: i32,
-    left: Link,
-    right: Link,
+trait Inorder {
+    fn inorder(&self, prev: &mut Option<i32>, min: &mut i32);
 }
 
-use std::cell::RefCell;
-use std::i32;
-use std::rc::Rc;
-
-type Link = Option<Rc<RefCell<TreeNode>>>;
-
-impl TreeNode {
-    fn branch(val: i32, left: Link, right: Link) -> Link {
-        Some(Rc::new(RefCell::new(TreeNode { val, left, right })))
-    }
-    fn leaf(val: i32) -> Link {
-        Some(Rc::new(RefCell::new(TreeNode {
-            val,
-            left: None,
-            right: None,
-        })))
-    }
-    fn inorder(link: &Link, prev: &mut Option<i32>, min: &mut i32) {
-        if let Some(node) = link {
+impl Inorder for TreeLink {
+    fn inorder(&self, prev: &mut Option<i32>, min: &mut i32) {
+        if let Some(node) = self {
             let node = node.borrow();
             Self::inorder(&node.left, prev, min);
             if let Some(prev_val) = prev.as_mut() {
@@ -39,20 +23,16 @@ impl TreeNode {
 }
 
 impl Solution {
-    fn min_diff_in_bst(root: Link) -> i32 {
+    fn min_diff_in_bst(root: TreeLink) -> i32 {
         let mut min = i32::MAX;
         let mut prev: Option<i32> = None;
-        TreeNode::inorder(&root, &mut prev, &mut min);
+        root.inorder(&mut prev, &mut min);
         min
     }
 }
 
 #[test]
 fn test() {
-    let root = TreeNode::branch(
-        4,
-        TreeNode::branch(2, TreeNode::leaf(1), TreeNode::leaf(3)),
-        TreeNode::leaf(6),
-    );
+    let root = tree!(4, tree!(2, tree!(1), tree!(3)), tree!(6));
     assert_eq!(Solution::min_diff_in_bst(root), 1);
 }

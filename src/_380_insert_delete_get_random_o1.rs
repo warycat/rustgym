@@ -1,7 +1,9 @@
-use crate::util::*;
+extern crate rand;
+use rand::prelude::*;
 use std::collections::HashMap;
 
 struct RandomizedSet {
+    rng: ThreadRng,
     indexes: HashMap<i32, usize>,
     values: Vec<i32>,
 }
@@ -9,6 +11,7 @@ struct RandomizedSet {
 impl RandomizedSet {
     fn new() -> Self {
         RandomizedSet {
+            rng: rand::thread_rng(),
             indexes: HashMap::new(),
             values: vec![],
         }
@@ -35,8 +38,9 @@ impl RandomizedSet {
             false
         }
     }
-    fn get_random(&self) -> i32 {
-        self.values[random() as usize % self.values.len()]
+    fn get_random(&mut self) -> i32 {
+        let index = self.rng.gen_range(0, self.values.len()) as usize;
+        self.values[index]
     }
 }
 

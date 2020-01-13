@@ -1,50 +1,22 @@
 struct Solution;
+use crate::util::*;
 
-struct TreeNode {
-    val: i32,
-    left: Link,
-    right: Link,
+trait Diameter {
+    fn diameter(&self) -> i32;
+    fn max_depth(&self, max: &mut i32) -> i32;
 }
 
-use std::cell::RefCell;
-use std::i32;
-use std::rc::Rc;
-
-type Link = Option<Rc<RefCell<TreeNode>>>;
-
-impl TreeNode {
-    fn branch(val: i32, left: Link, right: Link) -> Link {
-        Some(Rc::new(RefCell::new(TreeNode { val, left, right })))
-    }
-
-    fn leaf(val: i32) -> Link {
-        Some(Rc::new(RefCell::new(TreeNode {
-            val,
-            left: None,
-            right: None,
-        })))
-    }
-}
-
-struct Tree {
-    root: Link,
-}
-
-impl Tree {
-    fn new(root: Link) -> Self {
-        Tree { root }
-    }
-
+impl Diameter for TreeLink {
     fn diameter(&self) -> i32 {
         let mut max: i32 = 0;
-        Tree::max_depth(&self.root, &mut max);
+        self.max_depth(&mut max);
         max
     }
 
-    fn max_depth(link: &Link, max: &mut i32) -> i32 {
-        if let Some(node) = link {
-            let left = Tree::max_depth(&node.borrow().left, max);
-            let right = Tree::max_depth(&node.borrow().right, max);
+    fn max_depth(&self, max: &mut i32) -> i32 {
+        if let Some(node) = self {
+            let left = node.borrow().left.max_depth(max);
+            let right = &node.borrow().right.max_depth(max);
             *max = i32::max(*max, left + right);
             i32::max(left + 1, right + 1)
         } else {
@@ -54,18 +26,13 @@ impl Tree {
 }
 
 impl Solution {
-    fn diameter_of_binary_tree(root: Link) -> i32 {
-        let tree = Tree::new(root);
-        tree.diameter()
+    fn diameter_of_binary_tree(root: TreeLink) -> i32 {
+        root.diameter()
     }
 }
 
 #[test]
 fn test() {
-    let root = TreeNode::branch(
-        1,
-        TreeNode::branch(2, TreeNode::leaf(4), TreeNode::leaf(5)),
-        TreeNode::leaf(3),
-    );
+    let root = tree!(1, tree!(2, tree!(4), tree!(5)), tree!(3));
     assert_eq!(Solution::diameter_of_binary_tree(root), 3);
 }

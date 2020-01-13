@@ -1,55 +1,32 @@
 struct Solution;
+use crate::util::*;
 
-#[derive(Debug, PartialEq, Eq)]
-struct TreeNode {
-    val: i32,
-    left: Link,
-    right: Link,
+trait SubTree {
+    fn is_subtree(&self, t: &TreeLink) -> bool;
 }
-
-use std::cell::RefCell;
-use std::rc::Rc;
-
-type Link = Option<Rc<RefCell<TreeNode>>>;
-
-impl TreeNode {
-    fn branch(val: i32, left: Link, right: Link) -> Link {
-        Some(Rc::new(RefCell::new(TreeNode { val, left, right })))
-    }
-    fn leaf(val: i32) -> Link {
-        Some(Rc::new(RefCell::new(TreeNode {
-            val,
-            left: None,
-            right: None,
-        })))
-    }
-}
-
-impl Solution {
-    fn is_subtree(s: Link, t: Link) -> bool {
-        Solution::is_subtree_r(s, &t)
-    }
-
-    fn is_subtree_r(s: Link, t: &Link) -> bool {
-        if s == *t {
+impl SubTree for TreeLink {
+    fn is_subtree(&self, t: &TreeLink) -> bool {
+        if self == t {
             return true;
         }
-        if let Some(node) = s {
-            let left: Link = node.borrow_mut().left.take();
-            let right: Link = node.borrow_mut().right.take();
-            return Solution::is_subtree_r(left, t) || Solution::is_subtree_r(right, t);
+        if let Some(node) = self {
+            let left = &node.borrow().left;
+            let right = &node.borrow().right;
+            return left.is_subtree(t) || right.is_subtree(t);
         }
         false
     }
 }
 
+impl Solution {
+    fn is_subtree(s: TreeLink, t: TreeLink) -> bool {
+        s.is_subtree(&t)
+    }
+}
+
 #[test]
 fn test() {
-    let s: Link = TreeNode::branch(
-        3,
-        TreeNode::branch(4, TreeNode::leaf(1), TreeNode::leaf(2)),
-        TreeNode::leaf(5),
-    );
-    let t: Link = TreeNode::branch(4, TreeNode::leaf(1), TreeNode::leaf(2));
+    let s = tree!(3, tree!(4, tree!(1), tree!(2)), tree!(5));
+    let t = tree!(4, tree!(1), tree!(2));
     assert_eq!(Solution::is_subtree(s, t), true);
 }

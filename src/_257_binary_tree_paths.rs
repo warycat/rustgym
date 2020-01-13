@@ -1,29 +1,5 @@
 struct Solution;
-
-#[derive(Debug, PartialEq, Eq, Clone)]
-struct TreeNode {
-    val: i32,
-    left: Link,
-    right: Link,
-}
-
-use std::cell::RefCell;
-use std::rc::Rc;
-
-type Link = Option<Rc<RefCell<TreeNode>>>;
-
-impl TreeNode {
-    fn branch(val: i32, left: Link, right: Link) -> Link {
-        Some(Rc::new(RefCell::new(TreeNode { val, left, right })))
-    }
-    fn leaf(val: i32) -> Link {
-        Some(Rc::new(RefCell::new(TreeNode {
-            val,
-            left: None,
-            right: None,
-        })))
-    }
-}
+use crate::util::*;
 
 struct Path {
     stack: Vec<i32>,
@@ -37,14 +13,14 @@ impl ToString for Path {
 }
 
 impl Solution {
-    fn binary_tree_paths(root: Link) -> Vec<String> {
+    fn binary_tree_paths(root: TreeLink) -> Vec<String> {
         let mut path = Path { stack: vec![] };
         let mut res = vec![];
         Solution::dfs(&root, &mut path, &mut res);
         res
     }
 
-    fn dfs(link: &Link, path: &mut Path, v: &mut Vec<String>) {
+    fn dfs(link: &TreeLink, path: &mut Path, v: &mut Vec<String>) {
         if let Some(node) = link {
             let node = node.borrow();
             path.stack.push(node.val);
@@ -64,11 +40,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let root = TreeNode::branch(
-        1,
-        TreeNode::branch(2, None, TreeNode::leaf(5)),
-        TreeNode::leaf(3),
-    );
+    let root = tree!(1, tree!(2, None, tree!(5)), tree!(3));
     let paths: Vec<String> = ["1->2->5", "1->3"].iter().map(|s| s.to_string()).collect();
     assert_eq!(Solution::binary_tree_paths(root), paths);
 }

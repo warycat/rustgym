@@ -1,34 +1,11 @@
 struct Solution;
-
-struct TreeNode {
-    val: i32,
-    left: Tree,
-    right: Tree,
-}
-
-use std::cell::RefCell;
-use std::rc::Rc;
-
-type Tree = Option<Rc<RefCell<TreeNode>>>;
-
-impl TreeNode {
-    fn branch(val: i32, left: Tree, right: Tree) -> Tree {
-        Some(Rc::new(RefCell::new(TreeNode { val, left, right })))
-    }
-    fn leaf(val: i32) -> Tree {
-        Some(Rc::new(RefCell::new(TreeNode {
-            val,
-            left: None,
-            right: None,
-        })))
-    }
-}
+use crate::util::*;
 
 trait Height {
     fn height(&self) -> usize;
 }
 
-impl Height for Tree {
+impl Height for TreeLink {
     fn height(&self) -> usize {
         match self {
             None => 0,
@@ -41,7 +18,7 @@ impl Height for Tree {
 }
 
 impl Solution {
-    fn is_balanced_r(root: &Tree) -> bool {
+    fn is_balanced_r(root: &TreeLink) -> bool {
         match root {
             None => true,
             Some(node) => {
@@ -61,27 +38,19 @@ impl Solution {
             }
         }
     }
-    fn is_balanced(root: Tree) -> bool {
+    fn is_balanced(root: TreeLink) -> bool {
         Solution::is_balanced_r(&root)
     }
 }
 
 #[test]
 fn test() {
-    let a = TreeNode::branch(
-        3,
-        TreeNode::leaf(9),
-        TreeNode::branch(20, TreeNode::leaf(15), TreeNode::leaf(7)),
-    );
+    let a = tree!(3, tree!(9), tree!(20, tree!(15), tree!(7)));
     assert_eq!(Solution::is_balanced(a), true);
-    let b = TreeNode::branch(
+    let b = tree!(
         1,
-        TreeNode::branch(
-            2,
-            TreeNode::branch(3, TreeNode::leaf(4), TreeNode::leaf(4)),
-            TreeNode::leaf(3),
-        ),
-        TreeNode::leaf(2),
+        tree!(2, tree!(3, tree!(4), tree!(4)), tree!(3)),
+        tree!(2)
     );
     assert_eq!(Solution::is_balanced(b), false);
 }

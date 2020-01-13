@@ -1,32 +1,8 @@
 struct Solution;
-
-#[derive(Debug, PartialEq, Eq, Clone)]
-struct TreeNode {
-    val: i32,
-    left: Link,
-    right: Link,
-}
-
-use std::cell::RefCell;
-use std::rc::Rc;
-
-type Link = Option<Rc<RefCell<TreeNode>>>;
-
-impl TreeNode {
-    fn branch(val: i32, left: Link, right: Link) -> Link {
-        Some(Rc::new(RefCell::new(TreeNode { val, left, right })))
-    }
-    fn leaf(val: i32) -> Link {
-        Some(Rc::new(RefCell::new(TreeNode {
-            val,
-            left: None,
-            right: None,
-        })))
-    }
-}
+use crate::util::*;
 
 impl Solution {
-    fn trim_bst(root: Link, l: i32, r: i32) -> Link {
+    fn trim_bst(root: TreeLink, l: i32, r: i32) -> TreeLink {
         if let Some(node) = root.clone() {
             let mut node = node.borrow_mut();
             let left = node.left.take();
@@ -48,14 +24,10 @@ impl Solution {
 
 #[test]
 fn test() {
-    let root = TreeNode::branch(1, TreeNode::leaf(0), TreeNode::leaf(2));
-    let res = TreeNode::branch(1, None, TreeNode::leaf(2));
+    let root = tree!(1, tree!(0), tree!(2));
+    let res = tree!(1, None, tree!(2));
     assert_eq!(Solution::trim_bst(root, 1, 2), res);
-    let root = TreeNode::branch(
-        3,
-        TreeNode::branch(0, None, TreeNode::branch(2, TreeNode::leaf(1), None)),
-        TreeNode::leaf(4),
-    );
-    let res = TreeNode::branch(3, TreeNode::branch(2, TreeNode::leaf(1), None), None);
+    let root = tree!(3, tree!(0, None, tree!(2, tree!(1), None)), tree!(4));
+    let res = tree!(3, tree!(2, tree!(1), None), None);
     assert_eq!(Solution::trim_bst(root, 1, 3), res);
 }

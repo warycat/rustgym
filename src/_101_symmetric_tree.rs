@@ -1,32 +1,8 @@
 struct Solution;
-
-struct TreeNode {
-    val: i32,
-    left: Tree,
-    right: Tree,
-}
-
-impl TreeNode {
-    fn branch(val: i32, left: Tree, right: Tree) -> Tree {
-        Some(Rc::new(RefCell::new(TreeNode { val, left, right })))
-    }
-
-    fn leaf(val: i32) -> Tree {
-        Some(Rc::new(RefCell::new(TreeNode {
-            val,
-            left: None,
-            right: None,
-        })))
-    }
-}
-
-use std::cell::RefCell;
-use std::rc::Rc;
-
-type Tree = Option<Rc<RefCell<TreeNode>>>;
+use crate::util::*;
 
 impl Solution {
-    fn is_symmetric_r(p: &Tree, q: &Tree) -> bool {
+    fn is_symmetric_r(p: &TreeLink, q: &TreeLink) -> bool {
         match (p, q) {
             (Some(p), Some(q)) => {
                 let p = p.borrow();
@@ -40,7 +16,7 @@ impl Solution {
         }
     }
 
-    fn is_symmetric(root: Tree) -> bool {
+    fn is_symmetric(root: TreeLink) -> bool {
         if let Some(node) = root {
             let node = node.borrow();
             return Solution::is_symmetric_r(&node.left, &node.right);
@@ -51,10 +27,10 @@ impl Solution {
 
 #[test]
 fn test() {
-    let q = TreeNode::branch(
+    let q = tree!(
         1,
-        TreeNode::branch(2, TreeNode::leaf(1), TreeNode::leaf(1)),
-        TreeNode::branch(2, TreeNode::leaf(1), TreeNode::leaf(1)),
+        tree!(2, tree!(1), tree!(1)),
+        tree!(2, tree!(1), tree!(1))
     );
     assert_eq!(Solution::is_symmetric(q), true)
 }

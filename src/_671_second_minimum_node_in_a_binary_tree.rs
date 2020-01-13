@@ -1,30 +1,14 @@
 struct Solution;
+use crate::util::*;
 
-#[derive(Debug, PartialEq, Eq, Clone)]
-struct TreeNode {
-    val: i32,
-    left: Link,
-    right: Link,
+trait SecondMinimum {
+    fn find_second_minimum_value(&self, min: &mut Option<i32>) -> Option<i32>;
+    fn option_min(a: Option<i32>, b: Option<i32>) -> Option<i32>;
 }
 
-use std::cell::RefCell;
-use std::rc::Rc;
-
-type Link = Option<Rc<RefCell<TreeNode>>>;
-
-impl TreeNode {
-    fn branch(val: i32, left: Link, right: Link) -> Link {
-        Some(Rc::new(RefCell::new(TreeNode { val, left, right })))
-    }
-    fn leaf(val: i32) -> Link {
-        Some(Rc::new(RefCell::new(TreeNode {
-            val,
-            left: None,
-            right: None,
-        })))
-    }
-    fn find_second_minimum_value(root: &Link, min: &mut Option<i32>) -> Option<i32> {
-        if let Some(node) = root {
+impl SecondMinimum for TreeLink {
+    fn find_second_minimum_value(&self, min: &mut Option<i32>) -> Option<i32> {
+        if let Some(node) = self {
             let node = node.borrow();
             let left = &node.left;
             let right = &node.right;
@@ -53,9 +37,9 @@ impl TreeNode {
 }
 
 impl Solution {
-    fn find_second_minimum_value(root: Link) -> i32 {
+    fn find_second_minimum_value(root: TreeLink) -> i32 {
         let mut min = None;
-        if let Some(second_min) = TreeNode::find_second_minimum_value(&root, &mut min) {
+        if let Some(second_min) = root.find_second_minimum_value(&mut min) {
             second_min
         } else {
             -1
@@ -65,12 +49,8 @@ impl Solution {
 
 #[test]
 fn test() {
-    let root = TreeNode::branch(
-        2,
-        TreeNode::leaf(2),
-        TreeNode::branch(5, TreeNode::leaf(5), TreeNode::leaf(7)),
-    );
+    let root = tree!(2, tree!(2), tree!(5, tree!(5), tree!(7)));
     assert_eq!(Solution::find_second_minimum_value(root), 5);
-    let root = TreeNode::branch(2, TreeNode::leaf(2), TreeNode::leaf(2));
+    let root = tree!(2, tree!(2), tree!(2));
     assert_eq!(Solution::find_second_minimum_value(root), -1);
 }

@@ -1,29 +1,13 @@
 struct Solution;
+use crate::util::*;
 
-struct TreeNode {
-    val: i32,
-    left: Link,
-    right: Link,
+trait Inorder {
+    fn inorder(&self, v: &mut Vec<i32>, target: i32);
 }
 
-use std::cell::RefCell;
-use std::rc::Rc;
-
-type Link = Option<Rc<RefCell<TreeNode>>>;
-
-impl TreeNode {
-    fn branch(val: i32, left: Link, right: Link) -> Link {
-        Some(Rc::new(RefCell::new(TreeNode { val, left, right })))
-    }
-    fn leaf(val: i32) -> Link {
-        Some(Rc::new(RefCell::new(TreeNode {
-            val,
-            left: None,
-            right: None,
-        })))
-    }
-    fn inorder(root: &Link, v: &mut Vec<i32>, target: i32) {
-        if let Some(node) = root {
+impl Inorder for TreeLink {
+    fn inorder(&self, v: &mut Vec<i32>, target: i32) {
+        if let Some(node) = self {
             let node = node.borrow();
             let left = &node.left;
             let right = &node.right;
@@ -35,9 +19,9 @@ impl TreeNode {
 }
 
 impl Solution {
-    fn find_target(root: Link, k: i32) -> bool {
+    fn find_target(root: TreeLink, k: i32) -> bool {
         let mut v = vec![];
-        TreeNode::inorder(&root, &mut v, k);
+        root.inorder(&mut v, k);
         let n = v.len();
         let mut l = 0;
         let mut r = n - 1;
@@ -57,10 +41,6 @@ impl Solution {
 
 #[test]
 fn test() {
-    let root = TreeNode::branch(
-        5,
-        TreeNode::branch(3, TreeNode::leaf(2), TreeNode::leaf(4)),
-        TreeNode::branch(6, None, TreeNode::leaf(7)),
-    );
+    let root = tree!(5, tree!(3, tree!(2), tree!(4)), tree!(6, None, tree!(7)));
     assert_eq!(Solution::find_target(root, 9), true);
 }

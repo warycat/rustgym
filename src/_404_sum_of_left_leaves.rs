@@ -1,31 +1,14 @@
 struct Solution;
+use crate::util::*;
 
-#[derive(Debug, PartialEq, Eq)]
-struct TreeNode {
-    val: i32,
-    left: Link,
-    right: Link,
+trait SumOfLeftLeaves {
+    fn sum_of_left_leaves(&self) -> i32;
 }
 
-use std::cell::RefCell;
-use std::rc::Rc;
-
-type Link = Option<Rc<RefCell<TreeNode>>>;
-
-impl TreeNode {
-    fn branch(val: i32, left: Link, right: Link) -> Link {
-        Some(Rc::new(RefCell::new(TreeNode { val, left, right })))
-    }
-    fn leaf(val: i32) -> Link {
-        Some(Rc::new(RefCell::new(TreeNode {
-            val,
-            left: None,
-            right: None,
-        })))
-    }
-    fn sum_of_left_leaves(link: &Link) -> i32 {
+impl SumOfLeftLeaves for TreeLink {
+    fn sum_of_left_leaves(&self) -> i32 {
         let mut sum = 0;
-        if let Some(node) = link {
+        if let Some(node) = self {
             let node = node.borrow();
             let left = &node.left;
             let right = &node.right;
@@ -44,17 +27,13 @@ impl TreeNode {
 }
 
 impl Solution {
-    fn sum_of_left_leaves(root: Link) -> i32 {
-        TreeNode::sum_of_left_leaves(&root)
+    fn sum_of_left_leaves(root: TreeLink) -> i32 {
+        root.sum_of_left_leaves()
     }
 }
 
 #[test]
 fn test() {
-    let root = TreeNode::branch(
-        3,
-        TreeNode::leaf(9),
-        TreeNode::branch(20, TreeNode::leaf(15), TreeNode::leaf(7)),
-    );
+    let root = tree!(3, tree!(9), tree!(20, tree!(15), tree!(7)));
     assert_eq!(Solution::sum_of_left_leaves(root), 24);
 }
