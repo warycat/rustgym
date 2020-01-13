@@ -13,8 +13,8 @@ impl Solution {
                 let right = nums[mid + 1..].to_vec();
                 tree!(
                     nums[mid],
-                    Solution::sorted_array_to_bst(left),
-                    Solution::sorted_array_to_bst(right)
+                    Self::sorted_array_to_bst(left),
+                    Self::sorted_array_to_bst(right)
                 )
             }
         }

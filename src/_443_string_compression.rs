@@ -11,7 +11,7 @@ impl Solution {
                 if c == chars[i] {
                     count += 1;
                 } else {
-                    j += Solution::write_pair(chars, j, c, count);
+                    j += Self::write_pair(chars, j, c, count);
                     prev = Some(chars[i]);
                     count = 1;
                 }
@@ -21,7 +21,7 @@ impl Solution {
             }
         }
         if let Some(c) = prev {
-            j += Solution::write_pair(chars, j, c, count);
+            j += Self::write_pair(chars, j, c, count);
         }
         j as i32
     }

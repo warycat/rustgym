@@ -8,7 +8,7 @@ impl Solution {
         }
         let words: Vec<String> = words
             .into_iter()
-            .map(|s| Solution::translate(s, &mapping))
+            .map(|s| Self::translate(s, &mapping))
             .collect();
         let mut sorted: Vec<String> = words.to_vec();
         sorted.sort();

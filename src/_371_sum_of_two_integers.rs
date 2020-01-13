@@ -5,7 +5,7 @@ impl Solution {
         if b == 0 {
             a
         } else {
-            Solution::get_sum(a ^ b, (a & b) << 1)
+            Self::get_sum(a ^ b, (a & b) << 1)
         }
     }
 }

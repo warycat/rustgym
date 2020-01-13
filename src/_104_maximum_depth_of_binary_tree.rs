@@ -1,20 +1,23 @@
 struct Solution;
 use crate::util::*;
 
-impl Solution {
-    fn max_depth_r(root: &TreeLink) -> i32 {
-        if let Some(node) = root {
+trait MaxDepth {
+    fn max_depth(&self) -> i32;
+}
+
+impl MaxDepth for TreeLink {
+    fn max_depth(&self) -> i32 {
+        if let Some(node) = self {
             let node = node.borrow();
-            return 1 + i32::max(
-                Solution::max_depth_r(&node.left),
-                Solution::max_depth_r(&node.right),
-            );
+            return 1 + i32::max(node.left.max_depth(), node.right.max_depth());
         }
         0
     }
+}
 
+impl Solution {
     fn max_depth(root: TreeLink) -> i32 {
-        Solution::max_depth_r(&root)
+        root.max_depth()
     }
 }
 

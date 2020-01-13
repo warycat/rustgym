@@ -6,7 +6,7 @@ impl Solution {
         if let Some(s) = Solution::is_palidrome(v) {
             let sl: &str = &s[1..];
             let sr: &str = &s[..s.len() - 1];
-            Solution::is_palidrome(sl).is_none() || Solution::is_palidrome(sr).is_none()
+            Self::is_palidrome(sl).is_none() || Self::is_palidrome(sr).is_none()
         } else {
             true
         }
@@ -20,7 +20,7 @@ impl Solution {
         if v.chars().next() != v.chars().last() {
             Some(v)
         } else {
-            Solution::is_palidrome(&v[1..n - 1])
+            Self::is_palidrome(&v[1..n - 1])
         }
     }
 }

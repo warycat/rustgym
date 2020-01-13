@@ -5,7 +5,7 @@ impl Solution {
         candidates.sort_unstable();
         let mut combination: Vec<i32> = vec![];
         let mut res: Vec<Vec<i32>> = vec![];
-        Solution::backtrack(&mut res, &candidates, &mut combination, target, 0);
+        Self::backtrack(&mut res, &candidates, &mut combination, target, 0);
         res
     }
     fn backtrack(
@@ -23,7 +23,7 @@ impl Solution {
                     break;
                 } else {
                     combination.push(candidates[i]);
-                    Solution::backtrack(res, candidates, combination, target - candidates[i], i);
+                    Self::backtrack(res, candidates, combination, target - candidates[i], i);
                     combination.pop();
                 }
             }

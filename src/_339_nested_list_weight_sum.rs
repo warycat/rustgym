@@ -11,13 +11,13 @@ impl Solution {
             NestedInteger::Int(x) => level * x,
             NestedInteger::List(v) => v
                 .iter()
-                .fold(0, |acc, x| acc + Solution::depth_sum_r(x, level + 1)),
+                .fold(0, |acc, x| acc + Self::depth_sum_r(x, level + 1)),
         }
     }
     fn depth_sum(nested_list: Vec<NestedInteger>) -> i32 {
         nested_list
             .iter()
-            .fold(0, |acc, x| acc + Solution::depth_sum_r(x, 1))
+            .fold(0, |acc, x| acc + Self::depth_sum_r(x, 1))
     }
 }
 

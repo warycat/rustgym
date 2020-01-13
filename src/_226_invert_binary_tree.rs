@@ -7,8 +7,8 @@ impl Solution {
             let mut node = node.borrow_mut();
             let left = node.left.take();
             let right = node.right.take();
-            node.right = Solution::invert_tree(left);
-            node.left = Solution::invert_tree(right);
+            node.right = Self::invert_tree(left);
+            node.left = Self::invert_tree(right);
         }
         root
     }

@@ -18,8 +18,9 @@ impl Solution {
             let c: usize = (s[2] - b'A') as usize;
             map[a][b].insert(c);
         }
-        Solution::backtrack(&mut v, &map, n - 1, n - 1)
+        Self::backtrack(&mut v, &map, n - 1, n - 1)
     }
+
     fn backtrack(
         v: &mut Vec<Vec<usize>>,
         map: &[Vec<HashSet<usize>>],
@@ -38,7 +39,7 @@ impl Solution {
         let right = v[r + 1][c + 1];
         for &x in &map[left][right] {
             v[r].push(x);
-            if Solution::backtrack(v, map, r, c) {
+            if Self::backtrack(v, map, r, c) {
                 return true;
             }
             v[r].pop();

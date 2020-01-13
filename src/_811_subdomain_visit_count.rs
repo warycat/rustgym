@@ -7,7 +7,7 @@ impl Solution {
         let mut res: Vec<String> = vec![];
         let mut hm: HashMap<String, usize> = HashMap::new();
         for s in cpdomains {
-            let (domains, count) = Solution::parse(s);
+            let (domains, count) = Self::parse(s);
             for domain in domains {
                 let e = hm.entry(domain).or_default();
                 *e += count;

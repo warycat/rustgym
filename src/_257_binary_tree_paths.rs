@@ -12,29 +12,35 @@ impl ToString for Path {
     }
 }
 
-impl Solution {
-    fn binary_tree_paths(root: TreeLink) -> Vec<String> {
-        let mut path = Path { stack: vec![] };
-        let mut res = vec![];
-        Solution::dfs(&root, &mut path, &mut res);
-        res
-    }
+trait Preorder {
+    fn preorder(&self, path: &mut Path, v: &mut Vec<String>);
+}
 
-    fn dfs(link: &TreeLink, path: &mut Path, v: &mut Vec<String>) {
-        if let Some(node) = link {
+impl Preorder for TreeLink {
+    fn preorder(&self, path: &mut Path, v: &mut Vec<String>) {
+        if let Some(node) = self {
             let node = node.borrow();
             path.stack.push(node.val);
             if node.left.is_none() && node.right.is_none() {
                 v.push(path.to_string());
             }
             if node.left.is_some() {
-                Solution::dfs(&node.left, path, v);
+                node.left.preorder(path, v);
             }
             if node.right.is_some() {
-                Solution::dfs(&node.right, path, v);
+                node.right.preorder(path, v);
             }
             path.stack.pop();
         }
+    }
+}
+
+impl Solution {
+    fn binary_tree_paths(root: TreeLink) -> Vec<String> {
+        let mut path = Path { stack: vec![] };
+        let mut res = vec![];
+        root.preorder(&mut path, &mut res);
+        res
     }
 }
 

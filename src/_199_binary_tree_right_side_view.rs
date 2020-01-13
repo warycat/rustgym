@@ -1,15 +1,13 @@
 struct Solution;
 use crate::util::*;
 
-impl Solution {
-    fn right_side_view(root: TreeLink) -> Vec<i32> {
-        let mut res: Vec<i32> = vec![];
-        Self::dfs(&root, 0, &mut res);
-        res
-    }
+trait Preorder {
+    fn preorder(&self, level: usize, view: &mut Vec<i32>);
+}
 
-    fn dfs(link: &TreeLink, level: usize, view: &mut Vec<i32>) {
-        if let Some(node) = link {
+impl Preorder for TreeLink {
+    fn preorder(&self, level: usize, view: &mut Vec<i32>) {
+        if let Some(node) = self {
             let node = node.borrow();
             let val = node.val;
             if view.len() <= level {
@@ -17,9 +15,17 @@ impl Solution {
             } else {
                 view[level] = val;
             }
-            Self::dfs(&node.left, level + 1, view);
-            Self::dfs(&node.right, level + 1, view);
+            node.left.preorder(level + 1, view);
+            node.right.preorder(level + 1, view);
         }
+    }
+}
+
+impl Solution {
+    fn right_side_view(root: TreeLink) -> Vec<i32> {
+        let mut res: Vec<i32> = vec![];
+        root.preorder(0, &mut res);
+        res
     }
 }
 

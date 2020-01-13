@@ -17,9 +17,13 @@ impl Height for TreeLink {
     }
 }
 
-impl Solution {
-    fn is_balanced_r(root: &TreeLink) -> bool {
-        match root {
+trait Balanced {
+    fn is_balanced(&self) -> bool;
+}
+
+impl Balanced for TreeLink {
+    fn is_balanced(&self) -> bool {
+        match self {
             None => true,
             Some(node) => {
                 let node = node.borrow();
@@ -31,15 +35,18 @@ impl Solution {
                     || height_left == height_right + 1
                     || height_left + 1 == height_right
                 {
-                    Solution::is_balanced_r(left) && Solution::is_balanced_r(right)
+                    left.is_balanced() && right.is_balanced()
                 } else {
                     false
                 }
             }
         }
     }
+}
+
+impl Solution {
     fn is_balanced(root: TreeLink) -> bool {
-        Solution::is_balanced_r(&root)
+        root.is_balanced()
     }
 }
 

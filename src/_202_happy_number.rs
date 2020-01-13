@@ -15,9 +15,9 @@ impl Solution {
         let mut slow = n;
         let mut fast = n;
         loop {
-            slow = Solution::digit_square_sum(slow);
-            fast = Solution::digit_square_sum(fast);
-            fast = Solution::digit_square_sum(fast);
+            slow = Self::digit_square_sum(slow);
+            fast = Self::digit_square_sum(fast);
+            fast = Self::digit_square_sum(fast);
             if slow == fast {
                 break;
             }
