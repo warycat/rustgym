@@ -786,3 +786,7 @@ mod _1299_replace_elements_with_greatest_element_on_right_side;
 mod _1304_find_n_unique_integers_sum_up_to_zero;
 //
 mod _1309_decrypt_string_from_alphabet_to_integer_mapping;
+//
+mod _1317_convert_integer_to_the_sum_of_two_no_zero_integers;
+//
+mod _1313_decompres_run_length_encoded_list;
