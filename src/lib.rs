@@ -99,6 +99,8 @@ mod _88_merge_sorted_array;
 //
 mod _91_decode_ways;
 //
+mod _92_reverse_linked_list_2;
+//
 mod _93_restore_ip_addresses;
 //
 mod _98_validate_binary_search_tree;
@@ -428,6 +430,8 @@ mod _637_average_of_levels_in_binary_tree;
 mod _643_maximum_average_subarray_1;
 //
 mod _645_set_mismatch;
+//
+mod _647_palindromic_substrings;
 //
 mod _653_two_sum_4;
 //

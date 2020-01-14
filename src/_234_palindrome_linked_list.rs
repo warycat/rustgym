@@ -52,6 +52,6 @@ impl Solution {
 
 #[test]
 fn test() {
-    let head = ListNode::list(vec![1, 2, 3]);
+    let head = list!(1, 2, 3);
     assert_eq!(Solution::is_palindrome(head), false);
 }

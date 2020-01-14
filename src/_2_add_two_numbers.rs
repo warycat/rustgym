@@ -28,8 +28,8 @@ impl Solution {
 
 #[test]
 fn test() {
-    let l1 = ListNode::list(vec![2, 4, 3]);
-    let l2 = ListNode::list(vec![5, 6, 4]);
-    let l3 = ListNode::list(vec![7, 0, 8]);
+    let l1 = list!(2, 4, 3);
+    let l2 = list!(5, 6, 4);
+    let l3 = list!(7, 0, 8);
     assert_eq!(Solution::add_two_numbers(l1, l2), l3);
 }

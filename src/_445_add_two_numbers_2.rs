@@ -35,8 +35,8 @@ impl Solution {
 
 #[test]
 fn test() {
-    let l1 = ListNode::list(vec![7, 2, 4, 3]);
-    let l2 = ListNode::list(vec![5, 6, 4]);
-    let res = ListNode::list(vec![7, 8, 0, 7]);
+    let l1 = list!(7, 2, 4, 3);
+    let l2 = list!(5, 6, 4);
+    let res = list!(7, 8, 0, 7);
     assert_eq!(Solution::add_two_numbers(l1, l2), res);
 }

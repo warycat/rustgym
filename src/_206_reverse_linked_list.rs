@@ -16,16 +16,16 @@ impl Solution {
 
 #[test]
 fn test() {
-    let head = ListNode::list(vec![]);
-    let res = ListNode::list(vec![]);
+    let head = list!();
+    let res = list!();
     assert_eq!(Solution::reverse_list(head), res);
-    let head = ListNode::list(vec![1]);
-    let res = ListNode::list(vec![1]);
+    let head = list!(1);
+    let res = list!(1);
     assert_eq!(Solution::reverse_list(head), res);
-    let head = ListNode::list(vec![1, 2]);
-    let res = ListNode::list(vec![2, 1]);
+    let head = list!(1, 2);
+    let res = list!(2, 1);
     assert_eq!(Solution::reverse_list(head), res);
-    let head = ListNode::list(vec![1, 2, 3]);
-    let res = ListNode::list(vec![3, 2, 1]);
+    let head = list!(1, 2, 3);
+    let res = list!(3, 2, 1);
     assert_eq!(Solution::reverse_list(head), res);
 }

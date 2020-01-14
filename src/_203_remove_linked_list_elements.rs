@@ -17,7 +17,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let input = ListNode::list(vec![1, 2, 6, 3, 4, 5, 6]);
-    let output = ListNode::list(vec![1, 2, 3, 4, 5]);
+    let input = list!(1, 2, 6, 3, 4, 5, 6);
+    let output = list!(1, 2, 3, 4, 5);
     assert_eq!(Solution::remove_elements(input, 6), output);
 }

@@ -20,7 +20,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let head = ListNode::list(vec![1, 2, 3, 4]);
-    let res = ListNode::list(vec![2, 1, 4, 3]);
+    let head = list!(1, 2, 3, 4);
+    let res = list!(2, 1, 4, 3);
     assert_eq!(Solution::swap_pairs(head), res);
 }

@@ -32,8 +32,8 @@ impl Solution {
 
 #[test]
 fn test() {
-    let mut head = ListNode::list(vec![1, 2, 3, 4, 5]);
+    let mut head = list!(1, 2, 3, 4, 5);
     Solution::reorder_list(&mut head);
-    let res = ListNode::list(vec![1, 5, 2, 4, 3]);
+    let res = list!(1, 5, 2, 4, 3);
     assert_eq!(head, res);
 }

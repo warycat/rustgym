@@ -23,8 +23,8 @@ impl Solution {
 
 #[test]
 fn test() {
-    let a = ListNode::list(vec![1, 2, 4]);
-    let b = ListNode::list(vec![1, 3, 4]);
-    let c = ListNode::list(vec![1, 1, 2, 3, 4, 4]);
+    let a = list!(1, 2, 4);
+    let b = list!(1, 3, 4);
+    let c = list!(1, 1, 2, 3, 4, 4);
     assert_eq!(Solution::merge_two_lists(a, b), c);
 }

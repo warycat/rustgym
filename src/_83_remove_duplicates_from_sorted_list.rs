@@ -19,7 +19,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let p = ListNode::list(vec![1, 1, 2, 3, 3]);
-    let q = ListNode::node(1, ListNode::node(2, ListNode::node(3, None)));
+    let p = list!(1, 1, 2, 3, 3);
+    let q = list!(1, 2, 3);
     assert_eq!(Solution::delete_duplicates(p), q);
 }

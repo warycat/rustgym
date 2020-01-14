@@ -6,14 +6,17 @@ pub struct ListNode {
 
 pub type ListLink = Option<Box<ListNode>>;
 
-impl ListNode {
-    pub fn list(v: Vec<i32>) -> ListLink {
-        let mut next: ListLink = None;
-        for &val in v.iter().rev() {
-            next = Some(Box::new(ListNode { val, next }))
-        }
-        next
-    }
+#[macro_export]
+macro_rules! list {
+    () => {
+        None
+    };
+    ($e:expr) => {
+        ListNode::node($e, None)
+    };
+    ($e:expr, $($tail:tt)*) => {
+        ListNode::node($e, list!($($tail)*))
+    };
 }
 
 impl ListNode {
