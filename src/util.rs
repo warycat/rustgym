@@ -6,6 +6,12 @@ pub struct ListNode {
 
 pub type ListLink = Option<Box<ListNode>>;
 
+impl ListNode {
+    pub fn node(val: i32, next: ListLink) -> ListLink {
+        Some(Box::new(ListNode { val, next }))
+    }
+}
+
 #[macro_export]
 macro_rules! list {
     () => {
@@ -19,12 +25,6 @@ macro_rules! list {
     };
 }
 
-impl ListNode {
-    pub fn node(val: i32, next: ListLink) -> ListLink {
-        Some(Box::new(ListNode { val, next }))
-    }
-}
-
 #[derive(Debug, PartialEq, Eq)]
 pub struct TreeNode {
     pub val: i32,
@@ -32,10 +32,10 @@ pub struct TreeNode {
     pub right: TreeLink,
 }
 
+pub type TreeLink = Option<Rc<RefCell<TreeNode>>>;
+
 use std::cell::RefCell;
 use std::rc::Rc;
-
-pub type TreeLink = Option<Rc<RefCell<TreeNode>>>;
 
 impl TreeNode {
     pub fn branch(val: i32, left: TreeLink, right: TreeLink) -> TreeLink {

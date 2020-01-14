@@ -243,6 +243,8 @@ mod _292_nim_game;
 //
 mod _293_flip_game;
 //
+mod _300_longest_increasing_subsequence;
+//
 mod _303_range_sum_query;
 //
 mod _322_coin_change;
@@ -349,6 +351,8 @@ mod _492_construct_the_rectangle;
 //
 mod _496_next_greater_element_1;
 //
+mod _498_diagonal_traverse;
+//
 mod _500_keyboard_row;
 //
 mod _501_find_mode_in_binary_search_tree;
@@ -368,6 +372,8 @@ mod _521_longest_uncommon_subsequence_1;
 mod _525_contiguous_array;
 //
 mod _528_random_pick_with_weight;
+//
+mod _529_minesweeper;
 //
 mod _530_minimum_absolute_difference_in_bst;
 //
