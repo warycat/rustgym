@@ -179,6 +179,10 @@ mod _205_isomorphic_strings;
 //
 mod _206_reverse_linked_list;
 //
+mod _207_course_schedule;
+//
+mod _209_minimum_size_subarray_sum;
+//
 mod _210_course_schedule_2;
 //
 mod _217_contains_duplicate;
@@ -364,6 +368,8 @@ mod _506_relative_ranks;
 mod _507_perfect_number;
 //
 mod _509_fibonacci_number;
+//
+mod _518_coin_change_2;
 //
 mod _520_detect_captial;
 //
@@ -628,6 +634,8 @@ mod _944_delete_columns_to_make_sorted;
 mod _949_largest_time_for_given_digits;
 //
 mod _953_verifying_an_alien_dictionary;
+//
+mod _957_prison_cells_after_n_days;
 //
 mod _961_n_repeated_element_in_size_2n_array;
 //
