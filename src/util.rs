@@ -4,6 +4,13 @@ pub struct ListNode {
     pub next: ListLink,
 }
 
+#[derive(Debug, PartialEq, Eq)]
+pub struct TreeNode {
+    pub val: i32,
+    pub left: TreeLink,
+    pub right: TreeLink,
+}
+
 pub type ListLink = Option<Box<ListNode>>;
 
 impl ListNode {
@@ -23,13 +30,6 @@ macro_rules! list {
     ($e:expr, $($tail:tt)*) => {
         ListNode::node($e, list!($($tail)*))
     };
-}
-
-#[derive(Debug, PartialEq, Eq)]
-pub struct TreeNode {
-    pub val: i32,
-    pub left: TreeLink,
-    pub right: TreeLink,
 }
 
 pub type TreeLink = Option<Rc<RefCell<TreeNode>>>;
