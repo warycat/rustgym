@@ -67,6 +67,8 @@ mod _38_count_and_say;
 //
 mod _39_combination_sum;
 //
+mod _43_multiply_strings;
+//
 mod _46_permutations;
 //
 mod _48_rotate_image;
@@ -109,6 +111,8 @@ mod _100_same_tree;
 //
 mod _101_symmetric_tree;
 //
+mod _103_binary_tree_zigzag_level_order_traversal;
+//
 mod _104_maximum_depth_of_binary_tree;
 //
 mod _105_construct_binary_tree_from_preorder_and_inorder_traversal;
@@ -142,6 +146,8 @@ mod _139_word_break;
 mod _143_reorder_list;
 //
 mod _146_lru_cache;
+//
+mod _151_reverse_words_in_a_string;
 //
 mod _155_min_stack;
 //
@@ -685,6 +691,8 @@ mod _1029_two_city_scheduling;
 //
 mod _1030_matrix_cells_in_distance_order;
 //
+mod _1031_maximum_sum_of_two_non_overlapping_subarrays;
+//
 mod _1033_moving_stones_until_consecutive;
 //
 mod _1037_valid_boomerang;
@@ -701,7 +709,11 @@ mod _1048_longest_string_chain;
 //
 mod _1051_height_checker;
 //
+mod _1052_grumpy_bookstore_owner;
+//
 mod _1056_confusing_number;
+//
+mod _1057_campus_bikes;
 //
 mod _1064_fixed_point;
 //
@@ -780,6 +792,8 @@ mod _1228_missing_number_in_arithmetic_progression;
 mod _1232_check_if_it_is_a_straight_line;
 //
 mod _1243_array_transformation;
+//
+mod _1249_minimum_remove_to_make_valid_parentheses;
 //
 mod _1252_cells_with_odd_values_in_a_matrix;
 //
