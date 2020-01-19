@@ -18,7 +18,7 @@ impl TicTacToe {
             n,
         }
     }
-    fn r#move(&mut self, row: i32, col: i32, player: i32) -> i32 {
+    fn make_a_move(&mut self, row: i32, col: i32, player: i32) -> i32 {
         let i = row as usize;
         let j = col as usize;
         let p = player as usize - 1;
@@ -49,11 +49,11 @@ impl TicTacToe {
 #[test]
 fn test() {
     let mut toe = TicTacToe::new(3);
-    assert_eq!(toe.r#move(0, 0, 1), 0);
-    assert_eq!(toe.r#move(0, 2, 2), 0);
-    assert_eq!(toe.r#move(2, 2, 1), 0);
-    assert_eq!(toe.r#move(1, 1, 2), 0);
-    assert_eq!(toe.r#move(2, 0, 1), 0);
-    assert_eq!(toe.r#move(1, 0, 2), 0);
-    assert_eq!(toe.r#move(2, 1, 1), 1);
+    assert_eq!(toe.make_a_move(0, 0, 1), 0);
+    assert_eq!(toe.make_a_move(0, 2, 2), 0);
+    assert_eq!(toe.make_a_move(2, 2, 1), 0);
+    assert_eq!(toe.make_a_move(1, 1, 2), 0);
+    assert_eq!(toe.make_a_move(2, 0, 1), 0);
+    assert_eq!(toe.make_a_move(1, 0, 2), 0);
+    assert_eq!(toe.make_a_move(2, 1, 1), 1);
 }

@@ -41,6 +41,8 @@ mod _16_3sum_closest;
 //
 mod _17_letter_combinations_of_a_phone_number;
 //
+mod _18_4sum;
+//
 mod _20_valid_parentheses;
 //
 mod _21_merge_two_sorted_lists;
@@ -77,6 +79,8 @@ mod _48_rotate_image;
 //
 mod _49_group_anagrams;
 //
+mod _50_pow_x_n;
+//
 mod _53_maximum_subarray;
 //
 mod _54_spiral_matrix;
@@ -94,6 +98,8 @@ mod _69_sqrt;
 mod _70_climbing_stairs;
 //
 mod _71_simplify_path;
+//
+mod _75_sort_colors;
 //
 mod _78_subsets;
 //
@@ -198,6 +204,8 @@ mod _207_course_schedule;
 mod _209_minimum_size_subarray_sum;
 //
 mod _210_course_schedule_2;
+//
+mod _211_add_and_search_word_data_structure_design;
 //
 mod _217_contains_duplicate;
 //
@@ -512,6 +520,8 @@ mod _717_1bit_and_2bit_characters;
 mod _720_longest_word_in_dictionary_trie;
 //
 mod _720_longest_word_in_dictionary_set;
+//
+mod _723_candy_crush;
 //
 mod _724_find_pivot_index;
 //
