@@ -163,6 +163,8 @@ mod _146_lru_cache;
 //
 mod _151_reverse_words_in_a_string;
 //
+mod _152_maximum_product_subarray;
+//
 mod _155_min_stack;
 //
 mod _166_fraction_to_recurring_decimal;
@@ -460,6 +462,8 @@ mod _624_maximum_distance_in_arrays;
 mod _628_maximum_product_of_three_numbers;
 //
 mod _633_sum_of_square_numbers;
+//
+mod _636_exclusive_time_of_functions;
 //
 mod _637_average_of_levels_in_binary_tree;
 //
@@ -844,3 +848,5 @@ mod _1309_decrypt_string_from_alphabet_to_integer_mapping;
 mod _1317_convert_integer_to_the_sum_of_two_no_zero_integers;
 //
 mod _1313_decompres_run_length_encoded_list;
+//
+mod _1323_maximum_69_number;
