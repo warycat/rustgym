@@ -59,3 +59,16 @@ macro_rules! tree {
         TreeNode::branch($e, $l, $r)
     };
 }
+
+#[macro_export]
+macro_rules! vec_string {
+    ($($e:expr),*) => {
+        {
+            let mut temp_vec = Vec::new();
+            $(
+                temp_vec.push($e.to_string());
+            )*
+            temp_vec
+        }
+    };
+}

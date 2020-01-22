@@ -207,6 +207,8 @@ mod _210_course_schedule_2;
 //
 mod _211_add_and_search_word_data_structure_design;
 //
+mod _215_kth_largest_element_in_an_array;
+//
 mod _217_contains_duplicate;
 //
 mod _219_contains_duplicate_2;
@@ -520,6 +522,8 @@ mod _717_1bit_and_2bit_characters;
 mod _720_longest_word_in_dictionary_trie;
 //
 mod _720_longest_word_in_dictionary_set;
+//
+mod _721_accounts_merge;
 //
 mod _723_candy_crush;
 //
