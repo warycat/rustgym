@@ -89,6 +89,8 @@ mod _56_merge_intervals;
 //
 mod _59_spiral_matrix_2;
 //
+mod _64_minimum_path_sum;
+//
 mod _66_plus_one;
 //
 mod _67_add_binary;
@@ -114,6 +116,8 @@ mod _91_decode_ways;
 mod _92_reverse_linked_list_2;
 //
 mod _93_restore_ip_addresses;
+//
+mod _96_unique_binary_search_trees;
 //
 mod _98_validate_binary_search_tree;
 //
@@ -236,6 +240,8 @@ mod _238_product_of_array_except_self;
 mod _242_valid_anagram;
 //
 mod _243_shortest_word_distance;
+//
+mod _244_shortest_word_distance_2;
 //
 mod _246_strobogrammantic_number;
 //
@@ -463,6 +469,8 @@ mod _628_maximum_product_of_three_numbers;
 //
 mod _633_sum_of_square_numbers;
 //
+mod _635_design_log_storage_system;
+//
 mod _636_exclusive_time_of_functions;
 //
 mod _637_average_of_levels_in_binary_tree;
@@ -688,6 +696,8 @@ mod _985_sum_of_even_numbers_after_queries;
 mod _986_interval_list_intersections;
 //
 mod _989_add_to_array_form_of_integer;
+//
+mod _991_broken_calculator;
 //
 mod _994_rotting_oranges;
 //
