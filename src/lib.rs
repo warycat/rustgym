@@ -127,6 +127,8 @@ mod _100_same_tree;
 //
 mod _101_symmetric_tree;
 //
+mod _102_binary_tree_level_order_traversal;
+//
 mod _103_binary_tree_zigzag_level_order_traversal;
 //
 mod _104_maximum_depth_of_binary_tree;
@@ -222,6 +224,8 @@ mod _217_contains_duplicate;
 mod _219_contains_duplicate_2;
 //
 mod _221_maximal_square;
+//
+mod _222_count_complete_tree_nodes;
 //
 mod _225_implement_stack_using_queues;
 //
@@ -363,6 +367,8 @@ mod _438_find_all_anagrams_in_a_string;
 //
 mod _441_arranging_coins;
 //
+mod _442_find_all_duplicates_in_an_array;
+//
 mod _443_string_compression;
 //
 mod _445_add_two_numbers_2;
@@ -374,6 +380,8 @@ mod _448_find_all_numbers_disappeared_in_an_array;
 mod _453_minimum_moves_to_equal_array_elements;
 //
 mod _455_assign_cookies;
+//
+mod _456_132_pattern;
 //
 mod _459_repeated_substring_pattern;
 //
@@ -413,6 +421,8 @@ mod _520_detect_captial;
 //
 mod _521_longest_uncommon_subsequence_1;
 //
+mod _523_continuous_subarray_sum;
+//
 mod _525_contiguous_array;
 //
 mod _528_random_pick_with_weight;
@@ -430,6 +440,8 @@ mod _539_minimum_time_difference;
 mod _541_reverse_string_2;
 //
 mod _543_diameter_of_binary_tree;
+//
+mod _545_boundary_of_binary_tree;
 //
 mod _547_friend_circles;
 //
@@ -637,6 +649,8 @@ mod _872_leaf_similar_trees;
 //
 mod _874_walking_robot_simulation;
 //
+mod _875_koko_eating_bananas;
+//
 mod _876_middle_of_the_linked_list;
 //
 mod _883_projection_area_of_3d_shapes;
@@ -733,6 +747,8 @@ mod _1022_sum_root_to_leaf_binary_number;
 //
 mod _1025_divisor_game;
 //
+mod _1027_longest_arithmetic_sequence;
+//
 mod _1029_two_city_scheduling;
 //
 mod _1030_matrix_cells_in_distance_order;
@@ -800,6 +816,8 @@ mod _1154_day_of_the_year;
 mod _1160_find_words_that_can_be_formed_by_characters;
 //
 mod _1165_single_row_keyboard;
+//
+mod _1166_design_file_system;
 //
 mod _1170_compare_strings_by_frequency_of_the_smallest_character;
 //
