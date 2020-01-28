@@ -12,7 +12,7 @@ impl Solution {
         let mut res: Vec<i32> = vec![0; n];
         let mut prev = 0;
         for log in logs {
-            let mut it = log.split(":");
+            let mut it = log.split(':');
             let id: usize = it.next().unwrap().parse::<usize>().unwrap();
             let action: Action = if it.next().unwrap() == "start" {
                 Action::Start

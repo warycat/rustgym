@@ -1,4 +1,5 @@
 struct Solution;
+use std::cmp::Ordering::*;
 
 trait Partition {
     fn partition(&mut self, l: usize, r: usize) -> usize;
@@ -28,12 +29,16 @@ impl Solution {
         let k = n - k as usize;
         while l < r {
             let m = nums.partition(l, r);
-            if m < k {
-                l = m + 1;
-            } else if m > k {
-                r = m - 1;
-            } else {
-                break;
+            match m.cmp(&k) {
+                Less => {
+                    l = m + 1;
+                }
+                Greater => {
+                    r = m - 1;
+                }
+                Equal => {
+                    break;
+                }
             }
         }
         nums[k]

@@ -32,7 +32,7 @@ impl Solution {
             v4.pop();
         }
         v4.reverse();
-        if v4.len() == 0 {
+        if v4.is_empty() {
             "0".to_string()
         } else {
             v4.into_iter().map(|x| (x as u8 + b'0') as char).collect()

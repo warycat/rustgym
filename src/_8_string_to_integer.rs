@@ -25,8 +25,7 @@ impl Solution {
                 }
             }
         }
-        let mut it = start.chars();
-        while let Some(c) = it.next() {
+        for c in start.chars() {
             if c >= '0' && c <= '9' {
                 res = match res.checked_mul(10) {
                     None => {

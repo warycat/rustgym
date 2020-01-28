@@ -6,9 +6,10 @@ impl Solution {
         let n = matrix.len();
         for i in 0..n {
             for j in i + 1..n {
-                let t = matrix[i][j];
-                matrix[i][j] = matrix[j][i];
-                matrix[j][i] = t;
+                let a = matrix[i][j];
+                let b = matrix[j][i];
+                matrix[i][j] = b;
+                matrix[j][i] = a;
             }
         }
     }

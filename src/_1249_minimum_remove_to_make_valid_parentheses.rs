@@ -13,7 +13,7 @@ impl Solution {
                     stack.push(i);
                 }
                 ')' => {
-                    if let None = stack.pop() {
+                    if stack.pop().is_none() {
                         remove.insert(i);
                     }
                 }

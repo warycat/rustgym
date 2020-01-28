@@ -12,7 +12,7 @@ impl Solution {
             *hs.entry(s).or_default() += 1;
         });
         let mut res: Vec<String> = vec![];
-        for (s, &v) in hs.iter() {
+        for (s, v) in hs {
             if v == 1 {
                 res.push(s.to_string());
             }

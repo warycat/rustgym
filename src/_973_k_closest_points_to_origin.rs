@@ -1,4 +1,5 @@
 struct Solution;
+use std::cmp::Ordering::*;
 
 fn distance(v: &[i32]) -> i32 {
     v[0] * v[0] + v[1] * v[1]
@@ -10,10 +11,10 @@ fn quick_select(a: &mut Vec<Vec<i32>>, l: usize, r: usize, k: usize) {
     }
     let index = partition(a, l, r);
     let rank = index - l + 1;
-    if rank > k {
-        quick_select(a, l, index - 1, k);
-    } else if rank < k {
-        quick_select(a, index + 1, r, k - rank);
+    match rank.cmp(&k) {
+        Greater => quick_select(a, l, index - 1, k),
+        Less => quick_select(a, index + 1, r, k - rank),
+        _ => {}
     }
 }
 

@@ -23,14 +23,10 @@ impl Solution {
                 i += 1;
                 j -= 1;
             } else {
-                if i == 0 && j < m - 1 {
+                if i == 0 && j < m - 1 || i == n - 1 {
                     j += 1;
-                } else if j == 0 && i < n - 1 {
+                } else if j == 0 && i < n - 1 || j == m - 1 {
                     i += 1;
-                } else if j == m - 1 {
-                    i += 1;
-                } else if i == n - 1 {
-                    j += 1;
                 }
                 d = !d;
             }

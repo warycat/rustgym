@@ -10,7 +10,7 @@ impl Solution {
             "zxcvbnmZXCVBNM",
         ]
         .iter()
-        .map(|v| v.to_string())
+        .map(|v| (*v).to_string())
         .collect();
         let mut hm: HashMap<char, usize> = HashMap::new();
         for i in 0..3 {

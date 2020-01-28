@@ -7,8 +7,8 @@ impl Solution {
             .filter(|c| c.is_ascii_alphanumeric())
             .map(|c| c.to_ascii_lowercase())
             .collect();
-        let a: String = s.clone().iter().collect();
-        let b: String = s.clone().iter().rev().collect();
+        let a: String = s.iter().collect();
+        let b: String = s.iter().rev().collect();
         a == b
     }
 }

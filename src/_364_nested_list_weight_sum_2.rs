@@ -52,13 +52,9 @@ impl NestedInteger {
             return Self::parse_int(input);
         }
         let mut v: Vec<NestedInteger> = vec![];
-        loop {
-            if let Some(x) = Self::parse_list(input) {
-                v.push(x);
-                Self::eat(input, ',');
-            } else {
-                break;
-            }
+        while let Some(x) = Self::parse_list(input) {
+            v.push(x);
+            Self::eat(input, ',');
         }
         if !Self::eat(input, ']') {
             return None;

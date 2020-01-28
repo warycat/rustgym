@@ -6,7 +6,7 @@
 #![allow(clippy::float_cmp)]
 #![allow(clippy::cast_lossless)]
 #![allow(clippy::unreadable_literal)]
-
+#![allow(clippy::ptr_arg)]
 //
 #[macro_use]
 mod util;
@@ -270,6 +270,8 @@ mod _266_palindrome_permutation;
 mod _268_missing_number;
 //
 mod _270_closest_binary_search_tree_value;
+//
+mod _274_h_index;
 //
 mod _276_paint_fence;
 //
@@ -601,6 +603,8 @@ mod _783_minimum_distance_between_bst_nodes;
 //
 mod _784_letter_case_permutation;
 //
+mod _785_is_graph_bipartite;
+//
 mod _787_cheapest_flights_within_k_stops;
 //
 mod _788_rotated_digits;
@@ -684,6 +688,8 @@ mod _925_long_pressed_name;
 mod _929_unique_email_addresses;
 //
 mod _933_number_of_recent_calls;
+//
+mod _935_knight_dialer;
 //
 mod _937_reorder_log_files;
 //

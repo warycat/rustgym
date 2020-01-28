@@ -4,7 +4,7 @@ impl Solution {
     fn simplify_path(path: String) -> String {
         let mut stack: Vec<&str> = vec![];
         let mut res = "".to_string();
-        for s in path.split_terminator("/") {
+        for s in path.split_terminator('/') {
             match s {
                 ".." => {
                     stack.pop();
@@ -21,7 +21,7 @@ impl Solution {
             res += "/";
             res += s;
         }
-        if res.len() == 0 {
+        if res.is_empty() {
             res += "/";
         }
         res

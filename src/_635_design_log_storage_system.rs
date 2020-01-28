@@ -21,7 +21,7 @@ impl LogSystem {
             ("Second", 19),
         ]
         .iter()
-        .map(|(s, i)| (s.to_string(), *i))
+        .map(|(s, i)| ((*s).to_string(), *i))
         .collect();
         let logs: BTreeMap<String, i32> = BTreeMap::new();
         LogSystem {

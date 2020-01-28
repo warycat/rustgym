@@ -1,4 +1,5 @@
 struct Solution;
+use std::cmp::Ordering::*;
 
 impl Solution {
     fn search(nums: Vec<i32>, target: i32) -> i32 {
@@ -7,18 +8,22 @@ impl Solution {
         let mut r: usize = nums.len() - 1;
         while l <= r {
             let mid = (l + r) / 2;
-            if nums[mid] == target {
-                return mid as i32;
-            } else if nums[mid] < target {
-                if mid + 1 > n - 1 {
-                    break;
+            match nums[mid].cmp(&target) {
+                Equal => {
+                    return mid as i32;
                 }
-                l = mid + 1;
-            } else if nums[mid] > target {
-                if mid < 1 {
-                    break;
+                Less => {
+                    if mid + 1 > n - 1 {
+                        break;
+                    }
+                    l = mid + 1;
                 }
-                r = mid - 1;
+                Greater => {
+                    if mid < 1 {
+                        break;
+                    }
+                    r = mid - 1;
+                }
             }
         }
         -1

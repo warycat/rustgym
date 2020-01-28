@@ -1,5 +1,6 @@
 struct Solution;
 use crate::util::*;
+use std::cmp::Ordering::*;
 
 trait Inorder {
     fn inorder(&self, v: &mut Vec<i32>, target: i32);
@@ -27,12 +28,16 @@ impl Solution {
         let mut r = n - 1;
         while l < r {
             let sum = v[l] + v[r];
-            if sum > k {
-                r -= 1;
-            } else if sum < k {
-                l += 1;
-            } else {
-                return true;
+            match sum.cmp(&k) {
+                Greater => {
+                    r -= 1;
+                }
+                Less => {
+                    l += 1;
+                }
+                Equal => {
+                    return true;
+                }
             }
         }
         false

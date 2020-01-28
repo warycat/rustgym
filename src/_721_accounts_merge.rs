@@ -13,7 +13,7 @@ struct UnionFind {
 impl UnionFind {
     fn new(count: usize) -> Self {
         let sizes: Vec<usize> = vec![1; count];
-        let parents: Vec<usize> = (0..count).into_iter().collect();
+        let parents: Vec<usize> = (0..count).collect();
         UnionFind {
             sizes,
             parents,
@@ -66,12 +66,10 @@ impl Solution {
         let mut owners = vec![];
         let mut emails = vec![];
         let mut ids = HashMap::new();
-        let mut j = 0;
-        for (email, name) in btm.into_iter() {
+        for (i, (email, name)) in btm.into_iter().enumerate() {
             emails.push(email.to_string());
             owners.push(name.to_string());
-            ids.insert(email.to_string(), j);
-            j += 1;
+            ids.insert(email.to_string(), i);
         }
 
         for i in 0..n {

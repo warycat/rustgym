@@ -5,7 +5,7 @@ impl Solution {
         let mut i = 0;
         let mut j = 0;
         while i < prev.len() {
-            if prev[i..i + 1] == next[j..j + 1] {
+            if prev[i..=i] == next[j..=j] {
                 i += 1;
                 j += 1;
             } else if i == j {

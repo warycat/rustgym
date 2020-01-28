@@ -15,7 +15,7 @@ impl Solution {
 
     fn area(grid: &mut Vec<Vec<i32>>, n: usize, m: usize, row: usize, col: usize) -> i32 {
         if grid[row][col] <= 0 {
-            return 0;
+            0
         } else {
             grid[row][col] *= -1;
             let mut sum = 1;

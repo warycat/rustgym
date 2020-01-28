@@ -1,4 +1,5 @@
 struct Solution;
+use std::cmp::Ordering::*;
 
 impl Solution {
     fn four_sum(mut nums: Vec<i32>, target: i32) -> Vec<Vec<i32>> {
@@ -36,19 +37,23 @@ impl Solution {
                 let mut r = n - 1;
                 while l < r {
                     let sum4 = sum2 + nums[l] + nums[r];
-                    if sum4 < target {
-                        l += 1;
-                    } else if sum4 > target {
-                        r -= 1;
-                    } else {
-                        res.push(vec![nums[i], nums[j], nums[l], nums[r]]);
-                        l += 1;
-                        r -= 1;
-                        while l < r && nums[l - 1] == nums[l] {
+                    match sum4.cmp(&target) {
+                        Less => {
                             l += 1;
                         }
-                        while l < r && nums[r] == nums[r + 1] {
+                        Greater => {
                             r -= 1;
+                        }
+                        Equal => {
+                            res.push(vec![nums[i], nums[j], nums[l], nums[r]]);
+                            l += 1;
+                            r -= 1;
+                            while l < r && nums[l - 1] == nums[l] {
+                                l += 1;
+                            }
+                            while l < r && nums[r] == nums[r + 1] {
+                                r -= 1;
+                            }
                         }
                     }
                 }

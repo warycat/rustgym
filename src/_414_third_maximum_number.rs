@@ -1,4 +1,5 @@
 struct Solution;
+use std::cmp::Ordering::*;
 
 impl Solution {
     fn third_max(nums: Vec<i32>) -> i32 {
@@ -6,27 +7,35 @@ impl Solution {
         let mut m2: Option<i32> = None;
         let mut m3: Option<i32> = None;
         for x in nums {
-            if x > max1 {
-                m3 = m2;
-                m2 = Some(max1);
-                max1 = x;
-            } else if x < max1 {
-                if let Some(max2) = m2 {
-                    if x > max2 {
-                        m3 = m2;
-                        m2 = Some(x);
-                    } else if x < max2 {
-                        if let Some(max3) = m3 {
-                            if x > max3 {
-                                m3 = Some(x);
-                            }
-                        } else {
-                            m3 = Some(x);
-                        }
-                    }
-                } else {
-                    m2 = Some(x);
+            match x.cmp(&max1) {
+                Greater => {
+                    m3 = m2;
+                    m2 = Some(max1);
+                    max1 = x;
                 }
+                Less => {
+                    if let Some(max2) = m2 {
+                        match x.cmp(&max2) {
+                            Greater => {
+                                m3 = m2;
+                                m2 = Some(x);
+                            }
+                            Less => {
+                                if let Some(max3) = m3 {
+                                    if x > max3 {
+                                        m3 = Some(x);
+                                    }
+                                } else {
+                                    m3 = Some(x);
+                                }
+                            }
+                            Equal => {}
+                        }
+                    } else {
+                        m2 = Some(x);
+                    }
+                }
+                Equal => {}
             }
         }
         if let Some(max3) = m3 {

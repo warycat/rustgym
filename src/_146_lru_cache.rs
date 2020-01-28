@@ -59,7 +59,7 @@ impl List {
             None => self.head = Some(new_node_ref.clone()),
             Some(last_node_ref) => last_node_ref.borrow_mut().next = Some(new_node_ref.clone()),
         }
-        self.tail = Some(new_node_ref.clone());
+        self.tail = Some(new_node_ref);
     }
 
     fn pop_front(&mut self) -> Option<Element> {
@@ -85,9 +85,9 @@ impl List {
             Some(prev_node_ref) => prev_node_ref.borrow_mut().next = next.clone(),
             None => self.head = next.clone(),
         }
-        match next.clone() {
-            Some(next_node_ref) => next_node_ref.borrow_mut().prev = prev.clone(),
-            None => self.tail = prev.clone(),
+        match next {
+            Some(next_node_ref) => next_node_ref.borrow_mut().prev = prev,
+            None => self.tail = prev,
         }
         node.element.clone()
     }

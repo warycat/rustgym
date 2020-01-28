@@ -16,13 +16,13 @@ impl Trie {
     }
 
     fn search(&self, s: &str) -> bool {
-        if s.len() == 0 {
+        if s.is_empty() {
             return self.end;
         }
         let c = s.chars().next().unwrap();
         if c == '.' {
-            for (_, child) in &self.children {
-                if Self::search(&child, &s[1..]) {
+            for child in self.children.values() {
+                if Self::search(child, &s[1..]) {
                     return true;
                 }
             }

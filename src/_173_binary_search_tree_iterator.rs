@@ -13,7 +13,7 @@ impl BSTIterator {
     }
 
     fn has_next(&self) -> bool {
-        self.stack.len() != 0
+        !self.stack.is_empty()
     }
 
     fn next(&mut self) -> i32 {

@@ -1,20 +1,22 @@
 struct Solution;
+use std::cmp::Ordering::*;
 
 impl Solution {
     fn collide(stack: &mut Vec<i32>, asteroid: i32) {
         if let Some(&top) = stack.last() {
             if top < 0 {
                 stack.push(asteroid);
-                return;
-            } else if top > 0 && top < -asteroid {
-                stack.pop();
-                Self::collide(stack, asteroid);
-                return;
-            } else if top == -asteroid {
-                stack.pop();
-                return;
             } else {
-                return;
+                match top.cmp(&-asteroid) {
+                    Less => {
+                        stack.pop();
+                        Self::collide(stack, asteroid);
+                    }
+                    Equal => {
+                        stack.pop();
+                    }
+                    Greater => {}
+                }
             }
         } else {
             stack.push(asteroid);

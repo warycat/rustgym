@@ -17,7 +17,7 @@ impl Solution {
                 temp = Some(v);
             }
         }
-        if let Some(t) = temp.clone() {
+        if let Some(t) = temp {
             res.push(t);
         }
         res

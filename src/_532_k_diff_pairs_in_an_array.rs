@@ -1,5 +1,6 @@
 struct Solution;
 
+use std::cmp::Ordering::*;
 use std::collections::HashMap;
 use std::collections::HashSet;
 
@@ -8,28 +9,32 @@ impl Solution {
         let mut res = 0;
         let mut hs: HashSet<i32> = HashSet::new();
         let mut hm: HashMap<i32, i32> = HashMap::new();
-        if k == 0 {
-            for x in nums {
-                let e = hm.entry(x).or_default();
-                if let 1 = *e {
-                    res += 1;
-                }
-                *e += 1;
-            }
-        } else if k > 0 {
-            for x in nums {
-                if hs.contains(&x) {
-                    continue;
-                } else {
-                    hs.insert(x);
-                    if hs.contains(&(x + k)) {
+        match k.cmp(&0) {
+            Equal => {
+                for x in nums {
+                    let e = hm.entry(x).or_default();
+                    if let 1 = *e {
                         res += 1;
                     }
-                    if hs.contains(&(x - k)) {
-                        res += 1;
+                    *e += 1;
+                }
+            }
+            Greater => {
+                for x in nums {
+                    if hs.contains(&x) {
+                        continue;
+                    } else {
+                        hs.insert(x);
+                        if hs.contains(&(x + k)) {
+                            res += 1;
+                        }
+                        if hs.contains(&(x - k)) {
+                            res += 1;
+                        }
                     }
                 }
             }
+            Less => {}
         }
         res
     }

@@ -18,7 +18,7 @@ impl Solution {
         }
         v.sort_unstable_by(|a, b| match b.freq.cmp(&a.freq) {
             Ordering::Equal => a.word.cmp(b.word),
-            e @ _ => e,
+            e => e,
         });
         v.iter()
             .take(k as usize)

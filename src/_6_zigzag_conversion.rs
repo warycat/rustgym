@@ -12,7 +12,7 @@ impl Solution {
         let mut row = 0;
         let mut direction = true;
         for j in 0..m {
-            v[row] += &s[j..j + 1];
+            v[row] += &s[j..=j];
             if row == 0 {
                 direction = true;
                 row += 1;

@@ -8,7 +8,7 @@ impl Solution {
     }
 
     fn parse_tree(preorder: &[i32], inorder: &[i32]) -> TreeLink {
-        if preorder.len() == 0 {
+        if preorder.is_empty() {
             return None;
         }
         let val = preorder[0];
@@ -25,7 +25,7 @@ impl Solution {
             }
             tree!(
                 val,
-                Self::parse_tree(&preorder[1..mid + 1], &inorder[0..mid]),
+                Self::parse_tree(&preorder[1..=mid], &inorder[0..mid]),
                 Self::parse_tree(&preorder[mid + 1..], &inorder[mid + 1..])
             )
         }

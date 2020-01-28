@@ -11,26 +11,26 @@ enum Tok {
 use Tok::*;
 
 impl Tok {
-    fn is_expr_op(&self) -> bool {
+    fn is_expr_op(self) -> bool {
         match self {
             Op('+') | Op('-') => true,
             _ => false,
         }
     }
-    fn is_factor_op(&self) -> bool {
+    fn is_factor_op(self) -> bool {
         match self {
             Op('*') | Op('/') => true,
             _ => false,
         }
     }
-    fn val(&self) -> Option<i32> {
-        match *self {
+    fn val(self) -> Option<i32> {
+        match self {
             Num(x) => Some(x),
             _ => None,
         }
     }
-    fn eval(&self, lhs: i32, rhs: i32) -> Option<i32> {
-        match *self {
+    fn eval(self, lhs: i32, rhs: i32) -> Option<i32> {
+        match self {
             Op('+') => Some(lhs + rhs),
             Op('-') => Some(lhs - rhs),
             Op('*') => Some(lhs * rhs),

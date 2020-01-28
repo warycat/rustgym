@@ -12,7 +12,7 @@ impl Postorder for TreeLink {
             let left = node.borrow().left.postorder(leaves);
             let right = node.borrow().right.postorder(leaves);
             let level = usize::max(left, right) + 1;
-            if leaves.len() <= level - 1 {
+            if leaves.len() < level {
                 leaves.push(vec![node.borrow().val]);
             } else {
                 leaves[level - 1].push(node.borrow().val);
