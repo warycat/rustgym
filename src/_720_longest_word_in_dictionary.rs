@@ -3,29 +3,17 @@ struct Solution;
 use std::collections::BTreeMap;
 
 #[derive(Debug, PartialEq, Eq, Clone, Default)]
-struct TrieNode {
-    children: BTreeMap<char, TrieNode>,
-    end: bool,
-}
-
-impl TrieNode {
-    fn new() -> Self {
-        TrieNode {
-            children: BTreeMap::new(),
-            end: false,
-        }
-    }
-}
-
-#[derive(Debug)]
 struct Trie {
-    root: TrieNode,
+    children: BTreeMap<char, Trie>,
+    end: bool,
 }
 
 impl Trie {
     fn new() -> Self {
+        let children: BTreeMap<char, Trie> = BTreeMap::new();
         Trie {
-            root: TrieNode::new(),
+            children,
+            end: false,
         }
     }
     fn from_words(words: Vec<String>) -> Self {
@@ -36,22 +24,22 @@ impl Trie {
         trie
     }
     fn insert(&mut self, s: String) {
-        let mut link = &mut self.root;
+        let mut link = self;
         for c in s.chars() {
             link = link.children.entry(c).or_default();
         }
         link.end = true;
     }
-    fn dfs(&self, link: &TrieNode, s: &mut String, max: &mut String) {
-        if link.end {
+    fn dfs(&self, s: &mut String, max: &mut String) {
+        if self.end {
             if s.len() > max.len() {
                 *max = s.clone();
             }
         }
-        if link.end || link == &self.root {
-            for (&c, child) in link.children.iter() {
+        if s.is_empty() || self.end {
+            for (&c, child) in self.children.iter() {
                 s.push(c);
-                self.dfs(child, s, max);
+                child.dfs(s, max);
                 s.pop();
             }
         }
@@ -63,7 +51,7 @@ impl Solution {
         let trie = Trie::from_words(words);
         let mut s: String = "".to_string();
         let mut max: String = "".to_string();
-        trie.dfs(&trie.root, &mut s, &mut max);
+        trie.dfs(&mut s, &mut max);
         max
     }
 }
