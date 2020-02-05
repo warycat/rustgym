@@ -319,6 +319,8 @@ mod _349_intersection_of_two_arrays;
 //
 mod _350_intersection_of_two_arrays_2;
 //
+mod _355_design_twitter;
+//
 mod _359_logger_rate_limiter;
 //
 mod _326_power_of_three;
@@ -645,6 +647,8 @@ mod _849_maximize_distance_to_closest_person;
 //
 mod _852_peak_index_in_a_mountain_array;
 //
+mod _855_exam_room;
+//
 mod _859_buddy_strings;
 //
 mod _860_lemonade_change;
@@ -908,3 +912,5 @@ mod _1323_maximum_69_number;
 mod _1331_rank_transform_of_an_array;
 //
 mod _1332_remove_palindromic_subsequences;
+//
+mod _1337_the_k_weakest_rows_in_a_matrix;
