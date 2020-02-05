@@ -33,14 +33,8 @@ impl Solution {
 
 #[test]
 fn test() {
-    let ops: Vec<String> = ["5", "2", "C", "D", "+"]
-        .iter()
-        .map(|s| s.to_string())
-        .collect();
+    let ops: Vec<String> = vec_string!["5", "2", "C", "D", "+"];
     assert_eq!(Solution::cal_points(ops), 30);
-    let ops: Vec<String> = ["5", "-2", "4", "C", "D", "9", "+", "+"]
-        .iter()
-        .map(|s| s.to_string())
-        .collect();
+    let ops: Vec<String> = vec_string!["5", "-2", "4", "C", "D", "9", "+", "+"];
     assert_eq!(Solution::cal_points(ops), 27);
 }

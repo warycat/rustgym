@@ -18,11 +18,11 @@ fn test() {
     let text = "alice is a good girl she is a good student".to_string();
     let first = "a".to_string();
     let second = "good".to_string();
-    let res: Vec<String> = ["girl", "student"].iter().map(|s| s.to_string()).collect();
+    let res: Vec<String> = vec_string!["girl", "student"];
     assert_eq!(Solution::find_ocurrences(text, first, second), res);
     let text = "we will we will rock you".to_string();
     let first = "we".to_string();
     let second = "will".to_string();
-    let res: Vec<String> = ["we", "rock"].iter().map(|s| s.to_string()).collect();
+    let res: Vec<String> = vec_string!["we", "rock"];
     assert_eq!(Solution::find_ocurrences(text, first, second), res);
 }

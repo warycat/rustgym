@@ -51,9 +51,6 @@ impl Solution {
 #[test]
 fn test() {
     let bottom = "ABC".to_string();
-    let allowed: Vec<String> = ["ABD", "BCE", "DEF", "FFF"]
-        .iter()
-        .map(|s| s.to_string())
-        .collect();
+    let allowed: Vec<String> = vec_string!["ABD", "BCE", "DEF", "FFF"];
     Solution::pyramid_transition(bottom, allowed);
 }

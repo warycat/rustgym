@@ -32,10 +32,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let words: Vec<String> = ["Hello", "Alaska", "Dad", "Peace"]
-        .iter()
-        .map(|s| s.to_string())
-        .collect();
-    let res: Vec<String> = ["Alaska", "Dad"].iter().map(|s| s.to_string()).collect();
+    let words: Vec<String> = vec_string!["Hello", "Alaska", "Dad", "Peace"];
+    let res: Vec<String> = vec_string!["Alaska", "Dad"];
     assert_eq!(Solution::find_words(words), res);
 }

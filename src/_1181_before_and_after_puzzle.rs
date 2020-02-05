@@ -39,16 +39,10 @@ impl Solution {
 
 #[test]
 fn test() {
-    let phrases: Vec<String> = vec!["writing code", "code rocks"]
-        .iter()
-        .map(|s| s.to_string())
-        .collect();
-    let res: Vec<String> = vec!["writing code rocks"]
-        .iter()
-        .map(|s| s.to_string())
-        .collect();
+    let phrases: Vec<String> = vec_string!["writing code", "code rocks"];
+    let res: Vec<String> = vec_string!["writing code rocks"];
     assert_eq!(Solution::before_and_after_puzzles(phrases), res);
-    let phrases: Vec<String> = vec![
+    let phrases: Vec<String> = vec_string![
         "mission statement",
         "a quick bite to eat",
         "a chip off the old block",
@@ -57,20 +51,14 @@ fn test() {
         "a man on a mission",
         "block party",
         "eat my words",
-        "bar of soap",
-    ]
-    .iter()
-    .map(|s| s.to_string())
-    .collect();
-    let res: Vec<String> = vec![
+        "bar of soap"
+    ];
+    let res: Vec<String> = vec_string![
         "a chip off the old block party",
         "a man on a mission impossible",
         "a man on a mission statement",
         "a quick bite to eat my words",
-        "chocolate bar of soap",
-    ]
-    .iter()
-    .map(|s| s.to_string())
-    .collect();
+        "chocolate bar of soap"
+    ];
     assert_eq!(Solution::before_and_after_puzzles(phrases), res);
 }

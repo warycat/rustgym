@@ -20,12 +20,9 @@ impl Solution {
 
 #[test]
 fn test() {
-    let output: Vec<String> = [
+    let output: Vec<String> = vec_string![
         "1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz", "11", "Fizz", "13", "14",
-        "FizzBuzz",
-    ]
-    .iter()
-    .map(|s| s.to_string())
-    .collect();
+        "FizzBuzz"
+    ];
     assert_eq!(Solution::fizz_buzz(15), output);
 }

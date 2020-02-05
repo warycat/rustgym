@@ -66,7 +66,20 @@ macro_rules! vec_string {
         {
             let mut temp_vec = Vec::new();
             $(
-                temp_vec.push($e.to_string());
+                temp_vec.push((*$e).to_string());
+            )*
+            temp_vec
+        }
+    };
+}
+
+#[macro_export]
+macro_rules! vec_vec_string {
+    ($($e:expr),*) => {
+        {
+            let mut temp_vec = Vec::new();
+            $(
+                temp_vec.push($e.iter().map(|s| (*s).to_string()).collect());
             )*
             temp_vec
         }

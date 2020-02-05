@@ -31,25 +31,19 @@ impl Solution {
 
 #[test]
 fn test() {
-    let input: Vec<String> = [
+    let input: Vec<String> = vec_string![
         "a1 9 2 3 1",
         "g1 act car",
         "zo4 4 7",
         "ab1 off key dog",
-        "a8 act zoo",
-    ]
-    .iter()
-    .map(|s| s.to_string())
-    .collect();
-    let output: Vec<String> = [
+        "a8 act zoo"
+    ];
+    let output: Vec<String> = vec_string![
         "g1 act car",
         "a8 act zoo",
         "ab1 off key dog",
         "a1 9 2 3 1",
-        "zo4 4 7",
-    ]
-    .iter()
-    .map(|s| s.to_string())
-    .collect();
+        "zo4 4 7"
+    ];
     assert_eq!(Solution::reorder_log_files(input), output);
 }

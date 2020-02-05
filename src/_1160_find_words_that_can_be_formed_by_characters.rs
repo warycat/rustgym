@@ -35,16 +35,10 @@ impl Solution {
 
 #[test]
 fn test() {
-    let words = ["cat", "bt", "hat", "tree"]
-        .iter()
-        .map(|s| s.to_string())
-        .collect();
+    let words = vec_string!["cat", "bt", "hat", "tree"];
     let chars = "atach".to_string();
     assert_eq!(Solution::count_characters(words, chars), 6);
-    let words = ["hello", "world", "leetcode"]
-        .iter()
-        .map(|s| s.to_string())
-        .collect();
+    let words = vec_string!["hello", "world", "leetcode"];
     let chars = "welldonehoneyr".to_string();
     assert_eq!(Solution::count_characters(words, chars), 10);
 }

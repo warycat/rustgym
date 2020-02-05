@@ -339,6 +339,8 @@ mod _383_ransom_note;
 //
 mod _387_first_unique_character_in_a_string;
 //
+mod _388_longest_absolute_file_path;
+//
 mod _389_find_the_difference;
 //
 mod _392_is_subsequence;
@@ -782,6 +784,8 @@ mod _1048_longest_string_chain;
 mod _1051_height_checker;
 //
 mod _1052_grumpy_bookstore_owner;
+//
+mod _1055_shortest_way_to_form_string;
 //
 mod _1056_confusing_number;
 //

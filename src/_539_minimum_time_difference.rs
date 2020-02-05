@@ -44,6 +44,6 @@ impl Solution {
 
 #[test]
 fn test() {
-    let time_points = ["23:59", "00:00"].iter().map(|s| s.to_string()).collect();
+    let time_points = vec_string!["23:59", "00:00"];
     assert_eq!(Solution::find_min_difference(time_points), 1);
 }

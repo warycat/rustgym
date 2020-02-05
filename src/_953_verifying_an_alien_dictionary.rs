@@ -22,25 +22,19 @@ impl Solution {
 
 #[test]
 fn test() {
-    let words: Vec<String> = vec!["hello", "leetcode"]
-        .iter()
-        .map(|s| s.to_string())
-        .collect();
+    let words: Vec<String> = vec_string!["hello", "leetcode"];
     let order: String = "hlabcdefgijkmnopqrstuvwxyz".to_string();
     assert_eq!(Solution::is_alien_sorted(words, order), true);
 
-    let words: Vec<String> = vec!["word", "world", "row"]
-        .iter()
-        .map(|s| s.to_string())
-        .collect();
+    let words: Vec<String> = vec_string!["word", "world", "row"];
     let order: String = "worldabcefghijkmnpqstuvxyz".to_string();
     assert_eq!(Solution::is_alien_sorted(words, order), false);
 
-    let words: Vec<String> = vec!["apple", "app"].iter().map(|s| s.to_string()).collect();
+    let words: Vec<String> = vec_string!["apple", "app"];
     let order: String = "abcdefghijklmnopqrstuvwxyz".to_string();
     assert_eq!(Solution::is_alien_sorted(words, order), false);
 
-    let words: Vec<String> = vec!["kuvp", "q"].iter().map(|s| s.to_string()).collect();
+    let words: Vec<String> = vec_string!["kuvp", "q"];
     let order: String = "ngxlkthsjuoqcpavbfdermiywz".to_string();
     assert_eq!(Solution::is_alien_sorted(words, order), true);
 }

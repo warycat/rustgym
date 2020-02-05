@@ -27,9 +27,6 @@ impl Solution {
 
 #[test]
 fn test() {
-    let res: Vec<String> = ["((()))", "(()())", "(())()", "()(())", "()()()"]
-        .iter()
-        .map(|s| s.to_string())
-        .collect();
+    let res: Vec<String> = vec_string!["((()))", "(()())", "(())()", "()(())", "()()()"];
     assert_eq!(Solution::generate_parenthesis(3), res);
 }

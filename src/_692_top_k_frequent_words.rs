@@ -29,23 +29,13 @@ impl Solution {
 
 #[test]
 fn test() {
-    let words: Vec<String> = ["i", "love", "leetcode", "i", "love", "coding"]
-        .iter()
-        .map(|s| s.to_string())
-        .collect();
-    let res: Vec<String> = ["i", "love"].iter().map(|s| s.to_string()).collect();
+    let words: Vec<String> = vec_string!["i", "love", "leetcode", "i", "love", "coding"];
+    let res: Vec<String> = vec_string!["i", "love"];
     let k = 2;
     assert_eq!(Solution::top_k_frequent(words, k), res);
-    let words: Vec<String> = [
-        "the", "day", "is", "sunny", "the", "the", "the", "sunny", "is", "is",
-    ]
-    .iter()
-    .map(|s| s.to_string())
-    .collect();
-    let res: Vec<String> = ["the", "is", "sunny", "day"]
-        .iter()
-        .map(|s| s.to_string())
-        .collect();
+    let words: Vec<String> =
+        vec_string!["the", "day", "is", "sunny", "the", "the", "the", "sunny", "is", "is"];
+    let res: Vec<String> = vec_string!["the", "is", "sunny", "day"];
     let k = 4;
     assert_eq!(Solution::top_k_frequent(words, k), res);
 }

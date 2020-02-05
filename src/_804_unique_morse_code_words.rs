@@ -24,9 +24,6 @@ impl Solution {
 
 #[test]
 fn test() {
-    let words: Vec<String> = ["gin", "zen", "gig", "msg"]
-        .iter()
-        .map(|s| s.to_string())
-        .collect();
+    let words: Vec<String> = vec_string!["gin", "zen", "gig", "msg"];
     assert_eq!(Solution::unique_morse_representations(words), 2);
 }

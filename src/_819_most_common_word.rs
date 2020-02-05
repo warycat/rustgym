@@ -40,7 +40,7 @@ impl Solution {
 #[test]
 fn test() {
     let paragraph: String = "Bob hit a ball, the hit BALL flew far after it was hit.".to_string();
-    let banned: Vec<String> = ["hit"].iter().map(|s| s.to_string()).collect();
+    let banned: Vec<String> = vec_string!["hit"];
     assert_eq!(
         Solution::most_common_word(paragraph, banned),
         "ball".to_string()

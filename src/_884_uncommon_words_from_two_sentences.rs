@@ -25,10 +25,10 @@ impl Solution {
 fn test() {
     let a = "this apple is sweet".to_string();
     let b = "this apple is sour".to_string();
-    let res: Vec<String> = ["sour", "sweet"].iter().map(|s| s.to_string()).collect();
+    let res: Vec<String> = vec_string!["sour", "sweet"];
     assert_eq!(Solution::uncommon_from_sentences(a, b), res);
     let a = "apple apple".to_string();
     let b = "banana".to_string();
-    let res: Vec<String> = ["banana"].iter().map(|s| s.to_string()).collect();
+    let res: Vec<String> = vec_string!["banana"];
     assert_eq!(Solution::uncommon_from_sentences(a, b), res);
 }

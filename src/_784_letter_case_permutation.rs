@@ -34,9 +34,6 @@ impl Solution {
 #[test]
 fn test() {
     let s: String = "a1b2".to_string();
-    let res: Vec<String> = ["a1b2", "a1B2", "A1b2", "A1B2"]
-        .iter()
-        .map(|v| v.to_string())
-        .collect();
+    let res: Vec<String> = vec_string!["a1b2", "a1B2", "A1b2", "A1B2"];
     assert_eq!(Solution::letter_case_permutation(s), res);
 }

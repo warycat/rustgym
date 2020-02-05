@@ -38,13 +38,10 @@ impl Solution {
 
 #[test]
 fn test() {
-    let emails: Vec<String> = [
+    let emails: Vec<String> = vec_string![
         "test.email+alex@leetcode.com",
         "test.e.mail+bob.cathy@leetcode.com",
-        "testemail+david@lee.tcode.com",
-    ]
-    .iter()
-    .map(|s| s.to_string())
-    .collect();
+        "testemail+david@lee.tcode.com"
+    ];
     assert_eq!(Solution::num_unique_emails(emails), 2);
 }

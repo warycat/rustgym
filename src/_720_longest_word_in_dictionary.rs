@@ -58,10 +58,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let words: Vec<String> = ["a", "banana", "app", "appl", "ap", "apply", "apple"]
-        .iter()
-        .map(|s| s.to_string())
-        .collect();
+    let words: Vec<String> = vec_string!["a", "banana", "app", "appl", "ap", "apply", "apple"];
     let res = "apple".to_string();
     assert_eq!(Solution::longest_word(words), res);
 }

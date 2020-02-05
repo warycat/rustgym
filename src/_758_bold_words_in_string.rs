@@ -32,21 +32,15 @@ impl Solution {
 
 #[test]
 fn test() {
-    let words: Vec<String> = ["ab", "bc"].iter().map(|s| s.to_string()).collect();
+    let words: Vec<String> = vec_string!["ab", "bc"];
     let s = "aabcd".to_string();
     let res = "a<b>abc</b>d".to_string();
     assert_eq!(Solution::bold_words(words, s), res);
-    let words: Vec<String> = ["e", "cab", "de", "cc", "db"]
-        .iter()
-        .map(|s| s.to_string())
-        .collect();
+    let words: Vec<String> = vec_string!["e", "cab", "de", "cc", "db"];
     let s = "cbccceeead".to_string();
     let res = "cb<b>ccceee</b>ad".to_string();
     assert_eq!(Solution::bold_words(words, s), res);
-    let words: Vec<String> = ["ccb", "b", "d", "cba", "dc"]
-        .iter()
-        .map(|s| s.to_string())
-        .collect();
+    let words: Vec<String> = vec_string!["ccb", "b", "d", "cba", "dc"];
     let s = "eeaadadadc".to_string();
     let res = "eeaa<b>d</b>a<b>d</b>a<b>dc</b>".to_string();
     assert_eq!(Solution::bold_words(words, s), res);

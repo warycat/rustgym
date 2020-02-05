@@ -22,17 +22,14 @@ impl Solution {
 #[test]
 fn test() {
     let text = "thestoryofleetcodeandme".to_string();
-    let words: Vec<String> = ["story", "fleet", "leetcode"]
-        .iter()
-        .map(|s| s.to_string())
-        .collect();
+    let words: Vec<String> = vec_string!["story", "fleet", "leetcode"];
     let res: Vec<Vec<i32>> = [[3, 7], [9, 13], [10, 17]]
         .iter()
         .map(|v| v.to_vec())
         .collect();
     assert_eq!(Solution::index_pairs(text, words), res);
     let text = "ababa".to_string();
-    let words: Vec<String> = ["aba", "ab"].iter().map(|s| s.to_string()).collect();
+    let words: Vec<String> = vec_string!["aba", "ab"];
     let res: Vec<Vec<i32>> = [[0, 1], [0, 2], [2, 3], [2, 4]]
         .iter()
         .map(|v| v.to_vec())

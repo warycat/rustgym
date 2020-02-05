@@ -49,9 +49,6 @@ impl Solution {
 #[test]
 fn test() {
     let digits = "23".to_string();
-    let res: Vec<String> = ["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"]
-        .iter()
-        .map(|s| s.to_string())
-        .collect();
+    let res: Vec<String> = vec_string!["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"];
     assert_eq!(Solution::letter_combinations(digits), res);
 }

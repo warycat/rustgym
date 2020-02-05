@@ -23,15 +23,12 @@ impl Solution {
 #[test]
 fn test() {
     let s = "leetcode".to_string();
-    let word_dict = ["leet", "code"].iter().map(|s| s.to_string()).collect();
+    let word_dict = vec_string!["leet", "code"];
     assert_eq!(Solution::word_break(s, word_dict), true);
     let s = "applepenapple".to_string();
-    let word_dict = ["apple", "pen"].iter().map(|s| s.to_string()).collect();
+    let word_dict = vec_string!["apple", "pen"];
     assert_eq!(Solution::word_break(s, word_dict), true);
     let s = "catsandog".to_string();
-    let word_dict = ["cats", "dog", "sand", "and", "cat"]
-        .iter()
-        .map(|s| s.to_string())
-        .collect();
+    let word_dict = vec_string!["cats", "dog", "sand", "and", "cat"];
     assert_eq!(Solution::word_break(s, word_dict), false);
 }

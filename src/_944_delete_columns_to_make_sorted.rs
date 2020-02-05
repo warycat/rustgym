@@ -20,16 +20,10 @@ impl Solution {
 
 #[test]
 fn test() {
-    let a: Vec<String> = ["cba", "daf", "ghi"]
-        .iter()
-        .map(|s| s.to_string())
-        .collect();
+    let a: Vec<String> = vec_string!["cba", "daf", "ghi"];
     assert_eq!(Solution::min_deletion_size(a), 1);
-    let a: Vec<String> = ["a", "b"].iter().map(|s| s.to_string()).collect();
+    let a: Vec<String> = vec_string!["a", "b"];
     assert_eq!(Solution::min_deletion_size(a), 0);
-    let a: Vec<String> = ["zyx", "wvu", "tsr"]
-        .iter()
-        .map(|s| s.to_string())
-        .collect();
+    let a: Vec<String> = vec_string!["zyx", "wvu", "tsr"];
     assert_eq!(Solution::min_deletion_size(a), 3);
 }

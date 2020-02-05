@@ -24,22 +24,18 @@ impl Solution {
 
 #[test]
 fn test() {
-    let paths: Vec<String> = [
+    let paths: Vec<String> = vec_string![
         "root/a 1.txt(abcd) 2.txt(efgh)",
         "root/c 3.txt(abcd)",
         "root/c/d 4.txt(efgh)",
-        "root 4.txt(efgh)",
-    ]
-    .iter()
-    .map(|s| s.to_string())
-    .collect();
-    let mut res: Vec<Vec<String>> = vec![
-        vec![
-            "root/a/2.txt".to_string(),
-            "root/c/d/4.txt".to_string(),
-            "root/4.txt".to_string(),
-        ],
-        vec!["root/a/1.txt".to_string(), "root/c/3.txt".to_string()],
+        "root 4.txt(efgh)"
     ];
-    assert_eq!(Solution::find_duplicate(paths).sort(), res.sort());
+    let mut res: Vec<Vec<String>> = vec_vec_string![
+        ["root/a/2.txt", "root/c/d/4.txt", "root/4.txt",],
+        ["root/a/1.txt", "root/c/3.txt"]
+    ];
+    let mut ans = Solution::find_duplicate(paths);
+    res.sort();
+    ans.sort();
+    assert_eq!(ans, res);
 }

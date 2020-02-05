@@ -29,29 +29,17 @@ impl Solution {
 
 #[test]
 fn test() {
-    let list1: Vec<String> = ["Shogun", "Tapioca Express", "Burger King", "KFC"]
-        .iter()
-        .map(|s| s.to_string())
-        .collect();
-    let list2: Vec<String> = [
+    let list1: Vec<String> = vec_string!["Shogun", "Tapioca Express", "Burger King", "KFC"];
+    let list2: Vec<String> = vec_string![
         "Piatti",
         "The Grill at Torrey Pines",
         "Hungry Hunter Steakhouse",
-        "Shogun",
-    ]
-    .iter()
-    .map(|s| s.to_string())
-    .collect();
-    let res: Vec<String> = ["Shogun"].iter().map(|s| s.to_string()).collect();
+        "Shogun"
+    ];
+    let res: Vec<String> = vec_string!["Shogun"];
     assert_eq!(Solution::find_restaurant(list1, list2), res);
-    let list1: Vec<String> = ["Shogun", "Tapioca Express", "Burger King", "KFC"]
-        .iter()
-        .map(|s| s.to_string())
-        .collect();
-    let list2: Vec<String> = ["KFC", "Shogun", "Burger King"]
-        .iter()
-        .map(|s| s.to_string())
-        .collect();
-    let res: Vec<String> = ["Shogun"].iter().map(|s| s.to_string()).collect();
+    let list1: Vec<String> = vec_string!["Shogun", "Tapioca Express", "Burger King", "KFC"];
+    let list2: Vec<String> = vec_string!["KFC", "Shogun", "Burger King"];
+    let res: Vec<String> = vec_string!["Shogun"];
     assert_eq!(Solution::find_restaurant(list1, list2), res);
 }

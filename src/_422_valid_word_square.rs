@@ -28,24 +28,12 @@ impl Solution {
 
 #[test]
 fn test() {
-    let words: Vec<String> = ["abcd", "bnrt", "crmy", "dtye"]
-        .iter()
-        .map(|s| s.to_string())
-        .collect();
+    let words: Vec<String> = vec_string!["abcd", "bnrt", "crmy", "dtye"];
     assert_eq!(Solution::valid_word_square(words), true);
-    let words: Vec<String> = ["abcd", "bnrt", "crm", "dt"]
-        .iter()
-        .map(|s| s.to_string())
-        .collect();
+    let words: Vec<String> = vec_string!["abcd", "bnrt", "crm", "dt"];
     assert_eq!(Solution::valid_word_square(words), true);
-    let words: Vec<String> = ["ball", "area", "read", "lady"]
-        .iter()
-        .map(|s| s.to_string())
-        .collect();
+    let words: Vec<String> = vec_string!["ball", "area", "read", "lady"];
     assert_eq!(Solution::valid_word_square(words), false);
-    let words: Vec<String> = ["ball", "asee", "let", "lep"]
-        .iter()
-        .map(|s| s.to_string())
-        .collect();
+    let words: Vec<String> = vec_string!["ball", "asee", "let", "lep"];
     assert_eq!(Solution::valid_word_square(words), false);
 }

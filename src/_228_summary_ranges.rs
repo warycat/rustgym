@@ -46,9 +46,6 @@ impl Solution {
 #[test]
 fn test() {
     let nums = vec![0, 1, 2, 4, 5, 7];
-    let res: Vec<String> = ["0->2", "4->5", "7"]
-        .iter()
-        .map(|s| s.to_string())
-        .collect();
+    let res: Vec<String> = vec_string!["0->2", "4->5", "7"];
     assert_eq!(Solution::summary_ranges(nums), res);
 }

@@ -53,20 +53,14 @@ impl Solution {
 #[test]
 fn name() {
     let license_plate = "1s3 PSt".to_string();
-    let words: Vec<String> = ["step", "steps", "stripe", "stepple"]
-        .iter()
-        .map(|s| s.to_string())
-        .collect();
+    let words: Vec<String> = vec_string!["step", "steps", "stripe", "stepple"];
     let res = "steps".to_string();
     assert_eq!(
         Solution::shortest_completing_word(license_plate, words),
         res
     );
     let license_plate = "1s3 456".to_string();
-    let words: Vec<String> = ["looks", "pest", "stew", "show"]
-        .iter()
-        .map(|s| s.to_string())
-        .collect();
+    let words: Vec<String> = vec_string!["looks", "pest", "stew", "show"];
     let res = "pest".to_string();
     assert_eq!(
         Solution::shortest_completing_word(license_plate, words),

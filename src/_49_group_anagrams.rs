@@ -23,13 +23,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let strs: Vec<String> = ["eat", "tea", "tan", "ate", "nat", "bat"]
-        .iter()
-        .map(|s| s.to_string())
-        .collect();
-    let res: Vec<Vec<String>> = [vec!["bat"], vec!["nat", "tan"], vec!["ate", "eat", "tea"]]
-        .iter()
-        .map(|v| v.iter().map(|s| s.to_string()).collect())
-        .collect();
+    let strs: Vec<String> = vec_string!["eat", "tea", "tan", "ate", "nat", "bat"];
+    let res: Vec<Vec<String>> = vec_vec_string![["bat"], ["nat", "tan"], ["ate", "eat", "tea"]];
     assert_eq!(Solution::group_anagrams(strs), res);
 }

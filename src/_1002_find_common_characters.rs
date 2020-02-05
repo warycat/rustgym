@@ -30,17 +30,11 @@ impl Solution {
 
 #[test]
 fn test() {
-    let a: Vec<String> = vec!["bella", "label", "roller"]
-        .iter()
-        .map(|s| s.to_string())
-        .collect();
-    let b: Vec<String> = vec!["e", "l", "l"].iter().map(|s| s.to_string()).collect();
+    let a: Vec<String> = vec_string!["bella", "label", "roller"];
+    let b: Vec<String> = vec_string!["e", "l", "l"];
     assert_eq!(Solution::common_chars(a), b);
 
-    let a: Vec<String> = vec!["cool", "lock", "cook"]
-        .iter()
-        .map(|s| s.to_string())
-        .collect();
-    let b: Vec<String> = vec!["c", "o"].iter().map(|s| s.to_string()).collect();
+    let a: Vec<String> = vec_string!["cool", "lock", "cook"];
+    let b: Vec<String> = vec_string!["c", "o"];
     assert_eq!(Solution::common_chars(a), b);
 }

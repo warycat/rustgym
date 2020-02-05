@@ -56,15 +56,9 @@ impl Solution {
 #[test]
 fn test() {
     let s = "25525511135".to_string();
-    let res: Vec<String> = ["255.255.11.135", "255.255.111.35"]
-        .iter()
-        .map(|s| s.to_string())
-        .collect();
+    let res: Vec<String> = vec_string!["255.255.11.135", "255.255.111.35"];
     assert_eq!(Solution::restore_ip_addresses(s), res);
     let s = "010010".to_string();
-    let res: Vec<String> = ["0.10.0.10", "0.100.1.0"]
-        .iter()
-        .map(|s| s.to_string())
-        .collect();
+    let res: Vec<String> = vec_string!["0.10.0.10", "0.100.1.0"];
     assert_eq!(Solution::restore_ip_addresses(s), res);
 }

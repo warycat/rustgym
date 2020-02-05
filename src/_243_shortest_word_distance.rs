@@ -28,17 +28,11 @@ impl Solution {
 
 #[test]
 fn test() {
-    let words: Vec<String> = vec!["practice", "makes", "perfect", "coding", "makes"]
-        .iter()
-        .map(|s| s.to_string())
-        .collect();
+    let words: Vec<String> = vec_string!["practice", "makes", "perfect", "coding", "makes"];
     let word1 = "coding".to_string();
     let word2 = "practice".to_string();
     assert_eq!(Solution::shortest_distance(words, word1, word2), 3);
-    let words: Vec<String> = vec!["practice", "makes", "perfect", "coding", "makes"]
-        .iter()
-        .map(|s| s.to_string())
-        .collect();
+    let words: Vec<String> = vec_string!["practice", "makes", "perfect", "coding", "makes"];
     let word1 = "makes".to_string();
     let word2 = "coding".to_string();
     assert_eq!(Solution::shortest_distance(words, word1, word2), 1);

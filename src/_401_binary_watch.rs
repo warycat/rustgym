@@ -17,12 +17,8 @@ impl Solution {
 #[test]
 fn test() {
     let num = 1;
-    let mut res: Vec<String> = [
-        "1:00", "2:00", "4:00", "8:00", "0:01", "0:02", "0:04", "0:08", "0:16", "0:32",
-    ]
-    .iter()
-    .map(|s| s.to_string())
-    .collect();
+    let mut res: Vec<String> =
+        vec_string!["1:00", "2:00", "4:00", "8:00", "0:01", "0:02", "0:04", "0:08", "0:16", "0:32"];
     res.sort_unstable();
     assert_eq!(Solution::read_binary_watch(num), res);
 }

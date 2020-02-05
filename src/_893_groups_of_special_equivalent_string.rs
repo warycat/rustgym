@@ -36,24 +36,12 @@ impl Solution {
 
 #[test]
 fn test() {
-    let a: Vec<String> = ["a", "b", "c", "a", "c", "c"]
-        .iter()
-        .map(|s| s.to_string())
-        .collect();
+    let a: Vec<String> = vec_string!["a", "b", "c", "a", "c", "c"];
     assert_eq!(Solution::num_special_equiv_groups(a), 3);
-    let a: Vec<String> = ["aa", "bb", "ab", "ba"]
-        .iter()
-        .map(|s| s.to_string())
-        .collect();
+    let a: Vec<String> = vec_string!["aa", "bb", "ab", "ba"];
     assert_eq!(Solution::num_special_equiv_groups(a), 4);
-    let a: Vec<String> = ["abc", "acb", "bac", "bca", "cab", "cba"]
-        .iter()
-        .map(|s| s.to_string())
-        .collect();
+    let a: Vec<String> = vec_string!["abc", "acb", "bac", "bca", "cab", "cba"];
     assert_eq!(Solution::num_special_equiv_groups(a), 3);
-    let a: Vec<String> = ["abcd", "cdab", "adcb", "cbad"]
-        .iter()
-        .map(|s| s.to_string())
-        .collect();
+    let a: Vec<String> = vec_string!["abcd", "cdab", "adcb", "cbad"];
     assert_eq!(Solution::num_special_equiv_groups(a), 1);
 }

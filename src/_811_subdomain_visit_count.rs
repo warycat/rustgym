@@ -37,40 +37,29 @@ impl Solution {
 
 #[test]
 fn test() {
-    let input: Vec<String> = ["9001 discuss.leetcode.com"]
-        .iter()
-        .map(|s| s.to_string())
-        .collect();
-    let mut answer: Vec<String> = ["9001 discuss.leetcode.com", "9001 leetcode.com", "9001 com"]
-        .iter()
-        .map(|s| s.to_string())
-        .collect();
+    let input: Vec<String> = vec_string!["9001 discuss.leetcode.com"];
+    let mut answer: Vec<String> =
+        vec_string!["9001 discuss.leetcode.com", "9001 leetcode.com", "9001 com"];
     let mut output = Solution::subdomain_visits(input);
     answer.sort();
     output.sort();
     assert_eq!(answer, output);
 
-    let input: Vec<String> = [
+    let input: Vec<String> = vec_string![
         "900 google.mail.com",
         "50 yahoo.com",
         "1 intel.mail.com",
-        "5 wiki.org",
-    ]
-    .iter()
-    .map(|s| s.to_string())
-    .collect();
-    let mut answer: Vec<String> = [
+        "5 wiki.org"
+    ];
+    let mut answer: Vec<String> = vec_string![
         "901 mail.com",
         "50 yahoo.com",
         "900 google.mail.com",
         "5 wiki.org",
         "5 org",
         "1 intel.mail.com",
-        "951 com",
-    ]
-    .iter()
-    .map(|s| s.to_string())
-    .collect();
+        "951 com"
+    ];
     let mut output = Solution::subdomain_visits(input);
     answer.sort();
     output.sort();

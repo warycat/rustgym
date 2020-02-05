@@ -33,15 +33,12 @@ impl Solution {
 
 #[test]
 fn test() {
-    let queries = ["cbd"].iter().map(|s| s.to_string()).collect();
-    let words = ["zaaaz"].iter().map(|s| s.to_string()).collect();
+    let queries = vec_string!["cbd"];
+    let words = vec_string!["zaaaz"];
     let res = vec![1];
     assert_eq!(Solution::num_smaller_by_frequency(queries, words), res);
-    let queries = ["bbb", "cc"].iter().map(|s| s.to_string()).collect();
-    let words = ["a", "aa", "aaa", "aaaa"]
-        .iter()
-        .map(|s| s.to_string())
-        .collect();
+    let queries = vec_string!["bbb", "cc"];
+    let words = vec_string!["a", "aa", "aaa", "aaaa"];
     let res = vec![1, 2];
     assert_eq!(Solution::num_smaller_by_frequency(queries, words), res);
 }

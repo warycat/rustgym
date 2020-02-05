@@ -44,15 +44,9 @@ impl Solution {
 
 #[test]
 fn test() {
-    let words1: Vec<String> = ["an", "extraordinary", "meal"]
-        .iter()
-        .map(|s| s.to_string())
-        .collect();
-    let words2: Vec<String> = ["one", "good", "dinner"]
-        .iter()
-        .map(|s| s.to_string())
-        .collect();
-    let pairs: Vec<Vec<String>> = [
+    let words1: Vec<String> = vec_string!["an", "extraordinary", "meal"];
+    let words2: Vec<String> = vec_string!["one", "good", "dinner"];
+    let pairs: Vec<Vec<String>> = vec_vec_string![
         ["great", "good"],
         ["extraordinary", "good"],
         ["well", "good"],
@@ -89,10 +83,7 @@ fn test() {
         ["extremely", "very"],
         ["actually", "very"],
         ["really", "very"],
-        ["super", "very"],
-    ]
-    .iter()
-    .map(|v| v.iter().map(|s| s.to_string()).collect())
-    .collect();
+        ["super", "very"]
+    ];
     assert_eq!(Solution::are_sentences_similar(words1, words2, pairs), true);
 }

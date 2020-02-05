@@ -44,9 +44,6 @@ impl Solution {
 fn test() {
     let ip = "255.0.0.7".to_string();
     let n = 10;
-    let cidrs: Vec<String> = ["255.0.0.7/32", "255.0.0.8/29", "255.0.0.16/32"]
-        .iter()
-        .map(|s| s.to_string())
-        .collect();
+    let cidrs: Vec<String> = vec_string!["255.0.0.7/32", "255.0.0.8/29", "255.0.0.16/32"];
     assert_eq!(Solution::ip_to_cidr(ip, n), cidrs);
 }

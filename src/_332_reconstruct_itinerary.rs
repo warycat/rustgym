@@ -32,18 +32,12 @@ impl Solution {
 
 #[test]
 fn test() {
-    let tickets: Vec<Vec<String>> = [
+    let tickets: Vec<Vec<String>> = vec_vec_string![
         ["MUC", "LHR"],
         ["JFK", "MUC"],
         ["SFO", "SJC"],
-        ["LHR", "SFO"],
-    ]
-    .iter()
-    .map(|v| v.iter().map(|s| s.to_string()).collect())
-    .collect();
-    let res: Vec<String> = ["JFK", "MUC", "LHR", "SFO", "SJC"]
-        .iter()
-        .map(|s| s.to_string())
-        .collect();
+        ["LHR", "SFO"]
+    ];
+    let res: Vec<String> = vec_string!["JFK", "MUC", "LHR", "SFO", "SJC"];
     assert_eq!(Solution::find_itinerary(tickets), res);
 }

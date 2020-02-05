@@ -45,12 +45,9 @@ impl Solution {
 
 #[test]
 fn test() {
-    let words: Vec<String> = ["a", "b", "ba", "bca", "bda", "bdca"]
-        .iter()
-        .map(|v| v.to_string())
-        .collect();
+    let words: Vec<String> = vec_string!["a", "b", "ba", "bca", "bda", "bdca"];
     assert_eq!(Solution::longest_str_chain(words), 4);
-    let words: Vec<String> = [
+    let words: Vec<String> = vec_string![
         "ksqvsyq",
         "ks",
         "kss",
@@ -69,10 +66,7 @@ fn test() {
         "grukkmj",
         "grukj",
         "zczpzfvdhx",
-        "gru",
-    ]
-    .iter()
-    .map(|v| v.to_string())
-    .collect();
+        "gru"
+    ];
     assert_eq!(Solution::longest_str_chain(words), 7);
 }
