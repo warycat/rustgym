@@ -301,6 +301,8 @@ mod _328_odd_even_linked_list;
 //
 mod _332_reconstruct_itinerary;
 //
+mod _334_increasing_triplet_subsequence;
+//
 mod _339_nested_list_weight_sum;
 //
 mod _342_power_of_four;
@@ -366,6 +368,8 @@ mod _412_fizz_buzz;
 mod _414_third_maximum_number;
 //
 mod _415_add_strings;
+//
+mod _417_pacific_atlantic_water_flow;
 //
 mod _422_valid_word_square;
 //
@@ -486,6 +490,8 @@ mod _605_can_place_flowers;
 mod _606_construct_string_from_binary_tree;
 //
 mod _609_find_duplicate_file_in_system;
+//
+mod _611_valid_triangle_number;
 //
 mod _617_merge_two_binary_trees;
 //
@@ -708,6 +714,8 @@ mod _941_valid_mountain_array;
 mod _942_di_string_match;
 //
 mod _944_delete_columns_to_make_sorted;
+//
+mod _945_minimum_increment_to_make_array_unique;
 //
 mod _949_largest_time_for_given_digits;
 //

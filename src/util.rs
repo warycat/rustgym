@@ -74,6 +74,19 @@ macro_rules! vec_string {
 }
 
 #[macro_export]
+macro_rules! vec_vec_i32 {
+    ($($e:expr),*) => {
+        {
+            let mut temp_vec = Vec::new();
+            $(
+                temp_vec.push($e.to_vec());
+            )*
+            temp_vec
+        }
+    };
+}
+
+#[macro_export]
 macro_rules! vec_vec_string {
     ($($e:expr),*) => {
         {
