@@ -42,7 +42,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let points: Vec<Vec<i32>> = [[1, 3], [-2, 2]].iter().map(|v| v.to_vec()).collect();
-    let res: Vec<Vec<i32>> = [[-2, 2]].iter().map(|v| v.to_vec()).collect();
+    let points: Vec<Vec<i32>> = vec_vec_i32![[1, 3], [-2, 2]];
+    let res: Vec<Vec<i32>> = vec_vec_i32![[-2, 2]];
     assert_eq!(Solution::k_closest(points, 1), res);
 }

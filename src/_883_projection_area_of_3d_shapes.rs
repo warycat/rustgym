@@ -25,25 +25,19 @@ impl Solution {
 
 #[test]
 fn test() {
-    let grid: Vec<Vec<i32>> = [[2]].iter().map(|v| v.to_vec()).collect();
+    let grid: Vec<Vec<i32>> = vec_vec_i32![[2]];
     let res = 5;
     assert_eq!(Solution::projection_area(grid), res);
-    let grid: Vec<Vec<i32>> = [[1, 2], [3, 4]].iter().map(|v| v.to_vec()).collect();
+    let grid: Vec<Vec<i32>> = vec_vec_i32![[1, 2], [3, 4]];
     let res = 17;
     assert_eq!(Solution::projection_area(grid), res);
-    let grid: Vec<Vec<i32>> = [[1, 0], [0, 2]].iter().map(|v| v.to_vec()).collect();
+    let grid: Vec<Vec<i32>> = vec_vec_i32![[1, 0], [0, 2]];
     let res = 8;
     assert_eq!(Solution::projection_area(grid), res);
-    let grid: Vec<Vec<i32>> = [[1, 1, 1], [1, 0, 1], [1, 1, 1]]
-        .iter()
-        .map(|v| v.to_vec())
-        .collect();
+    let grid: Vec<Vec<i32>> = vec_vec_i32![[1, 1, 1], [1, 0, 1], [1, 1, 1]];
     let res = 14;
     assert_eq!(Solution::projection_area(grid), res);
-    let grid: Vec<Vec<i32>> = [[2, 2, 2], [2, 1, 2], [2, 2, 2]]
-        .iter()
-        .map(|v| v.to_vec())
-        .collect();
+    let grid: Vec<Vec<i32>> = vec_vec_i32![[2, 2, 2], [2, 1, 2], [2, 2, 2]];
     let res = 21;
     assert_eq!(Solution::projection_area(grid), res);
 }

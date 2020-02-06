@@ -59,9 +59,6 @@ impl Solution {
 #[test]
 fn test() {
     let n = 3;
-    let res: Vec<Vec<i32>> = [[1, 2, 3], [8, 9, 4], [7, 6, 5]]
-        .iter()
-        .map(|v| v.to_vec())
-        .collect();
+    let res: Vec<Vec<i32>> = vec_vec_i32![[1, 2, 3], [8, 9, 4], [7, 6, 5]];
     assert_eq!(Solution::generate_matrix(n), res);
 }

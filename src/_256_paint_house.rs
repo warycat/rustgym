@@ -25,9 +25,6 @@ impl Solution {
 
 #[test]
 fn test() {
-    let costs: Vec<Vec<i32>> = [[17, 2, 17], [16, 16, 5], [14, 3, 19]]
-        .iter()
-        .map(|v| v.to_vec())
-        .collect();
+    let costs: Vec<Vec<i32>> = vec_vec_i32![[17, 2, 17], [16, 16, 5], [14, 3, 19]];
     assert_eq!(Solution::min_cost(costs), 10);
 }

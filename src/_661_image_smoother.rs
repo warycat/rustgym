@@ -55,13 +55,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let m: Vec<Vec<i32>> = [[1, 1, 1], [1, 0, 1], [1, 1, 1]]
-        .iter()
-        .map(|v| v.to_vec())
-        .collect();
-    let o: Vec<Vec<i32>> = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
-        .iter()
-        .map(|v| v.to_vec())
-        .collect();
+    let m: Vec<Vec<i32>> = vec_vec_i32![[1, 1, 1], [1, 0, 1], [1, 1, 1]];
+    let o: Vec<Vec<i32>> = vec_vec_i32![[0, 0, 0], [0, 0, 0], [0, 0, 0]];
     assert_eq!(Solution::image_smoother(m), o);
 }

@@ -13,9 +13,6 @@ impl Solution {
 
 #[test]
 fn test() {
-    let costs: Vec<Vec<i32>> = [[10, 20], [30, 200], [400, 50], [30, 20]]
-        .iter()
-        .map(|v| v.to_vec())
-        .collect();
+    let costs: Vec<Vec<i32>> = vec_vec_i32![[10, 20], [30, 200], [400, 50], [30, 20]];
     assert_eq!(Solution::two_city_sched_cost(costs), 110);
 }

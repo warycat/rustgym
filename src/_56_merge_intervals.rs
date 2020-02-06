@@ -26,16 +26,10 @@ impl Solution {
 
 #[test]
 fn test() {
-    let intervals: Vec<Vec<i32>> = [[1, 3], [2, 6], [8, 10], [15, 18]]
-        .iter()
-        .map(|v| v.to_vec())
-        .collect();
-    let res: Vec<Vec<i32>> = [[1, 6], [8, 10], [15, 18]]
-        .iter()
-        .map(|v| v.to_vec())
-        .collect();
+    let intervals: Vec<Vec<i32>> = vec_vec_i32![[1, 3], [2, 6], [8, 10], [15, 18]];
+    let res: Vec<Vec<i32>> = vec_vec_i32![[1, 6], [8, 10], [15, 18]];
     assert_eq!(Solution::merge(intervals), res);
-    let intervals: Vec<Vec<i32>> = [[1, 4], [4, 5]].iter().map(|v| v.to_vec()).collect();
-    let res: Vec<Vec<i32>> = [[1, 5]].iter().map(|v| v.to_vec()).collect();
+    let intervals: Vec<Vec<i32>> = vec_vec_i32![[1, 4], [4, 5]];
+    let res: Vec<Vec<i32>> = vec_vec_i32![[1, 5]];
     assert_eq!(Solution::merge(intervals), res);
 }

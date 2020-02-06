@@ -17,10 +17,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let points = [[1, 1], [3, 4], [-1, 0]]
-        .iter()
-        .map(|v| v.to_vec())
-        .collect();
+    let points = vec_vec_i32![[1, 1], [3, 4], [-1, 0]];
     let res = 7;
     assert_eq!(Solution::min_time_to_visit_all_points(points), res);
 }

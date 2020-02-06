@@ -24,9 +24,6 @@ impl Solution {
 
 #[test]
 fn test() {
-    let dominoes: Vec<Vec<i32>> = [[1, 2], [2, 1], [3, 4], [5, 6]]
-        .iter()
-        .map(|v| v.to_vec())
-        .collect();
+    let dominoes: Vec<Vec<i32>> = vec_vec_i32![[1, 2], [2, 1], [3, 4], [5, 6]];
     assert_eq!(Solution::num_equiv_domino_pairs(dominoes), 1);
 }

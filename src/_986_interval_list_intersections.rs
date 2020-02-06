@@ -35,17 +35,8 @@ impl Solution {
 
 #[test]
 fn test() {
-    let a: Vec<Vec<i32>> = [[0, 2], [5, 10], [13, 23], [24, 25]]
-        .iter()
-        .map(|v| v.to_vec())
-        .collect();
-    let b: Vec<Vec<i32>> = [[1, 5], [8, 12], [15, 24], [25, 26]]
-        .iter()
-        .map(|v| v.to_vec())
-        .collect();
-    let res: Vec<Vec<i32>> = [[1, 2], [5, 5], [8, 10], [15, 23], [24, 24], [25, 25]]
-        .iter()
-        .map(|v| v.to_vec())
-        .collect();
+    let a: Vec<Vec<i32>> = vec_vec_i32![[0, 2], [5, 10], [13, 23], [24, 25]];
+    let b: Vec<Vec<i32>> = vec_vec_i32![[1, 5], [8, 12], [15, 24], [25, 26]];
+    let res: Vec<Vec<i32>> = vec_vec_i32![[1, 2], [5, 5], [8, 10], [15, 23], [24, 24], [25, 25]];
     assert_eq!(Solution::interval_intersection(a, b), res);
 }

@@ -69,10 +69,7 @@ impl Solution {
 fn test() {
     let nums = vec![1, 0, -1, 0, -2, 2];
     let target = 0;
-    let mut ans: Vec<Vec<i32>> = [[-1, 0, 0, 1], [-2, -1, 1, 2], [-2, 0, 0, 2]]
-        .iter()
-        .map(|v| v.to_vec())
-        .collect();
+    let mut ans: Vec<Vec<i32>> = vec_vec_i32![[-1, 0, 0, 1], [-2, -1, 1, 2], [-2, 0, 0, 2]];
     let mut res = Solution::four_sum(nums, target);
     res.sort_unstable();
     ans.sort_unstable();

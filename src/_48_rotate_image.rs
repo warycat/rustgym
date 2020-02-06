@@ -17,14 +17,8 @@ impl Solution {
 
 #[test]
 fn test() {
-    let mut matrix: Vec<Vec<i32>> = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-        .iter()
-        .map(|v| v.to_vec())
-        .collect();
-    let res: Vec<Vec<i32>> = [[7, 4, 1], [8, 5, 2], [9, 6, 3]]
-        .iter()
-        .map(|v| v.to_vec())
-        .collect();
+    let mut matrix: Vec<Vec<i32>> = vec_vec_i32![[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+    let res: Vec<Vec<i32>> = vec_vec_i32![[7, 4, 1], [8, 5, 2], [9, 6, 3]];
     Solution::rotate(&mut matrix);
     assert_eq!(matrix, res);
 }

@@ -27,14 +27,8 @@ impl Solution {
 
 #[test]
 fn test() {
-    let m: Vec<Vec<i32>> = [[1, 1, 0], [1, 1, 0], [0, 0, 1]]
-        .iter()
-        .map(|v| v.to_vec())
-        .collect();
+    let m: Vec<Vec<i32>> = vec_vec_i32![[1, 1, 0], [1, 1, 0], [0, 0, 1]];
     assert_eq!(Solution::find_circle_num(m), 2);
-    let m: Vec<Vec<i32>> = [[1, 1, 0], [1, 1, 1], [0, 1, 1]]
-        .iter()
-        .map(|v| v.to_vec())
-        .collect();
+    let m: Vec<Vec<i32>> = vec_vec_i32![[1, 1, 0], [1, 1, 1], [0, 1, 1]];
     assert_eq!(Solution::find_circle_num(m), 1);
 }

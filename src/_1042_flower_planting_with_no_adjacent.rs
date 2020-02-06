@@ -30,21 +30,15 @@ impl Solution {
 #[test]
 fn test() {
     let n = 3;
-    let paths: Vec<Vec<i32>> = [[1, 2], [2, 3], [3, 1]]
-        .iter()
-        .map(|v| v.to_vec())
-        .collect();
+    let paths: Vec<Vec<i32>> = vec_vec_i32![[1, 2], [2, 3], [3, 1]];
     let res = vec![1, 2, 3];
     assert_eq!(Solution::garden_no_adj(n, paths), res);
     let n = 4;
-    let paths: Vec<Vec<i32>> = [[1, 2], [3, 4]].iter().map(|v| v.to_vec()).collect();
+    let paths: Vec<Vec<i32>> = vec_vec_i32![[1, 2], [3, 4]];
     let res = vec![1, 2, 1, 2];
     assert_eq!(Solution::garden_no_adj(n, paths), res);
     let n = 4;
-    let paths: Vec<Vec<i32>> = [[1, 2], [2, 3], [3, 4], [4, 1], [1, 3], [2, 4]]
-        .iter()
-        .map(|v| v.to_vec())
-        .collect();
+    let paths: Vec<Vec<i32>> = vec_vec_i32![[1, 2], [2, 3], [3, 4], [4, 1], [1, 3], [2, 4]];
     let res = vec![1, 2, 3, 4];
     assert_eq!(Solution::garden_no_adj(n, paths), res);
 }

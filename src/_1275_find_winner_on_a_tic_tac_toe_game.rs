@@ -49,19 +49,13 @@ impl Solution {
 
 #[test]
 fn test() {
-    let moves = [[0, 0], [2, 0], [1, 1], [2, 1], [2, 2]]
-        .iter()
-        .map(|v| v.to_vec())
-        .collect();
+    let moves = vec_vec_i32![[0, 0], [2, 0], [1, 1], [2, 1], [2, 2]];
     let res = "A".to_string();
     assert_eq!(Solution::tictactoe(moves), res);
-    let moves = [[0, 0], [1, 1], [0, 1], [0, 2], [1, 0], [2, 0]]
-        .iter()
-        .map(|v| v.to_vec())
-        .collect();
+    let moves = vec_vec_i32![[0, 0], [1, 1], [0, 1], [0, 2], [1, 0], [2, 0]];
     let res = "B".to_string();
     assert_eq!(Solution::tictactoe(moves), res);
-    let moves = [
+    let moves = vec_vec_i32![
         [0, 0],
         [1, 1],
         [2, 0],
@@ -70,14 +64,11 @@ fn test() {
         [2, 1],
         [0, 1],
         [0, 2],
-        [2, 2],
-    ]
-    .iter()
-    .map(|v| v.to_vec())
-    .collect();
+        [2, 2]
+    ];
     let res = "Draw".to_string();
     assert_eq!(Solution::tictactoe(moves), res);
-    let moves = [[0, 0], [1, 1]].iter().map(|v| v.to_vec()).collect();
+    let moves = vec_vec_i32![[0, 0], [1, 1]];
     let res = "Pending".to_string();
     assert_eq!(Solution::tictactoe(moves), res);
 }

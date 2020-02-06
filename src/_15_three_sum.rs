@@ -48,15 +48,9 @@ impl Solution {
 #[test]
 fn test() {
     let nums = vec![-1, 0, 1, 2, -1, -4];
-    let res: Vec<Vec<i32>> = [[-1, -1, 2], [-1, 0, 1]]
-        .iter()
-        .map(|v| v.to_vec())
-        .collect();
+    let res: Vec<Vec<i32>> = vec_vec_i32![[-1, -1, 2], [-1, 0, 1]];
     assert_eq!(Solution::three_sum(nums), res);
     let nums = vec![-2, 0, 1, 1, 2];
-    let res: Vec<Vec<i32>> = [[-2, 0, 2], [-2, 1, 1]]
-        .iter()
-        .map(|v| v.to_vec())
-        .collect();
+    let res: Vec<Vec<i32>> = vec_vec_i32![[-2, 0, 2], [-2, 1, 1]];
     assert_eq!(Solution::three_sum(nums), res);
 }

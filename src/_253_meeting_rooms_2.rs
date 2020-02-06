@@ -25,13 +25,10 @@ impl Solution {
 
 #[test]
 fn test() {
-    let intervals: Vec<Vec<i32>> = [[0, 30], [5, 10], [15, 20]]
-        .iter()
-        .map(|v| v.to_vec())
-        .collect();
+    let intervals: Vec<Vec<i32>> = vec_vec_i32![[0, 30], [5, 10], [15, 20]];
     assert_eq!(Solution::min_meeting_rooms(intervals), 2);
-    let intervals: Vec<Vec<i32>> = [[7, 10], [2, 4]].iter().map(|v| v.to_vec()).collect();
+    let intervals: Vec<Vec<i32>> = vec_vec_i32![[7, 10], [2, 4]];
     assert_eq!(Solution::min_meeting_rooms(intervals), 1);
-    let intervals: Vec<Vec<i32>> = [[13, 15], [1, 13]].iter().map(|v| v.to_vec()).collect();
+    let intervals: Vec<Vec<i32>> = vec_vec_i32![[13, 15], [1, 13]];
     assert_eq!(Solution::min_meeting_rooms(intervals), 1);
 }

@@ -87,13 +87,10 @@ impl Solution {
 
 #[test]
 fn test() {
-    let matrix: Vec<Vec<i32>> = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-        .iter()
-        .map(|v| v.to_vec())
-        .collect();
+    let matrix: Vec<Vec<i32>> = vec_vec_i32![[1, 2, 3], [4, 5, 6], [7, 8, 9]];
     let res = vec![1, 2, 3, 6, 9, 8, 7, 4, 5];
     assert_eq!(Solution::spiral_order(matrix), res);
-    let matrix: Vec<Vec<i32>> = vec![vec![3], vec![2]];
+    let matrix: Vec<Vec<i32>> = vec_vec_i32![[3], [2]];
     let res = vec![3, 2];
     assert_eq!(Solution::spiral_order(matrix), res);
 }

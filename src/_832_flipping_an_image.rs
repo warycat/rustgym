@@ -21,22 +21,10 @@ impl Solution {
 
 #[test]
 fn test() {
-    let a: Vec<Vec<i32>> = [[1, 1, 0], [1, 0, 1], [0, 0, 0]]
-        .iter()
-        .map(|v| v.to_vec())
-        .collect();
-    let b: Vec<Vec<i32>> = [[1, 0, 0], [0, 1, 0], [1, 1, 1]]
-        .iter()
-        .map(|v| v.to_vec())
-        .collect();
+    let a: Vec<Vec<i32>> = vec_vec_i32![[1, 1, 0], [1, 0, 1], [0, 0, 0]];
+    let b: Vec<Vec<i32>> = vec_vec_i32![[1, 0, 0], [0, 1, 0], [1, 1, 1]];
     assert_eq!(Solution::flip_and_invert_image(a), b);
-    let a: Vec<Vec<i32>> = [[1, 1, 0, 0], [1, 0, 0, 1], [0, 1, 1, 1], [1, 0, 1, 0]]
-        .iter()
-        .map(|v| v.to_vec())
-        .collect();
-    let b: Vec<Vec<i32>> = [[1, 1, 0, 0], [0, 1, 1, 0], [0, 0, 0, 1], [1, 0, 1, 0]]
-        .iter()
-        .map(|v| v.to_vec())
-        .collect();
+    let a: Vec<Vec<i32>> = vec_vec_i32![[1, 1, 0, 0], [1, 0, 0, 1], [0, 1, 1, 1], [1, 0, 1, 0]];
+    let b: Vec<Vec<i32>> = vec_vec_i32![[1, 1, 0, 0], [0, 1, 1, 0], [0, 0, 0, 1], [1, 0, 1, 0]];
     assert_eq!(Solution::flip_and_invert_image(a), b);
 }

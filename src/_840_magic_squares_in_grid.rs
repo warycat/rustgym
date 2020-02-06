@@ -68,14 +68,8 @@ impl Solution {
 
 #[test]
 fn test() {
-    let grid: Vec<Vec<i32>> = [[4, 3, 8, 4], [9, 5, 1, 9], [2, 7, 6, 2]]
-        .iter()
-        .map(|v| v.to_vec())
-        .collect();
+    let grid: Vec<Vec<i32>> = vec_vec_i32![[4, 3, 8, 4], [9, 5, 1, 9], [2, 7, 6, 2]];
     assert_eq!(Solution::num_magic_squares_inside(grid), 1);
-    let grid: Vec<Vec<i32>> = [[5, 5, 5], [5, 5, 5], [5, 5, 5]]
-        .iter()
-        .map(|v| v.to_vec())
-        .collect();
+    let grid: Vec<Vec<i32>> = vec_vec_i32![[5, 5, 5], [5, 5, 5], [5, 5, 5]];
     assert_eq!(Solution::num_magic_squares_inside(grid), 0);
 }

@@ -21,14 +21,8 @@ impl Solution {
 
 #[test]
 fn test() {
-    let coordinates: Vec<Vec<i32>> = [[1, 2], [2, 3], [3, 4], [4, 5], [5, 6], [6, 7]]
-        .iter()
-        .map(|v| v.to_vec())
-        .collect();
+    let coordinates: Vec<Vec<i32>> = vec_vec_i32![[1, 2], [2, 3], [3, 4], [4, 5], [5, 6], [6, 7]];
     assert_eq!(Solution::check_straight_line(coordinates), true);
-    let coordinates: Vec<Vec<i32>> = [[1, 1], [2, 2], [3, 4], [4, 5], [5, 6], [7, 7]]
-        .iter()
-        .map(|v| v.to_vec())
-        .collect();
+    let coordinates: Vec<Vec<i32>> = vec_vec_i32![[1, 1], [2, 2], [3, 4], [4, 5], [5, 6], [7, 7]];
     assert_eq!(Solution::check_straight_line(coordinates), false);
 }

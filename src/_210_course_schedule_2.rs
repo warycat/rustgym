@@ -40,14 +40,11 @@ impl Solution {
 #[test]
 fn test() {
     let num_courses = 2;
-    let prerequisites: Vec<Vec<i32>> = [[1, 0]].iter().map(|v| v.to_vec()).collect();
+    let prerequisites: Vec<Vec<i32>> = vec_vec_i32![[1, 0]];
     let res = vec![0, 1];
     assert_eq!(Solution::find_order(num_courses, prerequisites), res);
     let num_courses = 4;
-    let prerequisites: Vec<Vec<i32>> = [[1, 0], [2, 0], [3, 1], [3, 2]]
-        .iter()
-        .map(|v| v.to_vec())
-        .collect();
+    let prerequisites: Vec<Vec<i32>> = vec_vec_i32![[1, 0], [2, 0], [3, 1], [3, 2]];
     let res = vec![0, 1, 2, 3];
     assert_eq!(Solution::find_order(num_courses, prerequisites), res);
 }

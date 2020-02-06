@@ -100,14 +100,8 @@ impl Solution {
 
 #[test]
 fn test() {
-    let mut board: Vec<Vec<i32>> = [[0, 1, 0], [0, 0, 1], [1, 1, 1], [0, 0, 0]]
-        .iter()
-        .map(|v| v.to_vec())
-        .collect();
-    let res: Vec<Vec<i32>> = [[0, 0, 0], [1, 0, 1], [0, 1, 1], [0, 1, 0]]
-        .iter()
-        .map(|v| v.to_vec())
-        .collect();
+    let mut board: Vec<Vec<i32>> = vec_vec_i32![[0, 1, 0], [0, 0, 1], [1, 1, 1], [0, 0, 0]];
+    let res: Vec<Vec<i32>> = vec_vec_i32![[0, 0, 0], [1, 0, 1], [0, 1, 1], [0, 1, 0]];
     Solution::game_of_life(&mut board);
     assert_eq!(board, res);
 }

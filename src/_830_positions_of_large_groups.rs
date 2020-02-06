@@ -56,15 +56,12 @@ impl Solution {
 #[test]
 fn test() {
     let s = "abbxxxxzzy".to_string();
-    let res: Vec<Vec<i32>> = [[3, 6]].iter().map(|v| v.to_vec()).collect();
+    let res: Vec<Vec<i32>> = vec_vec_i32![[3, 6]];
     assert_eq!(Solution::large_group_positions(s), res);
     let s = "abc".to_string();
     let res: Vec<Vec<i32>> = vec![];
     assert_eq!(Solution::large_group_positions(s), res);
     let s = "abcdddeeeeaabbbcd".to_string();
-    let res: Vec<Vec<i32>> = [[3, 5], [6, 9], [12, 14]]
-        .iter()
-        .map(|v| v.to_vec())
-        .collect();
+    let res: Vec<Vec<i32>> = vec_vec_i32![[3, 5], [6, 9], [12, 14]];
     assert_eq!(Solution::large_group_positions(s), res);
 }

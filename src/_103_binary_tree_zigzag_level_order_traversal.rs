@@ -37,6 +37,6 @@ impl Solution {
 #[test]
 fn test() {
     let root = tree!(3, tree!(9), tree!(20, tree!(15), tree!(7)));
-    let res = vec![vec![3], vec![20, 9], vec![15, 7]];
+    let res = vec_vec_i32![[3], [20, 9], [15, 7]];
     assert_eq!(Solution::zigzag_level_order(root), res);
 }

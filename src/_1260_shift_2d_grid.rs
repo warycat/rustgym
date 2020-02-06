@@ -24,24 +24,12 @@ impl Solution {
 
 #[test]
 fn test() {
-    let grid = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-        .iter()
-        .map(|v| v.to_vec())
-        .collect();
+    let grid = vec_vec_i32![[1, 2, 3], [4, 5, 6], [7, 8, 9]];
     let k = 1;
-    let res: Vec<Vec<i32>> = [[9, 1, 2], [3, 4, 5], [6, 7, 8]]
-        .iter()
-        .map(|v| v.to_vec())
-        .collect();
+    let res: Vec<Vec<i32>> = vec_vec_i32![[9, 1, 2], [3, 4, 5], [6, 7, 8]];
     assert_eq!(Solution::shift_grid(grid, k), res);
-    let grid = [[3, 8, 1, 9], [19, 7, 2, 5], [4, 6, 11, 10], [12, 0, 21, 13]]
-        .iter()
-        .map(|v| v.to_vec())
-        .collect();
+    let grid = vec_vec_i32![[3, 8, 1, 9], [19, 7, 2, 5], [4, 6, 11, 10], [12, 0, 21, 13]];
     let k = 4;
-    let res: Vec<Vec<i32>> = [[12, 0, 21, 13], [3, 8, 1, 9], [19, 7, 2, 5], [4, 6, 11, 10]]
-        .iter()
-        .map(|v| v.to_vec())
-        .collect();
+    let res: Vec<Vec<i32>> = vec_vec_i32![[12, 0, 21, 13], [3, 8, 1, 9], [19, 7, 2, 5], [4, 6, 11, 10]];
     assert_eq!(Solution::shift_grid(grid, k), res);
 }

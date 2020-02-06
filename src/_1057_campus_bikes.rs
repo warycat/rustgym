@@ -74,18 +74,12 @@ impl Solution {
 
 #[test]
 fn test() {
-    let workers: Vec<Vec<i32>> = [[0, 0], [2, 1]].iter().map(|v| v.to_vec()).collect();
-    let bikes: Vec<Vec<i32>> = [[1, 2], [3, 3]].iter().map(|v| v.to_vec()).collect();
+    let workers: Vec<Vec<i32>> = vec_vec_i32![[0, 0], [2, 1]];
+    let bikes: Vec<Vec<i32>> = vec_vec_i32![[1, 2], [3, 3]];
     let res = vec![1, 0];
     assert_eq!(Solution::assign_bikes(workers, bikes), res);
-    let workers: Vec<Vec<i32>> = [[0, 0], [1, 1], [2, 0]]
-        .iter()
-        .map(|v| v.to_vec())
-        .collect();
-    let bikes: Vec<Vec<i32>> = [[1, 0], [2, 2], [2, 1]]
-        .iter()
-        .map(|v| v.to_vec())
-        .collect();
+    let workers: Vec<Vec<i32>> = vec_vec_i32![[0, 0], [1, 1], [2, 0]];
+    let bikes: Vec<Vec<i32>> = vec_vec_i32![[1, 0], [2, 2], [2, 1]];
     let res = vec![0, 2, 1];
     assert_eq!(Solution::assign_bikes(workers, bikes), res);
 }

@@ -34,10 +34,10 @@ impl Solution {
 fn test() {
     let n = 3;
     let m = 3;
-    let indices: Vec<Vec<i32>> = [[0, 1], [1, 1]].iter().map(|v| v.to_vec()).collect();
+    let indices: Vec<Vec<i32>> = vec_vec_i32![[0, 1], [1, 1]];
     assert_eq!(Solution::odd_cells(n, m, indices), 6);
     let n = 2;
     let m = 2;
-    let indices: Vec<Vec<i32>> = [[1, 1], [0, 0]].iter().map(|v| v.to_vec()).collect();
+    let indices: Vec<Vec<i32>> = vec_vec_i32![[1, 1], [0, 0]];
     assert_eq!(Solution::odd_cells(n, m, indices), 0);
 }

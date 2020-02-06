@@ -14,7 +14,7 @@ impl Solution {
 fn test() {
     let m = 3;
     let n = 3;
-    let ops: Vec<Vec<i32>> = [[2, 2], [3, 3]].iter().map(|v| v.to_vec()).collect();
+    let ops: Vec<Vec<i32>> = vec_vec_i32![[2, 2], [3, 3]];
     let res = 4;
     assert_eq!(Solution::max_count(m, n, ops), res);
 }

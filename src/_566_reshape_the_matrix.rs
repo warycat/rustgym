@@ -22,7 +22,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let nums: Vec<Vec<i32>> = [[1, 2], [3, 4]].iter().map(|v| v.to_vec()).collect();
-    let res: Vec<Vec<i32>> = [[1, 2, 3, 4]].iter().map(|v| v.to_vec()).collect();
+    let nums: Vec<Vec<i32>> = vec_vec_i32![[1, 2], [3, 4]];
+    let res: Vec<Vec<i32>> = vec_vec_i32![[1, 2, 3, 4]];
     assert_eq!(Solution::matrix_reshape(nums, 1, 4), res);
 }

@@ -23,10 +23,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let grid: Vec<Vec<i32>> = [[1, 3, 1], [1, 5, 1], [4, 2, 1]]
-        .iter()
-        .map(|v| v.to_vec())
-        .collect();
+    let grid: Vec<Vec<i32>> = vec_vec_i32![[1, 3, 1], [1, 5, 1], [4, 2, 1]];
     let res = 7;
     assert_eq!(Solution::min_path_sum(grid), res);
 }

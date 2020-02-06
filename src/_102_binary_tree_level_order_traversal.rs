@@ -32,6 +32,6 @@ impl Solution {
 #[test]
 fn test() {
     let root = tree!(3, tree!(9), tree!(20, tree!(15), tree!(7)));
-    let res: Vec<Vec<i32>> = vec![vec![3], vec![9, 20], vec![15, 7]];
+    let res: Vec<Vec<i32>> = vec_vec_i32![[3], [9, 20], [15, 7]];
     assert_eq!(Solution::level_order(root), res);
 }

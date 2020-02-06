@@ -35,11 +35,11 @@ impl Solution {
 #[test]
 fn test() {
     let num_courses = 2;
-    let prerequisites: Vec<Vec<i32>> = [[1, 0]].iter().map(|v| v.to_vec()).collect();
+    let prerequisites: Vec<Vec<i32>> = vec_vec_i32![[1, 0]];
     let res = true;
     assert_eq!(Solution::can_finish(num_courses, prerequisites), res);
     let num_courses = 2;
-    let prerequisites: Vec<Vec<i32>> = [[1, 0], [0, 1]].iter().map(|v| v.to_vec()).collect();
+    let prerequisites: Vec<Vec<i32>> = vec_vec_i32![[1, 0], [0, 1]];
     let res = false;
     assert_eq!(Solution::can_finish(num_courses, prerequisites), res);
 }

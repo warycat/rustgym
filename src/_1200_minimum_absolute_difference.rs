@@ -21,18 +21,12 @@ impl Solution {
 #[test]
 fn test() {
     let arr = vec![4, 2, 1, 3];
-    let res: Vec<Vec<i32>> = [[1, 2], [2, 3], [3, 4]]
-        .iter()
-        .map(|v| v.to_vec())
-        .collect();
+    let res: Vec<Vec<i32>> = vec_vec_i32![[1, 2], [2, 3], [3, 4]];
     assert_eq!(Solution::minimum_abs_difference(arr), res);
     let arr = vec![1, 3, 6, 10, 15];
-    let res: Vec<Vec<i32>> = [[1, 3]].iter().map(|v| v.to_vec()).collect();
+    let res: Vec<Vec<i32>> = vec_vec_i32![[1, 3]];
     assert_eq!(Solution::minimum_abs_difference(arr), res);
     let arr = vec![3, 8, -10, 23, 19, -4, -14, 27];
-    let res: Vec<Vec<i32>> = [[-14, -10], [19, 23], [23, 27]]
-        .iter()
-        .map(|v| v.to_vec())
-        .collect();
+    let res: Vec<Vec<i32>> = vec_vec_i32![[-14, -10], [19, 23], [23, 27]];
     assert_eq!(Solution::minimum_abs_difference(arr), res);
 }

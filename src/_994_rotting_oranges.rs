@@ -75,16 +75,10 @@ impl Solution {
 
 #[test]
 fn test() {
-    let grid: Vec<Vec<i32>> = [[2, 1, 1], [1, 1, 0], [0, 1, 1]]
-        .iter()
-        .map(|v| v.to_vec())
-        .collect();
+    let grid: Vec<Vec<i32>> = vec_vec_i32![[2, 1, 1], [1, 1, 0], [0, 1, 1]];
     assert_eq!(Solution::oranges_rotting(grid), 4);
-    let grid: Vec<Vec<i32>> = [[2, 1, 1], [0, 1, 1], [1, 0, 1]]
-        .iter()
-        .map(|v| v.to_vec())
-        .collect();
+    let grid: Vec<Vec<i32>> = vec_vec_i32![[2, 1, 1], [0, 1, 1], [1, 0, 1]];
     assert_eq!(Solution::oranges_rotting(grid), -1);
-    let grid: Vec<Vec<i32>> = [[0, 2]].iter().map(|v| v.to_vec()).collect();
+    let grid: Vec<Vec<i32>> = vec_vec_i32![[0, 2]];
     assert_eq!(Solution::oranges_rotting(grid), 0);
 }

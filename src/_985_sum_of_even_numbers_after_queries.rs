@@ -25,10 +25,7 @@ impl Solution {
 #[test]
 fn test() {
     let a = vec![1, 2, 3, 4];
-    let queries: Vec<Vec<i32>> = [[1, 0], [-3, 1], [-4, 0], [2, 3]]
-        .iter()
-        .map(|v| v.to_vec())
-        .collect();
+    let queries: Vec<Vec<i32>> = vec_vec_i32![[1, 0], [-3, 1], [-4, 0], [2, 3]];
     let res = vec![8, 6, 2, 4];
     assert_eq!(Solution::sum_even_after_queries(a, queries), res);
 }

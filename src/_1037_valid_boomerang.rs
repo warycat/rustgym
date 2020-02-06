@@ -11,14 +11,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let points: Vec<Vec<i32>> = [[1, 1], [2, 3], [3, 2]]
-        .iter()
-        .map(|v| v.to_vec())
-        .collect();
-    assert_eq!(Solution::is_boomerang(points), true);
-    let points: Vec<Vec<i32>> = [[1, 1], [2, 2], [3, 3]]
-        .iter()
-        .map(|v| v.to_vec())
-        .collect();
+    let points: Vec<Vec<i32>> = vec_vec_i32![[1, 1], [2, 3], [3, 2]];    assert_eq!(Solution::is_boomerang(points), true);
+    let points: Vec<Vec<i32>> = vec_vec_i32![[1, 1], [2, 2], [3, 3]];
     assert_eq!(Solution::is_boomerang(points), false);
 }

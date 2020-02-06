@@ -34,9 +34,6 @@ impl Solution {
 
 #[test]
 fn test() {
-    let points: Vec<Vec<i32>> = [[0, 0], [1, 0], [2, 0]]
-        .iter()
-        .map(|v| v.to_vec())
-        .collect();
+    let points: Vec<Vec<i32>> = vec_vec_i32![[0, 0], [1, 0], [2, 0]];
     assert_eq!(Solution::number_of_boomerangs(points), 2);
 }

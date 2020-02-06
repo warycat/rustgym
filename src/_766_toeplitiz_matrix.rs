@@ -17,11 +17,8 @@ impl Solution {
 
 #[test]
 fn test() {
-    let matrix: Vec<Vec<i32>> = [[1, 2, 3, 4], [5, 1, 2, 3], [9, 5, 1, 2]]
-        .iter()
-        .map(|v| v.to_vec())
-        .collect();
+    let matrix: Vec<Vec<i32>> = vec_vec_i32![[1, 2, 3, 4], [5, 1, 2, 3], [9, 5, 1, 2]];
     assert_eq!(Solution::is_toeplitz_matrix(matrix), true);
-    let matrix: Vec<Vec<i32>> = [[1, 2], [2, 2]].iter().map(|v| v.to_vec()).collect();
+    let matrix: Vec<Vec<i32>> = vec_vec_i32![[1, 2], [2, 2]];
     assert_eq!(Solution::is_toeplitz_matrix(matrix), false);
 }
