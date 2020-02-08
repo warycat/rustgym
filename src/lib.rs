@@ -7,6 +7,7 @@
 #![allow(clippy::cast_lossless)]
 #![allow(clippy::unreadable_literal)]
 #![allow(clippy::ptr_arg)]
+#![allow(clippy::too_many_arguments)]
 //
 #[macro_use]
 mod util;
@@ -321,6 +322,8 @@ mod _349_intersection_of_two_arrays;
 //
 mod _350_intersection_of_two_arrays_2;
 //
+mod _353_design_snake_game;
+//
 mod _355_design_twitter;
 //
 mod _359_logger_rate_limiter;
@@ -346,6 +349,8 @@ mod _387_first_unique_character_in_a_string;
 mod _388_longest_absolute_file_path;
 //
 mod _389_find_the_difference;
+//
+mod _390_elimination_game;
 //
 mod _392_is_subsequence;
 //
@@ -410,6 +415,8 @@ mod _476_number_complement;
 mod _482_license_key_formatting;
 //
 mod _485_max_consecutive_ones;
+//
+mod _490_the_maze;
 //
 mod _492_construct_the_rectangle;
 //
@@ -546,6 +553,8 @@ mod _695_max_area_of_island;
 mod _696_count_binary_substrings;
 //
 mod _697_degree_of_an_array;
+//
+mod _698_partition_to_k_equal_sum_subsets;
 //
 mod _700_search_in_a_binary_search_tree;
 //
@@ -731,6 +740,8 @@ mod _970_powerful_integers;
 //
 mod _973_k_closest_points_to_origin;
 //
+mod _974_subarray_sums_divisible_by_k;
+//
 mod _976_largest_perimeter_triangle;
 //
 mod _977_squares_of_a_sorted_array;
@@ -802,6 +813,8 @@ mod _1055_shortest_way_to_form_string;
 mod _1056_confusing_number;
 //
 mod _1057_campus_bikes;
+//
+mod _1060_missing_element_in_sorted_array;
 //
 mod _1064_fixed_point;
 //

@@ -30,6 +30,7 @@ fn test() {
     assert_eq!(Solution::shift_grid(grid, k), res);
     let grid = vec_vec_i32![[3, 8, 1, 9], [19, 7, 2, 5], [4, 6, 11, 10], [12, 0, 21, 13]];
     let k = 4;
-    let res: Vec<Vec<i32>> = vec_vec_i32![[12, 0, 21, 13], [3, 8, 1, 9], [19, 7, 2, 5], [4, 6, 11, 10]];
+    let res: Vec<Vec<i32>> =
+        vec_vec_i32![[12, 0, 21, 13], [3, 8, 1, 9], [19, 7, 2, 5], [4, 6, 11, 10]];
     assert_eq!(Solution::shift_grid(grid, k), res);
 }
