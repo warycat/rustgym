@@ -1,5 +1,5 @@
 struct Solution;
-use crate::util::*;
+use util::*;
 
 trait Count {
     fn count(&self) -> i32;

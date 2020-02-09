@@ -1,6 +1,6 @@
 struct Solution;
-use crate::util::*;
 use std::collections::VecDeque;
+use util::*;
 
 struct Pair {
     tree: TreeLink,

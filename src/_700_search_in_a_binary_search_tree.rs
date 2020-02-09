@@ -1,5 +1,5 @@
 struct Solution;
-use crate::util::*;
+use util::*;
 
 trait Search {
     fn find(&self, val: i32) -> TreeLink;

@@ -1,5 +1,5 @@
 struct Solution;
-use crate::util::*;
+use util::*;
 
 trait Tilt {
     fn find_tilt(&self, tilt: &mut i32) -> i32;

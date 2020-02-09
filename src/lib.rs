@@ -8,10 +8,10 @@
 #![allow(clippy::unreadable_literal)]
 #![allow(clippy::ptr_arg)]
 #![allow(clippy::too_many_arguments)]
-//
-#[macro_use]
-mod util;
-//
+
+#[cfg_attr(test, macro_use)]
+extern crate util;
+
 mod _1_two_sum;
 //
 mod _2_add_two_numbers;
@@ -121,6 +121,8 @@ mod _91_decode_ways;
 mod _92_reverse_linked_list_2;
 //
 mod _93_restore_ip_addresses;
+//
+mod _95_unique_binary_search_trees_2;
 //
 mod _96_unique_binary_search_trees;
 //
@@ -905,6 +907,8 @@ mod _1252_cells_with_odd_values_in_a_matrix;
 mod _1260_shift_2d_grid;
 //
 mod _1266_minimum_time_visition_all_points;
+//
+mod _1268_search_suggestions_system;
 //
 mod _1271_hexspeak;
 //

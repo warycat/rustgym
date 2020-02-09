@@ -1,5 +1,5 @@
 struct Solution;
-use crate::util::*;
+use util::*;
 
 impl Solution {
     fn sum_root_to_leaf(root: TreeLink) -> i32 {

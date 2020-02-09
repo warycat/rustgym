@@ -1,6 +1,6 @@
 struct Solution;
-use crate::util::*;
 use std::i32;
+use util::*;
 
 trait Inorder {
     fn inorder(&self, prev: &mut Option<i32>, min: &mut i32);

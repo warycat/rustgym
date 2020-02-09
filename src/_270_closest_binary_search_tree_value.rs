@@ -1,6 +1,6 @@
 struct Solution;
-use crate::util::*;
 use std::f64;
+use util::*;
 
 trait Closest {
     fn search(&self, target: f64) -> i32;

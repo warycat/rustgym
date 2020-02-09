@@ -1,5 +1,5 @@
 struct Solution;
-use crate::util::*;
+use util::*;
 
 impl Solution {
     fn merge_two_lists(l1: ListLink, l2: ListLink) -> ListLink {

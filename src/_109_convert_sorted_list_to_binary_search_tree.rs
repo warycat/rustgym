@@ -1,5 +1,5 @@
 struct Solution;
-use crate::util::*;
+use util::*;
 
 trait Convert {
     fn convert(self, n: usize) -> (TreeLink, ListLink);

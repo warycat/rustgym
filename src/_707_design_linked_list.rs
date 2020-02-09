@@ -1,4 +1,4 @@
-use crate::util::*;
+use util::*;
 
 #[derive(Debug, PartialEq, Eq, Clone)]
 struct MyLinkedList {

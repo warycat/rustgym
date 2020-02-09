@@ -1,5 +1,5 @@
 struct Solution;
-use crate::util::*;
+use util::*;
 
 trait SubTree {
     fn is_subtree(&self, t: &TreeLink) -> bool;

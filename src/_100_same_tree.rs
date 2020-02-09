@@ -1,5 +1,5 @@
 struct Solution;
-use crate::util::*;
+use util::*;
 
 impl Solution {
     fn is_same_tree(p: TreeLink, q: TreeLink) -> bool {

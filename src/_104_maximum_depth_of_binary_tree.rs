@@ -1,5 +1,5 @@
 struct Solution;
-use crate::util::*;
+use util::*;
 
 trait MaxDepth {
     fn max_depth(&self) -> i32;

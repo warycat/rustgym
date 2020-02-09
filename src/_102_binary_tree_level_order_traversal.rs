@@ -1,6 +1,6 @@
 struct Solution;
 
-use crate::util::*;
+use util::*;
 
 trait Preorder {
     fn preorder(&self, levels: &mut Vec<Vec<i32>>, level: usize);

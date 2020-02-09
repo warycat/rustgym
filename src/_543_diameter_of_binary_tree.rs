@@ -1,5 +1,5 @@
 struct Solution;
-use crate::util::*;
+use util::*;
 
 trait Diameter {
     fn diameter(&self) -> i32;

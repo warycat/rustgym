@@ -1,5 +1,5 @@
 struct Solution;
-use crate::util::*;
+use util::*;
 
 impl Solution {
     fn odd_even_list(mut head: ListLink) -> ListLink {

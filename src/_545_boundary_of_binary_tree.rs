@@ -1,6 +1,6 @@
 struct Solution;
 
-use crate::util::*;
+use util::*;
 
 trait Boundry {
     fn left_boundry(&self, nodes: &mut Vec<i32>);

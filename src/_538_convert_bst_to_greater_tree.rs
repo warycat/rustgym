@@ -1,5 +1,5 @@
 struct Solution;
-use crate::util::*;
+use util::*;
 
 trait Inorder {
     fn inorder(&mut self, sum: &mut i32);

@@ -1,5 +1,5 @@
 struct Solution;
-use crate::util::*;
+use util::*;
 
 trait Inorder {
     fn inorder(self, next: TreeLink) -> TreeLink;

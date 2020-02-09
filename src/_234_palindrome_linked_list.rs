@@ -1,5 +1,5 @@
 struct Solution;
-use crate::util::*;
+use util::*;
 
 #[derive(PartialEq, Eq, Clone, Debug)]
 struct List {

@@ -1,5 +1,5 @@
 struct Solution;
-use crate::util::*;
+use util::*;
 
 trait LongestUnivaluePath {
     fn longest_univalue_path(&self, max: &mut i32, parent_val: i32) -> i32;

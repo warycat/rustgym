@@ -1,5 +1,5 @@
 struct Solution;
-use crate::util::*;
+use util::*;
 
 impl Solution {
     fn add_two_numbers(l1: ListLink, l2: ListLink) -> ListLink {

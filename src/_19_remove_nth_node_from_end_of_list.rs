@@ -1,5 +1,5 @@
 struct Solution;
-use crate::util::*;
+use util::*;
 
 impl Solution {
     fn remove_nth_from_end(mut head: ListLink, n: i32) -> ListLink {

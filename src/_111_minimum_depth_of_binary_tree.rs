@@ -1,5 +1,5 @@
 struct Solution;
-use crate::util::*;
+use util::*;
 
 trait MinDepth {
     fn min_depth(&self) -> usize;

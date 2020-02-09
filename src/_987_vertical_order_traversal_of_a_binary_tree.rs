@@ -1,8 +1,8 @@
 struct Solution;
-use crate::util::*;
 use std::cmp::Reverse;
 use std::collections::BTreeMap;
 use std::collections::BinaryHeap;
+use util::*;
 
 type Nodes = BTreeMap<i32, BTreeMap<i32, BinaryHeap<Reverse<i32>>>>;
 

@@ -1,5 +1,5 @@
 struct Solution;
-use crate::util::*;
+use util::*;
 
 trait Inorder {
     fn inorder(&self, visit: &mut dyn FnMut(i32));

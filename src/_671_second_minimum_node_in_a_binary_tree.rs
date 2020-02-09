@@ -1,5 +1,5 @@
 struct Solution;
-use crate::util::*;
+use util::*;
 
 trait SecondMinimum {
     fn find_second_minimum_value(&self, min: &mut Option<i32>) -> Option<i32>;

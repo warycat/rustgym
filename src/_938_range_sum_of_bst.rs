@@ -1,5 +1,5 @@
 struct Solution;
-use crate::util::*;
+use util::*;
 
 trait Preorder {
     fn preorder(&self, l: i32, r: i32, sum: &mut i32);

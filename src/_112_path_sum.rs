@@ -1,5 +1,5 @@
 struct Solution;
-use crate::util::*;
+use util::*;
 
 trait PathSum {
     fn has_path_sum(&self, sum: i32) -> bool;

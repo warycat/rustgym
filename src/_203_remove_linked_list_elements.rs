@@ -1,5 +1,5 @@
 struct Solution;
-use crate::util::*;
+use util::*;
 
 impl Solution {
     fn remove_elements(mut head: ListLink, val: i32) -> ListLink {

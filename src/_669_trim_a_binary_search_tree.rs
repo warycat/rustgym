@@ -1,5 +1,5 @@
 struct Solution;
-use crate::util::*;
+use util::*;
 
 impl Solution {
     fn trim_bst(root: TreeLink, l: i32, r: i32) -> TreeLink {

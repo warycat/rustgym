@@ -1,5 +1,5 @@
 struct Solution;
-use crate::util::*;
+use util::*;
 
 trait Symmetric {
     fn is_symmetric(&self) -> bool;

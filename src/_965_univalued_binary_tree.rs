@@ -1,5 +1,5 @@
 struct Solution;
-use crate::util::*;
+use util::*;
 
 trait Preorder {
     fn is_unival(&self) -> bool;

@@ -1,5 +1,5 @@
 struct Solution;
-use crate::util::*;
+use util::*;
 
 impl Solution {
     fn sorted_array_to_bst(nums: Vec<i32>) -> TreeLink {

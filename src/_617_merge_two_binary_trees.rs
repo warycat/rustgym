@@ -1,5 +1,5 @@
 struct Solution;
-use crate::util::*;
+use util::*;
 
 impl Solution {
     fn merge_trees(t1: TreeLink, t2: TreeLink) -> TreeLink {

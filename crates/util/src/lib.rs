@@ -1,24 +1,3 @@
-#[derive(PartialEq, Eq, Clone, Debug)]
-pub struct ListNode {
-    pub val: i32,
-    pub next: ListLink,
-}
-
-#[derive(Debug, PartialEq, Eq)]
-pub struct TreeNode {
-    pub val: i32,
-    pub left: TreeLink,
-    pub right: TreeLink,
-}
-
-pub type ListLink = Option<Box<ListNode>>;
-
-impl ListNode {
-    pub fn node(val: i32, next: ListLink) -> ListLink {
-        Some(Box::new(ListNode { val, next }))
-    }
-}
-
 #[macro_export]
 macro_rules! list {
     () => {
@@ -30,24 +9,6 @@ macro_rules! list {
     ($e:expr, $($tail:tt)*) => {
         ListNode::node($e, list!($($tail)*))
     };
-}
-
-pub type TreeLink = Option<Rc<RefCell<TreeNode>>>;
-
-use std::cell::RefCell;
-use std::rc::Rc;
-
-impl TreeNode {
-    pub fn branch(val: i32, left: TreeLink, right: TreeLink) -> TreeLink {
-        Some(Rc::new(RefCell::new(TreeNode { val, left, right })))
-    }
-    pub fn leaf(val: i32) -> TreeLink {
-        Some(Rc::new(RefCell::new(TreeNode {
-            val,
-            left: None,
-            right: None,
-        })))
-    }
 }
 
 #[macro_export]
@@ -97,4 +58,43 @@ macro_rules! vec_vec_string {
             temp_vec
         }
     };
+}
+
+#[derive(PartialEq, Eq, Clone, Debug)]
+pub struct ListNode {
+    pub val: i32,
+    pub next: ListLink,
+}
+
+#[derive(Debug, PartialEq, Eq, PartialOrd, Ord)]
+pub struct TreeNode {
+    pub val: i32,
+    pub left: TreeLink,
+    pub right: TreeLink,
+}
+
+pub type ListLink = Option<Box<ListNode>>;
+
+impl ListNode {
+    pub fn node(val: i32, next: ListLink) -> ListLink {
+        Some(Box::new(ListNode { val, next }))
+    }
+}
+
+pub type TreeLink = Option<Rc<RefCell<TreeNode>>>;
+
+use std::cell::RefCell;
+use std::rc::Rc;
+
+impl TreeNode {
+    pub fn branch(val: i32, left: TreeLink, right: TreeLink) -> TreeLink {
+        Some(Rc::new(RefCell::new(TreeNode { val, left, right })))
+    }
+    pub fn leaf(val: i32) -> TreeLink {
+        Some(Rc::new(RefCell::new(TreeNode {
+            val,
+            left: None,
+            right: None,
+        })))
+    }
 }

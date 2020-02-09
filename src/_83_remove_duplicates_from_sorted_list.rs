@@ -1,5 +1,5 @@
 struct Solution;
-use crate::util::*;
+use util::*;
 
 impl Solution {
     fn delete_duplicates(mut head: ListLink) -> ListLink {

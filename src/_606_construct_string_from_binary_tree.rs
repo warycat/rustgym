@@ -1,5 +1,5 @@
 struct Solution;
-use crate::util::*;
+use util::*;
 
 trait TreeToString {
     fn tree_to_string(&self) -> String;

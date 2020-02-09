@@ -6,4 +6,9 @@ edition = "2018"
 
 [dependencies]
 rand = "0.7.2"
+util = {path='./crates/util', version = '0.1.0'}
 
+[workspace]
+members = [
+    "./crates/util",
+]
