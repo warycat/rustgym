@@ -23,40 +23,22 @@ macro_rules! tree {
 
 #[macro_export]
 macro_rules! vec_string {
-    ($($e:expr),*) => {
-        {
-            let mut temp_vec = Vec::new();
-            $(
-                temp_vec.push((*$e).to_string());
-            )*
-            temp_vec
-        }
+    ($($tail:tt),*) => {
+        vec![$($tail.to_string()),*]
     };
 }
 
 #[macro_export]
 macro_rules! vec_vec_i32 {
-    ($($e:expr),*) => {
-        {
-            let mut temp_vec = Vec::new();
-            $(
-                temp_vec.push($e.to_vec());
-            )*
-            temp_vec
-        }
+    ($($tail:tt),*) => {
+        vec![$(vec!$tail),*]
     };
 }
 
 #[macro_export]
 macro_rules! vec_vec_string {
-    ($($e:expr),*) => {
-        {
-            let mut temp_vec = Vec::new();
-            $(
-                temp_vec.push($e.iter().map(|s| (*s).to_string()).collect());
-            )*
-            temp_vec
-        }
+    ($($tail:tt),*) => {
+        vec![$(vec_string!$tail),*]
     };
 }
 

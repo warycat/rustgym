@@ -31,7 +31,7 @@ fn test() {
         "root 4.txt(efgh)"
     ];
     let mut res: Vec<Vec<String>> = vec_vec_string![
-        ["root/a/2.txt", "root/c/d/4.txt", "root/4.txt",],
+        ["root/a/2.txt", "root/c/d/4.txt", "root/4.txt"],
         ["root/a/1.txt", "root/c/3.txt"]
     ];
     let mut ans = Solution::find_duplicate(paths);

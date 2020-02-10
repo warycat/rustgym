@@ -61,9 +61,6 @@ fn test() {
     assert_eq!(Solution::suggested_products(products, search_word), res);
     let products = vec_string!["havana"];
     let search_word = "tatiana".to_string();
-    let res: Vec<Vec<String>> = [[], [], [], [], [], [], []]
-        .iter()
-        .map(|v| v.to_vec())
-        .collect();
+    let res: Vec<Vec<String>> = vec_vec_string![[], [], [], [], [], [], []];
     assert_eq!(Solution::suggested_products(products, search_word), res);
 }
