@@ -1,23 +1,7 @@
 #[macro_export]
-macro_rules! list {
-    () => {
-        None
-    };
-    ($e:expr) => {
-        ListNode::node($e, None)
-    };
-    ($e:expr, $($tail:tt)*) => {
-        ListNode::node($e, list!($($tail)*))
-    };
-}
-
-#[macro_export]
-macro_rules! tree {
-    ($e:expr) => {
-        TreeNode::leaf($e)
-    };
-    ($e:expr, $l:expr, $r:expr) => {
-        TreeNode::branch($e, $l, $r)
+macro_rules! vec_vec_i32 {
+    ($($tail:tt),*) => {
+        vec![$(vec!$tail),*]
     };
 }
 
@@ -25,13 +9,6 @@ macro_rules! tree {
 macro_rules! vec_string {
     ($($tail:tt),*) => {
         vec![$($tail.to_string()),*]
-    };
-}
-
-#[macro_export]
-macro_rules! vec_vec_i32 {
-    ($($tail:tt),*) => {
-        vec![$(vec!$tail),*]
     };
 }
 
@@ -48,11 +25,17 @@ pub struct ListNode {
     pub next: ListLink,
 }
 
-#[derive(Debug, PartialEq, Eq, PartialOrd, Ord)]
-pub struct TreeNode {
-    pub val: i32,
-    pub left: TreeLink,
-    pub right: TreeLink,
+#[macro_export]
+macro_rules! list {
+    () => {
+        None
+    };
+    ($e:expr) => {
+        ListNode::node($e, None)
+    };
+    ($e:expr, $($tail:tt)*) => {
+        ListNode::node($e, list!($($tail)*))
+    };
 }
 
 pub type ListLink = Option<Box<ListNode>>;
@@ -61,6 +44,23 @@ impl ListNode {
     pub fn node(val: i32, next: ListLink) -> ListLink {
         Some(Box::new(ListNode { val, next }))
     }
+}
+
+#[derive(Debug, PartialEq, Eq, PartialOrd, Ord)]
+pub struct TreeNode {
+    pub val: i32,
+    pub left: TreeLink,
+    pub right: TreeLink,
+}
+
+#[macro_export]
+macro_rules! tree {
+    ($e:expr) => {
+        TreeNode::leaf($e)
+    };
+    ($e:expr, $l:expr, $r:expr) => {
+        TreeNode::branch($e, $l, $r)
+    };
 }
 
 pub type TreeLink = Option<Rc<RefCell<TreeNode>>>;
