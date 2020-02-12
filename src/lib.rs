@@ -94,6 +94,8 @@ mod _56_merge_intervals;
 //
 mod _59_spiral_matrix_2;
 //
+mod _62_unique_paths;
+//
 mod _64_minimum_path_sum;
 //
 mod _66_plus_one;
@@ -105,6 +107,8 @@ mod _69_sqrt;
 mod _70_climbing_stairs;
 //
 mod _71_simplify_path;
+//
+mod _74_search_a_2d_matrix;
 //
 mod _75_sort_colors;
 //
@@ -152,6 +156,8 @@ mod _111_minimum_depth_of_binary_tree;
 //
 mod _112_path_sum;
 //
+mod _114_flatten_binary_tree_to_linked_list;
+//
 mod _118_pascal_triangle;
 //
 mod _119_pascal_triangle_2;
@@ -178,7 +184,11 @@ mod _151_reverse_words_in_a_string;
 //
 mod _152_maximum_product_subarray;
 //
+mod _153_find_minimum_in_rotated_sorted_array;
+//
 mod _155_min_stack;
+//
+mod _162_find_peak_element;
 //
 mod _166_fraction_to_recurring_decimal;
 //
@@ -195,6 +205,8 @@ mod _171_excel_sheet_column_number;
 mod _172_factorial_trailing_zeroes;
 //
 mod _173_binary_search_tree_iterator;
+//
+mod _179_largest_number;
 //
 mod _189_rotate_array;
 //
@@ -360,11 +372,15 @@ mod _393_utf8_validation;
 //
 mod _394_decode_string;
 //
+mod _399_evaluate_division;
+//
 mod _401_binary_watch;
 //
 mod _404_sum_of_left_leaves;
 //
 mod _405_convert_a_number_to_hexadecimal;
+//
+mod _406_queue_reconstruction_by_height;
 //
 mod _408_valid_word_abbreviation;
 //
@@ -438,6 +454,8 @@ mod _507_perfect_number;
 //
 mod _509_fibonacci_number;
 //
+mod _516_longest_palindromic_subsequence;
+//
 mod _518_coin_change_2;
 //
 mod _520_detect_captial;
@@ -485,6 +503,8 @@ mod _572_subtree_of_another_tree;
 mod _575_distribute_candies;
 //
 mod _581_shortest_unsorted_continuous_subarray;
+//
+mod _593_valid_square;
 //
 mod _594_longest_harmonious_subsequence;
 //
@@ -633,6 +653,8 @@ mod _787_cheapest_flights_within_k_stops;
 mod _788_rotated_digits;
 //
 mod _796_rotate_string;
+//
+mod _797_all_paths_from_source_to_target;
 //
 mod _800_similar_rgb_color;
 //
@@ -862,6 +884,8 @@ mod _1165_single_row_keyboard;
 //
 mod _1166_design_file_system;
 //
+mod _1167_minimum_cost_to_connect_sticks;
+//
 mod _1170_compare_strings_by_frequency_of_the_smallest_character;
 //
 mod _1175_prime_arrangements;
@@ -939,3 +963,7 @@ mod _1331_rank_transform_of_an_array;
 mod _1332_remove_palindromic_subsequences;
 //
 mod _1337_the_k_weakest_rows_in_a_matrix;
+//
+mod _1342_number_of_steps_to_reduce_a_number_to_zero;
+//
+mod _1346_check_if_n_and_its_double_exist;
