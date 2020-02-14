@@ -194,6 +194,8 @@ mod _153_find_minimum_in_rotated_sorted_array;
 //
 mod _155_min_stack;
 //
+mod _161_one_edit_distance;
+//
 mod _162_find_peak_element;
 //
 mod _166_fraction_to_recurring_decimal;
@@ -453,6 +455,8 @@ mod _498_diagonal_traverse;
 mod _500_keyboard_row;
 //
 mod _501_find_mode_in_binary_search_tree;
+//
+mod _503_next_greater_element_2;
 //
 mod _504_base_7;
 //
@@ -905,6 +909,8 @@ mod _1170_compare_strings_by_frequency_of_the_smallest_character;
 mod _1175_prime_arrangements;
 //
 mod _1176_diet_plan_performance;
+//
+mod _1177_can_make_palindrome_from_substring;
 //
 mod _1180_count_substring_with_only_one_distinct_letter;
 //
