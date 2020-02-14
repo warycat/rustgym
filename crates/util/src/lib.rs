@@ -19,6 +19,13 @@ macro_rules! vec_vec_string {
     };
 }
 
+#[macro_export]
+macro_rules! vec_vec_char {
+    ($($tail:tt),*) => {
+        vec![$(vec!$tail),*]
+    };
+}
+
 #[derive(PartialEq, Eq, Clone, Debug)]
 pub struct ListNode {
     pub val: i32,
