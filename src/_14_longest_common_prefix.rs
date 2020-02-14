@@ -22,9 +22,6 @@ impl Solution {
 
 #[test]
 fn test() {
-    let ss: Vec<String> = vec!["flower", "flow", "flight"]
-        .iter()
-        .map(|&s| String::from(s))
-        .collect();
+    let ss: Vec<String> = vec_string!["flower", "flow", "flight"];
     assert_eq!(Solution::longest_common_prefix(ss), String::from("fl"));
 }

@@ -76,26 +76,18 @@ impl Solution {
 
 #[test]
 fn test() {
-    let text = "
-        11110
-        11010
-        11000
-        00000
-    ";
-    let grid: Vec<Vec<char>> = text
-        .split_whitespace()
-        .map(|s| s.chars().collect())
-        .collect();
+    let grid: Vec<Vec<char>> = vec_vec_char![
+        ['1', '1', '1', '1', '0'],
+        ['1', '1', '0', '1', '0'],
+        ['1', '1', '0', '0', '0'],
+        ['0', '0', '0', '0', '0']
+    ];
     assert_eq!(Solution::num_islands(grid), 1);
-    let text = "
-        11000
-        11000
-        00100
-        00011
-    ";
-    let grid: Vec<Vec<char>> = text
-        .split_whitespace()
-        .map(|s| s.chars().collect())
-        .collect();
+    let grid: Vec<Vec<char>> = vec_vec_char![
+        ['1', '1', '0', '0', '0'],
+        ['1', '1', '0', '0', '0'],
+        ['0', '0', '1', '0', '0'],
+        ['0', '0', '0', '1', '1']
+    ];
     assert_eq!(Solution::num_islands(grid), 3);
 }

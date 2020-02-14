@@ -78,14 +78,14 @@ impl WordSearch {
 
 #[test]
 fn test_empty_board() {
-    let board = vec![];
-    let word = String::from("AC");
+    let board = vec_vec_char![];
+    let word = "AC".to_string();
     assert_eq!(Solution::exist(board, word), false);
 }
 
 #[test]
 fn test_empty_word() {
-    let board = vec![vec!['A', 'C'], vec!['A', 'D']];
-    let word = String::from("");
+    let board = vec_vec_char![['A', 'C'], ['A', 'D']];
+    let word = "".to_string();
     assert_eq!(Solution::exist(board, word), false);
 }

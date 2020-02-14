@@ -70,24 +70,18 @@ impl Solution {
 
 #[test]
 fn test() {
-    let board: Vec<Vec<char>> = [
+    let board = vec_vec_char![
         ['E', 'E', 'E', 'E', 'E'],
         ['E', 'E', 'M', 'E', 'E'],
         ['E', 'E', 'E', 'E', 'E'],
-        ['E', 'E', 'E', 'E', 'E'],
-    ]
-    .iter()
-    .map(|v| v.to_vec())
-    .collect();
+        ['E', 'E', 'E', 'E', 'E']
+    ];
     let click = vec![3, 0];
-    let res: Vec<Vec<char>> = [
+    let res = vec_vec_char![
         ['B', '1', 'E', '1', 'B'],
         ['B', '1', 'M', '1', 'B'],
         ['B', '1', '1', '1', 'B'],
-        ['B', 'B', 'B', 'B', 'B'],
-    ]
-    .iter()
-    .map(|v| v.to_vec())
-    .collect();
+        ['B', 'B', 'B', 'B', 'B']
+    ];
     assert_eq!(Solution::update_board(board, click), res);
 }
