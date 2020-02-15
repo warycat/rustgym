@@ -320,6 +320,8 @@ mod _303_range_sum_query;
 //
 mod _304_range_sum_query_2d_immutable;
 //
+mod _309_best_time_to_buy_and_sell_stock_with_cooldown;
+//
 mod _322_coin_change;
 //
 mod _328_odd_even_linked_list;
@@ -536,6 +538,8 @@ mod _609_find_duplicate_file_in_system;
 //
 mod _611_valid_triangle_number;
 //
+mod _616_add_bold_tag_in_string;
+//
 mod _617_merge_two_binary_trees;
 //
 mod _621_task_scheduler;
@@ -708,6 +712,8 @@ mod _859_buddy_strings;
 //
 mod _860_lemonade_change;
 //
+mod _866_prime_palindrome;
+//
 mod _867_transpose_matrix;
 //
 mod _868_binary_gap;
@@ -757,6 +763,8 @@ mod _935_knight_dialer;
 mod _937_reorder_log_files;
 //
 mod _938_range_sum_of_bst;
+//
+mod _939_minimum_area_rectangle;
 //
 mod _941_valid_mountain_array;
 //
