@@ -322,6 +322,8 @@ mod _304_range_sum_query_2d_immutable;
 //
 mod _309_best_time_to_buy_and_sell_stock_with_cooldown;
 //
+mod _311_sparse_matrix_multiplication;
+//
 mod _322_coin_change;
 //
 mod _328_odd_even_linked_list;
@@ -384,6 +386,8 @@ mod _393_utf8_validation;
 //
 mod _394_decode_string;
 //
+mod _395_longest_substring_with_at_least_k_repeating_characters;
+//
 mod _399_evaluate_division;
 //
 mod _401_binary_watch;
@@ -403,6 +407,8 @@ mod _412_fizz_buzz;
 mod _414_third_maximum_number;
 //
 mod _415_add_strings;
+//
+mod _416_partition_equal_subset_sum;
 //
 mod _417_pacific_atlantic_water_flow;
 //
@@ -503,6 +509,8 @@ mod _545_boundary_of_binary_tree;
 mod _547_friend_circles;
 //
 mod _551_student_attendance_record_1;
+//
+mod _556_next_greater_element_3;
 //
 mod _557_reverse_words_in_a_string_3;
 //
@@ -612,6 +620,8 @@ mod _707_design_linked_list;
 //
 mod _709_to_lower_case;
 //
+mod _713_subarray_product_less_than_k;
+//
 mod _716_max_stack;
 //
 mod _717_1bit_and_2bit_characters;
@@ -635,6 +645,8 @@ mod _735_asteroid_collision;
 mod _739_daily_temperatures;
 //
 mod _740_delete_and_earn;
+//
+mod _742_closest_leaf_in_binary_tree;
 //
 mod _744_find_smallest_letter_greater_than_target;
 //
@@ -819,6 +831,8 @@ mod _1007_minimum_domino_rotations_for_equal_row;
 mod _1009_complement_of_base_10_integer;
 //
 mod _1010_pairs_of_songs_with_total_durations_divisible_by_60;
+//
+mod _1011_capacity_to_ship_packages_within_d_days;
 //
 mod _1018_binary_prefix_divisible_by_5;
 //
