@@ -22,7 +22,7 @@ impl Problem {
     }
 }
 
-fn main(){
+fn main() {
     let cargo_dir = env::var_os("CARGO_MANIFEST_DIR").unwrap();
     let readme_md = Path::new(&cargo_dir).join("README.md");
     let src_dir = Path::new(&cargo_dir).join("src");
@@ -35,11 +35,11 @@ fn main(){
     let mut problems: Vec<Problem> = vec![];
     for entry in fs::read_dir(src_dir).unwrap() {
         let filename = entry.unwrap().file_name().to_str().unwrap().to_string();
-        if let Some(0) = filename.find("_"){
+        if let Some(0) = filename.find("_") {
             let ss: Vec<String> = filename.split(".").map(|s| s.to_string()).collect();
             let s: Vec<String> = ss[0].split("_").map(|s| s.to_string()).collect();
             let number = s[1].clone().parse::<i32>().unwrap();
-            let name:String = s[2..].join(" ");
+            let name: String = s[2..].join(" ");
             let problem = Problem::new(number, name, filename);
             problems.push(problem);
         }

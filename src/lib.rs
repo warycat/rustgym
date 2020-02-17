@@ -174,6 +174,8 @@ mod _125_valid_palindrome;
 //
 mod _127_word_ladder;
 //
+mod _131_palindrome_partitioning;
+//
 mod _134_gas_station;
 //
 mod _136_single_number;
@@ -961,6 +963,8 @@ mod _1197_minimum_knight_moves_math;
 mod _1200_minimum_absolute_difference;
 //
 mod _1207_unique_number_of_occurrences;
+//
+mod _1209_remove_all_adjacent_duplicates_in_string_2;
 //
 mod _1213_intersection_of_three_sorted_arrays;
 //

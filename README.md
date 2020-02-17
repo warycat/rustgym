@@ -165,6 +165,8 @@
 
 [127. word ladder](src/_127_word_ladder.rs)
 
+[131. palindrome partitioning](src/_131_palindrome_partitioning.rs)
+
 [134. gas station](src/_134_gas_station.rs)
 
 [136. single number](src/_136_single_number.rs)
@@ -952,6 +954,8 @@
 [1200. minimum absolute difference](src/_1200_minimum_absolute_difference.rs)
 
 [1207. unique number of occurrences](src/_1207_unique_number_of_occurrences.rs)
+
+[1209. remove all adjacent duplicates in string 2](src/_1209_remove_all_adjacent_duplicates_in_string_2.rs)
 
 [1213. intersection of three sorted arrays](src/_1213_intersection_of_three_sorted_arrays.rs)
 
