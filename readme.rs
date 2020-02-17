@@ -46,6 +46,7 @@ fn main(){
     }
     problems.sort_by_key(|x| x.number);
     for p in problems {
+        readme_content += "\n";
         readme_content += &p.md_link();
     }
     fs::write(&readme_md, readme_content).unwrap();
