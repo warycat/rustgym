@@ -607,6 +607,8 @@
 
 [700. search in a binary search tree](src/_700_search_in_a_binary_search_tree.rs)
 
+[701. insert into a binary search tree](src/_701_insert_into_a_binary_search_tree.rs)
+
 [703. kth largest element in a stream](src/_703_kth_largest_element_in_a_stream.rs)
 
 [704. binary search](src/_704_binary_search.rs)
@@ -692,6 +694,8 @@
 [804. unique morse code words](src/_804_unique_morse_code_words.rs)
 
 [806. number of lines to write string](src/_806_number_of_lines_to_write_string.rs)
+
+[807. max increase to keep city skyline](src/_807_max_increase_to_keep_city_skyline.rs)
 
 [811. subdomain visit count](src/_811_subdomain_visit_count.rs)
 
@@ -855,6 +859,8 @@
 
 [1037. valid boomerang](src/_1037_valid_boomerang.rs)
 
+[1038. binary search tree to greater sum tree](src/_1038_binary_search_tree_to_greater_sum_tree.rs)
+
 [1041. robot bounded in circle](src/_1041_robot_bounded_in_circle.rs)
 
 [1042. flower planting with no adjacent](src/_1042_flower_planting_with_no_adjacent.rs)
@@ -987,6 +993,8 @@
 
 [1281. subtract the product and sum of digits of an integer](src/_1281_subtract_the_product_and_sum_of_digits_of_an_integer.rs)
 
+[1282. group the people given the group size they belong to](src/_1282_group_the_people_given_the_group_size_they_belong_to.rs)
+
 [1287. element appearing more than 25 in sorted array](src/_1287_element_appearing_more_than_25_in_sorted_array.rs)
 
 [1290. convert binary number in a linked list to integer](src/_1290_convert_binary_number_in_a_linked_list_to_integer.rs)
@@ -995,11 +1003,15 @@
 
 [1299. replace elements with greatest element on right side](src/_1299_replace_elements_with_greatest_element_on_right_side.rs)
 
+[1302. deepest leaves sum](src/_1302_deepest_leaves_sum.rs)
+
 [1304. find n unique integers sum up to zero](src/_1304_find_n_unique_integers_sum_up_to_zero.rs)
 
 [1309. decrypt string from alphabet to integer mapping](src/_1309_decrypt_string_from_alphabet_to_integer_mapping.rs)
 
 [1313. decompres run length encoded list](src/_1313_decompres_run_length_encoded_list.rs)
+
+[1315. sum of nodes with even valued grandparent](src/_1315_sum_of_nodes_with_even_valued_grandparent.rs)
 
 [1317. convert integer to the sum of two no zero integers](src/_1317_convert_integer_to_the_sum_of_two_no_zero_integers.rs)
 
