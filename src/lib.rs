@@ -368,6 +368,8 @@ mod _367_valid_perfect_square;
 //
 mod _371_sum_of_two_integers;
 //
+mod _378_kth_smallest_element_in_a_sorted_matrix;
+//
 mod _380_insert_delete_get_random_o1;
 //
 mod _383_ransom_note;
@@ -572,6 +574,8 @@ mod _647_palindromic_substrings;
 //
 mod _653_two_sum_4;
 //
+mod _655_print_binary_tree;
+//
 mod _657_robot_return_to_origin;
 //
 mod _661_image_smoother;
@@ -591,6 +595,8 @@ mod _682_baseball_game;
 mod _686_repeated_string_match;
 //
 mod _687_longest_univalue_path;
+//
+mod _688_knight_probability_in_chessboard;
 //
 mod _692_top_k_frequent_words;
 //

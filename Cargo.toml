@@ -12,3 +12,7 @@ util = {path='./crates/util', version = '0.1.0'}
 members = [
     "./crates/util",
 ]
+
+[[bin]]
+path = "readme.rs"
+name = "readme"
