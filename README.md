@@ -567,6 +567,8 @@
 
 [653. two sum 4](src/_653_two_sum_4.rs)
 
+[654. maximum binary tree](src/_654_maximum_binary_tree.rs)
+
 [655. print binary tree](src/_655_print_binary_tree.rs)
 
 [657. robot return to origin](src/_657_robot_return_to_origin.rs)
@@ -831,6 +833,8 @@
 
 [1007. minimum domino rotations for equal row](src/_1007_minimum_domino_rotations_for_equal_row.rs)
 
+[1008. construct binary search tree from preorder traversal](src/_1008_construct_binary_search_tree_from_preorder_traversal.rs)
+
 [1009. complement of base 10 integer](src/_1009_complement_of_base_10_integer.rs)
 
 [1010. pairs of songs with total durations divisible by 60](src/_1010_pairs_of_songs_with_total_durations_divisible_by_60.rs)
@@ -890,6 +894,8 @@
 [1071. greatest common divisor of strings](src/_1071_greatest_common_divisor_of_strings.rs)
 
 [1078. occurrences after bigram](src/_1078_occurrences_after_bigram.rs)
+
+[1079. letter tile possibilities](src/_1079_letter_tile_possibilities.rs)
 
 [1085. sum of digits in the minmum number](src/_1085_sum_of_digits_in_the_minmum_number.rs)
 
@@ -1007,6 +1013,8 @@
 
 [1304. find n unique integers sum up to zero](src/_1304_find_n_unique_integers_sum_up_to_zero.rs)
 
+[1305. all elements in two binary search tree](src/_1305_all_elements_in_two_binary_search_tree.rs)
+
 [1309. decrypt string from alphabet to integer mapping](src/_1309_decrypt_string_from_alphabet_to_integer_mapping.rs)
 
 [1313. decompres run length encoded list](src/_1313_decompres_run_length_encoded_list.rs)
@@ -1017,6 +1025,8 @@
 
 [1323. maximum 69 number](src/_1323_maximum_69_number.rs)
 
+[1329. sort the matrix diagonally](src/_1329_sort_the_matrix_diagonally.rs)
+
 [1331. rank transform of an array](src/_1331_rank_transform_of_an_array.rs)
 
 [1332. remove palindromic subsequences](src/_1332_remove_palindromic_subsequences.rs)
@@ -1026,5 +1036,7 @@
 [1342. number of steps to reduce a number to zero](src/_1342_number_of_steps_to_reduce_a_number_to_zero.rs)
 
 [1346. check if n and its double exist](src/_1346_check_if_n_and_its_double_exist.rs)
+
+[1347. minimum number of steps to make two strings anagram](src/_1347_minimum_number_of_steps_to_make_two_strings_anagram.rs)
 
 [1351. count negative numbers in a sorted matrix](src/_1351_count_negative_numbers_in_a_sorted_matrix.rs)

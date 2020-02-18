@@ -576,6 +576,8 @@ mod _647_palindromic_substrings;
 //
 mod _653_two_sum_4;
 //
+mod _654_maximum_binary_tree;
+//
 mod _655_print_binary_tree;
 //
 mod _657_robot_return_to_origin;
@@ -840,6 +842,8 @@ mod _1005_maximize_sum_of_array_after_k_negations;
 //
 mod _1007_minimum_domino_rotations_for_equal_row;
 //
+mod _1008_construct_binary_search_tree_from_preorder_traversal;
+//
 mod _1009_complement_of_base_10_integer;
 //
 mod _1010_pairs_of_songs_with_total_durations_divisible_by_60;
@@ -899,6 +903,8 @@ mod _1065_index_pairs_of_a_string;
 mod _1071_greatest_common_divisor_of_strings;
 //
 mod _1078_occurrences_after_bigram;
+//
+mod _1079_letter_tile_possibilities;
 //
 mod _1085_sum_of_digits_in_the_minmum_number;
 //
@@ -1016,6 +1022,8 @@ mod _1302_deepest_leaves_sum;
 //
 mod _1304_find_n_unique_integers_sum_up_to_zero;
 //
+mod _1305_all_elements_in_two_binary_search_tree;
+//
 mod _1309_decrypt_string_from_alphabet_to_integer_mapping;
 //
 mod _1317_convert_integer_to_the_sum_of_two_no_zero_integers;
@@ -1026,6 +1034,8 @@ mod _1315_sum_of_nodes_with_even_valued_grandparent;
 //
 mod _1323_maximum_69_number;
 //
+mod _1329_sort_the_matrix_diagonally;
+//
 mod _1331_rank_transform_of_an_array;
 //
 mod _1332_remove_palindromic_subsequences;
@@ -1035,5 +1045,7 @@ mod _1337_the_k_weakest_rows_in_a_matrix;
 mod _1342_number_of_steps_to_reduce_a_number_to_zero;
 //
 mod _1346_check_if_n_and_its_double_exist;
+//
+mod _1347_minimum_number_of_steps_to_make_two_strings_anagram;
 //
 mod _1351_count_negative_numbers_in_a_sorted_matrix;
