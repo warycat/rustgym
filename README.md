@@ -755,9 +755,13 @@
 
 [888. fair candy swap](src/_888_fair_candy_swap.rs)
 
+[890. find and replace pattern](src/_890_find_and_replace_pattern.rs)
+
 [892. surface area of 3d shapes](src/_892_surface_area_of_3d_shapes.rs)
 
 [893. groups of special equivalent string](src/_893_groups_of_special_equivalent_string.rs)
+
+[894. all possible full binary trees](src/_894_all_possible_full_binary_trees.rs)
 
 [896. monotonic array](src/_896_monotonic_array.rs)
 

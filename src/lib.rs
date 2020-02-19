@@ -767,9 +767,13 @@ mod _884_uncommon_words_from_two_sentences;
 //
 mod _888_fair_candy_swap;
 //
+mod _890_find_and_replace_pattern;
+//
 mod _892_surface_area_of_3d_shapes;
 //
 mod _893_groups_of_special_equivalent_string;
+//
+mod _894_all_possible_full_binary_trees;
 //
 mod _896_monotonic_array;
 //
