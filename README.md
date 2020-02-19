@@ -499,6 +499,8 @@
 
 [543. diameter of binary tree](src/_543_diameter_of_binary_tree.rs)
 
+[544. output contest matches](src/_544_output_contest_matches.rs)
+
 [545. boundary of binary tree](src/_545_boundary_of_binary_tree.rs)
 
 [547. friend circles](src/_547_friend_circles.rs)
@@ -673,6 +675,8 @@
 
 [762. prime number of set bits in binary representation](src/_762_prime_number_of_set_bits_in_binary_representation.rs)
 
+[763. partition labels](src/_763_partition_labels.rs)
+
 [766. toeplitiz matrix](src/_766_toeplitiz_matrix.rs)
 
 [771. jewels and stones](src/_771_jewels_and_stones.rs)
@@ -702,6 +706,8 @@
 [811. subdomain visit count](src/_811_subdomain_visit_count.rs)
 
 [812. largest triangle area](src/_812_largest_triangle_area.rs)
+
+[814. binary tree pruning](src/_814_binary_tree_pruning.rs)
 
 [819. most common word](src/_819_most_common_word.rs)
 
@@ -792,6 +798,8 @@
 [945. minimum increment to make array unique](src/_945_minimum_increment_to_make_array_unique.rs)
 
 [949. largest time for given digits](src/_949_largest_time_for_given_digits.rs)
+
+[950. reveal cards in increasing order](src/_950_reveal_cards_in_increasing_order.rs)
 
 [953. verifying an alien dictionary](src/_953_verifying_an_alien_dictionary.rs)
 
@@ -963,6 +971,8 @@
 
 [1197. minimum knight moves math](src/_1197_minimum_knight_moves_math.rs)
 
+[1198. find smallest common element in all rows](src/_1198_find_smallest_common_element_in_all_rows.rs)
+
 [1200. minimum absolute difference](src/_1200_minimum_absolute_difference.rs)
 
 [1207. unique number of occurrences](src/_1207_unique_number_of_occurrences.rs)
@@ -1024,6 +1034,8 @@
 [1317. convert integer to the sum of two no zero integers](src/_1317_convert_integer_to_the_sum_of_two_no_zero_integers.rs)
 
 [1323. maximum 69 number](src/_1323_maximum_69_number.rs)
+
+[1325. delete leaves with a given value](src/_1325_delete_leaves_with_a_given_value.rs)
 
 [1329. sort the matrix diagonally](src/_1329_sort_the_matrix_diagonally.rs)
 

@@ -9,6 +9,9 @@
 #![allow(clippy::ptr_arg)]
 #![allow(clippy::too_many_arguments)]
 
+#[macro_use]
+extern crate pretty_assertions;
+
 #[cfg_attr(test, macro_use)]
 extern crate util;
 
@@ -508,6 +511,8 @@ mod _541_reverse_string_2;
 //
 mod _543_diameter_of_binary_tree;
 //
+mod _544_output_contest_matches;
+//
 mod _545_boundary_of_binary_tree;
 //
 mod _547_friend_circles;
@@ -682,6 +687,8 @@ mod _760_find_anagram_mappings;
 //
 mod _762_prime_number_of_set_bits_in_binary_representation;
 //
+mod _763_partition_labels;
+//
 mod _766_toeplitiz_matrix;
 //
 mod _771_jewels_and_stones;
@@ -711,6 +718,8 @@ mod _807_max_increase_to_keep_city_skyline;
 mod _811_subdomain_visit_count;
 //
 mod _812_largest_triangle_area;
+//
+mod _814_binary_tree_pruning;
 //
 mod _819_most_common_word;
 //
@@ -801,6 +810,8 @@ mod _944_delete_columns_to_make_sorted;
 mod _945_minimum_increment_to_make_array_unique;
 //
 mod _949_largest_time_for_given_digits;
+//
+mod _950_reveal_cards_in_increasing_order;
 //
 mod _953_verifying_an_alien_dictionary;
 //
@@ -972,6 +983,8 @@ mod _1197_minimum_knight_moves;
 //
 mod _1197_minimum_knight_moves_math;
 //
+mod _1198_find_smallest_common_element_in_all_rows;
+//
 mod _1200_minimum_absolute_difference;
 //
 mod _1207_unique_number_of_occurrences;
@@ -1033,6 +1046,8 @@ mod _1313_decompres_run_length_encoded_list;
 mod _1315_sum_of_nodes_with_even_valued_grandparent;
 //
 mod _1323_maximum_69_number;
+//
+mod _1325_delete_leaves_with_a_given_value;
 //
 mod _1329_sort_the_matrix_diagonally;
 //
