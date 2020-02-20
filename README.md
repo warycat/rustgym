@@ -735,6 +735,8 @@
 
 [860. lemonade change](src/_860_lemonade_change.rs)
 
+[861. score after flipping matrix](src/_861_score_after_flipping_matrix.rs)
+
 [866. prime palindrome](src/_866_prime_palindrome.rs)
 
 [867. transpose matrix](src/_867_transpose_matrix.rs)
@@ -776,6 +778,8 @@
 [914. x of a kind in a deck of cards](src/_914_x_of_a_kind_in_a_deck_of_cards.rs)
 
 [917. reverse only letters](src/_917_reverse_only_letters.rs)
+
+[921. minimum add to make parentheses valid](src/_921_minimum_add_to_make_parentheses_valid.rs)
 
 [922. sort array by parity 2](src/_922_sort_array_by_parity_2.rs)
 
@@ -822,6 +826,8 @@
 [976. largest perimeter triangle](src/_976_largest_perimeter_triangle.rs)
 
 [977. squares of a sorted array](src/_977_squares_of_a_sorted_array.rs)
+
+[979. distribute coins in binary tree](src/_979_distribute_coins_in_binary_tree.rs)
 
 [981. time based key value store](src/_981_time_based_key_value_store.rs)
 
@@ -915,11 +921,15 @@
 
 [1091. shortest path in binary matrix](src/_1091_shortest_path_in_binary_matrix.rs)
 
+[1100. find k length substrings with no repeated characters](src/_1100_find_k_length_substrings_with_no_repeated_characters.rs)
+
 [1103. distribute candies to people](src/_1103_distribute_candies_to_people.rs)
 
 [1108. defanging an ip address](src/_1108_defanging_an_ip_address.rs)
 
 [1110. delete nodes and return forest](src/_1110_delete_nodes_and_return_forest.rs)
+
+[1111. maximum nesting depth of two valid parentheses strings](src/_1111_maximum_nesting_depth_of_two_valid_parentheses_strings.rs)
 
 [1118. number of days in a month](src/_1118_number_of_days_in_a_month.rs)
 
@@ -942,6 +952,8 @@
 [1154. day of the year](src/_1154_day_of_the_year.rs)
 
 [1160. find words that can be formed by characters](src/_1160_find_words_that_can_be_formed_by_characters.rs)
+
+[1161. maximum level sum of a binary tree](src/_1161_maximum_level_sum_of_a_binary_tree.rs)
 
 [1165. single row keyboard](src/_1165_single_row_keyboard.rs)
 
@@ -1003,6 +1015,8 @@
 
 [1260. shift 2d grid](src/_1260_shift_2d_grid.rs)
 
+[1261. find elements in contaminated binary tree](src/_1261_find_elements_in_contaminated_binary_tree.rs)
+
 [1266. minimum time visition all points](src/_1266_minimum_time_visition_all_points.rs)
 
 [1268. search suggestions system](src/_1268_search_suggestions_system.rs)
@@ -1032,6 +1046,8 @@
 [1309. decrypt string from alphabet to integer mapping](src/_1309_decrypt_string_from_alphabet_to_integer_mapping.rs)
 
 [1313. decompres run length encoded list](src/_1313_decompres_run_length_encoded_list.rs)
+
+[1314. matrix block sum](src/_1314_matrix_block_sum.rs)
 
 [1315. sum of nodes with even valued grandparent](src/_1315_sum_of_nodes_with_even_valued_grandparent.rs)
 

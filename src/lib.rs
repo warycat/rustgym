@@ -9,8 +9,8 @@
 #![allow(clippy::ptr_arg)]
 #![allow(clippy::too_many_arguments)]
 
-#[macro_use]
-extern crate pretty_assertions;
+// #[macro_use]
+// extern crate pretty_assertions;
 
 #[cfg_attr(test, macro_use)]
 extern crate util;
@@ -747,6 +747,8 @@ mod _859_buddy_strings;
 //
 mod _860_lemonade_change;
 //
+mod _861_score_after_flipping_matrix;
+//
 mod _866_prime_palindrome;
 //
 mod _867_transpose_matrix;
@@ -788,6 +790,8 @@ mod _909_snakes_and_ladders;
 mod _914_x_of_a_kind_in_a_deck_of_cards;
 //
 mod _917_reverse_only_letters;
+//
+mod _921_minimum_add_to_make_parentheses_valid;
 //
 mod _922_sort_array_by_parity_2;
 //
@@ -834,6 +838,8 @@ mod _974_subarray_sums_divisible_by_k;
 mod _976_largest_perimeter_triangle;
 //
 mod _977_squares_of_a_sorted_array;
+//
+mod _979_distribute_coins_in_binary_tree;
 //
 mod _981_time_based_key_value_store;
 //
@@ -925,15 +931,17 @@ mod _1085_sum_of_digits_in_the_minmum_number;
 //
 mod _1089_duplicate_zeros;
 //
-mod _1190_reverse_substrings_between_each_pair_of_parentheses;
-//
 mod _1091_shortest_path_in_binary_matrix;
+//
+mod _1100_find_k_length_substrings_with_no_repeated_characters;
 //
 mod _1103_distribute_candies_to_people;
 //
 mod _1108_defanging_an_ip_address;
 //
 mod _1110_delete_nodes_and_return_forest;
+//
+mod _1111_maximum_nesting_depth_of_two_valid_parentheses_strings;
 //
 mod _1118_number_of_days_in_a_month;
 //
@@ -956,6 +964,8 @@ mod _1150_check_if_a_number_is_majority_element_in_a_sorted_array;
 mod _1154_day_of_the_year;
 //
 mod _1160_find_words_that_can_be_formed_by_characters;
+//
+mod _1161_maximum_level_sum_of_a_binary_tree;
 //
 mod _1165_single_row_keyboard;
 //
@@ -980,6 +990,8 @@ mod _1184_distance_between_bus_stops;
 mod _1185_day_of_the_week;
 //
 mod _1189_maximum_number_of_balloons;
+//
+mod _1190_reverse_substrings_between_each_pair_of_parentheses;
 //
 mod _1196_how_many_apples_can_you_put_into_the_basket;
 //
@@ -1015,6 +1027,8 @@ mod _1252_cells_with_odd_values_in_a_matrix;
 //
 mod _1260_shift_2d_grid;
 //
+mod _1261_find_elements_in_contaminated_binary_tree;
+//
 mod _1266_minimum_time_visition_all_points;
 //
 mod _1268_search_suggestions_system;
@@ -1042,6 +1056,8 @@ mod _1304_find_n_unique_integers_sum_up_to_zero;
 mod _1305_all_elements_in_two_binary_search_tree;
 //
 mod _1309_decrypt_string_from_alphabet_to_integer_mapping;
+//
+mod _1314_matrix_block_sum;
 //
 mod _1317_convert_integer_to_the_sum_of_two_no_zero_integers;
 //
