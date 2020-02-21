@@ -337,6 +337,8 @@ mod _332_reconstruct_itinerary;
 //
 mod _334_increasing_triplet_subsequence;
 //
+mod _338_counting_bits;
+//
 mod _339_nested_list_weight_sum;
 //
 mod _342_power_of_four;
@@ -502,6 +504,8 @@ mod _529_minesweeper;
 mod _530_minimum_absolute_difference_in_bst;
 //
 mod _532_k_diff_pairs_in_an_array;
+//
+mod _537_complex_number_multiplication;
 //
 mod _538_convert_bst_to_greater_tree;
 //
@@ -767,6 +771,8 @@ mod _883_projection_area_of_3d_shapes;
 //
 mod _884_uncommon_words_from_two_sentences;
 //
+mod _885_spiral_matrix_3;
+//
 mod _888_fair_candy_swap;
 //
 mod _890_find_and_replace_pattern;
@@ -937,6 +943,8 @@ mod _1100_find_k_length_substrings_with_no_repeated_characters;
 //
 mod _1103_distribute_candies_to_people;
 //
+mod _1104_path_in_zigzag_labelled_binary_tree;
+//
 mod _1108_defanging_an_ip_address;
 //
 mod _1110_delete_nodes_and_return_forest;
@@ -1013,6 +1021,8 @@ mod _1217_play_with_chips;
 //
 mod _1221_split_a_string_in_balanced_strings;
 //
+mod _1222_queens_that_can_attack_the_king;
+//
 mod _1223_dice_roll_simulation;
 //
 mod _1228_missing_number_in_arithmetic_progression;
@@ -1037,6 +1047,8 @@ mod _1271_hexspeak;
 //
 mod _1275_find_winner_on_a_tic_tac_toe_game;
 //
+mod _1277_count_square_submatrices_with_all_ones;
+//
 mod _1281_subtract_the_product_and_sum_of_digits_of_an_integer;
 //
 mod _1282_group_the_people_given_the_group_size_they_belong_to;
@@ -1057,6 +1069,8 @@ mod _1305_all_elements_in_two_binary_search_tree;
 //
 mod _1309_decrypt_string_from_alphabet_to_integer_mapping;
 //
+mod _1310_xor_queries_of_a_subarray;
+//
 mod _1314_matrix_block_sum;
 //
 mod _1317_convert_integer_to_the_sum_of_two_no_zero_integers;
@@ -1076,6 +1090,8 @@ mod _1331_rank_transform_of_an_array;
 mod _1332_remove_palindromic_subsequences;
 //
 mod _1337_the_k_weakest_rows_in_a_matrix;
+//
+mod _1338_reduce_array_size_to_the_half;
 //
 mod _1342_number_of_steps_to_reduce_a_number_to_zero;
 //

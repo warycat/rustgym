@@ -327,6 +327,8 @@
 
 [334. increasing triplet subsequence](src/_334_increasing_triplet_subsequence.rs)
 
+[338. counting bits](src/_338_counting_bits.rs)
+
 [339. nested list weight sum](src/_339_nested_list_weight_sum.rs)
 
 [342. power of four](src/_342_power_of_four.rs)
@@ -490,6 +492,8 @@
 [530. minimum absolute difference in bst](src/_530_minimum_absolute_difference_in_bst.rs)
 
 [532. k diff pairs in an array](src/_532_k_diff_pairs_in_an_array.rs)
+
+[537. complex number multiplication](src/_537_complex_number_multiplication.rs)
 
 [538. convert bst to greater tree](src/_538_convert_bst_to_greater_tree.rs)
 
@@ -755,6 +759,8 @@
 
 [884. uncommon words from two sentences](src/_884_uncommon_words_from_two_sentences.rs)
 
+[885. spiral matrix 3](src/_885_spiral_matrix_3.rs)
+
 [888. fair candy swap](src/_888_fair_candy_swap.rs)
 
 [890. find and replace pattern](src/_890_find_and_replace_pattern.rs)
@@ -925,6 +931,8 @@
 
 [1103. distribute candies to people](src/_1103_distribute_candies_to_people.rs)
 
+[1104. path in zigzag labelled binary tree](src/_1104_path_in_zigzag_labelled_binary_tree.rs)
+
 [1108. defanging an ip address](src/_1108_defanging_an_ip_address.rs)
 
 [1110. delete nodes and return forest](src/_1110_delete_nodes_and_return_forest.rs)
@@ -1001,6 +1009,8 @@
 
 [1221. split a string in balanced strings](src/_1221_split_a_string_in_balanced_strings.rs)
 
+[1222. queens that can attack the king](src/_1222_queens_that_can_attack_the_king.rs)
+
 [1223. dice roll simulation](src/_1223_dice_roll_simulation.rs)
 
 [1228. missing number in arithmetic progression](src/_1228_missing_number_in_arithmetic_progression.rs)
@@ -1025,6 +1035,8 @@
 
 [1275. find winner on a tic tac toe game](src/_1275_find_winner_on_a_tic_tac_toe_game.rs)
 
+[1277. count square submatrices with all ones](src/_1277_count_square_submatrices_with_all_ones.rs)
+
 [1281. subtract the product and sum of digits of an integer](src/_1281_subtract_the_product_and_sum_of_digits_of_an_integer.rs)
 
 [1282. group the people given the group size they belong to](src/_1282_group_the_people_given_the_group_size_they_belong_to.rs)
@@ -1045,6 +1057,8 @@
 
 [1309. decrypt string from alphabet to integer mapping](src/_1309_decrypt_string_from_alphabet_to_integer_mapping.rs)
 
+[1310. xor queries of a subarray](src/_1310_xor_queries_of_a_subarray.rs)
+
 [1313. decompres run length encoded list](src/_1313_decompres_run_length_encoded_list.rs)
 
 [1314. matrix block sum](src/_1314_matrix_block_sum.rs)
@@ -1064,6 +1078,8 @@
 [1332. remove palindromic subsequences](src/_1332_remove_palindromic_subsequences.rs)
 
 [1337. the k weakest rows in a matrix](src/_1337_the_k_weakest_rows_in_a_matrix.rs)
+
+[1338. reduce array size to the half](src/_1338_reduce_array_size_to_the_half.rs)
 
 [1342. number of steps to reduce a number to zero](src/_1342_number_of_steps_to_reduce_a_number_to_zero.rs)
 
