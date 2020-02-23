@@ -835,9 +835,13 @@ mod _953_verifying_an_alien_dictionary;
 //
 mod _957_prison_cells_after_n_days;
 //
+mod _959_regions_cut_by_slashes;
+//
 mod _961_n_repeated_element_in_size_2n_array;
 //
 mod _965_univalued_binary_tree;
+//
+mod _969_pancake_sorting;
 //
 mod _970_powerful_integers;
 //
@@ -963,6 +967,8 @@ mod _1119_remove_vowels_from_a_string;
 //
 mod _1122_relative_sort_array;
 //
+mod _1123_lowest_common_ancestor_or_deepest_leaves;
+//
 mod _1128_number_of_equivalent_domino_pairs;
 //
 mod _1130_minimum_cost_tree_from_leaf_values;
@@ -1060,6 +1066,8 @@ mod _1277_count_square_submatrices_with_all_ones;
 mod _1281_subtract_the_product_and_sum_of_digits_of_an_integer;
 //
 mod _1282_group_the_people_given_the_group_size_they_belong_to;
+//
+mod _1286_iterator_for_combination;
 //
 mod _1287_element_appearing_more_than_25_in_sorted_array;
 //

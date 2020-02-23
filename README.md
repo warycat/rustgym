@@ -823,9 +823,13 @@
 
 [957. prison cells after n days](src/_957_prison_cells_after_n_days.rs)
 
+[959. regions cut by slashes](src/_959_regions_cut_by_slashes.rs)
+
 [961. n repeated element in size 2n array](src/_961_n_repeated_element_in_size_2n_array.rs)
 
 [965. univalued binary tree](src/_965_univalued_binary_tree.rs)
+
+[969. pancake sorting](src/_969_pancake_sorting.rs)
 
 [970. powerful integers](src/_970_powerful_integers.rs)
 
@@ -951,6 +955,8 @@
 
 [1122. relative sort array](src/_1122_relative_sort_array.rs)
 
+[1123. lowest common ancestor or deepest leaves](src/_1123_lowest_common_ancestor_or_deepest_leaves.rs)
+
 [1128. number of equivalent domino pairs](src/_1128_number_of_equivalent_domino_pairs.rs)
 
 [1130. minimum cost tree from leaf values](src/_1130_minimum_cost_tree_from_leaf_values.rs)
@@ -1048,6 +1054,8 @@
 [1281. subtract the product and sum of digits of an integer](src/_1281_subtract_the_product_and_sum_of_digits_of_an_integer.rs)
 
 [1282. group the people given the group size they belong to](src/_1282_group_the_people_given_the_group_size_they_belong_to.rs)
+
+[1286. iterator for combination](src/_1286_iterator_for_combination.rs)
 
 [1287. element appearing more than 25 in sorted array](src/_1287_element_appearing_more_than_25_in_sorted_array.rs)
 
