@@ -709,6 +709,8 @@ mod _787_cheapest_flights_within_k_stops;
 //
 mod _788_rotated_digits;
 //
+mod _791_custom_sort_string;
+//
 mod _796_rotate_string;
 //
 mod _797_all_paths_from_source_to_target;
@@ -741,6 +743,8 @@ mod _836_rectangle_overlap;
 //
 mod _840_magic_squares_in_grid;
 //
+mod _841_keys_and_rooms;
+//
 mod _844_backspace_string_compare;
 //
 mod _849_maximize_distance_to_closest_person;
@@ -769,6 +773,8 @@ mod _875_koko_eating_bananas;
 //
 mod _876_middle_of_the_linked_list;
 //
+mod _877_stone_game;
+//
 mod _883_projection_area_of_3d_shapes;
 //
 mod _884_uncommon_words_from_two_sentences;
@@ -776,6 +782,8 @@ mod _884_uncommon_words_from_two_sentences;
 mod _885_spiral_matrix_3;
 //
 mod _888_fair_candy_swap;
+//
+mod _889_construct_binary_tree_from_preorder_and_postorder_traversal;
 //
 mod _890_find_and_replace_pattern;
 //
@@ -895,6 +903,8 @@ mod _1022_sum_root_to_leaf_binary_number;
 //
 mod _1025_divisor_game;
 //
+mod _1026_maximum_difference_between_node_and_ancestor;
+//
 mod _1027_longest_arithmetic_sequence;
 //
 mod _1029_two_city_scheduling;
@@ -913,6 +923,8 @@ mod _1041_robot_bounded_in_circle;
 //
 mod _1042_flower_planting_with_no_adjacent;
 //
+mod _1043_partition_array_for_maximum_sum;
+//
 mod _1046_last_stone_weight;
 //
 mod _1047_remove_all_adjacent_duplicates_in_string;
@@ -930,6 +942,8 @@ mod _1056_confusing_number;
 mod _1057_campus_bikes;
 //
 mod _1060_missing_element_in_sorted_array;
+//
+mod _1061_lexicographically_smallest_equivalent_string;
 //
 mod _1064_fixed_point;
 //
@@ -1033,6 +1047,8 @@ mod _1214_two_sum_bsts;
 //
 mod _1217_play_with_chips;
 //
+mod _1219_path_with_maximum_gold;
+//
 mod _1221_split_a_string_in_balanced_strings;
 //
 mod _1222_queens_that_can_attack_the_king;
@@ -1048,6 +1064,8 @@ mod _1243_array_transformation;
 mod _1249_minimum_remove_to_make_valid_parentheses;
 //
 mod _1252_cells_with_odd_values_in_a_matrix;
+//
+mod _1256_encode_number;
 //
 mod _1260_shift_2d_grid;
 //
@@ -1110,6 +1128,8 @@ mod _1337_the_k_weakest_rows_in_a_matrix;
 mod _1338_reduce_array_size_to_the_half;
 //
 mod _1342_number_of_steps_to_reduce_a_number_to_zero;
+//
+mod _1343_number_of_sub_arrays_of_size_k_and_average_greater_than_or_equal_to_threshold;
 //
 mod _1346_check_if_n_and_its_double_exist;
 //

@@ -697,6 +697,8 @@
 
 [788. rotated digits](src/_788_rotated_digits.rs)
 
+[791. custom sort string](src/_791_custom_sort_string.rs)
+
 [796. rotate string](src/_796_rotate_string.rs)
 
 [797. all paths from source to target](src/_797_all_paths_from_source_to_target.rs)
@@ -729,6 +731,8 @@
 
 [840. magic squares in grid](src/_840_magic_squares_in_grid.rs)
 
+[841. keys and rooms](src/_841_keys_and_rooms.rs)
+
 [844. backspace string compare](src/_844_backspace_string_compare.rs)
 
 [849. maximize distance to closest person](src/_849_maximize_distance_to_closest_person.rs)
@@ -757,6 +761,8 @@
 
 [876. middle of the linked list](src/_876_middle_of_the_linked_list.rs)
 
+[877. stone game](src/_877_stone_game.rs)
+
 [883. projection area of 3d shapes](src/_883_projection_area_of_3d_shapes.rs)
 
 [884. uncommon words from two sentences](src/_884_uncommon_words_from_two_sentences.rs)
@@ -764,6 +770,8 @@
 [885. spiral matrix 3](src/_885_spiral_matrix_3.rs)
 
 [888. fair candy swap](src/_888_fair_candy_swap.rs)
+
+[889. construct binary tree from preorder and postorder traversal](src/_889_construct_binary_tree_from_preorder_and_postorder_traversal.rs)
 
 [890. find and replace pattern](src/_890_find_and_replace_pattern.rs)
 
@@ -883,6 +891,8 @@
 
 [1025. divisor game](src/_1025_divisor_game.rs)
 
+[1026. maximum difference between node and ancestor](src/_1026_maximum_difference_between_node_and_ancestor.rs)
+
 [1027. longest arithmetic sequence](src/_1027_longest_arithmetic_sequence.rs)
 
 [1029. two city scheduling](src/_1029_two_city_scheduling.rs)
@@ -901,6 +911,8 @@
 
 [1042. flower planting with no adjacent](src/_1042_flower_planting_with_no_adjacent.rs)
 
+[1043. partition array for maximum sum](src/_1043_partition_array_for_maximum_sum.rs)
+
 [1046. last stone weight](src/_1046_last_stone_weight.rs)
 
 [1047. remove all adjacent duplicates in string](src/_1047_remove_all_adjacent_duplicates_in_string.rs)
@@ -918,6 +930,8 @@
 [1057. campus bikes](src/_1057_campus_bikes.rs)
 
 [1060. missing element in sorted array](src/_1060_missing_element_in_sorted_array.rs)
+
+[1061. lexicographically smallest equivalent string](src/_1061_lexicographically_smallest_equivalent_string.rs)
 
 [1064. fixed point](src/_1064_fixed_point.rs)
 
@@ -1021,6 +1035,8 @@
 
 [1217. play with chips](src/_1217_play_with_chips.rs)
 
+[1219. path with maximum gold](src/_1219_path_with_maximum_gold.rs)
+
 [1221. split a string in balanced strings](src/_1221_split_a_string_in_balanced_strings.rs)
 
 [1222. queens that can attack the king](src/_1222_queens_that_can_attack_the_king.rs)
@@ -1036,6 +1052,8 @@
 [1249. minimum remove to make valid parentheses](src/_1249_minimum_remove_to_make_valid_parentheses.rs)
 
 [1252. cells with odd values in a matrix](src/_1252_cells_with_odd_values_in_a_matrix.rs)
+
+[1256. encode number](src/_1256_encode_number.rs)
 
 [1260. shift 2d grid](src/_1260_shift_2d_grid.rs)
 
@@ -1098,6 +1116,8 @@
 [1338. reduce array size to the half](src/_1338_reduce_array_size_to_the_half.rs)
 
 [1342. number of steps to reduce a number to zero](src/_1342_number_of_steps_to_reduce_a_number_to_zero.rs)
+
+[1343. number of sub arrays of size k and average greater than or equal to threshold](src/_1343_number_of_sub_arrays_of_size_k_and_average_greater_than_or_equal_to_threshold.rs)
 
 [1346. check if n and its double exist](src/_1346_check_if_n_and_its_double_exist.rs)
 
