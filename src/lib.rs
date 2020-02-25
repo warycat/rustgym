@@ -307,6 +307,8 @@ mod _274_h_index;
 //
 mod _276_paint_fence;
 //
+mod _280_wiggle_sort;
+//
 mod _283_move_zeros;
 //
 mod _286_walls_and_gates;
@@ -372,6 +374,8 @@ mod _364_nested_list_weight_sum_2;
 mod _366_find_leaves_of_binary_tree;
 //
 mod _367_valid_perfect_square;
+//
+mod _370_range_addition;
 //
 mod _371_sum_of_two_integers;
 //
@@ -803,6 +807,8 @@ mod _908_smallest_range_1;
 //
 mod _909_snakes_and_ladders;
 //
+mod _912_sort_an_array;
+//
 mod _914_x_of_a_kind_in_a_deck_of_cards;
 //
 mod _917_reverse_only_letters;
@@ -876,6 +882,8 @@ mod _989_add_to_array_form_of_integer;
 mod _991_broken_calculator;
 //
 mod _994_rotting_oranges;
+//
+mod _998_maximum_binary_tree_2;
 //
 mod _999_available_captures_for_rook;
 //
@@ -957,6 +965,8 @@ mod _1079_letter_tile_possibilities;
 //
 mod _1085_sum_of_digits_in_the_minmum_number;
 //
+mod _1087_brace_expansion;
+//
 mod _1089_duplicate_zeros;
 //
 mod _1091_shortest_path_in_binary_matrix;
@@ -978,6 +988,8 @@ mod _1111_maximum_nesting_depth_of_two_valid_parentheses_strings;
 mod _1118_number_of_days_in_a_month;
 //
 mod _1119_remove_vowels_from_a_string;
+//
+mod _1120_maximum_average_subtree;
 //
 mod _1122_relative_sort_array;
 //
@@ -1059,6 +1071,8 @@ mod _1228_missing_number_in_arithmetic_progression;
 //
 mod _1232_check_if_it_is_a_straight_line;
 //
+mod _1238_circular_permutation_in_binary_representation;
+//
 mod _1243_array_transformation;
 //
 mod _1249_minimum_remove_to_make_valid_parentheses;
@@ -1076,6 +1090,8 @@ mod _1266_minimum_time_visition_all_points;
 mod _1268_search_suggestions_system;
 //
 mod _1271_hexspeak;
+//
+mod _1273_delete_tree_nodes;
 //
 mod _1275_find_winner_on_a_tic_tac_toe_game;
 //
@@ -1136,3 +1152,7 @@ mod _1346_check_if_n_and_its_double_exist;
 mod _1347_minimum_number_of_steps_to_make_two_strings_anagram;
 //
 mod _1351_count_negative_numbers_in_a_sorted_matrix;
+//
+mod _1356_sort_integers_by_the_number_of_1_bits;
+//
+mod _1360_number_of_days_between_two_dates;

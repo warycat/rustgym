@@ -295,6 +295,8 @@
 
 [276. paint fence](src/_276_paint_fence.rs)
 
+[280. wiggle sort](src/_280_wiggle_sort.rs)
+
 [283. move zeros](src/_283_move_zeros.rs)
 
 [286. walls and gates](src/_286_walls_and_gates.rs)
@@ -360,6 +362,8 @@
 [366. find leaves of binary tree](src/_366_find_leaves_of_binary_tree.rs)
 
 [367. valid perfect square](src/_367_valid_perfect_square.rs)
+
+[370. range addition](src/_370_range_addition.rs)
 
 [371. sum of two integers](src/_371_sum_of_two_integers.rs)
 
@@ -791,6 +795,8 @@
 
 [909. snakes and ladders](src/_909_snakes_and_ladders.rs)
 
+[912. sort an array](src/_912_sort_an_array.rs)
+
 [914. x of a kind in a deck of cards](src/_914_x_of_a_kind_in_a_deck_of_cards.rs)
 
 [917. reverse only letters](src/_917_reverse_only_letters.rs)
@@ -864,6 +870,8 @@
 [991. broken calculator](src/_991_broken_calculator.rs)
 
 [994. rotting oranges](src/_994_rotting_oranges.rs)
+
+[998. maximum binary tree 2](src/_998_maximum_binary_tree_2.rs)
 
 [999. available captures for rook](src/_999_available_captures_for_rook.rs)
 
@@ -945,6 +953,8 @@
 
 [1085. sum of digits in the minmum number](src/_1085_sum_of_digits_in_the_minmum_number.rs)
 
+[1087. brace expansion](src/_1087_brace_expansion.rs)
+
 [1089. duplicate zeros](src/_1089_duplicate_zeros.rs)
 
 [1091. shortest path in binary matrix](src/_1091_shortest_path_in_binary_matrix.rs)
@@ -966,6 +976,8 @@
 [1118. number of days in a month](src/_1118_number_of_days_in_a_month.rs)
 
 [1119. remove vowels from a string](src/_1119_remove_vowels_from_a_string.rs)
+
+[1120. maximum average subtree](src/_1120_maximum_average_subtree.rs)
 
 [1122. relative sort array](src/_1122_relative_sort_array.rs)
 
@@ -1047,6 +1059,8 @@
 
 [1232. check if it is a straight line](src/_1232_check_if_it_is_a_straight_line.rs)
 
+[1238. circular permutation in binary representation](src/_1238_circular_permutation_in_binary_representation.rs)
+
 [1243. array transformation](src/_1243_array_transformation.rs)
 
 [1249. minimum remove to make valid parentheses](src/_1249_minimum_remove_to_make_valid_parentheses.rs)
@@ -1064,6 +1078,8 @@
 [1268. search suggestions system](src/_1268_search_suggestions_system.rs)
 
 [1271. hexspeak](src/_1271_hexspeak.rs)
+
+[1273. delete tree nodes](src/_1273_delete_tree_nodes.rs)
 
 [1275. find winner on a tic tac toe game](src/_1275_find_winner_on_a_tic_tac_toe_game.rs)
 
@@ -1124,3 +1140,7 @@
 [1347. minimum number of steps to make two strings anagram](src/_1347_minimum_number_of_steps_to_make_two_strings_anagram.rs)
 
 [1351. count negative numbers in a sorted matrix](src/_1351_count_negative_numbers_in_a_sorted_matrix.rs)
+
+[1356. sort integers by the number of 1 bits](src/_1356_sort_integers_by_the_number_of_1_bits.rs)
+
+[1360. number of days between two dates](src/_1360_number_of_days_between_two_dates.rs)
