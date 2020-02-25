@@ -809,6 +809,8 @@
 
 [929. unique email addresses](src/_929_unique_email_addresses.rs)
 
+[931. minimum falling path sum](src/_931_minimum_falling_path_sum.rs)
+
 [933. number of recent calls](src/_933_number_of_recent_calls.rs)
 
 [935. knight dialer](src/_935_knight_dialer.rs)
@@ -1069,6 +1071,8 @@
 
 [1256. encode number](src/_1256_encode_number.rs)
 
+[1258. synonymous sentences](src/_1258_synonymous_sentences.rs)
+
 [1260. shift 2d grid](src/_1260_shift_2d_grid.rs)
 
 [1261. find elements in contaminated binary tree](src/_1261_find_elements_in_contaminated_binary_tree.rs)
@@ -1093,6 +1097,8 @@
 
 [1287. element appearing more than 25 in sorted array](src/_1287_element_appearing_more_than_25_in_sorted_array.rs)
 
+[1288. remove covered intervals](src/_1288_remove_covered_intervals.rs)
+
 [1290. convert binary number in a linked list to integer](src/_1290_convert_binary_number_in_a_linked_list_to_integer.rs)
 
 [1295. find numbers with even number of digits](src/_1295_find_numbers_with_even_number_of_digits.rs)
@@ -1105,6 +1111,8 @@
 
 [1305. all elements in two binary search tree](src/_1305_all_elements_in_two_binary_search_tree.rs)
 
+[1306. jump game 3](src/_1306_jump_game_3.rs)
+
 [1309. decrypt string from alphabet to integer mapping](src/_1309_decrypt_string_from_alphabet_to_integer_mapping.rs)
 
 [1310. xor queries of a subarray](src/_1310_xor_queries_of_a_subarray.rs)
@@ -1116,6 +1124,8 @@
 [1315. sum of nodes with even valued grandparent](src/_1315_sum_of_nodes_with_even_valued_grandparent.rs)
 
 [1317. convert integer to the sum of two no zero integers](src/_1317_convert_integer_to_the_sum_of_two_no_zero_integers.rs)
+
+[1318. minimum flips to make a or b equal to c](src/_1318_minimum_flips_to_make_a_or_b_equal_to_c.rs)
 
 [1323. maximum 69 number](src/_1323_maximum_69_number.rs)
 
@@ -1134,6 +1144,8 @@
 [1342. number of steps to reduce a number to zero](src/_1342_number_of_steps_to_reduce_a_number_to_zero.rs)
 
 [1343. number of sub arrays of size k and average greater than or equal to threshold](src/_1343_number_of_sub_arrays_of_size_k_and_average_greater_than_or_equal_to_threshold.rs)
+
+[1344. angle between hands of a clock](src/_1344_angle_between_hands_of_a_clock.rs)
 
 [1346. check if n and its double exist](src/_1346_check_if_n_and_its_double_exist.rs)
 

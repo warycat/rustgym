@@ -821,6 +821,8 @@ mod _925_long_pressed_name;
 //
 mod _929_unique_email_addresses;
 //
+mod _931_minimum_falling_path_sum;
+//
 mod _933_number_of_recent_calls;
 //
 mod _935_knight_dialer;
@@ -1077,6 +1079,8 @@ mod _1243_array_transformation;
 //
 mod _1249_minimum_remove_to_make_valid_parentheses;
 //
+mod _1258_synonymous_sentences;
+//
 mod _1252_cells_with_odd_values_in_a_matrix;
 //
 mod _1256_encode_number;
@@ -1105,6 +1109,8 @@ mod _1286_iterator_for_combination;
 //
 mod _1287_element_appearing_more_than_25_in_sorted_array;
 //
+mod _1288_remove_covered_intervals;
+//
 mod _1290_convert_binary_number_in_a_linked_list_to_integer;
 //
 mod _1295_find_numbers_with_even_number_of_digits;
@@ -1117,17 +1123,21 @@ mod _1304_find_n_unique_integers_sum_up_to_zero;
 //
 mod _1305_all_elements_in_two_binary_search_tree;
 //
+mod _1306_jump_game_3;
+//
 mod _1309_decrypt_string_from_alphabet_to_integer_mapping;
 //
 mod _1310_xor_queries_of_a_subarray;
 //
 mod _1314_matrix_block_sum;
 //
-mod _1317_convert_integer_to_the_sum_of_two_no_zero_integers;
-//
 mod _1313_decompres_run_length_encoded_list;
 //
 mod _1315_sum_of_nodes_with_even_valued_grandparent;
+//
+mod _1318_minimum_flips_to_make_a_or_b_equal_to_c;
+//
+mod _1317_convert_integer_to_the_sum_of_two_no_zero_integers;
 //
 mod _1323_maximum_69_number;
 //
@@ -1146,6 +1156,8 @@ mod _1338_reduce_array_size_to_the_half;
 mod _1342_number_of_steps_to_reduce_a_number_to_zero;
 //
 mod _1343_number_of_sub_arrays_of_size_k_and_average_greater_than_or_equal_to_threshold;
+//
+mod _1344_angle_between_hands_of_a_clock;
 //
 mod _1346_check_if_n_and_its_double_exist;
 //
