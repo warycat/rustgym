@@ -187,6 +187,8 @@
 
 [155. min stack](src/_155_min_stack.rs)
 
+[159. longest substring with at most two distinc characters](src/_159_longest_substring_with_at_most_two_distinc_characters.rs)
+
 [161. one edit distance](src/_161_one_edit_distance.rs)
 
 [162. find peak element](src/_162_find_peak_element.rs)
@@ -417,6 +419,8 @@
 
 [422. valid word square](src/_422_valid_word_square.rs)
 
+[424. longest repeating character replacement](src/_424_longest_repeating_character_replacement.rs)
+
 [434. number of segments in a string](src/_434_number_of_segments_in_a_string.rs)
 
 [437. path sum 3](src/_437_path_sum_3.rs)
@@ -451,6 +455,8 @@
 
 [476. number complement](src/_476_number_complement.rs)
 
+[478. generate random point in circle](src/_478_generate_random_point_in_circle.rs)
+
 [482. license key formatting](src/_482_license_key_formatting.rs)
 
 [485. max consecutive ones](src/_485_max_consecutive_ones.rs)
@@ -460,6 +466,8 @@
 [492. construct the rectangle](src/_492_construct_the_rectangle.rs)
 
 [496. next greater element 1](src/_496_next_greater_element_1.rs)
+
+[497. random point in nonoverlapping rectangles](src/_497_random_point_in_nonoverlapping_rectangles.rs)
 
 [498. diagonal traverse](src/_498_diagonal_traverse.rs)
 
@@ -480,6 +488,8 @@
 [516. longest palindromic subsequence](src/_516_longest_palindromic_subsequence.rs)
 
 [518. coin change 2](src/_518_coin_change_2.rs)
+
+[519. random flip matrix](src/_519_random_flip_matrix.rs)
 
 [520. detect captial](src/_520_detect_captial.rs)
 
@@ -857,6 +867,8 @@
 
 [977. squares of a sorted array](src/_977_squares_of_a_sorted_array.rs)
 
+[978. longest turbulent subarray](src/_978_longest_turbulent_subarray.rs)
+
 [979. distribute coins in binary tree](src/_979_distribute_coins_in_binary_tree.rs)
 
 [981. time based key value store](src/_981_time_based_key_value_store.rs)
@@ -878,6 +890,8 @@
 [999. available captures for rook](src/_999_available_captures_for_rook.rs)
 
 [1002. find common characters](src/_1002_find_common_characters.rs)
+
+[1004. max consecutive ones 3](src/_1004_max_consecutive_ones_3.rs)
 
 [1005. maximize sum of array after k negations](src/_1005_maximize_sum_of_array_after_k_negations.rs)
 
@@ -916,6 +930,8 @@
 [1037. valid boomerang](src/_1037_valid_boomerang.rs)
 
 [1038. binary search tree to greater sum tree](src/_1038_binary_search_tree_to_greater_sum_tree.rs)
+
+[1040. moving stones until consecutive 2](src/_1040_moving_stones_until_consecutive_2.rs)
 
 [1041. robot bounded in circle](src/_1041_robot_bounded_in_circle.rs)
 
@@ -997,6 +1013,8 @@
 
 [1150. check if a number is majority element in a sorted array](src/_1150_check_if_a_number_is_majority_element_in_a_sorted_array.rs)
 
+[1151. minimum swaps to group all 1s together](src/_1151_minimum_swaps_to_group_all_1s_together.rs)
+
 [1154. day of the year](src/_1154_day_of_the_year.rs)
 
 [1160. find words that can be formed by characters](src/_1160_find_words_that_can_be_formed_by_characters.rs)
@@ -1041,6 +1059,8 @@
 
 [1207. unique number of occurrences](src/_1207_unique_number_of_occurrences.rs)
 
+[1208. get equal substrings within budget](src/_1208_get_equal_substrings_within_budget.rs)
+
 [1209. remove all adjacent duplicates in string 2](src/_1209_remove_all_adjacent_duplicates_in_string_2.rs)
 
 [1213. intersection of three sorted arrays](src/_1213_intersection_of_three_sorted_arrays.rs)
@@ -1058,6 +1078,8 @@
 [1223. dice roll simulation](src/_1223_dice_roll_simulation.rs)
 
 [1228. missing number in arithmetic progression](src/_1228_missing_number_in_arithmetic_progression.rs)
+
+[1229. meeting scheduler](src/_1229_meeting_scheduler.rs)
 
 [1232. check if it is a straight line](src/_1232_check_if_it_is_a_straight_line.rs)
 
@@ -1082,6 +1104,8 @@
 [1268. search suggestions system](src/_1268_search_suggestions_system.rs)
 
 [1271. hexspeak](src/_1271_hexspeak.rs)
+
+[1272. remove interval](src/_1272_remove_interval.rs)
 
 [1273. delete tree nodes](src/_1273_delete_tree_nodes.rs)
 

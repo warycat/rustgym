@@ -199,6 +199,8 @@ mod _153_find_minimum_in_rotated_sorted_array;
 //
 mod _155_min_stack;
 //
+mod _159_longest_substring_with_at_most_two_distinc_characters;
+//
 mod _161_one_edit_distance;
 //
 mod _162_find_peak_element;
@@ -429,6 +431,8 @@ mod _419_battleships_in_a_board;
 //
 mod _422_valid_word_square;
 //
+mod _424_longest_repeating_character_replacement;
+//
 mod _434_number_of_segments_in_a_string;
 //
 mod _437_path_sum_3;
@@ -463,6 +467,8 @@ mod _475_heaters;
 //
 mod _476_number_complement;
 //
+mod _478_generate_random_point_in_circle;
+//
 mod _482_license_key_formatting;
 //
 mod _485_max_consecutive_ones;
@@ -472,6 +478,8 @@ mod _490_the_maze;
 mod _492_construct_the_rectangle;
 //
 mod _496_next_greater_element_1;
+//
+mod _497_random_point_in_nonoverlapping_rectangles;
 //
 mod _498_diagonal_traverse;
 //
@@ -492,6 +500,8 @@ mod _509_fibonacci_number;
 mod _516_longest_palindromic_subsequence;
 //
 mod _518_coin_change_2;
+//
+mod _519_random_flip_matrix;
 //
 mod _520_detect_captial;
 //
@@ -869,6 +879,8 @@ mod _976_largest_perimeter_triangle;
 //
 mod _977_squares_of_a_sorted_array;
 //
+mod _978_longest_turbulent_subarray;
+//
 mod _979_distribute_coins_in_binary_tree;
 //
 mod _981_time_based_key_value_store;
@@ -890,6 +902,8 @@ mod _998_maximum_binary_tree_2;
 mod _999_available_captures_for_rook;
 //
 mod _1002_find_common_characters;
+//
+mod _1004_max_consecutive_ones_3;
 //
 mod _1005_maximize_sum_of_array_after_k_negations;
 //
@@ -928,6 +942,8 @@ mod _1033_moving_stones_until_consecutive;
 mod _1037_valid_boomerang;
 //
 mod _1038_binary_search_tree_to_greater_sum_tree;
+//
+mod _1040_moving_stones_until_consecutive_2;
 //
 mod _1041_robot_bounded_in_circle;
 //
@@ -1009,6 +1025,8 @@ mod _1137_n_th_tribonacci_number;
 //
 mod _1150_check_if_a_number_is_majority_element_in_a_sorted_array;
 //
+mod _1151_minimum_swaps_to_group_all_1s_together;
+//
 mod _1154_day_of_the_year;
 //
 mod _1160_find_words_that_can_be_formed_by_characters;
@@ -1053,6 +1071,8 @@ mod _1200_minimum_absolute_difference;
 //
 mod _1207_unique_number_of_occurrences;
 //
+mod _1208_get_equal_substrings_within_budget;
+//
 mod _1209_remove_all_adjacent_duplicates_in_string_2;
 //
 mod _1213_intersection_of_three_sorted_arrays;
@@ -1070,6 +1090,8 @@ mod _1222_queens_that_can_attack_the_king;
 mod _1223_dice_roll_simulation;
 //
 mod _1228_missing_number_in_arithmetic_progression;
+//
+mod _1229_meeting_scheduler;
 //
 mod _1232_check_if_it_is_a_straight_line;
 //
@@ -1094,6 +1116,8 @@ mod _1266_minimum_time_visition_all_points;
 mod _1268_search_suggestions_system;
 //
 mod _1271_hexspeak;
+//
+mod _1272_remove_interval;
 //
 mod _1273_delete_tree_nodes;
 //

@@ -1,30 +1,19 @@
-extern crate rand;
+use rand::distributions::WeightedIndex;
 use rand::prelude::*;
 
 struct Solution {
-    indexes: Vec<usize>,
-    m: usize,
+    dist: WeightedIndex<i32>,
     rng: ThreadRng,
 }
 
 impl Solution {
     fn new(w: Vec<i32>) -> Self {
-        let mut indexes = vec![];
-        let mut m: usize = 0;
-        for n in w {
-            m += n as usize;
-            indexes.push(m);
-        }
         let rng = rand::thread_rng();
-        Solution { indexes, m, rng }
+        let dist = WeightedIndex::new(w).unwrap();
+        Solution { dist, rng }
     }
 
     fn pick_index(&mut self) -> i32 {
-        let r = self.rng.gen_range(1, self.m + 1) as usize;
-        let index = match self.indexes.binary_search(&r) {
-            Ok(x) => x,
-            Err(x) => x,
-        };
-        index as i32
+        self.rng.sample(&self.dist) as i32
     }
 }
