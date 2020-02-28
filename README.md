@@ -749,6 +749,8 @@
 
 [844. backspace string compare](src/_844_backspace_string_compare.rs)
 
+[846. hand of straights](src/_846_hand_of_straights.rs)
+
 [849. maximize distance to closest person](src/_849_maximize_distance_to_closest_person.rs)
 
 [852. peak index in a mountain array](src/_852_peak_index_in_a_mountain_array.rs)
@@ -852,6 +854,8 @@
 [959. regions cut by slashes](src/_959_regions_cut_by_slashes.rs)
 
 [961. n repeated element in size 2n array](src/_961_n_repeated_element_in_size_2n_array.rs)
+
+[963. minimum area rectangle 2](src/_963_minimum_area_rectangle_2.rs)
 
 [965. univalued binary tree](src/_965_univalued_binary_tree.rs)
 

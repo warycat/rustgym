@@ -761,6 +761,8 @@ mod _841_keys_and_rooms;
 //
 mod _844_backspace_string_compare;
 //
+mod _846_hand_of_straights;
+//
 mod _849_maximize_distance_to_closest_person;
 //
 mod _852_peak_index_in_a_mountain_array;
@@ -864,6 +866,8 @@ mod _957_prison_cells_after_n_days;
 mod _959_regions_cut_by_slashes;
 //
 mod _961_n_repeated_element_in_size_2n_array;
+//
+mod _963_minimum_area_rectangle_2;
 //
 mod _965_univalued_binary_tree;
 //
