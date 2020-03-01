@@ -257,6 +257,8 @@ mod _217_contains_duplicate;
 //
 mod _219_contains_duplicate_2;
 //
+mod _220_contains_duplicate_3;
+//
 mod _221_maximal_square;
 //
 mod _222_count_complete_tree_nodes;
@@ -385,6 +387,8 @@ mod _378_kth_smallest_element_in_a_sorted_matrix;
 //
 mod _380_insert_delete_get_random_o1;
 //
+mod _382_linked_list_random_node;
+//
 mod _383_ransom_note;
 //
 mod _387_first_unique_character_in_a_string;
@@ -402,6 +406,8 @@ mod _393_utf8_validation;
 mod _394_decode_string;
 //
 mod _395_longest_substring_with_at_least_k_repeating_characters;
+//
+mod _398_random_pick_index;
 //
 mod _399_evaluate_division;
 //
@@ -670,6 +676,10 @@ mod _723_candy_crush;
 mod _724_find_pivot_index;
 //
 mod _728_self_dividing_numbers;
+//
+mod _729_my_calendar_1;
+//
+mod _731_my_calendar_2;
 //
 mod _733_flood_fill;
 //

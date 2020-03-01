@@ -245,6 +245,8 @@
 
 [219. contains duplicate 2](src/_219_contains_duplicate_2.rs)
 
+[220. contains duplicate 3](src/_220_contains_duplicate_3.rs)
+
 [221. maximal square](src/_221_maximal_square.rs)
 
 [222. count complete tree nodes](src/_222_count_complete_tree_nodes.rs)
@@ -373,6 +375,8 @@
 
 [380. insert delete get random o1](src/_380_insert_delete_get_random_o1.rs)
 
+[382. linked list random node](src/_382_linked_list_random_node.rs)
+
 [383. ransom note](src/_383_ransom_note.rs)
 
 [387. first unique character in a string](src/_387_first_unique_character_in_a_string.rs)
@@ -390,6 +394,8 @@
 [394. decode string](src/_394_decode_string.rs)
 
 [395. longest substring with at least k repeating characters](src/_395_longest_substring_with_at_least_k_repeating_characters.rs)
+
+[398. random pick index](src/_398_random_pick_index.rs)
 
 [399. evaluate division](src/_399_evaluate_division.rs)
 
@@ -658,6 +664,10 @@
 [724. find pivot index](src/_724_find_pivot_index.rs)
 
 [728. self dividing numbers](src/_728_self_dividing_numbers.rs)
+
+[729. my calendar 1](src/_729_my_calendar_1.rs)
+
+[731. my calendar 2](src/_731_my_calendar_2.rs)
 
 [733. flood fill](src/_733_flood_fill.rs)
 
