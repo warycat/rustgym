@@ -287,6 +287,8 @@ mod _244_shortest_word_distance_2;
 //
 mod _246_strobogrammantic_number;
 //
+mod _247_strobogrammatic_number_2;
+//
 mod _251_flatten_2d_vector;
 //
 mod _257_binary_tree_paths;
@@ -334,6 +336,8 @@ mod _304_range_sum_query_2d_immutable;
 mod _309_best_time_to_buy_and_sell_stock_with_cooldown;
 //
 mod _311_sparse_matrix_multiplication;
+//
+mod _319_bulb_switcher;
 //
 mod _322_coin_change;
 //
@@ -561,6 +565,8 @@ mod _575_distribute_candies;
 //
 mod _581_shortest_unsorted_continuous_subarray;
 //
+mod _582_kill_process;
+//
 mod _593_valid_square;
 //
 mod _594_longest_harmonious_subsequence;
@@ -585,7 +591,11 @@ mod _617_merge_two_binary_trees;
 //
 mod _621_task_scheduler;
 //
+mod _622_design_circular_queue;
+//
 mod _624_maximum_distance_in_arrays;
+//
+mod _625_minimum_factorization;
 //
 mod _628_maximum_product_of_three_numbers;
 //
@@ -596,6 +606,8 @@ mod _635_design_log_storage_system;
 mod _636_exclusive_time_of_functions;
 //
 mod _637_average_of_levels_in_binary_tree;
+//
+mod _641_design_circular_deque;
 //
 mod _643_maximum_average_subarray_1;
 //
@@ -723,6 +735,12 @@ mod _766_toeplitiz_matrix;
 //
 mod _771_jewels_and_stones;
 //
+mod _776_split_bst;
+//
+mod _777_swap_adjacent_in_lr_string;
+//
+mod _779_kth_symbol_in_grammar;
+//
 mod _783_minimum_distance_between_bst_nodes;
 //
 mod _784_letter_case_permutation;
@@ -734,6 +752,8 @@ mod _787_cheapest_flights_within_k_stops;
 mod _788_rotated_digits;
 //
 mod _791_custom_sort_string;
+//
+mod _794_valid_tic_tac_toe_state;
 //
 mod _796_rotate_string;
 //
@@ -1103,6 +1123,8 @@ mod _1222_queens_that_can_attack_the_king;
 //
 mod _1223_dice_roll_simulation;
 //
+mod _1227_airplane_seat_assignment_probability;
+//
 mod _1228_missing_number_in_arithmetic_progression;
 //
 mod _1229_meeting_scheduler;
@@ -1206,3 +1228,5 @@ mod _1351_count_negative_numbers_in_a_sorted_matrix;
 mod _1356_sort_integers_by_the_number_of_1_bits;
 //
 mod _1360_number_of_days_between_two_dates;
+//
+mod _1365_how_many_numbers_are_smaller_than_the_current_number;

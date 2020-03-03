@@ -275,6 +275,8 @@
 
 [246. strobogrammantic number](src/_246_strobogrammantic_number.rs)
 
+[247. strobogrammatic number 2](src/_247_strobogrammatic_number_2.rs)
+
 [251. flatten 2d vector](src/_251_flatten_2d_vector.rs)
 
 [252. meeting rooms](src/_252_meeting_rooms.rs)
@@ -322,6 +324,8 @@
 [309. best time to buy and sell stock with cooldown](src/_309_best_time_to_buy_and_sell_stock_with_cooldown.rs)
 
 [311. sparse matrix multiplication](src/_311_sparse_matrix_multiplication.rs)
+
+[319. bulb switcher](src/_319_bulb_switcher.rs)
 
 [322. coin change](src/_322_coin_change.rs)
 
@@ -549,6 +553,8 @@
 
 [581. shortest unsorted continuous subarray](src/_581_shortest_unsorted_continuous_subarray.rs)
 
+[582. kill process](src/_582_kill_process.rs)
+
 [593. valid square](src/_593_valid_square.rs)
 
 [594. longest harmonious subsequence](src/_594_longest_harmonious_subsequence.rs)
@@ -573,7 +579,11 @@
 
 [621. task scheduler](src/_621_task_scheduler.rs)
 
+[622. design circular queue](src/_622_design_circular_queue.rs)
+
 [624. maximum distance in arrays](src/_624_maximum_distance_in_arrays.rs)
+
+[625. minimum factorization](src/_625_minimum_factorization.rs)
 
 [628. maximum product of three numbers](src/_628_maximum_product_of_three_numbers.rs)
 
@@ -584,6 +594,8 @@
 [636. exclusive time of functions](src/_636_exclusive_time_of_functions.rs)
 
 [637. average of levels in binary tree](src/_637_average_of_levels_in_binary_tree.rs)
+
+[641. design circular deque](src/_641_design_circular_deque.rs)
 
 [643. maximum average subarray 1](src/_643_maximum_average_subarray_1.rs)
 
@@ -711,6 +723,12 @@
 
 [771. jewels and stones](src/_771_jewels_and_stones.rs)
 
+[776. split bst](src/_776_split_bst.rs)
+
+[777. swap adjacent in lr string](src/_777_swap_adjacent_in_lr_string.rs)
+
+[779. kth symbol in grammar](src/_779_kth_symbol_in_grammar.rs)
+
 [783. minimum distance between bst nodes](src/_783_minimum_distance_between_bst_nodes.rs)
 
 [784. letter case permutation](src/_784_letter_case_permutation.rs)
@@ -722,6 +740,8 @@
 [788. rotated digits](src/_788_rotated_digits.rs)
 
 [791. custom sort string](src/_791_custom_sort_string.rs)
+
+[794. valid tic tac toe state](src/_794_valid_tic_tac_toe_state.rs)
 
 [796. rotate string](src/_796_rotate_string.rs)
 
@@ -1091,6 +1111,8 @@
 
 [1223. dice roll simulation](src/_1223_dice_roll_simulation.rs)
 
+[1227. airplane seat assignment probability](src/_1227_airplane_seat_assignment_probability.rs)
+
 [1228. missing number in arithmetic progression](src/_1228_missing_number_in_arithmetic_progression.rs)
 
 [1229. meeting scheduler](src/_1229_meeting_scheduler.rs)
@@ -1194,3 +1216,5 @@
 [1356. sort integers by the number of 1 bits](src/_1356_sort_integers_by_the_number_of_1_bits.rs)
 
 [1360. number of days between two dates](src/_1360_number_of_days_between_two_dates.rs)
+
+[1365. how many numbers are smaller than the current number](src/_1365_how_many_numbers_are_smaller_than_the_current_number.rs)

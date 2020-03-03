@@ -6,8 +6,7 @@ impl Solution {
     fn is_strobogrammatic(nums: String) -> bool {
         let map: HashMap<char, char> =
             vec![('0', '0'), ('1', '1'), ('6', '9'), ('8', '8'), ('9', '6')]
-                .iter()
-                .cloned()
+                .into_iter()
                 .collect();
         let nums: Vec<char> = nums.chars().collect();
         let n = nums.len();
