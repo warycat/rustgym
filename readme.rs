@@ -157,7 +157,7 @@ impl Readme {
             let solution = hm.get(&id).unwrap_or(&"   ".to_string()).to_string();
             rows.push((id, question, solution));
         }
-        let mut s = "|id|Question|Solution|\n".to_string();
+        let mut s = format!("|id|{} Questions|{} Solutions|\n", n, m);
         s += "|---|---|---|\n";
         for row in rows {
             s += &format!("|{}|{}|{}|\n", row.0, row.1, row.2);

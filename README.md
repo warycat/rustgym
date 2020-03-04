@@ -2,7 +2,7 @@
 
 # leetcode_rs [![Build Status](https://travis-ci.org/warycat/leetcode_rs.svg?branch=master)](https://travis-ci.org/warycat/leetcode_rs)
 
-|id|Question|Solution|
+|id|1256 Questions|611 Solutions|
 |---|---|---|
 |1|[Two Sum](https://leetcode.com/problems/two-sum)|[solution](src/_1_two_sum.rs)|
 |2|[Add Two Numbers](https://leetcode.com/problems/add-two-numbers)|[solution](src/_2_add_two_numbers.rs)|
