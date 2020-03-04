@@ -179,7 +179,7 @@ impl Readme {
                 _ => "",
             };
             s += &format!(
-                "|{}|{} Questions|{} Solutions|\n",
+                "\n|{}|{} Questions|{} Solutions|\n",
                 level_string, n_questions, n_solutions
             );
             s += "|---|---|---|\n";

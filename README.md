@@ -2,6 +2,7 @@
 
 # leetcode_rs [![Build Status](https://travis-ci.org/warycat/leetcode_rs.svg?branch=master)](https://travis-ci.org/warycat/leetcode_rs)
 
+
 |Easy|337 Questions|318 Solutions|
 |---|---|---|
 |1|[Two Sum](https://leetcode.com/problems/two-sum)|[solution](src/_1_two_sum.rs)|
@@ -341,6 +342,7 @@
 |1356|[Sort Integers by The Number of 1 Bits](https://leetcode.com/problems/sort-integers-by-the-number-of-1-bits)|[solution](src/_1356_sort_integers_by_the_number_of_1_bits.rs)|
 |1360|[Number of Days Between Two Dates](https://leetcode.com/problems/number-of-days-between-two-dates)|[solution](src/_1360_number_of_days_between_two_dates.rs)|
 |1365|[How Many Numbers Are Smaller Than the Current Number](https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number)|[solution](src/_1365_how_many_numbers_are_smaller_than_the_current_number.rs)|
+
 |Medium|649 Questions|292 Solutions|
 |---|---|---|
 |2|[Add Two Numbers](https://leetcode.com/problems/add-two-numbers)|[solution](src/_2_add_two_numbers.rs)|
@@ -992,6 +994,7 @@
 |1362|[Closest Divisors](https://leetcode.com/problems/closest-divisors)|   |
 |1366|[Rank Teams by Votes](https://leetcode.com/problems/rank-teams-by-votes)|   |
 |1367|[Linked List in Binary Tree](https://leetcode.com/problems/linked-list-in-binary-tree)|   |
+
 |Hard|270 Questions|0 Solutions|
 |---|---|---|
 |4|[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays)|   |
