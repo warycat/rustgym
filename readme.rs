@@ -63,7 +63,7 @@ struct LeetcodeData {
 
 impl LeetcodeData {
     fn new(list_url: &'static str, tag_url: &'static str) -> Self {
-        LeetcodeData {list_url, tag_url }
+        LeetcodeData { list_url, tag_url }
     }
 
     fn get_list_text(&self) -> Result<String, Box<dyn std::error::Error>> {
@@ -105,12 +105,13 @@ impl LeetcodeData {
             let questions = topic["questions"].as_array().unwrap();
             for question in questions {
                 let id = question.as_i64().unwrap();
-                hm.entry(id).or_default().push((slug.to_string(), name.to_string()));
+                hm.entry(id)
+                    .or_default()
+                    .push((slug.to_string(), name.to_string()));
             }
         }
         Ok(hm)
     }
-
 }
 
 struct LeetcodeQuestion {
@@ -165,7 +166,7 @@ impl Readme {
         headers: Vec<String>,
         solution_list: RustSolutionList,
         question_list: LeetcodeQuestionList,
-        tags: Tags
+        tags: Tags,
     ) -> Self {
         Readme {
             headers,
@@ -185,7 +186,10 @@ impl Readme {
         for i in 0..n {
             let id = questions[i].id;
             let frontend_id = questions[i].frontend_id;
-            btm.insert(id, (questions[i].to_string(), questions[i].level, frontend_id));
+            btm.insert(
+                id,
+                (questions[i].to_string(), questions[i].level, frontend_id),
+            );
         }
         for j in 0..m {
             let id = solutions[j].id;
@@ -206,12 +210,13 @@ impl Readme {
                     let tag_string = slugs.join(" ");
                     let no_solution = "   ".to_string();
                     let solution = hm.get(&frontend_id).unwrap_or(&no_solution);
-                    n_solutions += if hm.get(&frontend_id).is_some() {
-                        1
-                    }else{
-                        0
-                    };
-                    rows.push((frontend_id, question.0.to_string(), solution.to_string(), tag_string));
+                    n_solutions += if hm.get(&frontend_id).is_some() { 1 } else { 0 };
+                    rows.push((
+                        frontend_id,
+                        question.0.to_string(),
+                        solution.to_string(),
+                        tag_string,
+                    ));
                 }
             }
             let level_string = match level {
@@ -226,7 +231,7 @@ impl Readme {
                 n_questions, level_string, n_solutions
             );
             s += "|---|---|---|---|\n";
-            rows.sort_by_key(|row| (row.3.to_string(), row.0));
+            rows.sort_by_key(|row| (row.2.to_string(), row.3.to_string(), row.0));
             for row in rows {
                 s += &format!("|{}|{}|{}|{}|\n", row.0, row.1, row.2, row.3);
             }
