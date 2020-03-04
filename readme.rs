@@ -154,7 +154,7 @@ impl Readme {
             hm.insert(id, solutions[j].to_string());
         }
         for (id, question) in btm {
-            let solution = hm.get(&id).unwrap_or(&"wip".to_string()).to_string();
+            let solution = hm.get(&id).unwrap_or(&"   ".to_string()).to_string();
             rows.push((id, question, solution));
         }
         let mut s = "|id|Question|Solution|\n".to_string();
