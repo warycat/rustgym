@@ -203,7 +203,7 @@ impl Readme {
                     let no_tags = vec![];
                     let tags = self.tags.get(&id).unwrap_or(&no_tags);
                     let slugs: Vec<String> = tags.iter().map(|tag| tag.0.to_string()).collect();
-                    let tag_string = slugs.join("<br/>");
+                    let tag_string = slugs.join(" ");
                     let no_solution = "   ".to_string();
                     let solution = hm.get(&frontend_id).unwrap_or(&no_solution);
                     n_solutions += if hm.get(&frontend_id).is_some() {
