@@ -225,7 +225,10 @@ impl Readme {
                 3 => "Hard",
                 _ => "",
             };
-            s += &format!("<details><summary>{}</summary>\n\n", level_string);
+            s += &format!(
+                "<details><summary>{} {}/{}</summary>\n\n",
+                level_string, n_solutions, n_questions
+            );
             s += &format!(
                 "\n|id|{} {} Questions|Tags|{} Solutions|\n",
                 n_questions, level_string, n_solutions

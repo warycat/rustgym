@@ -2,7 +2,7 @@
 
 # leetcode_rs [![Build Status](https://travis-ci.org/warycat/leetcode_rs.svg?branch=master)](https://travis-ci.org/warycat/leetcode_rs)
 
-<details><summary>Easy</summary>
+<details><summary>Easy 318/337</summary>
 
 
 |id|337 Easy Questions|Tags|318 Solutions|
@@ -344,7 +344,7 @@
 |994|[Rotting Oranges](https://leetcode.com/problems/rotting-oranges)|breadth-first-search|[solution](src/_994_rotting_oranges.rs)|
 |999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook)|array|[solution](src/_999_available_captures_for_rook.rs)|
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|math|[solution](src/_9_palindrome_number.rs)|
-</details><details><summary>Medium</summary>
+</details><details><summary>Medium 292/649</summary>
 
 
 |id|649 Medium Questions|Tags|292 Solutions|
@@ -998,7 +998,7 @@
 |98|[Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree)|tree depth-first-search|[solution](src/_98_validate_binary_search_tree.rs)|
 |991|[Broken Calculator](https://leetcode.com/problems/broken-calculator)|math greedy|[solution](src/_991_broken_calculator.rs)|
 |998|[Maximum Binary Tree II](https://leetcode.com/problems/maximum-binary-tree-ii)|tree|[solution](src/_998_maximum_binary_tree_2.rs)|
-</details><details><summary>Hard</summary>
+</details><details><summary>Hard 0/270</summary>
 
 
 |id|270 Hard Questions|Tags|0 Solutions|
