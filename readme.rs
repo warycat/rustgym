@@ -214,8 +214,8 @@ impl Readme {
                     rows.push((
                         frontend_id,
                         question.0.to_string(),
-                        solution.to_string(),
                         tag_string,
+                        solution.to_string(),
                     ));
                 }
             }
@@ -227,11 +227,11 @@ impl Readme {
             };
             s += &format!("<details><summary>{}</summary>\n\n", level_string);
             s += &format!(
-                "\n|id|{} {} Questions|{} Solutions|Tags|\n",
+                "\n|id|{} {} Questions|Tags|{} Solutions|\n",
                 n_questions, level_string, n_solutions
             );
             s += "|---|---|---|---|\n";
-            rows.sort_by_key(|row| (row.2.to_string(), row.3.to_string(), row.0));
+            rows.sort_by_key(|row| (row.3.to_string(), row.2.to_string(), row.0));
             for row in rows {
                 s += &format!("|{}|{}|{}|{}|\n", row.0, row.1, row.2, row.3);
             }
