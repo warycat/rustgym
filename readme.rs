@@ -1,3 +1,5 @@
+use std::collections::BTreeMap;
+use std::collections::HashMap;
 use std::env;
 use std::fmt;
 use std::fs;
@@ -19,10 +21,7 @@ struct RustSolution {
 
 impl RustSolution {
     fn new(id: i64, filename: String) -> Self {
-        RustSolution {
-            id,
-            filename,
-        }
+        RustSolution { id, filename }
     }
 }
 
@@ -94,27 +93,28 @@ impl LeetcodeQuestion {
         LeetcodeQuestion {
             id,
             title: title.into(),
-            slug: slug.into()
+            slug: slug.into(),
         }
     }
 }
 
 impl fmt::Display for LeetcodeQuestion {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
-        write!(f, "[{}]({}{})", self.title, LEETCODE_QUESTION_URL, self.slug)
+        write!(
+            f,
+            "[{}]({}{})",
+            self.title, LEETCODE_QUESTION_URL, self.slug
+        )
     }
 }
 
-
 struct LeetcodeQuestionList {
-    questions: Vec<LeetcodeQuestion>
+    questions: Vec<LeetcodeQuestion>,
 }
 
 impl LeetcodeQuestionList {
     fn new(questions: Vec<LeetcodeQuestion>) -> Self {
-        LeetcodeQuestionList {
-            questions
-        }
+        LeetcodeQuestionList { questions }
     }
 }
 
@@ -125,24 +125,37 @@ struct Readme {
 }
 
 impl Readme {
-    fn new(headers: Vec<String>, solution_list: RustSolutionList, question_list: LeetcodeQuestionList) -> Self {
-        Readme { headers, solution_list, question_list }
+    fn new(
+        headers: Vec<String>,
+        solution_list: RustSolutionList,
+        question_list: LeetcodeQuestionList,
+    ) -> Self {
+        Readme {
+            headers,
+            solution_list,
+            question_list,
+        }
     }
 
     fn table(&self) -> String {
         let solutions = &self.solution_list.solutions;
         let questions = &self.question_list.questions;
-        let n = solutions.len();
-        let m = questions.len();
+        let m = solutions.len();
+        let n = questions.len();
         let mut rows: Vec<(i64, String, String)> = vec![];
+        let mut btm: BTreeMap<i64, String> = BTreeMap::new();
+        let mut hm: HashMap<i64, String> = HashMap::new();
         for i in 0..n {
-            for j in 0..m {
-                let id_i = solutions[i].id;
-                let id_j = questions[j].id;
-                if id_i == id_j {
-                    rows.push((id_i, questions[j].to_string(), solutions[i].to_string()));
-                }
-            }
+            let id = questions[i].id;
+            btm.insert(id, questions[i].to_string());
+        }
+        for j in 0..m {
+            let id = solutions[j].id;
+            hm.insert(id, solutions[j].to_string());
+        }
+        for (id, question) in btm {
+            let solution = hm.get(&id).unwrap_or(&"wip".to_string()).to_string();
+            rows.push((id, question, solution));
         }
         let mut s = "|id|Question|Solution|\n".to_string();
         s += "|---|---|---|\n";
@@ -163,7 +176,6 @@ impl fmt::Display for Readme {
         write!(f, "{}", s)
     }
 }
-
 
 fn main() {
     let leetcode_json = LeetcodeJson::new(LEETCODE_JSON_URL);

@@ -527,6 +527,8 @@ mod _529_minesweeper;
 //
 mod _530_minimum_absolute_difference_in_bst;
 //
+mod _531_lonely_pixel_1;
+//
 mod _532_k_diff_pairs_in_an_array;
 //
 mod _537_complex_number_multiplication;
@@ -1148,6 +1150,8 @@ mod _1260_shift_2d_grid;
 mod _1261_find_elements_in_contaminated_binary_tree;
 //
 mod _1266_minimum_time_visition_all_points;
+//
+mod _1267_count_servers_that_communicate;
 //
 mod _1268_search_suggestions_system;
 //
