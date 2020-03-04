@@ -73,10 +73,12 @@ impl LeetcodeJson {
         let mut questions = vec![];
         for pair in pairs {
             let stat = pair["stat"].as_object().unwrap();
-            let id = stat["question_id"].as_i64().unwrap();
+            let id = stat["frontend_question_id"].as_i64().unwrap();
             let title = stat["question__title"].as_str().unwrap();
             let slug = stat["question__title_slug"].as_str().unwrap();
-            questions.push(LeetcodeQuestion::new(id, title, slug))
+            let difficulty = pair["difficulty"].as_object().unwrap();
+            let level = difficulty["level"].as_i64().unwrap();
+            questions.push(LeetcodeQuestion::new(id, title, slug, level))
         }
         Ok(questions)
     }
@@ -86,14 +88,16 @@ struct LeetcodeQuestion {
     id: i64,
     title: String,
     slug: String,
+    level: i64,
 }
 
 impl LeetcodeQuestion {
-    fn new<S: Into<String>>(id: i64, title: S, slug: S) -> Self {
+    fn new<S: Into<String>>(id: i64, title: S, slug: S, level: i64) -> Self {
         LeetcodeQuestion {
             id,
             title: title.into(),
             slug: slug.into(),
+            level,
         }
     }
 }
@@ -142,25 +146,46 @@ impl Readme {
         let questions = &self.question_list.questions;
         let m = solutions.len();
         let n = questions.len();
-        let mut rows: Vec<(i64, String, String)> = vec![];
-        let mut btm: BTreeMap<i64, String> = BTreeMap::new();
+        let mut btm: BTreeMap<i64, (String, i64)> = BTreeMap::new();
         let mut hm: HashMap<i64, String> = HashMap::new();
         for i in 0..n {
             let id = questions[i].id;
-            btm.insert(id, questions[i].to_string());
+            btm.insert(id, (questions[i].to_string(), questions[i].level));
         }
         for j in 0..m {
             let id = solutions[j].id;
             hm.insert(id, solutions[j].to_string());
         }
-        for (id, question) in btm {
-            let solution = hm.get(&id).unwrap_or(&"   ".to_string()).to_string();
-            rows.push((id, question, solution));
-        }
-        let mut s = format!("|id|{} Questions|{} Solutions|\n", n, m);
-        s += "|---|---|---|\n";
-        for row in rows {
-            s += &format!("|{}|{}|{}|\n", row.0, row.1, row.2);
+        let mut s = "".to_string();
+        for level in 1..=3 {
+            let mut rows: Vec<(i64, String, String)> = vec![];
+            let mut n_questions = 0;
+            let mut n_solutions = 0;
+            for (&id, question) in &btm {
+                if question.1 == level {
+                    n_questions += 1;
+                    if let Some(solution) = hm.get(&id) {
+                        n_solutions += 1;
+                        rows.push((id, question.0.to_string(), solution.to_string()));
+                    } else {
+                        rows.push((id, question.0.to_string(), "   ".to_string()));
+                    }
+                }
+            }
+            let level_string = match level {
+                1 => "Easy",
+                2 => "Medium",
+                3 => "Hard",
+                _ => "",
+            };
+            s += &format!(
+                "|{}|{} Questions|{} Solutions|\n",
+                level_string, n_questions, n_solutions
+            );
+            s += "|---|---|---|\n";
+            for row in rows {
+                s += &format!("|{}|{}|{}|\n", row.0, row.1, row.2);
+            }
         }
         s
     }
