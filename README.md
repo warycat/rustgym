@@ -2,19 +2,15 @@
 
 # leetcode_rs [![Build Status](https://travis-ci.org/warycat/leetcode_rs.svg?branch=master)](https://travis-ci.org/warycat/leetcode_rs)
 
-<details><summary>Easy 318/337</summary>
+<details><summary>Easy 322/337 95.55%</summary>
 
 
-|id|337 Easy Questions|Tags|318 Solutions|
+|id|337 Easy Questions|Tags|322 Solutions|
 |---|---|---|---|
-|1099|[Two Sum Less Than K](https://leetcode.com/problems/two-sum-less-than-k)|array|   |
-|1086|[High Five](https://leetcode.com/problems/high-five)|array hash-table sort|   |
 |278|[First Bad Version](https://leetcode.com/problems/first-bad-version)|binary-search|   |
 |374|[Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower)|binary-search|   |
 |190|[Reverse Bits](https://leetcode.com/problems/reverse-bits)|bit-manipulation|   |
 |191|[Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits)|bit-manipulation|   |
-|997|[Find the Town Judge](https://leetcode.com/problems/find-the-town-judge)|graph|   |
-|299|[Bulls and Cows](https://leetcode.com/problems/bulls-and-cows)|hash-table|   |
 |690|[Employee Importance](https://leetcode.com/problems/employee-importance)|hash-table depth-first-search breadth-first-search|   |
 |160|[Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists)|linked-list|   |
 |237|[Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list)|linked-list|   |
@@ -53,8 +49,10 @@
 |1078|[Occurrences After Bigram](https://leetcode.com/problems/occurrences-after-bigram)|hash-table|[solution](src/_1078_occurrences_after_bigram.rs)|
 |107|[Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii)|tree breadth-first-search|[solution](src/_107_binary_tree_level_order_traversal_2.rs)|
 |1085|[Sum of Digits in the Minimum Number](https://leetcode.com/problems/sum-of-digits-in-the-minimum-number)|array|[solution](src/_1085_sum_of_digits_in_the_minmum_number.rs)|
+|1086|[High Five](https://leetcode.com/problems/high-five)|array hash-table sort|[solution](src/_1086_high_five.rs)|
 |1089|[Duplicate Zeros](https://leetcode.com/problems/duplicate-zeros)|array|[solution](src/_1089_duplicate_zeros.rs)|
 |108|[Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree)|tree depth-first-search|[solution](src/_108_convert_sorted_array_binary_search_tree.rs)|
+|1099|[Two Sum Less Than K](https://leetcode.com/problems/two-sum-less-than-k)|array|[solution](src/_1099_two_sum_less_than_k.rs)|
 |1103|[Distribute Candies to People](https://leetcode.com/problems/distribute-candies-to-people)|math|[solution](src/_1103_distribute_candies_to_people.rs)|
 |1108|[Defanging an IP Address](https://leetcode.com/problems/defanging-an-ip-address)|string|[solution](src/_1108_defanging_an_ip_address.rs)|
 |110|[Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree)|tree depth-first-search|[solution](src/_110_balanced_binary_tree.rs)|
@@ -162,6 +160,7 @@
 |290|[Word Pattern](https://leetcode.com/problems/word-pattern)|hash-table|[solution](src/_290_word_pattern.rs)|
 |292|[Nim Game](https://leetcode.com/problems/nim-game)|brainteaser minimax|[solution](src/_292_nim_game.rs)|
 |293|[Flip Game](https://leetcode.com/problems/flip-game)|string|[solution](src/_293_flip_game.rs)|
+|299|[Bulls and Cows](https://leetcode.com/problems/bulls-and-cows)|hash-table|[solution](src/_299_bulls_and_cows.rs)|
 |303|[Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable)|dynamic-programming|[solution](src/_303_range_sum_query.rs)|
 |326|[Power of Three](https://leetcode.com/problems/power-of-three)|math|[solution](src/_326_power_of_three.rs)|
 |339|[Nested List Weight Sum](https://leetcode.com/problems/nested-list-weight-sum)|depth-first-search|[solution](src/_339_nested_list_weight_sum.rs)|
@@ -342,9 +341,10 @@
 |985|[Sum of Even Numbers After Queries](https://leetcode.com/problems/sum-of-even-numbers-after-queries)|array|[solution](src/_985_sum_of_even_numbers_after_queries.rs)|
 |989|[Add to Array-Form of Integer](https://leetcode.com/problems/add-to-array-form-of-integer)|array|[solution](src/_989_add_to_array_form_of_integer.rs)|
 |994|[Rotting Oranges](https://leetcode.com/problems/rotting-oranges)|breadth-first-search|[solution](src/_994_rotting_oranges.rs)|
+|997|[Find the Town Judge](https://leetcode.com/problems/find-the-town-judge)|graph|[solution](src/_997_find_the_town_judge.rs)|
 |999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook)|array|[solution](src/_999_available_captures_for_rook.rs)|
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|math|[solution](src/_9_palindrome_number.rs)|
-</details><details><summary>Medium 292/649</summary>
+</details><details><summary>Medium 292/649 44.99%</summary>
 
 
 |id|649 Medium Questions|Tags|292 Solutions|
@@ -998,7 +998,7 @@
 |98|[Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree)|tree depth-first-search|[solution](src/_98_validate_binary_search_tree.rs)|
 |991|[Broken Calculator](https://leetcode.com/problems/broken-calculator)|math greedy|[solution](src/_991_broken_calculator.rs)|
 |998|[Maximum Binary Tree II](https://leetcode.com/problems/maximum-binary-tree-ii)|tree|[solution](src/_998_maximum_binary_tree_2.rs)|
-</details><details><summary>Hard 0/270</summary>
+</details><details><summary>Hard 0/270 0.00%</summary>
 
 
 |id|270 Hard Questions|Tags|0 Solutions|

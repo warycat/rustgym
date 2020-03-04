@@ -327,6 +327,8 @@ mod _292_nim_game;
 //
 mod _293_flip_game;
 //
+mod _299_bulls_and_cows;
+//
 mod _300_longest_increasing_subsequence;
 //
 mod _303_range_sum_query;
@@ -933,6 +935,8 @@ mod _991_broken_calculator;
 //
 mod _994_rotting_oranges;
 //
+mod _997_find_the_town_judge;
+//
 mod _998_maximum_binary_tree_2;
 //
 mod _999_available_captures_for_rook;
@@ -1019,11 +1023,15 @@ mod _1079_letter_tile_possibilities;
 //
 mod _1085_sum_of_digits_in_the_minmum_number;
 //
+mod _1086_high_five;
+//
 mod _1087_brace_expansion;
 //
 mod _1089_duplicate_zeros;
 //
 mod _1091_shortest_path_in_binary_matrix;
+//
+mod _1099_two_sum_less_than_k;
 //
 mod _1100_find_k_length_substrings_with_no_repeated_characters;
 //
