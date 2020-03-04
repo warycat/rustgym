@@ -220,15 +220,17 @@ impl Readme {
                 3 => "Hard",
                 _ => "",
             };
+            s += "<details><summary>CLICK ME</summary>";
             s += &format!(
-                "\n|{}|{} Questions|{} Solutions|Tags|\n",
-                level_string, n_questions, n_solutions
+                "\n|id|{} {} Questions|{} Solutions|Tags|\n",
+                n_questions, level_string, n_solutions
             );
             s += "|---|---|---|---|\n";
             rows.sort_by_key(|row| (row.3.to_string(), row.0));
             for row in rows {
                 s += &format!("|{}|{}|{}|{}|\n", row.0, row.1, row.2, row.3);
             }
+            s += "</details>";
         }
         s
     }
