@@ -220,7 +220,7 @@ impl Readme {
                 3 => "Hard",
                 _ => "",
             };
-            s += "<details><summary>CLICK ME</summary>";
+            s += &format!("<details><summary>{}</summary><p>", level_string);
             s += &format!(
                 "\n|id|{} {} Questions|{} Solutions|Tags|\n",
                 n_questions, level_string, n_solutions
@@ -230,7 +230,7 @@ impl Readme {
             for row in rows {
                 s += &format!("|{}|{}|{}|{}|\n", row.0, row.1, row.2, row.3);
             }
-            s += "</details>";
+            s += "</p></details>";
         }
         s
     }
