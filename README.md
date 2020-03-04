@@ -2,7 +2,9 @@
 
 # leetcode_rs [![Build Status](https://travis-ci.org/warycat/leetcode_rs.svg?branch=master)](https://travis-ci.org/warycat/leetcode_rs)
 
-<details><summary>Easy</summary><p>
+<details><summary>Easy</summary>
+
+
 |id|337 Easy Questions|318 Solutions|Tags|
 |---|---|---|---|
 |412|[Fizz Buzz](https://leetcode.com/problems/fizz-buzz)|[solution](src/_412_fizz_buzz.rs)||
@@ -342,7 +344,9 @@
 |344|[Reverse String](https://leetcode.com/problems/reverse-string)|[solution](src/_344_reverse_string.rs)|two-pointers<br/>string|
 |345|[Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string)|[solution](src/_345_reverse_vowels_of_a_string.rs)|two-pointers<br/>string|
 |925|[Long Pressed Name](https://leetcode.com/problems/long-pressed-name)|[solution](src/_925_long_pressed_name.rs)|two-pointers<br/>string|
-</p></details><details><summary>Medium</summary><p>
+</details><details><summary>Medium</summary>
+
+
 |id|649 Medium Questions|292 Solutions|Tags|
 |---|---|---|---|
 |334|[Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence)|[solution](src/_334_increasing_triplet_subsequence.rs)||
@@ -994,7 +998,9 @@
 |399|[Evaluate Division](https://leetcode.com/problems/evaluate-division)|[solution](src/_399_evaluate_division.rs)|union-find<br/>graph|
 |990|[Satisfiability of Equality Equations](https://leetcode.com/problems/satisfiability-of-equality-equations)|   |union-find<br/>graph|
 |1135|[Connecting Cities With Minimum Cost](https://leetcode.com/problems/connecting-cities-with-minimum-cost)|   |union-find<br/>graph|
-</p></details><details><summary>Hard</summary><p>
+</details><details><summary>Hard</summary>
+
+
 |id|270 Hard Questions|0 Solutions|Tags|
 |---|---|---|---|
 |420|[Strong Password Checker](https://leetcode.com/problems/strong-password-checker)|   ||
@@ -1267,4 +1273,4 @@
 |305|[Number of Islands II](https://leetcode.com/problems/number-of-islands-ii)|   |union-find|
 |803|[Bricks Falling When Hit](https://leetcode.com/problems/bricks-falling-when-hit)|   |union-find|
 |1168|[Optimize Water Distribution in a Village](https://leetcode.com/problems/optimize-water-distribution-in-a-village)|   |union-find<br/>graph|
-</p></details>
+</details>
