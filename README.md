@@ -344,17 +344,12 @@
 |997|[Find the Town Judge](https://leetcode.com/problems/find-the-town-judge)|graph|[solution](src/_997_find_the_town_judge.rs)|
 |999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook)|array|[solution](src/_999_available_captures_for_rook.rs)|
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|math|[solution](src/_9_palindrome_number.rs)|
-</details><details><summary>Medium 292/649 44.99%</summary>
+</details><details><summary>Medium 297/649 45.76%</summary>
 
 
-|id|649 Medium Questions|Tags|292 Solutions|
+|id|649 Medium Questions|Tags|297 Solutions|
 |---|---|---|---|
-|384|[Shuffle an Array](https://leetcode.com/problems/shuffle-an-array)||   |
-|386|[Lexicographical Numbers](https://leetcode.com/problems/lexicographical-numbers)||   |
 |427|[Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree)||   |
-|433|[Minimum Genetic Mutation](https://leetcode.com/problems/minimum-genetic-mutation)||   |
-|481|[Magical String](https://leetcode.com/problems/magical-string)||   |
-|540|[Single Element in a Sorted Array](https://leetcode.com/problems/single-element-in-a-sorted-array)||   |
 |558|[Logical OR of Two Binary Grids Represented as Quad-Trees](https://leetcode.com/problems/logical-or-of-two-binary-grids-represented-as-quad-trees)||   |
 |799|[Champagne Tower](https://leetcode.com/problems/champagne-tower)||   |
 |820|[Short Encoding of Words](https://leetcode.com/problems/short-encoding-of-words)||   |
@@ -856,6 +851,8 @@
 |378|[Kth Smallest Element in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix)|binary-search heap|[solution](src/_378_kth_smallest_element_in_a_sorted_matrix.rs)|
 |380|[Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1)|array hash-table design|[solution](src/_380_insert_delete_get_random_o1.rs)|
 |382|[Linked List Random Node](https://leetcode.com/problems/linked-list-random-node)|reservoir-sampling|[solution](src/_382_linked_list_random_node.rs)|
+|384|[Shuffle an Array](https://leetcode.com/problems/shuffle-an-array)||[solution](src/_384_shuffle_an_array.rs)|
+|386|[Lexicographical Numbers](https://leetcode.com/problems/lexicographical-numbers)||[solution](src/_386_lexicographical_numbers.rs)|
 |388|[Longest Absolute File Path](https://leetcode.com/problems/longest-absolute-file-path)||[solution](src/_388_longest_absolute_file_path.rs)|
 |390|[Elimination Game](https://leetcode.com/problems/elimination-game)||[solution](src/_390_elimination_game.rs)|
 |393|[UTF-8 Validation](https://leetcode.com/problems/utf-8-validation)|bit-manipulation|[solution](src/_393_utf8_validation.rs)|
@@ -870,6 +867,7 @@
 |417|[Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow)|depth-first-search breadth-first-search|[solution](src/_417_pacific_atlantic_water_flow.rs)|
 |419|[Battleships in a Board](https://leetcode.com/problems/battleships-in-a-board)||[solution](src/_419_battleships_in_a_board.rs)|
 |424|[Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement)|two-pointers sliding-window|[solution](src/_424_longest_repeating_character_replacement.rs)|
+|433|[Minimum Genetic Mutation](https://leetcode.com/problems/minimum-genetic-mutation)||[solution](src/_433_minimum_genetic_mutation.rs)|
 |438|[Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string)|hash-table|[solution](src/_438_find_all_anagrams_in_a_string.rs)|
 |43|[Multiply Strings](https://leetcode.com/problems/multiply-strings)|math string|[solution](src/_43_multiply_strings.rs)|
 |442|[Find All Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array)|array|[solution](src/_442_find_all_duplicates_in_an_array.rs)|
@@ -877,6 +875,7 @@
 |456|[132 Pattern](https://leetcode.com/problems/132-pattern)|stack|[solution](src/_456_132_pattern.rs)|
 |46|[Permutations](https://leetcode.com/problems/permutations)|backtracking|[solution](src/_46_permutations.rs)|
 |478|[Generate Random Point in a Circle](https://leetcode.com/problems/generate-random-point-in-a-circle)|math random rejection-sampling|[solution](src/_478_generate_random_point_in_circle.rs)|
+|481|[Magical String](https://leetcode.com/problems/magical-string)||[solution](src/_481_magical_string.rs)|
 |48|[Rotate Image](https://leetcode.com/problems/rotate-image)|array|[solution](src/_48_rotate_image.rs)|
 |490|[The Maze](https://leetcode.com/problems/the-maze)|depth-first-search breadth-first-search|[solution](src/_490_the_maze.rs)|
 |497|[Random Point in Non-overlapping Rectangles](https://leetcode.com/problems/random-point-in-non-overlapping-rectangles)|binary-search random|[solution](src/_497_random_point_in_nonoverlapping_rectangles.rs)|
@@ -894,6 +893,7 @@
 |531|[Lonely Pixel I](https://leetcode.com/problems/lonely-pixel-i)|array depth-first-search|[solution](src/_531_lonely_pixel_1.rs)|
 |537|[Complex Number Multiplication](https://leetcode.com/problems/complex-number-multiplication)|math string|[solution](src/_537_complex_number_multiplication.rs)|
 |539|[Minimum Time Difference](https://leetcode.com/problems/minimum-time-difference)|string|[solution](src/_539_minimum_time_difference.rs)|
+|540|[Single Element in a Sorted Array](https://leetcode.com/problems/single-element-in-a-sorted-array)||[solution](src/_540_single_element_in_a_sorted_array.rs)|
 |544|[Output Contest Matches](https://leetcode.com/problems/output-contest-matches)|string recursion|[solution](src/_544_output_contest_matches.rs)|
 |545|[Boundary of Binary Tree](https://leetcode.com/problems/boundary-of-binary-tree)|tree|[solution](src/_545_boundary_of_binary_tree.rs)|
 |547|[Friend Circles](https://leetcode.com/problems/friend-circles)|depth-first-search union-find|[solution](src/_547_friend_circles.rs)|

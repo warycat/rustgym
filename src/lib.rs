@@ -397,6 +397,10 @@ mod _382_linked_list_random_node;
 //
 mod _383_ransom_note;
 //
+mod _384_shuffle_an_array;
+//
+mod _386_lexicographical_numbers;
+//
 mod _387_first_unique_character_in_a_string;
 //
 mod _388_longest_absolute_file_path;
@@ -445,6 +449,8 @@ mod _422_valid_word_square;
 //
 mod _424_longest_repeating_character_replacement;
 //
+mod _433_minimum_genetic_mutation;
+//
 mod _434_number_of_segments_in_a_string;
 //
 mod _437_path_sum_3;
@@ -480,6 +486,8 @@ mod _475_heaters;
 mod _476_number_complement;
 //
 mod _478_generate_random_point_in_circle;
+//
+mod _481_magical_string;
 //
 mod _482_license_key_formatting;
 //
@@ -538,6 +546,8 @@ mod _537_complex_number_multiplication;
 mod _538_convert_bst_to_greater_tree;
 //
 mod _539_minimum_time_difference;
+//
+mod _540_single_element_in_a_sorted_array;
 //
 mod _541_reverse_string_2;
 //
