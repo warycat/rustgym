@@ -8,11 +8,11 @@ struct Trie {
 
 impl Trie {
     fn insert(&mut self, s: &str) {
-        let mut curr = self;
+        let mut link = self;
         for c in s.chars() {
-            curr = curr.children.entry(c).or_default();
+            link = link.children.entry(c).or_default();
         }
-        curr.end = true;
+        link.end = true;
     }
 
     fn search(&self, s: &str) -> bool {

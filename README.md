@@ -344,15 +344,13 @@
 |997|[Find the Town Judge](https://leetcode.com/problems/find-the-town-judge)|graph|[solution](src/_997_find_the_town_judge.rs)|
 |999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook)|array|[solution](src/_999_available_captures_for_rook.rs)|
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|math|[solution](src/_9_palindrome_number.rs)|
-</details><details><summary>Medium 297/649 45.76%</summary>
+</details><details><summary>Medium 299/649 46.07%</summary>
 
 
-|id|649 Medium Questions|Tags|297 Solutions|
+|id|649 Medium Questions|Tags|299 Solutions|
 |---|---|---|---|
 |427|[Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree)||   |
 |558|[Logical OR of Two Binary Grids Represented as Quad-Trees](https://leetcode.com/problems/logical-or-of-two-binary-grids-represented-as-quad-trees)||   |
-|799|[Champagne Tower](https://leetcode.com/problems/champagne-tower)||   |
-|820|[Short Encoding of Words](https://leetcode.com/problems/short-encoding-of-words)||   |
 |822|[Card Flipping Game](https://leetcode.com/problems/card-flipping-game)||   |
 |823|[Binary Trees With Factors](https://leetcode.com/problems/binary-trees-with-factors)||   |
 |1265|[Print Immutable Linked List in Reverse](https://leetcode.com/problems/print-immutable-linked-list-in-reverse)||   |
@@ -954,9 +952,11 @@
 |791|[Custom Sort String](https://leetcode.com/problems/custom-sort-string)|string|[solution](src/_791_custom_sort_string.rs)|
 |794|[Valid Tic-Tac-Toe State](https://leetcode.com/problems/valid-tic-tac-toe-state)|math recursion|[solution](src/_794_valid_tic_tac_toe_state.rs)|
 |797|[All Paths From Source to Target](https://leetcode.com/problems/all-paths-from-source-to-target)||[solution](src/_797_all_paths_from_source_to_target.rs)|
+|799|[Champagne Tower](https://leetcode.com/problems/champagne-tower)||[solution](src/_799_champagne_tower.rs)|
 |79|[Word Search](https://leetcode.com/problems/word-search)|array backtracking|[solution](src/_79_word_search.rs)|
 |807|[Max Increase to Keep City Skyline](https://leetcode.com/problems/max-increase-to-keep-city-skyline)||[solution](src/_807_max_increase_to_keep_city_skyline.rs)|
 |814|[Binary Tree Pruning](https://leetcode.com/problems/binary-tree-pruning)|tree|[solution](src/_814_binary_tree_pruning.rs)|
+|820|[Short Encoding of Words](https://leetcode.com/problems/short-encoding-of-words)||[solution](src/_820_short_encoding_of_words.rs)|
 |841|[Keys and Rooms](https://leetcode.com/problems/keys-and-rooms)|depth-first-search graph|[solution](src/_841_keys_and_rooms.rs)|
 |846|[Hand of Straights](https://leetcode.com/problems/hand-of-straights)|ordered-map|[solution](src/_846_hand_of_straights.rs)|
 |855|[Exam Room](https://leetcode.com/problems/exam-room)|ordered-map|[solution](src/_855_exam_room.rs)|

@@ -10,11 +10,7 @@ struct Trie {
 
 impl Trie {
     fn new() -> Self {
-        let children: BTreeMap<char, Trie> = BTreeMap::new();
-        Trie {
-            children,
-            end: false,
-        }
+        Self::default()
     }
     fn from_words(words: Vec<String>) -> Self {
         let mut trie = Trie::new();

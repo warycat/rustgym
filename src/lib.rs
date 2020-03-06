@@ -773,6 +773,8 @@ mod _796_rotate_string;
 //
 mod _797_all_paths_from_source_to_target;
 //
+mod _799_champagne_tower;
+//
 mod _800_similar_rgb_color;
 //
 mod _804_unique_morse_code_words;
@@ -788,6 +790,8 @@ mod _812_largest_triangle_area;
 mod _814_binary_tree_pruning;
 //
 mod _819_most_common_word;
+//
+mod _820_short_encoding_of_words;
 //
 mod _821_shortest_distance_to_a_character;
 //

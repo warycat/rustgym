@@ -8,11 +8,7 @@ struct Trie {
 
 impl Trie {
     fn new() -> Self {
-        let children: HashMap<char, Trie> = HashMap::new();
-        Trie {
-            children,
-            end: false,
-        }
+        Self::default()
     }
 
     fn insert(&mut self, word: String) {
