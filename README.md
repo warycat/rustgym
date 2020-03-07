@@ -344,21 +344,16 @@
 |997|[Find the Town Judge](https://leetcode.com/problems/find-the-town-judge)|graph|[solution](src/_997_find_the_town_judge.rs)|
 |999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook)|array|[solution](src/_999_available_captures_for_rook.rs)|
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|math|[solution](src/_9_palindrome_number.rs)|
-</details><details><summary>Medium 302/649 46.53%</summary>
+</details><details><summary>Medium 307/649 47.30%</summary>
 
 
-|id|649 Medium Questions|Tags|302 Solutions|
+|id|649 Medium Questions|Tags|307 Solutions|
 |---|---|---|---|
 |427|[Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree)||   |
 |558|[Logical OR of Two Binary Grids Represented as Quad-Trees](https://leetcode.com/problems/logical-or-of-two-binary-grids-represented-as-quad-trees)||   |
 |1265|[Print Immutable Linked List in Reverse](https://leetcode.com/problems/print-immutable-linked-list-in-reverse)||   |
-|229|[Majority Element II](https://leetcode.com/problems/majority-element-ii)|array|   |
-|245|[Shortest Word Distance III](https://leetcode.com/problems/shortest-word-distance-iii)|array|   |
 |277|[Find the Celebrity](https://leetcode.com/problems/find-the-celebrity)|array|   |
-|495|[Teemo Attacking](https://leetcode.com/problems/teemo-attacking)|array|   |
-|548|[Split Array with Equal Sum](https://leetcode.com/problems/split-array-with-equal-sum)|array|   |
 |562|[Longest Line of Consecutive One in Matrix](https://leetcode.com/problems/longest-line-of-consecutive-one-in-matrix)|array|   |
-|565|[Array Nesting](https://leetcode.com/problems/array-nesting)|array|   |
 |667|[Beautiful Arrangement II](https://leetcode.com/problems/beautiful-arrangement-ii)|array|   |
 |769|[Max Chunks To Make Sorted](https://leetcode.com/problems/max-chunks-to-make-sorted)|array|   |
 |792|[Number of Matching Subsequences](https://leetcode.com/problems/number-of-matching-subsequences)|array|   |
@@ -809,9 +804,11 @@
 |222|[Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes)|binary-search tree|[solution](src/_222_count_complete_tree_nodes.rs)|
 |227|[Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii)|string|[solution](src/_227_basic_calculator_2.rs)|
 |228|[Summary Ranges](https://leetcode.com/problems/summary-ranges)|array|[solution](src/_228_summary_ranges.rs)|
+|229|[Majority Element II](https://leetcode.com/problems/majority-element-ii)|array|[solution](src/_229_majority_element_2.rs)|
 |22|[Generate Parentheses](https://leetcode.com/problems/generate-parentheses)|string backtracking|[solution](src/_22_generate_parentheses.rs)|
 |238|[Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self)|array|[solution](src/_238_product_of_array_except_self.rs)|
 |244|[Shortest Word Distance II](https://leetcode.com/problems/shortest-word-distance-ii)|hash-table design|[solution](src/_244_shortest_word_distance_2.rs)|
+|245|[Shortest Word Distance III](https://leetcode.com/problems/shortest-word-distance-iii)|array|[solution](src/_245_shortest_word_distance_3.rs)|
 |247|[Strobogrammatic Number II](https://leetcode.com/problems/strobogrammatic-number-ii)|math recursion|[solution](src/_247_strobogrammatic_number_2.rs)|
 |24|[Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs)|linked-list|[solution](src/_24_swap_nodes_in_pairs.rs)|
 |251|[Flatten 2D Vector](https://leetcode.com/problems/flatten-2d-vector)|design|[solution](src/_251_flatten_2d_vector.rs)|
@@ -874,6 +871,7 @@
 |481|[Magical String](https://leetcode.com/problems/magical-string)||[solution](src/_481_magical_string.rs)|
 |48|[Rotate Image](https://leetcode.com/problems/rotate-image)|array|[solution](src/_48_rotate_image.rs)|
 |490|[The Maze](https://leetcode.com/problems/the-maze)|depth-first-search breadth-first-search|[solution](src/_490_the_maze.rs)|
+|495|[Teemo Attacking](https://leetcode.com/problems/teemo-attacking)|array|[solution](src/_495_teemo_attacking.rs)|
 |497|[Random Point in Non-overlapping Rectangles](https://leetcode.com/problems/random-point-in-non-overlapping-rectangles)|binary-search random|[solution](src/_497_random_point_in_nonoverlapping_rectangles.rs)|
 |498|[Diagonal Traverse](https://leetcode.com/problems/diagonal-traverse)||[solution](src/_498_diagonal_traverse.rs)|
 |49|[Group Anagrams](https://leetcode.com/problems/group-anagrams)|hash-table string|[solution](src/_49_group_anagrams.rs)|
@@ -893,9 +891,11 @@
 |544|[Output Contest Matches](https://leetcode.com/problems/output-contest-matches)|string recursion|[solution](src/_544_output_contest_matches.rs)|
 |545|[Boundary of Binary Tree](https://leetcode.com/problems/boundary-of-binary-tree)|tree|[solution](src/_545_boundary_of_binary_tree.rs)|
 |547|[Friend Circles](https://leetcode.com/problems/friend-circles)|depth-first-search union-find|[solution](src/_547_friend_circles.rs)|
+|548|[Split Array with Equal Sum](https://leetcode.com/problems/split-array-with-equal-sum)|array|[solution](src/_548_split_array_with_equal_sum.rs)|
 |54|[Spiral Matrix](https://leetcode.com/problems/spiral-matrix)|array|[solution](src/_54_spiral_matrix.rs)|
 |556|[Next Greater Element III](https://leetcode.com/problems/next-greater-element-iii)|string|[solution](src/_556_next_greater_element_3.rs)|
 |560|[Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k)|array hash-table|[solution](src/_560_subarray_sum_equals_k.rs)|
+|565|[Array Nesting](https://leetcode.com/problems/array-nesting)|array|[solution](src/_565_array_nesting.rs)|
 |56|[Merge Intervals](https://leetcode.com/problems/merge-intervals)|array sort|[solution](src/_56_merge_intervals.rs)|
 |582|[Kill Process](https://leetcode.com/problems/kill-process)|tree queue|[solution](src/_582_kill_process.rs)|
 |593|[Valid Square](https://leetcode.com/problems/valid-square)|math|[solution](src/_593_valid_square.rs)|
