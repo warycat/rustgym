@@ -205,6 +205,8 @@ mod _161_one_edit_distance;
 //
 mod _162_find_peak_element;
 //
+mod _163_missing_ranges;
+//
 mod _166_fraction_to_recurring_decimal;
 //
 mod _167_two_sum_2;
@@ -794,6 +796,10 @@ mod _819_most_common_word;
 mod _820_short_encoding_of_words;
 //
 mod _821_shortest_distance_to_a_character;
+//
+mod _822_card_flipping_game;
+//
+mod _823_binary_trees_with_factors;
 //
 mod _824_goat_latin;
 //

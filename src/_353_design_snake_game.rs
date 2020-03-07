@@ -1,9 +1,25 @@
 use std::collections::HashMap;
 use std::collections::VecDeque;
 
-type Point = (i32, i32);
+#[derive(PartialEq, Eq, Clone, Copy, Hash)]
+struct Point(i32, i32);
 
-#[derive(Debug)]
+impl Point {
+    fn from_direction(direction: String) -> Point {
+        if direction == "U" {
+            Point(-1, 0)
+        } else if direction == "L" {
+            Point(0, -1)
+        } else if direction == "R" {
+            Point(0, 1)
+        } else if direction == "D" {
+            Point(1, 0)
+        } else {
+            Point(0, 0)
+        }
+    }
+}
+
 struct SnakeGame {
     body: VecDeque<Point>,
     food: Vec<Point>,
@@ -19,11 +35,11 @@ impl SnakeGame {
         let n = height as i32;
         let m = width as i32;
         let mut body: VecDeque<Point> = VecDeque::new();
-        let head = (0, 0);
+        let head = Point(0, 0);
         body.push_back(head);
         let mut screen: HashMap<Point, bool> = HashMap::new();
-        *screen.entry((0, 0)).or_default() = true;
-        let food = food.iter().rev().map(|v| (v[0], v[1])).collect();
+        *screen.entry(Point(0, 0)).or_default() = true;
+        let food = food.iter().rev().map(|v| Point(v[0], v[1])).collect();
         SnakeGame {
             body,
             food,
@@ -36,8 +52,8 @@ impl SnakeGame {
 
     fn make_a_move(&mut self, direction: String) -> i32 {
         let head = self.body.front().unwrap();
-        let offset = Self::offset(direction);
-        let next = (head.0 + offset.0, head.1 + offset.1);
+        let offset = Point::from_direction(direction);
+        let next = Point(head.0 + offset.0, head.1 + offset.1);
         if let Some(food) = self.food.last() {
             if *food == next {
                 self.food.pop();
@@ -56,20 +72,6 @@ impl SnakeGame {
         *self.screen.entry(next).or_default() = true;
         self.body.push_front(next);
         self.score
-    }
-
-    fn offset(direction: String) -> Point {
-        if direction == "U" {
-            (-1, 0)
-        } else if direction == "L" {
-            (0, -1)
-        } else if direction == "R" {
-            (0, 1)
-        } else if direction == "D" {
-            (1, 0)
-        } else {
-            (0, 0)
-        }
     }
 }
 

@@ -1,29 +1,16 @@
 struct Solution;
-
-#[derive(Debug, PartialEq, Eq, Clone)]
-struct ListNode {
-    val: i32,
-    next: Link,
-}
-
-type Link = Option<Box<ListNode>>;
-
-impl ListNode {
-    fn node(val: i32, next: Link) -> Link {
-        Some(Box::new(ListNode { val, next }))
-    }
-}
+use util::*;
 
 struct List {
-    head: Link,
+    head: ListLink,
 }
 
 impl List {
-    fn new(head: Link) -> Self {
+    fn new(head: ListLink) -> Self {
         List { head }
     }
 
-    fn middle(&self) -> &Link {
+    fn middle(&self) -> &ListLink {
         let mut slow = &self.head;
         let mut fast = &self.head;
         while fast.is_some() && fast.as_ref().unwrap().next.is_some() {
@@ -35,34 +22,19 @@ impl List {
 }
 
 impl Solution {
-    fn middle_node(head: Link) -> Link {
+    fn middle_node(head: ListLink) -> ListLink {
         let list = List::new(head);
-        let middle: &Link = list.middle();
+        let middle: &ListLink = list.middle();
         middle.clone()
     }
 }
 
 #[test]
 fn test() {
-    let head = ListNode::node(
-        1,
-        ListNode::node(
-            2,
-            ListNode::node(3, ListNode::node(4, ListNode::node(5, None))),
-        ),
-    );
-    let middle = ListNode::node(3, ListNode::node(4, ListNode::node(5, None)));
+    let head = list![1, 2, 3, 4, 5];
+    let middle = list![3, 4, 5];
     assert_eq!(Solution::middle_node(head), middle);
-    let head = ListNode::node(
-        1,
-        ListNode::node(
-            2,
-            ListNode::node(
-                3,
-                ListNode::node(4, ListNode::node(5, ListNode::node(6, None))),
-            ),
-        ),
-    );
-    let middle = ListNode::node(4, ListNode::node(5, ListNode::node(6, None)));
+    let head = list![1, 2, 3, 4, 5, 6];
+    let middle = list![4, 5, 6];
     assert_eq!(Solution::middle_node(head), middle);
 }

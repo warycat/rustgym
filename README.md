@@ -344,17 +344,14 @@
 |997|[Find the Town Judge](https://leetcode.com/problems/find-the-town-judge)|graph|[solution](src/_997_find_the_town_judge.rs)|
 |999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook)|array|[solution](src/_999_available_captures_for_rook.rs)|
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|math|[solution](src/_9_palindrome_number.rs)|
-</details><details><summary>Medium 299/649 46.07%</summary>
+</details><details><summary>Medium 302/649 46.53%</summary>
 
 
-|id|649 Medium Questions|Tags|299 Solutions|
+|id|649 Medium Questions|Tags|302 Solutions|
 |---|---|---|---|
 |427|[Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree)||   |
 |558|[Logical OR of Two Binary Grids Represented as Quad-Trees](https://leetcode.com/problems/logical-or-of-two-binary-grids-represented-as-quad-trees)||   |
-|822|[Card Flipping Game](https://leetcode.com/problems/card-flipping-game)||   |
-|823|[Binary Trees With Factors](https://leetcode.com/problems/binary-trees-with-factors)||   |
 |1265|[Print Immutable Linked List in Reverse](https://leetcode.com/problems/print-immutable-linked-list-in-reverse)||   |
-|163|[Missing Ranges](https://leetcode.com/problems/missing-ranges)|array|   |
 |229|[Majority Element II](https://leetcode.com/problems/majority-element-ii)|array|   |
 |245|[Shortest Word Distance III](https://leetcode.com/problems/shortest-word-distance-iii)|array|   |
 |277|[Find the Celebrity](https://leetcode.com/problems/find-the-celebrity)|array|   |
@@ -791,6 +788,7 @@
 |15|[3Sum](https://leetcode.com/problems/3sum)|array two-pointers|[solution](src/_15_three_sum.rs)|
 |161|[One Edit Distance](https://leetcode.com/problems/one-edit-distance)|string|[solution](src/_161_one_edit_distance.rs)|
 |162|[Find Peak Element](https://leetcode.com/problems/find-peak-element)|array binary-search|[solution](src/_162_find_peak_element.rs)|
+|163|[Missing Ranges](https://leetcode.com/problems/missing-ranges)|array|[solution](src/_163_missing_ranges.rs)|
 |166|[Fraction to Recurring Decimal](https://leetcode.com/problems/fraction-to-recurring-decimal)|hash-table math|[solution](src/_166_fraction_to_recurring_decimal.rs)|
 |16|[3Sum Closest](https://leetcode.com/problems/3sum-closest)|array two-pointers|[solution](src/_16_3sum_closest.rs)|
 |173|[Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator)|stack tree design|[solution](src/_173_binary_search_tree_iterator.rs)|
@@ -957,6 +955,8 @@
 |807|[Max Increase to Keep City Skyline](https://leetcode.com/problems/max-increase-to-keep-city-skyline)||[solution](src/_807_max_increase_to_keep_city_skyline.rs)|
 |814|[Binary Tree Pruning](https://leetcode.com/problems/binary-tree-pruning)|tree|[solution](src/_814_binary_tree_pruning.rs)|
 |820|[Short Encoding of Words](https://leetcode.com/problems/short-encoding-of-words)||[solution](src/_820_short_encoding_of_words.rs)|
+|822|[Card Flipping Game](https://leetcode.com/problems/card-flipping-game)||[solution](src/_822_card_flipping_game.rs)|
+|823|[Binary Trees With Factors](https://leetcode.com/problems/binary-trees-with-factors)||[solution](src/_823_binary_trees_with_factors.rs)|
 |841|[Keys and Rooms](https://leetcode.com/problems/keys-and-rooms)|depth-first-search graph|[solution](src/_841_keys_and_rooms.rs)|
 |846|[Hand of Straights](https://leetcode.com/problems/hand-of-straights)|ordered-map|[solution](src/_846_hand_of_straights.rs)|
 |855|[Exam Room](https://leetcode.com/problems/exam-room)|ordered-map|[solution](src/_855_exam_room.rs)|
