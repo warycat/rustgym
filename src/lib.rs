@@ -273,6 +273,8 @@ mod _227_basic_calculator_2;
 //
 mod _228_summary_ranges;
 //
+mod _229_majority_element_2;
+//
 mod _231_power_of_two;
 //
 mod _232_implent_queue_using_stacks;
@@ -286,6 +288,8 @@ mod _242_valid_anagram;
 mod _243_shortest_word_distance;
 //
 mod _244_shortest_word_distance_2;
+//
+mod _245_shortest_word_distance_3;
 //
 mod _246_strobogrammantic_number;
 //
@@ -499,6 +503,8 @@ mod _490_the_maze;
 //
 mod _492_construct_the_rectangle;
 //
+mod _495_teemo_attacking;
+//
 mod _496_next_greater_element_1;
 //
 mod _497_random_point_in_nonoverlapping_rectangles;
@@ -561,6 +567,8 @@ mod _545_boundary_of_binary_tree;
 //
 mod _547_friend_circles;
 //
+mod _548_split_array_with_equal_sum;
+//
 mod _551_student_attendance_record_1;
 //
 mod _556_next_greater_element_3;
@@ -572,6 +580,8 @@ mod _560_subarray_sum_equals_k;
 mod _561_array_partition_1;
 //
 mod _563_binary_tree_tilt;
+//
+mod _565_array_nesting;
 //
 mod _566_reshape_the_matrix;
 //
