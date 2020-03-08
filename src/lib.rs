@@ -579,6 +579,8 @@ mod _560_subarray_sum_equals_k;
 //
 mod _561_array_partition_1;
 //
+mod _562_longest_line_of_consecutive_one_in_matrix;
+//
 mod _563_binary_tree_tilt;
 //
 mod _565_array_nesting;
@@ -652,6 +654,8 @@ mod _657_robot_return_to_origin;
 mod _661_image_smoother;
 //
 mod _665_non_decreasing_array;
+//
+mod _667_beautiful_arrangement_2;
 //
 mod _669_trim_a_binary_search_tree;
 //
@@ -759,6 +763,8 @@ mod _763_partition_labels;
 //
 mod _766_toeplitiz_matrix;
 //
+mod _769_max_chunks_to_make_sorted;
+//
 mod _771_jewels_and_stones;
 //
 mod _776_split_bst;
@@ -779,7 +785,11 @@ mod _788_rotated_digits;
 //
 mod _791_custom_sort_string;
 //
+mod _792_number_of_matching_subsequences;
+//
 mod _794_valid_tic_tac_toe_state;
+//
+mod _795_number_of_subarrays_with_bounded_maximum;
 //
 mod _796_rotate_string;
 //
@@ -812,6 +822,8 @@ mod _822_card_flipping_game;
 mod _823_binary_trees_with_factors;
 //
 mod _824_goat_latin;
+//
+mod _825_friends_of_appropriate_ages;
 //
 mod _830_positions_of_large_groups;
 //

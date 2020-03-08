@@ -1,23 +1,25 @@
 struct Solution;
+use std::cmp::Reverse;
+use std::collections::BinaryHeap;
 use std::collections::HashMap;
-struct Pair {
-    x: i32,
-    f: usize,
-}
+
+type Pair = (Reverse<usize>, i32);
 
 impl Solution {
     fn top_k_frequent(nums: Vec<i32>, k: i32) -> Vec<i32> {
         let k = k as usize;
         let mut hm: HashMap<i32, usize> = HashMap::new();
-        let mut pairs: Vec<Pair> = vec![];
+        let mut pq: BinaryHeap<Pair> = BinaryHeap::new();
         for x in nums {
             *hm.entry(x).or_default() += 1;
         }
         for (x, f) in hm {
-            pairs.push(Pair { x, f })
+            pq.push((Reverse(f), x));
+            if pq.len() > k {
+                pq.pop();
+            }
         }
-        pairs.sort_unstable_by_key(|p| p.f);
-        pairs.iter().map(|p| p.x).rev().take(k).collect()
+        pq.into_iter().map(|p| p.1).rev().collect()
     }
 }
 
