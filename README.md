@@ -2,10 +2,10 @@
 
 # leetcode_rs [![Build Status](https://travis-ci.org/warycat/leetcode_rs.svg?branch=master)](https://travis-ci.org/warycat/leetcode_rs)
 
-<details><summary>Easy 322/338 95.27%</summary>
+<details><summary>Easy 322/339 94.99%</summary>
 
 
-|id|338 Easy Questions|Tags|322 Solutions|
+|id|339 Easy Questions|Tags|322 Solutions|
 |---|---|---|---|
 |278|[First Bad Version](https://leetcode.com/problems/first-bad-version)|binary-search|   |
 |374|[Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower)|binary-search|   |
@@ -17,6 +17,7 @@
 |141|[Linked List Cycle](https://leetcode.com/problems/linked-list-cycle)|linked-list two-pointers|   |
 |1237|[Find Positive Integer Solution for a Given Equation](https://leetcode.com/problems/find-positive-integer-solution-for-a-given-equation)|math binary-search|   |
 |157|[Read N Characters Given Read4](https://leetcode.com/problems/read-n-characters-given-read4)|string|   |
+|1374|[Generate a String With Characters That Have Odd Counts](https://leetcode.com/problems/generate-a-string-with-characters-that-have-odd-counts)|string|   |
 |1370|[Increasing Decreasing String](https://leetcode.com/problems/increasing-decreasing-string)|string sort|   |
 |235|[Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree)|tree|   |
 |589|[N-ary Tree Preorder Traversal](https://leetcode.com/problems/n-ary-tree-preorder-traversal)|tree|   |
@@ -345,25 +346,22 @@
 |997|[Find the Town Judge](https://leetcode.com/problems/find-the-town-judge)|graph|[solution](src/_997_find_the_town_judge.rs)|
 |999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook)|array|[solution](src/_999_available_captures_for_rook.rs)|
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|math|[solution](src/_9_palindrome_number.rs)|
-</details><details><summary>Medium 313/651 48.08%</summary>
+</details><details><summary>Medium 317/653 48.55%</summary>
 
 
-|id|651 Medium Questions|Tags|313 Solutions|
+|id|653 Medium Questions|Tags|317 Solutions|
 |---|---|---|---|
 |427|[Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree)||   |
 |558|[Logical OR of Two Binary Grids Represented as Quad-Trees](https://leetcode.com/problems/logical-or-of-two-binary-grids-represented-as-quad-trees)||   |
 |1265|[Print Immutable Linked List in Reverse](https://leetcode.com/problems/print-immutable-linked-list-in-reverse)||   |
 |277|[Find the Celebrity](https://leetcode.com/problems/find-the-celebrity)|array|   |
-|835|[Image Overlap](https://leetcode.com/problems/image-overlap)|array|   |
-|900|[RLE Iterator](https://leetcode.com/problems/rle-iterator)|array|   |
-|915|[Partition Array into Disjoint Intervals](https://leetcode.com/problems/partition-array-into-disjoint-intervals)|array|   |
-|918|[Maximum Sum Circular Subarray](https://leetcode.com/problems/maximum-sum-circular-subarray)|array|   |
 |926|[Flip String to Monotone Increasing](https://leetcode.com/problems/flip-string-to-monotone-increasing)|array|   |
 |962|[Maximum Width Ramp](https://leetcode.com/problems/maximum-width-ramp)|array|   |
 |1014|[Best Sightseeing Pair](https://leetcode.com/problems/best-sightseeing-pair)|array|   |
 |1035|[Uncrossed Lines](https://leetcode.com/problems/uncrossed-lines)|array|   |
 |1144|[Decrease Elements To Make Array Zigzag](https://leetcode.com/problems/decrease-elements-to-make-array-zigzag)|array|   |
 |1146|[Snapshot Array](https://leetcode.com/problems/snapshot-array)|array|   |
+|1375|[Bulb Switcher III](https://leetcode.com/problems/bulb-switcher-iii)|array|   |
 |40|[Combination Sum II](https://leetcode.com/problems/combination-sum-ii)|array backtracking|   |
 |90|[Subsets II](https://leetcode.com/problems/subsets-ii)|array backtracking|   |
 |216|[Combination Sum III](https://leetcode.com/problems/combination-sum-iii)|array backtracking|   |
@@ -437,6 +435,7 @@
 |1034|[Coloring A Border](https://leetcode.com/problems/coloring-a-border)|depth-first-search|   |
 |1080|[Insufficient Nodes in Root to Leaf Paths](https://leetcode.com/problems/insufficient-nodes-in-root-to-leaf-paths)|depth-first-search|   |
 |1254|[Number of Closed Islands](https://leetcode.com/problems/number-of-closed-islands)|depth-first-search|   |
+|1376|[Time Needed to Inform All Employees](https://leetcode.com/problems/time-needed-to-inform-all-employees)|depth-first-search|   |
 |505|[The Maze II](https://leetcode.com/problems/the-maze-ii)|depth-first-search breadth-first-search|   |
 |542|[01 Matrix](https://leetcode.com/problems/01-matrix)|depth-first-search breadth-first-search|   |
 |934|[Shortest Bridge](https://leetcode.com/problems/shortest-bridge)|depth-first-search breadth-first-search|   |
@@ -960,6 +959,7 @@
 |822|[Card Flipping Game](https://leetcode.com/problems/card-flipping-game)||[solution](src/_822_card_flipping_game.rs)|
 |823|[Binary Trees With Factors](https://leetcode.com/problems/binary-trees-with-factors)||[solution](src/_823_binary_trees_with_factors.rs)|
 |825|[Friends Of Appropriate Ages](https://leetcode.com/problems/friends-of-appropriate-ages)|array|[solution](src/_825_friends_of_appropriate_ages.rs)|
+|835|[Image Overlap](https://leetcode.com/problems/image-overlap)|array|[solution](src/_835_image_overlap.rs)|
 |841|[Keys and Rooms](https://leetcode.com/problems/keys-and-rooms)|depth-first-search graph|[solution](src/_841_keys_and_rooms.rs)|
 |846|[Hand of Straights](https://leetcode.com/problems/hand-of-straights)|ordered-map|[solution](src/_846_hand_of_straights.rs)|
 |855|[Exam Room](https://leetcode.com/problems/exam-room)|ordered-map|[solution](src/_855_exam_room.rs)|
@@ -972,8 +972,11 @@
 |890|[Find and Replace Pattern](https://leetcode.com/problems/find-and-replace-pattern)|string|[solution](src/_890_find_and_replace_pattern.rs)|
 |894|[All Possible Full Binary Trees](https://leetcode.com/problems/all-possible-full-binary-trees)|tree recursion|[solution](src/_894_all_possible_full_binary_trees.rs)|
 |8|[String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi)|math string|[solution](src/_8_string_to_integer.rs)|
+|900|[RLE Iterator](https://leetcode.com/problems/rle-iterator)|array|[solution](src/_900_rle_iterator.rs)|
 |909|[Snakes and Ladders](https://leetcode.com/problems/snakes-and-ladders)|breadth-first-search|[solution](src/_909_snakes_and_ladders.rs)|
 |912|[Sort an Array](https://leetcode.com/problems/sort-an-array)||[solution](src/_912_sort_an_array.rs)|
+|915|[Partition Array into Disjoint Intervals](https://leetcode.com/problems/partition-array-into-disjoint-intervals)|array|[solution](src/_915_partition_array_into_disjoint_intervals.rs)|
+|918|[Maximum Sum Circular Subarray](https://leetcode.com/problems/maximum-sum-circular-subarray)|array|[solution](src/_918_maximum_sum_circular_subarray.rs)|
 |91|[Decode Ways](https://leetcode.com/problems/decode-ways)|string dynamic-programming|[solution](src/_91_decode_ways.rs)|
 |921|[Minimum Add to Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid)|stack greedy|[solution](src/_921_minimum_add_to_make_parentheses_valid.rs)|
 |92|[Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii)|linked-list|[solution](src/_92_reverse_linked_list_2.rs)|
@@ -1001,10 +1004,10 @@
 |98|[Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree)|tree depth-first-search|[solution](src/_98_validate_binary_search_tree.rs)|
 |991|[Broken Calculator](https://leetcode.com/problems/broken-calculator)|math greedy|[solution](src/_991_broken_calculator.rs)|
 |998|[Maximum Binary Tree II](https://leetcode.com/problems/maximum-binary-tree-ii)|tree|[solution](src/_998_maximum_binary_tree_2.rs)|
-</details><details><summary>Hard 0/271 0.00%</summary>
+</details><details><summary>Hard 0/272 0.00%</summary>
 
 
-|id|271 Hard Questions|Tags|0 Solutions|
+|id|272 Hard Questions|Tags|0 Solutions|
 |---|---|---|---|
 |420|[Strong Password Checker](https://leetcode.com/problems/strong-password-checker)||   |
 |440|[K-th Smallest in Lexicographical Order](https://leetcode.com/problems/k-th-smallest-in-lexicographical-order)||   |
@@ -1079,6 +1082,7 @@
 |749|[Contain Virus](https://leetcode.com/problems/contain-virus)|depth-first-search|   |
 |827|[Making A Large Island](https://leetcode.com/problems/making-a-large-island)|depth-first-search|   |
 |1192|[Critical Connections in a Network](https://leetcode.com/problems/critical-connections-in-a-network)|depth-first-search|   |
+|1377|[Frog Position After T Seconds](https://leetcode.com/problems/frog-position-after-t-seconds)|depth-first-search|   |
 |301|[Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses)|depth-first-search breadth-first-search|   |
 |499|[The Maze III](https://leetcode.com/problems/the-maze-iii)|depth-first-search breadth-first-search|   |
 |1203|[Sort Items by Groups Respecting Dependencies](https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies)|depth-first-search graph topological-sort|   |

@@ -829,6 +829,8 @@ mod _830_positions_of_large_groups;
 //
 mod _832_flipping_an_image;
 //
+mod _835_image_overlap;
+//
 mod _836_rectangle_overlap;
 //
 mod _840_magic_squares_in_grid;
@@ -889,6 +891,8 @@ mod _896_monotonic_array;
 //
 mod _897_increasing_order_search_tree;
 //
+mod _900_rle_iterator;
+//
 mod _905_sort_array_by_parity;
 //
 mod _908_smallest_range_1;
@@ -899,7 +903,11 @@ mod _912_sort_an_array;
 //
 mod _914_x_of_a_kind_in_a_deck_of_cards;
 //
+mod _915_partition_array_into_disjoint_intervals;
+//
 mod _917_reverse_only_letters;
+//
+mod _918_maximum_sum_circular_subarray;
 //
 mod _921_minimum_add_to_make_parentheses_valid;
 //
