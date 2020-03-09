@@ -2,10 +2,10 @@
 
 # leetcode_rs [![Build Status](https://travis-ci.org/warycat/leetcode_rs.svg?branch=master)](https://travis-ci.org/warycat/leetcode_rs)
 
-<details><summary>Easy 322/339 94.99%</summary>
+<details><summary>Easy 324/339 95.58%</summary>
 
 
-|id|339 Easy Questions|Tags|322 Solutions|
+|id|339 Easy Questions|Tags|324 Solutions|
 |---|---|---|---|
 |278|[First Bad Version](https://leetcode.com/problems/first-bad-version)|binary-search|   |
 |374|[Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower)|binary-search|   |
@@ -17,8 +17,6 @@
 |141|[Linked List Cycle](https://leetcode.com/problems/linked-list-cycle)|linked-list two-pointers|   |
 |1237|[Find Positive Integer Solution for a Given Equation](https://leetcode.com/problems/find-positive-integer-solution-for-a-given-equation)|math binary-search|   |
 |157|[Read N Characters Given Read4](https://leetcode.com/problems/read-n-characters-given-read4)|string|   |
-|1374|[Generate a String With Characters That Have Odd Counts](https://leetcode.com/problems/generate-a-string-with-characters-that-have-odd-counts)|string|   |
-|1370|[Increasing Decreasing String](https://leetcode.com/problems/increasing-decreasing-string)|string sort|   |
 |235|[Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree)|tree|   |
 |589|[N-ary Tree Preorder Traversal](https://leetcode.com/problems/n-ary-tree-preorder-traversal)|tree|   |
 |590|[N-ary Tree Postorder Traversal](https://leetcode.com/problems/n-ary-tree-postorder-traversal)|tree|   |
@@ -117,6 +115,8 @@
 |1360|[Number of Days Between Two Dates](https://leetcode.com/problems/number-of-days-between-two-dates)||[solution](src/_1360_number_of_days_between_two_dates.rs)|
 |1365|[How Many Numbers Are Smaller Than the Current Number](https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number)|array hash-table|[solution](src/_1365_how_many_numbers_are_smaller_than_the_current_number.rs)|
 |136|[Single Number](https://leetcode.com/problems/single-number)|hash-table bit-manipulation|[solution](src/_136_single_number.rs)|
+|1370|[Increasing Decreasing String](https://leetcode.com/problems/increasing-decreasing-string)|string sort|[solution](src/_1370_increasing_decreasing_string.rs)|
+|1374|[Generate a String With Characters That Have Odd Counts](https://leetcode.com/problems/generate-a-string-with-characters-that-have-odd-counts)|string|[solution](src/_1374_generate_a_string_with_characters_that_have_odd_counts.rs)|
 |13|[Roman to Integer](https://leetcode.com/problems/roman-to-integer)|math string|[solution](src/_13_roman_to_integer.rs)|
 |14|[Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix)|string|[solution](src/_14_longest_common_prefix.rs)|
 |155|[Min Stack](https://leetcode.com/problems/min-stack)|stack design|[solution](src/_155_min_stack.rs)|

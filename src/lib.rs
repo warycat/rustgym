@@ -1292,3 +1292,7 @@ mod _1356_sort_integers_by_the_number_of_1_bits;
 mod _1360_number_of_days_between_two_dates;
 //
 mod _1365_how_many_numbers_are_smaller_than_the_current_number;
+//
+mod _1370_increasing_decreasing_string;
+//
+mod _1374_generate_a_string_with_characters_that_have_odd_counts;
