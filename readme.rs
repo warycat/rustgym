@@ -10,7 +10,8 @@ const TITLE: &str = "# Leetcode Solutions in Rust";
 const BODY: &str = "
 This project demostrates how to create **Data Structures** and to implement **Algorithms** using programming language **Rust**
 All the solutions here are crafted with love and their performance beats 99% of other solutions on the leetcode website. Tutorial videos will be added later.
-##Please subscribe to our [Youtube Channel](https://www.youtube.com/channel/UCV9HzRLPKjI8SttaIYOygsw) for future videos.
+
+### Please subscribe to our [Rust Gym Youtube Channel](https://www.youtube.com/channel/UCV9HzRLPKjI8SttaIYOygsw) for future videos.
 
 ## Data Structures
 - Stack & Queue ( Vec, VecDeque )
@@ -48,11 +49,11 @@ All the solutions here are crafted with love and their performance beats 99% of 
 ";
 
 const CODING_INTERVIEW: &str = "
-#Coding Interview
+### Coding Interview
 Leetcode is a website where people–mostly software engineers–practice their coding skills. There are 1200+ questions (and growing), each with multiple solutions. Questions are ranked by level of difficulty: easy, medium, and hard. Within the last decade or so, the technical interview process has become formulaic and what some describe “unnatural” for engineers. What people are asked to perform in an interview–solving word or code based teasers, coding on a whiteboard, and being asked to produce clean optimized solutions in a short time frame–is not what they would experience in a daily work environment.
 ";
 
-const CI: &str = "# leetcode_rs [![Build Status](https://travis-ci.org/warycat/leetcode_rs.svg?branch=master)](https://travis-ci.org/warycat/leetcode_rs)";
+const CI: &str = "### leetcode_rs [![Build Status](https://travis-ci.org/warycat/leetcode_rs.svg?branch=master)](https://travis-ci.org/warycat/leetcode_rs)";
 const LEETCODE_JSON_URL: &str = "https://leetcode.com/api/problems/algorithms/";
 const LEETCODE_TAG_URL: &str = "https://leetcode.com/problems/api/tags/";
 const LEETCODE_QUESTION_URL: &str = "https://leetcode.com/problems/";
@@ -243,7 +244,7 @@ impl Readme {
             let id = solutions[j].id;
             hm.insert(id, solutions[j].to_string());
         }
-        let mut s = "".to_string();
+        let mut s = "# All Solutions\n".to_string();
         for level in 1..=3 {
             let mut rows: Vec<(i64, String, String, String)> = vec![];
             let mut n_questions = 0;
