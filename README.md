@@ -389,17 +389,15 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook)|array|[solution](src/_999_available_captures_for_rook.rs)|
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|math|[solution](src/_9_palindrome_number.rs)|
 </details>
-<details><summary>Medium 319/653 48.85%</summary>
+<details><summary>Medium 321/653 49.16%</summary>
 
 
-|id|653 Medium Questions|Tags|319 Solutions|
+|id|653 Medium Questions|Tags|321 Solutions|
 |---|---|---|---|
 |427|[Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree)||   |
 |558|[Logical OR of Two Binary Grids Represented as Quad-Trees](https://leetcode.com/problems/logical-or-of-two-binary-grids-represented-as-quad-trees)||   |
 |1265|[Print Immutable Linked List in Reverse](https://leetcode.com/problems/print-immutable-linked-list-in-reverse)||   |
 |277|[Find the Celebrity](https://leetcode.com/problems/find-the-celebrity)|array|   |
-|1014|[Best Sightseeing Pair](https://leetcode.com/problems/best-sightseeing-pair)|array|   |
-|1035|[Uncrossed Lines](https://leetcode.com/problems/uncrossed-lines)|array|   |
 |1144|[Decrease Elements To Make Array Zigzag](https://leetcode.com/problems/decrease-elements-to-make-array-zigzag)|array|   |
 |1146|[Snapshot Array](https://leetcode.com/problems/snapshot-array)|array|   |
 |1375|[Bulb Switcher III](https://leetcode.com/problems/bulb-switcher-iii)|array|   |
@@ -732,10 +730,12 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1007|[Minimum Domino Rotations For Equal Row](https://leetcode.com/problems/minimum-domino-rotations-for-equal-row)|array greedy|[solution](src/_1007_minimum_domino_rotations_for_equal_row.rs)|
 |1008|[Construct Binary Search Tree from Preorder Traversal](https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal)|tree|[solution](src/_1008_construct_binary_search_tree_from_preorder_traversal.rs)|
 |1011|[Capacity To Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days)|array binary-search|[solution](src/_1011_capacity_to_ship_packages_within_d_days.rs)|
+|1014|[Best Sightseeing Pair](https://leetcode.com/problems/best-sightseeing-pair)|array|[solution](src/_1014_best_sightseeing_pair.rs)|
 |1026|[Maximum Difference Between Node and Ancestor](https://leetcode.com/problems/maximum-difference-between-node-and-ancestor)|tree depth-first-search|[solution](src/_1026_maximum_difference_between_node_and_ancestor.rs)|
 |1027|[Longest Arithmetic Sequence](https://leetcode.com/problems/longest-arithmetic-sequence)|dynamic-programming|[solution](src/_1027_longest_arithmetic_sequence.rs)|
 |102|[Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal)|tree breadth-first-search|[solution](src/_102_binary_tree_level_order_traversal.rs)|
 |1031|[Maximum Sum of Two Non-Overlapping Subarrays](https://leetcode.com/problems/maximum-sum-of-two-non-overlapping-subarrays)|array|[solution](src/_1031_maximum_sum_of_two_non_overlapping_subarrays.rs)|
+|1035|[Uncrossed Lines](https://leetcode.com/problems/uncrossed-lines)|array|[solution](src/_1035_uncrossed_lines.rs)|
 |1038|[Binary Search Tree to Greater Sum Tree](https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree)|binary-search-tree|[solution](src/_1038_binary_search_tree_to_greater_sum_tree.rs)|
 |103|[Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal)|stack tree breadth-first-search|[solution](src/_103_binary_tree_zigzag_level_order_traversal.rs)|
 |1040|[Moving Stones Until Consecutive II](https://leetcode.com/problems/moving-stones-until-consecutive-ii)|array sliding-window|[solution](src/_1040_moving_stones_until_consecutive_2.rs)|

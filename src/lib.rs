@@ -1015,6 +1015,8 @@ mod _1018_binary_prefix_divisible_by_5;
 //
 mod _1013_partition_array_into_three_parts_with_equal_sum;
 //
+mod _1014_best_sightseeing_pair;
+//
 mod _1021_remove_outermost_parentheses;
 //
 mod _1022_sum_root_to_leaf_binary_number;
@@ -1032,6 +1034,8 @@ mod _1030_matrix_cells_in_distance_order;
 mod _1031_maximum_sum_of_two_non_overlapping_subarrays;
 //
 mod _1033_moving_stones_until_consecutive;
+//
+mod _1035_uncrossed_lines;
 //
 mod _1037_valid_boomerang;
 //
