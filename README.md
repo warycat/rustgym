@@ -1,5 +1,45 @@
 # Leetcode Solutions in Rust
 
+
+This project demostrates how to create **Data Structures** and to implement **Algorithms** using programming language **Rust**
+All the solutions here are crafted with love and their performance beats 99% of other solutions on the leetcode website. Tutorial videos will be added later.
+##Please subscribe to our [Youtube Channel](https://www.youtube.com/channel/UCV9HzRLPKjI8SttaIYOygsw) for future videos.
+
+## Data Structures
+- Stack & Queue ( Vec, VecDeque )
+- Linked List ( Option<Box<ListNode>> )
+- Hash Tables ( HashMap, HashSet )
+- Tree Tables ( BTreeMap, BTreeSet )
+- Binary Search Tree ( Option<Rc<RefCell<TreeNode>>> )
+- Binary Heaps & Priority Queue ( BinaryHeap )
+- Graphs ( Vec<Vec<usize>> )
+- Union Find ( UnionFind )
+- Trie ( Trie )
+
+## Algorithms
+- Bit Manipulation & Numbers
+- Stability in Sorting
+- Heapsort
+- Binary Search
+- Kth Smallest Elements
+- Permutations
+- Subsets
+- BFS Graph
+- DFS Graph
+- Dijkstra’s Algorithm
+- Tree Traversals
+    - BFS
+    - DFS
+        - in-order
+        - pre-order
+        - post-order
+- Topological Sort
+- Detect cycle in an undirected graph
+- Detect a cycle in a directed graph
+- Count connected components in a graph
+- Find strongly connected components in a graph
+
+
 # leetcode_rs [![Build Status](https://travis-ci.org/warycat/leetcode_rs.svg?branch=master)](https://travis-ci.org/warycat/leetcode_rs)
 
 <details><summary>Easy 324/339 95.58%</summary>
@@ -346,17 +386,15 @@
 |997|[Find the Town Judge](https://leetcode.com/problems/find-the-town-judge)|graph|[solution](src/_997_find_the_town_judge.rs)|
 |999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook)|array|[solution](src/_999_available_captures_for_rook.rs)|
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|math|[solution](src/_9_palindrome_number.rs)|
-</details><details><summary>Medium 317/653 48.55%</summary>
+</details><details><summary>Medium 319/653 48.85%</summary>
 
 
-|id|653 Medium Questions|Tags|317 Solutions|
+|id|653 Medium Questions|Tags|319 Solutions|
 |---|---|---|---|
 |427|[Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree)||   |
 |558|[Logical OR of Two Binary Grids Represented as Quad-Trees](https://leetcode.com/problems/logical-or-of-two-binary-grids-represented-as-quad-trees)||   |
 |1265|[Print Immutable Linked List in Reverse](https://leetcode.com/problems/print-immutable-linked-list-in-reverse)||   |
 |277|[Find the Celebrity](https://leetcode.com/problems/find-the-celebrity)|array|   |
-|926|[Flip String to Monotone Increasing](https://leetcode.com/problems/flip-string-to-monotone-increasing)|array|   |
-|962|[Maximum Width Ramp](https://leetcode.com/problems/maximum-width-ramp)|array|   |
 |1014|[Best Sightseeing Pair](https://leetcode.com/problems/best-sightseeing-pair)|array|   |
 |1035|[Uncrossed Lines](https://leetcode.com/problems/uncrossed-lines)|array|   |
 |1144|[Decrease Elements To Make Array Zigzag](https://leetcode.com/problems/decrease-elements-to-make-array-zigzag)|array|   |
@@ -979,6 +1017,7 @@
 |918|[Maximum Sum Circular Subarray](https://leetcode.com/problems/maximum-sum-circular-subarray)|array|[solution](src/_918_maximum_sum_circular_subarray.rs)|
 |91|[Decode Ways](https://leetcode.com/problems/decode-ways)|string dynamic-programming|[solution](src/_91_decode_ways.rs)|
 |921|[Minimum Add to Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid)|stack greedy|[solution](src/_921_minimum_add_to_make_parentheses_valid.rs)|
+|926|[Flip String to Monotone Increasing](https://leetcode.com/problems/flip-string-to-monotone-increasing)|array|[solution](src/_926_flip_string_to_monotone_increasing.rs)|
 |92|[Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii)|linked-list|[solution](src/_92_reverse_linked_list_2.rs)|
 |931|[Minimum Falling Path Sum](https://leetcode.com/problems/minimum-falling-path-sum)|dynamic-programming|[solution](src/_931_minimum_falling_path_sum.rs)|
 |935|[Knight Dialer](https://leetcode.com/problems/knight-dialer)|dynamic-programming|[solution](src/_935_knight_dialer.rs)|
@@ -991,6 +1030,7 @@
 |957|[Prison Cells After N Days](https://leetcode.com/problems/prison-cells-after-n-days)|hash-table|[solution](src/_957_prison_cells_after_n_days.rs)|
 |959|[Regions Cut By Slashes](https://leetcode.com/problems/regions-cut-by-slashes)|depth-first-search union-find graph|[solution](src/_959_regions_cut_by_slashes.rs)|
 |95|[Unique Binary Search Trees II](https://leetcode.com/problems/unique-binary-search-trees-ii)|dynamic-programming tree|[solution](src/_95_unique_binary_search_trees_2.rs)|
+|962|[Maximum Width Ramp](https://leetcode.com/problems/maximum-width-ramp)|array|[solution](src/_962_maximum_with_ramp.rs)|
 |963|[Minimum Area Rectangle II](https://leetcode.com/problems/minimum-area-rectangle-ii)|math geometry|[solution](src/_963_minimum_area_rectangle_2.rs)|
 |969|[Pancake Sorting](https://leetcode.com/problems/pancake-sorting)|array sort|[solution](src/_969_pancake_sorting.rs)|
 |96|[Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees)|dynamic-programming tree|[solution](src/_96_unique_binary_search_trees.rs)|
@@ -1282,3 +1322,7 @@
 |803|[Bricks Falling When Hit](https://leetcode.com/problems/bricks-falling-when-hit)|union-find|   |
 |1168|[Optimize Water Distribution in a Village](https://leetcode.com/problems/optimize-water-distribution-in-a-village)|union-find graph|   |
 </details>
+#Coding Interview
+Leetcode is a website where people–mostly software engineers–practice their coding skills. There are 1200+ questions (and growing), each with multiple solutions. Questions are ranked by level of difficulty: easy, medium, and hard. Within the last decade or so, the technical interview process has become formulaic and what some describe “unnatural” for engineers. What people are asked to perform in an interview–solving word or code based teasers, coding on a whiteboard, and being asked to produce clean optimized solutions in a short time frame–is not what they would experience in a daily work environment.
+
+

@@ -915,6 +915,8 @@ mod _922_sort_array_by_parity_2;
 //
 mod _925_long_pressed_name;
 //
+mod _926_flip_string_to_monotone_increasing;
+//
 mod _929_unique_email_addresses;
 //
 mod _931_minimum_falling_path_sum;
@@ -950,6 +952,8 @@ mod _957_prison_cells_after_n_days;
 mod _959_regions_cut_by_slashes;
 //
 mod _961_n_repeated_element_in_size_2n_array;
+//
+mod _962_maximum_with_ramp;
 //
 mod _963_minimum_area_rectangle_2;
 //
