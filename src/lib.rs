@@ -1125,6 +1125,8 @@ mod _1134_armstrong_number;
 //
 mod _1137_n_th_tribonacci_number;
 //
+mod _1144_decrease_elements_to_make_array_zigzag;
+//
 mod _1150_check_if_a_number_is_majority_element_in_a_sorted_array;
 //
 mod _1151_minimum_swaps_to_group_all_1s_together;

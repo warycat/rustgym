@@ -6,7 +6,8 @@ All the solutions here are crafted with love and their performance beats 99% of 
 
 ### Please subscribe to our [Rust Gym Youtube Channel](https://www.youtube.com/channel/UCV9HzRLPKjI8SttaIYOygsw) for future videos.
 
-## Data Structures
+<details><summary>Data Structures</summary>
+
 - Stack & Queue ( Vec, VecDeque )
 - Linked List ( Option<Box<ListNode>> )
 - Hash Tables ( HashMap, HashSet )
@@ -16,8 +17,10 @@ All the solutions here are crafted with love and their performance beats 99% of 
 - Graphs ( Vec<Vec<usize>> )
 - Union Find ( UnionFind )
 - Trie ( Trie )
+</details>
 
-## Algorithms
+<details><summary>Algorithms</summary>
+
 - Bit Manipulation & Numbers
 - Stability in Sorting
 - Heapsort
@@ -39,6 +42,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 - Detect a cycle in a directed graph
 - Count connected components in a graph
 - Find strongly connected components in a graph
+</details>
 
 
 ### leetcode_rs [![Build Status](https://travis-ci.org/warycat/leetcode_rs.svg?branch=master)](https://travis-ci.org/warycat/leetcode_rs)
@@ -389,16 +393,15 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook)|array|[solution](src/_999_available_captures_for_rook.rs)|
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|math|[solution](src/_9_palindrome_number.rs)|
 </details>
-<details><summary>Medium 321/653 49.16%</summary>
+<details><summary>Medium 322/653 49.31%</summary>
 
 
-|id|653 Medium Questions|Tags|321 Solutions|
+|id|653 Medium Questions|Tags|322 Solutions|
 |---|---|---|---|
 |427|[Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree)||   |
 |558|[Logical OR of Two Binary Grids Represented as Quad-Trees](https://leetcode.com/problems/logical-or-of-two-binary-grids-represented-as-quad-trees)||   |
 |1265|[Print Immutable Linked List in Reverse](https://leetcode.com/problems/print-immutable-linked-list-in-reverse)||   |
 |277|[Find the Celebrity](https://leetcode.com/problems/find-the-celebrity)|array|   |
-|1144|[Decrease Elements To Make Array Zigzag](https://leetcode.com/problems/decrease-elements-to-make-array-zigzag)|array|   |
 |1146|[Snapshot Array](https://leetcode.com/problems/snapshot-array)|array|   |
 |1375|[Bulb Switcher III](https://leetcode.com/problems/bulb-switcher-iii)|array|   |
 |40|[Combination Sum II](https://leetcode.com/problems/combination-sum-ii)|array backtracking|   |
@@ -760,6 +763,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1120|[Maximum Average Subtree](https://leetcode.com/problems/maximum-average-subtree)|tree|[solution](src/_1120_maximum_average_subtree.rs)|
 |1123|[Lowest Common Ancestor of Deepest Leaves](https://leetcode.com/problems/lowest-common-ancestor-of-deepest-leaves)|tree depth-first-search|[solution](src/_1123_lowest_common_ancestor_or_deepest_leaves.rs)|
 |1130|[Minimum Cost Tree From Leaf Values](https://leetcode.com/problems/minimum-cost-tree-from-leaf-values)|dynamic-programming stack tree|[solution](src/_1130_minimum_cost_tree_from_leaf_values.rs)|
+|1144|[Decrease Elements To Make Array Zigzag](https://leetcode.com/problems/decrease-elements-to-make-array-zigzag)|array|[solution](src/_1144_decrease_elements_to_make_array_zigzag.rs)|
 |114|[Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list)|tree depth-first-search|[solution](src/_114_flatten_binary_tree_to_linked_list.rs)|
 |1151|[Minimum Swaps to Group All 1's Together](https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together)|array sliding-window|[solution](src/_1151_minimum_swaps_to_group_all_1s_together.rs)|
 |1161|[Maximum Level Sum of a Binary Tree](https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree)|graph|[solution](src/_1161_maximum_level_sum_of_a_binary_tree.rs)|
