@@ -388,7 +388,8 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |997|[Find the Town Judge](https://leetcode.com/problems/find-the-town-judge)|graph|[solution](src/_997_find_the_town_judge.rs)|
 |999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook)|array|[solution](src/_999_available_captures_for_rook.rs)|
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|math|[solution](src/_9_palindrome_number.rs)|
-</details><details><summary>Medium 319/653 48.85%</summary>
+</details>
+<details><summary>Medium 319/653 48.85%</summary>
 
 
 |id|653 Medium Questions|Tags|319 Solutions|
@@ -1046,7 +1047,8 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |98|[Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree)|tree depth-first-search|[solution](src/_98_validate_binary_search_tree.rs)|
 |991|[Broken Calculator](https://leetcode.com/problems/broken-calculator)|math greedy|[solution](src/_991_broken_calculator.rs)|
 |998|[Maximum Binary Tree II](https://leetcode.com/problems/maximum-binary-tree-ii)|tree|[solution](src/_998_maximum_binary_tree_2.rs)|
-</details><details><summary>Hard 0/272 0.00%</summary>
+</details>
+<details><summary>Hard 0/272 0.00%</summary>
 
 
 |id|272 Hard Questions|Tags|0 Solutions|
@@ -1324,6 +1326,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |803|[Bricks Falling When Hit](https://leetcode.com/problems/bricks-falling-when-hit)|union-find|   |
 |1168|[Optimize Water Distribution in a Village](https://leetcode.com/problems/optimize-water-distribution-in-a-village)|union-find graph|   |
 </details>
+
 ### Coding Interview
 Leetcode is a website where people–mostly software engineers–practice their coding skills. There are 1200+ questions (and growing), each with multiple solutions. Questions are ranked by level of difficulty: easy, medium, and hard. Within the last decade or so, the technical interview process has become formulaic and what some describe “unnatural” for engineers. What people are asked to perform in an interview–solving word or code based teasers, coding on a whiteboard, and being asked to produce clean optimized solutions in a short time frame–is not what they would experience in a daily work environment.
 

@@ -288,7 +288,7 @@ impl Readme {
             for row in rows {
                 s += &format!("|{}|{}|{}|{}|\n", row.0, row.1, row.2, row.3);
             }
-            s += "</details>";
+            s += "</details>\n";
         }
         s
     }
