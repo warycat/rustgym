@@ -12,10 +12,11 @@ impl Solution {
 
 #[test]
 fn test() {
+    use assert_approx_eq::assert_approx_eq;
     let n = 1;
     let res = 1.0;
-    assert_eq!(Solution::nth_person_gets_nth_seat(n), res);
+    assert_approx_eq!(Solution::nth_person_gets_nth_seat(n), res);
     let n = 2;
     let res = 0.5;
-    assert_eq!(Solution::nth_person_gets_nth_seat(n), res);
+    assert_approx_eq!(Solution::nth_person_gets_nth_seat(n), res);
 }

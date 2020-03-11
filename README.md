@@ -393,16 +393,15 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook)|array|[solution](src/_999_available_captures_for_rook.rs)|
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|math|[solution](src/_9_palindrome_number.rs)|
 </details>
-<details><summary>Medium 327/653 50.08%</summary>
+<details><summary>Medium 328/653 50.23%</summary>
 
 
-|id|653 Medium Questions|Tags|327 Solutions|
+|id|653 Medium Questions|Tags|328 Solutions|
 |---|---|---|---|
 |427|[Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree)||   |
 |558|[Logical OR of Two Binary Grids Represented as Quad-Trees](https://leetcode.com/problems/logical-or-of-two-binary-grids-represented-as-quad-trees)||   |
 |1265|[Print Immutable Linked List in Reverse](https://leetcode.com/problems/print-immutable-linked-list-in-reverse)||   |
 |277|[Find the Celebrity](https://leetcode.com/problems/find-the-celebrity)|array|   |
-|81|[Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii)|array binary-search|   |
 |1292|[Maximum Side Length of a Square with Sum Less than or Equal to Threshold](https://leetcode.com/problems/maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold)|array binary-search|   |
 |1300|[Sum of Mutated Array Closest to Target](https://leetcode.com/problems/sum-of-mutated-array-closest-to-target)|array binary-search|   |
 |533|[Lonely Pixel II](https://leetcode.com/problems/lonely-pixel-ii)|array depth-first-search|   |
@@ -999,6 +998,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |79|[Word Search](https://leetcode.com/problems/word-search)|array backtracking|[solution](src/_79_word_search.rs)|
 |807|[Max Increase to Keep City Skyline](https://leetcode.com/problems/max-increase-to-keep-city-skyline)||[solution](src/_807_max_increase_to_keep_city_skyline.rs)|
 |814|[Binary Tree Pruning](https://leetcode.com/problems/binary-tree-pruning)|tree|[solution](src/_814_binary_tree_pruning.rs)|
+|81|[Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii)|array binary-search|[solution](src/_81_search_in_rotated_sorted_array_2.rs)|
 |820|[Short Encoding of Words](https://leetcode.com/problems/short-encoding-of-words)||[solution](src/_820_short_encoding_of_words.rs)|
 |822|[Card Flipping Game](https://leetcode.com/problems/card-flipping-game)||[solution](src/_822_card_flipping_game.rs)|
 |823|[Binary Trees With Factors](https://leetcode.com/problems/binary-trees-with-factors)||[solution](src/_823_binary_trees_with_factors.rs)|

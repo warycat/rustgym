@@ -20,7 +20,8 @@ impl Solution {
 
 #[test]
 fn test() {
+    use assert_approx_eq::assert_approx_eq;
     let nums = vec![1, 12, -5, -6, 50, 3];
     let k = 4;
-    assert_eq!(Solution::find_max_average(nums, k), 12.75);
+    assert_approx_eq!(Solution::find_max_average(nums, k), 12.75);
 }

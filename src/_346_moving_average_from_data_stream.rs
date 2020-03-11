@@ -29,9 +29,10 @@ impl MovingAverage {
 
 #[test]
 fn test() {
+    use assert_approx_eq::assert_approx_eq;
     let mut m = MovingAverage::new(3);
-    assert_eq!(m.next(1), 1f64);
-    assert_eq!(m.next(10), 5.5f64);
-    assert_eq!(m.next(3), 14f64 / 3f64);
-    assert_eq!(m.next(5), 6f64);
+    assert_approx_eq!(m.next(1), 1f64);
+    assert_approx_eq!(m.next(10), 5.5f64);
+    assert_approx_eq!(m.next(3), 14f64 / 3f64);
+    assert_approx_eq!(m.next(5), 6f64);
 }

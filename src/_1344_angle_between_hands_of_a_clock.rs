@@ -15,28 +15,29 @@ impl Solution {
 
 #[test]
 fn test() {
+    use assert_approx_eq::assert_approx_eq;
     let hour = 12;
     let minutes = 30;
     let res = 165.0;
-    assert_eq!(Solution::angle_clock(hour, minutes), res);
+    assert_approx_eq!(Solution::angle_clock(hour, minutes), res);
     let hour = 3;
     let minutes = 30;
     let res = 75.0;
-    assert_eq!(Solution::angle_clock(hour, minutes), res);
+    assert_approx_eq!(Solution::angle_clock(hour, minutes), res);
     let hour = 3;
     let minutes = 15;
     let res = 7.5;
-    assert_eq!(Solution::angle_clock(hour, minutes), res);
+    assert_approx_eq!(Solution::angle_clock(hour, minutes), res);
     let hour = 4;
     let minutes = 50;
     let res = 155.0;
-    assert_eq!(Solution::angle_clock(hour, minutes), res);
+    assert_approx_eq!(Solution::angle_clock(hour, minutes), res);
     let hour = 12;
     let minutes = 0;
     let res = 0.0;
-    assert_eq!(Solution::angle_clock(hour, minutes), res);
+    assert_approx_eq!(Solution::angle_clock(hour, minutes), res);
     let hour = 1;
     let minutes = 57;
     let res = 76.5;
-    assert_eq!(Solution::angle_clock(hour, minutes), res);
+    assert_approx_eq!(Solution::angle_clock(hour, minutes), res);
 }

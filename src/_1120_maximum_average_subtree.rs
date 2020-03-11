@@ -30,7 +30,8 @@ impl Solution {
 
 #[test]
 fn test() {
+    use assert_approx_eq::assert_approx_eq;
     let root = tree!(5, tree!(6), tree!(1));
     let res = 6.0;
-    assert_eq!(Solution::maximum_average_subtree(root), res);
+    assert_approx_eq!(Solution::maximum_average_subtree(root), res);
 }

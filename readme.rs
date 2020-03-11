@@ -94,8 +94,8 @@ impl RustSolutionList {
         let mut solutions: Vec<RustSolution> = vec![];
         for entry in fs::read_dir(src_dir).unwrap() {
             let filename = entry.unwrap().file_name().to_str().unwrap().to_string();
-            if let Some(0) = filename.find("_") {
-                let s: Vec<String> = filename.split("_").map(|s| s.to_string()).collect();
+            if let Some(0) = filename.find('_') {
+                let s: Vec<String> = filename.split('_').map(|s| s.to_string()).collect();
                 let id = s[1].clone().parse::<i64>().unwrap();
                 let problem = RustSolution::new(id, filename);
                 solutions.push(problem);
@@ -118,12 +118,12 @@ impl LeetcodeData {
 
     fn get_list_text(&self) -> Result<String, Box<dyn std::error::Error>> {
         let resp = reqwest::blocking::get(self.list_url)?.text()?;
-        Ok(format!("{}", resp))
+        Ok(resp)
     }
 
     fn get_tag_text(&self) -> Result<String, Box<dyn std::error::Error>> {
         let resp = reqwest::blocking::get(self.tag_url)?.text()?;
-        Ok(format!("{}", resp))
+        Ok(resp)
     }
 
     fn get_questions(&self) -> Result<Vec<LeetcodeQuestion>, Box<dyn std::error::Error>> {
@@ -232,21 +232,16 @@ impl Readme {
     fn table(&self) -> String {
         let solutions = &self.solution_list.solutions;
         let questions = &self.question_list.questions;
-        let m = solutions.len();
-        let n = questions.len();
         let mut btm: BTreeMap<i64, (String, i64, i64)> = BTreeMap::new();
         let mut hm: HashMap<i64, String> = HashMap::new();
-        for i in 0..n {
-            let id = questions[i].id;
-            let frontend_id = questions[i].frontend_id;
-            btm.insert(
-                id,
-                (questions[i].to_string(), questions[i].level, frontend_id),
-            );
+        for question in questions {
+            let id = question.id;
+            let frontend_id = question.frontend_id;
+            btm.insert(id, (question.to_string(), question.level, frontend_id));
         }
-        for j in 0..m {
-            let id = solutions[j].id;
-            hm.insert(id, solutions[j].to_string());
+        for solution in solutions {
+            let id = solution.id;
+            hm.insert(id, solution.to_string());
         }
         let mut s = "# All Solutions\n".to_string();
         for level in 1..=3 {

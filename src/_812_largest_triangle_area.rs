@@ -22,6 +22,7 @@ impl Solution {
 
 #[test]
 fn test() {
+    use assert_approx_eq::assert_approx_eq;
     let points: Vec<Vec<i32>> = vec_vec_i32![[0, 0], [0, 1], [1, 0], [0, 2], [2, 0]];
-    assert_eq!(Solution::largest_triangle_area(points), 2f64);
+    assert_approx_eq!(Solution::largest_triangle_area(points), 2f64);
 }

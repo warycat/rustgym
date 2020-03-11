@@ -3,7 +3,6 @@
 #![allow(clippy::many_single_char_names)]
 #![allow(clippy::collapsible_if)]
 #![allow(clippy::needless_range_loop)]
-#![allow(clippy::float_cmp)]
 #![allow(clippy::cast_lossless)]
 #![allow(clippy::unreadable_literal)]
 #![allow(clippy::ptr_arg)]

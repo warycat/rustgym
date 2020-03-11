@@ -83,16 +83,17 @@ impl Solution {
 
 #[test]
 fn test() {
+    use assert_approx_eq::assert_approx_eq;
     let n = 3;
     let k = 2;
     let r = 0;
     let c = 0;
     let res = 0.0625;
-    assert_eq!(Solution::knight_probability(n, k, r, c), res);
+    assert_approx_eq!(Solution::knight_probability(n, k, r, c), res);
     let n = 3;
     let k = 1;
     let r = 1;
     let c = 1;
     let res = 0.0;
-    assert_eq!(Solution::knight_probability(n, k, r, c), res);
+    assert_approx_eq!(Solution::knight_probability(n, k, r, c), res);
 }
