@@ -43,6 +43,8 @@ fn test() {
     let k = 3;
     let n = 9;
     let mut res = vec_vec_i32![[1, 2, 6], [1, 3, 5], [2, 3, 4]];
+    let mut ans = Solution::combination_sum3(k, n);
     res.sort_unstable();
-    assert_eq!(Solution::combination_sum3(k, n), res);
+    ans.sort_unstable();
+    assert_eq!(ans, res);
 }
