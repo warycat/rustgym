@@ -79,6 +79,8 @@ mod _38_count_and_say;
 //
 mod _39_combination_sum;
 //
+mod _40_combination_sum_2;
+//
 mod _43_multiply_strings;
 //
 mod _46_permutations;
@@ -124,6 +126,8 @@ mod _79_word_search;
 mod _83_remove_duplicates_from_sorted_list;
 //
 mod _88_merge_sorted_array;
+//
+mod _90_subsets_2;
 //
 mod _91_decode_ways;
 //
@@ -254,6 +258,8 @@ mod _210_course_schedule_2;
 mod _211_add_and_search_word_data_structure_design;
 //
 mod _215_kth_largest_element_in_an_array;
+//
+mod _216_combination_sum_3;
 //
 mod _217_contains_duplicate;
 //
@@ -1127,6 +1133,8 @@ mod _1137_n_th_tribonacci_number;
 //
 mod _1144_decrease_elements_to_make_array_zigzag;
 //
+mod _1146_snapshot_array;
+//
 mod _1150_check_if_a_number_is_majority_element_in_a_sorted_array;
 //
 mod _1151_minimum_swaps_to_group_all_1s_together;
@@ -1306,3 +1314,5 @@ mod _1365_how_many_numbers_are_smaller_than_the_current_number;
 mod _1370_increasing_decreasing_string;
 //
 mod _1374_generate_a_string_with_characters_that_have_odd_counts;
+//
+mod _1375_bulb_switcher_3;

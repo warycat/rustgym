@@ -1,12 +1,9 @@
 use std::collections::HashMap;
 
-struct TimeValue {
-    value: String,
-    timestamp: i32,
-}
+type Pair = (i32, String);
 
 struct TimeMap {
-    map: HashMap<String, Vec<TimeValue>>,
+    map: HashMap<String, Vec<Pair>>,
 }
 
 impl TimeMap {
@@ -16,25 +13,19 @@ impl TimeMap {
         }
     }
     fn set(&mut self, key: String, value: String, timestamp: i32) {
-        self.map
-            .entry(key)
-            .or_default()
-            .push(TimeValue { value, timestamp });
+        self.map.entry(key).or_default().push((timestamp, value));
     }
-    fn get(&self, key: String, timestamp: i32) -> String {
-        if let Some(values) = self.map.get(&key) {
-            match values.binary_search_by_key(&timestamp, |v| v.timestamp) {
-                Ok(i) => values[i].value.to_string(),
-                Err(i) => {
-                    if i > 0 {
-                        values[i - 1].value.to_string()
-                    } else {
-                        "".to_string()
-                    }
+    fn get(&mut self, key: String, timestamp: i32) -> String {
+        let values = self.map.entry(key).or_default();
+        match values.binary_search_by_key(&timestamp, |v| v.0) {
+            Ok(i) => values[i].1.to_string(),
+            Err(i) => {
+                if i > 0 {
+                    values[i - 1].1.to_string()
+                } else {
+                    "".to_string()
                 }
             }
-        } else {
-            "".to_string()
         }
     }
 }

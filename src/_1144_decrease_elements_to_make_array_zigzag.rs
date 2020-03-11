@@ -26,10 +26,10 @@ fn test() {
     let nums = vec![1, 2, 3];
     let res = 2;
     assert_eq!(Solution::moves_to_make_zigzag(nums), res);
-    let nums = vec![9,6,1,6,2];
+    let nums = vec![9, 6, 1, 6, 2];
     let res = 4;
     assert_eq!(Solution::moves_to_make_zigzag(nums), res);
-    let nums = vec![10,4,4,10,10,6,2,3];
+    let nums = vec![10, 4, 4, 10, 10, 6, 2, 3];
     let res = 13;
     assert_eq!(Solution::moves_to_make_zigzag(nums), res);
 }
