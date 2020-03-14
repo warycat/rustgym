@@ -122,6 +122,8 @@ mod _78_subsets;
 //
 mod _79_word_search;
 //
+mod _81_search_in_rotated_sorted_array_2;
+//
 mod _83_remove_duplicates_from_sorted_list;
 //
 mod _88_merge_sorted_array;
@@ -553,6 +555,8 @@ mod _530_minimum_absolute_difference_in_bst;
 mod _531_lonely_pixel_1;
 //
 mod _532_k_diff_pairs_in_an_array;
+//
+mod _533_lonely_pixel_2;
 //
 mod _537_complex_number_multiplication;
 //
@@ -1252,9 +1256,13 @@ mod _1288_remove_covered_intervals;
 //
 mod _1290_convert_binary_number_in_a_linked_list_to_integer;
 //
+mod _1292_maximum_side_length_of_a_square_with_sum_less_than_or_equal_to_threshold;
+//
 mod _1295_find_numbers_with_even_number_of_digits;
 //
 mod _1299_replace_elements_with_greatest_element_on_right_side;
+//
+mod _1300_sum_of_mutated_array_closest_to_target;
 //
 mod _1302_deepest_leaves_sum;
 //
@@ -1303,6 +1311,8 @@ mod _1346_check_if_n_and_its_double_exist;
 mod _1347_minimum_number_of_steps_to_make_two_strings_anagram;
 //
 mod _1351_count_negative_numbers_in_a_sorted_matrix;
+//
+mod _1352_product_of_the_last_k_numbers;
 //
 mod _1356_sort_integers_by_the_number_of_1_bits;
 //

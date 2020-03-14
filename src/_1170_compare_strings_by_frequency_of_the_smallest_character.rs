@@ -1,33 +1,26 @@
 struct Solution;
 
-use std::collections::BTreeMap;
-
 impl Solution {
-    fn f(s: &str) -> i32 {
-        let mut a: BTreeMap<char, i32> = BTreeMap::new();
-        for c in s.chars() {
-            *a.entry(c).or_default() += 1;
+    fn f(s: &str) -> usize {
+        let mut count = vec![0; 26];
+        let mut min = b'z';
+        for b in s.bytes() {
+            min = min.min(b);
+            count[(b - b'a') as usize] += 1;
         }
-        *a.values().next().unwrap()
+        count[(min - b'a') as usize]
     }
     fn num_smaller_by_frequency(queries: Vec<String>, words: Vec<String>) -> Vec<i32> {
-        let mut res: Vec<i32> = vec![];
-        let queries: Vec<i32> = queries.iter().map(|s| Self::f(s)).collect();
-        let mut words: Vec<i32> = words.iter().map(|s| Self::f(s)).collect();
-        let n = words.len();
-        words.sort_unstable();
-        for q in queries {
-            match words.binary_search(&q) {
-                Ok(mut i) => {
-                    while i + 1 < n && words[i + 1] == q {
-                        i += 1;
-                    }
-                    res.push(n as i32 - (i + 1) as i32)
-                }
-                Err(i) => res.push(n as i32 - i as i32),
-            }
+        let f_queries: Vec<usize> = queries.iter().map(|s| Self::f(s)).collect();
+        let f_words: Vec<usize> = words.iter().map(|s| Self::f(s)).collect();
+        let mut counts = vec![0; 12];
+        for f in f_words {
+            counts[f] += 1;
         }
-        res
+        for i in (1..10).rev() {
+            counts[i] += counts[i + 1];
+        }
+        f_queries.into_iter().map(|f| counts[f + 1]).collect()
     }
 }
 

@@ -393,19 +393,15 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook)|array|[solution](src/_999_available_captures_for_rook.rs)|
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|math|[solution](src/_9_palindrome_number.rs)|
 </details>
-<details><summary>Medium 328/653 50.23%</summary>
+<details><summary>Medium 332/654 50.76%</summary>
 
 
-|id|653 Medium Questions|Tags|328 Solutions|
+|id|654 Medium Questions|Tags|332 Solutions|
 |---|---|---|---|
 |427|[Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree)||   |
 |558|[Logical OR of Two Binary Grids Represented as Quad-Trees](https://leetcode.com/problems/logical-or-of-two-binary-grids-represented-as-quad-trees)||   |
 |1265|[Print Immutable Linked List in Reverse](https://leetcode.com/problems/print-immutable-linked-list-in-reverse)||   |
 |277|[Find the Celebrity](https://leetcode.com/problems/find-the-celebrity)|array|   |
-|1292|[Maximum Side Length of a Square with Sum Less than or Equal to Threshold](https://leetcode.com/problems/maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold)|array binary-search|   |
-|1300|[Sum of Mutated Array Closest to Target](https://leetcode.com/problems/sum-of-mutated-array-closest-to-target)|array binary-search|   |
-|533|[Lonely Pixel II](https://leetcode.com/problems/lonely-pixel-ii)|array depth-first-search|   |
-|1352|[Product of the Last K Numbers](https://leetcode.com/problems/product-of-the-last-k-numbers)|array design|   |
 |63|[Unique Paths II](https://leetcode.com/problems/unique-paths-ii)|array dynamic-programming|   |
 |120|[Triangle](https://leetcode.com/problems/triangle)|array dynamic-programming|   |
 |873|[Length of Longest Fibonacci Subsequence](https://leetcode.com/problems/length-of-longest-fibonacci-subsequence)|array dynamic-programming|   |
@@ -695,6 +691,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |919|[Complete Binary Tree Inserter](https://leetcode.com/problems/complete-binary-tree-inserter)|tree|   |
 |958|[Check Completeness of a Binary Tree](https://leetcode.com/problems/check-completeness-of-a-binary-tree)|tree|   |
 |1257|[Smallest Common Region](https://leetcode.com/problems/smallest-common-region)|tree|   |
+|1379|[Find a Corresponding Node of a Binary Tree in a Clone of That Tree](https://leetcode.com/problems/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree)|tree|   |
 |429|[N-ary Tree Level Order Traversal](https://leetcode.com/problems/n-ary-tree-level-order-traversal)|tree breadth-first-search|   |
 |113|[Path Sum II](https://leetcode.com/problems/path-sum-ii)|tree depth-first-search|   |
 |116|[Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node)|tree depth-first-search|   |
@@ -792,7 +789,9 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1282|[Group the People Given the Group Size They Belong To](https://leetcode.com/problems/group-the-people-given-the-group-size-they-belong-to)|greedy|[solution](src/_1282_group_the_people_given_the_group_size_they_belong_to.rs)|
 |1286|[Iterator for Combination](https://leetcode.com/problems/iterator-for-combination)|backtracking design|[solution](src/_1286_iterator_for_combination.rs)|
 |1288|[Remove Covered Intervals](https://leetcode.com/problems/remove-covered-intervals)|line-sweep|[solution](src/_1288_remove_covered_intervals.rs)|
+|1292|[Maximum Side Length of a Square with Sum Less than or Equal to Threshold](https://leetcode.com/problems/maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold)|array binary-search|[solution](src/_1292_maximum_side_length_of_a_square_with_sum_less_than_or_equal_to_threshold.rs)|
 |12|[Integer to Roman](https://leetcode.com/problems/integer-to-roman)|math string|[solution](src/_12_integer_to_roman.rs)|
+|1300|[Sum of Mutated Array Closest to Target](https://leetcode.com/problems/sum-of-mutated-array-closest-to-target)|array binary-search|[solution](src/_1300_sum_of_mutated_array_closest_to_target.rs)|
 |1302|[Deepest Leaves Sum](https://leetcode.com/problems/deepest-leaves-sum)|tree depth-first-search|[solution](src/_1302_deepest_leaves_sum.rs)|
 |1305|[All Elements in Two Binary Search Trees](https://leetcode.com/problems/all-elements-in-two-binary-search-trees)|sort tree|[solution](src/_1305_all_elements_in_two_binary_search_tree.rs)|
 |1306|[Jump Game III](https://leetcode.com/problems/jump-game-iii)|breadth-first-search graph|[solution](src/_1306_jump_game_3.rs)|
@@ -808,6 +807,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1344|[Angle Between Hands of a Clock](https://leetcode.com/problems/angle-between-hands-of-a-clock)|math|[solution](src/_1344_angle_between_hands_of_a_clock.rs)|
 |1347|[Minimum Number of Steps to Make Two Strings Anagram](https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram)|string|[solution](src/_1347_minimum_number_of_steps_to_make_two_strings_anagram.rs)|
 |134|[Gas Station](https://leetcode.com/problems/gas-station)|greedy|[solution](src/_134_gas_station.rs)|
+|1352|[Product of the Last K Numbers](https://leetcode.com/problems/product-of-the-last-k-numbers)|array design|[solution](src/_1352_product_of_the_last_k_numbers.rs)|
 |1375|[Bulb Switcher III](https://leetcode.com/problems/bulb-switcher-iii)|array|[solution](src/_1375_bulb_switcher_3.rs)|
 |139|[Word Break](https://leetcode.com/problems/word-break)|dynamic-programming|[solution](src/_139_word_break.rs)|
 |143|[Reorder List](https://leetcode.com/problems/reorder-list)|linked-list|[solution](src/_143_reorder_list.rs)|
@@ -924,6 +924,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |528|[Random Pick with Weight](https://leetcode.com/problems/random-pick-with-weight)|binary-search random|[solution](src/_528_random_pick_with_weight.rs)|
 |529|[Minesweeper](https://leetcode.com/problems/minesweeper)|depth-first-search breadth-first-search|[solution](src/_529_minesweeper.rs)|
 |531|[Lonely Pixel I](https://leetcode.com/problems/lonely-pixel-i)|array depth-first-search|[solution](src/_531_lonely_pixel_1.rs)|
+|533|[Lonely Pixel II](https://leetcode.com/problems/lonely-pixel-ii)|array depth-first-search|[solution](src/_533_lonely_pixel_2.rs)|
 |537|[Complex Number Multiplication](https://leetcode.com/problems/complex-number-multiplication)|math string|[solution](src/_537_complex_number_multiplication.rs)|
 |539|[Minimum Time Difference](https://leetcode.com/problems/minimum-time-difference)|string|[solution](src/_539_minimum_time_difference.rs)|
 |540|[Single Element in a Sorted Array](https://leetcode.com/problems/single-element-in-a-sorted-array)||[solution](src/_540_single_element_in_a_sorted_array.rs)|
