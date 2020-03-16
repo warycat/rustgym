@@ -394,21 +394,15 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook)|array|[solution](src/_999_available_captures_for_rook.rs)|
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|math|[solution](src/_9_palindrome_number.rs)|
 </details>
-<details><summary>Medium 335/656 51.07%</summary>
+<details><summary>Medium 341/656 51.98%</summary>
 
 
-|id|656 Medium Questions|Tags|335 Solutions|
+|id|656 Medium Questions|Tags|341 Solutions|
 |---|---|---|---|
 |427|[Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree)||   |
 |558|[Logical OR of Two Binary Grids Represented as Quad-Trees](https://leetcode.com/problems/logical-or-of-two-binary-grids-represented-as-quad-trees)||   |
 |1265|[Print Immutable Linked List in Reverse](https://leetcode.com/problems/print-immutable-linked-list-in-reverse)||   |
 |277|[Find the Celebrity](https://leetcode.com/problems/find-the-celebrity)|array|   |
-|714|[Best Time to Buy and Sell Stock with Transaction Fee](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee)|array dynamic-programming greedy|   |
-|55|[Jump Game](https://leetcode.com/problems/jump-game)|array greedy|   |
-|870|[Advantage Shuffle](https://leetcode.com/problems/advantage-shuffle)|array greedy|   |
-|1053|[Previous Permutation With One Swap](https://leetcode.com/problems/previous-permutation-with-one-swap)|array greedy|   |
-|1296|[Divide Array in Sets of K Consecutive Numbers](https://leetcode.com/problems/divide-array-in-sets-of-k-consecutive-numbers)|array greedy|   |
-|954|[Array of Doubled Pairs](https://leetcode.com/problems/array-of-doubled-pairs)|array hash-table|   |
 |718|[Maximum Length of Repeated Subarray](https://leetcode.com/problems/maximum-length-of-repeated-subarray)|array hash-table binary-search dynamic-programming|   |
 |1152|[Analyze User Website Visit Pattern](https://leetcode.com/problems/analyze-user-website-visit-pattern)|array hash-table sort|   |
 |670|[Maximum Swap](https://leetcode.com/problems/maximum-swap)|array math|   |
@@ -737,6 +731,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1043|[Partition Array for Maximum Sum](https://leetcode.com/problems/partition-array-for-maximum-sum)|graph|[solution](src/_1043_partition_array_for_maximum_sum.rs)|
 |1048|[Longest String Chain](https://leetcode.com/problems/longest-string-chain)|hash-table dynamic-programming|[solution](src/_1048_longest_string_chain.rs)|
 |1052|[Grumpy Bookstore Owner](https://leetcode.com/problems/grumpy-bookstore-owner)|array sliding-window|[solution](src/_1052_grumpy_bookstore_owner.rs)|
+|1053|[Previous Permutation With One Swap](https://leetcode.com/problems/previous-permutation-with-one-swap)|array greedy|[solution](src/_1053_previous_permutation_with_one_swap.rs)|
 |1055|[Shortest Way to Form String](https://leetcode.com/problems/shortest-way-to-form-string)|dynamic-programming greedy|[solution](src/_1055_shortest_way_to_form_string.rs)|
 |1057|[Campus Bikes](https://leetcode.com/problems/campus-bikes)|greedy sort|[solution](src/_1057_campus_bikes.rs)|
 |105|[Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal)|array tree depth-first-search|[solution](src/_105_construct_binary_tree_from_preorder_and_inorder_traversal.rs)|
@@ -791,6 +786,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1286|[Iterator for Combination](https://leetcode.com/problems/iterator-for-combination)|backtracking design|[solution](src/_1286_iterator_for_combination.rs)|
 |1288|[Remove Covered Intervals](https://leetcode.com/problems/remove-covered-intervals)|line-sweep|[solution](src/_1288_remove_covered_intervals.rs)|
 |1292|[Maximum Side Length of a Square with Sum Less than or Equal to Threshold](https://leetcode.com/problems/maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold)|array binary-search|[solution](src/_1292_maximum_side_length_of_a_square_with_sum_less_than_or_equal_to_threshold.rs)|
+|1296|[Divide Array in Sets of K Consecutive Numbers](https://leetcode.com/problems/divide-array-in-sets-of-k-consecutive-numbers)|array greedy|[solution](src/_1296_divide_array_in_sets_of_k_consecutive_numbers.rs)|
 |12|[Integer to Roman](https://leetcode.com/problems/integer-to-roman)|math string|[solution](src/_12_integer_to_roman.rs)|
 |1300|[Sum of Mutated Array Closest to Target](https://leetcode.com/problems/sum-of-mutated-array-closest-to-target)|array binary-search|[solution](src/_1300_sum_of_mutated_array_closest_to_target.rs)|
 |1302|[Deepest Leaves Sum](https://leetcode.com/problems/deepest-leaves-sum)|tree depth-first-search|[solution](src/_1302_deepest_leaves_sum.rs)|
@@ -935,6 +931,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |548|[Split Array with Equal Sum](https://leetcode.com/problems/split-array-with-equal-sum)|array|[solution](src/_548_split_array_with_equal_sum.rs)|
 |54|[Spiral Matrix](https://leetcode.com/problems/spiral-matrix)|array|[solution](src/_54_spiral_matrix.rs)|
 |556|[Next Greater Element III](https://leetcode.com/problems/next-greater-element-iii)|string|[solution](src/_556_next_greater_element_3.rs)|
+|55|[Jump Game](https://leetcode.com/problems/jump-game)|array greedy|[solution](src/_55_jump_game.rs)|
 |560|[Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k)|array hash-table|[solution](src/_560_subarray_sum_equals_k.rs)|
 |562|[Longest Line of Consecutive One in Matrix](https://leetcode.com/problems/longest-line-of-consecutive-one-in-matrix)|array|[solution](src/_562_longest_line_of_consecutive_one_in_matrix.rs)|
 |565|[Array Nesting](https://leetcode.com/problems/array-nesting)|array|[solution](src/_565_array_nesting.rs)|
@@ -968,6 +965,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |701|[Insert into a Binary Search Tree](https://leetcode.com/problems/insert-into-a-binary-search-tree)|tree|[solution](src/_701_insert_into_a_binary_search_tree.rs)|
 |707|[Design Linked List](https://leetcode.com/problems/design-linked-list)|linked-list design|[solution](src/_707_design_linked_list.rs)|
 |713|[Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k)|array two-pointers|[solution](src/_713_subarray_product_less_than_k.rs)|
+|714|[Best Time to Buy and Sell Stock with Transaction Fee](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee)|array dynamic-programming greedy|[solution](src/_714_best_time_to_buy_and_sell_stock_with_transaction_fee.rs)|
 |71|[Simplify Path](https://leetcode.com/problems/simplify-path)|string stack|[solution](src/_71_simplify_path.rs)|
 |721|[Accounts Merge](https://leetcode.com/problems/accounts-merge)|depth-first-search union-find|[solution](src/_721_accounts_merge.rs)|
 |723|[Candy Crush](https://leetcode.com/problems/candy-crush)|array two-pointers|[solution](src/_723_candy_crush.rs)|
@@ -1012,6 +1010,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |855|[Exam Room](https://leetcode.com/problems/exam-room)|ordered-map|[solution](src/_855_exam_room.rs)|
 |861|[Score After Flipping Matrix](https://leetcode.com/problems/score-after-flipping-matrix)|greedy|[solution](src/_861_score_after_flipping_matrix.rs)|
 |866|[Prime Palindrome](https://leetcode.com/problems/prime-palindrome)|math|[solution](src/_866_prime_palindrome.rs)|
+|870|[Advantage Shuffle](https://leetcode.com/problems/advantage-shuffle)|array greedy|[solution](src/_870_advantage_shuffle.rs)|
 |873|[Length of Longest Fibonacci Subsequence](https://leetcode.com/problems/length-of-longest-fibonacci-subsequence)|array dynamic-programming|[solution](src/_873_length_of_longest_fibonacci_subsequence.rs)|
 |875|[Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas)|binary-search|[solution](src/_875_koko_eating_bananas.rs)|
 |877|[Stone Game](https://leetcode.com/problems/stone-game)|math dynamic-programming minimax|[solution](src/_877_stone_game.rs)|
@@ -1038,6 +1037,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |94|[Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal)|hash-table stack tree|[solution](src/_94_binary_tree_inorder_traversal.rs)|
 |950|[Reveal Cards In Increasing Order](https://leetcode.com/problems/reveal-cards-in-increasing-order)|array|[solution](src/_950_reveal_cards_in_increasing_order.rs)|
 |951|[Flip Equivalent Binary Trees](https://leetcode.com/problems/flip-equivalent-binary-trees)|tree|[solution](src/_951_flip_equivalent_binary_trees.rs)|
+|954|[Array of Doubled Pairs](https://leetcode.com/problems/array-of-doubled-pairs)|array hash-table|[solution](src/_954_array_of_doubled_pairs.rs)|
 |957|[Prison Cells After N Days](https://leetcode.com/problems/prison-cells-after-n-days)|hash-table|[solution](src/_957_prison_cells_after_n_days.rs)|
 |959|[Regions Cut By Slashes](https://leetcode.com/problems/regions-cut-by-slashes)|depth-first-search union-find graph|[solution](src/_959_regions_cut_by_slashes.rs)|
 |95|[Unique Binary Search Trees II](https://leetcode.com/problems/unique-binary-search-trees-ii)|dynamic-programming tree|[solution](src/_95_unique_binary_search_trees_2.rs)|

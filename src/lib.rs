@@ -94,6 +94,8 @@ mod _53_maximum_subarray;
 //
 mod _54_spiral_matrix;
 //
+mod _55_jump_game;
+//
 mod _56_merge_intervals;
 //
 mod _59_spiral_matrix_2;
@@ -718,6 +720,8 @@ mod _709_to_lower_case;
 //
 mod _713_subarray_product_less_than_k;
 //
+mod _714_best_time_to_buy_and_sell_stock_with_transaction_fee;
+//
 mod _716_max_stack;
 //
 mod _717_1bit_and_2bit_characters;
@@ -872,6 +876,8 @@ mod _867_transpose_matrix;
 //
 mod _868_binary_gap;
 //
+mod _870_advantage_shuffle;
+//
 mod _872_leaf_similar_trees;
 //
 mod _873_length_of_longest_fibonacci_subsequence;
@@ -961,6 +967,8 @@ mod _950_reveal_cards_in_increasing_order;
 mod _951_flip_equivalent_binary_trees;
 //
 mod _953_verifying_an_alien_dictionary;
+//
+mod _954_array_of_doubled_pairs;
 //
 mod _957_prison_cells_after_n_days;
 //
@@ -1073,6 +1081,8 @@ mod _1048_longest_string_chain;
 mod _1051_height_checker;
 //
 mod _1052_grumpy_bookstore_owner;
+//
+mod _1053_previous_permutation_with_one_swap;
 //
 mod _1055_shortest_way_to_form_string;
 //
@@ -1265,6 +1275,8 @@ mod _1290_convert_binary_number_in_a_linked_list_to_integer;
 mod _1292_maximum_side_length_of_a_square_with_sum_less_than_or_equal_to_threshold;
 //
 mod _1295_find_numbers_with_even_number_of_digits;
+//
+mod _1296_divide_array_in_sets_of_k_consecutive_numbers;
 //
 mod _1299_replace_elements_with_greatest_element_on_right_side;
 //
