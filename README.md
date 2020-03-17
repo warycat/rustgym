@@ -394,21 +394,15 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook)|array|[solution](src/_999_available_captures_for_rook.rs)|
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|math|[solution](src/_9_palindrome_number.rs)|
 </details>
-<details><summary>Medium 341/656 51.98%</summary>
+<details><summary>Medium 347/656 52.90%</summary>
 
 
-|id|656 Medium Questions|Tags|341 Solutions|
+|id|656 Medium Questions|Tags|347 Solutions|
 |---|---|---|---|
 |427|[Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree)||   |
 |558|[Logical OR of Two Binary Grids Represented as Quad-Trees](https://leetcode.com/problems/logical-or-of-two-binary-grids-represented-as-quad-trees)||   |
 |1265|[Print Immutable Linked List in Reverse](https://leetcode.com/problems/print-immutable-linked-list-in-reverse)||   |
 |277|[Find the Celebrity](https://leetcode.com/problems/find-the-celebrity)|array|   |
-|718|[Maximum Length of Repeated Subarray](https://leetcode.com/problems/maximum-length-of-repeated-subarray)|array hash-table binary-search dynamic-programming|   |
-|1152|[Analyze User Website Visit Pattern](https://leetcode.com/problems/analyze-user-website-visit-pattern)|array hash-table sort|   |
-|670|[Maximum Swap](https://leetcode.com/problems/maximum-swap)|array math|   |
-|775|[Global and Local Inversions](https://leetcode.com/problems/global-and-local-inversions)|array math|   |
-|1109|[Corporate Flight Bookings](https://leetcode.com/problems/corporate-flight-bookings)|array math|   |
-|1333|[Filter Restaurants by Vegan-Friendly, Price and Distance](https://leetcode.com/problems/filter-restaurants-by-vegan-friendly-price-and-distance)|array sort|   |
 |1366|[Rank Teams by Votes](https://leetcode.com/problems/rank-teams-by-votes)|array sort|   |
 |907|[Sum of Subarray Minimums](https://leetcode.com/problems/sum-of-subarray-minimums)|array stack|   |
 |1169|[Invalid Transactions](https://leetcode.com/problems/invalid-transactions)|array string|   |
@@ -744,6 +738,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1100|[Find K-Length Substrings With No Repeated Characters](https://leetcode.com/problems/find-k-length-substrings-with-no-repeated-characters)|string sliding-window|[solution](src/_1100_find_k_length_substrings_with_no_repeated_characters.rs)|
 |1101|[The Earliest Moment When Everyone Become Friends](https://leetcode.com/problems/the-earliest-moment-when-everyone-become-friends)|union-find|[solution](src/_1101_the_earliest_moment_when_everyone_become_friends.rs)|
 |1104|[Path In Zigzag Labelled Binary Tree](https://leetcode.com/problems/path-in-zigzag-labelled-binary-tree)|math tree|[solution](src/_1104_path_in_zigzag_labelled_binary_tree.rs)|
+|1109|[Corporate Flight Bookings](https://leetcode.com/problems/corporate-flight-bookings)|array math|[solution](src/_1109_corp_flight_bookings.rs)|
 |1110|[Delete Nodes And Return Forest](https://leetcode.com/problems/delete-nodes-and-return-forest)|tree depth-first-search|[solution](src/_1110_delete_nodes_and_return_forest.rs)|
 |1111|[Maximum Nesting Depth of Two Valid Parentheses Strings](https://leetcode.com/problems/maximum-nesting-depth-of-two-valid-parentheses-strings)|binary-search greedy|[solution](src/_1111_maximum_nesting_depth_of_two_valid_parentheses_strings.rs)|
 |1120|[Maximum Average Subtree](https://leetcode.com/problems/maximum-average-subtree)|tree|[solution](src/_1120_maximum_average_subtree.rs)|
@@ -753,6 +748,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1146|[Snapshot Array](https://leetcode.com/problems/snapshot-array)|array|[solution](src/_1146_snapshot_array.rs)|
 |114|[Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list)|tree depth-first-search|[solution](src/_114_flatten_binary_tree_to_linked_list.rs)|
 |1151|[Minimum Swaps to Group All 1's Together](https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together)|array sliding-window|[solution](src/_1151_minimum_swaps_to_group_all_1s_together.rs)|
+|1152|[Analyze User Website Visit Pattern](https://leetcode.com/problems/analyze-user-website-visit-pattern)|array hash-table sort|[solution](src/_1152_analyze_user_website_visit_pattern.rs)|
 |1161|[Maximum Level Sum of a Binary Tree](https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree)|graph|[solution](src/_1161_maximum_level_sum_of_a_binary_tree.rs)|
 |1166|[Design File System](https://leetcode.com/problems/design-file-system)|hash-table design|[solution](src/_1166_design_file_system.rs)|
 |1167|[Minimum Cost to Connect Sticks](https://leetcode.com/problems/minimum-cost-to-connect-sticks)|greedy|[solution](src/_1167_minimum_cost_to_connect_sticks.rs)|
@@ -799,6 +795,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |131|[Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning)|backtracking|[solution](src/_131_palindrome_partitioning.rs)|
 |1325|[Delete Leaves With a Given Value](https://leetcode.com/problems/delete-leaves-with-a-given-value)|tree|[solution](src/_1325_delete_leaves_with_a_given_value.rs)|
 |1329|[Sort the Matrix Diagonally](https://leetcode.com/problems/sort-the-matrix-diagonally)|array sort|[solution](src/_1329_sort_the_matrix_diagonally.rs)|
+|1333|[Filter Restaurants by Vegan-Friendly, Price and Distance](https://leetcode.com/problems/filter-restaurants-by-vegan-friendly-price-and-distance)|array sort|[solution](src/_1333_filter_restaurants_by_vengan_friendly_price_and_distance.rs)|
 |1338|[Reduce Array Size to The Half](https://leetcode.com/problems/reduce-array-size-to-the-half)|array greedy|[solution](src/_1338_reduce_array_size_to_the_half.rs)|
 |1343|[Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold](https://leetcode.com/problems/number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold)|array|[solution](src/_1343_number_of_sub_arrays_of_size_k_and_average_greater_than_or_equal_to_threshold.rs)|
 |1344|[Angle Between Hands of a Clock](https://leetcode.com/problems/angle-between-hands-of-a-clock)|math|[solution](src/_1344_angle_between_hands_of_a_clock.rs)|
@@ -956,6 +953,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |654|[Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree)|tree|[solution](src/_654_maximum_binary_tree.rs)|
 |655|[Print Binary Tree](https://leetcode.com/problems/print-binary-tree)|tree|[solution](src/_655_print_binary_tree.rs)|
 |667|[Beautiful Arrangement II](https://leetcode.com/problems/beautiful-arrangement-ii)|array|[solution](src/_667_beautiful_arrangement_2.rs)|
+|670|[Maximum Swap](https://leetcode.com/problems/maximum-swap)|array math|[solution](src/_670_maximum_swap.rs)|
 |688|[Knight Probability in Chessboard](https://leetcode.com/problems/knight-probability-in-chessboard)|dynamic-programming|[solution](src/_688_knight_probability_in_chessboard.rs)|
 |692|[Top K Frequent Words](https://leetcode.com/problems/top-k-frequent-words)|hash-table heap trie|[solution](src/_692_top_k_frequent_words.rs)|
 |694|[Number of Distinct Islands](https://leetcode.com/problems/number-of-distinct-islands)|hash-table depth-first-search|[solution](src/_694_number_of_distinct_islands.rs)|
@@ -966,6 +964,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |707|[Design Linked List](https://leetcode.com/problems/design-linked-list)|linked-list design|[solution](src/_707_design_linked_list.rs)|
 |713|[Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k)|array two-pointers|[solution](src/_713_subarray_product_less_than_k.rs)|
 |714|[Best Time to Buy and Sell Stock with Transaction Fee](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee)|array dynamic-programming greedy|[solution](src/_714_best_time_to_buy_and_sell_stock_with_transaction_fee.rs)|
+|718|[Maximum Length of Repeated Subarray](https://leetcode.com/problems/maximum-length-of-repeated-subarray)|array hash-table binary-search dynamic-programming|[solution](src/_718_maximum_length_of_repeated_subarray.rs)|
 |71|[Simplify Path](https://leetcode.com/problems/simplify-path)|string stack|[solution](src/_71_simplify_path.rs)|
 |721|[Accounts Merge](https://leetcode.com/problems/accounts-merge)|depth-first-search union-find|[solution](src/_721_accounts_merge.rs)|
 |723|[Candy Crush](https://leetcode.com/problems/candy-crush)|array two-pointers|[solution](src/_723_candy_crush.rs)|
@@ -984,6 +983,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |75|[Sort Colors](https://leetcode.com/problems/sort-colors)|array two-pointers sort|[solution](src/_75_sort_colors.rs)|
 |763|[Partition Labels](https://leetcode.com/problems/partition-labels)|two-pointers greedy|[solution](src/_763_partition_labels.rs)|
 |769|[Max Chunks To Make Sorted](https://leetcode.com/problems/max-chunks-to-make-sorted)|array|[solution](src/_769_max_chunks_to_make_sorted.rs)|
+|775|[Global and Local Inversions](https://leetcode.com/problems/global-and-local-inversions)|array math|[solution](src/_775_global_and_local_inversions.rs)|
 |776|[Split BST](https://leetcode.com/problems/split-bst)|tree recursion|[solution](src/_776_split_bst.rs)|
 |777|[Swap Adjacent in LR String](https://leetcode.com/problems/swap-adjacent-in-lr-string)|brainteaser|[solution](src/_777_swap_adjacent_in_lr_string.rs)|
 |779|[K-th Symbol in Grammar](https://leetcode.com/problems/k-th-symbol-in-grammar)|recursion|[solution](src/_779_kth_symbol_in_grammar.rs)|

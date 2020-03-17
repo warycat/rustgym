@@ -674,6 +674,8 @@ mod _667_beautiful_arrangement_2;
 //
 mod _669_trim_a_binary_search_tree;
 //
+mod _670_maximum_swap;
+//
 mod _671_second_minimum_node_in_a_binary_tree;
 //
 mod _674_longest_continuous_increasing_subsequence;
@@ -725,6 +727,8 @@ mod _714_best_time_to_buy_and_sell_stock_with_transaction_fee;
 mod _716_max_stack;
 //
 mod _717_1bit_and_2bit_characters;
+//
+mod _718_maximum_length_of_repeated_subarray;
 //
 mod _720_longest_word_in_dictionary;
 //
@@ -783,6 +787,8 @@ mod _766_toeplitiz_matrix;
 mod _769_max_chunks_to_make_sorted;
 //
 mod _771_jewels_and_stones;
+//
+mod _775_global_and_local_inversions;
 //
 mod _776_split_bst;
 //
@@ -1126,6 +1132,8 @@ mod _1104_path_in_zigzag_labelled_binary_tree;
 //
 mod _1108_defanging_an_ip_address;
 //
+mod _1109_corp_flight_bookings;
+//
 mod _1110_delete_nodes_and_return_forest;
 //
 mod _1111_maximum_nesting_depth_of_two_valid_parentheses_strings;
@@ -1157,6 +1165,8 @@ mod _1146_snapshot_array;
 mod _1150_check_if_a_number_is_majority_element_in_a_sorted_array;
 //
 mod _1151_minimum_swaps_to_group_all_1s_together;
+//
+mod _1152_analyze_user_website_visit_pattern;
 //
 mod _1154_day_of_the_year;
 //
@@ -1313,6 +1323,8 @@ mod _1329_sort_the_matrix_diagonally;
 mod _1331_rank_transform_of_an_array;
 //
 mod _1332_remove_palindromic_subsequences;
+//
+mod _1333_filter_restaurants_by_vengan_friendly_price_and_distance;
 //
 mod _1337_the_k_weakest_rows_in_a_matrix;
 //
