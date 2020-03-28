@@ -922,6 +922,8 @@ mod _900_rle_iterator;
 //
 mod _905_sort_array_by_parity;
 //
+mod _907_sum_of_subarray_minimums;
+//
 mod _908_smallest_range_1;
 //
 mod _909_snakes_and_ladders;
@@ -1350,6 +1352,8 @@ mod _1360_number_of_days_between_two_dates;
 //
 mod _1365_how_many_numbers_are_smaller_than_the_current_number;
 //
+mod _1366_rank_teams_by_votes;
+//
 mod _1370_increasing_decreasing_string;
 //
 mod _1374_generate_a_string_with_characters_that_have_odd_counts;
@@ -1359,5 +1363,7 @@ mod _1375_bulb_switcher_3;
 mod _1380_lucky_numbers_in_a_matrix;
 //
 mod _1385_find_the_distance_value_between_two_arrays;
+//
+mod _1386_cinema_seat_allocation;
 //
 mod _1389_create_target_array_in_the_given_order;
