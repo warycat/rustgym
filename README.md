@@ -48,12 +48,11 @@ All the solutions here are crafted with love and their performance beats 99% of 
 ### leetcode_rs [![Build Status](https://travis-ci.org/warycat/leetcode_rs.svg?branch=master)](https://travis-ci.org/warycat/leetcode_rs)
 
 # All Solutions
-<details><summary>Easy 324/340 95.29%</summary>
+<details><summary>Easy 327/342 95.61%</summary>
 
 
-|id|340 Easy Questions|Tags|324 Solutions|
+|id|342 Easy Questions|Tags|327 Solutions|
 |---|---|---|---|
-|1380|[Lucky Numbers in a Matrix](https://leetcode.com/problems/lucky-numbers-in-a-matrix)|array|   |
 |278|[First Bad Version](https://leetcode.com/problems/first-bad-version)|binary-search|   |
 |374|[Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower)|binary-search|   |
 |190|[Reverse Bits](https://leetcode.com/problems/reverse-bits)|bit-manipulation|   |
@@ -164,6 +163,9 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |136|[Single Number](https://leetcode.com/problems/single-number)|hash-table bit-manipulation|[solution](src/_136_single_number.rs)|
 |1370|[Increasing Decreasing String](https://leetcode.com/problems/increasing-decreasing-string)|string sort|[solution](src/_1370_increasing_decreasing_string.rs)|
 |1374|[Generate a String With Characters That Have Odd Counts](https://leetcode.com/problems/generate-a-string-with-characters-that-have-odd-counts)|string|[solution](src/_1374_generate_a_string_with_characters_that_have_odd_counts.rs)|
+|1380|[Lucky Numbers in a Matrix](https://leetcode.com/problems/lucky-numbers-in-a-matrix)|array|[solution](src/_1380_lucky_numbers_in_a_matrix.rs)|
+|1385|[Find the Distance Value Between Two Arrays](https://leetcode.com/problems/find-the-distance-value-between-two-arrays)|array|[solution](src/_1385_find_the_distance_value_between_two_arrays.rs)|
+|1389|[Create Target Array in the Given Order](https://leetcode.com/problems/create-target-array-in-the-given-order)|array|[solution](src/_1389_create_target_array_in_the_given_order.rs)|
 |13|[Roman to Integer](https://leetcode.com/problems/roman-to-integer)|math string|[solution](src/_13_roman_to_integer.rs)|
 |14|[Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix)|string|[solution](src/_14_longest_common_prefix.rs)|
 |155|[Min Stack](https://leetcode.com/problems/min-stack)|stack design|[solution](src/_155_min_stack.rs)|
@@ -394,15 +396,16 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook)|array|[solution](src/_999_available_captures_for_rook.rs)|
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|math|[solution](src/_9_palindrome_number.rs)|
 </details>
-<details><summary>Medium 347/656 52.90%</summary>
+<details><summary>Medium 347/660 52.58%</summary>
 
 
-|id|656 Medium Questions|Tags|347 Solutions|
+|id|660 Medium Questions|Tags|347 Solutions|
 |---|---|---|---|
 |427|[Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree)||   |
 |558|[Logical OR of Two Binary Grids Represented as Quad-Trees](https://leetcode.com/problems/logical-or-of-two-binary-grids-represented-as-quad-trees)||   |
 |1265|[Print Immutable Linked List in Reverse](https://leetcode.com/problems/print-immutable-linked-list-in-reverse)||   |
 |277|[Find the Celebrity](https://leetcode.com/problems/find-the-celebrity)|array|   |
+|1386|[Cinema Seat Allocation](https://leetcode.com/problems/cinema-seat-allocation)|array greedy|   |
 |1366|[Rank Teams by Votes](https://leetcode.com/problems/rank-teams-by-votes)|array sort|   |
 |907|[Sum of Subarray Minimums](https://leetcode.com/problems/sum-of-subarray-minimums)|array stack|   |
 |1169|[Invalid Transactions](https://leetcode.com/problems/invalid-transactions)|array string|   |
@@ -459,6 +462,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |542|[01 Matrix](https://leetcode.com/problems/01-matrix)|depth-first-search breadth-first-search|   |
 |934|[Shortest Bridge](https://leetcode.com/problems/shortest-bridge)|depth-first-search breadth-first-search|   |
 |1236|[Web Crawler](https://leetcode.com/problems/web-crawler)|depth-first-search breadth-first-search|   |
+|1391|[Check if There is a Valid Path in a Grid](https://leetcode.com/problems/check-if-there-is-a-valid-path-in-a-grid)|depth-first-search breadth-first-search|   |
 |133|[Clone Graph](https://leetcode.com/problems/clone-graph)|depth-first-search breadth-first-search graph|   |
 |130|[Surrounded Regions](https://leetcode.com/problems/surrounded-regions)|depth-first-search breadth-first-search union-find|   |
 |1319|[Number of Operations to Make Network Connected](https://leetcode.com/problems/number-of-operations-to-make-network-connected)|depth-first-search breadth-first-search union-find|   |
@@ -591,6 +595,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1017|[Convert to Base -2](https://leetcode.com/problems/convert-to-base-2)|math|   |
 |1073|[Adding Two Negabinary Numbers](https://leetcode.com/problems/adding-two-negabinary-numbers)|math|   |
 |1362|[Closest Divisors](https://leetcode.com/problems/closest-divisors)|math|   |
+|1390|[Four Divisors](https://leetcode.com/problems/four-divisors)|math|   |
 |60|[Permutation Sequence](https://leetcode.com/problems/permutation-sequence)|math backtracking|   |
 |1201|[Ugly Number III](https://leetcode.com/problems/ugly-number-iii)|math binary-search|   |
 |397|[Integer Replacement](https://leetcode.com/problems/integer-replacement)|math bit-manipulation|   |
@@ -615,6 +620,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |470|[Implement Rand10() Using Rand7()](https://leetcode.com/problems/implement-rand10-using-rand7)|random rejection-sampling|   |
 |324|[Wiggle Sort II](https://leetcode.com/problems/wiggle-sort-ii)|sort|   |
 |853|[Car Fleet](https://leetcode.com/problems/car-fleet)|sort|   |
+|1387|[Sort Integers by The Power Value](https://leetcode.com/problems/sort-integers-by-the-power-value)|sort graph|   |
 |150|[Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation)|stack|   |
 |331|[Verify Preorder Serialization of a Binary Tree](https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree)|stack|   |
 |880|[Decoded String at Index](https://leetcode.com/problems/decoded-string-at-index)|stack|   |
@@ -1056,10 +1062,10 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |991|[Broken Calculator](https://leetcode.com/problems/broken-calculator)|math greedy|[solution](src/_991_broken_calculator.rs)|
 |998|[Maximum Binary Tree II](https://leetcode.com/problems/maximum-binary-tree-ii)|tree|[solution](src/_998_maximum_binary_tree_2.rs)|
 </details>
-<details><summary>Hard 0/273 0.00%</summary>
+<details><summary>Hard 0/275 0.00%</summary>
 
 
-|id|273 Hard Questions|Tags|0 Solutions|
+|id|275 Hard Questions|Tags|0 Solutions|
 |---|---|---|---|
 |420|[Strong Password Checker](https://leetcode.com/problems/strong-password-checker)||   |
 |440|[K-th Smallest in Lexicographical Order](https://leetcode.com/problems/k-th-smallest-in-lexicographical-order)||   |
@@ -1190,6 +1196,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1335|[Minimum Difficulty of a Job Schedule](https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule)|dynamic-programming|   |
 |1340|[Jump Game V](https://leetcode.com/problems/jump-game-v)|dynamic-programming|   |
 |1349|[Maximum Students Taking Exam](https://leetcode.com/problems/maximum-students-taking-exam)|dynamic-programming|   |
+|1388|[Pizza With 3n Slices](https://leetcode.com/problems/pizza-with-3n-slices)|dynamic-programming|   |
 |140|[Word Break II](https://leetcode.com/problems/word-break-ii)|dynamic-programming backtracking|   |
 |691|[Stickers to Spell Word](https://leetcode.com/problems/stickers-to-spell-word)|dynamic-programming backtracking|   |
 |1240|[Tiling a Rectangle with the Fewest Squares](https://leetcode.com/problems/tiling-a-rectangle-with-the-fewest-squares)|dynamic-programming backtracking|   |
@@ -1304,6 +1311,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |736|[Parse Lisp Expression](https://leetcode.com/problems/parse-lisp-expression)|string|   |
 |1096|[Brace Expansion II](https://leetcode.com/problems/brace-expansion-ii)|string|   |
 |1106|[Parsing A Boolean Expression](https://leetcode.com/problems/parsing-a-boolean-expression)|string|   |
+|1392|[Longest Happy Prefix](https://leetcode.com/problems/longest-happy-prefix)|string|   |
 |32|[Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses)|string dynamic-programming|   |
 |72|[Edit Distance](https://leetcode.com/problems/edit-distance)|string dynamic-programming|   |
 |87|[Scramble String](https://leetcode.com/problems/scramble-string)|string dynamic-programming|   |

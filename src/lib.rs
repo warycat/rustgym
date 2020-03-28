@@ -1355,3 +1355,9 @@ mod _1370_increasing_decreasing_string;
 mod _1374_generate_a_string_with_characters_that_have_odd_counts;
 //
 mod _1375_bulb_switcher_3;
+//
+mod _1380_lucky_numbers_in_a_matrix;
+//
+mod _1385_find_the_distance_value_between_two_arrays;
+//
+mod _1389_create_target_array_in_the_given_order;
