@@ -1,49 +1,33 @@
 struct Solution;
 
 struct UnionFind {
-    parent: Vec<usize>,
-    rank: Vec<usize>,
-    count: usize,
+    parents: Vec<usize>,
+    n: usize,
 }
 
 impl UnionFind {
-    fn new() -> Self {
-        UnionFind {
-            parent: vec![],
-            rank: vec![],
-            count: 0,
+    fn new(n: usize) -> Self {
+        let parents = (0..n).collect();
+        UnionFind { parents, n }
+    }
+
+    fn find(&mut self, i: usize) -> usize {
+        let j = self.parents[i];
+        if i == j {
+            i
+        } else {
+            let k = self.find(j);
+            self.parents[i] = k;
+            k
         }
     }
 
-    fn insert(&mut self, is_land: bool) -> usize {
-        let key = self.rank.len();
-        self.parent.push(key);
-        self.rank.push(1);
-        if is_land {
-            self.count += 1;
-        }
-        key
-    }
-
-    fn find(&self, mut key: usize) -> usize {
-        while self.parent[key] != key {
-            key = self.parent[key];
-        }
-        key
-    }
-
-    fn union(&mut self, key_a: usize, key_b: usize) {
-        let ka = self.find(key_a);
-        let kb = self.find(key_b);
-        if ka != kb {
-            if self.rank[ka] < self.rank[kb] {
-                self.parent[ka] = kb;
-                self.rank[kb] += 1;
-            } else {
-                self.parent[kb] = ka;
-                self.rank[ka] += 1;
-            }
-            self.count -= 1;
+    fn union(&mut self, mut i: usize, mut j: usize) {
+        i = self.find(i);
+        j = self.find(j);
+        if i != j {
+            self.parents[i] = j;
+            self.n -= 1;
         }
     }
 }
@@ -55,11 +39,10 @@ impl Solution {
             return 0;
         }
         let m = grid[0].len();
-        let mut uf = UnionFind::new();
+        let mut uf = UnionFind::new(n * m + 1);
         for i in 0..n {
             for j in 0..m {
                 let land = grid[i][j];
-                uf.insert(land == '1');
                 if land == '1' {
                     if j > 0 && grid[i][j - 1] == '1' {
                         uf.union(i * m + j, i * m + j - 1);
@@ -67,10 +50,12 @@ impl Solution {
                     if i > 0 && grid[i - 1][j] == '1' {
                         uf.union(i * m + j, (i - 1) * m + j);
                     }
+                } else {
+                    uf.union(i * m + j, n * m);
                 }
             }
         }
-        uf.count as i32
+        (uf.n - 1) as i32
     }
 }
 

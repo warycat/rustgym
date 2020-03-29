@@ -2,13 +2,13 @@ struct Solution;
 
 struct UnionFind {
     parents: Vec<usize>,
-    group: usize,
+    n: usize,
 }
 
 impl UnionFind {
-    fn new(group: usize) -> Self {
-        let parents = (0..group).collect();
-        UnionFind { parents, group }
+    fn new(n: usize) -> Self {
+        let parents = (0..n).collect();
+        UnionFind { parents, n }
     }
 
     fn find(&mut self, i: usize) -> usize {
@@ -21,12 +21,12 @@ impl UnionFind {
         }
     }
 
-    fn merge(&mut self, mut i: usize, mut j: usize) {
+    fn union(&mut self, mut i: usize, mut j: usize) {
         i = self.find(i);
         j = self.find(j);
         if i != j {
             self.parents[i] = j;
-            self.group -= 1;
+            self.n -= 1;
         }
     }
 }
@@ -45,30 +45,30 @@ impl Solution {
                 let k3 = Self::id(3, i, j, n, m);
                 match a[i][j] {
                     ' ' => {
-                        uf.merge(k0, k1);
-                        uf.merge(k1, k2);
-                        uf.merge(k2, k3);
-                        uf.merge(k3, k0);
+                        uf.union(k0, k1);
+                        uf.union(k1, k2);
+                        uf.union(k2, k3);
+                        uf.union(k3, k0);
                     }
                     '/' => {
-                        uf.merge(k0, k1);
-                        uf.merge(k2, k3);
+                        uf.union(k0, k1);
+                        uf.union(k2, k3);
                     }
                     '\\' => {
-                        uf.merge(k1, k2);
-                        uf.merge(k3, k0);
+                        uf.union(k1, k2);
+                        uf.union(k3, k0);
                     }
                     _ => {}
                 }
                 if i > 0 {
-                    uf.merge(k1, Self::id(3, i - 1, j, n, m));
+                    uf.union(k1, Self::id(3, i - 1, j, n, m));
                 }
                 if j > 0 {
-                    uf.merge(k0, Self::id(2, i, j - 1, n, m));
+                    uf.union(k0, Self::id(2, i, j - 1, n, m));
                 }
             }
         }
-        uf.group as i32
+        uf.n as i32
     }
 
     fn id(k: usize, i: usize, j: usize, n: usize, m: usize) -> usize {

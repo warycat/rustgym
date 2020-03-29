@@ -344,6 +344,8 @@ mod _283_move_zeros;
 //
 mod _286_walls_and_gates;
 //
+mod _287_find_the_duplicate_number;
+//
 mod _289_game_of_life;
 //
 mod _290_word_pattern;
@@ -1222,6 +1224,8 @@ mod _1198_find_smallest_common_element_in_all_rows;
 //
 mod _1200_minimum_absolute_difference;
 //
+mod _1202_smallest_string_with_swaps;
+//
 mod _1207_unique_number_of_occurrences;
 //
 mod _1208_get_equal_substrings_within_budget;
@@ -1379,3 +1383,5 @@ mod _1385_find_the_distance_value_between_two_arrays;
 mod _1386_cinema_seat_allocation;
 //
 mod _1389_create_target_array_in_the_given_order;
+//
+mod _1395_count_number_of_teams;

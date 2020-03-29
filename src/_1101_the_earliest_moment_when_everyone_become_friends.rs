@@ -5,15 +5,18 @@ use std::iter::FromIterator;
 
 struct UnionFind {
     parents: Vec<usize>,
-    sizes: Vec<usize>,
+    group: usize,
     n: usize,
 }
 
 impl UnionFind {
     fn new(n: usize) -> Self {
         let parents = (0..n).collect();
-        let sizes = vec![1; n];
-        UnionFind { parents, sizes, n }
+        UnionFind {
+            parents,
+            group: n,
+            n,
+        }
     }
 
     fn find(&mut self, i: usize) -> usize {
@@ -27,14 +30,14 @@ impl UnionFind {
         }
     }
 
-    fn merge(&mut self, mut i: usize, mut j: usize) -> usize {
+    fn union(&mut self, mut i: usize, mut j: usize) -> usize {
         i = self.find(i);
         j = self.find(j);
         if i != j {
             self.parents[j] = i;
-            self.sizes[i] += self.sizes[j];
+            self.group -= 1;
         }
-        self.sizes[i]
+        self.group
     }
 }
 
@@ -49,7 +52,7 @@ impl Solution {
         let n = n as usize;
         let mut uf = UnionFind::new(n);
         while let Some(log) = pq.pop() {
-            if uf.merge(log.1, log.2) == n {
+            if uf.union(log.1, log.2) == 1 {
                 return (log.0).0;
             }
         }

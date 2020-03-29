@@ -397,18 +397,15 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook)|array|[solution](src/_999_available_captures_for_rook.rs)|
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|math|[solution](src/_9_palindrome_number.rs)|
 </details>
-<details><summary>Medium 356/662 53.78%</summary>
+<details><summary>Medium 359/662 54.23%</summary>
 
 
-|id|662 Medium Questions|Tags|356 Solutions|
+|id|662 Medium Questions|Tags|359 Solutions|
 |---|---|---|---|
 |427|[Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree)||   |
 |558|[Logical OR of Two Binary Grids Represented as Quad-Trees](https://leetcode.com/problems/logical-or-of-two-binary-grids-represented-as-quad-trees)||   |
 |1265|[Print Immutable Linked List in Reverse](https://leetcode.com/problems/print-immutable-linked-list-in-reverse)||   |
 |277|[Find the Celebrity](https://leetcode.com/problems/find-the-celebrity)|array|   |
-|1395|[Count Number of Teams](https://leetcode.com/problems/count-number-of-teams)|array|   |
-|287|[Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number)|array two-pointers binary-search|   |
-|1202|[Smallest String With Swaps](https://leetcode.com/problems/smallest-string-with-swaps)|array union-find|   |
 |47|[Permutations II](https://leetcode.com/problems/permutations-ii)|backtracking|   |
 |77|[Combinations](https://leetcode.com/problems/combinations)|backtracking|   |
 |89|[Gray Code](https://leetcode.com/problems/gray-code)|backtracking|   |
@@ -760,6 +757,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1197|[Minimum Knight Moves](https://leetcode.com/problems/minimum-knight-moves)|breadth-first-search|[solution](src/_1197_minimum_knight_moves_math.rs)|
 |1198|[Find Smallest Common Element in All Rows](https://leetcode.com/problems/find-smallest-common-element-in-all-rows)|hash-table binary-search|[solution](src/_1198_find_smallest_common_element_in_all_rows.rs)|
 |11|[Container With Most Water](https://leetcode.com/problems/container-with-most-water)|array two-pointers|[solution](src/_11_container_with_most_water.rs)|
+|1202|[Smallest String With Swaps](https://leetcode.com/problems/smallest-string-with-swaps)|array union-find|[solution](src/_1202_smallest_string_with_swaps.rs)|
 |1208|[Get Equal Substrings Within Budget](https://leetcode.com/problems/get-equal-substrings-within-budget)|array sliding-window|[solution](src/_1208_get_equal_substrings_within_budget.rs)|
 |1209|[Remove All Adjacent Duplicates in String II](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii)|stack|[solution](src/_1209_remove_all_adjacent_duplicates_in_string_2.rs)|
 |120|[Triangle](https://leetcode.com/problems/triangle)|array dynamic-programming|[solution](src/_120_triangle.rs)|
@@ -808,6 +806,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1366|[Rank Teams by Votes](https://leetcode.com/problems/rank-teams-by-votes)|array sort|[solution](src/_1366_rank_teams_by_votes.rs)|
 |1375|[Bulb Switcher III](https://leetcode.com/problems/bulb-switcher-iii)|array|[solution](src/_1375_bulb_switcher_3.rs)|
 |1386|[Cinema Seat Allocation](https://leetcode.com/problems/cinema-seat-allocation)|array greedy|[solution](src/_1386_cinema_seat_allocation.rs)|
+|1395|[Count Number of Teams](https://leetcode.com/problems/count-number-of-teams)|array|[solution](src/_1395_count_number_of_teams.rs)|
 |139|[Word Break](https://leetcode.com/problems/word-break)|dynamic-programming|[solution](src/_139_word_break.rs)|
 |143|[Reorder List](https://leetcode.com/problems/reorder-list)|linked-list|[solution](src/_143_reorder_list.rs)|
 |146|[LRU Cache](https://leetcode.com/problems/lru-cache)|design|[solution](src/_146_lru_cache.rs)|
@@ -854,6 +853,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |274|[H-Index](https://leetcode.com/problems/h-index)|hash-table sort|[solution](src/_274_h_index.rs)|
 |280|[Wiggle Sort](https://leetcode.com/problems/wiggle-sort)|array sort|[solution](src/_280_wiggle_sort.rs)|
 |286|[Walls and Gates](https://leetcode.com/problems/walls-and-gates)|breadth-first-search|[solution](src/_286_walls_and_gates.rs)|
+|287|[Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number)|array two-pointers binary-search|[solution](src/_287_find_the_duplicate_number.rs)|
 |289|[Game of Life](https://leetcode.com/problems/game-of-life)|array|[solution](src/_289_game_of_life.rs)|
 |29|[Divide Two Integers](https://leetcode.com/problems/divide-two-integers)|math binary-search|[solution](src/_29_divide_two_integers.rs)|
 |2|[Add Two Numbers](https://leetcode.com/problems/add-two-numbers)|linked-list math|[solution](src/_2_add_two_numbers.rs)|

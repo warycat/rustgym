@@ -3,32 +3,32 @@ use std::collections::BTreeSet;
 use std::collections::HashMap;
 
 struct UnionFind {
-    parent: Vec<usize>,
+    parents: Vec<usize>,
     n: usize,
 }
 
 impl UnionFind {
     fn new(n: usize) -> Self {
-        let parent = (0..n).collect();
-        UnionFind { parent, n }
+        let parents = (0..n).collect();
+        UnionFind { parents, n }
     }
 
     fn find(&mut self, i: usize) -> usize {
-        let j = self.parent[i];
+        let j = self.parents[i];
         if i == j {
             j
         } else {
-            self.parent[i] = self.find(j);
-            self.parent[i]
+            let k = self.find(j);
+            self.parents[i] = k;
+            k
         }
     }
 
-    fn merge(&mut self, mut i: usize, mut j: usize) {
+    fn union(&mut self, mut i: usize, mut j: usize) {
         i = self.find(i);
         j = self.find(j);
         if i != j {
-            self.parent[i] = i.min(j);
-            self.parent[j] = i.min(j);
+            self.parents[i] = j;
         }
     }
 
@@ -61,7 +61,7 @@ impl Solution {
             ids.insert(s.to_string(), i);
         }
         for ss in synonyms {
-            uf.merge(ids[&ss[0]], ids[&ss[1]]);
+            uf.union(ids[&ss[0]], ids[&ss[1]]);
         }
         let all_groups = uf.groups();
         let mut groups: Vec<Vec<usize>> = vec![];

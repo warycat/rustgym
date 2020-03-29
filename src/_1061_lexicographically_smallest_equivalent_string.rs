@@ -19,7 +19,7 @@ impl UnionFind {
         }
     }
 
-    fn merge(&mut self, mut i: usize, mut j: usize) {
+    fn union(&mut self, mut i: usize, mut j: usize) {
         i = self.find(i);
         j = self.find(j);
         if i != j {
@@ -37,7 +37,7 @@ impl Solution {
         let n = a.len();
         let mut uf = UnionFind::new();
         for i in 0..n {
-            uf.merge(a[i], b[i]);
+            uf.union(a[i], b[i]);
         }
         s.bytes()
             .map(|c| (uf.find((c - b'a') as usize) as u8 + b'a') as char)

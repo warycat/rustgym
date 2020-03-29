@@ -6,45 +6,31 @@ use std::collections::HashMap;
 
 struct UnionFind {
     parents: Vec<usize>,
-    sizes: Vec<usize>,
-    count: usize,
+    n: usize,
 }
 
 impl UnionFind {
-    fn new(count: usize) -> Self {
-        let sizes: Vec<usize> = vec![1; count];
-        let parents: Vec<usize> = (0..count).collect();
-        UnionFind {
-            sizes,
-            parents,
-            count,
-        }
+    fn new(n: usize) -> Self {
+        let parents = (0..n).collect();
+        UnionFind { parents, n }
     }
 
     fn find(&mut self, i: usize) -> usize {
         let j = self.parents[i];
-        if i != j {
+        if i == j {
+            i
+        } else {
             let k = self.find(j);
             self.parents[i] = k;
             k
-        } else {
-            i
         }
     }
 
-    fn merge(&mut self, mut a: usize, mut b: usize) {
-        a = self.find(a);
-        b = self.find(b);
-        if a != b {
-            let size_a = self.sizes[a];
-            let size_b = self.sizes[b];
-            if size_a > size_b {
-                self.parents[a] = b;
-                self.sizes[b] += self.sizes[a];
-            } else {
-                self.parents[b] = a;
-                self.sizes[a] += self.sizes[b];
-            }
+    fn union(&mut self, mut i: usize, mut j: usize) {
+        i = self.find(i);
+        j = self.find(j);
+        if i != j {
+            self.parents[i] = j;
         }
     }
 }
@@ -79,7 +65,7 @@ impl Solution {
                 let email_b = &accounts[i][j];
                 let id_a = ids[email_a];
                 let id_b = ids[email_b];
-                uf.merge(id_a, id_b);
+                uf.union(id_a, id_b);
             }
         }
         let mut res: Vec<Vec<String>> = vec![];
