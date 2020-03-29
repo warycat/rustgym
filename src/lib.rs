@@ -128,6 +128,8 @@ mod _79_word_search;
 //
 mod _81_search_in_rotated_sorted_array_2;
 //
+mod _80_remove_duplicates_from_sorted_array_2;
+//
 mod _83_remove_duplicates_from_sorted_list;
 //
 mod _88_merge_sorted_array;
@@ -159,6 +161,8 @@ mod _103_binary_tree_zigzag_level_order_traversal;
 mod _104_maximum_depth_of_binary_tree;
 //
 mod _105_construct_binary_tree_from_preorder_and_inorder_traversal;
+//
+mod _106_construct_binary_tree_from_inorder_and_postorder_traversal;
 //
 mod _107_binary_tree_level_order_traversal_2;
 //
@@ -319,6 +323,8 @@ mod _252_meeting_rooms;
 mod _253_meeting_rooms_2;
 //
 mod _256_paint_house;
+//
+mod _259_3sum_smaller;
 //
 mod _263_ugly_number;
 //
@@ -493,6 +499,8 @@ mod _453_minimum_moves_to_equal_array_elements;
 mod _455_assign_cookies;
 //
 mod _456_132_pattern;
+//
+mod _457_circular_array_loop;
 //
 mod _459_repeated_substring_pattern;
 //
@@ -1182,6 +1190,8 @@ mod _1166_design_file_system;
 //
 mod _1167_minimum_cost_to_connect_sticks;
 //
+mod _1169_invalid_transactions;
+//
 mod _1170_compare_strings_by_frequency_of_the_smallest_character;
 //
 mod _1175_prime_arrangements;
@@ -1239,6 +1249,8 @@ mod _1228_missing_number_in_arithmetic_progression;
 mod _1229_meeting_scheduler;
 //
 mod _1232_check_if_it_is_a_straight_line;
+//
+mod _1233_remove_sub_folders_from_the_filesystem;
 //
 mod _1238_circular_permutation_in_binary_representation;
 //

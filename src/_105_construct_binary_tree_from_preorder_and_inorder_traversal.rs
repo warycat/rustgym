@@ -4,29 +4,20 @@ use util::*;
 impl Solution {
     fn build_tree(preorder: Vec<i32>, inorder: Vec<i32>) -> TreeLink {
         let n = preorder.len();
-        Self::parse_tree(&preorder[0..n], &inorder[0..n])
+        Self::build(&preorder[0..n], &inorder[0..n])
     }
 
-    fn parse_tree(preorder: &[i32], inorder: &[i32]) -> TreeLink {
-        if preorder.is_empty() {
-            return None;
-        }
-        let val = preorder[0];
+    fn build(preorder: &[i32], inorder: &[i32]) -> TreeLink {
         let n = preorder.len();
-        if n == 1 {
-            tree!(val)
+        if n == 0 {
+            None
         } else {
-            let mut mid = 0;
-            for i in 0..n {
-                if inorder[i] == val {
-                    mid = i;
-                    break;
-                }
-            }
+            let val = preorder[0];
+            let i = inorder.iter().position(|&x| x == val).unwrap();
             tree!(
                 val,
-                Self::parse_tree(&preorder[1..=mid], &inorder[0..mid]),
-                Self::parse_tree(&preorder[mid + 1..], &inorder[mid + 1..])
+                Self::build(&preorder[1..=i], &inorder[0..i]),
+                Self::build(&preorder[i + 1..], &inorder[i + 1..])
             )
         }
     }
