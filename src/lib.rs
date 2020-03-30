@@ -84,6 +84,8 @@ mod _43_multiply_strings;
 //
 mod _46_permutations;
 //
+mod _47_permutations_2;
+//
 mod _48_rotate_image;
 //
 mod _49_group_anagrams;
@@ -122,6 +124,8 @@ mod _74_search_a_2d_matrix;
 //
 mod _75_sort_colors;
 //
+mod _77_combinations;
+//
 mod _78_subsets;
 //
 mod _79_word_search;
@@ -133,6 +137,8 @@ mod _80_remove_duplicates_from_sorted_array_2;
 mod _83_remove_duplicates_from_sorted_list;
 //
 mod _88_merge_sorted_array;
+//
+mod _89_gray_code;
 //
 mod _90_subsets_2;
 //
@@ -321,6 +327,8 @@ mod _258_add_digits;
 mod _252_meeting_rooms;
 //
 mod _253_meeting_rooms_2;
+//
+mod _254_factor_combinations;
 //
 mod _256_paint_house;
 //

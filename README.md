@@ -397,19 +397,15 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook)|array|[solution](src/_999_available_captures_for_rook.rs)|
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|math|[solution](src/_9_palindrome_number.rs)|
 </details>
-<details><summary>Medium 359/662 54.23%</summary>
+<details><summary>Medium 363/662 54.83%</summary>
 
 
-|id|662 Medium Questions|Tags|359 Solutions|
+|id|662 Medium Questions|Tags|363 Solutions|
 |---|---|---|---|
 |427|[Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree)||   |
 |558|[Logical OR of Two Binary Grids Represented as Quad-Trees](https://leetcode.com/problems/logical-or-of-two-binary-grids-represented-as-quad-trees)||   |
 |1265|[Print Immutable Linked List in Reverse](https://leetcode.com/problems/print-immutable-linked-list-in-reverse)||   |
 |277|[Find the Celebrity](https://leetcode.com/problems/find-the-celebrity)|array|   |
-|47|[Permutations II](https://leetcode.com/problems/permutations-ii)|backtracking|   |
-|77|[Combinations](https://leetcode.com/problems/combinations)|backtracking|   |
-|89|[Gray Code](https://leetcode.com/problems/gray-code)|backtracking|   |
-|254|[Factor Combinations](https://leetcode.com/problems/factor-combinations)|backtracking|   |
 |267|[Palindrome Permutation II](https://leetcode.com/problems/palindrome-permutation-ii)|backtracking|   |
 |306|[Additive Number](https://leetcode.com/problems/additive-number)|backtracking|   |
 |526|[Beautiful Arrangement](https://leetcode.com/problems/beautiful-arrangement)|backtracking|   |
@@ -849,6 +845,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |24|[Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs)|linked-list|[solution](src/_24_swap_nodes_in_pairs.rs)|
 |251|[Flatten 2D Vector](https://leetcode.com/problems/flatten-2d-vector)|design|[solution](src/_251_flatten_2d_vector.rs)|
 |253|[Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii)|heap greedy sort|[solution](src/_253_meeting_rooms_2.rs)|
+|254|[Factor Combinations](https://leetcode.com/problems/factor-combinations)|backtracking|[solution](src/_254_factor_combinations.rs)|
 |259|[3Sum Smaller](https://leetcode.com/problems/3sum-smaller)|array two-pointers|[solution](src/_259_3sum_smaller.rs)|
 |274|[H-Index](https://leetcode.com/problems/h-index)|hash-table sort|[solution](src/_274_h_index.rs)|
 |280|[Wiggle Sort](https://leetcode.com/problems/wiggle-sort)|array sort|[solution](src/_280_wiggle_sort.rs)|
@@ -908,6 +905,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |457|[Circular Array Loop](https://leetcode.com/problems/circular-array-loop)|array two-pointers|[solution](src/_457_circular_array_loop.rs)|
 |46|[Permutations](https://leetcode.com/problems/permutations)|backtracking|[solution](src/_46_permutations.rs)|
 |478|[Generate Random Point in a Circle](https://leetcode.com/problems/generate-random-point-in-a-circle)|math random rejection-sampling|[solution](src/_478_generate_random_point_in_circle.rs)|
+|47|[Permutations II](https://leetcode.com/problems/permutations-ii)|backtracking|[solution](src/_47_permutations_2.rs)|
 |481|[Magical String](https://leetcode.com/problems/magical-string)||[solution](src/_481_magical_string.rs)|
 |48|[Rotate Image](https://leetcode.com/problems/rotate-image)|array|[solution](src/_48_rotate_image.rs)|
 |490|[The Maze](https://leetcode.com/problems/the-maze)|depth-first-search breadth-first-search|[solution](src/_490_the_maze.rs)|
@@ -994,6 +992,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |776|[Split BST](https://leetcode.com/problems/split-bst)|tree recursion|[solution](src/_776_split_bst.rs)|
 |777|[Swap Adjacent in LR String](https://leetcode.com/problems/swap-adjacent-in-lr-string)|brainteaser|[solution](src/_777_swap_adjacent_in_lr_string.rs)|
 |779|[K-th Symbol in Grammar](https://leetcode.com/problems/k-th-symbol-in-grammar)|recursion|[solution](src/_779_kth_symbol_in_grammar.rs)|
+|77|[Combinations](https://leetcode.com/problems/combinations)|backtracking|[solution](src/_77_combinations.rs)|
 |785|[Is Graph Bipartite?](https://leetcode.com/problems/is-graph-bipartite)|depth-first-search breadth-first-search graph|[solution](src/_785_is_graph_bipartite.rs)|
 |787|[Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops)|dynamic-programming heap breadth-first-search|[solution](src/_787_cheapest_flights_within_k_stops.rs)|
 |78|[Subsets](https://leetcode.com/problems/subsets)|array backtracking bit-manipulation|[solution](src/_78_subsets.rs)|
@@ -1026,6 +1025,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |889|[Construct Binary Tree from Preorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal)|tree|[solution](src/_889_construct_binary_tree_from_preorder_and_postorder_traversal.rs)|
 |890|[Find and Replace Pattern](https://leetcode.com/problems/find-and-replace-pattern)|string|[solution](src/_890_find_and_replace_pattern.rs)|
 |894|[All Possible Full Binary Trees](https://leetcode.com/problems/all-possible-full-binary-trees)|tree recursion|[solution](src/_894_all_possible_full_binary_trees.rs)|
+|89|[Gray Code](https://leetcode.com/problems/gray-code)|backtracking|[solution](src/_89_gray_code.rs)|
 |8|[String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi)|math string|[solution](src/_8_string_to_integer.rs)|
 |900|[RLE Iterator](https://leetcode.com/problems/rle-iterator)|array|[solution](src/_900_rle_iterator.rs)|
 |907|[Sum of Subarray Minimums](https://leetcode.com/problems/sum-of-subarray-minimums)|array stack|[solution](src/_907_sum_of_subarray_minimums.rs)|
