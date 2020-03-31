@@ -338,6 +338,8 @@ mod _263_ugly_number;
 //
 mod _266_palindrome_permutation;
 //
+mod _267_palindrome_permutation_2;
+//
 mod _268_missing_number;
 //
 mod _270_closest_binary_search_tree_value;
@@ -370,11 +372,15 @@ mod _303_range_sum_query;
 //
 mod _304_range_sum_query_2d_immutable;
 //
+mod _306_additive_number;
+//
 mod _309_best_time_to_buy_and_sell_stock_with_cooldown;
 //
 mod _311_sparse_matrix_multiplication;
 //
 mod _319_bulb_switcher;
+//
+mod _320_generalized_abbreviation;
 //
 mod _322_coin_change;
 //
@@ -569,6 +575,8 @@ mod _521_longest_uncommon_subsequence_1;
 mod _523_continuous_subarray_sum;
 //
 mod _525_contiguous_array;
+//
+mod _526_beautiful_arrangment;
 //
 mod _528_random_pick_with_weight;
 //
@@ -1244,6 +1252,8 @@ mod _1213_intersection_of_three_sorted_arrays;
 //
 mod _1214_two_sum_bsts;
 //
+mod _1215_stepping_numbers;
+//
 mod _1217_play_with_chips;
 //
 mod _1219_path_with_maximum_gold;
@@ -1307,6 +1317,8 @@ mod _1287_element_appearing_more_than_25_in_sorted_array;
 mod _1288_remove_covered_intervals;
 //
 mod _1290_convert_binary_number_in_a_linked_list_to_integer;
+//
+mod _1291_sequential_digits;
 //
 mod _1292_maximum_side_length_of_a_square_with_sum_less_than_or_equal_to_threshold;
 //
