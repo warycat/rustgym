@@ -1,4 +1,4 @@
-use std::collections::HashMap;
+use std::collections::HashSet;
 use std::collections::VecDeque;
 
 #[derive(PartialEq, Eq, Clone, Copy, Hash)]
@@ -23,7 +23,7 @@ impl Point {
 struct SnakeGame {
     body: VecDeque<Point>,
     food: Vec<Point>,
-    screen: HashMap<Point, bool>,
+    screen: HashSet<Point>,
     n: i32,
     m: i32,
     score: i32,
@@ -37,8 +37,8 @@ impl SnakeGame {
         let mut body: VecDeque<Point> = VecDeque::new();
         let head = Point(0, 0);
         body.push_back(head);
-        let mut screen: HashMap<Point, bool> = HashMap::new();
-        *screen.entry(Point(0, 0)).or_default() = true;
+        let mut screen: HashSet<Point> = HashSet::new();
+        screen.insert(Point(0, 0));
         let food = food.iter().rev().map(|v| Point(v[0], v[1])).collect();
         SnakeGame {
             body,
@@ -51,26 +51,35 @@ impl SnakeGame {
     }
 
     fn make_a_move(&mut self, direction: String) -> i32 {
+        if self.score == -1 {
+            return -1;
+        }
         let head = self.body.front().unwrap();
         let offset = Point::from_direction(direction);
         let next = Point(head.0 + offset.0, head.1 + offset.1);
+
+        let tail = self.body.pop_back().unwrap();
+        self.screen.remove(&tail);
+
+        if next.0 < 0
+            || next.0 >= self.n
+            || next.1 < 0
+            || next.1 >= self.m
+            || self.screen.contains(&next)
+        {
+            return -1;
+        }
+        self.body.push_front(next);
+        self.screen.insert(next);
+
         if let Some(food) = self.food.last() {
             if *food == next {
                 self.food.pop();
                 self.score += 1;
-            } else {
-                let tail = self.body.pop_back().unwrap();
-                *self.screen.entry(tail).or_default() = false;
+                self.screen.insert(tail);
+                self.body.push_back(tail);
             }
         }
-        if next.0 < 0 || next.0 >= self.n || next.1 < 0 || next.1 >= self.m {
-            return -1;
-        }
-        if *self.screen.entry(next).or_default() {
-            return -1;
-        }
-        *self.screen.entry(next).or_default() = true;
-        self.body.push_front(next);
         self.score
     }
 }

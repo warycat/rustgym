@@ -346,6 +346,8 @@ mod _270_closest_binary_search_tree_value;
 //
 mod _274_h_index;
 //
+mod _275_h_index_2;
+//
 mod _276_paint_fence;
 //
 mod _280_wiggle_sort;
@@ -493,6 +495,8 @@ mod _424_longest_repeating_character_replacement;
 mod _433_minimum_genetic_mutation;
 //
 mod _434_number_of_segments_in_a_string;
+//
+mod _436_find_right_interval;
 //
 mod _437_path_sum_3;
 //
@@ -691,6 +695,8 @@ mod _654_maximum_binary_tree;
 mod _655_print_binary_tree;
 //
 mod _657_robot_return_to_origin;
+//
+mod _658_find_k_cloest_elements;
 //
 mod _661_image_smoother;
 //
@@ -953,6 +959,8 @@ mod _907_sum_of_subarray_minimums;
 mod _908_smallest_range_1;
 //
 mod _909_snakes_and_ladders;
+//
+mod _911_online_election;
 //
 mod _912_sort_an_array;
 //
@@ -1222,6 +1230,8 @@ mod _1180_count_substring_with_only_one_distinct_letter;
 //
 mod _1181_before_and_after_puzzle;
 //
+mod _1182_shortest_distance_to_target_color;
+//
 mod _1184_distance_between_bus_stops;
 //
 mod _1185_day_of_the_week;
@@ -1276,6 +1286,8 @@ mod _1233_remove_sub_folders_from_the_filesystem;
 //
 mod _1238_circular_permutation_in_binary_representation;
 //
+mod _1239_maximum_length_of_concatenated_string_with_unique_characters;
+//
 mod _1243_array_transformation;
 //
 mod _1249_minimum_remove_to_make_valid_parentheses;
@@ -1309,6 +1321,8 @@ mod _1277_count_square_submatrices_with_all_ones;
 mod _1281_subtract_the_product_and_sum_of_digits_of_an_integer;
 //
 mod _1282_group_the_people_given_the_group_size_they_belong_to;
+//
+mod _1283_find_the_smallest_divisor_given_a_threshold;
 //
 mod _1286_iterator_for_combination;
 //
