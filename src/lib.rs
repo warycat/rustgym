@@ -298,6 +298,8 @@ mod _228_summary_ranges;
 //
 mod _229_majority_element_2;
 //
+mod _230_kth_smallest_element_in_a_bst;
+//
 mod _231_power_of_two;
 //
 mod _232_implent_queue_using_stacks;
@@ -1412,10 +1414,16 @@ mod _1375_bulb_switcher_3;
 //
 mod _1380_lucky_numbers_in_a_matrix;
 //
+mod _1382_balance_a_binary_search_tree;
+//
 mod _1385_find_the_distance_value_between_two_arrays;
 //
 mod _1386_cinema_seat_allocation;
 //
 mod _1389_create_target_array_in_the_given_order;
 //
+mod _1394_find_lucky_integer_in_an_array;
+//
 mod _1395_count_number_of_teams;
+//
+mod _1399_count_largest_group;

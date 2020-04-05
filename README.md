@@ -48,13 +48,11 @@ All the solutions here are crafted with love and their performance beats 99% of 
 ### leetcode_rs [![Build Status](https://travis-ci.org/warycat/leetcode_rs.svg?branch=master)](https://travis-ci.org/warycat/leetcode_rs)
 
 # All Solutions
-<details><summary>Easy 327/344 95.06%</summary>
+<details><summary>Easy 329/344 95.64%</summary>
 
 
-|id|344 Easy Questions|Tags|327 Solutions|
+|id|344 Easy Questions|Tags|329 Solutions|
 |---|---|---|---|
-|1394|[Find Lucky Integer in an Array](https://leetcode.com/problems/find-lucky-integer-in-an-array)|array|   |
-|1399|[Count Largest Group](https://leetcode.com/problems/count-largest-group)|array|   |
 |278|[First Bad Version](https://leetcode.com/problems/first-bad-version)|binary-search|   |
 |374|[Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower)|binary-search|   |
 |190|[Reverse Bits](https://leetcode.com/problems/reverse-bits)|bit-manipulation|   |
@@ -168,6 +166,8 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1380|[Lucky Numbers in a Matrix](https://leetcode.com/problems/lucky-numbers-in-a-matrix)|array|[solution](src/_1380_lucky_numbers_in_a_matrix.rs)|
 |1385|[Find the Distance Value Between Two Arrays](https://leetcode.com/problems/find-the-distance-value-between-two-arrays)|array|[solution](src/_1385_find_the_distance_value_between_two_arrays.rs)|
 |1389|[Create Target Array in the Given Order](https://leetcode.com/problems/create-target-array-in-the-given-order)|array|[solution](src/_1389_create_target_array_in_the_given_order.rs)|
+|1394|[Find Lucky Integer in an Array](https://leetcode.com/problems/find-lucky-integer-in-an-array)|array|[solution](src/_1394_find_lucky_integer_in_an_array.rs)|
+|1399|[Count Largest Group](https://leetcode.com/problems/count-largest-group)|array|[solution](src/_1399_count_largest_group.rs)|
 |13|[Roman to Integer](https://leetcode.com/problems/roman-to-integer)|math string|[solution](src/_13_roman_to_integer.rs)|
 |14|[Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix)|string|[solution](src/_14_longest_common_prefix.rs)|
 |155|[Min Stack](https://leetcode.com/problems/min-stack)|stack design|[solution](src/_155_min_stack.rs)|
@@ -398,10 +398,10 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook)|array|[solution](src/_999_available_captures_for_rook.rs)|
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|math|[solution](src/_9_palindrome_number.rs)|
 </details>
-<details><summary>Medium 376/664 56.63%</summary>
+<details><summary>Medium 378/664 56.93%</summary>
 
 
-|id|664 Medium Questions|Tags|376 Solutions|
+|id|664 Medium Questions|Tags|378 Solutions|
 |---|---|---|---|
 |427|[Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree)||   |
 |558|[Logical OR of Two Binary Grids Represented as Quad-Trees](https://leetcode.com/problems/logical-or-of-two-binary-grids-represented-as-quad-trees)||   |
@@ -411,8 +411,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |307|[Range Sum Query - Mutable](https://leetcode.com/problems/range-sum-query-mutable)|binary-indexed-tree segment-tree|   |
 |702|[Search in a Sorted Array of Unknown Size](https://leetcode.com/problems/search-in-a-sorted-array-of-unknown-size)|binary-search|   |
 |240|[Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii)|binary-search divide-and-conquer|   |
-|230|[Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst)|binary-search tree|   |
-|1382|[Balance a Binary Search Tree](https://leetcode.com/problems/balance-a-binary-search-tree)|binary-search-tree|   |
 |137|[Single Number II](https://leetcode.com/problems/single-number-ii)|bit-manipulation|   |
 |201|[Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range)|bit-manipulation|   |
 |260|[Single Number III](https://leetcode.com/problems/single-number-iii)|bit-manipulation|   |
@@ -796,6 +794,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1352|[Product of the Last K Numbers](https://leetcode.com/problems/product-of-the-last-k-numbers)|array design|[solution](src/_1352_product_of_the_last_k_numbers.rs)|
 |1366|[Rank Teams by Votes](https://leetcode.com/problems/rank-teams-by-votes)|array sort|[solution](src/_1366_rank_teams_by_votes.rs)|
 |1375|[Bulb Switcher III](https://leetcode.com/problems/bulb-switcher-iii)|array|[solution](src/_1375_bulb_switcher_3.rs)|
+|1382|[Balance a Binary Search Tree](https://leetcode.com/problems/balance-a-binary-search-tree)|binary-search-tree|[solution](src/_1382_balance_a_binary_search_tree.rs)|
 |1386|[Cinema Seat Allocation](https://leetcode.com/problems/cinema-seat-allocation)|array greedy|[solution](src/_1386_cinema_seat_allocation.rs)|
 |1395|[Count Number of Teams](https://leetcode.com/problems/count-number-of-teams)|array|[solution](src/_1395_count_number_of_teams.rs)|
 |139|[Word Break](https://leetcode.com/problems/word-break)|dynamic-programming|[solution](src/_139_word_break.rs)|
@@ -833,6 +832,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |228|[Summary Ranges](https://leetcode.com/problems/summary-ranges)|array|[solution](src/_228_summary_ranges.rs)|
 |229|[Majority Element II](https://leetcode.com/problems/majority-element-ii)|array|[solution](src/_229_majority_element_2.rs)|
 |22|[Generate Parentheses](https://leetcode.com/problems/generate-parentheses)|string backtracking|[solution](src/_22_generate_parentheses.rs)|
+|230|[Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst)|binary-search tree|[solution](src/_230_kth_smallest_element_in_a_bst.rs)|
 |238|[Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self)|array|[solution](src/_238_product_of_array_except_self.rs)|
 |244|[Shortest Word Distance II](https://leetcode.com/problems/shortest-word-distance-ii)|hash-table design|[solution](src/_244_shortest_word_distance_2.rs)|
 |245|[Shortest Word Distance III](https://leetcode.com/problems/shortest-word-distance-iii)|array|[solution](src/_245_shortest_word_distance_3.rs)|
