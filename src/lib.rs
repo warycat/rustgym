@@ -380,6 +380,8 @@ mod _306_additive_number;
 //
 mod _309_best_time_to_buy_and_sell_stock_with_cooldown;
 //
+mod _310_minimum_height_trees;
+//
 mod _311_sparse_matrix_multiplication;
 //
 mod _319_bulb_switcher;
@@ -802,6 +804,8 @@ mod _750_number_of_corner_rectangles;
 //
 mod _751_ip_to_cidr;
 //
+mod _752_open_the_lock;
+//
 mod _754_reach_a_number;
 //
 mod _755_pour_water;
@@ -1188,6 +1192,8 @@ mod _1123_lowest_common_ancestor_or_deepest_leaves;
 //
 mod _1128_number_of_equivalent_domino_pairs;
 //
+mod _1129_shortest_path_with_alternating_colors;
+//
 mod _1130_minimum_cost_tree_from_leaf_values;
 //
 mod _1133_largest_unique_number;
@@ -1211,6 +1217,8 @@ mod _1154_day_of_the_year;
 mod _1160_find_words_that_can_be_formed_by_characters;
 //
 mod _1161_maximum_level_sum_of_a_binary_tree;
+//
+mod _1162_as_far_from_land_as_possible;
 //
 mod _1165_single_row_keyboard;
 //
