@@ -274,6 +274,8 @@ mod _210_course_schedule_2;
 //
 mod _211_add_and_search_word_data_structure_design;
 //
+mod _213_house_robber_2;
+//
 mod _215_kth_largest_element_in_an_array;
 //
 mod _216_combination_sum_3;
@@ -384,11 +386,15 @@ mod _310_minimum_height_trees;
 //
 mod _311_sparse_matrix_multiplication;
 //
+mod _314_binary_tree_vertical_order_traversal;
+//
 mod _319_bulb_switcher;
 //
 mod _320_generalized_abbreviation;
 //
 mod _322_coin_change;
+//
+mod _325_maximum_size_subarray_sum_equals_k;
 //
 mod _328_odd_even_linked_list;
 //
@@ -532,6 +538,8 @@ mod _461_hamming_distance;
 //
 mod _463_island_perimeter;
 //
+mod _473_matchsticks_to_square;
+//
 mod _475_heaters;
 //
 mod _476_number_complement;
@@ -619,6 +627,8 @@ mod _547_friend_circles;
 mod _548_split_array_with_equal_sum;
 //
 mod _551_student_attendance_record_1;
+//
+mod _554_brick_wall;
 //
 mod _556_next_greater_element_3;
 //
@@ -1435,3 +1445,5 @@ mod _1394_find_lucky_integer_in_an_array;
 mod _1395_count_number_of_teams;
 //
 mod _1399_count_largest_group;
+//
+mod _2000_counting_elements;
