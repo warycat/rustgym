@@ -1142,6 +1142,8 @@ mod _1052_grumpy_bookstore_owner;
 //
 mod _1053_previous_permutation_with_one_swap;
 //
+mod _1054_distant_barcodes;
+//
 mod _1055_shortest_way_to_form_string;
 //
 mod _1056_confusing_number;
@@ -1438,6 +1440,8 @@ mod _1385_find_the_distance_value_between_two_arrays;
 //
 mod _1386_cinema_seat_allocation;
 //
+mod _1387_sort_integers_by_the_power_value;
+//
 mod _1389_create_target_array_in_the_given_order;
 //
 mod _1394_find_lucky_integer_in_an_array;
@@ -1445,5 +1449,7 @@ mod _1394_find_lucky_integer_in_an_array;
 mod _1395_count_number_of_teams;
 //
 mod _1399_count_largest_group;
+//
+mod _1403_minimum_subsequence_in_non_increasing_order;
 //
 mod _2000_counting_elements;
