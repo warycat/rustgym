@@ -17,6 +17,3 @@ members = [
     "./crates/util",
 ]
 
-[[bin]]
-path = "readme.rs"
-name = "readme"

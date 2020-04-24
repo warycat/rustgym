@@ -578,6 +578,8 @@ mod _507_perfect_number;
 //
 mod _509_fibonacci_number;
 //
+mod _513_find_bottom_left_tree_value;
+//
 mod _516_longest_palindromic_subsequence;
 //
 mod _518_coin_change_2;
@@ -725,6 +727,8 @@ mod _670_maximum_swap;
 mod _671_second_minimum_node_in_a_binary_tree;
 //
 mod _674_longest_continuous_increasing_subsequence;
+//
+mod _678_valid_parenthesis_string;
 //
 mod _680_valid_palindrome_2;
 //
@@ -1420,6 +1424,8 @@ mod _1352_product_of_the_last_k_numbers;
 //
 mod _1356_sort_integers_by_the_number_of_1_bits;
 //
+mod _1357_apply_discount_every_n_orders;
+//
 mod _1360_number_of_days_between_two_dates;
 //
 mod _1365_how_many_numbers_are_smaller_than_the_current_number;
@@ -1433,6 +1439,8 @@ mod _1374_generate_a_string_with_characters_that_have_odd_counts;
 mod _1375_bulb_switcher_3;
 //
 mod _1380_lucky_numbers_in_a_matrix;
+//
+mod _1381_design_a_stack_with_increment_operation;
 //
 mod _1382_balance_a_binary_search_tree;
 //
@@ -1453,3 +1461,6 @@ mod _1399_count_largest_group;
 mod _1403_minimum_subsequence_in_non_increasing_order;
 //
 mod _2000_counting_elements;
+//
+mod _2001_perform_string_shifts;
+//
