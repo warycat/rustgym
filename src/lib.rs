@@ -1460,6 +1460,18 @@ mod _1399_count_largest_group;
 //
 mod _1403_minimum_subsequence_in_non_increasing_order;
 //
+mod _1408_string_matching_in_an_array;
+//
+mod _1409_queries_on_a_permutation_with_key;
+//
+mod _1413_minimum_value_to_get_positive_step_by_step_sum;
+//
+mod _1414_find_the_minimum_number_of_fibonacci_numbers_whoes_sum_is_k;
+//
+mod _1415_the_k_th_lexicographical_string_of_all_happy_strings_of_length_n;
+//
+mod _1417_reformat_the_string;
+//
 mod _2000_counting_elements;
 //
 mod _2001_perform_string_shifts;

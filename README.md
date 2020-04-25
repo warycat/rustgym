@@ -48,12 +48,11 @@ All the solutions here are crafted with love and their performance beats 99% of 
 ### leetcode_rs [![Build Status](https://travis-ci.org/warycat/leetcode_rs.svg?branch=master)](https://travis-ci.org/warycat/leetcode_rs)
 
 # All Solutions
-<details><summary>Easy 329/347 94.81%</summary>
+<details><summary>Easy 332/347 95.68%</summary>
 
 
-|id|347 Easy Questions|Tags|329 Solutions|
+|id|347 Easy Questions|Tags|332 Solutions|
 |---|---|---|---|
-|1413|[Minimum Value to Get Positive Step by Step Sum](https://leetcode.com/problems/minimum-value-to-get-positive-step-by-step-sum)|array|   |
 |278|[First Bad Version](https://leetcode.com/problems/first-bad-version)|binary-search|   |
 |374|[Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower)|binary-search|   |
 |190|[Reverse Bits](https://leetcode.com/problems/reverse-bits)|bit-manipulation|   |
@@ -64,8 +63,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |141|[Linked List Cycle](https://leetcode.com/problems/linked-list-cycle)|linked-list two-pointers|   |
 |1237|[Find Positive Integer Solution for a Given Equation](https://leetcode.com/problems/find-positive-integer-solution-for-a-given-equation)|math binary-search|   |
 |157|[Read N Characters Given Read4](https://leetcode.com/problems/read-n-characters-given-read4)|string|   |
-|1408|[String Matching in an Array](https://leetcode.com/problems/string-matching-in-an-array)|string|   |
-|1417|[Reformat The String](https://leetcode.com/problems/reformat-the-string)|string|   |
 |235|[Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree)|tree|   |
 |589|[N-ary Tree Preorder Traversal](https://leetcode.com/problems/n-ary-tree-preorder-traversal)|tree|   |
 |590|[N-ary Tree Postorder Traversal](https://leetcode.com/problems/n-ary-tree-postorder-traversal)|tree|   |
@@ -173,6 +170,9 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1399|[Count Largest Group](https://leetcode.com/problems/count-largest-group)|array|[solution](src/_1399_count_largest_group.rs)|
 |13|[Roman to Integer](https://leetcode.com/problems/roman-to-integer)|math string|[solution](src/_13_roman_to_integer.rs)|
 |1403|[Minimum Subsequence in Non-Increasing Order](https://leetcode.com/problems/minimum-subsequence-in-non-increasing-order)|greedy sort|[solution](src/_1403_minimum_subsequence_in_non_increasing_order.rs)|
+|1408|[String Matching in an Array](https://leetcode.com/problems/string-matching-in-an-array)|string|[solution](src/_1408_string_matching_in_an_array.rs)|
+|1413|[Minimum Value to Get Positive Step by Step Sum](https://leetcode.com/problems/minimum-value-to-get-positive-step-by-step-sum)|array|[solution](src/_1413_minimum_value_to_get_positive_step_by_step_sum.rs)|
+|1417|[Reformat The String](https://leetcode.com/problems/reformat-the-string)|string|[solution](src/_1417_reformat_the_string.rs)|
 |14|[Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix)|string|[solution](src/_14_longest_common_prefix.rs)|
 |155|[Min Stack](https://leetcode.com/problems/min-stack)|stack design|[solution](src/_155_min_stack.rs)|
 |167|[Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted)|array two-pointers binary-search|[solution](src/_167_two_sum_2.rs)|
@@ -401,18 +401,15 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook)|array|[solution](src/_999_available_captures_for_rook.rs)|
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|math|[solution](src/_9_palindrome_number.rs)|
 </details>
-<details><summary>Medium 394/673 58.54%</summary>
+<details><summary>Medium 397/673 58.99%</summary>
 
 
-|id|673 Medium Questions|Tags|394 Solutions|
+|id|673 Medium Questions|Tags|397 Solutions|
 |---|---|---|---|
 |427|[Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree)||   |
 |558|[Logical OR of Two Binary Grids Represented as Quad-Trees](https://leetcode.com/problems/logical-or-of-two-binary-grids-represented-as-quad-trees)||   |
 |1265|[Print Immutable Linked List in Reverse](https://leetcode.com/problems/print-immutable-linked-list-in-reverse)||   |
 |277|[Find the Celebrity](https://leetcode.com/problems/find-the-celebrity)|array|   |
-|1409|[Queries on a Permutation With Key](https://leetcode.com/problems/queries-on-a-permutation-with-key)|array|   |
-|1414|[Find the Minimum Number of Fibonacci Numbers Whose Sum Is K](https://leetcode.com/problems/find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k)|array greedy|   |
-|1415|[The k-th Lexicographical String of All Happy Strings of Length n](https://leetcode.com/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n)|backtracking|   |
 |294|[Flip Game II](https://leetcode.com/problems/flip-game-ii)|backtracking minimax|   |
 |307|[Range Sum Query - Mutable](https://leetcode.com/problems/range-sum-query-mutable)|binary-indexed-tree segment-tree|   |
 |702|[Search in a Sorted Array of Unknown Size](https://leetcode.com/problems/search-in-a-sorted-array-of-unknown-size)|binary-search|   |
@@ -800,6 +797,9 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1387|[Sort Integers by The Power Value](https://leetcode.com/problems/sort-integers-by-the-power-value)|sort graph|[solution](src/_1387_sort_integers_by_the_power_value.rs)|
 |1395|[Count Number of Teams](https://leetcode.com/problems/count-number-of-teams)|array|[solution](src/_1395_count_number_of_teams.rs)|
 |139|[Word Break](https://leetcode.com/problems/word-break)|dynamic-programming|[solution](src/_139_word_break.rs)|
+|1409|[Queries on a Permutation With Key](https://leetcode.com/problems/queries-on-a-permutation-with-key)|array|[solution](src/_1409_queries_on_a_permutation_with_key.rs)|
+|1414|[Find the Minimum Number of Fibonacci Numbers Whose Sum Is K](https://leetcode.com/problems/find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k)|array greedy|[solution](src/_1414_find_the_minimum_number_of_fibonacci_numbers_whoes_sum_is_k.rs)|
+|1415|[The k-th Lexicographical String of All Happy Strings of Length n](https://leetcode.com/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n)|backtracking|[solution](src/_1415_the_k_th_lexicographical_string_of_all_happy_strings_of_length_n.rs)|
 |143|[Reorder List](https://leetcode.com/problems/reorder-list)|linked-list|[solution](src/_143_reorder_list.rs)|
 |146|[LRU Cache](https://leetcode.com/problems/lru-cache)|design|[solution](src/_146_lru_cache.rs)|
 |148|[Sort List](https://leetcode.com/problems/sort-list)|linked-list sort|[solution](src/_148_sort_list.rs)|
@@ -860,7 +860,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |309|[Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown)|dynamic-programming|[solution](src/_309_best_time_to_buy_and_sell_stock_with_cooldown.rs)|
 |310|[Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees)|breadth-first-search graph|[solution](src/_310_minimum_height_trees.rs)|
 |311|[Sparse Matrix Multiplication](https://leetcode.com/problems/sparse-matrix-multiplication)|hash-table|[solution](src/_311_sparse_matrix_multiplication.rs)|
-|314|[Binary Tree Vertical Order Traversal](https://leetcode.com/problems/binary-tree-vertical-order-traversal)|hash-table|[solution](src/_314_binary_tree_vertical_order_traversal.rs)|
+|314|[Binary Tree Vertical Order Traversal](https://leetcode.com/problems/binary-tree-vertical-order-traversal)|depth-first-search breadth-first-search|[solution](src/_314_binary_tree_vertical_order_traversal.rs)|
 |319|[Bulb Switcher](https://leetcode.com/problems/bulb-switcher)|math brainteaser|[solution](src/_319_bulb_switcher.rs)|
 |31|[Next Permutation](https://leetcode.com/problems/next-permutation)|array|[solution](src/_31_next_permutation.rs)|
 |320|[Generalized Abbreviation](https://leetcode.com/problems/generalized-abbreviation)|backtracking bit-manipulation|[solution](src/_320_generalized_abbreviation.rs)|
