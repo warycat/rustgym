@@ -54,6 +54,8 @@ mod _21_merge_two_sorted_lists;
 //
 mod _22_generate_parentheses;
 //
+mod _23_merge_k_sorted_lists;
+//
 mod _24_swap_nodes_in_pairs;
 //
 mod _26_remove_duplicates_from_sorted_array;
@@ -79,6 +81,8 @@ mod _38_count_and_say;
 mod _39_combination_sum;
 //
 mod _40_combination_sum_2;
+//
+mod _42_trapping_rain_water;
 //
 mod _43_multiply_strings;
 //
@@ -246,6 +250,8 @@ mod _173_binary_search_tree_iterator;
 //
 mod _179_largest_number;
 //
+mod _186_reverse_words_in_a_string_2;
+//
 mod _189_rotate_array;
 //
 mod _198_house_robber;
@@ -273,6 +279,8 @@ mod _209_minimum_size_subarray_sum;
 mod _210_course_schedule_2;
 //
 mod _211_add_and_search_word_data_structure_design;
+//
+mod _212_word_search_2;
 //
 mod _213_house_robber_2;
 //
@@ -347,6 +355,8 @@ mod _267_palindrome_permutation_2;
 mod _268_missing_number;
 //
 mod _270_closest_binary_search_tree_value;
+//
+mod _273_integer_to_english_words;
 //
 mod _274_h_index;
 //
@@ -1218,6 +1228,8 @@ mod _1134_armstrong_number;
 //
 mod _1137_n_th_tribonacci_number;
 //
+mod _1143_longest_common_subsequence;
+//
 mod _1144_decrease_elements_to_make_array_zigzag;
 //
 mod _1146_snapshot_array;
@@ -1471,6 +1483,10 @@ mod _1414_find_the_minimum_number_of_fibonacci_numbers_whoes_sum_is_k;
 mod _1415_the_k_th_lexicographical_string_of_all_happy_strings_of_length_n;
 //
 mod _1417_reformat_the_string;
+//
+mod _1418_display_table_of_food_orders_in_a_restaurant;
+//
+mod _1422_maximum_score_after_splitting_a_string;
 //
 mod _2000_counting_elements;
 //
