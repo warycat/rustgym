@@ -17,7 +17,7 @@ impl Solution {
 #[test]
 fn test() {
     let s = "tree".to_string();
-    let res = "eert".to_string();
+    let res = "eetr".to_string();
     assert_eq!(Solution::frequency_sort(s), res);
     let s = "cccaaa".to_string();
     let res = "cccaaa".to_string();
