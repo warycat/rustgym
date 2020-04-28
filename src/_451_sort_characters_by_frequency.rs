@@ -23,6 +23,6 @@ fn test() {
     let res = "cccaaa".to_string();
     assert_eq!(Solution::frequency_sort(s), res);
     let s = "Aabb".to_string();
-    let res = "bbAa".to_string();
+    let res = "bbaA".to_string();
     assert_eq!(Solution::frequency_sort(s), res);
 }
