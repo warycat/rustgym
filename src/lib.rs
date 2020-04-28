@@ -254,6 +254,8 @@ mod _186_reverse_words_in_a_string_2;
 //
 mod _189_rotate_array;
 //
+mod _191_number_of_1_bits;
+//
 mod _198_house_robber;
 //
 mod _199_binary_tree_right_side_view;
@@ -345,6 +347,8 @@ mod _254_factor_combinations;
 mod _256_paint_house;
 //
 mod _259_3sum_smaller;
+//
+mod _260_single_number_3;
 //
 mod _263_ugly_number;
 //
@@ -452,6 +456,8 @@ mod _370_range_addition;
 //
 mod _371_sum_of_two_integers;
 //
+mod _374_guess_number_higher_or_lower;
+//
 mod _378_kth_smallest_element_in_a_sorted_matrix;
 //
 mod _380_insert_delete_get_random_o1;
@@ -534,6 +540,8 @@ mod _447_number_of_boomerangs;
 //
 mod _448_find_all_numbers_disappeared_in_an_array;
 //
+mod _451_sort_characters_by_frequency;
+//
 mod _453_minimum_moves_to_equal_array_elements;
 //
 mod _455_assign_cookies;
@@ -559,6 +567,8 @@ mod _478_generate_random_point_in_circle;
 mod _481_magical_string;
 //
 mod _482_license_key_formatting;
+//
+mod _484_find_permutation;
 //
 mod _485_max_consecutive_ones;
 //
@@ -617,6 +627,8 @@ mod _531_lonely_pixel_1;
 mod _532_k_diff_pairs_in_an_array;
 //
 mod _533_lonely_pixel_2;
+//
+mod _535_encode_and_decode_tiny_url;
 //
 mod _537_complex_number_multiplication;
 //
@@ -938,6 +950,8 @@ mod _860_lemonade_change;
 //
 mod _861_score_after_flipping_matrix;
 //
+mod _865_smallest_subtree_with_all_the_deepest_nodes;
+//
 mod _866_prime_palindrome;
 //
 mod _867_transpose_matrix;
@@ -1032,6 +1046,8 @@ mod _944_delete_columns_to_make_sorted;
 //
 mod _945_minimum_increment_to_make_array_unique;
 //
+mod _946_validate_stack_sequences;
+//
 mod _949_largest_time_for_given_digits;
 //
 mod _950_reveal_cards_in_increasing_order;
@@ -1081,6 +1097,8 @@ mod _987_vertical_order_traversal_of_a_binary_tree;
 mod _989_add_to_array_form_of_integer;
 //
 mod _991_broken_calculator;
+//
+mod _993_cousins_in_binary_tree;
 //
 mod _994_rotting_oranges;
 //
@@ -1467,6 +1485,8 @@ mod _1389_create_target_array_in_the_given_order;
 mod _1394_find_lucky_integer_in_an_array;
 //
 mod _1395_count_number_of_teams;
+//
+mod _1396_design_underground_system;
 //
 mod _1399_count_largest_group;
 //

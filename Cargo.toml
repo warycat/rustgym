@@ -5,7 +5,7 @@ authors = ["yinchu"]
 edition = "2018"
 
 [dependencies]
-rand = "0.7.2"
+rand = "0.7.3"
 util = {path='./crates/util', version = '0.1.0'}
 pretty_assertions = "0.6.1"
 assert_approx_eq = "1.1.0"
