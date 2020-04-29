@@ -300,6 +300,8 @@ mod _221_maximal_square;
 //
 mod _222_count_complete_tree_nodes;
 //
+mod _223_rectangle_area;
+//
 mod _225_implement_stack_using_queues;
 //
 mod _226_invert_binary_tree;
@@ -448,6 +450,8 @@ mod _362_design_hit_counter;
 //
 mod _364_nested_list_weight_sum_2;
 //
+mod _365_water_and_jug_problem;
+//
 mod _366_find_leaves_of_binary_tree;
 //
 mod _367_valid_perfect_square;
@@ -455,6 +459,8 @@ mod _367_valid_perfect_square;
 mod _370_range_addition;
 //
 mod _371_sum_of_two_integers;
+//
+mod _372_super_pow;
 //
 mod _374_guess_number_higher_or_lower;
 //

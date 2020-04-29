@@ -402,10 +402,10 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook)|array|[solution](src/_999_available_captures_for_rook.rs)|
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|math|[solution](src/_9_palindrome_number.rs)|
 </details>
-<details><summary>Medium 407/675 60.30%</summary>
+<details><summary>Medium 410/675 60.74%</summary>
 
 
-|id|675 Medium Questions|Tags|407 Solutions|
+|id|675 Medium Questions|Tags|410 Solutions|
 |---|---|---|---|
 |427|[Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree)||   |
 |558|[Logical OR of Two Binary Grids Represented as Quad-Trees](https://leetcode.com/problems/logical-or-of-two-binary-grids-represented-as-quad-trees)||   |
@@ -539,9 +539,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |61|[Rotate List](https://leetcode.com/problems/rotate-list)|linked-list two-pointers|   |
 |86|[Partition List](https://leetcode.com/problems/partition-list)|linked-list two-pointers|   |
 |142|[Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii)|linked-list two-pointers|   |
-|223|[Rectangle Area](https://leetcode.com/problems/rectangle-area)|math|   |
-|365|[Water and Jug Problem](https://leetcode.com/problems/water-and-jug-problem)|math|   |
-|372|[Super Pow](https://leetcode.com/problems/super-pow)|math|   |
 |396|[Rotate Function](https://leetcode.com/problems/rotate-function)|math|   |
 |400|[Nth Digit](https://leetcode.com/problems/nth-digit)|math|   |
 |423|[Reconstruct Original Digits from English](https://leetcode.com/problems/reconstruct-original-digits-from-english)|math|   |
@@ -828,6 +825,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |220|[Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii)|sort ordered-map|[solution](src/_220_contains_duplicate_3.rs)|
 |221|[Maximal Square](https://leetcode.com/problems/maximal-square)|dynamic-programming|[solution](src/_221_maximal_square.rs)|
 |222|[Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes)|binary-search tree|[solution](src/_222_count_complete_tree_nodes.rs)|
+|223|[Rectangle Area](https://leetcode.com/problems/rectangle-area)|math|[solution](src/_223_rectangle_area.rs)|
 |227|[Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii)|string|[solution](src/_227_basic_calculator_2.rs)|
 |228|[Summary Ranges](https://leetcode.com/problems/summary-ranges)|array|[solution](src/_228_summary_ranges.rs)|
 |229|[Majority Element II](https://leetcode.com/problems/majority-element-ii)|array|[solution](src/_229_majority_element_2.rs)|
@@ -876,9 +874,11 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |355|[Design Twitter](https://leetcode.com/problems/design-twitter)|hash-table heap design|[solution](src/_355_design_twitter.rs)|
 |362|[Design Hit Counter](https://leetcode.com/problems/design-hit-counter)|design|[solution](src/_362_design_hit_counter.rs)|
 |364|[Nested List Weight Sum II](https://leetcode.com/problems/nested-list-weight-sum-ii)|depth-first-search|[solution](src/_364_nested_list_weight_sum_2.rs)|
+|365|[Water and Jug Problem](https://leetcode.com/problems/water-and-jug-problem)|math|[solution](src/_365_water_and_jug_problem.rs)|
 |366|[Find Leaves of Binary Tree](https://leetcode.com/problems/find-leaves-of-binary-tree)|tree depth-first-search|[solution](src/_366_find_leaves_of_binary_tree.rs)|
 |36|[Valid Sudoku](https://leetcode.com/problems/valid-sudoku)|hash-table|[solution](src/_36_valid_sudoku.rs)|
 |370|[Range Addition](https://leetcode.com/problems/range-addition)|array|[solution](src/_370_range_addition.rs)|
+|372|[Super Pow](https://leetcode.com/problems/super-pow)|math|[solution](src/_372_super_pow.rs)|
 |378|[Kth Smallest Element in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix)|binary-search heap|[solution](src/_378_kth_smallest_element_in_a_sorted_matrix.rs)|
 |380|[Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1)|array hash-table design|[solution](src/_380_insert_delete_get_random_o1.rs)|
 |382|[Linked List Random Node](https://leetcode.com/problems/linked-list-random-node)|reservoir-sampling|[solution](src/_382_linked_list_random_node.rs)|
