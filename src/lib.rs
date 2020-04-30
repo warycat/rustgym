@@ -30,6 +30,8 @@ mod _8_string_to_integer;
 //
 mod _9_palindrome_number;
 //
+mod _10_regular_expression_matching;
+//
 mod _11_container_with_most_water;
 //
 mod _12_integer_to_roman;
@@ -86,6 +88,8 @@ mod _42_trapping_rain_water;
 //
 mod _43_multiply_strings;
 //
+mod _44_wildcard_matching;
+//
 mod _46_permutations;
 //
 mod _47_permutations_2;
@@ -105,6 +109,8 @@ mod _55_jump_game;
 mod _56_merge_intervals;
 //
 mod _59_spiral_matrix_2;
+//
+mod _61_rotate_list;
 //
 mod _62_unique_paths;
 //
@@ -197,6 +203,8 @@ mod _120_triangle;
 mod _121_best_time_to_buy_and_sell_stock;
 //
 mod _122_best_time_to_buy_and_sell_stock_2;
+//
+mod _124_binary_tree_maximum_path_sum;
 //
 mod _125_valid_palindrome;
 //
@@ -333,6 +341,8 @@ mod _245_shortest_word_distance_3;
 mod _246_strobogrammantic_number;
 //
 mod _247_strobogrammatic_number_2;
+//
+mod _250_count_univalue_subtrees;
 //
 mod _251_flatten_2d_vector;
 //
@@ -577,6 +587,8 @@ mod _482_license_key_formatting;
 mod _484_find_permutation;
 //
 mod _485_max_consecutive_ones;
+//
+mod _487_max_consecutive_ones_2;
 //
 mod _490_the_maze;
 //
@@ -1496,6 +1508,8 @@ mod _1396_design_underground_system;
 //
 mod _1399_count_largest_group;
 //
+mod _1402_reducing_dishes;
+//
 mod _1403_minimum_subsequence_in_non_increasing_order;
 //
 mod _1408_string_matching_in_an_array;
@@ -1518,3 +1532,6 @@ mod _2000_counting_elements;
 //
 mod _2001_perform_string_shifts;
 //
+mod _2002_first_unique_number;
+//
+mod _2003_chick_if_a_string_is_a_valid_sequence_from_root_to_leaves_path_in_a_binary_tree;
