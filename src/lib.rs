@@ -78,6 +78,8 @@ mod _35_search_insert_position;
 //
 mod _36_valid_sudoku;
 //
+mod _37_sudoku_solver;
+//
 mod _38_count_and_say;
 //
 mod _39_combination_sum;
@@ -99,6 +101,8 @@ mod _48_rotate_image;
 mod _49_group_anagrams;
 //
 mod _50_pow_x_n;
+//
+mod _52_n_queens_2;
 //
 mod _53_maximum_subarray;
 //
@@ -379,6 +383,8 @@ mod _274_h_index;
 mod _275_h_index_2;
 //
 mod _276_paint_fence;
+//
+mod _278_first_bad_version;
 //
 mod _280_wiggle_sort;
 //
