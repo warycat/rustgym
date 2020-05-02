@@ -404,16 +404,15 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook)|array|[solution](src/_999_available_captures_for_rook.rs)|
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|math|[solution](src/_9_palindrome_number.rs)|
 </details>
-<details><summary>Medium 414/678 61.06%</summary>
+<details><summary>Medium 416/678 61.36%</summary>
 
 
-|id|678 Medium Questions|Tags|414 Solutions|
+|id|678 Medium Questions|Tags|416 Solutions|
 |---|---|---|---|
 |427|[Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree)||   |
 |558|[Logical OR of Two Binary Grids Represented as Quad-Trees](https://leetcode.com/problems/logical-or-of-two-binary-grids-represented-as-quad-trees)||   |
 |1265|[Print Immutable Linked List in Reverse](https://leetcode.com/problems/print-immutable-linked-list-in-reverse)||   |
 |277|[Find the Celebrity](https://leetcode.com/problems/find-the-celebrity)|array|   |
-|1428|[Leftmost Column with at Least a One](https://leetcode.com/problems/leftmost-column-with-at-least-a-one)|array|   |
 |1423|[Maximum Points You Can Obtain from Cards](https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards)|array dynamic-programming sliding-window|   |
 |1424|[Diagonal Traverse II](https://leetcode.com/problems/diagonal-traverse-ii)|array sort|   |
 |294|[Flip Game II](https://leetcode.com/problems/flip-game-ii)|backtracking minimax|   |
@@ -646,7 +645,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |958|[Check Completeness of a Binary Tree](https://leetcode.com/problems/check-completeness-of-a-binary-tree)|tree|   |
 |1257|[Smallest Common Region](https://leetcode.com/problems/smallest-common-region)|tree|   |
 |1379|[Find a Corresponding Node of a Binary Tree in a Clone of That Tree](https://leetcode.com/problems/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree)|tree|   |
-|1430|[Check If a String Is a Valid Sequence from Root to Leaves Path in a Binary Tree](https://leetcode.com/problems/check-if-a-string-is-a-valid-sequence-from-root-to-leaves-path-in-a-binary-tree)|tree|   |
 |429|[N-ary Tree Level Order Traversal](https://leetcode.com/problems/n-ary-tree-level-order-traversal)|tree breadth-first-search|   |
 |113|[Path Sum II](https://leetcode.com/problems/path-sum-ii)|tree depth-first-search|   |
 |116|[Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node)|tree depth-first-search|   |
@@ -794,7 +792,9 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1414|[Find the Minimum Number of Fibonacci Numbers Whose Sum Is K](https://leetcode.com/problems/find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k)|array greedy|[solution](src/_1414_find_the_minimum_number_of_fibonacci_numbers_whoes_sum_is_k.rs)|
 |1415|[The k-th Lexicographical String of All Happy Strings of Length n](https://leetcode.com/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n)|backtracking|[solution](src/_1415_the_k_th_lexicographical_string_of_all_happy_strings_of_length_n.rs)|
 |1418|[Display Table of Food Orders in a Restaurant](https://leetcode.com/problems/display-table-of-food-orders-in-a-restaurant)|hash-table|[solution](src/_1418_display_table_of_food_orders_in_a_restaurant.rs)|
+|1428|[Leftmost Column with at Least a One](https://leetcode.com/problems/leftmost-column-with-at-least-a-one)|array|[solution](src/_1428_leftmost_column_with_at_least_a_one.rs)|
 |1429|[First Unique Number](https://leetcode.com/problems/first-unique-number)|hash-table design|[solution](src/_1429_first_unique_number.rs)|
+|1430|[Check If a String Is a Valid Sequence from Root to Leaves Path in a Binary Tree](https://leetcode.com/problems/check-if-a-string-is-a-valid-sequence-from-root-to-leaves-path-in-a-binary-tree)|tree|[solution](src/_1430_chick_if_a_string_is_a_valid_sequence_from_root_to_leaves_path_in_a_binary_tree.rs)|
 |143|[Reorder List](https://leetcode.com/problems/reorder-list)|linked-list|[solution](src/_143_reorder_list.rs)|
 |146|[LRU Cache](https://leetcode.com/problems/lru-cache)|design|[solution](src/_146_lru_cache.rs)|
 |148|[Sort List](https://leetcode.com/problems/sort-list)|linked-list sort|[solution](src/_148_sort_list.rs)|

@@ -1,4 +1,5 @@
 use cc;
+use glob::glob;
 
 fn main() {
     cc::Build::new()
@@ -6,6 +7,6 @@ fn main() {
         .cpp(true)
         .flag("-std=c++11")
         .flag("-stdlib=libc++")
-        .file("src/_278_first_bad_version.cpp")
+        .files(glob("src/*.cpp").expect("entries").filter_map(|x| x.ok()))
         .compile("libfoo.a");
 }
