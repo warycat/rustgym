@@ -48,13 +48,11 @@ All the solutions here are crafted with love and their performance beats 99% of 
 ### leetcode_rs [![Build Status](https://travis-ci.org/warycat/leetcode_rs.svg?branch=master)](https://travis-ci.org/warycat/leetcode_rs)
 
 # All Solutions
-<details><summary>Easy 337/350 96.29%</summary>
+<details><summary>Easy 339/350 96.86%</summary>
 
 
-|id|350 Easy Questions|Tags|337 Solutions|
+|id|350 Easy Questions|Tags|339 Solutions|
 |---|---|---|---|
-|1426|[Counting Elements](https://leetcode.com/problems/counting-elements)|array|   |
-|1427|[Perform String Shifts](https://leetcode.com/problems/perform-string-shifts)|array math|   |
 |190|[Reverse Bits](https://leetcode.com/problems/reverse-bits)|bit-manipulation|   |
 |690|[Employee Importance](https://leetcode.com/problems/employee-importance)|hash-table depth-first-search breadth-first-search|   |
 |160|[Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists)|linked-list|   |
@@ -172,6 +170,8 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1413|[Minimum Value to Get Positive Step by Step Sum](https://leetcode.com/problems/minimum-value-to-get-positive-step-by-step-sum)|array|[solution](src/_1413_minimum_value_to_get_positive_step_by_step_sum.rs)|
 |1417|[Reformat The String](https://leetcode.com/problems/reformat-the-string)|string|[solution](src/_1417_reformat_the_string.rs)|
 |1422|[Maximum Score After Splitting a String](https://leetcode.com/problems/maximum-score-after-splitting-a-string)|string|[solution](src/_1422_maximum_score_after_splitting_a_string.rs)|
+|1426|[Counting Elements](https://leetcode.com/problems/counting-elements)|array|[solution](src/_1426_counting_elements.rs)|
+|1427|[Perform String Shifts](https://leetcode.com/problems/perform-string-shifts)|array math|[solution](src/_1427_perform_string_shifts.rs)|
 |14|[Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix)|string|[solution](src/_14_longest_common_prefix.rs)|
 |155|[Min Stack](https://leetcode.com/problems/min-stack)|stack design|[solution](src/_155_min_stack.rs)|
 |167|[Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted)|array two-pointers binary-search|[solution](src/_167_two_sum_2.rs)|
@@ -404,10 +404,10 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook)|array|[solution](src/_999_available_captures_for_rook.rs)|
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|math|[solution](src/_9_palindrome_number.rs)|
 </details>
-<details><summary>Medium 413/678 60.91%</summary>
+<details><summary>Medium 414/678 61.06%</summary>
 
 
-|id|678 Medium Questions|Tags|413 Solutions|
+|id|678 Medium Questions|Tags|414 Solutions|
 |---|---|---|---|
 |427|[Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree)||   |
 |558|[Logical OR of Two Binary Grids Represented as Quad-Trees](https://leetcode.com/problems/logical-or-of-two-binary-grids-represented-as-quad-trees)||   |
@@ -511,7 +511,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |454|[4Sum II](https://leetcode.com/problems/4sum-ii)|hash-table binary-search|   |
 |187|[Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences)|hash-table bit-manipulation|   |
 |288|[Unique Word Abbreviation](https://leetcode.com/problems/unique-word-abbreviation)|hash-table design|   |
-|1429|[First Unique Number](https://leetcode.com/problems/first-unique-number)|hash-table design|   |
 |1090|[Largest Values From Labels](https://leetcode.com/problems/largest-values-from-labels)|hash-table greedy|   |
 |138|[Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer)|hash-table linked-list|   |
 |356|[Line Reflection](https://leetcode.com/problems/line-reflection)|hash-table math|   |
@@ -795,6 +794,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1414|[Find the Minimum Number of Fibonacci Numbers Whose Sum Is K](https://leetcode.com/problems/find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k)|array greedy|[solution](src/_1414_find_the_minimum_number_of_fibonacci_numbers_whoes_sum_is_k.rs)|
 |1415|[The k-th Lexicographical String of All Happy Strings of Length n](https://leetcode.com/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n)|backtracking|[solution](src/_1415_the_k_th_lexicographical_string_of_all_happy_strings_of_length_n.rs)|
 |1418|[Display Table of Food Orders in a Restaurant](https://leetcode.com/problems/display-table-of-food-orders-in-a-restaurant)|hash-table|[solution](src/_1418_display_table_of_food_orders_in_a_restaurant.rs)|
+|1429|[First Unique Number](https://leetcode.com/problems/first-unique-number)|hash-table design|[solution](src/_1429_first_unique_number.rs)|
 |143|[Reorder List](https://leetcode.com/problems/reorder-list)|linked-list|[solution](src/_143_reorder_list.rs)|
 |146|[LRU Cache](https://leetcode.com/problems/lru-cache)|design|[solution](src/_146_lru_cache.rs)|
 |148|[Sort List](https://leetcode.com/problems/sort-list)|linked-list sort|[solution](src/_148_sort_list.rs)|

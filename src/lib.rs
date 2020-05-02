@@ -1534,10 +1534,10 @@ mod _1418_display_table_of_food_orders_in_a_restaurant;
 //
 mod _1422_maximum_score_after_splitting_a_string;
 //
-mod _2000_counting_elements;
+mod _1426_counting_elements;
 //
-mod _2001_perform_string_shifts;
+mod _1427_perform_string_shifts;
 //
-mod _2002_first_unique_number;
+mod _1429_first_unique_number;
 //
 mod _2003_chick_if_a_string_is_a_valid_sequence_from_root_to_leaves_path_in_a_binary_tree;
