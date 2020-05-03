@@ -60,6 +60,8 @@ mod _23_merge_k_sorted_lists;
 //
 mod _24_swap_nodes_in_pairs;
 //
+mod _25_reverse_nodes_in_k_group;
+//
 mod _26_remove_duplicates_from_sorted_array;
 //
 mod _27_remove_element;
@@ -244,6 +246,8 @@ mod _162_find_peak_element;
 //
 mod _163_missing_ranges;
 //
+mod _165_compare_version_numbers;
+//
 mod _166_fraction_to_recurring_decimal;
 //
 mod _167_two_sum_2;
@@ -401,6 +405,8 @@ mod _290_word_pattern;
 mod _292_nim_game;
 //
 mod _293_flip_game;
+//
+mod _295_find_median_from_data_stream;
 //
 mod _299_bulls_and_cows;
 //
@@ -743,6 +749,8 @@ mod _636_exclusive_time_of_functions;
 mod _637_average_of_levels_in_binary_tree;
 //
 mod _641_design_circular_deque;
+//
+mod _642_design_search_autocomplete_system;
 //
 mod _643_maximum_average_subarray_1;
 //
