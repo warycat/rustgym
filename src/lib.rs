@@ -630,6 +630,8 @@ mod _509_fibonacci_number;
 //
 mod _513_find_bottom_left_tree_value;
 //
+mod _515_find_largest_value_in_each_row;
+//
 mod _516_longest_palindromic_subsequence;
 //
 mod _518_coin_change_2;
@@ -1551,3 +1553,11 @@ mod _1428_leftmost_column_with_at_least_a_one;
 mod _1429_first_unique_number;
 //
 mod _1430_chick_if_a_string_is_a_valid_sequence_from_root_to_leaves_path_in_a_binary_tree;
+//
+mod _1431_kids_with_the_greatest_number_of_candies;
+//
+mod _1433_check_if_a_string_can_break_another_string;
+//
+mod _1436_destination_city;
+//
+mod _1437_check_if_all_1s_are_at_least_length_k_places_away;
