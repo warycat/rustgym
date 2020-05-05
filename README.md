@@ -406,10 +406,10 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook)|array|[solution](src/_999_available_captures_for_rook.rs)|
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|math|[solution](src/_9_palindrome_number.rs)|
 </details>
-<details><summary>Medium 420/682 61.58%</summary>
+<details><summary>Medium 425/682 62.32%</summary>
 
 
-|id|682 Medium Questions|Tags|420 Solutions|
+|id|682 Medium Questions|Tags|425 Solutions|
 |---|---|---|---|
 |427|[Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree)||   |
 |558|[Logical OR of Two Binary Grids Represented as Quad-Trees](https://leetcode.com/problems/logical-or-of-two-binary-grids-represented-as-quad-trees)||   |
@@ -427,8 +427,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |318|[Maximum Product of Word Lengths](https://leetcode.com/problems/maximum-product-of-word-lengths)|bit-manipulation|   |
 |477|[Total Hamming Distance](https://leetcode.com/problems/total-hamming-distance)|bit-manipulation|   |
 |421|[Maximum XOR of Two Numbers in an Array](https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array)|bit-manipulation trie|   |
-|491|[Increasing Subsequences](https://leetcode.com/problems/increasing-subsequences)|depth-first-search|   |
-|851|[Loud and Rich](https://leetcode.com/problems/loud-and-rich)|depth-first-search|   |
 |886|[Possible Bipartition](https://leetcode.com/problems/possible-bipartition)|depth-first-search|   |
 |1020|[Number of Enclaves](https://leetcode.com/problems/number-of-enclaves)|depth-first-search|   |
 |1034|[Coloring A Border](https://leetcode.com/problems/coloring-a-border)|depth-first-search|   |
@@ -471,7 +469,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |813|[Largest Sum of Averages](https://leetcode.com/problems/largest-sum-of-averages)|dynamic-programming|   |
 |837|[New 21 Game](https://leetcode.com/problems/new-21-game)|dynamic-programming|   |
 |967|[Numbers With Same Consecutive Differences](https://leetcode.com/problems/numbers-with-same-consecutive-differences)|dynamic-programming|   |
-|983|[Minimum Cost For Tickets](https://leetcode.com/problems/minimum-cost-for-tickets)|dynamic-programming|   |
 |1024|[Video Stitching](https://leetcode.com/problems/video-stitching)|dynamic-programming|   |
 |1039|[Minimum Score Triangulation of Polygon](https://leetcode.com/problems/minimum-score-triangulation-of-polygon)|dynamic-programming|   |
 |1049|[Last Stone Weight II](https://leetcode.com/problems/last-stone-weight-ii)|dynamic-programming|   |
@@ -498,7 +495,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1401|[Circle and Rectangle Overlapping](https://leetcode.com/problems/circle-and-rectangle-overlapping)|geometry|   |
 |1334|[Find the City With the Smallest Number of Neighbors at a Threshold Distance](https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance)|graph|   |
 |1361|[Validate Binary Tree Nodes](https://leetcode.com/problems/validate-binary-tree-nodes)|graph|   |
-|444|[Sequence Reconstruction](https://leetcode.com/problems/sequence-reconstruction)|graph topological-sort|   |
 |435|[Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals)|greedy|   |
 |452|[Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons)|greedy|   |
 |649|[Dota2 Senate](https://leetcode.com/problems/dota2-senate)|greedy|   |
@@ -625,7 +621,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1247|[Minimum Swaps to Make Strings Equal](https://leetcode.com/problems/minimum-swaps-to-make-strings-equal)|string greedy|   |
 |767|[Reorganize String](https://leetcode.com/problems/reorganize-string)|string heap greedy sort|   |
 |385|[Mini Parser](https://leetcode.com/problems/mini-parser)|string stack|   |
-|856|[Score of Parentheses](https://leetcode.com/problems/score-of-parentheses)|string stack|   |
 |1003|[Check If Word Is Valid After Substitutions](https://leetcode.com/problems/check-if-word-is-valid-after-substitutions)|string stack|   |
 |1410|[HTML Entity Parser](https://leetcode.com/problems/html-entity-parser)|string stack|   |
 |536|[Construct Binary Tree from String](https://leetcode.com/problems/construct-binary-tree-from-string)|string tree|   |
@@ -912,6 +907,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |438|[Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string)|hash-table|[solution](src/_438_find_all_anagrams_in_a_string.rs)|
 |43|[Multiply Strings](https://leetcode.com/problems/multiply-strings)|math string|[solution](src/_43_multiply_strings.rs)|
 |442|[Find All Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array)|array|[solution](src/_442_find_all_duplicates_in_an_array.rs)|
+|444|[Sequence Reconstruction](https://leetcode.com/problems/sequence-reconstruction)|graph topological-sort|[solution](src/_444_sequence_reconstruction.rs)|
 |445|[Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii)|linked-list|[solution](src/_445_add_two_numbers_2.rs)|
 |451|[Sort Characters By Frequency](https://leetcode.com/problems/sort-characters-by-frequency)|hash-table heap|[solution](src/_451_sort_characters_by_frequency.rs)|
 |456|[132 Pattern](https://leetcode.com/problems/132-pattern)|stack|[solution](src/_456_132_pattern.rs)|
@@ -925,6 +921,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |487|[Max Consecutive Ones II](https://leetcode.com/problems/max-consecutive-ones-ii)|two-pointers|[solution](src/_487_max_consecutive_ones_2.rs)|
 |48|[Rotate Image](https://leetcode.com/problems/rotate-image)|array|[solution](src/_48_rotate_image.rs)|
 |490|[The Maze](https://leetcode.com/problems/the-maze)|depth-first-search breadth-first-search|[solution](src/_490_the_maze.rs)|
+|491|[Increasing Subsequences](https://leetcode.com/problems/increasing-subsequences)|depth-first-search|[solution](src/_491_increasing_subsequences.rs)|
 |495|[Teemo Attacking](https://leetcode.com/problems/teemo-attacking)|array|[solution](src/_495_teemo_attacking.rs)|
 |497|[Random Point in Non-overlapping Rectangles](https://leetcode.com/problems/random-point-in-non-overlapping-rectangles)|binary-search random|[solution](src/_497_random_point_in_nonoverlapping_rectangles.rs)|
 |498|[Diagonal Traverse](https://leetcode.com/problems/diagonal-traverse)||[solution](src/_498_diagonal_traverse.rs)|
@@ -1039,7 +1036,9 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |835|[Image Overlap](https://leetcode.com/problems/image-overlap)|array|[solution](src/_835_image_overlap.rs)|
 |841|[Keys and Rooms](https://leetcode.com/problems/keys-and-rooms)|depth-first-search graph|[solution](src/_841_keys_and_rooms.rs)|
 |846|[Hand of Straights](https://leetcode.com/problems/hand-of-straights)|ordered-map|[solution](src/_846_hand_of_straights.rs)|
+|851|[Loud and Rich](https://leetcode.com/problems/loud-and-rich)|depth-first-search|[solution](src/_851_loud_and_rich.rs)|
 |855|[Exam Room](https://leetcode.com/problems/exam-room)|ordered-map|[solution](src/_855_exam_room.rs)|
+|856|[Score of Parentheses](https://leetcode.com/problems/score-of-parentheses)|string stack|[solution](src/_856_score_of_parentheses.rs)|
 |861|[Score After Flipping Matrix](https://leetcode.com/problems/score-after-flipping-matrix)|greedy|[solution](src/_861_score_after_flipping_matrix.rs)|
 |865|[Smallest Subtree with all the Deepest Nodes](https://leetcode.com/problems/smallest-subtree-with-all-the-deepest-nodes)|tree|[solution](src/_865_smallest_subtree_with_all_the_deepest_nodes.rs)|
 |866|[Prime Palindrome](https://leetcode.com/problems/prime-palindrome)|math|[solution](src/_866_prime_palindrome.rs)|
@@ -1087,6 +1086,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |978|[Longest Turbulent Subarray](https://leetcode.com/problems/longest-turbulent-subarray)|array dynamic-programming sliding-window|[solution](src/_978_longest_turbulent_subarray.rs)|
 |979|[Distribute Coins in Binary Tree](https://leetcode.com/problems/distribute-coins-in-binary-tree)|tree depth-first-search|[solution](src/_979_distribute_coins_in_binary_tree.rs)|
 |981|[Time Based Key-Value Store](https://leetcode.com/problems/time-based-key-value-store)|hash-table binary-search|[solution](src/_981_time_based_key_value_store.rs)|
+|983|[Minimum Cost For Tickets](https://leetcode.com/problems/minimum-cost-for-tickets)|dynamic-programming|[solution](src/_983_minimum_cost_for_tickets.rs)|
 |986|[Interval List Intersections](https://leetcode.com/problems/interval-list-intersections)|two-pointers|[solution](src/_986_interval_list_intersections.rs)|
 |987|[Vertical Order Traversal of a Binary Tree](https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree)|hash-table tree|[solution](src/_987_vertical_order_traversal_of_a_binary_tree.rs)|
 |98|[Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree)|tree depth-first-search|[solution](src/_98_validate_binary_search_tree.rs)|

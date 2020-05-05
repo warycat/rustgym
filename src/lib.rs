@@ -562,6 +562,8 @@ mod _442_find_all_duplicates_in_an_array;
 //
 mod _443_string_compression;
 //
+mod _444_sequence_reconstruction;
+//
 mod _445_add_two_numbers_2;
 //
 mod _447_number_of_boomerangs;
@@ -603,6 +605,8 @@ mod _485_max_consecutive_ones;
 mod _487_max_consecutive_ones_2;
 //
 mod _490_the_maze;
+//
+mod _491_increasing_subsequences;
 //
 mod _492_construct_the_rectangle;
 //
@@ -974,9 +978,13 @@ mod _846_hand_of_straights;
 //
 mod _849_maximize_distance_to_closest_person;
 //
+mod _851_loud_and_rich;
+//
 mod _852_peak_index_in_a_mountain_array;
 //
 mod _855_exam_room;
+//
+mod _856_score_of_parentheses;
 //
 mod _859_buddy_strings;
 //
@@ -1121,6 +1129,8 @@ mod _978_longest_turbulent_subarray;
 mod _979_distribute_coins_in_binary_tree;
 //
 mod _981_time_based_key_value_store;
+//
+mod _983_minimum_cost_for_tickets;
 //
 mod _985_sum_of_even_numbers_after_queries;
 //
