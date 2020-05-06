@@ -8,10 +8,10 @@ pub struct TreeNode {
 #[macro_export]
 macro_rules! tree {
     ($e:expr) => {
-        TreeNode::leaf($e)
+        TreeLink::leaf($e)
     };
     ($e:expr, $l:expr, $r:expr) => {
-        TreeNode::branch($e, $l, $r)
+        TreeLink::branch($e, $l, $r)
     };
 }
 
@@ -20,11 +20,11 @@ pub type TreeLink = Option<Rc<RefCell<TreeNode>>>;
 use std::cell::RefCell;
 use std::rc::Rc;
 
-impl TreeNode {
-    pub fn branch(val: i32, left: TreeLink, right: TreeLink) -> TreeLink {
+pub trait MakeTree {
+    fn branch(val: i32, left: TreeLink, right: TreeLink) -> TreeLink {
         Some(Rc::new(RefCell::new(TreeNode { val, left, right })))
     }
-    pub fn leaf(val: i32) -> TreeLink {
+    fn leaf(val: i32) -> TreeLink {
         Some(Rc::new(RefCell::new(TreeNode {
             val,
             left: None,
@@ -32,3 +32,5 @@ impl TreeNode {
         })))
     }
 }
+
+impl MakeTree for TreeLink {}

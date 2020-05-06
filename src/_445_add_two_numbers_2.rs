@@ -26,7 +26,7 @@ impl Solution {
                 sum += x2;
             }
             sum += carry;
-            res = ListNode::node(sum % 10, res);
+            res = ListLink::link(sum % 10, res);
             carry = sum / 10;
         }
         res

@@ -19,7 +19,7 @@ impl Solution {
                 p2 = &n2.next;
             }
             carry = val / 10;
-            *p3 = ListNode::node(val % 10, None);
+            *p3 = ListLink::link(val % 10, None);
             p3 = &mut p3.as_mut().unwrap().next;
         }
         sum

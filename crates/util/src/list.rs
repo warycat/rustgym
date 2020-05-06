@@ -10,17 +10,19 @@ macro_rules! list {
         None
     };
     ($e:expr) => {
-        ListNode::node($e, None)
+        ListLink::link($e, None)
     };
     ($e:expr, $($tail:tt)*) => {
-        ListNode::node($e, list!($($tail)*))
+        ListLink::link($e, list!($($tail)*))
     };
 }
 
 pub type ListLink = Option<Box<ListNode>>;
 
-impl ListNode {
-    pub fn node(val: i32, next: ListLink) -> ListLink {
+pub trait MakeList {
+    fn link(val: i32, next: ListLink) -> ListLink {
         Some(Box::new(ListNode { val, next }))
     }
 }
+
+impl MakeList for ListLink {}

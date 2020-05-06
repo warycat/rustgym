@@ -32,7 +32,7 @@ impl Solution {
         let i = start / 9;
         let j = start % 9;
         if board[i][j] == '.' {
-            for k in 0..9 {
+            for k in (0..9).rev() {
                 let bit = 1 << k;
                 if rows[i] & bit == 0 && cols[j] & bit == 0 && zones[i / 3][j / 3] & bit == 0 {
                     board[i][j] = (b'1' + k as u8) as char;

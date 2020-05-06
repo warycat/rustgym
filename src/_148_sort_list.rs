@@ -12,7 +12,7 @@ impl Solution {
         v.sort_unstable();
         let mut prev = None;
         while let Some(last) = v.pop() {
-            prev = ListNode::node(last, prev);
+            prev = ListLink::link(last, prev);
         }
         prev
     }

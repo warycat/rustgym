@@ -27,7 +27,7 @@ impl MyLinkedList {
     }
 
     fn add_at_head(&mut self, val: i32) {
-        self.head = ListNode::node(val, self.head.take());
+        self.head = ListLink::link(val, self.head.take());
     }
 
     fn add_at_tail(&mut self, val: i32) {
@@ -35,7 +35,7 @@ impl MyLinkedList {
         while let Some(node) = link {
             link = &mut node.next;
         }
-        *link = ListNode::node(val, None);
+        *link = ListLink::link(val, None);
     }
 
     fn add_at_index(&mut self, index: i32, val: i32) {
@@ -46,7 +46,7 @@ impl MyLinkedList {
             let mut link: &mut ListLink = &mut self.head;
             while let Some(node) = link {
                 if index == i + 1 {
-                    node.next = ListNode::node(val, node.next.take());
+                    node.next = ListLink::link(val, node.next.take());
                     return;
                 } else {
                     link = &mut node.next;
