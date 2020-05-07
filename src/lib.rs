@@ -536,6 +536,8 @@ mod _409_longest_palindrome;
 //
 mod _412_fizz_buzz;
 //
+mod _413_arithmetic_slices;
+//
 mod _414_third_maximum_number;
 //
 mod _415_add_strings;
@@ -633,6 +635,8 @@ mod _504_base_7;
 mod _506_relative_ranks;
 //
 mod _507_perfect_number;
+//
+mod _508_most_frequent_subtree_sum;
 //
 mod _509_fibonacci_number;
 //
@@ -834,6 +838,8 @@ mod _707_design_linked_list;
 //
 mod _709_to_lower_case;
 //
+mod _712_minimum_ascii_delete_sum_for_two_string;
+//
 mod _713_subarray_product_less_than_k;
 //
 mod _714_best_time_to_buy_and_sell_stock_with_transaction_fee;
@@ -922,6 +928,8 @@ mod _787_cheapest_flights_within_k_stops;
 //
 mod _788_rotated_digits;
 //
+mod _789_escape_the_ghosts;
+//
 mod _791_custom_sort_string;
 //
 mod _792_number_of_matching_subsequences;
@@ -949,6 +957,8 @@ mod _811_subdomain_visit_count;
 mod _812_largest_triangle_area;
 //
 mod _814_binary_tree_pruning;
+//
+mod _817_linked_list_components;
 //
 mod _819_most_common_word;
 //
@@ -1076,6 +1086,8 @@ mod _929_unique_email_addresses;
 //
 mod _931_minimum_falling_path_sum;
 //
+mod _932_beautiful_array;
+//
 mod _933_number_of_recent_calls;
 //
 mod _935_knight_dialer;
@@ -1181,6 +1193,8 @@ mod _1016_binary_string_with_substrings_representing_1_to_n;
 mod _1017_convert_to_base_minus_2;
 //
 mod _1018_binary_prefix_divisible_by_5;
+//
+mod _1019_next_greater_node_in_linked_list;
 //
 mod _1013_partition_array_into_three_parts_with_equal_sum;
 //
@@ -1408,6 +1422,8 @@ mod _1239_maximum_length_of_concatenated_string_with_unique_characters;
 //
 mod _1243_array_transformation;
 //
+mod _1244_design_a_leaderboard;
+//
 mod _1245_tree_diameter;
 //
 mod _1247_minimum_swaps_to_make_strings_equal;
@@ -1421,6 +1437,8 @@ mod _1258_synonymous_sentences;
 mod _1252_cells_with_odd_values_in_a_matrix;
 //
 mod _1256_encode_number;
+//
+mod _1257_smallest_common_region;
 //
 mod _1260_shift_2d_grid;
 //

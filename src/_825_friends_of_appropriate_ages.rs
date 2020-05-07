@@ -8,7 +8,6 @@ impl Solution {
             *hm.entry(age).or_default() += 1;
         }
         let mut res = 0;
-        dbg!(&hm);
         for (&a, v) in &hm {
             for (&b, u) in &hm {
                 if !(b > a || 2 * b <= a + 14) {
