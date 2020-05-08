@@ -1074,6 +1074,8 @@ mod _917_reverse_only_letters;
 //
 mod _918_maximum_sum_circular_subarray;
 //
+mod _919_complete_binary_tree_inserter;
+//
 mod _921_minimum_add_to_make_parentheses_valid;
 //
 mod _922_sort_array_by_parity_2;
@@ -1280,6 +1282,8 @@ mod _1090_largest_values_from_labels;
 //
 mod _1091_shortest_path_in_binary_matrix;
 //
+mod _1094_car_pooling;
+//
 mod _1099_two_sum_less_than_k;
 //
 mod _1100_find_k_length_substrings_with_no_repeated_characters;
@@ -1319,6 +1323,8 @@ mod _1130_minimum_cost_tree_from_leaf_values;
 mod _1133_largest_unique_number;
 //
 mod _1134_armstrong_number;
+//
+mod _1135_connecting_cities_with_minimum_cost;
 //
 mod _1137_n_th_tribonacci_number;
 //
@@ -1551,6 +1557,8 @@ mod _1365_how_many_numbers_are_smaller_than_the_current_number;
 mod _1366_rank_teams_by_votes;
 //
 mod _1370_increasing_decreasing_string;
+//
+mod _1371_find_the_longest_substring_containing_vowels_in_even_counts;
 //
 mod _1374_generate_a_string_with_characters_that_have_odd_counts;
 //
