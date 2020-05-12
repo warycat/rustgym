@@ -1634,4 +1634,13 @@ mod _1433_check_if_a_string_can_break_another_string;
 //
 mod _1436_destination_city;
 //
+mod _1438_longest_continuous_subarray_with_absolute_diff_less_than_or_equal_to_limit;
+//
 mod _1437_check_if_all_1s_are_at_least_length_k_places_away;
+//
+mod _1441_build_an_array_with_stack_operations;
+//
+mod _1442_count_triplets_that_can_form_two_arrays_of_equal_xor;
+//
+mod _1443_minimum_time_to_collect_all_apples_in_a_tree;
+//
