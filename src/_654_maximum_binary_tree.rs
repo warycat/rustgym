@@ -2,11 +2,11 @@ struct Solution;
 use util::*;
 
 trait Postorder {
-    fn from_vec(start: usize, end: usize, nums: &Vec<i32>) -> Self;
+    fn from_vec(start: usize, end: usize, nums: &[i32]) -> Self;
 }
 
 impl Postorder for TreeLink {
-    fn from_vec(start: usize, end: usize, nums: &Vec<i32>) -> Self {
+    fn from_vec(start: usize, end: usize, nums: &[i32]) -> Self {
         if start == end {
             None
         } else {

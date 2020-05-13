@@ -34,7 +34,7 @@ fn test() {
     let res = 1;
     assert_eq!(Solution::kth_grammar(n, k), res);
     let n = 30;
-    let k = 417219134;
+    let k = 417_219_134;
     let res = 1;
     assert_eq!(Solution::kth_grammar(n, k), res);
 }

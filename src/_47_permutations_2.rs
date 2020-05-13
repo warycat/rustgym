@@ -15,7 +15,7 @@ impl Solution {
         cur: &mut Vec<i32>,
         used: &mut Vec<bool>,
         all: &mut Vec<Vec<i32>>,
-        nums: &Vec<i32>,
+        nums: &[i32],
         n: usize,
     ) {
         if cur.len() == n {

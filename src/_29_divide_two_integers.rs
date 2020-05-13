@@ -22,8 +22,8 @@ fn test() {
     let divisor = -3;
     let res = -2;
     assert_eq!(Solution::divide(dividend, divisor), res);
-    let dividend = -2147483648;
+    let dividend = -2_147_483_648;
     let divisor = 1;
-    let res = -2147483648;
+    let res = -2_147_483_648;
     assert_eq!(Solution::divide(dividend, divisor), res);
 }

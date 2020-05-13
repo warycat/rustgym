@@ -9,7 +9,7 @@ struct Point {
 }
 
 impl Point {
-    fn new(v: &Vec<i32>) -> Self {
+    fn new(v: &[i32]) -> Self {
         Point { x: v[0], y: v[1] }
     }
     fn manhattan(&self, other: &Point) -> i32 {

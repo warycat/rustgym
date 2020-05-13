@@ -2,7 +2,7 @@ struct Solution;
 
 impl Solution {
     fn knight_dialer(n: i32) -> i32 {
-        let max = 1000000007;
+        let max = 1_000_000_007;
         let n = n as usize;
         let mut dp: [[usize; 10]; 2] = [
             [1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
@@ -50,6 +50,6 @@ fn test() {
     let res = 46;
     assert_eq!(Solution::knight_dialer(n), res);
     let n = 161;
-    let res = 533302150;
+    let res = 533_302_150;
     assert_eq!(Solution::knight_dialer(n), res);
 }

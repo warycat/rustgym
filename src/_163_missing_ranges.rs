@@ -38,9 +38,9 @@ fn test() {
     let upper = 99;
     let res = vec_string!["2", "4->49", "51->74", "76->99"];
     assert_eq!(Solution::find_missing_ranges(nums, lower, upper), res);
-    let nums = vec![2147483647];
+    let nums = vec![2_147_483_647];
     let lower = 0;
-    let upper = 2147483647;
+    let upper = 2_147_483_647;
     let res = vec_string!["0->2147483646"];
     assert_eq!(Solution::find_missing_ranges(nums, lower, upper), res);
 }

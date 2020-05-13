@@ -23,7 +23,7 @@ impl Solution {
         res as i32
     }
 
-    fn dfs(start: usize, cur: u32, max: &mut u32, arr: &Vec<u32>, n: usize) {
+    fn dfs(start: usize, cur: u32, max: &mut u32, arr: &[u32], n: usize) {
         if start == n {
             *max = (*max).max(cur.count_ones());
         } else {

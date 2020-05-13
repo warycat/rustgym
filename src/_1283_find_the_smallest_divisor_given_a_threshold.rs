@@ -3,7 +3,7 @@ struct Solution;
 impl Solution {
     fn smallest_divisor(nums: Vec<i32>, threshold: i32) -> i32 {
         let mut l = 1;
-        let mut r = 1000000;
+        let mut r = 1_000_000;
         while l < r {
             let m = l + (r - l) / 2;
             let mut sum = 0;

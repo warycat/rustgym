@@ -36,7 +36,7 @@ fn test() {
     let n = 21;
     let res = -1;
     assert_eq!(Solution::next_greater_element(n), res);
-    let n = 1999999999;
+    let n = 1_999_999_999;
     let res = -1;
     assert_eq!(Solution::next_greater_element(n), res);
 }

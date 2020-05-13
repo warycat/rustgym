@@ -14,8 +14,8 @@ impl Solution {
         n: usize,
         m: usize,
         memo: &mut Vec<Vec<Option<bool>>>,
-        s: &Vec<char>,
-        p: &Vec<char>,
+        s: &[char],
+        p: &[char],
     ) -> bool {
         if let Some(ans) = memo[n][m] {
             ans

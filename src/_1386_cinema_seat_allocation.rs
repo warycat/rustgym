@@ -1,3 +1,4 @@
+#![allow(clippy::unreadable_literal)]
 struct Solution;
 use std::collections::HashMap;
 

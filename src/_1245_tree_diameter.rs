@@ -16,12 +16,7 @@ impl Solution {
         res as i32
     }
 
-    fn dfs(
-        u: usize,
-        visited: &mut Vec<bool>,
-        diameter: &mut usize,
-        graph: &Vec<Vec<usize>>,
-    ) -> usize {
+    fn dfs(u: usize, visited: &mut Vec<bool>, diameter: &mut usize, graph: &[Vec<usize>]) -> usize {
         visited[u] = true;
         let mut max_depth = 0;
         for &v in &graph[u] {

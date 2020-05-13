@@ -5,7 +5,7 @@ impl Solution {
         if k > 9 {
             return vec![];
         }
-        let nums = (1..10).collect();
+        let nums: Vec<i32> = (1..10).collect();
         let mut cur = vec![];
         let mut res = vec![];
         Self::dfs(0, n, &mut cur, &mut res, &nums, k as usize);
@@ -16,7 +16,7 @@ impl Solution {
         target: i32,
         cur: &mut Vec<i32>,
         all: &mut Vec<Vec<i32>>,
-        nums: &Vec<i32>,
+        nums: &[i32],
         n: usize,
     ) {
         if cur.len() == n {

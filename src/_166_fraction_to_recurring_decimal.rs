@@ -61,7 +61,7 @@ fn test() {
     let res = "-6.25".to_string();
     assert_eq!(Solution::fraction_to_decimal(numerator, denominator), res);
     let numerator = -1;
-    let denominator = -2147483648;
+    let denominator = -2_147_483_648;
     let res = "0.0000000004656612873077392578125".to_string();
     assert_eq!(Solution::fraction_to_decimal(numerator, denominator), res);
 }

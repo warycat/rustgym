@@ -16,12 +16,7 @@ impl Solution {
         Self::dfs(0, &mut visited, &graph, &has_apple)
     }
 
-    fn dfs(
-        u: usize,
-        visited: &mut Vec<bool>,
-        graph: &Vec<HashSet<usize>>,
-        has_apple: &Vec<bool>,
-    ) -> i32 {
+    fn dfs(u: usize, visited: &mut Vec<bool>, graph: &[HashSet<usize>], has_apple: &[bool]) -> i32 {
         let mut res = 0;
         for &v in &graph[u] {
             if !visited[v] {

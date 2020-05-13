@@ -33,7 +33,7 @@ impl Solution {
         res
     }
 
-    fn dfs(start: usize, cur: &mut Vec<char>, all: &mut Vec<String>, v: &Vec<Vec<char>>, n: usize) {
+    fn dfs(start: usize, cur: &mut Vec<char>, all: &mut Vec<String>, v: &[Vec<char>], n: usize) {
         if start == n {
             all.push(cur.iter().copied().collect());
         } else {

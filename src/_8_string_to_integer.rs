@@ -78,6 +78,6 @@ fn test() {
     let res = 0;
     assert_eq!(Solution::my_atoi(s), res);
     let s = "-91283472332".to_string();
-    let res = -2147483648;
+    let res = -2_147_483_648;
     assert_eq!(Solution::my_atoi(s), res);
 }

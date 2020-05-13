@@ -39,8 +39,8 @@ impl Solution {
         cur: &mut Vec<char>,
         used: &mut Vec<bool>,
         all: &mut Vec<String>,
-        mid: &Vec<char>,
-        left: &Vec<char>,
+        mid: &[char],
+        left: &[char],
         n: usize,
     ) {
         if cur.len() == n {

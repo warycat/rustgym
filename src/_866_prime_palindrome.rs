@@ -5,7 +5,7 @@ impl Solution {
         if 8 <= n && n <= 11 {
             return 11;
         }
-        for i in 1..100000 {
+        for i in 1..100_000 {
             let mut x: Vec<char> = format!("{}", i).chars().collect();
             let mut y = x.clone();
             y.reverse();
@@ -48,7 +48,7 @@ fn test() {
     let n = 13;
     let res = 101;
     assert_eq!(Solution::prime_palindrome(n), res);
-    let n = 9989900;
-    let res = 100030001;
+    let n = 9_989_900;
+    let res = 100_030_001;
     assert_eq!(Solution::prime_palindrome(n), res);
 }

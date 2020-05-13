@@ -31,7 +31,7 @@ impl Chessboard {
             directions,
         }
     }
-    fn contains(&self, point: &Point) -> bool {
+    fn contains(&self, point: &[i32]) -> bool {
         point[0] >= 0 && point[1] >= 0 && point[0] < 8 && point[1] < 8
     }
     fn attack(&self, i: usize, step: i32) -> Point {

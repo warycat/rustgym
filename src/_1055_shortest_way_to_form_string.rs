@@ -28,7 +28,7 @@ impl Solution {
         res
     }
 
-    fn next(start: usize, indexes: &Vec<usize>) -> usize {
+    fn next(start: usize, indexes: &[usize]) -> usize {
         match indexes.binary_search(&start) {
             Ok(i) => indexes[i] + 1,
             Err(i) => {

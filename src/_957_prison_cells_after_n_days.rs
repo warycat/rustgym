@@ -28,7 +28,7 @@ fn test() {
     let res = vec![0, 0, 1, 1, 0, 0, 0, 0];
     assert_eq!(Solution::prison_after_n_days(cells, n), res);
     let cells = vec![1, 0, 0, 1, 0, 0, 1, 0];
-    let n = 1000000000;
+    let n = 1_000_000_000;
     let res = vec![0, 0, 1, 1, 1, 1, 1, 0];
     assert_eq!(Solution::prison_after_n_days(cells, n), res);
 }

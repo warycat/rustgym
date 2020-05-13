@@ -14,7 +14,7 @@ impl Solution {
         target: i32,
         cur: &mut Vec<i32>,
         all: &mut Vec<Vec<i32>>,
-        candidates: &Vec<i32>,
+        candidates: &[i32],
         n: usize,
     ) {
         use std::cmp::Ordering::*;

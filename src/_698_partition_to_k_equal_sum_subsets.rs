@@ -16,7 +16,7 @@ impl Solution {
         sum: i32,
         k: usize,
         visited: &mut Vec<bool>,
-        nums: &Vec<i32>,
+        nums: &[i32],
         n: usize,
         target: i32,
     ) -> bool {

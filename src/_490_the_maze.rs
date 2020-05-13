@@ -17,7 +17,7 @@ impl Solution {
         r: usize,
         c: usize,
         visited: &mut Vec<Vec<bool>>,
-        maze: &Vec<Vec<i32>>,
+        maze: &[Vec<i32>],
         x: usize,
         y: usize,
         n: usize,

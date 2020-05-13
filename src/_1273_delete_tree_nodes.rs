@@ -20,7 +20,7 @@ impl Solution {
     fn postorder(
         i: usize,
         hm: &HashMap<usize, Vec<usize>>,
-        value: &Vec<i32>,
+        value: &[i32],
         n: usize,
     ) -> (i32, usize) {
         let mut sum = value[i];

@@ -9,13 +9,7 @@ impl Solution {
         res
     }
 
-    fn dfs(
-        u: i32,
-        path: &mut Vec<i32>,
-        paths: &mut Vec<Vec<i32>>,
-        graph: &Vec<Vec<i32>>,
-        n: usize,
-    ) {
+    fn dfs(u: i32, path: &mut Vec<i32>, paths: &mut Vec<Vec<i32>>, graph: &[Vec<i32>], n: usize) {
         path.push(u);
         if u as usize == n - 1 {
             paths.push(path.clone());

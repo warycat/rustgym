@@ -2,16 +2,16 @@ struct Solution;
 use util::*;
 
 trait Preorder {
-    fn preorder(&self, path: &mut Vec<i32>, res: &mut bool, arr: &Vec<i32>);
+    fn preorder(&self, path: &mut Vec<i32>, res: &mut bool, arr: &[i32]);
 }
 
 impl Preorder for TreeLink {
-    fn preorder(&self, path: &mut Vec<i32>, res: &mut bool, arr: &Vec<i32>) {
+    fn preorder(&self, path: &mut Vec<i32>, res: &mut bool, arr: &[i32]) {
         if let Some(node) = self {
             let node = node.borrow();
             let val = node.val;
             path.push(val);
-            if node.left.is_none() && node.right.is_none() && path == arr {
+            if node.left.is_none() && node.right.is_none() && *path == arr {
                 *res = true;
             }
             node.left.preorder(path, res, arr);

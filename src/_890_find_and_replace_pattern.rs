@@ -2,11 +2,11 @@ struct Solution;
 use std::collections::HashMap;
 
 trait Matches {
-    fn matches(&self, pattern: &Vec<char>, n: usize) -> bool;
+    fn matches(&self, pattern: &[char], n: usize) -> bool;
 }
 
 impl Matches for Vec<char> {
-    fn matches(&self, pattern: &Vec<char>, n: usize) -> bool {
+    fn matches(&self, pattern: &[char], n: usize) -> bool {
         if self.len() != n {
             return false;
         }
@@ -33,7 +33,7 @@ impl Matches for Vec<char> {
 impl Solution {
     fn find_and_replace_pattern(words: Vec<String>, pattern: String) -> Vec<String> {
         let n = pattern.len();
-        let pattern = pattern.chars().collect();
+        let pattern: Vec<char> = pattern.chars().collect();
         let mut res = vec![];
         for word in words {
             let word: Vec<char> = word.chars().collect();

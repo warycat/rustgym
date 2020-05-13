@@ -1,6 +1,6 @@
 struct Solution;
 
-const M: i32 = 1000000007;
+const M: i32 = 1_000_000_007;
 
 impl Solution {
     fn die_simulator(n: i32, roll_max: Vec<i32>) -> i32 {
@@ -14,7 +14,7 @@ impl Solution {
         prev: i32,
         repeat: usize,
         dp: &mut Vec<Vec<Vec<i32>>>,
-        roll_max: &Vec<i32>,
+        roll_max: &[i32],
     ) -> i32 {
         if n == 0 {
             1

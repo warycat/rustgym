@@ -9,7 +9,7 @@ impl Solution {
         res
     }
 
-    fn dfs(i: usize, all: &mut Vec<Vec<i32>>, nums: &Vec<i32>, cur: &mut Vec<i32>, n: usize) {
+    fn dfs(i: usize, all: &mut Vec<Vec<i32>>, nums: &[i32], cur: &mut Vec<i32>, n: usize) {
         if i == n {
             all.push(cur.to_vec());
         } else {

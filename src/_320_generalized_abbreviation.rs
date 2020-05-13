@@ -3,7 +3,7 @@ struct Solution;
 impl Solution {
     fn generate_abbreviations(word: String) -> Vec<String> {
         let n = word.len();
-        let word = word.chars().collect();
+        let word: Vec<char> = word.chars().collect();
         let mut cur: String = "".to_string();
         let mut res = vec![];
         Self::dfs(0, 0, &mut cur, &mut res, &word, n);
@@ -15,7 +15,7 @@ impl Solution {
         count: usize,
         cur: &mut String,
         all: &mut Vec<String>,
-        word: &Vec<char>,
+        word: &[char],
         n: usize,
     ) {
         let len = cur.len();

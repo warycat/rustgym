@@ -82,8 +82,8 @@ impl Solution {
         start: usize,
         cur: &mut Vec<usize>,
         all: &mut Vec<String>,
-        groups: &Vec<Vec<usize>>,
-        words: &Vec<String>,
+        groups: &[Vec<usize>],
+        words: &[String],
         m: usize,
     ) {
         if start == m {

@@ -55,7 +55,7 @@ fn test() {
         Solution::champagne_tower(poured, query_row, query_glass),
         res
     );
-    let poured = 1000000000;
+    let poured = 1_000_000_000;
     let query_glass = 99;
     let query_row = 99;
     let res = 0.0;

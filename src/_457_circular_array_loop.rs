@@ -34,7 +34,7 @@ impl Solution {
         false
     }
 
-    fn next(nums: &Vec<i32>, index: usize) -> usize {
+    fn next(nums: &[i32], index: usize) -> usize {
         let n = nums.len();
         let index = index as i32 + nums[index];
         let index = if index < 0 {

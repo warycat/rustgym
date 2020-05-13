@@ -52,7 +52,7 @@ impl Solution {
         visited: &mut Vec<bool>,
         path: &mut Vec<f64>,
         product: &mut f64,
-        graph: &Vec<Vec<Edge>>,
+        graph: &[Vec<Edge>],
     ) {
         visited[u] = true;
         if u == v {

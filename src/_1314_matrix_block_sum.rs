@@ -36,7 +36,7 @@ impl Solution {
         res
     }
 
-    fn sum(t: usize, l: usize, b: usize, r: usize, prefix: &Vec<Vec<i32>>) -> i32 {
+    fn sum(t: usize, l: usize, b: usize, r: usize, prefix: &[Vec<i32>]) -> i32 {
         let mut res = prefix[b][r];
         if l > 0 {
             res -= prefix[b][l - 1];

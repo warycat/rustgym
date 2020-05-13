@@ -126,5 +126,5 @@ fn test() {
     let s = "0-0".to_string();
     assert_eq!(Solution::calculate(s), 0);
     let s = "0-2147483647".to_string();
-    assert_eq!(Solution::calculate(s), -2147483647);
+    assert_eq!(Solution::calculate(s), -2_147_483_647);
 }

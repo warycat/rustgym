@@ -31,7 +31,7 @@ impl Solution {
         res
     }
 
-    fn dfs(i: usize, j: usize, matrix: &Vec<Vec<i32>>, visited: &mut Vec<Vec<bool>>) {
+    fn dfs(i: usize, j: usize, matrix: &[Vec<i32>], visited: &mut Vec<Vec<bool>>) {
         if !visited[i][j] {
             visited[i][j] = true;
             if i > 0 && matrix[i - 1][j] >= matrix[i][j] {

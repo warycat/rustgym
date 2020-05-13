@@ -52,9 +52,9 @@ fn test() {
     let t = 3;
     let res = true;
     assert_eq!(Solution::contains_nearby_almost_duplicate(nums, k, t), res);
-    let nums = vec![0, 2147483647];
+    let nums = vec![0, 2_147_483_647];
     let k = 1;
-    let t = 2147483647;
+    let t = 2_147_483_647;
     let res = true;
     assert_eq!(Solution::contains_nearby_almost_duplicate(nums, k, t), res);
 }

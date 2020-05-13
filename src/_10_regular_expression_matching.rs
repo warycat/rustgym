@@ -4,8 +4,8 @@ impl Solution {
     fn is_match(s: String, p: String) -> bool {
         let n = s.len();
         let m = p.len();
-        let s = s.chars().collect();
-        let p = p.chars().collect();
+        let s: Vec<char> = s.chars().collect();
+        let p: Vec<char> = p.chars().collect();
         let mut memo: Vec<Vec<Option<bool>>> = vec![vec![None; m + 1]; n + 1];
         Self::is_match_dp(n, m, &mut memo, &s, &p)
     }
@@ -14,8 +14,8 @@ impl Solution {
         n: usize,
         m: usize,
         memo: &mut Vec<Vec<Option<bool>>>,
-        s: &Vec<char>,
-        p: &Vec<char>,
+        s: &[char],
+        p: &[char],
     ) -> bool {
         if let Some(ans) = memo[n][m] {
             ans

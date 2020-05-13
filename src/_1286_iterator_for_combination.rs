@@ -22,7 +22,7 @@ impl CombinationIterator {
         start: usize,
         indexes: &mut Vec<usize>,
         combinations: &mut Vec<String>,
-        s: &Vec<char>,
+        s: &[char],
         n: usize,
         m: usize,
     ) {

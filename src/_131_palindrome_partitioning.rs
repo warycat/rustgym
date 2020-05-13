@@ -13,7 +13,7 @@ impl Solution {
         start: usize,
         indexes: &mut Vec<(usize, usize)>,
         strings: &mut Vec<Vec<String>>,
-        s: &Vec<char>,
+        s: &[char],
         n: usize,
     ) {
         if start == n {

@@ -21,7 +21,7 @@ impl Solution {
         l
     }
 
-    fn days(capacity: i32, weights: &Vec<i32>) -> i32 {
+    fn days(capacity: i32, weights: &[i32]) -> i32 {
         let mut cur = 0;
         let mut res = 1;
         for &w in weights {

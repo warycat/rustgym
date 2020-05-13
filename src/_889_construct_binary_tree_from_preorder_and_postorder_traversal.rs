@@ -6,7 +6,7 @@ impl Solution {
         Self::build(&mut 0, &mut 0, &pre, &post)
     }
 
-    fn build(i: &mut usize, j: &mut usize, pre: &Vec<i32>, post: &Vec<i32>) -> TreeLink {
+    fn build(i: &mut usize, j: &mut usize, pre: &[i32], post: &[i32]) -> TreeLink {
         let val = pre[*i];
         *i += 1;
         let mut left = None;

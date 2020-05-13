@@ -16,9 +16,9 @@ impl Solution {
 
     fn words(
         num: usize,
-        nineteen: &Vec<&'static str>,
-        tens: &Vec<&'static str>,
-        units: &Vec<&'static str>,
+        nineteen: &[&'static str],
+        tens: &[&'static str],
+        units: &[&'static str],
     ) -> Vec<&'static str> {
         if num < 20 {
             if num > 0 {
@@ -73,10 +73,10 @@ fn test() {
     let num = 12345;
     let res = "Twelve Thousand Three Hundred Forty Five".to_string();
     assert_eq!(Solution::number_to_words(num), res);
-    let num = 1234567;
+    let num = 1_234_567;
     let res = "One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven".to_string();
     assert_eq!(Solution::number_to_words(num), res);
-    let num = 1234567891;
+    let num = 1_234_567_891;
     let res = "One Billion Two Hundred Thirty Four Million Five Hundred Sixty Seven Thousand Eight Hundred Ninety One".to_string();
     assert_eq!(Solution::number_to_words(num), res);
     let num = 20;

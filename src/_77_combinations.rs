@@ -16,7 +16,7 @@ impl Solution {
         count: usize,
         cur: &mut Vec<i32>,
         all: &mut Vec<Vec<i32>>,
-        nums: &Vec<i32>,
+        nums: &[i32],
         n: usize,
         k: usize,
     ) {

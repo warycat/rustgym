@@ -23,7 +23,7 @@ impl Solution {
         res as i32
     }
 
-    fn sum(count: &Vec<i32>) -> i32 {
+    fn sum(count: &[i32]) -> i32 {
         let max = count.iter().copied().max().unwrap();
         count.iter().sum::<i32>() - max
     }

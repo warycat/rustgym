@@ -3,7 +3,7 @@ struct Solution;
 impl Solution {
     fn min_eating_speed(piles: Vec<i32>, h: i32) -> i32 {
         let mut l = 1;
-        let mut r = 1000000000;
+        let mut r = 1_000_000_000;
         while l < r {
             let m = (l + r) / 2;
             let mut sum = 0;

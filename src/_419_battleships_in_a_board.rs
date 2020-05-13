@@ -15,7 +15,7 @@ impl Solution {
         res
     }
 
-    fn is_head(i: usize, j: usize, board: &Vec<Vec<char>>) -> bool {
+    fn is_head(i: usize, j: usize, board: &[Vec<char>]) -> bool {
         if board[i][j] == '.' {
             return false;
         }

@@ -19,8 +19,8 @@ impl Solution {
     fn dfs(
         u: usize,
         stack: &mut Vec<usize>,
-        graph: &Vec<HashSet<usize>>,
-        quiet: &Vec<i32>,
+        graph: &[HashSet<usize>],
+        quiet: &[i32],
         n: usize,
     ) -> usize {
         if stack[u] == n {
