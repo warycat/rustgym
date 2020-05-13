@@ -222,6 +222,8 @@ mod _134_gas_station;
 //
 mod _136_single_number;
 //
+mod _137_single_number_2;
+//
 mod _139_word_break;
 //
 mod _143_reorder_list;
@@ -277,6 +279,8 @@ mod _198_house_robber;
 mod _199_binary_tree_right_side_view;
 //
 mod _200_number_of_islands;
+//
+mod _201_bitwise_and_of_numbers_range;
 //
 mod _202_happy_number;
 //
@@ -428,6 +432,8 @@ mod _311_sparse_matrix_multiplication;
 //
 mod _314_binary_tree_vertical_order_traversal;
 //
+mod _318_maximum_product_of_word_lengths;
+//
 mod _319_bulb_switcher;
 //
 mod _320_generalized_abbreviation;
@@ -562,6 +568,8 @@ mod _437_path_sum_3;
 //
 mod _438_find_all_anagrams_in_a_string;
 //
+mod _439_ternary_expression_parser;
+//
 mod _441_arranging_coins;
 //
 mod _442_find_all_duplicates_in_an_array;
@@ -599,6 +607,8 @@ mod _475_heaters;
 mod _476_number_complement;
 //
 mod _478_generate_random_point_in_circle;
+//
+mod _477_total_hamming_distance;
 //
 mod _481_magical_string;
 //
@@ -773,6 +783,8 @@ mod _643_maximum_average_subarray_1;
 mod _645_set_mismatch;
 //
 mod _647_palindromic_substrings;
+//
+mod _648_replace_words;
 //
 mod _653_two_sum_4;
 //
@@ -1265,6 +1277,8 @@ mod _1057_campus_bikes;
 mod _1060_missing_element_in_sorted_array;
 //
 mod _1061_lexicographically_smallest_equivalent_string;
+//
+mod _1062_longest_repeating_substring;
 //
 mod _1064_fixed_point;
 //
