@@ -63,7 +63,7 @@ const LEETCODE_TAG_URL: &str = "https://leetcode.com/problems/api/tags/";
 const LEETCODE_QUESTION_URL: &str = "https://leetcode.com/problems/";
 const CARGO_MANIFEST_DIR: &str = "CARGO_MANIFEST_DIR";
 const README_MD: &str = "README.md";
-const SRC: &str = "src";
+const SRC: &str = "src/solutions";
 
 type Tags = HashMap<i64, Vec<Tag>>;
 type Tag = (String, String);
@@ -81,7 +81,7 @@ impl RustSolution {
 
 impl fmt::Display for RustSolution {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
-        write!(f, "[solution](src/{})", self.filename)
+        write!(f, "[solution]({}/{})", SRC, self.filename)
     }
 }
 
