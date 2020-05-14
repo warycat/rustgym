@@ -1,10 +1,10 @@
-struct Solution;
+pub struct Solution;
 use std::collections::HashSet;
 use std::iter::FromIterator;
 use util::*;
 
 impl Solution {
-    fn num_components(head: ListLink, g: Vec<i32>) -> i32 {
+    pub fn num_components(head: ListLink, g: Vec<i32>) -> i32 {
         let mut p = head;
         let hs: HashSet<i32> = HashSet::from_iter(g.into_iter());
         let mut open = false;

@@ -1,21 +1,21 @@
 use std::collections::HashMap;
 
 #[derive(Default)]
-struct UndergroundSystem {
+pub struct UndergroundSystem {
     time: HashMap<String, HashMap<String, (i32, i32)>>,
     customer: HashMap<i32, (String, i32)>,
 }
 
 impl UndergroundSystem {
-    fn new() -> Self {
+    pub fn new() -> Self {
         UndergroundSystem::default()
     }
 
-    fn check_in(&mut self, id: i32, start_station: String, start_t: i32) {
+    pub fn check_in(&mut self, id: i32, start_station: String, start_t: i32) {
         self.customer.insert(id, (start_station, start_t));
     }
 
-    fn check_out(&mut self, id: i32, end_station: String, end_t: i32) {
+    pub fn check_out(&mut self, id: i32, end_station: String, end_t: i32) {
         let (start_station, start_t) = self.customer.remove(&id).expect("in");
         let (sum, count) = self
             .time
@@ -27,7 +27,7 @@ impl UndergroundSystem {
         *count += 1;
     }
 
-    fn get_average_time(&mut self, start_station: String, end_station: String) -> f64 {
+    pub fn get_average_time(&mut self, start_station: String, end_station: String) -> f64 {
         let (sum, count) = self
             .time
             .entry(start_station)

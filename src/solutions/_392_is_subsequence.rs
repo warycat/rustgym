@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn is_subsequence(s: String, t: String) -> bool {
+    pub fn is_subsequence(s: String, t: String) -> bool {
         let mut i = 0;
         let mut j = 0;
         let n = s.len();

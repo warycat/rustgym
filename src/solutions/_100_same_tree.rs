@@ -1,8 +1,8 @@
-struct Solution;
+pub struct Solution;
 use util::*;
 
 impl Solution {
-    fn is_same_tree(p: TreeLink, q: TreeLink) -> bool {
+    pub fn is_same_tree(p: TreeLink, q: TreeLink) -> bool {
         p == q
     }
 }

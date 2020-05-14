@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn optimal_division(nums: Vec<i32>) -> String {
+    pub fn optimal_division(nums: Vec<i32>) -> String {
         let n = nums.len();
         if n == 1 {
             format!("{}", nums[0])

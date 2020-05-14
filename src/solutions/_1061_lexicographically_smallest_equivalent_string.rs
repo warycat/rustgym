@@ -1,15 +1,16 @@
-struct Solution;
+pub struct Solution;
 
-struct UnionFind {
-    parents: Vec<usize>,
+pub struct UnionFind {
+    pub parents: Vec<usize>,
+    n: usize,
 }
 
 impl UnionFind {
-    fn new() -> Self {
-        let parents = (0..26).collect();
-        UnionFind { parents }
+    pub fn new(n: usize) -> Self {
+        let parents = (0..n).collect();
+        UnionFind { parents, n }
     }
-    fn find(&mut self, i: usize) -> usize {
+    pub fn find(&mut self, i: usize) -> usize {
         let j = self.parents[i];
         if i == j {
             j
@@ -19,7 +20,7 @@ impl UnionFind {
         }
     }
 
-    fn union(&mut self, mut i: usize, mut j: usize) {
+    pub fn union(&mut self, mut i: usize, mut j: usize) {
         i = self.find(i);
         j = self.find(j);
         if i != j {
@@ -31,11 +32,11 @@ impl UnionFind {
 }
 
 impl Solution {
-    fn smallest_equivalent_string(a: String, b: String, s: String) -> String {
+    pub fn smallest_equivalent_string(a: String, b: String, s: String) -> String {
         let a: Vec<usize> = a.bytes().map(|b| (b - b'a') as usize).collect();
         let b: Vec<usize> = b.bytes().map(|b| (b - b'a') as usize).collect();
         let n = a.len();
-        let mut uf = UnionFind::new();
+        let mut uf = UnionFind::new(26);
         for i in 0..n {
             uf.union(a[i], b[i]);
         }

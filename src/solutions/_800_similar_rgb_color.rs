@@ -1,9 +1,9 @@
-struct Solution;
+pub struct Solution;
 
 use std::i32;
 
 impl Solution {
-    fn most_similar(x: i32) -> i32 {
+    pub fn most_similar(x: i32) -> i32 {
         let mut min = i32::MAX;
         let mut res = 0;
         for i in 0..16 {
@@ -14,7 +14,7 @@ impl Solution {
         }
         res
     }
-    fn similar_rgb(color: String) -> String {
+    pub fn similar_rgb(color: String) -> String {
         let r = i32::from_str_radix(&color[1..3], 16).unwrap();
         let g = i32::from_str_radix(&color[3..5], 16).unwrap();
         let b = i32::from_str_radix(&color[5..7], 16).unwrap();

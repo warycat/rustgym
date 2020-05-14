@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn find_duplicates(mut nums: Vec<i32>) -> Vec<i32> {
+    pub fn find_duplicates(mut nums: Vec<i32>) -> Vec<i32> {
         let mut res: Vec<i32> = vec![];
         let n = nums.len();
         for i in 0..n {

@@ -1,4 +1,4 @@
-struct Solution;
+pub struct Solution;
 use util::*;
 
 trait Inorder {
@@ -28,7 +28,7 @@ impl Inorder for TreeLink {
 }
 
 impl Solution {
-    fn find_mode(root: TreeLink) -> Vec<i32> {
+    pub fn find_mode(root: TreeLink) -> Vec<i32> {
         let mut max = 0;
         let mut count = 0;
         let mut prev: Option<i32> = None;

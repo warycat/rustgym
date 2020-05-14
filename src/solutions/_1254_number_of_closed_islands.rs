@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn closed_island(mut grid: Vec<Vec<i32>>) -> i32 {
+    pub fn closed_island(mut grid: Vec<Vec<i32>>) -> i32 {
         let mut res = 0;
         let n = grid.len();
         let m = grid[0].len();
@@ -15,7 +15,7 @@ impl Solution {
         res
     }
 
-    fn dfs(i: usize, j: usize, grid: &mut Vec<Vec<i32>>, n: usize, m: usize) -> bool {
+    pub fn dfs(i: usize, j: usize, grid: &mut Vec<Vec<i32>>, n: usize, m: usize) -> bool {
         grid[i][j] = 1;
         let top = if i > 0 {
             if grid[i - 1][j] == 1 {

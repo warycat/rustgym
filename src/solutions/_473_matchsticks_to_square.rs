@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn makesquare(mut nums: Vec<i32>) -> bool {
+    pub fn makesquare(mut nums: Vec<i32>) -> bool {
         let n = nums.len();
         if n == 0 {
             return false;
@@ -15,7 +15,7 @@ impl Solution {
         Self::dfs(0, &mut sides, &nums, sum / 4, n)
     }
 
-    fn dfs(start: usize, sides: &mut Vec<i32>, nums: &[i32], sum: i32, n: usize) -> bool {
+    pub fn dfs(start: usize, sides: &mut Vec<i32>, nums: &[i32], sum: i32, n: usize) -> bool {
         if start == n {
             true
         } else {

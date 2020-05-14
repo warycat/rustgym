@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn generate_abbreviations(word: String) -> Vec<String> {
+    pub fn generate_abbreviations(word: String) -> Vec<String> {
         let n = word.len();
         let word: Vec<char> = word.chars().collect();
         let mut cur: String = "".to_string();
@@ -10,7 +10,7 @@ impl Solution {
         res
     }
 
-    fn dfs(
+    pub fn dfs(
         start: usize,
         count: usize,
         cur: &mut String,

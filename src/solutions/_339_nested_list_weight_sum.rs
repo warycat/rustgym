@@ -1,12 +1,12 @@
-struct Solution;
+pub struct Solution;
 
-enum NestedInteger {
+pub enum NestedInteger {
     Int(i32),
     List(Vec<NestedInteger>),
 }
 
 impl Solution {
-    fn depth_sum_r(nested_list: &NestedInteger, level: i32) -> i32 {
+    pub fn depth_sum_r(nested_list: &NestedInteger, level: i32) -> i32 {
         match nested_list {
             NestedInteger::Int(x) => level * x,
             NestedInteger::List(v) => v
@@ -14,7 +14,7 @@ impl Solution {
                 .fold(0, |acc, x| acc + Self::depth_sum_r(x, level + 1)),
         }
     }
-    fn depth_sum(nested_list: Vec<NestedInteger>) -> i32 {
+    pub fn depth_sum(nested_list: Vec<NestedInteger>) -> i32 {
         nested_list
             .iter()
             .fold(0, |acc, x| acc + Self::depth_sum_r(x, 1))

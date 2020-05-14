@@ -1,42 +1,43 @@
-struct Solution;
+pub struct Solution;
 
-#[derive(Debug, PartialEq, Eq, Hash)]
-struct Point {
-    x: i32,
-    y: i32,
+#[derive(Debug, PartialEq, Eq, Hash, Default)]
+pub struct Point {
+    pub x: i32,
+    pub y: i32,
 }
 
 impl Point {
-    fn new(x: i32, y: i32) -> Self {
+    pub fn new(x: i32, y: i32) -> Self {
         Point { x, y }
     }
-    fn from(v: Vec<i32>) -> Self {
+    pub fn from(v: Vec<i32>) -> Self {
         Point { x: v[0], y: v[1] }
     }
-    fn square_distance(&self) -> i32 {
+    pub fn square_distance(&self) -> i32 {
         self.x * self.x + self.y * self.y
     }
 }
 
-struct Robot {
+#[derive(Default)]
+pub struct Robot {
     position: Point,
     direction: usize,
 }
 
 impl Robot {
-    fn new() -> Self {
+    pub fn new() -> Self {
         Robot {
             position: Point { x: 0, y: 0 },
             direction: 0,
         }
     }
-    fn left(&mut self) {
+    pub fn left(&mut self) {
         self.direction = (self.direction + 1) % 4;
     }
-    fn right(&mut self) {
+    pub fn right(&mut self) {
         self.direction = (self.direction + 3) % 4;
     }
-    fn next(&self) -> Point {
+    pub fn next(&self) -> Point {
         let x = self.position.x;
         let y = self.position.y;
         match self.direction {
@@ -47,7 +48,7 @@ impl Robot {
             _ => unreachable!(),
         }
     }
-    fn walk(&mut self, step: usize, grid: &Grid) {
+    pub fn walk(&mut self, step: usize, grid: &Grid) {
         let mut i = 0;
         while i < step && !grid.obstacles.contains(&self.next()) {
             self.position = self.next();
@@ -58,12 +59,12 @@ impl Robot {
 
 use std::collections::HashSet;
 
-struct Grid {
+pub struct Grid {
     obstacles: HashSet<Point>,
 }
 
 impl Grid {
-    fn new(obstacles: Vec<Point>) -> Self {
+    pub fn new(obstacles: Vec<Point>) -> Self {
         let mut hs: HashSet<Point> = HashSet::new();
         for x in obstacles {
             hs.insert(x);
@@ -73,7 +74,7 @@ impl Grid {
 }
 
 impl Solution {
-    fn robot_sim(commands: Vec<i32>, obstacles: Vec<Vec<i32>>) -> i32 {
+    pub fn robot_sim(commands: Vec<i32>, obstacles: Vec<Vec<i32>>) -> i32 {
         let grid: Grid = Grid::new(obstacles.iter().map(|v| Point::new(v[0], v[1])).collect());
         let mut robot = Robot::new();
         let mut max = 0;

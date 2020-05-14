@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn day_of_year(date: String) -> i32 {
+    pub fn day_of_year(date: String) -> i32 {
         let a: Vec<&str> = date.split_terminator('-').collect();
         let year = a[0].parse::<usize>().unwrap();
         let month = a[1].parse::<usize>().unwrap();

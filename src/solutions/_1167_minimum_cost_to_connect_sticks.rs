@@ -1,9 +1,9 @@
-struct Solution;
+pub struct Solution;
 use std::cmp::Reverse;
 use std::collections::BinaryHeap;
 
 impl Solution {
-    fn connect_sticks(sticks: Vec<i32>) -> i32 {
+    pub fn connect_sticks(sticks: Vec<i32>) -> i32 {
         let mut queue: BinaryHeap<Reverse<i32>> = BinaryHeap::new();
         let mut res = 0;
         for stick in sticks {

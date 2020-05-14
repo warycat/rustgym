@@ -1,8 +1,8 @@
-struct Solution;
+pub struct Solution;
 use std::collections::HashSet;
 
 impl Solution {
-    fn open_lock(deadends: Vec<String>, target: String) -> i32 {
+    pub fn open_lock(deadends: Vec<String>, target: String) -> i32 {
         let mut visited: HashSet<u32> = deadends.into_iter().map(Self::s2x).collect();
         let target = Self::s2x(target);
         let start = 0;
@@ -35,7 +35,7 @@ impl Solution {
         -1
     }
 
-    fn s2x(s: String) -> u32 {
+    pub fn s2x(s: String) -> u32 {
         let mut res = 0;
         for (i, b) in s.bytes().map(|b| (b - b'0') as u32).enumerate() {
             res |= b << (i * 8);
@@ -43,7 +43,7 @@ impl Solution {
         res
     }
 
-    fn x2s(x: u32) -> String {
+    pub fn x2s(x: u32) -> String {
         let mut v: Vec<u8> = vec![0; 4];
         for i in 0..4 {
             v[i] = ((x >> (i * 8)) & 0xff) as u8;
@@ -51,7 +51,7 @@ impl Solution {
         v.into_iter().map(|b| (b + b'0') as char).collect()
     }
 
-    fn adj(x: u32) -> Vec<u32> {
+    pub fn adj(x: u32) -> Vec<u32> {
         let mut res = vec![];
         for i in 0..4 {
             let b1 = (((x >> (i * 8) & 0xff) + 1) % 10) << (i * 8);

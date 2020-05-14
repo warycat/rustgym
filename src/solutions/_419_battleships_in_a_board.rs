@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn count_battleships(board: Vec<Vec<char>>) -> i32 {
+    pub fn count_battleships(board: Vec<Vec<char>>) -> i32 {
         let n = board.len();
         let m = board[0].len();
         let mut res = 0;
@@ -15,7 +15,7 @@ impl Solution {
         res
     }
 
-    fn is_head(i: usize, j: usize, board: &[Vec<char>]) -> bool {
+    pub fn is_head(i: usize, j: usize, board: &[Vec<char>]) -> bool {
         if board[i][j] == '.' {
             return false;
         }

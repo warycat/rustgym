@@ -1,4 +1,4 @@
-struct Solution;
+pub struct Solution;
 use std::collections::HashMap;
 use util::*;
 
@@ -29,7 +29,7 @@ impl PathSum for TreeLink {
 }
 
 impl Solution {
-    fn path_sum(root: TreeLink, sum: i32) -> i32 {
+    pub fn path_sum(root: TreeLink, sum: i32) -> i32 {
         let prefix_map: &mut HashMap<i32, i32> = &mut HashMap::new();
         prefix_map.insert(0, 1);
         root.path_sum(0, sum, prefix_map)

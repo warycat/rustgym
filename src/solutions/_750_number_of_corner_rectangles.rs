@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn count_corner_rectangles(grid: Vec<Vec<i32>>) -> i32 {
+    pub fn count_corner_rectangles(grid: Vec<Vec<i32>>) -> i32 {
         let m = grid[0].len();
         let mut res = 0;
         let mut dp = vec![vec![0; m]; m];

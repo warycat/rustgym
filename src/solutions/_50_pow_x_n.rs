@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn my_pow(x: f64, n: i32) -> f64 {
+    pub fn my_pow(x: f64, n: i32) -> f64 {
         if n == 0 {
             1.0
         } else if n % 2 == 0 {

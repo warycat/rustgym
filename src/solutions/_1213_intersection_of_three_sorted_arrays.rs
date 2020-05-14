@@ -1,9 +1,9 @@
-struct Solution;
+pub struct Solution;
 
 use std::collections::BTreeMap;
 
 impl Solution {
-    fn arrays_intersection(arr1: Vec<i32>, arr2: Vec<i32>, arr3: Vec<i32>) -> Vec<i32> {
+    pub fn arrays_intersection(arr1: Vec<i32>, arr2: Vec<i32>, arr3: Vec<i32>) -> Vec<i32> {
         let mut btm: BTreeMap<i32, i32> = BTreeMap::new();
         for x in arr1 {
             *btm.entry(x).or_default() += 1;

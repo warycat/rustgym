@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn wiggle_sort(nums: &mut Vec<i32>) {
+    pub fn wiggle_sort(nums: &mut Vec<i32>) {
         let n = nums.len();
         for i in 0..n {
             if i % 2 == 1 {

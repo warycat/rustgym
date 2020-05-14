@@ -1,4 +1,4 @@
-struct Solution;
+pub struct Solution;
 use util::*;
 
 trait Preorder {
@@ -26,7 +26,7 @@ impl Preorder for TreeLink {
 }
 
 impl Solution {
-    fn range_sum_bst(root: TreeLink, l: i32, r: i32) -> i32 {
+    pub fn range_sum_bst(root: TreeLink, l: i32, r: i32) -> i32 {
         let mut sum = 0;
         root.preorder(l, r, &mut sum);
         sum

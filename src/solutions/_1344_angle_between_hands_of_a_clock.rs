@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn angle_clock(hour: i32, minutes: i32) -> f64 {
+    pub fn angle_clock(hour: i32, minutes: i32) -> f64 {
         let h = ((hour % 12) as f64 + (minutes as f64 / 60.0)) * 30.0;
         let m = minutes as f64 * 6.0;
         let a = (h - m).abs();

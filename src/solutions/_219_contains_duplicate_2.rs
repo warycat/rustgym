@@ -1,9 +1,9 @@
-struct Solution;
+pub struct Solution;
 
 use std::collections::HashSet;
 
 impl Solution {
-    fn contains_nearby_duplicate(nums: Vec<i32>, k: i32) -> bool {
+    pub fn contains_nearby_duplicate(nums: Vec<i32>, k: i32) -> bool {
         let mut hs: HashSet<i32> = HashSet::new();
         let n = nums.len();
         let k = k as usize;

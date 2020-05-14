@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn num_trees(n: i32) -> i32 {
+    pub fn num_trees(n: i32) -> i32 {
         let n = n as usize;
         let mut dp: Vec<i32> = vec![0; n + 1];
         dp[0] = 1;

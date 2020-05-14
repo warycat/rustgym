@@ -1,15 +1,15 @@
-struct Solution;
+pub struct Solution;
 
 use std::collections::HashSet;
 
 #[derive(PartialEq, Eq, Hash)]
-struct Email {
+pub struct Email {
     local_name: String,
     domain_name: String,
 }
 
 impl Email {
-    fn new(s: String) -> Self {
+    pub fn new(s: String) -> Self {
         let mut iter = s.split('@');
         let left: String = iter.next().unwrap().to_string();
         let domain_name: String = iter.next().unwrap().to_string();
@@ -23,7 +23,7 @@ impl Email {
 }
 
 impl Solution {
-    fn num_unique_emails(emails: Vec<String>) -> i32 {
+    pub fn num_unique_emails(emails: Vec<String>) -> i32 {
         let mut hs: HashSet<Email> = HashSet::new();
         let emails: Vec<Email> = emails
             .iter()

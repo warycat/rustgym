@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn max_length(arr: Vec<String>) -> i32 {
+    pub fn max_length(arr: Vec<String>) -> i32 {
         let arr: Vec<u32> = arr
             .into_iter()
             .filter_map(|s| {
@@ -23,7 +23,7 @@ impl Solution {
         res as i32
     }
 
-    fn dfs(start: usize, cur: u32, max: &mut u32, arr: &[u32], n: usize) {
+    pub fn dfs(start: usize, cur: u32, max: &mut u32, arr: &[u32], n: usize) {
         if start == n {
             *max = (*max).max(cur.count_ones());
         } else {

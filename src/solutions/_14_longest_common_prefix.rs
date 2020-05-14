@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn longest_common_prefix(strs: Vec<String>) -> String {
+    pub fn longest_common_prefix(strs: Vec<String>) -> String {
         if strs.is_empty() {
             return String::from("");
         }

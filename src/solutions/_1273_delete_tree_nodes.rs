@@ -1,8 +1,8 @@
-struct Solution;
+pub struct Solution;
 use std::collections::HashMap;
 
 impl Solution {
-    fn delete_tree_nodes(nodes: i32, parent: Vec<i32>, value: Vec<i32>) -> i32 {
+    pub fn delete_tree_nodes(nodes: i32, parent: Vec<i32>, value: Vec<i32>) -> i32 {
         let mut hm: HashMap<usize, Vec<usize>> = HashMap::new();
         let n = nodes as usize;
         let mut root = n;
@@ -17,7 +17,7 @@ impl Solution {
         size as i32
     }
 
-    fn postorder(
+    pub fn postorder(
         i: usize,
         hm: &HashMap<usize, Vec<usize>>,
         value: &[i32],

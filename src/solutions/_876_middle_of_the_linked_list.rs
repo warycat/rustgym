@@ -1,16 +1,16 @@
-struct Solution;
+pub struct Solution;
 use util::*;
 
-struct List {
+pub struct List {
     head: ListLink,
 }
 
 impl List {
-    fn new(head: ListLink) -> Self {
+    pub fn new(head: ListLink) -> Self {
         List { head }
     }
 
-    fn middle(&self) -> &ListLink {
+    pub fn middle(&self) -> &ListLink {
         let mut slow = &self.head;
         let mut fast = &self.head;
         while fast.is_some() && fast.as_ref().unwrap().next.is_some() {
@@ -22,7 +22,7 @@ impl List {
 }
 
 impl Solution {
-    fn middle_node(head: ListLink) -> ListLink {
+    pub fn middle_node(head: ListLink) -> ListLink {
         let list = List::new(head);
         let middle: &ListLink = list.middle();
         middle.clone()

@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn get_hint(secret: String, guess: String) -> String {
+    pub fn get_hint(secret: String, guess: String) -> String {
         let s: Vec<char> = secret.chars().collect();
         let g: Vec<char> = guess.chars().collect();
         let mut bulls = 0;

@@ -1,8 +1,8 @@
-struct Solution;
+pub struct Solution;
 use std::collections::HashSet;
 
 impl Solution {
-    fn check_subarray_sum(nums: Vec<i32>, k: i32) -> bool {
+    pub fn check_subarray_sum(nums: Vec<i32>, k: i32) -> bool {
         let n = nums.len();
         let mut sum = 0;
         let mut pre = 0;

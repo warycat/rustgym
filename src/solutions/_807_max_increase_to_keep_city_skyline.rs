@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn max_increase_keeping_skyline(grid: Vec<Vec<i32>>) -> i32 {
+    pub fn max_increase_keeping_skyline(grid: Vec<Vec<i32>>) -> i32 {
         let n = grid.len();
         let m = grid[0].len();
         let mut row: Vec<i32> = vec![0; n];

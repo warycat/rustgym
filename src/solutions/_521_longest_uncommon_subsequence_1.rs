@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn find_lu_slength(a: String, b: String) -> i32 {
+    pub fn find_lu_slength(a: String, b: String) -> i32 {
         if a == b {
             -1
         } else {

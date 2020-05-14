@@ -1,11 +1,11 @@
-struct Solution;
+pub struct Solution;
 
 use std::cmp::Reverse;
 
 type People = (Reverse<i32>, i32);
 
 impl Solution {
-    fn reconstruct_queue(people: Vec<Vec<i32>>) -> Vec<Vec<i32>> {
+    pub fn reconstruct_queue(people: Vec<Vec<i32>>) -> Vec<Vec<i32>> {
         let mut people: Vec<People> = people.iter().map(|v| (Reverse(v[0]), v[1])).collect();
         people.sort_unstable();
         let mut res = vec![];

@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn distribute_candies(mut candies: i32, num_people: i32) -> Vec<i32> {
+    pub fn distribute_candies(mut candies: i32, num_people: i32) -> Vec<i32> {
         let mut i = 0;
         let n = num_people as usize;
         let mut res: Vec<i32> = vec![0; n];

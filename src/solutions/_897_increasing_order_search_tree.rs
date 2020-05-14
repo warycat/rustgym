@@ -1,4 +1,4 @@
-struct Solution;
+pub struct Solution;
 use util::*;
 
 trait Inorder {
@@ -21,7 +21,7 @@ impl Inorder for TreeLink {
 }
 
 impl Solution {
-    fn increasing_bst(root: TreeLink) -> TreeLink {
+    pub fn increasing_bst(root: TreeLink) -> TreeLink {
         root.inorder(None)
     }
 }

@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn is_armstrong(n: i32) -> bool {
+    pub fn is_armstrong(n: i32) -> bool {
         let mut x = n;
         let mut k = 0;
         let mut digits: Vec<i32> = vec![];

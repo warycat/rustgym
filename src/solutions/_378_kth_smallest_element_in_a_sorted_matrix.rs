@@ -1,8 +1,8 @@
-struct Solution;
+pub struct Solution;
 use std::collections::BinaryHeap;
 
 impl Solution {
-    fn kth_smallest(matrix: Vec<Vec<i32>>, k: i32) -> i32 {
+    pub fn kth_smallest(matrix: Vec<Vec<i32>>, k: i32) -> i32 {
         let mut pq: BinaryHeap<i32> = BinaryHeap::new();
         for row in matrix {
             for x in row {

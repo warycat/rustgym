@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn num_subarray_bounded_max(a: Vec<i32>, l: i32, r: i32) -> i32 {
+    pub fn num_subarray_bounded_max(a: Vec<i32>, l: i32, r: i32) -> i32 {
         let n = a.len();
         let mut start = 0;
         let mut end = 0;

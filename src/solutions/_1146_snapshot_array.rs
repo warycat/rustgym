@@ -1,13 +1,13 @@
 type Pair = (usize, i32);
 
-struct SnapshotArray {
+pub struct SnapshotArray {
     size: usize,
     data: Vec<Vec<Pair>>,
     snap_id: usize,
 }
 
 impl SnapshotArray {
-    fn new(length: i32) -> Self {
+    pub fn new(length: i32) -> Self {
         let size = length as usize;
         let data = vec![vec![(0, 0)]; size];
         let snap_id = 0;
@@ -18,7 +18,7 @@ impl SnapshotArray {
         }
     }
 
-    fn set(&mut self, index: i32, val: i32) {
+    pub fn set(&mut self, index: i32, val: i32) {
         let i = index as usize;
         if let Some(last) = self.data[i].pop() {
             if last.0 != self.snap_id {
@@ -28,12 +28,12 @@ impl SnapshotArray {
         self.data[i].push((self.snap_id, val));
     }
 
-    fn snap(&mut self) -> i32 {
+    pub fn snap(&mut self) -> i32 {
         self.snap_id += 1;
         (self.snap_id - 1) as i32
     }
 
-    fn get(&self, index: i32, snap_id: i32) -> i32 {
+    pub fn get(&self, index: i32, snap_id: i32) -> i32 {
         let i = index as usize;
         let snap_id = snap_id as usize;
         match self.data[i].binary_search_by_key(&snap_id, |p| p.0) {

@@ -1,4 +1,4 @@
-struct Solution;
+pub struct Solution;
 use std::collections::HashSet;
 use std::iter::FromIterator;
 use util::*;
@@ -42,7 +42,7 @@ impl Postorder for TreeLink {
 }
 
 impl Solution {
-    fn del_nodes(root: TreeLink, to_delete: Vec<i32>) -> Vec<TreeLink> {
+    pub fn del_nodes(root: TreeLink, to_delete: Vec<i32>) -> Vec<TreeLink> {
         let nodes = HashSet::from_iter(to_delete);
         let mut res = vec![];
         let (root, forest) = root.postorder(&nodes);

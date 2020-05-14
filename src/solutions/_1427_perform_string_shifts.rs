@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn string_shift(s: String, shift: Vec<Vec<i32>>) -> String {
+    pub fn string_shift(s: String, shift: Vec<Vec<i32>>) -> String {
         let v: Vec<char> = s.chars().collect();
         let mut res = "".to_string();
         let n = s.len();

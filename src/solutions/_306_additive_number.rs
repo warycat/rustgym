@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn is_additive_number(num: String) -> bool {
+    pub fn is_additive_number(num: String) -> bool {
         let n = num.len();
         let mut res = false;
         let mut cur: Vec<u64> = vec![];
@@ -9,7 +9,7 @@ impl Solution {
         res
     }
 
-    fn dfs(start: usize, cur: &mut Vec<u64>, valid: &mut bool, s: &str, n: usize) {
+    pub fn dfs(start: usize, cur: &mut Vec<u64>, valid: &mut bool, s: &str, n: usize) {
         if start == n {
             if cur.len() >= 3 {
                 *valid = true;

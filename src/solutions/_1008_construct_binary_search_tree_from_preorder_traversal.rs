@@ -1,4 +1,4 @@
-struct Solution;
+pub struct Solution;
 use util::*;
 
 trait Postorder {
@@ -26,7 +26,7 @@ impl Postorder for TreeLink {
 }
 
 impl Solution {
-    fn bst_from_preorder(preorder: Vec<i32>) -> TreeLink {
+    pub fn bst_from_preorder(preorder: Vec<i32>) -> TreeLink {
         let mut inorder: Vec<i32> = preorder.clone();
         inorder.sort_unstable();
         TreeLink::from_vec(&preorder, &inorder)

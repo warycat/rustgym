@@ -1,4 +1,4 @@
-struct Solution;
+pub struct Solution;
 use std::collections::HashMap;
 use util::*;
 
@@ -20,7 +20,7 @@ impl Preorder for TreeLink {
 }
 
 impl Solution {
-    fn max_level_sum(root: TreeLink) -> i32 {
+    pub fn max_level_sum(root: TreeLink) -> i32 {
         let mut sum = HashMap::new();
         root.preorder(1, &mut sum);
         *sum.iter().max_by_key(|(_, &v)| v).unwrap().0 as i32

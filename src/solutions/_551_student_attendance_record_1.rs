@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn check_record(s: String) -> bool {
+    pub fn check_record(s: String) -> bool {
         let s: Vec<char> = s.chars().collect();
         if s.iter().filter(|&c| c == &'A').count() > 1 {
             return false;

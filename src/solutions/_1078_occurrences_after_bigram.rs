@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn find_ocurrences(text: String, first: String, second: String) -> Vec<String> {
+    pub fn find_ocurrences(text: String, first: String, second: String) -> Vec<String> {
         let mut res: Vec<String> = vec![];
         let words: Vec<&str> = text.split_whitespace().collect();
         words.windows(3).for_each(|v| {

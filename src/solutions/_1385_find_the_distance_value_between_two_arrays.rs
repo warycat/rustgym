@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn find_the_distance_value(arr1: Vec<i32>, arr2: Vec<i32>, d: i32) -> i32 {
+    pub fn find_the_distance_value(arr1: Vec<i32>, arr2: Vec<i32>, d: i32) -> i32 {
         let mut count: Vec<Vec<i32>> = vec![vec![0; 2001]; 2];
         for x in arr1 {
             count[0][(x + 1000) as usize] += 1;

@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn is_robot_bounded(instructions: String) -> bool {
+    pub fn is_robot_bounded(instructions: String) -> bool {
         let mut x = 0;
         let mut y = 0;
         let mut i = 0;

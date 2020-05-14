@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn k_length_apart(nums: Vec<i32>, k: i32) -> bool {
+    pub fn k_length_apart(nums: Vec<i32>, k: i32) -> bool {
         let mut prev: Option<usize> = None;
         let k = k as usize;
         let n = nums.len();

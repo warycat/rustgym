@@ -1,14 +1,15 @@
-struct ProductOfNumbers {
-    prefix: Vec<i32>,
+#[derive(Default)]
+pub struct ProductOfNumbers {
+    pub prefix: Vec<i32>,
 }
 
 impl ProductOfNumbers {
-    fn new() -> Self {
+    pub fn new() -> Self {
         let prefix = vec![1];
         ProductOfNumbers { prefix }
     }
 
-    fn add(&mut self, num: i32) {
+    pub fn add(&mut self, num: i32) {
         if num > 0 {
             let prev = self.prefix[self.prefix.len() - 1];
             self.prefix.push(prev * num);
@@ -17,7 +18,7 @@ impl ProductOfNumbers {
         }
     }
 
-    fn get_product(&self, k: i32) -> i32 {
+    pub fn get_product(&self, k: i32) -> i32 {
         let k = k as usize;
         let n = self.prefix.len();
         if k >= n {

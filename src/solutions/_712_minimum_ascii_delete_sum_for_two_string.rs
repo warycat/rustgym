@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn minimum_delete_sum(s1: String, s2: String) -> i32 {
+    pub fn minimum_delete_sum(s1: String, s2: String) -> i32 {
         let s1: Vec<u8> = s1.bytes().collect();
         let s2: Vec<u8> = s2.bytes().collect();
         let sum: i32 = s1.iter().chain(s2.iter()).map(|&b| b as i32).sum();

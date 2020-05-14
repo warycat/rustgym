@@ -1,9 +1,9 @@
-struct Solution;
+pub struct Solution;
 
 use std::collections::HashMap;
 
 impl Solution {
-    fn find_words(words: Vec<String>) -> Vec<String> {
+    pub fn find_words(words: Vec<String>) -> Vec<String> {
         let rows: Vec<String> = [
             "qwertyuiopQWERTYUIOP",
             "asdfghjklASDFGHJKL",

@@ -1,8 +1,8 @@
-struct Solution;
+pub struct Solution;
 use std::collections::VecDeque;
 
 impl Solution {
-    fn max_distance(mut grid: Vec<Vec<i32>>) -> i32 {
+    pub fn max_distance(mut grid: Vec<Vec<i32>>) -> i32 {
         let n = grid.len();
         let m = grid[0].len();
         let mut queue: VecDeque<(usize, usize, i32)> = VecDeque::new();

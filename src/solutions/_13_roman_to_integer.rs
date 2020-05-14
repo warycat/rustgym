@@ -1,9 +1,9 @@
-struct Solution;
+pub struct Solution;
 
 use std::collections::HashMap;
 
 impl Solution {
-    fn roman_to_int(s: String) -> i32 {
+    pub fn roman_to_int(s: String) -> i32 {
         let map: HashMap<char, i32> = vec![
             ('I', 1),
             ('V', 5),

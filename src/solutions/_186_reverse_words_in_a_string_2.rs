@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn reverse_words(s: &mut Vec<char>) {
+    pub fn reverse_words(s: &mut Vec<char>) {
         s.reverse();
         for word in s.split_mut(|&c| c == ' ') {
             word.reverse();

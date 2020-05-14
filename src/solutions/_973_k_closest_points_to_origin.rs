@@ -1,11 +1,11 @@
-struct Solution;
+pub struct Solution;
 use std::cmp::Ordering::*;
 
-fn distance(v: &[i32]) -> i32 {
+pub fn distance(v: &[i32]) -> i32 {
     v[0] * v[0] + v[1] * v[1]
 }
 
-fn quick_select(a: &mut Vec<Vec<i32>>, l: usize, r: usize, k: usize) {
+pub fn quick_select(a: &mut Vec<Vec<i32>>, l: usize, r: usize, k: usize) {
     if l == r {
         return;
     }
@@ -18,7 +18,7 @@ fn quick_select(a: &mut Vec<Vec<i32>>, l: usize, r: usize, k: usize) {
     }
 }
 
-fn partition(a: &mut Vec<Vec<i32>>, l: usize, r: usize) -> usize {
+pub fn partition(a: &mut Vec<Vec<i32>>, l: usize, r: usize) -> usize {
     let x = distance(&a[r]);
     let mut i = l;
     for j in l..r {
@@ -32,7 +32,7 @@ fn partition(a: &mut Vec<Vec<i32>>, l: usize, r: usize) -> usize {
 }
 
 impl Solution {
-    fn k_closest(mut points: Vec<Vec<i32>>, k: i32) -> Vec<Vec<i32>> {
+    pub fn k_closest(mut points: Vec<Vec<i32>>, k: i32) -> Vec<Vec<i32>> {
         let n = points.len();
         quick_select(&mut points, 0, n - 1, k as usize);
         points.resize(k as usize, vec![]);

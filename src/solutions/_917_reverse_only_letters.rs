@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn reverse_only_letters(s: String) -> String {
+    pub fn reverse_only_letters(s: String) -> String {
         let n = s.len();
         if n == 0 {
             return "".to_string();

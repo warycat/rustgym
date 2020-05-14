@@ -1,8 +1,8 @@
-struct Solution;
+pub struct Solution;
 use std::collections::HashMap;
 
 impl Solution {
-    fn custom_sort_string(s: String, t: String) -> String {
+    pub fn custom_sort_string(s: String, t: String) -> String {
         let mut hm: HashMap<char, usize> = HashMap::new();
         for (i, c) in s.char_indices() {
             *hm.entry(c).or_default() = i;

@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn tribonacci(n: i32) -> i32 {
+    pub fn tribonacci(n: i32) -> i32 {
         let n = n as usize;
         let mut a: Vec<i32> = vec![0; 38];
         a[0] = 0;

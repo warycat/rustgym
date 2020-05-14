@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn remove_element(nums: &mut Vec<i32>, val: i32) -> i32 {
+    pub fn remove_element(nums: &mut Vec<i32>, val: i32) -> i32 {
         let n: usize = nums.len();
         let mut size: usize = 0;
         for i in 0..n {

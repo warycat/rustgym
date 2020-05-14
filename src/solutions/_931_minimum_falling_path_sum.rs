@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn min_falling_path_sum(a: Vec<Vec<i32>>) -> i32 {
+    pub fn min_falling_path_sum(a: Vec<Vec<i32>>) -> i32 {
         let n = a.len();
         let m = a[0].len();
         let mut dp = vec![vec![0; m]; n];

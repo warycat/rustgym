@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn compress(chars: &mut Vec<char>) -> i32 {
+    pub fn compress(chars: &mut Vec<char>) -> i32 {
         let mut j: usize = 0;
         let mut prev: Option<char> = None;
         let mut count = 0;
@@ -26,7 +26,7 @@ impl Solution {
         j as i32
     }
 
-    fn write_pair(chars: &mut Vec<char>, mut index: usize, c: char, mut count: usize) -> usize {
+    pub fn write_pair(chars: &mut Vec<char>, mut index: usize, c: char, mut count: usize) -> usize {
         chars[index] = c;
         index += 1;
         if count == 1 {

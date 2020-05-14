@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn total_hamming_distance(nums: Vec<i32>) -> i32 {
+    pub fn total_hamming_distance(nums: Vec<i32>) -> i32 {
         let mut res = 0;
         let n = nums.len();
         for i in 0..32 {

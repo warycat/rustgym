@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn count_servers(grid: Vec<Vec<i32>>) -> i32 {
+    pub fn count_servers(grid: Vec<Vec<i32>>) -> i32 {
         let n = grid.len();
         let m = grid[0].len();
         let mut rows = vec![0; n];

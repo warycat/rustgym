@@ -1,9 +1,9 @@
-struct Solution;
+pub struct Solution;
 
 use std::collections::HashSet;
 
 impl Solution {
-    fn intersection(nums1: Vec<i32>, nums2: Vec<i32>) -> Vec<i32> {
+    pub fn intersection(nums1: Vec<i32>, nums2: Vec<i32>) -> Vec<i32> {
         let h1: HashSet<i32> = nums1.into_iter().collect();
         let h2: HashSet<i32> = nums2.into_iter().collect();
         let bitand = &h1 & &h2;

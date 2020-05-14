@@ -1,4 +1,4 @@
-struct Solution;
+pub struct Solution;
 use std::collections::BTreeMap;
 use util::*;
 
@@ -26,7 +26,7 @@ impl Preorder for TreeLink {
 }
 
 impl Solution {
-    fn vertical_order(root: TreeLink) -> Vec<Vec<i32>> {
+    pub fn vertical_order(root: TreeLink) -> Vec<Vec<i32>> {
         let mut grid: BTreeMap<i32, BTreeMap<i32, Vec<i32>>> = BTreeMap::new();
         root.preorder(0, 0, &mut grid);
         grid.into_iter()

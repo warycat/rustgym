@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn maximal_square(matrix: Vec<Vec<char>>) -> i32 {
+    pub fn maximal_square(matrix: Vec<Vec<char>>) -> i32 {
         let mut max = 0;
         let n = matrix.len();
         if n == 0 {

@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn possible_bipartition(n: i32, dislikes: Vec<Vec<i32>>) -> bool {
+    pub fn possible_bipartition(n: i32, dislikes: Vec<Vec<i32>>) -> bool {
         let n = n as usize;
         let mut graph: Vec<Vec<usize>> = vec![vec![]; n];
         for dislike in dislikes {
@@ -19,7 +19,7 @@ impl Solution {
         true
     }
 
-    fn dfs(u: usize, color: i32, colors: &mut [i32], graph: &[Vec<usize>], n: usize) -> bool {
+    pub fn dfs(u: usize, color: i32, colors: &mut [i32], graph: &[Vec<usize>], n: usize) -> bool {
         colors[u] = color;
         for &v in &graph[u] {
             if colors[v] == color {

@@ -1,8 +1,8 @@
-struct Solution;
+pub struct Solution;
 use std::collections::HashSet;
 
 impl Solution {
-    fn count_elements(arr: Vec<i32>) -> i32 {
+    pub fn count_elements(arr: Vec<i32>) -> i32 {
         let mut hs: HashSet<i32> = HashSet::new();
         for &x in &arr {
             hs.insert(x);

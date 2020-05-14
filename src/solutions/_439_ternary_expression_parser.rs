@@ -1,12 +1,12 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn parse_ternary(expression: String) -> String {
+    pub fn parse_ternary(expression: String) -> String {
         let expression: Vec<char> = expression.chars().collect();
         Self::parse(&expression).iter().copied().collect()
     }
 
-    fn parse(expression: &[char]) -> &[char] {
+    pub fn parse(expression: &[char]) -> &[char] {
         let n = expression.len();
         if n == 1 {
             expression

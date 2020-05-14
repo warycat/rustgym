@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn restore_ip_addresses(s: String) -> Vec<String> {
+    pub fn restore_ip_addresses(s: String) -> Vec<String> {
         let n = s.len();
         let mut v: Vec<u8> = vec![0; 4];
         let mut res: Vec<String> = vec![];

@@ -1,10 +1,10 @@
 use util::*;
-struct CBTInserter {
+pub struct CBTInserter {
     stack: Vec<TreeLink>,
 }
 
 impl CBTInserter {
-    fn new(root: TreeLink) -> Self {
+    pub fn new(root: TreeLink) -> Self {
         let mut stack: Vec<TreeLink> = vec![];
         stack.push(root);
         let mut i = 0;
@@ -22,7 +22,7 @@ impl CBTInserter {
         CBTInserter { stack }
     }
 
-    fn insert(&mut self, v: i32) -> i32 {
+    pub fn insert(&mut self, v: i32) -> i32 {
         let link = tree!(v);
         let n = self.stack.len();
         self.stack.push(link.clone());
@@ -35,7 +35,7 @@ impl CBTInserter {
         parent.val
     }
 
-    fn get_root(&self) -> TreeLink {
+    pub fn get_root(&self) -> TreeLink {
         self.stack[0].clone()
     }
 }

@@ -1,10 +1,10 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn distance(a: i32, b: i32) -> i32 {
+    pub fn distance(a: i32, b: i32) -> i32 {
         (a - b).abs()
     }
-    fn find_radius(mut houses: Vec<i32>, mut heaters: Vec<i32>) -> i32 {
+    pub fn find_radius(mut houses: Vec<i32>, mut heaters: Vec<i32>) -> i32 {
         houses.sort_unstable();
         heaters.sort_unstable();
         let mut i = 0;

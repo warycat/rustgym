@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn check_possibility(nums: Vec<i32>) -> bool {
+    pub fn check_possibility(nums: Vec<i32>) -> bool {
         let n = nums.len();
         if n < 2 {
             return true;

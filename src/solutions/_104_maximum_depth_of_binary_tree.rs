@@ -1,4 +1,4 @@
-struct Solution;
+pub struct Solution;
 use util::*;
 
 trait MaxDepth {
@@ -16,7 +16,7 @@ impl MaxDepth for TreeLink {
 }
 
 impl Solution {
-    fn max_depth(root: TreeLink) -> i32 {
+    pub fn max_depth(root: TreeLink) -> i32 {
         root.max_depth()
     }
 }

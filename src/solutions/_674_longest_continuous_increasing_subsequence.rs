@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn find_length_of_lcis(nums: Vec<i32>) -> i32 {
+    pub fn find_length_of_lcis(nums: Vec<i32>) -> i32 {
         let n = nums.len();
         if n == 0 {
             return 0;

@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn find_judge(n: i32, trust: Vec<Vec<i32>>) -> i32 {
+    pub fn find_judge(n: i32, trust: Vec<Vec<i32>>) -> i32 {
         let n = n as usize;
         let mut degree = vec![0; n];
         for edge in trust {

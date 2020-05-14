@@ -1,17 +1,17 @@
-struct Solution;
+pub struct Solution;
 use std::fmt;
 use std::ops::Mul;
 
-struct Complex {
+pub struct Complex {
     r: i32,
     i: i32,
 }
 
 impl Complex {
-    fn new(r: i32, i: i32) -> Self {
+    pub fn new(r: i32, i: i32) -> Self {
         Complex { r, i }
     }
-    fn from_string(s: String) -> Self {
+    pub fn from_string(s: String) -> Self {
         let p = s.find('+').unwrap();
         let n = s.len();
         let r = s[0..p].parse::<i32>().unwrap();
@@ -37,7 +37,7 @@ impl fmt::Display for Complex {
 }
 
 impl Solution {
-    fn complex_number_multiply(a: String, b: String) -> String {
+    pub fn complex_number_multiply(a: String, b: String) -> String {
         (Complex::from_string(a) * Complex::from_string(b)).to_string()
     }
 }

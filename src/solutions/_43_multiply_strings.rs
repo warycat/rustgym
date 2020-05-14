@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn multiply(num1: String, num2: String) -> String {
+    pub fn multiply(num1: String, num2: String) -> String {
         let n1 = num1.len();
         let n2 = num2.len();
         let n3 = n1 + n2;

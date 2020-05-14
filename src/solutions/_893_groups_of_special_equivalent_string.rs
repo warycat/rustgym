@@ -1,16 +1,16 @@
-struct Solution;
+pub struct Solution;
 
 use std::collections::BTreeMap;
 use std::collections::HashSet;
 
 #[derive(Debug, PartialEq, Eq, Clone, Hash)]
-struct Count {
+pub struct Count {
     even: BTreeMap<char, usize>,
     odd: BTreeMap<char, usize>,
 }
 
 impl Count {
-    fn new(s: String) -> Self {
+    pub fn new(s: String) -> Self {
         let mut even: BTreeMap<char, usize> = BTreeMap::new();
         let mut odd: BTreeMap<char, usize> = BTreeMap::new();
         for (i, c) in s.chars().enumerate() {
@@ -25,7 +25,7 @@ impl Count {
 }
 
 impl Solution {
-    fn num_special_equiv_groups(a: Vec<String>) -> i32 {
+    pub fn num_special_equiv_groups(a: Vec<String>) -> i32 {
         let mut hs: HashSet<Count> = HashSet::new();
         for s in a {
             hs.insert(Count::new(s));

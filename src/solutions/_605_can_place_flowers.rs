@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn can_place_flowers(mut flowerbed: Vec<i32>, n: i32) -> bool {
+    pub fn can_place_flowers(mut flowerbed: Vec<i32>, n: i32) -> bool {
         let m = flowerbed.len();
         let mut sum = 0;
         for i in 0..m {

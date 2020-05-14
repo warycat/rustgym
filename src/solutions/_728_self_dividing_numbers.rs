@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn is_self_dividing(x: i32) -> bool {
+    pub fn is_self_dividing(x: i32) -> bool {
         let mut n = x;
         while n > 0 {
             let last = n % 10;
@@ -17,7 +17,7 @@ impl Solution {
         true
     }
 
-    fn self_dividing_numbers(left: i32, right: i32) -> Vec<i32> {
+    pub fn self_dividing_numbers(left: i32, right: i32) -> Vec<i32> {
         let mut res: Vec<i32> = vec![];
         for i in left..=right {
             if Self::is_self_dividing(i) {

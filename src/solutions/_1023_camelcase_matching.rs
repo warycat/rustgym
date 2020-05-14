@@ -1,14 +1,14 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn camel_match(queries: Vec<String>, pattern: String) -> Vec<bool> {
+    pub fn camel_match(queries: Vec<String>, pattern: String) -> Vec<bool> {
         queries
             .into_iter()
             .map(|query| Self::query_match(query.chars().collect(), pattern.chars().collect()))
             .collect()
     }
 
-    fn query_match(query: Vec<char>, pattern: Vec<char>) -> bool {
+    pub fn query_match(query: Vec<char>, pattern: Vec<char>) -> bool {
         let mut j = 0;
         for i in 0..query.len() {
             if j < pattern.len() && query[i] == pattern[j] {

@@ -1,9 +1,9 @@
-struct Solution;
+pub struct Solution;
 
 use std::collections::HashMap;
 
 impl Solution {
-    fn longest_arith_seq_length(a: Vec<i32>) -> i32 {
+    pub fn longest_arith_seq_length(a: Vec<i32>) -> i32 {
         let mut max = 1;
         let n = a.len();
         let mut dp: Vec<HashMap<i32, i32>> = vec![HashMap::new(); n];

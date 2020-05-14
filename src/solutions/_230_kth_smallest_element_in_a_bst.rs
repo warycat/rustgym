@@ -1,4 +1,4 @@
-struct Solution;
+pub struct Solution;
 use util::*;
 
 trait Inorder {
@@ -22,7 +22,7 @@ impl Inorder for TreeLink {
 }
 
 impl Solution {
-    fn kth_smallest(root: TreeLink, k: i32) -> i32 {
+    pub fn kth_smallest(root: TreeLink, k: i32) -> i32 {
         let mut count = 0;
         let mut res = 0;
         root.inorder(&mut count, &mut res, k as usize);

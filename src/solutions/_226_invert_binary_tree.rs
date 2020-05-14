@@ -1,8 +1,8 @@
-struct Solution;
+pub struct Solution;
 use util::*;
 
 impl Solution {
-    fn invert_tree(root: TreeLink) -> TreeLink {
+    pub fn invert_tree(root: TreeLink) -> TreeLink {
         if let Some(node) = &root {
             let mut node = node.borrow_mut();
             let left = node.left.take();

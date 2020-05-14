@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn triangle_number(mut nums: Vec<i32>) -> i32 {
+    pub fn triangle_number(mut nums: Vec<i32>) -> i32 {
         let mut res = 0;
         let n = nums.len();
         nums.sort_unstable();

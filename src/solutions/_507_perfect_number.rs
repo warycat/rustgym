@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn check_perfect_number(num: i32) -> bool {
+    pub fn check_perfect_number(num: i32) -> bool {
         if num == 1 {
             return false;
         }

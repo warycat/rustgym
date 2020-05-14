@@ -1,8 +1,8 @@
-struct Solution;
+pub struct Solution;
 use std::collections::HashSet;
 
 impl Solution {
-    fn longest_repeating_substring(s: String) -> i32 {
+    pub fn longest_repeating_substring(s: String) -> i32 {
         let n = s.len();
         let mut res = 0;
         let mut hs: HashSet<&str> = HashSet::new();

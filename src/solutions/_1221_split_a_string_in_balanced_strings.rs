@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn balanced_string_split(s: String) -> i32 {
+    pub fn balanced_string_split(s: String) -> i32 {
         let mut l = 0;
         let mut r = 0;
         let mut res = 0;

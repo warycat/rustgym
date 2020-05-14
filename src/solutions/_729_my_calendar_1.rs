@@ -3,17 +3,18 @@ use std::collections::BTreeMap;
 type Interval = (i32, i32);
 type Center = i32;
 
-struct MyCalendar {
-    btm: BTreeMap<Center, Interval>,
+#[derive(Default)]
+pub struct MyCalendar {
+    pub btm: BTreeMap<Center, Interval>,
 }
 
 impl MyCalendar {
-    fn new() -> Self {
+    pub fn new() -> Self {
         let btm: BTreeMap<Center, Interval> = BTreeMap::new();
         MyCalendar { btm }
     }
 
-    fn book(&mut self, start: i32, end: i32) -> bool {
+    pub fn book(&mut self, start: i32, end: i32) -> bool {
         let center = start + end;
         if let Some((_, &(_, last_end))) = self.btm.range(..=center).next_back() {
             if start < last_end {

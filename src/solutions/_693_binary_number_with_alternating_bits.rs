@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn has_alternating_bits(n: i32) -> bool {
+    pub fn has_alternating_bits(n: i32) -> bool {
         let x = (n >> 1) ^ n;
         (x + 1) & x == 0
     }

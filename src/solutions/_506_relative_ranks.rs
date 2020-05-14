@@ -1,14 +1,14 @@
-struct Solution;
+pub struct Solution;
 
 #[derive(Debug, PartialEq, Eq, Clone)]
-struct Athlete {
+pub struct Athlete {
     index: usize,
     score: i32,
     rank: String,
 }
 
 impl Solution {
-    fn find_relative_ranks(nums: Vec<i32>) -> Vec<String> {
+    pub fn find_relative_ranks(nums: Vec<i32>) -> Vec<String> {
         let n = nums.len();
         let mut a: Vec<Athlete> = vec![];
         for i in 0..n {

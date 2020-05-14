@@ -1,8 +1,8 @@
-struct Solution;
+pub struct Solution;
 use std::collections::VecDeque;
 
 impl Solution {
-    fn deck_revealed_increasing(mut deck: Vec<i32>) -> Vec<i32> {
+    pub fn deck_revealed_increasing(mut deck: Vec<i32>) -> Vec<i32> {
         deck.sort_unstable();
         let mut queue: VecDeque<i32> = VecDeque::new();
         let n = deck.len();

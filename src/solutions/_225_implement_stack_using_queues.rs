@@ -1,17 +1,18 @@
 use std::collections::VecDeque;
 
-struct MyStack {
-    queue: VecDeque<i32>,
+#[derive(Default)]
+pub struct MyStack {
+    pub queue: VecDeque<i32>,
 }
 
 impl MyStack {
-    fn new() -> Self {
+    pub fn new() -> Self {
         MyStack {
             queue: VecDeque::new(),
         }
     }
 
-    fn push(&mut self, x: i32) {
+    pub fn push(&mut self, x: i32) {
         let mut n = self.queue.len();
         self.queue.push_back(x);
         while n > 0 {
@@ -21,15 +22,15 @@ impl MyStack {
         }
     }
 
-    fn pop(&mut self) -> i32 {
+    pub fn pop(&mut self) -> i32 {
         self.queue.pop_front().unwrap()
     }
 
-    fn top(&self) -> i32 {
+    pub fn top(&self) -> i32 {
         *self.queue.front().unwrap()
     }
 
-    fn empty(&self) -> bool {
+    pub fn empty(&self) -> bool {
         self.queue.is_empty()
     }
 }

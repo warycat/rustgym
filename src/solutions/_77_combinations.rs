@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn combine(n: i32, k: i32) -> Vec<Vec<i32>> {
+    pub fn combine(n: i32, k: i32) -> Vec<Vec<i32>> {
         let mut res = vec![];
         let nums: Vec<i32> = (1..=n).collect();
         let n = n as usize;
@@ -11,7 +11,7 @@ impl Solution {
         res
     }
 
-    fn dfs(
+    pub fn dfs(
         start: usize,
         count: usize,
         cur: &mut Vec<i32>,

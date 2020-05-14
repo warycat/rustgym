@@ -1,10 +1,11 @@
-struct CombinationIterator {
-    combinations: Vec<String>,
-    index: usize,
+#[derive(Default)]
+pub struct CombinationIterator {
+    pub combinations: Vec<String>,
+    pub index: usize,
 }
 
 impl CombinationIterator {
-    fn new(characters: String, combination_length: i32) -> Self {
+    pub fn new(characters: String, combination_length: i32) -> Self {
         let n = combination_length as usize;
         let m = characters.len();
         let mut indexes = vec![];
@@ -18,7 +19,7 @@ impl CombinationIterator {
         }
     }
 
-    fn dfs(
+    pub fn dfs(
         start: usize,
         indexes: &mut Vec<usize>,
         combinations: &mut Vec<String>,
@@ -38,13 +39,13 @@ impl CombinationIterator {
         }
     }
 
-    fn next(&mut self) -> String {
+    pub fn next(&mut self) -> String {
         let res = self.combinations[self.index].to_string();
         self.index += 1;
         res
     }
 
-    fn has_next(&self) -> bool {
+    pub fn has_next(&self) -> bool {
         self.index < self.combinations.len()
     }
 }

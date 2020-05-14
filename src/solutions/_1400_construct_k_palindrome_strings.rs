@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn can_construct(s: String, k: i32) -> bool {
+    pub fn can_construct(s: String, k: i32) -> bool {
         let k = k as usize;
         let n = s.len();
         if n < k {

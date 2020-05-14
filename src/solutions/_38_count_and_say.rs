@@ -1,12 +1,12 @@
-struct Solution;
+pub struct Solution;
 
-struct Pair {
+pub struct Pair {
     digit: char,
     count: usize,
 }
 
 impl Solution {
-    fn next(nums: String) -> String {
+    pub fn next(nums: String) -> String {
         let mut prev: Option<Pair> = None;
         let mut s = String::from("");
         for c in nums.chars() {
@@ -32,7 +32,7 @@ impl Solution {
         s
     }
 
-    fn count_and_say(n: i32) -> String {
+    pub fn count_and_say(n: i32) -> String {
         match n {
             1 => String::from("1"),
             2..=30 => Self::next(Solution::count_and_say(n - 1)),

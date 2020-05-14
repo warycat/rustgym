@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn search(nums: Vec<i32>, target: i32) -> i32 {
+    pub fn search(nums: Vec<i32>, target: i32) -> i32 {
         let n = nums.len();
         let mut l: i32 = 0;
         let mut r: i32 = n as i32 - 1;

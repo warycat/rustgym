@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn update(sum: i32, lower: i32, upper: i32, point: &mut i32) {
+    pub fn update(sum: i32, lower: i32, upper: i32, point: &mut i32) {
         if sum < lower {
             *point -= 1;
         }
@@ -9,7 +9,7 @@ impl Solution {
             *point += 1;
         }
     }
-    fn diet_plan_performance(calories: Vec<i32>, k: i32, lower: i32, upper: i32) -> i32 {
+    pub fn diet_plan_performance(calories: Vec<i32>, k: i32, lower: i32, upper: i32) -> i32 {
         let mut sum = 0;
         let mut point = 0;
         let n = calories.len();

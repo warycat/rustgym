@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn find_poisoned_duration(time_series: Vec<i32>, duration: i32) -> i32 {
+    pub fn find_poisoned_duration(time_series: Vec<i32>, duration: i32) -> i32 {
         let n = time_series.len();
         if n == 0 {
             return 0;

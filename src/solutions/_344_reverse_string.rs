@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn reverse_string(s: &mut Vec<char>) {
+    pub fn reverse_string(s: &mut Vec<char>) {
         s.reverse();
     }
 }

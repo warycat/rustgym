@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn divisor_game(n: i32) -> bool {
+    pub fn divisor_game(n: i32) -> bool {
         n % 2 == 0
     }
 }

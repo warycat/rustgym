@@ -1,8 +1,8 @@
-struct Solution;
+pub struct Solution;
 use std::i32;
 
 impl Solution {
-    fn longest_palindrome_subseq(s: String) -> i32 {
+    pub fn longest_palindrome_subseq(s: String) -> i32 {
         let s: Vec<char> = s.chars().collect();
         let n = s.len();
         let mut dp: Vec<Vec<i32>> = vec![vec![0; n + 1]; n];

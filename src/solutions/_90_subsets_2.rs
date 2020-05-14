@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn subsets_with_dup(mut nums: Vec<i32>) -> Vec<Vec<i32>> {
+    pub fn subsets_with_dup(mut nums: Vec<i32>) -> Vec<Vec<i32>> {
         nums.sort_unstable();
         let n = nums.len();
         let mut cur = vec![];
@@ -10,7 +10,7 @@ impl Solution {
         res
     }
 
-    fn dfs(start: usize, cur: &mut Vec<i32>, all: &mut Vec<Vec<i32>>, nums: &[i32], n: usize) {
+    pub fn dfs(start: usize, cur: &mut Vec<i32>, all: &mut Vec<Vec<i32>>, nums: &[i32], n: usize) {
         all.push(cur.to_vec());
         if start == n {
             return;

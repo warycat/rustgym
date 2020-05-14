@@ -1,9 +1,9 @@
-struct Solution;
+pub struct Solution;
 
 use std::collections::BTreeMap;
 
 impl Solution {
-    fn uncommon_from_sentences(a: String, b: String) -> Vec<String> {
+    pub fn uncommon_from_sentences(a: String, b: String) -> Vec<String> {
         let mut hs: BTreeMap<&str, i32> = BTreeMap::new();
         a.split_whitespace().for_each(|s| {
             *hs.entry(s).or_default() += 1;

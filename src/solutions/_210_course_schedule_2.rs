@@ -1,9 +1,9 @@
-struct Solution;
+pub struct Solution;
 
 use std::collections::VecDeque;
 
 impl Solution {
-    fn find_order(num_courses: i32, prerequisites: Vec<Vec<i32>>) -> Vec<i32> {
+    pub fn find_order(num_courses: i32, prerequisites: Vec<Vec<i32>>) -> Vec<i32> {
         let mut res = vec![];
         let n = num_courses as usize;
         let mut edges: Vec<Vec<usize>> = vec![vec![]; n];

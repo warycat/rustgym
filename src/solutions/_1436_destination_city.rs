@@ -1,8 +1,8 @@
-struct Solution;
+pub struct Solution;
 use std::collections::HashSet;
 
 impl Solution {
-    fn dest_city(paths: Vec<Vec<String>>) -> String {
+    pub fn dest_city(paths: Vec<Vec<String>>) -> String {
         let mut citys: HashSet<&str> = HashSet::new();
         let n = paths.len();
         for i in 0..n {

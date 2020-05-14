@@ -1,14 +1,14 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn get_factors(n: i32) -> Vec<Vec<i32>> {
+    pub fn get_factors(n: i32) -> Vec<Vec<i32>> {
         let mut cur = vec![];
         let mut res = vec![];
         Self::dfs(2, n, &mut cur, &mut res);
         res
     }
 
-    fn dfs(start: i32, n: i32, cur: &mut Vec<i32>, all: &mut Vec<Vec<i32>>) {
+    pub fn dfs(start: i32, n: i32, cur: &mut Vec<i32>, all: &mut Vec<Vec<i32>>) {
         if n == 1 {
             if cur.len() > 1 {
                 all.push(cur.to_vec());

@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn car_pooling(trips: Vec<Vec<i32>>, capacity: i32) -> bool {
+    pub fn car_pooling(trips: Vec<Vec<i32>>, capacity: i32) -> bool {
         let mut pairs: Vec<(i32, i32)> = vec![];
         for trip in trips {
             pairs.push((trip[1], trip[0]));

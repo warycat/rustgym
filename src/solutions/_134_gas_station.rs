@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn can_complete_circuit(gas: Vec<i32>, cost: Vec<i32>) -> i32 {
+    pub fn can_complete_circuit(gas: Vec<i32>, cost: Vec<i32>) -> i32 {
         let n = gas.len();
 
         let mut total = 0;

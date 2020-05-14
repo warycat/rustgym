@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn can_partition_k_subsets(nums: Vec<i32>, k: i32) -> bool {
+    pub fn can_partition_k_subsets(nums: Vec<i32>, k: i32) -> bool {
         let n = nums.len();
         let sum: i32 = nums.iter().sum();
         if sum % k != 0 {
@@ -11,7 +11,7 @@ impl Solution {
         Self::search(0, 0, k as usize, &mut visited, &nums, n, sum / k)
     }
 
-    fn search(
+    pub fn search(
         start: usize,
         sum: i32,
         k: usize,

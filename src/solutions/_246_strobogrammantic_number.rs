@@ -1,9 +1,9 @@
-struct Solution;
+pub struct Solution;
 
 use std::collections::HashMap;
 
 impl Solution {
-    fn is_strobogrammatic(nums: String) -> bool {
+    pub fn is_strobogrammatic(nums: String) -> bool {
         let map: HashMap<char, char> =
             vec![('0', '0'), ('1', '1'), ('6', '9'), ('8', '8'), ('9', '6')]
                 .into_iter()

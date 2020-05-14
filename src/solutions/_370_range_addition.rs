@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn get_modified_array(length: i32, updates: Vec<Vec<i32>>) -> Vec<i32> {
+    pub fn get_modified_array(length: i32, updates: Vec<Vec<i32>>) -> Vec<i32> {
         let n = length as usize;
         let mut res = vec![0; n];
         let mut batched = vec![0; n + 1];

@@ -1,8 +1,8 @@
-struct Solution;
+pub struct Solution;
 use std::cmp::Ordering::*;
 
 impl Solution {
-    fn max_turbulence_size(a: Vec<i32>) -> i32 {
+    pub fn max_turbulence_size(a: Vec<i32>) -> i32 {
         let n = a.len();
         let mut res = 1;
         let mut inc = 1;

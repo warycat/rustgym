@@ -1,18 +1,18 @@
-struct Solution;
+pub struct Solution;
 
 use std::collections::HashMap;
 
 #[derive(PartialEq, Eq, Default)]
-struct Trie {
+pub struct Trie {
     children: HashMap<char, Trie>,
     end: bool,
 }
 
 impl Trie {
-    fn new() -> Self {
+    pub fn new() -> Self {
         Self::default()
     }
-    fn insert<I>(&mut self, iter: I)
+    pub fn insert<I>(&mut self, iter: I)
     where
         I: Iterator<Item = char>,
     {
@@ -23,7 +23,7 @@ impl Trie {
         link.end = true;
     }
 
-    fn dfs(&self, length: usize, sum: &mut usize) {
+    pub fn dfs(&self, length: usize, sum: &mut usize) {
         let mut is_leaf = true;
         for link in self.children.values() {
             is_leaf = false;
@@ -36,7 +36,7 @@ impl Trie {
 }
 
 impl Solution {
-    fn minimum_length_encoding(words: Vec<String>) -> i32 {
+    pub fn minimum_length_encoding(words: Vec<String>) -> i32 {
         let mut trie = Trie::new();
         for word in words {
             trie.insert(word.chars().rev());

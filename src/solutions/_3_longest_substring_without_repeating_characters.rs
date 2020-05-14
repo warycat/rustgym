@@ -1,9 +1,9 @@
-struct Solution;
+pub struct Solution;
 
 use std::collections::HashMap;
 
 impl Solution {
-    fn length_of_longest_substring(s: String) -> i32 {
+    pub fn length_of_longest_substring(s: String) -> i32 {
         let mut hm: HashMap<char, usize> = HashMap::new();
         let mut max: usize = 0;
         let mut l: usize = 0;

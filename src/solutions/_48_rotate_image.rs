@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn rotate(matrix: &mut Vec<Vec<i32>>) {
+    pub fn rotate(matrix: &mut Vec<Vec<i32>>) {
         matrix.reverse();
         let n = matrix.len();
         for i in 0..n {

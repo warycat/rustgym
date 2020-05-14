@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn remove_kdigits(num: String, mut k: i32) -> String {
+    pub fn remove_kdigits(num: String, mut k: i32) -> String {
         let mut stack: Vec<char> = vec![];
         for c in num.chars() {
             while let Some(&top) = stack.last() {

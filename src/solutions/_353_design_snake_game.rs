@@ -2,10 +2,10 @@ use std::collections::HashSet;
 use std::collections::VecDeque;
 
 #[derive(PartialEq, Eq, Clone, Copy, Hash)]
-struct Point(i32, i32);
+pub struct Point(i32, i32);
 
 impl Point {
-    fn from_direction(direction: String) -> Point {
+    pub fn from_direction(direction: String) -> Point {
         if direction == "U" {
             Point(-1, 0)
         } else if direction == "L" {
@@ -20,7 +20,7 @@ impl Point {
     }
 }
 
-struct SnakeGame {
+pub struct SnakeGame {
     body: VecDeque<Point>,
     food: Vec<Point>,
     screen: HashSet<Point>,
@@ -30,7 +30,7 @@ struct SnakeGame {
 }
 
 impl SnakeGame {
-    fn new(width: i32, height: i32, food: Vec<Vec<i32>>) -> Self {
+    pub fn new(width: i32, height: i32, food: Vec<Vec<i32>>) -> Self {
         let score = 0;
         let n = height as i32;
         let m = width as i32;
@@ -50,7 +50,7 @@ impl SnakeGame {
         }
     }
 
-    fn make_a_move(&mut self, direction: String) -> i32 {
+    pub fn make_a_move(&mut self, direction: String) -> i32 {
         if self.score == -1 {
             return -1;
         }

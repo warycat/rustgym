@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn binary_gap(n: i32) -> i32 {
+    pub fn binary_gap(n: i32) -> i32 {
         let mut max = 0;
         let mut prev: Option<usize> = None;
         for i in 0..32 {

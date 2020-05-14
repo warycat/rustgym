@@ -1,13 +1,13 @@
-struct Solution;
+pub struct Solution;
 use std::cmp::Ordering;
 use std::collections::HashMap;
-struct Pair<'a> {
+pub struct Pair<'a> {
     word: &'a str,
     freq: usize,
 }
 
 impl Solution {
-    fn top_k_frequent(words: Vec<String>, k: i32) -> Vec<String> {
+    pub fn top_k_frequent(words: Vec<String>, k: i32) -> Vec<String> {
         let mut hm: HashMap<&str, usize> = HashMap::new();
         let mut v: Vec<Pair> = vec![];
         for w in words.iter() {

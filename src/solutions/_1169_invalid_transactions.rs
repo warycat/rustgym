@@ -1,9 +1,9 @@
-struct Solution;
+pub struct Solution;
 use std::collections::HashMap;
 use std::collections::HashSet;
 
 impl Solution {
-    fn invalid_transactions(transactions: Vec<String>) -> Vec<String> {
+    pub fn invalid_transactions(transactions: Vec<String>) -> Vec<String> {
         let n = transactions.len();
         let mut hm: HashMap<String, Vec<(i32, String, String)>> = HashMap::new();
         let mut hs: HashSet<String> = HashSet::new();

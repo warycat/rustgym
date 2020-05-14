@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn valid_palindrome(s: String) -> bool {
+    pub fn valid_palindrome(s: String) -> bool {
         let v: &str = s.as_str();
         if let Some(s) = Solution::is_palidrome(v) {
             let sl: &str = &s[1..];
@@ -12,7 +12,7 @@ impl Solution {
         }
     }
 
-    fn is_palidrome(v: &str) -> Option<&str> {
+    pub fn is_palidrome(v: &str) -> Option<&str> {
         let n = v.len();
         if n <= 1 {
             return None;

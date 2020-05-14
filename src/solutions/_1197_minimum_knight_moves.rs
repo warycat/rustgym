@@ -1,28 +1,28 @@
-struct Solution;
+pub struct Solution;
 
 #[derive(PartialEq, Eq, Hash, Debug, Copy, Clone)]
-struct Point {
+pub struct Point {
     x: i32,
     y: i32,
 }
 
 impl Point {
-    fn new(x: i32, y: i32) -> Self {
+    pub fn new(x: i32, y: i32) -> Self {
         Point { x, y }
     }
 }
 
 #[derive(PartialEq, Eq, Copy, Clone)]
-struct Knight {
+pub struct Knight {
     point: Point,
     step: i32,
 }
 
 impl Knight {
-    fn new(point: Point, step: i32) -> Self {
+    pub fn new(point: Point, step: i32) -> Self {
         Knight { point, step }
     }
-    fn next(&self) -> Vec<Knight> {
+    pub fn next(&self) -> Vec<Knight> {
         let offsets: [[i32; 2]; 8] = [
             [2, 1],
             [1, 2],
@@ -49,7 +49,7 @@ use std::collections::HashSet;
 use std::collections::VecDeque;
 
 impl Solution {
-    fn min_knight_moves(x: i32, y: i32) -> i32 {
+    pub fn min_knight_moves(x: i32, y: i32) -> i32 {
         let end = Point::new(i32::min(x.abs(), y.abs()), i32::max(x.abs(), y.abs()));
         let mut hs: HashSet<Point> = HashSet::new();
         let mut queue: VecDeque<Knight> = VecDeque::new();

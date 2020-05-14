@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn arrange_coins(n: i32) -> i32 {
+    pub fn arrange_coins(n: i32) -> i32 {
         (((2 * n as i64) as f64 + 0.25).sqrt() - 0.5).floor() as i32
     }
 }

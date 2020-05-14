@@ -1,13 +1,13 @@
 use std::cmp::Reverse;
 use std::collections::BinaryHeap;
 
-struct KthLargest {
+pub struct KthLargest {
     pq: BinaryHeap<Reverse<i32>>,
     k: usize,
 }
 
 impl KthLargest {
-    fn new(k: i32, nums: Vec<i32>) -> Self {
+    pub fn new(k: i32, nums: Vec<i32>) -> Self {
         let mut pq: BinaryHeap<Reverse<i32>> = BinaryHeap::new();
         let k = k as usize;
         for x in nums {
@@ -19,7 +19,7 @@ impl KthLargest {
         KthLargest { pq, k }
     }
 
-    fn add(&mut self, val: i32) -> i32 {
+    pub fn add(&mut self, val: i32) -> i32 {
         self.pq.push(Reverse(val));
         if self.pq.len() > self.k {
             self.pq.pop();

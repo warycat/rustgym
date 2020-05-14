@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn three_sum(mut nums: Vec<i32>) -> Vec<Vec<i32>> {
+    pub fn three_sum(mut nums: Vec<i32>) -> Vec<Vec<i32>> {
         let mut res: Vec<Vec<i32>> = vec![];
         let n = nums.len();
         if n < 3 {

@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn merge(mut intervals: Vec<Vec<i32>>) -> Vec<Vec<i32>> {
+    pub fn merge(mut intervals: Vec<Vec<i32>>) -> Vec<Vec<i32>> {
         intervals.sort_unstable_by(|a, b| a[0].cmp(&b[0]));
         let mut res: Vec<Vec<i32>> = vec![];
         let mut temp: Option<Vec<i32>> = None;

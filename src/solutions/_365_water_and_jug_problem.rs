@@ -1,8 +1,8 @@
-struct Solution;
+pub struct Solution;
 use std::collections::VecDeque;
 
 impl Solution {
-    fn can_measure_water(x: i32, y: i32, z: i32) -> bool {
+    pub fn can_measure_water(x: i32, y: i32, z: i32) -> bool {
         if z > x + y {
             return false;
         }

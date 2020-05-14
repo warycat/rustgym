@@ -1,8 +1,8 @@
-struct Solution;
+pub struct Solution;
 use util::*;
 
 impl Solution {
-    fn sort_list(head: ListLink) -> ListLink {
+    pub fn sort_list(head: ListLink) -> ListLink {
         let mut cur = head;
         let mut v: Vec<i32> = vec![];
         while let Some(node) = cur {

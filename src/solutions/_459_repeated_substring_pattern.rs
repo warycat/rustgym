@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn repeated_substring_pattern(s: String) -> bool {
+    pub fn repeated_substring_pattern(s: String) -> bool {
         let mut t: String = "".to_string();
         let n = s.len();
         if n < 2 {

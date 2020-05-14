@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn calculate_time(keyboard: String, word: String) -> i32 {
+    pub fn calculate_time(keyboard: String, word: String) -> i32 {
         let mut indexes: Vec<i32> = vec![0; 26];
         for (i, b) in keyboard.bytes().enumerate() {
             indexes[(b - b'a') as usize] = i as i32;

@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn number_of_lines(widths: Vec<i32>, s: String) -> Vec<i32> {
+    pub fn number_of_lines(widths: Vec<i32>, s: String) -> Vec<i32> {
         let mut lines = 0;
         let mut start = 0;
         for b in s.bytes() {

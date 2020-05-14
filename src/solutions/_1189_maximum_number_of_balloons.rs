@@ -1,9 +1,9 @@
-struct Solution;
+pub struct Solution;
 
 use std::collections::HashMap;
 
 impl Solution {
-    fn max_number_of_balloons(text: String) -> i32 {
+    pub fn max_number_of_balloons(text: String) -> i32 {
         let mut text_count: HashMap<char, usize> = HashMap::new();
         let mut ballon_count: HashMap<char, usize> = HashMap::new();
         for c in "balloon".chars() {

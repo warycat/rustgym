@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn find_anagrams(s: String, p: String) -> Vec<i32> {
+    pub fn find_anagrams(s: String, p: String) -> Vec<i32> {
         let mut res: Vec<i32> = vec![];
         let mut ss: Vec<usize> = vec![0; 26];
         let mut sp: Vec<usize> = vec![0; 26];

@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn judge_square_sum(c: i32) -> bool {
+    pub fn judge_square_sum(c: i32) -> bool {
         if c == 0 {
             return true;
         }

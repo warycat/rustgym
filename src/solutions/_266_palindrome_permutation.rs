@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn can_permute_palindrome(s: String) -> bool {
+    pub fn can_permute_palindrome(s: String) -> bool {
         let mut count: Vec<usize> = vec![0; 256];
         for b in s.bytes() {
             let d = b as usize;

@@ -1,4 +1,4 @@
-struct Solution;
+pub struct Solution;
 use util::*;
 
 trait PathSum {
@@ -23,7 +23,7 @@ impl PathSum for TreeLink {
 }
 
 impl Solution {
-    fn has_path_sum(root: TreeLink, sum: i32) -> bool {
+    pub fn has_path_sum(root: TreeLink, sum: i32) -> bool {
         if root.is_none() {
             return false;
         }

@@ -1,9 +1,9 @@
-struct Solution;
+pub struct Solution;
 
 type Pair = (i32, usize);
 
 impl Solution {
-    fn majority_element(nums: Vec<i32>) -> Vec<i32> {
+    pub fn majority_element(nums: Vec<i32>) -> Vec<i32> {
         let n = nums.len();
         let mut pairs: Vec<Pair> = vec![];
         for &x in &nums {

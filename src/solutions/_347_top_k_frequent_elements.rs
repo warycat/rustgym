@@ -1,4 +1,4 @@
-struct Solution;
+pub struct Solution;
 use std::cmp::Reverse;
 use std::collections::BinaryHeap;
 use std::collections::HashMap;
@@ -6,7 +6,7 @@ use std::collections::HashMap;
 type Pair = (Reverse<usize>, i32);
 
 impl Solution {
-    fn top_k_frequent(nums: Vec<i32>, k: i32) -> Vec<i32> {
+    pub fn top_k_frequent(nums: Vec<i32>, k: i32) -> Vec<i32> {
         let k = k as usize;
         let mut hm: HashMap<i32, usize> = HashMap::new();
         let mut pq: BinaryHeap<Pair> = BinaryHeap::new();

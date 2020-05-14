@@ -1,27 +1,28 @@
 use std::i32;
 
-struct MaxStack {
-    vec: Vec<i32>,
+#[derive(Default)]
+pub struct MaxStack {
+    pub vec: Vec<i32>,
 }
 
 impl MaxStack {
-    fn new() -> Self {
+    pub fn new() -> Self {
         MaxStack { vec: vec![] }
     }
 
-    fn push(&mut self, x: i32) {
+    pub fn push(&mut self, x: i32) {
         self.vec.push(x);
     }
 
-    fn pop(&mut self) -> i32 {
+    pub fn pop(&mut self) -> i32 {
         self.vec.pop().unwrap()
     }
 
-    fn top(&self) -> i32 {
+    pub fn top(&self) -> i32 {
         *self.vec.last().unwrap()
     }
 
-    fn peek_max(&self) -> i32 {
+    pub fn peek_max(&self) -> i32 {
         let mut max = self.top();
         for &x in &self.vec {
             max = i32::max(max, x);
@@ -29,7 +30,7 @@ impl MaxStack {
         max
     }
 
-    fn pop_max(&mut self) -> i32 {
+    pub fn pop_max(&mut self) -> i32 {
         let mut index = self.vec.len() - 1;
         let mut max = self.top();
         let n = self.vec.len();

@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn count_segments(s: String) -> i32 {
+    pub fn count_segments(s: String) -> i32 {
         s.split_whitespace().count() as i32
     }
 }

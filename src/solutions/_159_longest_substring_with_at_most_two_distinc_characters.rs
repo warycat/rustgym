@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn length_of_longest_substring_two_distinct(s: String) -> i32 {
+    pub fn length_of_longest_substring_two_distinct(s: String) -> i32 {
         let s: Vec<char> = s.chars().collect();
         let mut count: Vec<usize> = vec![0; 256];
         let mut start = 0;

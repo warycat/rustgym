@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn nth_person_gets_nth_seat(n: i32) -> f64 {
+    pub fn nth_person_gets_nth_seat(n: i32) -> f64 {
         if n > 1 {
             0.5
         } else {

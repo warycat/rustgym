@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn bitwise_complement(n: i32) -> i32 {
+    pub fn bitwise_complement(n: i32) -> i32 {
         if n == 0 {
             return 1;
         }

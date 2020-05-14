@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn pacific_atlantic(matrix: Vec<Vec<i32>>) -> Vec<Vec<i32>> {
+    pub fn pacific_atlantic(matrix: Vec<Vec<i32>>) -> Vec<Vec<i32>> {
         let mut res: Vec<Vec<i32>> = vec![];
         let n = matrix.len();
         if n == 0 {
@@ -31,7 +31,7 @@ impl Solution {
         res
     }
 
-    fn dfs(i: usize, j: usize, matrix: &[Vec<i32>], visited: &mut Vec<Vec<bool>>) {
+    pub fn dfs(i: usize, j: usize, matrix: &[Vec<i32>], visited: &mut Vec<Vec<bool>>) {
         if !visited[i][j] {
             visited[i][j] = true;
             if i > 0 && matrix[i - 1][j] >= matrix[i][j] {

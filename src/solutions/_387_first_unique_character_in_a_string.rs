@@ -1,9 +1,9 @@
-struct Solution;
+pub struct Solution;
 
 use std::collections::HashMap;
 
 impl Solution {
-    fn first_uniq_char(s: String) -> i32 {
+    pub fn first_uniq_char(s: String) -> i32 {
         let mut hm: HashMap<char, i32> = HashMap::new();
         for c in s.chars() {
             let e = hm.entry(c).or_default();

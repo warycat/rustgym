@@ -1,8 +1,8 @@
-struct Solution;
+pub struct Solution;
 use std::collections::HashSet;
 
 impl Solution {
-    fn split_array(nums: Vec<i32>) -> bool {
+    pub fn split_array(nums: Vec<i32>) -> bool {
         let n = nums.len();
         let mut prefix = vec![0; n];
         let mut prev = 0;

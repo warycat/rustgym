@@ -1,9 +1,9 @@
-struct Solution;
+pub struct Solution;
 use std::collections::BinaryHeap;
 use std::collections::HashMap;
 
 impl Solution {
-    fn min_set_size(arr: Vec<i32>) -> i32 {
+    pub fn min_set_size(arr: Vec<i32>) -> i32 {
         let n = arr.len();
         let mut hm: HashMap<i32, usize> = HashMap::new();
         for x in arr {

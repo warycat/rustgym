@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn min_height_shelves(books: Vec<Vec<i32>>, shelf_width: i32) -> i32 {
+    pub fn min_height_shelves(books: Vec<Vec<i32>>, shelf_width: i32) -> i32 {
         let n = books.len();
         let mut dp = vec![0; n + 1];
         for i in 0..n {

@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn knight_dialer(n: i32) -> i32 {
+    pub fn knight_dialer(n: i32) -> i32 {
         let max = 1_000_000_007;
         let n = n as usize;
         let mut dp: [[usize; 10]; 2] = [

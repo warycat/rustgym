@@ -1,11 +1,11 @@
-struct Solution;
+pub struct Solution;
 use std::collections::HashMap;
 
 type Cross = (i32, i32, i32);
 type Point = (i32, i32);
 
 impl Solution {
-    fn min_area_free_rect(points: Vec<Vec<i32>>) -> f64 {
+    pub fn min_area_free_rect(points: Vec<Vec<i32>>) -> f64 {
         let mut hm: HashMap<Cross, Vec<Point>> = HashMap::new();
         let n = points.len();
         let mut res = std::f64::MAX;
@@ -35,7 +35,7 @@ impl Solution {
             res
         }
     }
-    fn edge(x1: i32, y1: i32, x2: i32, y2: i32) -> f64 {
+    pub fn edge(x1: i32, y1: i32, x2: i32, y2: i32) -> f64 {
         (((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1)) as f64).sqrt()
     }
 }

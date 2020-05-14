@@ -1,4 +1,4 @@
-struct Solution;
+pub struct Solution;
 use std::cmp::Reverse;
 use std::collections::BinaryHeap;
 use std::collections::HashMap;
@@ -6,7 +6,7 @@ use std::collections::HashMap;
 type G = HashMap<String, BinaryHeap<Reverse<String>>>;
 
 impl Solution {
-    fn find_itinerary(tickets: Vec<Vec<String>>) -> Vec<String> {
+    pub fn find_itinerary(tickets: Vec<Vec<String>>) -> Vec<String> {
         let mut res: Vec<String> = vec![];
         let mut g: G = HashMap::new();
         for ticket in tickets {

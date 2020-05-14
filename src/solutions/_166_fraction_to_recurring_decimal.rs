@@ -1,9 +1,9 @@
-struct Solution;
+pub struct Solution;
 use std::collections::HashMap;
 use std::iter::FromIterator;
 
 impl Solution {
-    fn fraction_to_decimal(numerator: i32, denominator: i32) -> String {
+    pub fn fraction_to_decimal(numerator: i32, denominator: i32) -> String {
         if numerator == 0 {
             return "0".to_string();
         }

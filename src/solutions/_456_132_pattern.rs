@@ -1,9 +1,9 @@
-struct Solution;
+pub struct Solution;
 
 use std::i32;
 
 impl Solution {
-    fn find132pattern(nums: Vec<i32>) -> bool {
+    pub fn find132pattern(nums: Vec<i32>) -> bool {
         let n = nums.len();
         let mut a3 = i32::MIN;
         let mut stack: Vec<i32> = vec![];

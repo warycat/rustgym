@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn solve_sudoku(board: &mut Vec<Vec<char>>) {
+    pub fn solve_sudoku(board: &mut Vec<Vec<char>>) {
         let mut rows = vec![0; 9];
         let mut cols = vec![0; 9];
         let mut zones = vec![vec![0; 3]; 3];
@@ -19,7 +19,7 @@ impl Solution {
         Self::dfs(0, board, &mut rows, &mut cols, &mut zones);
     }
 
-    fn dfs(
+    pub fn dfs(
         start: usize,
         board: &mut Vec<Vec<char>>,
         rows: &mut Vec<u32>,

@@ -1,9 +1,9 @@
-struct Solution;
+pub struct Solution;
 
 use std::collections::HashMap;
 
 impl Solution {
-    fn gcd(a: i32, b: i32) -> i32 {
+    pub fn gcd(a: i32, b: i32) -> i32 {
         if a == 0 {
             b
         } else {
@@ -11,7 +11,7 @@ impl Solution {
         }
     }
 
-    fn has_groups_size_x(deck: Vec<i32>) -> bool {
+    pub fn has_groups_size_x(deck: Vec<i32>) -> bool {
         let mut hm: HashMap<i32, i32> = HashMap::new();
         let mut max = 0;
         for x in deck {

@@ -1,4 +1,4 @@
-struct Solution;
+pub struct Solution;
 use util::*;
 
 trait TreeToString {
@@ -29,7 +29,7 @@ impl TreeToString for TreeLink {
 }
 
 impl Solution {
-    fn tree2str(t: TreeLink) -> String {
+    pub fn tree2str(t: TreeLink) -> String {
         t.tree_to_string()
     }
 }

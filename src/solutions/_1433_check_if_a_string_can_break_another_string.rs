@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn check_if_can_break(s1: String, s2: String) -> bool {
+    pub fn check_if_can_break(s1: String, s2: String) -> bool {
         let n = s1.len();
         let mut s1: Vec<char> = s1.chars().collect();
         let mut s2: Vec<char> = s2.chars().collect();

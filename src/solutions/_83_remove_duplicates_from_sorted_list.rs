@@ -1,8 +1,8 @@
-struct Solution;
+pub struct Solution;
 use util::*;
 
 impl Solution {
-    fn delete_duplicates(mut head: ListLink) -> ListLink {
+    pub fn delete_duplicates(mut head: ListLink) -> ListLink {
         let mut p = head.as_mut();
         while let Some(n) = p {
             while let Some(m) = n.next.as_mut() {

@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn get_no_zero_integers(n: i32) -> Vec<i32> {
+    pub fn get_no_zero_integers(n: i32) -> Vec<i32> {
         let mut v: Vec<bool> = vec![true; 10000];
         v[0] = false;
         for i in 0..10 {

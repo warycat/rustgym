@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn max_chunks_to_sorted(arr: Vec<i32>) -> i32 {
+    pub fn max_chunks_to_sorted(arr: Vec<i32>) -> i32 {
         let mut max = 0;
         let n = arr.len();
         let mut res = 0;

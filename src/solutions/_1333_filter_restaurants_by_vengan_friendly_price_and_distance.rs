@@ -1,9 +1,9 @@
-struct Solution;
+pub struct Solution;
 use std::cmp::Reverse;
 
 type Pair = (Reverse<i32>, Reverse<i32>);
 impl Solution {
-    fn filter_restaurants(
+    pub fn filter_restaurants(
         restaurants: Vec<Vec<i32>>,
         vegan_friendly: i32,
         max_price: i32,

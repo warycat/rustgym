@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn largest_number(nums: Vec<i32>) -> String {
+    pub fn largest_number(nums: Vec<i32>) -> String {
         let mut v: Vec<String> = nums.iter().map(|x| x.to_string()).collect();
         v.sort_unstable_by(|a, b| format!("{}{}", b, a).cmp(&format!("{}{}", a, b)));
         let mut res: String = "".to_string();

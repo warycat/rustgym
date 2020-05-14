@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn backspace_compare(s: String, t: String) -> bool {
+    pub fn backspace_compare(s: String, t: String) -> bool {
         let mut ss: Vec<char> = vec![];
         let mut ts: Vec<char> = vec![];
         for c in s.chars() {

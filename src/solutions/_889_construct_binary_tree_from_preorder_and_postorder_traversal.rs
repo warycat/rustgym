@@ -1,12 +1,12 @@
-struct Solution;
+pub struct Solution;
 use util::*;
 
 impl Solution {
-    fn construct_from_pre_post(pre: Vec<i32>, post: Vec<i32>) -> TreeLink {
+    pub fn construct_from_pre_post(pre: Vec<i32>, post: Vec<i32>) -> TreeLink {
         Self::build(&mut 0, &mut 0, &pre, &post)
     }
 
-    fn build(i: &mut usize, j: &mut usize, pre: &[i32], post: &[i32]) -> TreeLink {
+    pub fn build(i: &mut usize, j: &mut usize, pre: &[i32], post: &[i32]) -> TreeLink {
         let val = pre[*i];
         *i += 1;
         let mut left = None;

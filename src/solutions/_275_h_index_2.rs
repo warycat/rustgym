@@ -1,8 +1,8 @@
-struct Solution;
+pub struct Solution;
 use std::cmp::Ordering::*;
 
 impl Solution {
-    fn h_index(citations: Vec<i32>) -> i32 {
+    pub fn h_index(citations: Vec<i32>) -> i32 {
         let n = citations.len();
         let mut l = 0;
         let mut r = n;

@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn pivot_index(num: Vec<i32>) -> i32 {
+    pub fn pivot_index(num: Vec<i32>) -> i32 {
         let n = num.len();
         if n == 0 {
             return -1;
@@ -30,11 +30,11 @@ impl Solution {
 }
 
 #[test]
-fn exist() {
+pub fn exist() {
     assert_eq!(Solution::pivot_index(vec![1, 7, 3, 6, 5, 6]), 3);
 }
 
 #[test]
-fn no_index() {
+pub fn no_index() {
     assert_eq!(Solution::pivot_index(vec![1, 2, 3]), -1);
 }

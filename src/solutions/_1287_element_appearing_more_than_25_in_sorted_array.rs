@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn find_special_integer(arr: Vec<i32>) -> i32 {
+    pub fn find_special_integer(arr: Vec<i32>) -> i32 {
         let n = arr.len();
         let t = n / 4;
         for i in 0..n - t {

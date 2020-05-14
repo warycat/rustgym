@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn circular_array_loop(mut nums: Vec<i32>) -> bool {
+    pub fn circular_array_loop(mut nums: Vec<i32>) -> bool {
         let n = nums.len();
         for i in 0..n {
             if Self::next(&nums, i) == i {
@@ -34,7 +34,7 @@ impl Solution {
         false
     }
 
-    fn next(nums: &[i32], index: usize) -> usize {
+    pub fn next(nums: &[i32], index: usize) -> usize {
         let n = nums.len();
         let index = index as i32 + nums[index];
         let index = if index < 0 {

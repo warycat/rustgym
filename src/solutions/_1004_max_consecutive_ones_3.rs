@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn longest_ones(a: Vec<i32>, k: i32) -> i32 {
+    pub fn longest_ones(a: Vec<i32>, k: i32) -> i32 {
         let n = a.len();
         let mut sum = 0;
         let mut res = 0;

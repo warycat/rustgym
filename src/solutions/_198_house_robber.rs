@@ -1,8 +1,8 @@
-struct Solution;
+pub struct Solution;
 use std::cmp::Ordering::*;
 
 impl Solution {
-    fn rob(nums: Vec<i32>) -> i32 {
+    pub fn rob(nums: Vec<i32>) -> i32 {
         let n = nums.len();
         let mut max = vec![0; n];
         for i in 0..n {

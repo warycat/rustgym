@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn can_partition(nums: Vec<i32>) -> bool {
+    pub fn can_partition(nums: Vec<i32>) -> bool {
         let sum: i32 = nums.iter().sum();
         if sum % 2 == 1 {
             return false;

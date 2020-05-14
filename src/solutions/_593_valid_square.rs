@@ -1,4 +1,4 @@
-struct Solution;
+pub struct Solution;
 
 use std::collections::HashSet;
 
@@ -11,7 +11,7 @@ macro_rules! d {
 type Point = Vec<i32>;
 
 impl Solution {
-    fn valid_square(p1: Point, p2: Point, p3: Point, p4: Point) -> bool {
+    pub fn valid_square(p1: Point, p2: Point, p3: Point, p4: Point) -> bool {
         let mut hs: HashSet<i32> = HashSet::new();
         let v: Vec<Point> = vec![p1, p2, p3, p4];
         for i in 0..4 {

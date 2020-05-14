@@ -1,9 +1,9 @@
-struct Solution;
+pub struct Solution;
 
 use std::collections::HashSet;
 
 impl Solution {
-    fn distribute_candies(candies: Vec<i32>) -> i32 {
+    pub fn distribute_candies(candies: Vec<i32>) -> i32 {
         let n = candies.len();
         let mut hs: HashSet<i32> = HashSet::new();
         for val in candies {

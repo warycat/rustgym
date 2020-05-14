@@ -1,15 +1,15 @@
-struct Solution;
+pub struct Solution;
 
 use std::collections::VecDeque;
 
-struct Point {
+pub struct Point {
     i: usize,
     j: usize,
     v: i32,
 }
 
 impl Solution {
-    fn walls_and_gates(rooms: &mut Vec<Vec<i32>>) {
+    pub fn walls_and_gates(rooms: &mut Vec<Vec<i32>>) {
         let n = rooms.len();
         if n == 0 {
             return;

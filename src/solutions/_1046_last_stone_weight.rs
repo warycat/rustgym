@@ -1,9 +1,9 @@
-struct Solution;
+pub struct Solution;
 
 use std::collections::BinaryHeap;
 
 impl Solution {
-    fn last_stone_weight(stones: Vec<i32>) -> i32 {
+    pub fn last_stone_weight(stones: Vec<i32>) -> i32 {
         let mut pq: BinaryHeap<i32> = BinaryHeap::from(stones);
         while let Some(a) = pq.pop() {
             if let Some(b) = pq.pop() {

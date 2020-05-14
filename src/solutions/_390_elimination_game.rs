@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn last_remaining(n: i32) -> i32 {
+    pub fn last_remaining(n: i32) -> i32 {
         if n == 1 {
             1
         } else {

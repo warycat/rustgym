@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn fizz_buzz(n: i32) -> Vec<String> {
+    pub fn fizz_buzz(n: i32) -> Vec<String> {
         let mut res = vec![];
         for i in 1..=n {
             let fizz = i % 3 == 0;

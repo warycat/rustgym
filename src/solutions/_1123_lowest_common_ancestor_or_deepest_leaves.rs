@@ -1,4 +1,4 @@
-struct Solution;
+pub struct Solution;
 use util::*;
 
 trait Postorder {
@@ -25,7 +25,7 @@ impl Postorder for TreeLink {
 }
 
 impl Solution {
-    fn lca_deepest_leaves(root: TreeLink) -> TreeLink {
+    pub fn lca_deepest_leaves(root: TreeLink) -> TreeLink {
         let (_, lca) = root.postorder();
         lca
     }

@@ -1,4 +1,4 @@
-struct Solution;
+pub struct Solution;
 use std::usize;
 use util::*;
 
@@ -25,7 +25,7 @@ impl Postorder for TreeLink {
 }
 
 impl Solution {
-    fn find_leaves(root: TreeLink) -> Vec<Vec<i32>> {
+    pub fn find_leaves(root: TreeLink) -> Vec<Vec<i32>> {
         let mut res: Vec<Vec<i32>> = vec![];
         root.postorder(&mut res);
         res

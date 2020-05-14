@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn rotate(nums: &mut Vec<i32>, k: i32) {
+    pub fn rotate(nums: &mut Vec<i32>, k: i32) {
         let k = k as usize % nums.len();
         nums[..].reverse();
         nums[0..k].reverse();

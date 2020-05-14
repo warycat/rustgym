@@ -1,9 +1,9 @@
-struct Solution;
+pub struct Solution;
 
 use std::collections::HashMap;
 
 impl Solution {
-    fn find_max_length(nums: Vec<i32>) -> i32 {
+    pub fn find_max_length(nums: Vec<i32>) -> i32 {
         let mut res: usize = 0;
         let mut hm: HashMap<i32, usize> = HashMap::new();
         let mut diff = 0;

@@ -1,8 +1,8 @@
-struct Solution;
+pub struct Solution;
 use std::collections::HashMap;
 
 impl Solution {
-    fn shortest_way(source: String, target: String) -> i32 {
+    pub fn shortest_way(source: String, target: String) -> i32 {
         let mut pos: HashMap<char, Vec<usize>> = HashMap::new();
         let mut res = 1;
         for (i, c) in source.char_indices() {
@@ -28,7 +28,7 @@ impl Solution {
         res
     }
 
-    fn next(start: usize, indexes: &[usize]) -> usize {
+    pub fn next(start: usize, indexes: &[usize]) -> usize {
         match indexes.binary_search(&start) {
             Ok(i) => indexes[i] + 1,
             Err(i) => {

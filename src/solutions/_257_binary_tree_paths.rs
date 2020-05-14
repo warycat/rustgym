@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 use util::*;
 
-struct Path {
+pub struct Path {
     stack: Vec<i32>,
 }
 
@@ -36,7 +36,7 @@ impl Preorder for TreeLink {
 }
 
 impl Solution {
-    fn binary_tree_paths(root: TreeLink) -> Vec<String> {
+    pub fn binary_tree_paths(root: TreeLink) -> Vec<String> {
         let mut path = Path { stack: vec![] };
         let mut res = vec![];
         root.preorder(&mut path, &mut res);

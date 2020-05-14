@@ -1,9 +1,9 @@
-struct Solution;
+pub struct Solution;
 
 use std::usize;
 
 impl Solution {
-    fn common_chars(a: Vec<String>) -> Vec<String> {
+    pub fn common_chars(a: Vec<String>) -> Vec<String> {
         let n = a.len();
         let mut counts: Vec<Vec<usize>> = vec![vec![0; 256]; n];
         for i in 0..n {

@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn change(amount: i32, coins: Vec<i32>) -> i32 {
+    pub fn change(amount: i32, coins: Vec<i32>) -> i32 {
         let amount = amount as usize;
         let n = amount + 1;
         let mut dp: Vec<i32> = vec![0; n];

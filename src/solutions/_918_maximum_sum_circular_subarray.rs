@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn max_subarray_sum_circular(a: Vec<i32>) -> i32 {
+    pub fn max_subarray_sum_circular(a: Vec<i32>) -> i32 {
         let n = a.len();
         let sum = a.iter().sum::<i32>();
         let mut prev_min = 0;

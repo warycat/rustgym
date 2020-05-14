@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn beautiful_array(n: i32) -> Vec<i32> {
+    pub fn beautiful_array(n: i32) -> Vec<i32> {
         if n == 1 {
             vec![1]
         } else {

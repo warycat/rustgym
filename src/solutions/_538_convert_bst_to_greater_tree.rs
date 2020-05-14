@@ -1,4 +1,4 @@
-struct Solution;
+pub struct Solution;
 use util::*;
 
 trait Inorder {
@@ -18,7 +18,7 @@ impl Inorder for TreeLink {
 }
 
 impl Solution {
-    fn convert_bst(mut root: TreeLink) -> TreeLink {
+    pub fn convert_bst(mut root: TreeLink) -> TreeLink {
         let mut sum = 0;
         root.inorder(&mut sum);
         root

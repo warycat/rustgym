@@ -1,8 +1,8 @@
-struct Solution;
+pub struct Solution;
 use util::*;
 
 impl Solution {
-    fn inorder_traversal(root: TreeLink) -> Vec<i32> {
+    pub fn inorder_traversal(root: TreeLink) -> Vec<i32> {
         let mut cur = root;
         let mut stack: Vec<TreeLink> = vec![];
         let mut res = vec![];

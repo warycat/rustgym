@@ -1,9 +1,9 @@
-struct Solution;
+pub struct Solution;
 use std::collections::BTreeSet;
 use std::collections::HashMap;
 
 impl Solution {
-    fn array_rank_transform(arr: Vec<i32>) -> Vec<i32> {
+    pub fn array_rank_transform(arr: Vec<i32>) -> Vec<i32> {
         let mut bts: BTreeSet<i32> = BTreeSet::new();
         let mut hm: HashMap<i32, i32> = HashMap::new();
         for &x in &arr {

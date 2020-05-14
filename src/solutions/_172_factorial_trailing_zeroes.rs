@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn trailing_zeroes(mut n: i32) -> i32 {
+    pub fn trailing_zeroes(mut n: i32) -> i32 {
         let mut sum = 0;
         while n > 0 {
             sum += n / 5;

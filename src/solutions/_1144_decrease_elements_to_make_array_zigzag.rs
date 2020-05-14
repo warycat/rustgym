@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn moves_to_make_zigzag(nums: Vec<i32>) -> i32 {
+    pub fn moves_to_make_zigzag(nums: Vec<i32>) -> i32 {
         let mut sums = vec![0, 0];
         let n = nums.len();
         for i in 0..n {

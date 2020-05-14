@@ -1,8 +1,8 @@
-struct Solution;
+pub struct Solution;
 use std::collections::HashMap;
 
 impl Solution {
-    fn least_bricks(wall: Vec<Vec<i32>>) -> i32 {
+    pub fn least_bricks(wall: Vec<Vec<i32>>) -> i32 {
         let n = wall.len();
         let w: i32 = wall[0].iter().sum();
         let mut hm: HashMap<i32, usize> = HashMap::new();

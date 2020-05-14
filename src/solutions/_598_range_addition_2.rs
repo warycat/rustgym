@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn max_count(mut m: i32, mut n: i32, ops: Vec<Vec<i32>>) -> i32 {
+    pub fn max_count(mut m: i32, mut n: i32, ops: Vec<Vec<i32>>) -> i32 {
         for op in ops {
             m = i32::min(op[0], m);
             n = i32::min(op[1], n);

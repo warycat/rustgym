@@ -1,4 +1,4 @@
-struct Solution;
+pub struct Solution;
 use util::*;
 
 trait Postorder {
@@ -23,7 +23,7 @@ impl Postorder for TreeLink {
 }
 
 impl Solution {
-    fn insert_into_max_tree(root: TreeLink, val: i32) -> TreeLink {
+    pub fn insert_into_max_tree(root: TreeLink, val: i32) -> TreeLink {
         root.insert(val)
     }
 }

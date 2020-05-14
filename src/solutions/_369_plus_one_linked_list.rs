@@ -1,4 +1,4 @@
-struct Solution;
+pub struct Solution;
 use util::*;
 
 trait Plus {
@@ -28,7 +28,7 @@ impl Plus for ListLink {
 }
 
 impl Solution {
-    fn plus_one(head: ListLink) -> ListLink {
+    pub fn plus_one(head: ListLink) -> ListLink {
         let (tail, carry) = head.plus();
         if carry == 1 {
             ListLink::link(1, tail)

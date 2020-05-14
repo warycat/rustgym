@@ -1,20 +1,21 @@
-struct MyHashSet {
-    table: Vec<bool>,
+#[derive(Default)]
+pub struct MyHashSet {
+    pub table: Vec<bool>,
 }
 
 impl MyHashSet {
-    fn new() -> Self {
+    pub fn new() -> Self {
         MyHashSet {
             table: vec![false; 1_000_000],
         }
     }
-    fn add(&mut self, key: i32) {
+    pub fn add(&mut self, key: i32) {
         self.table[key as usize] = true;
     }
-    fn remove(&mut self, key: i32) {
+    pub fn remove(&mut self, key: i32) {
         self.table[key as usize] = false;
     }
-    fn contains(&self, key: i32) -> bool {
+    pub fn contains(&self, key: i32) -> bool {
         self.table[key as usize]
     }
 }

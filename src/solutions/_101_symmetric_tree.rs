@@ -1,4 +1,4 @@
-struct Solution;
+pub struct Solution;
 use util::*;
 
 trait Symmetric {
@@ -30,7 +30,7 @@ impl Symmetric for TreeLink {
 }
 
 impl Solution {
-    fn is_symmetric(root: TreeLink) -> bool {
+    pub fn is_symmetric(root: TreeLink) -> bool {
         root.is_symmetric()
     }
 }

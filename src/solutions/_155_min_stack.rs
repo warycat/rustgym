@@ -1,12 +1,13 @@
-struct MinStack {
-    nums: Vec<i32>,
-    mins: Vec<i32>,
-    top: i32,
-    min: i32,
+#[derive(Default)]
+pub struct MinStack {
+    pub nums: Vec<i32>,
+    pub mins: Vec<i32>,
+    pub top: i32,
+    pub min: i32,
 }
 
 impl MinStack {
-    fn new() -> Self {
+    pub fn new() -> Self {
         MinStack {
             nums: vec![],
             mins: vec![],
@@ -15,7 +16,7 @@ impl MinStack {
         }
     }
 
-    fn push(&mut self, x: i32) {
+    pub fn push(&mut self, x: i32) {
         self.nums.push(x);
         if let Some(&min) = self.mins.last() {
             self.mins.push(i32::min(x, min));
@@ -26,14 +27,14 @@ impl MinStack {
         self.set_top();
     }
 
-    fn pop(&mut self) {
+    pub fn pop(&mut self) {
         self.nums.pop();
         self.mins.pop();
         self.set_min();
         self.set_top();
     }
 
-    fn set_top(&mut self) {
+    pub fn set_top(&mut self) {
         self.top = if let Some(&last) = self.nums.last() {
             last
         } else {
@@ -41,7 +42,7 @@ impl MinStack {
         }
     }
 
-    fn set_min(&mut self) {
+    pub fn set_min(&mut self) {
         self.min = if let Some(&last) = self.mins.last() {
             last
         } else {
@@ -49,11 +50,11 @@ impl MinStack {
         }
     }
 
-    fn top(&self) -> i32 {
+    pub fn top(&self) -> i32 {
         self.top
     }
 
-    fn get_min(&self) -> i32 {
+    pub fn get_min(&self) -> i32 {
         self.min
     }
 }

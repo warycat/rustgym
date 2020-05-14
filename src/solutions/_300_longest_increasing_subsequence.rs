@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn length_of_lis(nums: Vec<i32>) -> i32 {
+    pub fn length_of_lis(nums: Vec<i32>) -> i32 {
         let mut dp: Vec<i32> = vec![];
         for x in nums {
             if let Err(i) = dp.binary_search(&x) {

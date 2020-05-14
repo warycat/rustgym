@@ -1,17 +1,17 @@
-struct Solution;
+pub struct Solution;
 use util::*;
 
 #[derive(PartialEq, Eq, Clone, Debug)]
-struct List {
-    head: ListLink,
+pub struct List {
+    pub head: ListLink,
 }
 
 impl List {
-    fn new(head: ListLink) -> Self {
+    pub fn new(head: ListLink) -> Self {
         List { head }
     }
 
-    fn pop(&mut self) -> Option<i32> {
+    pub fn pop(&mut self) -> Option<i32> {
         if let Some(node) = self.head.take() {
             self.head = node.next;
             Some(node.val)
@@ -20,12 +20,12 @@ impl List {
         }
     }
 
-    fn into_iter(self) -> IntoIter {
+    pub fn into_iter(self) -> IntoIter {
         IntoIter { list: self }
     }
 }
 
-struct IntoIter {
+pub struct IntoIter {
     list: List,
 }
 
@@ -38,7 +38,7 @@ impl Iterator for IntoIter {
 }
 
 impl Solution {
-    fn is_palindrome(head: ListLink) -> bool {
+    pub fn is_palindrome(head: ListLink) -> bool {
         let list = List::new(head);
         let vec: Vec<i32> = list.into_iter().collect();
         for (i, &v) in vec.iter().rev().enumerate() {

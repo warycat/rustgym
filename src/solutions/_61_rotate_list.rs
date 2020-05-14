@@ -1,8 +1,8 @@
-struct Solution;
+pub struct Solution;
 use util::*;
 
 impl Solution {
-    fn rotate_right(mut head: ListLink, k: i32) -> ListLink {
+    pub fn rotate_right(mut head: ListLink, k: i32) -> ListLink {
         let mut p = head.as_ref();
         let mut n = 0;
         while let Some(node) = p {

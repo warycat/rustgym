@@ -1,6 +1,6 @@
 use std::collections::HashMap;
 
-struct Cashier {
+pub struct Cashier {
     n: usize,
     index: usize,
     discount: f64,
@@ -8,7 +8,7 @@ struct Cashier {
 }
 
 impl Cashier {
-    fn new(n: i32, discount: i32, products: Vec<i32>, prices: Vec<i32>) -> Self {
+    pub fn new(n: i32, discount: i32, products: Vec<i32>, prices: Vec<i32>) -> Self {
         let n = n as usize;
         let index = 0;
         let discount = (100 - discount) as f64 / 100.0;
@@ -23,7 +23,7 @@ impl Cashier {
             discount,
         }
     }
-    fn get_bill(&mut self, products: Vec<i32>, amount: Vec<i32>) -> f64 {
+    pub fn get_bill(&mut self, products: Vec<i32>, amount: Vec<i32>) -> f64 {
         let mut res = 0.0;
         for (id, amount) in products.into_iter().zip(amount.into_iter()) {
             res += self.inventory[&id] * amount as f64;

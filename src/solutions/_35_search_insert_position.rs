@@ -1,9 +1,9 @@
-struct Solution;
+pub struct Solution;
 
 use std::cmp::Ordering;
 
 impl Solution {
-    fn search_insert(nums: Vec<i32>, target: i32) -> i32 {
+    pub fn search_insert(nums: Vec<i32>, target: i32) -> i32 {
         let n = nums.len();
         for i in 0..n {
             match nums[i].cmp(&target) {

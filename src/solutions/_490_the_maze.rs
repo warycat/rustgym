@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn has_path(maze: Vec<Vec<i32>>, start: Vec<i32>, destination: Vec<i32>) -> bool {
+    pub fn has_path(maze: Vec<Vec<i32>>, start: Vec<i32>, destination: Vec<i32>) -> bool {
         let n = maze.len();
         let m = maze[0].len();
         let r = start[0] as usize;
@@ -13,7 +13,7 @@ impl Solution {
         visited[x][y]
     }
 
-    fn dfs(
+    pub fn dfs(
         r: usize,
         c: usize,
         visited: &mut Vec<Vec<bool>>,

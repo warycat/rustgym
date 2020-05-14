@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn single_non_duplicate(nums: Vec<i32>) -> i32 {
+    pub fn single_non_duplicate(nums: Vec<i32>) -> i32 {
         let n = nums.len();
         let mut l = 0;
         let mut r = n - 1;

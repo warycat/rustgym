@@ -1,10 +1,10 @@
-struct Solution;
+pub struct Solution;
 
 use std::collections::HashMap;
 use std::collections::HashSet;
 
 impl Solution {
-    fn most_common_word(paragraph: String, banned: Vec<String>) -> String {
+    pub fn most_common_word(paragraph: String, banned: Vec<String>) -> String {
         let p: String = paragraph
             .chars()
             .map(|c| {

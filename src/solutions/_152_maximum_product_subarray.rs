@@ -1,10 +1,10 @@
-struct Solution;
+pub struct Solution;
 
 use std::i32;
 use std::mem::swap;
 
 impl Solution {
-    fn max_product(nums: Vec<i32>) -> i32 {
+    pub fn max_product(nums: Vec<i32>) -> i32 {
         let mut res = nums[0];
         let mut min = res;
         let mut max = res;

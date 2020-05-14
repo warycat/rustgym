@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn min_increment_for_unique(mut a: Vec<i32>) -> i32 {
+    pub fn min_increment_for_unique(mut a: Vec<i32>) -> i32 {
         let mut res = 0;
         a.sort_unstable();
         let mut prev: Option<i32> = None;

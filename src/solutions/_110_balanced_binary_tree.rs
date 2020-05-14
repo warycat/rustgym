@@ -1,4 +1,4 @@
-struct Solution;
+pub struct Solution;
 use util::*;
 
 trait Height {
@@ -45,7 +45,7 @@ impl Balanced for TreeLink {
 }
 
 impl Solution {
-    fn is_balanced(root: TreeLink) -> bool {
+    pub fn is_balanced(root: TreeLink) -> bool {
         root.is_balanced()
     }
 }

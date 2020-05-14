@@ -1,4 +1,4 @@
-struct Solution;
+pub struct Solution;
 use util::*;
 
 trait Postortder {
@@ -29,7 +29,7 @@ impl Postortder for TreeLink {
 }
 
 impl Solution {
-    fn split_bst(root: TreeLink, v: i32) -> Vec<TreeLink> {
+    pub fn split_bst(root: TreeLink, v: i32) -> Vec<TreeLink> {
         let (l, r) = root.split(v);
         vec![l, r]
     }

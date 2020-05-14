@@ -1,13 +1,13 @@
-struct Solution;
+pub struct Solution;
 
 #[derive(Debug, PartialEq, Eq)]
-enum NestedInteger {
+pub enum NestedInteger {
     Int(i32),
     List(Vec<NestedInteger>),
 }
 
 impl Solution {
-    fn depth_sum_inverse(nested_list: Vec<NestedInteger>) -> i32 {
+    pub fn depth_sum_inverse(nested_list: Vec<NestedInteger>) -> i32 {
         use NestedInteger::*;
         let mut weighted = 0;
         let mut unweighted = 0;
@@ -32,7 +32,7 @@ impl Solution {
 }
 
 impl NestedInteger {
-    fn parse_int(input: &mut &str) -> Option<NestedInteger> {
+    pub fn parse_int(input: &mut &str) -> Option<NestedInteger> {
         let mut j = 0;
         for (i, c) in input.char_indices() {
             if !c.is_numeric() {
@@ -47,7 +47,7 @@ impl NestedInteger {
         None
     }
 
-    fn parse_list(input: &mut &str) -> Option<NestedInteger> {
+    pub fn parse_list(input: &mut &str) -> Option<NestedInteger> {
         if !Self::eat(input, '[') {
             return Self::parse_int(input);
         }
@@ -62,7 +62,7 @@ impl NestedInteger {
         Some(NestedInteger::List(v))
     }
 
-    fn eat(input: &mut &str, c: char) -> bool {
+    pub fn eat(input: &mut &str, c: char) -> bool {
         if let Some(x) = input.chars().next() {
             if x == c {
                 *input = &input[1..];

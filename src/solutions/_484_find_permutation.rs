@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn find_permutation(s: String) -> Vec<i32> {
+    pub fn find_permutation(s: String) -> Vec<i32> {
         let n = s.len();
         let mut res: Vec<i32> = (1..=(n + 1) as i32).collect();
         let s: Vec<char> = s.chars().collect();

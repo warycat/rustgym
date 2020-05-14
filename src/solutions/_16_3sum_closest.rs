@@ -1,9 +1,9 @@
-struct Solution;
+pub struct Solution;
 
 use std::i32;
 
 impl Solution {
-    fn three_sum_closest(mut nums: Vec<i32>, target: i32) -> i32 {
+    pub fn three_sum_closest(mut nums: Vec<i32>, target: i32) -> i32 {
         nums.sort_unstable();
         let n = nums.len();
         let mut res = 0;

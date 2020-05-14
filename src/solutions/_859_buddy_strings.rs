@@ -1,9 +1,9 @@
-struct Solution;
+pub struct Solution;
 
 use std::collections::HashSet;
 
 impl Solution {
-    fn buddy_strings(a: String, b: String) -> bool {
+    pub fn buddy_strings(a: String, b: String) -> bool {
         let a: Vec<char> = a.chars().collect();
         let b: Vec<char> = b.chars().collect();
         let n = a.len();

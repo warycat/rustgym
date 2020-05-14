@@ -1,9 +1,9 @@
-struct Solution;
+pub struct Solution;
 use std::collections::HashSet;
 use std::collections::VecDeque;
 
 impl Solution {
-    fn sequence_reconstruction(org: Vec<i32>, seqs: Vec<Vec<i32>>) -> bool {
+    pub fn sequence_reconstruction(org: Vec<i32>, seqs: Vec<Vec<i32>>) -> bool {
         let n = org.len();
         let mut indegree = vec![0; n];
         let mut marked = vec![false; n];

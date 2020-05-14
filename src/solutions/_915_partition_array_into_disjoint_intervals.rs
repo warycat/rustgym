@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn partition_disjoint(a: Vec<i32>) -> i32 {
+    pub fn partition_disjoint(a: Vec<i32>) -> i32 {
         let n = a.len();
         let mut left = vec![0; n];
         let mut right = vec![0; n];

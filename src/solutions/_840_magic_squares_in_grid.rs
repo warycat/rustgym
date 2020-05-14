@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn is_magic(grid: &[Vec<i32>], r: usize, c: usize) -> bool {
+    pub fn is_magic(grid: &[Vec<i32>], r: usize, c: usize) -> bool {
         let mut xor = 0;
         for i in 1..10 {
             xor ^= i;
@@ -48,7 +48,7 @@ impl Solution {
         }
         true
     }
-    fn num_magic_squares_inside(grid: Vec<Vec<i32>>) -> i32 {
+    pub fn num_magic_squares_inside(grid: Vec<Vec<i32>>) -> i32 {
         let n = grid.len();
         let m = grid[0].len();
         if n < 3 || m < 3 {

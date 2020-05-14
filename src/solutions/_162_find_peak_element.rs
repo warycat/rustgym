@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn find_peak_element(nums: Vec<i32>) -> i32 {
+    pub fn find_peak_element(nums: Vec<i32>) -> i32 {
         let mut l = 0;
         let mut h = nums.len() - 1;
         while l < h {

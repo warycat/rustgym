@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn height_checker(heights: Vec<i32>) -> i32 {
+    pub fn height_checker(heights: Vec<i32>) -> i32 {
         let mut sorted = heights.to_vec();
         sorted.sort_unstable();
         heights

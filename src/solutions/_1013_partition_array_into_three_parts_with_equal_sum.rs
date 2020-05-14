@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn can_three_parts_equal_sum(a: Vec<i32>) -> bool {
+    pub fn can_three_parts_equal_sum(a: Vec<i32>) -> bool {
         let total: i32 = a.iter().sum();
         let mut parts = 0;
         let mut sum = 0;

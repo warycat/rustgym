@@ -1,9 +1,9 @@
-struct Solution;
+pub struct Solution;
 
 use std::collections::VecDeque;
 
 impl Solution {
-    fn reverse_parentheses(s: String) -> String {
+    pub fn reverse_parentheses(s: String) -> String {
         let mut stack: Vec<char> = vec![];
         let mut queue: VecDeque<char> = VecDeque::new();
         for c in s.chars() {

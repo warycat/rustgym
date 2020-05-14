@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn permute_unique(mut nums: Vec<i32>) -> Vec<Vec<i32>> {
+    pub fn permute_unique(mut nums: Vec<i32>) -> Vec<Vec<i32>> {
         let n = nums.len();
         let mut res: Vec<Vec<i32>> = vec![];
         let mut used: Vec<bool> = vec![false; n];
@@ -11,7 +11,7 @@ impl Solution {
         res
     }
 
-    fn dfs(
+    pub fn dfs(
         cur: &mut Vec<i32>,
         used: &mut Vec<bool>,
         all: &mut Vec<Vec<i32>>,

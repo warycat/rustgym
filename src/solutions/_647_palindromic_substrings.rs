@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn count_substrings(s: String) -> i32 {
+    pub fn count_substrings(s: String) -> i32 {
         let n = s.len();
         let s: Vec<char> = s.chars().collect();
         let mut res = 0;

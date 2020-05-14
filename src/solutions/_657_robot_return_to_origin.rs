@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn judge_circle(moves: String) -> bool {
+    pub fn judge_circle(moves: String) -> bool {
         let mut x = 0;
         let mut y = 0;
         for c in moves.chars() {

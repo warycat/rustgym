@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn check_straight_line(coordinates: Vec<Vec<i32>>) -> bool {
+    pub fn check_straight_line(coordinates: Vec<Vec<i32>>) -> bool {
         let n = coordinates.len();
         if n == 2 {
             return true;

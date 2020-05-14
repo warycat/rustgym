@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn min_available_duration(
+    pub fn min_available_duration(
         mut slots1: Vec<Vec<i32>>,
         mut slots2: Vec<Vec<i32>>,
         duration: i32,

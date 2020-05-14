@@ -1,9 +1,9 @@
-struct Solution;
+pub struct Solution;
 use std::collections::HashSet;
 use std::collections::VecDeque;
 
 impl Solution {
-    fn can_visit_all_rooms(rooms: Vec<Vec<i32>>) -> bool {
+    pub fn can_visit_all_rooms(rooms: Vec<Vec<i32>>) -> bool {
         let n = rooms.len();
         let mut visited: HashSet<usize> = HashSet::new();
         let mut queue: VecDeque<usize> = VecDeque::new();

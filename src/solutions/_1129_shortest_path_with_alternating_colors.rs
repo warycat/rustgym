@@ -1,8 +1,8 @@
-struct Solution;
+pub struct Solution;
 use std::collections::VecDeque;
 
 impl Solution {
-    fn shortest_alternating_paths(
+    pub fn shortest_alternating_paths(
         n: i32,
         red_edges: Vec<Vec<i32>>,
         blue_edges: Vec<Vec<i32>>,

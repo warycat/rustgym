@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn next_greater_elements(nums: Vec<i32>) -> Vec<i32> {
+    pub fn next_greater_elements(nums: Vec<i32>) -> Vec<i32> {
         let mut stack: Vec<usize> = vec![];
         let n = nums.len();
         let mut res = vec![-1; n];

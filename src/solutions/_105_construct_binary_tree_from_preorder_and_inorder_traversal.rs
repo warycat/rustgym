@@ -1,13 +1,13 @@
-struct Solution;
+pub struct Solution;
 use util::*;
 
 impl Solution {
-    fn build_tree(preorder: Vec<i32>, inorder: Vec<i32>) -> TreeLink {
+    pub fn build_tree(preorder: Vec<i32>, inorder: Vec<i32>) -> TreeLink {
         let n = preorder.len();
         Self::build(&preorder[0..n], &inorder[0..n])
     }
 
-    fn build(preorder: &[i32], inorder: &[i32]) -> TreeLink {
+    pub fn build(preorder: &[i32], inorder: &[i32]) -> TreeLink {
         let n = preorder.len();
         if n == 0 {
             None

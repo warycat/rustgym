@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn permute_r(arr: &mut Vec<i32>, start: usize, length: usize, res: &mut Vec<Vec<i32>>) {
+    pub fn permute_r(arr: &mut Vec<i32>, start: usize, length: usize, res: &mut Vec<Vec<i32>>) {
         if start == length {
             res.push(arr.to_vec());
             return;
@@ -13,7 +13,7 @@ impl Solution {
         }
     }
 
-    fn permute(mut nums: Vec<i32>) -> Vec<Vec<i32>> {
+    pub fn permute(mut nums: Vec<i32>) -> Vec<Vec<i32>> {
         let mut res = vec![];
         let n = nums.len();
         Self::permute_r(&mut nums, 0, n, &mut res);

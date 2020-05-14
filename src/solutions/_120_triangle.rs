@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn minimum_total(triangle: Vec<Vec<i32>>) -> i32 {
+    pub fn minimum_total(triangle: Vec<Vec<i32>>) -> i32 {
         let n = triangle.len();
         let mut dp = vec![vec![0; n + 1]; 2];
         for i in (0..n).rev() {

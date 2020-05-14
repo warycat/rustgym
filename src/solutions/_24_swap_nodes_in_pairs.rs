@@ -1,8 +1,8 @@
-struct Solution;
+pub struct Solution;
 use util::*;
 
 impl Solution {
-    fn swap_pairs(head: ListLink) -> ListLink {
+    pub fn swap_pairs(head: ListLink) -> ListLink {
         if let Some(mut first) = head {
             if let Some(mut second) = first.next.take() {
                 let rest = second.next.take();

@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn projection_area(grid: Vec<Vec<i32>>) -> i32 {
+    pub fn projection_area(grid: Vec<Vec<i32>>) -> i32 {
         let mut sum_z: i32 = 0;
         let n = grid.len();
         let m = grid[0].len();

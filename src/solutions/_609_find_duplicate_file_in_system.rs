@@ -1,8 +1,8 @@
-struct Solution;
+pub struct Solution;
 use std::collections::HashMap;
 
 impl Solution {
-    fn find_duplicate(paths: Vec<String>) -> Vec<Vec<String>> {
+    pub fn find_duplicate(paths: Vec<String>) -> Vec<Vec<String>> {
         let mut hm: HashMap<String, Vec<String>> = HashMap::new();
         for s in paths {
             let mut s_iter = s.split_whitespace();

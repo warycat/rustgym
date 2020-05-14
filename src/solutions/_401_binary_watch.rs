@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn read_binary_watch(num: i32) -> Vec<String> {
+    pub fn read_binary_watch(num: i32) -> Vec<String> {
         let mut res: Vec<String> = vec![];
         for i in 0..11 {
             for j in 0..60 {

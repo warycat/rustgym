@@ -1,4 +1,4 @@
-struct Solution;
+pub struct Solution;
 use util::*;
 
 trait Preorder {
@@ -22,7 +22,7 @@ impl Preorder for TreeLink {
 }
 
 impl Solution {
-    fn is_valid_sequence(root: TreeLink, arr: Vec<i32>) -> bool {
+    pub fn is_valid_sequence(root: TreeLink, arr: Vec<i32>) -> bool {
         let mut path = vec![];
         let mut res = false;
         root.preorder(&mut path, &mut res, &arr);

@@ -1,8 +1,8 @@
-struct Solution;
+pub struct Solution;
 
 #[allow(clippy::wrong_self_convention)]
 impl Solution {
-    fn to_goat_latin(s: String) -> String {
+    pub fn to_goat_latin(s: String) -> String {
         let words: Vec<&str> = s.split_whitespace().map(|s| s.chars().as_str()).collect();
         let mut res: String = "".to_string();
         let mut n = 1;

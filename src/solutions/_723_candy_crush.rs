@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn candy_crush(mut board: Vec<Vec<i32>>) -> Vec<Vec<i32>> {
+    pub fn candy_crush(mut board: Vec<Vec<i32>>) -> Vec<Vec<i32>> {
         let n = board.len();
         let m = board[0].len();
         let mut found = true;

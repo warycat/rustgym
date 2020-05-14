@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn surface_area(grid: Vec<Vec<i32>>) -> i32 {
+    pub fn surface_area(grid: Vec<Vec<i32>>) -> i32 {
         let n = grid.len();
         let mut res = 0;
         for i in 0..n {

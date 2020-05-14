@@ -1,10 +1,10 @@
-struct Solution;
+pub struct Solution;
 use std::collections::VecDeque;
 
 type Point = (usize, usize);
 
 impl Solution {
-    fn shortest_path_binary_matrix(grid: Vec<Vec<i32>>) -> i32 {
+    pub fn shortest_path_binary_matrix(grid: Vec<Vec<i32>>) -> i32 {
         let n = grid.len();
         let m = grid[0].len();
         let mut queue: VecDeque<Point> = VecDeque::new();

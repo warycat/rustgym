@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn query_string(s: String, n: i32) -> bool {
+    pub fn query_string(s: String, n: i32) -> bool {
         for i in (1..=n).rev() {
             let t = format!("{:b}", i);
             if !s.contains(&t) {

@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn count_squares(mut matrix: Vec<Vec<i32>>) -> i32 {
+    pub fn count_squares(mut matrix: Vec<Vec<i32>>) -> i32 {
         let n = matrix.len();
         let m = matrix[0].len();
         let mut res = 0;

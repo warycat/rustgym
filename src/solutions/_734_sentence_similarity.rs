@@ -1,10 +1,10 @@
-struct Solution;
+pub struct Solution;
 
 use std::collections::HashMap;
 use std::collections::HashSet;
 
 impl Solution {
-    fn are_sentences_similar(
+    pub fn are_sentences_similar(
         words1: Vec<String>,
         words2: Vec<String>,
         pairs: Vec<Vec<String>>,

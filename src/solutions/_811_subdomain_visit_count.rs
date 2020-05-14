@@ -1,9 +1,9 @@
-struct Solution;
+pub struct Solution;
 
 use std::collections::HashMap;
 
 impl Solution {
-    fn subdomain_visits(cpdomains: Vec<String>) -> Vec<String> {
+    pub fn subdomain_visits(cpdomains: Vec<String>) -> Vec<String> {
         let mut res: Vec<String> = vec![];
         let mut hm: HashMap<String, usize> = HashMap::new();
         for s in cpdomains {
@@ -19,7 +19,7 @@ impl Solution {
         res
     }
 
-    fn parse(s: String) -> (Vec<String>, usize) {
+    pub fn parse(s: String) -> (Vec<String>, usize) {
         let mut domains: Vec<String> = vec![];
         let mut iter = s.split_whitespace();
         let count: usize = iter.next().unwrap().parse::<usize>().unwrap();

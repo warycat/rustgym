@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn max_sub_array(nums: Vec<i32>) -> i32 {
+    pub fn max_sub_array(nums: Vec<i32>) -> i32 {
         let mut prev = 0;
         let mut max = std::i32::MIN;
         let n = nums.len();

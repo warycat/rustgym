@@ -1,8 +1,8 @@
-struct Solution;
+pub struct Solution;
 use std::collections::HashMap;
 
 impl Solution {
-    fn shortest_word_distance(words: Vec<String>, word1: String, word2: String) -> i32 {
+    pub fn shortest_word_distance(words: Vec<String>, word1: String, word2: String) -> i32 {
         let mut hm: HashMap<String, Vec<usize>> = HashMap::new();
         for (i, word) in words.into_iter().enumerate() {
             hm.entry(word).or_default().push(i);

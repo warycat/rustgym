@@ -1,4 +1,4 @@
-struct Solution;
+pub struct Solution;
 use util::*;
 
 trait FlipEq {
@@ -24,7 +24,7 @@ impl FlipEq for TreeLink {
 }
 
 impl Solution {
-    fn flip_equiv(root1: TreeLink, root2: TreeLink) -> bool {
+    pub fn flip_equiv(root1: TreeLink, root2: TreeLink) -> bool {
         TreeLink::flip_eq(&root1, &root2)
     }
 }

@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn subarrays_div_by_k(a: Vec<i32>, k: i32) -> i32 {
+    pub fn subarrays_div_by_k(a: Vec<i32>, k: i32) -> i32 {
         let n = k as usize;
         let mut count: Vec<i32> = vec![0; n];
         let mut sum = 0;

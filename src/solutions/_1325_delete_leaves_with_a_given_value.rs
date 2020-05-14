@@ -1,4 +1,4 @@
-struct Solution;
+pub struct Solution;
 use util::*;
 
 trait Postorder {
@@ -25,7 +25,7 @@ impl Postorder for TreeLink {
 }
 
 impl Solution {
-    fn remove_leaf_nodes(root: TreeLink, target: i32) -> TreeLink {
+    pub fn remove_leaf_nodes(root: TreeLink, target: i32) -> TreeLink {
         root.postorder(target)
     }
 }

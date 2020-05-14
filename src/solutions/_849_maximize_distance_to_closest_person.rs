@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn max_dist_to_closest(seats: Vec<i32>) -> i32 {
+    pub fn max_dist_to_closest(seats: Vec<i32>) -> i32 {
         let mut first: Option<usize> = None;
         let mut last: Option<usize> = None;
         let mut prev: Option<usize> = None;

@@ -1,8 +1,8 @@
-struct Solution;
+pub struct Solution;
 use std::cmp::Ordering::*;
 
 impl Solution {
-    fn four_sum(mut nums: Vec<i32>, target: i32) -> Vec<Vec<i32>> {
+    pub fn four_sum(mut nums: Vec<i32>, target: i32) -> Vec<Vec<i32>> {
         let n = nums.len();
         let mut res = vec![];
         nums.sort();

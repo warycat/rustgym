@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn count_primes(n: i32) -> i32 {
+    pub fn count_primes(n: i32) -> i32 {
         if n <= 2 {
             return 0;
         }

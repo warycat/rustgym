@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn valid_mountain_array(a: Vec<i32>) -> bool {
+    pub fn valid_mountain_array(a: Vec<i32>) -> bool {
         let n = a.len();
         if n < 3 {
             return false;

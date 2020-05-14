@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn increasing_triplet(nums: Vec<i32>) -> bool {
+    pub fn increasing_triplet(nums: Vec<i32>) -> bool {
         let mut dp: Vec<i32> = vec![];
         for x in nums {
             if let Err(i) = dp.binary_search(&x) {

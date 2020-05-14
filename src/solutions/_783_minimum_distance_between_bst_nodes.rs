@@ -1,4 +1,4 @@
-struct Solution;
+pub struct Solution;
 use std::i32;
 use util::*;
 
@@ -23,7 +23,7 @@ impl Inorder for TreeLink {
 }
 
 impl Solution {
-    fn min_diff_in_bst(root: TreeLink) -> i32 {
+    pub fn min_diff_in_bst(root: TreeLink) -> i32 {
         let mut min = i32::MAX;
         let mut prev: Option<i32> = None;
         root.inorder(&mut prev, &mut min);

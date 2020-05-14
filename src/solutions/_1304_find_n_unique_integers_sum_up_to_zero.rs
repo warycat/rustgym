@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn sum_zero(n: i32) -> Vec<i32> {
+    pub fn sum_zero(n: i32) -> Vec<i32> {
         let n = n as usize;
         let mut res: Vec<i32> = vec![0; n];
         let mut sum: i32 = 0;

@@ -1,9 +1,9 @@
-struct Solution;
+pub struct Solution;
 
 use std::collections::HashMap;
 
 impl Solution {
-    fn least_interval(tasks: Vec<char>, n: i32) -> i32 {
+    pub fn least_interval(tasks: Vec<char>, n: i32) -> i32 {
         let n = n as usize;
         let m = tasks.len();
         let mut hm: HashMap<char, usize> = HashMap::new();

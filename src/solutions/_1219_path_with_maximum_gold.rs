@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn get_maximum_gold(mut grid: Vec<Vec<i32>>) -> i32 {
+    pub fn get_maximum_gold(mut grid: Vec<Vec<i32>>) -> i32 {
         let n = grid.len();
         let m = grid[0].len();
         let mut sum = 0;
@@ -14,7 +14,7 @@ impl Solution {
         res
     }
 
-    fn dfs(
+    pub fn dfs(
         i: usize,
         j: usize,
         sum: &mut i32,

@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn generate(nums_rows: i32) -> Vec<Vec<i32>> {
+    pub fn generate(nums_rows: i32) -> Vec<Vec<i32>> {
         let mut res: Vec<Vec<i32>> = vec![];
         for i in 0..nums_rows {
             let ui = i as usize;

@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn count_arrangement(n: i32) -> i32 {
+    pub fn count_arrangement(n: i32) -> i32 {
         let mut res = 0;
         let mut nums = (1..=n).collect();
         let n = n as usize;
@@ -9,7 +9,7 @@ impl Solution {
         res
     }
 
-    fn dfs(start: usize, nums: &mut Vec<i32>, all: &mut i32, n: usize) {
+    pub fn dfs(start: usize, nums: &mut Vec<i32>, all: &mut i32, n: usize) {
         if start == n {
             *all += 1;
         } else {

@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn missing_number(arr: Vec<i32>) -> i32 {
+    pub fn missing_number(arr: Vec<i32>) -> i32 {
         let n = arr.len();
         let delta = (arr[n - 1] - arr[0]) / n as i32;
         for i in 1..n {

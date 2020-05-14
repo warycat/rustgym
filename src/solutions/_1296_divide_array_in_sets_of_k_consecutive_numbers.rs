@@ -1,9 +1,9 @@
-struct Solution;
+pub struct Solution;
 use std::collections::BTreeMap;
 use std::collections::VecDeque;
 
 impl Solution {
-    fn is_possible_divide(nums: Vec<i32>, k: i32) -> bool {
+    pub fn is_possible_divide(nums: Vec<i32>, k: i32) -> bool {
         let n = nums.len();
         let k = k as usize;
         if n % k != 0 {

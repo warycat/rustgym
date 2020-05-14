@@ -1,13 +1,13 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn is_vowel(c: char) -> bool {
+    pub fn is_vowel(c: char) -> bool {
         match c {
             'a' | 'e' | 'i' | 'o' | 'u' | 'A' | 'E' | 'I' | 'O' | 'U' => true,
             _ => false,
         }
     }
-    fn reverse_vowels(s: String) -> String {
+    pub fn reverse_vowels(s: String) -> String {
         let mut a: Vec<char> = s.chars().collect();
         let n = a.len();
         if n == 0 {

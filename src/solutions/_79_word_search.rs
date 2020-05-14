@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn exist(board: Vec<Vec<char>>, word: String) -> bool {
+    pub fn exist(board: Vec<Vec<char>>, word: String) -> bool {
         if let Some(mut word_search) = WordSearch::new(board, word) {
             word_search.exist()
         } else {
@@ -11,7 +11,7 @@ impl Solution {
 }
 
 #[derive(Debug)]
-struct WordSearch {
+pub struct WordSearch {
     n: usize,
     m: usize,
     visited: Vec<Vec<bool>>,
@@ -20,7 +20,7 @@ struct WordSearch {
 }
 
 impl WordSearch {
-    fn new(board: Vec<Vec<char>>, word: String) -> Option<Self> {
+    pub fn new(board: Vec<Vec<char>>, word: String) -> Option<Self> {
         let n = board.len();
         if n == 0 {
             return None;
@@ -44,7 +44,7 @@ impl WordSearch {
         })
     }
 
-    fn dfs(&mut self, i: usize, j: usize, k: usize) -> bool {
+    pub fn dfs(&mut self, i: usize, j: usize, k: usize) -> bool {
         if self.visited[i][j] || self.word[k] != self.board[i][j] {
             return false;
         }
@@ -64,7 +64,7 @@ impl WordSearch {
         false
     }
 
-    fn exist(&mut self) -> bool {
+    pub fn exist(&mut self) -> bool {
         for i in 0..self.n {
             for j in 0..self.m {
                 if self.dfs(i, j, 0) {

@@ -1,9 +1,9 @@
-struct Solution;
+pub struct Solution;
 
 use std::i32;
 
 impl Solution {
-    fn minimum_abs_difference(mut arr: Vec<i32>) -> Vec<Vec<i32>> {
+    pub fn minimum_abs_difference(mut arr: Vec<i32>) -> Vec<Vec<i32>> {
         arr.sort_unstable();
         let min = arr
             .windows(2)

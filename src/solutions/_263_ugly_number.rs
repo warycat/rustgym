@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn is_ugly(mut num: i32) -> bool {
+    pub fn is_ugly(mut num: i32) -> bool {
         if num < 1 {
             return false;
         }

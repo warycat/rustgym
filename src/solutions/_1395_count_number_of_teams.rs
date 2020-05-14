@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn num_teams(rating: Vec<i32>) -> i32 {
+    pub fn num_teams(rating: Vec<i32>) -> i32 {
         let n = rating.len();
         let mut res = 0;
         for i in 0..n {

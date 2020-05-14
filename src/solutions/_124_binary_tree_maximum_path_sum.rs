@@ -1,4 +1,4 @@
-struct Solution;
+pub struct Solution;
 use util::*;
 
 trait Postorder {
@@ -44,7 +44,7 @@ impl Postorder for TreeLink {
 }
 
 impl Solution {
-    fn max_path_sum(root: TreeLink) -> i32 {
+    pub fn max_path_sum(root: TreeLink) -> i32 {
         let mut res: i32 = std::i32::MIN;
         root.postorder(&mut res);
         res as i32

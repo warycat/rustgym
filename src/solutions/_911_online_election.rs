@@ -1,12 +1,12 @@
 use std::collections::HashMap;
 
-struct TopVotedCandidate {
+pub struct TopVotedCandidate {
     times: Vec<i32>,
     leaders: Vec<i32>,
 }
 
 impl TopVotedCandidate {
-    fn new(persons: Vec<i32>, times: Vec<i32>) -> Self {
+    pub fn new(persons: Vec<i32>, times: Vec<i32>) -> Self {
         let n = persons.len();
         let mut hm: HashMap<i32, usize> = HashMap::new();
         let mut leader: (usize, i32) = (0, 0);
@@ -22,7 +22,7 @@ impl TopVotedCandidate {
         TopVotedCandidate { times, leaders }
     }
 
-    fn q(&self, t: i32) -> i32 {
+    pub fn q(&self, t: i32) -> i32 {
         let i = match self.times.binary_search(&t) {
             Ok(i) => i,
             Err(i) => i - 1,

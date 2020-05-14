@@ -1,6 +1,6 @@
 use rand::prelude::*;
 
-struct Solution {
+pub struct Solution {
     radius: f64,
     x_center: f64,
     y_center: f64,
@@ -8,7 +8,7 @@ struct Solution {
 }
 
 impl Solution {
-    fn new(radius: f64, x_center: f64, y_center: f64) -> Self {
+    pub fn new(radius: f64, x_center: f64, y_center: f64) -> Self {
         let rng = rand::thread_rng();
         Solution {
             radius,
@@ -18,7 +18,7 @@ impl Solution {
         }
     }
 
-    fn rand_point(&mut self) -> Vec<f64> {
+    pub fn rand_point(&mut self) -> Vec<f64> {
         let mut x = self.rng.gen_range(-self.radius, self.radius);
         let mut y = self.rng.gen_range(-self.radius, self.radius);
         while x * x + y * y > self.radius * self.radius {

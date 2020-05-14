@@ -1,16 +1,17 @@
 use std::collections::BTreeMap;
 
-struct MyCalendarTwo {
-    double_booked: Vec<Interval>,
+#[derive(Default)]
+pub struct MyCalendarTwo {
+    pub double_booked: Vec<Interval>,
 }
 
 impl MyCalendarTwo {
-    fn new() -> Self {
+    pub fn new() -> Self {
         let double_booked = vec![];
         MyCalendarTwo { double_booked }
     }
 
-    fn book(&mut self, start: i32, end: i32) -> bool {
+    pub fn book(&mut self, start: i32, end: i32) -> bool {
         let mut triple_booked = MyCalendar::new();
         for &(a, b) in &self.double_booked {
             let a = a.max(start);
@@ -26,17 +27,18 @@ impl MyCalendarTwo {
 type Interval = (i32, i32);
 type Center = i32;
 
-struct MyCalendar {
+#[derive(Default)]
+pub struct MyCalendar {
     btm: BTreeMap<Center, Interval>,
 }
 
 impl MyCalendar {
-    fn new() -> Self {
+    pub fn new() -> Self {
         let btm: BTreeMap<Center, Interval> = BTreeMap::new();
         MyCalendar { btm }
     }
 
-    fn book(&mut self, start: i32, end: i32) -> bool {
+    pub fn book(&mut self, start: i32, end: i32) -> bool {
         let center = start + end;
         if let Some((_, &(_, last_end))) = self.btm.range(..=center).next_back() {
             if start < last_end {

@@ -1,9 +1,9 @@
-struct Solution;
+pub struct Solution;
 
 use std::collections::VecDeque;
 
 impl Solution {
-    fn snakes_and_ladders(board: Vec<Vec<i32>>) -> i32 {
+    pub fn snakes_and_ladders(board: Vec<Vec<i32>>) -> i32 {
         let n = board.len();
         let mut moves: Vec<i32> = vec![0; n * n];
         let mut k = 0;

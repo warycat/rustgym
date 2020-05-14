@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn di_string_match(s: String) -> Vec<i32> {
+    pub fn di_string_match(s: String) -> Vec<i32> {
         let n = s.len() + 1;
         let nums: Vec<i32> = (0..n).map(|i| i as i32).collect();
         let mut res: Vec<i32> = vec![];

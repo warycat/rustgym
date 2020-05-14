@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn num_matching_subseq(s: String, words: Vec<String>) -> i32 {
+    pub fn num_matching_subseq(s: String, words: Vec<String>) -> i32 {
         let mut queues: Vec<Vec<_>> = vec![vec![]; 26];
         let mut temp: Vec<(char, _)> = vec![];
         for word in &words {

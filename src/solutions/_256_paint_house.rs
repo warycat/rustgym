@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn min_cost(costs: Vec<Vec<i32>>) -> i32 {
+    pub fn min_cost(costs: Vec<Vec<i32>>) -> i32 {
         let n = costs.len();
         if n == 0 {
             return 0;

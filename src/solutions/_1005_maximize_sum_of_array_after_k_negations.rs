@@ -1,10 +1,10 @@
-struct Solution;
+pub struct Solution;
 
 use std::cmp::Reverse;
 use std::collections::BinaryHeap;
 
 impl Solution {
-    fn largest_sum_after_k_negations(a: Vec<i32>, mut k: i32) -> i32 {
+    pub fn largest_sum_after_k_negations(a: Vec<i32>, mut k: i32) -> i32 {
         let reverse: Vec<Reverse<i32>> = a.into_iter().map(Reverse).collect();
         let mut pq = BinaryHeap::from(reverse);
         while k > 0 {

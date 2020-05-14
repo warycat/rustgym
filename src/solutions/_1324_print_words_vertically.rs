@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn print_vertically(s: String) -> Vec<String> {
+    pub fn print_vertically(s: String) -> Vec<String> {
         let v: Vec<&str> = s.split_whitespace().collect();
         let mut res = vec![];
         for (j, s) in v.iter().enumerate() {

@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn num_of_subarrays(arr: Vec<i32>, k: i32, threshold: i32) -> i32 {
+    pub fn num_of_subarrays(arr: Vec<i32>, k: i32, threshold: i32) -> i32 {
         let n = arr.len();
         let mut prefix = vec![0; n + 1];
         let sum = threshold * k;

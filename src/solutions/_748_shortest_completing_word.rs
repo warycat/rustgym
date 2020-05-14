@@ -1,12 +1,12 @@
-struct Solution;
+pub struct Solution;
 
 #[derive(Debug, PartialEq, Eq, Clone)]
-struct Count {
+pub struct Count {
     v: Vec<i32>,
 }
 
 impl Count {
-    fn new(s: &str) -> Self {
+    pub fn new(s: &str) -> Self {
         let mut v: Vec<i32> = vec![0; 256];
         for c in s.chars() {
             v[c as usize] += 1;
@@ -14,7 +14,7 @@ impl Count {
         Count { v }
     }
 
-    fn completes(&self, other: &Count) -> bool {
+    pub fn completes(&self, other: &Count) -> bool {
         for i in 0..26 {
             let c: usize = (b'a' + i) as usize;
             if self.v[c] < other.v[c] {
@@ -26,7 +26,7 @@ impl Count {
 }
 
 impl Solution {
-    fn shortest_completing_word(license_plate: String, words: Vec<String>) -> String {
+    pub fn shortest_completing_word(license_plate: String, words: Vec<String>) -> String {
         let mut min: Option<String> = None;
         let letters: String = license_plate
             .chars()
@@ -51,7 +51,7 @@ impl Solution {
 }
 
 #[test]
-fn name() {
+pub fn name() {
     let license_plate = "1s3 PSt".to_string();
     let words: Vec<String> = vec_string!["step", "steps", "stripe", "stepple"];
     let res = "steps".to_string();

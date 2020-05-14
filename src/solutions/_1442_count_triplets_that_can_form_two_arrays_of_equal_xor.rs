@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn count_triplets(arr: Vec<i32>) -> i32 {
+    pub fn count_triplets(arr: Vec<i32>) -> i32 {
         let n = arr.len();
         let mut res = 0;
         for i in 0..n {

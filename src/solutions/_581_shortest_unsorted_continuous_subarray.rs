@@ -1,9 +1,9 @@
-struct Solution;
+pub struct Solution;
 
 use std::i32;
 
 impl Solution {
-    fn find_unsorted_subarray(nums: Vec<i32>) -> i32 {
+    pub fn find_unsorted_subarray(nums: Vec<i32>) -> i32 {
         let n = nums.len();
         let mut min = i32::MAX;
         let mut max = i32::MIN;

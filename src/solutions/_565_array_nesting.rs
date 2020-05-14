@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn array_nesting(nums: Vec<i32>) -> i32 {
+    pub fn array_nesting(nums: Vec<i32>) -> i32 {
         let mut res = 0;
         let n = nums.len();
         let mut visited = vec![false; n];

@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn single_number(nums: Vec<i32>) -> i32 {
+    pub fn single_number(nums: Vec<i32>) -> i32 {
         let mut once = 0;
         let mut twice = 0;
         for x in nums {

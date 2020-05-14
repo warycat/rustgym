@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn count_stepping_numbers(low: i32, high: i32) -> Vec<i32> {
+    pub fn count_stepping_numbers(low: i32, high: i32) -> Vec<i32> {
         let mut res = vec![];
         for i in 0..10 {
             Self::dfs(i, i, &mut res, low as i64, high as i64);
@@ -10,7 +10,7 @@ impl Solution {
         res
     }
 
-    fn dfs(last_digit: i64, cur: i64, all: &mut Vec<i32>, low: i64, high: i64) {
+    pub fn dfs(last_digit: i64, cur: i64, all: &mut Vec<i32>, low: i64, high: i64) {
         if cur >= low && cur <= high {
             all.push(cur as i32);
         }

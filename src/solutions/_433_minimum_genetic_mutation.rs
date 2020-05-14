@@ -1,10 +1,10 @@
-struct Solution;
+pub struct Solution;
 use std::collections::HashMap;
 use std::collections::HashSet;
 use std::collections::VecDeque;
 
 impl Solution {
-    fn min_mutation(start: String, end: String, bank: Vec<String>) -> i32 {
+    pub fn min_mutation(start: String, end: String, bank: Vec<String>) -> i32 {
         let mut hs: HashSet<String> = HashSet::new();
         let mut mutation_bank: HashSet<String> = HashSet::new();
         hs.insert(start.clone());

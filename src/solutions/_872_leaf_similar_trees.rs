@@ -1,4 +1,4 @@
-struct Solution;
+pub struct Solution;
 use util::*;
 
 trait Leaves {
@@ -22,7 +22,7 @@ impl Leaves for TreeLink {
 }
 
 impl Solution {
-    fn leaf_similar(root1: TreeLink, root2: TreeLink) -> bool {
+    pub fn leaf_similar(root1: TreeLink, root2: TreeLink) -> bool {
         let mut leaves1: Vec<i32> = vec![];
         let mut leaves2: Vec<i32> = vec![];
         root1.preorder(&mut leaves1);

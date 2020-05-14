@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn get_happy_string(n: i32, k: i32) -> String {
+    pub fn get_happy_string(n: i32, k: i32) -> String {
         let n = n as usize;
         let k = k as usize;
         let mut all: Vec<String> = vec![];
@@ -13,7 +13,7 @@ impl Solution {
             all.pop().unwrap()
         }
     }
-    fn dfs(start: usize, cur: &mut Vec<u8>, all: &mut Vec<String>, n: usize, k: usize) {
+    pub fn dfs(start: usize, cur: &mut Vec<u8>, all: &mut Vec<String>, n: usize, k: usize) {
         if all.len() == k {
             return;
         }

@@ -1,4 +1,4 @@
-struct Solution;
+pub struct Solution;
 
 enum Direction {
     Right,
@@ -7,7 +7,7 @@ enum Direction {
     Up,
 }
 impl Solution {
-    fn spiral_order(matrix: Vec<Vec<i32>>) -> Vec<i32> {
+    pub fn spiral_order(matrix: Vec<Vec<i32>>) -> Vec<i32> {
         let n = matrix.len();
         if n == 0 {
             return vec![];

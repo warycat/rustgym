@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn remove_duplicates(nums: &mut Vec<i32>) -> i32 {
+    pub fn remove_duplicates(nums: &mut Vec<i32>) -> i32 {
         let n = nums.len();
         let mut m = 0;
         let mut prev: Option<(i32, usize)> = None;

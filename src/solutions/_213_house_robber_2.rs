@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn rob(nums: Vec<i32>) -> i32 {
+    pub fn rob(nums: Vec<i32>) -> i32 {
         let n = nums.len();
         if n == 0 {
             return 0;
@@ -11,7 +11,7 @@ impl Solution {
         }
         Self::rob_slice(&nums[0..n - 1]).max(Self::rob_slice(&nums[1..n]))
     }
-    fn rob_slice(v: &[i32]) -> i32 {
+    pub fn rob_slice(v: &[i32]) -> i32 {
         let n = v.len();
         let mut prev = 0;
         let mut curr = 0;

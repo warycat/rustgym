@@ -1,9 +1,9 @@
-struct Solution;
+pub struct Solution;
 use std::collections::HashSet;
 use std::iter::FromIterator;
 
 impl Solution {
-    fn word_break(s: String, word_dict: Vec<String>) -> bool {
+    pub fn word_break(s: String, word_dict: Vec<String>) -> bool {
         let n = s.len();
         let mut a = vec![false; n + 1];
         let hs: HashSet<String> = HashSet::from_iter(word_dict);

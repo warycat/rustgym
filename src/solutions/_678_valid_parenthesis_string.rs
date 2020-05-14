@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn check_valid_string(s: String) -> bool {
+    pub fn check_valid_string(s: String) -> bool {
         let mut lo = 0;
         let mut hi = 0;
         for c in s.chars() {

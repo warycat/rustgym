@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn missing_element(nums: Vec<i32>, k: i32) -> i32 {
+    pub fn missing_element(nums: Vec<i32>, k: i32) -> i32 {
         let mut l = 0;
         let mut h = nums.len();
         while l < h {

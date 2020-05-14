@@ -68,7 +68,7 @@ const SRC: &str = "src/solutions";
 type Tags = HashMap<i64, Vec<Tag>>;
 type Tag = (String, String);
 
-struct RustSolution {
+pub struct RustSolution {
     id: i64,
     filename: String,
 }
@@ -85,7 +85,7 @@ impl fmt::Display for RustSolution {
     }
 }
 
-struct RustSolutionList {
+pub struct RustSolutionList {
     solutions: Vec<RustSolution>,
 }
 
@@ -106,7 +106,7 @@ impl RustSolutionList {
     }
 }
 
-struct LeetcodeData {
+pub struct LeetcodeData {
     list_url: &'static str,
     tag_url: &'static str,
 }
@@ -164,7 +164,7 @@ impl LeetcodeData {
     }
 }
 
-struct LeetcodeQuestion {
+pub struct LeetcodeQuestion {
     id: i64,
     title: String,
     slug: String,
@@ -194,7 +194,7 @@ impl fmt::Display for LeetcodeQuestion {
     }
 }
 
-struct LeetcodeQuestionList {
+pub struct LeetcodeQuestionList {
     questions: Vec<LeetcodeQuestion>,
 }
 
@@ -204,7 +204,7 @@ impl LeetcodeQuestionList {
     }
 }
 
-struct Readme {
+pub struct Readme {
     headers: Vec<String>,
     solution_list: RustSolutionList,
     question_list: LeetcodeQuestionList,

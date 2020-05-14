@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn max_satisfaction(mut satisfaction: Vec<i32>) -> i32 {
+    pub fn max_satisfaction(mut satisfaction: Vec<i32>) -> i32 {
         satisfaction.sort_unstable();
         let n = satisfaction.len();
         let mut total = 0;

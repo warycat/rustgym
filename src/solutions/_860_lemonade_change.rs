@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn lemonade_change(bills: Vec<i32>) -> bool {
+    pub fn lemonade_change(bills: Vec<i32>) -> bool {
         let mut b5 = 0;
         let mut b10 = 0;
         for b in bills {

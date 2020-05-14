@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
-impl Solution{
-    fn length_of_last_word(s: String) -> i32 {
+impl Solution {
+    pub fn length_of_last_word(s: String) -> i32 {
         if let Some(last) = s.split_whitespace().last() {
             last.len() as i32
         } else {
@@ -12,5 +12,8 @@ impl Solution{
 
 #[test]
 fn test() {
-    assert_eq!(Solution::length_of_last_word(String::from("Hello World")), 5);
+    assert_eq!(
+        Solution::length_of_last_word(String::from("Hello World")),
+        5
+    );
 }

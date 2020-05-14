@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn sort_string(s: String) -> String {
+    pub fn sort_string(s: String) -> String {
         let mut count: Vec<usize> = vec![0; 26];
         let mut n = s.len();
         for c in s.chars() {

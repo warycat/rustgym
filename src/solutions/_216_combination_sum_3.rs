@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
-    fn combination_sum3(k: i32, n: i32) -> Vec<Vec<i32>> {
+    pub fn combination_sum3(k: i32, n: i32) -> Vec<Vec<i32>> {
         if k > 9 {
             return vec![];
         }
@@ -11,7 +11,7 @@ impl Solution {
         Self::dfs(0, n, &mut cur, &mut res, &nums, k as usize);
         res
     }
-    fn dfs(
+    pub fn dfs(
         start: usize,
         target: i32,
         cur: &mut Vec<i32>,

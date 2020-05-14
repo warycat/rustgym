@@ -1,7 +1,7 @@
-struct Solution;
+pub struct Solution;
 use std::collections::VecDeque;
 impl Solution {
-    fn find_min_height_trees(n: i32, edges: Vec<Vec<i32>>) -> Vec<i32> {
+    pub fn find_min_height_trees(n: i32, edges: Vec<Vec<i32>>) -> Vec<i32> {
         let n = n as usize;
         if n == 1 {
             return vec![0];

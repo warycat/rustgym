@@ -1,8 +1,8 @@
-struct Solution;
+pub struct Solution;
 use util::*;
 
 impl Solution {
-    fn get_decimal_value(head: ListLink) -> i32 {
+    pub fn get_decimal_value(head: ListLink) -> i32 {
         let mut p: &ListLink = &head;
         let mut res = 0;
         while let Some(n) = p {
