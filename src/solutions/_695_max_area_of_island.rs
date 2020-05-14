@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn max_area_of_island(mut grid: Vec<Vec<i32>>) -> i32 {
+    fn max_area_of_island(mut grid: Vec<Vec<i32>>) -> i32 {
         let n = grid.len();
         let m = grid[0].len();
         let mut res = 0;
@@ -13,7 +13,7 @@ impl Solution {
         res
     }
 
-    pub fn area(grid: &mut Vec<Vec<i32>>, n: usize, m: usize, row: usize, col: usize) -> i32 {
+    fn area(grid: &mut Vec<Vec<i32>>, n: usize, m: usize, row: usize, col: usize) -> i32 {
         if grid[row][col] <= 0 {
             0
         } else {

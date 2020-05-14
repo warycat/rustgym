@@ -1,8 +1,8 @@
-pub struct Solution;
+struct Solution;
 use util::*;
 
 impl Solution {
-    pub fn remove_nth_from_end(mut head: ListLink, n: i32) -> ListLink {
+    fn remove_nth_from_end(mut head: ListLink, n: i32) -> ListLink {
         let mut v: Vec<ListLink> = vec![];
         while let Some(mut node) = head {
             head = node.next.take();

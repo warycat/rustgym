@@ -1,9 +1,9 @@
-pub struct Solution;
+struct Solution;
 
 use std::i32;
 
 impl Solution {
-    pub fn max_distance(arrays: Vec<Vec<i32>>) -> i32 {
+    fn max_distance(arrays: Vec<Vec<i32>>) -> i32 {
         let n = arrays.len();
         let mut min = arrays[0][0];
         let mut max = arrays[0][arrays[0].len() - 1];

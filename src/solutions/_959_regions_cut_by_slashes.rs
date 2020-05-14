@@ -1,17 +1,17 @@
-pub struct Solution;
+struct Solution;
 
-pub struct UnionFind {
+struct UnionFind {
     parents: Vec<usize>,
     n: usize,
 }
 
 impl UnionFind {
-    pub fn new(n: usize) -> Self {
+    fn new(n: usize) -> Self {
         let parents = (0..n).collect();
         UnionFind { parents, n }
     }
 
-    pub fn find(&mut self, i: usize) -> usize {
+    fn find(&mut self, i: usize) -> usize {
         let j = self.parents[i];
         if i == j {
             i
@@ -21,7 +21,7 @@ impl UnionFind {
         }
     }
 
-    pub fn union(&mut self, mut i: usize, mut j: usize) {
+    fn union(&mut self, mut i: usize, mut j: usize) {
         i = self.find(i);
         j = self.find(j);
         if i != j {
@@ -32,7 +32,7 @@ impl UnionFind {
 }
 
 impl Solution {
-    pub fn regions_by_slashes(grid: Vec<String>) -> i32 {
+    fn regions_by_slashes(grid: Vec<String>) -> i32 {
         let a: Vec<Vec<char>> = grid.iter().map(|s| s.chars().collect()).collect();
         let n = grid.len();
         let m = a[0].len();
@@ -71,7 +71,7 @@ impl Solution {
         uf.n as i32
     }
 
-    pub fn id(k: usize, i: usize, j: usize, n: usize, m: usize) -> usize {
+    fn id(k: usize, i: usize, j: usize, n: usize, m: usize) -> usize {
         k * n * m + i * m + j
     }
 }

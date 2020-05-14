@@ -2,17 +2,17 @@ use std::collections::BTreeMap;
 use std::collections::HashMap;
 
 #[derive(Default, Debug)]
-pub struct Leaderboard {
+struct Leaderboard {
     players: HashMap<i32, i32>,
     scores: BTreeMap<i32, usize>,
 }
 
 impl Leaderboard {
-    pub fn new() -> Self {
+    fn new() -> Self {
         Leaderboard::default()
     }
 
-    pub fn add_score(&mut self, player_id: i32, score: i32) {
+    fn add_score(&mut self, player_id: i32, score: i32) {
         let player_score = self.players.entry(player_id).or_default();
         if *player_score != 0 {
             let count = self.scores.entry(*player_score).or_default();
@@ -25,7 +25,7 @@ impl Leaderboard {
         *self.scores.entry(*player_score).or_default() += 1;
     }
 
-    pub fn top(&mut self, mut k: i32) -> i32 {
+    fn top(&mut self, mut k: i32) -> i32 {
         let mut sum = 0;
         for (s, &v) in self.scores.iter().rev() {
             for _ in 0..v {
@@ -39,7 +39,7 @@ impl Leaderboard {
         0
     }
 
-    pub fn reset(&mut self, player_id: i32) {
+    fn reset(&mut self, player_id: i32) {
         let player_score = self.players.entry(player_id).or_default();
         let count = self.scores.entry(*player_score).or_default();
         *count -= 1;

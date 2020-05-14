@@ -1,4 +1,4 @@
-pub struct Solution;
+ struct Solution;
 use util::*;
 
 trait Tilt {
@@ -22,7 +22,7 @@ impl Tilt for TreeLink {
 }
 
 impl Solution {
-    pub fn find_tilt(root: TreeLink) -> i32 {
+     fn find_tilt(root: TreeLink) -> i32 {
         let mut tilt = 0;
         root.find_tilt(&mut tilt);
         tilt

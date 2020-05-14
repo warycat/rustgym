@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn partition(s: String) -> Vec<Vec<String>> {
+    fn partition(s: String) -> Vec<Vec<String>> {
         let mut res: Vec<Vec<String>> = vec![];
         let s: Vec<char> = s.chars().collect();
         let n = s.len();
@@ -9,7 +9,7 @@ impl Solution {
         Self::dfs(0, &mut indexes, &mut res, &s, n);
         res
     }
-    pub fn dfs(
+    fn dfs(
         start: usize,
         indexes: &mut Vec<(usize, usize)>,
         strings: &mut Vec<Vec<String>>,
@@ -31,7 +31,7 @@ impl Solution {
             }
         }
     }
-    pub fn is_palindrome(s: &[char]) -> bool {
+    fn is_palindrome(s: &[char]) -> bool {
         let n = s.len();
         for i in 0..n {
             let j = n - 1 - i;

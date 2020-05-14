@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn smaller_numbers_than_current(nums: Vec<i32>) -> Vec<i32> {
+    fn smaller_numbers_than_current(nums: Vec<i32>) -> Vec<i32> {
         let mut count = vec![0; 101];
         for &x in &nums {
             count[x as usize] += 1;

@@ -1,4 +1,4 @@
-pub struct Solution;
+struct Solution;
 use util::*;
 
 trait Inorder {
@@ -34,7 +34,7 @@ impl Inorder for TreeLink {
 }
 
 impl Solution {
-    pub fn balance_bst(root: TreeLink) -> TreeLink {
+    fn balance_bst(root: TreeLink) -> TreeLink {
         let mut nodes: Vec<i32> = vec![];
         root.inorder(&mut nodes);
         TreeLink::build(&nodes)

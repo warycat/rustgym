@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn digits(mut n: i32) -> i32 {
+    fn digits(mut n: i32) -> i32 {
         let mut res = 0;
         while n != 0 {
             n /= 10;
@@ -9,7 +9,7 @@ impl Solution {
         }
         res
     }
-    pub fn find_numbers(nums: Vec<i32>) -> i32 {
+    fn find_numbers(nums: Vec<i32>) -> i32 {
         let mut res = 0;
         for n in nums {
             if Self::digits(n) % 2 == 0 {

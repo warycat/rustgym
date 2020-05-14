@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn can_finish(num_courses: i32, prerequisites: Vec<Vec<i32>>) -> bool {
+    fn can_finish(num_courses: i32, prerequisites: Vec<Vec<i32>>) -> bool {
         let n = num_courses as usize;
         let mut indegrees: Vec<i32> = vec![0; n];
         let mut edges: Vec<Vec<usize>> = vec![vec![]; n];

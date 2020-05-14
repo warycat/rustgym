@@ -1,8 +1,8 @@
-pub struct Solution;
+struct Solution;
 use std::collections::HashMap;
 
 impl Solution {
-    pub fn num_factored_binary_trees(mut a: Vec<i32>) -> i32 {
+    fn num_factored_binary_trees(mut a: Vec<i32>) -> i32 {
         let n = a.len();
         let mut dp: Vec<i64> = vec![1; n];
         let modulo = 1_000_000_007;

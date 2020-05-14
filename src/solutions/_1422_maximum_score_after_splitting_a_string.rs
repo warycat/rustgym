@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn max_score(s: String) -> i32 {
+    fn max_score(s: String) -> i32 {
         let s: Vec<char> = s.chars().collect();
         let n = s.len();
         let mut zeros = vec![0; n + 1];

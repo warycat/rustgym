@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn next_permutation(nums: &mut Vec<i32>) {
+    fn next_permutation(nums: &mut Vec<i32>) {
         let n = nums.len();
         let mut i = n - 1;
         while i > 0 && nums[i - 1] >= nums[i] {

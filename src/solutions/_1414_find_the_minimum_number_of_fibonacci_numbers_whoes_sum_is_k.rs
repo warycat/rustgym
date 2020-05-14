@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn find_min_fibonacci_numbers(mut k: i32) -> i32 {
+    fn find_min_fibonacci_numbers(mut k: i32) -> i32 {
         let mut v = vec![1, 1];
         let mut i = 1;
         while v[i] + v[i - 1] <= k {

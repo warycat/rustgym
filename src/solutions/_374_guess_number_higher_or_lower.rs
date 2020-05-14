@@ -1,8 +1,8 @@
-pub struct Solution;
+struct Solution;
 
-pub static mut X: i32 = 0;
+static mut X: i32 = 0;
 
-pub unsafe fn guess(num: i32) -> i32 {
+unsafe fn guess(num: i32) -> i32 {
     use std::cmp::Ordering::*;
     match X.cmp(&num) {
         Equal => 0,
@@ -13,7 +13,7 @@ pub unsafe fn guess(num: i32) -> i32 {
 
 impl Solution {
     #[allow(non_snake_case)]
-    pub unsafe fn guessNumber(n: i32) -> i32 {
+    unsafe fn guessNumber(n: i32) -> i32 {
         let mut l = 1;
         let mut r = n;
         while l < r {

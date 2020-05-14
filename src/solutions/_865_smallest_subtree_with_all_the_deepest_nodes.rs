@@ -1,4 +1,4 @@
-pub struct Solution;
+struct Solution;
 use util::*;
 
 trait Postorder {
@@ -26,7 +26,7 @@ impl Postorder for TreeLink {
 }
 
 impl Solution {
-    pub fn subtree_with_all_deepest(root: TreeLink) -> TreeLink {
+    fn subtree_with_all_deepest(root: TreeLink) -> TreeLink {
         root.postorder().1
     }
 }

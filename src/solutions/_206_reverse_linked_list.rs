@@ -1,8 +1,8 @@
-pub struct Solution;
+struct Solution;
 use util::*;
 
 impl Solution {
-    pub fn reverse_list(head: ListLink) -> ListLink {
+    fn reverse_list(head: ListLink) -> ListLink {
         let mut p = head;
         let mut prev = None;
         while let Some(mut node) = p {

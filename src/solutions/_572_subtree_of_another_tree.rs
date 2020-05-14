@@ -1,4 +1,4 @@
-pub struct Solution;
+struct Solution;
 use util::*;
 
 trait SubTree {
@@ -19,7 +19,7 @@ impl SubTree for TreeLink {
 }
 
 impl Solution {
-    pub fn is_subtree(s: TreeLink, t: TreeLink) -> bool {
+    fn is_subtree(s: TreeLink, t: TreeLink) -> bool {
         s.is_subtree(&t)
     }
 }

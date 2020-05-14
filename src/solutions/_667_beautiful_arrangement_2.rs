@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn construct_array(n: i32, mut k: i32) -> Vec<i32> {
+    fn construct_array(n: i32, mut k: i32) -> Vec<i32> {
         let mut res = vec![1];
         let mut l = 2;
         let mut r = n;

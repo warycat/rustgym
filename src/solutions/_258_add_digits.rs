@@ -1,13 +1,13 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn add_digits(mut num: i32) -> i32 {
+    fn add_digits(mut num: i32) -> i32 {
         while num > 9 {
             num = Self::add_digits_once(num);
         }
         num
     }
-    pub fn add_digits_once(mut num: i32) -> i32 {
+    fn add_digits_once(mut num: i32) -> i32 {
         let mut res = 0;
         while num > 0 {
             res += num % 10;

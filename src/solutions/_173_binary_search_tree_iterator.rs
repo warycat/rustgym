@@ -1,29 +1,29 @@
 use util::*;
 
-pub struct BSTIterator {
-    pub root: TreeLink,
-    pub stack: Vec<TreeLink>,
+struct BSTIterator {
+    root: TreeLink,
+    stack: Vec<TreeLink>,
 }
 
 impl BSTIterator {
-    pub fn new(root: TreeLink) -> Self {
+    fn new(root: TreeLink) -> Self {
         let mut stack = vec![];
         Self::push_all_left(root.clone(), &mut stack);
         BSTIterator { root, stack }
     }
 
-    pub fn has_next(&self) -> bool {
+    fn has_next(&self) -> bool {
         !self.stack.is_empty()
     }
 
-    pub fn next(&mut self) -> i32 {
+    fn next(&mut self) -> i32 {
         let link = self.stack.pop().unwrap().unwrap();
         let val = link.borrow().val;
         Self::push_all_left(link.borrow().right.clone(), &mut self.stack);
         val
     }
 
-    pub fn push_all_left(mut p: TreeLink, stack: &mut Vec<TreeLink>) {
+    fn push_all_left(mut p: TreeLink, stack: &mut Vec<TreeLink>) {
         while let Some(link) = p.clone() {
             stack.push(p.clone());
             p = link.borrow().left.clone();

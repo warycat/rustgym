@@ -1,16 +1,16 @@
-pub struct Solution;
+ struct Solution;
 use std::collections::HashSet;
 
 type Point = Vec<i32>;
 
-pub struct Chessboard {
+ struct Chessboard {
     directions: Vec<Point>,
     queens: HashSet<Point>,
     king: Point,
 }
 
 impl Chessboard {
-    pub fn new(queens_vec: Vec<Point>, king: Point) -> Self {
+     fn new(queens_vec: Vec<Point>, king: Point) -> Self {
         let directions: Vec<Point> = vec![
             vec![1, 0],
             vec![-1, 0],
@@ -31,10 +31,10 @@ impl Chessboard {
             directions,
         }
     }
-    pub fn contains(&self, point: &[i32]) -> bool {
+     fn contains(&self, point: &[i32]) -> bool {
         point[0] >= 0 && point[1] >= 0 && point[0] < 8 && point[1] < 8
     }
-    pub fn attack(&self, i: usize, step: i32) -> Point {
+     fn attack(&self, i: usize, step: i32) -> Point {
         let direction = &self.directions[i];
         let king = &self.king;
         vec![king[0] + direction[0] * step, king[1] + direction[1] * step]
@@ -42,7 +42,7 @@ impl Chessboard {
 }
 
 impl Solution {
-    pub fn queens_attackthe_king(queens: Vec<Vec<i32>>, king: Vec<i32>) -> Vec<Vec<i32>> {
+     fn queens_attackthe_king(queens: Vec<Vec<i32>>, king: Vec<i32>) -> Vec<Vec<i32>> {
         let mut res = vec![];
         let cb = Chessboard::new(queens, king);
         for i in 0..8 {

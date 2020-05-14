@@ -1,19 +1,19 @@
 use std::collections::HashMap;
 use std::usize;
 
-pub struct WordDistance {
+struct WordDistance {
     indexes: HashMap<String, Vec<usize>>,
 }
 
 impl WordDistance {
-    pub fn new(words: Vec<String>) -> Self {
+    fn new(words: Vec<String>) -> Self {
         let mut indexes: HashMap<String, Vec<usize>> = HashMap::new();
         for (i, word) in words.into_iter().enumerate() {
             indexes.entry(word).or_default().push(i);
         }
         WordDistance { indexes }
     }
-    pub fn shortest(&self, word1: String, word2: String) -> i32 {
+    fn shortest(&self, word1: String, word2: String) -> i32 {
         let indexes1 = &self.indexes[&word1];
         let indexes2 = &self.indexes[&word2];
         let n1 = indexes1.len();

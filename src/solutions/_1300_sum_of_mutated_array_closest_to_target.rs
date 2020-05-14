@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn find_best_value(mut arr: Vec<i32>, mut target: i32) -> i32 {
+    fn find_best_value(mut arr: Vec<i32>, mut target: i32) -> i32 {
         arr.sort_unstable();
         let n = arr.len();
         let mut i = 0;

@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn min_cost_climbing_stairs(mut cost: Vec<i32>) -> i32 {
+    fn min_cost_climbing_stairs(mut cost: Vec<i32>) -> i32 {
         let n = cost.len();
         cost.push(0);
         if n < 2 {

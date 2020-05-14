@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn smooth(m: &[Vec<i32>], r: usize, c: usize, h: usize, w: usize) -> i32 {
+    fn smooth(m: &[Vec<i32>], r: usize, c: usize, h: usize, w: usize) -> i32 {
         let mut sum = 0;
         let mut n = 0;
         if r > 0 && c > 0 {
@@ -40,7 +40,7 @@ impl Solution {
         }
         sum / n
     }
-    pub fn image_smoother(m: Vec<Vec<i32>>) -> Vec<Vec<i32>> {
+    fn image_smoother(m: Vec<Vec<i32>>) -> Vec<Vec<i32>> {
         let h = m.len();
         let w = m[0].len();
         let mut res = vec![vec![0; w]; h];

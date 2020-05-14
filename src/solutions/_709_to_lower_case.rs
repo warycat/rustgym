@@ -1,8 +1,8 @@
-pub struct Solution;
+ struct Solution;
 
 #[allow(clippy::wrong_self_convention)]
 impl Solution {
-    pub fn to_lower_case(s: String) -> String {
+     fn to_lower_case(s: String) -> String {
         s.chars()
             .map(|c| {
                 if c as u8 >= b'A' && c as u8 <= b'Z' {

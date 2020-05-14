@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn shortest_to_char(s: String, c: char) -> Vec<i32> {
+    fn shortest_to_char(s: String, c: char) -> Vec<i32> {
         let s: Vec<char> = s.chars().collect();
         let mut prev: Option<usize> = None;
         let n = s.len();

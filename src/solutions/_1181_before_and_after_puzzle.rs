@@ -1,11 +1,11 @@
-pub struct Solution;
+struct Solution;
 
 use std::collections::BTreeSet;
 use std::collections::HashMap;
 use std::collections::HashSet;
 
 impl Solution {
-    pub fn before_and_after_puzzles(phrases: Vec<String>) -> Vec<String> {
+    fn before_and_after_puzzles(phrases: Vec<String>) -> Vec<String> {
         let mut res: BTreeSet<String> = BTreeSet::new();
         let mut first: HashMap<String, HashSet<String>> = HashMap::new();
         let mut last: HashMap<String, HashSet<String>> = HashMap::new();

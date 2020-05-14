@@ -1,9 +1,9 @@
-pub struct Solution;
+struct Solution;
 
 use std::collections::HashMap;
 
 impl Solution {
-    pub fn group_anagrams(strs: Vec<String>) -> Vec<Vec<String>> {
+    fn group_anagrams(strs: Vec<String>) -> Vec<Vec<String>> {
         let mut group_hm: HashMap<Vec<char>, Vec<String>> = HashMap::new();
         for s in strs {
             let mut v: Vec<char> = s.chars().collect();

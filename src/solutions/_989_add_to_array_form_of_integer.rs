@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn add_to_array_form(mut a: Vec<i32>, mut k: i32) -> Vec<i32> {
+    fn add_to_array_form(mut a: Vec<i32>, mut k: i32) -> Vec<i32> {
         let mut i = a.len() - 1;
         while k > 0 {
             let sum = a[i] + k;

@@ -1,18 +1,18 @@
 use std::collections::HashMap;
 
 #[derive(Default)]
-pub struct Logger {
-    pub messages: HashMap<String, i32>,
+struct Logger {
+    messages: HashMap<String, i32>,
 }
 
 impl Logger {
-    pub fn new() -> Self {
+    fn new() -> Self {
         Logger {
             messages: HashMap::new(),
         }
     }
 
-    pub fn should_print_message(&mut self, timestamp: i32, message: String) -> bool {
+    fn should_print_message(&mut self, timestamp: i32, message: String) -> bool {
         if let Some(&t) = self.messages.get(&message) {
             if timestamp < t + 10 {
                 return false;

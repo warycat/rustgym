@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn champagne_tower(poured: i32, query_row: i32, query_glass: i32) -> f64 {
+    fn champagne_tower(poured: i32, query_row: i32, query_glass: i32) -> f64 {
         let query_row = query_row as usize;
         let query_glass = query_glass as usize;
         let mut a: Vec<Vec<f64>> = vec![vec![0.0; 101]; 101];

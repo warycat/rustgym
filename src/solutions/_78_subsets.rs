@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn subsets(nums: Vec<i32>) -> Vec<Vec<i32>> {
+    fn subsets(nums: Vec<i32>) -> Vec<Vec<i32>> {
         let mut res: Vec<Vec<i32>> = vec![];
         let mut v: Vec<i32> = vec![];
         let n = nums.len();
@@ -9,7 +9,7 @@ impl Solution {
         res
     }
 
-    pub fn dfs(i: usize, all: &mut Vec<Vec<i32>>, nums: &[i32], cur: &mut Vec<i32>, n: usize) {
+    fn dfs(i: usize, all: &mut Vec<Vec<i32>>, nums: &[i32], cur: &mut Vec<i32>, n: usize) {
         if i == n {
             all.push(cur.to_vec());
         } else {

@@ -1,4 +1,4 @@
-pub struct Solution;
+struct Solution;
 
 enum Direction {
     Right,
@@ -8,7 +8,7 @@ enum Direction {
 }
 
 impl Solution {
-    pub fn generate_matrix(n: i32) -> Vec<Vec<i32>> {
+    fn generate_matrix(n: i32) -> Vec<Vec<i32>> {
         use Direction::*;
         let n = n as usize;
         let mut res: Vec<Vec<i32>> = vec![vec![0; n]; n];

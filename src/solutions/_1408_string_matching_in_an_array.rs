@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn string_matching(words: Vec<String>) -> Vec<String> {
+    fn string_matching(words: Vec<String>) -> Vec<String> {
         let n = words.len();
         let mut res = vec![];
         for i in 0..n {

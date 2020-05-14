@@ -1,10 +1,10 @@
-pub struct Solution;
+struct Solution;
 
 use std::collections::HashSet;
 use std::iter::FromIterator;
 
 impl Solution {
-    pub fn index_pairs(text: String, words: Vec<String>) -> Vec<Vec<i32>> {
+    fn index_pairs(text: String, words: Vec<String>) -> Vec<Vec<i32>> {
         let n = text.len();
         let mut res: Vec<Vec<i32>> = vec![];
         let hs: HashSet<String> = HashSet::from_iter(words);

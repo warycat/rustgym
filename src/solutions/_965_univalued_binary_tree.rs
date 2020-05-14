@@ -1,4 +1,4 @@
-pub struct Solution;
+struct Solution;
 use util::*;
 
 trait Preorder {
@@ -30,7 +30,7 @@ impl Preorder for TreeLink {
 }
 
 impl Solution {
-    pub fn is_unival_tree(root: TreeLink) -> bool {
+    fn is_unival_tree(root: TreeLink) -> bool {
         root.is_unival()
     }
 }

@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn rev_half(s: &mut [char], k: usize) -> &[char] {
+    fn rev_half(s: &mut [char], k: usize) -> &[char] {
         if s.len() <= k {
             s.reverse();
         } else {
@@ -10,7 +10,7 @@ impl Solution {
         }
         s
     }
-    pub fn reverse_str(s: String, k: i32) -> String {
+    fn reverse_str(s: String, k: i32) -> String {
         let k: usize = k as usize;
         let mut s: Vec<char> = s.chars().collect();
         let n = s.len();

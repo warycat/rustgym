@@ -3,20 +3,20 @@ use std::collections::HashMap;
 type Pair = (i32, String);
 
 #[derive(Default)]
-pub struct TimeMap {
-    pub map: HashMap<String, Vec<Pair>>,
+struct TimeMap {
+    map: HashMap<String, Vec<Pair>>,
 }
 
 impl TimeMap {
-    pub fn new() -> Self {
+    fn new() -> Self {
         TimeMap {
             map: HashMap::new(),
         }
     }
-    pub fn set(&mut self, key: String, value: String, timestamp: i32) {
+    fn set(&mut self, key: String, value: String, timestamp: i32) {
         self.map.entry(key).or_default().push((timestamp, value));
     }
-    pub fn get(&mut self, key: String, timestamp: i32) -> String {
+    fn get(&mut self, key: String, timestamp: i32) -> String {
         let values = self.map.entry(key).or_default();
         match values.binary_search_by_key(&timestamp, |v| v.0) {
             Ok(i) => values[i].1.to_string(),

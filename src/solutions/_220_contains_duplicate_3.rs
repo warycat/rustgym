@@ -1,8 +1,8 @@
-pub struct Solution;
+struct Solution;
 use std::collections::BTreeSet;
 
 impl Solution {
-    pub fn contains_nearby_almost_duplicate(nums: Vec<i32>, k: i32, t: i32) -> bool {
+    fn contains_nearby_almost_duplicate(nums: Vec<i32>, k: i32, t: i32) -> bool {
         let mut bts = BTreeSet::new();
         let k = k as usize;
         let n = nums.len();

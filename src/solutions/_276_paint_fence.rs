@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn num_ways(n: i32, k: i32) -> i32 {
+    fn num_ways(n: i32, k: i32) -> i32 {
         if n == 0 || k == 0 {
             return 0;
         }

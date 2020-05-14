@@ -1,9 +1,9 @@
-pub struct Solution;
+struct Solution;
 
 use std::collections::HashMap;
 
 impl Solution {
-    pub fn is_isomorphic(s: String, t: String) -> bool {
+    fn is_isomorphic(s: String, t: String) -> bool {
         let mut hmst: HashMap<char, char> = HashMap::new();
         let mut hmts: HashMap<char, char> = HashMap::new();
         let mut is = s.chars();

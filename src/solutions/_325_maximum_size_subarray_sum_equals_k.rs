@@ -1,8 +1,8 @@
-pub struct Solution;
+ struct Solution;
 use std::collections::HashMap;
 
 impl Solution {
-    pub fn max_sub_array_len(nums: Vec<i32>, k: i32) -> i32 {
+     fn max_sub_array_len(nums: Vec<i32>, k: i32) -> i32 {
         let n = nums.len();
         let mut prefix = vec![0; n];
         let mut prev = 0;

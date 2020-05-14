@@ -1,4 +1,4 @@
-pub struct Solution;
+struct Solution;
 use util::*;
 
 trait LongestUnivaluePath {
@@ -24,7 +24,7 @@ impl LongestUnivaluePath for TreeLink {
 }
 
 impl Solution {
-    pub fn longest_univalue_path(root: TreeLink) -> i32 {
+    fn longest_univalue_path(root: TreeLink) -> i32 {
         let mut max = 0;
         root.longest_univalue_path(&mut max, 0);
         max

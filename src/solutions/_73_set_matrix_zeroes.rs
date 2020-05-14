@@ -1,8 +1,8 @@
-pub struct Solution;
+struct Solution;
 use std::collections::HashSet;
 
 impl Solution {
-    pub fn set_zeroes(matrix: &mut Vec<Vec<i32>>) {
+    fn set_zeroes(matrix: &mut Vec<Vec<i32>>) {
         let mut row: HashSet<usize> = HashSet::new();
         let mut col: HashSet<usize> = HashSet::new();
         let n = matrix.len();

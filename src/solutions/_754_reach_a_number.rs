@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn reach_number(target: i32) -> i32 {
+    fn reach_number(target: i32) -> i32 {
         let target = target.abs();
         let n = (((2 * target as i64) as f64 + 0.25).sqrt() - 0.5).ceil() as i32;
         let sum = n * (n + 1) / 2;

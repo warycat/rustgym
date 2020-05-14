@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn find_black_pixel(picture: Vec<Vec<char>>, n: i32) -> i32 {
+    fn find_black_pixel(picture: Vec<Vec<char>>, n: i32) -> i32 {
         let k = n as usize;
         let n = picture.len();
         let m = picture[0].len();

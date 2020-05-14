@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn missing_number(nums: Vec<i32>) -> i32 {
+    fn missing_number(nums: Vec<i32>) -> i32 {
         let mut xor: i32 = 0;
         let n = nums.len();
         for n in 0..=n {

@@ -1,9 +1,9 @@
-pub struct Solution;
+struct Solution;
 
 use std::collections::HashSet;
 
 impl Solution {
-    pub fn num_jewels_in_stones(j: String, s: String) -> i32 {
+    fn num_jewels_in_stones(j: String, s: String) -> i32 {
         let mut hs: HashSet<char> = HashSet::new();
         for c in j.chars() {
             hs.insert(c);

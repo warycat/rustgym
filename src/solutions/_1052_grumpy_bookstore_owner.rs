@@ -1,9 +1,9 @@
-pub struct Solution;
+ struct Solution;
 
 use std::i32;
 
 impl Solution {
-    pub fn max_satisfied(customers: Vec<i32>, grumpy: Vec<i32>, x: i32) -> i32 {
+     fn max_satisfied(customers: Vec<i32>, grumpy: Vec<i32>, x: i32) -> i32 {
         let mut sum = 0;
         let mut max = 0;
         let n = customers.len();

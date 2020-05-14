@@ -1,9 +1,9 @@
-pub struct Solution;
+struct Solution;
 use std::collections::HashSet;
 use std::i32;
 
 impl Solution {
-    pub fn min_area_rect(points: Vec<Vec<i32>>) -> i32 {
+    fn min_area_rect(points: Vec<Vec<i32>>) -> i32 {
         let n = points.len();
         let mut hs: HashSet<(i32, i32)> = HashSet::new();
         for i in 0..n {

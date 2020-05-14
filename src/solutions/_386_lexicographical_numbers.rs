@@ -1,14 +1,14 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn lexical_order(n: i32) -> Vec<i32> {
+    fn lexical_order(n: i32) -> Vec<i32> {
         let mut res = vec![];
         for i in 1..10 {
             Self::dfs(i, &mut res, n);
         }
         res
     }
-    pub fn dfs(cur: i32, all: &mut Vec<i32>, n: i32) {
+    fn dfs(cur: i32, all: &mut Vec<i32>, n: i32) {
         if cur > n {
             return;
         }

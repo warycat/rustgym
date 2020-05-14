@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn character_replacement(s: String, k: i32) -> i32 {
+    fn character_replacement(s: String, k: i32) -> i32 {
         let mut count = vec![0; 26];
         let n = s.len();
         let s: Vec<char> = s.chars().collect();
@@ -23,7 +23,7 @@ impl Solution {
         res as i32
     }
 
-    pub fn sum(count: &[i32]) -> i32 {
+    fn sum(count: &[i32]) -> i32 {
         let max = count.iter().copied().max().unwrap();
         count.iter().sum::<i32>() - max
     }

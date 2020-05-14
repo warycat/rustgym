@@ -1,8 +1,8 @@
-pub struct Solution;
+struct Solution;
 use util::*;
 
 impl Solution {
-    pub fn merge_two_lists(l1: ListLink, l2: ListLink) -> ListLink {
+    fn merge_two_lists(l1: ListLink, l2: ListLink) -> ListLink {
         if l1.is_none() {
             return l2;
         }

@@ -1,4 +1,4 @@
-pub struct Solution;
+struct Solution;
 use util::*;
 
 trait Diameter {
@@ -26,7 +26,7 @@ impl Diameter for TreeLink {
 }
 
 impl Solution {
-    pub fn diameter_of_binary_tree(root: TreeLink) -> i32 {
+    fn diameter_of_binary_tree(root: TreeLink) -> i32 {
         root.diameter()
     }
 }

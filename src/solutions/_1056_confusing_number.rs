@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn rotate(d: i32) -> Option<i32> {
+    fn rotate(d: i32) -> Option<i32> {
         match d {
             0 => Some(0),
             1 => Some(1),
@@ -12,7 +12,7 @@ impl Solution {
         }
     }
 
-    pub fn confusing_number(mut n: i32) -> bool {
+    fn confusing_number(mut n: i32) -> bool {
         let num = n;
         let mut rev = 0;
         while n > 0 {

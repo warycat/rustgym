@@ -1,4 +1,4 @@
-pub struct Solution;
+ struct Solution;
 use util::*;
 
 trait Postorder {
@@ -21,7 +21,7 @@ impl Postorder for TreeLink {
 }
 
 impl Solution {
-    pub fn maximum_average_subtree(root: TreeLink) -> f64 {
+     fn maximum_average_subtree(root: TreeLink) -> f64 {
         let mut res = std::f64::MIN;
         root.postorder(&mut res);
         res

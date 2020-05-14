@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn license_key_formatting(s: String, k: i32) -> String {
+    fn license_key_formatting(s: String, k: i32) -> String {
         let mut res: Vec<char> = vec![];
         let mut i = 0;
         for c in s.chars().rev() {

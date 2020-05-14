@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn tictactoe(moves: Vec<Vec<i32>>) -> String {
+    fn tictactoe(moves: Vec<Vec<i32>>) -> String {
         let mut board = [[' '; 3]; 3];
         let mut player = 'X';
         let n = moves.len();

@@ -1,8 +1,8 @@
-pub struct Solution;
+struct Solution;
 use std::collections::HashMap;
 
 impl Solution {
-    pub fn find_lucky(arr: Vec<i32>) -> i32 {
+    fn find_lucky(arr: Vec<i32>) -> i32 {
         let mut hm: HashMap<i32, i32> = HashMap::new();
         for x in arr {
             *hm.entry(x).or_default() += 1;

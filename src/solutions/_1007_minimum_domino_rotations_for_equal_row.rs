@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn min_domino_rotations(a: Vec<i32>, b: Vec<i32>) -> i32 {
+    fn min_domino_rotations(a: Vec<i32>, b: Vec<i32>) -> i32 {
         let mut count: Vec<Vec<usize>> = vec![vec![0; 3]; 6];
         let n = a.len();
         for i in 0..n {

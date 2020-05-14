@@ -1,7 +1,7 @@
-pub struct Solution;
+ struct Solution;
 
 impl Solution {
-    pub fn smallest_factorization(mut a: i32) -> i32 {
+     fn smallest_factorization(mut a: i32) -> i32 {
         let mut res: Vec<i32> = vec![];
         if a == 1 {
             return 1;

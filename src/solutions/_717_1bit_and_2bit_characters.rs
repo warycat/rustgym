@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn is_one_bit_character(bits: Vec<i32>) -> bool {
+    fn is_one_bit_character(bits: Vec<i32>) -> bool {
         let mut i = 0;
         let n = bits.len();
         let mut one_bit: Option<bool> = None;

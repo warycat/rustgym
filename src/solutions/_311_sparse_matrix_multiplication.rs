@@ -1,7 +1,7 @@
-pub struct Solution;
+ struct Solution;
 
 impl Solution {
-    pub fn multiply(a: Vec<Vec<i32>>, b: Vec<Vec<i32>>) -> Vec<Vec<i32>> {
+     fn multiply(a: Vec<Vec<i32>>, b: Vec<Vec<i32>>) -> Vec<Vec<i32>> {
         let l = a.len();
         let m = b.len();
         let n = b[0].len();

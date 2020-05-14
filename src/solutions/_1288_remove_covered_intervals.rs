@@ -1,8 +1,8 @@
-pub struct Solution;
+struct Solution;
 use std::cmp::Reverse;
 
 impl Solution {
-    pub fn remove_covered_intervals(mut intervals: Vec<Vec<i32>>) -> i32 {
+    fn remove_covered_intervals(mut intervals: Vec<Vec<i32>>) -> i32 {
         intervals.sort_by_key(|v| (v[0], Reverse(v[1])));
         let n = intervals.len();
         let mut r = -1;

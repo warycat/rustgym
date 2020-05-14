@@ -1,4 +1,4 @@
-pub struct Solution;
+struct Solution;
 use util::*;
 
 trait Preorder {
@@ -24,7 +24,7 @@ impl Preorder for TreeLink {
 }
 
 impl Solution {
-    pub fn max_ancestor_diff(root: TreeLink) -> i32 {
+    fn max_ancestor_diff(root: TreeLink) -> i32 {
         let mut res = 0;
         root.preorder(None, &mut res);
         res

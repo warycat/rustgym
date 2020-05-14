@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn closest_divisors(num: i32) -> Vec<i32> {
+    fn closest_divisors(num: i32) -> Vec<i32> {
         for i in (0..=((num + 2) as f64).sqrt() as i32).rev() {
             if (num + 1) % i == 0 {
                 return vec![(num + 1) / i, i];

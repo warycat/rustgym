@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn dfs(m: &mut Vec<Vec<i32>>, visited: &mut Vec<bool>, i: usize, n: usize) {
+    fn dfs(m: &mut Vec<Vec<i32>>, visited: &mut Vec<bool>, i: usize, n: usize) {
         for j in 0..n {
             if m[i][j] == 1 && !visited[j] {
                 visited[j] = true;
@@ -10,7 +10,7 @@ impl Solution {
         }
     }
 
-    pub fn find_circle_num(mut m: Vec<Vec<i32>>) -> i32 {
+    fn find_circle_num(mut m: Vec<Vec<i32>>) -> i32 {
         let mut res = 0;
         let n = m.len();
         let mut visited: Vec<bool> = vec![false; n];

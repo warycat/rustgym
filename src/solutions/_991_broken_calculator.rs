@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn broken_calc(x: i32, mut y: i32) -> i32 {
+    fn broken_calc(x: i32, mut y: i32) -> i32 {
         let mut res = 0;
         while y > x {
             if y % 2 == 0 {

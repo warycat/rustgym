@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn max_uncrossed_lines(a: Vec<i32>, b: Vec<i32>) -> i32 {
+    fn max_uncrossed_lines(a: Vec<i32>, b: Vec<i32>) -> i32 {
         let n = a.len();
         let m = b.len();
         let mut dp = vec![vec![0; m + 1]; n + 1];

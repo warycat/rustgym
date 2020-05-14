@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn pancake_sort(mut a: Vec<i32>) -> Vec<i32> {
+    fn pancake_sort(mut a: Vec<i32>) -> Vec<i32> {
         let n = a.len();
         let mut res = vec![];
         for i in 0..n {

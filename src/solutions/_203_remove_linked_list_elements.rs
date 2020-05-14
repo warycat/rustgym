@@ -1,8 +1,8 @@
-pub struct Solution;
+struct Solution;
 use util::*;
 
 impl Solution {
-    pub fn remove_elements(mut head: ListLink, val: i32) -> ListLink {
+    fn remove_elements(mut head: ListLink, val: i32) -> ListLink {
         let mut p = &mut head;
         while p.is_some() {
             if p.as_ref().unwrap().val == val {

@@ -1,8 +1,8 @@
-pub struct Solution;
+struct Solution;
 
 #[allow(clippy::wrong_self_convention)]
 impl Solution {
-    pub fn to_hex(num: i32) -> String {
+    fn to_hex(num: i32) -> String {
         format!("{:x}", num)
     }
 }

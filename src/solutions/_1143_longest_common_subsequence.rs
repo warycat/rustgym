@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn longest_common_subsequence(text1: String, text2: String) -> i32 {
+    fn longest_common_subsequence(text1: String, text2: String) -> i32 {
         let s1: Vec<char> = text1.chars().collect();
         let s2: Vec<char> = text2.chars().collect();
         let n1 = s1.len();

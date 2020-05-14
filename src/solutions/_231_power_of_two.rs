@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn is_power_of_two(n: i32) -> bool {
+    fn is_power_of_two(n: i32) -> bool {
         if n <= 0 {
             return false;
         }

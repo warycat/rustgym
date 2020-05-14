@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn rotate_string(a: String, b: String) -> bool {
+    fn rotate_string(a: String, b: String) -> bool {
         if a.len() != b.len() {
             return false;
         }

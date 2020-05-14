@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn path_in_zig_zag_tree(mut label: i32) -> Vec<i32> {
+    fn path_in_zig_zag_tree(mut label: i32) -> Vec<i32> {
         let mut level = 0;
         while label >= 1 << level {
             level += 1;

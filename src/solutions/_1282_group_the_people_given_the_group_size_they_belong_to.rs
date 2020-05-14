@@ -1,9 +1,9 @@
-pub struct Solution;
+struct Solution;
 
 type Person = (i32, usize);
 
 impl Solution {
-    pub fn group_the_people(group_sizes: Vec<i32>) -> Vec<Vec<i32>> {
+    fn group_the_people(group_sizes: Vec<i32>) -> Vec<Vec<i32>> {
         let mut people: Vec<Person> = vec![];
         let mut res: Vec<Vec<i32>> = vec![];
         for (id, &group_size) in group_sizes.iter().enumerate() {

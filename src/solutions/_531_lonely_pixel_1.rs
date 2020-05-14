@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn find_lonely_pixel(pictures: Vec<Vec<char>>) -> i32 {
+    fn find_lonely_pixel(pictures: Vec<Vec<char>>) -> i32 {
         let n = pictures.len();
         let m = pictures[0].len();
         let mut rows = vec![0; n];

@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn can_transform(start: String, end: String) -> bool {
+    fn can_transform(start: String, end: String) -> bool {
         let mut iter_a = start.chars();
         let mut iter_b = end.chars();
         let mut count_a = 0;

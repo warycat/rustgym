@@ -1,7 +1,7 @@
-pub struct Solution;
+ struct Solution;
 
 impl Solution {
-    pub fn prime_palindrome(n: i32) -> i32 {
+     fn prime_palindrome(n: i32) -> i32 {
         if 8 <= n && n <= 11 {
             return 11;
         }
@@ -21,7 +21,7 @@ impl Solution {
         }
         0
     }
-    pub fn is_prime(x: i32) -> bool {
+     fn is_prime(x: i32) -> bool {
         if x < 2 || x % 2 == 0 {
             return x == 2;
         }

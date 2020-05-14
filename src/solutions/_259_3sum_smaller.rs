@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn three_sum_smaller(mut nums: Vec<i32>, target: i32) -> i32 {
+    fn three_sum_smaller(mut nums: Vec<i32>, target: i32) -> i32 {
         nums.sort_unstable();
         let n = nums.len();
         let mut res = 0;

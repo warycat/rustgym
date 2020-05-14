@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn can_jump(nums: Vec<i32>) -> bool {
+    fn can_jump(nums: Vec<i32>) -> bool {
         let n = nums.len();
         let mut last = n - 1;
         for i in (0..n).rev() {

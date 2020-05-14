@@ -1,9 +1,9 @@
-pub struct Solution;
+struct Solution;
 
 use std::collections::HashMap;
 
 impl Solution {
-    pub fn anagram_mappings(a: Vec<i32>, b: Vec<i32>) -> Vec<i32> {
+    fn anagram_mappings(a: Vec<i32>, b: Vec<i32>) -> Vec<i32> {
         let mut hs: HashMap<i32, Vec<i32>> = HashMap::new();
         let n = a.len();
         for (i, &x) in b.iter().enumerate() {

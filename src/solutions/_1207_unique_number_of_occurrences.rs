@@ -1,10 +1,10 @@
-pub struct Solution;
+struct Solution;
 
 use std::collections::HashMap;
 use std::collections::HashSet;
 
 impl Solution {
-    pub fn unique_occurrences(arr: Vec<i32>) -> bool {
+    fn unique_occurrences(arr: Vec<i32>) -> bool {
         let mut hm: HashMap<i32, i32> = HashMap::new();
         for x in arr {
             *hm.entry(x).or_default() += 1;

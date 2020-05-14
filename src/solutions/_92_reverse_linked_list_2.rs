@@ -1,8 +1,8 @@
-pub struct Solution;
+struct Solution;
 use util::*;
 
 impl Solution {
-    pub fn reverse_between(mut head: ListLink, m: i32, n: i32) -> ListLink {
+    fn reverse_between(mut head: ListLink, m: i32, n: i32) -> ListLink {
         let mut v1: Vec<ListLink> = vec![];
         let mut v2: Vec<ListLink> = vec![];
         let mut v3: Vec<ListLink> = vec![];

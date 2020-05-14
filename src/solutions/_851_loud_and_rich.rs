@@ -1,8 +1,8 @@
-pub struct Solution;
+ struct Solution;
 use std::collections::HashSet;
 
 impl Solution {
-    pub fn loud_and_rich(richer: Vec<Vec<i32>>, quiet: Vec<i32>) -> Vec<i32> {
+     fn loud_and_rich(richer: Vec<Vec<i32>>, quiet: Vec<i32>) -> Vec<i32> {
         let n = quiet.len();
         let mut graph: Vec<HashSet<usize>> = vec![HashSet::new(); n];
         for e in richer {
@@ -16,7 +16,7 @@ impl Solution {
         }
         res.into_iter().map(|x| x as i32).collect()
     }
-    pub fn dfs(
+     fn dfs(
         u: usize,
         stack: &mut Vec<usize>,
         graph: &[HashSet<usize>],

@@ -1,9 +1,9 @@
-pub struct Solution;
+struct Solution;
 
 use std::collections::HashMap;
 
 impl Solution {
-    pub fn find_the_difference(s: String, t: String) -> char {
+    fn find_the_difference(s: String, t: String) -> char {
         let mut hm: HashMap<char, i32> = HashMap::new();
         for c in t.chars() {
             let e = hm.entry(c).or_default();

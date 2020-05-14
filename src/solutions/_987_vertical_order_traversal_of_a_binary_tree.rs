@@ -1,4 +1,4 @@
-pub struct Solution;
+struct Solution;
 use std::cmp::Reverse;
 use std::collections::BTreeMap;
 use std::collections::BinaryHeap;
@@ -47,7 +47,7 @@ impl Preorder for TreeLink {
 }
 
 impl Solution {
-    pub fn vertical_traversal(root: TreeLink) -> Vec<Vec<i32>> {
+    fn vertical_traversal(root: TreeLink) -> Vec<Vec<i32>> {
         let mut nodes: Nodes = BTreeMap::new();
         root.preorder(0, 0, &mut nodes);
         nodes.vertical_order()

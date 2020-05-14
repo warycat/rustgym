@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn bold_words(words: Vec<String>, s: String) -> String {
+    fn bold_words(words: Vec<String>, s: String) -> String {
         let n = s.len();
         let mut bold: Vec<bool> = vec![false; n];
         let mut res: String = "".to_string();

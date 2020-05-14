@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn minimum_swap(s1: String, s2: String) -> i32 {
+    fn minimum_swap(s1: String, s2: String) -> i32 {
         let n = s1.len();
         let s1: Vec<char> = s1.chars().collect();
         let s2: Vec<char> = s2.chars().collect();

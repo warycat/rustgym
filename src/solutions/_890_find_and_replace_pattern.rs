@@ -1,4 +1,4 @@
-pub struct Solution;
+struct Solution;
 use std::collections::HashMap;
 
 trait Matches {
@@ -31,7 +31,7 @@ impl Matches for Vec<char> {
 }
 
 impl Solution {
-    pub fn find_and_replace_pattern(words: Vec<String>, pattern: String) -> Vec<String> {
+    fn find_and_replace_pattern(words: Vec<String>, pattern: String) -> Vec<String> {
         let n = pattern.len();
         let pattern: Vec<char> = pattern.chars().collect();
         let mut res = vec![];

@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn total_n_queens(n: i32) -> i32 {
+    fn total_n_queens(n: i32) -> i32 {
         let n = n as usize;
         let mut colum: u32 = 0;
         let mut diagonal1: u32 = 0;
@@ -10,7 +10,7 @@ impl Solution {
         Self::dfs(0, &mut colum, &mut diagonal1, &mut diagonal2, &mut res, n);
         res as i32
     }
-    pub fn dfs(
+    fn dfs(
         i: usize,
         column: &mut u32,
         diagonal1: &mut u32,

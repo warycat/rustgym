@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn min_start_value(nums: Vec<i32>) -> i32 {
+    fn min_start_value(nums: Vec<i32>) -> i32 {
         let n = nums.len();
         let mut sum = 0;
         let mut start = 1;

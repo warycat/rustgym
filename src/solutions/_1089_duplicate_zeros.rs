@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn duplicate_zeros(arr: &mut Vec<i32>) {
+    fn duplicate_zeros(arr: &mut Vec<i32>) {
         let n = arr.len();
         let m = arr.iter().filter(|&x| *x == 0).count();
         let mut i = n - 1;

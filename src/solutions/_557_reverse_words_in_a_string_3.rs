@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn reverse_words(s: String) -> String {
+    fn reverse_words(s: String) -> String {
         let words: Vec<String> = s
             .split_whitespace()
             .map(|s| s.chars().rev().collect())

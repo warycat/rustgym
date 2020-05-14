@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn base_neg2(mut n: i32) -> String {
+    fn base_neg2(mut n: i32) -> String {
         if n == 0 {
             return "0".to_string();
         }

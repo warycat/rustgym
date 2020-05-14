@@ -1,19 +1,19 @@
-pub struct Solution;
+struct Solution;
 use std::collections::BTreeSet;
 use std::collections::HashMap;
 
-pub struct UnionFind {
+struct UnionFind {
     parents: Vec<usize>,
     n: usize,
 }
 
 impl UnionFind {
-    pub fn new(n: usize) -> Self {
+    fn new(n: usize) -> Self {
         let parents = (0..n).collect();
         UnionFind { parents, n }
     }
 
-    pub fn find(&mut self, i: usize) -> usize {
+    fn find(&mut self, i: usize) -> usize {
         let j = self.parents[i];
         if i == j {
             j
@@ -24,7 +24,7 @@ impl UnionFind {
         }
     }
 
-    pub fn union(&mut self, mut i: usize, mut j: usize) {
+    fn union(&mut self, mut i: usize, mut j: usize) {
         i = self.find(i);
         j = self.find(j);
         if i != j {
@@ -32,7 +32,7 @@ impl UnionFind {
         }
     }
 
-    pub fn groups(&mut self) -> HashMap<usize, Vec<usize>> {
+    fn groups(&mut self) -> HashMap<usize, Vec<usize>> {
         let mut hm: HashMap<usize, Vec<usize>> = HashMap::new();
         for i in 0..self.n {
             let j = self.find(i);
@@ -43,7 +43,7 @@ impl UnionFind {
 }
 
 impl Solution {
-    pub fn generate_sentences(synonyms: Vec<Vec<String>>, text: String) -> Vec<String> {
+    fn generate_sentences(synonyms: Vec<Vec<String>>, text: String) -> Vec<String> {
         let mut bts: BTreeSet<String> = BTreeSet::new();
         for ss in &synonyms {
             bts.insert(ss[0].to_string());
@@ -78,7 +78,7 @@ impl Solution {
         res
     }
 
-    pub fn dfs(
+    fn dfs(
         start: usize,
         cur: &mut Vec<usize>,
         all: &mut Vec<String>,

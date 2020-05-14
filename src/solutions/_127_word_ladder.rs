@@ -1,9 +1,9 @@
-pub struct Solution;
+struct Solution;
 use std::collections::HashSet;
 use std::iter::FromIterator;
 
 impl Solution {
-    pub fn ladder_length(begin_word: String, end_word: String, word_list: Vec<String>) -> i32 {
+    fn ladder_length(begin_word: String, end_word: String, word_list: Vec<String>) -> i32 {
         let n = begin_word.len();
         let mut unused_set: HashSet<Vec<u8>> =
             HashSet::from_iter(word_list.into_iter().map(|s| s.as_bytes().to_vec()));

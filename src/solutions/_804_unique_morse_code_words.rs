@@ -1,9 +1,9 @@
-pub struct Solution;
+struct Solution;
 
 use std::collections::HashSet;
 
 impl Solution {
-    pub fn unique_morse_representations(words: Vec<String>) -> i32 {
+    fn unique_morse_representations(words: Vec<String>) -> i32 {
         let map = [
             ".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---", "-.-", ".-..",
             "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-",

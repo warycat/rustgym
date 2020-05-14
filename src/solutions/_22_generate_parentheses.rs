@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn gen(res: &mut Vec<String>, v: &mut Vec<char>, left: i32, right: i32) {
+    fn gen(res: &mut Vec<String>, v: &mut Vec<char>, left: i32, right: i32) {
         if left == 0 && right == 0 {
             res.push(v.iter().collect::<String>());
         } else {
@@ -17,7 +17,7 @@ impl Solution {
             }
         }
     }
-    pub fn generate_parenthesis(n: i32) -> Vec<String> {
+    fn generate_parenthesis(n: i32) -> Vec<String> {
         let mut res: Vec<String> = vec![];
         let mut v: Vec<char> = vec![];
         Self::gen(&mut res, &mut v, n, n);

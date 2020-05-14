@@ -1,9 +1,9 @@
-pub struct Solution;
+ struct Solution;
 use std::collections::VecDeque;
 use util::*;
 
 impl Solution {
-    pub fn reverse_k_group(head: ListLink, k: i32) -> ListLink {
+     fn reverse_k_group(head: ListLink, k: i32) -> ListLink {
         let mut p = head;
         let mut count = 0;
         let mut queue: VecDeque<ListLink> = VecDeque::new();

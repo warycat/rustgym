@@ -1,4 +1,4 @@
-pub struct Solution;
+struct Solution;
 use std::cmp::Ordering::*;
 
 trait Partition {
@@ -22,7 +22,7 @@ impl Partition for Vec<i32> {
 }
 
 impl Solution {
-    pub fn find_kth_largest(mut nums: Vec<i32>, k: i32) -> i32 {
+    fn find_kth_largest(mut nums: Vec<i32>, k: i32) -> i32 {
         let n = nums.len();
         let mut l = 0;
         let mut r = n - 1;

@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn digit_square_sum(mut x: i32) -> i32 {
+    fn digit_square_sum(mut x: i32) -> i32 {
         let mut sum = 0;
         while x > 0 {
             let tmp = x % 10;
@@ -11,7 +11,7 @@ impl Solution {
         sum
     }
 
-    pub fn is_happy(n: i32) -> bool {
+    fn is_happy(n: i32) -> bool {
         let mut slow = n;
         let mut fast = n;
         loop {

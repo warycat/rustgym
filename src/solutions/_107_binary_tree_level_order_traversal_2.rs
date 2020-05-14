@@ -1,14 +1,14 @@
-pub struct Solution;
+struct Solution;
 use std::collections::VecDeque;
 use util::*;
 
-pub struct Pair {
+struct Pair {
     tree: TreeLink,
     level: usize,
 }
 
 impl Solution {
-    pub fn level_order_bottom(root: TreeLink) -> Vec<Vec<i32>> {
+    fn level_order_bottom(root: TreeLink) -> Vec<Vec<i32>> {
         let mut levels: Vec<Vec<i32>> = vec![];
         let mut queue: VecDeque<Pair> = VecDeque::new();
         if root.is_some() {

@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn encode(num: i32) -> String {
+    fn encode(num: i32) -> String {
         format!("{:b}", num + 1)[1..].to_string()
     }
 }

@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn max_number_of_apples(mut arr: Vec<i32>) -> i32 {
+    fn max_number_of_apples(mut arr: Vec<i32>) -> i32 {
         arr.sort_unstable();
         let n = arr.len();
         let mut sum = 0;

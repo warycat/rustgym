@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn max_score_sightseeing_pair(a: Vec<i32>) -> i32 {
+    fn max_score_sightseeing_pair(a: Vec<i32>) -> i32 {
         let n = a.len();
         let mut maxs = vec![];
         let mut prev_max = 0;

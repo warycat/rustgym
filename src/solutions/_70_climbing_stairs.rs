@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn climb_stairs(n: i32) -> i32 {
+    fn climb_stairs(n: i32) -> i32 {
         match n {
             1 | 2 => n,
             k => (2..k).fold((1, 2), |acc, _| (acc.1, acc.0 + acc.1)).1,

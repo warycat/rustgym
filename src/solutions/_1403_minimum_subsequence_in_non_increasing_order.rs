@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn min_subsequence(mut nums: Vec<i32>) -> Vec<i32> {
+    fn min_subsequence(mut nums: Vec<i32>) -> Vec<i32> {
         let n = nums.len();
         nums.sort_unstable();
         let sum: i32 = nums.iter().sum();

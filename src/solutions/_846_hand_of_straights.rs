@@ -1,10 +1,10 @@
-pub struct Solution;
+struct Solution;
 use std::collections::BTreeMap;
 use std::collections::VecDeque;
 use std::iter::FromIterator;
 
 impl Solution {
-    pub fn is_n_straight_hand(hand: Vec<i32>, w: i32) -> bool {
+    fn is_n_straight_hand(hand: Vec<i32>, w: i32) -> bool {
         let mut btm: BTreeMap<i32, usize> = BTreeMap::new();
         for card in hand {
             *btm.entry(card).or_default() += 1;

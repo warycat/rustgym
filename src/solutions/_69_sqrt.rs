@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn my_sqrt(x: i32) -> i32 {
+    fn my_sqrt(x: i32) -> i32 {
         (x as f64).sqrt().floor() as i32
     }
 }

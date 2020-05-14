@@ -1,8 +1,8 @@
-pub struct Solution;
+struct Solution;
 use std::cmp::Ordering::*;
 
 impl Solution {
-    pub fn collide(stack: &mut Vec<i32>, asteroid: i32) {
+    fn collide(stack: &mut Vec<i32>, asteroid: i32) {
         if let Some(&top) = stack.last() {
             if top < 0 {
                 stack.push(asteroid);
@@ -23,7 +23,7 @@ impl Solution {
         }
     }
 
-    pub fn asteroid_collision(asteroids: Vec<i32>) -> Vec<i32> {
+    fn asteroid_collision(asteroids: Vec<i32>) -> Vec<i32> {
         let mut res: Vec<i32> = vec![];
         for x in asteroids {
             if x > 0 {

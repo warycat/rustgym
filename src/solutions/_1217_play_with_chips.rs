@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn min_cost_to_move_chips(chips: Vec<i32>) -> i32 {
+    fn min_cost_to_move_chips(chips: Vec<i32>) -> i32 {
         let n = chips.len();
         let mut a = 0;
         let mut b = 0;

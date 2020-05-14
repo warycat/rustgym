@@ -1,9 +1,9 @@
-pub struct Solution;
+struct Solution;
 
 use std::collections::HashMap;
 
 impl Solution {
-    pub fn str_2_hs(s: &str) -> HashMap<char, i32> {
+    fn str_2_hs(s: &str) -> HashMap<char, i32> {
         let mut hs: HashMap<char, i32> = HashMap::new();
         for c in s.chars() {
             *hs.entry(c).or_default() += 1;
@@ -11,7 +11,7 @@ impl Solution {
         hs
     }
 
-    pub fn count_characters(words: Vec<String>, chars: String) -> i32 {
+    fn count_characters(words: Vec<String>, chars: String) -> i32 {
         let chars = Self::str_2_hs(&chars);
         let mut sum = 0;
         for w in words {

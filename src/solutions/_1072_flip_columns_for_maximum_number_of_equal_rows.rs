@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn max_equal_rows_after_flips(matrix: Vec<Vec<i32>>) -> i32 {
+    fn max_equal_rows_after_flips(matrix: Vec<Vec<i32>>) -> i32 {
         let n = matrix.len();
         let m = matrix[0].len();
         let mut res = vec![1; n];

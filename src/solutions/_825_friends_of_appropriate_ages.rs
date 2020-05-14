@@ -1,8 +1,8 @@
-pub struct Solution;
+struct Solution;
 use std::collections::HashMap;
 
 impl Solution {
-    pub fn num_friend_requests(ages: Vec<i32>) -> i32 {
+    fn num_friend_requests(ages: Vec<i32>) -> i32 {
         let mut hm: HashMap<i32, i32> = HashMap::new();
         for age in ages {
             *hm.entry(age).or_default() += 1;

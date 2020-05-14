@@ -1,4 +1,4 @@
-pub struct Solution;
+struct Solution;
 
 enum Action {
     Start,
@@ -6,7 +6,7 @@ enum Action {
 }
 
 impl Solution {
-    pub fn exclusive_time(n: i32, logs: Vec<String>) -> Vec<i32> {
+    fn exclusive_time(n: i32, logs: Vec<String>) -> Vec<i32> {
         let n = n as usize;
         let mut stack: Vec<usize> = vec![];
         let mut res: Vec<i32> = vec![0; n];

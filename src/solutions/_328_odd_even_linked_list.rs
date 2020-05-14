@@ -1,8 +1,8 @@
-pub struct Solution;
+struct Solution;
 use util::*;
 
 impl Solution {
-    pub fn odd_even_list(mut head: ListLink) -> ListLink {
+    fn odd_even_list(mut head: ListLink) -> ListLink {
         let mut odd: Vec<ListLink> = vec![];
         let mut even: Vec<ListLink> = vec![];
         let mut i = 1;

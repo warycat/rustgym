@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn peak_index_in_mountain_array(a: Vec<i32>) -> i32 {
+    fn peak_index_in_mountain_array(a: Vec<i32>) -> i32 {
         let mut l: usize = 0;
         let mut r: usize = a.len() - 1;
         while l < r {

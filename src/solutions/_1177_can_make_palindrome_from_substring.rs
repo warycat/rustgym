@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn can_make_pali_queries(s: String, queries: Vec<Vec<i32>>) -> Vec<bool> {
+    fn can_make_pali_queries(s: String, queries: Vec<Vec<i32>>) -> Vec<bool> {
         let n = s.len();
         let mut prefix: Vec<u32> = vec![0; n + 1];
         for (i, c) in s.char_indices() {

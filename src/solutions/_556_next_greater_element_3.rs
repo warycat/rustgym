@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn next_greater_element(n: i32) -> i32 {
+    fn next_greater_element(n: i32) -> i32 {
         let mut s: Vec<char> = format!("{}", n).chars().collect();
         let n = s.len();
         let mut l = n;

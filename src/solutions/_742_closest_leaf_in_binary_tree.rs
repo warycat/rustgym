@@ -1,11 +1,11 @@
-pub struct Solution;
+struct Solution;
 use std::collections::HashMap;
 use std::collections::HashSet;
 use std::collections::VecDeque;
 use util::*;
 
 #[derive(Default)]
-pub struct Graph {
+struct Graph {
     edges: HashMap<i32, Vec<i32>>,
     nodes: HashMap<i32, bool>,
 }
@@ -35,16 +35,16 @@ impl Preorder for TreeLink {
 }
 
 impl Graph {
-    pub fn add_node(&mut self, u: i32, is_leaf: bool) {
+    fn add_node(&mut self, u: i32, is_leaf: bool) {
         *self.nodes.entry(u).or_default() = is_leaf;
     }
-    pub fn add_edge(&mut self, u: i32, v: i32) {
+    fn add_edge(&mut self, u: i32, v: i32) {
         self.edges.entry(u).or_default().push(v);
     }
 }
 
 impl Solution {
-    pub fn find_closest_leaf(root: TreeLink, k: i32) -> i32 {
+    fn find_closest_leaf(root: TreeLink, k: i32) -> i32 {
         let mut graph: Graph = Graph::default();
         root.preorder(None, &mut graph);
         let mut queue: VecDeque<i32> = VecDeque::new();

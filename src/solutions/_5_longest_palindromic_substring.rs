@@ -1,9 +1,9 @@
-pub struct Solution;
+struct Solution;
 
 use std::iter::FromIterator;
 
 impl Solution {
-    pub fn longest_palindrome(s: String) -> String {
+    fn longest_palindrome(s: String) -> String {
         let n = s.len();
         if n == 0 {
             return "".to_string();

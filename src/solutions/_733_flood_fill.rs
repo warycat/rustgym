@@ -1,14 +1,14 @@
-pub struct Solution;
+struct Solution;
 
 use std::collections::VecDeque;
 
-pub struct Pixel {
+struct Pixel {
     i: usize,
     j: usize,
 }
 
 impl Solution {
-    pub fn flood_fill(mut image: Vec<Vec<i32>>, sr: i32, sc: i32, new_color: i32) -> Vec<Vec<i32>> {
+    fn flood_fill(mut image: Vec<Vec<i32>>, sr: i32, sc: i32, new_color: i32) -> Vec<Vec<i32>> {
         let n = image.len();
         if n == 0 {
             return image;

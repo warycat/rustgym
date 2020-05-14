@@ -1,27 +1,27 @@
-pub struct Solution;
+struct Solution;
 
 use std::fmt;
 
 #[derive(Debug, PartialEq, Eq, Clone)]
-pub struct Time {
+struct Time {
     hour: i32,
     minute: i32,
 }
 
 impl Time {
-    pub fn new(hour: i32, minute: i32) -> Self {
+    fn new(hour: i32, minute: i32) -> Self {
         Time { hour, minute }
     }
-    pub fn is_valid(&self) -> bool {
+    fn is_valid(&self) -> bool {
         self.hour < 24 && self.minute < 60
     }
-    pub fn from_digits(a: &[i32]) -> Self {
+    fn from_digits(a: &[i32]) -> Self {
         Self::new(a[0] * 10 + a[1], a[2] * 10 + a[3])
     }
-    pub fn to_minutes(&self) -> i32 {
+    fn to_minutes(&self) -> i32 {
         self.hour * 60 + self.minute
     }
-    pub fn to_digits(&self) -> Vec<i32> {
+    fn to_digits(&self) -> Vec<i32> {
         vec![
             self.hour / 10,
             self.hour % 10,
@@ -47,7 +47,7 @@ impl PartialOrd for Time {
 }
 
 impl Solution {
-    pub fn backtrack(a: &mut Vec<i32>, index: usize, max: &mut Option<Time>) {
+    fn backtrack(a: &mut Vec<i32>, index: usize, max: &mut Option<Time>) {
         let n = a.len();
         if index == n {
             let time = Time::from_digits(a);
@@ -68,7 +68,7 @@ impl Solution {
             }
         }
     }
-    pub fn largest_time_from_digits(mut a: Vec<i32>) -> String {
+    fn largest_time_from_digits(mut a: Vec<i32>) -> String {
         let mut max: Option<Time> = None;
         Self::backtrack(&mut a, 0, &mut max);
         if let Some(max_time) = max {

@@ -1,10 +1,10 @@
-pub struct Solution;
+struct Solution;
 
 use std::collections::HashMap;
 use std::collections::HashSet;
 
 impl Solution {
-    pub fn intersect(nums1: Vec<i32>, nums2: Vec<i32>) -> Vec<i32> {
+    fn intersect(nums1: Vec<i32>, nums2: Vec<i32>) -> Vec<i32> {
         let mut hm1: HashMap<i32, i32> = HashMap::new();
         let hs1: HashSet<i32> = nums1.clone().into_iter().collect();
         nums1.iter().for_each(|&x| {

@@ -1,11 +1,11 @@
-pub struct Solution;
+struct Solution;
 
 use std::cmp::Ordering::*;
 use std::collections::HashMap;
 use std::collections::HashSet;
 
 impl Solution {
-    pub fn find_pairs(nums: Vec<i32>, k: i32) -> i32 {
+    fn find_pairs(nums: Vec<i32>, k: i32) -> i32 {
         let mut res = 0;
         let mut hs: HashSet<i32> = HashSet::new();
         let mut hm: HashMap<i32, i32> = HashMap::new();

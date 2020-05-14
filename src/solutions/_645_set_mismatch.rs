@@ -1,9 +1,9 @@
-pub struct Solution;
+struct Solution;
 
 use std::collections::HashSet;
 
 impl Solution {
-    pub fn find_error_nums(nums: Vec<i32>) -> Vec<i32> {
+    fn find_error_nums(nums: Vec<i32>) -> Vec<i32> {
         let n = nums.len();
         let mut hs: HashSet<i32> = HashSet::new();
         let mut res: Vec<i32> = vec![];

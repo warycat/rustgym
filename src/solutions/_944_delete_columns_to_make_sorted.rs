@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn min_deletion_size(a: Vec<String>) -> i32 {
+    fn min_deletion_size(a: Vec<String>) -> i32 {
         let mut d = 0;
         let a: Vec<&[u8]> = a.iter().map(|s| s.as_bytes()).collect();
         let n = a.len();

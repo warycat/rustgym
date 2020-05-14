@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn add_bold_tag(s: String, dict: Vec<String>) -> String {
+    fn add_bold_tag(s: String, dict: Vec<String>) -> String {
         let n = s.len();
         let mut tag: Vec<bool> = vec![false; n];
         for p in dict {

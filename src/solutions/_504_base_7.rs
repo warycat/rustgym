@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn convert_to_base7(mut num: i32) -> String {
+    fn convert_to_base7(mut num: i32) -> String {
         if num == 0 {
             return "0".to_string();
         }

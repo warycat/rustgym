@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 use std::fmt;
 
-pub struct Interval(i64, i64);
+struct Interval(i64, i64);
 
 impl std::fmt::Display for Interval {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
@@ -14,7 +14,7 @@ impl std::fmt::Display for Interval {
 }
 
 impl Solution {
-    pub fn find_missing_ranges(nums: Vec<i32>, lower: i32, upper: i32) -> Vec<String> {
+    fn find_missing_ranges(nums: Vec<i32>, lower: i32, upper: i32) -> Vec<String> {
         let mut cur = Interval(lower as i64, upper as i64);
         let mut res: Vec<Interval> = vec![];
         for x in nums {

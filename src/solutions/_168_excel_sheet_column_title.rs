@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn convert_to_title(mut n: i32) -> String {
+    fn convert_to_title(mut n: i32) -> String {
         let mut v: Vec<char> = vec![];
         while n > 0 {
             let x = ((n - 1) % 26) as u8;

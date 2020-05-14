@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn lucky_numbers(matrix: Vec<Vec<i32>>) -> Vec<i32> {
+    fn lucky_numbers(matrix: Vec<Vec<i32>>) -> Vec<i32> {
         let n = matrix.len();
         let m = matrix[0].len();
         let mut mins: Vec<i32> = vec![std::i32::MAX; n];

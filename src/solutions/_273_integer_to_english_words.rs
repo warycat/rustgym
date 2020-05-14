@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn number_to_words(num: i32) -> String {
+    fn number_to_words(num: i32) -> String {
         if num == 0 {
             return "Zero".to_string();
         }
@@ -14,7 +14,7 @@ impl Solution {
         Self::words(num as usize, &nineteen, &tens, &units).join(" ")
     }
 
-    pub fn words(
+    fn words(
         num: usize,
         nineteen: &[&'static str],
         tens: &[&'static str],

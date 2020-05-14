@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn min_add_to_make_valid(s: String) -> i32 {
+    fn min_add_to_make_valid(s: String) -> i32 {
         let mut stack: Vec<char> = vec![];
         let mut res = 0;
         for c in s.chars() {

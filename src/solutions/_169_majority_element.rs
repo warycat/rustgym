@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn majority_element(nums: Vec<i32>) -> i32 {
+    fn majority_element(nums: Vec<i32>) -> i32 {
         let mut count = 0;
         let mut num: Option<i32> = None;
         for x in nums {

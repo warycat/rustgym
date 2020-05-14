@@ -1,4 +1,4 @@
-pub struct Solution;
+struct Solution;
 use util::*;
 
 trait Search {
@@ -26,7 +26,7 @@ impl Search for TreeLink {
 }
 
 impl Solution {
-    pub fn search_bst(root: TreeLink, val: i32) -> TreeLink {
+    fn search_bst(root: TreeLink, val: i32) -> TreeLink {
         root.find(val)
     }
 }

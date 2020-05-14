@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn freq_alphabets(s: String) -> String {
+    fn freq_alphabets(s: String) -> String {
         let mut v: Vec<char> = vec![];
         let mut u: Vec<char> = s.chars().collect();
         while let Some(c) = u.pop() {

@@ -1,7 +1,7 @@
-pub struct Solution;
+ struct Solution;
 
 impl Solution {
-    pub fn remove_outer_parentheses(s: String) -> String {
+     fn remove_outer_parentheses(s: String) -> String {
         let mut res: String = "".to_string();
         let mut count = 0;
         for c in s.chars() {

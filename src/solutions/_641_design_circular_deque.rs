@@ -1,4 +1,4 @@
-pub struct MyCircularDeque {
+struct MyCircularDeque {
     k: usize,
     start: usize,
     end: usize,
@@ -7,7 +7,7 @@ pub struct MyCircularDeque {
 }
 
 impl MyCircularDeque {
-    pub fn new(k: i32) -> Self {
+    fn new(k: i32) -> Self {
         let start = 0;
         let end = 0;
         let k = k as usize;
@@ -21,7 +21,7 @@ impl MyCircularDeque {
             count,
         }
     }
-    pub fn insert_front(&mut self, value: i32) -> bool {
+    fn insert_front(&mut self, value: i32) -> bool {
         if self.count == self.k {
             false
         } else {
@@ -32,7 +32,7 @@ impl MyCircularDeque {
         }
     }
 
-    pub fn insert_last(&mut self, value: i32) -> bool {
+    fn insert_last(&mut self, value: i32) -> bool {
         if self.count == self.k {
             false
         } else {
@@ -43,7 +43,7 @@ impl MyCircularDeque {
         }
     }
 
-    pub fn delete_front(&mut self) -> bool {
+    fn delete_front(&mut self) -> bool {
         if self.count == 0 {
             false
         } else {
@@ -53,7 +53,7 @@ impl MyCircularDeque {
         }
     }
 
-    pub fn delete_last(&mut self) -> bool {
+    fn delete_last(&mut self) -> bool {
         if self.count == 0 {
             false
         } else {
@@ -63,7 +63,7 @@ impl MyCircularDeque {
         }
     }
 
-    pub fn get_front(&self) -> i32 {
+    fn get_front(&self) -> i32 {
         if self.is_empty() {
             -1
         } else {
@@ -71,7 +71,7 @@ impl MyCircularDeque {
         }
     }
 
-    pub fn get_rear(&self) -> i32 {
+    fn get_rear(&self) -> i32 {
         if self.is_empty() {
             -1
         } else {
@@ -79,11 +79,11 @@ impl MyCircularDeque {
         }
     }
 
-    pub fn is_empty(&self) -> bool {
+    fn is_empty(&self) -> bool {
         self.count == 0
     }
 
-    pub fn is_full(&self) -> bool {
+    fn is_full(&self) -> bool {
         self.count == self.k
     }
 }

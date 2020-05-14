@@ -1,8 +1,8 @@
-pub struct Solution;
+struct Solution;
 use util::*;
 
 impl Solution {
-    pub fn sorted_array_to_bst(nums: Vec<i32>) -> TreeLink {
+    fn sorted_array_to_bst(nums: Vec<i32>) -> TreeLink {
         let n = nums.len();
         match n {
             0 => None,

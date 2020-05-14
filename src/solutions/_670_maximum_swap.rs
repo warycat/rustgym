@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn maximum_swap(num: i32) -> i32 {
+    fn maximum_swap(num: i32) -> i32 {
         let mut s: Vec<char> = num.to_string().chars().collect();
         let n = s.len();
         let mut last: Vec<usize> = vec![0; 10];

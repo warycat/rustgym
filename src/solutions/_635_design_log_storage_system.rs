@@ -2,15 +2,15 @@ use std::collections::BTreeMap;
 use std::collections::HashMap;
 
 #[derive(Default)]
-pub struct LogSystem {
-    pub min: String,
-    pub max: String,
-    pub map: HashMap<String, usize>,
-    pub logs: BTreeMap<String, i32>,
+ struct LogSystem {
+     min: String,
+     max: String,
+     map: HashMap<String, usize>,
+     logs: BTreeMap<String, i32>,
 }
 
 impl LogSystem {
-    pub fn new() -> Self {
+     fn new() -> Self {
         let min = "2000:01:01:00:00:00".to_string();
         let max = "2017:12:31:23:59:59".to_string();
         let map: HashMap<String, usize> = [
@@ -33,11 +33,11 @@ impl LogSystem {
         }
     }
 
-    pub fn put(&mut self, id: i32, timestamp: String) {
+     fn put(&mut self, id: i32, timestamp: String) {
         *self.logs.entry(timestamp).or_default() = id;
     }
 
-    pub fn retrieve(&self, s: String, e: String, gra: String) -> Vec<i32> {
+     fn retrieve(&self, s: String, e: String, gra: String) -> Vec<i32> {
         let i = self.map[&gra];
         let s = "".to_string() + &s[0..i] + &self.min[i..];
         let e = "".to_string() + &e[0..i] + &self.max[i..];

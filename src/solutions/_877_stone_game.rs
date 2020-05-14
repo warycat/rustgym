@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn stone_game(_: Vec<i32>) -> bool {
+    fn stone_game(_: Vec<i32>) -> bool {
         true
     }
 }

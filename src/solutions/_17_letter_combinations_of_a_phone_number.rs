@@ -1,9 +1,9 @@
-pub struct Solution;
+struct Solution;
 
 use std::collections::HashMap;
 
 impl Solution {
-    pub fn dfs(
+    fn dfs(
         hm: &HashMap<char, Vec<char>>,
         digits: &[char],
         s: &mut Vec<char>,
@@ -21,7 +21,7 @@ impl Solution {
             }
         }
     }
-    pub fn letter_combinations(digits: String) -> Vec<String> {
+    fn letter_combinations(digits: String) -> Vec<String> {
         if digits.is_empty() {
             return vec![];
         }

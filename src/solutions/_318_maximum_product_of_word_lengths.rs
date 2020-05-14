@@ -1,8 +1,8 @@
-pub struct Solution;
+struct Solution;
 use std::collections::HashMap;
 
 impl Solution {
-    pub fn max_product(words: Vec<String>) -> i32 {
+    fn max_product(words: Vec<String>) -> i32 {
         let mut hm: HashMap<u32, usize> = HashMap::new();
         for word in words {
             let mut mask: u32 = 0;

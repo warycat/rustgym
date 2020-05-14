@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn is_long_pressed_name(name: String, typed: String) -> bool {
+    fn is_long_pressed_name(name: String, typed: String) -> bool {
         let n = name.len();
         let m = typed.len();
         let mut i = 0;

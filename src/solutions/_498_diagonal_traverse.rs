@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn find_diagonal_order(matrix: Vec<Vec<i32>>) -> Vec<i32> {
+    fn find_diagonal_order(matrix: Vec<Vec<i32>>) -> Vec<i32> {
         let mut res: Vec<i32> = vec![];
         let mut i = 0;
         let mut j = 0;

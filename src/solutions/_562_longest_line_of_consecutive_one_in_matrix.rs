@@ -1,7 +1,7 @@
-pub struct Solution;
+ struct Solution;
 
 impl Solution {
-    pub fn longest_line(matrix: Vec<Vec<i32>>) -> i32 {
+     fn longest_line(matrix: Vec<Vec<i32>>) -> i32 {
         let n = matrix.len();
         if n == 0 {
             return 0;

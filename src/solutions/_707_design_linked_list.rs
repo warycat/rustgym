@@ -1,16 +1,16 @@
 use util::*;
 
 #[derive(Debug, PartialEq, Eq, Clone, Default)]
-pub struct MyLinkedList {
-    pub head: ListLink,
+struct MyLinkedList {
+    head: ListLink,
 }
 
 impl MyLinkedList {
-    pub fn new() -> Self {
+    fn new() -> Self {
         MyLinkedList { head: None }
     }
 
-    pub fn get(&self, index: i32) -> i32 {
+    fn get(&self, index: i32) -> i32 {
         if index < 0 {
             return -1;
         }
@@ -26,11 +26,11 @@ impl MyLinkedList {
         -1
     }
 
-    pub fn add_at_head(&mut self, val: i32) {
+    fn add_at_head(&mut self, val: i32) {
         self.head = ListLink::link(val, self.head.take());
     }
 
-    pub fn add_at_tail(&mut self, val: i32) {
+    fn add_at_tail(&mut self, val: i32) {
         let mut link: &mut ListLink = &mut self.head;
         while let Some(node) = link {
             link = &mut node.next;
@@ -38,7 +38,7 @@ impl MyLinkedList {
         *link = ListLink::link(val, None);
     }
 
-    pub fn add_at_index(&mut self, index: i32, val: i32) {
+    fn add_at_index(&mut self, index: i32, val: i32) {
         if index <= 0 {
             self.add_at_head(val);
         } else {
@@ -56,7 +56,7 @@ impl MyLinkedList {
         }
     }
 
-    pub fn delete_at_index(&mut self, index: i32) {
+    fn delete_at_index(&mut self, index: i32) {
         if index < 0 {
             return;
         }

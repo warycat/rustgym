@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn num_moves_stones_ii(mut stones: Vec<i32>) -> Vec<i32> {
+    fn num_moves_stones_ii(mut stones: Vec<i32>) -> Vec<i32> {
         stones.sort_unstable();
         let n = stones.len();
         let mut min = n as i32;

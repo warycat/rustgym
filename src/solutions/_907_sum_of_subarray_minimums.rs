@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn sum_subarray_mins(a: Vec<i32>) -> i32 {
+    fn sum_subarray_mins(a: Vec<i32>) -> i32 {
         let n = a.len();
         let mut sum = 0;
         let mut left: Vec<usize> = vec![0; n];

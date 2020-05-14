@@ -1,9 +1,9 @@
-pub struct Solution;
+struct Solution;
 use std::collections::VecDeque;
 use util::*;
 
 impl Solution {
-    pub fn reorder_list(head: &mut ListLink) {
+    fn reorder_list(head: &mut ListLink) {
         let mut p: ListLink = head.take();
         let mut deque: VecDeque<ListLink> = VecDeque::new();
         while let Some(mut n) = p {

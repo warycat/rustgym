@@ -1,15 +1,15 @@
-pub struct Solution;
+struct Solution;
 
 const M: i32 = 1_000_000_007;
 
 impl Solution {
-    pub fn die_simulator(n: i32, roll_max: Vec<i32>) -> i32 {
+    fn die_simulator(n: i32, roll_max: Vec<i32>) -> i32 {
         let n = n as usize;
         let mut dp: Vec<Vec<Vec<i32>>> = vec![vec![vec![0; 5001]; 16]; 6];
         Self::dfs(n, -1, 1, &mut dp, &roll_max)
     }
 
-    pub fn dfs(
+    fn dfs(
         n: usize,
         prev: i32,
         repeat: usize,

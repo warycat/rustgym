@@ -16,19 +16,19 @@ impl Preorder for TreeLink {
     }
 }
 
-pub struct FindElements {
+struct FindElements {
     root: TreeLink,
     hs: HashSet<i32>,
 }
 
 impl FindElements {
-    pub fn new(mut root: TreeLink) -> Self {
+    fn new(mut root: TreeLink) -> Self {
         let mut hs = HashSet::new();
         root.recover(0, &mut hs);
         FindElements { root, hs }
     }
 
-    pub fn find(&self, target: i32) -> bool {
+    fn find(&self, target: i32) -> bool {
         self.hs.contains(&target)
     }
 }

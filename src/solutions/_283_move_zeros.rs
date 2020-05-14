@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn move_zeroes(nums: &mut Vec<i32>) {
+    fn move_zeroes(nums: &mut Vec<i32>) {
         let mut j = 0;
         for i in 0..nums.len() {
             let x = nums[i];

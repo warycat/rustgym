@@ -1,9 +1,9 @@
-pub struct Solution;
+struct Solution;
 use std::cmp::Reverse;
 use std::collections::HashMap;
 
 impl Solution {
-    pub fn frequency_sort(s: String) -> String {
+    fn frequency_sort(s: String) -> String {
         let mut s: Vec<char> = s.chars().collect();
         let mut hm: HashMap<char, usize> = HashMap::new();
         for &c in &s {

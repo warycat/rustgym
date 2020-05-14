@@ -1,7 +1,7 @@
-pub struct Solution;
+ struct Solution;
 
 impl Solution {
-    pub fn is_monotonic(a: Vec<i32>) -> bool {
+     fn is_monotonic(a: Vec<i32>) -> bool {
         let mut increasing = true;
         let mut decreasing = true;
         let n = a.len();
@@ -18,7 +18,7 @@ impl Solution {
 }
 
 #[test]
-pub fn name() {
+ fn name() {
     let a = vec![1, 2, 2, 3];
     assert_eq!(Solution::is_monotonic(a), true);
     let a = vec![6, 5, 4, 4];

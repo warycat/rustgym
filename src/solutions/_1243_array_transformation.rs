@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn transform_array(mut array: Vec<i32>) -> Vec<i32> {
+    fn transform_array(mut array: Vec<i32>) -> Vec<i32> {
         let n = array.len();
         let mut temp = vec![0; n];
         loop {
@@ -11,7 +11,7 @@ impl Solution {
         }
         array
     }
-    pub fn next(arr: &mut Vec<i32>, temp: &mut Vec<i32>, n: usize) -> bool {
+    fn next(arr: &mut Vec<i32>, temp: &mut Vec<i32>, n: usize) -> bool {
         for i in 1..n - 1 {
             temp[i] = arr[i];
             if arr[i] > arr[i - 1] && arr[i] > arr[i + 1] {

@@ -1,9 +1,9 @@
-pub struct Solution;
+struct Solution;
 
 use std::collections::HashSet;
 
 impl Solution {
-    pub fn longest_palindrome(s: String) -> i32 {
+    fn longest_palindrome(s: String) -> i32 {
         let mut hs: HashSet<char> = HashSet::new();
         let mut half = 0;
         for c in s.chars() {

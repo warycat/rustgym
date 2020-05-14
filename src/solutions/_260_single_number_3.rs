@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn single_number(nums: Vec<i32>) -> Vec<i32> {
+    fn single_number(nums: Vec<i32>) -> Vec<i32> {
         let mut bitmask = 0;
         for &num in &nums {
             bitmask ^= num;

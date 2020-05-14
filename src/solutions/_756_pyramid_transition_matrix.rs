@@ -1,9 +1,9 @@
-pub struct Solution;
+struct Solution;
 
 use std::collections::HashSet;
 
 impl Solution {
-    pub fn pyramid_transition(bottom: String, allowed: Vec<String>) -> bool {
+    fn pyramid_transition(bottom: String, allowed: Vec<String>) -> bool {
         let n = bottom.len();
         let mut v: Vec<Vec<usize>> = vec![vec![]; n];
         let mut map: Vec<Vec<HashSet<usize>>> = vec![vec![HashSet::new(); 7]; 7];
@@ -21,7 +21,7 @@ impl Solution {
         Self::backtrack(&mut v, &map, n - 1, n - 1)
     }
 
-    pub fn backtrack(
+    fn backtrack(
         v: &mut Vec<Vec<usize>>,
         map: &[Vec<HashSet<usize>>],
         row: usize,

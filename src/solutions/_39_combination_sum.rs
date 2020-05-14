@@ -1,14 +1,14 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn combination_sum(mut candidates: Vec<i32>, target: i32) -> Vec<Vec<i32>> {
+    fn combination_sum(mut candidates: Vec<i32>, target: i32) -> Vec<Vec<i32>> {
         candidates.sort_unstable();
         let mut combination: Vec<i32> = vec![];
         let mut res: Vec<Vec<i32>> = vec![];
         Self::backtrack(&mut res, &candidates, &mut combination, target, 0);
         res
     }
-    pub fn backtrack(
+    fn backtrack(
         res: &mut Vec<Vec<i32>>,
         candidates: &[i32],
         combination: &mut Vec<i32>,

@@ -1,9 +1,9 @@
-pub struct Solution;
+struct Solution;
 use std::collections::VecDeque;
 use util::*;
 
 impl Solution {
-    pub fn merge_k_lists(lists: Vec<ListLink>) -> ListLink {
+    fn merge_k_lists(lists: Vec<ListLink>) -> ListLink {
         if lists.is_empty() {
             return None;
         }
@@ -15,7 +15,7 @@ impl Solution {
         queue.pop_back().unwrap()
     }
 
-    pub fn merge(a: ListLink, b: ListLink) -> ListLink {
+    fn merge(a: ListLink, b: ListLink) -> ListLink {
         if a.is_none() && b.is_none() {
             return None;
         }

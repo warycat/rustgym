@@ -1,9 +1,9 @@
-pub struct Solution;
+struct Solution;
 
 use std::collections::HashSet;
 
 impl Solution {
-    pub fn repeated_n_times(a: Vec<i32>) -> i32 {
+    fn repeated_n_times(a: Vec<i32>) -> i32 {
         let mut hs: HashSet<i32> = HashSet::new();
         for x in a {
             if !hs.insert(x) {

@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn min_flips_mono_incr(s: String) -> i32 {
+    fn min_flips_mono_incr(s: String) -> i32 {
         let n = s.len();
         let s: Vec<char> = s.chars().collect();
         let mut left = vec![0; n];

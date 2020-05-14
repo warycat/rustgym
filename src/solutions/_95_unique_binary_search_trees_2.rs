@@ -1,15 +1,15 @@
-pub struct Solution;
+struct Solution;
 use util::*;
 
 impl Solution {
-    pub fn generate_trees(n: i32) -> Vec<TreeLink> {
+    fn generate_trees(n: i32) -> Vec<TreeLink> {
         if n == 0 {
             return vec![];
         }
         Self::generate(1, n)
     }
 
-    pub fn generate(left: i32, right: i32) -> Vec<TreeLink> {
+    fn generate(left: i32, right: i32) -> Vec<TreeLink> {
         let mut res = vec![];
         if left > right {
             return vec![None];

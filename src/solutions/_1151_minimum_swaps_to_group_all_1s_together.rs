@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn min_swaps(data: Vec<i32>) -> i32 {
+    fn min_swaps(data: Vec<i32>) -> i32 {
         let n = data.len();
         let m = data.iter().sum::<i32>() as usize;
         let mut sum = 0;

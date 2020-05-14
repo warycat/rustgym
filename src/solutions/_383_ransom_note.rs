@@ -1,9 +1,9 @@
-pub struct Solution;
+struct Solution;
 
 use std::collections::HashMap;
 
 impl Solution {
-    pub fn can_construct(ransom_note: String, magazine: String) -> bool {
+    fn can_construct(ransom_note: String, magazine: String) -> bool {
         let mut hm: HashMap<char, i32> = HashMap::new();
         if ransom_note.len() > magazine.len() {
             return false;

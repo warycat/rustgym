@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn valid_tic_tac_toe(board: Vec<String>) -> bool {
+    fn valid_tic_tac_toe(board: Vec<String>) -> bool {
         let mut a = vec![vec![]; 3];
         let mut x = 0;
         let mut o = 0;
@@ -24,7 +24,7 @@ impl Solution {
         x == o + 1 && win_x >= 0 && win_o == 0 || x == o && win_x == 0 && win_o <= 1
     }
 
-    pub fn win(board: &[Vec<char>], c: char) -> i32 {
+    fn win(board: &[Vec<char>], c: char) -> i32 {
         let mut rows = vec![0; 3];
         let mut cols = vec![0; 3];
         let mut diagonals = vec![0; 2];

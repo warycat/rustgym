@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn max_sum_after_partitioning(a: Vec<i32>, k: i32) -> i32 {
+    fn max_sum_after_partitioning(a: Vec<i32>, k: i32) -> i32 {
         let n = a.len();
         let mut dp = vec![0; n + 1];
         let k = k as usize;

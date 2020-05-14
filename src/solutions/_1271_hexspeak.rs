@@ -1,8 +1,8 @@
-pub struct Solution;
+struct Solution;
 
 #[allow(clippy::wrong_self_convention)]
 impl Solution {
-    pub fn to_hexspeak(num: String) -> String {
+    fn to_hexspeak(num: String) -> String {
         let x: i64 = num.parse::<i64>().unwrap();
         let s = format!("{:X}", x);
         let mut res: Vec<char> = vec![];

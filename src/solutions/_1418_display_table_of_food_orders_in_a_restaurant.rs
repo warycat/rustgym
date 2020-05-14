@@ -1,9 +1,9 @@
-pub struct Solution;
+struct Solution;
 use std::collections::BTreeSet;
 use std::collections::HashMap;
 
 impl Solution {
-    pub fn display_table(orders: Vec<Vec<String>>) -> Vec<Vec<String>> {
+    fn display_table(orders: Vec<Vec<String>>) -> Vec<Vec<String>> {
         let mut tables: BTreeSet<i32> = BTreeSet::new();
         let mut foods: BTreeSet<&str> = BTreeSet::new();
         let mut counts: HashMap<i32, HashMap<&str, usize>> = HashMap::new();

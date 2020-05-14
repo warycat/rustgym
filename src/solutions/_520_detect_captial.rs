@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn detect_capital_use(word: String) -> bool {
+    fn detect_capital_use(word: String) -> bool {
         let n = word.len();
         if n <= 1 {
             return true;

@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn island_perimeter(grid: Vec<Vec<i32>>) -> i32 {
+    fn island_perimeter(grid: Vec<Vec<i32>>) -> i32 {
         let n = grid.len();
         let m = grid[0].len();
         let mut sum = 0;

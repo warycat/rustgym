@@ -1,4 +1,4 @@
-pub struct Solution;
+struct Solution;
 use util::*;
 
 trait Preorder {
@@ -29,7 +29,7 @@ impl Preorder for TreeLink {
 }
 
 impl Solution {
-    pub fn deepest_leaves_sum(root: TreeLink) -> i32 {
+    fn deepest_leaves_sum(root: TreeLink) -> i32 {
         let mut res = 0;
         let mut max = 0;
         root.dfs(0, &mut max, &mut res);

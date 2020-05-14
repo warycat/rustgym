@@ -1,4 +1,4 @@
-pub struct Solution;
+struct Solution;
 use util::*;
 
 trait SecondMinimum {
@@ -37,7 +37,7 @@ impl SecondMinimum for TreeLink {
 }
 
 impl Solution {
-    pub fn find_second_minimum_value(root: TreeLink) -> i32 {
+    fn find_second_minimum_value(root: TreeLink) -> i32 {
         let mut min = None;
         if let Some(second_min) = root.find_second_minimum_value(&mut min) {
             second_min

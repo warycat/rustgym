@@ -1,7 +1,7 @@
 use rand::prelude::*;
 use std::collections::HashMap;
 
-pub struct Solution {
+struct Solution {
     size: usize,
     indexes: HashMap<usize, usize>,
     rng: ThreadRng,
@@ -10,7 +10,7 @@ pub struct Solution {
 }
 
 impl Solution {
-    pub fn new(n_rows: i32, n_cols: i32) -> Self {
+    fn new(n_rows: i32, n_cols: i32) -> Self {
         let rows = n_rows as usize;
         let cols = n_cols as usize;
         let size = rows * cols;
@@ -25,7 +25,7 @@ impl Solution {
         }
     }
 
-    pub fn flip(&mut self) -> Vec<i32> {
+    fn flip(&mut self) -> Vec<i32> {
         let r = self.rng.gen_range(0, self.size);
         let x = *self.indexes.entry(r).or_insert(r);
         self.size -= 1;
@@ -36,7 +36,7 @@ impl Solution {
         vec![row as i32, col as i32]
     }
 
-    pub fn reset(&mut self) {
+    fn reset(&mut self) {
         self.size = self.rows * self.cols;
         self.indexes = HashMap::new();
     }

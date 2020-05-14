@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn count_letters(s: String) -> i32 {
+    fn count_letters(s: String) -> i32 {
         let mut prev: Option<char> = None;
         let mut count = 0;
         let mut sum = 0;

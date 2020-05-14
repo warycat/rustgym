@@ -1,13 +1,9 @@
-pub struct Solution;
+struct Solution;
 use std::collections::HashMap;
 use std::collections::HashSet;
 
 impl Solution {
-    pub fn find_smallest_region(
-        regions: Vec<Vec<String>>,
-        region1: String,
-        region2: String,
-    ) -> String {
+    fn find_smallest_region(regions: Vec<Vec<String>>, region1: String, region2: String) -> String {
         let mut parent: HashMap<&String, &String> = HashMap::new();
         for list in &regions {
             let n = list.len();

@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn sort_by_bits(mut arr: Vec<i32>) -> Vec<i32> {
+    fn sort_by_bits(mut arr: Vec<i32>) -> Vec<i32> {
         arr.sort_unstable_by_key(|&x| (x.count_ones(), x));
         arr
     }

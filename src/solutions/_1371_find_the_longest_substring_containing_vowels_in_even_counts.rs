@@ -1,8 +1,8 @@
-pub struct Solution;
+struct Solution;
 use std::collections::HashMap;
 
 impl Solution {
-    pub fn find_the_longest_substring(s: String) -> i32 {
+    fn find_the_longest_substring(s: String) -> i32 {
         let mut mask = 0;
         let mut hm: HashMap<u8, usize> = HashMap::new();
         hm.insert(0, 0);
@@ -17,7 +17,7 @@ impl Solution {
         res as i32
     }
 
-    pub fn vowel(c: char) -> usize {
+    fn vowel(c: char) -> usize {
         match c {
             'a' => 1,
             'e' => 2,

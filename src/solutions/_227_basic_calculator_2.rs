@@ -1,35 +1,35 @@
-pub struct Solution;
+struct Solution;
 
 use std::iter::Peekable;
 use std::slice::Iter;
 
 #[derive(Debug, PartialEq, Eq, Clone, Copy)]
-pub enum Tok {
+enum Tok {
     Num(i32),
     Op(char),
 }
 use Tok::*;
 
 impl Tok {
-    pub fn is_expr_op(self) -> bool {
+    fn is_expr_op(self) -> bool {
         match self {
             Op('+') | Op('-') => true,
             _ => false,
         }
     }
-    pub fn is_factor_op(self) -> bool {
+    fn is_factor_op(self) -> bool {
         match self {
             Op('*') | Op('/') => true,
             _ => false,
         }
     }
-    pub fn val(self) -> Option<i32> {
+    fn val(self) -> Option<i32> {
         match self {
             Num(x) => Some(x),
             _ => None,
         }
     }
-    pub fn eval(self, lhs: i32, rhs: i32) -> Option<i32> {
+    fn eval(self, lhs: i32, rhs: i32) -> Option<i32> {
         match self {
             Op('+') => Some(lhs + rhs),
             Op('-') => Some(lhs - rhs),
@@ -47,7 +47,7 @@ impl Tok {
 }
 
 impl Solution {
-    pub fn calculate(s: String) -> i32 {
+    fn calculate(s: String) -> i32 {
         let tokens = Self::tokens(&s);
         let mut it = tokens.iter().peekable();
         if let Some(val) = Self::parse_expr(&mut it) {
@@ -57,7 +57,7 @@ impl Solution {
         }
     }
 
-    pub fn parse_expr(it: &mut Peekable<Iter<Tok>>) -> Option<i32> {
+    fn parse_expr(it: &mut Peekable<Iter<Tok>>) -> Option<i32> {
         let mut lhs = Self::parse_factor(it)?;
         while let Some(&tok) = it.peek() {
             if tok.is_expr_op() {
@@ -71,7 +71,7 @@ impl Solution {
         Some(lhs)
     }
 
-    pub fn parse_factor(it: &mut Peekable<Iter<Tok>>) -> Option<i32> {
+    fn parse_factor(it: &mut Peekable<Iter<Tok>>) -> Option<i32> {
         let mut lhs = Self::parse_num(it)?;
         while let Some(&tok) = it.peek() {
             if tok.is_factor_op() {
@@ -85,14 +85,14 @@ impl Solution {
         Some(lhs)
     }
 
-    pub fn parse_num(it: &mut Peekable<Iter<Tok>>) -> Option<i32> {
+    fn parse_num(it: &mut Peekable<Iter<Tok>>) -> Option<i32> {
         match it.next() {
             Some(Tok::Num(x)) => Some(*x),
             _ => None,
         }
     }
 
-    pub fn tokens(s: &str) -> Vec<Tok> {
+    fn tokens(s: &str) -> Vec<Tok> {
         let mut v: Vec<Tok> = vec![];
         let mut it = s.chars().peekable();
         while let Some(c) = it.next() {

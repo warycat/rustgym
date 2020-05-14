@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn two_city_sched_cost(costs: Vec<Vec<i32>>) -> i32 {
+    fn two_city_sched_cost(costs: Vec<Vec<i32>>) -> i32 {
         let n = costs.len();
         let mut diffs: Vec<i32> = costs.iter().map(|v| v[0] - v[1]).collect();
         diffs.sort_unstable();

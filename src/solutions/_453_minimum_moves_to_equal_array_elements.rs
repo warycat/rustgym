@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn min_moves(nums: Vec<i32>) -> i32 {
+    fn min_moves(nums: Vec<i32>) -> i32 {
         let mut min = nums[0];
         let mut sum = 0;
         for &x in &nums {

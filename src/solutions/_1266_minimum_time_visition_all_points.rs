@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn min_time_to_visit_all_points(points: Vec<Vec<i32>>) -> i32 {
+    fn min_time_to_visit_all_points(points: Vec<Vec<i32>>) -> i32 {
         let mut res = 0;
         let n = points.len();
         for i in 1..n {

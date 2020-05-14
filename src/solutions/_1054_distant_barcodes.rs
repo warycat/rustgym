@@ -1,8 +1,8 @@
-pub struct Solution;
+struct Solution;
 use std::collections::HashMap;
 
 impl Solution {
-    pub fn rearrange_barcodes(barcodes: Vec<i32>) -> Vec<i32> {
+    fn rearrange_barcodes(barcodes: Vec<i32>) -> Vec<i32> {
         let n = barcodes.len();
         if n == 1 {
             return barcodes;

@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 use std::fmt;
 
-pub struct Range {
+struct Range {
     start: i32,
     end: i32,
 }
@@ -17,7 +17,7 @@ impl fmt::Display for Range {
 }
 
 impl Solution {
-    pub fn summary_ranges(nums: Vec<i32>) -> Vec<String> {
+    fn summary_ranges(nums: Vec<i32>) -> Vec<String> {
         let mut r: Option<Range> = None;
         let mut res: Vec<String> = vec![];
         for x in nums {

@@ -1,9 +1,9 @@
-pub struct Solution;
+struct Solution;
 
 use std::collections::HashMap;
 
 impl Solution {
-    pub fn find_lhs(nums: Vec<i32>) -> i32 {
+    fn find_lhs(nums: Vec<i32>) -> i32 {
         let mut hs: HashMap<i32, i32> = HashMap::new();
         let mut max = 0;
         for &x in &nums {

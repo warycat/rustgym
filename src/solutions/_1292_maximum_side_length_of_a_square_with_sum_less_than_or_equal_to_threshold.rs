@@ -1,7 +1,7 @@
-pub struct Solution;
+ struct Solution;
 
 impl Solution {
-    pub fn max_side_length(mat: Vec<Vec<i32>>, threshold: i32) -> i32 {
+     fn max_side_length(mat: Vec<Vec<i32>>, threshold: i32) -> i32 {
         let n = mat.len();
         let m = mat[0].len();
         let mut prefix = vec![vec![0; m + 1]; n + 1];

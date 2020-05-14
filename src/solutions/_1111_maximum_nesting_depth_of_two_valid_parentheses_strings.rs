@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn max_depth_after_split(seq: String) -> Vec<i32> {
+    fn max_depth_after_split(seq: String) -> Vec<i32> {
         let n = seq.len();
         let mut level = 0;
         let mut res: Vec<i32> = vec![0; n];

@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn trap(height: Vec<i32>) -> i32 {
+    fn trap(height: Vec<i32>) -> i32 {
         let n = height.len();
         if n == 0 {
             return 0;

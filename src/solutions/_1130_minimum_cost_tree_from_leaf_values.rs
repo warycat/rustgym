@@ -1,8 +1,8 @@
-pub struct Solution;
+struct Solution;
 use std::i32;
 
 impl Solution {
-    pub fn mct_from_leaf_values(arr: Vec<i32>) -> i32 {
+    fn mct_from_leaf_values(arr: Vec<i32>) -> i32 {
         let mut res = 0;
         let mut stack: Vec<i32> = vec![i32::MAX];
         for x in arr {

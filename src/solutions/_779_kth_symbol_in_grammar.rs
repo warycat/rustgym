@@ -1,12 +1,12 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn kth_grammar(n: i32, k: i32) -> i32 {
+    fn kth_grammar(n: i32, k: i32) -> i32 {
         let n = n as usize - 1;
         let k = k as usize - 1;
         Self::kth(n, k)
     }
-    pub fn kth(n: usize, k: usize) -> i32 {
+    fn kth(n: usize, k: usize) -> i32 {
         if n == 0 {
             0
         } else {

@@ -1,8 +1,8 @@
-pub struct Solution;
+struct Solution;
 use std::collections::HashSet;
 
 #[derive(Hash, PartialEq, Eq, Debug)]
-pub enum Direction {
+enum Direction {
     Up,
     Right,
     Down,
@@ -13,7 +13,7 @@ pub enum Direction {
 type Island = Vec<Direction>;
 
 impl Solution {
-    pub fn num_distinct_islands(mut grid: Vec<Vec<i32>>) -> i32 {
+    fn num_distinct_islands(mut grid: Vec<Vec<i32>>) -> i32 {
         let n = grid.len();
         let m = grid[0].len();
         let mut hs: HashSet<Island> = HashSet::new();
@@ -29,14 +29,7 @@ impl Solution {
         hs.len() as i32
     }
 
-    pub fn dfs(
-        i: usize,
-        j: usize,
-        grid: &mut Vec<Vec<i32>>,
-        island: &mut Island,
-        n: usize,
-        m: usize,
-    ) {
+    fn dfs(i: usize, j: usize, grid: &mut Vec<Vec<i32>>, island: &mut Island, n: usize, m: usize) {
         use Direction::*;
         grid[i][j] = 0;
         if i > 0 && grid[i - 1][j] == 1 {

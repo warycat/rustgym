@@ -1,4 +1,4 @@
-pub struct Solution;
+struct Solution;
 use util::*;
 
 trait Preorder {
@@ -22,7 +22,7 @@ impl Preorder for TreeLink {
 }
 
 impl Solution {
-    pub fn right_side_view(root: TreeLink) -> Vec<i32> {
+    fn right_side_view(root: TreeLink) -> Vec<i32> {
         let mut res: Vec<i32> = vec![];
         root.preorder(0, &mut res);
         res

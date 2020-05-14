@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn plus_one(digits: Vec<i32>) -> Vec<i32> {
+    fn plus_one(digits: Vec<i32>) -> Vec<i32> {
         let mut sum: Vec<i32> = vec![];
         let mut carry: i32 = 0;
         for (i, d) in digits.iter().rev().enumerate() {

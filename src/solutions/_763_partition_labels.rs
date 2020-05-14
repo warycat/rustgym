@@ -1,8 +1,8 @@
-pub struct Solution;
+struct Solution;
 use std::collections::HashMap;
 
 impl Solution {
-    pub fn partition_labels(s: String) -> Vec<i32> {
+    fn partition_labels(s: String) -> Vec<i32> {
         let mut res = vec![];
         let mut last: HashMap<char, usize> = HashMap::new();
         for (i, c) in s.char_indices() {

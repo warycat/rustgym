@@ -1,4 +1,4 @@
-pub struct Solution;
+struct Solution;
 use util::*;
 
 trait Postorder {
@@ -63,7 +63,7 @@ impl Postorder for TreeLink {
 }
 
 impl Solution {
-    pub fn count_unival_subtrees(root: TreeLink) -> i32 {
+    fn count_unival_subtrees(root: TreeLink) -> i32 {
         let mut res = 0;
         root.postorder(&mut res);
         res

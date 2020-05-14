@@ -1,18 +1,18 @@
-pub struct Solution;
+struct Solution;
 use std::collections::HashMap;
 
 #[derive(Default)]
-pub struct Trie {
+struct Trie {
     children: HashMap<char, Trie>,
     end: bool,
 }
 
 impl Trie {
-    pub fn new() -> Self {
+    fn new() -> Self {
         Trie::default()
     }
 
-    pub fn insert(&mut self, s: String) {
+    fn insert(&mut self, s: String) {
         let mut link = self;
         for c in s.chars() {
             link = link.children.entry(c).or_default();
@@ -20,7 +20,7 @@ impl Trie {
         link.end = true;
     }
 
-    pub fn map<'a>(&self, s: &'a str) -> &'a str {
+    fn map<'a>(&self, s: &'a str) -> &'a str {
         let mut link = self;
         for (size, c) in s.char_indices() {
             if link.end {
@@ -37,7 +37,7 @@ impl Trie {
 }
 
 impl Solution {
-    pub fn replace_words(dict: Vec<String>, sentence: String) -> String {
+    fn replace_words(dict: Vec<String>, sentence: String) -> String {
         let mut trie = Trie::new();
         for word in dict {
             trie.insert(word);

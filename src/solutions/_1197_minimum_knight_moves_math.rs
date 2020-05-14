@@ -1,9 +1,9 @@
-pub struct Solution;
+struct Solution;
 
 use std::mem::swap;
 
 impl Solution {
-    pub fn min_knight_moves(mut x: i32, mut y: i32) -> i32 {
+    fn min_knight_moves(mut x: i32, mut y: i32) -> i32 {
         x = x.abs();
         y = y.abs();
         if x < y {

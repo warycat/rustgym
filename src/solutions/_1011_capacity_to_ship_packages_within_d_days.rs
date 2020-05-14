@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn ship_within_days(weights: Vec<i32>, d: i32) -> i32 {
+    fn ship_within_days(weights: Vec<i32>, d: i32) -> i32 {
         let mut sum = 0;
         let mut max = 0;
         for &w in &weights {
@@ -21,7 +21,7 @@ impl Solution {
         l
     }
 
-    pub fn days(capacity: i32, weights: &[i32]) -> i32 {
+    fn days(capacity: i32, weights: &[i32]) -> i32 {
         let mut cur = 0;
         let mut res = 1;
         for &w in weights {

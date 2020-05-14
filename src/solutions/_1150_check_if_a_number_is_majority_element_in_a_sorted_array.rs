@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn is_majority_element(nums: Vec<i32>, target: i32) -> bool {
+    fn is_majority_element(nums: Vec<i32>, target: i32) -> bool {
         let mut first: Option<usize> = None;
         let mut last: Option<usize> = None;
         let n = nums.len();

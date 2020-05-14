@@ -1,11 +1,11 @@
-pub struct Solution;
+struct Solution;
 
-pub struct Chess {
-    pub r: usize,
-    pub c: usize,
+struct Chess {
+    r: usize,
+    c: usize,
 }
 
-pub enum Direction {
+enum Direction {
     Right,
     Down,
     Left,
@@ -13,7 +13,7 @@ pub enum Direction {
 }
 
 impl Solution {
-    pub fn search_rook(board: &[Vec<char>]) -> Chess {
+    fn search_rook(board: &[Vec<char>]) -> Chess {
         for r in 0..8 {
             for c in 0..8 {
                 if board[r][c] == 'R' {
@@ -23,7 +23,7 @@ impl Solution {
         }
         unreachable!()
     }
-    pub fn search_pawn(board: &[Vec<char>], rook: &Chess, direction: Direction) -> bool {
+    fn search_pawn(board: &[Vec<char>], rook: &Chess, direction: Direction) -> bool {
         let mut r = rook.r;
         let mut c = rook.c;
 
@@ -63,7 +63,7 @@ impl Solution {
         }
         false
     }
-    pub fn num_rook_captures(board: Vec<Vec<char>>) -> i32 {
+    fn num_rook_captures(board: Vec<Vec<char>>) -> i32 {
         let mut sum = 0;
         let rook: Chess = Self::search_rook(&board);
         for direction in vec![

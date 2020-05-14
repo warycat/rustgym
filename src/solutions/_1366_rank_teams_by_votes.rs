@@ -1,8 +1,8 @@
-pub struct Solution;
+struct Solution;
 use std::cmp::Ordering::*;
 
 impl Solution {
-    pub fn rank_teams(votes: Vec<String>) -> String {
+    fn rank_teams(votes: Vec<String>) -> String {
         let n = votes[0].len();
         let mut count: Vec<Vec<usize>> = vec![vec![0; n]; 26];
         for s in &votes {

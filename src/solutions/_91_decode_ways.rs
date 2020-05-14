@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn num_decodings(s: String) -> i32 {
+    fn num_decodings(s: String) -> i32 {
         let s: Vec<u8> = s.bytes().map(|b| b - b'0').collect();
         let n = s.len();
         let mut a: Vec<i32> = vec![0; n + 1];

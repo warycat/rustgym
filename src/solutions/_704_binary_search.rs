@@ -1,8 +1,8 @@
-pub struct Solution;
+struct Solution;
 use std::cmp::Ordering::*;
 
 impl Solution {
-    pub fn search(nums: Vec<i32>, target: i32) -> i32 {
+    fn search(nums: Vec<i32>, target: i32) -> i32 {
         let n = nums.len();
         let mut l: usize = 0;
         let mut r: usize = nums.len() - 1;

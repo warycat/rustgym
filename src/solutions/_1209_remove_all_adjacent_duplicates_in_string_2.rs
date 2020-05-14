@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn remove_duplicates(s: String, k: i32) -> String {
+    fn remove_duplicates(s: String, k: i32) -> String {
         let mut stack: Vec<(char, usize)> = vec![];
         for c in s.chars() {
             if let Some(top) = stack.pop() {

@@ -1,7 +1,7 @@
-pub struct Solution;
+ struct Solution;
 
 impl Solution {
-    pub fn find_subsequences(nums: Vec<i32>) -> Vec<Vec<i32>> {
+     fn find_subsequences(nums: Vec<i32>) -> Vec<Vec<i32>> {
         let mut res: Vec<Vec<i32>> = vec![];
         let n = nums.len();
         let mut cur: Vec<i32> = vec![];
@@ -9,7 +9,7 @@ impl Solution {
         res
     }
 
-    pub fn dfs(start: usize, cur: &mut Vec<i32>, all: &mut Vec<Vec<i32>>, nums: &[i32], n: usize) {
+     fn dfs(start: usize, cur: &mut Vec<i32>, all: &mut Vec<Vec<i32>>, nums: &[i32], n: usize) {
         if start == n {
             if cur.len() > 1 {
                 all.push(cur.to_vec());

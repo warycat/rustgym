@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn prev_perm_opt1(mut a: Vec<i32>) -> Vec<i32> {
+    fn prev_perm_opt1(mut a: Vec<i32>) -> Vec<i32> {
         let n = a.len();
         if n < 2 {
             return a;

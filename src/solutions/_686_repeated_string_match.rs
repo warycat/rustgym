@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn repeated_string_match(a: String, b: String) -> i32 {
+    fn repeated_string_match(a: String, b: String) -> i32 {
         let mut s = String::new();
         let n = a.len();
         let m = b.len();

@@ -1,9 +1,9 @@
-pub struct Solution;
+struct Solution;
 
 use std::collections::HashSet;
 
 impl Solution {
-    pub fn is_valid_sudoku(board: Vec<Vec<char>>) -> bool {
+    fn is_valid_sudoku(board: Vec<Vec<char>>) -> bool {
         let mut rows: Vec<HashSet<char>> = vec![HashSet::new(); 9];
         let mut cols: Vec<HashSet<char>> = vec![HashSet::new(); 9];
         let mut boxes: Vec<HashSet<char>> = vec![HashSet::new(); 9];

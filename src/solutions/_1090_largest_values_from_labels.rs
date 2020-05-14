@@ -1,9 +1,9 @@
-pub struct Solution;
+struct Solution;
 use std::collections::HashMap;
 type Pair = (i32, i32);
 
 impl Solution {
-    pub fn largest_vals_from_labels(
+    fn largest_vals_from_labels(
         values: Vec<i32>,
         labels: Vec<i32>,
         num_wanted: i32,

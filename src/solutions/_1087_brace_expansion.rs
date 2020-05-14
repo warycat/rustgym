@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn expand(s: String) -> Vec<String> {
+    fn expand(s: String) -> Vec<String> {
         let mut v: Vec<Vec<char>> = vec![];
         let mut stack: Vec<char> = vec![];
         let mut inbrace = false;
@@ -33,13 +33,7 @@ impl Solution {
         res
     }
 
-    pub fn dfs(
-        start: usize,
-        cur: &mut Vec<char>,
-        all: &mut Vec<String>,
-        v: &[Vec<char>],
-        n: usize,
-    ) {
+    fn dfs(start: usize, cur: &mut Vec<char>, all: &mut Vec<String>, v: &[Vec<char>], n: usize) {
         if start == n {
             all.push(cur.iter().copied().collect());
         } else {

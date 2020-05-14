@@ -1,8 +1,8 @@
-pub struct Solution;
+struct Solution;
 use std::cmp::Ordering::*;
 
 impl Solution {
-    pub fn third_max(nums: Vec<i32>) -> i32 {
+    fn third_max(nums: Vec<i32>) -> i32 {
         let mut max1 = nums[0];
         let mut m2: Option<i32> = None;
         let mut m3: Option<i32> = None;
@@ -47,7 +47,7 @@ impl Solution {
 }
 
 #[test]
-pub fn name() {
+fn name() {
     let nums = vec![3, 2, 1];
     assert_eq!(Solution::third_max(nums), 1);
     let nums = vec![1, 2];

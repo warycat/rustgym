@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn max_profit(prices: Vec<i32>, fee: i32) -> i32 {
+    fn max_profit(prices: Vec<i32>, fee: i32) -> i32 {
         let n = prices.len();
         let mut cash = 0;
         let mut hold = -prices[0];

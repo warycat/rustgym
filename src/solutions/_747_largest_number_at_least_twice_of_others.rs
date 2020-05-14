@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn dominant_index(nums: Vec<i32>) -> i32 {
+    fn dominant_index(nums: Vec<i32>) -> i32 {
         let n = nums.len();
         if n == 1 {
             return 0;

@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn valid_utf8(data: Vec<i32>) -> bool {
+    fn valid_utf8(data: Vec<i32>) -> bool {
         let mut count = 0;
         for x in data {
             if count == 0 {

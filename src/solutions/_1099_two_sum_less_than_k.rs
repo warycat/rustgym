@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn two_sum_less_than_k(mut a: Vec<i32>, k: i32) -> i32 {
+    fn two_sum_less_than_k(mut a: Vec<i32>, k: i32) -> i32 {
         a.sort_unstable();
         let n = a.len();
         let mut l = 0;

@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn cal_points(ops: Vec<String>) -> i32 {
+    fn cal_points(ops: Vec<String>) -> i32 {
         let mut stack: Vec<i32> = vec![];
         for s in ops {
             match s.as_ref() {

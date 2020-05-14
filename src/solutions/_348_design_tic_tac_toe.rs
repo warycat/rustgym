@@ -1,4 +1,4 @@
-pub struct TicTacToe {
+ struct TicTacToe {
     rows: [Vec<usize>; 2],
     cols: [Vec<usize>; 2],
     diagonals: [[usize; 2]; 2],
@@ -6,7 +6,7 @@ pub struct TicTacToe {
 }
 
 impl TicTacToe {
-    pub fn new(n: i32) -> Self {
+     fn new(n: i32) -> Self {
         let n = n as usize;
         let rows = [vec![0; n], vec![0; n]];
         let cols = [vec![0; n], vec![0; n]];
@@ -18,7 +18,7 @@ impl TicTacToe {
             n,
         }
     }
-    pub fn make_a_move(&mut self, row: i32, col: i32, player: i32) -> i32 {
+     fn make_a_move(&mut self, row: i32, col: i32, player: i32) -> i32 {
         let i = row as usize;
         let j = col as usize;
         let p = player as usize - 1;

@@ -1,9 +1,9 @@
-pub struct Solution;
+struct Solution;
 
 use std::collections::HashMap;
 
 impl Solution {
-    pub fn prison_after_n_days(mut cells: Vec<i32>, mut n: i32) -> Vec<i32> {
+    fn prison_after_n_days(mut cells: Vec<i32>, mut n: i32) -> Vec<i32> {
         let mut hm: HashMap<Vec<i32>, i32> = HashMap::new();
         while n > 0 {
             hm.insert(cells.to_vec(), n);

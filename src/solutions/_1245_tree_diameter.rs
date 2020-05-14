@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn tree_diameter(edges: Vec<Vec<i32>>) -> i32 {
+    fn tree_diameter(edges: Vec<Vec<i32>>) -> i32 {
         let n = edges.len() + 1;
         let mut graph = vec![vec![]; n];
         for e in edges {
@@ -16,12 +16,7 @@ impl Solution {
         res as i32
     }
 
-    pub fn dfs(
-        u: usize,
-        visited: &mut Vec<bool>,
-        diameter: &mut usize,
-        graph: &[Vec<usize>],
-    ) -> usize {
+    fn dfs(u: usize, visited: &mut Vec<bool>, diameter: &mut usize, graph: &[Vec<usize>]) -> usize {
         visited[u] = true;
         let mut max_depth = 0;
         for &v in &graph[u] {

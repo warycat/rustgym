@@ -1,7 +1,7 @@
-pub struct Solution;
+ struct Solution;
 
 impl Solution {
-    pub fn fib(n: i32) -> i32 {
+     fn fib(n: i32) -> i32 {
         let mut a: Vec<i32> = vec![0; 31];
         a[1] = 1;
         for i in 2..=30 {

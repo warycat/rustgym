@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn is_valid(s: String) -> bool {
+    fn is_valid(s: String) -> bool {
         let mut stack: Vec<char> = vec![];
         for c in s.chars() {
             match c {

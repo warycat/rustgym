@@ -1,4 +1,4 @@
-pub struct Solution;
+struct Solution;
 
 trait Palindrome {
     fn is_palindrome(&self) -> bool;
@@ -22,7 +22,7 @@ impl Palindrome for String {
 }
 
 impl Solution {
-    pub fn remove_palindrome_sub(s: String) -> i32 {
+    fn remove_palindrome_sub(s: String) -> i32 {
         if s.is_empty() {
             0
         } else {

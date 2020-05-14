@@ -1,4 +1,4 @@
-pub struct Solution;
+struct Solution;
 use util::*;
 
 trait Preorder {
@@ -21,7 +21,7 @@ impl Preorder for TreeLink {
 }
 
 impl Solution {
-    pub fn sum_even_grandparent(root: TreeLink) -> i32 {
+    fn sum_even_grandparent(root: TreeLink) -> i32 {
         let mut res = 0;
         root.preorder(false, false, &mut res);
         res

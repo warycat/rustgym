@@ -1,24 +1,24 @@
-pub struct Solution;
+struct Solution;
 use std::collections::HashSet;
 
-pub struct Graph {
+struct Graph {
     edges: Vec<HashSet<usize>>,
     nodes: Vec<i32>,
     n: usize,
 }
 
 impl Graph {
-    pub fn new(n: usize) -> Self {
+    fn new(n: usize) -> Self {
         let edges: Vec<HashSet<usize>> = vec![HashSet::new(); n];
         let nodes: Vec<i32> = vec![0; n];
         Graph { edges, nodes, n }
     }
 
-    pub fn insert_edge(&mut self, u: usize, v: usize) {
+    fn insert_edge(&mut self, u: usize, v: usize) {
         self.edges[u].insert(v);
     }
 
-    pub fn dfs(&mut self, u: usize, color: i32) -> bool {
+    fn dfs(&mut self, u: usize, color: i32) -> bool {
         if self.nodes[u] == 0 {
             self.nodes[u] = color;
             for v in self.edges[u].clone() {
@@ -34,7 +34,7 @@ impl Graph {
 }
 
 impl Solution {
-    pub fn is_bipartite(graph: Vec<Vec<i32>>) -> bool {
+    fn is_bipartite(graph: Vec<Vec<i32>>) -> bool {
         let n = graph.len();
         let mut g = Graph::new(n);
         for u in 0..n {

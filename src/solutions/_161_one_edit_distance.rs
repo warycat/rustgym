@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn is_one_edit_distance(s: String, t: String) -> bool {
+    fn is_one_edit_distance(s: String, t: String) -> bool {
         let (short, long): (Vec<char>, Vec<char>) = if s.len() < t.len() {
             (s.chars().collect(), t.chars().collect())
         } else {

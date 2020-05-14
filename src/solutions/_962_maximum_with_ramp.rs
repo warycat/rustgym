@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn max_width_ramp(a: Vec<i32>) -> i32 {
+    fn max_width_ramp(a: Vec<i32>) -> i32 {
         let mut stack: Vec<usize> = vec![];
         let n = a.len();
         for i in 0..n {

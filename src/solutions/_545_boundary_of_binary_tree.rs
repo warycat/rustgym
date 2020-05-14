@@ -1,4 +1,4 @@
-pub struct Solution;
+struct Solution;
 
 use util::*;
 
@@ -55,7 +55,7 @@ impl Boundry for TreeLink {
 }
 
 impl Solution {
-    pub fn boundary_of_binary_tree(root: TreeLink) -> Vec<i32> {
+    fn boundary_of_binary_tree(root: TreeLink) -> Vec<i32> {
         let mut res: Vec<i32> = vec![];
         if let Some(node) = root {
             let node = node.borrow();

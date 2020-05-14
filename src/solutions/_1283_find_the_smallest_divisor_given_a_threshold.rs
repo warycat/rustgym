@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn smallest_divisor(nums: Vec<i32>, threshold: i32) -> i32 {
+    fn smallest_divisor(nums: Vec<i32>, threshold: i32) -> i32 {
         let mut l = 1;
         let mut r = 1_000_000;
         while l < r {

@@ -1,11 +1,11 @@
-pub struct Solution;
+struct Solution;
 use std::collections::BTreeSet;
 use std::collections::HashMap;
 
 type Edge = (usize, f64);
 
 impl Solution {
-    pub fn calc_equation(
+    fn calc_equation(
         equations: Vec<Vec<String>>,
         values: Vec<f64>,
         queries: Vec<Vec<String>>,
@@ -46,7 +46,7 @@ impl Solution {
         res
     }
 
-    pub fn dfs(
+    fn dfs(
         u: usize,
         v: usize,
         visited: &mut Vec<bool>,

@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn hamming_distance(x: i32, y: i32) -> i32 {
+    fn hamming_distance(x: i32, y: i32) -> i32 {
         let mut z = x ^ y;
         let mut sum = 0;
         for _ in 0..32 {

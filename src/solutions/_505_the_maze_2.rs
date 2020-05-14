@@ -1,8 +1,8 @@
-pub struct Solution;
+struct Solution;
 use std::collections::VecDeque;
 
 impl Solution {
-    pub fn shortest_distance(maze: Vec<Vec<i32>>, start: Vec<i32>, destination: Vec<i32>) -> i32 {
+    fn shortest_distance(maze: Vec<Vec<i32>>, start: Vec<i32>, destination: Vec<i32>) -> i32 {
         let n = maze.len();
         let m = maze[0].len();
         let r = start[0] as usize;

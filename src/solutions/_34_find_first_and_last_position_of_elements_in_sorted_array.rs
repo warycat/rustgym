@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn search_range(nums: Vec<i32>, target: i32) -> Vec<i32> {
+    fn search_range(nums: Vec<i32>, target: i32) -> Vec<i32> {
         let n = nums.len();
         match nums.binary_search(&target) {
             Ok(i) => {

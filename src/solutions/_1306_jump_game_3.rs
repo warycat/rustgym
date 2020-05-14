@@ -1,8 +1,8 @@
-pub struct Solution;
+struct Solution;
 use std::collections::VecDeque;
 
 impl Solution {
-    pub fn can_reach(arr: Vec<i32>, start: i32) -> bool {
+    fn can_reach(arr: Vec<i32>, start: i32) -> bool {
         let n = arr.len();
         let mut visited = vec![false; n];
         let mut queue = VecDeque::new();

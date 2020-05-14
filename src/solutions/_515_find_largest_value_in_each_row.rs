@@ -1,4 +1,4 @@
-pub struct Solution;
+struct Solution;
 use util::*;
 
 trait Preorder {
@@ -21,7 +21,7 @@ impl Preorder for TreeLink {
 }
 
 impl Solution {
-    pub fn largest_values(root: TreeLink) -> Vec<i32> {
+    fn largest_values(root: TreeLink) -> Vec<i32> {
         let mut res: Vec<i32> = vec![];
         root.preorder(0, &mut res);
         res

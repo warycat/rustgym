@@ -1,9 +1,9 @@
-pub struct Solution;
+struct Solution;
 use std::collections::HashMap;
 use std::collections::VecDeque;
 
 impl Solution {
-    pub fn kill_process(pid: Vec<i32>, ppid: Vec<i32>, kill: i32) -> Vec<i32> {
+    fn kill_process(pid: Vec<i32>, ppid: Vec<i32>, kill: i32) -> Vec<i32> {
         let mut res = vec![];
         let mut queue: VecDeque<i32> = VecDeque::new();
         let mut hm: HashMap<i32, Vec<i32>> = HashMap::new();

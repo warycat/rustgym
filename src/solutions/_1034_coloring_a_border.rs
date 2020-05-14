@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn color_border(mut grid: Vec<Vec<i32>>, r0: i32, c0: i32, color: i32) -> Vec<Vec<i32>> {
+    fn color_border(mut grid: Vec<Vec<i32>>, r0: i32, c0: i32, color: i32) -> Vec<Vec<i32>> {
         let n = grid.len();
         let m = grid[0].len();
         let r0 = r0 as usize;
@@ -12,7 +12,7 @@ impl Solution {
         Self::dfs(r0, c0, &mut visited, &mut grid, b_color, c_color, n, m);
         grid
     }
-    pub fn dfs(
+    fn dfs(
         i: usize,
         j: usize,
         visited: &mut [Vec<bool>],

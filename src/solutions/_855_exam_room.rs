@@ -6,7 +6,7 @@ use std::collections::HashMap;
 type Segment = (Reverse<i32>, i32, i32);
 
 #[derive(Debug)]
-pub struct ExamRoom {
+struct ExamRoom {
     n: i32,
     segments: BTreeSet<Segment>,
     l_indexes: HashMap<i32, i32>,
@@ -14,7 +14,7 @@ pub struct ExamRoom {
 }
 
 impl ExamRoom {
-    pub fn new(n: i32) -> Self {
+    fn new(n: i32) -> Self {
         let mut segments = BTreeSet::new();
         segments.insert(Self::segment(0, n - 1, n));
         let mut l_indexes = HashMap::new();
@@ -29,7 +29,7 @@ impl ExamRoom {
         }
     }
 
-    pub fn seat(&mut self) -> i32 {
+    fn seat(&mut self) -> i32 {
         let mut it = self.segments.iter();
         if let Some(&first) = it.next() {
             let l = first.1;
@@ -48,7 +48,7 @@ impl ExamRoom {
         }
     }
 
-    pub fn leave(&mut self, p: i32) {
+    fn leave(&mut self, p: i32) {
         let r1 = p - 1;
         let l1 = self.r_indexes[&r1];
         let l2 = p + 1;
@@ -62,7 +62,7 @@ impl ExamRoom {
         self.r_indexes.insert(r2, l1);
     }
 
-    pub fn segment(l: i32, r: i32, n: i32) -> Segment {
+    fn segment(l: i32, r: i32, n: i32) -> Segment {
         if l == 0 {
             return (Reverse(r), l, r);
         }
@@ -76,7 +76,7 @@ impl ExamRoom {
         }
     }
 
-    pub fn split(s: &Segment, n: i32) -> i32 {
+    fn split(s: &Segment, n: i32) -> i32 {
         let l = s.1;
         let r = s.2;
         if l == 0 {

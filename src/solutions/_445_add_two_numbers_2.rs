@@ -1,8 +1,8 @@
-pub struct Solution;
+struct Solution;
 use util::*;
 
 impl Solution {
-    pub fn add_two_numbers(l1: ListLink, l2: ListLink) -> ListLink {
+    fn add_two_numbers(l1: ListLink, l2: ListLink) -> ListLink {
         let mut v1: Vec<i32> = vec![];
         let mut v2: Vec<i32> = vec![];
         let mut p1 = &l1;

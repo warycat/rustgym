@@ -1,4 +1,4 @@
-pub struct Solution;
+struct Solution;
 use util::*;
 
 trait Postorder {
@@ -19,7 +19,7 @@ impl Postorder for TreeLink {
 }
 
 impl Solution {
-    pub fn flatten(root: &mut TreeLink) {
+    fn flatten(root: &mut TreeLink) {
         let mut prev: TreeLink = None;
         root.take().postorder(&mut prev);
         *root = prev;

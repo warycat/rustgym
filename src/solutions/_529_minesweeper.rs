@@ -1,8 +1,8 @@
-pub struct Solution;
+struct Solution;
 
 use std::collections::VecDeque;
 
-pub struct Point {
+struct Point {
     i: usize,
     j: usize,
 }
@@ -14,7 +14,7 @@ macro_rules! point {
 }
 
 impl Point {
-    pub fn adj(&self, n: usize, m: usize) -> Vec<Point> {
+    fn adj(&self, n: usize, m: usize) -> Vec<Point> {
         let mut res: Vec<Point> = vec![];
         for i in -1..=1 {
             for j in -1..=1 {
@@ -31,7 +31,7 @@ impl Point {
 }
 
 impl Solution {
-    pub fn update_board(mut board: Vec<Vec<char>>, click: Vec<i32>) -> Vec<Vec<char>> {
+    fn update_board(mut board: Vec<Vec<char>>, click: Vec<i32>) -> Vec<Vec<char>> {
         let n = board.len();
         let m = board[0].len();
         let i = click[0] as usize;

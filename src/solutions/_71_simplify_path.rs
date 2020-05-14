@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn simplify_path(path: String) -> String {
+    fn simplify_path(path: String) -> String {
         let mut stack: Vec<&str> = vec![];
         let mut res = "".to_string();
         for s in path.split_terminator('/') {

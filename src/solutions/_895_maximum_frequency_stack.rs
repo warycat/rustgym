@@ -1,25 +1,25 @@
 use std::collections::HashMap;
 
 #[derive(Default)]
-pub struct FreqStack {
+struct FreqStack {
     freq: HashMap<i32, usize>,
     stacks: HashMap<usize, Vec<i32>>,
     max_freq: usize,
 }
 
 impl FreqStack {
-    pub fn new() -> Self {
+    fn new() -> Self {
         FreqStack::default()
     }
 
-    pub fn push(&mut self, x: i32) {
+    fn push(&mut self, x: i32) {
         let n = self.freq.entry(x).or_default();
         *n += 1;
         self.stacks.entry(*n).or_default().push(x);
         self.max_freq = self.max_freq.max(*n);
     }
 
-    pub fn pop(&mut self) -> i32 {
+    fn pop(&mut self) -> i32 {
         let max_stack: &mut Vec<i32> = self.stacks.get_mut(&self.max_freq).unwrap();
         let x = max_stack.pop().unwrap();
         *self.freq.entry(x).or_default() -= 1;

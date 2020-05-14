@@ -1,9 +1,9 @@
-pub struct Solution;
+struct Solution;
 
 use std::i32;
 
 impl Solution {
-    pub fn sum_of_digits(a: Vec<i32>) -> i32 {
+    fn sum_of_digits(a: Vec<i32>) -> i32 {
         let mut min = i32::MAX;
         for x in a {
             min = i32::min(x, min);

@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn prefixes_div_by5(a: Vec<i32>) -> Vec<bool> {
+    fn prefixes_div_by5(a: Vec<i32>) -> Vec<bool> {
         let mut x = 0;
         let n = a.len();
         let mut res: Vec<bool> = vec![false; n];

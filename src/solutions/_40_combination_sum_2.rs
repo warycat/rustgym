@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn combination_sum2(mut candidates: Vec<i32>, target: i32) -> Vec<Vec<i32>> {
+    fn combination_sum2(mut candidates: Vec<i32>, target: i32) -> Vec<Vec<i32>> {
         let mut cur = vec![];
         let mut res = vec![];
         let n = candidates.len();
@@ -9,7 +9,7 @@ impl Solution {
         Self::dfs(0, target, &mut cur, &mut res, &candidates, n);
         res
     }
-    pub fn dfs(
+    fn dfs(
         start: usize,
         target: i32,
         cur: &mut Vec<i32>,

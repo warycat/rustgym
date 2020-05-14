@@ -1,18 +1,18 @@
 use std::collections::HashMap;
 
 #[derive(Default)]
-pub struct FileSystem {
-    pub paths: HashMap<String, i32>,
+struct FileSystem {
+    paths: HashMap<String, i32>,
 }
 
 impl FileSystem {
-    pub fn new() -> Self {
+    fn new() -> Self {
         FileSystem {
             paths: HashMap::new(),
         }
     }
 
-    pub fn create_path(&mut self, path: String, value: i32) -> bool {
+    fn create_path(&mut self, path: String, value: i32) -> bool {
         let index = path.rfind('/').unwrap();
         let parent = &path[0..index];
         if !self.paths.contains_key(&path) && (parent == "" || self.paths.contains_key(parent)) {
@@ -23,7 +23,7 @@ impl FileSystem {
         }
     }
 
-    pub fn get(&self, path: String) -> i32 {
+    fn get(&self, path: String) -> i32 {
         *self.paths.get(&path).unwrap_or(&-1)
     }
 }

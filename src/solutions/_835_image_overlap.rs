@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn largest_overlap(a: Vec<Vec<i32>>, b: Vec<Vec<i32>>) -> i32 {
+    fn largest_overlap(a: Vec<Vec<i32>>, b: Vec<Vec<i32>>) -> i32 {
         let n = a.len();
         let mut res = 0;
         for i in 0..n {
@@ -13,7 +13,7 @@ impl Solution {
         res
     }
 
-    pub fn translate(x: usize, y: usize, a: &[Vec<i32>], b: &[Vec<i32>], n: usize) -> i32 {
+    fn translate(x: usize, y: usize, a: &[Vec<i32>], b: &[Vec<i32>], n: usize) -> i32 {
         let mut res = 0;
         for i in 0..n {
             for j in 0..n {

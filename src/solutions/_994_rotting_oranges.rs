@@ -1,15 +1,15 @@
-pub struct Solution;
+struct Solution;
 
 use std::collections::VecDeque;
 
-pub struct Orange {
+struct Orange {
     r: usize,
     c: usize,
     t: i32,
 }
 
 impl Solution {
-    pub fn oranges_rotting(mut grid: Vec<Vec<i32>>) -> i32 {
+    fn oranges_rotting(mut grid: Vec<Vec<i32>>) -> i32 {
         let n = grid.len();
         let m = grid[0].len();
         let mut queue: VecDeque<Orange> = VecDeque::new();

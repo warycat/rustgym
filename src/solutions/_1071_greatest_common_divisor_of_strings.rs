@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn gcd_of_strings(str1: String, str2: String) -> String {
+    fn gcd_of_strings(str1: String, str2: String) -> String {
         let n1 = str1.len();
         let n2 = str2.len();
         let mut n = usize::min(n1, n2);

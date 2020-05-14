@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn reverse(x: i32) -> i32 {
+    fn reverse(x: i32) -> i32 {
         let mut abs = x.abs();
         let sign = x.signum();
         let mut y: i32 = 0;
@@ -23,16 +23,16 @@ impl Solution {
 }
 
 #[test]
-pub fn overflow() {
+fn overflow() {
     assert_eq!(Solution::reverse(2_147_483_647), 0);
 }
 
 #[test]
-pub fn pass() {
+fn pass() {
     assert_eq!(Solution::reverse(123_456_789), 987_654_321);
 }
 
 #[test]
-pub fn negative() {
+fn negative() {
     assert_eq!(Solution::reverse(-123), -321);
 }

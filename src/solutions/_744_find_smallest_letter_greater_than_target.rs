@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn next_greatest_letter(letters: Vec<char>, target: char) -> char {
+    fn next_greatest_letter(letters: Vec<char>, target: char) -> char {
         let n = letters.len();
         let mut l = 0;
         let mut r = n;

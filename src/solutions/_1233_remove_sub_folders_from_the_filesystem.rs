@@ -1,8 +1,8 @@
-pub struct Solution;
+struct Solution;
 use std::collections::HashSet;
 
 impl Solution {
-    pub fn remove_subfolders(folder: Vec<String>) -> Vec<String> {
+    fn remove_subfolders(folder: Vec<String>) -> Vec<String> {
         let mut hs: HashSet<String> = HashSet::new();
         for s in folder {
             hs.insert(s);
@@ -16,7 +16,7 @@ impl Solution {
         res
     }
 
-    pub fn is_subfolder(s: &str, hs: &HashSet<String>) -> bool {
+    fn is_subfolder(s: &str, hs: &HashSet<String>) -> bool {
         let n = s.len();
         for i in 0..n {
             if &s[i..=i] == "/" {

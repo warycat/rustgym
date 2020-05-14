@@ -1,11 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn distance_between_bus_stops(
-        distance: Vec<i32>,
-        mut start: i32,
-        mut destination: i32,
-    ) -> i32 {
+    fn distance_between_bus_stops(distance: Vec<i32>, mut start: i32, mut destination: i32) -> i32 {
         let n: usize = distance.len();
         let mut left = 0;
         let mut right = 0;

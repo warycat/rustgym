@@ -1,10 +1,10 @@
-pub struct Solution;
+ struct Solution;
 
 use std::collections::HashMap;
 use std::usize;
 
 impl Solution {
-    pub fn find_restaurant(list1: Vec<String>, list2: Vec<String>) -> Vec<String> {
+     fn find_restaurant(list1: Vec<String>, list2: Vec<String>) -> Vec<String> {
         let mut hm: HashMap<&str, usize> = HashMap::new();
         let mut min = usize::MAX;
         let mut res: Vec<String> = vec![];

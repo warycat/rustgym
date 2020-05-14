@@ -1,4 +1,4 @@
-pub struct Solution;
+struct Solution;
 
 #[derive(Debug, PartialEq, Eq, Clone, Copy)]
 enum D {
@@ -8,7 +8,7 @@ enum D {
 }
 
 impl D {
-    pub fn new(d: usize) -> Self {
+    fn new(d: usize) -> Self {
         match d {
             0 | 1 | 8 => D::Same,
             2 | 5 | 6 | 9 => D::Different,
@@ -18,7 +18,7 @@ impl D {
 }
 
 impl Solution {
-    pub fn rotated_digits(n: i32) -> i32 {
+    fn rotated_digits(n: i32) -> i32 {
         let n: usize = n as usize;
         let mut a: Vec<D> = vec![D::Invalid; (n + 1) as usize];
         for i in 0..=n {

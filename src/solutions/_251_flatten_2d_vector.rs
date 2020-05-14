@@ -1,10 +1,10 @@
-pub struct Vector2D {
-    pub array: Vec<i32>,
-    pub count: usize,
+ struct Vector2D {
+     array: Vec<i32>,
+     count: usize,
 }
 
 impl Vector2D {
-    pub fn new(v: Vec<Vec<i32>>) -> Self {
+     fn new(v: Vec<Vec<i32>>) -> Self {
         let mut array = vec![];
         for row in v {
             for col in row {
@@ -13,12 +13,12 @@ impl Vector2D {
         }
         Vector2D { array, count: 0 }
     }
-    pub fn next(&mut self) -> i32 {
+     fn next(&mut self) -> i32 {
         let res = self.array[self.count];
         self.count += 1;
         res
     }
-    pub fn has_next(&self) -> bool {
+     fn has_next(&self) -> bool {
         self.count < self.array.len()
     }
 }

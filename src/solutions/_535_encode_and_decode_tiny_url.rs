@@ -1,16 +1,16 @@
 #[derive(Default)]
-pub struct Codec {}
+ struct Codec {}
 
 impl Codec {
-    pub fn new() -> Self {
+     fn new() -> Self {
         Codec {}
     }
 
-    pub fn encode(&self, long: String) -> String {
+     fn encode(&self, long: String) -> String {
         long
     }
 
-    pub fn decode(&self, short: String) -> String {
+     fn decode(&self, short: String) -> String {
         short
     }
 }

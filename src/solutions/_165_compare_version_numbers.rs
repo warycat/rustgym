@@ -1,7 +1,7 @@
-pub struct Solution;
+ struct Solution;
 
 impl Solution {
-    pub fn compare_version(version1: String, version2: String) -> i32 {
+     fn compare_version(version1: String, version2: String) -> i32 {
         let version1: Vec<i32> = version1
             .split_terminator('.')
             .map(|s| s.parse::<i32>().unwrap())

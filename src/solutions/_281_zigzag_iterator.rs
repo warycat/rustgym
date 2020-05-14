@@ -2,12 +2,12 @@ use std::collections::VecDeque;
 use std::iter::FromIterator;
 
 #[derive(Debug)]
-pub struct ZigzagIterator {
-    pub queues: VecDeque<VecDeque<i32>>,
+struct ZigzagIterator {
+    queues: VecDeque<VecDeque<i32>>,
 }
 
 impl<'a> ZigzagIterator {
-    pub fn new(v1: Vec<i32>, v2: Vec<i32>) -> Self {
+    fn new(v1: Vec<i32>, v2: Vec<i32>) -> Self {
         let mut queues = VecDeque::new();
         if !v1.is_empty() {
             queues.push_back(VecDeque::from_iter(v1.into_iter()));
@@ -18,7 +18,7 @@ impl<'a> ZigzagIterator {
         ZigzagIterator { queues }
     }
 
-    pub fn next(&mut self) -> i32 {
+    fn next(&mut self) -> i32 {
         let mut first = self.queues.pop_front().unwrap();
         let res = first.pop_front().unwrap();
         if !first.is_empty() {
@@ -27,7 +27,7 @@ impl<'a> ZigzagIterator {
         res
     }
 
-    pub fn has_next(&self) -> bool {
+    fn has_next(&self) -> bool {
         !self.queues.is_empty()
     }
 }

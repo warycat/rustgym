@@ -9,52 +9,52 @@ type NodeRef = Rc<RefCell<Node>>;
 type Link = Option<NodeRef>;
 
 #[derive(Debug, Clone)]
-pub struct Element {
-    pub key: i32,
-    pub val: i32,
+struct Element {
+    key: i32,
+    val: i32,
 }
 
 impl Element {
-    pub fn new(key: i32, val: i32) -> Self {
+    fn new(key: i32, val: i32) -> Self {
         Element { key, val }
     }
 }
 
 #[derive(Debug)]
-pub struct Node {
-    pub element: Element,
-    pub prev: Link,
-    pub next: Link,
+struct Node {
+    element: Element,
+    prev: Link,
+    next: Link,
 }
 
 impl Node {
-    pub fn new(element: Element) -> Self {
+    fn new(element: Element) -> Self {
         Node {
             element,
             prev: None,
             next: None,
         }
     }
-    pub fn into_ref(self) -> NodeRef {
+    fn into_ref(self) -> NodeRef {
         Rc::new(RefCell::new(self))
     }
 }
 
 #[derive(Default)]
-pub struct List {
-    pub head: Link,
-    pub tail: Link,
+struct List {
+    head: Link,
+    tail: Link,
 }
 
 impl List {
-    pub fn new() -> Self {
+    fn new() -> Self {
         List {
             head: None,
             tail: None,
         }
     }
 
-    pub fn push_back(&mut self, new_node_ref: NodeRef) {
+    fn push_back(&mut self, new_node_ref: NodeRef) {
         new_node_ref.borrow_mut().prev = self.tail.clone();
         match self.tail.clone() {
             None => self.head = Some(new_node_ref.clone()),
@@ -63,7 +63,7 @@ impl List {
         self.tail = Some(new_node_ref);
     }
 
-    pub fn pop_front(&mut self) -> Option<Element> {
+    fn pop_front(&mut self) -> Option<Element> {
         self.head.clone().map(|node_ref| {
             let mut node = node_ref.borrow_mut();
             if let Some(next_node_ref) = node.next.take() {
@@ -78,7 +78,7 @@ impl List {
         })
     }
 
-    pub fn unlink_node(&mut self, node_ref: NodeRef) -> Element {
+    fn unlink_node(&mut self, node_ref: NodeRef) -> Element {
         let mut node = node_ref.borrow_mut();
         let prev = node.prev.take();
         let next = node.next.take();
@@ -92,7 +92,7 @@ impl List {
         }
         node.element.clone()
     }
-    pub fn iter(&self) -> ListIter {
+    fn iter(&self) -> ListIter {
         ListIter::new(self.head.clone(), self.tail.clone())
     }
 }
@@ -109,13 +109,13 @@ impl Drop for List {
     }
 }
 
-pub struct ListIter {
+struct ListIter {
     head: Link,
     tail: Link,
 }
 
 impl ListIter {
-    pub fn new(head: Link, tail: Link) -> Self {
+    fn new(head: Link, tail: Link) -> Self {
         ListIter { head, tail }
     }
 }
@@ -132,7 +132,7 @@ impl Iterator for ListIter {
 }
 
 #[derive(Debug)]
-pub struct LRUCache {
+struct LRUCache {
     hash_map: HashMap<i32, Weak<RefCell<Node>>>,
     list: List,
     length: usize,
@@ -140,7 +140,7 @@ pub struct LRUCache {
 }
 
 impl LRUCache {
-    pub fn new(capacity: i32) -> Self {
+    fn new(capacity: i32) -> Self {
         let hash_map: HashMap<i32, Weak<RefCell<Node>>> = HashMap::new();
         let list: List = List::new();
         let length = 0;
@@ -153,7 +153,7 @@ impl LRUCache {
         }
     }
 
-    pub fn get(&mut self, key: i32) -> i32 {
+    fn get(&mut self, key: i32) -> i32 {
         if let Some(element) = self.get_element(key) {
             element.val
         } else {
@@ -161,7 +161,7 @@ impl LRUCache {
         }
     }
 
-    pub fn put(&mut self, key: i32, val: i32) {
+    fn put(&mut self, key: i32, val: i32) {
         if self.put_element(key, val).is_none() {
             self.length += 1;
         }
@@ -171,7 +171,7 @@ impl LRUCache {
         }
     }
 
-    pub fn pop_element(&mut self) -> Option<Element> {
+    fn pop_element(&mut self) -> Option<Element> {
         if let Some(element) = self.list.pop_front() {
             self.hash_map.remove(&element.key);
             Some(element)
@@ -180,7 +180,7 @@ impl LRUCache {
         }
     }
 
-    pub fn put_element(&mut self, key: i32, val: i32) -> Option<Element> {
+    fn put_element(&mut self, key: i32, val: i32) -> Option<Element> {
         if let Some(node_ref) = self.get_ref(key) {
             let old_element = self.list.unlink_node(node_ref);
             let new_element = Element::new(key, val);
@@ -197,7 +197,7 @@ impl LRUCache {
         }
     }
 
-    pub fn get_element(&mut self, key: i32) -> Option<Element> {
+    fn get_element(&mut self, key: i32) -> Option<Element> {
         if let Some(node_ref) = self.get_ref(key) {
             let old_element = self.list.unlink_node(node_ref);
             let new_element = Element::new(old_element.key, old_element.val);
@@ -210,7 +210,7 @@ impl LRUCache {
         }
     }
 
-    pub fn get_ref(&mut self, key: i32) -> Option<NodeRef> {
+    fn get_ref(&mut self, key: i32) -> Option<NodeRef> {
         if let Some(weak) = self.hash_map.remove(&key) {
             if let Some(node_ref) = weak.upgrade() {
                 Some(node_ref)

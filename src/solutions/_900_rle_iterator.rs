@@ -1,4 +1,4 @@
-pub struct RLEIterator {
+struct RLEIterator {
     prefix: Vec<usize>,
     values: Vec<i32>,
     index: usize,
@@ -6,7 +6,7 @@ pub struct RLEIterator {
 }
 
 impl RLEIterator {
-    pub fn new(a: Vec<i32>) -> Self {
+    fn new(a: Vec<i32>) -> Self {
         let mut prefix = vec![];
         let mut values = vec![];
         let n = a.len();
@@ -29,7 +29,7 @@ impl RLEIterator {
         }
     }
 
-    pub fn next(&mut self, n: i32) -> i32 {
+    fn next(&mut self, n: i32) -> i32 {
         self.index += n as usize;
         match self.prefix.binary_search(&self.index) {
             Ok(i) => self.values[i],

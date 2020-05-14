@@ -1,10 +1,10 @@
-pub struct Solution;
+struct Solution;
 
 use std::collections::HashSet;
 use std::iter::FromIterator;
 
 impl Solution {
-    pub fn count_prime_set_bits(l: i32, r: i32) -> i32 {
+    fn count_prime_set_bits(l: i32, r: i32) -> i32 {
         let mut res = 0;
         let hs: HashSet<i32> = HashSet::from_iter(vec![2, 3, 5, 7, 11, 13, 17, 19]);
         for i in l..=r {

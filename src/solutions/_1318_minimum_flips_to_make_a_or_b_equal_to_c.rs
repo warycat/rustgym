@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn min_flips(a: i32, b: i32, c: i32) -> i32 {
+    fn min_flips(a: i32, b: i32, c: i32) -> i32 {
         let mut res = 0;
         for i in 0..32 {
             let aa = (a >> i) & 1;

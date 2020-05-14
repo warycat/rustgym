@@ -1,21 +1,21 @@
-pub struct Solution;
+ struct Solution;
 
 use std::collections::BTreeMap;
 use std::collections::BTreeSet;
 use std::collections::HashMap;
 
-pub struct UnionFind {
+ struct UnionFind {
     parents: Vec<usize>,
     n: usize,
 }
 
 impl UnionFind {
-    pub fn new(n: usize) -> Self {
+     fn new(n: usize) -> Self {
         let parents = (0..n).collect();
         UnionFind { parents, n }
     }
 
-    pub fn find(&mut self, i: usize) -> usize {
+     fn find(&mut self, i: usize) -> usize {
         let j = self.parents[i];
         if i == j {
             i
@@ -26,7 +26,7 @@ impl UnionFind {
         }
     }
 
-    pub fn union(&mut self, mut i: usize, mut j: usize) {
+     fn union(&mut self, mut i: usize, mut j: usize) {
         i = self.find(i);
         j = self.find(j);
         if i != j {
@@ -36,7 +36,7 @@ impl UnionFind {
 }
 
 impl Solution {
-    pub fn accounts_merge(accounts: Vec<Vec<String>>) -> Vec<Vec<String>> {
+     fn accounts_merge(accounts: Vec<Vec<String>>) -> Vec<Vec<String>> {
         let n = accounts.len();
         let mut btm: BTreeMap<&str, &str> = BTreeMap::new();
         for i in 0..n {

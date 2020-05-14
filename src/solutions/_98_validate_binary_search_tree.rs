@@ -1,4 +1,4 @@
-pub struct Solution;
+struct Solution;
 use util::*;
 
 trait Inorder {
@@ -17,7 +17,7 @@ impl Inorder for TreeLink {
 }
 
 impl Solution {
-    pub fn is_valid_bst(root: TreeLink) -> bool {
+    fn is_valid_bst(root: TreeLink) -> bool {
         let mut prev: Option<i32> = None;
         let mut res = true;
         root.inorder(&mut |x| {

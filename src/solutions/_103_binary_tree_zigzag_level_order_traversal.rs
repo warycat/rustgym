@@ -1,4 +1,4 @@
-pub struct Solution;
+struct Solution;
 use util::*;
 
 trait Preorder {
@@ -22,7 +22,7 @@ impl Preorder for TreeLink {
 }
 
 impl Solution {
-    pub fn zigzag_level_order(root: TreeLink) -> Vec<Vec<i32>> {
+    fn zigzag_level_order(root: TreeLink) -> Vec<Vec<i32>> {
         let mut levels: Vec<Vec<i32>> = vec![];
         root.preorder(0, &mut levels);
         for i in 0..levels.len() {

@@ -5,14 +5,14 @@ use std::collections::HashMap;
 type Pair = (Reverse<usize>, i32);
 
 #[derive(Default)]
-pub struct FirstUnique {
+struct FirstUnique {
     counts: HashMap<i32, usize>,
     queue: BinaryHeap<Pair>,
     id: usize,
 }
 
 impl FirstUnique {
-    pub fn new(nums: Vec<i32>) -> Self {
+    fn new(nums: Vec<i32>) -> Self {
         let mut res = FirstUnique::default();
         for x in nums {
             res.add(x);
@@ -20,14 +20,14 @@ impl FirstUnique {
         res
     }
 
-    pub fn add(&mut self, value: i32) {
+    fn add(&mut self, value: i32) {
         let count = self.counts.entry(value).or_default();
         *count += 1;
         self.id += 1;
         self.queue.push((Reverse(self.id), value));
     }
 
-    pub fn show_first_unique(&mut self) -> i32 {
+    fn show_first_unique(&mut self) -> i32 {
         while let Some(first) = self.queue.pop() {
             let value = first.1;
             if self.counts[&value] == 1 {

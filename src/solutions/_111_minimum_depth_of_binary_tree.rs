@@ -1,4 +1,4 @@
-pub struct Solution;
+struct Solution;
 use util::*;
 
 trait MinDepth {
@@ -28,7 +28,7 @@ impl MinDepth for TreeLink {
 }
 
 impl Solution {
-    pub fn min_depth(root: TreeLink) -> i32 {
+    fn min_depth(root: TreeLink) -> i32 {
         root.min_depth() as i32
     }
 }

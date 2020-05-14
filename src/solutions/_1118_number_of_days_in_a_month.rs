@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn number_of_days(y: i32, m: i32) -> i32 {
+    fn number_of_days(y: i32, m: i32) -> i32 {
         let days = vec![31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
         if m == 2 {
             if y % 4 == 0 && y % 100 != 0 || y % 400 == 0 {

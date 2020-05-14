@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn days_between_dates(date1: String, date2: String) -> i32 {
+    fn days_between_dates(date1: String, date2: String) -> i32 {
         let (y1, m1, d1) = Self::parse(date1);
         let (y2, m2, d2) = Self::parse(date2);
         let mut s1 = 0;
@@ -17,7 +17,7 @@ impl Solution {
         (s1 as i32 - s2 as i32).abs()
     }
 
-    pub fn parse(date: String) -> (usize, usize, usize) {
+    fn parse(date: String) -> (usize, usize, usize) {
         let a: Vec<&str> = date.split_terminator('-').collect();
         let year = a[0].parse::<usize>().unwrap();
         let month = a[1].parse::<usize>().unwrap();
@@ -25,11 +25,11 @@ impl Solution {
         (year, month, day)
     }
 
-    pub fn is_leap(year: usize) -> bool {
+    fn is_leap(year: usize) -> bool {
         year % 4 == 0 && (year % 100 != 0 || year % 400 == 0)
     }
 
-    pub fn day_of_year(year: usize, month: usize, day: usize) -> usize {
+    fn day_of_year(year: usize, month: usize, day: usize) -> usize {
         let mut days: Vec<usize> = vec![31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
         let mut sum = 0;
         if year % 4 == 0 && (year % 100 != 0 || year % 400 == 0) {

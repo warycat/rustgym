@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn decode(s: &[char], m: usize, i: &mut usize) -> String {
+    fn decode(s: &[char], m: usize, i: &mut usize) -> String {
         let mut res = "".to_string();
         while *i < m && s[*i] != ']' {
             if s[*i].is_digit(10) {
@@ -24,7 +24,7 @@ impl Solution {
         }
         res
     }
-    pub fn decode_string(s: String) -> String {
+    fn decode_string(s: String) -> String {
         let s: Vec<char> = s.chars().collect();
         let mut i = 0;
         Self::decode(&s, s.len(), &mut i)

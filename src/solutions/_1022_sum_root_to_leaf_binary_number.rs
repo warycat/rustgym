@@ -1,13 +1,13 @@
-pub struct Solution;
+struct Solution;
 use util::*;
 
 impl Solution {
-    pub fn sum_root_to_leaf(root: TreeLink) -> i32 {
+    fn sum_root_to_leaf(root: TreeLink) -> i32 {
         let mut sum = 0;
         Self::sum_r(&root, 0, &mut sum);
         sum
     }
-    pub fn sum_r(link: &TreeLink, parent_val: i32, sum: &mut i32) {
+    fn sum_r(link: &TreeLink, parent_val: i32, sum: &mut i32) {
         if let Some(node) = link {
             let node = node.borrow();
             let left = &node.left;

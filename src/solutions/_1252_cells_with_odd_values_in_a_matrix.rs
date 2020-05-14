@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn odd_cells(n: i32, m: i32, indices: Vec<Vec<i32>>) -> i32 {
+    fn odd_cells(n: i32, m: i32, indices: Vec<Vec<i32>>) -> i32 {
         let n = n as usize;
         let m = m as usize;
         let mut a = vec![vec![0; m]; n];

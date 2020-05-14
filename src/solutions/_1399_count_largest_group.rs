@@ -1,8 +1,8 @@
-pub struct Solution;
+struct Solution;
 use std::collections::HashMap;
 
 impl Solution {
-    pub fn count_largest_group(n: i32) -> i32 {
+    fn count_largest_group(n: i32) -> i32 {
         let mut hm: HashMap<i32, usize> = HashMap::new();
         let mut max = 0;
         for i in 1..=n {

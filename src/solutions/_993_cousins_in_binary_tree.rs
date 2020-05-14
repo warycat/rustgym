@@ -1,4 +1,4 @@
-pub struct Solution;
+struct Solution;
 use util::*;
 
 trait Preorder {
@@ -23,7 +23,7 @@ impl Preorder for TreeLink {
 }
 
 impl Solution {
-    pub fn is_cousins(root: TreeLink, x: i32, y: i32) -> bool {
+    fn is_cousins(root: TreeLink, x: i32, y: i32) -> bool {
         let mut rx: Option<(usize, i32)> = None;
         let mut ry: Option<(usize, i32)> = None;
         root.preorder(0, 0, &mut rx, x);

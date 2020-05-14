@@ -6,17 +6,17 @@ use std::collections::VecDeque;
 type Pair = (Reverse<usize>, String);
 
 #[derive(Default, Debug)]
-pub struct Trie {
+struct Trie {
     children: HashMap<char, Trie>,
     count: usize,
 }
 
 impl Trie {
-    pub fn new() -> Self {
+    fn new() -> Self {
         Trie::default()
     }
 
-    pub fn insert(&mut self, s: String, time: usize) {
+    fn insert(&mut self, s: String, time: usize) {
         let mut link = self;
         for c in s.chars() {
             link = link.children.entry(c).or_default();
@@ -24,7 +24,7 @@ impl Trie {
         link.count += time;
     }
 
-    pub fn search(&self, s: &mut Vec<char>, top3: &mut BinaryHeap<Pair>) {
+    fn search(&self, s: &mut Vec<char>, top3: &mut BinaryHeap<Pair>) {
         if self.count > 0 {
             top3.push((Reverse(self.count), s.iter().copied().collect()));
         }
@@ -39,13 +39,13 @@ impl Trie {
     }
 }
 
-pub struct AutocompleteSystem {
+struct AutocompleteSystem {
     buffer: Vec<char>,
     trie: Trie,
 }
 
 impl AutocompleteSystem {
-    pub fn new(sentences: Vec<String>, times: Vec<i32>) -> Self {
+    fn new(sentences: Vec<String>, times: Vec<i32>) -> Self {
         let mut trie = Trie::default();
         for (i, s) in sentences.into_iter().enumerate() {
             trie.insert(s, times[i] as usize);
@@ -54,7 +54,7 @@ impl AutocompleteSystem {
         AutocompleteSystem { trie, buffer }
     }
 
-    pub fn input(&mut self, c: char) -> Vec<String> {
+    fn input(&mut self, c: char) -> Vec<String> {
         if c == '#' {
             let s: String = self.buffer.drain(..).collect();
             self.trie.insert(s, 1);

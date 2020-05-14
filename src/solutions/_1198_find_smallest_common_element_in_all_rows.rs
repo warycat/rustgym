@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn smallest_common_element(mat: Vec<Vec<i32>>) -> i32 {
+    fn smallest_common_element(mat: Vec<Vec<i32>>) -> i32 {
         let mut count: Vec<usize> = vec![0; 10001];
         let n = mat.len();
         let m = mat[0].len();

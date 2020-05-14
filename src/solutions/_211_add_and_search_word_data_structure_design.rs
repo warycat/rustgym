@@ -1,13 +1,13 @@
 use std::collections::HashMap;
 
 #[derive(PartialEq, Eq, Default, Debug)]
-pub struct Trie {
-    pub children: HashMap<char, Trie>,
-    pub end: bool,
+struct Trie {
+    children: HashMap<char, Trie>,
+    end: bool,
 }
 
 impl Trie {
-    pub fn insert(&mut self, s: &str) {
+    fn insert(&mut self, s: &str) {
         let mut link = self;
         for c in s.chars() {
             link = link.children.entry(c).or_default();
@@ -15,7 +15,7 @@ impl Trie {
         link.end = true;
     }
 
-    pub fn search(&self, s: &str) -> bool {
+    fn search(&self, s: &str) -> bool {
         if s.is_empty() {
             return self.end;
         }
@@ -38,20 +38,20 @@ impl Trie {
 }
 
 #[derive(Default)]
-pub struct WordDictionary {
-    pub trie: Trie,
+struct WordDictionary {
+    trie: Trie,
 }
 
 impl WordDictionary {
-    pub fn new() -> Self {
+    fn new() -> Self {
         WordDictionary {
             trie: Trie::default(),
         }
     }
-    pub fn add_word(&mut self, word: String) {
+    fn add_word(&mut self, word: String) {
         self.trie.insert(&word);
     }
-    pub fn search(&self, word: String) -> bool {
+    fn search(&self, word: String) -> bool {
         self.trie.search(&word)
     }
 }

@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn valid_word_square(words: Vec<String>) -> bool {
+    fn valid_word_square(words: Vec<String>) -> bool {
         let n = words.len();
         for i in 0..n {
             let m = words[i].len();

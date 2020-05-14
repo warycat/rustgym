@@ -1,16 +1,16 @@
 use rand::prelude::*;
 
-pub struct Solution {
+struct Solution {
     rng: ThreadRng,
     nums: Vec<i32>,
 }
 
 impl Solution {
-    pub fn new(nums: Vec<i32>) -> Self {
+    fn new(nums: Vec<i32>) -> Self {
         let rng = thread_rng();
         Solution { rng, nums }
     }
-    pub fn pick(&mut self, target: i32) -> i32 {
+    fn pick(&mut self, target: i32) -> i32 {
         let n = self.nums.len();
         let mut count = 0;
         let mut res = 0;

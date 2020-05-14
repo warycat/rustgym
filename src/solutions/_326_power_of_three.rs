@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn is_power_of_three(n: i32) -> bool {
+    fn is_power_of_three(n: i32) -> bool {
         n > 0 && 1_162_261_467 % n == 0
     }
 }

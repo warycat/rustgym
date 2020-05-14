@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn day_of_the_week(day: i32, mut month: i32, mut year: i32) -> String {
+    fn day_of_the_week(day: i32, mut month: i32, mut year: i32) -> String {
         let days = [
             "Sunday",
             "Monday",

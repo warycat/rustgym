@@ -1,14 +1,14 @@
-pub struct Solution;
+struct Solution;
 use std::collections::HashMap;
 
 #[derive(Default)]
-pub struct Trie {
+struct Trie {
     children: HashMap<char, Trie>,
     end: Option<String>,
 }
 
 impl Trie {
-    pub fn insert(&mut self, word: String) {
+    fn insert(&mut self, word: String) {
         let mut link = self;
         for c in word.chars() {
             link = link.children.entry(c).or_default();
@@ -18,7 +18,7 @@ impl Trie {
 }
 
 impl Solution {
-    pub fn find_words(mut board: Vec<Vec<char>>, words: Vec<String>) -> Vec<String> {
+    fn find_words(mut board: Vec<Vec<char>>, words: Vec<String>) -> Vec<String> {
         let mut trie = Trie::default();
         for word in words {
             trie.insert(word);
@@ -34,7 +34,7 @@ impl Solution {
         res.into_iter().collect()
     }
 
-    pub fn dfs(
+    fn dfs(
         i: usize,
         j: usize,
         board: &mut Vec<Vec<char>>,

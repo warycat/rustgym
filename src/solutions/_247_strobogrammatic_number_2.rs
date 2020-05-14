@@ -1,8 +1,8 @@
-pub struct Solution;
+struct Solution;
 use std::collections::HashMap;
 
 impl Solution {
-    pub fn find_strobogrammatic(n: i32) -> Vec<String> {
+    fn find_strobogrammatic(n: i32) -> Vec<String> {
         let mut res = vec![];
         let hm: HashMap<char, char> =
             vec![('0', '0'), ('1', '1'), ('6', '9'), ('8', '8'), ('9', '6')]
@@ -14,7 +14,7 @@ impl Solution {
         res
     }
 
-    pub fn dfs(
+    fn dfs(
         i: usize,
         cur: &mut Vec<char>,
         all: &mut Vec<String>,

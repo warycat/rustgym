@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn transpose(a: Vec<Vec<i32>>) -> Vec<Vec<i32>> {
+    fn transpose(a: Vec<Vec<i32>>) -> Vec<Vec<i32>> {
         let n = a.len();
         let m = a[0].len();
         let mut res: Vec<Vec<i32>> = vec![vec![0; n]; m];

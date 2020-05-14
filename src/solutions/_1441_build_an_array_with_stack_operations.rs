@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn build_array(target: Vec<i32>, n: i32) -> Vec<String> {
+    fn build_array(target: Vec<i32>, n: i32) -> Vec<String> {
         let mut res = vec![];
         let m = target.len();
         let mut j = 0;

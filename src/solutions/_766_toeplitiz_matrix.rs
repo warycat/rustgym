@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn is_toeplitz_matrix(matrix: Vec<Vec<i32>>) -> bool {
+    fn is_toeplitz_matrix(matrix: Vec<Vec<i32>>) -> bool {
         let n = matrix.len();
         let m = matrix[0].len();
         for i in 0..n - 1 {

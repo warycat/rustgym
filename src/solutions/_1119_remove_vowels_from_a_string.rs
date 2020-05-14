@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn remove_vowels(s: String) -> String {
+    fn remove_vowels(s: String) -> String {
         s.chars()
             .filter(|&c| match c {
                 'a' | 'e' | 'i' | 'o' | 'u' => false,

@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn powerful_integers(x: i32, y: i32, bound: i32) -> Vec<i32> {
+    fn powerful_integers(x: i32, y: i32, bound: i32) -> Vec<i32> {
         let mut set: Vec<bool> = vec![false; bound as usize + 1];
         let mut i = 0;
         while x.pow(i) < bound {

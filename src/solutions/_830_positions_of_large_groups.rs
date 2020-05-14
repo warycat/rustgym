@@ -1,13 +1,13 @@
-pub struct Solution;
+struct Solution;
 
-pub struct Group {
+struct Group {
     c: char,
     start: usize,
     end: usize,
 }
 
 impl Solution {
-    pub fn large_group_positions(s: String) -> Vec<Vec<i32>> {
+    fn large_group_positions(s: String) -> Vec<Vec<i32>> {
         let mut prev: Option<Group> = None;
         let mut groups: Vec<Group> = vec![];
         for (i, c) in s.chars().enumerate() {

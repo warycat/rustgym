@@ -1,22 +1,22 @@
-pub struct StringIterator {
-    pub index: usize,
-    pub pairs: Vec<Pair>,
+struct StringIterator {
+    index: usize,
+    pairs: Vec<Pair>,
 }
 
 #[derive(Debug, PartialEq, Eq, Clone)]
-pub struct Pair {
-    pub c: char,
-    pub m: usize,
+struct Pair {
+    c: char,
+    m: usize,
 }
 
 impl Pair {
-    pub fn new(c: char, m: usize) -> Self {
+    fn new(c: char, m: usize) -> Self {
         Pair { c, m }
     }
 }
 
 impl StringIterator {
-    pub fn new(compressed_string: String) -> Self {
+    fn new(compressed_string: String) -> Self {
         let s: Vec<char> = compressed_string.chars().collect();
         let n = s.len();
         let mut i = 0;
@@ -35,7 +35,7 @@ impl StringIterator {
         StringIterator { index: 0, pairs }
     }
 
-    pub fn next(&mut self) -> char {
+    fn next(&mut self) -> char {
         if self.index == self.pairs.len() {
             ' '
         } else {
@@ -48,7 +48,7 @@ impl StringIterator {
         }
     }
 
-    pub fn has_next(&self) -> bool {
+    fn has_next(&self) -> bool {
         self.index < self.pairs.len()
     }
 }

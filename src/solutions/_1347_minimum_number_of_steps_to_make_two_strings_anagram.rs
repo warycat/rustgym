@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn min_steps(s: String, t: String) -> i32 {
+    fn min_steps(s: String, t: String) -> i32 {
         let mut count: Vec<i32> = vec![0; 26];
         for c in s.chars() {
             let i = (c as u32 - 'a' as u32) as usize;

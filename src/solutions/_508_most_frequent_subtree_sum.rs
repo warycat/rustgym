@@ -1,4 +1,4 @@
-pub struct Solution;
+struct Solution;
 use std::collections::HashMap;
 use util::*;
 
@@ -25,7 +25,7 @@ impl Postorder for TreeLink {
 }
 
 impl Solution {
-    pub fn find_frequent_tree_sum(root: TreeLink) -> Vec<i32> {
+    fn find_frequent_tree_sum(root: TreeLink) -> Vec<i32> {
         let mut hs: HashMap<i32, usize> = HashMap::new();
         let mut max: usize = 0;
         root.postorder(&mut hs, &mut max);

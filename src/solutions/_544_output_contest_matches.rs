@@ -1,4 +1,4 @@
-pub struct Solution;
+struct Solution;
 use std::collections::VecDeque;
 use std::fmt;
 
@@ -8,7 +8,7 @@ enum Match {
 }
 
 impl Match {
-    pub fn new(n: i32) -> Self {
+    fn new(n: i32) -> Self {
         let mut matches: VecDeque<Match> = VecDeque::new();
         for i in 1..=n {
             matches.push_back(Match::team(i));
@@ -24,11 +24,11 @@ impl Match {
         }
         matches.pop_back().unwrap()
     }
-    pub fn team(rank: i32) -> Self {
+    fn team(rank: i32) -> Self {
         Match::Team(rank)
     }
 
-    pub fn pair(strong: Match, week: Match) -> Self {
+    fn pair(strong: Match, week: Match) -> Self {
         Match::Pair(Box::new(strong), Box::new(week))
     }
 }
@@ -43,7 +43,7 @@ impl fmt::Display for Match {
 }
 
 impl Solution {
-    pub fn find_contest_match(n: i32) -> String {
+    fn find_contest_match(n: i32) -> String {
         Match::new(n).to_string()
     }
 }

@@ -1,8 +1,8 @@
-pub struct Solution;
+struct Solution;
 use util::*;
 
 impl Solution {
-    pub fn next_larger_nodes(mut head: ListLink) -> Vec<i32> {
+    fn next_larger_nodes(mut head: ListLink) -> Vec<i32> {
         let mut nodes = vec![];
         while let Some(node) = head {
             nodes.push(node.val);

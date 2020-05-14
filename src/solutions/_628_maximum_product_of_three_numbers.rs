@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn maximum_product(mut nums: Vec<i32>) -> i32 {
+    fn maximum_product(mut nums: Vec<i32>) -> i32 {
         nums.sort();
         let n = nums.len();
         i32::max(

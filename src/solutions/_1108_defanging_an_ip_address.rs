@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn defang_i_paddr(address: String) -> String {
+    fn defang_i_paddr(address: String) -> String {
         address.replace(".", "[.]")
     }
 }

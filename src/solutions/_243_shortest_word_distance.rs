@@ -1,10 +1,10 @@
-pub struct Solution;
+struct Solution;
 
 use std::collections::HashMap;
 use std::i32;
 
 impl Solution {
-    pub fn shortest_distance(words: Vec<String>, word1: String, word2: String) -> i32 {
+    fn shortest_distance(words: Vec<String>, word1: String, word2: String) -> i32 {
         let mut pos: HashMap<String, Vec<i32>> = HashMap::new();
         let mut min = i32::MAX;
         for i in 0..words.len() {

@@ -1,4 +1,4 @@
-pub struct Solution;
+struct Solution;
 
 use util::*;
 
@@ -22,7 +22,7 @@ impl Preorder for TreeLink {
 }
 
 impl Solution {
-    pub fn level_order(root: TreeLink) -> Vec<Vec<i32>> {
+    fn level_order(root: TreeLink) -> Vec<Vec<i32>> {
         let mut res = vec![];
         root.preorder(&mut res, 0);
         res

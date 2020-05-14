@@ -1,8 +1,8 @@
-pub struct Solution;
+struct Solution;
 use std::i32;
 
 impl Solution {
-    pub fn replace_elements(mut arr: Vec<i32>) -> Vec<i32> {
+    fn replace_elements(mut arr: Vec<i32>) -> Vec<i32> {
         let mut max = -1;
         let n = arr.len();
         for i in (0..n).rev() {

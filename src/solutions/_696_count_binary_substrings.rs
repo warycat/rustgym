@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn count_binary_substrings(s: String) -> i32 {
+    fn count_binary_substrings(s: String) -> i32 {
         let mut prev: usize = 0;
         let mut curr: usize = 0;
         let mut curr_c: Option<char> = None;

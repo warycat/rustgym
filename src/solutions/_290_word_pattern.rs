@@ -1,9 +1,9 @@
-pub struct Solution;
+struct Solution;
 
 use std::collections::HashMap;
 
 impl Solution {
-    pub fn word_pattern(pattern: String, string: String) -> bool {
+    fn word_pattern(pattern: String, string: String) -> bool {
         let chars: Vec<char> = pattern.chars().collect();
         let strings: Vec<String> = string.split_whitespace().map(|s| s.to_string()).collect();
         if chars.len() != strings.len() {

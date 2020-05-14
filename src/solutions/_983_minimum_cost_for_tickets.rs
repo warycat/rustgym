@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn mincost_tickets(days: Vec<i32>, costs: Vec<i32>) -> i32 {
+    fn mincost_tickets(days: Vec<i32>, costs: Vec<i32>) -> i32 {
         let n = days.len();
         let mut dp: Vec<i32> = vec![];
         let pass = vec![1, 7, 30];

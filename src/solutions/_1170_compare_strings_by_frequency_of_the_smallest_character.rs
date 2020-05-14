@@ -1,7 +1,7 @@
-pub struct Solution;
+ struct Solution;
 
 impl Solution {
-    pub fn f(s: &str) -> usize {
+     fn f(s: &str) -> usize {
         let mut count = vec![0; 26];
         let mut min = b'z';
         for b in s.bytes() {
@@ -10,7 +10,7 @@ impl Solution {
         }
         count[(min - b'a') as usize]
     }
-    pub fn num_smaller_by_frequency(queries: Vec<String>, words: Vec<String>) -> Vec<i32> {
+     fn num_smaller_by_frequency(queries: Vec<String>, words: Vec<String>) -> Vec<i32> {
         let f_queries: Vec<usize> = queries.iter().map(|s| Self::f(s)).collect();
         let f_words: Vec<usize> = words.iter().map(|s| Self::f(s)).collect();
         let mut counts = vec![0; 12];

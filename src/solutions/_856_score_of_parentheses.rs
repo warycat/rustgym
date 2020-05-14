@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn score_of_parentheses(s: String) -> i32 {
+    fn score_of_parentheses(s: String) -> i32 {
         let mut stack: Vec<i32> = vec![];
         for c in s.chars() {
             if c == '(' {

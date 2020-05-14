@@ -1,4 +1,4 @@
-pub struct Solution;
+struct Solution;
 use util::*;
 
 trait Postorder {
@@ -32,7 +32,7 @@ impl Postorder for TreeLink {
 }
 
 impl Solution {
-    pub fn construct_maximum_binary_tree(nums: Vec<i32>) -> TreeLink {
+    fn construct_maximum_binary_tree(nums: Vec<i32>) -> TreeLink {
         TreeLink::from_vec(0, nums.len(), &nums)
     }
 }

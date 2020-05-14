@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn search_matrix(matrix: Vec<Vec<i32>>, target: i32) -> bool {
+    fn search_matrix(matrix: Vec<Vec<i32>>, target: i32) -> bool {
         let mut a = vec![];
         for row in matrix {
             for x in row {

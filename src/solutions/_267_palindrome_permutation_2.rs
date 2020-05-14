@@ -1,8 +1,8 @@
-pub struct Solution;
+struct Solution;
 use std::collections::HashMap;
 
 impl Solution {
-    pub fn generate_palindromes(s: String) -> Vec<String> {
+    fn generate_palindromes(s: String) -> Vec<String> {
         let mut hm: HashMap<char, usize> = HashMap::new();
         for c in s.chars() {
             *hm.entry(c).or_default() += 1;
@@ -35,7 +35,7 @@ impl Solution {
         res.into_iter().collect()
     }
 
-    pub fn dfs(
+    fn dfs(
         cur: &mut Vec<char>,
         used: &mut Vec<bool>,
         all: &mut Vec<String>,

@@ -1,8 +1,8 @@
-pub struct Solution;
+struct Solution;
 use std::collections::VecDeque;
 
 impl Solution {
-    pub fn longest_subarray(nums: Vec<i32>, limit: i32) -> i32 {
+    fn longest_subarray(nums: Vec<i32>, limit: i32) -> i32 {
         let mut max_queue = VecDeque::new();
         let mut min_queue = VecDeque::new();
         let n = nums.len();

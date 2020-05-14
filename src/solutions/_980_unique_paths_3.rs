@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn unique_paths_iii(mut grid: Vec<Vec<i32>>) -> i32 {
+    fn unique_paths_iii(mut grid: Vec<Vec<i32>>) -> i32 {
         let mut res = 0;
         let n = grid.len();
         let m = grid[0].len();
@@ -23,7 +23,7 @@ impl Solution {
         res as i32
     }
 
-    pub fn dfs(
+    fn dfs(
         i: usize,
         j: usize,
         left: usize,
@@ -58,7 +58,7 @@ impl Solution {
         }
     }
 
-    pub fn adj(i: usize, j: usize, n: usize, m: usize) -> Vec<(usize, usize)> {
+    fn adj(i: usize, j: usize, n: usize, m: usize) -> Vec<(usize, usize)> {
         let mut res = vec![];
         if i > 0 {
             res.push((i - 1, j));

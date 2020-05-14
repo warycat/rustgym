@@ -1,8 +1,8 @@
-pub struct Solution;
+ struct Solution;
 use std::collections::HashSet;
 
 impl Solution {
-    pub fn flipgame(fronts: Vec<i32>, backs: Vec<i32>) -> i32 {
+     fn flipgame(fronts: Vec<i32>, backs: Vec<i32>) -> i32 {
         let n = fronts.len();
         let mut hs: HashSet<i32> = HashSet::new();
         let mut res = std::i32::MAX;

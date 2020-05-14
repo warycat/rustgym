@@ -1,17 +1,17 @@
-pub struct Solution;
+struct Solution;
 
-pub struct UnionFind {
+struct UnionFind {
     parents: Vec<usize>,
     n: usize,
 }
 
 impl UnionFind {
-    pub fn new(n: usize) -> Self {
+    fn new(n: usize) -> Self {
         let parents = (0..n).collect();
         UnionFind { parents, n }
     }
 
-    pub fn find(&mut self, i: usize) -> usize {
+    fn find(&mut self, i: usize) -> usize {
         let j = self.parents[i];
         if j == i {
             i
@@ -22,7 +22,7 @@ impl UnionFind {
         }
     }
 
-    pub fn union(&mut self, i: usize, j: usize) {
+    fn union(&mut self, i: usize, j: usize) {
         let i = self.find(i);
         let j = self.find(j);
         if i != j {
@@ -35,7 +35,7 @@ impl UnionFind {
 type Connection = (i32, usize, usize);
 
 impl Solution {
-    pub fn minimum_cost(n: i32, connections: Vec<Vec<i32>>) -> i32 {
+    fn minimum_cost(n: i32, connections: Vec<Vec<i32>>) -> i32 {
         let n = n as usize;
         let mut uf = UnionFind::new(n);
         let mut connections: Vec<Connection> = connections

@@ -1,8 +1,8 @@
-pub struct Solution;
+ struct Solution;
 use std::usize;
 
 impl Solution {
-    pub fn suggested_products(mut products: Vec<String>, search_word: String) -> Vec<Vec<String>> {
+     fn suggested_products(mut products: Vec<String>, search_word: String) -> Vec<Vec<String>> {
         let mut res = vec![];
         products.sort_unstable();
         let n = products.len();

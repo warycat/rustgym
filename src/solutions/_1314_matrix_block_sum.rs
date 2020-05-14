@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn matrix_block_sum(mat: Vec<Vec<i32>>, k: i32) -> Vec<Vec<i32>> {
+    fn matrix_block_sum(mat: Vec<Vec<i32>>, k: i32) -> Vec<Vec<i32>> {
         let n = mat.len();
         let m = mat[0].len();
         let mut prefix: Vec<Vec<i32>> = vec![vec![0; m]; n];
@@ -36,7 +36,7 @@ impl Solution {
         res
     }
 
-    pub fn sum(t: usize, l: usize, b: usize, r: usize, prefix: &[Vec<i32>]) -> i32 {
+    fn sum(t: usize, l: usize, b: usize, r: usize, prefix: &[Vec<i32>]) -> i32 {
         let mut res = prefix[b][r];
         if l > 0 {
             res -= prefix[b][l - 1];

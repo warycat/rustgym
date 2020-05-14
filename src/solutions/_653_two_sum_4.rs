@@ -1,4 +1,4 @@
-pub struct Solution;
+struct Solution;
 use std::cmp::Ordering::*;
 use util::*;
 
@@ -20,7 +20,7 @@ impl Inorder for TreeLink {
 }
 
 impl Solution {
-    pub fn find_target(root: TreeLink, k: i32) -> bool {
+    fn find_target(root: TreeLink, k: i32) -> bool {
         let mut v = vec![];
         root.inorder(&mut v, k);
         let n = v.len();

@@ -1,8 +1,8 @@
-pub struct Solution;
+struct Solution;
 use std::collections::BinaryHeap;
 
 impl Solution {
-    pub fn get_kth(lo: i32, hi: i32, k: i32) -> i32 {
+    fn get_kth(lo: i32, hi: i32, k: i32) -> i32 {
         let k = k as usize;
         let mut pq: BinaryHeap<(i32, i32)> = BinaryHeap::new();
         for i in lo..=hi {
@@ -13,7 +13,7 @@ impl Solution {
         }
         pq.pop().unwrap().1
     }
-    pub fn power(mut num: i32) -> i32 {
+    fn power(mut num: i32) -> i32 {
         let mut res = 0;
         while num != 1 {
             res += 1;

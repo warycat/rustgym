@@ -1,9 +1,9 @@
 #![allow(clippy::unreadable_literal)]
-pub struct Solution;
+struct Solution;
 use std::collections::HashMap;
 
 impl Solution {
-    pub fn max_number_of_families(n: i32, reserved_seats: Vec<Vec<i32>>) -> i32 {
+    fn max_number_of_families(n: i32, reserved_seats: Vec<Vec<i32>>) -> i32 {
         let n = n as usize;
         let mut hm: HashMap<usize, u16> = HashMap::new();
         for seat in reserved_seats {
@@ -19,7 +19,7 @@ impl Solution {
         res as i32
     }
 
-    pub fn num_of_families(row_bitset: u16) -> usize {
+    fn num_of_families(row_bitset: u16) -> usize {
         let two = 0b0111111110;
         let mid = 0b0001111000;
         let left = 0b0111100000;

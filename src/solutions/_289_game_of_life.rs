@@ -1,4 +1,4 @@
-pub struct Solution;
+struct Solution;
 
 #[derive(Copy, Clone)]
 enum State {
@@ -12,7 +12,7 @@ enum State {
 }
 
 impl State {
-    pub fn from_i32(x: i32) -> State {
+    fn from_i32(x: i32) -> State {
         match x {
             0 => State::Dead,
             1 => State::Live,
@@ -24,18 +24,18 @@ impl State {
         }
     }
 
-    pub fn to_i32(self) -> i32 {
+    fn to_i32(self) -> i32 {
         self as i32
     }
 
-    pub fn to_live(self) -> i32 {
+    fn to_live(self) -> i32 {
         match self {
             State::LiveToDead | State::Live | State::LiveToLive => 1,
             _ => 0,
         }
     }
 
-    pub fn next(self, neighbors: i32) -> State {
+    fn next(self, neighbors: i32) -> State {
         match self {
             State::Live => match neighbors {
                 0 | 1 => State::LiveToDead,
@@ -56,7 +56,7 @@ impl State {
 }
 
 impl Solution {
-    pub fn game_of_life(board: &mut Vec<Vec<i32>>) {
+    fn game_of_life(board: &mut Vec<Vec<i32>>) {
         let n = board.len();
         let m = board[0].len();
         for i in 0..n {

@@ -1,4 +1,4 @@
-pub struct Solution;
+ struct Solution;
 use util::*;
 
 trait Postorder {
@@ -35,7 +35,7 @@ impl Postorder for TreeLink {
 }
 
 impl Solution {
-    pub fn sufficient_subset(root: TreeLink, limit: i32) -> TreeLink {
+     fn sufficient_subset(root: TreeLink, limit: i32) -> TreeLink {
         root.postorder(limit)
     }
 }

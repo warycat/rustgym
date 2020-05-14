@@ -1,18 +1,18 @@
 use std::collections::VecDeque;
 
 #[derive(Default)]
-pub struct HitCounter {
-    pub queue: VecDeque<i32>,
+struct HitCounter {
+    queue: VecDeque<i32>,
 }
 
 impl HitCounter {
-    pub fn new() -> Self {
+    fn new() -> Self {
         HitCounter {
             queue: VecDeque::new(),
         }
     }
 
-    pub fn hit(&mut self, timestamp: i32) {
+    fn hit(&mut self, timestamp: i32) {
         while let Some(first) = self.queue.front() {
             if first + 300 <= timestamp {
                 self.queue.pop_front();
@@ -23,7 +23,7 @@ impl HitCounter {
         self.queue.push_back(timestamp);
     }
 
-    pub fn get_hits(&mut self, timestamp: i32) -> i32 {
+    fn get_hits(&mut self, timestamp: i32) -> i32 {
         while let Some(first) = self.queue.front() {
             if first + 300 <= timestamp {
                 self.queue.pop_front();

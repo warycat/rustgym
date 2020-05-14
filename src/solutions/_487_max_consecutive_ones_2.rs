@@ -1,8 +1,8 @@
-pub struct Solution;
+ struct Solution;
 use std::collections::VecDeque;
 
 impl Solution {
-    pub fn find_max_consecutive_ones(nums: Vec<i32>) -> i32 {
+     fn find_max_consecutive_ones(nums: Vec<i32>) -> i32 {
         let n = nums.len();
         let mut res = 0;
         let mut queue: VecDeque<usize> = VecDeque::from(vec![0, 0]);

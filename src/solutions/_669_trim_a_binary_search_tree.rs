@@ -1,8 +1,8 @@
-pub struct Solution;
+struct Solution;
 use util::*;
 
 impl Solution {
-    pub fn trim_bst(root: TreeLink, l: i32, r: i32) -> TreeLink {
+    fn trim_bst(root: TreeLink, l: i32, r: i32) -> TreeLink {
         if let Some(node) = root.clone() {
             let mut node = node.borrow_mut();
             let left = node.left.take();

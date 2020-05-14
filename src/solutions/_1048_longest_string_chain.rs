@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn is_prev(prev: &str, next: &str) -> bool {
+    fn is_prev(prev: &str, next: &str) -> bool {
         let mut i = 0;
         let mut j = 0;
         while i < prev.len() {
@@ -16,7 +16,7 @@ impl Solution {
         }
         true
     }
-    pub fn longest_str_chain(mut words: Vec<String>) -> i32 {
+    fn longest_str_chain(mut words: Vec<String>) -> i32 {
         let n = words.len();
         let mut v: Vec<i32> = vec![1; n];
         let mut res = 1;

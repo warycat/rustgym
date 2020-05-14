@@ -1,17 +1,17 @@
 #![allow(clippy::unreadable_literal)]
-pub struct Solution;
+struct Solution;
 use std::cmp::Reverse;
 use std::collections::BinaryHeap;
 use std::iter::FromIterator;
 
-pub struct UnionFind {
+struct UnionFind {
     parents: Vec<usize>,
     group: usize,
     n: usize,
 }
 
 impl UnionFind {
-    pub fn new(n: usize) -> Self {
+    fn new(n: usize) -> Self {
         let parents = (0..n).collect();
         UnionFind {
             parents,
@@ -20,7 +20,7 @@ impl UnionFind {
         }
     }
 
-    pub fn find(&mut self, i: usize) -> usize {
+    fn find(&mut self, i: usize) -> usize {
         let j = self.parents[i];
         if i == j {
             i
@@ -31,7 +31,7 @@ impl UnionFind {
         }
     }
 
-    pub fn union(&mut self, mut i: usize, mut j: usize) -> usize {
+    fn union(&mut self, mut i: usize, mut j: usize) -> usize {
         i = self.find(i);
         j = self.find(j);
         if i != j {
@@ -45,7 +45,7 @@ impl UnionFind {
 type Log = (Reverse<i32>, usize, usize);
 
 impl Solution {
-    pub fn earliest_acq(logs: Vec<Vec<i32>>, n: i32) -> i32 {
+    fn earliest_acq(logs: Vec<Vec<i32>>, n: i32) -> i32 {
         let mut pq = BinaryHeap::from_iter(
             logs.iter()
                 .map(|v| (Reverse(v[0]), v[1] as usize, v[2] as usize)),

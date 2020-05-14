@@ -1,11 +1,11 @@
-pub struct Solution;
+struct Solution;
 
 use std::cmp::Ordering;
 use std::collections::BinaryHeap;
 use std::i32;
 
 #[derive(Eq, Debug)]
-pub struct State {
+struct State {
     position: usize,
     stop: usize,
     cost: i32,
@@ -30,14 +30,14 @@ impl PartialEq for State {
 }
 
 #[derive(Copy, Clone)]
-pub struct Edge {
+struct Edge {
     u: usize,
     v: usize,
     cost: i32,
 }
 
 impl Solution {
-    pub fn find_cheapest_price(n: i32, flights: Vec<Vec<i32>>, src: i32, dst: i32, k: i32) -> i32 {
+    fn find_cheapest_price(n: i32, flights: Vec<Vec<i32>>, src: i32, dst: i32, k: i32) -> i32 {
         let n = n as usize;
         let src = src as usize;
         let dst = dst as usize;

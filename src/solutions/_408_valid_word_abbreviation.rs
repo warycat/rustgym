@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn valid_word_abbreviation(word: String, abbr: String) -> bool {
+    fn valid_word_abbreviation(word: String, abbr: String) -> bool {
         let mut i = 0;
         let mut j = 0;
         let n = word.len();

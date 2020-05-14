@@ -1,12 +1,12 @@
-pub struct Solution;
+struct Solution;
 
-pub struct Folder {
+struct Folder {
     level: usize,
     length: usize,
 }
 
 impl Solution {
-    pub fn length_longest_path(input: String) -> i32 {
+    fn length_longest_path(input: String) -> i32 {
         let mut stack: Vec<Folder> = vec![];
         let mut folder_length = 0;
         let mut max = 0;

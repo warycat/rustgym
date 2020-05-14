@@ -1,4 +1,4 @@
-pub struct Solution;
+struct Solution;
 use util::*;
 
 trait Preorder {
@@ -22,7 +22,7 @@ impl Preorder for TreeLink {
 }
 
 impl Solution {
-    pub fn find_bottom_left_value(root: TreeLink) -> i32 {
+    fn find_bottom_left_value(root: TreeLink) -> i32 {
         let mut leftmost: (usize, i32) = (0, 0);
         root.preorder(1, &mut leftmost);
         leftmost.1

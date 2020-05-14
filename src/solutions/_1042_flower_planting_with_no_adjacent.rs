@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn garden_no_adj(n: i32, paths: Vec<Vec<i32>>) -> Vec<i32> {
+    fn garden_no_adj(n: i32, paths: Vec<Vec<i32>>) -> Vec<i32> {
         let n = n as usize;
         let mut g: Vec<Vec<usize>> = vec![vec![]; n];
         for path in paths {

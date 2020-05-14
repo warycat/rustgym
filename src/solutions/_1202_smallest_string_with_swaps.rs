@@ -1,19 +1,19 @@
-pub struct Solution;
+ struct Solution;
 use std::cmp::Reverse;
 use std::collections::HashMap;
 
-pub struct UnionFind {
+ struct UnionFind {
     parents: Vec<usize>,
     n: usize,
 }
 
 impl UnionFind {
-    pub fn new(n: usize) -> Self {
+     fn new(n: usize) -> Self {
         let parents = (0..n).collect();
         UnionFind { parents, n }
     }
 
-    pub fn find(&mut self, i: usize) -> usize {
+     fn find(&mut self, i: usize) -> usize {
         let j = self.parents[i];
         if i == j {
             i
@@ -24,7 +24,7 @@ impl UnionFind {
         }
     }
 
-    pub fn union(&mut self, mut i: usize, mut j: usize) {
+     fn union(&mut self, mut i: usize, mut j: usize) {
         i = self.find(i);
         j = self.find(j);
         if i != j {
@@ -34,7 +34,7 @@ impl UnionFind {
 }
 
 impl Solution {
-    pub fn smallest_string_with_swaps(s: String, pairs: Vec<Vec<i32>>) -> String {
+     fn smallest_string_with_swaps(s: String, pairs: Vec<Vec<i32>>) -> String {
         let n = s.len();
         let mut uf = UnionFind::new(n);
         let mut hm: HashMap<usize, Vec<char>> = HashMap::new();

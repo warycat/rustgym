@@ -1,16 +1,16 @@
-pub struct NumArray {
+struct NumArray {
     prefix_sums: Vec<i32>,
 }
 
 impl NumArray {
-    pub fn new(mut nums: Vec<i32>) -> Self {
+    fn new(mut nums: Vec<i32>) -> Self {
         for i in 1..nums.len() {
             nums[i] += nums[i - 1];
         }
         NumArray { prefix_sums: nums }
     }
 
-    pub fn sum_range(&self, i: i32, j: i32) -> i32 {
+    fn sum_range(&self, i: i32, j: i32) -> i32 {
         let j: usize = j as usize;
         let i: usize = i as usize;
         if i == 0 {

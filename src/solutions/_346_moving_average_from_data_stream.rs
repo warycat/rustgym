@@ -1,13 +1,13 @@
 use std::collections::VecDeque;
 
-pub struct MovingAverage {
+struct MovingAverage {
     queue: VecDeque<i32>,
     sum: i32,
     size: usize,
 }
 
 impl MovingAverage {
-    pub fn new(size: i32) -> Self {
+    fn new(size: i32) -> Self {
         MovingAverage {
             queue: VecDeque::new(),
             sum: 0,
@@ -15,7 +15,7 @@ impl MovingAverage {
         }
     }
 
-    pub fn next(&mut self, val: i32) -> f64 {
+    fn next(&mut self, val: i32) -> f64 {
         self.sum += val;
         self.queue.push_back(val);
         if self.queue.len() > self.size {

@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn is_palindrome(x: i32) -> bool {
+    fn is_palindrome(x: i32) -> bool {
         if x < 0 {
             return false;
         }
@@ -17,11 +17,11 @@ impl Solution {
 }
 
 #[test]
-pub fn negative() {
+fn negative() {
     assert_eq!(Solution::is_palindrome(-123), false);
 }
 
 #[test]
-pub fn yes() {
+fn yes() {
     assert_eq!(Solution::is_palindrome(12321), true);
 }

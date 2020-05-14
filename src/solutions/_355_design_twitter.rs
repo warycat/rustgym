@@ -6,7 +6,7 @@ use std::collections::HashSet;
 type Tweet = (Reverse<usize>, i32);
 
 #[derive(Default)]
-pub struct Twitter {
+struct Twitter {
     time: usize,
     users: HashMap<i32, HashSet<i32>>,
     tweets: HashMap<i32, Vec<Tweet>>,
@@ -14,7 +14,7 @@ pub struct Twitter {
 }
 
 impl Twitter {
-    pub fn new() -> Self {
+    fn new() -> Self {
         let time = 0;
         let users = HashMap::new();
         let tweets = HashMap::new();
@@ -27,13 +27,13 @@ impl Twitter {
         }
     }
 
-    pub fn post_tweet(&mut self, user_id: i32, tweet_id: i32) {
+    fn post_tweet(&mut self, user_id: i32, tweet_id: i32) {
         self.time += 1;
         let tweet: Tweet = (Reverse(self.time), tweet_id);
         self.tweets.entry(user_id).or_default().push(tweet);
     }
 
-    pub fn get_news_feed(&mut self, user_id: i32) -> Vec<i32> {
+    fn get_news_feed(&mut self, user_id: i32) -> Vec<i32> {
         let mut pq: BinaryHeap<Tweet> = BinaryHeap::with_capacity(self.limit + 1);
         let mut res: Vec<i32> = vec![];
         let followers = self.users.entry(user_id).or_default();
@@ -55,14 +55,14 @@ impl Twitter {
         res
     }
 
-    pub fn follow(&mut self, follower_id: i32, followee_id: i32) {
+    fn follow(&mut self, follower_id: i32, followee_id: i32) {
         self.users
             .entry(follower_id)
             .or_default()
             .insert(followee_id);
     }
 
-    pub fn unfollow(&mut self, follower_id: i32, followee_id: i32) {
+    fn unfollow(&mut self, follower_id: i32, followee_id: i32) {
         self.users
             .entry(follower_id)
             .or_default()

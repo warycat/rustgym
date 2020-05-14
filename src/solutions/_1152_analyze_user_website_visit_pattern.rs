@@ -1,11 +1,11 @@
-pub struct Solution;
+struct Solution;
 use std::collections::HashMap;
 use std::collections::HashSet;
 
 type Sequence = (String, String, String);
 
 impl Solution {
-    pub fn most_visited_pattern(
+    fn most_visited_pattern(
         mut username: Vec<String>,
         mut timestamp: Vec<i32>,
         mut website: Vec<String>,

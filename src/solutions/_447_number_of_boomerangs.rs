@@ -1,12 +1,12 @@
-pub struct Solution;
+struct Solution;
 
 use std::collections::HashMap;
 
 impl Solution {
-    pub fn distance_square(a: &[i32], b: &[i32]) -> i32 {
+    fn distance_square(a: &[i32], b: &[i32]) -> i32 {
         (a[0] - b[0]) * (a[0] - b[0]) + (a[1] - b[1]) * (a[1] - b[1])
     }
-    pub fn number_of_boomerangs(points: Vec<Vec<i32>>) -> i32 {
+    fn number_of_boomerangs(points: Vec<Vec<i32>>) -> i32 {
         let n = points.len();
         let mut hm: HashMap<i32, i32> = HashMap::new();
         let mut sum = 0;

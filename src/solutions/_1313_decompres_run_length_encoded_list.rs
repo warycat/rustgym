@@ -1,7 +1,7 @@
-pub struct Solution;
+ struct Solution;
 
 impl Solution {
-    pub fn decompress_rl_elist(nums: Vec<i32>) -> Vec<i32> {
+     fn decompress_rl_elist(nums: Vec<i32>) -> Vec<i32> {
         let mut res = vec![];
         for p in nums.chunks(2) {
             let a = p[0] as usize;

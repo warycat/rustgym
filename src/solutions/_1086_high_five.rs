@@ -1,10 +1,10 @@
-pub struct Solution;
+struct Solution;
 use std::cmp::Reverse;
 use std::collections::BTreeMap;
 use std::collections::BinaryHeap;
 
 impl Solution {
-    pub fn high_five(items: Vec<Vec<i32>>) -> Vec<Vec<i32>> {
+    fn high_five(items: Vec<Vec<i32>>) -> Vec<Vec<i32>> {
         let mut btm: BTreeMap<i32, (BinaryHeap<Reverse<i32>>, i32)> = BTreeMap::new();
         let mut res = vec![];
         for item in items {

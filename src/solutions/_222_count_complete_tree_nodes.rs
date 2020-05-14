@@ -1,4 +1,4 @@
-pub struct Solution;
+struct Solution;
 use util::*;
 
 trait Count {
@@ -16,7 +16,7 @@ impl Count for TreeLink {
 }
 
 impl Solution {
-    pub fn count_nodes(root: TreeLink) -> i32 {
+    fn count_nodes(root: TreeLink) -> i32 {
         root.count()
     }
 }

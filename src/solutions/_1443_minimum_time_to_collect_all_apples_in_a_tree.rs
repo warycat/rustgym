@@ -1,8 +1,8 @@
-pub struct Solution;
+struct Solution;
 use std::collections::HashSet;
 
 impl Solution {
-    pub fn min_time(n: i32, edges: Vec<Vec<i32>>, has_apple: Vec<bool>) -> i32 {
+    fn min_time(n: i32, edges: Vec<Vec<i32>>, has_apple: Vec<bool>) -> i32 {
         let n = n as usize;
         let mut graph = vec![HashSet::new(); n];
         for e in edges {
@@ -16,12 +16,7 @@ impl Solution {
         Self::dfs(0, &mut visited, &graph, &has_apple)
     }
 
-    pub fn dfs(
-        u: usize,
-        visited: &mut Vec<bool>,
-        graph: &[HashSet<usize>],
-        has_apple: &[bool],
-    ) -> i32 {
+    fn dfs(u: usize, visited: &mut Vec<bool>, graph: &[HashSet<usize>], has_apple: &[bool]) -> i32 {
         let mut res = 0;
         for &v in &graph[u] {
             if !visited[v] {

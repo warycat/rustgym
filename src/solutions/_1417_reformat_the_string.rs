@@ -1,8 +1,8 @@
-pub struct Solution;
+struct Solution;
 use std::mem::swap;
 
 impl Solution {
-    pub fn reformat(s: String) -> String {
+    fn reformat(s: String) -> String {
         let mut chars: Vec<char> = vec![];
         let mut digits: Vec<char> = vec![];
         let mut res: Vec<char> = vec![];

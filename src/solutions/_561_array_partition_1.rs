@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn array_pair_sum(mut nums: Vec<i32>) -> i32 {
+    fn array_pair_sum(mut nums: Vec<i32>) -> i32 {
         nums.sort_unstable();
         nums.chunks(2).fold(0, |sum, pair| sum + pair[0])
     }

@@ -3,21 +3,21 @@ use rand::prelude::*;
 use std::collections::HashMap;
 
 #[derive(Default)]
-pub struct RandomizedSet {
-    pub rng: ThreadRng,
-    pub indexes: HashMap<i32, usize>,
-    pub values: Vec<i32>,
+struct RandomizedSet {
+    rng: ThreadRng,
+    indexes: HashMap<i32, usize>,
+    values: Vec<i32>,
 }
 
 impl RandomizedSet {
-    pub fn new() -> Self {
+    fn new() -> Self {
         RandomizedSet {
             rng: rand::thread_rng(),
             indexes: HashMap::new(),
             values: vec![],
         }
     }
-    pub fn insert(&mut self, val: i32) -> bool {
+    fn insert(&mut self, val: i32) -> bool {
         if self.indexes.get(&val).is_some() {
             false
         } else {
@@ -26,7 +26,7 @@ impl RandomizedSet {
             true
         }
     }
-    pub fn remove(&mut self, val: i32) -> bool {
+    fn remove(&mut self, val: i32) -> bool {
         if let Some(index) = self.indexes.remove(&val) {
             let last = self.values[self.values.len() - 1];
             self.indexes
@@ -39,7 +39,7 @@ impl RandomizedSet {
             false
         }
     }
-    pub fn get_random(&mut self) -> i32 {
+    fn get_random(&mut self) -> i32 {
         let index = self.rng.gen_range(0, self.values.len()) as usize;
         self.values[index]
     }

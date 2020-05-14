@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn find_min_difference(time_points: Vec<String>) -> i32 {
+    fn find_min_difference(time_points: Vec<String>) -> i32 {
         let n = time_points.len();
         const M: usize = 1440 as usize;
         if n > M {
@@ -36,7 +36,7 @@ impl Solution {
         min as i32
     }
 
-    pub fn clock_to_minute(s: String) -> usize {
+    fn clock_to_minute(s: String) -> usize {
         let parts: Vec<usize> = s.split(':').map(|s| s.parse::<usize>().unwrap()).collect();
         parts[0] * 60 + parts[1]
     }

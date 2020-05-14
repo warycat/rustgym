@@ -1,7 +1,7 @@
-pub struct Solution;
+ struct Solution;
 
 impl Solution {
-    pub fn pour_water(mut heights: Vec<i32>, v: i32, k: i32) -> Vec<i32> {
+     fn pour_water(mut heights: Vec<i32>, v: i32, k: i32) -> Vec<i32> {
         for _ in 0..v {
             let mut cur = k as usize;
             while cur > 0 && heights[cur] >= heights[cur - 1] {

@@ -1,4 +1,4 @@
-pub struct Solution;
+struct Solution;
 use util::*;
 
 trait Postorder {
@@ -39,7 +39,7 @@ impl Preorder for TreeLink {
 }
 
 impl Solution {
-    pub fn print_tree(root: TreeLink) -> Vec<Vec<String>> {
+    fn print_tree(root: TreeLink) -> Vec<Vec<String>> {
         let h = root.height();
         let w = (1 << h) - 1;
         let mut res = vec![vec!["".to_string(); w]; h];

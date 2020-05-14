@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn int_to_roman(mut num: i32) -> String {
+    fn int_to_roman(mut num: i32) -> String {
         let mapping: Vec<(i32, &str)> = vec![
             (1, "I"),
             (2, "II"),

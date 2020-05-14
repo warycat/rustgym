@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn count_bits(num: i32) -> Vec<i32> {
+    fn count_bits(num: i32) -> Vec<i32> {
         let n = num as usize;
         let mut res = vec![];
         for i in 0..=n {

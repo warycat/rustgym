@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn convert(s: String, num_rows: i32) -> String {
+    fn convert(s: String, num_rows: i32) -> String {
         let mut res = "".to_string();
         let n = num_rows as usize;
         if n == 1 {

@@ -1,24 +1,24 @@
-pub struct Solution;
+struct Solution;
 
 use std::cmp::Ordering;
 use std::collections::BTreeMap;
 
-pub struct Point {
+struct Point {
     x: i32,
     y: i32,
 }
 
 impl Point {
-    pub fn new(v: &[i32]) -> Self {
+    fn new(v: &[i32]) -> Self {
         Point { x: v[0], y: v[1] }
     }
-    pub fn manhattan(&self, other: &Point) -> i32 {
+    fn manhattan(&self, other: &Point) -> i32 {
         (self.x - other.x).abs() + (self.y - other.y).abs()
     }
 }
 
 #[derive(PartialEq, Eq)]
-pub struct Pair {
+struct Pair {
     i: usize,
     j: usize,
 }
@@ -41,7 +41,7 @@ impl PartialOrd for Pair {
 }
 
 impl Solution {
-    pub fn assign_bikes(workers: Vec<Vec<i32>>, bikes: Vec<Vec<i32>>) -> Vec<i32> {
+    fn assign_bikes(workers: Vec<Vec<i32>>, bikes: Vec<Vec<i32>>) -> Vec<i32> {
         let mut btm: BTreeMap<i32, Vec<Pair>> = BTreeMap::new();
         let n = workers.len();
         let mut res: Vec<i32> = vec![0; n];

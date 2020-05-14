@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn magical_string(n: i32) -> i32 {
+    fn magical_string(n: i32) -> i32 {
         if n == 0 {
             return 0;
         }

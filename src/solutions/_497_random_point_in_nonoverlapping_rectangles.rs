@@ -1,7 +1,7 @@
 use rand::distributions::WeightedIndex;
 use rand::prelude::*;
 
-pub struct Solution {
+struct Solution {
     rng: ThreadRng,
     rects: Vec<Vec<i32>>,
     size: usize,
@@ -9,7 +9,7 @@ pub struct Solution {
 }
 
 impl Solution {
-    pub fn new(rects: Vec<Vec<i32>>) -> Self {
+    fn new(rects: Vec<Vec<i32>>) -> Self {
         let rng = thread_rng();
         let size = rects.len();
         let weights: Vec<i32> = rects
@@ -25,7 +25,7 @@ impl Solution {
         }
     }
 
-    pub fn pick(&mut self) -> Vec<i32> {
+    fn pick(&mut self) -> Vec<i32> {
         let rect = &self.rects[self.rng.sample(&self.dist)];
         let x = self.rng.gen_range(rect[0], rect[2] + 1);
         let y = self.rng.gen_range(rect[1], rect[3] + 1);

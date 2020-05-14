@@ -1,18 +1,18 @@
 use rand::prelude::*;
 use util::*;
 
-pub struct Solution {
+struct Solution {
     head: ListLink,
     rng: ThreadRng,
 }
 
 impl Solution {
-    pub fn new(head: ListLink) -> Self {
+    fn new(head: ListLink) -> Self {
         let rng = thread_rng();
         Solution { head, rng }
     }
 
-    pub fn get_random(&mut self) -> i32 {
+    fn get_random(&mut self) -> i32 {
         let mut cur = &self.head;
         let mut res = 0;
         let mut count = 0;

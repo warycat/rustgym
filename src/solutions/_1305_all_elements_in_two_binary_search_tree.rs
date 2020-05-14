@@ -1,4 +1,4 @@
-pub struct Solution;
+struct Solution;
 use util::*;
 
 trait Inorder {
@@ -19,7 +19,7 @@ impl Inorder for TreeLink {
 }
 
 impl Solution {
-    pub fn get_all_elements(root1: TreeLink, root2: TreeLink) -> Vec<i32> {
+    fn get_all_elements(root1: TreeLink, root2: TreeLink) -> Vec<i32> {
         let mut res = vec![];
         let mut v1 = vec![];
         let mut v2 = vec![];

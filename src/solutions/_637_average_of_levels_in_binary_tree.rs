@@ -1,4 +1,4 @@
-pub struct Solution;
+struct Solution;
 use util::*;
 
 trait Preorder {
@@ -23,7 +23,7 @@ impl Preorder for TreeLink {
 }
 
 impl Solution {
-    pub fn average_of_levels(root: TreeLink) -> Vec<f64> {
+    fn average_of_levels(root: TreeLink) -> Vec<f64> {
         let mut levels: Vec<Vec<i32>> = vec![];
         root.preorder(0, &mut levels);
         levels

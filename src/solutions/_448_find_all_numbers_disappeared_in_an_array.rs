@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn find_disappeared_numbers(mut nums: Vec<i32>) -> Vec<i32> {
+    fn find_disappeared_numbers(mut nums: Vec<i32>) -> Vec<i32> {
         let n = nums.len();
         for i in 0..n {
             let index: usize = (nums[i].abs() as usize) - 1;

@@ -1,8 +1,8 @@
-pub struct Solution;
+struct Solution;
 use std::collections::HashMap;
 
 impl Solution {
-    pub fn num_k_len_substr_no_repeats(s: String, k: i32) -> i32 {
+    fn num_k_len_substr_no_repeats(s: String, k: i32) -> i32 {
         let k = k as usize;
         if s.len() < k {
             return 0;

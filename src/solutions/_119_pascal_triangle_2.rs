@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn get_row(row_index: i32) -> Vec<i32> {
+    fn get_row(row_index: i32) -> Vec<i32> {
         let row_index = row_index as usize;
         if row_index == 0 {
             return vec![1];

@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn largest_perimeter(mut a: Vec<i32>) -> i32 {
+    fn largest_perimeter(mut a: Vec<i32>) -> i32 {
         let n = a.len();
         a.sort_unstable();
         for i in (0..=n - 3).rev() {

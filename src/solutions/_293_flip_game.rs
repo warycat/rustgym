@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn generate_possible_next_moves(s: String) -> Vec<String> {
+    fn generate_possible_next_moves(s: String) -> Vec<String> {
         let mut res: Vec<String> = vec![];
         let n = s.len();
         for i in 1..n {

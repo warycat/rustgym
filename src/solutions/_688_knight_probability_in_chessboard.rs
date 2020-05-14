@@ -1,23 +1,23 @@
-pub struct Solution;
+struct Solution;
 
 type Point = (i32, i32);
 
 #[derive(Debug)]
-pub struct Chessboard {
+struct Chessboard {
     board: Vec<Vec<f64>>,
     temp: Vec<Vec<f64>>,
     n: i32,
 }
 
 impl Chessboard {
-    pub fn new(n: i32, p: Point) -> Self {
+    fn new(n: i32, p: Point) -> Self {
         let m = n as usize;
         let mut board: Vec<Vec<f64>> = vec![vec![0.0; m]; m];
         let temp: Vec<Vec<f64>> = vec![vec![0.0; m]; m];
         board[p.0 as usize][p.1 as usize] = 1.0;
         Chessboard { board, temp, n }
     }
-    pub fn adj(&self, p: Point) -> Vec<Point> {
+    fn adj(&self, p: Point) -> Vec<Point> {
         let offsets = [
             (1, 2),
             (2, 1),
@@ -39,7 +39,7 @@ impl Chessboard {
         }
         res
     }
-    pub fn next(&mut self) {
+    fn next(&mut self) {
         let m = self.n as usize;
         for i in 0..m {
             for j in 0..m {
@@ -59,7 +59,7 @@ impl Chessboard {
             }
         }
     }
-    pub fn sum(&mut self) -> f64 {
+    fn sum(&mut self) -> f64 {
         let mut res = 0.0;
         let m = self.n as usize;
         for i in 0..m {
@@ -72,7 +72,7 @@ impl Chessboard {
 }
 
 impl Solution {
-    pub fn knight_probability(n: i32, k: i32, r: i32, c: i32) -> f64 {
+    fn knight_probability(n: i32, k: i32, r: i32, c: i32) -> f64 {
         let mut chessboard: Chessboard = Chessboard::new(n, (r, c));
         for _ in 0..k {
             chessboard.next();
