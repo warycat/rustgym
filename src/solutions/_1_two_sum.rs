@@ -1,4 +1,4 @@
-struct Solution;
+pub struct Solution;
 
 use std::collections::HashMap;
 
@@ -17,7 +17,7 @@ impl Solution {
 }
 
 #[test]
-fn test() {
+pub fn test() {
     let nums = vec![2, 7, 11, 15];
     let target = 9;
     assert_eq!(Solution::two_sum(nums, target), vec![0, 1]);

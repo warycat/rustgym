@@ -407,10 +407,10 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook)|array|[solution](src/solutions/_999_available_captures_for_rook.rs)|
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|math|[solution](src/solutions/_9_palindrome_number.rs)|
 </details>
-<details><summary>Medium 467/684 68.27%</summary>
+<details><summary>Medium 471/684 68.86%</summary>
 
 
-|id|684 Medium Questions|Tags|467 Solutions|
+|id|684 Medium Questions|Tags|471 Solutions|
 |---|---|---|---|
 |427|[Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree)||   |
 |558|[Logical OR of Two Binary Grids Represented as Quad-Trees](https://leetcode.com/problems/logical-or-of-two-binary-grids-represented-as-quad-trees)||   |
@@ -423,9 +423,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |702|[Search in a Sorted Array of Unknown Size](https://leetcode.com/problems/search-in-a-sorted-array-of-unknown-size)|binary-search|   |
 |240|[Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii)|binary-search divide-and-conquer|   |
 |421|[Maximum XOR of Two Numbers in an Array](https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array)|bit-manipulation trie|   |
-|1080|[Insufficient Nodes in Root to Leaf Paths](https://leetcode.com/problems/insufficient-nodes-in-root-to-leaf-paths)|depth-first-search|   |
-|1376|[Time Needed to Inform All Employees](https://leetcode.com/problems/time-needed-to-inform-all-employees)|depth-first-search|   |
-|505|[The Maze II](https://leetcode.com/problems/the-maze-ii)|depth-first-search breadth-first-search|   |
 |542|[01 Matrix](https://leetcode.com/problems/01-matrix)|depth-first-search breadth-first-search|   |
 |934|[Shortest Bridge](https://leetcode.com/problems/shortest-bridge)|depth-first-search breadth-first-search|   |
 |1236|[Web Crawler](https://leetcode.com/problems/web-crawler)|depth-first-search breadth-first-search|   |
@@ -561,7 +558,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |901|[Online Stock Span](https://leetcode.com/problems/online-stock-span)|stack|   |
 |1124|[Longest Well-Performing Interval](https://leetcode.com/problems/longest-well-performing-interval)|stack|   |
 |341|[Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator)|stack design|   |
-|402|[Remove K Digits](https://leetcode.com/problems/remove-k-digits)|stack greedy|   |
 |144|[Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal)|stack tree|   |
 |255|[Verify Preorder Sequence in Binary Search Tree](https://leetcode.com/problems/verify-preorder-sequence-in-binary-search-tree)|stack tree|   |
 |271|[Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings)|string|   |
@@ -663,6 +659,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |106|[Construct Binary Tree from Inorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal)|array tree depth-first-search|[solution](src/solutions/_106_construct_binary_tree_from_inorder_and_postorder_traversal.rs)|
 |1072|[Flip Columns For Maximum Number of Equal Rows](https://leetcode.com/problems/flip-columns-for-maximum-number-of-equal-rows)|hash-table|[solution](src/solutions/_1072_flip_columns_for_maximum_number_of_equal_rows.rs)|
 |1079|[Letter Tile Possibilities](https://leetcode.com/problems/letter-tile-possibilities)|backtracking|[solution](src/solutions/_1079_letter_tile_possibilities.rs)|
+|1080|[Insufficient Nodes in Root to Leaf Paths](https://leetcode.com/problems/insufficient-nodes-in-root-to-leaf-paths)|depth-first-search|[solution](src/solutions/_1080_insufficient_nodes_in_root_to_leaf_paths.rs)|
 |1087|[Brace Expansion](https://leetcode.com/problems/brace-expansion)|backtracking|[solution](src/solutions/_1087_brace_expansion.rs)|
 |1090|[Largest Values From Labels](https://leetcode.com/problems/largest-values-from-labels)|hash-table greedy|[solution](src/solutions/_1090_largest_values_from_labels.rs)|
 |1091|[Shortest Path in Binary Matrix](https://leetcode.com/problems/shortest-path-in-binary-matrix)|breadth-first-search|[solution](src/solutions/_1091_shortest_path_in_binary_matrix.rs)|
@@ -759,6 +756,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1366|[Rank Teams by Votes](https://leetcode.com/problems/rank-teams-by-votes)|array sort|[solution](src/solutions/_1366_rank_teams_by_votes.rs)|
 |1371|[Find the Longest Substring Containing Vowels in Even Counts](https://leetcode.com/problems/find-the-longest-substring-containing-vowels-in-even-counts)|string|[solution](src/solutions/_1371_find_the_longest_substring_containing_vowels_in_even_counts.rs)|
 |1375|[Bulb Switcher III](https://leetcode.com/problems/bulb-switcher-iii)|array|[solution](src/solutions/_1375_bulb_switcher_3.rs)|
+|1376|[Time Needed to Inform All Employees](https://leetcode.com/problems/time-needed-to-inform-all-employees)|depth-first-search|[solution](src/solutions/_1376_time_needed_to_inform_all_employees.rs)|
 |137|[Single Number II](https://leetcode.com/problems/single-number-ii)|bit-manipulation|[solution](src/solutions/_137_single_number_2.rs)|
 |1381|[Design a Stack With Increment Operation](https://leetcode.com/problems/design-a-stack-with-increment-operation)|stack design|[solution](src/solutions/_1381_design_a_stack_with_increment_operation.rs)|
 |1382|[Balance a Binary Search Tree](https://leetcode.com/problems/balance-a-binary-search-tree)|binary-search-tree|[solution](src/solutions/_1382_balance_a_binary_search_tree.rs)|
@@ -886,6 +884,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |399|[Evaluate Division](https://leetcode.com/problems/evaluate-division)|union-find graph|[solution](src/solutions/_399_evaluate_division.rs)|
 |39|[Combination Sum](https://leetcode.com/problems/combination-sum)|array backtracking|[solution](src/solutions/_39_combination_sum.rs)|
 |3|[Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters)|hash-table two-pointers string sliding-window|[solution](src/solutions/_3_longest_substring_without_repeating_characters.rs)|
+|402|[Remove K Digits](https://leetcode.com/problems/remove-k-digits)|stack greedy|[solution](src/solutions/_402_remove_k_digits.rs)|
 |406|[Queue Reconstruction by Height](https://leetcode.com/problems/queue-reconstruction-by-height)|greedy|[solution](src/solutions/_406_queue_reconstruction_by_height.rs)|
 |40|[Combination Sum II](https://leetcode.com/problems/combination-sum-ii)|array backtracking|[solution](src/solutions/_40_combination_sum_2.rs)|
 |413|[Arithmetic Slices](https://leetcode.com/problems/arithmetic-slices)|math dynamic-programming|[solution](src/solutions/_413_arithmetic_slices.rs)|
@@ -920,6 +919,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |498|[Diagonal Traverse](https://leetcode.com/problems/diagonal-traverse)||[solution](src/solutions/_498_diagonal_traverse.rs)|
 |49|[Group Anagrams](https://leetcode.com/problems/group-anagrams)|hash-table string|[solution](src/solutions/_49_group_anagrams.rs)|
 |503|[Next Greater Element II](https://leetcode.com/problems/next-greater-element-ii)|stack|[solution](src/solutions/_503_next_greater_element_2.rs)|
+|505|[The Maze II](https://leetcode.com/problems/the-maze-ii)|depth-first-search breadth-first-search|[solution](src/solutions/_505_the_maze_2.rs)|
 |508|[Most Frequent Subtree Sum](https://leetcode.com/problems/most-frequent-subtree-sum)|hash-table tree|[solution](src/solutions/_508_most_frequent_subtree_sum.rs)|
 |50|[Pow(x, n)](https://leetcode.com/problems/powx-n)|math binary-search|[solution](src/solutions/_50_pow_x_n.rs)|
 |513|[Find Bottom Left Tree Value](https://leetcode.com/problems/find-bottom-left-tree-value)|tree depth-first-search breadth-first-search|[solution](src/solutions/_513_find_bottom_left_tree_value.rs)|

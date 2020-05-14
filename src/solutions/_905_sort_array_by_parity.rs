@@ -1,7 +1,7 @@
 struct Solution;
 
 impl Solution {
-    pub fn sort_array_by_parity(mut a: Vec<i32>) -> Vec<i32> {
+    fn sort_array_by_parity(mut a: Vec<i32>) -> Vec<i32> {
         let mut l = 0;
         let mut r = a.len() - 1;
         while l < r {

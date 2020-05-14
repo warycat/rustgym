@@ -1,5 +1,5 @@
 [package]
-name = "leetcode_rs"
+name = "rustgym"
 version = "0.1.0"
 authors = ["yinchu"]
 edition = "2018"

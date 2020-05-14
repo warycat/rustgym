@@ -8,4 +8,6 @@
 #[cfg_attr(test, macro_use)]
 pub extern crate util;
 
-mod solutions;
+pub mod solutions;
+
+pub use solutions::*;

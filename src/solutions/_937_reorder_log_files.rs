@@ -3,7 +3,7 @@ struct Solution;
 use std::cmp::Ordering::*;
 
 impl Solution {
-    pub fn reorder_log_files(mut logs: Vec<String>) -> Vec<String> {
+    fn reorder_log_files(mut logs: Vec<String>) -> Vec<String> {
         logs.sort_by(|a, b| {
             let i = a.find(' ').unwrap();
             let j = b.find(' ').unwrap();

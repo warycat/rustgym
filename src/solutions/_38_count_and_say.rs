@@ -1,8 +1,8 @@
 struct Solution;
 
 struct Pair {
-    pub digit: char,
-    pub count: usize,
+    digit: char,
+    count: usize,
 }
 
 impl Solution {
