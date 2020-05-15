@@ -1,14 +1,14 @@
+extern crate pkg_config;
 use cc::Build;
 use glob::glob;
 
 fn main() {
-    println!("cargo:rustc-link-lib=gvc");
-    println!("cargo:rustc-link-lib=cgraph");
-    println!("cargo:rustc-link-lib=cdt");
+    let library = pkg_config::probe_library("libgvc").unwrap();
+    let include_path: String = library.include_paths[0].to_str().unwrap().to_string();
     Build::new()
         .compiler("clang++")
         .cpp(true)
-        .flag("-I/usr/local/include/graphviz")
+        .include(include_path)
         .flag("-std=c++11")
         .flag("-stdlib=libc++")
         .files(glob("src/*.cpp").expect("entries").filter_map(|x| x.ok()))
