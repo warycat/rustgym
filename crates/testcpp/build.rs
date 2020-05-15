@@ -2,7 +2,6 @@ use cc::Build;
 use glob::glob;
 
 fn main() {
-    println!("cargo:rustc-link-search=/usr/local/Cellar/graphviz/2.44.0/lib/graphviz");
     println!("cargo:rustc-link-lib=gvc");
     println!("cargo:rustc-link-lib=cgraph");
     println!("cargo:rustc-link-lib=cdt");

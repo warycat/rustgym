@@ -7,6 +7,12 @@ matrix:
   allow_failures:
     - rust: nightly
   fast_finish: true
+
+addons:
+  apt:
+    packages:
+      - graphviz
+
 script:
   - cargo build --verbose --all
   - cargo test --verbose --all
