@@ -8,10 +8,22 @@ matrix:
     - rust: nightly
   fast_finish: true
 
+os:
+  - linux
+  - osx
+
+compiler:
+  - gcc
+  - clang
+
 addons:
   apt:
     packages:
       - graphviz
+
+before_install:
+  - if [ "$TRAVIS_OS_NAME" = "osx" ]; then brew update          ; fi
+  - if [ "$TRAVIS_OS_NAME" = "osx" ]; then brew install graphviz; fi
 
 script:
   - cargo build --verbose --all
