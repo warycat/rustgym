@@ -10,7 +10,6 @@ const TITLE: &str = "# Leetcode Solutions in Rust";
 const BODY: &str = "
 This project demostrates how to create **Data Structures** and to implement **Algorithms** using programming language **Rust**
 All the solutions here are crafted with love and their performance beats 99% of other solutions on the leetcode website. Tutorial videos will be added later.
-![test svg](./test.svg)
 
 ### Please subscribe to our [Rust Gym Youtube Channel](https://www.youtube.com/channel/UCV9HzRLPKjI8SttaIYOygsw) for future videos.
 
@@ -57,6 +56,8 @@ const CODING_INTERVIEW: &str = "
 ### Coding Interview
 Leetcode is a website where people–mostly software engineers–practice their coding skills. There are 1200+ questions (and growing), each with multiple solutions. Questions are ranked by level of difficulty: easy, medium, and hard. Within the last decade or so, the technical interview process has become formulaic and what some describe “unnatural” for engineers. What people are asked to perform in an interview–solving word or code based teasers, coding on a whiteboard, and being asked to produce clean optimized solutions in a short time frame–is not what they would experience in a daily work environment.
 ";
+
+const TEST_SVG: &str = "![test svg](./test.svg)";
 
 const CI: &str = "### leetcode_rs [![Build Status](https://travis-ci.org/warycat/leetcode_rs.svg?branch=master)](https://travis-ci.org/warycat/leetcode_rs)";
 const LEETCODE_JSON_URL: &str = "https://leetcode.com/api/problems/algorithms/";
@@ -318,7 +319,7 @@ fn main() {
     let src_dir = Path::new(&cargo_dir).join(SRC);
     let solution_list = RustSolutionList::new(src_dir);
     let headers = vec_string![TITLE, BODY, CI];
-    let footers = vec_string!(CODING_INTERVIEW);
+    let footers = vec_string!(CODING_INTERVIEW, TEST_SVG);
     let readme = Readme::new(headers, solution_list, question_list, tags, footers);
     fs::write(&readme_md, format!("{}", readme)).unwrap();
 
