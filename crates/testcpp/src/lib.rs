@@ -1,4 +1,9 @@
+use std::ffi::CStr;
+use std::ffi::CString;
+use std::os::raw::c_char;
 pub static mut VERSION: i32 = 0;
+mod gvc;
+use gvc::*;
 
 #[no_mangle]
 extern "C" fn isBadVersion(version: i32) -> bool {
@@ -34,4 +39,14 @@ extern "C" {
 
     #[allow(improper_ctypes)]
     pub fn leftMostColumnWithOne(matrix: &BinaryMatrix) -> i32;
+
+    fn csvg() -> *mut c_char;
+}
+
+pub fn svg() -> String {
+    let c_buf: *const c_char = unsafe { csvg() };
+    let c_str: &CStr = unsafe { CStr::from_ptr(c_buf) };
+    let str_slice: &str = c_str.to_str().unwrap();
+    let str_buf: String = str_slice.to_owned();
+    str_buf
 }
