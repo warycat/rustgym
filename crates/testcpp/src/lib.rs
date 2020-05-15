@@ -2,8 +2,6 @@ use std::ffi::CStr;
 use std::ffi::CString;
 use std::os::raw::c_char;
 pub static mut VERSION: i32 = 0;
-mod gvc;
-use gvc::*;
 
 #[no_mangle]
 extern "C" fn isBadVersion(version: i32) -> bool {

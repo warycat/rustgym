@@ -951,15 +951,15 @@ bool write(Agraph_t *g, const char *filename)
     return (!err);
 }
 
-bool tred(Agraph_t *g)
-{
-    int err;
+// bool tred(Agraph_t *g)
+// {
+//     int err;
 
-    if (!g)
-        return false;
-    err = gvToolTred(g);
-    return (!err);
-}
+//     if (!g)
+//         return false;
+//     err = gvToolTred(g);
+//     return (!err);
+// }
 
 extern "C"
 {
