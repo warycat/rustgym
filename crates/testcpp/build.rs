@@ -9,7 +9,7 @@ fn main() {
         .compiler("clang++")
         .cpp(true)
         .include(include_path)
-        .flag("-std=c++11")
+        .cpp_link_stdlib("c++")
         .files(glob("src/*.cpp").expect("entries").filter_map(|x| x.ok()))
         .compile("libfoo.a");
 }
