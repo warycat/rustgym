@@ -12,6 +12,7 @@ fn main() {
         "stdc++"
     };
     Build::new()
+        .cpp(true)
         .include(include_path)
         .cpp_set_stdlib(stdlib)
         .files(glob("src/*.cpp").expect("entries").filter_map(|x| x.ok()))
