@@ -497,10 +497,10 @@ Agraph_t *firstsupg(Agraph_t *g)
     return g->parent;
 }
 
-Agraph_t *nextsupg(Agraph_t *g, Agraph_t *sg)
-{
-    return NULL;
-}
+// Agraph_t *nextsupg(Agraph_t *g, Agraph_t *sg)
+// {
+//     return NULL;
+// }
 
 Agedge_t *firstout(Agraph_t *g)
 {
@@ -951,25 +951,32 @@ bool write(Agraph_t *g, const char *filename)
     return (!err);
 }
 
-// bool tred(Agraph_t *g)
-// {
-//     int err;
-
-//     if (!g)
-//         return false;
-//     err = gvToolTred(g);
-//     return (!err);
-// }
+#include <vector>
+#include <string>
+using namespace std;
 
 extern "C"
 {
     char *csvg()
     {
-        Agraph_t *g = graph("graph");
-        Agnode_t *n = node(g, "n");
-        Agnode_t *m = node(g, "m");
-        Agedge_t *e = edge(g, m, n);
-        layout(g, "dot");
-        return renderdata(g, "svg");
+        Agraph_t *g = graph((char *)"graph");
+        vector<Agnode_t *> nodes;
+        for (int i = 0; i < 10; i++)
+        {
+            nodes.push_back(node(g, (char *)std::to_string(i).c_str()));
+        }
+        vector<Agedge_t *> edges;
+        edge(g, nodes[0], nodes[1]);
+        edge(g, nodes[0], nodes[2]);
+        edge(g, nodes[1], nodes[3]);
+        edge(g, nodes[1], nodes[4]);
+        edge(g, nodes[2], nodes[5]);
+        edge(g, nodes[2], nodes[6]);
+        edge(g, nodes[3], nodes[7]);
+        edge(g, nodes[3], nodes[8]);
+        edge(g, nodes[4], nodes[9]);
+
+        layout(g, (char *)"dot");
+        return renderdata(g, (char *)"svg");
     }
 }

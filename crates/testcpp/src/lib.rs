@@ -1,5 +1,4 @@
 use std::ffi::CStr;
-use std::ffi::CString;
 use std::os::raw::c_char;
 pub static mut VERSION: i32 = 0;
 

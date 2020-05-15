@@ -10,7 +10,6 @@ fn main() {
         .cpp(true)
         .include(include_path)
         .flag("-std=c++11")
-        .flag("-stdlib=libc++")
         .files(glob("src/*.cpp").expect("entries").filter_map(|x| x.ok()))
         .compile("libfoo.a");
 }
