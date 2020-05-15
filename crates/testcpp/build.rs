@@ -12,9 +12,10 @@ fn main() {
         "stdc++"
     };
     Build::new()
+        .compiler("clang++")
         .cpp(true)
         .include(include_path)
-        .cpp_set_stdlib(stdlib)
+        .cpp_link_stdlib(stdlib)
         .files(glob("src/*.cpp").expect("entries").filter_map(|x| x.ok()))
         .compile("libfoo.a");
 }
