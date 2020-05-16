@@ -23,8 +23,6 @@ static GVC_t *gvc;
 static void gv_init(void)
 {
     gvc = gvContext();
-    /* list of builtins, enable demand loading */
-    // gvc = gvContextPlugins(lt_preloaded_symbols, DEMEND_LOADING);
 }
 
 Agraph_t *graph(char *name)
