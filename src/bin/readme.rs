@@ -276,10 +276,13 @@ impl Readme {
                 3 => "Hard",
                 _ => "",
             };
-            let percentage = n_solutions as f64 / n_questions as f64 * 100.0;
+            let percentage = (1.0 - n_solutions as f64 / n_questions as f64) * 100.0;
             s += &format!(
                 "<details><summary>{} {}/{} {:.2}%</summary>\n\n",
-                level_string, n_solutions, n_questions, percentage,
+                level_string,
+                n_questions - n_solutions,
+                n_questions,
+                percentage,
             );
             s += &format!(
                 "\n|id|{} {} Questions|Tags|{} Solutions|\n",

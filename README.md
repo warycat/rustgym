@@ -48,7 +48,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 ### leetcode_rs [![Build Status](https://travis-ci.org/warycat/leetcode_rs.svg?branch=master)](https://travis-ci.org/warycat/leetcode_rs)
 
 # All Solutions
-<details><summary>Easy 343/355 96.62%</summary>
+<details><summary>Easy 12/355 3.38%</summary>
 
 
 |id|355 Easy Questions|Tags|343 Solutions|
@@ -409,7 +409,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook)|array|[solution](src/solutions/_999_available_captures_for_rook.rs)|
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|math|[solution](src/solutions/_9_palindrome_number.rs)|
 </details>
-<details><summary>Medium 476/688 69.19%</summary>
+<details><summary>Medium 212/688 30.81%</summary>
 
 
 |id|688 Medium Questions|Tags|476 Solutions|
@@ -1103,7 +1103,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |994|[Rotting Oranges](https://leetcode.com/problems/rotting-oranges)|breadth-first-search|[solution](src/solutions/_994_rotting_oranges.rs)|
 |998|[Maximum Binary Tree II](https://leetcode.com/problems/maximum-binary-tree-ii)|tree|[solution](src/solutions/_998_maximum_binary_tree_2.rs)|
 </details>
-<details><summary>Hard 15/287 5.23%</summary>
+<details><summary>Hard 272/287 94.77%</summary>
 
 
 |id|287 Hard Questions|Tags|15 Solutions|
