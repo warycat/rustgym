@@ -1,4 +1,4 @@
-use gvc_sys::GSVG;
+use gvc::*;
 use std::collections::BTreeMap;
 use std::collections::HashMap;
 use std::env;
@@ -324,13 +324,7 @@ fn main() {
     let readme = Readme::new(headers, solution_list, question_list, tags, footers);
     fs::write(&readme_md, format!("{}", readme)).unwrap();
 
-    let mut g = GSVG::new("Test Graph");
-    let n = 20;
-    for i in 0..n {
-        g.node(i as i32);
-    }
-    for i in 0..n {
-        g.edge(i, i / 2, i as i32);
-    }
+    let root = tree!(1, tree!(3, tree!(3), tree!(2)), tree!(3));
+    let g = root.draw("test tree");
     g.render("test.svg");
 }

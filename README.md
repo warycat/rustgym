@@ -48,10 +48,10 @@ All the solutions here are crafted with love and their performance beats 99% of 
 ### leetcode_rs [![Build Status](https://travis-ci.org/warycat/leetcode_rs.svg?branch=master)](https://travis-ci.org/warycat/leetcode_rs)
 
 # All Solutions
-<details><summary>Easy 342/353 96.88%</summary>
+<details><summary>Easy 342/354 96.61%</summary>
 
 
-|id|353 Easy Questions|Tags|342 Solutions|
+|id|354 Easy Questions|Tags|342 Solutions|
 |---|---|---|---|
 |190|[Reverse Bits](https://leetcode.com/problems/reverse-bits)|bit-manipulation|   |
 |690|[Employee Importance](https://leetcode.com/problems/employee-importance)|hash-table depth-first-search breadth-first-search|   |
@@ -60,6 +60,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |141|[Linked List Cycle](https://leetcode.com/problems/linked-list-cycle)|linked-list two-pointers|   |
 |1237|[Find Positive Integer Solution for a Given Equation](https://leetcode.com/problems/find-positive-integer-solution-for-a-given-equation)|math binary-search|   |
 |157|[Read N Characters Given Read4](https://leetcode.com/problems/read-n-characters-given-read4)|string|   |
+|1446|[Consecutive Characters](https://leetcode.com/problems/consecutive-characters)|string|   |
 |235|[Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree)|tree|   |
 |589|[N-ary Tree Preorder Traversal](https://leetcode.com/problems/n-ary-tree-preorder-traversal)|tree|   |
 |590|[N-ary Tree Postorder Traversal](https://leetcode.com/problems/n-ary-tree-postorder-traversal)|tree|   |
@@ -407,10 +408,10 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook)|array|[solution](src/solutions/_999_available_captures_for_rook.rs)|
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|math|[solution](src/solutions/_9_palindrome_number.rs)|
 </details>
-<details><summary>Medium 472/684 69.01%</summary>
+<details><summary>Medium 472/686 68.80%</summary>
 
 
-|id|684 Medium Questions|Tags|472 Solutions|
+|id|686 Medium Questions|Tags|472 Solutions|
 |---|---|---|---|
 |427|[Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree)||   |
 |558|[Logical OR of Two Binary Grids Represented as Quad-Trees](https://leetcode.com/problems/logical-or-of-two-binary-grids-represented-as-quad-trees)||   |
@@ -529,6 +530,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1015|[Smallest Integer Divisible by K](https://leetcode.com/problems/smallest-integer-divisible-by-k)|math|   |
 |1073|[Adding Two Negabinary Numbers](https://leetcode.com/problems/adding-two-negabinary-numbers)|math|   |
 |1390|[Four Divisors](https://leetcode.com/problems/four-divisors)|math|   |
+|1447|[Simplified Fractions](https://leetcode.com/problems/simplified-fractions)|math|   |
 |60|[Permutation Sequence](https://leetcode.com/problems/permutation-sequence)|math backtracking|   |
 |1201|[Ugly Number III](https://leetcode.com/problems/ugly-number-iii)|math binary-search|   |
 |397|[Integer Replacement](https://leetcode.com/problems/integer-replacement)|math bit-manipulation|   |
@@ -611,6 +613,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |971|[Flip Binary Tree To Match Preorder Traversal](https://leetcode.com/problems/flip-binary-tree-to-match-preorder-traversal)|tree depth-first-search|   |
 |988|[Smallest String Starting From Leaf](https://leetcode.com/problems/smallest-string-starting-from-leaf)|tree depth-first-search|   |
 |1145|[Binary Tree Coloring Game](https://leetcode.com/problems/binary-tree-coloring-game)|tree depth-first-search|   |
+|1448|[Count Good Nodes in Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree)|tree depth-first-search|   |
 |863|[All Nodes Distance K in Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree)|tree depth-first-search breadth-first-search|   |
 |677|[Map Sum Pairs](https://leetcode.com/problems/map-sum-pairs)|trie|   |
 |826|[Most Profit Assigning Work](https://leetcode.com/problems/most-profit-assigning-work)|two-pointers|   |
@@ -1097,10 +1100,10 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |994|[Rotting Oranges](https://leetcode.com/problems/rotting-oranges)|breadth-first-search|[solution](src/solutions/_994_rotting_oranges.rs)|
 |998|[Maximum Binary Tree II](https://leetcode.com/problems/maximum-binary-tree-ii)|tree|[solution](src/solutions/_998_maximum_binary_tree_2.rs)|
 </details>
-<details><summary>Hard 15/285 5.26%</summary>
+<details><summary>Hard 15/286 5.24%</summary>
 
 
-|id|285 Hard Questions|Tags|15 Solutions|
+|id|286 Hard Questions|Tags|15 Solutions|
 |---|---|---|---|
 |420|[Strong Password Checker](https://leetcode.com/problems/strong-password-checker)||   |
 |440|[K-th Smallest in Lexicographical Order](https://leetcode.com/problems/k-th-smallest-in-lexicographical-order)||   |
@@ -1352,6 +1355,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |115|[Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences)|string dynamic-programming|   |
 |730|[Count Different Palindromic Subsequences](https://leetcode.com/problems/count-different-palindromic-subsequences)|string dynamic-programming|   |
 |1216|[Valid Palindrome III](https://leetcode.com/problems/valid-palindrome-iii)|string dynamic-programming|   |
+|1449|[Form Largest Integer With Digits That Add up to Target](https://leetcode.com/problems/form-largest-integer-with-digits-that-add-up-to-target)|string dynamic-programming|   |
 |936|[Stamping The Sequence](https://leetcode.com/problems/stamping-the-sequence)|string greedy|   |
 |761|[Special Binary String](https://leetcode.com/problems/special-binary-string)|string recursion|   |
 |1316|[Distinct Echo Substrings](https://leetcode.com/problems/distinct-echo-substrings)|string rolling-hash|   |
