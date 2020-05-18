@@ -1576,6 +1576,8 @@ mod _1346_check_if_n_and_its_double_exist;
 //
 mod _1347_minimum_number_of_steps_to_make_two_strings_anagram;
 //
+mod _1348_tweet_counts_per_frequency;
+//
 mod _1351_count_negative_numbers_in_a_sorted_matrix;
 //
 mod _1352_product_of_the_last_k_numbers;
@@ -1647,6 +1649,10 @@ mod _1417_reformat_the_string;
 mod _1418_display_table_of_food_orders_in_a_restaurant;
 //
 mod _1422_maximum_score_after_splitting_a_string;
+//
+mod _1423_maximum_points_you_can_obtain_from_cards;
+//
+mod _1424_diagonal_traversel_2;
 //
 mod _1426_counting_elements;
 //
