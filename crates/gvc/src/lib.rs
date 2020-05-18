@@ -41,7 +41,7 @@ impl GSVG {
             let graph = agopen(
                 g_attrs[0].clone().1.into_raw(),
                 Agundirected,
-                0 as *mut Agdisc_s,
+                std::ptr::null_mut::<Agdisc_s>(),
             );
             set_attrs(graph as *mut c_void, g_attrs);
             GSVG {
@@ -131,19 +131,15 @@ impl Drop for GSVG {
     }
 }
 
-pub trait DrawTree {
+pub trait Draw {
     fn draw(&self, caption: &str) -> GSVG;
+}
+
+pub trait DrawTree {
     fn draw_r(&self, parent_id: Option<usize>, id: &mut usize, gsvg: &mut GSVG);
 }
 
 impl DrawTree for TreeLink {
-    fn draw(&self, caption: &str) -> GSVG {
-        let mut gsvg = GSVG::new(caption);
-        let mut id = 0;
-        self.draw_r(None, &mut id, &mut gsvg);
-        gsvg
-    }
-
     fn draw_r(&self, parent_id: Option<usize>, id: &mut usize, gsvg: &mut GSVG) {
         if let Some(node) = self {
             let node = node.borrow();
@@ -162,9 +158,34 @@ impl DrawTree for TreeLink {
     }
 }
 
+impl Draw for TreeLink {
+    fn draw(&self, caption: &str) -> GSVG {
+        let mut gsvg = GSVG::new(caption);
+        let mut id = 0;
+        self.draw_r(None, &mut id, &mut gsvg);
+        gsvg
+    }
+}
+
+impl Draw for Vec<Vec<usize>> {
+    fn draw(&self, caption: &str) -> GSVG {
+        let mut gsvg = GSVG::new(caption);
+        let n = self.len();
+        for i in 0..n {
+            gsvg.node(i as i32);
+        }
+        for u in 0..n {
+            for &v in &self[u] {
+                gsvg.edge(u, v, 0);
+            }
+        }
+        gsvg
+    }
+}
+
 #[test]
 fn test() {
-    let root: TreeLink = tree!(1, tree!(2, tree!(3), None), tree!(4));
-    let gsvg = root.draw("Test T");
-    gsvg.render("testtree.svg");
+    // let root: TreeLink = tree!(1, tree!(2, tree!(3), None), tree!(4));
+    // let gsvg = root.draw("Test T");
+    // gsvg.render("testtree.svg");
 }
