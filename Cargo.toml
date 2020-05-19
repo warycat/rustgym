@@ -5,9 +5,7 @@ authors = ["yinchu"]
 edition = "2018"
 
 [features]
-default = []
-
-svg = ["gvc"]
+default = ["testcpp", "gvc"]
 
 [dependencies]
 rand = "0.7.3"
@@ -17,7 +15,7 @@ reqwest = {version="0.10.3", features = ["blocking", "json"]}
 serde_json = "1.0.48"
 
 util = {path='./crates/util', version = '0.1.0'}
-testcpp = {path='./crates/testcpp', version = '0.1.0'}
+testcpp = {path='./crates/testcpp', version = '0.1.0',optional = true}
 gvc = {path='./crates/gvc', version = '0.1.0', optional = true}
 
 [workspace]

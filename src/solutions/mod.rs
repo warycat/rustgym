@@ -380,6 +380,7 @@ mod _275_h_index_2;
 //
 mod _276_paint_fence;
 //
+#[cfg(feature = "testcpp")]
 mod _278_first_bad_version;
 //
 mod _280_wiggle_sort;
@@ -1660,6 +1661,7 @@ mod _1426_counting_elements;
 //
 mod _1427_perform_string_shifts;
 //
+#[cfg(feature = "testcpp")]
 mod _1428_leftmost_column_with_at_least_a_one;
 //
 mod _1429_first_unique_number;
