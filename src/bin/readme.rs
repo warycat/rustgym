@@ -1,4 +1,3 @@
-use gvc::*;
 use std::collections::BTreeMap;
 use std::collections::HashMap;
 use std::env;
@@ -326,8 +325,4 @@ fn main() {
     let footers = vec_string!(CODING_INTERVIEW, TEST_SVG);
     let readme = Readme::new(headers, solution_list, question_list, tags, footers);
     fs::write(&readme_md, format!("{}", readme)).unwrap();
-
-    let root = tree!(1, tree!(3, tree!(3), tree!(2)), tree!(3));
-    let g = root.draw("test tree");
-    g.render("test.svg");
 }

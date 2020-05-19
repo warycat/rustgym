@@ -4,6 +4,11 @@ version = "0.1.0"
 authors = ["yinchu"]
 edition = "2018"
 
+[features]
+default = []
+
+svg = ["gvc"]
+
 [dependencies]
 rand = "0.7.3"
 pretty_assertions = "0.6.1"
@@ -13,7 +18,7 @@ serde_json = "1.0.48"
 
 util = {path='./crates/util', version = '0.1.0'}
 testcpp = {path='./crates/testcpp', version = '0.1.0'}
-gvc = {path='./crates/gvc', version = '0.1.0'}
+gvc = {path='./crates/gvc', version = '0.1.0', optional = true}
 
 [workspace]
 members = [
