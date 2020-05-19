@@ -409,10 +409,10 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook)|array|[solution](src/solutions/_999_available_captures_for_rook.rs)|
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|math|[solution](src/solutions/_9_palindrome_number.rs)|
 </details>
-<details><summary>Medium 202/688 29.36%</summary>
+<details><summary>Medium 201/688 29.22%</summary>
 
 
-|id|688 Medium Questions|Tags|486 Solutions|
+|id|688 Medium Questions|Tags|487 Solutions|
 |---|---|---|---|
 |427|[Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree)||   |
 |558|[Logical OR of Two Binary Grids Represented as Quad-Trees](https://leetcode.com/problems/logical-or-of-two-binary-grids-represented-as-quad-trees)||   |
@@ -612,7 +612,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |923|[3Sum With Multiplicity](https://leetcode.com/problems/3sum-with-multiplicity)|two-pointers|   |
 |838|[Push Dominoes](https://leetcode.com/problems/push-dominoes)|two-pointers dynamic-programming|   |
 |881|[Boats to Save People](https://leetcode.com/problems/boats-to-save-people)|two-pointers greedy|   |
-|567|[Permutation in String](https://leetcode.com/problems/permutation-in-string)|two-pointers sliding-window|   |
 |524|[Longest Word in Dictionary through Deleting](https://leetcode.com/problems/longest-word-in-dictionary-through-deleting)|two-pointers sort|   |
 |1234|[Replace the Substring for Balanced String](https://leetcode.com/problems/replace-the-substring-for-balanced-string)|two-pointers string|   |
 |990|[Satisfiability of Equality Equations](https://leetcode.com/problems/satisfiability-of-equality-equations)|union-find graph|   |
@@ -954,6 +953,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |560|[Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k)|array hash-table|[solution](src/solutions/_560_subarray_sum_equals_k.rs)|
 |562|[Longest Line of Consecutive One in Matrix](https://leetcode.com/problems/longest-line-of-consecutive-one-in-matrix)|array|[solution](src/solutions/_562_longest_line_of_consecutive_one_in_matrix.rs)|
 |565|[Array Nesting](https://leetcode.com/problems/array-nesting)|array|[solution](src/solutions/_565_array_nesting.rs)|
+|567|[Permutation in String](https://leetcode.com/problems/permutation-in-string)|two-pointers sliding-window|[solution](src/solutions/_567_permutation_in_string.rs)|
 |56|[Merge Intervals](https://leetcode.com/problems/merge-intervals)|array sort|[solution](src/solutions/_56_merge_intervals.rs)|
 |582|[Kill Process](https://leetcode.com/problems/kill-process)|tree queue|[solution](src/solutions/_582_kill_process.rs)|
 |593|[Valid Square](https://leetcode.com/problems/valid-square)|math|[solution](src/solutions/_593_valid_square.rs)|

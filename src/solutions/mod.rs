@@ -722,6 +722,8 @@ mod _565_array_nesting;
 //
 mod _566_reshape_the_matrix;
 //
+mod _567_permutation_in_string;
+//
 mod _572_subtree_of_another_tree;
 //
 mod _575_distribute_candies;

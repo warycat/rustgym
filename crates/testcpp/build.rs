@@ -10,7 +10,6 @@ fn main() {
         "stdc++"
     };
     Build::new()
-        .compiler("clang++")
         .cpp(true)
         .cpp_link_stdlib(stdlib)
         .files(glob("src/*.cpp").expect("entries").filter_map(|x| x.ok()))
