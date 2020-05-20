@@ -328,6 +328,8 @@ mod _234_palindrome_linked_list;
 //
 mod _238_product_of_array_except_self;
 //
+mod _241_different_ways_to_add_parentheses;
+//
 mod _242_valid_anagram;
 //
 mod _243_shortest_word_distance;
@@ -433,6 +435,8 @@ mod _323_number_of_connected_components_in_an_unditected_graph;
 //
 mod _325_maximum_size_subarray_sum_equals_k;
 //
+mod _326_power_of_three;
+//
 mod _328_odd_even_linked_list;
 //
 mod _332_reconstruct_itinerary;
@@ -465,7 +469,7 @@ mod _355_design_twitter;
 //
 mod _359_logger_rate_limiter;
 //
-mod _326_power_of_three;
+mod _361_bomb_enemy;
 //
 mod _362_design_hit_counter;
 //
@@ -486,6 +490,8 @@ mod _371_sum_of_two_integers;
 mod _372_super_pow;
 //
 mod _374_guess_number_higher_or_lower;
+//
+mod _377_combination_sum_4;
 //
 mod _378_kth_smallest_element_in_a_sorted_matrix;
 //
@@ -545,6 +551,8 @@ mod _416_partition_equal_subset_sum;
 //
 mod _417_pacific_atlantic_water_flow;
 //
+mod _418_sentence_screen_fitting;
+//
 mod _419_battleships_in_a_board;
 //
 mod _422_valid_word_square;
@@ -592,6 +600,8 @@ mod _459_repeated_substring_pattern;
 mod _461_hamming_distance;
 //
 mod _463_island_perimeter;
+//
+mod _467_unique_substrings_in_wraparound_string;
 //
 mod _473_matchsticks_to_square;
 //
@@ -1072,6 +1082,8 @@ mod _896_monotonic_array;
 mod _897_increasing_order_search_tree;
 //
 mod _900_rle_iterator;
+//
+mod _901_online_stock_span;
 //
 mod _905_sort_array_by_parity;
 //
@@ -1588,6 +1600,8 @@ mod _1352_product_of_the_last_k_numbers;
 mod _1356_sort_integers_by_the_number_of_1_bits;
 //
 mod _1357_apply_discount_every_n_orders;
+//
+mod _1358_number_of_substrings_containing_all_three_characters;
 //
 mod _1360_number_of_days_between_two_dates;
 //
