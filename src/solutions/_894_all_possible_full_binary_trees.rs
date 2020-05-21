@@ -1,8 +1,9 @@
- struct Solution;
+
+struct Solution;
 use util::*;
 
 impl Solution {
-     fn all_possible_fbt(n: i32) -> Vec<TreeLink> {
+    fn all_possible_fbt(n: i32) -> Vec<TreeLink> {
         if n % 2 == 0 {
             return vec![];
         }

@@ -1,7 +1,8 @@
- struct Solution;
+
+struct Solution;
 
 impl Solution {
-     fn single_number(nums: Vec<i32>) -> i32 {
+    fn single_number(nums: Vec<i32>) -> i32 {
         nums.iter().fold(0i32, |res, val| res ^ val)
     }
 }

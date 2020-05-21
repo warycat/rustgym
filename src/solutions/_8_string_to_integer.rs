@@ -1,8 +1,9 @@
- struct Solution;
+
+struct Solution;
 use std::i32;
 
 impl Solution {
-     fn my_atoi(s: String) -> i32 {
+    fn my_atoi(s: String) -> i32 {
         let mut start = s.trim_start();
         let mut res: i32 = 0;
         let mut positive = true;
@@ -54,7 +55,7 @@ impl Solution {
         res
     }
 
-     fn overflow(positive: bool) -> i32 {
+    fn overflow(positive: bool) -> i32 {
         if positive {
             i32::MAX
         } else {

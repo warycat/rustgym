@@ -1,8 +1,9 @@
- struct Solution;
+
+struct Solution;
 use std::cmp::Ordering::*;
 
 impl Solution {
-     fn can_reorder_doubled(a: Vec<i32>) -> bool {
+    fn can_reorder_doubled(a: Vec<i32>) -> bool {
         let mut nonzero: Vec<Vec<i32>> = vec![vec![]; 2];
         let mut zero: usize = 0;
         for x in a {

@@ -1,7 +1,8 @@
- struct Solution;
+
+struct Solution;
 
 impl Solution {
-     fn daily_temperatures(t: Vec<i32>) -> Vec<i32> {
+    fn daily_temperatures(t: Vec<i32>) -> Vec<i32> {
         let mut res: Vec<i32> = vec![];
         let mut stack: Vec<usize> = vec![];
         let n = t.len();

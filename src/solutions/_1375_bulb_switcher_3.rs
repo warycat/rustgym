@@ -1,7 +1,8 @@
- struct Solution;
+
+struct Solution;
 
 impl Solution {
-     fn num_times_all_blue(light: Vec<i32>) -> i32 {
+    fn num_times_all_blue(light: Vec<i32>) -> i32 {
         let n = light.len();
         let mut res = 0;
         let mut max = std::usize::MIN;

@@ -1,4 +1,5 @@
- struct Solution;
+
+struct Solution;
 use util::*;
 
 trait SumOfLeftLeaves {
@@ -27,7 +28,7 @@ impl SumOfLeftLeaves for TreeLink {
 }
 
 impl Solution {
-     fn sum_of_left_leaves(root: TreeLink) -> i32 {
+    fn sum_of_left_leaves(root: TreeLink) -> i32 {
         root.sum_of_left_leaves()
     }
 }

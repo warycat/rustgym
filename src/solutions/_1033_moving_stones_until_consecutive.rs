@@ -1,7 +1,8 @@
- struct Solution;
+
+struct Solution;
 
 impl Solution {
-     fn num_moves_stones(a: i32, b: i32, c: i32) -> Vec<i32> {
+    fn num_moves_stones(a: i32, b: i32, c: i32) -> Vec<i32> {
         let mut a: Vec<i32> = vec![a, b, c];
         a.sort_unstable();
         let min = if a[0] + 1 == a[1] && a[1] + 1 == a[2] {

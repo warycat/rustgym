@@ -1,8 +1,9 @@
- struct Solution;
+
+struct Solution;
 use util::*;
 
 impl Solution {
-     fn merge_trees(t1: TreeLink, t2: TreeLink) -> TreeLink {
+    fn merge_trees(t1: TreeLink, t2: TreeLink) -> TreeLink {
         match (t1, t2) {
             (Some(n1), Some(n2)) => {
                 let mut n1 = n1.borrow_mut();

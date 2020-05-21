@@ -1,7 +1,8 @@
- struct Solution;
+
+struct Solution;
 
 impl Solution {
-     fn is_palindrome(s: String) -> bool {
+    fn is_palindrome(s: String) -> bool {
         let s: Vec<char> = s
             .chars()
             .filter(|c| c.is_ascii_alphanumeric())

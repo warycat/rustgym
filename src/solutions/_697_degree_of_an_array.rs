@@ -1,6 +1,7 @@
- struct Solution;
 
- struct Degree {
+struct Solution;
+
+struct Degree {
     left: usize,
     right: usize,
     count: usize,
@@ -10,7 +11,7 @@ use std::collections::HashMap;
 use std::usize;
 
 impl Solution {
-     fn find_shortest_sub_array(nums: Vec<i32>) -> i32 {
+    fn find_shortest_sub_array(nums: Vec<i32>) -> i32 {
         let mut hm: HashMap<i32, Degree> = HashMap::new();
         let n = nums.len();
         let mut max_degree: usize = 0;

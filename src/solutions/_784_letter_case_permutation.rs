@@ -1,7 +1,8 @@
- struct Solution;
+
+struct Solution;
 
 impl Solution {
-     fn permutation(s: &[char], n: usize, i: usize, t: &mut String, res: &mut Vec<String>) {
+    fn permutation(s: &[char], n: usize, i: usize, t: &mut String, res: &mut Vec<String>) {
         if i == n {
             res.push(t.clone());
         } else {
@@ -21,7 +22,7 @@ impl Solution {
             }
         }
     }
-     fn letter_case_permutation(s: String) -> Vec<String> {
+    fn letter_case_permutation(s: String) -> Vec<String> {
         let n = s.len();
         let s: Vec<char> = s.chars().collect();
         let mut res: Vec<String> = vec![];

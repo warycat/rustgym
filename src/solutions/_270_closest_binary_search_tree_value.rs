@@ -1,4 +1,5 @@
- struct Solution;
+
+struct Solution;
 use std::f64;
 use util::*;
 
@@ -35,7 +36,7 @@ impl Closest for TreeLink {
 }
 
 impl Solution {
-     fn closest_value(root: TreeLink, target: f64) -> i32 {
+    fn closest_value(root: TreeLink, target: f64) -> i32 {
         root.search(target)
     }
 }

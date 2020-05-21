@@ -1,4 +1,5 @@
- struct MyCircularQueue {
+
+struct MyCircularQueue {
     k: usize,
     start: usize,
     end: usize,
@@ -7,7 +8,7 @@
 }
 
 impl MyCircularQueue {
-     fn new(k: i32) -> Self {
+    fn new(k: i32) -> Self {
         let start = 0;
         let end = 0;
         let k = k as usize;
@@ -22,7 +23,7 @@ impl MyCircularQueue {
         }
     }
 
-     fn en_queue(&mut self, value: i32) -> bool {
+    fn en_queue(&mut self, value: i32) -> bool {
         if self.count == self.k {
             false
         } else {
@@ -33,7 +34,7 @@ impl MyCircularQueue {
         }
     }
 
-     fn de_queue(&mut self) -> bool {
+    fn de_queue(&mut self) -> bool {
         if self.count == 0 {
             false
         } else {
@@ -43,7 +44,7 @@ impl MyCircularQueue {
         }
     }
 
-     fn front(&self) -> i32 {
+    fn front(&self) -> i32 {
         if self.is_empty() {
             -1
         } else {
@@ -51,7 +52,7 @@ impl MyCircularQueue {
         }
     }
 
-     fn rear(&self) -> i32 {
+    fn rear(&self) -> i32 {
         if self.is_empty() {
             -1
         } else {
@@ -59,11 +60,11 @@ impl MyCircularQueue {
         }
     }
 
-     fn is_empty(&self) -> bool {
+    fn is_empty(&self) -> bool {
         self.count == 0
     }
 
-     fn is_full(&self) -> bool {
+    fn is_full(&self) -> bool {
         self.count == self.k
     }
 }

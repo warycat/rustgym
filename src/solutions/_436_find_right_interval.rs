@@ -1,8 +1,9 @@
- struct Solution;
+
+struct Solution;
 use std::collections::BTreeMap;
 
 impl Solution {
-     fn find_right_interval(intervals: Vec<Vec<i32>>) -> Vec<i32> {
+    fn find_right_interval(intervals: Vec<Vec<i32>>) -> Vec<i32> {
         let n = intervals.len();
         let mut res: Vec<i32> = vec![-1; n];
         let mut btm: BTreeMap<i32, usize> = BTreeMap::new();

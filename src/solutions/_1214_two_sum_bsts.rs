@@ -1,4 +1,5 @@
- struct Solution;
+
+struct Solution;
 use util::*;
 
 trait Inorder {
@@ -29,13 +30,13 @@ impl Inorder for TreeLink {
     }
 }
 
- struct TreeIter {
+struct TreeIter {
     stack: Vec<TreeLink>,
     forward: bool,
 }
 
 impl TreeIter {
-     fn new(root: TreeLink, forward: bool) -> Self {
+    fn new(root: TreeLink, forward: bool) -> Self {
         let stack = if forward {
             root.all_left()
         } else {
@@ -69,7 +70,7 @@ impl Iterator for TreeIter {
 }
 
 impl Solution {
-     fn two_sum_bs_ts(root1: TreeLink, root2: TreeLink, target: i32) -> bool {
+    fn two_sum_bs_ts(root1: TreeLink, root2: TreeLink, target: i32) -> bool {
         use std::cmp::Ordering::*;
         let mut iter1 = TreeIter::new(root1, true);
         let mut iter2 = TreeIter::new(root2, false);

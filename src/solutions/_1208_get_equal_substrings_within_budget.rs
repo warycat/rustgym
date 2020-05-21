@@ -1,7 +1,8 @@
- struct Solution;
+
+struct Solution;
 
 impl Solution {
-     fn equal_substring(s: String, t: String, max_cost: i32) -> i32 {
+    fn equal_substring(s: String, t: String, max_cost: i32) -> i32 {
         let s: Vec<char> = s.chars().collect();
         let t: Vec<char> = t.chars().collect();
         let n = s.len();

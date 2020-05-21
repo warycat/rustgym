@@ -1,17 +1,18 @@
- struct Solution;
 
- struct UnionFind {
+struct Solution;
+
+struct UnionFind {
     parents: Vec<usize>,
     n: usize,
 }
 
 impl UnionFind {
-     fn new(n: usize) -> Self {
+    fn new(n: usize) -> Self {
         let parents = (0..n).collect();
         UnionFind { parents, n }
     }
 
-     fn find(&mut self, i: usize) -> usize {
+    fn find(&mut self, i: usize) -> usize {
         let j = self.parents[i];
         if i == j {
             i
@@ -22,7 +23,7 @@ impl UnionFind {
         }
     }
 
-     fn union(&mut self, mut i: usize, mut j: usize) {
+    fn union(&mut self, mut i: usize, mut j: usize) {
         i = self.find(i);
         j = self.find(j);
         if i != j {
@@ -33,7 +34,7 @@ impl UnionFind {
 }
 
 impl Solution {
-     fn num_islands(grid: Vec<Vec<char>>) -> i32 {
+    fn num_islands(grid: Vec<Vec<char>>) -> i32 {
         let n = grid.len();
         if n == 0 {
             return 0;

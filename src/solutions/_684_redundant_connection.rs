@@ -1,17 +1,18 @@
- struct Solution;
 
- struct UnionFind {
+struct Solution;
+
+struct UnionFind {
     parents: Vec<usize>,
     n: usize,
 }
 
 impl UnionFind {
-     fn new(n: usize) -> Self {
+    fn new(n: usize) -> Self {
         let parents = (0..n).collect();
         UnionFind { parents, n }
     }
 
-     fn find(&mut self, i: usize) -> usize {
+    fn find(&mut self, i: usize) -> usize {
         let j = self.parents[i];
         if i == j {
             i
@@ -22,7 +23,7 @@ impl UnionFind {
         }
     }
 
-     fn union(&mut self, i: usize, j: usize) -> bool {
+    fn union(&mut self, i: usize, j: usize) -> bool {
         let i = self.find(i);
         let j = self.find(j);
         if i == j {
@@ -35,7 +36,7 @@ impl UnionFind {
 }
 
 impl Solution {
-     fn find_redundant_connection(edges: Vec<Vec<i32>>) -> Vec<i32> {
+    fn find_redundant_connection(edges: Vec<Vec<i32>>) -> Vec<i32> {
         let n = edges.len();
         let mut uf = UnionFind::new(n);
         for edge in edges {

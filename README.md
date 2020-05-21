@@ -409,10 +409,10 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook)|array|[solution](src/solutions/_999_available_captures_for_rook.rs)|
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|math|[solution](src/solutions/_9_palindrome_number.rs)|
 </details>
-<details><summary>Medium 194/688 28.20%</summary>
+<details><summary>Medium 193/688 28.05%</summary>
 
 
-|id|688 Medium Questions|Tags|494 Solutions|
+|id|688 Medium Questions|Tags|495 Solutions|
 |---|---|---|---|
 |427|[Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree)||   |
 |558|[Logical OR of Two Binary Grids Represented as Quad-Trees](https://leetcode.com/problems/logical-or-of-two-binary-grids-represented-as-quad-trees)||   |
@@ -544,7 +544,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |341|[Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator)|stack design|   |
 |144|[Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal)|stack tree|   |
 |255|[Verify Preorder Sequence in Binary Search Tree](https://leetcode.com/problems/verify-preorder-sequence-in-binary-search-tree)|stack tree|   |
-|271|[Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings)|string|   |
 |468|[Validate IP Address](https://leetcode.com/problems/validate-ip-address)|string|   |
 |522|[Longest Uncommon Subsequence II](https://leetcode.com/problems/longest-uncommon-subsequence-ii)|string|   |
 |555|[Split Concatenated Strings](https://leetcode.com/problems/split-concatenated-strings)|string|   |
@@ -826,6 +825,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |260|[Single Number III](https://leetcode.com/problems/single-number-iii)|bit-manipulation|[solution](src/solutions/_260_single_number_3.rs)|
 |261|[Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree)|depth-first-search breadth-first-search union-find graph|[solution](src/solutions/_261_graph_valid_tree.rs)|
 |267|[Palindrome Permutation II](https://leetcode.com/problems/palindrome-permutation-ii)|backtracking|[solution](src/solutions/_267_palindrome_permutation_2.rs)|
+|271|[Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings)|string|[solution](src/solutions/_271_encode_and_decode_strings.rs)|
 |274|[H-Index](https://leetcode.com/problems/h-index)|hash-table sort|[solution](src/solutions/_274_h_index.rs)|
 |275|[H-Index II](https://leetcode.com/problems/h-index-ii)|binary-search|[solution](src/solutions/_275_h_index_2.rs)|
 |280|[Wiggle Sort](https://leetcode.com/problems/wiggle-sort)|array sort|[solution](src/solutions/_280_wiggle_sort.rs)|

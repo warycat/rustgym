@@ -1,7 +1,8 @@
- struct Solution;
+
+struct Solution;
 
 impl Solution {
-     fn num_enclaves(mut a: Vec<Vec<i32>>) -> i32 {
+    fn num_enclaves(mut a: Vec<Vec<i32>>) -> i32 {
         let n = a.len();
         let m = a[0].len();
         let mut res = 0;
@@ -23,7 +24,7 @@ impl Solution {
         res as i32
     }
 
-     fn dfs(i: usize, j: usize, a: &mut Vec<Vec<i32>>, n: usize, m: usize) {
+    fn dfs(i: usize, j: usize, a: &mut Vec<Vec<i32>>, n: usize, m: usize) {
         a[i][j] = 0;
         if i > 0 && a[i - 1][j] == 1 {
             Self::dfs(i - 1, j, a, n, m);

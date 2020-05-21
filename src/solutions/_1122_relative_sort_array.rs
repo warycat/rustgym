@@ -1,10 +1,11 @@
- struct Solution;
+
+struct Solution;
 
 use std::cmp::Ordering;
 use std::collections::HashMap;
 
 impl Solution {
-     fn relative_sort_array(mut arr1: Vec<i32>, arr2: Vec<i32>) -> Vec<i32> {
+    fn relative_sort_array(mut arr1: Vec<i32>, arr2: Vec<i32>) -> Vec<i32> {
         let mut hm: HashMap<i32, usize> = HashMap::new();
         for (i, &v) in arr2.iter().enumerate() {
             hm.insert(v, i);

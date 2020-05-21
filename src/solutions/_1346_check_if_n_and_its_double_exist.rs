@@ -1,8 +1,9 @@
- struct Solution;
+
+struct Solution;
 use std::collections::HashSet;
 
 impl Solution {
-     fn check_if_exist(arr: Vec<i32>) -> bool {
+    fn check_if_exist(arr: Vec<i32>) -> bool {
         let mut hs: HashSet<i32> = HashSet::new();
         let mut zero = 0;
         for &x in &arr {

@@ -1,9 +1,10 @@
- struct Solution;
+
+struct Solution;
 
 use std::collections::HashSet;
 
 impl Solution {
-     fn min_remove_to_make_valid(s: String) -> String {
+    fn min_remove_to_make_valid(s: String) -> String {
         let mut stack: Vec<usize> = vec![];
         let mut res: String = "".to_string();
         let mut remove: HashSet<usize> = HashSet::new();

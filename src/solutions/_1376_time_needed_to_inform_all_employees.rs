@@ -1,7 +1,8 @@
- struct Solution;
+
+struct Solution;
 
 impl Solution {
-     fn num_of_minutes(n: i32, _: i32, mut manager: Vec<i32>, mut inform_time: Vec<i32>) -> i32 {
+    fn num_of_minutes(n: i32, _: i32, mut manager: Vec<i32>, mut inform_time: Vec<i32>) -> i32 {
         let n = n as usize;
         let mut res = 0;
         for i in 0..n {
@@ -10,7 +11,7 @@ impl Solution {
         res
     }
 
-     fn dfs(i: usize, manager: &mut Vec<i32>, inform_time: &mut Vec<i32>) -> i32 {
+    fn dfs(i: usize, manager: &mut Vec<i32>, inform_time: &mut Vec<i32>) -> i32 {
         if manager[i] != -1 {
             inform_time[i] += Self::dfs(manager[i] as usize, manager, inform_time);
             manager[i] = -1;

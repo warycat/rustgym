@@ -1,7 +1,8 @@
- struct Solution;
+
+struct Solution;
 
 impl Solution {
-     fn is_match(s: String, p: String) -> bool {
+    fn is_match(s: String, p: String) -> bool {
         let n = s.len();
         let m = p.len();
         let s: Vec<char> = s.chars().collect();
@@ -10,7 +11,7 @@ impl Solution {
         Self::is_match_dp(n, m, &mut memo, &s, &p)
     }
 
-     fn is_match_dp(
+    fn is_match_dp(
         n: usize,
         m: usize,
         memo: &mut Vec<Vec<Option<bool>>>,

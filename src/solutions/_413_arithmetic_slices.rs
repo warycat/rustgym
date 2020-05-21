@@ -1,7 +1,8 @@
- struct Solution;
+
+struct Solution;
 
 impl Solution {
-     fn number_of_arithmetic_slices(a: Vec<i32>) -> i32 {
+    fn number_of_arithmetic_slices(a: Vec<i32>) -> i32 {
         let mut slice = vec![];
         let mut res = 0;
         for x in a {

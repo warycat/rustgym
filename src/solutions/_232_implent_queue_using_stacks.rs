@@ -1,22 +1,22 @@
 #[derive(Default)]
- struct MyQueue {
-     stack: Vec<i32>,
-     temp: Vec<i32>,
+struct MyQueue {
+    stack: Vec<i32>,
+    temp: Vec<i32>,
 }
 
 impl MyQueue {
-     fn new() -> Self {
+    fn new() -> Self {
         MyQueue {
             stack: vec![],
             temp: vec![],
         }
     }
 
-     fn push(&mut self, x: i32) {
+    fn push(&mut self, x: i32) {
         self.stack.push(x);
     }
 
-     fn pop(&mut self) -> i32 {
+    fn pop(&mut self) -> i32 {
         while let Some(x) = self.stack.pop() {
             self.temp.push(x);
         }
@@ -27,7 +27,7 @@ impl MyQueue {
         res
     }
 
-     fn peek(&mut self) -> i32 {
+    fn peek(&mut self) -> i32 {
         while let Some(x) = self.stack.pop() {
             self.temp.push(x);
         }
@@ -39,7 +39,7 @@ impl MyQueue {
         res
     }
 
-     fn empty(&self) -> bool {
+    fn empty(&self) -> bool {
         self.stack.is_empty()
     }
 }

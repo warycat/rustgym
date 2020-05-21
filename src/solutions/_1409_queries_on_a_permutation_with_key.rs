@@ -1,7 +1,8 @@
- struct Solution;
+
+struct Solution;
 
 impl Solution {
-     fn process_queries(queries: Vec<i32>, m: i32) -> Vec<i32> {
+    fn process_queries(queries: Vec<i32>, m: i32) -> Vec<i32> {
         let mut v: Vec<i32> = (1..=m).collect();
         let mut res = vec![];
         for q in queries {

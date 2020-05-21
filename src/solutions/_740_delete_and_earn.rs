@@ -1,7 +1,8 @@
- struct Solution;
+
+struct Solution;
 
 impl Solution {
-     fn delete_and_earn(nums: Vec<i32>) -> i32 {
+    fn delete_and_earn(nums: Vec<i32>) -> i32 {
         let n = 10001;
         let mut sum: Vec<i32> = vec![0; n];
         let mut dp: Vec<i32> = vec![0; n];

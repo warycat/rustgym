@@ -1,4 +1,5 @@
- struct Solution;
+
+struct Solution;
 use util::*;
 
 trait Convert {
@@ -35,7 +36,7 @@ impl Convert for ListLink {
 }
 
 impl Solution {
-     fn sorted_list_to_bst(head: ListLink) -> TreeLink {
+    fn sorted_list_to_bst(head: ListLink) -> TreeLink {
         let n = head.count();
         let (tree, _) = head.convert(n);
         tree

@@ -1,9 +1,10 @@
- struct Solution;
+
+struct Solution;
 
 use std::cmp::Ordering;
 
 impl Solution {
-     fn min_meeting_rooms(intervals: Vec<Vec<i32>>) -> i32 {
+    fn min_meeting_rooms(intervals: Vec<Vec<i32>>) -> i32 {
         let mut v: Vec<(i32, i32)> = vec![];
         for i in intervals {
             v.push((i[0], 1));
