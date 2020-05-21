@@ -409,10 +409,10 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook)|array|[solution](src/solutions/_999_available_captures_for_rook.rs)|
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|math|[solution](src/solutions/_9_palindrome_number.rs)|
 </details>
-<details><summary>Medium 193/688 28.05%</summary>
+<details><summary>Medium 188/688 27.33%</summary>
 
 
-|id|688 Medium Questions|Tags|495 Solutions|
+|id|688 Medium Questions|Tags|500 Solutions|
 |---|---|---|---|
 |427|[Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree)||   |
 |558|[Logical OR of Two Binary Grids Represented as Quad-Trees](https://leetcode.com/problems/logical-or-of-two-binary-grids-represented-as-quad-trees)||   |
@@ -544,11 +544,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |341|[Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator)|stack design|   |
 |144|[Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal)|stack tree|   |
 |255|[Verify Preorder Sequence in Binary Search Tree](https://leetcode.com/problems/verify-preorder-sequence-in-binary-search-tree)|stack tree|   |
-|468|[Validate IP Address](https://leetcode.com/problems/validate-ip-address)|string|   |
-|522|[Longest Uncommon Subsequence II](https://leetcode.com/problems/longest-uncommon-subsequence-ii)|string|   |
-|555|[Split Concatenated Strings](https://leetcode.com/problems/split-concatenated-strings)|string|   |
-|583|[Delete Operation for Two Strings](https://leetcode.com/problems/delete-operation-for-two-strings)|string|   |
-|681|[Next Closest Time](https://leetcode.com/problems/next-closest-time)|string|   |
 |722|[Remove Comments](https://leetcode.com/problems/remove-comments)|string|   |
 |809|[Expressive Words](https://leetcode.com/problems/expressive-words)|string|   |
 |816|[Ambiguous Coordinates](https://leetcode.com/problems/ambiguous-coordinates)|string|   |
@@ -904,6 +899,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |456|[132 Pattern](https://leetcode.com/problems/132-pattern)|stack|[solution](src/solutions/_456_132_pattern.rs)|
 |457|[Circular Array Loop](https://leetcode.com/problems/circular-array-loop)|array two-pointers|[solution](src/solutions/_457_circular_array_loop.rs)|
 |467|[Unique Substrings in Wraparound String](https://leetcode.com/problems/unique-substrings-in-wraparound-string)|dynamic-programming|[solution](src/solutions/_467_unique_substrings_in_wraparound_string.rs)|
+|468|[Validate IP Address](https://leetcode.com/problems/validate-ip-address)|string|[solution](src/solutions/_468_validate_ip_address.rs)|
 |46|[Permutations](https://leetcode.com/problems/permutations)|backtracking|[solution](src/solutions/_46_permutations.rs)|
 |473|[Matchsticks to Square](https://leetcode.com/problems/matchsticks-to-square)|depth-first-search|[solution](src/solutions/_473_matchsticks_to_square.rs)|
 |477|[Total Hamming Distance](https://leetcode.com/problems/total-hamming-distance)|bit-manipulation|[solution](src/solutions/_477_total_hamming_distance.rs)|
@@ -928,6 +924,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |516|[Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence)|dynamic-programming|[solution](src/solutions/_516_longest_palindromic_subsequence.rs)|
 |518|[Coin Change 2](https://leetcode.com/problems/coin-change-2)||[solution](src/solutions/_518_coin_change_2.rs)|
 |519|[Random Flip Matrix](https://leetcode.com/problems/random-flip-matrix)|random|[solution](src/solutions/_519_random_flip_matrix.rs)|
+|522|[Longest Uncommon Subsequence II](https://leetcode.com/problems/longest-uncommon-subsequence-ii)|string|[solution](src/solutions/_522_longest_uncommon_subsequence_2.rs)|
 |523|[Continuous Subarray Sum](https://leetcode.com/problems/continuous-subarray-sum)|math dynamic-programming|[solution](src/solutions/_523_continuous_subarray_sum.rs)|
 |525|[Contiguous Array](https://leetcode.com/problems/contiguous-array)|hash-table|[solution](src/solutions/_525_contiguous_array.rs)|
 |526|[Beautiful Arrangement](https://leetcode.com/problems/beautiful-arrangement)|backtracking|[solution](src/solutions/_526_beautiful_arrangment.rs)|
@@ -947,6 +944,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |54|[Spiral Matrix](https://leetcode.com/problems/spiral-matrix)|array|[solution](src/solutions/_54_spiral_matrix.rs)|
 |553|[Optimal Division](https://leetcode.com/problems/optimal-division)|math string|[solution](src/solutions/_553_optimal_division.rs)|
 |554|[Brick Wall](https://leetcode.com/problems/brick-wall)|hash-table|[solution](src/solutions/_554_brick_wall.rs)|
+|555|[Split Concatenated Strings](https://leetcode.com/problems/split-concatenated-strings)|string|[solution](src/solutions/_555_split_concatenated_strings.rs)|
 |556|[Next Greater Element III](https://leetcode.com/problems/next-greater-element-iii)|string|[solution](src/solutions/_556_next_greater_element_3.rs)|
 |55|[Jump Game](https://leetcode.com/problems/jump-game)|array greedy|[solution](src/solutions/_55_jump_game.rs)|
 |560|[Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k)|array hash-table|[solution](src/solutions/_560_subarray_sum_equals_k.rs)|
@@ -955,6 +953,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |567|[Permutation in String](https://leetcode.com/problems/permutation-in-string)|two-pointers sliding-window|[solution](src/solutions/_567_permutation_in_string.rs)|
 |56|[Merge Intervals](https://leetcode.com/problems/merge-intervals)|array sort|[solution](src/solutions/_56_merge_intervals.rs)|
 |582|[Kill Process](https://leetcode.com/problems/kill-process)|tree queue|[solution](src/solutions/_582_kill_process.rs)|
+|583|[Delete Operation for Two Strings](https://leetcode.com/problems/delete-operation-for-two-strings)|string|[solution](src/solutions/_583_delete_operation_for_two_strings.rs)|
 |593|[Valid Square](https://leetcode.com/problems/valid-square)|math|[solution](src/solutions/_593_valid_square.rs)|
 |59|[Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii)|array|[solution](src/solutions/_59_spiral_matrix_2.rs)|
 |5|[Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring)|string dynamic-programming|[solution](src/solutions/_5_longest_palindromic_substring.rs)|
@@ -979,6 +978,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |667|[Beautiful Arrangement II](https://leetcode.com/problems/beautiful-arrangement-ii)|array|[solution](src/solutions/_667_beautiful_arrangement_2.rs)|
 |670|[Maximum Swap](https://leetcode.com/problems/maximum-swap)|array math|[solution](src/solutions/_670_maximum_swap.rs)|
 |678|[Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string)|string|[solution](src/solutions/_678_valid_parenthesis_string.rs)|
+|681|[Next Closest Time](https://leetcode.com/problems/next-closest-time)|string|[solution](src/solutions/_681_next_closest_time.rs)|
 |684|[Redundant Connection](https://leetcode.com/problems/redundant-connection)|tree union-find graph|[solution](src/solutions/_684_redundant_connection.rs)|
 |688|[Knight Probability in Chessboard](https://leetcode.com/problems/knight-probability-in-chessboard)|dynamic-programming|[solution](src/solutions/_688_knight_probability_in_chessboard.rs)|
 |692|[Top K Frequent Words](https://leetcode.com/problems/top-k-frequent-words)|hash-table heap trie|[solution](src/solutions/_692_top_k_frequent_words.rs)|
