@@ -1,4 +1,3 @@
-
 struct Solution;
 
 #[derive(PartialEq, Eq, Hash, Debug, Copy, Clone)]

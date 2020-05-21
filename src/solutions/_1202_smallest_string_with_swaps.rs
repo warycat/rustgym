@@ -1,4 +1,3 @@
-
 struct Solution;
 use std::cmp::Reverse;
 use std::collections::HashMap;

@@ -1,4 +1,3 @@
-
 struct Vector2D {
     array: Vec<i32>,
     count: usize,

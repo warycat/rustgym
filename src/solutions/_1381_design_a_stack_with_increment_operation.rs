@@ -1,4 +1,3 @@
-
 struct CustomStack {
     stack: Vec<i32>,
     inc: Vec<i32>,

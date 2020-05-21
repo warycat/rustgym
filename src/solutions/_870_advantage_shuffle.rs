@@ -1,4 +1,3 @@
-
 struct Solution;
 
 type Pair = (usize, i32);

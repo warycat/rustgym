@@ -1,4 +1,3 @@
-
 struct Solution;
 
 struct UnionFind {

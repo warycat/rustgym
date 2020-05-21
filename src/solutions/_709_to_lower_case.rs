@@ -1,4 +1,3 @@
-
 struct Solution;
 
 #[allow(clippy::wrong_self_convention)]

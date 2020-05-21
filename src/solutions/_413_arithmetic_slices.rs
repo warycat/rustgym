@@ -1,4 +1,3 @@
-
 struct Solution;
 
 impl Solution {

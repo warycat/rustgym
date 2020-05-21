@@ -1,4 +1,3 @@
-
 struct Solution;
 use std::f64;
 use util::*;

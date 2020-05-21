@@ -1,4 +1,3 @@
-
 struct TicTacToe {
     rows: [Vec<usize>; 2],
     cols: [Vec<usize>; 2],
