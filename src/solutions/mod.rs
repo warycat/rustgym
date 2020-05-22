@@ -891,6 +891,8 @@ mod _720_longest_word_in_dictionary;
 //
 mod _721_accounts_merge;
 //
+mod _722_remove_comments;
+//
 mod _723_candy_crush;
 //
 mod _724_find_pivot_index;
@@ -991,11 +993,15 @@ mod _806_number_of_lines_to_write_string;
 //
 mod _807_max_increase_to_keep_city_skyline;
 //
+mod _809_expressive_words;
+//
 mod _811_subdomain_visit_count;
 //
 mod _812_largest_triangle_area;
 //
 mod _814_binary_tree_pruning;
+//
+mod _816_ambiguous_coordinates;
 //
 mod _817_linked_list_components;
 //
@@ -1015,7 +1021,11 @@ mod _825_friends_of_appropriate_ages;
 //
 mod _830_positions_of_large_groups;
 //
+mod _831_masking_personal_information;
+//
 mod _832_flipping_an_image;
+//
+mod _833_find_and_replace_in_string;
 //
 mod _835_image_overlap;
 //
@@ -1028,6 +1038,8 @@ mod _841_keys_and_rooms;
 mod _844_backspace_string_compare;
 //
 mod _846_hand_of_straights;
+//
+mod _848_shifting_letters;
 //
 mod _849_maximize_distance_to_closest_person;
 //
@@ -1112,6 +1124,8 @@ mod _912_sort_an_array;
 mod _914_x_of_a_kind_in_a_deck_of_cards;
 //
 mod _915_partition_array_into_disjoint_intervals;
+//
+mod _916_word_subsets;
 //
 mod _917_reverse_only_letters;
 //

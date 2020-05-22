@@ -409,10 +409,10 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook)|array|[solution](src/solutions/_999_available_captures_for_rook.rs)|
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|math|[solution](src/solutions/_9_palindrome_number.rs)|
 </details>
-<details><summary>Medium 188/688 27.33%</summary>
+<details><summary>Medium 181/688 26.31%</summary>
 
 
-|id|688 Medium Questions|Tags|500 Solutions|
+|id|688 Medium Questions|Tags|507 Solutions|
 |---|---|---|---|
 |427|[Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree)||   |
 |558|[Logical OR of Two Binary Grids Represented as Quad-Trees](https://leetcode.com/problems/logical-or-of-two-binary-grids-represented-as-quad-trees)||   |
@@ -544,13 +544,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |341|[Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator)|stack design|   |
 |144|[Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal)|stack tree|   |
 |255|[Verify Preorder Sequence in Binary Search Tree](https://leetcode.com/problems/verify-preorder-sequence-in-binary-search-tree)|stack tree|   |
-|722|[Remove Comments](https://leetcode.com/problems/remove-comments)|string|   |
-|809|[Expressive Words](https://leetcode.com/problems/expressive-words)|string|   |
-|816|[Ambiguous Coordinates](https://leetcode.com/problems/ambiguous-coordinates)|string|   |
-|831|[Masking Personal Information](https://leetcode.com/problems/masking-personal-information)|string|   |
-|833|[Find And Replace in String](https://leetcode.com/problems/find-and-replace-in-string)|string|   |
-|848|[Shifting Letters](https://leetcode.com/problems/shifting-letters)|string|   |
-|916|[Word Subsets](https://leetcode.com/problems/word-subsets)|string|   |
 |1081|[Smallest Subsequence of Distinct Characters](https://leetcode.com/problems/smallest-subsequence-of-distinct-characters)|string|   |
 |1156|[Swap For Longest Repeated Character Substring](https://leetcode.com/problems/swap-for-longest-repeated-character-substring)|string|   |
 |1328|[Break a Palindrome](https://leetcode.com/problems/break-a-palindrome)|string|   |
@@ -994,6 +987,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |718|[Maximum Length of Repeated Subarray](https://leetcode.com/problems/maximum-length-of-repeated-subarray)|array hash-table binary-search dynamic-programming|[solution](src/solutions/_718_maximum_length_of_repeated_subarray.rs)|
 |71|[Simplify Path](https://leetcode.com/problems/simplify-path)|string stack|[solution](src/solutions/_71_simplify_path.rs)|
 |721|[Accounts Merge](https://leetcode.com/problems/accounts-merge)|depth-first-search union-find|[solution](src/solutions/_721_accounts_merge.rs)|
+|722|[Remove Comments](https://leetcode.com/problems/remove-comments)|string|[solution](src/solutions/_722_remove_comments.rs)|
 |723|[Candy Crush](https://leetcode.com/problems/candy-crush)|array two-pointers|[solution](src/solutions/_723_candy_crush.rs)|
 |729|[My Calendar I](https://leetcode.com/problems/my-calendar-i)|array|[solution](src/solutions/_729_my_calendar_1.rs)|
 |731|[My Calendar II](https://leetcode.com/problems/my-calendar-ii)|ordered-map|[solution](src/solutions/_731_my_calendar_2.rs)|
@@ -1029,17 +1023,22 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |79|[Word Search](https://leetcode.com/problems/word-search)|array backtracking|[solution](src/solutions/_79_word_search.rs)|
 |802|[Find Eventual Safe States](https://leetcode.com/problems/find-eventual-safe-states)|depth-first-search graph|[solution](src/solutions/_802_find_eventual_safe_states.rs)|
 |807|[Max Increase to Keep City Skyline](https://leetcode.com/problems/max-increase-to-keep-city-skyline)||[solution](src/solutions/_807_max_increase_to_keep_city_skyline.rs)|
+|809|[Expressive Words](https://leetcode.com/problems/expressive-words)|string|[solution](src/solutions/_809_expressive_words.rs)|
 |80|[Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii)|array two-pointers|[solution](src/solutions/_80_remove_duplicates_from_sorted_array_2.rs)|
 |814|[Binary Tree Pruning](https://leetcode.com/problems/binary-tree-pruning)|tree|[solution](src/solutions/_814_binary_tree_pruning.rs)|
+|816|[Ambiguous Coordinates](https://leetcode.com/problems/ambiguous-coordinates)|string|[solution](src/solutions/_816_ambiguous_coordinates.rs)|
 |817|[Linked List Components](https://leetcode.com/problems/linked-list-components)|linked-list|[solution](src/solutions/_817_linked_list_components.rs)|
 |81|[Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii)|array binary-search|[solution](src/solutions/_81_search_in_rotated_sorted_array_2.rs)|
 |820|[Short Encoding of Words](https://leetcode.com/problems/short-encoding-of-words)||[solution](src/solutions/_820_short_encoding_of_words.rs)|
 |822|[Card Flipping Game](https://leetcode.com/problems/card-flipping-game)||[solution](src/solutions/_822_card_flipping_game.rs)|
 |823|[Binary Trees With Factors](https://leetcode.com/problems/binary-trees-with-factors)||[solution](src/solutions/_823_binary_trees_with_factors.rs)|
 |825|[Friends Of Appropriate Ages](https://leetcode.com/problems/friends-of-appropriate-ages)|array|[solution](src/solutions/_825_friends_of_appropriate_ages.rs)|
+|831|[Masking Personal Information](https://leetcode.com/problems/masking-personal-information)|string|[solution](src/solutions/_831_masking_personal_information.rs)|
+|833|[Find And Replace in String](https://leetcode.com/problems/find-and-replace-in-string)|string|[solution](src/solutions/_833_find_and_replace_in_string.rs)|
 |835|[Image Overlap](https://leetcode.com/problems/image-overlap)|array|[solution](src/solutions/_835_image_overlap.rs)|
 |841|[Keys and Rooms](https://leetcode.com/problems/keys-and-rooms)|depth-first-search graph|[solution](src/solutions/_841_keys_and_rooms.rs)|
 |846|[Hand of Straights](https://leetcode.com/problems/hand-of-straights)|ordered-map|[solution](src/solutions/_846_hand_of_straights.rs)|
+|848|[Shifting Letters](https://leetcode.com/problems/shifting-letters)|string|[solution](src/solutions/_848_shifting_letters.rs)|
 |851|[Loud and Rich](https://leetcode.com/problems/loud-and-rich)|depth-first-search|[solution](src/solutions/_851_loud_and_rich.rs)|
 |855|[Exam Room](https://leetcode.com/problems/exam-room)|ordered-map|[solution](src/solutions/_855_exam_room.rs)|
 |856|[Score of Parentheses](https://leetcode.com/problems/score-of-parentheses)|string stack|[solution](src/solutions/_856_score_of_parentheses.rs)|
@@ -1065,6 +1064,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |911|[Online Election](https://leetcode.com/problems/online-election)|binary-search|[solution](src/solutions/_911_online_election.rs)|
 |912|[Sort an Array](https://leetcode.com/problems/sort-an-array)||[solution](src/solutions/_912_sort_an_array.rs)|
 |915|[Partition Array into Disjoint Intervals](https://leetcode.com/problems/partition-array-into-disjoint-intervals)|array|[solution](src/solutions/_915_partition_array_into_disjoint_intervals.rs)|
+|916|[Word Subsets](https://leetcode.com/problems/word-subsets)|string|[solution](src/solutions/_916_word_subsets.rs)|
 |918|[Maximum Sum Circular Subarray](https://leetcode.com/problems/maximum-sum-circular-subarray)|array|[solution](src/solutions/_918_maximum_sum_circular_subarray.rs)|
 |919|[Complete Binary Tree Inserter](https://leetcode.com/problems/complete-binary-tree-inserter)|tree|[solution](src/solutions/_919_complete_binary_tree_inserter.rs)|
 |91|[Decode Ways](https://leetcode.com/problems/decode-ways)|string dynamic-programming|[solution](src/solutions/_91_decode_ways.rs)|
