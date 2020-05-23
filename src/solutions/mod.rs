@@ -567,6 +567,8 @@ mod _433_minimum_genetic_mutation;
 //
 mod _434_number_of_segments_in_a_string;
 //
+mod _435_non_overlapping_intervals;
+//
 mod _436_find_right_interval;
 //
 mod _437_path_sum_3;
@@ -590,6 +592,8 @@ mod _447_number_of_boomerangs;
 mod _448_find_all_numbers_disappeared_in_an_array;
 //
 mod _451_sort_characters_by_frequency;
+//
+mod _452_minimum_number_of_arrows_to_burst_ballons;
 //
 mod _453_minimum_moves_to_equal_array_elements;
 //

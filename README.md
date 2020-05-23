@@ -409,10 +409,10 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook)|array|[solution](src/solutions/_999_available_captures_for_rook.rs)|
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|math|[solution](src/solutions/_9_palindrome_number.rs)|
 </details>
-<details><summary>Medium 180/688 26.16%</summary>
+<details><summary>Medium 178/688 25.87%</summary>
 
 
-|id|688 Medium Questions|Tags|508 Solutions|
+|id|688 Medium Questions|Tags|510 Solutions|
 |---|---|---|---|
 |427|[Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree)||   |
 |558|[Logical OR of Two Binary Grids Represented as Quad-Trees](https://leetcode.com/problems/logical-or-of-two-binary-grids-represented-as-quad-trees)||   |
@@ -465,8 +465,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1401|[Circle and Rectangle Overlapping](https://leetcode.com/problems/circle-and-rectangle-overlapping)|geometry|   |
 |1334|[Find the City With the Smallest Number of Neighbors at a Threshold Distance](https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance)|graph|   |
 |1361|[Validate Binary Tree Nodes](https://leetcode.com/problems/validate-binary-tree-nodes)|graph|   |
-|435|[Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals)|greedy|   |
-|452|[Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons)|greedy|   |
 |649|[Dota2 Senate](https://leetcode.com/problems/dota2-senate)|greedy|   |
 |738|[Monotone Increasing Digits](https://leetcode.com/problems/monotone-increasing-digits)|greedy|   |
 |948|[Bag of Tokens](https://leetcode.com/problems/bag-of-tokens)|greedy|   |
@@ -881,6 +879,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |419|[Battleships in a Board](https://leetcode.com/problems/battleships-in-a-board)||[solution](src/solutions/_419_battleships_in_a_board.rs)|
 |424|[Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement)|two-pointers sliding-window|[solution](src/solutions/_424_longest_repeating_character_replacement.rs)|
 |433|[Minimum Genetic Mutation](https://leetcode.com/problems/minimum-genetic-mutation)||[solution](src/solutions/_433_minimum_genetic_mutation.rs)|
+|435|[Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals)|greedy|[solution](src/solutions/_435_non_overlapping_intervals.rs)|
 |436|[Find Right Interval](https://leetcode.com/problems/find-right-interval)|binary-search|[solution](src/solutions/_436_find_right_interval.rs)|
 |438|[Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string)|hash-table|[solution](src/solutions/_438_find_all_anagrams_in_a_string.rs)|
 |439|[Ternary Expression Parser](https://leetcode.com/problems/ternary-expression-parser)|stack depth-first-search|[solution](src/solutions/_439_ternary_expression_parser.rs)|
@@ -889,6 +888,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |444|[Sequence Reconstruction](https://leetcode.com/problems/sequence-reconstruction)|graph topological-sort|[solution](src/solutions/_444_sequence_reconstruction.rs)|
 |445|[Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii)|linked-list|[solution](src/solutions/_445_add_two_numbers_2.rs)|
 |451|[Sort Characters By Frequency](https://leetcode.com/problems/sort-characters-by-frequency)|hash-table heap|[solution](src/solutions/_451_sort_characters_by_frequency.rs)|
+|452|[Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons)|greedy|[solution](src/solutions/_452_minimum_number_of_arrows_to_burst_ballons.rs)|
 |456|[132 Pattern](https://leetcode.com/problems/132-pattern)|stack|[solution](src/solutions/_456_132_pattern.rs)|
 |457|[Circular Array Loop](https://leetcode.com/problems/circular-array-loop)|array two-pointers|[solution](src/solutions/_457_circular_array_loop.rs)|
 |467|[Unique Substrings in Wraparound String](https://leetcode.com/problems/unique-substrings-in-wraparound-string)|dynamic-programming|[solution](src/solutions/_467_unique_substrings_in_wraparound_string.rs)|
