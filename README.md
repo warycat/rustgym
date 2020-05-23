@@ -409,10 +409,10 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook)|array|[solution](src/solutions/_999_available_captures_for_rook.rs)|
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|math|[solution](src/solutions/_9_palindrome_number.rs)|
 </details>
-<details><summary>Medium 181/688 26.31%</summary>
+<details><summary>Medium 180/688 26.16%</summary>
 
 
-|id|688 Medium Questions|Tags|507 Solutions|
+|id|688 Medium Questions|Tags|508 Solutions|
 |---|---|---|---|
 |427|[Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree)||   |
 |558|[Logical OR of Two Binary Grids Represented as Quad-Trees](https://leetcode.com/problems/logical-or-of-two-binary-grids-represented-as-quad-trees)||   |
@@ -559,7 +559,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1003|[Check If Word Is Valid After Substitutions](https://leetcode.com/problems/check-if-word-is-valid-after-substitutions)|string stack|   |
 |1410|[HTML Entity Parser](https://leetcode.com/problems/html-entity-parser)|string stack|   |
 |536|[Construct Binary Tree from String](https://leetcode.com/problems/construct-binary-tree-from-string)|string tree|   |
-|156|[Binary Tree Upside Down](https://leetcode.com/problems/binary-tree-upside-down)|tree|   |
 |236|[Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree)|tree|   |
 |285|[Inorder Successor in BST](https://leetcode.com/problems/inorder-successor-in-bst)|tree|   |
 |298|[Binary Tree Longest Consecutive Sequence](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence)|tree|   |
@@ -765,6 +764,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |151|[Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string)|string|[solution](src/solutions/_151_reverse_words_in_a_string.rs)|
 |152|[Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray)|array dynamic-programming|[solution](src/solutions/_152_maximum_product_subarray.rs)|
 |153|[Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array)|array binary-search|[solution](src/solutions/_153_find_minimum_in_rotated_sorted_array.rs)|
+|156|[Binary Tree Upside Down](https://leetcode.com/problems/binary-tree-upside-down)|tree|[solution](src/solutions/_156_binary_tree_upside_down.rs)|
 |159|[Longest Substring with At Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters)|hash-table two-pointers string sliding-window|[solution](src/solutions/_159_longest_substring_with_at_most_two_distinc_characters.rs)|
 |15|[3Sum](https://leetcode.com/problems/3sum)|array two-pointers|[solution](src/solutions/_15_three_sum.rs)|
 |161|[One Edit Distance](https://leetcode.com/problems/one-edit-distance)|string|[solution](src/solutions/_161_one_edit_distance.rs)|

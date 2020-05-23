@@ -67,10 +67,9 @@ impl GSVG {
         }
     }
 
-    pub fn edge(&mut self, t: usize, h: usize, val: i32) {
+    pub fn edge(&mut self, t: usize, h: usize) {
         let e_attrs = make_attrs(vec![
             ("id", &self.edges.len().to_string()),
-            ("label", &val.to_string()),
             ("dir", "forward"),
         ]);
         unsafe {
@@ -147,7 +146,7 @@ impl DrawTree for TreeLink {
             let val = node.val;
             gsvg.node(val);
             if let Some(pid) = parent_id {
-                gsvg.edge(pid, nid, nid as i32);
+                gsvg.edge(pid, nid);
             }
             *id += 1;
             let left = &node.left;
@@ -174,9 +173,9 @@ impl Draw for Vec<Vec<usize>> {
         for i in 0..n {
             gsvg.node(i as i32);
         }
-        for u in 0..n {
-            for &v in &self[u] {
-                gsvg.edge(u, v, 0);
+        for (u, vs) in self.iter().enumerate() {
+            for &v in vs {
+                gsvg.edge(u, v);
             }
         }
         gsvg
@@ -185,7 +184,7 @@ impl Draw for Vec<Vec<usize>> {
 
 #[test]
 fn test() {
-    // let root: TreeLink = tree!(1, tree!(2, tree!(3), None), tree!(4));
-    // let gsvg = root.draw("Test T");
-    // gsvg.render("testtree.svg");
+    let root: TreeLink = tree!(1, tree!(2, tree!(3), None), tree!(4));
+    let gsvg = root.draw("Test T");
+    gsvg.render("testtree.svg");
 }
