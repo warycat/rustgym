@@ -409,6 +409,8 @@ mod _293_flip_game;
 //
 mod _295_find_median_from_data_stream;
 //
+mod _298_binary_tree_longest_consecutive_sequence;
+//
 mod _299_bulls_and_cows;
 //
 mod _300_longest_increasing_subsequence;
@@ -444,6 +446,8 @@ mod _326_power_of_three;
 mod _328_odd_even_linked_list;
 //
 mod _332_reconstruct_itinerary;
+//
+mod _333_largest_bst_subtree;
 //
 mod _334_increasing_triplet_subsequence;
 //

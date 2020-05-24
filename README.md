@@ -409,10 +409,10 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook)|array|[solution](src/solutions/_999_available_captures_for_rook.rs)|
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|math|[solution](src/solutions/_9_palindrome_number.rs)|
 </details>
-<details><summary>Medium 178/688 25.87%</summary>
+<details><summary>Medium 176/688 25.58%</summary>
 
 
-|id|688 Medium Questions|Tags|510 Solutions|
+|id|688 Medium Questions|Tags|512 Solutions|
 |---|---|---|---|
 |427|[Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree)||   |
 |558|[Logical OR of Two Binary Grids Represented as Quad-Trees](https://leetcode.com/problems/logical-or-of-two-binary-grids-represented-as-quad-trees)||   |
@@ -559,8 +559,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |536|[Construct Binary Tree from String](https://leetcode.com/problems/construct-binary-tree-from-string)|string tree|   |
 |236|[Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree)|tree|   |
 |285|[Inorder Successor in BST](https://leetcode.com/problems/inorder-successor-in-bst)|tree|   |
-|298|[Binary Tree Longest Consecutive Sequence](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence)|tree|   |
-|333|[Largest BST Subtree](https://leetcode.com/problems/largest-bst-subtree)|tree|   |
 |449|[Serialize and Deserialize BST](https://leetcode.com/problems/serialize-and-deserialize-bst)|tree|   |
 |450|[Delete Node in a BST](https://leetcode.com/problems/delete-node-in-a-bst)|tree|   |
 |510|[Inorder Successor in BST II](https://leetcode.com/problems/inorder-successor-in-bst-ii)|tree|   |
@@ -819,6 +817,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |286|[Walls and Gates](https://leetcode.com/problems/walls-and-gates)|breadth-first-search|[solution](src/solutions/_286_walls_and_gates.rs)|
 |287|[Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number)|array two-pointers binary-search|[solution](src/solutions/_287_find_the_duplicate_number.rs)|
 |289|[Game of Life](https://leetcode.com/problems/game-of-life)|array|[solution](src/solutions/_289_game_of_life.rs)|
+|298|[Binary Tree Longest Consecutive Sequence](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence)|tree|[solution](src/solutions/_298_binary_tree_longest_consecutive_sequence.rs)|
 |29|[Divide Two Integers](https://leetcode.com/problems/divide-two-integers)|math binary-search|[solution](src/solutions/_29_divide_two_integers.rs)|
 |2|[Add Two Numbers](https://leetcode.com/problems/add-two-numbers)|linked-list math|[solution](src/solutions/_2_add_two_numbers.rs)|
 |300|[Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence)|binary-search dynamic-programming|[solution](src/solutions/_300_longest_increasing_subsequence.rs)|
@@ -837,6 +836,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |325|[Maximum Size Subarray Sum Equals k](https://leetcode.com/problems/maximum-size-subarray-sum-equals-k)|hash-table|[solution](src/solutions/_325_maximum_size_subarray_sum_equals_k.rs)|
 |328|[Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list)|linked-list|[solution](src/solutions/_328_odd_even_linked_list.rs)|
 |332|[Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary)|depth-first-search graph|[solution](src/solutions/_332_reconstruct_itinerary.rs)|
+|333|[Largest BST Subtree](https://leetcode.com/problems/largest-bst-subtree)|tree|[solution](src/solutions/_333_largest_bst_subtree.rs)|
 |334|[Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence)||[solution](src/solutions/_334_increasing_triplet_subsequence.rs)|
 |338|[Counting Bits](https://leetcode.com/problems/counting-bits)|dynamic-programming bit-manipulation|[solution](src/solutions/_338_counting_bits.rs)|
 |33|[Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array)|array binary-search|[solution](src/solutions/_33_search_in_rotated_sorted_array.rs)|

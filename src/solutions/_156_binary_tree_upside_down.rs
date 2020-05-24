@@ -1,41 +1,27 @@
 struct Solution;
-use std::collections::VecDeque;
 use util::*;
 
 trait Preorder {
-    fn preorder(self, left_queue: &mut VecDeque<TreeLink>, right_queue: &mut VecDeque<TreeLink>);
+    fn preorder(self, left: TreeLink, right: TreeLink) -> TreeLink;
 }
 
 impl Preorder for TreeLink {
-    fn preorder(self, left_queue: &mut VecDeque<TreeLink>, right_queue: &mut VecDeque<TreeLink>) {
+    fn preorder(self, left: TreeLink, right: TreeLink) -> TreeLink {
         if let Some(node) = self {
-            let left = node.borrow_mut().left.take();
-            let right = node.borrow_mut().right.take();
-            left_queue.push_back(Some(node));
-            right_queue.push_back(right);
-            left.preorder(left_queue, right_queue);
+            let left_tree = node.borrow_mut().left.take();
+            let right_leaf = node.borrow_mut().right.take();
+            node.borrow_mut().left = left;
+            node.borrow_mut().right = right;
+            left_tree.preorder(right_leaf, Some(node))
+        } else {
+            right
         }
     }
 }
 
 impl Solution {
     fn upside_down_binary_tree(root: TreeLink) -> TreeLink {
-        if root.is_some() {
-            let mut left_queue: VecDeque<TreeLink> = VecDeque::new();
-            let mut right_queue: VecDeque<TreeLink> = VecDeque::new();
-            root.preorder(&mut left_queue, &mut right_queue);
-            let mut root: TreeLink = left_queue.pop_front().unwrap();
-            while let (Some(Some(left)), Some(right)) =
-                (left_queue.pop_front(), right_queue.pop_front())
-            {
-                left.borrow_mut().right = root;
-                left.borrow_mut().left = right;
-                root = Some(left);
-            }
-            root
-        } else {
-            root
-        }
+        root.preorder(None, None)
     }
 }
 
