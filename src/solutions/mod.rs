@@ -497,6 +497,8 @@ mod _371_sum_of_two_integers;
 //
 mod _372_super_pow;
 //
+mod _373_find_k_pairs_with_smallest_sums;
+//
 mod _374_guess_number_higher_or_lower;
 //
 mod _377_combination_sum_4;
@@ -1682,6 +1684,8 @@ mod _1396_design_underground_system;
 mod _1399_count_largest_group;
 //
 mod _1400_construct_k_palindrome_strings;
+//
+mod _1401_circle_and_rectangle_overlapping;
 //
 mod _1402_reducing_dishes;
 //
