@@ -134,7 +134,11 @@ mod _81_search_in_rotated_sorted_array_2;
 //
 mod _80_remove_duplicates_from_sorted_array_2;
 //
+mod _82_remove_duplicates_from_sorted_list_2;
+//
 mod _83_remove_duplicates_from_sorted_list;
+//
+mod _86_partition_list;
 //
 mod _88_merge_sorted_array;
 //
@@ -346,6 +350,8 @@ mod _246_strobogrammantic_number;
 //
 mod _247_strobogrammatic_number_2;
 //
+mod _249_group_shifted_strings;
+//
 mod _250_count_univalue_subtrees;
 //
 mod _251_flatten_2d_vector;
@@ -455,6 +461,8 @@ mod _333_largest_bst_subtree;
 //
 mod _334_increasing_triplet_subsequence;
 //
+mod _337_house_robber_3;
+//
 mod _338_counting_bits;
 //
 mod _339_nested_list_weight_sum;
@@ -474,6 +482,8 @@ mod _348_design_tic_tac_toe;
 mod _349_intersection_of_two_arrays;
 //
 mod _350_intersection_of_two_arrays_2;
+//
+mod _351_android_unlock_patterns;
 //
 mod _353_design_snake_game;
 //
@@ -600,6 +610,8 @@ mod _445_add_two_numbers_2;
 mod _447_number_of_boomerangs;
 //
 mod _448_find_all_numbers_disappeared_in_an_array;
+//
+mod _450_delete_node_in_a_bst;
 //
 mod _451_sort_characters_by_frequency;
 //
@@ -830,6 +842,8 @@ mod _655_print_binary_tree;
 mod _657_robot_return_to_origin;
 //
 mod _658_find_k_cloest_elements;
+//
+mod _659_split_array_into_consecutive_subsequences;
 //
 mod _661_image_smoother;
 //
@@ -1379,6 +1393,8 @@ mod _1100_find_k_length_substrings_with_no_repeated_characters;
 //
 mod _1101_the_earliest_moment_when_everyone_become_friends;
 //
+mod _1102_path_with_maximum_minimum_value;
+//
 mod _1103_distribute_candies_to_people;
 //
 mod _1104_path_in_zigzag_labelled_binary_tree;
@@ -1579,6 +1595,8 @@ mod _1295_find_numbers_with_even_number_of_digits;
 //
 mod _1296_divide_array_in_sets_of_k_consecutive_numbers;
 //
+mod _1297_maximum_number_of_occurrences_of_a_substring;
+//
 mod _1299_replace_elements_with_greatest_element_on_right_side;
 //
 mod _1300_sum_of_mutated_array_closest_to_target;
@@ -1612,6 +1630,8 @@ mod _1323_maximum_69_number;
 mod _1324_print_words_vertically;
 //
 mod _1325_delete_leaves_with_a_given_value;
+//
+mod _1328_break_a_palindrome;
 //
 mod _1329_sort_the_matrix_diagonally;
 //
