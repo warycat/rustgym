@@ -264,6 +264,8 @@ mod _179_largest_number;
 //
 mod _186_reverse_words_in_a_string_2;
 //
+mod _187_repeated_dna_sequences;
+//
 mod _189_rotate_array;
 //
 mod _191_number_of_1_bits;
@@ -466,6 +468,8 @@ mod _337_house_robber_3;
 mod _338_counting_bits;
 //
 mod _339_nested_list_weight_sum;
+//
+mod _341_flatten_nested_list_iterator;
 //
 mod _342_power_of_four;
 //
@@ -846,6 +850,8 @@ mod _658_find_k_cloest_elements;
 mod _659_split_array_into_consecutive_subsequences;
 //
 mod _661_image_smoother;
+//
+mod _662_maximum_width_of_binary_tree;
 //
 mod _665_non_decreasing_array;
 //
