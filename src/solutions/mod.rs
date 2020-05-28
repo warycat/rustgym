@@ -378,6 +378,8 @@ mod _261_graph_valid_tree;
 //
 mod _263_ugly_number;
 //
+mod _264_ugly_number_2;
+//
 mod _266_palindrome_permutation;
 //
 mod _267_palindrome_permutation_2;
@@ -398,6 +400,8 @@ mod _276_paint_fence;
 //
 #[cfg(feature = "testcpp")]
 mod _278_first_bad_version;
+//
+mod _279_perfect_squares;
 //
 mod _280_wiggle_sort;
 //
@@ -639,6 +643,8 @@ mod _467_unique_substrings_in_wraparound_string;
 //
 mod _468_validate_ip_address;
 //
+mod _470_implement_rand10_using_rand7;
+//
 mod _473_matchsticks_to_square;
 //
 mod _475_heaters;
@@ -664,6 +670,8 @@ mod _490_the_maze;
 mod _491_increasing_subsequences;
 //
 mod _492_construct_the_rectangle;
+//
+mod _494_target_sum;
 //
 mod _495_teemo_attacking;
 //
@@ -945,6 +953,8 @@ mod _734_sentence_similarity;
 //
 mod _735_asteroid_collision;
 //
+mod _737_sentence_similarity_2;
+//
 mod _739_daily_temperatures;
 //
 mod _740_delete_and_earn;
@@ -1116,6 +1126,8 @@ mod _875_koko_eating_bananas;
 mod _876_middle_of_the_linked_list;
 //
 mod _877_stone_game;
+//
+mod _881_boats_to_save_people;
 //
 mod _883_projection_area_of_3d_shapes;
 //
@@ -1373,6 +1385,8 @@ mod _1071_greatest_common_divisor_of_strings;
 //
 mod _1072_flip_columns_for_maximum_number_of_equal_rows;
 //
+mod _1073_adding_two_negabinary_numbers;
+//
 mod _1078_occurrences_after_bigram;
 //
 mod _1079_letter_tile_possibilities;
@@ -1443,6 +1457,8 @@ mod _1143_longest_common_subsequence;
 //
 mod _1144_decrease_elements_to_make_array_zigzag;
 //
+mod _1145_binary_tree_coloring_game;
+//
 mod _1146_snapshot_array;
 //
 mod _1150_check_if_a_number_is_majority_element_in_a_sorted_array;
@@ -1452,6 +1468,8 @@ mod _1151_minimum_swaps_to_group_all_1s_together;
 mod _1152_analyze_user_website_visit_pattern;
 //
 mod _1154_day_of_the_year;
+//
+mod _1155_number_of_dice_rolls_with_target_sum;
 //
 mod _1160_find_words_that_can_be_formed_by_characters;
 //
