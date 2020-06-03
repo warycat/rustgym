@@ -507,6 +507,8 @@ mod _355_design_twitter;
 //
 mod _359_logger_rate_limiter;
 //
+mod _360_sort_transformed_array;
+//
 mod _361_bomb_enemy;
 //
 mod _362_design_hit_counter;
@@ -860,6 +862,8 @@ mod _642_design_search_autocomplete_system;
 mod _643_maximum_average_subarray_1;
 //
 mod _645_set_mismatch;
+//
+mod _646_maximum_length_of_pair_chain;
 //
 mod _647_palindromic_substrings;
 //
@@ -1435,6 +1439,8 @@ mod _1079_letter_tile_possibilities;
 //
 mod _1080_insufficient_nodes_in_root_to_leaf_paths;
 //
+mod _1081_smallest_subsequence_of_distinct_characters;
+//
 mod _1085_sum_of_digits_in_the_minmum_number;
 //
 mod _1086_high_five;
@@ -1593,6 +1599,8 @@ mod _1228_missing_number_in_arithmetic_progression;
 //
 mod _1229_meeting_scheduler;
 //
+mod _1230_toss_strange_coins;
+//
 mod _1232_check_if_it_is_a_straight_line;
 //
 mod _1233_remove_sub_folders_from_the_filesystem;
@@ -1642,6 +1650,8 @@ mod _1272_remove_interval;
 mod _1273_delete_tree_nodes;
 //
 mod _1275_find_winner_on_a_tic_tac_toe_game;
+//
+mod _1276_number_of_burgers_with_no_waste_of_ingredients;
 //
 mod _1277_count_square_submatrices_with_all_ones;
 //
@@ -1718,6 +1728,8 @@ mod _1334_find_the_city_with_the_smallest_number_of_neighbors_at_a_threshold_dis
 mod _1337_the_k_weakest_rows_in_a_matrix;
 //
 mod _1338_reduce_array_size_to_the_half;
+//
+mod _1339_maximum_product_of_splitted_binary_tree;
 //
 mod _1342_number_of_steps_to_reduce_a_number_to_zero;
 //
