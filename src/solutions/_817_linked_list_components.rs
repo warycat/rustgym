@@ -6,7 +6,7 @@ use util::*;
 impl Solution {
     fn num_components(head: ListLink, g: Vec<i32>) -> i32 {
         let mut p = head;
-        let hs: HashSet<i32> = HashSet::from_iter(g.into_iter());
+        let hs: HashSet<i32> = HashSet::from_iter(g);
         let mut open = false;
         let mut res = 0;
         while let Some(node) = p {

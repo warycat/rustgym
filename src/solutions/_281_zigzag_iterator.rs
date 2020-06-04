@@ -10,10 +10,10 @@ impl<'a> ZigzagIterator {
     fn new(v1: Vec<i32>, v2: Vec<i32>) -> Self {
         let mut queues = VecDeque::new();
         if !v1.is_empty() {
-            queues.push_back(VecDeque::from_iter(v1.into_iter()));
+            queues.push_back(VecDeque::from_iter(v1));
         }
         if !v2.is_empty() {
-            queues.push_back(VecDeque::from_iter(v2.into_iter()));
+            queues.push_back(VecDeque::from_iter(v2));
         }
         ZigzagIterator { queues }
     }

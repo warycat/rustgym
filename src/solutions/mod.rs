@@ -224,6 +224,8 @@ mod _143_reorder_list;
 //
 mod _146_lru_cache;
 //
+mod _147_insertion_sort_list;
+//
 mod _148_sort_list;
 //
 mod _150_evaluate_reverse_polish_notation;
@@ -505,6 +507,10 @@ mod _353_design_snake_game;
 //
 mod _355_design_twitter;
 //
+mod _356_line_reflection;
+//
+mod _357_count_numbers_with_unique_digits;
+//
 mod _359_logger_rate_limiter;
 //
 mod _360_sort_transformed_array;
@@ -537,6 +543,8 @@ mod _377_combination_sum_4;
 //
 mod _378_kth_smallest_element_in_a_sorted_matrix;
 //
+mod _379_design_phone_directory;
+//
 mod _380_insert_delete_get_random_o1;
 //
 mod _382_linked_list_random_node;
@@ -562,6 +570,8 @@ mod _393_utf8_validation;
 mod _394_decode_string;
 //
 mod _395_longest_substring_with_at_least_k_repeating_characters;
+//
+mod _396_rotate_function;
 //
 mod _398_random_pick_index;
 //
@@ -852,6 +862,8 @@ mod _635_design_log_storage_system;
 mod _636_exclusive_time_of_functions;
 //
 mod _637_average_of_levels_in_binary_tree;
+//
+mod _638_shopping_offers;
 //
 mod _640_solve_the_equation;
 //
@@ -1523,6 +1535,8 @@ mod _1154_day_of_the_year;
 //
 mod _1155_number_of_dice_rolls_with_target_sum;
 //
+mod _1156_swap_for_longest_repeated_character_substring;
+//
 mod _1160_find_words_that_can_be_formed_by_characters;
 //
 mod _1161_maximum_level_sum_of_a_binary_tree;
@@ -1554,6 +1568,8 @@ mod _1182_shortest_distance_to_target_color;
 mod _1184_distance_between_bus_stops;
 //
 mod _1185_day_of_the_week;
+//
+mod _1186_maximum_subarray_sum_with_one_deletion;
 //
 mod _1189_maximum_number_of_balloons;
 //
