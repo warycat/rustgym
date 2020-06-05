@@ -105,7 +105,7 @@ impl Debug for List {
 
 impl Drop for List {
     fn drop(&mut self) {
-        while let Some(_) = self.pop_front() {}
+        while self.pop_front().is_some() {}
     }
 }
 

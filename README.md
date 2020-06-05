@@ -48,10 +48,10 @@ All the solutions here are crafted with love and their performance beats 99% of 
 ### leetcode_rs [![Build Status](https://travis-ci.org/warycat/leetcode_rs.svg?branch=master)](https://travis-ci.org/warycat/leetcode_rs)
 
 # All Solutions
-<details><summary>Easy 12/359 3.34%</summary>
+<details><summary>Easy 11/359 3.06%</summary>
 
 
-|id|359 Easy Questions|Tags|347 Solutions|
+|id|359 Easy Questions|Tags|348 Solutions|
 |---|---|---|---|
 |190|[Reverse Bits](https://leetcode.com/problems/reverse-bits)|bit-manipulation|   |
 |690|[Employee Importance](https://leetcode.com/problems/employee-importance)|hash-table depth-first-search breadth-first-search|   |
@@ -63,7 +63,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |235|[Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree)|tree|   |
 |589|[N-ary Tree Preorder Traversal](https://leetcode.com/problems/n-ary-tree-preorder-traversal)|tree|   |
 |590|[N-ary Tree Postorder Traversal](https://leetcode.com/problems/n-ary-tree-postorder-traversal)|tree|   |
-|1469|[Find All the Lonely Nodes](https://leetcode.com/problems/find-all-the-lonely-nodes)|tree depth-first-search|   |
 |559|[Maximum Depth of N-ary Tree](https://leetcode.com/problems/maximum-depth-of-n-ary-tree)|tree depth-first-search breadth-first-search|   |
 |1002|[Find Common Characters](https://leetcode.com/problems/find-common-characters)|array hash-table|[solution](src/solutions/_1002_find_common_characters.rs)|
 |1005|[Maximize Sum Of Array After K Negations](https://leetcode.com/problems/maximize-sum-of-array-after-k-negations)|greedy|[solution](src/solutions/_1005_maximize_sum_of_array_after_k_negations.rs)|
@@ -181,6 +180,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1455|[Check If a Word Occurs As a Prefix of Any Word in a Sentence](https://leetcode.com/problems/check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence)|string|[solution](src/solutions/_1455_check_if_a_word_occurs_as_a_prefix_of_any_word_in_a_sentence.rs)|
 |1460|[Make Two Arrays Equal by Reversing Sub-arrays](https://leetcode.com/problems/make-two-arrays-equal-by-reversing-sub-arrays)|array|[solution](src/solutions/_1460_make_two_arrays_equal_by_reversing_sub_arrays.rs)|
 |1464|[Maximum Product of Two Elements in an Array](https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array)|array|[solution](src/solutions/_1464_maximum_product_of_two_elements_in_an_array.rs)|
+|1469|[Find All the Lonely Nodes](https://leetcode.com/problems/find-all-the-lonely-nodes)|tree depth-first-search|[solution](src/solutions/_1469_find_all_the_lonely_nodes.rs)|
 |14|[Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix)|string|[solution](src/solutions/_14_longest_common_prefix.rs)|
 |155|[Min Stack](https://leetcode.com/problems/min-stack)|stack design|[solution](src/solutions/_155_min_stack.rs)|
 |167|[Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted)|array two-pointers binary-search|[solution](src/solutions/_167_two_sum_2.rs)|
@@ -413,10 +413,10 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook)|array|[solution](src/solutions/_999_available_captures_for_rook.rs)|
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|math|[solution](src/solutions/_9_palindrome_number.rs)|
 </details>
-<details><summary>Medium 114/694 16.43%</summary>
+<details><summary>Medium 112/694 16.14%</summary>
 
 
-|id|694 Medium Questions|Tags|580 Solutions|
+|id|694 Medium Questions|Tags|582 Solutions|
 |---|---|---|---|
 |427|[Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree)||   |
 |558|[Logical OR of Two Binary Grids Represented as Quad-Trees](https://leetcode.com/problems/logical-or-of-two-binary-grids-represented-as-quad-trees)||   |
@@ -441,7 +441,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |813|[Largest Sum of Averages](https://leetcode.com/problems/largest-sum-of-averages)|dynamic-programming|   |
 |837|[New 21 Game](https://leetcode.com/problems/new-21-game)|dynamic-programming|   |
 |967|[Numbers With Same Consecutive Differences](https://leetcode.com/problems/numbers-with-same-consecutive-differences)|dynamic-programming|   |
-|1024|[Video Stitching](https://leetcode.com/problems/video-stitching)|dynamic-programming|   |
 |1039|[Minimum Score Triangulation of Polygon](https://leetcode.com/problems/minimum-score-triangulation-of-polygon)|dynamic-programming|   |
 |1049|[Last Stone Weight II](https://leetcode.com/problems/last-stone-weight-ii)|dynamic-programming|   |
 |1139|[Largest 1-Bordered Square](https://leetcode.com/problems/largest-1-bordered-square)|dynamic-programming|   |
@@ -507,7 +506,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1456|[Maximum Number of Vowels in a Substring of Given Length](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length)|string sliding-window|   |
 |1451|[Rearrange Words in a Sentence](https://leetcode.com/problems/rearrange-words-in-a-sentence)|string sort|   |
 |1452|[People Whose List of Favorite Companies Is Not a Subset of Another List](https://leetcode.com/problems/people-whose-list-of-favorite-companies-is-not-a-subset-of-another-list)|string sort|   |
-|385|[Mini Parser](https://leetcode.com/problems/mini-parser)|string stack|   |
 |1003|[Check If Word Is Valid After Substitutions](https://leetcode.com/problems/check-if-word-is-valid-after-substitutions)|string stack|   |
 |1410|[HTML Entity Parser](https://leetcode.com/problems/html-entity-parser)|string stack|   |
 |536|[Construct Binary Tree from String](https://leetcode.com/problems/construct-binary-tree-from-string)|string tree|   |
@@ -542,6 +540,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1019|[Next Greater Node In Linked List](https://leetcode.com/problems/next-greater-node-in-linked-list)|linked-list stack|[solution](src/solutions/_1019_next_greater_node_in_linked_list.rs)|
 |1020|[Number of Enclaves](https://leetcode.com/problems/number-of-enclaves)|depth-first-search|[solution](src/solutions/_1020_number_of_enclaves.rs)|
 |1023|[Camelcase Matching](https://leetcode.com/problems/camelcase-matching)|string trie|[solution](src/solutions/_1023_camelcase_matching.rs)|
+|1024|[Video Stitching](https://leetcode.com/problems/video-stitching)|dynamic-programming|[solution](src/solutions/_1024_video_stitching.rs)|
 |1026|[Maximum Difference Between Node and Ancestor](https://leetcode.com/problems/maximum-difference-between-node-and-ancestor)|tree depth-first-search|[solution](src/solutions/_1026_maximum_difference_between_node_and_ancestor.rs)|
 |1027|[Longest Arithmetic Sequence](https://leetcode.com/problems/longest-arithmetic-sequence)|dynamic-programming|[solution](src/solutions/_1027_longest_arithmetic_sequence.rs)|
 |102|[Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal)|tree breadth-first-search|[solution](src/solutions/_102_binary_tree_level_order_traversal.rs)|
@@ -840,6 +839,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |380|[Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1)|array hash-table design|[solution](src/solutions/_380_insert_delete_get_random_o1.rs)|
 |382|[Linked List Random Node](https://leetcode.com/problems/linked-list-random-node)|reservoir-sampling|[solution](src/solutions/_382_linked_list_random_node.rs)|
 |384|[Shuffle an Array](https://leetcode.com/problems/shuffle-an-array)||[solution](src/solutions/_384_shuffle_an_array.rs)|
+|385|[Mini Parser](https://leetcode.com/problems/mini-parser)|string stack|[solution](src/solutions/_385_mini_parser.rs)|
 |386|[Lexicographical Numbers](https://leetcode.com/problems/lexicographical-numbers)||[solution](src/solutions/_386_lexicographical_numbers.rs)|
 |388|[Longest Absolute File Path](https://leetcode.com/problems/longest-absolute-file-path)||[solution](src/solutions/_388_longest_absolute_file_path.rs)|
 |390|[Elimination Game](https://leetcode.com/problems/elimination-game)||[solution](src/solutions/_390_elimination_game.rs)|

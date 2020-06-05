@@ -1375,6 +1375,8 @@ mod _1022_sum_root_to_leaf_binary_number;
 //
 mod _1023_camelcase_matching;
 //
+mod _1024_video_stitching;
+//
 mod _1025_divisor_game;
 //
 mod _1026_maximum_difference_between_node_and_ancestor;
@@ -1881,4 +1883,6 @@ mod _1455_check_if_a_word_occurs_as_a_prefix_of_any_word_in_a_sentence;
 mod _1460_make_two_arrays_equal_by_reversing_sub_arrays;
 //
 mod _1464_maximum_product_of_two_elements_in_an_array;
+//
+mod _1469_find_all_the_lonely_nodes;
 //
