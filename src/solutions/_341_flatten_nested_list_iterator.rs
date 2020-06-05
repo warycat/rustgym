@@ -1,11 +1,6 @@
-#[derive(Debug, PartialEq, Eq)]
-pub enum NestedInteger {
-    Int(i32),
-    List(Vec<NestedInteger>),
-}
-
 use std::iter::Peekable;
 use std::vec::IntoIter;
+use util::*;
 
 struct NestedIterator {
     it: Peekable<IntoIter<i32>>,

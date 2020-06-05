@@ -413,10 +413,10 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook)|array|[solution](src/solutions/_999_available_captures_for_rook.rs)|
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|math|[solution](src/solutions/_9_palindrome_number.rs)|
 </details>
-<details><summary>Medium 112/694 16.14%</summary>
+<details><summary>Medium 110/694 15.85%</summary>
 
 
-|id|694 Medium Questions|Tags|582 Solutions|
+|id|694 Medium Questions|Tags|584 Solutions|
 |---|---|---|---|
 |427|[Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree)||   |
 |558|[Logical OR of Two Binary Grids Represented as Quad-Trees](https://leetcode.com/problems/logical-or-of-two-binary-grids-represented-as-quad-trees)||   |
@@ -434,7 +434,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |284|[Peeking Iterator](https://leetcode.com/problems/peeking-iterator)|design|   |
 |474|[Ones and Zeroes](https://leetcode.com/problems/ones-and-zeroes)|dynamic-programming|   |
 |673|[Number of Longest Increasing Subsequence](https://leetcode.com/problems/number-of-longest-increasing-subsequence)|dynamic-programming|   |
-|764|[Largest Plus Sign](https://leetcode.com/problems/largest-plus-sign)|dynamic-programming|   |
 |790|[Domino and Tromino Tiling](https://leetcode.com/problems/domino-and-tromino-tiling)|dynamic-programming|   |
 |801|[Minimum Swaps To Make Sequences Increasing](https://leetcode.com/problems/minimum-swaps-to-make-sequences-increasing)|dynamic-programming|   |
 |808|[Soup Servings](https://leetcode.com/problems/soup-servings)|dynamic-programming|   |
@@ -497,7 +496,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1093|[Statistics from a Large Sample](https://leetcode.com/problems/statistics-from-a-large-sample)|math two-pointers|   |
 |324|[Wiggle Sort II](https://leetcode.com/problems/wiggle-sort-ii)|sort|   |
 |880|[Decoded String at Index](https://leetcode.com/problems/decoded-string-at-index)|stack|   |
-|1124|[Longest Well-Performing Interval](https://leetcode.com/problems/longest-well-performing-interval)|stack|   |
 |1419|[Minimum Number of Frogs Croaking](https://leetcode.com/problems/minimum-number-of-frogs-croaking)|string|   |
 |1432|[Max Difference You Can Get From Changing an Integer](https://leetcode.com/problems/max-difference-you-can-get-from-changing-an-integer)|string|   |
 |842|[Split Array into Fibonacci Sequence](https://leetcode.com/problems/split-array-into-fibonacci-sequence)|string backtracking greedy|   |
@@ -585,6 +583,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1111|[Maximum Nesting Depth of Two Valid Parentheses Strings](https://leetcode.com/problems/maximum-nesting-depth-of-two-valid-parentheses-strings)|binary-search greedy|[solution](src/solutions/_1111_maximum_nesting_depth_of_two_valid_parentheses_strings.rs)|
 |1120|[Maximum Average Subtree](https://leetcode.com/problems/maximum-average-subtree)|tree|[solution](src/solutions/_1120_maximum_average_subtree.rs)|
 |1123|[Lowest Common Ancestor of Deepest Leaves](https://leetcode.com/problems/lowest-common-ancestor-of-deepest-leaves)|tree depth-first-search|[solution](src/solutions/_1123_lowest_common_ancestor_or_deepest_leaves.rs)|
+|1124|[Longest Well-Performing Interval](https://leetcode.com/problems/longest-well-performing-interval)|stack|[solution](src/solutions/_1124_longest_well_performing_interval.rs)|
 |1129|[Shortest Path with Alternating Colors](https://leetcode.com/problems/shortest-path-with-alternating-colors)|breadth-first-search graph|[solution](src/solutions/_1129_shortest_path_with_alternating_colors.rs)|
 |1130|[Minimum Cost Tree From Leaf Values](https://leetcode.com/problems/minimum-cost-tree-from-leaf-values)|dynamic-programming stack tree|[solution](src/solutions/_1130_minimum_cost_tree_from_leaf_values.rs)|
 |1131|[Maximum of Absolute Value Expression](https://leetcode.com/problems/maximum-of-absolute-value-expression)|math bit-manipulation|[solution](src/solutions/_1131_maximum_of_absolute_value_expression.rs)|
@@ -1006,6 +1005,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |756|[Pyramid Transition Matrix](https://leetcode.com/problems/pyramid-transition-matrix)|bit-manipulation depth-first-search|[solution](src/solutions/_756_pyramid_transition_matrix.rs)|
 |75|[Sort Colors](https://leetcode.com/problems/sort-colors)|array two-pointers sort|[solution](src/solutions/_75_sort_colors.rs)|
 |763|[Partition Labels](https://leetcode.com/problems/partition-labels)|two-pointers greedy|[solution](src/solutions/_763_partition_labels.rs)|
+|764|[Largest Plus Sign](https://leetcode.com/problems/largest-plus-sign)|dynamic-programming|[solution](src/solutions/_764_largest_plus_sign.rs)|
 |769|[Max Chunks To Make Sorted](https://leetcode.com/problems/max-chunks-to-make-sorted)|array|[solution](src/solutions/_769_max_chunks_to_make_sorted.rs)|
 |775|[Global and Local Inversions](https://leetcode.com/problems/global-and-local-inversions)|array math|[solution](src/solutions/_775_global_and_local_inversions.rs)|
 |776|[Split BST](https://leetcode.com/problems/split-bst)|tree recursion|[solution](src/solutions/_776_split_bst.rs)|

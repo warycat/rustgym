@@ -553,6 +553,8 @@ mod _383_ransom_note;
 //
 mod _384_shuffle_an_array;
 //
+mod _385_mini_parser;
+//
 mod _386_lexicographical_numbers;
 //
 mod _387_first_unique_character_in_a_string;
@@ -1037,6 +1039,8 @@ mod _762_prime_number_of_set_bits_in_binary_representation;
 //
 mod _763_partition_labels;
 //
+mod _764_largest_plus_sign;
+//
 mod _766_toeplitiz_matrix;
 //
 mod _769_max_chunks_to_make_sorted;
@@ -1500,6 +1504,8 @@ mod _1120_maximum_average_subtree;
 mod _1122_relative_sort_array;
 //
 mod _1123_lowest_common_ancestor_or_deepest_leaves;
+//
+mod _1124_longest_well_performing_interval;
 //
 mod _1128_number_of_equivalent_domino_pairs;
 //

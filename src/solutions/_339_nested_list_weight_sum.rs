@@ -1,9 +1,5 @@
 struct Solution;
-
-enum NestedInteger {
-    Int(i32),
-    List(Vec<NestedInteger>),
-}
+use util::*;
 
 impl Solution {
     fn depth_sum_r(nested_list: &NestedInteger, level: i32) -> i32 {
@@ -24,17 +20,11 @@ impl Solution {
 #[test]
 fn test() {
     let list = vec![
-        NestedInteger::List(vec![NestedInteger::Int(1), NestedInteger::Int(1)]),
-        NestedInteger::Int(2),
-        NestedInteger::List(vec![NestedInteger::Int(1), NestedInteger::Int(1)]),
+        nested_integer!("[1,1]"),
+        nested_integer!("2"),
+        nested_integer!("[1,1]"),
     ];
     assert_eq!(Solution::depth_sum(list), 10);
-    let list = vec![
-        NestedInteger::Int(1),
-        NestedInteger::List(vec![
-            NestedInteger::Int(4),
-            NestedInteger::List(vec![NestedInteger::Int(6)]),
-        ]),
-    ];
+    let list = vec![nested_integer!("1"), nested_integer!("[4,[6]]")];
     assert_eq!(Solution::depth_sum(list), 27);
 }
