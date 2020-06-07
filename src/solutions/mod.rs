@@ -1257,6 +1257,8 @@ mod _926_flip_string_to_monotone_increasing;
 //
 mod _929_unique_email_addresses;
 //
+mod _930_binary_subarrays_with_sum;
+//
 mod _931_minimum_falling_path_sum;
 //
 mod _932_beautiful_array;
@@ -1344,6 +1346,8 @@ mod _987_vertical_order_traversal_of_a_binary_tree;
 mod _988_smallest_string_starting_from_leaf;
 //
 mod _989_add_to_array_form_of_integer;
+//
+mod _990_satisfiability_of_equality_equations;
 //
 mod _991_broken_calculator;
 //
@@ -1805,9 +1809,13 @@ mod _1365_how_many_numbers_are_smaller_than_the_current_number;
 //
 mod _1366_rank_teams_by_votes;
 //
+mod _1367_linked_list_in_binary_tree;
+//
 mod _1370_increasing_decreasing_string;
 //
 mod _1371_find_the_longest_substring_containing_vowels_in_even_counts;
+//
+mod _1372_longest_zigzag_path_in_a_binary_tree;
 //
 mod _1374_generate_a_string_with_characters_that_have_odd_counts;
 //
@@ -1913,4 +1921,6 @@ mod _1460_make_two_arrays_equal_by_reversing_sub_arrays;
 mod _1464_maximum_product_of_two_elements_in_an_array;
 //
 mod _1469_find_all_the_lonely_nodes;
+//
+mod _1470_shuffle_the_array;
 //
