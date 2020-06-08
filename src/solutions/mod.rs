@@ -677,6 +677,8 @@ mod _470_implement_rand10_using_rand7;
 //
 mod _473_matchsticks_to_square;
 //
+mod _474_ones_and_zeroes;
+//
 mod _475_heaters;
 //
 mod _476_number_complement;
@@ -1916,11 +1918,19 @@ mod _1450_number_of_students_doing_homework_at_a_given_time;
 //
 mod _1455_check_if_a_word_occurs_as_a_prefix_of_any_word_in_a_sentence;
 //
+mod _1457_pseudo_palindromic_paths_in_a_binary_tree;
+//
 mod _1460_make_two_arrays_equal_by_reversing_sub_arrays;
 //
 mod _1464_maximum_product_of_two_elements_in_an_array;
 //
+mod _1466_reorder_routes_to_make_all_paths_lead_to_the_city_zero;
+//
 mod _1469_find_all_the_lonely_nodes;
 //
 mod _1470_shuffle_the_array;
+//
+mod _1471_the_k_strongest_values_in_an_array;
+//
+mod _1472_design_browser_history;
 //
