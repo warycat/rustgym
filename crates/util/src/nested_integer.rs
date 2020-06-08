@@ -25,6 +25,8 @@ enum Tok {
     Op(char),
 }
 
+use Tok::*;
+
 pub struct NestedIntegerParser {
     it: Peekable<IntoIter<Tok>>,
 }
@@ -33,29 +35,29 @@ impl NestedIntegerParser {
     pub fn new<T: Into<String>>(s: T) -> Self {
         let s: String = s.into();
         let mut tokens: Vec<Tok> = vec![];
-        let mut num: Option<i32> = None;
-        for c in s.chars() {
+        let mut it = s.chars().peekable();
+        while let Some(c) = it.next() {
             match c {
                 '0'..='9' => {
-                    if let Some(mut val) = num {
-                        val *= 10;
-                        val += (c as u8 - b'0') as i32;
-                        num = Some(val)
-                    } else {
-                        num = Some((c as u8 - b'0') as i32)
+                    let mut val = (c as u8 - b'0') as i32;
+                    while let Some(&c) = it.peek() {
+                        match c {
+                            '0'..='9' => {
+                                it.next();
+                                val *= 10;
+                                val += (c as u8 - b'0') as i32;
+                            }
+                            _ => {
+                                break;
+                            }
+                        }
                     }
+                    tokens.push(Num(val));
                 }
                 _ => {
-                    if let Some(val) = num {
-                        tokens.push(Tok::Num(val));
-                    }
-                    num = None;
-                    tokens.push(Tok::Op(c));
+                    tokens.push(Op(c));
                 }
             }
-        }
-        if let Some(val) = num {
-            tokens.push(Tok::Num(val));
         }
         NestedIntegerParser {
             it: tokens.into_iter().peekable(),

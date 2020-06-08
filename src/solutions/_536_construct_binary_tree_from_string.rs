@@ -17,32 +17,29 @@ struct TreeParser {
 impl TreeParser {
     fn new(s: String) -> Self {
         let mut tokens = vec![];
-        let mut prev = None;
-        for c in s.chars() {
+        let mut it = s.chars().peekable();
+        while let Some(c) = it.next() {
             match c {
-                '-' => {
-                    tokens.push(Op(c));
-                }
-                '(' | ')' => {
-                    if let Some(val) = prev {
-                        tokens.push(Num(val));
-                        prev = None;
+                '0'..='9' => {
+                    let mut val = (c as u8 - b'0') as i32;
+                    while let Some(&c) = it.peek() {
+                        match c {
+                            '0'..='9' => {
+                                it.next();
+                                val *= 10;
+                                val += (c as u8 - b'0') as i32;
+                            }
+                            _ => {
+                                break;
+                            }
+                        }
                     }
-                    tokens.push(Op(c));
+                    tokens.push(Num(val));
                 }
                 _ => {
-                    if let Some(mut val) = prev {
-                        val *= 10;
-                        val += (c as u8 - b'0') as i32;
-                        prev = Some(val);
-                    } else {
-                        prev = Some((c as u8 - b'0') as i32);
-                    }
+                    tokens.push(Op(c));
                 }
             }
-        }
-        if let Some(val) = prev {
-            tokens.push(Num(val));
         }
         let it = tokens.into_iter().peekable();
         TreeParser { it }
