@@ -769,6 +769,8 @@ mod _533_lonely_pixel_2;
 //
 mod _535_encode_and_decode_tiny_url;
 //
+mod _536_construct_binary_tree_from_string;
+//
 mod _537_complex_number_multiplication;
 //
 mod _538_convert_bst_to_greater_tree;
@@ -1916,7 +1918,11 @@ mod _1448_count_good_nodes_in_binary_tree;
 //
 mod _1450_number_of_students_doing_homework_at_a_given_time;
 //
+mod _1451_rearrange_words_in_a_sentence;
+//
 mod _1455_check_if_a_word_occurs_as_a_prefix_of_any_word_in_a_sentence;
+//
+mod _1456_maximum_number_of_vowels_in_a_substring_of_given_length;
 //
 mod _1457_pseudo_palindromic_paths_in_a_binary_tree;
 //

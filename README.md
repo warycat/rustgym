@@ -414,10 +414,10 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook)|array|[solution](src/solutions/_999_available_captures_for_rook.rs)|
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|math|[solution](src/solutions/_9_palindrome_number.rs)|
 </details>
-<details><summary>Medium 92/696 13.22%</summary>
+<details><summary>Medium 89/696 12.79%</summary>
 
 
-|id|696 Medium Questions|Tags|604 Solutions|
+|id|696 Medium Questions|Tags|607 Solutions|
 |---|---|---|---|
 |427|[Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree)||   |
 |558|[Logical OR of Two Binary Grids Represented as Quad-Trees](https://leetcode.com/problems/logical-or-of-two-binary-grids-represented-as-quad-trees)||   |
@@ -492,11 +492,8 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |842|[Split Array into Fibonacci Sequence](https://leetcode.com/problems/split-array-into-fibonacci-sequence)|string backtracking greedy|   |
 |1461|[Check If a String Contains All Binary Codes of Size K](https://leetcode.com/problems/check-if-a-string-contains-all-binary-codes-of-size-k)|string bit-manipulation|   |
 |767|[Reorganize String](https://leetcode.com/problems/reorganize-string)|string heap greedy sort|   |
-|1456|[Maximum Number of Vowels in a Substring of Given Length](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length)|string sliding-window|   |
-|1451|[Rearrange Words in a Sentence](https://leetcode.com/problems/rearrange-words-in-a-sentence)|string sort|   |
 |1452|[People Whose List of Favorite Companies Is Not a Subset of Another List](https://leetcode.com/problems/people-whose-list-of-favorite-companies-is-not-a-subset-of-another-list)|string sort|   |
 |1003|[Check If Word Is Valid After Substitutions](https://leetcode.com/problems/check-if-word-is-valid-after-substitutions)|string stack|   |
-|536|[Construct Binary Tree from String](https://leetcode.com/problems/construct-binary-tree-from-string)|string tree|   |
 |236|[Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree)|tree|   |
 |285|[Inorder Successor in BST](https://leetcode.com/problems/inorder-successor-in-bst)|tree|   |
 |449|[Serialize and Deserialize BST](https://leetcode.com/problems/serialize-and-deserialize-bst)|tree|   |
@@ -706,6 +703,8 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1447|[Simplified Fractions](https://leetcode.com/problems/simplified-fractions)|math|[solution](src/solutions/_1447_simplified_fractions.rs)|
 |1448|[Count Good Nodes in Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree)|tree depth-first-search|[solution](src/solutions/_1448_count_good_nodes_in_binary_tree.rs)|
 |144|[Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal)|stack tree|[solution](src/solutions/_144_binary_tree_preorder_traversal.rs)|
+|1451|[Rearrange Words in a Sentence](https://leetcode.com/problems/rearrange-words-in-a-sentence)|string sort|[solution](src/solutions/_1451_rearrange_words_in_a_sentence.rs)|
+|1456|[Maximum Number of Vowels in a Substring of Given Length](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length)|string sliding-window|[solution](src/solutions/_1456_maximum_number_of_vowels_in_a_substring_of_given_length.rs)|
 |1457|[Pseudo-Palindromic Paths in a Binary Tree](https://leetcode.com/problems/pseudo-palindromic-paths-in-a-binary-tree)|bit-manipulation tree depth-first-search|[solution](src/solutions/_1457_pseudo_palindromic_paths_in_a_binary_tree.rs)|
 |1466|[Reorder Routes to Make All Paths Lead to the City Zero](https://leetcode.com/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero)|tree depth-first-search|[solution](src/solutions/_1466_reorder_routes_to_make_all_paths_lead_to_the_city_zero.rs)|
 |146|[LRU Cache](https://leetcode.com/problems/lru-cache)|design|[solution](src/solutions/_146_lru_cache.rs)|
@@ -909,6 +908,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |531|[Lonely Pixel I](https://leetcode.com/problems/lonely-pixel-i)|array depth-first-search|[solution](src/solutions/_531_lonely_pixel_1.rs)|
 |533|[Lonely Pixel II](https://leetcode.com/problems/lonely-pixel-ii)|array depth-first-search|[solution](src/solutions/_533_lonely_pixel_2.rs)|
 |535|[Encode and Decode TinyURL](https://leetcode.com/problems/encode-and-decode-tinyurl)|hash-table math|[solution](src/solutions/_535_encode_and_decode_tiny_url.rs)|
+|536|[Construct Binary Tree from String](https://leetcode.com/problems/construct-binary-tree-from-string)|string tree|[solution](src/solutions/_536_construct_binary_tree_from_string.rs)|
 |537|[Complex Number Multiplication](https://leetcode.com/problems/complex-number-multiplication)|math string|[solution](src/solutions/_537_complex_number_multiplication.rs)|
 |539|[Minimum Time Difference](https://leetcode.com/problems/minimum-time-difference)|string|[solution](src/solutions/_539_minimum_time_difference.rs)|
 |540|[Single Element in a Sorted Array](https://leetcode.com/problems/single-element-in-a-sorted-array)||[solution](src/solutions/_540_single_element_in_a_sorted_array.rs)|
