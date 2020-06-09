@@ -1877,6 +1877,8 @@ mod _1417_reformat_the_string;
 //
 mod _1418_display_table_of_food_orders_in_a_restaurant;
 //
+mod _1419_minimum_number_of_frogs_croaking;
+//
 mod _1422_maximum_score_after_splitting_a_string;
 //
 mod _1423_maximum_points_you_can_obtain_from_cards;
@@ -1895,6 +1897,8 @@ mod _1429_first_unique_number;
 mod _1430_chick_if_a_string_is_a_valid_sequence_from_root_to_leaves_path_in_a_binary_tree;
 //
 mod _1431_kids_with_the_greatest_number_of_candies;
+//
+mod _1432_max_difference_you_can_get_from_change_an_integer;
 //
 mod _1433_check_if_a_string_can_break_another_string;
 //
@@ -1920,6 +1924,8 @@ mod _1450_number_of_students_doing_homework_at_a_given_time;
 //
 mod _1451_rearrange_words_in_a_sentence;
 //
+mod _1452_people_whose_list_of_favorite_companies_is_not_a_subset_of_another_list;
+//
 mod _1455_check_if_a_word_occurs_as_a_prefix_of_any_word_in_a_sentence;
 //
 mod _1456_maximum_number_of_vowels_in_a_substring_of_given_length;
@@ -1928,7 +1934,13 @@ mod _1457_pseudo_palindromic_paths_in_a_binary_tree;
 //
 mod _1460_make_two_arrays_equal_by_reversing_sub_arrays;
 //
+mod _1461_check_if_a_string_contains_all_binary_codes_of_size_k;
+//
+mod _1462_course_schedule_4;
+//
 mod _1464_maximum_product_of_two_elements_in_an_array;
+//
+mod _1465_maximum_area_of_a_piece_of_cake_after_horizontal_and_vertical_cuts;
 //
 mod _1466_reorder_routes_to_make_all_paths_lead_to_the_city_zero;
 //
