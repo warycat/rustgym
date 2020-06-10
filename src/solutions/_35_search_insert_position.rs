@@ -1,17 +1,11 @@
 struct Solution;
 
-use std::cmp::Ordering;
-
 impl Solution {
     fn search_insert(nums: Vec<i32>, target: i32) -> i32 {
-        let n = nums.len();
-        for i in 0..n {
-            match nums[i].cmp(&target) {
-                Ordering::Less => {}
-                _ => return i as i32,
-            }
+        match nums.binary_search(&target) {
+            Ok(i) => i as i32,
+            Err(i) => i as i32,
         }
-        n as i32
     }
 }
 

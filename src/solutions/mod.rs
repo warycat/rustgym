@@ -615,6 +615,8 @@ mod _418_sentence_screen_fitting;
 //
 mod _419_battleships_in_a_board;
 //
+mod _421_maximum_xor_of_two_numbers_in_an_array;
+//
 mod _422_valid_word_square;
 //
 mod _424_longest_repeating_character_replacement;
@@ -822,6 +824,8 @@ mod _566_reshape_the_matrix;
 mod _567_permutation_in_string;
 //
 mod _572_subtree_of_another_tree;
+//
+mod _573_squirrel_simulation;
 //
 mod _575_distribute_candies;
 //
@@ -1067,6 +1071,8 @@ mod _777_swap_adjacent_in_lr_string;
 //
 mod _779_kth_symbol_in_grammar;
 //
+mod _781_rabbits_in_forest;
+//
 mod _783_minimum_distance_between_bst_nodes;
 //
 mod _784_letter_case_permutation;
@@ -1164,6 +1170,8 @@ mod _853_car_fleet;
 mod _855_exam_room;
 //
 mod _856_score_of_parentheses;
+//
+mod _858_mirror_reflection;
 //
 mod _859_buddy_strings;
 //
@@ -1291,6 +1299,8 @@ mod _946_validate_stack_sequences;
 //
 mod _947_most_stones_removed_with_same_row_or_column;
 //
+mod _948_bag_of_tokens;
+//
 mod _949_largest_time_for_given_digits;
 //
 mod _950_reveal_cards_in_increasing_order;
@@ -1314,6 +1324,8 @@ mod _962_maximum_with_ramp;
 mod _963_minimum_area_rectangle_2;
 //
 mod _965_univalued_binary_tree;
+//
+mod _966_vowel_spellchecker;
 //
 mod _969_pancake_sorting;
 //
@@ -1367,9 +1379,13 @@ mod _999_available_captures_for_rook;
 //
 mod _1002_find_common_characters;
 //
+mod _1003_check_if_word_is_valid_after_substitutions;
+//
 mod _1004_max_consecutive_ones_3;
 //
 mod _1005_maximize_sum_of_array_after_k_negations;
+//
+mod _1006_clumsy_factorial;
 //
 mod _1007_minimum_domino_rotations_for_equal_row;
 //
@@ -1384,6 +1400,8 @@ mod _1011_capacity_to_ship_packages_within_d_days;
 mod _1013_partition_array_into_three_parts_with_equal_sum;
 //
 mod _1014_best_sightseeing_pair;
+//
+mod _1015_smallest_integer_divisible_by_k;
 //
 mod _1016_binary_string_with_substrings_representing_1_to_n;
 //
@@ -1492,6 +1510,8 @@ mod _1089_duplicate_zeros;
 mod _1090_largest_values_from_labels;
 //
 mod _1091_shortest_path_in_binary_matrix;
+//
+mod _1093_statistics_from_a_large_sample;
 //
 mod _1094_car_pooling;
 //
@@ -1840,6 +1860,8 @@ mod _1386_cinema_seat_allocation;
 mod _1387_sort_integers_by_the_power_value;
 //
 mod _1389_create_target_array_in_the_given_order;
+//
+mod _1390_four_divisors;
 //
 mod _1391_check_if_there_is_a_valid_path_in_a_grid;
 //
