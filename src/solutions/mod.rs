@@ -543,6 +543,8 @@ mod _373_find_k_pairs_with_smallest_sums;
 //
 mod _374_guess_number_higher_or_lower;
 //
+mod _376_wiggle_subsequence;
+//
 mod _377_combination_sum_4;
 //
 mod _378_kth_smallest_element_in_a_sorted_matrix;
@@ -873,6 +875,8 @@ mod _628_maximum_product_of_three_numbers;
 //
 mod _633_sum_of_square_numbers;
 //
+mod _634_find_the_derangement_of_an_array;
+//
 mod _635_design_log_storage_system;
 //
 mod _636_exclusive_time_of_functions;
@@ -919,6 +923,8 @@ mod _661_image_smoother;
 //
 mod _662_maximum_width_of_binary_tree;
 //
+mod _663_equal_tree_partition;
+//
 mod _665_non_decreasing_array;
 //
 mod _667_beautiful_arrangement_2;
@@ -928,6 +934,8 @@ mod _669_trim_a_binary_search_tree;
 mod _670_maximum_swap;
 //
 mod _671_second_minimum_node_in_a_binary_tree;
+//
+mod _672_bulb_switcher_2;
 //
 mod _674_longest_continuous_increasing_subsequence;
 //
@@ -1019,6 +1027,8 @@ mod _735_asteroid_collision;
 //
 mod _737_sentence_similarity_2;
 //
+mod _738_monotone_increasing_digits;
+//
 mod _739_daily_temperatures;
 //
 mod _740_delete_and_earn;
@@ -1101,6 +1111,8 @@ mod _799_champagne_tower;
 //
 mod _800_similar_rgb_color;
 //
+mod _801_minimum_swaps_to_make_sequences_increasing;
+//
 mod _802_find_eventual_safe_states;
 //
 mod _804_unique_morse_code_words;
@@ -1150,6 +1162,8 @@ mod _836_rectangle_overlap;
 mod _840_magic_squares_in_grid;
 //
 mod _841_keys_and_rooms;
+//
+mod _842_split_array_into_fibonacci_sequence;
 //
 mod _844_backspace_string_compare;
 //
@@ -1228,6 +1242,8 @@ mod _895_maximum_frequency_stack;
 mod _896_monotonic_array;
 //
 mod _897_increasing_order_search_tree;
+//
+mod _898_bitwise_ors_of_subarrays;
 //
 mod _900_rle_iterator;
 //
@@ -1326,6 +1342,8 @@ mod _963_minimum_area_rectangle_2;
 mod _965_univalued_binary_tree;
 //
 mod _966_vowel_spellchecker;
+//
+mod _967_numbers_with_same_consecutive_differences;
 //
 mod _969_pancake_sorting;
 //
