@@ -1201,6 +1201,8 @@ mod _867_transpose_matrix;
 //
 mod _868_binary_gap;
 //
+mod _869_reordered_power_of_2;
+//
 mod _870_advantage_shuffle;
 //
 mod _872_leaf_similar_trees;
@@ -1258,6 +1260,8 @@ mod _907_sum_of_subarray_minimums;
 mod _908_smallest_range_1;
 //
 mod _909_snakes_and_ladders;
+//
+mod _910_smallest_range_2;
 //
 mod _911_online_election;
 //
@@ -1991,4 +1995,14 @@ mod _1470_shuffle_the_array;
 mod _1471_the_k_strongest_values_in_an_array;
 //
 mod _1472_design_browser_history;
+//
+mod _1474_delete_n_nodes_after_m_nodes_of_a_linked_list;
+//
+mod _1476_subrectangle_queries;
+//
+mod _1475_final_prices_with_a_speial_discount_in_shop;
+//
+mod _5453_running_sum_of_1d_array;
+//
+mod _5454_least_number_of_unique_integers_after_k_removals;
 //
