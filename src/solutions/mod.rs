@@ -489,6 +489,8 @@ mod _341_flatten_nested_list_iterator;
 //
 mod _342_power_of_four;
 //
+mod _343_integer_break;
+//
 mod _344_reverse_string;
 //
 mod _345_reverse_vowels_of_a_string;
@@ -581,6 +583,8 @@ mod _395_longest_substring_with_at_least_k_repeating_characters;
 //
 mod _396_rotate_function;
 //
+mod _397_integer_replacement;
+//
 mod _398_random_pick_index;
 //
 mod _399_evaluate_division;
@@ -621,6 +625,8 @@ mod _421_maximum_xor_of_two_numbers_in_an_array;
 //
 mod _422_valid_word_square;
 //
+mod _423_reconstruct_original_digits_from_english;
+//
 mod _424_longest_repeating_character_replacement;
 //
 mod _433_minimum_genetic_mutation;
@@ -659,6 +665,8 @@ mod _452_minimum_number_of_arrows_to_burst_ballons;
 //
 mod _453_minimum_moves_to_equal_array_elements;
 //
+mod _454_4sum_2;
+//
 mod _455_assign_cookies;
 //
 mod _456_132_pattern;
@@ -676,6 +684,8 @@ mod _463_island_perimeter;
 mod _467_unique_substrings_in_wraparound_string;
 //
 mod _468_validate_ip_address;
+//
+mod _469_convex_polygon;
 //
 mod _470_implement_rand10_using_rand7;
 //
@@ -905,6 +915,8 @@ mod _649_dota2_senate;
 //
 mod _650_2_keys_keyboard;
 //
+mod _651_4_keys_keyboard;
+//
 mod _652_find_duplicate_subtrees;
 //
 mod _653_two_sum_4;
@@ -926,6 +938,8 @@ mod _662_maximum_width_of_binary_tree;
 mod _663_equal_tree_partition;
 //
 mod _665_non_decreasing_array;
+//
+mod _666_path_sum_4;
 //
 mod _667_beautiful_arrangement_2;
 //
@@ -1507,6 +1521,8 @@ mod _1064_fixed_point;
 //
 mod _1065_index_pairs_of_a_string;
 //
+mod _1066_campus_bikes_2;
+//
 mod _1071_greatest_common_divisor_of_strings;
 //
 mod _1072_flip_columns_for_maximum_number_of_equal_rows;
@@ -1674,6 +1690,8 @@ mod _1214_two_sum_bsts;
 mod _1215_stepping_numbers;
 //
 mod _1217_play_with_chips;
+//
+mod _1218_longest_arithmetic_subsequence_of_given_difference;
 //
 mod _1219_path_with_maximum_gold;
 //
@@ -2001,6 +2019,8 @@ mod _1474_delete_n_nodes_after_m_nodes_of_a_linked_list;
 mod _1476_subrectangle_queries;
 //
 mod _1475_final_prices_with_a_speial_discount_in_shop;
+//
+mod _1482_minimum_number_of_days_to_make_m_bouquets;
 //
 mod _5453_running_sum_of_1d_array;
 //

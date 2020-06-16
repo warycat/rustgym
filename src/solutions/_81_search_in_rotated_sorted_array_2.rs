@@ -1,8 +1,8 @@
 struct Solution;
+use std::cmp::Ordering::*;
 
 impl Solution {
     fn search(nums: Vec<i32>, target: i32) -> bool {
-        use std::cmp::Ordering::*;
         let n = nums.len();
         if n == 0 {
             return false;
