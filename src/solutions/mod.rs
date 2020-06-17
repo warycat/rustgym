@@ -841,6 +841,8 @@ mod _573_squirrel_simulation;
 //
 mod _575_distribute_candies;
 //
+mod _576_out_of_boundary_paths;
+//
 mod _581_shortest_unsorted_continuous_subarray;
 //
 mod _582_kill_process;
@@ -1859,6 +1861,8 @@ mod _1351_count_negative_numbers_in_a_sorted_matrix;
 //
 mod _1352_product_of_the_last_k_numbers;
 //
+mod _1353_maximum_number_of_events_that_can_be_attended;
+//
 mod _1356_sort_integers_by_the_number_of_1_bits;
 //
 mod _1357_apply_discount_every_n_orders;
@@ -1866,6 +1870,8 @@ mod _1357_apply_discount_every_n_orders;
 mod _1358_number_of_substrings_containing_all_three_characters;
 //
 mod _1360_number_of_days_between_two_dates;
+//
+mod _1361_validate_binary_tree_nodes;
 //
 mod _1362_closest_divisors;
 //

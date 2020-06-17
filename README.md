@@ -417,10 +417,10 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook)|array|[solution](src/solutions/_999_available_captures_for_rook.rs)|
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|math|[solution](src/solutions/_9_palindrome_number.rs)|
 </details>
-<details><summary>Medium 54/700 7.71%</summary>
+<details><summary>Medium 51/700 7.29%</summary>
 
 
-|id|700 Medium Questions|Tags|646 Solutions|
+|id|700 Medium Questions|Tags|649 Solutions|
 |---|---|---|---|
 |427|[Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree)||   |
 |558|[Logical OR of Two Binary Grids Represented as Quad-Trees](https://leetcode.com/problems/logical-or-of-two-binary-grids-represented-as-quad-trees)||   |
@@ -445,14 +445,11 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1140|[Stone Game II](https://leetcode.com/problems/stone-game-ii)|dynamic-programming|   |
 |1191|[K-Concatenation Maximum Sum](https://leetcode.com/problems/k-concatenation-maximum-sum)|dynamic-programming|   |
 |1477|[Find Two Non-overlapping Sub-arrays Each With Target Sum](https://leetcode.com/problems/find-two-non-overlapping-sub-arrays-each-with-target-sum)|dynamic-programming|   |
-|576|[Out of Boundary Paths](https://leetcode.com/problems/out-of-boundary-paths)|dynamic-programming depth-first-search|   |
 |1405|[Longest Happy String](https://leetcode.com/problems/longest-happy-string)|dynamic-programming greedy|   |
 |375|[Guess Number Higher or Lower II](https://leetcode.com/problems/guess-number-higher-or-lower-ii)|dynamic-programming minimax|   |
 |464|[Can I Win](https://leetcode.com/problems/can-i-win)|dynamic-programming minimax|   |
 |486|[Predict the Winner](https://leetcode.com/problems/predict-the-winner)|dynamic-programming minimax|   |
-|1361|[Validate Binary Tree Nodes](https://leetcode.com/problems/validate-binary-tree-nodes)|graph|   |
 |955|[Delete Columns to Make Sorted II](https://leetcode.com/problems/delete-columns-to-make-sorted-ii)|greedy|   |
-|1353|[Maximum Number of Events That Can Be Attended](https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended)|greedy sort segment-tree|   |
 |138|[Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer)|hash-table linked-list|   |
 |1311|[Get Watched Videos by Your Friends](https://leetcode.com/problems/get-watched-videos-by-your-friends)|hash-table string breadth-first-search|   |
 |708|[Insert into a Sorted Circular Linked List](https://leetcode.com/problems/insert-into-a-sorted-circular-linked-list)|linked-list|   |
@@ -637,8 +634,10 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1348|[Tweet Counts Per Frequency](https://leetcode.com/problems/tweet-counts-per-frequency)|design|[solution](src/solutions/_1348_tweet_counts_per_frequency.rs)|
 |134|[Gas Station](https://leetcode.com/problems/gas-station)|greedy|[solution](src/solutions/_134_gas_station.rs)|
 |1352|[Product of the Last K Numbers](https://leetcode.com/problems/product-of-the-last-k-numbers)|array design|[solution](src/solutions/_1352_product_of_the_last_k_numbers.rs)|
+|1353|[Maximum Number of Events That Can Be Attended](https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended)|greedy sort segment-tree|[solution](src/solutions/_1353_maximum_number_of_events_that_can_be_attended.rs)|
 |1357|[Apply Discount Every n Orders](https://leetcode.com/problems/apply-discount-every-n-orders)|design|[solution](src/solutions/_1357_apply_discount_every_n_orders.rs)|
 |1358|[Number of Substrings Containing All Three Characters](https://leetcode.com/problems/number-of-substrings-containing-all-three-characters)|string|[solution](src/solutions/_1358_number_of_substrings_containing_all_three_characters.rs)|
+|1361|[Validate Binary Tree Nodes](https://leetcode.com/problems/validate-binary-tree-nodes)|graph|[solution](src/solutions/_1361_validate_binary_tree_nodes.rs)|
 |1362|[Closest Divisors](https://leetcode.com/problems/closest-divisors)|math|[solution](src/solutions/_1362_closest_divisors.rs)|
 |1366|[Rank Teams by Votes](https://leetcode.com/problems/rank-teams-by-votes)|array sort|[solution](src/solutions/_1366_rank_teams_by_votes.rs)|
 |1367|[Linked List in Binary Tree](https://leetcode.com/problems/linked-list-in-binary-tree)|linked-list dynamic-programming tree|[solution](src/solutions/_1367_linked_list_in_binary_tree.rs)|
@@ -920,6 +919,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |567|[Permutation in String](https://leetcode.com/problems/permutation-in-string)|two-pointers sliding-window|[solution](src/solutions/_567_permutation_in_string.rs)|
 |56|[Merge Intervals](https://leetcode.com/problems/merge-intervals)|array sort|[solution](src/solutions/_56_merge_intervals.rs)|
 |573|[Squirrel Simulation](https://leetcode.com/problems/squirrel-simulation)|math|[solution](src/solutions/_573_squirrel_simulation.rs)|
+|576|[Out of Boundary Paths](https://leetcode.com/problems/out-of-boundary-paths)|dynamic-programming depth-first-search|[solution](src/solutions/_576_out_of_boundary_paths.rs)|
 |582|[Kill Process](https://leetcode.com/problems/kill-process)|tree queue|[solution](src/solutions/_582_kill_process.rs)|
 |583|[Delete Operation for Two Strings](https://leetcode.com/problems/delete-operation-for-two-strings)|string|[solution](src/solutions/_583_delete_operation_for_two_strings.rs)|
 |592|[Fraction Addition and Subtraction](https://leetcode.com/problems/fraction-addition-and-subtraction)|math|[solution](src/solutions/_592_fraction_addition_and_subtraction.rs)|
