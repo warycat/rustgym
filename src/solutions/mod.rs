@@ -1677,6 +1677,8 @@ mod _1198_find_smallest_common_element_in_all_rows;
 //
 mod _1200_minimum_absolute_difference;
 //
+mod _1201_ugly_number_3;
+//
 mod _1202_smallest_string_with_swaps;
 //
 mod _1207_unique_number_of_occurrences;
@@ -1808,6 +1810,8 @@ mod _1306_jump_game_3;
 mod _1309_decrypt_string_from_alphabet_to_integer_mapping;
 //
 mod _1310_xor_queries_of_a_subarray;
+//
+mod _1311_get_watched_videos_by_your_friends;
 //
 mod _1314_matrix_block_sum;
 //

@@ -417,10 +417,10 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook)|array|[solution](src/solutions/_999_available_captures_for_rook.rs)|
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|math|[solution](src/solutions/_9_palindrome_number.rs)|
 </details>
-<details><summary>Medium 50/700 7.14%</summary>
+<details><summary>Medium 49/701 6.99%</summary>
 
 
-|id|700 Medium Questions|Tags|650 Solutions|
+|id|701 Medium Questions|Tags|652 Solutions|
 |---|---|---|---|
 |427|[Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree)||   |
 |558|[Logical OR of Two Binary Grids Represented as Quad-Trees](https://leetcode.com/problems/logical-or-of-two-binary-grids-represented-as-quad-trees)||   |
@@ -450,13 +450,12 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |486|[Predict the Winner](https://leetcode.com/problems/predict-the-winner)|dynamic-programming minimax|   |
 |955|[Delete Columns to Make Sorted II](https://leetcode.com/problems/delete-columns-to-make-sorted-ii)|greedy|   |
 |138|[Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer)|hash-table linked-list|   |
-|1311|[Get Watched Videos by Your Friends](https://leetcode.com/problems/get-watched-videos-by-your-friends)|hash-table string breadth-first-search|   |
+|1485|[Clone Binary Tree With Random Pointer](https://leetcode.com/problems/clone-binary-tree-with-random-pointer)|hash-table tree depth-first-search breadth-first-search|   |
 |708|[Insert into a Sorted Circular Linked List](https://leetcode.com/problems/insert-into-a-sorted-circular-linked-list)|linked-list|   |
 |430|[Flatten a Multilevel Doubly Linked List](https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list)|linked-list depth-first-search|   |
 |426|[Convert Binary Search Tree to Sorted Doubly Linked List](https://leetcode.com/problems/convert-binary-search-tree-to-sorted-doubly-linked-list)|linked-list divide-and-conquer tree|   |
 |142|[Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii)|linked-list two-pointers|   |
 |60|[Permutation Sequence](https://leetcode.com/problems/permutation-sequence)|math backtracking|   |
-|1201|[Ugly Number III](https://leetcode.com/problems/ugly-number-iii)|math binary-search|   |
 |324|[Wiggle Sort II](https://leetcode.com/problems/wiggle-sort-ii)|sort|   |
 |880|[Decoded String at Index](https://leetcode.com/problems/decoded-string-at-index)|stack|   |
 |767|[Reorganize String](https://leetcode.com/problems/reorganize-string)|string heap greedy sort|   |
@@ -562,6 +561,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1197|[Minimum Knight Moves](https://leetcode.com/problems/minimum-knight-moves)|breadth-first-search|[solution](src/solutions/_1197_minimum_knight_moves_math.rs)|
 |1198|[Find Smallest Common Element in All Rows](https://leetcode.com/problems/find-smallest-common-element-in-all-rows)|hash-table binary-search|[solution](src/solutions/_1198_find_smallest_common_element_in_all_rows.rs)|
 |11|[Container With Most Water](https://leetcode.com/problems/container-with-most-water)|array two-pointers|[solution](src/solutions/_11_container_with_most_water.rs)|
+|1201|[Ugly Number III](https://leetcode.com/problems/ugly-number-iii)|math binary-search|[solution](src/solutions/_1201_ugly_number_3.rs)|
 |1202|[Smallest String With Swaps](https://leetcode.com/problems/smallest-string-with-swaps)|array union-find|[solution](src/solutions/_1202_smallest_string_with_swaps.rs)|
 |1208|[Get Equal Substrings Within Budget](https://leetcode.com/problems/get-equal-substrings-within-budget)|array sliding-window|[solution](src/solutions/_1208_get_equal_substrings_within_budget.rs)|
 |1209|[Remove All Adjacent Duplicates in String II](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii)|stack|[solution](src/solutions/_1209_remove_all_adjacent_duplicates_in_string_2.rs)|
@@ -614,6 +614,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1306|[Jump Game III](https://leetcode.com/problems/jump-game-iii)|breadth-first-search graph|[solution](src/solutions/_1306_jump_game_3.rs)|
 |130|[Surrounded Regions](https://leetcode.com/problems/surrounded-regions)|depth-first-search breadth-first-search union-find|[solution](src/solutions/_130_surrounded_regions.rs)|
 |1310|[XOR Queries of a Subarray](https://leetcode.com/problems/xor-queries-of-a-subarray)|bit-manipulation|[solution](src/solutions/_1310_xor_queries_of_a_subarray.rs)|
+|1311|[Get Watched Videos by Your Friends](https://leetcode.com/problems/get-watched-videos-by-your-friends)|hash-table string breadth-first-search|[solution](src/solutions/_1311_get_watched_videos_by_your_friends.rs)|
 |1314|[Matrix Block Sum](https://leetcode.com/problems/matrix-block-sum)|dynamic-programming|[solution](src/solutions/_1314_matrix_block_sum.rs)|
 |1315|[Sum of Nodes with Even-Valued Grandparent](https://leetcode.com/problems/sum-of-nodes-with-even-valued-grandparent)|tree depth-first-search|[solution](src/solutions/_1315_sum_of_nodes_with_even_valued_grandparent.rs)|
 |1318|[Minimum Flips to Make a OR b Equal to c](https://leetcode.com/problems/minimum-flips-to-make-a-or-b-equal-to-c)|bit-manipulation|[solution](src/solutions/_1318_minimum_flips_to_make_a_or_b_equal_to_c.rs)|
