@@ -417,6 +417,8 @@ mod _281_zigzag_iterator;
 //
 mod _283_move_zeros;
 //
+mod _294_flip_game_2;
+//
 mod _286_walls_and_gates;
 //
 mod _287_find_the_duplicate_number;
@@ -544,6 +546,8 @@ mod _372_super_pow;
 mod _373_find_k_pairs_with_smallest_sums;
 //
 mod _374_guess_number_higher_or_lower;
+//
+mod _375_guess_number_higher_or_lower_2;
 //
 mod _376_wiggle_subsequence;
 //
@@ -681,6 +685,8 @@ mod _462_minimum_moves_to_equal_array_elements_2;
 //
 mod _463_island_perimeter;
 //
+mod _464_can_i_win;
+//
 mod _467_unique_substrings_in_wraparound_string;
 //
 mod _468_validate_ip_address;
@@ -708,6 +714,8 @@ mod _482_license_key_formatting;
 mod _484_find_permutation;
 //
 mod _485_max_consecutive_ones;
+//
+mod _486_predict_the_winner;
 //
 mod _487_max_consecutive_ones_2;
 //
@@ -1143,6 +1151,8 @@ mod _811_subdomain_visit_count;
 //
 mod _812_largest_triangle_area;
 //
+mod _813_largest_sum_of_averages;
+//
 mod _814_binary_tree_pruning;
 //
 mod _816_ambiguous_coordinates;
@@ -1232,6 +1242,8 @@ mod _875_koko_eating_bananas;
 mod _876_middle_of_the_linked_list;
 //
 mod _877_stone_game;
+//
+mod _880_decoded_string_at_index;
 //
 mod _881_boats_to_save_people;
 //
@@ -1346,6 +1358,8 @@ mod _951_flip_equivalent_binary_trees;
 mod _953_verifying_an_alien_dictionary;
 //
 mod _954_array_of_doubled_pairs;
+//
+mod _955_delete_columns_to_make_sorted_2;
 //
 mod _957_prison_cells_after_n_days;
 //
@@ -1494,6 +1508,8 @@ mod _1046_last_stone_weight;
 mod _1047_remove_all_adjacent_duplicates_in_string;
 //
 mod _1048_longest_string_chain;
+//
+mod _1049_last_stone_weight_2;
 //
 mod _1051_height_checker;
 //
@@ -1932,6 +1948,8 @@ mod _1402_reducing_dishes;
 mod _1403_minimum_subsequence_in_non_increasing_order;
 //
 mod _1404_number_of_steps_to_reduce_a_number_in_binary_representation_to_one;
+//
+mod _1405_longest_happy_string;
 //
 mod _1408_string_matching_in_an_array;
 //
