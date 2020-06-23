@@ -2,7 +2,7 @@ struct Solution;
 
 impl Solution {
     fn new21_game(n: i32, k: i32, w: i32) -> f64 {
-        if n == 0 || n > k + w {
+        if k == 0 || n > k + w {
             return 1.0;
         }
         let n = n as usize;
