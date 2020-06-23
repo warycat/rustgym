@@ -1119,6 +1119,8 @@ mod _788_rotated_digits;
 //
 mod _789_escape_the_ghosts;
 //
+mod _790_domino_and_tromino_tiling;
+//
 mod _791_custom_sort_string;
 //
 mod _792_number_of_matching_subsequences;
@@ -1144,6 +1146,8 @@ mod _804_unique_morse_code_words;
 mod _806_number_of_lines_to_write_string;
 //
 mod _807_max_increase_to_keep_city_skyline;
+//
+mod _808_soup_servings;
 //
 mod _809_expressive_words;
 //
@@ -1184,6 +1188,10 @@ mod _833_find_and_replace_in_string;
 mod _835_image_overlap;
 //
 mod _836_rectangle_overlap;
+//
+mod _837_new_21_game;
+//
+mod _838_push_dominoes;
 //
 mod _840_magic_squares_in_grid;
 //
@@ -1495,6 +1503,8 @@ mod _1037_valid_boomerang;
 //
 mod _1038_binary_search_tree_to_greater_sum_tree;
 //
+mod _1039_minimum_score_triangulation_of_polygon;
+//
 mod _1040_moving_stones_until_consecutive_2;
 //
 mod _1041_robot_bounded_in_circle;
@@ -1622,6 +1632,10 @@ mod _1135_connecting_cities_with_minimum_cost;
 mod _1137_n_th_tribonacci_number;
 //
 mod _1138_alphabet_board_path;
+//
+mod _1139_largest_1_bordered_square;
+//
+mod _1140_stone_game_2;
 //
 mod _1143_longest_common_subsequence;
 //
@@ -2048,9 +2062,13 @@ mod _1476_subrectangle_queries;
 //
 mod _1475_final_prices_with_a_speial_discount_in_shop;
 //
+mod _1477_find_two_non_overlapping_sub_arrays_each_with_target_sum;
+//
 mod _1480_running_sum_of_1d_array;
 //
 mod _1481_least_number_of_unique_integers_after_k_removals;
 //
 mod _1482_minimum_number_of_days_to_make_m_bouquets;
+//
+mod _1486_xor_operation_in_an_array;
 //

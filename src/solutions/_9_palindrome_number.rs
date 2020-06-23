@@ -17,11 +17,7 @@ impl Solution {
 }
 
 #[test]
-fn negative() {
+fn test() {
     assert_eq!(Solution::is_palindrome(-123), false);
-}
-
-#[test]
-fn yes() {
     assert_eq!(Solution::is_palindrome(12321), true);
 }
