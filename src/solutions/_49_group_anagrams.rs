@@ -16,14 +16,14 @@ impl Solution {
             v.sort();
             res.push(v.to_vec());
         }
-        res.sort_by(|a, b| a.len().cmp(&b.len()));
+        res.sort_by_key(|x| x.len());
         res
     }
 }
 
 #[test]
 fn test() {
-    let strs: Vec<String> = vec_string!["eat", "tea", "tan", "ate", "nat", "bat"];
-    let res: Vec<Vec<String>> = vec_vec_string![["bat"], ["nat", "tan"], ["ate", "eat", "tea"]];
+    let strs = vec_string!["eat", "tea", "tan", "ate", "nat", "bat"];
+    let res = vec_vec_string![["bat"], ["nat", "tan"], ["ate", "eat", "tea"]];
     assert_eq!(Solution::group_anagrams(strs), res);
 }

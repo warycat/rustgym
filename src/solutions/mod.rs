@@ -100,6 +100,8 @@ mod _56_merge_intervals;
 //
 mod _59_spiral_matrix_2;
 //
+mod _60_permutation_sequence;
+//
 mod _61_rotate_list;
 //
 mod _62_unique_paths;
@@ -1177,6 +1179,8 @@ mod _824_goat_latin;
 //
 mod _825_friends_of_appropriate_ages;
 //
+mod _826_most_profix_assigning_work;
+//
 mod _830_positions_of_large_groups;
 //
 mod _831_masking_personal_information;
@@ -1697,6 +1701,8 @@ mod _1189_maximum_number_of_balloons;
 //
 mod _1190_reverse_substrings_between_each_pair_of_parentheses;
 //
+mod _1191_k_concatenation_maximum_sum;
+//
 mod _1196_how_many_apples_can_you_put_into_the_basket;
 //
 mod _1197_minimum_knight_moves;
@@ -2071,4 +2077,12 @@ mod _1481_least_number_of_unique_integers_after_k_removals;
 mod _1482_minimum_number_of_days_to_make_m_bouquets;
 //
 mod _1486_xor_operation_in_an_array;
+//
+mod _1487_making_file_names_unique;
+//
+mod _1488_avoid_flood_in_the_city;
+//
+mod _1491_average_salary_excluding_minimum_and_maximum_salary;
+//
+mod _1496_path_crossing;
 //
