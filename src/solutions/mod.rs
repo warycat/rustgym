@@ -449,6 +449,8 @@ mod _304_range_sum_query_2d_immutable;
 //
 mod _306_additive_number;
 //
+mod _307_range_sum_query_mutable;
+//
 mod _309_best_time_to_buy_and_sell_stock_with_cooldown;
 //
 mod _310_minimum_height_trees;
@@ -1323,6 +1325,8 @@ mod _921_minimum_add_to_make_parentheses_valid;
 //
 mod _922_sort_array_by_parity_2;
 //
+mod _923_3sum_with_multiplicity;
+//
 mod _925_long_pressed_name;
 //
 mod _926_flip_string_to_monotone_increasing;
@@ -2084,5 +2088,13 @@ mod _1488_avoid_flood_in_the_city;
 //
 mod _1491_average_salary_excluding_minimum_and_maximum_salary;
 //
+mod _1492_the_kth_factor_of_n;
+//
+mod _1493_longest_subarray_of_1s_after_deleting_one_element;
+//
 mod _1496_path_crossing;
+//
+mod _1497_check_if_array_pairs_are_divisible_by_k;
+//
+mod _1498_number_of_subsequences_that_satisfy_the_given_sum_condition;
 //
