@@ -6,5 +6,4 @@ pub extern crate util;
 #[allow(clippy::collapsible_if)]
 #[allow(clippy::needless_range_loop)]
 #[allow(clippy::too_many_arguments)]
-#[allow(clippy::unnested_or_patterns)]
 mod solutions;
