@@ -72,6 +72,8 @@ mod _39_combination_sum;
 //
 mod _40_combination_sum_2;
 //
+mod _41_first_missing_positive;
+//
 mod _42_trapping_rain_water;
 //
 mod _43_multiply_strings;
@@ -1595,6 +1597,8 @@ mod _1093_statistics_from_a_large_sample;
 //
 mod _1094_car_pooling;
 //
+mod _1096_brace_expansion_2;
+//
 mod _1099_two_sum_less_than_k;
 //
 mod _1100_find_k_length_substrings_with_no_repeated_characters;
@@ -2003,6 +2007,8 @@ mod _1418_display_table_of_food_orders_in_a_restaurant;
 //
 mod _1419_minimum_number_of_frogs_croaking;
 //
+mod _1420_build_array_where_you_can_find_the_maximum_exactly_k_comparisons;
+//
 mod _1422_maximum_score_after_splitting_a_string;
 //
 mod _1423_maximum_points_you_can_obtain_from_cards;
@@ -2062,6 +2068,8 @@ mod _1461_check_if_a_string_contains_all_binary_codes_of_size_k;
 //
 mod _1462_course_schedule_4;
 //
+mod _1463_cherry_pickup_2;
+//
 mod _1464_maximum_product_of_two_elements_in_an_array;
 //
 mod _1465_maximum_area_of_a_piece_of_cake_after_horizontal_and_vertical_cuts;
@@ -2107,4 +2115,6 @@ mod _1496_path_crossing;
 mod _1497_check_if_array_pairs_are_divisible_by_k;
 //
 mod _1498_number_of_subsequences_that_satisfy_the_given_sum_condition;
+//
+mod _1500_design_a_file_sharing_system;
 //
