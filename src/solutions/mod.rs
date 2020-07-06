@@ -1101,6 +1101,8 @@ mod _764_largest_plus_sign;
 //
 mod _766_toeplitiz_matrix;
 //
+mod _768_max_chunks_to_make_sorted_2;
+//
 mod _769_max_chunks_to_make_sorted;
 //
 mod _771_jewels_and_stones;
@@ -2118,3 +2120,8 @@ mod _1498_number_of_subsequences_that_satisfy_the_given_sum_condition;
 //
 mod _1500_design_a_file_sharing_system;
 //
+mod _1502_can_make_arithmetic_progression_from_sequence;
+//
+mod _1503_last_moment_before_all_ants_fall_out_of_a_plank;
+//
+mod _1504_count_submatrices_with_all_ones;

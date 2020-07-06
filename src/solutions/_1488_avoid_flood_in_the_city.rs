@@ -39,18 +39,18 @@ impl Solution {
 
 #[test]
 fn test() {
-    // let rains = vec![1, 2, 3, 4];
-    // let res = vec![-1, -1, -1, -1];
-    // assert_eq!(Solution::avoid_flood(rains), res);
-    // let rains = vec![1, 2, 0, 0, 2, 1];
-    // let res = vec![-1, -1, 1, 2, -1, -1];
-    // assert_eq!(Solution::avoid_flood(rains), res);
-    // let rains = vec![1, 2, 0, 1, 2];
-    // let res = vec![];
-    // assert_eq!(Solution::avoid_flood(rains), res);
-    // let rains = vec![0, 1, 1];
-    // let res = vec![];
-    // assert_eq!(Solution::avoid_flood(rains), res);
+    let rains = vec![1, 2, 3, 4];
+    let res = vec![-1, -1, -1, -1];
+    assert_eq!(Solution::avoid_flood(rains), res);
+    let rains = vec![1, 2, 0, 0, 2, 1];
+    let res = vec![-1, -1, 2, 1, -1, -1];
+    assert_eq!(Solution::avoid_flood(rains), res);
+    let rains = vec![1, 2, 0, 1, 2];
+    let res = vec![];
+    assert_eq!(Solution::avoid_flood(rains), res);
+    let rains = vec![0, 1, 1];
+    let res = vec![];
+    assert_eq!(Solution::avoid_flood(rains), res);
     let rains = vec![1, 0, 2, 3, 0, 1, 2];
     let res = vec![-1, 1, -1, -1, 2, -1, -1];
     assert_eq!(Solution::avoid_flood(rains), res);
