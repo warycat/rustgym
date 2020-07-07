@@ -116,6 +116,8 @@ mod _66_plus_one;
 //
 mod _67_add_binary;
 //
+mod _68_text_justification;
+//
 mod _69_sqrt;
 //
 mod _70_climbing_stairs;
@@ -218,6 +220,8 @@ mod _131_palindrome_partitioning;
 //
 mod _134_gas_station;
 //
+mod _135_candy;
+//
 mod _136_single_number;
 //
 mod _137_single_number_2;
@@ -311,6 +315,8 @@ mod _211_add_and_search_word_data_structure_design;
 mod _212_word_search_2;
 //
 mod _213_house_robber_2;
+//
+mod _214_shortest_palindrome;
 //
 mod _215_kth_largest_element_in_an_array;
 //
@@ -480,6 +486,8 @@ mod _325_maximum_size_subarray_sum_equals_k;
 mod _326_power_of_three;
 //
 mod _328_odd_even_linked_list;
+//
+mod _330_patching_array;
 //
 mod _331_verify_preorder_serialization_of_a_binary_tree;
 //
@@ -900,6 +908,8 @@ mod _624_maximum_distance_in_arrays;
 mod _625_minimum_factorization;
 //
 mod _628_maximum_product_of_three_numbers;
+//
+mod _630_course_schedule_3;
 //
 mod _633_sum_of_square_numbers;
 //
