@@ -67,10 +67,11 @@ impl GSVG {
         }
     }
 
-    pub fn edge(&mut self, t: usize, h: usize) {
+    pub fn edge(&mut self, t: usize, h: usize, forward: bool, dotted: bool) {
         let e_attrs = make_attrs(vec![
             ("id", &self.edges.len().to_string()),
-            ("dir", "forward"),
+            ("dir", if forward { "forward" } else { "none" }),
+            ("style", if dotted { "dotted" } else { "filled" }),
         ]);
         unsafe {
             let e = agedge(
@@ -146,7 +147,7 @@ impl DrawTree for TreeLink {
             let val = node.val;
             gsvg.node(val);
             if let Some(pid) = parent_id {
-                gsvg.edge(pid, nid);
+                gsvg.edge(pid, nid, false, false);
             }
             *id += 1;
             let left = &node.left;
@@ -175,16 +176,44 @@ impl Draw for Vec<Vec<usize>> {
         }
         for (u, vs) in self.iter().enumerate() {
             for &v in vs {
-                gsvg.edge(u, v);
+                gsvg.edge(u, v, false, false);
             }
         }
         gsvg
     }
 }
 
+impl Draw for Graph {
+    fn draw(&self, caption: &str) -> GSVG {
+        let mut gsvg = GSVG::new(caption);
+        let n = self.n;
+        for i in 0..n {
+            gsvg.node(i as i32);
+        }
+        for e in self.edges.iter() {
+            match e.kind {
+                EdgeKind::TreeEdge => gsvg.edge(e.tail, e.head, true, false),
+                _ => gsvg.edge(e.tail, e.head, true, true),
+            }
+        }
+        gsvg
+    }
+}
+
+// #[test]
+// fn test_tree() {
+//     let root: TreeLink = tree!(1, tree!(2, tree!(3), None), tree!(4));
+//     let gsvg = root.draw("Test Tree");
+//     gsvg.render("test_tree.svg");
+// }
+
 #[test]
-fn test() {
-    let root: TreeLink = tree!(1, tree!(2, tree!(3), None), tree!(4));
-    let gsvg = root.draw("Test T");
-    gsvg.render("testtree.svg");
+fn test_graph() {
+    let n = 5;
+    let mut graph: Graph = Graph::new(n);
+    let edges = vec_vec_i32![[1, 0], [2, 0], [3, 0], [4, 1], [4, 2], [4, 0]];
+    graph.init_with_edges(edges, false);
+    graph.travase();
+    let gsvg = graph.draw("Test Graph");
+    gsvg.render("test_graph.svg");
 }

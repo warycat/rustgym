@@ -4,6 +4,8 @@ mod _2_add_two_numbers;
 //
 mod _3_longest_substring_without_repeating_characters;
 //
+mod _4_median_of_two_sorted_arrays;
+//
 mod _5_longest_palindromic_substring;
 //
 mod _6_zigzag_conversion;
@@ -129,6 +131,8 @@ mod _73_set_matrix_zeroes;
 mod _74_search_a_2d_matrix;
 //
 mod _75_sort_colors;
+//
+mod _76_minimum_window_substring;
 //
 mod _77_combinations;
 //
@@ -540,6 +544,8 @@ mod _360_sort_transformed_array;
 mod _361_bomb_enemy;
 //
 mod _362_design_hit_counter;
+//
+mod _363_max_sum_of_rectangle_no_larger_than_k;
 //
 mod _364_nested_list_weight_sum_2;
 //
@@ -1728,6 +1734,8 @@ mod _1189_maximum_number_of_balloons;
 mod _1190_reverse_substrings_between_each_pair_of_parentheses;
 //
 mod _1191_k_concatenation_maximum_sum;
+//
+mod _1192_critical_connections_in_a_network;
 //
 mod _1196_how_many_apples_can_you_put_into_the_basket;
 //
