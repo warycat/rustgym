@@ -33,7 +33,7 @@ impl File {
 #[derive(Debug)]
 struct Dir {
     name: String,
-    entries: BTreeMap<String, Box<Entry>>,
+    entries: BTreeMap<String, Entry>,
 }
 
 impl Dir {
@@ -80,8 +80,7 @@ impl FileSystem {
                 e = dir
                     .entries
                     .entry(name.to_string())
-                    .or_insert_with(|| Box::new(Entry::D(Dir::new(name.to_string()))))
-                    .as_mut();
+                    .or_insert_with(|| Entry::D(Dir::new(name.to_string())))
             } else {
                 panic!();
             }
@@ -95,10 +94,7 @@ impl FileSystem {
                 e = dir
                     .entries
                     .entry(name.to_string())
-                    .or_insert_with(|| {
-                        Box::new(Entry::F(File::new(name.to_string(), "".to_string())))
-                    })
-                    .as_mut();
+                    .or_insert_with(|| Entry::F(File::new(name.to_string(), "".to_string())))
             } else {
                 panic!();
             }
@@ -114,7 +110,7 @@ impl FileSystem {
         let mut e: &mut Entry = &mut self.root;
         for name in path.split('/').filter(|s| !s.is_empty()) {
             if let Entry::D(dir) = e {
-                e = dir.entries.get_mut(name).unwrap().as_mut();
+                e = dir.entries.get_mut(name).unwrap();
             } else {
                 panic!();
             }
