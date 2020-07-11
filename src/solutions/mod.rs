@@ -216,6 +216,8 @@ mod _125_valid_palindrome;
 //
 mod _127_word_ladder;
 //
+mod _128_longest_consecutive_sequence;
+//
 mod _129_sum_root_to_leaf_numbers;
 //
 mod _130_surrounded_regions;
@@ -231,6 +233,8 @@ mod _136_single_number;
 mod _137_single_number_2;
 //
 mod _139_word_break;
+//
+mod _140_word_break_2;
 //
 mod _143_reorder_list;
 //
@@ -338,6 +342,8 @@ mod _222_count_complete_tree_nodes;
 //
 mod _223_rectangle_area;
 //
+mod _224_basic_calculator;
+//
 mod _225_implement_stack_using_queues;
 //
 mod _226_invert_binary_tree;
@@ -357,6 +363,8 @@ mod _232_implent_queue_using_stacks;
 mod _234_palindrome_linked_list;
 //
 mod _238_product_of_array_except_self;
+//
+mod _239_sliding_window_maximum;
 //
 mod _241_different_ways_to_add_parentheses;
 //
@@ -407,6 +415,8 @@ mod _266_palindrome_permutation;
 mod _267_palindrome_permutation_2;
 //
 mod _268_missing_number;
+//
+mod _269_alien_dictionary;
 //
 mod _270_closest_binary_search_tree_value;
 //
@@ -879,6 +889,8 @@ mod _582_kill_process;
 //
 mod _583_delete_operation_for_two_strings;
 //
+mod _588_design_in_memory_file_system;
+//
 mod _592_fraction_addition_and_subtraction;
 //
 mod _593_valid_square;
@@ -1122,6 +1134,8 @@ mod _768_max_chunks_to_make_sorted_2;
 mod _769_max_chunks_to_make_sorted;
 //
 mod _771_jewels_and_stones;
+//
+mod _773_sliding_puzzle;
 //
 mod _775_global_and_local_inversions;
 //
