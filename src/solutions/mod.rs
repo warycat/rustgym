@@ -711,6 +711,8 @@ mod _457_circular_array_loop;
 //
 mod _459_repeated_substring_pattern;
 //
+mod _460_lfu_cache;
+//
 mod _461_hamming_distance;
 //
 mod _462_minimum_moves_to_equal_array_elements_2;
@@ -2157,3 +2159,14 @@ mod _1502_can_make_arithmetic_progression_from_sequence;
 mod _1503_last_moment_before_all_ants_fall_out_of_a_plank;
 //
 mod _1504_count_submatrices_with_all_ones;
+//
+mod _1507_reformat_date;
+//
+mod _1508_range_sum_of_sorted_subarray_sums;
+//
+mod _1509_minimum_difference_between_largest_and_smallest_value_in_three_moves;
+//
+mod _1512_number_of_good_pairs;
+//
+mod _1513_number_of_substrings_with_only_1s;
+//

@@ -1139,10 +1139,10 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |994|[Rotting Oranges](https://leetcode.com/problems/rotting-oranges)|breadth-first-search|[solution](src/solutions/_994_rotting_oranges.rs)|
 |998|[Maximum Binary Tree II](https://leetcode.com/problems/maximum-binary-tree-ii)|tree|[solution](src/solutions/_998_maximum_binary_tree_2.rs)|
 </details>
-<details><summary>Hard 257/297 86.53%</summary>
+<details><summary>Hard 256/297 86.20%</summary>
 
 
-|id|297 Hard Questions|Tags|40 Solutions|
+|id|297 Hard Questions|Tags|41 Solutions|
 |---|---|---|---|
 |420|[Strong Password Checker](https://leetcode.com/problems/strong-password-checker)||   |
 |440|[K-th Smallest in Lexicographical Order](https://leetcode.com/problems/k-th-smallest-in-lexicographical-order)||   |
@@ -1215,7 +1215,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |839|[Similar String Groups](https://leetcode.com/problems/similar-string-groups)|depth-first-search union-find graph|   |
 |928|[Minimize Malware Spread II](https://leetcode.com/problems/minimize-malware-spread-ii)|depth-first-search union-find graph|   |
 |432|[All O`one Data Structure](https://leetcode.com/problems/all-oone-data-structure)|design|   |
-|460|[LFU Cache](https://leetcode.com/problems/lfu-cache)|design|   |
 |631|[Design Excel Sum Formula](https://leetcode.com/problems/design-excel-sum-formula)|design|   |
 |1172|[Dinner Plate Stacks](https://leetcode.com/problems/dinner-plate-stacks)|design|   |
 |1206|[Design Skiplist](https://leetcode.com/problems/design-skiplist)|design|   |
@@ -1430,6 +1429,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |41|[First Missing Positive](https://leetcode.com/problems/first-missing-positive)|array|[solution](src/solutions/_41_first_missing_positive.rs)|
 |42|[Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water)|array two-pointers stack|[solution](src/solutions/_42_trapping_rain_water.rs)|
 |44|[Wildcard Matching](https://leetcode.com/problems/wildcard-matching)|string dynamic-programming backtracking greedy|[solution](src/solutions/_44_wildcard_matching.rs)|
+|460|[LFU Cache](https://leetcode.com/problems/lfu-cache)|design|[solution](src/solutions/_460_lfu_cache.rs)|
 |4|[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays)|array binary-search divide-and-conquer|[solution](src/solutions/_4_median_of_two_sorted_arrays.rs)|
 |52|[N-Queens II](https://leetcode.com/problems/n-queens-ii)|backtracking|[solution](src/solutions/_52_n_queens_2.rs)|
 |588|[Design In-Memory File System](https://leetcode.com/problems/design-in-memory-file-system)|design|[solution](src/solutions/_588_design_in_memory_file_system.rs)|
