@@ -82,6 +82,8 @@ mod _43_multiply_strings;
 //
 mod _44_wildcard_matching;
 //
+mod _45_jump_game_2;
+//
 mod _46_permutations;
 //
 mod _47_permutations_2;
@@ -213,6 +215,8 @@ mod _122_best_time_to_buy_and_sell_stock_2;
 mod _124_binary_tree_maximum_path_sum;
 //
 mod _125_valid_palindrome;
+//
+mod _126_word_ladder_2;
 //
 mod _127_word_ladder;
 //
@@ -631,6 +635,8 @@ mod _401_binary_watch;
 //
 mod _402_remove_k_digits;
 //
+mod _403_frog_jump;
+//
 mod _404_sum_of_left_leaves;
 //
 mod _405_convert_a_number_to_hexadecimal;
@@ -664,6 +670,8 @@ mod _422_valid_word_square;
 mod _423_reconstruct_original_digits_from_english;
 //
 mod _424_longest_repeating_character_replacement;
+//
+mod _432_all_o_one_data_structure;
 //
 mod _433_minimum_genetic_mutation;
 //
@@ -721,6 +729,8 @@ mod _463_island_perimeter;
 //
 mod _464_can_i_win;
 //
+mod _465_optimal_account_balancing;
+//
 mod _467_unique_substrings_in_wraparound_string;
 //
 mod _468_validate_ip_address;
@@ -728,6 +738,8 @@ mod _468_validate_ip_address;
 mod _469_convex_polygon;
 //
 mod _470_implement_rand10_using_rand7;
+//
+mod _472_concatenated_words;
 //
 mod _473_matchsticks_to_square;
 //
@@ -2170,3 +2182,4 @@ mod _1512_number_of_good_pairs;
 //
 mod _1513_number_of_substrings_with_only_1s;
 //
+mod _1514_path_with_maximum_probability;

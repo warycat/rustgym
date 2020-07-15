@@ -16,7 +16,6 @@ impl Solution {
                 }
             }
         }
-        dbg!(&sorted);
         (m - sorted[0].len()) as i32
     }
 }
