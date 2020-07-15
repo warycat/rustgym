@@ -1693,6 +1693,8 @@ mod _1134_armstrong_number;
 //
 mod _1135_connecting_cities_with_minimum_cost;
 //
+mod _1136_parallel_courses;
+//
 mod _1137_n_th_tribonacci_number;
 //
 mod _1138_alphabet_board_path;
@@ -1732,6 +1734,8 @@ mod _1165_single_row_keyboard;
 mod _1166_design_file_system;
 //
 mod _1167_minimum_cost_to_connect_sticks;
+//
+mod _1168_optimize_water_distribution_in_a_village;
 //
 mod _1169_invalid_transactions;
 //
@@ -1885,6 +1889,8 @@ mod _1287_element_appearing_more_than_25_in_sorted_array;
 //
 mod _1288_remove_covered_intervals;
 //
+mod _1289_minimum_falling_path_sum_2;
+//
 mod _1290_convert_binary_number_in_a_linked_list_to_integer;
 //
 mod _1291_sequential_digits;
@@ -1926,6 +1932,8 @@ mod _1317_convert_integer_to_the_sum_of_two_no_zero_integers;
 mod _1318_minimum_flips_to_make_a_or_b_equal_to_c;
 //
 mod _1319_number_of_operations_to_make_network_connected;
+//
+mod _1320_minimum_distance_to_type_a_word_using_two_fingers;
 //
 mod _1323_maximum_69_number;
 //
@@ -2042,6 +2050,8 @@ mod _1408_string_matching_in_an_array;
 mod _1409_queries_on_a_permutation_with_key;
 //
 mod _1410_html_entity_parser;
+//
+mod _1411_number_of_ways_to_paint_n3_grid;
 //
 mod _1413_minimum_value_to_get_positive_step_by_step_sum;
 //
