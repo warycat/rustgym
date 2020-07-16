@@ -1093,6 +1093,8 @@ mod _729_my_calendar_1;
 //
 mod _731_my_calendar_2;
 //
+mod _732_my_calendar_3;
+//
 mod _733_flood_fill;
 //
 mod _734_sentence_similarity;
@@ -1619,6 +1621,8 @@ mod _1072_flip_columns_for_maximum_number_of_equal_rows;
 //
 mod _1073_adding_two_negabinary_numbers;
 //
+mod _1074_number_of_submatrices_that_sum_to_target;
+//
 mod _1078_occurrences_after_bigram;
 //
 mod _1079_letter_tile_possibilities;
@@ -1710,6 +1714,8 @@ mod _1144_decrease_elements_to_make_array_zigzag;
 mod _1145_binary_tree_coloring_game;
 //
 mod _1146_snapshot_array;
+//
+mod _1147_longest_chunked_palindrome_decomposition;
 //
 mod _1150_check_if_a_number_is_majority_element_in_a_sorted_array;
 //
@@ -1875,6 +1881,8 @@ mod _1276_number_of_burgers_with_no_waste_of_ingredients;
 //
 mod _1277_count_square_submatrices_with_all_ones;
 //
+mod _1278_palindrome_partitioning_3;
+//
 mod _1281_subtract_the_product_and_sum_of_digits_of_an_integer;
 //
 mod _1282_group_the_people_given_the_group_size_they_belong_to;
@@ -1902,6 +1910,8 @@ mod _1295_find_numbers_with_even_number_of_digits;
 mod _1296_divide_array_in_sets_of_k_consecutive_numbers;
 //
 mod _1297_maximum_number_of_occurrences_of_a_substring;
+//
+mod _1298_maximum_candies_you_can_get_from_boxes;
 //
 mod _1299_replace_elements_with_greatest_element_on_right_side;
 //

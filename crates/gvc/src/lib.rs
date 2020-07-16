@@ -207,13 +207,13 @@ impl Draw for Graph {
 //     gsvg.render("test_tree.svg");
 // }
 
-#[test]
-fn test_graph() {
-    let n = 5;
-    let mut graph: Graph = Graph::new(n);
-    let edges = vec_vec_i32![[1, 0], [2, 0], [3, 0], [4, 1], [4, 2], [4, 0]];
-    graph.init_with_edges(edges, false);
-    graph.travase();
-    let gsvg = graph.draw("Test Graph");
-    gsvg.render("test_graph.svg");
-}
+// #[test]
+// fn test_graph() {
+//     let n = 5;
+//     let mut graph: Graph = Graph::new(n);
+//     let edges = vec_vec_i32![[1, 0], [2, 0], [3, 0], [4, 1], [4, 2], [4, 0]];
+//     graph.init_with_edges(edges, false);
+//     graph.travase();
+//     let gsvg = graph.draw("Test Graph");
+//     gsvg.render("test_graph.svg");
+// }
