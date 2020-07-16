@@ -11,7 +11,7 @@ impl Solution {
                     l -= 1;
                 }
                 while r + 1 < n && nums[r + 1] == target {
-                    r -= 1;
+                    r += 1;
                 }
                 vec![l as i32, r as i32]
             }

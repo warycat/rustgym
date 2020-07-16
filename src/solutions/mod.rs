@@ -1663,6 +1663,8 @@ mod _1104_path_in_zigzag_labelled_binary_tree;
 //
 mod _1105_filling_bookcase_shelves;
 //
+mod _1106_parsing_a_boolean_expression;
+//
 mod _1108_defanging_an_ip_address;
 //
 mod _1109_corp_flight_bookings;
@@ -1931,6 +1933,8 @@ mod _1310_xor_queries_of_a_subarray;
 //
 mod _1311_get_watched_videos_by_your_friends;
 //
+mod _1312_minimum_insertion_steps_to_make_a_string_palindrome;
+//
 mod _1314_matrix_block_sum;
 //
 mod _1313_decompres_run_length_encoded_list;
@@ -1969,6 +1973,8 @@ mod _1338_reduce_array_size_to_the_half;
 //
 mod _1339_maximum_product_of_splitted_binary_tree;
 //
+mod _1340_jump_game_5;
+//
 mod _1342_number_of_steps_to_reduce_a_number_to_zero;
 //
 mod _1343_number_of_sub_arrays_of_size_k_and_average_greater_than_or_equal_to_threshold;
@@ -1992,6 +1998,8 @@ mod _1356_sort_integers_by_the_number_of_1_bits;
 mod _1357_apply_discount_every_n_orders;
 //
 mod _1358_number_of_substrings_containing_all_three_characters;
+//
+mod _1359_count_all_valid_pickup_and_delivery_options;
 //
 mod _1360_number_of_days_between_two_dates;
 //

@@ -1145,10 +1145,10 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |994|[Rotting Oranges](https://leetcode.com/problems/rotting-oranges)|breadth-first-search|[solution](src/solutions/_994_rotting_oranges.rs)|
 |998|[Maximum Binary Tree II](https://leetcode.com/problems/maximum-binary-tree-ii)|tree|[solution](src/solutions/_998_maximum_binary_tree_2.rs)|
 </details>
-<details><summary>Hard 242/299 80.94%</summary>
+<details><summary>Hard 238/299 79.60%</summary>
 
 
-|id|299 Hard Questions|Tags|57 Solutions|
+|id|299 Hard Questions|Tags|61 Solutions|
 |---|---|---|---|
 |420|[Strong Password Checker](https://leetcode.com/problems/strong-password-checker)||   |
 |440|[K-th Smallest in Lexicographical Order](https://leetcode.com/problems/k-th-smallest-in-lexicographical-order)||   |
@@ -1251,9 +1251,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1246|[Palindrome Removal](https://leetcode.com/problems/palindrome-removal)|dynamic-programming|   |
 |1269|[Number of Ways to Stay in the Same Place After Some Steps](https://leetcode.com/problems/number-of-ways-to-stay-in-the-same-place-after-some-steps)|dynamic-programming|   |
 |1301|[Number of Paths with Max Score](https://leetcode.com/problems/number-of-paths-with-max-score)|dynamic-programming|   |
-|1312|[Minimum Insertion Steps to Make a String Palindrome](https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome)|dynamic-programming|   |
 |1335|[Minimum Difficulty of a Job Schedule](https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule)|dynamic-programming|   |
-|1340|[Jump Game V](https://leetcode.com/problems/jump-game-v)|dynamic-programming|   |
 |1349|[Maximum Students Taking Exam](https://leetcode.com/problems/maximum-students-taking-exam)|dynamic-programming|   |
 |1388|[Pizza With 3n Slices](https://leetcode.com/problems/pizza-with-3n-slices)|dynamic-programming|   |
 |1397|[Find All Good Strings](https://leetcode.com/problems/find-all-good-strings)|dynamic-programming|   |
@@ -1342,7 +1340,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1067|[Digit Count in Range](https://leetcode.com/problems/digit-count-in-range)|math dynamic-programming|   |
 |1199|[Minimum Time to Build Blocks](https://leetcode.com/problems/minimum-time-to-build-blocks)|math dynamic-programming|   |
 |1259|[Handshakes That Don't Cross](https://leetcode.com/problems/handshakes-that-dont-cross)|math dynamic-programming|   |
-|1359|[Count All Valid Pickup and Delivery Options](https://leetcode.com/problems/count-all-valid-pickup-and-delivery-options)|math dynamic-programming|   |
 |1363|[Largest Multiple of Three](https://leetcode.com/problems/largest-multiple-of-three)|math dynamic-programming|   |
 |1478|[Allocate Mailboxes](https://leetcode.com/problems/allocate-mailboxes)|math dynamic-programming|   |
 |248|[Strobogrammatic Number III](https://leetcode.com/problems/strobogrammatic-number-iii)|math recursion|   |
@@ -1364,7 +1361,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |158|[Read N Characters Given Read4 II - Call multiple times](https://leetcode.com/problems/read-n-characters-given-read4-ii-call-multiple-times)|string|   |
 |564|[Find the Closest Palindrome](https://leetcode.com/problems/find-the-closest-palindrome)|string|   |
 |736|[Parse Lisp Expression](https://leetcode.com/problems/parse-lisp-expression)|string|   |
-|1106|[Parsing A Boolean Expression](https://leetcode.com/problems/parsing-a-boolean-expression)|string|   |
 |1392|[Longest Happy Prefix](https://leetcode.com/problems/longest-happy-prefix)|string|   |
 |32|[Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses)|string dynamic-programming|   |
 |72|[Edit Distance](https://leetcode.com/problems/edit-distance)|string dynamic-programming|   |
@@ -1397,6 +1393,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1074|[Number of Submatrices That Sum to Target](https://leetcode.com/problems/number-of-submatrices-that-sum-to-target)|array dynamic-programming sliding-window|[solution](src/solutions/_1074_number_of_submatrices_that_sum_to_target.rs)|
 |1096|[Brace Expansion II](https://leetcode.com/problems/brace-expansion-ii)|string|[solution](src/solutions/_1096_brace_expansion_2.rs)|
 |10|[Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching)|string dynamic-programming backtracking|[solution](src/solutions/_10_regular_expression_matching.rs)|
+|1106|[Parsing A Boolean Expression](https://leetcode.com/problems/parsing-a-boolean-expression)|string|[solution](src/solutions/_1106_parsing_a_boolean_expression.rs)|
 |1136|[Parallel Courses](https://leetcode.com/problems/parallel-courses)|dynamic-programming depth-first-search graph|[solution](src/solutions/_1136_parallel_courses.rs)|
 |1147|[Longest Chunked Palindrome Decomposition](https://leetcode.com/problems/longest-chunked-palindrome-decomposition)|dynamic-programming rolling-hash|[solution](src/solutions/_1147_longest_chunked_palindrome_decomposition.rs)|
 |1168|[Optimize Water Distribution in a Village](https://leetcode.com/problems/optimize-water-distribution-in-a-village)|union-find graph|[solution](src/solutions/_1168_optimize_water_distribution_in_a_village.rs)|
@@ -1409,7 +1406,10 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1289|[Minimum Falling Path Sum II](https://leetcode.com/problems/minimum-falling-path-sum-ii)|dynamic-programming|[solution](src/solutions/_1289_minimum_falling_path_sum_2.rs)|
 |128|[Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence)|array union-find|[solution](src/solutions/_128_longest_consecutive_sequence.rs)|
 |1298|[Maximum Candies You Can Get from Boxes](https://leetcode.com/problems/maximum-candies-you-can-get-from-boxes)|breadth-first-search|[solution](src/solutions/_1298_maximum_candies_you_can_get_from_boxes.rs)|
+|1312|[Minimum Insertion Steps to Make a String Palindrome](https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome)|dynamic-programming|[solution](src/solutions/_1312_minimum_insertion_steps_to_make_a_string_palindrome.rs)|
 |1320|[Minimum Distance to Type a Word Using Two Fingers](https://leetcode.com/problems/minimum-distance-to-type-a-word-using-two-fingers)|dynamic-programming|[solution](src/solutions/_1320_minimum_distance_to_type_a_word_using_two_fingers.rs)|
+|1340|[Jump Game V](https://leetcode.com/problems/jump-game-v)|dynamic-programming|[solution](src/solutions/_1340_jump_game_5.rs)|
+|1359|[Count All Valid Pickup and Delivery Options](https://leetcode.com/problems/count-all-valid-pickup-and-delivery-options)|math dynamic-programming|[solution](src/solutions/_1359_count_all_valid_pickup_and_delivery_options.rs)|
 |135|[Candy](https://leetcode.com/problems/candy)|greedy|[solution](src/solutions/_135_candy.rs)|
 |1402|[Reducing Dishes](https://leetcode.com/problems/reducing-dishes)|dynamic-programming|[solution](src/solutions/_1402_reducing_dishes.rs)|
 |140|[Word Break II](https://leetcode.com/problems/word-break-ii)|dynamic-programming backtracking|[solution](src/solutions/_140_word_break_2.rs)|
