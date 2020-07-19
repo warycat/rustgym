@@ -242,6 +242,8 @@ mod _140_word_break_2;
 //
 mod _143_reorder_list;
 //
+mod _145_binary_tree_postorder_traversal;
+//
 mod _146_lru_cache;
 //
 mod _147_insertion_sort_list;
@@ -1139,11 +1141,15 @@ mod _758_bold_words_in_string;
 //
 mod _760_find_anagram_mappings;
 //
+mod _761_special_binary_string;
+//
 mod _762_prime_number_of_set_bits_in_binary_representation;
 //
 mod _763_partition_labels;
 //
 mod _764_largest_plus_sign;
+//
+mod _765_couples_holding_hands;
 //
 mod _766_toeplitiz_matrix;
 //
@@ -1470,6 +1476,8 @@ mod _979_distribute_coins_in_binary_tree;
 mod _980_unique_paths_3;
 //
 mod _981_time_based_key_value_store;
+//
+mod _982_triples_with_bitwise_and_equal_to_zero;
 //
 mod _983_minimum_cost_for_tickets;
 //
@@ -1851,6 +1859,8 @@ mod _1248_count_number_of_nice_subarrays;
 //
 mod _1249_minimum_remove_to_make_valid_parentheses;
 //
+mod _1250_check_if_it_is_a_good_array;
+//
 mod _1254_number_of_closed_islands;
 //
 mod _1255_maximum_score_words_formed_by_letters;
@@ -2172,11 +2182,13 @@ mod _1472_design_browser_history;
 //
 mod _1474_delete_n_nodes_after_m_nodes_of_a_linked_list;
 //
-mod _1476_subrectangle_queries;
-//
 mod _1475_final_prices_with_a_speial_discount_in_shop;
 //
+mod _1476_subrectangle_queries;
+//
 mod _1477_find_two_non_overlapping_sub_arrays_each_with_target_sum;
+//
+mod _1478_allocate_mailboxes;
 //
 mod _1480_running_sum_of_1d_array;
 //
