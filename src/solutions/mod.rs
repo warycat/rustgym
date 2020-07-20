@@ -1775,6 +1775,8 @@ mod _1181_before_and_after_puzzle;
 //
 mod _1182_shortest_distance_to_target_color;
 //
+mod _1183_maximum_number_of_ones;
+//
 mod _1184_distance_between_bus_stops;
 //
 mod _1185_day_of_the_week;
@@ -2233,3 +2235,10 @@ mod _1512_number_of_good_pairs;
 mod _1513_number_of_substrings_with_only_1s;
 //
 mod _1514_path_with_maximum_probability;
+//
+mod _1518_water_bottles;
+//
+mod _1519_number_of_nodes_in_the_sub_tree_with_the_same_label;
+//
+mod _1520_maximum_number_of_non_overlapping_substrings;
+//
