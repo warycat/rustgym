@@ -1145,10 +1145,10 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |994|[Rotting Oranges](https://leetcode.com/problems/rotting-oranges)|breadth-first-search|[solution](src/leetcode/_994_rotting_oranges.rs)|
 |998|[Maximum Binary Tree II](https://leetcode.com/problems/maximum-binary-tree-ii)|tree|[solution](src/leetcode/_998_maximum_binary_tree_2.rs)|
 </details>
-<details><summary>Hard 227/300 75.67%</summary>
+<details><summary>Hard 225/300 75.00%</summary>
 
 
-|id|300 Hard Questions|Tags|73 Solutions|
+|id|300 Hard Questions|Tags|75 Solutions|
 |---|---|---|---|
 |420|[Strong Password Checker](https://leetcode.com/problems/strong-password-checker)||   |
 |440|[K-th Smallest in Lexicographical Order](https://leetcode.com/problems/k-th-smallest-in-lexicographical-order)||   |
@@ -1168,7 +1168,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1499|[Max Value of Equation](https://leetcode.com/problems/max-value-of-equation)|array sliding-window|   |
 |57|[Insert Interval](https://leetcode.com/problems/insert-interval)|array sort|   |
 |84|[Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram)|array stack|   |
-|51|[N-Queens](https://leetcode.com/problems/n-queens)|backtracking|   |
 |291|[Word Pattern II](https://leetcode.com/problems/word-pattern-ii)|backtracking|   |
 |411|[Minimum Unique Word Abbreviation](https://leetcode.com/problems/minimum-unique-word-abbreviation)|backtracking bit-manipulation|   |
 |425|[Word Squares](https://leetcode.com/problems/word-squares)|backtracking trie|   |
@@ -1314,7 +1313,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |780|[Reaching Points](https://leetcode.com/problems/reaching-points)|math|   |
 |805|[Split Array With Same Average](https://leetcode.com/problems/split-array-with-same-average)|math|   |
 |810|[Chalkboard XOR Game](https://leetcode.com/problems/chalkboard-xor-game)|math|   |
-|829|[Consecutive Numbers Sum](https://leetcode.com/problems/consecutive-numbers-sum)|math|   |
 |906|[Super Palindromes](https://leetcode.com/problems/super-palindromes)|math|   |
 |972|[Equal Rational Numbers](https://leetcode.com/problems/equal-rational-numbers)|math|   |
 |1088|[Confusing Number II](https://leetcode.com/problems/confusing-number-ii)|math backtracking|   |
@@ -1436,6 +1434,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |465|[Optimal Account Balancing](https://leetcode.com/problems/optimal-account-balancing)||[solution](src/leetcode/_465_optimal_account_balancing.rs)|
 |472|[Concatenated Words](https://leetcode.com/problems/concatenated-words)|dynamic-programming depth-first-search trie|[solution](src/leetcode/_472_concatenated_words.rs)|
 |4|[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays)|array binary-search divide-and-conquer|[solution](src/leetcode/_4_median_of_two_sorted_arrays.rs)|
+|51|[N-Queens](https://leetcode.com/problems/n-queens)|backtracking|[solution](src/leetcode/_51_n_queens.rs)|
 |52|[N-Queens II](https://leetcode.com/problems/n-queens-ii)|backtracking|[solution](src/leetcode/_52_n_queens_2.rs)|
 |588|[Design In-Memory File System](https://leetcode.com/problems/design-in-memory-file-system)|design|[solution](src/leetcode/_588_design_in_memory_file_system.rs)|
 |630|[Course Schedule III](https://leetcode.com/problems/course-schedule-iii)|greedy|[solution](src/leetcode/_630_course_schedule_3.rs)|
@@ -1447,6 +1446,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |768|[Max Chunks To Make Sorted II](https://leetcode.com/problems/max-chunks-to-make-sorted-ii)|array|[solution](src/leetcode/_768_max_chunks_to_make_sorted_2.rs)|
 |76|[Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring)|hash-table two-pointers string sliding-window|[solution](src/leetcode/_76_minimum_window_substring.rs)|
 |773|[Sliding Puzzle](https://leetcode.com/problems/sliding-puzzle)|breadth-first-search|[solution](src/leetcode/_773_sliding_puzzle.rs)|
+|829|[Consecutive Numbers Sum](https://leetcode.com/problems/consecutive-numbers-sum)|math|[solution](src/leetcode/_829_consecutive_numbers_sum.rs)|
 |895|[Maximum Frequency Stack](https://leetcode.com/problems/maximum-frequency-stack)|hash-table stack|[solution](src/leetcode/_895_maximum_frequency_stack.rs)|
 |980|[Unique Paths III](https://leetcode.com/problems/unique-paths-iii)|backtracking depth-first-search|[solution](src/leetcode/_980_unique_paths_3.rs)|
 |982|[Triples with Bitwise AND Equal To Zero](https://leetcode.com/problems/triples-with-bitwise-and-equal-to-zero)|dynamic-programming|[solution](src/leetcode/_982_triples_with_bitwise_and_equal_to_zero.rs)|
