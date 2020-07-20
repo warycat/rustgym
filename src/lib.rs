@@ -6,4 +6,4 @@ pub extern crate util;
 #[allow(clippy::collapsible_if)]
 #[allow(clippy::needless_range_loop)]
 #[allow(clippy::too_many_arguments)]
-mod solutions;
+mod leetcode;
