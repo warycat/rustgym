@@ -94,6 +94,8 @@ mod _49_group_anagrams;
 //
 mod _50_pow_x_n;
 //
+mod _51_n_queens;
+//
 mod _52_n_queens_2;
 //
 mod _53_maximum_subarray;
@@ -1242,6 +1244,8 @@ mod _824_goat_latin;
 mod _825_friends_of_appropriate_ages;
 //
 mod _826_most_profix_assigning_work;
+//
+mod _829_consecutive_numbers_sum;
 //
 mod _830_positions_of_large_groups;
 //

@@ -1,25 +1,44 @@
 struct Solution;
 
 impl Solution {
-    fn total_n_queens(n: i32) -> i32 {
+    fn solve_n_queens(n: i32) -> Vec<Vec<String>> {
         let n = n as usize;
+        let mut queens: Vec<u32> = vec![];
+        let mut res = vec![];
         let mut column: u32 = 0;
         let mut diagonal1: u32 = 0;
         let mut diagonal2: u32 = 0;
-        let mut res = 0;
-        Self::dfs(0, &mut column, &mut diagonal1, &mut diagonal2, &mut res, n);
-        res as i32
+        Self::dfs(
+            0,
+            &mut queens,
+            &mut column,
+            &mut diagonal1,
+            &mut diagonal2,
+            &mut res,
+            n,
+        );
+        res
     }
+
     fn dfs(
         i: usize,
+        queens: &mut Vec<u32>,
         column: &mut u32,
         diagonal1: &mut u32,
         diagonal2: &mut u32,
-        count: &mut usize,
+        all: &mut Vec<Vec<String>>,
         n: usize,
     ) {
         if i == n {
-            *count += 1;
+            let solution = queens
+                .iter()
+                .map(|row| {
+                    (0..n)
+                        .map(|i| if row & (1 << i) > 0 { 'Q' } else { '.' })
+                        .collect::<String>()
+                })
+                .collect();
+            all.push(solution);
         } else {
             for j in 0..n {
                 let column_bit = 1 << j;
@@ -32,7 +51,9 @@ impl Solution {
                     *column |= column_bit;
                     *diagonal1 |= diagonal1_bit;
                     *diagonal2 |= diagonal2_bit;
-                    Self::dfs(i + 1, column, diagonal1, diagonal2, count, n);
+                    queens.push(column_bit);
+                    Self::dfs(i + 1, queens, column, diagonal1, diagonal2, all, n);
+                    queens.pop();
                     *column &= !column_bit;
                     *diagonal1 &= !diagonal1_bit;
                     *diagonal2 &= !diagonal2_bit;
@@ -45,6 +66,9 @@ impl Solution {
 #[test]
 fn test() {
     let n = 4;
-    let res = 2;
-    assert_eq!(Solution::total_n_queens(n), res);
+    let res = vec_vec_string![
+        [".Q..", "...Q", "Q...", "..Q."],
+        ["..Q.", "Q...", "...Q", ".Q.."]
+    ];
+    assert_eq!(Solution::solve_n_queens(n), res);
 }
