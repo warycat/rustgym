@@ -11,33 +11,31 @@ impl Solution {
             adj[v].push(u);
         }
         let mut visited = vec![false; n];
+        let mut counts: Vec<usize> = vec![0; 26];
         let mut res = vec![0; n];
         let labels: Vec<u8> = labels.bytes().collect();
-        visited[0] = true;
-        Self::dfs(0, &mut visited, &mut res, &adj, &labels);
+        Self::dfs(0, &mut visited, &mut counts, &mut res, &adj, &labels);
         res
     }
 
     fn dfs(
         u: usize,
         visited: &mut Vec<bool>,
+        counts: &mut Vec<usize>,
         sizes: &mut Vec<i32>,
         adj: &[Vec<usize>],
         labels: &[u8],
-    ) -> [i32; 26] {
-        let mut count = [0; 26];
-        count[(labels[u] - b'a') as usize] = 1;
+    ) {
+        visited[u] = true;
+        let i = (labels[u] - b'a') as usize;
+        let last_count = counts[i];
+        counts[i] += 1;
         for &v in adj[u].iter() {
             if !visited[v] {
-                visited[v] = true;
-                let subtree = Self::dfs(v, visited, sizes, adj, labels);
-                for i in 0..26 {
-                    count[i] += subtree[i];
-                }
+                Self::dfs(v, visited, counts, sizes, adj, labels);
             }
         }
-        sizes[u] = count[(labels[u] - b'a') as usize];
-        count
+        sizes[u] = (counts[i] - last_count) as i32;
     }
 }
 
