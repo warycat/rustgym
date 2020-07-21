@@ -463,6 +463,8 @@ mod _289_game_of_life;
 //
 mod _290_word_pattern;
 //
+mod _291_word_pattern_2;
+//
 mod _292_nim_game;
 //
 mod _293_flip_game;
@@ -474,6 +476,8 @@ mod _298_binary_tree_longest_consecutive_sequence;
 mod _299_bulls_and_cows;
 //
 mod _300_longest_increasing_subsequence;
+//
+mod _302_smallest_rectangle_enclosing_black_pixels;
 //
 mod _303_range_sum_query;
 //
@@ -653,6 +657,8 @@ mod _408_valid_word_abbreviation;
 //
 mod _409_longest_palindrome;
 //
+mod _411_minimum_unique_word_abbreviation;
+//
 mod _412_fizz_buzz;
 //
 mod _413_arithmetic_slices;
@@ -676,6 +682,8 @@ mod _422_valid_word_square;
 mod _423_reconstruct_original_digits_from_english;
 //
 mod _424_longest_repeating_character_replacement;
+//
+mod _425_word_squares;
 //
 mod _432_all_o_one_data_structure;
 //
@@ -1009,6 +1017,8 @@ mod _666_path_sum_4;
 //
 mod _667_beautiful_arrangement_2;
 //
+mod _668_kth_smallest_number_in_multiplication;
+//
 mod _669_trim_a_binary_search_tree;
 //
 mod _670_maximum_swap;
@@ -1162,6 +1172,8 @@ mod _769_max_chunks_to_make_sorted;
 mod _771_jewels_and_stones;
 //
 mod _773_sliding_puzzle;
+//
+mod _774_minimize_max_distance_to_gas_station;
 //
 mod _775_global_and_local_inversions;
 //
