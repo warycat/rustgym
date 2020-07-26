@@ -1191,6 +1191,8 @@ mod _784_letter_case_permutation;
 //
 mod _785_is_graph_bipartite;
 //
+mod _786_kth_smallest_prime_faction;
+//
 mod _787_cheapest_flights_within_k_stops;
 //
 mod _788_rotated_digits;
@@ -2257,4 +2259,12 @@ mod _1518_water_bottles;
 mod _1519_number_of_nodes_in_the_sub_tree_with_the_same_label;
 //
 mod _1520_maximum_number_of_non_overlapping_substrings;
+//
+mod _1523_cound_odd_numbers_in_interval_range;
+//
+mod _1528_shuffle_string;
+//
+mod _1529_bulb_switcher_5;
+//
+mod _1530_number_of_good_leaf_nodes_pairs;
 //
