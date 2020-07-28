@@ -561,6 +561,8 @@ mod _356_line_reflection;
 //
 mod _357_count_numbers_with_unique_digits;
 //
+mod _358_rearrange_string_k_distance_apart;
+//
 mod _359_logger_rate_limiter;
 //
 mod _360_sort_transformed_array;
@@ -1245,6 +1247,8 @@ mod _816_ambiguous_coordinates;
 //
 mod _817_linked_list_components;
 //
+mod _818_race_car;
+//
 mod _819_most_common_word;
 //
 mod _820_short_encoding_of_words;
@@ -1324,6 +1328,8 @@ mod _868_binary_gap;
 mod _869_reordered_power_of_2;
 //
 mod _870_advantage_shuffle;
+//
+mod _871_minimum_number_of_refueling_stops;
 //
 mod _872_leaf_similar_trees;
 //
