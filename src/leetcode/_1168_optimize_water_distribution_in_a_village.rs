@@ -3,21 +3,21 @@ use std::cmp::Reverse;
 use std::collections::BinaryHeap;
 
 struct UnionFind {
+    parent: Vec<usize>,
     n: usize,
-    parents: Vec<usize>,
 }
 
 impl UnionFind {
     fn new(n: usize) -> Self {
-        let parents = (0..n).collect();
-        UnionFind { n, parents }
+        let parent = (0..n).collect();
+        UnionFind { n, parent }
     }
 
     fn find(&mut self, i: usize) -> usize {
-        let j = self.parents[i];
+        let j = self.parent[i];
         if i != j {
             let k = self.find(j);
-            self.parents[i] = k;
+            self.parent[i] = k;
             k
         } else {
             j
@@ -28,7 +28,7 @@ impl UnionFind {
         let i = self.find(i);
         let j = self.find(j);
         if i != j {
-            self.parents[i] = j;
+            self.parent[i] = j;
             true
         } else {
             false

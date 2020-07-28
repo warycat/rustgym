@@ -1181,6 +1181,8 @@ mod _776_split_bst;
 //
 mod _777_swap_adjacent_in_lr_string;
 //
+mod _778_swim_in_rising_water;
+//
 mod _779_kth_symbol_in_grammar;
 //
 mod _781_rabbits_in_forest;
@@ -2261,6 +2263,10 @@ mod _1519_number_of_nodes_in_the_sub_tree_with_the_same_label;
 mod _1520_maximum_number_of_non_overlapping_substrings;
 //
 mod _1523_cound_odd_numbers_in_interval_range;
+//
+mod _1524_number_of_sub_arrays_with_odd_sum;
+//
+mod _1525_number_of_good_ways_to_split_a_string;
 //
 mod _1528_shuffle_string;
 //
