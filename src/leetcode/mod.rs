@@ -56,6 +56,8 @@ mod _28_implement_str_str;
 //
 mod _29_divide_two_integers;
 //
+mod _30_substring_with_concatenation_of_all_words;
+//
 mod _31_next_permutation;
 //
 mod _33_search_in_rotated_sorted_array;
@@ -495,9 +497,13 @@ mod _310_minimum_height_trees;
 //
 mod _311_sparse_matrix_multiplication;
 //
+mod _312_burst_balloons;
+//
 mod _313_super_ugly_number;
 //
 mod _314_binary_tree_vertical_order_traversal;
+//
+mod _317_shortest_distance_from_all_buildings;
 //
 mod _318_maximum_product_of_word_lengths;
 //
@@ -556,6 +562,8 @@ mod _350_intersection_of_two_arrays_2;
 mod _351_android_unlock_patterns;
 //
 mod _353_design_snake_game;
+//
+mod _354_russian_doll_envelopes;
 //
 mod _355_design_twitter;
 //
@@ -788,6 +796,8 @@ mod _490_the_maze;
 mod _491_increasing_subsequences;
 //
 mod _492_construct_the_rectangle;
+//
+mod _493_reverse_pairs;
 //
 mod _494_target_sum;
 //
@@ -1035,6 +1045,8 @@ mod _672_bulb_switcher_2;
 //
 mod _674_longest_continuous_increasing_subsequence;
 //
+mod _675_cut_off_trees_for_golf_event;
+//
 mod _676_implement_magic_dictionary;
 //
 mod _677_map_sum_pairs;
@@ -1268,6 +1280,8 @@ mod _824_goat_latin;
 mod _825_friends_of_appropriate_ages;
 //
 mod _826_most_profix_assigning_work;
+//
+mod _827_making_a_large_island;
 //
 mod _829_consecutive_numbers_sum;
 //
