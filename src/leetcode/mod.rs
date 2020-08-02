@@ -108,6 +108,8 @@ mod _55_jump_game;
 //
 mod _56_merge_intervals;
 //
+mod _57_insert_interval;
+//
 mod _59_spiral_matrix_2;
 //
 mod _60_permutation_sequence;
@@ -1849,6 +1851,8 @@ mod _1201_ugly_number_3;
 //
 mod _1202_smallest_string_with_swaps;
 //
+mod _1203_sort_items_by_groups_respecting_dependencies;
+//
 mod _1206_design_skiplist;
 //
 mod _1207_unique_number_of_occurrences;
@@ -2304,3 +2308,10 @@ mod _1529_bulb_switcher_5;
 //
 mod _1530_number_of_good_leaf_nodes_pairs;
 //
+mod _1534_count_good_triplets;
+//
+mod _1535_find_the_winner_of_an_array_game;
+//
+mod _1536_minimum_swaps_to_arrange_a_binary_grid;
+//
+mod _1537_get_the_maximum_score;
