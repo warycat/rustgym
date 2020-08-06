@@ -60,6 +60,8 @@ mod _30_substring_with_concatenation_of_all_words;
 //
 mod _31_next_permutation;
 //
+mod _32_longest_valid_parentheses;
+//
 mod _33_search_in_rotated_sorted_array;
 //
 mod _34_find_first_and_last_position_of_elements_in_sorted_array;
@@ -122,6 +124,8 @@ mod _63_unique_paths_2;
 //
 mod _64_minimum_path_sum;
 //
+mod _65_valid_number;
+//
 mod _66_plus_one;
 //
 mod _67_add_binary;
@@ -133,6 +137,8 @@ mod _69_sqrt;
 mod _70_climbing_stairs;
 //
 mod _71_simplify_path;
+//
+mod _72_edit_distance;
 //
 mod _73_set_matrix_zeroes;
 //
@@ -158,6 +164,8 @@ mod _83_remove_duplicates_from_sorted_list;
 //
 mod _86_partition_list;
 //
+mod _87_scramble_string;
+//
 mod _88_merge_sorted_array;
 //
 mod _89_gray_code;
@@ -176,7 +184,11 @@ mod _95_unique_binary_search_trees_2;
 //
 mod _96_unique_binary_search_trees;
 //
+mod _97_interleaving_string;
+//
 mod _98_validate_binary_search_tree;
+//
+mod _99_recover_binary_search_tree;
 //
 mod _100_same_tree;
 //

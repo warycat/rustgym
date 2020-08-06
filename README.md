@@ -195,6 +195,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1518|[Water Bottles](https://leetcode.com/problems/water-bottles)|greedy|[solution](src/leetcode/_1518_water_bottles.rs)|
 |1523|[Count Odd Numbers in an Interval Range](https://leetcode.com/problems/count-odd-numbers-in-an-interval-range)|math|[solution](src/leetcode/_1523_cound_odd_numbers_in_interval_range.rs)|
 |1528|[Shuffle String](https://leetcode.com/problems/shuffle-string)|sort|[solution](src/leetcode/_1528_shuffle_string.rs)|
+|1534|[Count Good Triplets](https://leetcode.com/problems/count-good-triplets)|array|[solution](src/leetcode/_1534_count_good_triplets.rs)|
 |155|[Min Stack](https://leetcode.com/problems/min-stack)|stack design|[solution](src/leetcode/_155_min_stack.rs)|
 |167|[Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted)|array two-pointers binary-search|[solution](src/leetcode/_167_two_sum_2.rs)|
 |168|[Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title)|math|[solution](src/leetcode/_168_excel_sheet_column_title.rs)|
@@ -361,7 +362,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |766|[Toeplitz Matrix](https://leetcode.com/problems/toeplitz-matrix)|array|[solution](src/leetcode/_766_toeplitiz_matrix.rs)|
 |771|[Jewels and Stones](https://leetcode.com/problems/jewels-and-stones)|hash-table|[solution](src/leetcode/_771_jewels_and_stones.rs)|
 |783|[Minimum Distance Between BST Nodes](https://leetcode.com/problems/minimum-distance-between-bst-nodes)|tree recursion|[solution](src/leetcode/_783_minimum_distance_between_bst_nodes.rs)|
-|784|[Letter Case Permutation](https://leetcode.com/problems/letter-case-permutation)|backtracking bit-manipulation|[solution](src/leetcode/_784_letter_case_permutation.rs)|
 |788|[Rotated Digits](https://leetcode.com/problems/rotated-digits)|string|[solution](src/leetcode/_788_rotated_digits.rs)|
 |796|[Rotate String](https://leetcode.com/problems/rotate-string)||[solution](src/leetcode/_796_rotate_string.rs)|
 |7|[Reverse Integer](https://leetcode.com/problems/reverse-integer)|math|[solution](src/leetcode/_7_reverse_integer.rs)|
@@ -423,18 +423,20 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook)|array|[solution](src/leetcode/_999_available_captures_for_rook.rs)|
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|math|[solution](src/leetcode/_9_palindrome_number.rs)|
 </details>
-<details><summary>Medium 29/724 4.01%</summary>
+<details><summary>Medium 31/729 4.25%</summary>
 
 
-|id|724 Medium Questions|Tags|695 Solutions|
+|id|729 Medium Questions|Tags|698 Solutions|
 |---|---|---|---|
 |427|[Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree)||   |
 |558|[Logical OR of Two Binary Grids Represented as Quad-Trees](https://leetcode.com/problems/logical-or-of-two-binary-grids-represented-as-quad-trees)||   |
 |1265|[Print Immutable Linked List in Reverse](https://leetcode.com/problems/print-immutable-linked-list-in-reverse)||   |
 |1506|[Find Root of N-Ary Tree](https://leetcode.com/problems/find-root-of-n-ary-tree)||   |
 |1522|[Diameter of N-Ary Tree](https://leetcode.com/problems/diameter-of-n-ary-tree)||   |
+|1538|[Guess the Majority in a Hidden Array](https://leetcode.com/problems/guess-the-majority-in-a-hidden-array)||   |
 |277|[Find the Celebrity](https://leetcode.com/problems/find-the-celebrity)|array|   |
 |702|[Search in a Sorted Array of Unknown Size](https://leetcode.com/problems/search-in-a-sorted-array-of-unknown-size)|binary-search|   |
+|1533|[Find the Index of the Large Integer](https://leetcode.com/problems/find-the-index-of-the-large-integer)|binary-search|   |
 |240|[Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii)|binary-search divide-and-conquer|   |
 |1236|[Web Crawler](https://leetcode.com/problems/web-crawler)|depth-first-search breadth-first-search|   |
 |133|[Clone Graph](https://leetcode.com/problems/clone-graph)|depth-first-search breadth-first-search graph|   |
@@ -709,6 +711,8 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1529|[Bulb Switcher IV](https://leetcode.com/problems/bulb-switcher-iv)|string|[solution](src/leetcode/_1529_bulb_switcher_5.rs)|
 |152|[Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray)|array dynamic-programming|[solution](src/leetcode/_152_maximum_product_subarray.rs)|
 |1530|[Number of Good Leaf Nodes Pairs](https://leetcode.com/problems/number-of-good-leaf-nodes-pairs)|tree depth-first-search|[solution](src/leetcode/_1530_number_of_good_leaf_nodes_pairs.rs)|
+|1535|[Find the Winner of an Array Game](https://leetcode.com/problems/find-the-winner-of-an-array-game)|array|[solution](src/leetcode/_1535_find_the_winner_of_an_array_game.rs)|
+|1536|[Minimum Swaps to Arrange a Binary Grid](https://leetcode.com/problems/minimum-swaps-to-arrange-a-binary-grid)|greedy|[solution](src/leetcode/_1536_minimum_swaps_to_arrange_a_binary_grid.rs)|
 |153|[Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array)|array binary-search|[solution](src/leetcode/_153_find_minimum_in_rotated_sorted_array.rs)|
 |156|[Binary Tree Upside Down](https://leetcode.com/problems/binary-tree-upside-down)|tree|[solution](src/leetcode/_156_binary_tree_upside_down.rs)|
 |159|[Longest Substring with At Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters)|hash-table two-pointers string sliding-window|[solution](src/leetcode/_159_longest_substring_with_at_most_two_distinc_characters.rs)|
@@ -812,7 +816,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |355|[Design Twitter](https://leetcode.com/problems/design-twitter)|hash-table heap design|[solution](src/leetcode/_355_design_twitter.rs)|
 |356|[Line Reflection](https://leetcode.com/problems/line-reflection)|hash-table math|[solution](src/leetcode/_356_line_reflection.rs)|
 |357|[Count Numbers with Unique Digits](https://leetcode.com/problems/count-numbers-with-unique-digits)|math dynamic-programming backtracking|[solution](src/leetcode/_357_count_numbers_with_unique_digits.rs)|
-|360|[Sort Transformed Array](https://leetcode.com/problems/sort-transformed-array)|math two-pointers|[solution](src/leetcode/_360_sort_transformed_array.rs)|
+|360|[Sort Transformed Array](https://leetcode.com/problems/sort-transformed-array)|math two-pointers sort|[solution](src/leetcode/_360_sort_transformed_array.rs)|
 |361|[Bomb Enemy](https://leetcode.com/problems/bomb-enemy)|dynamic-programming|[solution](src/leetcode/_361_bomb_enemy.rs)|
 |362|[Design Hit Counter](https://leetcode.com/problems/design-hit-counter)|design|[solution](src/leetcode/_362_design_hit_counter.rs)|
 |364|[Nested List Weight Sum II](https://leetcode.com/problems/nested-list-weight-sum-ii)|depth-first-search|[solution](src/leetcode/_364_nested_list_weight_sum_2.rs)|
@@ -1029,6 +1033,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |779|[K-th Symbol in Grammar](https://leetcode.com/problems/k-th-symbol-in-grammar)|recursion|[solution](src/leetcode/_779_kth_symbol_in_grammar.rs)|
 |77|[Combinations](https://leetcode.com/problems/combinations)|backtracking|[solution](src/leetcode/_77_combinations.rs)|
 |781|[Rabbits in Forest](https://leetcode.com/problems/rabbits-in-forest)|hash-table math|[solution](src/leetcode/_781_rabbits_in_forest.rs)|
+|784|[Letter Case Permutation](https://leetcode.com/problems/letter-case-permutation)|backtracking bit-manipulation|[solution](src/leetcode/_784_letter_case_permutation.rs)|
 |785|[Is Graph Bipartite?](https://leetcode.com/problems/is-graph-bipartite)|depth-first-search breadth-first-search graph|[solution](src/leetcode/_785_is_graph_bipartite.rs)|
 |787|[Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops)|dynamic-programming heap breadth-first-search|[solution](src/leetcode/_787_cheapest_flights_within_k_stops.rs)|
 |789|[Escape The Ghosts](https://leetcode.com/problems/escape-the-ghosts)|math|[solution](src/leetcode/_789_escape_the_ghosts.rs)|
@@ -1085,7 +1090,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |880|[Decoded String at Index](https://leetcode.com/problems/decoded-string-at-index)|stack|[solution](src/leetcode/_880_decoded_string_at_index.rs)|
 |881|[Boats to Save People](https://leetcode.com/problems/boats-to-save-people)|two-pointers greedy|[solution](src/leetcode/_881_boats_to_save_people.rs)|
 |885|[Spiral Matrix III](https://leetcode.com/problems/spiral-matrix-iii)|math|[solution](src/leetcode/_885_spiral_matrix_3.rs)|
-|886|[Possible Bipartition](https://leetcode.com/problems/possible-bipartition)|depth-first-search|[solution](src/leetcode/_886_possible_bipartition.rs)|
+|886|[Possible Bipartition](https://leetcode.com/problems/possible-bipartition)|depth-first-search graph|[solution](src/leetcode/_886_possible_bipartition.rs)|
 |889|[Construct Binary Tree from Preorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal)|tree|[solution](src/leetcode/_889_construct_binary_tree_from_preorder_and_postorder_traversal.rs)|
 |890|[Find and Replace Pattern](https://leetcode.com/problems/find-and-replace-pattern)|string|[solution](src/leetcode/_890_find_and_replace_pattern.rs)|
 |894|[All Possible Full Binary Trees](https://leetcode.com/problems/all-possible-full-binary-trees)|tree recursion|[solution](src/leetcode/_894_all_possible_full_binary_trees.rs)|
@@ -1153,10 +1158,10 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |994|[Rotting Oranges](https://leetcode.com/problems/rotting-oranges)|breadth-first-search|[solution](src/leetcode/_994_rotting_oranges.rs)|
 |998|[Maximum Binary Tree II](https://leetcode.com/problems/maximum-binary-tree-ii)|tree|[solution](src/leetcode/_998_maximum_binary_tree_2.rs)|
 </details>
-<details><summary>Hard 205/305 67.21%</summary>
+<details><summary>Hard 197/306 64.38%</summary>
 
 
-|id|305 Hard Questions|Tags|100 Solutions|
+|id|306 Hard Questions|Tags|109 Solutions|
 |---|---|---|---|
 |420|[Strong Password Checker](https://leetcode.com/problems/strong-password-checker)||   |
 |440|[K-th Smallest in Lexicographical Order](https://leetcode.com/problems/k-th-smallest-in-lexicographical-order)||   |
@@ -1174,7 +1179,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |891|[Sum of Subsequence Widths](https://leetcode.com/problems/sum-of-subsequence-widths)|array math|   |
 |1330|[Reverse Subarray To Maximize Array Value](https://leetcode.com/problems/reverse-subarray-to-maximize-array-value)|array math|   |
 |1499|[Max Value of Equation](https://leetcode.com/problems/max-value-of-equation)|array sliding-window|   |
-|57|[Insert Interval](https://leetcode.com/problems/insert-interval)|array sort|   |
 |84|[Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram)|array stack|   |
 |308|[Range Sum Query 2D - Mutable](https://leetcode.com/problems/range-sum-query-2d-mutable)|binary-indexed-tree segment-tree|   |
 |793|[Preimage Size of Factorial Zeroes Function](https://leetcode.com/problems/preimage-size-of-factorial-zeroes-function)|binary-search|   |
@@ -1203,7 +1207,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1377|[Frog Position After T Seconds](https://leetcode.com/problems/frog-position-after-t-seconds)|depth-first-search|   |
 |301|[Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses)|depth-first-search breadth-first-search|   |
 |499|[The Maze III](https://leetcode.com/problems/the-maze-iii)|depth-first-search breadth-first-search|   |
-|1203|[Sort Items by Groups Respecting Dependencies](https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies)|depth-first-search graph topological-sort|   |
 |329|[Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix)|depth-first-search topological-sort memoization|   |
 |924|[Minimize Malware Spread](https://leetcode.com/problems/minimize-malware-spread)|depth-first-search union-find|   |
 |1489|[Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree](https://leetcode.com/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree)|depth-first-search union-find|   |
@@ -1321,7 +1324,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1199|[Minimum Time to Build Blocks](https://leetcode.com/problems/minimum-time-to-build-blocks)|math dynamic-programming|   |
 |1363|[Largest Multiple of Three](https://leetcode.com/problems/largest-multiple-of-three)|math dynamic-programming|   |
 |248|[Strobogrammatic Number III](https://leetcode.com/problems/strobogrammatic-number-iii)|math recursion|   |
-|65|[Valid Number](https://leetcode.com/problems/valid-number)|math string|   |
 |899|[Orderly Queue](https://leetcode.com/problems/orderly-queue)|math string|   |
 |952|[Largest Component Size by Common Factor](https://leetcode.com/problems/largest-component-size-by-common-factor)|math union-find|   |
 |843|[Guess the Word](https://leetcode.com/problems/guess-the-word)|minimax|   |
@@ -1337,10 +1339,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |564|[Find the Closest Palindrome](https://leetcode.com/problems/find-the-closest-palindrome)|string|   |
 |736|[Parse Lisp Expression](https://leetcode.com/problems/parse-lisp-expression)|string|   |
 |1392|[Longest Happy Prefix](https://leetcode.com/problems/longest-happy-prefix)|string|   |
-|32|[Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses)|string dynamic-programming|   |
-|72|[Edit Distance](https://leetcode.com/problems/edit-distance)|string dynamic-programming|   |
-|87|[Scramble String](https://leetcode.com/problems/scramble-string)|string dynamic-programming|   |
-|97|[Interleaving String](https://leetcode.com/problems/interleaving-string)|string dynamic-programming|   |
 |115|[Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences)|string dynamic-programming|   |
 |730|[Count Different Palindromic Subsequences](https://leetcode.com/problems/count-different-palindromic-subsequences)|string dynamic-programming|   |
 |1449|[Form Largest Integer With Digits That Add up to Target](https://leetcode.com/problems/form-largest-integer-with-digits-that-add-up-to-target)|string dynamic-programming|   |
@@ -1354,7 +1352,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |428|[Serialize and Deserialize N-ary Tree](https://leetcode.com/problems/serialize-and-deserialize-n-ary-tree)|tree|   |
 |431|[Encode N-ary Tree to Binary Tree](https://leetcode.com/problems/encode-n-ary-tree-to-binary-tree)|tree|   |
 |1516|[Move Sub-Tree of N-Ary Tree](https://leetcode.com/problems/move-sub-tree-of-n-ary-tree)|tree|   |
-|99|[Recover Binary Search Tree](https://leetcode.com/problems/recover-binary-search-tree)|tree depth-first-search|   |
 |834|[Sum of Distances in Tree](https://leetcode.com/problems/sum-of-distances-in-tree)|tree depth-first-search|   |
 |685|[Redundant Connection II](https://leetcode.com/problems/redundant-connection-ii)|tree depth-first-search union-find graph|   |
 |297|[Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree)|tree design|   |
@@ -1375,6 +1372,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1168|[Optimize Water Distribution in a Village](https://leetcode.com/problems/optimize-water-distribution-in-a-village)|union-find graph|[solution](src/leetcode/_1168_optimize_water_distribution_in_a_village.rs)|
 |1183|[Maximum Number of Ones](https://leetcode.com/problems/maximum-number-of-ones)|math sort|[solution](src/leetcode/_1183_maximum_number_of_ones.rs)|
 |1192|[Critical Connections in a Network](https://leetcode.com/problems/critical-connections-in-a-network)|depth-first-search|[solution](src/leetcode/_1192_critical_connections_in_a_network.rs)|
+|1203|[Sort Items by Groups Respecting Dependencies](https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies)|depth-first-search graph topological-sort|[solution](src/leetcode/_1203_sort_items_by_groups_respecting_dependencies.rs)|
 |1206|[Design Skiplist](https://leetcode.com/problems/design-skiplist)|design|[solution](src/leetcode/_1206_design_skiplist.rs)|
 |1216|[Valid Palindrome III](https://leetcode.com/problems/valid-palindrome-iii)|string dynamic-programming|[solution](src/leetcode/_1216_valid_palindrome_3.rs)|
 |1231|[Divide Chocolate](https://leetcode.com/problems/divide-chocolate)|binary-search greedy|[solution](src/leetcode/_1231_divide_chocolate.rs)|
@@ -1403,6 +1401,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1463|[Cherry Pickup II](https://leetcode.com/problems/cherry-pickup-ii)|dynamic-programming|[solution](src/leetcode/_1463_cherry_pickup_2.rs)|
 |1478|[Allocate Mailboxes](https://leetcode.com/problems/allocate-mailboxes)|math dynamic-programming|[solution](src/leetcode/_1478_allocate_mailboxes.rs)|
 |1520|[Maximum Number of Non-Overlapping Substrings](https://leetcode.com/problems/maximum-number-of-non-overlapping-substrings)|greedy|[solution](src/leetcode/_1520_maximum_number_of_non_overlapping_substrings.rs)|
+|1537|[Get the Maximum Score](https://leetcode.com/problems/get-the-maximum-score)|dynamic-programming|[solution](src/leetcode/_1537_get_the_maximum_score.rs)|
 |212|[Word Search II](https://leetcode.com/problems/word-search-ii)|backtracking trie|[solution](src/leetcode/_212_word_search_2.rs)|
 |214|[Shortest Palindrome](https://leetcode.com/problems/shortest-palindrome)|string|[solution](src/leetcode/_214_shortest_palindrome.rs)|
 |224|[Basic Calculator](https://leetcode.com/problems/basic-calculator)|math stack|[solution](src/leetcode/_224_basic_calculator.rs)|
@@ -1419,6 +1418,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |30|[Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words)|hash-table two-pointers string|[solution](src/leetcode/_30_substring_with_concatenation_of_all_words.rs)|
 |312|[Burst Balloons](https://leetcode.com/problems/burst-balloons)|divide-and-conquer dynamic-programming|[solution](src/leetcode/_312_burst_balloons.rs)|
 |317|[Shortest Distance from All Buildings](https://leetcode.com/problems/shortest-distance-from-all-buildings)|breadth-first-search|[solution](src/leetcode/_317_shortest_distance_from_all_buildings.rs)|
+|32|[Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses)|string dynamic-programming|[solution](src/leetcode/_32_longest_valid_parentheses.rs)|
 |330|[Patching Array](https://leetcode.com/problems/patching-array)|greedy|[solution](src/leetcode/_330_patching_array.rs)|
 |354|[Russian Doll Envelopes](https://leetcode.com/problems/russian-doll-envelopes)|binary-search dynamic-programming|[solution](src/leetcode/_354_russian_doll_envelopes.rs)|
 |358|[Rearrange String k Distance Apart](https://leetcode.com/problems/rearrange-string-k-distance-apart)|hash-table heap greedy|[solution](src/leetcode/_358_rearrange_string_k_distance_apart.rs)|
@@ -1439,14 +1439,17 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |4|[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays)|array binary-search divide-and-conquer|[solution](src/leetcode/_4_median_of_two_sorted_arrays.rs)|
 |51|[N-Queens](https://leetcode.com/problems/n-queens)|backtracking|[solution](src/leetcode/_51_n_queens.rs)|
 |52|[N-Queens II](https://leetcode.com/problems/n-queens-ii)|backtracking|[solution](src/leetcode/_52_n_queens_2.rs)|
+|57|[Insert Interval](https://leetcode.com/problems/insert-interval)|array sort|[solution](src/leetcode/_57_insert_interval.rs)|
 |588|[Design In-Memory File System](https://leetcode.com/problems/design-in-memory-file-system)|design|[solution](src/leetcode/_588_design_in_memory_file_system.rs)|
 |60|[Permutation Sequence](https://leetcode.com/problems/permutation-sequence)|math backtracking|[solution](src/leetcode/_60_permutation_sequence.rs)|
 |630|[Course Schedule III](https://leetcode.com/problems/course-schedule-iii)|greedy|[solution](src/leetcode/_630_course_schedule_3.rs)|
 |642|[Design Search Autocomplete System](https://leetcode.com/problems/design-search-autocomplete-system)|design trie|[solution](src/leetcode/_642_design_search_autocomplete_system.rs)|
+|65|[Valid Number](https://leetcode.com/problems/valid-number)|math string|[solution](src/leetcode/_65_valid_number.rs)|
 |660|[Remove 9](https://leetcode.com/problems/remove-9)|math|[solution](src/leetcode/_660_remove_9.rs)|
 |668|[Kth Smallest Number in Multiplication Table](https://leetcode.com/problems/kth-smallest-number-in-multiplication-table)|binary-search|[solution](src/leetcode/_668_kth_smallest_number_in_multiplication.rs)|
 |675|[Cut Off Trees for Golf Event](https://leetcode.com/problems/cut-off-trees-for-golf-event)|breadth-first-search|[solution](src/leetcode/_675_cut_off_trees_for_golf_event.rs)|
 |68|[Text Justification](https://leetcode.com/problems/text-justification)|string|[solution](src/leetcode/_68_text_justification.rs)|
+|72|[Edit Distance](https://leetcode.com/problems/edit-distance)|string dynamic-programming|[solution](src/leetcode/_72_edit_distance.rs)|
 |732|[My Calendar III](https://leetcode.com/problems/my-calendar-iii)|segment-tree ordered-map|[solution](src/leetcode/_732_my_calendar_3.rs)|
 |761|[Special Binary String](https://leetcode.com/problems/special-binary-string)|string recursion|[solution](src/leetcode/_761_special_binary_string.rs)|
 |765|[Couples Holding Hands](https://leetcode.com/problems/couples-holding-hands)|greedy union-find graph|[solution](src/leetcode/_765_couples_holding_hands.rs)|
@@ -1460,9 +1463,12 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |827|[Making A Large Island](https://leetcode.com/problems/making-a-large-island)|depth-first-search|[solution](src/leetcode/_827_making_a_large_island.rs)|
 |829|[Consecutive Numbers Sum](https://leetcode.com/problems/consecutive-numbers-sum)|math|[solution](src/leetcode/_829_consecutive_numbers_sum.rs)|
 |871|[Minimum Number of Refueling Stops](https://leetcode.com/problems/minimum-number-of-refueling-stops)|dynamic-programming heap|[solution](src/leetcode/_871_minimum_number_of_refueling_stops.rs)|
+|87|[Scramble String](https://leetcode.com/problems/scramble-string)|string dynamic-programming|[solution](src/leetcode/_87_scramble_string.rs)|
 |895|[Maximum Frequency Stack](https://leetcode.com/problems/maximum-frequency-stack)|hash-table stack|[solution](src/leetcode/_895_maximum_frequency_stack.rs)|
+|97|[Interleaving String](https://leetcode.com/problems/interleaving-string)|string dynamic-programming|[solution](src/leetcode/_97_interleaving_string.rs)|
 |980|[Unique Paths III](https://leetcode.com/problems/unique-paths-iii)|backtracking depth-first-search|[solution](src/leetcode/_980_unique_paths_3.rs)|
 |982|[Triples with Bitwise AND Equal To Zero](https://leetcode.com/problems/triples-with-bitwise-and-equal-to-zero)|dynamic-programming|[solution](src/leetcode/_982_triples_with_bitwise_and_equal_to_zero.rs)|
+|99|[Recover Binary Search Tree](https://leetcode.com/problems/recover-binary-search-tree)|tree depth-first-search|[solution](src/leetcode/_99_recover_binary_search_tree.rs)|
 </details>
 
 ### Coding Interview
