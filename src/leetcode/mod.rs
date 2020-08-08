@@ -220,6 +220,8 @@ mod _113_path_sum_2;
 //
 mod _114_flatten_binary_tree_to_linked_list;
 //
+mod _115_distinct_subsequences;
+//
 mod _118_pascal_triangle;
 //
 mod _119_pascal_triangle_2;
@@ -229,6 +231,8 @@ mod _120_triangle;
 mod _121_best_time_to_buy_and_sell_stock;
 //
 mod _122_best_time_to_buy_and_sell_stock_2;
+//
+mod _123_best_time_to_buy_and_sell_stock_3;
 //
 mod _124_binary_tree_maximum_path_sum;
 //
@@ -245,6 +249,8 @@ mod _129_sum_root_to_leaf_numbers;
 mod _130_surrounded_regions;
 //
 mod _131_palindrome_partitioning;
+//
+mod _132_palindrome_partitioning_2;
 //
 mod _134_gas_station;
 //
@@ -268,6 +274,8 @@ mod _147_insertion_sort_list;
 //
 mod _148_sort_list;
 //
+mod _149_max_points_on_a_line;
+//
 mod _150_evaluate_reverse_polish_notation;
 //
 mod _151_reverse_words_in_a_string;
@@ -288,6 +296,8 @@ mod _162_find_peak_element;
 //
 mod _163_missing_ranges;
 //
+mod _164_maximum_gap;
+//
 mod _165_compare_version_numbers;
 //
 mod _166_fraction_to_recurring_decimal;
@@ -306,11 +316,15 @@ mod _172_factorial_trailing_zeroes;
 //
 mod _173_binary_search_tree_iterator;
 //
+mod _174_dungeon_game;
+//
 mod _179_largest_number;
 //
 mod _186_reverse_words_in_a_string_2;
 //
 mod _187_repeated_dna_sequences;
+//
+mod _188_best_time_to_buy_and_sell_stock_4;
 //
 mod _189_rotate_array;
 //
@@ -383,6 +397,8 @@ mod _230_kth_smallest_element_in_a_bst;
 mod _231_power_of_two;
 //
 mod _232_implent_queue_using_stacks;
+//
+mod _233_number_of_digit_one;
 //
 mod _234_palindrome_linked_list;
 //

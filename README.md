@@ -1158,10 +1158,10 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |994|[Rotting Oranges](https://leetcode.com/problems/rotting-oranges)|breadth-first-search|[solution](src/leetcode/_994_rotting_oranges.rs)|
 |998|[Maximum Binary Tree II](https://leetcode.com/problems/maximum-binary-tree-ii)|tree|[solution](src/leetcode/_998_maximum_binary_tree_2.rs)|
 </details>
-<details><summary>Hard 197/306 64.38%</summary>
+<details><summary>Hard 189/306 61.76%</summary>
 
 
-|id|306 Hard Questions|Tags|109 Solutions|
+|id|306 Hard Questions|Tags|117 Solutions|
 |---|---|---|---|
 |420|[Strong Password Checker](https://leetcode.com/problems/strong-password-checker)||   |
 |440|[K-th Smallest in Lexicographical Order](https://leetcode.com/problems/k-th-smallest-in-lexicographical-order)||   |
@@ -1171,7 +1171,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |644|[Maximum Average Subarray II](https://leetcode.com/problems/maximum-average-subarray-ii)|array binary-search|   |
 |719|[Find K-th Smallest Pair Distance](https://leetcode.com/problems/find-k-th-smallest-pair-distance)|array binary-search heap|   |
 |1157|[Online Majority Element In Subarray](https://leetcode.com/problems/online-majority-element-in-subarray)|array binary-search segment-tree|   |
-|123|[Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii)|array dynamic-programming|   |
 |689|[Maximum Sum of 3 Non-Overlapping Subarrays](https://leetcode.com/problems/maximum-sum-of-3-non-overlapping-subarrays)|array dynamic-programming|   |
 |381|[Insert Delete GetRandom O(1) - Duplicates allowed](https://leetcode.com/problems/insert-delete-getrandom-o1-duplicates-allowed)|array hash-table design|   |
 |85|[Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle)|array hash-table dynamic-programming stack|   |
@@ -1186,7 +1185,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1521|[Find a Value of a Mysterious Function Closest to Target](https://leetcode.com/problems/find-a-value-of-a-mysterious-function-closest-to-target)|binary-search bit-manipulation segment-tree|   |
 |315|[Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self)|binary-search divide-and-conquer sort binary-indexed-tree segment-tree|   |
 |327|[Count of Range Sum](https://leetcode.com/problems/count-of-range-sum)|binary-search divide-and-conquer sort binary-indexed-tree segment-tree|   |
-|174|[Dungeon Game](https://leetcode.com/problems/dungeon-game)|binary-search dynamic-programming|   |
 |410|[Split Array Largest Sum](https://leetcode.com/problems/split-array-largest-sum)|binary-search dynamic-programming|   |
 |1235|[Maximum Profit in Job Scheduling](https://leetcode.com/problems/maximum-profit-in-job-scheduling)|binary-search dynamic-programming sort|   |
 |352|[Data Stream as Disjoint Intervals](https://leetcode.com/problems/data-stream-as-disjoint-intervals)|binary-search ordered-map|   |
@@ -1219,8 +1217,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |903|[Valid Permutations for DI Sequence](https://leetcode.com/problems/valid-permutations-for-di-sequence)|divide-and-conquer dynamic-programming|   |
 |514|[Freedom Trail](https://leetcode.com/problems/freedom-trail)|divide-and-conquer dynamic-programming depth-first-search|   |
 |218|[The Skyline Problem](https://leetcode.com/problems/the-skyline-problem)|divide-and-conquer heap binary-indexed-tree segment-tree line-sweep|   |
-|132|[Palindrome Partitioning II](https://leetcode.com/problems/palindrome-partitioning-ii)|dynamic-programming|   |
-|188|[Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv)|dynamic-programming|   |
 |265|[Paint House II](https://leetcode.com/problems/paint-house-ii)|dynamic-programming|   |
 |446|[Arithmetic Slices II - Subsequence](https://leetcode.com/problems/arithmetic-slices-ii-subsequence)|dynamic-programming|   |
 |466|[Count The Repetitions](https://leetcode.com/problems/count-the-repetitions)|dynamic-programming|   |
@@ -1284,7 +1280,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |710|[Random Pick with Blacklist](https://leetcode.com/problems/random-pick-with-blacklist)|hash-table binary-search sort random|   |
 |1178|[Number of Valid Words for Each Puzzle](https://leetcode.com/problems/number-of-valid-words-for-each-puzzle)|hash-table bit-manipulation|   |
 |711|[Number of Distinct Islands II](https://leetcode.com/problems/number-of-distinct-islands-ii)|hash-table depth-first-search|   |
-|149|[Max Points on a Line](https://leetcode.com/problems/max-points-on-a-line)|hash-table math|   |
 |726|[Number of Atoms](https://leetcode.com/problems/number-of-atoms)|hash-table stack recursion|   |
 |340|[Longest Substring with At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters)|hash-table string sliding-window|   |
 |770|[Basic Calculator IV](https://leetcode.com/problems/basic-calculator-iv)|hash-table string stack|   |
@@ -1299,7 +1294,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |502|[IPO](https://leetcode.com/problems/ipo)|heap greedy|   |
 |759|[Employee Free Time](https://leetcode.com/problems/employee-free-time)|heap greedy|   |
 |391|[Perfect Rectangle](https://leetcode.com/problems/perfect-rectangle)|line-sweep|   |
-|233|[Number of Digit One](https://leetcode.com/problems/number-of-digit-one)|math|   |
 |335|[Self Crossing](https://leetcode.com/problems/self-crossing)|math|   |
 |458|[Poor Pigs](https://leetcode.com/problems/poor-pigs)|math|   |
 |780|[Reaching Points](https://leetcode.com/problems/reaching-points)|math|   |
@@ -1333,13 +1327,11 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |699|[Falling Squares](https://leetcode.com/problems/falling-squares)|segment-tree ordered-map|   |
 |715|[Range Module](https://leetcode.com/problems/range-module)|segment-tree ordered-map|   |
 |480|[Sliding Window Median](https://leetcode.com/problems/sliding-window-median)|sliding-window|   |
-|164|[Maximum Gap](https://leetcode.com/problems/maximum-gap)|sort|   |
 |316|[Remove Duplicate Letters](https://leetcode.com/problems/remove-duplicate-letters)|stack greedy|   |
 |158|[Read N Characters Given Read4 II - Call multiple times](https://leetcode.com/problems/read-n-characters-given-read4-ii-call-multiple-times)|string|   |
 |564|[Find the Closest Palindrome](https://leetcode.com/problems/find-the-closest-palindrome)|string|   |
 |736|[Parse Lisp Expression](https://leetcode.com/problems/parse-lisp-expression)|string|   |
 |1392|[Longest Happy Prefix](https://leetcode.com/problems/longest-happy-prefix)|string|   |
-|115|[Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences)|string dynamic-programming|   |
 |730|[Count Different Palindromic Subsequences](https://leetcode.com/problems/count-different-palindromic-subsequences)|string dynamic-programming|   |
 |1449|[Form Largest Integer With Digits That Add up to Target](https://leetcode.com/problems/form-largest-integer-with-digits-that-add-up-to-target)|string dynamic-programming|   |
 |1531|[String Compression II](https://leetcode.com/problems/string-compression-ii)|string dynamic-programming|   |
@@ -1369,6 +1361,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1121|[Divide Array Into Increasing Sequences](https://leetcode.com/problems/divide-array-into-increasing-sequences)|math|[solution](src/leetcode/_1121_divide_array_into_increasing_sequences.rs)|
 |1136|[Parallel Courses](https://leetcode.com/problems/parallel-courses)|dynamic-programming depth-first-search graph|[solution](src/leetcode/_1136_parallel_courses.rs)|
 |1147|[Longest Chunked Palindrome Decomposition](https://leetcode.com/problems/longest-chunked-palindrome-decomposition)|dynamic-programming rolling-hash|[solution](src/leetcode/_1147_longest_chunked_palindrome_decomposition.rs)|
+|115|[Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences)|string dynamic-programming|[solution](src/leetcode/_115_distinct_subsequences.rs)|
 |1168|[Optimize Water Distribution in a Village](https://leetcode.com/problems/optimize-water-distribution-in-a-village)|union-find graph|[solution](src/leetcode/_1168_optimize_water_distribution_in_a_village.rs)|
 |1183|[Maximum Number of Ones](https://leetcode.com/problems/maximum-number-of-ones)|math sort|[solution](src/leetcode/_1183_maximum_number_of_ones.rs)|
 |1192|[Critical Connections in a Network](https://leetcode.com/problems/critical-connections-in-a-network)|depth-first-search|[solution](src/leetcode/_1192_critical_connections_in_a_network.rs)|
@@ -1376,6 +1369,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1206|[Design Skiplist](https://leetcode.com/problems/design-skiplist)|design|[solution](src/leetcode/_1206_design_skiplist.rs)|
 |1216|[Valid Palindrome III](https://leetcode.com/problems/valid-palindrome-iii)|string dynamic-programming|[solution](src/leetcode/_1216_valid_palindrome_3.rs)|
 |1231|[Divide Chocolate](https://leetcode.com/problems/divide-chocolate)|binary-search greedy|[solution](src/leetcode/_1231_divide_chocolate.rs)|
+|123|[Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii)|array dynamic-programming|[solution](src/leetcode/_123_best_time_to_buy_and_sell_stock_3.rs)|
 |124|[Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum)|tree depth-first-search|[solution](src/leetcode/_124_binary_tree_maximum_path_sum.rs)|
 |1250|[Check If It Is a Good Array](https://leetcode.com/problems/check-if-it-is-a-good-array)|math|[solution](src/leetcode/_1250_check_if_it_is_a_good_array.rs)|
 |1255|[Maximum Score Words Formed by Letters](https://leetcode.com/problems/maximum-score-words-formed-by-letters)|bit-manipulation|[solution](src/leetcode/_1255_maximum_score_words_formed_by_letters.rs)|
@@ -1388,6 +1382,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1298|[Maximum Candies You Can Get from Boxes](https://leetcode.com/problems/maximum-candies-you-can-get-from-boxes)|breadth-first-search|[solution](src/leetcode/_1298_maximum_candies_you_can_get_from_boxes.rs)|
 |1312|[Minimum Insertion Steps to Make a String Palindrome](https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome)|dynamic-programming|[solution](src/leetcode/_1312_minimum_insertion_steps_to_make_a_string_palindrome.rs)|
 |1320|[Minimum Distance to Type a Word Using Two Fingers](https://leetcode.com/problems/minimum-distance-to-type-a-word-using-two-fingers)|dynamic-programming|[solution](src/leetcode/_1320_minimum_distance_to_type_a_word_using_two_fingers.rs)|
+|132|[Palindrome Partitioning II](https://leetcode.com/problems/palindrome-partitioning-ii)|dynamic-programming|[solution](src/leetcode/_132_palindrome_partitioning_2.rs)|
 |1335|[Minimum Difficulty of a Job Schedule](https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule)|dynamic-programming|[solution](src/leetcode/_1335_minimum_difficulty_of_a_job_schedule.rs)|
 |1340|[Jump Game V](https://leetcode.com/problems/jump-game-v)|dynamic-programming|[solution](src/leetcode/_1340_jump_game_5.rs)|
 |1359|[Count All Valid Pickup and Delivery Options](https://leetcode.com/problems/count-all-valid-pickup-and-delivery-options)|math dynamic-programming|[solution](src/leetcode/_1359_count_all_valid_pickup_and_delivery_options.rs)|
@@ -1400,11 +1395,16 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |145|[Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal)|stack tree|[solution](src/leetcode/_145_binary_tree_postorder_traversal.rs)|
 |1463|[Cherry Pickup II](https://leetcode.com/problems/cherry-pickup-ii)|dynamic-programming|[solution](src/leetcode/_1463_cherry_pickup_2.rs)|
 |1478|[Allocate Mailboxes](https://leetcode.com/problems/allocate-mailboxes)|math dynamic-programming|[solution](src/leetcode/_1478_allocate_mailboxes.rs)|
+|149|[Max Points on a Line](https://leetcode.com/problems/max-points-on-a-line)|hash-table math|[solution](src/leetcode/_149_max_points_on_a_line.rs)|
 |1520|[Maximum Number of Non-Overlapping Substrings](https://leetcode.com/problems/maximum-number-of-non-overlapping-substrings)|greedy|[solution](src/leetcode/_1520_maximum_number_of_non_overlapping_substrings.rs)|
 |1537|[Get the Maximum Score](https://leetcode.com/problems/get-the-maximum-score)|dynamic-programming|[solution](src/leetcode/_1537_get_the_maximum_score.rs)|
+|164|[Maximum Gap](https://leetcode.com/problems/maximum-gap)|sort|[solution](src/leetcode/_164_maximum_gap.rs)|
+|174|[Dungeon Game](https://leetcode.com/problems/dungeon-game)|binary-search dynamic-programming|[solution](src/leetcode/_174_dungeon_game.rs)|
+|188|[Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv)|dynamic-programming|[solution](src/leetcode/_188_best_time_to_buy_and_sell_stock_4.rs)|
 |212|[Word Search II](https://leetcode.com/problems/word-search-ii)|backtracking trie|[solution](src/leetcode/_212_word_search_2.rs)|
 |214|[Shortest Palindrome](https://leetcode.com/problems/shortest-palindrome)|string|[solution](src/leetcode/_214_shortest_palindrome.rs)|
 |224|[Basic Calculator](https://leetcode.com/problems/basic-calculator)|math stack|[solution](src/leetcode/_224_basic_calculator.rs)|
+|233|[Number of Digit One](https://leetcode.com/problems/number-of-digit-one)|math|[solution](src/leetcode/_233_number_of_digit_one.rs)|
 |239|[Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum)|heap sliding-window|[solution](src/leetcode/_239_sliding_window_maximum.rs)|
 |23|[Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists)|linked-list divide-and-conquer heap|[solution](src/leetcode/_23_merge_k_sorted_lists.rs)|
 |25|[Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group)|linked-list|[solution](src/leetcode/_25_reverse_nodes_in_k_group.rs)|
