@@ -2343,3 +2343,17 @@ mod _1535_find_the_winner_of_an_array_game;
 mod _1536_minimum_swaps_to_arrange_a_binary_grid;
 //
 mod _1537_get_the_maximum_score;
+//
+mod _1539_kth_missing_positive_number;
+//
+mod _1540_can_convert_string_in_k_moves;
+//
+mod _1541_minimum_insertions_to_balance_a_parentheses_string;
+//
+mod _1544_make_the_string_great;
+//
+mod _1545_find_kth_bit_in_nth_binary_stringrs;
+//
+mod _1546_maximum_number_of_non_overlapping_subarrays_with_sum_equals_target;
+//
+mod _1547_minimum_cost_to_cut_a_stick;
