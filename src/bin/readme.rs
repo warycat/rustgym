@@ -141,7 +141,8 @@ impl LeetcodeData {
             let slug = stat["question__title_slug"].as_str().unwrap();
             let difficulty = pair["difficulty"].as_object().unwrap();
             let level = difficulty["level"].as_i64().unwrap();
-            questions.push(LeetcodeQuestion::new(id, title, slug, level, frontend_id))
+            let question = LeetcodeQuestion::new(id, title, slug, level, frontend_id);
+            questions.push(question);
         }
         Ok(questions)
     }
@@ -324,5 +325,7 @@ fn main() {
     let headers = vec_string![TITLE, BODY, CI];
     let footers = vec_string!(CODING_INTERVIEW, TEST_SVG);
     let readme = Readme::new(headers, solution_list, question_list, tags, footers);
-    fs::write(&readme_md, format!("{}", readme)).unwrap();
+    if let Err(e) = fs::write(&readme_md, format!("{}", readme)) {
+        println!("{}", e);
+    }
 }

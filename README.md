@@ -1158,10 +1158,10 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |994|[Rotting Oranges](https://leetcode.com/problems/rotting-oranges)|breadth-first-search|[solution](src/leetcode/_994_rotting_oranges.rs)|
 |998|[Maximum Binary Tree II](https://leetcode.com/problems/maximum-binary-tree-ii)|tree|[solution](src/leetcode/_998_maximum_binary_tree_2.rs)|
 </details>
-<details><summary>Hard 189/306 61.76%</summary>
+<details><summary>Hard 186/306 60.78%</summary>
 
 
-|id|306 Hard Questions|Tags|117 Solutions|
+|id|306 Hard Questions|Tags|120 Solutions|
 |---|---|---|---|
 |420|[Strong Password Checker](https://leetcode.com/problems/strong-password-checker)||   |
 |440|[K-th Smallest in Lexicographical Order](https://leetcode.com/problems/k-th-smallest-in-lexicographical-order)||   |
@@ -1212,12 +1212,10 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |928|[Minimize Malware Spread II](https://leetcode.com/problems/minimize-malware-spread-ii)|depth-first-search union-find graph|   |
 |631|[Design Excel Sum Formula](https://leetcode.com/problems/design-excel-sum-formula)|design|   |
 |1172|[Dinner Plate Stacks](https://leetcode.com/problems/dinner-plate-stacks)|design|   |
-|282|[Expression Add Operators](https://leetcode.com/problems/expression-add-operators)|divide-and-conquer|   |
 |1274|[Number of Ships in a Rectangle](https://leetcode.com/problems/number-of-ships-in-a-rectangle)|divide-and-conquer|   |
 |903|[Valid Permutations for DI Sequence](https://leetcode.com/problems/valid-permutations-for-di-sequence)|divide-and-conquer dynamic-programming|   |
 |514|[Freedom Trail](https://leetcode.com/problems/freedom-trail)|divide-and-conquer dynamic-programming depth-first-search|   |
 |218|[The Skyline Problem](https://leetcode.com/problems/the-skyline-problem)|divide-and-conquer heap binary-indexed-tree segment-tree line-sweep|   |
-|265|[Paint House II](https://leetcode.com/problems/paint-house-ii)|dynamic-programming|   |
 |446|[Arithmetic Slices II - Subsequence](https://leetcode.com/problems/arithmetic-slices-ii-subsequence)|dynamic-programming|   |
 |466|[Count The Repetitions](https://leetcode.com/problems/count-the-repetitions)|dynamic-programming|   |
 |471|[Encode String with Shortest Length](https://leetcode.com/problems/encode-string-with-shortest-length)|dynamic-programming|   |
@@ -1317,7 +1315,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1067|[Digit Count in Range](https://leetcode.com/problems/digit-count-in-range)|math dynamic-programming|   |
 |1199|[Minimum Time to Build Blocks](https://leetcode.com/problems/minimum-time-to-build-blocks)|math dynamic-programming|   |
 |1363|[Largest Multiple of Three](https://leetcode.com/problems/largest-multiple-of-three)|math dynamic-programming|   |
-|248|[Strobogrammatic Number III](https://leetcode.com/problems/strobogrammatic-number-iii)|math recursion|   |
 |899|[Orderly Queue](https://leetcode.com/problems/orderly-queue)|math string|   |
 |952|[Largest Component Size by Common Factor](https://leetcode.com/problems/largest-component-size-by-common-factor)|math union-find|   |
 |843|[Guess the Word](https://leetcode.com/problems/guess-the-word)|minimax|   |
@@ -1407,10 +1404,13 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |233|[Number of Digit One](https://leetcode.com/problems/number-of-digit-one)|math|[solution](src/leetcode/_233_number_of_digit_one.rs)|
 |239|[Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum)|heap sliding-window|[solution](src/leetcode/_239_sliding_window_maximum.rs)|
 |23|[Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists)|linked-list divide-and-conquer heap|[solution](src/leetcode/_23_merge_k_sorted_lists.rs)|
+|248|[Strobogrammatic Number III](https://leetcode.com/problems/strobogrammatic-number-iii)|math recursion|[solution](src/leetcode/_248_strobogrammatic_number_3.rs)|
 |25|[Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group)|linked-list|[solution](src/leetcode/_25_reverse_nodes_in_k_group.rs)|
+|265|[Paint House II](https://leetcode.com/problems/paint-house-ii)|dynamic-programming|[solution](src/leetcode/_265_paint_house_2.rs)|
 |269|[Alien Dictionary](https://leetcode.com/problems/alien-dictionary)|graph topological-sort|[solution](src/leetcode/_269_alien_dictionary.rs)|
 |272|[Closest Binary Search Tree Value II](https://leetcode.com/problems/closest-binary-search-tree-value-ii)|stack tree|[solution](src/leetcode/_272_closest_binary_search_tree_value_2.rs)|
 |273|[Integer to English Words](https://leetcode.com/problems/integer-to-english-words)|math string|[solution](src/leetcode/_273_integer_to_english_words.rs)|
+|282|[Expression Add Operators](https://leetcode.com/problems/expression-add-operators)|divide-and-conquer|[solution](src/leetcode/_282_expression_add_operators.rs)|
 |291|[Word Pattern II](https://leetcode.com/problems/word-pattern-ii)|backtracking|[solution](src/leetcode/_291_word_pattern_2.rs)|
 |295|[Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream)|heap design|[solution](src/leetcode/_295_find_median_from_data_stream.rs)|
 |296|[Best Meeting Point](https://leetcode.com/problems/best-meeting-point)|math sort|[solution](src/leetcode/_296_best_meeting_point.rs)|

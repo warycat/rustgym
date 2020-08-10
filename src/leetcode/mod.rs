@@ -420,6 +420,8 @@ mod _246_strobogrammantic_number;
 //
 mod _247_strobogrammatic_number_2;
 //
+mod _248_strobogrammatic_number_3;
+//
 mod _249_group_shifted_strings;
 //
 mod _250_count_univalue_subtrees;
@@ -449,6 +451,8 @@ mod _261_graph_valid_tree;
 mod _263_ugly_number;
 //
 mod _264_ugly_number_2;
+//
+mod _265_paint_house_2;
 //
 mod _266_palindrome_permutation;
 //
@@ -480,6 +484,8 @@ mod _279_perfect_squares;
 mod _280_wiggle_sort;
 //
 mod _281_zigzag_iterator;
+//
+mod _282_expression_add_operators;
 //
 mod _283_move_zeros;
 //
