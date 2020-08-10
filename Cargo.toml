@@ -1,7 +1,7 @@
 [package]
 name = "rustgym"
 version = "0.1.0"
-authors = ["yinchu"]
+authors = ["Yinchu Xia"]
 edition = "2018"
 
 [features]

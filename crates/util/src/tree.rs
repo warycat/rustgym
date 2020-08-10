@@ -20,7 +20,7 @@ pub type TreeLink = Option<Rc<RefCell<TreeNode>>>;
 use std::cell::RefCell;
 use std::rc::Rc;
 
-pub trait MakeTree {
+pub trait TreeMaker {
     fn branch(val: i32, left: TreeLink, right: TreeLink) -> TreeLink {
         Some(Rc::new(RefCell::new(TreeNode { val, left, right })))
     }
@@ -33,4 +33,4 @@ pub trait MakeTree {
     }
 }
 
-impl MakeTree for TreeLink {}
+impl TreeMaker for TreeLink {}

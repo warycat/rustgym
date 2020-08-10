@@ -19,10 +19,10 @@ macro_rules! list {
 
 pub type ListLink = Option<Box<ListNode>>;
 
-pub trait MakeList {
+pub trait ListMaker {
     fn link(val: i32, next: ListLink) -> ListLink {
         Some(Box::new(ListNode { val, next }))
     }
 }
 
-impl MakeList for ListLink {}
+impl ListMaker for ListLink {}
