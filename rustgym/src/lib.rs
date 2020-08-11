@@ -30,7 +30,7 @@
 //! use rustgym::util::*;
 //! ```
 //! with
-//! ```compile_fail
+//! ```ignore
 //! #[macro_export]
 //! macro_rules! list {
 //!     () => {
@@ -62,7 +62,7 @@
 //! use rustgym::util::*;
 //! ```
 //! with
-//! ```compile_fail
+//! ```ignore
 //! #[macro_export]
 //! macro_rules! tree {
 //!     ($e:expr) => {

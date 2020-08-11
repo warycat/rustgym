@@ -525,6 +525,8 @@ mod _303_range_sum_query;
 //
 mod _304_range_sum_query_2d_immutable;
 //
+mod _305_number_of_islands_2;
+//
 mod _306_additive_number;
 //
 mod _307_range_sum_query_mutable;

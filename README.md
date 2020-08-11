@@ -1164,10 +1164,10 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |994|[Rotting Oranges](https://leetcode.com/problems/rotting-oranges)|breadth-first-search|[solution](rustgym/src/leetcode/_994_rotting_oranges.rs)|
 |998|[Maximum Binary Tree II](https://leetcode.com/problems/maximum-binary-tree-ii)|tree|[solution](rustgym/src/leetcode/_998_maximum_binary_tree_2.rs)|
 </details>
-<details><summary>Hard 186/308 60.39%</summary>
+<details><summary>Hard 185/308 60.06%</summary>
 
 
-|id|308 Hard Questions|Tags|122 Solutions|
+|id|308 Hard Questions|Tags|123 Solutions|
 |---|---|---|---|
 |420|[Strong Password Checker](https://leetcode.com/problems/strong-password-checker)||   |
 |440|[K-th Smallest in Lexicographical Order](https://leetcode.com/problems/k-th-smallest-in-lexicographical-order)||   |
@@ -1353,7 +1353,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |745|[Prefix and Suffix Search](https://leetcode.com/problems/prefix-and-suffix-search)|trie|   |
 |1032|[Stream of Characters](https://leetcode.com/problems/stream-of-characters)|trie|   |
 |828|[Count Unique Characters of All Substrings of a Given String](https://leetcode.com/problems/count-unique-characters-of-all-substrings-of-a-given-string)|two-pointers|   |
-|305|[Number of Islands II](https://leetcode.com/problems/number-of-islands-ii)|union-find|   |
 |803|[Bricks Falling When Hit](https://leetcode.com/problems/bricks-falling-when-hit)|union-find|   |
 |1028|[Recover a Tree From Preorder Traversal](https://leetcode.com/problems/recover-a-tree-from-preorder-traversal)|tree depth-first-search|[solution](rustgym/src/leetcode/_1028_recover_a_tree_from_preorder_traversal.rs)|
 |1063|[Number of Valid Subarrays](https://leetcode.com/problems/number-of-valid-subarrays)|stack|[solution](rustgym/src/leetcode/_1063_number_of_valid_subarrays.rs)|
@@ -1423,6 +1422,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |296|[Best Meeting Point](https://leetcode.com/problems/best-meeting-point)|math sort|[solution](rustgym/src/leetcode/_296_best_meeting_point.rs)|
 |301|[Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses)|depth-first-search breadth-first-search|[solution](rustgym/src/leetcode/_301_remove_invalid_parentheses.rs)|
 |302|[Smallest Rectangle Enclosing Black Pixels](https://leetcode.com/problems/smallest-rectangle-enclosing-black-pixels)|binary-search|[solution](rustgym/src/leetcode/_302_smallest_rectangle_enclosing_black_pixels.rs)|
+|305|[Number of Islands II](https://leetcode.com/problems/number-of-islands-ii)|union-find|[solution](rustgym/src/leetcode/_305_number_of_islands_2.rs)|
 |30|[Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words)|hash-table two-pointers string|[solution](rustgym/src/leetcode/_30_substring_with_concatenation_of_all_words.rs)|
 |312|[Burst Balloons](https://leetcode.com/problems/burst-balloons)|divide-and-conquer dynamic-programming|[solution](rustgym/src/leetcode/_312_burst_balloons.rs)|
 |317|[Shortest Distance from All Buildings](https://leetcode.com/problems/shortest-distance-from-all-buildings)|breadth-first-search|[solution](rustgym/src/leetcode/_317_shortest_distance_from_all_buildings.rs)|
