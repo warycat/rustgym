@@ -1,6 +1,6 @@
 [package]
 name = "rustgym"
-version = "0.1.4"
+version = "0.1.5"
 authors = ["Yinchu Xia <larry.fantasy@gmail.com>"]
 edition = "2018"
 license = "MIT OR Apache-2.0"

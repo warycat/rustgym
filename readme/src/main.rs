@@ -64,7 +64,7 @@ const LEETCODE_JSON_URL: &str = "https://leetcode.com/api/problems/algorithms/";
 const LEETCODE_TAG_URL: &str = "https://leetcode.com/problems/api/tags/";
 const LEETCODE_QUESTION_URL: &str = "https://leetcode.com/problems/";
 const CARGO_MANIFEST_DIR: &str = "CARGO_MANIFEST_DIR";
-const README_MD: &str = "README.md";
+const README_MD: &str = "../README.md";
 const LEETCODE_SRC: &str = "../rustgym/src/leetcode";
 
 type Tags = HashMap<i64, Vec<Tag>>;
