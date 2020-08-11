@@ -1,5 +1,5 @@
 struct Solution;
-use util::*;
+use rustgym_util::*;
 
 impl Solution {
     fn inorder_traversal(root: TreeLink) -> Vec<i32> {

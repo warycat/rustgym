@@ -1,10 +1,9 @@
 [workspace]
 members = [
     "rustgym",
-    "readme",
+    "gvc",
     "util",
+    "readme",
     "testcpp",
     "gvc-sys",
-    "gvc",
 ]
-

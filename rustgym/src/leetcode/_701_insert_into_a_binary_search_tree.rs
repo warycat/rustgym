@@ -1,5 +1,5 @@
 struct Solution;
-use util::*;
+use rustgym_util::*;
 
 trait Postorder {
     fn insert(self, val: i32) -> Self;

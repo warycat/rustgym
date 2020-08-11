@@ -1,5 +1,5 @@
 struct Solution;
-use util::*;
+use rustgym_util::*;
 
 impl Solution {
     fn rotate_right(mut head: ListLink, k: i32) -> ListLink {

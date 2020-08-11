@@ -1,6 +1,6 @@
 struct Solution;
+use rustgym_util::*;
 use std::usize;
-use util::*;
 
 trait Postorder {
     fn postorder(&self, leaves: &mut Vec<Vec<i32>>) -> usize;

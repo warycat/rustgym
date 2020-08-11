@@ -1,5 +1,5 @@
 [package]
-name = "testcpp"
+name = "rustgym-testcpp"
 version = "0.1.0"
 authors = ["Yinchu Xia <larry.fantasy@gmail.com>"]
 edition = "2018"

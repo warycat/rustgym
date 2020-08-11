@@ -1,5 +1,5 @@
 struct Solution;
-use util::*;
+use rustgym_util::*;
 
 trait PathSum {
     fn has_path_sum(&self, sum: i32) -> bool;

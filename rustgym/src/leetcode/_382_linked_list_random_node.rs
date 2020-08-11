@@ -1,5 +1,5 @@
 use rand::prelude::*;
-use util::*;
+use rustgym_util::*;
 
 struct Solution {
     head: ListLink,

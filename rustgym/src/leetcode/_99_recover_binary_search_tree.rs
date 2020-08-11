@@ -1,6 +1,6 @@
 struct Solution;
+use rustgym_util::*;
 use std::mem::swap;
-use util::*;
 
 trait Inorder {
     fn inorder(&self, prev: &mut TreeLink, first: &mut TreeLink, second: &mut TreeLink);

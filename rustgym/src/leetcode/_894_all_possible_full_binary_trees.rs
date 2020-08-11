@@ -1,5 +1,5 @@
 struct Solution;
-use util::*;
+use rustgym_util::*;
 
 impl Solution {
     fn all_possible_fbt(n: i32) -> Vec<TreeLink> {

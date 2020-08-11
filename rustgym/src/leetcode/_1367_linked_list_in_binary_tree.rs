@@ -1,5 +1,5 @@
 struct Solution;
-use util::*;
+use rustgym_util::*;
 
 trait Preorder {
     fn preorder(&self, cur: &mut Vec<i32>, found: &mut bool, path: &[i32]);

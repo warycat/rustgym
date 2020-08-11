@@ -1,6 +1,6 @@
 struct Solution;
+use rustgym_util::*;
 use std::collections::VecDeque;
-use util::*;
 
 impl Solution {
     fn reverse_k_group(head: ListLink, k: i32) -> ListLink {

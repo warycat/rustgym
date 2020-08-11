@@ -1,5 +1,5 @@
 struct Solution;
-use util::*;
+use rustgym_util::*;
 
 impl Solution {
     fn remove_elements(mut head: ListLink, val: i32) -> ListLink {

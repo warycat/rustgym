@@ -1,5 +1,5 @@
 struct Solution;
-use util::*;
+use rustgym_util::*;
 
 trait SubTree {
     fn is_subtree(&self, t: &TreeLink) -> bool;

@@ -1,5 +1,5 @@
 struct Solution;
-use util::*;
+use rustgym_util::*;
 
 impl Solution {
     fn remove_nth_from_end(mut head: ListLink, n: i32) -> ListLink {

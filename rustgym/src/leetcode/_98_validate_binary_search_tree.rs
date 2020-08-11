@@ -1,5 +1,5 @@
 struct Solution;
-use util::*;
+use rustgym_util::*;
 
 trait Inorder {
     fn inorder(&self, visit: &mut dyn FnMut(i32));

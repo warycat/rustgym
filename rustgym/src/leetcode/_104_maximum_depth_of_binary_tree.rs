@@ -1,5 +1,5 @@
 struct Solution;
-use util::*;
+use rustgym_util::*;
 
 trait MaxDepth {
     fn max_depth(&self) -> i32;

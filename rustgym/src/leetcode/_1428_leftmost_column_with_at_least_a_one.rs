@@ -1,7 +1,7 @@
 #[test]
 fn test() {
     unsafe {
-        use util::*;
+        use rustgym_util::*;
         let data = vec_vec_i32![[0, 0], [1, 1]];
         let matrix = testcpp::BinaryMatrix::new(data);
         let res = 0;

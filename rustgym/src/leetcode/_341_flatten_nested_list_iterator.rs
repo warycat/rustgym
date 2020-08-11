@@ -1,6 +1,6 @@
+use rustgym_util::*;
 use std::iter::Peekable;
 use std::vec::IntoIter;
-use util::*;
 
 struct NestedIterator {
     it: Peekable<IntoIter<i32>>,

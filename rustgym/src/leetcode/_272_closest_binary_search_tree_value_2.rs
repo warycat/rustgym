@@ -1,6 +1,6 @@
 struct Solution;
 
-use util::*;
+use rustgym_util::*;
 
 trait Inorder {
     fn inorder(&self, values: &mut Vec<i32>);

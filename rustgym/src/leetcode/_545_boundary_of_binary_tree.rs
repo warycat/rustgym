@@ -1,6 +1,6 @@
 struct Solution;
 
-use util::*;
+use rustgym_util::*;
 
 trait Boundry {
     fn left_boundry(&self, nodes: &mut Vec<i32>);

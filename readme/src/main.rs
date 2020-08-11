@@ -1,10 +1,10 @@
+use rustgym_util::*;
 use std::collections::BTreeMap;
 use std::collections::HashMap;
 use std::env;
 use std::fmt;
 use std::fs;
 use std::path::Path;
-use util::*;
 
 const TITLE: &str = "# Leetcode Solutions in Rust";
 const BODY: &str = "

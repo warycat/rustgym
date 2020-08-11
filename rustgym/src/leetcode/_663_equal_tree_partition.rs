@@ -1,5 +1,5 @@
 struct Solution;
-use util::*;
+use rustgym_util::*;
 
 trait Postorder {
     fn sum_size(&self) -> (i32, usize);

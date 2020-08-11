@@ -1,5 +1,5 @@
 struct Solution;
-use util::*;
+use rustgym_util::*;
 
 trait Symmetric {
     fn is_symmetric(&self) -> bool;

@@ -9,7 +9,6 @@ description = "graphviz rust bindings"
 
 [dependencies]
 lazy_static = "1.4.0"
-util = {path='../util', version = '0.1.0'}
 
 [build-dependencies]
 cc = "1.0.52"

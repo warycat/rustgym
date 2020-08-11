@@ -1,8 +1,8 @@
 struct Solution;
+use rustgym_util::*;
 use std::collections::hash_map::DefaultHasher;
 use std::collections::HashMap;
 use std::hash::Hasher;
-use util::*;
 
 trait Preorder {
     fn preorder(&self, all: &mut Vec<TreeLink>, count: &mut HashMap<u64, usize>);

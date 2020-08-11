@@ -1,6 +1,6 @@
 struct Solution;
+use rustgym_util::*;
 use std::cmp::Ordering::*;
-use util::*;
 
 trait Delete {
     fn delete(self, key: i32) -> TreeLink;

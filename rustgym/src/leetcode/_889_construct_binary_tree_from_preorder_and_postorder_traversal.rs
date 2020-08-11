@@ -1,5 +1,5 @@
 struct Solution;
-use util::*;
+use rustgym_util::*;
 
 impl Solution {
     fn construct_from_pre_post(pre: Vec<i32>, post: Vec<i32>) -> TreeLink {

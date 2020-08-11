@@ -1,5 +1,5 @@
 struct Solution;
-use util::*;
+use rustgym_util::*;
 
 trait Convert {
     fn convert(self, n: usize) -> (TreeLink, ListLink);

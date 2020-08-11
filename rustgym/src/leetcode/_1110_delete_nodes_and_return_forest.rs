@@ -1,7 +1,7 @@
 struct Solution;
+use rustgym_util::*;
 use std::collections::HashSet;
 use std::iter::FromIterator;
-use util::*;
 
 trait Postorder {
     fn postorder(self, nodes: &HashSet<i32>) -> (TreeLink, Vec<TreeLink>);

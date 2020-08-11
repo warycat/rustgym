@@ -1,6 +1,6 @@
 struct Solution;
+use rustgym_util::*;
 use std::collections::HashSet;
-use util::*;
 
 trait Postorder {
     fn postorder(&self, id: u32, nodes: &mut HashSet<u32>) -> usize;

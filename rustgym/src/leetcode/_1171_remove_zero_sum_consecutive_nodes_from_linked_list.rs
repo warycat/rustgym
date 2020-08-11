@@ -1,7 +1,7 @@
 struct Solution;
 
+use rustgym_util::*;
 use std::collections::HashMap;
-use util::*;
 
 impl Solution {
     fn remove_zero_sum_sublists(mut head: ListLink) -> ListLink {

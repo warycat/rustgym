@@ -1,6 +1,6 @@
 struct Solution;
+use rustgym_util::*;
 use std::collections::HashMap;
-use util::*;
 
 trait PathSum {
     fn path_sum(&self, prefix: i32, sum: i32, prefix_map: &mut HashMap<i32, i32>) -> i32;

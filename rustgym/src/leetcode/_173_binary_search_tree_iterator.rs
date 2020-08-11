@@ -1,4 +1,4 @@
-use util::*;
+use rustgym_util::*;
 
 struct BSTIterator {
     root: TreeLink,

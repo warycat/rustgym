@@ -1,8 +1,8 @@
 struct Solution;
+use rustgym_util::*;
 use std::collections::HashMap;
 use std::collections::HashSet;
 use std::collections::VecDeque;
-use util::*;
 
 #[derive(Default)]
 struct Graph {

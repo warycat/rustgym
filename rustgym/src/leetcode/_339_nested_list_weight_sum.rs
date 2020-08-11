@@ -1,5 +1,5 @@
 struct Solution;
-use util::*;
+use rustgym_util::*;
 
 impl Solution {
     fn depth_sum_r(nested_list: &NestedInteger, level: i32) -> i32 {

@@ -1,5 +1,5 @@
 struct Solution;
-use util::*;
+use rustgym_util::*;
 
 trait Plus {
     fn plus(self) -> (ListLink, i32);

@@ -1,6 +1,6 @@
 struct Solution;
 
-use util::*;
+use rustgym_util::*;
 
 trait Preorder {
     fn preorder(&self, path: i32, sum: &mut i32);

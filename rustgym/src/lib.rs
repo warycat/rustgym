@@ -1,6 +1,6 @@
 //! # Handy macros to build data for testing
 //! ```
-//! use rustgym::util::*;
+//! use rustgym_util::*;
 //!
 //! // singly linked list
 //! let list = list!(1, 2, 3);
@@ -84,7 +84,7 @@
 //! ```
 //! when submitting to leetcode online judge.
 #[cfg_attr(test, macro_use)]
-pub extern crate util;
+pub extern crate rustgym_util as util;
 
 #[allow(dead_code)]
 #[deny(clippy::all)]

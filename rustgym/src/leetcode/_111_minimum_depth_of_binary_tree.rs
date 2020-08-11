@@ -1,5 +1,5 @@
 struct Solution;
-use util::*;
+use rustgym_util::*;
 
 trait MinDepth {
     fn min_depth(&self) -> usize;

@@ -1,5 +1,5 @@
 struct Solution;
-use util::*;
+use rustgym_util::*;
 
 trait FlipEq {
     fn flip_eq(root1: &TreeLink, root2: &TreeLink) -> bool;

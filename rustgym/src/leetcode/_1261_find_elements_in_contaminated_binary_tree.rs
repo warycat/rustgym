@@ -1,5 +1,5 @@
+use rustgym_util::*;
 use std::collections::HashSet;
-use util::*;
 
 trait Preorder {
     fn recover(&mut self, x: i32, hs: &mut HashSet<i32>);

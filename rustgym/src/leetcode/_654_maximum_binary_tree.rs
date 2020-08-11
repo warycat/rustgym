@@ -1,5 +1,5 @@
 struct Solution;
-use util::*;
+use rustgym_util::*;
 
 trait Postorder {
     fn from_vec(start: usize, end: usize, nums: &[i32]) -> Self;

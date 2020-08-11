@@ -1,5 +1,5 @@
 struct Solution;
-use util::*;
+use rustgym_util::*;
 
 impl Solution {
     fn merge_trees(t1: TreeLink, t2: TreeLink) -> TreeLink {

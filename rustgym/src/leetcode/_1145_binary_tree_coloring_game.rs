@@ -1,5 +1,5 @@
 struct Solution;
-use util::*;
+use rustgym_util::*;
 
 trait Postorder {
     fn postorder(&self, x: i32, left: &mut usize, right: &mut usize) -> usize;

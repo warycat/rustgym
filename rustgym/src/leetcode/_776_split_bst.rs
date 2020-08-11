@@ -1,5 +1,5 @@
 struct Solution;
-use util::*;
+use rustgym_util::*;
 
 trait Postortder {
     fn split(self, v: i32) -> (TreeLink, TreeLink);

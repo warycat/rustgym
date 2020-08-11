@@ -1,5 +1,5 @@
 struct Solution;
-use util::*;
+use rustgym_util::*;
 
 impl Solution {
     fn is_same_tree(p: TreeLink, q: TreeLink) -> bool {

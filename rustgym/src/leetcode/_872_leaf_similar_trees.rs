@@ -1,5 +1,5 @@
 struct Solution;
-use util::*;
+use rustgym_util::*;
 
 trait Leaves {
     fn preorder(&self, leaves: &mut Vec<i32>);

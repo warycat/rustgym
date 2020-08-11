@@ -1,5 +1,5 @@
 [package]
-name = "gvc"
+name = "rustgym-gvc"
 version = "0.1.0"
 authors = ["Yinchu Xia <larry.fantasy@gmail.com>"]
 edition = "2018"
@@ -10,4 +10,4 @@ description = "generate svg for some data structure in rustgym"
 
 [dependencies]
 gvc-sys = {path='../gvc-sys', version = '0.1.0'}
-util = {path='../util', version = '0.1.0'}
+rustgym-util = {path='../util', version = '0.1.0'}

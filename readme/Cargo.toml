@@ -1,5 +1,5 @@
 [package]
-name = "readme"
+name = "rustgym-readme"
 version = "0.1.0"
 authors = ["Yinchu Xia <larry.fantasy@gmail.com>"]
 edition = "2018"
@@ -10,4 +10,4 @@ edition = "2018"
 reqwest = {version="0.10.3", features = ["blocking", "json"]}
 serde_json = "1.0.48"
 
-util = {path='../util', version = '0.1.0'}
+rustgym-util = {path='../util', version = '0.1.0'}

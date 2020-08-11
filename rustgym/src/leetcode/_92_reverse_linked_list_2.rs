@@ -1,5 +1,5 @@
 struct Solution;
-use util::*;
+use rustgym_util::*;
 
 impl Solution {
     fn reverse_between(mut head: ListLink, m: i32, n: i32) -> ListLink {

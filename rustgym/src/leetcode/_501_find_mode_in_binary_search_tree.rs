@@ -1,5 +1,5 @@
 struct Solution;
-use util::*;
+use rustgym_util::*;
 
 trait Inorder {
     fn inorder(&self, prev: &mut Option<i32>, count: &mut usize, f: &mut impl FnMut(i32, usize));

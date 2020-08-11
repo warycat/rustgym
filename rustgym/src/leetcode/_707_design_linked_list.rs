@@ -1,4 +1,4 @@
-use util::*;
+use rustgym_util::*;
 
 #[derive(Debug, PartialEq, Eq, Clone, Default)]
 struct MyLinkedList {

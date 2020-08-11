@@ -1,6 +1,6 @@
 struct Solution;
+use rustgym_util::*;
 use std::collections::HashMap;
-use util::*;
 
 trait Postorder {
     fn postorder(&self, hs: &mut HashMap<i32, usize>, max: &mut usize) -> i32;

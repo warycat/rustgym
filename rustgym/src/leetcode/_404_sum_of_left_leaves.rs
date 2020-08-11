@@ -1,5 +1,5 @@
 struct Solution;
-use util::*;
+use rustgym_util::*;
 
 trait SumOfLeftLeaves {
     fn sum_of_left_leaves(&self) -> i32;

@@ -1,7 +1,7 @@
 struct Solution;
+use rustgym_util::*;
 use std::collections::HashSet;
 use std::iter::FromIterator;
-use util::*;
 
 impl Solution {
     fn num_components(head: ListLink, g: Vec<i32>) -> i32 {

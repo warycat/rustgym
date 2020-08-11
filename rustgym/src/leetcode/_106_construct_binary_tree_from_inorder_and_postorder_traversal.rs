@@ -1,5 +1,5 @@
 struct Solution;
-use util::*;
+use rustgym_util::*;
 
 impl Solution {
     fn build_tree(inorder: Vec<i32>, postorder: Vec<i32>) -> TreeLink {

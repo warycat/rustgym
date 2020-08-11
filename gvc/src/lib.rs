@@ -1,8 +1,8 @@
 use gvc_sys::*;
+use rustgym_util::*;
 use std::collections::HashMap;
 use std::ffi::c_void;
 use std::ffi::CString;
-use util::*;
 
 type Attrs = Vec<(CString, CString, CString)>;
 

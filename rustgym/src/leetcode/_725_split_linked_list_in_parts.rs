@@ -1,5 +1,5 @@
 struct Solution;
-use util::*;
+use rustgym_util::*;
 
 impl Solution {
     fn split_list_to_parts(head: ListLink, k: i32) -> Vec<ListLink> {

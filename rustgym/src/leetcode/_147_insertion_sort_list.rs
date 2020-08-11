@@ -1,5 +1,5 @@
 struct Solution;
-use util::*;
+use rustgym_util::*;
 
 trait Insertion {
     fn insert(self, link: ListLink) -> ListLink;

@@ -1,5 +1,5 @@
 struct Solution;
-use util::*;
+use rustgym_util::*;
 
 trait Preorder {
     fn preorder(&self, target: i32, path: &mut Vec<i32>, all: &mut Vec<Vec<i32>>);

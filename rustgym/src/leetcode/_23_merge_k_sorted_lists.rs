@@ -1,6 +1,6 @@
 struct Solution;
+use rustgym_util::*;
 use std::collections::VecDeque;
-use util::*;
 
 impl Solution {
     fn merge_k_lists(lists: Vec<ListLink>) -> ListLink {

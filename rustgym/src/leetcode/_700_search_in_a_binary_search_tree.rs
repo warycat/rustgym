@@ -1,5 +1,5 @@
 struct Solution;
-use util::*;
+use rustgym_util::*;
 
 trait Search {
     fn find(&self, val: i32) -> TreeLink;

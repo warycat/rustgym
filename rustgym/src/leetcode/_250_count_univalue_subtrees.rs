@@ -1,5 +1,5 @@
 struct Solution;
-use util::*;
+use rustgym_util::*;
 
 trait Postorder {
     fn postorder(&self, count: &mut i32) -> Option<i32>;

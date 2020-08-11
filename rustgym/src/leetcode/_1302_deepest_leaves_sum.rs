@@ -1,5 +1,5 @@
 struct Solution;
-use util::*;
+use rustgym_util::*;
 
 trait Preorder {
     fn dfs(&self, level: usize, max: &mut usize, sum: &mut i32);

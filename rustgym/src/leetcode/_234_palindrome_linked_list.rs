@@ -1,5 +1,5 @@
 struct Solution;
-use util::*;
+use rustgym_util::*;
 
 #[derive(PartialEq, Eq, Clone, Debug)]
 struct List {

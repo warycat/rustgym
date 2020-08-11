@@ -1,5 +1,5 @@
 struct Solution;
-use util::*;
+use rustgym_util::*;
 
 trait Preorder {
     fn preorder(&self, size: &mut usize, nodes: &mut Vec<i32>, voyage: &[i32]) -> bool;

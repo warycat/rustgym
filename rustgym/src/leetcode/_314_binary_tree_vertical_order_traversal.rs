@@ -1,6 +1,6 @@
 struct Solution;
+use rustgym_util::*;
 use std::collections::BTreeMap;
-use util::*;
 
 trait Preorder {
     fn preorder(&self, row: i32, col: i32, grid: &mut BTreeMap<i32, BTreeMap<i32, Vec<i32>>>);

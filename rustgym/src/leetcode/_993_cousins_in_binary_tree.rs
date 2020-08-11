@@ -1,5 +1,5 @@
 struct Solution;
-use util::*;
+use rustgym_util::*;
 
 trait Preorder {
     fn preorder(&self, depth: usize, parent: i32, res: &mut Option<(usize, i32)>, v: i32);

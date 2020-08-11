@@ -1,7 +1,7 @@
 struct Solution;
+use rustgym_util::*;
 use std::iter::Peekable;
 use std::vec::IntoIter;
-use util::*;
 
 enum Tok {
     Num(i32),

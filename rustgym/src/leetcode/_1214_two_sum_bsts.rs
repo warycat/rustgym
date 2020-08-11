@@ -1,5 +1,5 @@
 struct Solution;
-use util::*;
+use rustgym_util::*;
 
 trait Inorder {
     fn all_left(self) -> Vec<TreeLink>;
