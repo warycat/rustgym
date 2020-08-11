@@ -1,10 +1,11 @@
 [package]
 name = "rustgym"
-version = "0.1.2"
+version = "0.1.3"
 authors = ["Yinchu Xia <larry.fantasy@gmail.com>"]
 edition = "2018"
 license = "MIT OR Apache-2.0"
 description = "rustgym solutions"
+repository = "https://github.com/warycat/rustgym"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [features]
