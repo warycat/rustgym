@@ -1,6 +1,15 @@
+//! # Install dependencies
+//! ##  macos
+//! ```bash
+//! brew install graphviz
+//! ```
+//! ## linux
+//! ```bash
+//! apt install graphviz
+//! ```
 //! # Handy macros to build data for testing
 //! ```
-//! use rustgym_util::*;
+//! use rustgym::util::*;
 //!
 //! // singly linked list
 //! let list = list!(1, 2, 3);
