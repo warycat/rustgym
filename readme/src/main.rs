@@ -64,8 +64,8 @@ const LEETCODE_JSON_URL: &str = "https://leetcode.com/api/problems/algorithms/";
 const LEETCODE_TAG_URL: &str = "https://leetcode.com/problems/api/tags/";
 const LEETCODE_QUESTION_URL: &str = "https://leetcode.com/problems/";
 const CARGO_MANIFEST_DIR: &str = "CARGO_MANIFEST_DIR";
-const README_MD: &str = "../README.md";
-const LEETCODE_SRC: &str = "../rustgym/src/leetcode";
+const README_MD: &str = "README.md";
+const LEETCODE_SRC: &str = "rustgym/src/leetcode";
 
 type Tags = HashMap<i64, Vec<Tag>>;
 type Tag = (String, String);
@@ -319,8 +319,8 @@ fn main() {
     let question_list = LeetcodeQuestionList::new(questions);
     let tags = leetcode_json.get_tags().unwrap_or_default();
     let cargo_dir = env::var_os(CARGO_MANIFEST_DIR).unwrap();
-    let readme_md = Path::new(&cargo_dir).join(README_MD);
-    let src_dir = Path::new(&cargo_dir).join(LEETCODE_SRC);
+    let readme_md = Path::new(&cargo_dir).join("..").join(README_MD);
+    let src_dir = Path::new(&cargo_dir).join("..").join(LEETCODE_SRC);
     let solution_list = RustSolutionList::new(src_dir);
     let headers = vec_string![TITLE, BODY, CI];
     let footers = vec_string!(CODING_INTERVIEW, TEST_SVG);
