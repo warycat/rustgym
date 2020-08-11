@@ -1,6 +1,6 @@
 [package]
 name = "rustgym"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Yinchu Xia <larry.fantasy@gmail.com>"]
 edition = "2018"
 license = "MIT OR Apache-2.0"
@@ -19,3 +19,5 @@ rustgym-util = {path='../util', version = '0.1.0'}
 rustgym-testcpp = {path='../testcpp', version = '0.1.0',optional = true}
 rustgym-gvc = {path='../gvc', version = '0.1.0', optional = true}
 
+[package.metadata.docs.rs]
+no-default-features = true
