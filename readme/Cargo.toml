@@ -1,0 +1,13 @@
+[package]
+name = "readme"
+version = "0.1.0"
+authors = ["Yinchu Xia <larry.fantasy@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+reqwest = {version="0.10.3", features = ["blocking", "json"]}
+serde_json = "1.0.48"
+
+util = {path='../util', version = '0.1.0'}

@@ -3,10 +3,7 @@ struct Solution;
 impl Solution {
     fn remove_vowels(s: String) -> String {
         s.chars()
-            .filter(|&c| match c {
-                'a' | 'e' | 'i' | 'o' | 'u' => false,
-                _ => true,
-            })
+            .filter(|&c| !matches!(c, 'a' | 'e' | 'i' | 'o' | 'u'))
             .collect()
     }
 }

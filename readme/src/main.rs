@@ -65,7 +65,7 @@ const LEETCODE_TAG_URL: &str = "https://leetcode.com/problems/api/tags/";
 const LEETCODE_QUESTION_URL: &str = "https://leetcode.com/problems/";
 const CARGO_MANIFEST_DIR: &str = "CARGO_MANIFEST_DIR";
 const README_MD: &str = "README.md";
-const LEETCODE_SRC: &str = "src/leetcode";
+const LEETCODE_SRC: &str = "../rustgym/src/leetcode";
 
 type Tags = HashMap<i64, Vec<Tag>>;
 type Tag = (String, String);
@@ -325,7 +325,5 @@ fn main() {
     let headers = vec_string![TITLE, BODY, CI];
     let footers = vec_string!(CODING_INTERVIEW, TEST_SVG);
     let readme = Readme::new(headers, solution_list, question_list, tags, footers);
-    if let Err(e) = fs::write(&readme_md, format!("{}", readme)) {
-        println!("{}", e);
-    }
+    fs::write(&readme_md, format!("{}", readme)).unwrap();
 }

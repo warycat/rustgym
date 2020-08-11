@@ -22,11 +22,7 @@ impl Solution {
     }
 
     fn is_vowel(c: char) -> bool {
-        if let 'a' | 'e' | 'i' | 'o' | 'u' = c {
-            true
-        } else {
-            false
-        }
+        matches!(c, 'a' | 'e' | 'i' | 'o' | 'u')
     }
 }
 

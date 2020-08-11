@@ -12,17 +12,13 @@ use Tok::*;
 
 impl Tok {
     fn is_expr_op(self) -> bool {
-        match self {
-            Op('+') | Op('-') => true,
-            _ => false,
-        }
+        matches!(self, Op('+') | Op('-'))
     }
+
     fn is_factor_op(self) -> bool {
-        match self {
-            Op('*') | Op('/') => true,
-            _ => false,
-        }
+        matches!(self, Op('*') | Op('/'))
     }
+
     fn val(self) -> Option<i32> {
         match self {
             Num(x) => Some(x),

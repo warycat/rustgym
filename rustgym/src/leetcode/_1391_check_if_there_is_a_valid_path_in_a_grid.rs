@@ -11,28 +11,16 @@ trait Connect {
 
 impl Connect for i32 {
     fn top(self) -> bool {
-        match self {
-            2 | 5 | 6 => true,
-            _ => false,
-        }
+        matches!(self, 2 | 5 | 6)
     }
     fn left(self) -> bool {
-        match self {
-            1 | 3 | 5 => true,
-            _ => false,
-        }
+        matches!(self, 1 | 3 | 5)
     }
     fn bottom(self) -> bool {
-        match self {
-            2 | 3 | 4 => true,
-            _ => false,
-        }
+        matches!(self, 2 | 3 | 4)
     }
     fn right(self) -> bool {
-        match self {
-            1 | 4 | 6 => true,
-            _ => false,
-        }
+        matches!(self, 1 | 4 | 6)
     }
 }
 
