@@ -543,6 +543,10 @@ mod _313_super_ugly_number;
 //
 mod _314_binary_tree_vertical_order_traversal;
 //
+mod _315_count_of_smaller_numbers_after_self;
+//
+mod _316_remove_duplicate_letters;
+//
 mod _317_shortest_distance_from_all_buildings;
 //
 mod _318_maximum_product_of_word_lengths;
@@ -550,6 +554,8 @@ mod _318_maximum_product_of_word_lengths;
 mod _319_bulb_switcher;
 //
 mod _320_generalized_abbreviation;
+//
+mod _321_create_maximum_number;
 //
 mod _322_coin_change;
 //
@@ -563,6 +569,8 @@ mod _326_power_of_three;
 //
 mod _328_odd_even_linked_list;
 //
+mod _329_longest_increasing_path_in_a_matrix;
+//
 mod _330_patching_array;
 //
 mod _331_verify_preorder_serialization_of_a_binary_tree;
@@ -573,11 +581,15 @@ mod _333_largest_bst_subtree;
 //
 mod _334_increasing_triplet_subsequence;
 //
+mod _336_palindrome_pairs;
+//
 mod _337_house_robber_3;
 //
 mod _338_counting_bits;
 //
 mod _339_nested_list_weight_sum;
+//
+mod _340_longest_substring_with_at_most_k_distinct_characters;
 //
 mod _341_flatten_nested_list_iterator;
 //
