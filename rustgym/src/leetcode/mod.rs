@@ -903,6 +903,8 @@ mod _525_contiguous_array;
 //
 mod _526_beautiful_arrangment;
 //
+mod _527_word_abbreviation;
+//
 mod _528_random_pick_with_weight;
 //
 mod _529_minesweeper;
@@ -1539,6 +1541,8 @@ mod _958_check_completeness_of_a_binary_tree;
 //
 mod _959_regions_cut_by_slashes;
 //
+mod _960_delete_columns_to_make_sorted_3;
+//
 mod _961_n_repeated_element_in_size_2n_array;
 //
 mod _962_maximum_with_ramp;
@@ -1801,6 +1805,8 @@ mod _1130_minimum_cost_tree_from_leaf_values;
 //
 mod _1131_maximum_of_absolute_value_expression;
 //
+mod _1032_stream_of_characters;
+//
 mod _1133_largest_unique_number;
 //
 mod _1134_armstrong_number;
@@ -1924,6 +1930,8 @@ mod _1217_play_with_chips;
 mod _1218_longest_arithmetic_subsequence_of_given_difference;
 //
 mod _1219_path_with_maximum_gold;
+//
+mod _1220_count_vowels_permutation;
 //
 mod _1221_split_a_string_in_balanced_strings;
 //
@@ -2236,15 +2244,19 @@ mod _1433_check_if_a_string_can_break_another_string;
 //
 mod _1436_destination_city;
 //
+mod _1437_check_if_all_1s_are_at_least_length_k_places_away;
+//
 mod _1438_longest_continuous_subarray_with_absolute_diff_less_than_or_equal_to_limit;
 //
-mod _1437_check_if_all_1s_are_at_least_length_k_places_away;
+mod _1439_find_kth_smallest_sum_of_a_matrix_with_sorted_rows;
 //
 mod _1441_build_an_array_with_stack_operations;
 //
 mod _1442_count_triplets_that_can_form_two_arrays_of_equal_xor;
 //
 mod _1443_minimum_time_to_collect_all_apples_in_a_tree;
+//
+mod _1444_number_of_ways_of_cutting_a_pizza;
 //
 mod _1446_consecutive_characters;
 //
@@ -2351,6 +2363,8 @@ mod _1523_cound_odd_numbers_in_interval_range;
 mod _1524_number_of_sub_arrays_with_odd_sum;
 //
 mod _1525_number_of_good_ways_to_split_a_string;
+//
+mod _1526_minimum_number_of_increments_on_subarrays_to_form_a_target_array;
 //
 mod _1528_shuffle_string;
 //
