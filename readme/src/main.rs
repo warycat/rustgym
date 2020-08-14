@@ -59,7 +59,9 @@ Leetcode is a website where people–mostly software engineers–practice their 
 
 const TEST_SVG: &str = "![test svg](./test.svg)";
 
-const CI: &str = "### leetcode_rs [![Build Status](https://travis-ci.org/warycat/leetcode_rs.svg?branch=master)](https://travis-ci.org/warycat/leetcode_rs)";
+const DOCSRS: &str =
+    "### Docs [![Docs Status](https://docs.rs/rustgym/badge.svg)](https://docs.rs/rustgym)";
+const TRAVIS: &str = "### Build [![Build Status](https://travis-ci.org/warycat/leetcode_rs.svg?branch=master)](https://travis-ci.org/warycat/leetcode_rs)";
 const LEETCODE_JSON_URL: &str = "https://leetcode.com/api/problems/algorithms/";
 const LEETCODE_TAG_URL: &str = "https://leetcode.com/problems/api/tags/";
 const LEETCODE_QUESTION_URL: &str = "https://leetcode.com/problems/";
@@ -322,7 +324,7 @@ fn main() {
     let readme_md = Path::new(&cargo_dir).join("..").join(README_MD);
     let src_dir = Path::new(&cargo_dir).join("..").join(LEETCODE_SRC);
     let solution_list = RustSolutionList::new(src_dir);
-    let headers = vec_string![TITLE, BODY, CI];
+    let headers = vec_string![TITLE, BODY, DOCSRS, TRAVIS];
     let footers = vec_string!(CODING_INTERVIEW, TEST_SVG);
     let readme = Readme::new(headers, solution_list, question_list, tags, footers);
     fs::write(&readme_md, format!("{}", readme)).unwrap();

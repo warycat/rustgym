@@ -45,7 +45,9 @@ All the solutions here are crafted with love and their performance beats 99% of 
 </details>
 
 
-### leetcode_rs [![Build Status](https://travis-ci.org/warycat/leetcode_rs.svg?branch=master)](https://travis-ci.org/warycat/leetcode_rs)
+### Docs [![Docs Status](https://docs.rs/rustgym/badge.svg)](https://docs.rs/rustgym)
+
+### Build [![Build Status](https://travis-ci.org/warycat/leetcode_rs.svg?branch=master)](https://travis-ci.org/warycat/leetcode_rs)
 
 # All Solutions
 <details><summary>Easy 11/371 2.96%</summary>
@@ -743,7 +745,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |208|[Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree)|design trie|[solution](rustgym/src/leetcode/_208_implement_trie.rs)|
 |209|[Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum)|array two-pointers binary-search|[solution](rustgym/src/leetcode/_209_minimum_size_subarray_sum.rs)|
 |210|[Course Schedule II](https://leetcode.com/problems/course-schedule-ii)|depth-first-search breadth-first-search graph topological-sort|[solution](rustgym/src/leetcode/_210_course_schedule_2.rs)|
-|211|[Add and Search Word - Data structure design](https://leetcode.com/problems/add-and-search-word-data-structure-design)|backtracking design trie|[solution](rustgym/src/leetcode/_211_add_and_search_word_data_structure_design.rs)|
+|211|[Design Add and Search Words Data Structure](https://leetcode.com/problems/design-add-and-search-words-data-structure)|backtracking design trie|[solution](rustgym/src/leetcode/_211_add_and_search_word_data_structure_design.rs)|
 |213|[House Robber II](https://leetcode.com/problems/house-robber-ii)|dynamic-programming|[solution](rustgym/src/leetcode/_213_house_robber_2.rs)|
 |215|[Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array)|divide-and-conquer heap|[solution](rustgym/src/leetcode/_215_kth_largest_element_in_an_array.rs)|
 |216|[Combination Sum III](https://leetcode.com/problems/combination-sum-iii)|array backtracking|[solution](rustgym/src/leetcode/_216_combination_sum_3.rs)|
@@ -1164,10 +1166,10 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |994|[Rotting Oranges](https://leetcode.com/problems/rotting-oranges)|breadth-first-search|[solution](rustgym/src/leetcode/_994_rotting_oranges.rs)|
 |998|[Maximum Binary Tree II](https://leetcode.com/problems/maximum-binary-tree-ii)|tree|[solution](rustgym/src/leetcode/_998_maximum_binary_tree_2.rs)|
 </details>
-<details><summary>Hard 172/308 55.84%</summary>
+<details><summary>Hard 172/309 55.66%</summary>
 
 
-|id|308 Hard Questions|Tags|136 Solutions|
+|id|309 Hard Questions|Tags|137 Solutions|
 |---|---|---|---|
 |420|[Strong Password Checker](https://leetcode.com/problems/strong-password-checker)||   |
 |440|[K-th Smallest in Lexicographical Order](https://leetcode.com/problems/k-th-smallest-in-lexicographical-order)||   |
@@ -1393,6 +1395,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1526|[Minimum Number of Increments on Subarrays to Form a Target Array](https://leetcode.com/problems/minimum-number-of-increments-on-subarrays-to-form-a-target-array)|segment-tree|[solution](rustgym/src/leetcode/_1526_minimum_number_of_increments_on_subarrays_to_form_a_target_array.rs)|
 |1537|[Get the Maximum Score](https://leetcode.com/problems/get-the-maximum-score)|dynamic-programming|[solution](rustgym/src/leetcode/_1537_get_the_maximum_score.rs)|
 |1547|[Minimum Cost to Cut a Stick](https://leetcode.com/problems/minimum-cost-to-cut-a-stick)|dynamic-programming|[solution](rustgym/src/leetcode/_1547_minimum_cost_to_cut_a_stick.rs)|
+|1548|[The Most Similar Path in a Graph](https://leetcode.com/problems/the-most-similar-path-in-a-graph)|dynamic-programming graph|[solution](rustgym/src/leetcode/_1548_the_most_similar_path_in_a_graph.rs)|
 |164|[Maximum Gap](https://leetcode.com/problems/maximum-gap)|sort|[solution](rustgym/src/leetcode/_164_maximum_gap.rs)|
 |174|[Dungeon Game](https://leetcode.com/problems/dungeon-game)|binary-search dynamic-programming|[solution](rustgym/src/leetcode/_174_dungeon_game.rs)|
 |188|[Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv)|dynamic-programming|[solution](rustgym/src/leetcode/_188_best_time_to_buy_and_sell_stock_4.rs)|
