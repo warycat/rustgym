@@ -1025,6 +1025,8 @@ mod _628_maximum_product_of_three_numbers;
 //
 mod _630_course_schedule_3;
 //
+mod _632_smallest_range_covering_elements_from_k_lists;
+//
 mod _633_sum_of_square_numbers;
 //
 mod _634_find_the_derangement_of_an_array;
@@ -1367,6 +1369,8 @@ mod _845_longest_mountain_in_array;
 //
 mod _846_hand_of_straights;
 //
+mod _847_shortest_path_visiting_all_nodes;
+//
 mod _848_shifting_letters;
 //
 mod _849_maximize_distance_to_closest_person;
@@ -1446,6 +1450,8 @@ mod _896_monotonic_array;
 mod _897_increasing_order_search_tree;
 //
 mod _898_bitwise_ors_of_subarrays;
+//
+mod _899_orderly_queue;
 //
 mod _900_rle_iterator;
 //
@@ -1754,6 +1760,8 @@ mod _1090_largest_values_from_labels;
 mod _1091_shortest_path_in_binary_matrix;
 //
 mod _1093_statistics_from_a_large_sample;
+//
+mod _1092_shortest_common_supersequence;
 //
 mod _1094_car_pooling;
 //

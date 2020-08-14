@@ -15,10 +15,11 @@ impl Diameter for TreeLink {
 
     fn max_depth(&self, max: &mut i32) -> i32 {
         if let Some(node) = self {
-            let left = node.borrow().left.max_depth(max);
-            let right = &node.borrow().right.max_depth(max);
-            *max = i32::max(*max, left + right);
-            i32::max(left + 1, right + 1)
+            let node = node.borrow();
+            let left = node.left.max_depth(max);
+            let right = node.right.max_depth(max);
+            *max = (*max).max(left + right);
+            (left + 1).max(right + 1)
         } else {
             0
         }

@@ -36,4 +36,13 @@ fn test() {
     let s = "3[a]2[bc]".to_string();
     let res = "aaabcbc".to_string();
     assert_eq!(Solution::decode_string(s), res);
+    let s = "3[a2[c]]".to_string();
+    let res = "accaccacc".to_string();
+    assert_eq!(Solution::decode_string(s), res);
+    let s = "2[abc]3[cd]ef".to_string();
+    let res = "abcabccdcdcdef".to_string();
+    assert_eq!(Solution::decode_string(s), res);
+    let s = "abc3[cd]xyz".to_string();
+    let res = "abccdcdcdxyz".to_string();
+    assert_eq!(Solution::decode_string(s), res);
 }
