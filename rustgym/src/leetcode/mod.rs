@@ -1177,6 +1177,8 @@ mod _724_find_pivot_index;
 //
 mod _725_split_linked_list_in_parts;
 //
+mod _726_number_of_atoms;
+//
 mod _728_self_dividing_numbers;
 //
 mod _729_my_calendar_1;
@@ -1967,6 +1969,8 @@ mod _1238_circular_permutation_in_binary_representation;
 //
 mod _1239_maximum_length_of_concatenated_string_with_unique_characters;
 //
+mod _1240_tiling_a_rectangle_with_the_fewest_squares;
+//
 mod _1243_array_transformation;
 //
 mod _1244_design_a_leaderboard;
@@ -2354,6 +2358,8 @@ mod _1508_range_sum_of_sorted_subarray_sums;
 //
 mod _1509_minimum_difference_between_largest_and_smallest_value_in_three_moves;
 //
+mod _1510_stone_game_4;
+//
 mod _1512_number_of_good_pairs;
 //
 mod _1513_number_of_substrings_with_only_1s;
@@ -2403,3 +2409,12 @@ mod _1546_maximum_number_of_non_overlapping_subarrays_with_sum_equals_target;
 mod _1547_minimum_cost_to_cut_a_stick;
 //
 mod _1548_the_most_similar_path_in_a_graph;
+//
+mod _1550_three_consecutive_odds;
+//
+mod _1551_minimum_operations_to_make_array_equalrs;
+//
+mod _1552_magnetic_force_between_two_balls;
+//
+mod _1553_minimum_number_of_days_to_eat_n_oranges;
+//

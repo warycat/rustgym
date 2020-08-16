@@ -50,10 +50,10 @@ All the solutions here are crafted with love and their performance beats 99% of 
 ### Build [![Build Status](https://travis-ci.org/warycat/leetcode_rs.svg?branch=master)](https://travis-ci.org/warycat/leetcode_rs)
 
 # All Solutions
-<details><summary>Easy 11/371 2.96%</summary>
+<details><summary>Easy 11/372 2.96%</summary>
 
 
-|id|371 Easy Questions|Tags|360 Solutions|
+|id|372 Easy Questions|Tags|361 Solutions|
 |---|---|---|---|
 |190|[Reverse Bits](https://leetcode.com/problems/reverse-bits)|bit-manipulation|   |
 |690|[Employee Importance](https://leetcode.com/problems/employee-importance)|hash-table depth-first-search breadth-first-search|   |
@@ -126,7 +126,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1200|[Minimum Absolute Difference](https://leetcode.com/problems/minimum-absolute-difference)|array|[solution](rustgym/src/leetcode/_1200_minimum_absolute_difference.rs)|
 |1207|[Unique Number of Occurrences](https://leetcode.com/problems/unique-number-of-occurrences)|hash-table|[solution](rustgym/src/leetcode/_1207_unique_number_of_occurrences.rs)|
 |1213|[Intersection of Three Sorted Arrays](https://leetcode.com/problems/intersection-of-three-sorted-arrays)|hash-table two-pointers|[solution](rustgym/src/leetcode/_1213_intersection_of_three_sorted_arrays.rs)|
-|1217|[Play with Chips](https://leetcode.com/problems/play-with-chips)|array math greedy|[solution](rustgym/src/leetcode/_1217_play_with_chips.rs)|
+|1217|[Minimum Cost to Move Chips to The Same Position](https://leetcode.com/problems/minimum-cost-to-move-chips-to-the-same-position)|array math greedy|[solution](rustgym/src/leetcode/_1217_play_with_chips.rs)|
 |121|[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock)|array dynamic-programming|[solution](rustgym/src/leetcode/_121_best_time_to_buy_and_sell_stock.rs)|
 |1221|[Split a String in Balanced Strings](https://leetcode.com/problems/split-a-string-in-balanced-strings)|string greedy|[solution](rustgym/src/leetcode/_1221_split_a_string_in_balanced_strings.rs)|
 |1228|[Missing Number In Arithmetic Progression](https://leetcode.com/problems/missing-number-in-arithmetic-progression)|math|[solution](rustgym/src/leetcode/_1228_missing_number_in_arithmetic_progression.rs)|
@@ -200,6 +200,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1534|[Count Good Triplets](https://leetcode.com/problems/count-good-triplets)|array|[solution](rustgym/src/leetcode/_1534_count_good_triplets.rs)|
 |1539|[Kth Missing Positive Number](https://leetcode.com/problems/kth-missing-positive-number)|array hash-table|[solution](rustgym/src/leetcode/_1539_kth_missing_positive_number.rs)|
 |1544|[Make The String Great](https://leetcode.com/problems/make-the-string-great)|string stack|[solution](rustgym/src/leetcode/_1544_make_the_string_great.rs)|
+|1550|[Three Consecutive Odds](https://leetcode.com/problems/three-consecutive-odds)|array|[solution](rustgym/src/leetcode/_1550_three_consecutive_odds.rs)|
 |155|[Min Stack](https://leetcode.com/problems/min-stack)|stack design|[solution](rustgym/src/leetcode/_155_min_stack.rs)|
 |167|[Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted)|array two-pointers binary-search|[solution](rustgym/src/leetcode/_167_two_sum_2.rs)|
 |168|[Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title)|math|[solution](rustgym/src/leetcode/_168_excel_sheet_column_title.rs)|
@@ -427,10 +428,10 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook)|array|[solution](rustgym/src/leetcode/_999_available_captures_for_rook.rs)|
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|math|[solution](rustgym/src/leetcode/_9_palindrome_number.rs)|
 </details>
-<details><summary>Medium 31/733 4.23%</summary>
+<details><summary>Medium 31/735 4.22%</summary>
 
 
-|id|733 Medium Questions|Tags|702 Solutions|
+|id|735 Medium Questions|Tags|704 Solutions|
 |---|---|---|---|
 |427|[Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree)||   |
 |558|[Logical OR of Two Binary Grids Represented as Quad-Trees](https://leetcode.com/problems/logical-or-of-two-binary-grids-represented-as-quad-trees)||   |
@@ -478,7 +479,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1023|[Camelcase Matching](https://leetcode.com/problems/camelcase-matching)|string trie|[solution](rustgym/src/leetcode/_1023_camelcase_matching.rs)|
 |1024|[Video Stitching](https://leetcode.com/problems/video-stitching)|dynamic-programming|[solution](rustgym/src/leetcode/_1024_video_stitching.rs)|
 |1026|[Maximum Difference Between Node and Ancestor](https://leetcode.com/problems/maximum-difference-between-node-and-ancestor)|tree depth-first-search|[solution](rustgym/src/leetcode/_1026_maximum_difference_between_node_and_ancestor.rs)|
-|1027|[Longest Arithmetic Sequence](https://leetcode.com/problems/longest-arithmetic-sequence)|dynamic-programming|[solution](rustgym/src/leetcode/_1027_longest_arithmetic_sequence.rs)|
+|1027|[Longest Arithmetic Subsequence](https://leetcode.com/problems/longest-arithmetic-subsequence)|dynamic-programming|[solution](rustgym/src/leetcode/_1027_longest_arithmetic_sequence.rs)|
 |102|[Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal)|tree breadth-first-search|[solution](rustgym/src/leetcode/_102_binary_tree_level_order_traversal.rs)|
 |1031|[Maximum Sum of Two Non-Overlapping Subarrays](https://leetcode.com/problems/maximum-sum-of-two-non-overlapping-subarrays)|array|[solution](rustgym/src/leetcode/_1031_maximum_sum_of_two_non_overlapping_subarrays.rs)|
 |1034|[Coloring A Border](https://leetcode.com/problems/coloring-a-border)|depth-first-search|[solution](rustgym/src/leetcode/_1034_coloring_a_border.rs)|
@@ -722,6 +723,8 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1541|[Minimum Insertions to Balance a Parentheses String](https://leetcode.com/problems/minimum-insertions-to-balance-a-parentheses-string)|string stack|[solution](rustgym/src/leetcode/_1541_minimum_insertions_to_balance_a_parentheses_string.rs)|
 |1545|[Find Kth Bit in Nth Binary String](https://leetcode.com/problems/find-kth-bit-in-nth-binary-string)|string|[solution](rustgym/src/leetcode/_1545_find_kth_bit_in_nth_binary_stringrs.rs)|
 |1546|[Maximum Number of Non-Overlapping Subarrays With Sum Equals Target](https://leetcode.com/problems/maximum-number-of-non-overlapping-subarrays-with-sum-equals-target)|dynamic-programming|[solution](rustgym/src/leetcode/_1546_maximum_number_of_non_overlapping_subarrays_with_sum_equals_target.rs)|
+|1551|[Minimum Operations to Make Array Equal](https://leetcode.com/problems/minimum-operations-to-make-array-equal)|math|[solution](rustgym/src/leetcode/_1551_minimum_operations_to_make_array_equalrs.rs)|
+|1552|[Magnetic Force Between Two Balls](https://leetcode.com/problems/magnetic-force-between-two-balls)|array binary-search|[solution](rustgym/src/leetcode/_1552_magnetic_force_between_two_balls.rs)|
 |156|[Binary Tree Upside Down](https://leetcode.com/problems/binary-tree-upside-down)|tree|[solution](rustgym/src/leetcode/_156_binary_tree_upside_down.rs)|
 |159|[Longest Substring with At Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters)|hash-table two-pointers string sliding-window|[solution](rustgym/src/leetcode/_159_longest_substring_with_at_most_two_distinc_characters.rs)|
 |15|[3Sum](https://leetcode.com/problems/3sum)|array two-pointers|[solution](rustgym/src/leetcode/_15_three_sum.rs)|
@@ -1166,10 +1169,10 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |994|[Rotting Oranges](https://leetcode.com/problems/rotting-oranges)|breadth-first-search|[solution](rustgym/src/leetcode/_994_rotting_oranges.rs)|
 |998|[Maximum Binary Tree II](https://leetcode.com/problems/maximum-binary-tree-ii)|tree|[solution](rustgym/src/leetcode/_998_maximum_binary_tree_2.rs)|
 </details>
-<details><summary>Hard 168/309 54.37%</summary>
+<details><summary>Hard 165/310 53.23%</summary>
 
 
-|id|309 Hard Questions|Tags|141 Solutions|
+|id|310 Hard Questions|Tags|145 Solutions|
 |---|---|---|---|
 |420|[Strong Password Checker](https://leetcode.com/problems/strong-password-checker)||   |
 |440|[K-th Smallest in Lexicographical Order](https://leetcode.com/problems/k-th-smallest-in-lexicographical-order)||   |
@@ -1249,9 +1252,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1458|[Max Dot Product of Two Subsequences](https://leetcode.com/problems/max-dot-product-of-two-subsequences)|dynamic-programming|   |
 |1473|[Paint House III](https://leetcode.com/problems/paint-house-iii)|dynamic-programming|   |
 |1483|[Kth Ancestor of a Tree Node](https://leetcode.com/problems/kth-ancestor-of-a-tree-node)|dynamic-programming|   |
-|1510|[Stone Game IV](https://leetcode.com/problems/stone-game-iv)|dynamic-programming|   |
 |691|[Stickers to Spell Word](https://leetcode.com/problems/stickers-to-spell-word)|dynamic-programming backtracking|   |
-|1240|[Tiling a Rectangle with the Fewest Squares](https://leetcode.com/problems/tiling-a-rectangle-with-the-fewest-squares)|dynamic-programming backtracking|   |
 |1373|[Maximum Sum BST in Binary Tree](https://leetcode.com/problems/maximum-sum-bst-in-binary-tree)|dynamic-programming binary-search-tree|   |
 |1125|[Smallest Sufficient Team](https://leetcode.com/problems/smallest-sufficient-team)|dynamic-programming bit-manipulation|   |
 |1434|[Number of Ways to Wear Different Hats to Each Other](https://leetcode.com/problems/number-of-ways-to-wear-different-hats-to-each-other)|dynamic-programming bit-manipulation|   |
@@ -1277,7 +1278,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |710|[Random Pick with Blacklist](https://leetcode.com/problems/random-pick-with-blacklist)|hash-table binary-search sort random|   |
 |1178|[Number of Valid Words for Each Puzzle](https://leetcode.com/problems/number-of-valid-words-for-each-puzzle)|hash-table bit-manipulation|   |
 |711|[Number of Distinct Islands II](https://leetcode.com/problems/number-of-distinct-islands-ii)|hash-table depth-first-search|   |
-|726|[Number of Atoms](https://leetcode.com/problems/number-of-atoms)|hash-table stack recursion|   |
 |770|[Basic Calculator IV](https://leetcode.com/problems/basic-calculator-iv)|hash-table string stack|   |
 |992|[Subarrays with K Different Integers](https://leetcode.com/problems/subarrays-with-k-different-integers)|hash-table two-pointers sliding-window|   |
 |857|[Minimum Cost to Hire K Workers](https://leetcode.com/problems/minimum-cost-to-hire-k-workers)|heap|   |
@@ -1360,6 +1360,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1220|[Count Vowels Permutation](https://leetcode.com/problems/count-vowels-permutation)|dynamic-programming|[solution](rustgym/src/leetcode/_1220_count_vowels_permutation.rs)|
 |1231|[Divide Chocolate](https://leetcode.com/problems/divide-chocolate)|binary-search greedy|[solution](rustgym/src/leetcode/_1231_divide_chocolate.rs)|
 |123|[Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii)|array dynamic-programming|[solution](rustgym/src/leetcode/_123_best_time_to_buy_and_sell_stock_3.rs)|
+|1240|[Tiling a Rectangle with the Fewest Squares](https://leetcode.com/problems/tiling-a-rectangle-with-the-fewest-squares)|dynamic-programming backtracking|[solution](rustgym/src/leetcode/_1240_tiling_a_rectangle_with_the_fewest_squares.rs)|
 |124|[Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum)|tree depth-first-search|[solution](rustgym/src/leetcode/_124_binary_tree_maximum_path_sum.rs)|
 |1250|[Check If It Is a Good Array](https://leetcode.com/problems/check-if-it-is-a-good-array)|math|[solution](rustgym/src/leetcode/_1250_check_if_it_is_a_good_array.rs)|
 |1255|[Maximum Score Words Formed by Letters](https://leetcode.com/problems/maximum-score-words-formed-by-letters)|bit-manipulation|[solution](rustgym/src/leetcode/_1255_maximum_score_words_formed_by_letters.rs)|
@@ -1388,11 +1389,13 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1463|[Cherry Pickup II](https://leetcode.com/problems/cherry-pickup-ii)|dynamic-programming|[solution](rustgym/src/leetcode/_1463_cherry_pickup_2.rs)|
 |1478|[Allocate Mailboxes](https://leetcode.com/problems/allocate-mailboxes)|math dynamic-programming|[solution](rustgym/src/leetcode/_1478_allocate_mailboxes.rs)|
 |149|[Max Points on a Line](https://leetcode.com/problems/max-points-on-a-line)|hash-table math|[solution](rustgym/src/leetcode/_149_max_points_on_a_line.rs)|
+|1510|[Stone Game IV](https://leetcode.com/problems/stone-game-iv)|dynamic-programming|[solution](rustgym/src/leetcode/_1510_stone_game_4.rs)|
 |1520|[Maximum Number of Non-Overlapping Substrings](https://leetcode.com/problems/maximum-number-of-non-overlapping-substrings)|greedy|[solution](rustgym/src/leetcode/_1520_maximum_number_of_non_overlapping_substrings.rs)|
 |1526|[Minimum Number of Increments on Subarrays to Form a Target Array](https://leetcode.com/problems/minimum-number-of-increments-on-subarrays-to-form-a-target-array)|segment-tree|[solution](rustgym/src/leetcode/_1526_minimum_number_of_increments_on_subarrays_to_form_a_target_array.rs)|
 |1537|[Get the Maximum Score](https://leetcode.com/problems/get-the-maximum-score)|dynamic-programming|[solution](rustgym/src/leetcode/_1537_get_the_maximum_score.rs)|
 |1547|[Minimum Cost to Cut a Stick](https://leetcode.com/problems/minimum-cost-to-cut-a-stick)|dynamic-programming|[solution](rustgym/src/leetcode/_1547_minimum_cost_to_cut_a_stick.rs)|
 |1548|[The Most Similar Path in a Graph](https://leetcode.com/problems/the-most-similar-path-in-a-graph)|dynamic-programming graph|[solution](rustgym/src/leetcode/_1548_the_most_similar_path_in_a_graph.rs)|
+|1553|[Minimum Number of Days to Eat N Oranges](https://leetcode.com/problems/minimum-number-of-days-to-eat-n-oranges)|dynamic-programming|[solution](rustgym/src/leetcode/_1553_minimum_number_of_days_to_eat_n_oranges.rs)|
 |164|[Maximum Gap](https://leetcode.com/problems/maximum-gap)|sort|[solution](rustgym/src/leetcode/_164_maximum_gap.rs)|
 |174|[Dungeon Game](https://leetcode.com/problems/dungeon-game)|binary-search dynamic-programming|[solution](rustgym/src/leetcode/_174_dungeon_game.rs)|
 |188|[Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv)|dynamic-programming|[solution](rustgym/src/leetcode/_188_best_time_to_buy_and_sell_stock_4.rs)|
@@ -1457,6 +1460,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |668|[Kth Smallest Number in Multiplication Table](https://leetcode.com/problems/kth-smallest-number-in-multiplication-table)|binary-search|[solution](rustgym/src/leetcode/_668_kth_smallest_number_in_multiplication.rs)|
 |675|[Cut Off Trees for Golf Event](https://leetcode.com/problems/cut-off-trees-for-golf-event)|breadth-first-search|[solution](rustgym/src/leetcode/_675_cut_off_trees_for_golf_event.rs)|
 |68|[Text Justification](https://leetcode.com/problems/text-justification)|string|[solution](rustgym/src/leetcode/_68_text_justification.rs)|
+|726|[Number of Atoms](https://leetcode.com/problems/number-of-atoms)|hash-table stack recursion|[solution](rustgym/src/leetcode/_726_number_of_atoms.rs)|
 |72|[Edit Distance](https://leetcode.com/problems/edit-distance)|string dynamic-programming|[solution](rustgym/src/leetcode/_72_edit_distance.rs)|
 |732|[My Calendar III](https://leetcode.com/problems/my-calendar-iii)|segment-tree ordered-map|[solution](rustgym/src/leetcode/_732_my_calendar_3.rs)|
 |761|[Special Binary String](https://leetcode.com/problems/special-binary-string)|string recursion|[solution](rustgym/src/leetcode/_761_special_binary_string.rs)|
