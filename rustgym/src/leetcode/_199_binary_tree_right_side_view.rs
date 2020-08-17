@@ -10,7 +10,7 @@ impl Preorder for TreeLink {
         if let Some(node) = self {
             let node = node.borrow();
             let val = node.val;
-            if view.len() <= level {
+            if level == view.len() {
                 view.push(val);
             } else {
                 view[level] = val;

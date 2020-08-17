@@ -6,32 +6,31 @@ impl Solution {
     fn find_target_sum_ways(nums: Vec<i32>, s: i32) -> i32 {
         let n = nums.len();
         let mut memo: HashMap<(usize, i32), i32> = HashMap::new();
-        Self::dfs(0, s, &mut memo, &nums, n)
+        Self::dp(n, s, &mut memo, &nums, n)
     }
 
-    fn dfs(
-        start: usize,
+    fn dp(
+        end: usize,
         sum: i32,
         memo: &mut HashMap<(usize, i32), i32>,
         nums: &[i32],
         n: usize,
     ) -> i32 {
-        if start == n {
+        if end == 0 {
             if sum == 0 {
                 1
             } else {
                 0
             }
         } else {
-            if let Some(&res) = memo.get(&(start, sum)) {
-                res
-            } else {
-                let a = Self::dfs(start + 1, sum + nums[start], memo, nums, n);
-                let b = Self::dfs(start + 1, sum - nums[start], memo, nums, n);
-                let res = a + b;
-                memo.insert((start, sum), res);
-                res
+            if let Some(&res) = memo.get(&(end, sum)) {
+                return res;
             }
+            let a = Self::dp(end - 1, sum + nums[end - 1], memo, nums, n);
+            let b = Self::dp(end - 1, sum - nums[end - 1], memo, nums, n);
+            let res = a + b;
+            memo.insert((end, sum), res);
+            res
         }
     }
 }

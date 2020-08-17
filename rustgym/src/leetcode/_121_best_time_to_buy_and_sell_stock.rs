@@ -2,21 +2,13 @@ struct Solution;
 
 impl Solution {
     fn max_profit(prices: Vec<i32>) -> i32 {
-        let n = prices.len();
-        if n < 2 {
-            return 0;
+        let mut cost = std::i32::MAX;
+        let mut profit = 0;
+        for price in prices {
+            profit = profit.max(price - cost);
+            cost = cost.min(price);
         }
-        let mut mins = vec![0; n];
-        let mut prev_min = std::i32::MAX;
-        for i in 0..n {
-            prev_min = prev_min.min(prices[i]);
-            mins[i] = prev_min;
-        }
-        let mut res = 0;
-        for i in 1..n {
-            res = res.max(prices[i] - mins[i - 1]);
-        }
-        res
+        profit
     }
 }
 

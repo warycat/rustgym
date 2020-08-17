@@ -8,7 +8,7 @@ struct Solution {
 
 impl Solution {
     fn new(w: Vec<i32>) -> Self {
-        let rng = rand::thread_rng();
+        let rng = thread_rng();
         let dist = WeightedIndex::new(w).unwrap();
         Solution { dist, rng }
     }

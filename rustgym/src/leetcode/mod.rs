@@ -669,6 +669,8 @@ mod _379_design_phone_directory;
 //
 mod _380_insert_delete_get_random_o1;
 //
+mod _381_insert_delete_get_random_o1_duplicate_allowed;
+//
 mod _382_linked_list_random_node;
 //
 mod _383_ransom_note;

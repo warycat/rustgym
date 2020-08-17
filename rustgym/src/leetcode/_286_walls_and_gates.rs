@@ -2,12 +2,6 @@ struct Solution;
 
 use std::collections::VecDeque;
 
-struct Point {
-    i: usize,
-    j: usize,
-    v: i32,
-}
-
 impl Solution {
     fn walls_and_gates(rooms: &mut Vec<Vec<i32>>) {
         let n = rooms.len();
@@ -18,40 +12,46 @@ impl Solution {
         if m == 0 {
             return;
         }
-        let mut queue: VecDeque<Point> = VecDeque::new();
+        let mut queue: VecDeque<(usize, usize, i32)> = VecDeque::new();
         for i in 0..n {
             for j in 0..m {
-                let v = rooms[i][j];
-                if v == 0 {
-                    queue.push_back(Point { i, j, v })
+                if rooms[i][j] == 0 {
+                    queue.push_back((i, j, 0));
                 }
             }
         }
-        let di = vec![0, 0, -1, 1];
-        let dj = vec![-1, 1, 0, 0];
-        while let Some(p) = queue.pop_front() {
-            let i = p.i as i32;
-            let j = p.j as i32;
-            let v = p.v + 1;
-            for k in 0..4 {
-                let i = i + di[k];
-                let j = j + dj[k];
-                if i < 0 || i >= n as i32 {
-                    continue;
-                }
-                if j < 0 || j >= m as i32 {
-                    continue;
-                }
-                let i = i as usize;
-                let j = j as usize;
-                if rooms[i][j] == -1 {
-                    continue;
-                }
-                if rooms[i][j] > v {
-                    rooms[i][j] = v;
-                    queue.push_back(Point { i, j, v });
-                }
+        while let Some((i, j, dist)) = queue.pop_front() {
+            let dist = dist + 1;
+            if i > 0 && rooms[i - 1][j] > 0 && dist < rooms[i - 1][j] {
+                rooms[i - 1][j] = dist;
+                queue.push_back((i - 1, j, dist));
+            }
+            if j > 0 && rooms[i][j - 1] > 0 && dist < rooms[i][j - 1] {
+                rooms[i][j - 1] = dist;
+                queue.push_back((i, j - 1, dist));
+            }
+            if i + 1 < n && rooms[i + 1][j] > 0 && dist < rooms[i + 1][j] {
+                rooms[i + 1][j] = dist;
+                queue.push_back((i + 1, j, dist));
+            }
+            if j + 1 < m && rooms[i][j + 1] > 0 && dist < rooms[i][j + 1] {
+                rooms[i][j + 1] = dist;
+                queue.push_back((i, j + 1, dist));
             }
         }
     }
+}
+
+#[test]
+fn test() {
+    let inf = std::i32::MAX;
+    let mut rooms = vec_vec_i32![
+        [inf, -1, 0, inf],
+        [inf, inf, inf, -1],
+        [inf, -1, inf, -1],
+        [0, -1, inf, inf]
+    ];
+    let res = vec_vec_i32![[3, -1, 0, 1], [2, 2, 1, -1], [1, -1, 2, -1], [0, -1, 3, 4]];
+    Solution::walls_and_gates(&mut rooms);
+    assert_eq!(rooms, res);
 }

@@ -5,43 +5,51 @@ impl Solution {
         let n = board.len();
         let m = board[0].len();
         let mut found = true;
+        let mut marked = vec![vec![false; m]; n];
         while found {
             found = false;
             for i in 0..n {
                 for j in 0..m {
-                    let val = board[i][j].abs();
+                    let val = board[i][j];
                     if val == 0 {
                         continue;
                     }
-                    if j + 2 < m && board[i][j + 1].abs() == val && board[i][j + 2].abs() == val {
+                    if j + 2 < m && board[i][j + 1] == val && board[i][j + 2] == val {
                         found = true;
                         let mut k = j;
-                        while k < m && board[i][k].abs() == val {
-                            board[i][k] = -val;
+                        while k < m && board[i][k] == val {
+                            marked[i][k] = true;
                             k += 1;
                         }
                     }
-                    if i + 2 < n && board[i + 1][j].abs() == val && board[i + 2][j].abs() == val {
+                    if i + 2 < n && board[i + 1][j] == val && board[i + 2][j] == val {
                         found = true;
                         let mut k = i;
-                        while k < n && board[k][j].abs() == val {
-                            board[k][j] = -val;
+                        while k < n && board[k][j] == val {
+                            marked[k][j] = true;
                             k += 1;
                         }
                     }
                 }
             }
 
+            for i in 0..n {
+                for j in 0..m {
+                    if marked[i][j] {
+                        marked[i][j] = false;
+                        board[i][j] = 0;
+                    }
+                }
+            }
             for j in 0..m {
                 let mut k = n;
                 for i in (0..n).rev() {
                     if board[i][j] > 0 {
-                        board[k - 1][j] = board[i][j];
+                        let val = board[i][j];
+                        board[i][j] = 0;
+                        board[k - 1][j] = val;
                         k -= 1;
                     }
-                }
-                for i in 0..k {
-                    board[i][j] = 0;
                 }
             }
         }

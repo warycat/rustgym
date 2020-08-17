@@ -2,28 +2,30 @@ struct Solution;
 
 impl Solution {
     fn combination_sum(mut candidates: Vec<i32>, target: i32) -> Vec<Vec<i32>> {
+        let n = candidates.len();
         candidates.sort_unstable();
         let mut combination: Vec<i32> = vec![];
         let mut res: Vec<Vec<i32>> = vec![];
-        Self::backtrack(&mut res, &candidates, &mut combination, target, 0);
+        Self::backtrack(0, target, &mut combination, &mut res, &candidates, n);
         res
     }
     fn backtrack(
-        res: &mut Vec<Vec<i32>>,
-        candidates: &[i32],
-        combination: &mut Vec<i32>,
+        start: usize,
         target: i32,
-        begin: usize,
+        combination: &mut Vec<i32>,
+        all: &mut Vec<Vec<i32>>,
+        candidates: &[i32],
+        n: usize,
     ) {
         if target == 0 {
-            res.push(combination.to_vec());
+            all.push(combination.to_vec());
         } else {
-            for i in begin..candidates.len() {
+            for i in start..n {
                 if candidates[i] > target {
                     break;
                 } else {
                     combination.push(candidates[i]);
-                    Self::backtrack(res, candidates, combination, target - candidates[i], i);
+                    Self::backtrack(i, target - candidates[i], combination, all, candidates, n);
                     combination.pop();
                 }
             }
