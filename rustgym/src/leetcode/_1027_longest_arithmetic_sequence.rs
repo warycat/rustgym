@@ -4,18 +4,19 @@ use std::collections::HashMap;
 
 impl Solution {
     fn longest_arith_seq_length(a: Vec<i32>) -> i32 {
-        let mut max = 1;
+        let mut res = 0;
         let n = a.len();
         let mut dp: Vec<HashMap<i32, i32>> = vec![HashMap::new(); n];
         for i in 0..n {
             for j in 0..i {
                 let diff = a[i] - a[j];
-                let len = dp[j].get(&diff).unwrap_or(&1) + 1;
-                dp[i].insert(diff, len);
-                max = i32::max(len, max);
+                let len_j = *dp[j].entry(diff).or_default();
+                let len_i = dp[i].entry(diff).or_default();
+                *len_i = len_j + 1;
+                res = res.max(*len_i);
             }
         }
-        max
+        res + 1
     }
 }
 

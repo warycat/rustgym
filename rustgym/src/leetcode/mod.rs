@@ -1125,6 +1125,8 @@ mod _687_longest_univalue_path;
 //
 mod _688_knight_probability_in_chessboard;
 //
+mod _689_maximum_sum_of_3_non_overlapping_subarrays;
+//
 mod _692_top_k_frequent_words;
 //
 mod _693_binary_number_with_alternating_bits;
@@ -1606,6 +1608,8 @@ mod _989_add_to_array_form_of_integer;
 mod _990_satisfiability_of_equality_equations;
 //
 mod _991_broken_calculator;
+//
+mod _992_subarrays_with_k_different_integers;
 //
 mod _993_cousins_in_binary_tree;
 //
@@ -2312,6 +2316,8 @@ mod _1471_the_k_strongest_values_in_an_array;
 //
 mod _1472_design_browser_history;
 //
+mod _1473_paint_house_3;
+//
 mod _1474_delete_n_nodes_after_m_nodes_of_a_linked_list;
 //
 mod _1475_final_prices_with_a_speial_discount_in_shop;
@@ -2419,4 +2425,6 @@ mod _1551_minimum_operations_to_make_array_equalrs;
 mod _1552_magnetic_force_between_two_balls;
 //
 mod _1553_minimum_number_of_days_to_eat_n_oranges;
+//
+mod _1554_strings_differ_by_one_character;
 //
