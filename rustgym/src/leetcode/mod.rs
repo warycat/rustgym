@@ -2374,11 +2374,15 @@ mod _1513_number_of_substrings_with_only_1s;
 //
 mod _1514_path_with_maximum_probability;
 //
+mod _1515_best_position_for_a_service_center;
+//
 mod _1518_water_bottles;
 //
 mod _1519_number_of_nodes_in_the_sub_tree_with_the_same_label;
 //
 mod _1520_maximum_number_of_non_overlapping_substrings;
+//
+mod _1521_find_a_value_of_mysterious_function_closest_to_target;
 //
 mod _1523_cound_odd_numbers_in_interval_range;
 //
@@ -2407,6 +2411,8 @@ mod _1539_kth_missing_positive_number;
 mod _1540_can_convert_string_in_k_moves;
 //
 mod _1541_minimum_insertions_to_balance_a_parentheses_string;
+//
+mod _1542_find_longest_awesome_substring;
 //
 mod _1544_make_the_string_great;
 //
