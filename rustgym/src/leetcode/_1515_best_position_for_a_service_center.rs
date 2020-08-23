@@ -8,18 +8,18 @@ impl Solution {
         let mut y = 50.0;
         let mut r = 50.0;
         let mut prev = Self::dist(&positions, x, y);
-        for i in 0..10000 {
-            let dx = rng.gen_range(-1.0, 1.0) * r;
-            let dy = rng.gen_range(-1.0, 1.0) * r;
-            let next = Self::dist(&positions, x + dx, y + dy);
-            if next < prev {
-                prev = next;
-                x += dx;
-                y += dy;
+        for _ in 0..25 {
+            for _ in 0..25 {
+                let xx = x + rng.gen_range(-1.0, 1.0) * r;
+                let yy = y + rng.gen_range(-1.0, 1.0) * r;
+                let next = Self::dist(&positions, xx, yy);
+                if next < prev {
+                    prev = next;
+                    x = xx;
+                    y = yy;
+                }
             }
-            if i % 100 == 0 {
-                r *= 0.5;
-            }
+            r *= 0.5;
         }
         prev
     }
