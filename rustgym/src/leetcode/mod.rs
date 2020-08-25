@@ -613,6 +613,8 @@ mod _350_intersection_of_two_arrays_2;
 //
 mod _351_android_unlock_patterns;
 //
+mod _352_data_stream_as_disjoint_intervals;
+//
 mod _353_design_snake_game;
 //
 mod _354_russian_doll_envelopes;
@@ -688,6 +690,8 @@ mod _388_longest_absolute_file_path;
 mod _389_find_the_difference;
 //
 mod _390_elimination_game;
+//
+mod _391_perfect_rectangle;
 //
 mod _392_is_subsequence;
 //
@@ -1386,6 +1390,8 @@ mod _851_loud_and_rich;
 mod _852_peak_index_in_a_mountain_array;
 //
 mod _853_car_fleet;
+//
+mod _854_k_similar_strings;
 //
 mod _855_exam_room;
 //

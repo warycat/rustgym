@@ -20,7 +20,6 @@ impl Solution {
                     n,
                     m,
                 ) {
-                    dbg!(i, j, c);
                     return true;
                 }
             }
