@@ -863,6 +863,8 @@ mod _486_predict_the_winner;
 //
 mod _487_max_consecutive_ones_2;
 //
+mod _488_zuma_game;
+//
 mod _490_the_maze;
 //
 mod _491_increasing_subsequences;
@@ -881,9 +883,13 @@ mod _497_random_point_in_nonoverlapping_rectangles;
 //
 mod _498_diagonal_traverse;
 //
+mod _499_the_maze_3;
+//
 mod _500_keyboard_row;
 //
 mod _501_find_mode_in_binary_search_tree;
+//
+mod _502_ipo;
 //
 mod _503_next_greater_element_2;
 //
@@ -900,6 +906,8 @@ mod _508_most_frequent_subtree_sum;
 mod _509_fibonacci_number;
 //
 mod _513_find_bottom_left_tree_value;
+//
+mod _514_freedom_trail;
 //
 mod _515_find_largest_value_in_each_row;
 //
@@ -2469,3 +2477,5 @@ mod _1561_maximum_number_of_coins_you_can_get;
 mod _1562_find_latest_group_of_size_m;
 //
 mod _1563_stone_game_5;
+//
+mod _1564_pub_boxes_into_the_warehouse_1;
