@@ -2479,3 +2479,11 @@ mod _1562_find_latest_group_of_size_m;
 mod _1563_stone_game_5;
 //
 mod _1564_pub_boxes_into_the_warehouse_1;
+//
+mod _1566_detect_pattern_of_length_m_repeated_k_or_more_times;
+//
+mod _1567_maximum_length_of_subarray_with_positive_product;
+//
+mod _1568_minimum_number_of_days_to_disconnect_island;
+//
+mod _1569_number_of_ways_to_reorder_array_to_get_same_bst;
