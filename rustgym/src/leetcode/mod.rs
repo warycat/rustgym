@@ -162,6 +162,8 @@ mod _82_remove_duplicates_from_sorted_list_2;
 //
 mod _83_remove_duplicates_from_sorted_list;
 //
+mod _85_maximal_rectangle;
+//
 mod _86_partition_list;
 //
 mod _87_scramble_string;
@@ -369,6 +371,8 @@ mod _215_kth_largest_element_in_an_array;
 mod _216_combination_sum_3;
 //
 mod _217_contains_duplicate;
+//
+mod _218_the_skyline_problem;
 //
 mod _219_contains_duplicate_2;
 //
@@ -749,6 +753,8 @@ mod _418_sentence_screen_fitting;
 //
 mod _419_battleships_in_a_board;
 //
+mod _420_strong_password_checker;
+//
 mod _421_maximum_xor_of_two_numbers_in_an_array;
 //
 mod _422_valid_word_square;
@@ -913,6 +919,8 @@ mod _515_find_largest_value_in_each_row;
 //
 mod _516_longest_palindromic_subsequence;
 //
+mod _517_super_washing_machines;
+//
 mod _518_coin_change_2;
 //
 mod _519_random_flip_matrix;
@@ -967,6 +975,8 @@ mod _544_output_contest_matches;
 //
 mod _545_boundary_of_binary_tree;
 //
+mod _546_remove_boxes;
+//
 mod _547_friend_circles;
 //
 mod _548_split_array_with_equal_sum;
@@ -974,6 +984,8 @@ mod _548_split_array_with_equal_sum;
 mod _549_binary_tree_longest_consecutive_sequence_2;
 //
 mod _551_student_attendance_record_1;
+//
+mod _552_student_attendance_record_2;
 //
 mod _553_optimal_division;
 //
@@ -992,6 +1004,8 @@ mod _561_array_partition_1;
 mod _562_longest_line_of_consecutive_one_in_matrix;
 //
 mod _563_binary_tree_tilt;
+//
+mod _564_find_the_closest_palindrome;
 //
 mod _565_array_nesting;
 //
@@ -1277,6 +1291,8 @@ mod _769_max_chunks_to_make_sorted;
 //
 mod _771_jewels_and_stones;
 //
+mod _772_basic_calculator_3;
+//
 mod _773_sliding_puzzle;
 //
 mod _774_minimize_max_distance_to_gas_station;
@@ -1290,6 +1306,8 @@ mod _777_swap_adjacent_in_lr_string;
 mod _778_swim_in_rising_water;
 //
 mod _779_kth_symbol_in_grammar;
+//
+mod _780_reaching_points;
 //
 mod _781_rabbits_in_forest;
 //
@@ -1346,6 +1364,8 @@ mod _812_largest_triangle_area;
 mod _813_largest_sum_of_averages;
 //
 mod _814_binary_tree_pruning;
+//
+mod _815_bus_routes;
 //
 mod _816_ambiguous_coordinates;
 //
@@ -1727,6 +1747,8 @@ mod _1042_flower_planting_with_no_adjacent;
 //
 mod _1043_partition_array_for_maximum_sum;
 //
+mod _1044_longest_duplicate_substring;
+//
 mod _1046_last_stone_weight;
 //
 mod _1047_remove_all_adjacent_duplicates_in_string;
@@ -1998,6 +2020,8 @@ mod _1232_check_if_it_is_a_straight_line;
 mod _1233_remove_sub_folders_from_the_filesystem;
 //
 mod _1234_replace_the_substring_for_balanced_string;
+//
+mod _1235_maximum_profit_in_job_scheduling;
 //
 mod _1238_circular_permutation_in_binary_representation;
 //
