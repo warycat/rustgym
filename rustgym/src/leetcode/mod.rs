@@ -162,6 +162,8 @@ mod _82_remove_duplicates_from_sorted_list_2;
 //
 mod _83_remove_duplicates_from_sorted_list;
 //
+mod _84_largest_rectangle_in_histogram;
+//
 mod _85_maximal_rectangle;
 //
 mod _86_partition_list;
@@ -2155,6 +2157,8 @@ mod _1324_print_words_vertically;
 //
 mod _1325_delete_leaves_with_a_given_value;
 //
+mod _1326_minimum_number_of_taps_to_open_to_water_a_garden;
+//
 mod _1328_break_a_palindrome;
 //
 mod _1329_sort_the_matrix_diagonally;
@@ -2511,3 +2515,21 @@ mod _1567_maximum_length_of_subarray_with_positive_product;
 mod _1568_minimum_number_of_days_to_disconnect_island;
 //
 mod _1569_number_of_ways_to_reorder_array_to_get_same_bst;
+//
+mod _1570_dot_product_of_two_sparse_vectors;
+//
+mod _1572_matrix_diagonal_sum;
+//
+mod _1573_number_of_ways_to_split_a_string;
+//
+mod _1574_shortest_subarray_to_be_removed_to_make_array_sorted;
+//
+mod _1575_count_all_possible_routes;
+//
+mod _1576_replace_all_to_avoid_consecutive_repeating_characters;
+//
+mod _1577_number_of_ways_where_square_of_number_is_equal_to_product_of_two_numbers;
+//
+mod _1578_minimum_deleteion_cost_to_avoid_repeating_letters;
+//
+mod _1579_remove_max_number_of_edges_to_keep_graph_fully_traversable;

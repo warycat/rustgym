@@ -429,10 +429,10 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook)|array|[solution](rustgym/src/leetcode/_999_available_captures_for_rook.rs)|
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|math|[solution](rustgym/src/leetcode/_9_palindrome_number.rs)|
 </details>
-<details><summary>Medium 32/746 4.29%</summary>
+<details><summary>Medium 31/746 4.16%</summary>
 
 
-|id|746 Medium Questions|Tags|714 Solutions|
+|id|746 Medium Questions|Tags|715 Solutions|
 |---|---|---|---|
 |427|[Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree)||   |
 |558|[Logical OR of Two Binary Grids Represented as Quad-Trees](https://leetcode.com/problems/logical-or-of-two-binary-grids-represented-as-quad-trees)||   |
@@ -441,7 +441,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1522|[Diameter of N-Ary Tree](https://leetcode.com/problems/diameter-of-n-ary-tree)||   |
 |1538|[Guess the Majority in a Hidden Array](https://leetcode.com/problems/guess-the-majority-in-a-hidden-array)||   |
 |277|[Find the Celebrity](https://leetcode.com/problems/find-the-celebrity)|array|   |
-|1570|[Dot Product of Two Sparse Vectors](https://leetcode.com/problems/dot-product-of-two-sparse-vectors)|array hash-table two-pointers|   |
 |702|[Search in a Sorted Array of Unknown Size](https://leetcode.com/problems/search-in-a-sorted-array-of-unknown-size)|binary-search|   |
 |1533|[Find the Index of the Large Integer](https://leetcode.com/problems/find-the-index-of-the-large-integer)|binary-search|   |
 |240|[Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii)|binary-search divide-and-conquer|   |
@@ -737,6 +736,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1564|[Put Boxes Into the Warehouse I](https://leetcode.com/problems/put-boxes-into-the-warehouse-i)|greedy|[solution](rustgym/src/leetcode/_1564_pub_boxes_into_the_warehouse_1.rs)|
 |1567|[Maximum Length of Subarray With Positive Product](https://leetcode.com/problems/maximum-length-of-subarray-with-positive-product)|greedy|[solution](rustgym/src/leetcode/_1567_maximum_length_of_subarray_with_positive_product.rs)|
 |156|[Binary Tree Upside Down](https://leetcode.com/problems/binary-tree-upside-down)|tree|[solution](rustgym/src/leetcode/_156_binary_tree_upside_down.rs)|
+|1570|[Dot Product of Two Sparse Vectors](https://leetcode.com/problems/dot-product-of-two-sparse-vectors)|array hash-table two-pointers|[solution](rustgym/src/leetcode/_1570_dot_product_of_two_sparse_vectors.rs)|
 |159|[Longest Substring with At Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters)|hash-table two-pointers string sliding-window|[solution](rustgym/src/leetcode/_159_longest_substring_with_at_most_two_distinc_characters.rs)|
 |15|[3Sum](https://leetcode.com/problems/3sum)|array two-pointers|[solution](rustgym/src/leetcode/_15_three_sum.rs)|
 |161|[One Edit Distance](https://leetcode.com/problems/one-edit-distance)|string|[solution](rustgym/src/leetcode/_161_one_edit_distance.rs)|
@@ -1181,10 +1181,10 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |994|[Rotting Oranges](https://leetcode.com/problems/rotting-oranges)|breadth-first-search|[solution](rustgym/src/leetcode/_994_rotting_oranges.rs)|
 |998|[Maximum Binary Tree II](https://leetcode.com/problems/maximum-binary-tree-ii)|tree|[solution](rustgym/src/leetcode/_998_maximum_binary_tree_2.rs)|
 </details>
-<details><summary>Hard 132/313 42.17%</summary>
+<details><summary>Hard 130/313 41.53%</summary>
 
 
-|id|313 Hard Questions|Tags|181 Solutions|
+|id|313 Hard Questions|Tags|183 Solutions|
 |---|---|---|---|
 |440|[K-th Smallest in Lexicographical Order](https://leetcode.com/problems/k-th-smallest-in-lexicographical-order)||   |
 |798|[Smallest Rotation with Highest Score](https://leetcode.com/problems/smallest-rotation-with-highest-score)||   |
@@ -1196,7 +1196,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |891|[Sum of Subsequence Widths](https://leetcode.com/problems/sum-of-subsequence-widths)|array math|   |
 |1330|[Reverse Subarray To Maximize Array Value](https://leetcode.com/problems/reverse-subarray-to-maximize-array-value)|array math|   |
 |1499|[Max Value of Equation](https://leetcode.com/problems/max-value-of-equation)|array sliding-window|   |
-|84|[Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram)|array stack|   |
 |308|[Range Sum Query 2D - Mutable](https://leetcode.com/problems/range-sum-query-2d-mutable)|binary-indexed-tree segment-tree|   |
 |793|[Preimage Size of Factorial Zeroes Function](https://leetcode.com/problems/preimage-size-of-factorial-zeroes-function)|binary-search|   |
 |1095|[Find in Mountain Array](https://leetcode.com/problems/find-in-mountain-array)|binary-search|   |
@@ -1250,7 +1249,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1125|[Smallest Sufficient Team](https://leetcode.com/problems/smallest-sufficient-team)|dynamic-programming bit-manipulation|   |
 |1434|[Number of Ways to Wear Different Hats to Each Other](https://leetcode.com/problems/number-of-ways-to-wear-different-hats-to-each-other)|dynamic-programming bit-manipulation|   |
 |664|[Strange Printer](https://leetcode.com/problems/strange-printer)|dynamic-programming depth-first-search|   |
-|1326|[Minimum Number of Taps to Open to Water a Garden](https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden)|dynamic-programming greedy|   |
 |727|[Minimum Window Subsequence](https://leetcode.com/problems/minimum-window-subsequence)|dynamic-programming sliding-window|   |
 |975|[Odd Even Jump](https://leetcode.com/problems/odd-even-jump)|dynamic-programming stack ordered-map|   |
 |968|[Binary Tree Cameras](https://leetcode.com/problems/binary-tree-cameras)|dynamic-programming tree depth-first-search|   |
@@ -1354,6 +1352,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1298|[Maximum Candies You Can Get from Boxes](https://leetcode.com/problems/maximum-candies-you-can-get-from-boxes)|breadth-first-search|[solution](rustgym/src/leetcode/_1298_maximum_candies_you_can_get_from_boxes.rs)|
 |1312|[Minimum Insertion Steps to Make a String Palindrome](https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome)|dynamic-programming|[solution](rustgym/src/leetcode/_1312_minimum_insertion_steps_to_make_a_string_palindrome.rs)|
 |1320|[Minimum Distance to Type a Word Using Two Fingers](https://leetcode.com/problems/minimum-distance-to-type-a-word-using-two-fingers)|dynamic-programming|[solution](rustgym/src/leetcode/_1320_minimum_distance_to_type_a_word_using_two_fingers.rs)|
+|1326|[Minimum Number of Taps to Open to Water a Garden](https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden)|dynamic-programming greedy|[solution](rustgym/src/leetcode/_1326_minimum_number_of_taps_to_open_to_water_a_garden.rs)|
 |132|[Palindrome Partitioning II](https://leetcode.com/problems/palindrome-partitioning-ii)|dynamic-programming|[solution](rustgym/src/leetcode/_132_palindrome_partitioning_2.rs)|
 |1335|[Minimum Difficulty of a Job Schedule](https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule)|dynamic-programming|[solution](rustgym/src/leetcode/_1335_minimum_difficulty_of_a_job_schedule.rs)|
 |1340|[Jump Game V](https://leetcode.com/problems/jump-game-v)|dynamic-programming|[solution](rustgym/src/leetcode/_1340_jump_game_5.rs)|
@@ -1487,6 +1486,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |827|[Making A Large Island](https://leetcode.com/problems/making-a-large-island)|depth-first-search|[solution](rustgym/src/leetcode/_827_making_a_large_island.rs)|
 |829|[Consecutive Numbers Sum](https://leetcode.com/problems/consecutive-numbers-sum)|math|[solution](rustgym/src/leetcode/_829_consecutive_numbers_sum.rs)|
 |847|[Shortest Path Visiting All Nodes](https://leetcode.com/problems/shortest-path-visiting-all-nodes)|dynamic-programming breadth-first-search|[solution](rustgym/src/leetcode/_847_shortest_path_visiting_all_nodes.rs)|
+|84|[Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram)|array stack|[solution](rustgym/src/leetcode/_84_largest_rectangle_in_histogram.rs)|
 |854|[K-Similar Strings](https://leetcode.com/problems/k-similar-strings)|breadth-first-search graph|[solution](rustgym/src/leetcode/_854_k_similar_strings.rs)|
 |85|[Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle)|array hash-table dynamic-programming stack|[solution](rustgym/src/leetcode/_85_maximal_rectangle.rs)|
 |871|[Minimum Number of Refueling Stops](https://leetcode.com/problems/minimum-number-of-refueling-stops)|dynamic-programming heap|[solution](rustgym/src/leetcode/_871_minimum_number_of_refueling_stops.rs)|
