@@ -1153,6 +1153,8 @@ mod _677_map_sum_pairs;
 //
 mod _678_valid_parenthesis_string;
 //
+mod _679_24_game;
+//
 mod _680_valid_palindrome_2;
 //
 mod _681_next_closest_time;
@@ -1393,6 +1395,8 @@ mod _826_most_profix_assigning_work;
 //
 mod _827_making_a_large_island;
 //
+mod _828_count_unique_characters_of_a_given_string;
+//
 mod _829_consecutive_numbers_sum;
 //
 mod _830_positions_of_large_groups;
@@ -1448,6 +1452,8 @@ mod _859_buddy_strings;
 mod _860_lemonade_change;
 //
 mod _861_score_after_flipping_matrix;
+//
+mod _862_shortest_subarray_with_sum_at_least_k;
 //
 mod _865_smallest_subtree_with_all_the_deepest_nodes;
 //
@@ -2237,6 +2243,8 @@ mod _1381_design_a_stack_with_increment_operation;
 //
 mod _1382_balance_a_binary_search_tree;
 //
+mod _1383_maximum_performance_of_a_team;
+//
 mod _1385_find_the_distance_value_between_two_arrays;
 //
 mod _1386_cinema_seat_allocation;
@@ -2533,3 +2541,13 @@ mod _1577_number_of_ways_where_square_of_number_is_equal_to_product_of_two_numbe
 mod _1578_minimum_deleteion_cost_to_avoid_repeating_letters;
 //
 mod _1579_remove_max_number_of_edges_to_keep_graph_fully_traversable;
+//
+mod _1580_put_boxes_into_the_warehouse_2;
+//
+mod _1582_special_positions_in_a_binary_matrix;
+//
+mod _1583_count_unhappy_friends;
+//
+mod _1584_min_cost_to_connect_all_points;
+//
+mod _1585_check_if_string_is_transformable_with_substring_sort_operations;

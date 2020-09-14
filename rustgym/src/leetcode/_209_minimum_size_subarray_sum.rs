@@ -1,10 +1,9 @@
 struct Solution;
-use std::usize;
 
 impl Solution {
     fn min_sub_array_len(s: i32, nums: Vec<i32>) -> i32 {
         let n = nums.len();
-        let mut res = usize::MAX;
+        let mut res = std::usize::MAX;
         let mut sum = 0;
         let mut l = 0;
         for r in 0..n {
