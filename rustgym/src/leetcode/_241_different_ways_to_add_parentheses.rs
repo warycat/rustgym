@@ -68,13 +68,13 @@ fn test() {
     let input = "2-1-1".to_string();
     let mut res = vec![0, 2];
     let mut ans = Solution::diff_ways_to_compute(input);
-    res.sort();
-    ans.sort();
+    res.sort_unstable();
+    ans.sort_unstable();
     assert_eq!(ans, res);
     let input = "2*3-4*5".to_string();
     let mut res = vec![-34, -14, -10, -10, 10];
     let mut ans = Solution::diff_ways_to_compute(input);
-    res.sort();
-    ans.sort();
+    res.sort_unstable();
+    ans.sort_unstable();
     assert_eq!(ans, res);
 }

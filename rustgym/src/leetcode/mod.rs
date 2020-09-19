@@ -1293,6 +1293,8 @@ mod _768_max_chunks_to_make_sorted_2;
 //
 mod _769_max_chunks_to_make_sorted;
 //
+mod _770_basic_calculator_4;
+//
 mod _771_jewels_and_stones;
 //
 mod _772_basic_calculator_3;
@@ -2225,6 +2227,8 @@ mod _1366_rank_teams_by_votes;
 //
 mod _1367_linked_list_in_binary_tree;
 //
+mod _1368_minimum_cost_to_make_at_least_one_valid_path_in_a_grid;
+//
 mod _1370_increasing_decreasing_string;
 //
 mod _1371_find_the_longest_substring_containing_vowels_in_even_counts;
@@ -2403,6 +2407,8 @@ mod _1486_xor_operation_in_an_array;
 mod _1487_making_file_names_unique;
 //
 mod _1488_avoid_flood_in_the_city;
+//
+mod _1489_find_critical_and_pseudo_critical_edges_in_minimum_spanning_tree;
 //
 mod _1491_average_salary_excluding_minimum_and_maximum_salary;
 //
