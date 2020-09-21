@@ -2557,3 +2557,13 @@ mod _1583_count_unhappy_friends;
 mod _1584_min_cost_to_connect_all_points;
 //
 mod _1585_check_if_string_is_transformable_with_substring_sort_operations;
+//
+mod _1586_binary_search_tree_iterator_2;
+//
+mod _1592_rearrange_spaces_between_words;
+//
+mod _1593_split_a_string_into_the_max_number_of_unique_substrings;
+//
+mod _1594_maximum_non_negative_product_in_a_matrix;
+//
+mod _1595_minimum_cost_to_connect_two_groups_of_points;

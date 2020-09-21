@@ -427,10 +427,10 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook)|array|[solution](rustgym/src/leetcode/_999_available_captures_for_rook.rs)|
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|math|[solution](rustgym/src/leetcode/_9_palindrome_number.rs)|
 </details>
-<details><summary>Medium 32/760 4.21%</summary>
+<details><summary>Medium 31/760 4.08%</summary>
 
 
-|id|760 Medium Questions|Tags|728 Solutions|
+|id|760 Medium Questions|Tags|729 Solutions|
 |---|---|---|---|
 |427|[Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree)||   |
 |558|[Logical OR of Two Binary Grids Represented as Quad-Trees](https://leetcode.com/problems/logical-or-of-two-binary-grids-represented-as-quad-trees)||   |
@@ -445,7 +445,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1236|[Web Crawler](https://leetcode.com/problems/web-crawler)|depth-first-search breadth-first-search|   |
 |133|[Clone Graph](https://leetcode.com/problems/clone-graph)|depth-first-search breadth-first-search graph|   |
 |284|[Peeking Iterator](https://leetcode.com/problems/peeking-iterator)|design|   |
-|1586|[Binary Search Tree Iterator II](https://leetcode.com/problems/binary-search-tree-iterator-ii)|design|   |
 |673|[Number of Longest Increasing Subsequence](https://leetcode.com/problems/number-of-longest-increasing-subsequence)|dynamic-programming|   |
 |138|[Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer)|hash-table linked-list|   |
 |1485|[Clone Binary Tree With Random Pointer](https://leetcode.com/problems/clone-binary-tree-with-random-pointer)|hash-table tree depth-first-search breadth-first-search|   |
@@ -743,6 +742,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1580|[Put Boxes Into the Warehouse II](https://leetcode.com/problems/put-boxes-into-the-warehouse-ii)|greedy|[solution](rustgym/src/leetcode/_1580_put_boxes_into_the_warehouse_2.rs)|
 |1583|[Count Unhappy Friends](https://leetcode.com/problems/count-unhappy-friends)|array|[solution](rustgym/src/leetcode/_1583_count_unhappy_friends.rs)|
 |1584|[Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points)|union-find|[solution](rustgym/src/leetcode/_1584_min_cost_to_connect_all_points.rs)|
+|1586|[Binary Search Tree Iterator II](https://leetcode.com/problems/binary-search-tree-iterator-ii)|design|[solution](rustgym/src/leetcode/_1586_binary_search_tree_iterator_2.rs)|
 |159|[Longest Substring with At Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters)|hash-table two-pointers string sliding-window|[solution](rustgym/src/leetcode/_159_longest_substring_with_at_most_two_distinc_characters.rs)|
 |15|[3Sum](https://leetcode.com/problems/3sum)|array two-pointers|[solution](rustgym/src/leetcode/_15_three_sum.rs)|
 |161|[One Edit Distance](https://leetcode.com/problems/one-edit-distance)|string|[solution](rustgym/src/leetcode/_161_one_edit_distance.rs)|
