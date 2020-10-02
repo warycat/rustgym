@@ -2560,6 +2560,12 @@ mod _1585_check_if_string_is_transformable_with_substring_sort_operations;
 //
 mod _1586_binary_search_tree_iterator_2;
 //
+mod _1588_sum_of_all_odd_length_subarrays;
+//
+mod _1589_maximum_sum_obtained_of_any_permutation;
+//
+mod _1590_make_sum_divisible_by_p;
+//
 mod _1592_rearrange_spaces_between_words;
 //
 mod _1593_split_a_string_into_the_max_number_of_unique_substrings;
@@ -2567,3 +2573,9 @@ mod _1593_split_a_string_into_the_max_number_of_unique_substrings;
 mod _1594_maximum_non_negative_product_in_a_matrix;
 //
 mod _1595_minimum_cost_to_connect_two_groups_of_points;
+//
+mod _1598_crawler_log_folder;
+//
+mod _1599_maximum_profit_of_operating_a_centennial_wheel;
+//
+mod _1600_throne_inheritance;
