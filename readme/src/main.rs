@@ -6,62 +6,8 @@ use std::fmt;
 use std::fs;
 use std::path::Path;
 
-const TITLE: &str = "# Leetcode Solutions in Rust";
-const BODY: &str = "
-This project demostrates how to create **Data Structures** and to implement **Algorithms** using programming language **Rust**
-All the solutions here are crafted with love and their performance beats 99% of other solutions on the leetcode website. Tutorial videos will be added later.
+const TEMPLATE: &str = include_str!("template.md");
 
-### Please subscribe to our [Rust Gym Youtube Channel](https://www.youtube.com/channel/UCV9HzRLPKjI8SttaIYOygsw) for future videos.
-
-<details><summary>Data Structures</summary>
-
-- Stack & Queue ( Vec, VecDeque )
-- Linked List ( Option<Box<ListNode>> )
-- Hash Tables ( HashMap, HashSet )
-- Tree Tables ( BTreeMap, BTreeSet )
-- Binary Search Tree ( Option<Rc<RefCell<TreeNode>>> )
-- Binary Heaps & Priority Queue ( BinaryHeap )
-- Graphs ( Vec<Vec<usize>> )
-- Union Find ( UnionFind )
-- Trie ( Trie )
-</details>
-
-<details><summary>Algorithms</summary>
-
-- Bit Manipulation & Numbers
-- Stability in Sorting
-- Heapsort
-- Binary Search
-- Kth Smallest Elements
-- Permutations
-- Subsets
-- BFS Graph
-- DFS Graph
-- Dijkstra’s Algorithm
-- Tree Traversals
-    - BFS
-    - DFS
-        - in-order
-        - pre-order
-        - post-order
-- Topological Sort
-- Detect cycle in an undirected graph
-- Detect a cycle in a directed graph
-- Count connected components in a graph
-- Find strongly connected components in a graph
-</details>
-";
-
-const CODING_INTERVIEW: &str = "
-### Coding Interview
-Leetcode is a website where people–mostly software engineers–practice their coding skills. There are 1200+ questions (and growing), each with multiple solutions. Questions are ranked by level of difficulty: easy, medium, and hard. Within the last decade or so, the technical interview process has become formulaic and what some describe “unnatural” for engineers. What people are asked to perform in an interview–solving word or code based teasers, coding on a whiteboard, and being asked to produce clean optimized solutions in a short time frame–is not what they would experience in a daily work environment.
-";
-
-const TEST_SVG: &str = "![test svg](./test.svg)";
-
-const DOCSRS: &str =
-    "### Docs [![Docs Status](https://docs.rs/rustgym/badge.svg)](https://docs.rs/rustgym)";
-const TRAVIS: &str = "### Build [![Build Status](https://travis-ci.org/warycat/leetcode_rs.svg?branch=master)](https://travis-ci.org/warycat/leetcode_rs)";
 const LEETCODE_JSON_URL: &str = "https://leetcode.com/api/problems/algorithms/";
 const LEETCODE_TAG_URL: &str = "https://leetcode.com/problems/api/tags/";
 const LEETCODE_QUESTION_URL: &str = "https://leetcode.com/problems/";
@@ -210,27 +156,24 @@ impl LeetcodeQuestionList {
 }
 
 struct Readme {
-    headers: Vec<String>,
+    template: String,
     solution_list: RustSolutionList,
     question_list: LeetcodeQuestionList,
     tags: Tags,
-    footers: Vec<String>,
 }
 
 impl Readme {
     fn new(
-        headers: Vec<String>,
+        template: String,
         solution_list: RustSolutionList,
         question_list: LeetcodeQuestionList,
         tags: Tags,
-        footers: Vec<String>,
     ) -> Self {
         Readme {
-            headers,
+            template,
             solution_list,
             question_list,
             tags,
-            footers,
         }
     }
 
@@ -304,13 +247,8 @@ impl Readme {
 impl fmt::Display for Readme {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
         let mut s = "".to_string();
-        for header in &self.headers {
-            s += &format!("{}\n\n", header);
-        }
+        s += &self.template;
         s += &self.table();
-        for footer in &self.footers {
-            s += &format!("{}\n\n", footer);
-        }
         write!(f, "{}", s)
     }
 }
@@ -324,8 +262,6 @@ fn main() {
     let readme_md = Path::new(&cargo_dir).join("..").join(README_MD);
     let src_dir = Path::new(&cargo_dir).join("..").join(LEETCODE_SRC);
     let solution_list = RustSolutionList::new(src_dir);
-    let headers = vec_string![TITLE, BODY, DOCSRS, TRAVIS];
-    let footers = vec_string!(CODING_INTERVIEW, TEST_SVG);
-    let readme = Readme::new(headers, solution_list, question_list, tags, footers);
+    let readme = Readme::new(TEMPLATE.to_string(), solution_list, question_list, tags);
     fs::write(&readme_md, format!("{}", readme)).unwrap();
 }
