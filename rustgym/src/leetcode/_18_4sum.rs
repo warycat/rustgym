@@ -5,7 +5,7 @@ impl Solution {
     fn four_sum(mut nums: Vec<i32>, target: i32) -> Vec<Vec<i32>> {
         let n = nums.len();
         let mut res = vec![];
-        nums.sort();
+        nums.sort_unstable();
         let mut i = 0;
         while i + 3 < n {
             if i > 0 && nums[i - 1] == nums[i] {

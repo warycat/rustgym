@@ -2,7 +2,7 @@ struct Solution;
 
 impl Solution {
     fn sort_array(mut nums: Vec<i32>) -> Vec<i32> {
-        nums.sort();
+        nums.sort_unstable();
         nums
     }
 }

@@ -18,7 +18,7 @@ impl Solution {
             b = bb;
         }
         let mut res: Vec<i32> = [r, g, b].to_vec();
-        res.sort();
+        res.sort_unstable();
         res[0]
     }
 }

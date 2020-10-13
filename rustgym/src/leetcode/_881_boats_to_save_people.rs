@@ -3,7 +3,7 @@ struct Solution;
 impl Solution {
     fn num_rescue_boats(mut people: Vec<i32>, limit: i32) -> i32 {
         let n = people.len();
-        people.sort();
+        people.sort_unstable();
         people.reverse();
         let mut i = 0;
         let mut j = n - 1;

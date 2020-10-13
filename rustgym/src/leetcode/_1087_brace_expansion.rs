@@ -11,7 +11,7 @@ impl Solution {
                     inbrace = true;
                 }
                 '}' => {
-                    stack.sort();
+                    stack.sort_unstable();
                     v.push(stack);
                     stack = vec![];
                     inbrace = false;

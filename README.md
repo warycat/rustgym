@@ -47,10 +47,10 @@ All the solutions here are crafted with love and their performance beats 99% of 
 Leetcode is a website where people–mostly software engineers–practice their coding skills. There are 1200+ questions (and growing), each with multiple solutions. Questions are ranked by level of difficulty: easy, medium, and hard. Within the last decade or so, the technical interview process has become formulaic and what some describe “unnatural” for engineers. What people are asked to perform in an interview–solving word or code based teasers, coding on a whiteboard, and being asked to produce clean optimized solutions in a short time frame–is not what they would experience in a daily work environment.
 
 # All Solutions
-<details><summary>Easy 11/371 2.96%</summary>
+<details><summary>Easy 11/369 2.98%</summary>
 
 
-|id|371 Easy Questions|Tags|360 Solutions|
+|id|369 Easy Questions|Tags|358 Solutions|
 |---|---|---|---|
 |190|[Reverse Bits](https://leetcode.com/problems/reverse-bits)|bit-manipulation|   |
 |690|[Employee Importance](https://leetcode.com/problems/employee-importance)|hash-table depth-first-search breadth-first-search|   |
@@ -209,13 +209,13 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |1598|[Crawler Log Folder](https://leetcode.com/problems/crawler-log-folder)|stack|[solution](rustgym/src/leetcode/_1598_crawler_log_folder.rs)|
 |1603|[Design Parking System](https://leetcode.com/problems/design-parking-system)|design|[solution](rustgym/src/leetcode/_1603_design_parking_system.rs)|
 |1608|[Special Array With X Elements Greater Than or Equal X](https://leetcode.com/problems/special-array-with-x-elements-greater-than-or-equal-x)|array|[solution](rustgym/src/leetcode/_1608_special_array_with_x_elements_greater_than_or_equal_x.rs)|
+|1614|[Maximum Nesting Depth of the Parentheses](https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses)|string|[solution](rustgym/src/leetcode/_1614_maximum_nesting_depth_of_the_parentheses.rs)|
 |167|[Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted)|array two-pointers binary-search|[solution](rustgym/src/leetcode/_167_two_sum_2.rs)|
 |168|[Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title)|math|[solution](rustgym/src/leetcode/_168_excel_sheet_column_title.rs)|
 |169|[Majority Element](https://leetcode.com/problems/majority-element)|array divide-and-conquer bit-manipulation|[solution](rustgym/src/leetcode/_169_majority_element.rs)|
 |170|[Two Sum III - Data structure design](https://leetcode.com/problems/two-sum-iii-data-structure-design)|hash-table design|[solution](rustgym/src/leetcode/_170_two_sum_3.rs)|
 |171|[Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number)|math|[solution](rustgym/src/leetcode/_171_excel_sheet_column_number.rs)|
 |172|[Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes)|math|[solution](rustgym/src/leetcode/_172_factorial_trailing_zeroes.rs)|
-|189|[Rotate Array](https://leetcode.com/problems/rotate-array)|array|[solution](rustgym/src/leetcode/_189_rotate_array.rs)|
 |191|[Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits)|bit-manipulation|[solution](rustgym/src/leetcode/_191_number_of_1_bits.rs)|
 |198|[House Robber](https://leetcode.com/problems/house-robber)|dynamic-programming|[solution](rustgym/src/leetcode/_198_house_robber.rs)|
 |1|[Two Sum](https://leetcode.com/problems/two-sum)|array hash-table|[solution](rustgym/src/leetcode/_1_two_sum.rs)|
@@ -288,7 +288,6 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |459|[Repeated Substring Pattern](https://leetcode.com/problems/repeated-substring-pattern)|string|[solution](rustgym/src/leetcode/_459_repeated_substring_pattern.rs)|
 |461|[Hamming Distance](https://leetcode.com/problems/hamming-distance)|bit-manipulation|[solution](rustgym/src/leetcode/_461_hamming_distance.rs)|
 |463|[Island Perimeter](https://leetcode.com/problems/island-perimeter)|hash-table|[solution](rustgym/src/leetcode/_463_island_perimeter.rs)|
-|475|[Heaters](https://leetcode.com/problems/heaters)|binary-search|[solution](rustgym/src/leetcode/_475_heaters.rs)|
 |476|[Number Complement](https://leetcode.com/problems/number-complement)|bit-manipulation|[solution](rustgym/src/leetcode/_476_number_complement.rs)|
 |482|[License Key Formatting](https://leetcode.com/problems/license-key-formatting)||[solution](rustgym/src/leetcode/_482_license_key_formatting.rs)|
 |485|[Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones)|array|[solution](rustgym/src/leetcode/_485_max_consecutive_ones.rs)|
@@ -313,7 +312,6 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |566|[Reshape the Matrix](https://leetcode.com/problems/reshape-the-matrix)|array|[solution](rustgym/src/leetcode/_566_reshape_the_matrix.rs)|
 |572|[Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree)|tree|[solution](rustgym/src/leetcode/_572_subtree_of_another_tree.rs)|
 |575|[Distribute Candies](https://leetcode.com/problems/distribute-candies)|hash-table|[solution](rustgym/src/leetcode/_575_distribute_candies.rs)|
-|581|[Shortest Unsorted Continuous Subarray](https://leetcode.com/problems/shortest-unsorted-continuous-subarray)|array|[solution](rustgym/src/leetcode/_581_shortest_unsorted_continuous_subarray.rs)|
 |58|[Length of Last Word](https://leetcode.com/problems/length-of-last-word)|string|[solution](rustgym/src/leetcode/_58_length_of_last_word.rs)|
 |594|[Longest Harmonious Subsequence](https://leetcode.com/problems/longest-harmonious-subsequence)|hash-table|[solution](rustgym/src/leetcode/_594_longest_harmonious_subsequence.rs)|
 |598|[Range Addition II](https://leetcode.com/problems/range-addition-ii)|math|[solution](rustgym/src/leetcode/_598_range_addition_2.rs)|
@@ -424,10 +422,10 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook)|array|[solution](rustgym/src/leetcode/_999_available_captures_for_rook.rs)|
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|math|[solution](rustgym/src/leetcode/_9_palindrome_number.rs)|
 </details>
-<details><summary>Medium 32/776 4.12%</summary>
+<details><summary>Medium 33/782 4.22%</summary>
 
 
-|id|776 Medium Questions|Tags|744 Solutions|
+|id|782 Medium Questions|Tags|749 Solutions|
 |---|---|---|---|
 |427|[Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree)||   |
 |558|[Logical OR of Two Binary Grids Represented as Quad-Trees](https://leetcode.com/problems/logical-or-of-two-binary-grids-represented-as-quad-trees)||   |
@@ -444,6 +442,7 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |284|[Peeking Iterator](https://leetcode.com/problems/peeking-iterator)|design|   |
 |673|[Number of Longest Increasing Subsequence](https://leetcode.com/problems/number-of-longest-increasing-subsequence)|dynamic-programming|   |
 |138|[Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer)|hash-table linked-list|   |
+|1612|[Check If Two Expression Trees are Equivalent](https://leetcode.com/problems/check-if-two-expression-trees-are-equivalent)|hash-table tree|   |
 |1485|[Clone Binary Tree With Random Pointer](https://leetcode.com/problems/clone-binary-tree-with-random-pointer)|hash-table tree depth-first-search breadth-first-search|   |
 |1490|[Clone N-ary Tree](https://leetcode.com/problems/clone-n-ary-tree)|hash-table tree depth-first-search breadth-first-search|   |
 |708|[Insert into a Sorted Circular Linked List](https://leetcode.com/problems/insert-into-a-sorted-circular-linked-list)|linked-list|   |
@@ -752,6 +751,8 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |1604|[Alert Using Same Key-Card Three or More Times in a One Hour Period](https://leetcode.com/problems/alert-using-same-key-card-three-or-more-times-in-a-one-hour-period)|string ordered-map|[solution](rustgym/src/leetcode/_1604_alart_using_same_key_card_three_or_more_times_in_a_one_hour_period.rs)|
 |1605|[Find Valid Matrix Given Row and Column Sums](https://leetcode.com/problems/find-valid-matrix-given-row-and-column-sums)|greedy|[solution](rustgym/src/leetcode/_1605_find_valid_matrix_given_row_and_column_sums.rs)|
 |1609|[Even Odd Tree](https://leetcode.com/problems/even-odd-tree)|tree|[solution](rustgym/src/leetcode/_1609_even_odd_tree.rs)|
+|1615|[Maximal Network Rank](https://leetcode.com/problems/maximal-network-rank)|graph|[solution](rustgym/src/leetcode/_1615_maximal_network_rank.rs)|
+|1616|[Split Two Strings to Make Palindrome](https://leetcode.com/problems/split-two-strings-to-make-palindrome)|two-pointers string greedy|[solution](rustgym/src/leetcode/_1616_split_two_strings_to_make_palindrome.rs)|
 |161|[One Edit Distance](https://leetcode.com/problems/one-edit-distance)|string|[solution](rustgym/src/leetcode/_161_one_edit_distance.rs)|
 |162|[Find Peak Element](https://leetcode.com/problems/find-peak-element)|array binary-search|[solution](rustgym/src/leetcode/_162_find_peak_element.rs)|
 |163|[Missing Ranges](https://leetcode.com/problems/missing-ranges)|array|[solution](rustgym/src/leetcode/_163_missing_ranges.rs)|
@@ -763,6 +764,7 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |17|[Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number)|string backtracking|[solution](rustgym/src/leetcode/_17_letter_combinations_of_a_phone_number.rs)|
 |186|[Reverse Words in a String II](https://leetcode.com/problems/reverse-words-in-a-string-ii)|string|[solution](rustgym/src/leetcode/_186_reverse_words_in_a_string_2.rs)|
 |187|[Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences)|hash-table bit-manipulation|[solution](rustgym/src/leetcode/_187_repeated_dna_sequences.rs)|
+|189|[Rotate Array](https://leetcode.com/problems/rotate-array)|array|[solution](rustgym/src/leetcode/_189_rotate_array.rs)|
 |18|[4Sum](https://leetcode.com/problems/4sum)|array hash-table two-pointers|[solution](rustgym/src/leetcode/_18_4sum.rs)|
 |199|[Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view)|tree depth-first-search breadth-first-search|[solution](rustgym/src/leetcode/_199_binary_tree_right_side_view.rs)|
 |19|[Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list)|linked-list two-pointers|[solution](rustgym/src/leetcode/_19_remove_nth_node_from_end_of_list.rs)|
@@ -926,6 +928,7 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |470|[Implement Rand10() Using Rand7()](https://leetcode.com/problems/implement-rand10-using-rand7)|random rejection-sampling|[solution](rustgym/src/leetcode/_470_implement_rand10_using_rand7.rs)|
 |473|[Matchsticks to Square](https://leetcode.com/problems/matchsticks-to-square)|depth-first-search|[solution](rustgym/src/leetcode/_473_matchsticks_to_square.rs)|
 |474|[Ones and Zeroes](https://leetcode.com/problems/ones-and-zeroes)|dynamic-programming|[solution](rustgym/src/leetcode/_474_ones_and_zeroes.rs)|
+|475|[Heaters](https://leetcode.com/problems/heaters)|binary-search|[solution](rustgym/src/leetcode/_475_heaters.rs)|
 |477|[Total Hamming Distance](https://leetcode.com/problems/total-hamming-distance)|bit-manipulation|[solution](rustgym/src/leetcode/_477_total_hamming_distance.rs)|
 |478|[Generate Random Point in a Circle](https://leetcode.com/problems/generate-random-point-in-a-circle)|math random rejection-sampling|[solution](rustgym/src/leetcode/_478_generate_random_point_in_circle.rs)|
 |47|[Permutations II](https://leetcode.com/problems/permutations-ii)|backtracking|[solution](rustgym/src/leetcode/_47_permutations_2.rs)|
@@ -986,6 +989,7 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |573|[Squirrel Simulation](https://leetcode.com/problems/squirrel-simulation)|math|[solution](rustgym/src/leetcode/_573_squirrel_simulation.rs)|
 |576|[Out of Boundary Paths](https://leetcode.com/problems/out-of-boundary-paths)|dynamic-programming depth-first-search|[solution](rustgym/src/leetcode/_576_out_of_boundary_paths.rs)|
 |57|[Insert Interval](https://leetcode.com/problems/insert-interval)|array sort|[solution](rustgym/src/leetcode/_57_insert_interval.rs)|
+|581|[Shortest Unsorted Continuous Subarray](https://leetcode.com/problems/shortest-unsorted-continuous-subarray)|array|[solution](rustgym/src/leetcode/_581_shortest_unsorted_continuous_subarray.rs)|
 |582|[Kill Process](https://leetcode.com/problems/kill-process)|tree queue|[solution](rustgym/src/leetcode/_582_kill_process.rs)|
 |583|[Delete Operation for Two Strings](https://leetcode.com/problems/delete-operation-for-two-strings)|string|[solution](rustgym/src/leetcode/_583_delete_operation_for_two_strings.rs)|
 |592|[Fraction Addition and Subtraction](https://leetcode.com/problems/fraction-addition-and-subtraction)|math|[solution](rustgym/src/leetcode/_592_fraction_addition_and_subtraction.rs)|
@@ -1206,10 +1210,10 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |994|[Rotting Oranges](https://leetcode.com/problems/rotting-oranges)|breadth-first-search|[solution](rustgym/src/leetcode/_994_rotting_oranges.rs)|
 |998|[Maximum Binary Tree II](https://leetcode.com/problems/maximum-binary-tree-ii)|tree|[solution](rustgym/src/leetcode/_998_maximum_binary_tree_2.rs)|
 </details>
-<details><summary>Hard 128/321 39.88%</summary>
+<details><summary>Hard 129/322 40.06%</summary>
 
 
-|id|321 Hard Questions|Tags|193 Solutions|
+|id|322 Hard Questions|Tags|193 Solutions|
 |---|---|---|---|
 |440|[K-th Smallest in Lexicographical Order](https://leetcode.com/problems/k-th-smallest-in-lexicographical-order)||   |
 |798|[Smallest Rotation with Highest Score](https://leetcode.com/problems/smallest-rotation-with-highest-score)||   |
@@ -1221,6 +1225,7 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |891|[Sum of Subsequence Widths](https://leetcode.com/problems/sum-of-subsequence-widths)|array math|   |
 |1330|[Reverse Subarray To Maximize Array Value](https://leetcode.com/problems/reverse-subarray-to-maximize-array-value)|array math|   |
 |1499|[Max Value of Equation](https://leetcode.com/problems/max-value-of-equation)|array sliding-window|   |
+|1617|[Count Subtrees With Max Distance Between Cities](https://leetcode.com/problems/count-subtrees-with-max-distance-between-cities)|backtracking|   |
 |308|[Range Sum Query 2D - Mutable](https://leetcode.com/problems/range-sum-query-2d-mutable)|binary-indexed-tree segment-tree|   |
 |793|[Preimage Size of Factorial Zeroes Function](https://leetcode.com/problems/preimage-size-of-factorial-zeroes-function)|binary-search|   |
 |1095|[Find in Mountain Array](https://leetcode.com/problems/find-in-mountain-array)|binary-search|   |

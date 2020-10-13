@@ -23,7 +23,7 @@ impl Solution {
             }
         }
         s.swap(l, r);
-        s[l + 1..].sort();
+        s[l + 1..].sort_unstable();
         s.iter().collect::<String>().parse::<i32>().unwrap_or(-1)
     }
 }

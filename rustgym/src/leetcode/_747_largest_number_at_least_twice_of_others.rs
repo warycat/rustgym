@@ -7,7 +7,7 @@ impl Solution {
             return 0;
         }
         let mut copy = nums.clone();
-        copy.sort();
+        copy.sort_unstable();
         if copy[n - 1] < 2 * copy[n - 2] {
             return -1;
         }

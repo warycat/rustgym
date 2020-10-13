@@ -3,7 +3,7 @@ struct Solution;
 impl Solution {
     fn sorted_squares(a: Vec<i32>) -> Vec<i32> {
         let mut squared: Vec<i32> = a.iter().map(|a| a * a).collect();
-        squared.sort();
+        squared.sort_unstable();
         squared
     }
 }
