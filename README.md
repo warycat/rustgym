@@ -47,11 +47,12 @@ All the solutions here are crafted with love and their performance beats 99% of 
 Leetcode is a website where people–mostly software engineers–practice their coding skills. There are 1200+ questions (and growing), each with multiple solutions. Questions are ranked by level of difficulty: easy, medium, and hard. Within the last decade or so, the technical interview process has become formulaic and what some describe “unnatural” for engineers. What people are asked to perform in an interview–solving word or code based teasers, coding on a whiteboard, and being asked to produce clean optimized solutions in a short time frame–is not what they would experience in a daily work environment.
 
 # All Solutions
-<details><summary>Easy 11/369 2.98%</summary>
+<details><summary>Easy 12/369 3.25%</summary>
 
 
-|id|369 Easy Questions|Tags|358 Solutions|
+|id|369 Easy Questions|Tags|357 Solutions|
 |---|---|---|---|
+|1619|[Mean of Array After Removing Some Elements](https://leetcode.com/problems/mean-of-array-after-removing-some-elements)|array|   |
 |190|[Reverse Bits](https://leetcode.com/problems/reverse-bits)|bit-manipulation|   |
 |690|[Employee Importance](https://leetcode.com/problems/employee-importance)|hash-table depth-first-search breadth-first-search|   |
 |160|[Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists)|linked-list|   |
@@ -335,7 +336,6 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |67|[Add Binary](https://leetcode.com/problems/add-binary)|math string|[solution](rustgym/src/leetcode/_67_add_binary.rs)|
 |680|[Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii)|string|[solution](rustgym/src/leetcode/_680_valid_palindrome_2.rs)|
 |682|[Baseball Game](https://leetcode.com/problems/baseball-game)|stack|[solution](rustgym/src/leetcode/_682_baseball_game.rs)|
-|687|[Longest Univalue Path](https://leetcode.com/problems/longest-univalue-path)|tree recursion|[solution](rustgym/src/leetcode/_687_longest_univalue_path.rs)|
 |693|[Binary Number with Alternating Bits](https://leetcode.com/problems/binary-number-with-alternating-bits)|bit-manipulation|[solution](rustgym/src/leetcode/_693_binary_number_with_alternating_bits.rs)|
 |696|[Count Binary Substrings](https://leetcode.com/problems/count-binary-substrings)|string|[solution](rustgym/src/leetcode/_696_count_binary_substrings.rs)|
 |697|[Degree of an Array](https://leetcode.com/problems/degree-of-an-array)|array|[solution](rustgym/src/leetcode/_697_degree_of_an_array.rs)|
@@ -422,10 +422,10 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook)|array|[solution](rustgym/src/leetcode/_999_available_captures_for_rook.rs)|
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|math|[solution](rustgym/src/leetcode/_9_palindrome_number.rs)|
 </details>
-<details><summary>Medium 33/782 4.22%</summary>
+<details><summary>Medium 36/786 4.58%</summary>
 
 
-|id|782 Medium Questions|Tags|749 Solutions|
+|id|786 Medium Questions|Tags|750 Solutions|
 |---|---|---|---|
 |427|[Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree)||   |
 |558|[Logical OR of Two Binary Grids Represented as Quad-Trees](https://leetcode.com/problems/logical-or-of-two-binary-grids-represented-as-quad-trees)||   |
@@ -441,6 +441,7 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |133|[Clone Graph](https://leetcode.com/problems/clone-graph)|depth-first-search breadth-first-search graph|   |
 |284|[Peeking Iterator](https://leetcode.com/problems/peeking-iterator)|design|   |
 |673|[Number of Longest Increasing Subsequence](https://leetcode.com/problems/number-of-longest-increasing-subsequence)|dynamic-programming|   |
+|1620|[Coordinate With Maximum Network Quality](https://leetcode.com/problems/coordinate-with-maximum-network-quality)|greedy|   |
 |138|[Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer)|hash-table linked-list|   |
 |1612|[Check If Two Expression Trees are Equivalent](https://leetcode.com/problems/check-if-two-expression-trees-are-equivalent)|hash-table tree|   |
 |1485|[Clone Binary Tree With Random Pointer](https://leetcode.com/problems/clone-binary-tree-with-random-pointer)|hash-table tree depth-first-search breadth-first-search|   |
@@ -449,6 +450,8 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |430|[Flatten a Multilevel Doubly Linked List](https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list)|linked-list depth-first-search|   |
 |426|[Convert Binary Search Tree to Sorted Doubly Linked List](https://leetcode.com/problems/convert-binary-search-tree-to-sorted-doubly-linked-list)|linked-list divide-and-conquer tree|   |
 |142|[Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii)|linked-list two-pointers|   |
+|1621|[Number of Sets of K Non-Overlapping Line Segments](https://leetcode.com/problems/number-of-sets-of-k-non-overlapping-line-segments)|recursion|   |
+|1618|[Maximum Font to Fit a Sentence in a Screen](https://leetcode.com/problems/maximum-font-to-fit-a-sentence-in-a-screen)|string binary-search|   |
 |767|[Reorganize String](https://leetcode.com/problems/reorganize-string)|string heap greedy sort|   |
 |236|[Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree)|tree|   |
 |285|[Inorder Successor in BST](https://leetcode.com/problems/inorder-successor-in-bst)|tree|   |
@@ -1038,6 +1041,7 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |681|[Next Closest Time](https://leetcode.com/problems/next-closest-time)|string|[solution](rustgym/src/leetcode/_681_next_closest_time.rs)|
 |684|[Redundant Connection](https://leetcode.com/problems/redundant-connection)|tree union-find graph|[solution](rustgym/src/leetcode/_684_redundant_connection.rs)|
 |686|[Repeated String Match](https://leetcode.com/problems/repeated-string-match)|string|[solution](rustgym/src/leetcode/_686_repeated_string_match.rs)|
+|687|[Longest Univalue Path](https://leetcode.com/problems/longest-univalue-path)|tree recursion|[solution](rustgym/src/leetcode/_687_longest_univalue_path.rs)|
 |688|[Knight Probability in Chessboard](https://leetcode.com/problems/knight-probability-in-chessboard)|dynamic-programming|[solution](rustgym/src/leetcode/_688_knight_probability_in_chessboard.rs)|
 |692|[Top K Frequent Words](https://leetcode.com/problems/top-k-frequent-words)|hash-table heap trie|[solution](rustgym/src/leetcode/_692_top_k_frequent_words.rs)|
 |694|[Number of Distinct Islands](https://leetcode.com/problems/number-of-distinct-islands)|hash-table depth-first-search|[solution](rustgym/src/leetcode/_694_number_of_distinct_islands.rs)|
@@ -1210,10 +1214,10 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |994|[Rotting Oranges](https://leetcode.com/problems/rotting-oranges)|breadth-first-search|[solution](rustgym/src/leetcode/_994_rotting_oranges.rs)|
 |998|[Maximum Binary Tree II](https://leetcode.com/problems/maximum-binary-tree-ii)|tree|[solution](rustgym/src/leetcode/_998_maximum_binary_tree_2.rs)|
 </details>
-<details><summary>Hard 129/322 40.06%</summary>
+<details><summary>Hard 130/323 40.25%</summary>
 
 
-|id|322 Hard Questions|Tags|193 Solutions|
+|id|323 Hard Questions|Tags|193 Solutions|
 |---|---|---|---|
 |440|[K-th Smallest in Lexicographical Order](https://leetcode.com/problems/k-th-smallest-in-lexicographical-order)||   |
 |798|[Smallest Rotation with Highest Score](https://leetcode.com/problems/smallest-rotation-with-highest-score)||   |
@@ -1311,6 +1315,7 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |887|[Super Egg Drop](https://leetcode.com/problems/super-egg-drop)|math binary-search dynamic-programming|   |
 |927|[Three Equal Parts](https://leetcode.com/problems/three-equal-parts)|math binary-search greedy|   |
 |753|[Cracking the Safe](https://leetcode.com/problems/cracking-the-safe)|math depth-first-search|   |
+|1622|[Fancy Sequence](https://leetcode.com/problems/fancy-sequence)|math design|   |
 |902|[Numbers At Most N Given Digit Set](https://leetcode.com/problems/numbers-at-most-n-given-digit-set)|math dynamic-programming|   |
 |964|[Least Operators to Express Number](https://leetcode.com/problems/least-operators-to-express-number)|math dynamic-programming|   |
 |1012|[Numbers With Repeated Digits](https://leetcode.com/problems/numbers-with-repeated-digits)|math dynamic-programming|   |
