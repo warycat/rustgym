@@ -47,12 +47,11 @@ All the solutions here are crafted with love and their performance beats 99% of 
 Leetcode is a website where people–mostly software engineers–practice their coding skills. There are 1200+ questions (and growing), each with multiple solutions. Questions are ranked by level of difficulty: easy, medium, and hard. Within the last decade or so, the technical interview process has become formulaic and what some describe “unnatural” for engineers. What people are asked to perform in an interview–solving word or code based teasers, coding on a whiteboard, and being asked to produce clean optimized solutions in a short time frame–is not what they would experience in a daily work environment.
 
 # All Solutions
-<details><summary>Easy 12/369 3.25%</summary>
+<details><summary>Easy 11/370 2.97%</summary>
 
 
-|id|369 Easy Questions|Tags|357 Solutions|
+|id|370 Easy Questions|Tags|359 Solutions|
 |---|---|---|---|
-|1619|[Mean of Array After Removing Some Elements](https://leetcode.com/problems/mean-of-array-after-removing-some-elements)|array|   |
 |190|[Reverse Bits](https://leetcode.com/problems/reverse-bits)|bit-manipulation|   |
 |690|[Employee Importance](https://leetcode.com/problems/employee-importance)|hash-table depth-first-search breadth-first-search|   |
 |160|[Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists)|linked-list|   |
@@ -211,6 +210,8 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |1603|[Design Parking System](https://leetcode.com/problems/design-parking-system)|design|[solution](rustgym/src/leetcode/_1603_design_parking_system.rs)|
 |1608|[Special Array With X Elements Greater Than or Equal X](https://leetcode.com/problems/special-array-with-x-elements-greater-than-or-equal-x)|array|[solution](rustgym/src/leetcode/_1608_special_array_with_x_elements_greater_than_or_equal_x.rs)|
 |1614|[Maximum Nesting Depth of the Parentheses](https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses)|string|[solution](rustgym/src/leetcode/_1614_maximum_nesting_depth_of_the_parentheses.rs)|
+|1619|[Mean of Array After Removing Some Elements](https://leetcode.com/problems/mean-of-array-after-removing-some-elements)|array|[solution](rustgym/src/leetcode/_1619_mean_of_array_after_removing_some_elements.rs)|
+|1624|[Largest Substring Between Two Equal Characters](https://leetcode.com/problems/largest-substring-between-two-equal-characters)|string|[solution](rustgym/src/leetcode/_1624_largest_substring_between_two_equal_characters.rs)|
 |167|[Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted)|array two-pointers binary-search|[solution](rustgym/src/leetcode/_167_two_sum_2.rs)|
 |168|[Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title)|math|[solution](rustgym/src/leetcode/_168_excel_sheet_column_title.rs)|
 |169|[Majority Element](https://leetcode.com/problems/majority-element)|array divide-and-conquer bit-manipulation|[solution](rustgym/src/leetcode/_169_majority_element.rs)|
@@ -422,10 +423,10 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook)|array|[solution](rustgym/src/leetcode/_999_available_captures_for_rook.rs)|
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|math|[solution](rustgym/src/leetcode/_9_palindrome_number.rs)|
 </details>
-<details><summary>Medium 36/786 4.58%</summary>
+<details><summary>Medium 34/788 4.31%</summary>
 
 
-|id|786 Medium Questions|Tags|750 Solutions|
+|id|788 Medium Questions|Tags|754 Solutions|
 |---|---|---|---|
 |427|[Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree)||   |
 |558|[Logical OR of Two Binary Grids Represented as Quad-Trees](https://leetcode.com/problems/logical-or-of-two-binary-grids-represented-as-quad-trees)||   |
@@ -441,7 +442,6 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |133|[Clone Graph](https://leetcode.com/problems/clone-graph)|depth-first-search breadth-first-search graph|   |
 |284|[Peeking Iterator](https://leetcode.com/problems/peeking-iterator)|design|   |
 |673|[Number of Longest Increasing Subsequence](https://leetcode.com/problems/number-of-longest-increasing-subsequence)|dynamic-programming|   |
-|1620|[Coordinate With Maximum Network Quality](https://leetcode.com/problems/coordinate-with-maximum-network-quality)|greedy|   |
 |138|[Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer)|hash-table linked-list|   |
 |1612|[Check If Two Expression Trees are Equivalent](https://leetcode.com/problems/check-if-two-expression-trees-are-equivalent)|hash-table tree|   |
 |1485|[Clone Binary Tree With Random Pointer](https://leetcode.com/problems/clone-binary-tree-with-random-pointer)|hash-table tree depth-first-search breadth-first-search|   |
@@ -450,7 +450,6 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |430|[Flatten a Multilevel Doubly Linked List](https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list)|linked-list depth-first-search|   |
 |426|[Convert Binary Search Tree to Sorted Doubly Linked List](https://leetcode.com/problems/convert-binary-search-tree-to-sorted-doubly-linked-list)|linked-list divide-and-conquer tree|   |
 |142|[Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii)|linked-list two-pointers|   |
-|1621|[Number of Sets of K Non-Overlapping Line Segments](https://leetcode.com/problems/number-of-sets-of-k-non-overlapping-line-segments)|recursion|   |
 |1618|[Maximum Font to Fit a Sentence in a Screen](https://leetcode.com/problems/maximum-font-to-fit-a-sentence-in-a-screen)|string binary-search|   |
 |767|[Reorganize String](https://leetcode.com/problems/reorganize-string)|string heap greedy sort|   |
 |236|[Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree)|tree|   |
@@ -744,7 +743,7 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |1584|[Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points)|union-find|[solution](rustgym/src/leetcode/_1584_min_cost_to_connect_all_points.rs)|
 |1586|[Binary Search Tree Iterator II](https://leetcode.com/problems/binary-search-tree-iterator-ii)|tree design|[solution](rustgym/src/leetcode/_1586_binary_search_tree_iterator_2.rs)|
 |1589|[Maximum Sum Obtained of Any Permutation](https://leetcode.com/problems/maximum-sum-obtained-of-any-permutation)|greedy|[solution](rustgym/src/leetcode/_1589_maximum_sum_obtained_of_any_permutation.rs)|
-|1590|[Make Sum Divisible by P](https://leetcode.com/problems/make-sum-divisible-by-p)|array binary-search|[solution](rustgym/src/leetcode/_1590_make_sum_divisible_by_p.rs)|
+|1590|[Make Sum Divisible by P](https://leetcode.com/problems/make-sum-divisible-by-p)|array hash-table math binary-search|[solution](rustgym/src/leetcode/_1590_make_sum_divisible_by_p.rs)|
 |1593|[Split a String Into the Max Number of Unique Substrings](https://leetcode.com/problems/split-a-string-into-the-max-number-of-unique-substrings)|backtracking|[solution](rustgym/src/leetcode/_1593_split_a_string_into_the_max_number_of_unique_substrings.rs)|
 |1594|[Maximum Non Negative Product in a Matrix](https://leetcode.com/problems/maximum-non-negative-product-in-a-matrix)|dynamic-programming greedy|[solution](rustgym/src/leetcode/_1594_maximum_non_negative_product_in_a_matrix.rs)|
 |1599|[Maximum Profit of Operating a Centennial Wheel](https://leetcode.com/problems/maximum-profit-of-operating-a-centennial-wheel)|greedy|[solution](rustgym/src/leetcode/_1599_maximum_profit_of_operating_a_centennial_wheel.rs)|
@@ -757,6 +756,10 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |1615|[Maximal Network Rank](https://leetcode.com/problems/maximal-network-rank)|graph|[solution](rustgym/src/leetcode/_1615_maximal_network_rank.rs)|
 |1616|[Split Two Strings to Make Palindrome](https://leetcode.com/problems/split-two-strings-to-make-palindrome)|two-pointers string greedy|[solution](rustgym/src/leetcode/_1616_split_two_strings_to_make_palindrome.rs)|
 |161|[One Edit Distance](https://leetcode.com/problems/one-edit-distance)|string|[solution](rustgym/src/leetcode/_161_one_edit_distance.rs)|
+|1620|[Coordinate With Maximum Network Quality](https://leetcode.com/problems/coordinate-with-maximum-network-quality)|greedy|[solution](rustgym/src/leetcode/_1620_coordinate_with_maxium_network_quality.rs)|
+|1621|[Number of Sets of K Non-Overlapping Line Segments](https://leetcode.com/problems/number-of-sets-of-k-non-overlapping-line-segments)|dynamic-programming|[solution](rustgym/src/leetcode/_1621_number_of_sets_of_k_non_overlapping_line_segments.rs)|
+|1625|[Lexicographically Smallest String After Applying Operations](https://leetcode.com/problems/lexicographically-smallest-string-after-applying-operations)|depth-first-search breadth-first-search|[solution](rustgym/src/leetcode/_1625_lexicographically_smaller_string_after_applying_operations.rs)|
+|1626|[Best Team With No Conflicts](https://leetcode.com/problems/best-team-with-no-conflicts)|dynamic-programming|[solution](rustgym/src/leetcode/_1626_best_team_with_no_conflicts.rs)|
 |162|[Find Peak Element](https://leetcode.com/problems/find-peak-element)|array binary-search|[solution](rustgym/src/leetcode/_162_find_peak_element.rs)|
 |163|[Missing Ranges](https://leetcode.com/problems/missing-ranges)|array|[solution](rustgym/src/leetcode/_163_missing_ranges.rs)|
 |165|[Compare Version Numbers](https://leetcode.com/problems/compare-version-numbers)|string|[solution](rustgym/src/leetcode/_165_compare_version_numbers.rs)|
@@ -1214,10 +1217,10 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |994|[Rotting Oranges](https://leetcode.com/problems/rotting-oranges)|breadth-first-search|[solution](rustgym/src/leetcode/_994_rotting_oranges.rs)|
 |998|[Maximum Binary Tree II](https://leetcode.com/problems/maximum-binary-tree-ii)|tree|[solution](rustgym/src/leetcode/_998_maximum_binary_tree_2.rs)|
 </details>
-<details><summary>Hard 130/323 40.25%</summary>
+<details><summary>Hard 130/324 40.12%</summary>
 
 
-|id|323 Hard Questions|Tags|193 Solutions|
+|id|324 Hard Questions|Tags|194 Solutions|
 |---|---|---|---|
 |440|[K-th Smallest in Lexicographical Order](https://leetcode.com/problems/k-th-smallest-in-lexicographical-order)||   |
 |798|[Smallest Rotation with Highest Score](https://leetcode.com/problems/smallest-rotation-with-highest-score)||   |
@@ -1423,6 +1426,7 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |1579|[Remove Max Number of Edges to Keep Graph Fully Traversable](https://leetcode.com/problems/remove-max-number-of-edges-to-keep-graph-fully-traversable)|union-find|[solution](rustgym/src/leetcode/_1579_remove_max_number_of_edges_to_keep_graph_fully_traversable.rs)|
 |1585|[Check If String Is Transformable With Substring Sort Operations](https://leetcode.com/problems/check-if-string-is-transformable-with-substring-sort-operations)|string greedy|[solution](rustgym/src/leetcode/_1585_check_if_string_is_transformable_with_substring_sort_operations.rs)|
 |1595|[Minimum Cost to Connect Two Groups of Points](https://leetcode.com/problems/minimum-cost-to-connect-two-groups-of-points)|dynamic-programming graph|[solution](rustgym/src/leetcode/_1595_minimum_cost_to_connect_two_groups_of_points.rs)|
+|1627|[Graph Connectivity With Threshold](https://leetcode.com/problems/graph-connectivity-with-threshold)|math union-find|[solution](rustgym/src/leetcode/_1627_graph_connectivity_with_threshold.rs)|
 |164|[Maximum Gap](https://leetcode.com/problems/maximum-gap)|sort|[solution](rustgym/src/leetcode/_164_maximum_gap.rs)|
 |174|[Dungeon Game](https://leetcode.com/problems/dungeon-game)|binary-search dynamic-programming|[solution](rustgym/src/leetcode/_174_dungeon_game.rs)|
 |188|[Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv)|dynamic-programming|[solution](rustgym/src/leetcode/_188_best_time_to_buy_and_sell_stock_4.rs)|

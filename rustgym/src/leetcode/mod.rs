@@ -2596,6 +2596,12 @@ mod _1615_maximal_network_rank;
 //
 mod _1616_split_two_strings_to_make_palindrome;
 //
+mod _1619_mean_of_array_after_removing_some_elements;
+//
+mod _1620_coordinate_with_maxium_network_quality;
+//
+mod _1621_number_of_sets_of_k_non_overlapping_line_segments;
+//
 mod _1624_largest_substring_between_two_equal_characters;
 //
 mod _1625_lexicographically_smaller_string_after_applying_operations;
