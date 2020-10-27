@@ -2609,3 +2609,8 @@ mod _1625_lexicographically_smaller_string_after_applying_operations;
 mod _1626_best_team_with_no_conflicts;
 //
 mod _1627_graph_connectivity_with_threshold;
+//
+mod _1629_slowest_key;
+//
+mod _1630_arithmetic_subarrays;
+//
