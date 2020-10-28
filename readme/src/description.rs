@@ -13,7 +13,7 @@ impl Description {
 
 impl fmt::Display for Description {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
-        write!(f, "[description]({}/{})", LEETCODE_DESC, self.filename)
+        write!(f, "[{}]({}/{})", self.id, LEETCODE_DESC, self.filename)
     }
 }
 

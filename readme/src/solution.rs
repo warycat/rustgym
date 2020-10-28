@@ -1,6 +1,4 @@
 use super::*;
-use std::fmt;
-use std::fs;
 
 pub struct RustSolution {
     pub id: u64,

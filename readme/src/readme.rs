@@ -54,13 +54,16 @@ impl Readme {
                 if question.1 == level {
                     n_questions += 1;
                     let frontend_id = question.2;
+                    let frontend_id_str = frontend_id.to_string();
                     let no_tags = vec![];
                     let tags = self.tags.get(&id).unwrap_or(&no_tags);
                     let slugs: Vec<String> = tags.iter().map(|tag| tag.0.to_string()).collect();
                     let tag_string = slugs.join(" ");
                     let empty = "   ".to_string();
                     let solution = solution_map.get(&frontend_id).unwrap_or(&empty);
-                    let description = description_map.get(&frontend_id).unwrap_or(&empty);
+                    let description = description_map
+                        .get(&frontend_id)
+                        .unwrap_or(&frontend_id_str);
                     n_solutions += if solution_map.get(&frontend_id).is_some() {
                         1
                     } else {
@@ -90,13 +93,13 @@ impl Readme {
                 percentage,
             );
             s += &format!(
-                "\n|id|{} {} Questions|Tags|{} Solutions|Description|\n",
+                "\n|id|{} {} Questions|Tags|{} Solutions|\n",
                 n_questions, level_string, n_solutions
             );
-            s += "|---|---|---|---|---|\n";
+            s += "|---|---|---|---|\n";
             rows.sort_by_key(|row| (row.3.to_string(), row.2.to_string(), row.0));
             for row in rows {
-                s += &format!("|{}|{}|{}|{}|{}|\n", row.0, row.1, row.2, row.3, row.4);
+                s += &format!("|{}|{}|{}|{}|\n", row.4, row.1, row.2, row.3);
             }
             s += "</details>\n";
         }
