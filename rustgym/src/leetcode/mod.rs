@@ -2614,3 +2614,5 @@ mod _1629_slowest_key;
 //
 mod _1630_arithmetic_subarrays;
 //
+mod _1631_path_with_minimum_effort;
+//

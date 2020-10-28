@@ -426,10 +426,10 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook)|array|[solution](rustgym/src/leetcode/_999_available_captures_for_rook.rs)|
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|math|[solution](rustgym/src/leetcode/_9_palindrome_number.rs)|
 </details>
-<details><summary>Medium 36/789 4.56%</summary>
+<details><summary>Medium 35/789 4.44%</summary>
 
 
-|id|789 Medium Questions|Tags|753 Solutions|
+|id|789 Medium Questions|Tags|754 Solutions|
 |---|---|---|---|
 |427|[Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree)||   |
 |558|[Logical OR of Two Binary Grids Represented as Quad-Trees](https://leetcode.com/problems/logical-or-of-two-binary-grids-represented-as-quad-trees)||   |
@@ -440,7 +440,6 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |277|[Find the Celebrity](https://leetcode.com/problems/find-the-celebrity)|array|   |
 |702|[Search in a Sorted Array of Unknown Size](https://leetcode.com/problems/search-in-a-sorted-array-of-unknown-size)|binary-search|   |
 |1533|[Find the Index of the Large Integer](https://leetcode.com/problems/find-the-index-of-the-large-integer)|binary-search|   |
-|1631|[Path With Minimum Effort](https://leetcode.com/problems/path-with-minimum-effort)|binary-search depth-first-search union-find graph|   |
 |240|[Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii)|binary-search divide-and-conquer|   |
 |1236|[Web Crawler](https://leetcode.com/problems/web-crawler)|depth-first-search breadth-first-search|   |
 |133|[Clone Graph](https://leetcode.com/problems/clone-graph)|depth-first-search breadth-first-search graph|   |
@@ -767,6 +766,7 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |1626|[Best Team With No Conflicts](https://leetcode.com/problems/best-team-with-no-conflicts)|dynamic-programming|[solution](rustgym/src/leetcode/_1626_best_team_with_no_conflicts.rs)|
 |162|[Find Peak Element](https://leetcode.com/problems/find-peak-element)|array binary-search|[solution](rustgym/src/leetcode/_162_find_peak_element.rs)|
 |1630|[Arithmetic Subarrays](https://leetcode.com/problems/arithmetic-subarrays)|sort|[solution](rustgym/src/leetcode/_1630_arithmetic_subarrays.rs)|
+|1631|[Path With Minimum Effort](https://leetcode.com/problems/path-with-minimum-effort)|binary-search depth-first-search union-find graph|[solution](rustgym/src/leetcode/_1631_path_with_minimum_effort.rs)|
 |165|[Compare Version Numbers](https://leetcode.com/problems/compare-version-numbers)|string|[solution](rustgym/src/leetcode/_165_compare_version_numbers.rs)|
 |166|[Fraction to Recurring Decimal](https://leetcode.com/problems/fraction-to-recurring-decimal)|hash-table math|[solution](rustgym/src/leetcode/_166_fraction_to_recurring_decimal.rs)|
 |16|[3Sum Closest](https://leetcode.com/problems/3sum-closest)|array two-pointers|[solution](rustgym/src/leetcode/_16_3sum_closest.rs)|
