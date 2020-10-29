@@ -1267,6 +1267,8 @@ mod _751_ip_to_cidr;
 //
 mod _752_open_the_lock;
 //
+mod _753_cracking_the_safe;
+//
 mod _754_reach_a_number;
 //
 mod _755_pour_water;
@@ -1742,6 +1744,8 @@ mod _1033_moving_stones_until_consecutive;
 mod _1034_coloring_a_border;
 //
 mod _1035_uncrossed_lines;
+//
+mod _1036_escape_a_large_maze;
 //
 mod _1037_valid_boomerang;
 //
