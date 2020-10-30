@@ -1291,6 +1291,8 @@ mod _765_couples_holding_hands;
 //
 mod _766_toeplitiz_matrix;
 //
+mod _767_reorganize_string;
+//
 mod _768_max_chunks_to_make_sorted_2;
 //
 mod _769_max_chunks_to_make_sorted;

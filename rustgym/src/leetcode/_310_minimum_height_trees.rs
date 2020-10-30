@@ -50,21 +50,21 @@ fn test() {
     let edges = vec_vec_i32![[1, 0], [1, 2], [1, 3]];
     let mut res = vec![1];
     let mut ans = Solution::find_min_height_trees(n, edges);
-    ans.sort();
-    res.sort();
+    ans.sort_unstable();
+    res.sort_unstable();
     assert_eq!(ans, res);
     let n = 6;
     let edges = vec_vec_i32![[0, 3], [1, 3], [2, 3], [4, 3], [5, 4]];
     let mut res = vec![3, 4];
     let mut ans = Solution::find_min_height_trees(n, edges);
-    ans.sort();
-    res.sort();
+    ans.sort_unstable();
+    res.sort_unstable();
     assert_eq!(ans, res);
     let n = 3;
     let edges = vec_vec_i32![[0, 1], [0, 2]];
     let mut res = vec![0];
     let mut ans = Solution::find_min_height_trees(n, edges);
-    ans.sort();
-    res.sort();
+    ans.sort_unstable();
+    res.sort_unstable();
     assert_eq!(ans, res);
 }

@@ -47,13 +47,13 @@ fn test() {
     let words = vec_string!["abcd", "dcba", "lls", "s", "sssll"];
     let mut res = vec![[0, 1], [1, 0], [3, 2], [2, 4]];
     let mut ans = Solution::palindrome_pairs(words);
-    res.sort();
-    ans.sort();
+    res.sort_unstable();
+    ans.sort_unstable();
     assert_eq!(ans, res);
     let words = vec_string!["bat", "tab", "cat"];
     let mut res = vec![[0, 1], [1, 0]];
     let mut ans = Solution::palindrome_pairs(words);
-    res.sort();
-    ans.sort();
+    res.sort_unstable();
+    ans.sort_unstable();
     assert_eq!(ans, res);
 }

@@ -425,10 +425,10 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook)|array|[solution](rustgym/src/leetcode/_999_available_captures_for_rook.rs)|
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|math|[solution](rustgym/src/leetcode/_9_palindrome_number.rs)|
 </details>
-<details><summary>Medium 36/791 4.55%</summary>
+<details><summary>Medium 35/791 4.42%</summary>
 
 
-|id|791 Medium Questions|Tags|755 Solutions|
+|id|791 Medium Questions|Tags|756 Solutions|
 |---|---|---|---|
 |427|[Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree)||   |
 |558|[Logical OR of Two Binary Grids Represented as Quad-Trees](https://leetcode.com/problems/logical-or-of-two-binary-grids-represented-as-quad-trees)||   |
@@ -454,7 +454,6 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |426|[Convert Binary Search Tree to Sorted Doubly Linked List](https://leetcode.com/problems/convert-binary-search-tree-to-sorted-doubly-linked-list)|linked-list divide-and-conquer tree|   |
 |142|[Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii)|linked-list two-pointers|   |
 |1618|[Maximum Font to Fit a Sentence in a Screen](https://leetcode.com/problems/maximum-font-to-fit-a-sentence-in-a-screen)|string binary-search|   |
-|767|[Reorganize String](https://leetcode.com/problems/reorganize-string)|string heap greedy sort|   |
 |236|[Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree)|tree|   |
 |285|[Inorder Successor in BST](https://leetcode.com/problems/inorder-successor-in-bst)|tree|   |
 |449|[Serialize and Deserialize BST](https://leetcode.com/problems/serialize-and-deserialize-bst)|tree|   |
@@ -462,8 +461,8 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |1379|[Find a Corresponding Node of a Binary Tree in a Clone of That Tree](https://leetcode.com/problems/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree)|tree|   |
 |429|[N-ary Tree Level Order Traversal](https://leetcode.com/problems/n-ary-tree-level-order-traversal)|tree breadth-first-search|   |
 |1602|[Find Nearest Right Node in Binary Tree](https://leetcode.com/problems/find-nearest-right-node-in-binary-tree)|tree breadth-first-search|   |
-|116|[Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node)|tree depth-first-search|   |
 |117|[Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii)|tree depth-first-search|   |
+|116|[Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node)|tree depth-first-search breadth-first-search|   |
 |863|[All Nodes Distance K in Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree)|tree depth-first-search breadth-first-search|   |
 |1628|[Design an Expression Tree With Evaluate Function](https://leetcode.com/problems/design-an-expression-tree-with-evaluate-function)|tree design|   |
 |1003|[Check If Word Is Valid After Substitutions](https://leetcode.com/problems/check-if-word-is-valid-after-substitutions)|string stack|[solution](rustgym/src/leetcode/_1003_check_if_word_is_valid_after_substitutions.rs)|
@@ -1087,6 +1086,7 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |75|[Sort Colors](https://leetcode.com/problems/sort-colors)|array two-pointers sort|[solution](rustgym/src/leetcode/_75_sort_colors.rs)|
 |763|[Partition Labels](https://leetcode.com/problems/partition-labels)|two-pointers greedy|[solution](rustgym/src/leetcode/_763_partition_labels.rs)|
 |764|[Largest Plus Sign](https://leetcode.com/problems/largest-plus-sign)|dynamic-programming|[solution](rustgym/src/leetcode/_764_largest_plus_sign.rs)|
+|[767](rustgym/desc/leetcode/767.md)|[Reorganize String](https://leetcode.com/problems/reorganize-string)|string heap greedy sort|[solution](rustgym/src/leetcode/_767_reorganize_string.rs)|
 |769|[Max Chunks To Make Sorted](https://leetcode.com/problems/max-chunks-to-make-sorted)|array|[solution](rustgym/src/leetcode/_769_max_chunks_to_make_sorted.rs)|
 |775|[Global and Local Inversions](https://leetcode.com/problems/global-and-local-inversions)|array math|[solution](rustgym/src/leetcode/_775_global_and_local_inversions.rs)|
 |776|[Split BST](https://leetcode.com/problems/split-bst)|tree recursion|[solution](rustgym/src/leetcode/_776_split_bst.rs)|

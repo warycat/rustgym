@@ -40,13 +40,13 @@ fn test() {
     let root = tree!(5, tree!(2), tree!(-3));
     let mut res = vec![2, -3, 4];
     let mut ans = Solution::find_frequent_tree_sum(root);
-    res.sort();
-    ans.sort();
+    res.sort_unstable();
+    ans.sort_unstable();
     assert_eq!(ans, res);
     let root = tree!(5, tree!(2), tree!(-5));
     let mut res = vec![2];
     let mut ans = Solution::find_frequent_tree_sum(root);
-    res.sort();
-    ans.sort();
+    res.sort_unstable();
+    ans.sort_unstable();
     assert_eq!(ans, res);
 }
