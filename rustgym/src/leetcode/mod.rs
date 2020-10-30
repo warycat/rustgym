@@ -332,6 +332,8 @@ mod _188_best_time_to_buy_and_sell_stock_4;
 //
 mod _189_rotate_array;
 //
+mod _190_reverse_bits;
+//
 mod _191_number_of_1_bits;
 //
 mod _198_house_robber;
@@ -407,6 +409,8 @@ mod _232_implent_queue_using_stacks;
 mod _233_number_of_digit_one;
 //
 mod _234_palindrome_linked_list;
+//
+mod _235_lowest_common_ancestor_of_a_binary_search_tree;
 //
 mod _238_product_of_array_except_self;
 //

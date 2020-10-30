@@ -47,19 +47,17 @@ All the solutions here are crafted with love and their performance beats 99% of 
 Leetcode is a website where people–mostly software engineers–practice their coding skills. There are 1200+ questions (and growing), each with multiple solutions. Questions are ranked by level of difficulty: easy, medium, and hard. Within the last decade or so, the technical interview process has become formulaic and what some describe “unnatural” for engineers. What people are asked to perform in an interview–solving word or code based teasers, coding on a whiteboard, and being asked to produce clean optimized solutions in a short time frame–is not what they would experience in a daily work environment.
 
 # All Solutions
-<details><summary>Easy 11/372 2.96%</summary>
+<details><summary>Easy 9/372 2.42%</summary>
 
 
-|id|372 Easy Questions|Tags|361 Solutions|
+|id|372 Easy Questions|Tags|363 Solutions|
 |---|---|---|---|
-|190|[Reverse Bits](https://leetcode.com/problems/reverse-bits)|bit-manipulation|   |
 |690|[Employee Importance](https://leetcode.com/problems/employee-importance)|hash-table depth-first-search breadth-first-search|   |
 |160|[Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists)|linked-list|   |
 |237|[Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list)|linked-list|   |
 |141|[Linked List Cycle](https://leetcode.com/problems/linked-list-cycle)|linked-list two-pointers|   |
 |1237|[Find Positive Integer Solution for a Given Equation](https://leetcode.com/problems/find-positive-integer-solution-for-a-given-equation)|math binary-search|   |
 |157|[Read N Characters Given Read4](https://leetcode.com/problems/read-n-characters-given-read4)|string|   |
-|235|[Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree)|tree|   |
 |589|[N-ary Tree Preorder Traversal](https://leetcode.com/problems/n-ary-tree-preorder-traversal)|tree|   |
 |590|[N-ary Tree Postorder Traversal](https://leetcode.com/problems/n-ary-tree-postorder-traversal)|tree|   |
 |559|[Maximum Depth of N-ary Tree](https://leetcode.com/problems/maximum-depth-of-n-ary-tree)|tree depth-first-search breadth-first-search|   |
@@ -220,6 +218,7 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |170|[Two Sum III - Data structure design](https://leetcode.com/problems/two-sum-iii-data-structure-design)|hash-table design|[solution](rustgym/src/leetcode/_170_two_sum_3.rs)|
 |171|[Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number)|math|[solution](rustgym/src/leetcode/_171_excel_sheet_column_number.rs)|
 |172|[Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes)|math|[solution](rustgym/src/leetcode/_172_factorial_trailing_zeroes.rs)|
+|[190](rustgym/desc/leetcode/190.md)|[Reverse Bits](https://leetcode.com/problems/reverse-bits)|bit-manipulation|[solution](rustgym/src/leetcode/_190_reverse_bits.rs)|
 |191|[Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits)|bit-manipulation|[solution](rustgym/src/leetcode/_191_number_of_1_bits.rs)|
 |198|[House Robber](https://leetcode.com/problems/house-robber)|dynamic-programming|[solution](rustgym/src/leetcode/_198_house_robber.rs)|
 |1|[Two Sum](https://leetcode.com/problems/two-sum)|array hash-table|[solution](rustgym/src/leetcode/_1_two_sum.rs)|
@@ -238,6 +237,7 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |231|[Power of Two](https://leetcode.com/problems/power-of-two)|math bit-manipulation|[solution](rustgym/src/leetcode/_231_power_of_two.rs)|
 |232|[Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks)|stack design|[solution](rustgym/src/leetcode/_232_implent_queue_using_stacks.rs)|
 |234|[Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list)|linked-list two-pointers|[solution](rustgym/src/leetcode/_234_palindrome_linked_list.rs)|
+|[235](rustgym/desc/leetcode/235.md)|[Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree)|tree|[solution](rustgym/src/leetcode/_235_lowest_common_ancestor_of_a_binary_search_tree.rs)|
 |242|[Valid Anagram](https://leetcode.com/problems/valid-anagram)|hash-table sort|[solution](rustgym/src/leetcode/_242_valid_anagram.rs)|
 |243|[Shortest Word Distance](https://leetcode.com/problems/shortest-word-distance)|array|[solution](rustgym/src/leetcode/_243_shortest_word_distance.rs)|
 |246|[Strobogrammatic Number](https://leetcode.com/problems/strobogrammatic-number)|hash-table math|[solution](rustgym/src/leetcode/_246_strobogrammantic_number.rs)|
