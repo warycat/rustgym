@@ -1073,6 +1073,8 @@ mod _628_maximum_product_of_three_numbers;
 //
 mod _630_course_schedule_3;
 //
+mod _631_design_excel_sum_formula;
+//
 mod _632_smallest_range_covering_elements_from_k_lists;
 //
 mod _633_sum_of_square_numbers;
@@ -1563,6 +1565,8 @@ mod _922_sort_array_by_parity_2;
 //
 mod _923_3sum_with_multiplicity;
 //
+mod _924_minimize_malware_spread;
+//
 mod _925_long_pressed_name;
 //
 mod _926_flip_string_to_monotone_increasing;
@@ -2003,6 +2007,8 @@ mod _1208_get_equal_substrings_within_budget;
 //
 mod _1209_remove_all_adjacent_duplicates_in_string_2;
 //
+mod _1210_minimum_moves_to_reach_target_with_rotations;
+//
 mod _1213_intersection_of_three_sorted_arrays;
 //
 mod _1214_two_sum_bsts;
@@ -2250,6 +2256,8 @@ mod _1374_generate_a_string_with_characters_that_have_odd_counts;
 mod _1375_bulb_switcher_3;
 //
 mod _1376_time_needed_to_inform_all_employees;
+//
+mod _1377_frog_position_after_t_seconds;
 //
 mod _1380_lucky_numbers_in_a_matrix;
 //
