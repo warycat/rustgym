@@ -1,7 +1,7 @@
 struct Solution;
 
 impl Solution {
-    pub fn remove_duplicate_letters(text: String) -> String {
+    fn remove_duplicate_letters(text: String) -> String {
         let mut stack: Vec<u8> = vec![];
         let mut left: Vec<usize> = vec![0; 26];
         for b in text.bytes() {

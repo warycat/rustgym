@@ -425,10 +425,10 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook)|array|[solution](rustgym/src/leetcode/_999_available_captures_for_rook.rs)|
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|math|[solution](rustgym/src/leetcode/_9_palindrome_number.rs)|
 </details>
-<details><summary>Medium 35/791 4.42%</summary>
+<details><summary>Medium 34/791 4.30%</summary>
 
 
-|id|791 Medium Questions|Tags|756 Solutions|
+|id|791 Medium Questions|Tags|757 Solutions|
 |---|---|---|---|
 |427|[Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree)||   |
 |558|[Logical OR of Two Binary Grids Represented as Quad-Trees](https://leetcode.com/problems/logical-or-of-two-binary-grids-represented-as-quad-trees)||   |
@@ -463,7 +463,6 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |1602|[Find Nearest Right Node in Binary Tree](https://leetcode.com/problems/find-nearest-right-node-in-binary-tree)|tree breadth-first-search|   |
 |117|[Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii)|tree depth-first-search|   |
 |116|[Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node)|tree depth-first-search breadth-first-search|   |
-|863|[All Nodes Distance K in Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree)|tree depth-first-search breadth-first-search|   |
 |1628|[Design an Expression Tree With Evaluate Function](https://leetcode.com/problems/design-an-expression-tree-with-evaluate-function)|tree design|   |
 |1003|[Check If Word Is Valid After Substitutions](https://leetcode.com/problems/check-if-word-is-valid-after-substitutions)|string stack|[solution](rustgym/src/leetcode/_1003_check_if_word_is_valid_after_substitutions.rs)|
 |1004|[Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii)|two-pointers sliding-window|[solution](rustgym/src/leetcode/_1004_max_consecutive_ones_3.rs)|
@@ -1142,6 +1141,7 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |856|[Score of Parentheses](https://leetcode.com/problems/score-of-parentheses)|string stack|[solution](rustgym/src/leetcode/_856_score_of_parentheses.rs)|
 |858|[Mirror Reflection](https://leetcode.com/problems/mirror-reflection)|math|[solution](rustgym/src/leetcode/_858_mirror_reflection.rs)|
 |861|[Score After Flipping Matrix](https://leetcode.com/problems/score-after-flipping-matrix)|greedy|[solution](rustgym/src/leetcode/_861_score_after_flipping_matrix.rs)|
+|[863](rustgym/desc/leetcode/863.md)|[All Nodes Distance K in Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree)|tree depth-first-search breadth-first-search|[solution](rustgym/src/leetcode/_863_all_nodes_distance_k_in_binary_tree.rs)|
 |865|[Smallest Subtree with all the Deepest Nodes](https://leetcode.com/problems/smallest-subtree-with-all-the-deepest-nodes)|tree|[solution](rustgym/src/leetcode/_865_smallest_subtree_with_all_the_deepest_nodes.rs)|
 |866|[Prime Palindrome](https://leetcode.com/problems/prime-palindrome)|math|[solution](rustgym/src/leetcode/_866_prime_palindrome.rs)|
 |869|[Reordered Power of 2](https://leetcode.com/problems/reordered-power-of-2)|math|[solution](rustgym/src/leetcode/_869_reordered_power_of_2.rs)|
@@ -1222,10 +1222,10 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |994|[Rotting Oranges](https://leetcode.com/problems/rotting-oranges)|breadth-first-search|[solution](rustgym/src/leetcode/_994_rotting_oranges.rs)|
 |998|[Maximum Binary Tree II](https://leetcode.com/problems/maximum-binary-tree-ii)|tree|[solution](rustgym/src/leetcode/_998_maximum_binary_tree_2.rs)|
 </details>
-<details><summary>Hard 125/325 38.46%</summary>
+<details><summary>Hard 124/325 38.15%</summary>
 
 
-|id|325 Hard Questions|Tags|200 Solutions|
+|id|325 Hard Questions|Tags|201 Solutions|
 |---|---|---|---|
 |440|[K-th Smallest in Lexicographical Order](https://leetcode.com/problems/k-th-smallest-in-lexicographical-order)||   |
 |798|[Smallest Rotation with Highest Score](https://leetcode.com/problems/smallest-rotation-with-highest-score)||   |
@@ -1250,7 +1250,6 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |749|[Contain Virus](https://leetcode.com/problems/contain-virus)|depth-first-search|   |
 |839|[Similar String Groups](https://leetcode.com/problems/similar-string-groups)|depth-first-search union-find graph|   |
 |928|[Minimize Malware Spread II](https://leetcode.com/problems/minimize-malware-spread-ii)|depth-first-search union-find graph|   |
-|1172|[Dinner Plate Stacks](https://leetcode.com/problems/dinner-plate-stacks)|design|   |
 |1274|[Number of Ships in a Rectangle](https://leetcode.com/problems/number-of-ships-in-a-rectangle)|divide-and-conquer|   |
 |903|[Valid Permutations for DI Sequence](https://leetcode.com/problems/valid-permutations-for-di-sequence)|divide-and-conquer dynamic-programming|   |
 |466|[Count The Repetitions](https://leetcode.com/problems/count-the-repetitions)|dynamic-programming|   |
@@ -1367,6 +1366,7 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |1147|[Longest Chunked Palindrome Decomposition](https://leetcode.com/problems/longest-chunked-palindrome-decomposition)|dynamic-programming rolling-hash|[solution](rustgym/src/leetcode/_1147_longest_chunked_palindrome_decomposition.rs)|
 |115|[Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences)|string dynamic-programming|[solution](rustgym/src/leetcode/_115_distinct_subsequences.rs)|
 |1168|[Optimize Water Distribution in a Village](https://leetcode.com/problems/optimize-water-distribution-in-a-village)|union-find graph|[solution](rustgym/src/leetcode/_1168_optimize_water_distribution_in_a_village.rs)|
+|[1172](rustgym/desc/leetcode/1172.md)|[Dinner Plate Stacks](https://leetcode.com/problems/dinner-plate-stacks)|design|[solution](rustgym/src/leetcode/_1172_dinner_plate_stacks.rs)|
 |1183|[Maximum Number of Ones](https://leetcode.com/problems/maximum-number-of-ones)|math sort|[solution](rustgym/src/leetcode/_1183_maximum_number_of_ones.rs)|
 |1192|[Critical Connections in a Network](https://leetcode.com/problems/critical-connections-in-a-network)|depth-first-search|[solution](rustgym/src/leetcode/_1192_critical_connections_in_a_network.rs)|
 |1203|[Sort Items by Groups Respecting Dependencies](https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies)|depth-first-search graph topological-sort|[solution](rustgym/src/leetcode/_1203_sort_items_by_groups_respecting_dependencies.rs)|

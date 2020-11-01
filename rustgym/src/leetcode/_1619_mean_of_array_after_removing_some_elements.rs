@@ -1,7 +1,7 @@
 struct Solution;
 
 impl Solution {
-    pub fn trim_mean(mut arr: Vec<i32>) -> f64 {
+    fn trim_mean(mut arr: Vec<i32>) -> f64 {
         let n = arr.len();
         let start = n / 20;
         let end = n - n / 20;
