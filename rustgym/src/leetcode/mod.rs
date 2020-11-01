@@ -2643,3 +2643,11 @@ mod _1636_sort_array_by_increasing_frequency;
 mod _1637_widest_vertical_area_between_two_points_containing_no_points;
 //
 mod _1638_count_substrings_that_differ_by_one_characters;
+//
+mod _1640_check_array_formation_through_concatenation;
+//
+mod _1641_count_sorted_vowel_strings;
+//
+mod _1642_furthest_building_you_can_reach;
+//
+mod _1643_kth_smallest_instructions;
