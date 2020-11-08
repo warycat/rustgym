@@ -2651,3 +2651,7 @@ mod _1641_count_sorted_vowel_strings;
 mod _1642_furthest_building_you_can_reach;
 //
 mod _1643_kth_smallest_instructions;
+//
+mod _1646_get_maximum_in_generated_array;
+//
+mod _1647_minimum_deletions_to_make_character_frequencies_unique;
