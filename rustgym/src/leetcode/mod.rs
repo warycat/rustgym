@@ -1167,6 +1167,8 @@ mod _681_next_closest_time;
 //
 mod _682_baseball_game;
 //
+mod _683_k_empty_slots;
+//
 mod _684_redundant_connection;
 //
 mod _686_repeated_string_match;
