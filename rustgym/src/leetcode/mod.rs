@@ -292,6 +292,8 @@ mod _155_min_stack;
 //
 mod _156_binary_tree_upside_down;
 //
+mod _157_read_n_characters_given_read4;
+//
 mod _159_longest_substring_with_at_most_two_distinc_characters;
 //
 mod _161_one_edit_distance;
@@ -2054,6 +2056,8 @@ mod _1233_remove_sub_folders_from_the_filesystem;
 mod _1234_replace_the_substring_for_balanced_string;
 //
 mod _1235_maximum_profit_in_job_scheduling;
+//
+mod _1237_find_positive_integer_solution_for_a_given_equation;
 //
 mod _1238_circular_permutation_in_binary_representation;
 //
