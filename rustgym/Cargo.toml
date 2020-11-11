@@ -10,7 +10,7 @@ readme = "../README.md"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [features]
-default = ["rustgym-testcpp", "rustgym-gvc"]
+default = []
 
 [dependencies]
 rand = "0.7.3"
@@ -18,7 +18,7 @@ pretty_assertions = "0.6.1"
 assert_approx_eq = "1.1.0"
 
 rustgym-util = {path='../util', version = '0.1.0'}
-rustgym-testcpp = {path='../testcpp', version = '0.1.0',optional = true}
+# rustgym-testcpp = {path='../testcpp', version = '0.1.0',optional = true}
 rustgym-gvc = {path='../gvc', version = '0.1.0', optional = true}
 
 [package.metadata.docs.rs]

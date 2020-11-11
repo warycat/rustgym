@@ -4,6 +4,5 @@ members = [
     "gvc",
     "util",
     "readme",
-    "testcpp",
     "gvc-sys",
 ]

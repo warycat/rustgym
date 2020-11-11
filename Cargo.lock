@@ -893,7 +893,6 @@ dependencies = [
  "pretty_assertions",
  "rand",
  "rustgym-gvc",
- "rustgym-testcpp",
  "rustgym-util",
 ]
 
@@ -912,15 +911,6 @@ dependencies = [
  "reqwest",
  "rustgym-util",
  "serde_json",
-]
-
-[[package]]
-name = "rustgym-testcpp"
-version = "0.1.0"
-dependencies = [
- "cc",
- "glob",
- "pkg-config",
 ]
 
 [[package]]

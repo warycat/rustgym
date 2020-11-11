@@ -418,6 +418,8 @@ mod _238_product_of_array_except_self;
 //
 mod _239_sliding_window_maximum;
 //
+mod _240_search_a_2d_matrix_2;
+//
 mod _241_different_ways_to_add_parentheses;
 //
 mod _242_valid_anagram;
@@ -488,7 +490,8 @@ mod _275_h_index_2;
 //
 mod _276_paint_fence;
 //
-#[cfg(feature = "testcpp")]
+mod _277_find_the_celebrity;
+//
 mod _278_first_bad_version;
 //
 mod _279_perfect_squares;
@@ -500,6 +503,8 @@ mod _281_zigzag_iterator;
 mod _282_expression_add_operators;
 //
 mod _283_move_zeros;
+//
+mod _285_inorder_successor_in_bst;
 //
 mod _294_flip_game_2;
 //
@@ -2343,7 +2348,6 @@ mod _1426_counting_elements;
 //
 mod _1427_perform_string_shifts;
 //
-#[cfg(feature = "testcpp")]
 mod _1428_leftmost_column_with_at_least_a_one;
 //
 mod _1429_first_unique_number;
