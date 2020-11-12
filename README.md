@@ -427,10 +427,10 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook)|array|[solution](rustgym/src/leetcode/_999_available_captures_for_rook.rs)|
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|math|[solution](rustgym/src/leetcode/_9_palindrome_number.rs)|
 </details>
-<details><summary>Medium 33/799 4.13%</summary>
+<details><summary>Medium 31/799 3.88%</summary>
 
 
-|id|799 Medium Questions|Tags|766 Solutions|
+|id|799 Medium Questions|Tags|768 Solutions|
 |---|---|---|---|
 |427|[Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree)||   |
 |558|[Logical OR of Two Binary Grids Represented as Quad-Trees](https://leetcode.com/problems/logical-or-of-two-binary-grids-represented-as-quad-trees)||   |
@@ -455,8 +455,6 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |142|[Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii)|linked-list two-pointers|   |
 |1648|[Sell Diminishing-Valued Colored Balls](https://leetcode.com/problems/sell-diminishing-valued-colored-balls)|math greedy sort|   |
 |1618|[Maximum Font to Fit a Sentence in a Screen](https://leetcode.com/problems/maximum-font-to-fit-a-sentence-in-a-screen)|string binary-search|   |
-|236|[Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree)|tree|   |
-|449|[Serialize and Deserialize BST](https://leetcode.com/problems/serialize-and-deserialize-bst)|tree|   |
 |510|[Inorder Successor in BST II](https://leetcode.com/problems/inorder-successor-in-bst-ii)|tree|   |
 |1379|[Find a Corresponding Node of a Binary Tree in a Clone of That Tree](https://leetcode.com/problems/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree)|tree|   |
 |1644|[Lowest Common Ancestor of a Binary Tree II](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-ii)|tree|   |
@@ -802,6 +800,7 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |229|[Majority Element II](https://leetcode.com/problems/majority-element-ii)|array|[solution](rustgym/src/leetcode/_229_majority_element_2.rs)|
 |22|[Generate Parentheses](https://leetcode.com/problems/generate-parentheses)|string backtracking|[solution](rustgym/src/leetcode/_22_generate_parentheses.rs)|
 |230|[Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst)|binary-search tree|[solution](rustgym/src/leetcode/_230_kth_smallest_element_in_a_bst.rs)|
+|[236](rustgym/desc/leetcode/236.md)|[Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree)|tree|[solution](rustgym/src/leetcode/_236_lowest_common_ancestor_of_a_binary_tree.rs)|
 |238|[Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self)|array|[solution](rustgym/src/leetcode/_238_product_of_array_except_self.rs)|
 |[240](rustgym/desc/leetcode/240.md)|[Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii)|binary-search divide-and-conquer|[solution](rustgym/src/leetcode/_240_search_a_2d_matrix_2.rs)|
 |241|[Different Ways to Add Parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses)|divide-and-conquer|[solution](rustgym/src/leetcode/_241_different_ways_to_add_parentheses.rs)|
@@ -932,6 +931,7 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |444|[Sequence Reconstruction](https://leetcode.com/problems/sequence-reconstruction)|graph topological-sort|[solution](rustgym/src/leetcode/_444_sequence_reconstruction.rs)|
 |445|[Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii)|linked-list|[solution](rustgym/src/leetcode/_445_add_two_numbers_2.rs)|
 |447|[Number of Boomerangs](https://leetcode.com/problems/number-of-boomerangs)|hash-table math|[solution](rustgym/src/leetcode/_447_number_of_boomerangs.rs)|
+|[449](rustgym/desc/leetcode/449.md)|[Serialize and Deserialize BST](https://leetcode.com/problems/serialize-and-deserialize-bst)|tree|[solution](rustgym/src/leetcode/_449_serialize_and_deserialize_bst.rs)|
 |450|[Delete Node in a BST](https://leetcode.com/problems/delete-node-in-a-bst)|tree|[solution](rustgym/src/leetcode/_450_delete_node_in_a_bst.rs)|
 |451|[Sort Characters By Frequency](https://leetcode.com/problems/sort-characters-by-frequency)|hash-table heap|[solution](rustgym/src/leetcode/_451_sort_characters_by_frequency.rs)|
 |452|[Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons)|greedy sort|[solution](rustgym/src/leetcode/_452_minimum_number_of_arrows_to_burst_ballons.rs)|
