@@ -530,6 +530,8 @@ mod _293_flip_game;
 //
 mod _295_find_median_from_data_stream;
 //
+mod _297_serialize_and_deserialize_binary_tree;
+//
 mod _298_binary_tree_longest_consecutive_sequence;
 //
 mod _299_bulls_and_cows;
@@ -1030,6 +1032,8 @@ mod _566_reshape_the_matrix;
 //
 mod _567_permutation_in_string;
 //
+mod _568_maximum_vacation_days;
+//
 mod _572_subtree_of_another_tree;
 //
 mod _573_squirrel_simulation;
@@ -1231,6 +1235,8 @@ mod _716_max_stack;
 mod _717_1bit_and_2bit_characters;
 //
 mod _718_maximum_length_of_repeated_subarray;
+//
+mod _719_find_kth_smallest_pair_distance;
 //
 mod _720_longest_word_in_dictionary;
 //

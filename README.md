@@ -1232,16 +1232,15 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |994|[Rotting Oranges](https://leetcode.com/problems/rotting-oranges)|breadth-first-search|[solution](rustgym/src/leetcode/_994_rotting_oranges.rs)|
 |998|[Maximum Binary Tree II](https://leetcode.com/problems/maximum-binary-tree-ii)|tree|[solution](rustgym/src/leetcode/_998_maximum_binary_tree_2.rs)|
 </details>
-<details><summary>Hard 125/328 38.11%</summary>
+<details><summary>Hard 122/328 37.20%</summary>
 
 
-|id|328 Hard Questions|Tags|203 Solutions|
+|id|328 Hard Questions|Tags|206 Solutions|
 |---|---|---|---|
 |440|[K-th Smallest in Lexicographical Order](https://leetcode.com/problems/k-th-smallest-in-lexicographical-order)||   |
 |798|[Smallest Rotation with Highest Score](https://leetcode.com/problems/smallest-rotation-with-highest-score)||   |
 |154|[Find Minimum in Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii)|array binary-search|   |
 |644|[Maximum Average Subarray II](https://leetcode.com/problems/maximum-average-subarray-ii)|array binary-search|   |
-|719|[Find K-th Smallest Pair Distance](https://leetcode.com/problems/find-k-th-smallest-pair-distance)|array binary-search heap|   |
 |1157|[Online Majority Element In Subarray](https://leetcode.com/problems/online-majority-element-in-subarray)|array binary-search segment-tree|   |
 |782|[Transform to Chessboard](https://leetcode.com/problems/transform-to-chessboard)|array math|   |
 |891|[Sum of Subsequence Widths](https://leetcode.com/problems/sum-of-subsequence-widths)|array math|   |
@@ -1264,7 +1263,6 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |1274|[Number of Ships in a Rectangle](https://leetcode.com/problems/number-of-ships-in-a-rectangle)|divide-and-conquer|   |
 |903|[Valid Permutations for DI Sequence](https://leetcode.com/problems/valid-permutations-for-di-sequence)|divide-and-conquer dynamic-programming|   |
 |466|[Count The Repetitions](https://leetcode.com/problems/count-the-repetitions)|dynamic-programming|   |
-|568|[Maximum Vacation Days](https://leetcode.com/problems/maximum-vacation-days)|dynamic-programming|   |
 |600|[Non-negative Integers without Consecutive Ones](https://leetcode.com/problems/non-negative-integers-without-consecutive-ones)|dynamic-programming|   |
 |629|[K Inverse Pairs Array](https://leetcode.com/problems/k-inverse-pairs-array)|dynamic-programming|   |
 |639|[Decode Ways II](https://leetcode.com/problems/decode-ways-ii)|dynamic-programming|   |
@@ -1358,7 +1356,6 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |1516|[Move Sub-Tree of N-Ary Tree](https://leetcode.com/problems/move-sub-tree-of-n-ary-tree)|tree|   |
 |834|[Sum of Distances in Tree](https://leetcode.com/problems/sum-of-distances-in-tree)|tree depth-first-search|   |
 |685|[Redundant Connection II](https://leetcode.com/problems/redundant-connection-ii)|tree depth-first-search union-find graph|   |
-|297|[Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree)|tree design|   |
 |745|[Prefix and Suffix Search](https://leetcode.com/problems/prefix-and-suffix-search)|trie|   |
 |1610|[Maximum Number of Visible Points](https://leetcode.com/problems/maximum-number-of-visible-points)|two-pointers geometry|   |
 |803|[Bricks Falling When Hit](https://leetcode.com/problems/bricks-falling-when-hit)|union-find|   |
@@ -1462,6 +1459,7 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |291|[Word Pattern II](https://leetcode.com/problems/word-pattern-ii)|backtracking|[solution](rustgym/src/leetcode/_291_word_pattern_2.rs)|
 |295|[Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream)|heap design|[solution](rustgym/src/leetcode/_295_find_median_from_data_stream.rs)|
 |296|[Best Meeting Point](https://leetcode.com/problems/best-meeting-point)|math sort|[solution](rustgym/src/leetcode/_296_best_meeting_point.rs)|
+|[297](rustgym/desc/leetcode/297.md)|[Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree)|tree design|[solution](rustgym/src/leetcode/_297_serialize_and_deserialize_binary_tree.rs)|
 |301|[Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses)|depth-first-search breadth-first-search|[solution](rustgym/src/leetcode/_301_remove_invalid_parentheses.rs)|
 |302|[Smallest Rectangle Enclosing Black Pixels](https://leetcode.com/problems/smallest-rectangle-enclosing-black-pixels)|binary-search|[solution](rustgym/src/leetcode/_302_smallest_rectangle_enclosing_black_pixels.rs)|
 |305|[Number of Islands II](https://leetcode.com/problems/number-of-islands-ii)|union-find|[solution](rustgym/src/leetcode/_305_number_of_islands_2.rs)|
@@ -1514,6 +1512,7 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |546|[Remove Boxes](https://leetcode.com/problems/remove-boxes)|dynamic-programming depth-first-search|[solution](rustgym/src/leetcode/_546_remove_boxes.rs)|
 |552|[Student Attendance Record II](https://leetcode.com/problems/student-attendance-record-ii)|dynamic-programming|[solution](rustgym/src/leetcode/_552_student_attendance_record_2.rs)|
 |564|[Find the Closest Palindrome](https://leetcode.com/problems/find-the-closest-palindrome)|string|[solution](rustgym/src/leetcode/_564_find_the_closest_palindrome.rs)|
+|[568](rustgym/desc/leetcode/568.md)|[Maximum Vacation Days](https://leetcode.com/problems/maximum-vacation-days)|dynamic-programming|[solution](rustgym/src/leetcode/_568_maximum_vacation_days.rs)|
 |588|[Design In-Memory File System](https://leetcode.com/problems/design-in-memory-file-system)|design|[solution](rustgym/src/leetcode/_588_design_in_memory_file_system.rs)|
 |60|[Permutation Sequence](https://leetcode.com/problems/permutation-sequence)|math backtracking|[solution](rustgym/src/leetcode/_60_permutation_sequence.rs)|
 |630|[Course Schedule III](https://leetcode.com/problems/course-schedule-iii)|greedy|[solution](rustgym/src/leetcode/_630_course_schedule_3.rs)|
@@ -1528,6 +1527,7 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |[683](rustgym/desc/leetcode/683.md)|[K Empty Slots](https://leetcode.com/problems/k-empty-slots)|ordered-map|[solution](rustgym/src/leetcode/_683_k_empty_slots.rs)|
 |689|[Maximum Sum of 3 Non-Overlapping Subarrays](https://leetcode.com/problems/maximum-sum-of-3-non-overlapping-subarrays)|array dynamic-programming|[solution](rustgym/src/leetcode/_689_maximum_sum_of_3_non_overlapping_subarrays.rs)|
 |68|[Text Justification](https://leetcode.com/problems/text-justification)|string|[solution](rustgym/src/leetcode/_68_text_justification.rs)|
+|[719](rustgym/desc/leetcode/719.md)|[Find K-th Smallest Pair Distance](https://leetcode.com/problems/find-k-th-smallest-pair-distance)|array binary-search heap|[solution](rustgym/src/leetcode/_719_find_kth_smallest_pair_distance.rs)|
 |726|[Number of Atoms](https://leetcode.com/problems/number-of-atoms)|hash-table stack recursion|[solution](rustgym/src/leetcode/_726_number_of_atoms.rs)|
 |727|[Minimum Window Subsequence](https://leetcode.com/problems/minimum-window-subsequence)|dynamic-programming sliding-window|[solution](rustgym/src/leetcode/_727_minimum_window_subsequence.rs)|
 |72|[Edit Distance](https://leetcode.com/problems/edit-distance)|string dynamic-programming|[solution](rustgym/src/leetcode/_72_edit_distance.rs)|
