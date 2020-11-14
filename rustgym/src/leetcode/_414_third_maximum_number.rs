@@ -47,7 +47,7 @@ impl Solution {
 }
 
 #[test]
-fn name() {
+fn test() {
     let nums = vec![3, 2, 1];
     assert_eq!(Solution::third_max(nums), 1);
     let nums = vec![1, 2];

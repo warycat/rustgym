@@ -9,7 +9,7 @@ impl Solution {
 }
 
 #[test]
-fn name() {
+fn test() {
     let target = vec![1, 2, 3, 4];
     let arr = vec![2, 4, 1, 3];
     let res = true;

@@ -18,7 +18,7 @@ impl Solution {
 }
 
 #[test]
-fn name() {
+fn test() {
     let a = vec![1, 2, 2, 3];
     assert_eq!(Solution::is_monotonic(a), true);
     let a = vec![6, 5, 4, 4];

@@ -24,7 +24,7 @@ impl RecentCounter {
 }
 
 #[test]
-fn name() {
+fn test() {
     let mut obj = RecentCounter::new();
     assert_eq!(obj.ping(1), 1);
     assert_eq!(obj.ping(100), 2);

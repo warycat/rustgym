@@ -51,7 +51,7 @@ impl Solution {
 }
 
 #[test]
-fn name() {
+fn test() {
     let license_plate = "1s3 PSt".to_string();
     let words: Vec<String> = vec_string!["step", "steps", "stripe", "stepple"];
     let res = "steps".to_string();
