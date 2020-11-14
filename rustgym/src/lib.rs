@@ -9,7 +9,7 @@
 //! ```
 //! # Handy macros to build data for testing
 //! ```
-//! use rustgym::util::*;
+//! use rustgym_util::*;
 //!
 //! // singly linked list
 //! let list = list!(1, 2, 3);
@@ -27,7 +27,7 @@
 //! # Boilerplate for singly linked list
 //! Replace
 //! ```
-//! use rustgym::util::*;
+//! use rustgym_util::*;
 //! ```
 //! with
 //! ```ignore
@@ -59,7 +59,7 @@
 //! # Boilerplate for binary tree
 //! Replace
 //! ```
-//! use rustgym::util::*;
+//! use rustgym_util::*;
 //! ```
 //! with
 //! ```ignore
@@ -93,7 +93,7 @@
 //! ```
 //! when submitting to leetcode online judge.
 #[cfg_attr(test, macro_use)]
-pub extern crate rustgym_util as util;
+extern crate rustgym_util;
 
 #[allow(dead_code)]
 #[deny(clippy::all)]

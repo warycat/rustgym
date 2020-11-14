@@ -1,6 +1,5 @@
 struct Solution;
-
-use util::*;
+use rustgym_util::*;
 
 trait Preorder {
     fn preorder(&self, p: i32, q: i32, lca: &mut TreeLink) -> (bool, bool);

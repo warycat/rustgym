@@ -1,9 +1,8 @@
 struct Solution;
-
+use rustgym_util::*;
 use std::collections::HashMap;
 use std::collections::HashSet;
 use std::collections::VecDeque;
-use util::*;
 
 impl Solution {
     fn distance_k(root: TreeLink, p: TreeLink, k: i32) -> Vec<i32> {

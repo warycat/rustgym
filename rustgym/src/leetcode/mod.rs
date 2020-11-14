@@ -2514,6 +2514,8 @@ mod _1529_bulb_switcher_5;
 //
 mod _1530_number_of_good_leaf_nodes_pairs;
 //
+mod _1533_find_the_index_of_the_large_integer;
+//
 mod _1534_count_good_triplets;
 //
 mod _1535_find_the_winner_of_an_array_game;
@@ -2679,3 +2681,5 @@ mod _1643_kth_smallest_instructions;
 mod _1646_get_maximum_in_generated_array;
 //
 mod _1647_minimum_deletions_to_make_character_frequencies_unique;
+//
+mod _1648_sell_diminishing_valued_colored_balls;

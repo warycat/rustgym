@@ -1,6 +1,5 @@
 struct Solution;
 use rustgym_util::*;
-use std::usize;
 
 trait Postorder {
     fn postorder(&self, leaves: &mut Vec<Vec<i32>>) -> usize;
@@ -11,7 +10,7 @@ impl Postorder for TreeLink {
         if let Some(node) = self {
             let left = node.borrow().left.postorder(leaves);
             let right = node.borrow().right.postorder(leaves);
-            let level = usize::max(left, right) + 1;
+            let level = left.max(right) + 1;
             if leaves.len() < level {
                 leaves.push(vec![node.borrow().val]);
             } else {

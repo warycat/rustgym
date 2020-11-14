@@ -1,6 +1,5 @@
 struct Solution;
-
-use util::*;
+use rustgym_util::*;
 
 impl Solution {
     fn lowest_common_ancestor(mut root: TreeLink, p: TreeLink, q: TreeLink) -> TreeLink {

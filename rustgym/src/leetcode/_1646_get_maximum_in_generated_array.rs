@@ -6,14 +6,14 @@ impl Solution {
             return 0;
         }
         let n = n as usize + 1;
-        let mut arr = vec![0;n];
+        let mut arr = vec![0; n];
         arr[0] = 0;
         arr[1] = 1;
         for i in 2..n {
             if i % 2 == 0 {
-                arr[i] = arr[i/2];
-            }else{
-                arr[i] = arr[i/2] + arr[i/2 + 1];
+                arr[i] = arr[i / 2];
+            } else {
+                arr[i] = arr[i / 2] + arr[i / 2 + 1];
             }
         }
         arr.into_iter().max().unwrap()

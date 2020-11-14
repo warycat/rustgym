@@ -1,5 +1,4 @@
 struct Solution;
-
 use rustgym_util::*;
 
 trait Preorder {

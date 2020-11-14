@@ -1,6 +1,5 @@
 struct Solution;
 use rustgym_util::*;
-use std::i32;
 
 trait Inorder {
     fn inorder(&self, prev: &mut Option<i32>, min: &mut i32);
@@ -24,7 +23,7 @@ impl Inorder for TreeLink {
 
 impl Solution {
     fn min_diff_in_bst(root: TreeLink) -> i32 {
-        let mut min = i32::MAX;
+        let mut min = std::i32::MAX;
         let mut prev: Option<i32> = None;
         root.inorder(&mut prev, &mut min);
         min

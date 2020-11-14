@@ -4,6 +4,7 @@ pub struct TreeNode {
     pub left: TreeLink,
     pub right: TreeLink,
 }
+pub type TreeLink = Option<Rc<RefCell<TreeNode>>>;
 
 #[macro_export]
 macro_rules! tree {
@@ -14,8 +15,6 @@ macro_rules! tree {
         TreeLink::branch($e, $l, $r)
     };
 }
-
-pub type TreeLink = Option<Rc<RefCell<TreeNode>>>;
 
 use std::cell::RefCell;
 use std::rc::Rc;

@@ -1,6 +1,5 @@
 struct Solution;
-
-use util::*;
+use rustgym_util::*;
 
 use std::collections::VecDeque;
 

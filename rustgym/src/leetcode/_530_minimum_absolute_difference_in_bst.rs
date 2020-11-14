@@ -1,6 +1,5 @@
 struct Solution;
 use rustgym_util::*;
-use std::i32;
 
 trait Inorder {
     fn inorder(&self, prev: &mut Option<i32>, min: &mut i32);
@@ -12,7 +11,7 @@ impl Inorder for TreeLink {
             let node = node.borrow();
             Self::inorder(&node.left, prev, min);
             if let Some(prev_val) = prev.as_mut() {
-                *min = i32::min((node.val - *prev_val).abs(), *min);
+                *min = (node.val - *prev_val).abs().min(*min);
                 *prev_val = node.val;
             } else {
                 *prev = Some(node.val);

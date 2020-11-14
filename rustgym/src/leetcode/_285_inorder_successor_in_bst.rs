@@ -1,6 +1,5 @@
 struct Solution;
-
-use util::*;
+use rustgym_util::*;
 
 trait Inorder {
     fn inorder(&self, p: i32, successor: &mut TreeLink);

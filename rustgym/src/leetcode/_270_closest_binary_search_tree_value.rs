@@ -1,6 +1,5 @@
 struct Solution;
 use rustgym_util::*;
-use std::f64;
 
 trait Closest {
     fn search(&self, target: f64) -> i32;
@@ -9,7 +8,7 @@ trait Closest {
 
 impl Closest for TreeLink {
     fn search(&self, target: f64) -> i32 {
-        let mut diff = f64::MAX;
+        let mut diff = std::f64::MAX;
         let mut res = 0;
         Self::preorder(&self, &mut diff, &mut res, target);
         res

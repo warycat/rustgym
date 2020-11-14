@@ -1,6 +1,6 @@
 struct Solution;
-
 use rustgym_util::*;
+
 use std::collections::HashMap;
 
 impl Solution {

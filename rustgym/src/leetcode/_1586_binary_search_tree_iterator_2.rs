@@ -1,4 +1,4 @@
-use util::*;
+use rustgym_util::*;
 
 trait Inorder {
     fn inorder(&self, nodes: &mut Vec<i32>);
