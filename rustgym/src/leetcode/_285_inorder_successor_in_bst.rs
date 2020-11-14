@@ -20,7 +20,7 @@ impl Inorder for TreeLink {
 }
 
 impl Solution {
-    pub fn inorder_successor(root: TreeLink, p: TreeLink) -> TreeLink {
+    fn inorder_successor(root: TreeLink, p: TreeLink) -> TreeLink {
         let p = p.as_ref().unwrap().borrow().val;
         let mut res = None;
         root.inorder(p, &mut res);

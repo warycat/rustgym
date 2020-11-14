@@ -2116,6 +2116,8 @@ mod _1261_find_elements_in_contaminated_binary_tree;
 //
 mod _1262_greatest_sum_divisible_by_three;
 //
+mod _1263_minimum_moves_to_move_a_box_to_their_target_location;
+//
 mod _1266_minimum_time_visition_all_points;
 //
 mod _1267_count_servers_that_communicate;
@@ -2127,6 +2129,8 @@ mod _1271_hexspeak;
 mod _1272_remove_interval;
 //
 mod _1273_delete_tree_nodes;
+//
+mod _1274_number_of_ships_in_rectangle;
 //
 mod _1275_find_winner_on_a_tic_tac_toe_game;
 //
