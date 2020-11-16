@@ -578,7 +578,7 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |1238|[Circular Permutation in Binary Representation](https://leetcode.com/problems/circular-permutation-in-binary-representation)|math|[solution](rustgym/src/leetcode/_1238_circular_permutation_in_binary_representation.rs)|
 |1239|[Maximum Length of a Concatenated String with Unique Characters](https://leetcode.com/problems/maximum-length-of-a-concatenated-string-with-unique-characters)|backtracking bit-manipulation|[solution](rustgym/src/leetcode/_1239_maximum_length_of_concatenated_string_with_unique_characters.rs)|
 |1244|[Design A Leaderboard](https://leetcode.com/problems/design-a-leaderboard)|hash-table sort design|[solution](rustgym/src/leetcode/_1244_design_a_leaderboard.rs)|
-|1245|[Tree Diameter](https://leetcode.com/problems/tree-diameter)|tree depth-first-search breadth-first-search|[solution](rustgym/src/leetcode/_1245_tree_diameter.rs)|
+|[1245](rustgym/desc/leetcode/1245.md)|[Tree Diameter](https://leetcode.com/problems/tree-diameter)|tree depth-first-search breadth-first-search|[solution](rustgym/src/leetcode/_1245_tree_diameter.rs)|
 |1247|[Minimum Swaps to Make Strings Equal](https://leetcode.com/problems/minimum-swaps-to-make-strings-equal)|string greedy|[solution](rustgym/src/leetcode/_1247_minimum_swaps_to_make_strings_equal.rs)|
 |1248|[Count Number of Nice Subarrays](https://leetcode.com/problems/count-number-of-nice-subarrays)|two-pointers|[solution](rustgym/src/leetcode/_1248_count_number_of_nice_subarrays.rs)|
 |1249|[Minimum Remove to Make Valid Parentheses](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses)|string stack|[solution](rustgym/src/leetcode/_1249_minimum_remove_to_make_valid_parentheses.rs)|
@@ -1233,10 +1233,10 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |994|[Rotting Oranges](https://leetcode.com/problems/rotting-oranges)|breadth-first-search|[solution](rustgym/src/leetcode/_994_rotting_oranges.rs)|
 |998|[Maximum Binary Tree II](https://leetcode.com/problems/maximum-binary-tree-ii)|tree|[solution](rustgym/src/leetcode/_998_maximum_binary_tree_2.rs)|
 </details>
-<details><summary>Hard 120/328 36.59%</summary>
+<details><summary>Hard 119/328 36.28%</summary>
 
 
-|id|328 Hard Questions|Tags|208 Solutions|
+|id|328 Hard Questions|Tags|209 Solutions|
 |---|---|---|---|
 |440|[K-th Smallest in Lexicographical Order](https://leetcode.com/problems/k-th-smallest-in-lexicographical-order)||   |
 |798|[Smallest Rotation with Highest Score](https://leetcode.com/problems/smallest-rotation-with-highest-score)||   |
@@ -1247,7 +1247,6 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |891|[Sum of Subsequence Widths](https://leetcode.com/problems/sum-of-subsequence-widths)|array math|   |
 |1330|[Reverse Subarray To Maximize Array Value](https://leetcode.com/problems/reverse-subarray-to-maximize-array-value)|array math|   |
 |1499|[Max Value of Equation](https://leetcode.com/problems/max-value-of-equation)|array sliding-window|   |
-|1617|[Count Subtrees With Max Distance Between Cities](https://leetcode.com/problems/count-subtrees-with-max-distance-between-cities)|backtracking|   |
 |308|[Range Sum Query 2D - Mutable](https://leetcode.com/problems/range-sum-query-2d-mutable)|binary-indexed-tree segment-tree|   |
 |1649|[Create Sorted Array through Instructions](https://leetcode.com/problems/create-sorted-array-through-instructions)|binary-indexed-tree segment-tree ordered-map|   |
 |793|[Preimage Size of Factorial Zeroes Function](https://leetcode.com/problems/preimage-size-of-factorial-zeroes-function)|binary-search|   |
@@ -1438,6 +1437,7 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |1579|[Remove Max Number of Edges to Keep Graph Fully Traversable](https://leetcode.com/problems/remove-max-number-of-edges-to-keep-graph-fully-traversable)|union-find|[solution](rustgym/src/leetcode/_1579_remove_max_number_of_edges_to_keep_graph_fully_traversable.rs)|
 |1585|[Check If String Is Transformable With Substring Sort Operations](https://leetcode.com/problems/check-if-string-is-transformable-with-substring-sort-operations)|string greedy|[solution](rustgym/src/leetcode/_1585_check_if_string_is_transformable_with_substring_sort_operations.rs)|
 |1595|[Minimum Cost to Connect Two Groups of Points](https://leetcode.com/problems/minimum-cost-to-connect-two-groups-of-points)|dynamic-programming graph|[solution](rustgym/src/leetcode/_1595_minimum_cost_to_connect_two_groups_of_points.rs)|
+|[1617](rustgym/desc/leetcode/1617.md)|[Count Subtrees With Max Distance Between Cities](https://leetcode.com/problems/count-subtrees-with-max-distance-between-cities)|backtracking|[solution](rustgym/src/leetcode/_1617_count_subtrees_with_max_distance_between_cities.rs)|
 |1627|[Graph Connectivity With Threshold](https://leetcode.com/problems/graph-connectivity-with-threshold)|math union-find|[solution](rustgym/src/leetcode/_1627_graph_connectivity_with_threshold.rs)|
 |[1643](rustgym/desc/leetcode/1643.md)|[Kth Smallest Instructions](https://leetcode.com/problems/kth-smallest-instructions)|dynamic-programming|[solution](rustgym/src/leetcode/_1643_kth_smallest_instructions.rs)|
 |164|[Maximum Gap](https://leetcode.com/problems/maximum-gap)|sort|[solution](rustgym/src/leetcode/_164_maximum_gap.rs)|
