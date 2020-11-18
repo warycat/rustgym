@@ -2524,6 +2524,8 @@ mod _1536_minimum_swaps_to_arrange_a_binary_grid;
 //
 mod _1537_get_the_maximum_score;
 //
+mod _1538_guess_the_majority_in_an_hidden_array;
+//
 mod _1539_kth_missing_positive_number;
 //
 mod _1540_can_convert_string_in_k_moves;
@@ -2637,6 +2639,8 @@ mod _1605_find_valid_matrix_given_row_and_column_sums;
 mod _1608_special_array_with_x_elements_greater_than_or_equal_x;
 //
 mod _1609_even_odd_tree;
+//
+mod _1611_minimum_one_bit_operations_to_make_integers_zero;
 //
 mod _1614_maximum_nesting_depth_of_the_parentheses;
 //
