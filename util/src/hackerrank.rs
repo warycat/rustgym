@@ -5,9 +5,10 @@ macro_rules! hackerrank {
         fn $name() {
             let input = include_str!($input);
             let output = include_str!($output);
-            let mut r = BufReader::new(input.as_bytes());
-            let answer = solve(&mut r).unwrap();
-            assert_eq!(answer, output);
+            let mut reader = BufReader::new(input.as_bytes());
+            let mut writer = "".to_string();
+            solve(&mut reader, &mut writer);
+            assert_eq!(writer, output);
         }
     };
 }
