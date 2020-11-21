@@ -746,7 +746,7 @@ dependencies = [
 
 [[package]]
 name = "rustgym"
-version = "0.1.7"
+version = "0.2.0"
 dependencies = [
  "assert_approx_eq",
  "pretty_assertions",
