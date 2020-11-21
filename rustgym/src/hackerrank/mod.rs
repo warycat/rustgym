@@ -1,11 +1,13 @@
-mod _30_hello_world;
+mod hello_world;
+mod sock_merchant;
 
+use std::fmt::Write;
 use std::io::*;
 
-fn solve(_: &mut dyn BufRead) -> Result<String> {
-    Ok("".to_string())
-}
+fn solve(_: &mut dyn BufRead, _: &mut dyn Write) {}
 
 fn main() {
-    print!("{}", solve(&mut BufReader::new(stdin())).unwrap());
+    let mut res = "".to_string();
+    solve(&mut BufReader::new(stdin()), &mut res);
+    print!("{}", res);
 }
