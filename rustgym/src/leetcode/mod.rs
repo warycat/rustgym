@@ -2616,6 +2616,8 @@ mod _1589_maximum_sum_obtained_of_any_permutation;
 //
 mod _1590_make_sum_divisible_by_p;
 //
+mod _1591_strange_printer_2;
+//
 mod _1592_rearrange_spaces_between_words;
 //
 mod _1593_split_a_string_into_the_max_number_of_unique_substrings;

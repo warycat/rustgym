@@ -10,4 +10,4 @@ edition = "2018"
 reqwest = {version="0.10.7", features = ["blocking", "json"]}
 serde_json = "1.0.48"
 
-rustgym-util = {path='../util', version = '0.1.0'}
+rustgym-util = {path='../util'}
