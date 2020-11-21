@@ -1,5 +1,3 @@
-use std::io::*;
-
 #[macro_export]
 macro_rules! hackerrank {
     ($name:ident, $input:expr, $output:expr) => {
