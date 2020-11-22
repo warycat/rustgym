@@ -2705,3 +2705,11 @@ mod _1657_determine_if_two_strings_are_close;
 mod _1658_minimum_operations_to_reduce_x_to_zero;
 //
 mod _1659_maximize_grid_happiness;
+//
+mod _1662_check_if_two_string_arrays_are_equivalent;
+//
+mod _1663_smallest_string_with_a_given_numeric_value;
+//
+mod _1664_ways_to_make_a_fair_array;
+//
+mod _1665_minimum_initial_energy_to_finish_tasks;
