@@ -429,10 +429,10 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook)|array|[solution](rustgym/src/leetcode/_999_available_captures_for_rook.rs)|
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|math|[solution](rustgym/src/leetcode/_9_palindrome_number.rs)|
 </details>
-<details><summary>Medium 29/804 3.61%</summary>
+<details><summary>Medium 30/805 3.73%</summary>
 
 
-|id|804 Medium Questions|Tags|775 Solutions|
+|id|805 Medium Questions|Tags|775 Solutions|
 |---|---|---|---|
 |427|[Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree)||   |
 |558|[Logical OR of Two Binary Grids Represented as Quad-Trees](https://leetcode.com/problems/logical-or-of-two-binary-grids-represented-as-quad-trees)||   |
@@ -458,6 +458,7 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |1379|[Find a Corresponding Node of a Binary Tree in a Clone of That Tree](https://leetcode.com/problems/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree)|tree|   |
 |1644|[Lowest Common Ancestor of a Binary Tree II](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-ii)|tree|   |
 |1650|[Lowest Common Ancestor of a Binary Tree III](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iii)|tree|   |
+|1660|[Correct a Binary Tree](https://leetcode.com/problems/correct-a-binary-tree)|tree|   |
 |429|[N-ary Tree Level Order Traversal](https://leetcode.com/problems/n-ary-tree-level-order-traversal)|tree breadth-first-search|   |
 |1602|[Find Nearest Right Node in Binary Tree](https://leetcode.com/problems/find-nearest-right-node-in-binary-tree)|tree breadth-first-search|   |
 |117|[Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii)|tree depth-first-search|   |
@@ -1239,10 +1240,10 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |994|[Rotting Oranges](https://leetcode.com/problems/rotting-oranges)|breadth-first-search|[solution](rustgym/src/leetcode/_994_rotting_oranges.rs)|
 |998|[Maximum Binary Tree II](https://leetcode.com/problems/maximum-binary-tree-ii)|tree|[solution](rustgym/src/leetcode/_998_maximum_binary_tree_2.rs)|
 </details>
-<details><summary>Hard 119/330 36.06%</summary>
+<details><summary>Hard 118/330 35.76%</summary>
 
 
-|id|330 Hard Questions|Tags|211 Solutions|
+|id|330 Hard Questions|Tags|212 Solutions|
 |---|---|---|---|
 |440|[K-th Smallest in Lexicographical Order](https://leetcode.com/problems/k-th-smallest-in-lexicographical-order)||   |
 |798|[Smallest Rotation with Highest Score](https://leetcode.com/problems/smallest-rotation-with-highest-score)||   |
@@ -1306,7 +1307,6 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |757|[Set Intersection Size At Least Two](https://leetcode.com/problems/set-intersection-size-at-least-two)|greedy|   |
 |1354|[Construct Target Array With Multiple Sums](https://leetcode.com/problems/construct-target-array-with-multiple-sums)|greedy|   |
 |1505|[Minimum Possible Integer After at Most K Adjacent Swaps On Digits](https://leetcode.com/problems/minimum-possible-integer-after-at-most-k-adjacent-swaps-on-digits)|greedy|   |
-|1591|[Strange Printer II](https://leetcode.com/problems/strange-printer-ii)|greedy|   |
 |995|[Minimum Number of K Consecutive Bit Flips](https://leetcode.com/problems/minimum-number-of-k-consecutive-bit-flips)|greedy sliding-window|   |
 |1632|[Rank Transform of a Matrix](https://leetcode.com/problems/rank-transform-of-a-matrix)|greedy union-find|   |
 |1001|[Grid Illumination](https://leetcode.com/problems/grid-illumination)|hash-table|   |
@@ -1442,6 +1442,7 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |1575|[Count All Possible Routes](https://leetcode.com/problems/count-all-possible-routes)|dynamic-programming|[solution](rustgym/src/leetcode/_1575_count_all_possible_routes.rs)|
 |1579|[Remove Max Number of Edges to Keep Graph Fully Traversable](https://leetcode.com/problems/remove-max-number-of-edges-to-keep-graph-fully-traversable)|union-find|[solution](rustgym/src/leetcode/_1579_remove_max_number_of_edges_to_keep_graph_fully_traversable.rs)|
 |1585|[Check If String Is Transformable With Substring Sort Operations](https://leetcode.com/problems/check-if-string-is-transformable-with-substring-sort-operations)|string greedy|[solution](rustgym/src/leetcode/_1585_check_if_string_is_transformable_with_substring_sort_operations.rs)|
+|[1591](rustgym/desc/leetcode/1591.md)|[Strange Printer II](https://leetcode.com/problems/strange-printer-ii)|greedy|[solution](rustgym/src/leetcode/_1591_strange_printer_2.rs)|
 |1595|[Minimum Cost to Connect Two Groups of Points](https://leetcode.com/problems/minimum-cost-to-connect-two-groups-of-points)|dynamic-programming graph|[solution](rustgym/src/leetcode/_1595_minimum_cost_to_connect_two_groups_of_points.rs)|
 |[1611](rustgym/desc/leetcode/1611.md)|[Minimum One Bit Operations to Make Integers Zero](https://leetcode.com/problems/minimum-one-bit-operations-to-make-integers-zero)|dynamic-programming bit-manipulation|[solution](rustgym/src/leetcode/_1611_minimum_one_bit_operations_to_make_integers_zero.rs)|
 |[1617](rustgym/desc/leetcode/1617.md)|[Count Subtrees With Max Distance Between Cities](https://leetcode.com/problems/count-subtrees-with-max-distance-between-cities)|backtracking|[solution](rustgym/src/leetcode/_1617_count_subtrees_with_max_distance_between_cities.rs)|
