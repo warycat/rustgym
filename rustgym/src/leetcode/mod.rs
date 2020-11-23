@@ -798,6 +798,8 @@ mod _438_find_all_anagrams_in_a_string;
 //
 mod _439_ternary_expression_parser;
 //
+mod _440_k_th_smallest_in_lexicographical_order;
+//
 mod _441_arranging_coins;
 //
 mod _442_find_all_duplicates_in_an_array;
@@ -1962,6 +1964,8 @@ mod _1161_maximum_level_sum_of_a_binary_tree;
 //
 mod _1162_as_far_from_land_as_possible;
 //
+mod _1163_last_substring_in_lexicographical_order;
+//
 mod _1165_single_row_keyboard;
 //
 mod _1166_design_file_system;
@@ -2217,6 +2221,8 @@ mod _1328_break_a_palindrome;
 mod _1329_sort_the_matrix_diagonally;
 //
 mod _1331_rank_transform_of_an_array;
+//
+mod _1330_reverse_subarray_to_maximize_array_value;
 //
 mod _1332_remove_palindromic_subsequences;
 //

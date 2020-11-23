@@ -1240,19 +1240,17 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |994|[Rotting Oranges](https://leetcode.com/problems/rotting-oranges)|breadth-first-search|[solution](rustgym/src/leetcode/_994_rotting_oranges.rs)|
 |998|[Maximum Binary Tree II](https://leetcode.com/problems/maximum-binary-tree-ii)|tree|[solution](rustgym/src/leetcode/_998_maximum_binary_tree_2.rs)|
 </details>
-<details><summary>Hard 118/330 35.76%</summary>
+<details><summary>Hard 115/330 34.85%</summary>
 
 
-|id|330 Hard Questions|Tags|212 Solutions|
+|id|330 Hard Questions|Tags|215 Solutions|
 |---|---|---|---|
-|440|[K-th Smallest in Lexicographical Order](https://leetcode.com/problems/k-th-smallest-in-lexicographical-order)||   |
 |798|[Smallest Rotation with Highest Score](https://leetcode.com/problems/smallest-rotation-with-highest-score)||   |
 |154|[Find Minimum in Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii)|array binary-search|   |
 |644|[Maximum Average Subarray II](https://leetcode.com/problems/maximum-average-subarray-ii)|array binary-search|   |
 |1157|[Online Majority Element In Subarray](https://leetcode.com/problems/online-majority-element-in-subarray)|array binary-search segment-tree|   |
 |782|[Transform to Chessboard](https://leetcode.com/problems/transform-to-chessboard)|array math|   |
 |891|[Sum of Subsequence Widths](https://leetcode.com/problems/sum-of-subsequence-widths)|array math|   |
-|1330|[Reverse Subarray To Maximize Array Value](https://leetcode.com/problems/reverse-subarray-to-maximize-array-value)|array math|   |
 |1499|[Max Value of Equation](https://leetcode.com/problems/max-value-of-equation)|array sliding-window|   |
 |308|[Range Sum Query 2D - Mutable](https://leetcode.com/problems/range-sum-query-2d-mutable)|binary-indexed-tree segment-tree|   |
 |1649|[Create Sorted Array through Instructions](https://leetcode.com/problems/create-sorted-array-through-instructions)|binary-indexed-tree segment-tree ordered-map|   |
@@ -1353,7 +1351,6 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |936|[Stamping The Sequence](https://leetcode.com/problems/stamping-the-sequence)|string greedy|   |
 |1316|[Distinct Echo Substrings](https://leetcode.com/problems/distinct-echo-substrings)|string rolling-hash|   |
 |591|[Tag Validator](https://leetcode.com/problems/tag-validator)|string stack|   |
-|1163|[Last Substring in Lexicographical Order](https://leetcode.com/problems/last-substring-in-lexicographical-order)|string suffix-array|   |
 |1597|[Build Binary Expression Tree From Infix Expression](https://leetcode.com/problems/build-binary-expression-tree-from-infix-expression)|string tree|   |
 |428|[Serialize and Deserialize N-ary Tree](https://leetcode.com/problems/serialize-and-deserialize-n-ary-tree)|tree|   |
 |431|[Encode N-ary Tree to Binary Tree](https://leetcode.com/problems/encode-n-ary-tree-to-binary-tree)|tree|   |
@@ -1377,6 +1374,7 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |1136|[Parallel Courses](https://leetcode.com/problems/parallel-courses)|dynamic-programming depth-first-search graph|[solution](rustgym/src/leetcode/_1136_parallel_courses.rs)|
 |1147|[Longest Chunked Palindrome Decomposition](https://leetcode.com/problems/longest-chunked-palindrome-decomposition)|dynamic-programming rolling-hash|[solution](rustgym/src/leetcode/_1147_longest_chunked_palindrome_decomposition.rs)|
 |115|[Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences)|string dynamic-programming|[solution](rustgym/src/leetcode/_115_distinct_subsequences.rs)|
+|[1163](rustgym/desc/leetcode/1163.md)|[Last Substring in Lexicographical Order](https://leetcode.com/problems/last-substring-in-lexicographical-order)|string suffix-array|[solution](rustgym/src/leetcode/_1163_last_substring_in_lexicographical_order.rs)|
 |1168|[Optimize Water Distribution in a Village](https://leetcode.com/problems/optimize-water-distribution-in-a-village)|union-find graph|[solution](rustgym/src/leetcode/_1168_optimize_water_distribution_in_a_village.rs)|
 |[1172](rustgym/desc/leetcode/1172.md)|[Dinner Plate Stacks](https://leetcode.com/problems/dinner-plate-stacks)|design|[solution](rustgym/src/leetcode/_1172_dinner_plate_stacks.rs)|
 |1183|[Maximum Number of Ones](https://leetcode.com/problems/maximum-number-of-ones)|math sort|[solution](rustgym/src/leetcode/_1183_maximum_number_of_ones.rs)|
@@ -1406,6 +1404,7 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |1320|[Minimum Distance to Type a Word Using Two Fingers](https://leetcode.com/problems/minimum-distance-to-type-a-word-using-two-fingers)|dynamic-programming|[solution](rustgym/src/leetcode/_1320_minimum_distance_to_type_a_word_using_two_fingers.rs)|
 |1326|[Minimum Number of Taps to Open to Water a Garden](https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden)|dynamic-programming greedy|[solution](rustgym/src/leetcode/_1326_minimum_number_of_taps_to_open_to_water_a_garden.rs)|
 |132|[Palindrome Partitioning II](https://leetcode.com/problems/palindrome-partitioning-ii)|dynamic-programming|[solution](rustgym/src/leetcode/_132_palindrome_partitioning_2.rs)|
+|[1330](rustgym/desc/leetcode/1330.md)|[Reverse Subarray To Maximize Array Value](https://leetcode.com/problems/reverse-subarray-to-maximize-array-value)|array math|[solution](rustgym/src/leetcode/_1330_reverse_subarray_to_maximize_array_value.rs)|
 |1335|[Minimum Difficulty of a Job Schedule](https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule)|dynamic-programming|[solution](rustgym/src/leetcode/_1335_minimum_difficulty_of_a_job_schedule.rs)|
 |1340|[Jump Game V](https://leetcode.com/problems/jump-game-v)|dynamic-programming|[solution](rustgym/src/leetcode/_1340_jump_game_5.rs)|
 |1359|[Count All Valid Pickup and Delivery Options](https://leetcode.com/problems/count-all-valid-pickup-and-delivery-options)|math dynamic-programming|[solution](rustgym/src/leetcode/_1359_count_all_valid_pickup_and_delivery_options.rs)|
@@ -1499,6 +1498,7 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |425|[Word Squares](https://leetcode.com/problems/word-squares)|backtracking trie|[solution](rustgym/src/leetcode/_425_word_squares.rs)|
 |42|[Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water)|array two-pointers stack|[solution](rustgym/src/leetcode/_42_trapping_rain_water.rs)|
 |432|[All O`one Data Structure](https://leetcode.com/problems/all-oone-data-structure)|design|[solution](rustgym/src/leetcode/_432_all_o_one_data_structure.rs)|
+|[440](rustgym/desc/leetcode/440.md)|[K-th Smallest in Lexicographical Order](https://leetcode.com/problems/k-th-smallest-in-lexicographical-order)||[solution](rustgym/src/leetcode/_440_k_th_smallest_in_lexicographical_order.rs)|
 |446|[Arithmetic Slices II - Subsequence](https://leetcode.com/problems/arithmetic-slices-ii-subsequence)|dynamic-programming|[solution](rustgym/src/leetcode/_446_arithmetic_slices_2_subsequence.rs)|
 |44|[Wildcard Matching](https://leetcode.com/problems/wildcard-matching)|string dynamic-programming backtracking greedy|[solution](rustgym/src/leetcode/_44_wildcard_matching.rs)|
 |458|[Poor Pigs](https://leetcode.com/problems/poor-pigs)|math|[solution](rustgym/src/leetcode/_458_poor_pigs.rs)|
