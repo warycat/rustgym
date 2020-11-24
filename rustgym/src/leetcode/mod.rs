@@ -1226,6 +1226,8 @@ mod _707_design_linked_list;
 //
 mod _709_to_lower_case;
 //
+mod _710_random_pick_with_blacklist;
+//
 mod _712_minimum_ascii_delete_sum_for_two_string;
 //
 mod _713_subarray_product_less_than_k;
@@ -1533,6 +1535,8 @@ mod _888_fair_candy_swap;
 mod _889_construct_binary_tree_from_preorder_and_postorder_traversal;
 //
 mod _890_find_and_replace_pattern;
+//
+mod _891_sum_of_subsequence_widths;
 //
 mod _892_surface_area_of_3d_shapes;
 //
@@ -2057,6 +2061,8 @@ mod _1221_split_a_string_in_balanced_strings;
 mod _1222_queens_that_can_attack_the_king;
 //
 mod _1223_dice_roll_simulation;
+//
+mod _1224_maximum_equal_frequency;
 //
 mod _1227_airplane_seat_assignment_probability;
 //
