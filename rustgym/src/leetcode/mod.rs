@@ -2725,3 +2725,11 @@ mod _1663_smallest_string_with_a_given_numeric_value;
 mod _1664_ways_to_make_a_fair_array;
 //
 mod _1665_minimum_initial_energy_to_finish_tasks;
+//
+mod _1668_maximum_repeating_substring;
+//
+mod _1669_merge_in_between_linked_lists;
+//
+mod _1670_design_front_middle_back_queue;
+//
+mod _1672_richest_customer_wealth;
