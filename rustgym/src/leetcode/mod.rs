@@ -2733,3 +2733,7 @@ mod _1669_merge_in_between_linked_lists;
 mod _1670_design_front_middle_back_queue;
 //
 mod _1672_richest_customer_wealth;
+//
+mod _1673_find_the_most_competitive_subsequence;
+//
+mod _1674_minimum_moves_to_make_array_complementary;
