@@ -16,5 +16,9 @@ fn main() {
     writeln!(&mut writer, "\n[day3]").unwrap();
     advent_of_code_2020::day3::solve(&mut reader, &mut writer);
 
+    let mut reader = BufReader::new(include_str!("2020/day4.txt").as_bytes());
+    writeln!(&mut writer, "\n[day4]").unwrap();
+    advent_of_code_2020::day4::solve(&mut reader, &mut writer);
+
     println!("{}", writer);
 }

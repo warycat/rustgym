@@ -114,4 +114,5 @@ mod hackerrank;
 #[allow(clippy::collapsible_if)]
 #[allow(clippy::needless_range_loop)]
 #[allow(clippy::too_many_arguments)]
+#[allow(clippy::while_let_on_iterator)]
 pub mod advent_of_code_2020;

@@ -6,12 +6,12 @@ impl Solution {
         let k = k as usize;
         let mut arr = vec![];
         let mut m = 0;
-        for i in 0..n{
+        for i in 0..n {
             while let Some(&top) = arr.last() {
-                if top > nums[i] && k < n - m{
+                if top > nums[i] && k < n - m {
                     m += 1;
                     arr.pop();
-                }else{
+                } else {
                     break;
                 }
             }
@@ -23,12 +23,12 @@ impl Solution {
 
 #[test]
 fn test() {
-    let nums = vec![3,5,2,6];
+    let nums = vec![3, 5, 2, 6];
     let k = 2;
-    let res = vec![2,6];
+    let res = vec![2, 6];
     assert_eq!(Solution::most_competitive(nums, k), res);
-    let nums = vec![2,4,3,3,5,4,9,6];
+    let nums = vec![2, 4, 3, 3, 5, 4, 9, 6];
     let k = 4;
-    let res = vec![2,3,3,4];
+    let res = vec![2, 3, 3, 4];
     assert_eq!(Solution::most_competitive(nums, k), res);
 }
