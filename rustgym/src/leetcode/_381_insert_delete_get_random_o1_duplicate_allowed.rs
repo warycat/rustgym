@@ -58,7 +58,7 @@ impl RandomizedCollection {
 fn test() {
     let mut obj = RandomizedCollection::new();
     assert_eq!(obj.remove(0), false);
-    dbg!(&obj);
+    // dbg!(&obj);
     // assert_eq!(obj.insert(1), false);
     // dbg!(&obj);
     // assert_eq!(obj.insert(2), true);

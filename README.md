@@ -47,10 +47,10 @@ All the solutions here are crafted with love and their performance beats 99% of 
 Leetcode is a website where people–mostly software engineers–practice their coding skills. There are 1200+ questions (and growing), each with multiple solutions. Questions are ranked by level of difficulty: easy, medium, and hard. Within the last decade or so, the technical interview process has become formulaic and what some describe “unnatural” for engineers. What people are asked to perform in an interview–solving word or code based teasers, coding on a whiteboard, and being asked to produce clean optimized solutions in a short time frame–is not what they would experience in a daily work environment.
 
 # All Solutions
-<details><summary>Easy 7/379 1.85%</summary>
+<details><summary>Easy 7/378 1.85%</summary>
 
 
-|id|379 Easy Questions|Tags|372 Solutions|
+|id|378 Easy Questions|Tags|371 Solutions|
 |---|---|---|---|
 |690|[Employee Importance](https://leetcode.com/problems/employee-importance)|hash-table depth-first-search breadth-first-search|   |
 |160|[Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists)|linked-list|   |
@@ -63,7 +63,6 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |1005|[Maximize Sum Of Array After K Negations](https://leetcode.com/problems/maximize-sum-of-array-after-k-negations)|greedy|[solution](rustgym/src/leetcode/_1005_maximize_sum_of_array_after_k_negations.rs)|
 |1009|[Complement of Base 10 Integer](https://leetcode.com/problems/complement-of-base-10-integer)|math|[solution](rustgym/src/leetcode/_1009_complement_of_base_10_integer.rs)|
 |100|[Same Tree](https://leetcode.com/problems/same-tree)|tree depth-first-search|[solution](rustgym/src/leetcode/_100_same_tree.rs)|
-|1010|[Pairs of Songs With Total Durations Divisible by 60](https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60)|array|[solution](rustgym/src/leetcode/_1010_pairs_of_songs_with_total_durations_divisible_by_60.rs)|
 |1013|[Partition Array Into Three Parts With Equal Sum](https://leetcode.com/problems/partition-array-into-three-parts-with-equal-sum)|array|[solution](rustgym/src/leetcode/_1013_partition_array_into_three_parts_with_equal_sum.rs)|
 |1018|[Binary Prefix Divisible By 5](https://leetcode.com/problems/binary-prefix-divisible-by-5)|array|[solution](rustgym/src/leetcode/_1018_binary_prefix_divisible_by_5.rs)|
 |101|[Symmetric Tree](https://leetcode.com/problems/symmetric-tree)|tree depth-first-search breadth-first-search|[solution](rustgym/src/leetcode/_101_symmetric_tree.rs)|
@@ -432,10 +431,10 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook)|array|[solution](rustgym/src/leetcode/_999_available_captures_for_rook.rs)|
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|math|[solution](rustgym/src/leetcode/_9_palindrome_number.rs)|
 </details>
-<details><summary>Medium 31/812 3.82%</summary>
+<details><summary>Medium 32/814 3.93%</summary>
 
 
-|id|812 Medium Questions|Tags|781 Solutions|
+|id|814 Medium Questions|Tags|782 Solutions|
 |---|---|---|---|
 |427|[Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree)||   |
 |558|[Logical OR of Two Binary Grids Represented as Quad-Trees](https://leetcode.com/problems/logical-or-of-two-binary-grids-represented-as-quad-trees)||   |
@@ -466,6 +465,7 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |1602|[Find Nearest Right Node in Binary Tree](https://leetcode.com/problems/find-nearest-right-node-in-binary-tree)|tree breadth-first-search|   |
 |117|[Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii)|tree depth-first-search|   |
 |1666|[Change the Root of a Binary Tree](https://leetcode.com/problems/change-the-root-of-a-binary-tree)|tree depth-first-search|   |
+|1676|[Lowest Common Ancestor of a Binary Tree IV](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iv)|tree depth-first-search|   |
 |116|[Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node)|tree depth-first-search breadth-first-search|   |
 |1628|[Design an Expression Tree With Evaluate Function](https://leetcode.com/problems/design-an-expression-tree-with-evaluate-function)|tree design oop|   |
 |1003|[Check If Word Is Valid After Substitutions](https://leetcode.com/problems/check-if-word-is-valid-after-substitutions)|string stack|[solution](rustgym/src/leetcode/_1003_check_if_word_is_valid_after_substitutions.rs)|
@@ -473,6 +473,7 @@ Leetcode is a website where people–mostly software engineers–practice their 
 |1006|[Clumsy Factorial](https://leetcode.com/problems/clumsy-factorial)|math|[solution](rustgym/src/leetcode/_1006_clumsy_factorial.rs)|
 |1007|[Minimum Domino Rotations For Equal Row](https://leetcode.com/problems/minimum-domino-rotations-for-equal-row)|array greedy|[solution](rustgym/src/leetcode/_1007_minimum_domino_rotations_for_equal_row.rs)|
 |1008|[Construct Binary Search Tree from Preorder Traversal](https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal)|tree|[solution](rustgym/src/leetcode/_1008_construct_binary_search_tree_from_preorder_traversal.rs)|
+|1010|[Pairs of Songs With Total Durations Divisible by 60](https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60)|array|[solution](rustgym/src/leetcode/_1010_pairs_of_songs_with_total_durations_divisible_by_60.rs)|
 |1011|[Capacity To Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days)|array binary-search|[solution](rustgym/src/leetcode/_1011_capacity_to_ship_packages_within_d_days.rs)|
 |1014|[Best Sightseeing Pair](https://leetcode.com/problems/best-sightseeing-pair)|array|[solution](rustgym/src/leetcode/_1014_best_sightseeing_pair.rs)|
 |1015|[Smallest Integer Divisible by K](https://leetcode.com/problems/smallest-integer-divisible-by-k)|math|[solution](rustgym/src/leetcode/_1015_smallest_integer_divisible_by_k.rs)|

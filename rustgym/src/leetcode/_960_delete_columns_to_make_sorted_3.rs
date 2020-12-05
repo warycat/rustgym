@@ -16,7 +16,6 @@ impl Solution {
                 dp[i] = dp[i].max(dp[j] + 1);
             }
         }
-        dbg!(&dp);
         (m - dp.into_iter().max().unwrap()) as i32
     }
 }

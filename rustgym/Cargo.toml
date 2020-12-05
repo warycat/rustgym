@@ -8,6 +8,9 @@ description = "rustgym solutions"
 repository = "https://github.com/warycat/rustgym"
 readme = "../README.md"
 
+[package.metadata.docs.rs]
+no-default-features = true
+
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [features]
 default = []
@@ -17,6 +20,6 @@ rand = "0.7.3"
 pretty_assertions = "0.6.1"
 assert_approx_eq = "1.1.0"
 rustgym-util = "0.2.3"
-
-[package.metadata.docs.rs]
-no-default-features = true
+md5 = "0.7.0"
+rayon = "1.5.0"
+paste = "1.0.3"
