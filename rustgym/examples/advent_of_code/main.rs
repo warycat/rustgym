@@ -24,7 +24,9 @@ fn main() {
     runner!("2015/day1.txt", 2015, 1, writer);
     runner!("2015/day2.txt", 2015, 2, writer);
     runner!("2015/day3.txt", 2015, 3, writer);
-    runner!("2015/day4.txt", 2015, 4, writer);
+    // runner!("2015/day4.txt", 2015, 4, writer);
+    runner!("2015/day5.txt", 2015, 5, writer);
+    runner!("2015/day6.txt", 2015, 6, writer);
 
     writeln!(&mut writer, "\n[2020]").unwrap();
 
