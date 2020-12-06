@@ -2737,3 +2737,11 @@ mod _1672_richest_customer_wealth;
 mod _1673_find_the_most_competitive_subsequence;
 //
 mod _1674_minimum_moves_to_make_array_complementary;
+//
+mod _1678_goal_parser_interpretation;
+//
+mod _1679_max_number_of_k_sum_pairs;
+//
+mod _1680_concatenation_of_consecutive_binary_numbers;
+//
+// mod _2003;
