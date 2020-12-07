@@ -61,4 +61,4 @@ fn rule3(s: &[u8]) -> bool {
     pairs.len() > 1 && pairs.last().unwrap() - pairs.first().unwrap() > 1
 }
 
-advent_of_code!(test, "input.txt", "output.txt");
+advent_of_code_ignore!(test, "input.txt", "output.txt");

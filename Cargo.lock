@@ -858,7 +858,7 @@ dependencies = [
  "pretty_assertions",
  "rand",
  "rayon",
- "rustgym-util 0.2.3 (registry+https://github.com/rust-lang/crates.io-index)",
+ "rustgym-util 0.2.4 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -866,19 +866,19 @@ name = "rustgym-readme"
 version = "0.1.0"
 dependencies = [
  "reqwest",
- "rustgym-util 0.2.3",
+ "rustgym-util 0.2.4",
  "serde_json",
 ]
 
 [[package]]
 name = "rustgym-util"
-version = "0.2.3"
+version = "0.2.4"
 
 [[package]]
 name = "rustgym-util"
-version = "0.2.3"
+version = "0.2.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9a5ca2bee9b2969b1d2558da19438a7258e818107c5dd3c1a2e7f71bbe09177c"
+checksum = "5c8a8f5ba6923cfbdf16a942af93b4fbe277cce212eef52a58c676f4e8ba44ba"
 
 [[package]]
 name = "ryu"

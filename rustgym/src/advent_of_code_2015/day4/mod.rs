@@ -1,5 +1,6 @@
 use md5::*;
 use rayon::prelude::*;
+use rustgym_util::*;
 use std::fmt::Write;
 use std::io::*;
 
@@ -24,4 +25,4 @@ fn search(max: usize, line: &str, prefix: &str) -> usize {
         .unwrap()
 }
 
-// rustgym_util::advent_of_code!(test, "input.txt", "output.txt");
+advent_of_code_ignore!(test, "input.txt", "output.txt");

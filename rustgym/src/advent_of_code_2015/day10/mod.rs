@@ -35,4 +35,4 @@ fn look_and_say(s: String) -> String {
     res
 }
 
-advent_of_code!(test, "input.txt", "output.txt");
+advent_of_code_ignore!(test, "input.txt", "output.txt");
