@@ -49,10 +49,10 @@ fn test() {
     let res = vec![1, 1, 2, 3, 5, 8, 13];
     assert_eq!(Solution::split_into_fibonacci(s), res);
     let s = "112358130".to_string();
-    let res = vec![];
+    let res: Vec<i32> = vec![];
     assert_eq!(Solution::split_into_fibonacci(s), res);
     let s = "0123".to_string();
-    let res = vec![];
+    let res: Vec<i32> = vec![];
     assert_eq!(Solution::split_into_fibonacci(s), res);
     let s = "1101111".to_string();
     let res = vec![110, 1, 111];

@@ -8,6 +8,6 @@ edition = "2018"
 
 [dependencies]
 reqwest = {version="0.10.7", features = ["blocking", "json"]}
-serde_json = "1.0.48"
+serde_json = "1.0.60"
 
 rustgym-util = {path='../util'}

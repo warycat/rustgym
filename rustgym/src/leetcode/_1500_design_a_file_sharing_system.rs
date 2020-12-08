@@ -56,7 +56,8 @@ fn test() {
     assert_eq!(obj.request(1, 3), vec![2]);
     assert_eq!(obj.request(2, 2), vec![1, 2]);
     obj.leave(1);
-    assert_eq!(obj.request(2, 1), vec![]);
+    let res: Vec<i32> = vec![];
+    assert_eq!(obj.request(2, 1), res);
     obj.leave(2);
     assert_eq!(obj.join(vec![]), 1);
 }

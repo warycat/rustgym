@@ -49,7 +49,7 @@ fn test() {
     assert_eq!(Solution::find_substring(s, words), res);
     let s = "wordgoodgoodgoodbestword".to_string();
     let words = vec_string!["word", "good", "best", "word"];
-    let res = vec![];
+    let res: Vec<i32> = vec![];
     assert_eq!(Solution::find_substring(s, words), res);
     let s = "wordgoodgoodgoodbestword".to_string();
     let words = vec_string!["word", "good", "best", "good"];

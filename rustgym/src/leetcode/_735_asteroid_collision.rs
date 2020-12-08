@@ -42,7 +42,7 @@ fn test() {
     let res = vec![5, 10];
     assert_eq!(Solution::asteroid_collision(asteroids), res);
     let asteroids: Vec<i32> = vec![8, -8];
-    let res = vec![];
+    let res: Vec<i32> = vec![];
     assert_eq!(Solution::asteroid_collision(asteroids), res);
     let asteroids: Vec<i32> = vec![10, 2, -5];
     let res = vec![10];

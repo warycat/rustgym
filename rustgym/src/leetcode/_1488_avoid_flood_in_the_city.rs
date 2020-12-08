@@ -46,10 +46,10 @@ fn test() {
     let res = vec![-1, -1, 2, 1, -1, -1];
     assert_eq!(Solution::avoid_flood(rains), res);
     let rains = vec![1, 2, 0, 1, 2];
-    let res = vec![];
+    let res: Vec<i32> = vec![];
     assert_eq!(Solution::avoid_flood(rains), res);
     let rains = vec![0, 1, 1];
-    let res = vec![];
+    let res: Vec<i32> = vec![];
     assert_eq!(Solution::avoid_flood(rains), res);
     let rains = vec![1, 0, 2, 3, 0, 1, 2];
     let res = vec![-1, 1, -1, -1, 2, -1, -1];

@@ -52,7 +52,7 @@ fn test() {
     let slots1 = vec_vec_i32![[10, 50], [60, 120], [140, 210]];
     let slots2 = vec_vec_i32![[0, 15], [60, 70]];
     let duration = 12;
-    let res = vec![];
+    let res: Vec<i32> = vec![];
     assert_eq!(
         Solution::min_available_duration(slots1, slots2, duration),
         res

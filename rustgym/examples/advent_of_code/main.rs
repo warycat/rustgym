@@ -34,7 +34,7 @@ fn main() {
 
     writeln!(&mut writer, "\n[2015]").unwrap();
 
-    skip!("2015/day1.txt", 2015, 1, writer);
+    run!("2015/day1.txt", 2015, 1, writer);
     skip!("2015/day2.txt", 2015, 2, writer);
     skip!("2015/day3.txt", 2015, 3, writer);
     skip!("2015/day4.txt", 2015, 4, writer);
@@ -45,6 +45,7 @@ fn main() {
     skip!("2015/day9.txt", 2015, 9, writer);
     skip!("2015/day10.txt", 2015, 10, writer);
     skip!("2015/day11.txt", 2015, 11, writer);
+    run!("2015/day12.txt", 2015, 12, writer);
 
     writeln!(&mut writer, "\n[2020]").unwrap();
 

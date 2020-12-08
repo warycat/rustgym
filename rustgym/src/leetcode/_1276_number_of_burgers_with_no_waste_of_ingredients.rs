@@ -28,11 +28,11 @@ fn test() {
     assert_eq!(Solution::num_of_burgers(tomato_slices, cheese_slices), res);
     let tomato_slices = 17;
     let cheese_slices = 4;
-    let res = vec![];
+    let res: Vec<i32> = vec![];
     assert_eq!(Solution::num_of_burgers(tomato_slices, cheese_slices), res);
     let tomato_slices = 4;
     let cheese_slices = 17;
-    let res = vec![];
+    let res: Vec<i32> = vec![];
     assert_eq!(Solution::num_of_burgers(tomato_slices, cheese_slices), res);
     let tomato_slices = 0;
     let cheese_slices = 0;

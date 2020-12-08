@@ -53,6 +53,6 @@ fn test() {
     let res = vec![77, 55, 33, 66, 44, 22];
     assert_eq!(Solution::get_lonely_nodes(root), res);
     let root = tree!(197);
-    let res = vec![];
+    let res: Vec<i32> = vec![];
     assert_eq!(Solution::get_lonely_nodes(root), res);
 }

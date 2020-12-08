@@ -59,6 +59,6 @@ fn test() {
     assert_eq!(Solution::flip_match_voyage(root, voyage), res);
     let root = tree!(1, tree!(2), tree!(3));
     let voyage = vec![1, 2, 3];
-    let res = vec![];
+    let res: Vec<i32> = vec![];
     assert_eq!(Solution::flip_match_voyage(root, voyage), res);
 }
