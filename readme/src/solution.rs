@@ -13,7 +13,7 @@ impl RustSolution {
 
 impl fmt::Display for RustSolution {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
-        write!(f, "[solution]({}/{})", LEETCODE_SRC, self.filename)
+        write!(f, "[Rust]({}/{})", LEETCODE_SRC, self.filename)
     }
 }
 

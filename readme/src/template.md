@@ -43,6 +43,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 - Find strongly connected components in a graph
 </details>
 
-### Coding Interview
-Leetcode is a website where people–mostly software engineers–practice their coding skills. There are 1200+ questions (and growing), each with multiple solutions. Questions are ranked by level of difficulty: easy, medium, and hard. Within the last decade or so, the technical interview process has become formulaic and what some describe “unnatural” for engineers. What people are asked to perform in an interview–solving word or code based teasers, coding on a whiteboard, and being asked to produce clean optimized solutions in a short time frame–is not what they would experience in a daily work environment.
-
+# Rust Solutions
+- [Leetcode Easy](#leetcode_easy)
+- [Leetcode Medium](#leetcode_medium)
+- [Leetcode Hard](#leetcode_hard)

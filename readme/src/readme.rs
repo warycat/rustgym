@@ -84,13 +84,21 @@ impl Readme {
                 3 => "Hard",
                 _ => "",
             };
+            let link_string = match level {
+                1 => "leetcode_easy",
+                2 => "leetcode_medium",
+                3 => "leetcode_hard",
+                _ => "",
+            };
+
             let percentage = (1.0 - n_solutions as f64 / n_questions as f64) * 100.0;
             s += &format!(
-                "<details><summary>{} {}/{} {:.2}%</summary>\n\n",
+                "# Leetcode {} {}/{} {:.2} <a name='{}'></a>\n",
                 level_string,
                 n_questions - n_solutions,
                 n_questions,
                 percentage,
+                link_string,
             );
             s += &format!(
                 "\n|id|{} {} Questions|Tags|{} Solutions|\n",
@@ -101,7 +109,7 @@ impl Readme {
             for row in rows {
                 s += &format!("|{}|{}|{}|{}|\n", row.4, row.1, row.2, row.3);
             }
-            s += "</details>\n";
+            s += "\n";
         }
         s
     }
