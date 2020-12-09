@@ -24,3 +24,13 @@ addons:
 script:
   - cargo build --verbose --all
   - cargo test --verbose --all
+  - cargo run --verbose --all
+
+deploy:
+  provider: releases
+  api_key: "0c218089f449ffed46db7b69c99aa0e9d4fd97ed"
+  file: "README.md"
+  skip_cleanup: true
+  draft: true
+  on:
+    tags: true
