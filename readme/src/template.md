@@ -1,4 +1,4 @@
-# Leetcode Solutions in Rust [![Docs Status](https://docs.rs/rustgym/badge.svg)](https://docs.rs/rustgym) [![Build Status](https://travis-ci.org/warycat/leetcode_rs.svg?branch=master)](https://travis-ci.org/warycat/leetcode_rs)
+# RustGym Solutions in Rust [![Docs Status](https://docs.rs/rustgym/badge.svg)](https://docs.rs/rustgym) [![Build Status](https://travis-ci.org/warycat/leetcode_rs.svg?branch=master)](https://travis-ci.org/warycat/leetcode_rs)
 
 This project demostrates how to create **Data Structures** and to implement **Algorithms** using programming language **Rust**
 All the solutions here are crafted with love and their performance beats 99% of other solutions on the leetcode website. Tutorial videos will be added later.
@@ -43,7 +43,16 @@ All the solutions here are crafted with love and their performance beats 99% of 
 - Find strongly connected components in a graph
 </details>
 
-# Rust Solutions
+# Leetcode Solutions in Rust
 - [Leetcode Easy](#leetcode_easy)
 - [Leetcode Medium](#leetcode_medium)
 - [Leetcode Hard](#leetcode_hard)
+
+# Advent of Code Solutions in Rust
+- [2015](#advent_of_code_2015)
+- [2016](#advent_of_code_2016)
+- [2017](#advent_of_code_2017)
+- [2018](#advent_of_code_2018)
+- [2019](#advent_of_code_2019)
+- [2020](#advent_of_code_2020)
+

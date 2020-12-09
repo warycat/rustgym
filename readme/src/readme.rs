@@ -45,7 +45,7 @@ impl Readme {
             let id = description.id;
             description_map.insert(id, description.to_string());
         }
-        let mut s = "# All Solutions\n".to_string();
+        let mut s = "".to_string();
         for level in 1..=3 {
             let mut rows: Vec<(u64, String, String, String, String)> = vec![];
             let mut n_questions = 0;
@@ -93,7 +93,7 @@ impl Readme {
 
             let percentage = (1.0 - n_solutions as f64 / n_questions as f64) * 100.0;
             s += &format!(
-                "# Leetcode {} {}/{} {:.2} <a name='{}'></a>\n",
+                "# Leetcode {} {}/{} {:.2}% <a name='{}'></a>\n",
                 level_string,
                 n_questions - n_solutions,
                 n_questions,

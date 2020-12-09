@@ -1,4 +1,4 @@
-# Leetcode Solutions in Rust [![Docs Status](https://docs.rs/rustgym/badge.svg)](https://docs.rs/rustgym) [![Build Status](https://travis-ci.org/warycat/leetcode_rs.svg?branch=master)](https://travis-ci.org/warycat/leetcode_rs)
+# RustGym Solutions in Rust [![Docs Status](https://docs.rs/rustgym/badge.svg)](https://docs.rs/rustgym) [![Build Status](https://travis-ci.org/warycat/leetcode_rs.svg?branch=master)](https://travis-ci.org/warycat/leetcode_rs)
 
 This project demostrates how to create **Data Structures** and to implement **Algorithms** using programming language **Rust**
 All the solutions here are crafted with love and their performance beats 99% of other solutions on the leetcode website. Tutorial videos will be added later.
@@ -43,12 +43,19 @@ All the solutions here are crafted with love and their performance beats 99% of 
 - Find strongly connected components in a graph
 </details>
 
-# Rust Solutions
+# Leetcode Solutions in Rust
 - [Leetcode Easy](#leetcode_easy)
 - [Leetcode Medium](#leetcode_medium)
 - [Leetcode Hard](#leetcode_hard)
-# All Solutions
-# Leetcode Easy 7/378 1.85 <a name='leetcode_easy'></a>
+
+# Advent of Code Solutions in Rust
+- [2015](#advent_of_code_2015)
+- [2016](#advent_of_code_2016)
+- [2017](#advent_of_code_2017)
+- [2018](#advent_of_code_2018)
+- [2019](#advent_of_code_2019)
+- [2020](#advent_of_code_2020)
+# Leetcode Easy 7/378 1.85% <a name='leetcode_easy'></a>
 
 |id|378 Easy Questions|Tags|371 Solutions|
 |---|---|---|---|
@@ -431,7 +438,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook)|array|[Rust](rustgym/src/leetcode/_999_available_captures_for_rook.rs)|
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|math|[Rust](rustgym/src/leetcode/_9_palindrome_number.rs)|
 
-# Leetcode Medium 32/814 3.93 <a name='leetcode_medium'></a>
+# Leetcode Medium 32/814 3.93% <a name='leetcode_medium'></a>
 
 |id|814 Medium Questions|Tags|782 Solutions|
 |---|---|---|---|
@@ -1250,7 +1257,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |994|[Rotting Oranges](https://leetcode.com/problems/rotting-oranges)|breadth-first-search|[Rust](rustgym/src/leetcode/_994_rotting_oranges.rs)|
 |998|[Maximum Binary Tree II](https://leetcode.com/problems/maximum-binary-tree-ii)|tree|[Rust](rustgym/src/leetcode/_998_maximum_binary_tree_2.rs)|
 
-# Leetcode Hard 114/333 34.23 <a name='leetcode_hard'></a>
+# Leetcode Hard 114/333 34.23% <a name='leetcode_hard'></a>
 
 |id|333 Hard Questions|Tags|219 Solutions|
 |---|---|---|---|
