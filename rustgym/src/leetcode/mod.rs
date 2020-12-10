@@ -2480,6 +2480,8 @@ mod _1497_check_if_array_pairs_are_divisible_by_k;
 //
 mod _1498_number_of_subsequences_that_satisfy_the_given_sum_condition;
 //
+mod _1499_max_value_of_equation;
+//
 mod _1500_design_a_file_sharing_system;
 //
 mod _1502_can_make_arithmetic_progression_from_sequence;
