@@ -1,4 +1,4 @@
-# RustGym Solutions in Rust [![Docs Status](https://docs.rs/rustgym/badge.svg)](https://docs.rs/rustgym) [![Build Status](https://travis-ci.com/warycat/leetcode_rs.svg?branch=master)](https://travis-ci.com/warycat/leetcode_rs)
+# RustGym Solutions in Rust [![Docs Status](https://docs.rs/rustgym/badge.svg)](https://docs.rs/rustgym) [![Build Status](https://travis-ci.com/github/warycat/leetcode_rs.svg?branch=master)](https://travis-ci.com/github/warycat/leetcode_rs)
 
 This project demostrates how to create **Data Structures** and to implement **Algorithms** using programming language **Rust**
 All the solutions here are crafted with love and their performance beats 99% of other solutions on the leetcode website. Tutorial videos will be added later.
