@@ -1,4 +1,4 @@
-# RustGym Solutions in Rust [![Docs Status](https://docs.rs/rustgym/badge.svg)](https://docs.rs/rustgym) [![Build Status](https://travis-ci.org/warycat/leetcode_rs.svg?branch=master)](https://travis-ci.org/warycat/leetcode_rs)
+# RustGym Solutions in Rust [![Docs Status](https://docs.rs/rustgym/badge.svg)](https://docs.rs/rustgym) [![Build Status](https://travis-ci.com/warycat/leetcode_rs.svg?branch=master)](https://travis-ci.org/warycat/leetcode_rs)
 
 This project demostrates how to create **Data Structures** and to implement **Algorithms** using programming language **Rust**
 All the solutions here are crafted with love and their performance beats 99% of other solutions on the leetcode website. Tutorial videos will be added later.
@@ -1261,16 +1261,15 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |994|[Rotting Oranges](https://leetcode.com/problems/rotting-oranges)|breadth-first-search|[Rust](rustgym/src/leetcode/_994_rotting_oranges.rs)|
 |998|[Maximum Binary Tree II](https://leetcode.com/problems/maximum-binary-tree-ii)|tree|[Rust](rustgym/src/leetcode/_998_maximum_binary_tree_2.rs)|
 
-# Leetcode Hard 115/334 34.43% <a name='leetcode_hard'></a>
+# Leetcode Hard 114/334 34.13% <a name='leetcode_hard'></a>
 
-|id|334 Hard Questions|Tags|219 Solutions|
+|id|334 Hard Questions|Tags|220 Solutions|
 |---|---|---|---|
 |798|[Smallest Rotation with Highest Score](https://leetcode.com/problems/smallest-rotation-with-highest-score)||   |
 |154|[Find Minimum in Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii)|array binary-search|   |
 |644|[Maximum Average Subarray II](https://leetcode.com/problems/maximum-average-subarray-ii)|array binary-search|   |
 |1157|[Online Majority Element In Subarray](https://leetcode.com/problems/online-majority-element-in-subarray)|array binary-search segment-tree|   |
 |782|[Transform to Chessboard](https://leetcode.com/problems/transform-to-chessboard)|array math|   |
-|1499|[Max Value of Equation](https://leetcode.com/problems/max-value-of-equation)|array sliding-window|   |
 |1681|[Minimum Incompatibility](https://leetcode.com/problems/minimum-incompatibility)|backtracking greedy|   |
 |308|[Range Sum Query 2D - Mutable](https://leetcode.com/problems/range-sum-query-2d-mutable)|binary-indexed-tree segment-tree|   |
 |1649|[Create Sorted Array through Instructions](https://leetcode.com/problems/create-sorted-array-through-instructions)|binary-indexed-tree segment-tree ordered-map|   |
@@ -1444,6 +1443,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1473|[Paint House III](https://leetcode.com/problems/paint-house-iii)|dynamic-programming|[Rust](rustgym/src/leetcode/_1473_paint_house_3.rs)|
 |1478|[Allocate Mailboxes](https://leetcode.com/problems/allocate-mailboxes)|math dynamic-programming|[Rust](rustgym/src/leetcode/_1478_allocate_mailboxes.rs)|
 |1489|[Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree](https://leetcode.com/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree)|depth-first-search union-find|[Rust](rustgym/src/leetcode/_1489_find_critical_and_pseudo_critical_edges_in_minimum_spanning_tree.rs)|
+|[1499](rustgym/desc/leetcode/1499.md)|[Max Value of Equation](https://leetcode.com/problems/max-value-of-equation)|array sliding-window|[Rust](rustgym/src/leetcode/_1499_max_value_of_equation.rs)|
 |149|[Max Points on a Line](https://leetcode.com/problems/max-points-on-a-line)|hash-table math|[Rust](rustgym/src/leetcode/_149_max_points_on_a_line.rs)|
 |1510|[Stone Game IV](https://leetcode.com/problems/stone-game-iv)|dynamic-programming|[Rust](rustgym/src/leetcode/_1510_stone_game_4.rs)|
 |1515|[Best Position for a Service Centre](https://leetcode.com/problems/best-position-for-a-service-centre)|geometry|[Rust](rustgym/src/leetcode/_1515_best_position_for_a_service_center.rs)|

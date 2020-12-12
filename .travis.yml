@@ -1,36 +1,33 @@
 language: rust
 rust:
-  - stable
-  - beta
-  - nightly
-
+- stable
+- beta
+- nightly
 matrix:
   allow_failures:
-    - rust: nightly
+  - rust: nightly
   fast_finish: true
-
 os:
-  - linux
-
+- linux
 compiler:
-  - gcc
-  - clang
-
+- gcc
+- clang
 addons:
   apt:
     packages:
-      - graphviz
-
+    - graphviz
 script:
-  - cargo build --verbose --all
-  - cargo test --verbose --all
-  - cargo run --verbose
-
+- cargo build --verbose --all
+- cargo test --verbose --all
+- cargo run --verbose
 deploy:
   provider: releases
-  api_key: "0c218089f449ffed46db7b69c99aa0e9d4fd97ed"
-  file: "README.md"
+  api_key: $GH_TOKEN
+  file: README.md
   skip_cleanup: true
   draft: true
   on:
     tags: true
+env:
+  global:
+    secure: vtUYuFMQ6NWq8gOBQXghTSgh00cqjksFxXmR9dSfC3tYOa8GyP+6OyRASgrvFaB8RqV0YWe5PawNafwndRnoWtriCXOplA96xjLqtpTb99BF8DBUsY0D3SRq8iFW/vvaIVmlm5TNxBDdxE+SKi4NtCi+qsEOLwLQcEF+LiWJOSnxVxqSX9pSoVm1l6SFCCHBM8z2BMQL3K917QDqt9n9UViwbF/FVAX+5WPK8EaGEB8RURXaOud93d8NJJdrcdk7Wd4Z+Qzkey7Fo7hL66ipOACkH2cefnZjRNsu+VY1edL+9n9o+5eU2IuGHHyrnWL+ppd3sZr6xSv2RpE6RNjk5L8roz8VRVgEQn53/3WgortP/nzmGsk7RLS4kznGIzli1gccnAnTwyrqR2b53wbNPw3WSKeVgLz4ZxAQ0E7rlZa6cnywwzPY9RTsvFPjJjIek30SkNkyjRL006imq9wM2uPdVexI5+irQ1YuAvI833ZJjujWj8B/GvOzx0uIdWf8JFFgTfCaQGFwqJDD3ST9722OPt2wYJ5ci8H2kBwV4OckGdm5t1RqfEGjejF8zhyqRN7M4Qb0W5tGBwLdjhsRs8RO0zQAEhVGrtFMVJOkplVddxRCxNsl/FZoSyxXfLg3zrcZyBsdUFtf8W4sFLrFBQVAE+IVszQ7F7b6/00IQJI=
