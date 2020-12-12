@@ -20,6 +20,9 @@ script:
 - cargo build --verbose --all
 - cargo test --verbose --all
 - cargo run --verbose
+before_deploy:
+- git config --local user.name "Larry Fantasy"
+- git config --local user.email "larry.fantasy@gmail.com"
 deploy:
   provider: releases
   api_key: GH_TOKEN
@@ -30,4 +33,4 @@ deploy:
     tags: true
 env:
   global:
-  - secure: vtUYuFMQ6NWq8gOBQXghTSgh00cqjksFxXmR9dSfC3tYOa8GyP+6OyRASgrvFaB8RqV0YWe5PawNafwndRnoWtriCXOplA96xjLqtpTb99BF8DBUsY0D3SRq8iFW/vvaIVmlm5TNxBDdxE+SKi4NtCi+qsEOLwLQcEF+LiWJOSnxVxqSX9pSoVm1l6SFCCHBM8z2BMQL3K917QDqt9n9UViwbF/FVAX+5WPK8EaGEB8RURXaOud93d8NJJdrcdk7Wd4Z+Qzkey7Fo7hL66ipOACkH2cefnZjRNsu+VY1edL+9n9o+5eU2IuGHHyrnWL+ppd3sZr6xSv2RpE6RNjk5L8roz8VRVgEQn53/3WgortP/nzmGsk7RLS4kznGIzli1gccnAnTwyrqR2b53wbNPw3WSKeVgLz4ZxAQ0E7rlZa6cnywwzPY9RTsvFPjJjIek30SkNkyjRL006imq9wM2uPdVexI5+irQ1YuAvI833ZJjujWj8B/GvOzx0uIdWf8JFFgTfCaQGFwqJDD3ST9722OPt2wYJ5ci8H2kBwV4OckGdm5t1RqfEGjejF8zhyqRN7M4Qb0W5tGBwLdjhsRs8RO0zQAEhVGrtFMVJOkplVddxRCxNsl/FZoSyxXfLg3zrcZyBsdUFtf8W4sFLrFBQVAE+IVszQ7F7b6/00IQJI=
+    secure: HkWYTJJkW2WGRtjJhFZ2/c5A4VOUImpndHKR4b9vfKPqqOa38bSOC/gj5L50FpECLhCrdTwegXKCVP4sapx0Nrwm/rKWlrbBZpkpX+zTYaZIOTjbaChZOwu8OOY0C1ZBeoQ2ihsI5KA8tlZVRp6Aka7B8piq/ZVhOyC0XQ4wq9NK6lu9bbAY/O1WfxPEMU6+V9r5qj5rDC6p0raiAF/L4V4pAx+Kgs5v76A9oHFpl9SYFp5mBEEzGKSTv+hCyXMNYayK9cn9C0U3DvjoxZEvHaZ1pPata41LIUBA9E3LV8SGaFG5iVsPxHuusQJeE4ldvdZ3Yq9yWIDxmV6Na8ivQ2tmHAHhnl0gM7/kmrQb/EFIkkM0LLjDeyKyJuEC9IF23XtRBmtKqYsHuuA0dxjHuUaLHq/adgSOV9Z4Lngo4X6Wn70oHb9R6GLlh4Xw4ElRRRI5NXtII1Haypl1ufttRpeMcaxoqWTlVDs7vmu3RLr17ImF7mV+M3+Z7J9PoPNc90NNmuIUPNt/SN9fdBwoUvN1dAh+8UERSKuLWHlRNb8ZSgQouyVyi0kR+FU/SPuf4VKcHcmx+Y9iBWRCscRqvyBlHR5fzAK5jDYVnUq/EneJM/fj1ZXLmoxQbgxaH1twcwTpC9eVwRLw2XCB+H0oT/kkd3iUL4DkcxF1igJIbZs=
