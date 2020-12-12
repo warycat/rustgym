@@ -19,12 +19,12 @@ addons:
 script:
 - cargo build --verbose --all
 - cargo test --verbose --all
-- cargo run --verbose
-- cargo build --release --verbose --all
-- tar czvf rustgym-$TRAVIS_TAG.tar.gz target/release
 before_deploy:
 - git config --local user.name "Larry Fantasy"
 - git config --local user.email "larry.fantasy@gmail.com"
+- cargo run --verbose
+- cargo build --release --verbose --all
+- tar czvf rustgym-$TRAVIS_TAG.tar.gz target/release
 deploy:
   provider: releases
   api_key: $GH_TOKEN
