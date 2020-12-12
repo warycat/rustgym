@@ -25,7 +25,8 @@ before_deploy:
 - git config --local user.email "larry.fantasy@gmail.com"
 deploy:
   provider: releases
-  api_key: GH_TOKEN
+  api_key: 
+    secure: GH_TOKEN
   file: README.md
   skip_cleanup: true
   draft: true
