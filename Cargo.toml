@@ -3,4 +3,5 @@ members = [
     "rustgym",
     "util",
     "readme",
+    "server",
 ]
