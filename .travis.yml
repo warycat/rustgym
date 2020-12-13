@@ -24,13 +24,13 @@ before_deploy:
 - git config --local user.email "larry.fantasy@gmail.com"
 - cargo run --verbose
 - cargo build --release --verbose --all
-- tar czvf rustgym-$TRAVIS_TAG.tar.gz target/release
+- tar czvf rustgym.tar.gz target/release
 deploy:
   provider: releases
   api_key: $GH_TOKEN
   file: 
   - README.md
-  - rustgym-$TRAVIS_TAG.tar.gz
+  - rustgym.tar.gz
   skip_cleanup: true
   on:
     tags: true
