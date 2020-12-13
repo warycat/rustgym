@@ -56,14 +56,15 @@ All the solutions here are crafted with love and their performance beats 99% of 
 - [2019](#advent_of_code_2019)
 - [2020](#advent_of_code_2020)
 
-# Leetcode Easy 7/379 1.85% <a name='leetcode_easy'></a>
+# Leetcode Easy 8/380 2.11% <a name='leetcode_easy'></a>
 
-|id|379 Easy Questions|Tags|372 Solutions|
+|id|380 Easy Questions|Tags|372 Solutions|
 |---|---|---|---|
 |690|[Employee Importance](https://leetcode.com/problems/employee-importance)|hash-table depth-first-search breadth-first-search|   |
 |160|[Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists)|linked-list|   |
 |237|[Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list)|linked-list|   |
 |141|[Linked List Cycle](https://leetcode.com/problems/linked-list-cycle)|linked-list two-pointers|   |
+|1684|[Count the Number of Consistent Strings](https://leetcode.com/problems/count-the-number-of-consistent-strings)|string|   |
 |589|[N-ary Tree Preorder Traversal](https://leetcode.com/problems/n-ary-tree-preorder-traversal)|tree|   |
 |590|[N-ary Tree Postorder Traversal](https://leetcode.com/problems/n-ary-tree-postorder-traversal)|tree|   |
 |559|[Maximum Depth of N-ary Tree](https://leetcode.com/problems/maximum-depth-of-n-ary-tree)|tree depth-first-search breadth-first-search|   |
@@ -440,9 +441,9 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook)|array|[Rust](rustgym/src/leetcode/_999_available_captures_for_rook.rs)|
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|math|[Rust](rustgym/src/leetcode/_9_palindrome_number.rs)|
 
-# Leetcode Medium 32/816 3.92% <a name='leetcode_medium'></a>
+# Leetcode Medium 35/819 4.27% <a name='leetcode_medium'></a>
 
-|id|816 Medium Questions|Tags|784 Solutions|
+|id|819 Medium Questions|Tags|784 Solutions|
 |---|---|---|---|
 |427|[Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree)||   |
 |558|[Logical OR of Two Binary Grids Represented as Quad-Trees](https://leetcode.com/problems/logical-or-of-two-binary-grids-represented-as-quad-trees)||   |
@@ -454,6 +455,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |133|[Clone Graph](https://leetcode.com/problems/clone-graph)|depth-first-search breadth-first-search graph|   |
 |284|[Peeking Iterator](https://leetcode.com/problems/peeking-iterator)|design|   |
 |673|[Number of Longest Increasing Subsequence](https://leetcode.com/problems/number-of-longest-increasing-subsequence)|dynamic-programming|   |
+|1686|[Stone Game VI](https://leetcode.com/problems/stone-game-vi)|greedy|   |
 |138|[Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer)|hash-table linked-list|   |
 |1612|[Check If Two Expression Trees are Equivalent](https://leetcode.com/problems/check-if-two-expression-trees-are-equivalent)|hash-table tree|   |
 |1485|[Clone Binary Tree With Random Pointer](https://leetcode.com/problems/clone-binary-tree-with-random-pointer)|hash-table tree depth-first-search breadth-first-search|   |
@@ -463,7 +465,9 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |430|[Flatten a Multilevel Doubly Linked List](https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list)|linked-list depth-first-search|   |
 |426|[Convert Binary Search Tree to Sorted Doubly Linked List](https://leetcode.com/problems/convert-binary-search-tree-to-sorted-doubly-linked-list)|linked-list divide-and-conquer tree|   |
 |142|[Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii)|linked-list two-pointers|   |
+|1685|[Sum of Absolute Differences in a Sorted Array](https://leetcode.com/problems/sum-of-absolute-differences-in-a-sorted-array)|math greedy|   |
 |1618|[Maximum Font to Fit a Sentence in a Screen](https://leetcode.com/problems/maximum-font-to-fit-a-sentence-in-a-screen)|string binary-search|   |
+|1682|[Longest Palindromic Subsequence II](https://leetcode.com/problems/longest-palindromic-subsequence-ii)|string dynamic-programming|   |
 |510|[Inorder Successor in BST II](https://leetcode.com/problems/inorder-successor-in-bst-ii)|tree|   |
 |1379|[Find a Corresponding Node of a Binary Tree in a Clone of That Tree](https://leetcode.com/problems/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree)|tree|   |
 |1644|[Lowest Common Ancestor of a Binary Tree II](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-ii)|tree|   |
@@ -1261,9 +1265,9 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |994|[Rotting Oranges](https://leetcode.com/problems/rotting-oranges)|breadth-first-search|[Rust](rustgym/src/leetcode/_994_rotting_oranges.rs)|
 |998|[Maximum Binary Tree II](https://leetcode.com/problems/maximum-binary-tree-ii)|tree|[Rust](rustgym/src/leetcode/_998_maximum_binary_tree_2.rs)|
 
-# Leetcode Hard 114/334 34.13% <a name='leetcode_hard'></a>
+# Leetcode Hard 115/335 34.33% <a name='leetcode_hard'></a>
 
-|id|334 Hard Questions|Tags|220 Solutions|
+|id|335 Hard Questions|Tags|220 Solutions|
 |---|---|---|---|
 |798|[Smallest Rotation with Highest Score](https://leetcode.com/problems/smallest-rotation-with-highest-score)||   |
 |154|[Find Minimum in Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii)|array binary-search|   |
@@ -1377,6 +1381,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |834|[Sum of Distances in Tree](https://leetcode.com/problems/sum-of-distances-in-tree)|tree depth-first-search|   |
 |685|[Redundant Connection II](https://leetcode.com/problems/redundant-connection-ii)|tree depth-first-search union-find graph|   |
 |745|[Prefix and Suffix Search](https://leetcode.com/problems/prefix-and-suffix-search)|trie|   |
+|1687|[Delivering Boxes from Storage to Ports](https://leetcode.com/problems/delivering-boxes-from-storage-to-ports)|two-pointers dynamic-programming segment-tree dequeue|   |
 |1610|[Maximum Number of Visible Points](https://leetcode.com/problems/maximum-number-of-visible-points)|two-pointers geometry|   |
 |803|[Bricks Falling When Hit](https://leetcode.com/problems/bricks-falling-when-hit)|union-find|   |
 |1028|[Recover a Tree From Preorder Traversal](https://leetcode.com/problems/recover-a-tree-from-preorder-traversal)|tree depth-first-search|[Rust](rustgym/src/leetcode/_1028_recover_a_tree_from_preorder_traversal.rs)|

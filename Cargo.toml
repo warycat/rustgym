@@ -5,3 +5,5 @@ members = [
     "readme",
     "server",
 ]
+default-members = ["readme"]
+
