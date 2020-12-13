@@ -7,6 +7,7 @@ async fn greet(req: HttpRequest) -> impl Responder {
 
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
+    println!("rustgym server v0.0.1");
     HttpServer::new(|| {
         App::new()
             .route("/", web::get().to(greet))

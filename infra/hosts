@@ -1,0 +1,6 @@
+cloud:
+  hosts:
+    i1.rustgym.com:
+  vars:
+    ansible_user: rustgym
+

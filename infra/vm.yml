@@ -1,0 +1,71 @@
+---
+- hosts: all
+  vars:
+    version: v0.0.9
+  tasks:
+    - name: install sqlite
+      apt:
+        name: sqlite
+        state: present
+      become: yes
+    - name: install nginx
+      apt:
+        name: nginx
+        state: latest
+      become: yes
+    - name: stop nginx
+      service:
+        name: nginx
+        state: stopped
+      become: yes
+    - name: copy nginx config
+      copy:
+        src: rustgym-nginx.cfg
+        dest: /etc/nginx/sites-available/rustgym-nginx.cfg
+      become: yes
+    - name: symlink nginx config
+      file:
+        src: /etc/nginx/sites-available/rustgym-nginx.cfg
+        dest: /etc/nginx/sites-enabled/default
+        state: link
+      become: yes
+    - name: start nginx
+      service:
+        name: nginx
+        state: started
+      become: yes
+    - name: create version dir
+      file:
+        path: '/home/rustgym/{{version}}'
+        state: directory
+        mode: '0755'
+    - name: download rustgym
+      get_url: 
+        url: 'https://github.com/warycat/rustgym/releases/download/{{version}}/rustgym.tar.gz'
+        dest: /home/rustgym/rustgym.tar.gz
+    - name: unarchive rustgym
+      unarchive:
+        src: /home/rustgym/rustgym.tar.gz
+        dest: '/home/rustgym/{{version}}'
+        remote_src: yes
+    - name: Get running processes list from remote host
+      ignore_errors: yes
+      shell: "ps -few | grep rustgym-server | awk '{print $2}'"
+      register: running_processes
+    - name: Kill running processes
+      ignore_errors: yes
+      shell: "kill {{ item }}"
+      with_items: "{{ running_processes.stdout_lines }}"
+    - wait_for:
+        path: "/proc/{{ item }}/status"
+        state: absent
+      with_items: "{{ running_processes.stdout_lines }}"
+      ignore_errors: yes
+      register: rustgym_processes
+    - name: Force kill stuck processes
+      ignore_errors: yes
+      shell: "kill -9 {{ item }}"
+      with_items: "{{ rustgym_processes.results | select('failed') | map(attribute='item') | list }}"
+    - name: start rustgym
+      shell: '/home/rustgym/{{version}}/target/release/rustgym-server >> /home/rustgym/rusgym.log &>> /home/rustgym/rusgym.error.log &'
+
