@@ -1,5 +1,7 @@
 use super::*;
+use std::fmt;
 
+#[derive(Debug)]
 pub struct LeetcodeQuestion {
     pub id: u64,
     pub frontend_id: u64,

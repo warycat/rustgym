@@ -17,6 +17,7 @@ addons:
     packages:
     - graphviz
 script:
+- cargo install diesel_cli --no-default-features --features sqlite
 - cargo build --verbose --all
 - cargo test --verbose --all
 before_deploy:

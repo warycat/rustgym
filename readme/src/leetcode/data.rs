@@ -1,4 +1,8 @@
 use super::*;
+use std::collections::HashMap;
+
+type Tags = HashMap<u64, Vec<Tag>>;
+type Tag = (String, String);
 
 pub struct LeetcodeData {
     list_url: &'static str,

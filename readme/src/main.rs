@@ -1,14 +1,12 @@
 mod consts;
-mod data;
 mod description;
-mod question;
+mod leetcode;
 mod readme;
 mod solution;
 
 use consts::*;
-use data::*;
 use description::*;
-use question::*;
+use leetcode::*;
 use readme::*;
 use solution::*;
 
@@ -23,8 +21,9 @@ type Tags = HashMap<u64, Vec<Tag>>;
 type Tag = (String, String);
 
 fn main() {
-    let leetcode_json = LeetcodeData::new(LEETCODE_JSON_URL, LEETCODE_TAG_URL);
+    let leetcode_json = LeetcodeData::new(leetcode::LEETCODE_JSON_URL, leetcode::LEETCODE_TAG_URL);
     let questions = leetcode_json.get_questions().unwrap_or_default();
+    dbg!(&questions);
     let question_list = LeetcodeQuestionList::new(questions);
     let tags = leetcode_json.get_tags().unwrap_or_default();
     let cargo_dir = env::var_os(CARGO_MANIFEST_DIR).unwrap();
