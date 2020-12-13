@@ -1,7 +1,7 @@
 ---
 - hosts: all
   vars:
-    version: v0.0.9
+    version: v0.0.10
   tasks:
     - name: install sqlite
       apt:
@@ -67,5 +67,5 @@
       shell: "kill -9 {{ item }}"
       with_items: "{{ rustgym_processes.results | select('failed') | map(attribute='item') | list }}"
     - name: start rustgym
-      shell: '/home/rustgym/{{version}}/target/release/rustgym-server >> /home/rustgym/rusgym.log &>> /home/rustgym/rusgym.error.log &'
+      shell: '/home/rustgym/{{version}}/target/release/rustgym-server >> /home/rustgym/rustgym.log &>> /home/rustgym/rustgym.error.log &'
 
