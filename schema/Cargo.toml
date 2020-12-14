@@ -8,3 +8,4 @@ edition = "2018"
 [dependencies]
 diesel = { version = "1.4.5", features = ["sqlite"] }
 rustgym-consts = { path = "../consts" }
+serde = "1.0.118"

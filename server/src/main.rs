@@ -1,15 +1,25 @@
-use actix_web::{web, App, HttpRequest, HttpServer, Responder};
+mod db;
 
-async fn greet(req: HttpRequest) -> impl Responder {
-    let name = req.match_info().get("name").unwrap_or("World");
-    format!("Hello {}!", &name)
+use actix_web::{web, App, HttpResponse, HttpServer};
+use diesel::prelude::*;
+use rustgym_consts::*;
+use rustgym_schema::leetcode_question::LeetcodeQuestion;
+
+async fn greet(pool: web::Data<db::SqlitePool>) -> HttpResponse {
+    use rustgym_schema::schema::leetcode_question::dsl::*;
+    let conn = pool.get().unwrap();
+    let res: Vec<LeetcodeQuestion> = leetcode_question.load::<LeetcodeQuestion>(&conn).unwrap();
+    HttpResponse::Ok().json(res)
 }
 
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
+    let pool = db::init_pool(DATABASE_URL).expect("Failed to create pool");
+
     println!("rustgym server v0.0.1");
-    HttpServer::new(|| {
+    HttpServer::new(move || {
         App::new()
+            .data(pool.clone())
             .route("/", web::get().to(greet))
             .route("/{name}", web::get().to(greet))
     })

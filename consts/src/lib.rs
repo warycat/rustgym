@@ -7,3 +7,5 @@ pub const LEETCODE_SRC: &str = "rustgym/src/leetcode";
 pub const LEETCODE_DESC: &str = "rustgym/desc/leetcode";
 // pub const HACKERRANK_SRC: &str = "rustgym/src/hackerrank";
 // pub const HACKERRANK_DESC: &str = "rustgym/desc/hackerrank";
+
+pub const DATABASE_URL: &str = "rustgym.sqlite";

@@ -23,8 +23,6 @@ const TEMPLATE: &str = include_str!("template.md");
 type Tags = HashMap<i32, Vec<Tag>>;
 type Tag = (String, String);
 
-const DATABASE_URL: &'static str = "rustgym.sqlite";
-
 fn main() -> Result<()> {
     use rustgym_schema::schema::leetcode_question::dsl::*;
     let conn = SqliteConnection::establish(DATABASE_URL)?;
