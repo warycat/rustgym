@@ -1,12 +1,12 @@
 use super::*;
 
 pub struct RustSolution {
-    pub id: u64,
+    pub id: i32,
     filename: String,
 }
 
 impl RustSolution {
-    fn new(id: u64, filename: String) -> Self {
+    fn new(id: i32, filename: String) -> Self {
         RustSolution { id, filename }
     }
 }
@@ -28,7 +28,7 @@ impl RustSolutionList {
             let filename = entry.unwrap().file_name().to_str().unwrap().to_string();
             if let Some(0) = filename.find('_') {
                 let s: Vec<String> = filename.split('_').map(|s| s.to_string()).collect();
-                let id = s[1].clone().parse::<u64>().unwrap();
+                let id = s[1].clone().parse::<i32>().unwrap();
                 let problem = RustSolution::new(id, filename);
                 solutions.push(problem);
             }

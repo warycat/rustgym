@@ -1,7 +1,7 @@
 use super::*;
 use std::collections::HashMap;
 
-type Tags = HashMap<u64, Vec<Tag>>;
+type Tags = HashMap<i32, Vec<Tag>>;
 type Tag = (String, String);
 
 pub struct LeetcodeData {
@@ -31,13 +31,14 @@ impl LeetcodeData {
         let mut questions = vec![];
         for pair in pairs {
             let stat = pair["stat"].as_object().unwrap();
-            let frontend_id = stat["frontend_question_id"].as_u64().unwrap();
-            let id = stat["question_id"].as_u64().unwrap();
+            let frontend_id = stat["frontend_question_id"].as_i64().unwrap();
+            let id = stat["question_id"].as_i64().unwrap();
             let title = stat["question__title"].as_str().unwrap();
             let slug = stat["question__title_slug"].as_str().unwrap();
             let difficulty = pair["difficulty"].as_object().unwrap();
-            let level = difficulty["level"].as_u64().unwrap();
-            let question = LeetcodeQuestion::new(id, title, slug, level, frontend_id);
+            let level = difficulty["level"].as_i64().unwrap();
+            let question =
+                LeetcodeQuestion::new(id as i32, title, slug, level as i32, frontend_id as i32);
             questions.push(question);
         }
         Ok(questions)
@@ -53,8 +54,8 @@ impl LeetcodeData {
             let name = topic["name"].as_str().unwrap();
             let questions = topic["questions"].as_array().unwrap();
             for question in questions {
-                let id = question.as_u64().unwrap();
-                hm.entry(id)
+                let id = question.as_i64().unwrap();
+                hm.entry(id as i32)
                     .or_default()
                     .push((slug.to_string(), name.to_string()));
             }

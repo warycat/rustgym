@@ -29,9 +29,9 @@ impl Readme {
         let solutions = &self.solution_list.solutions;
         let questions = &self.question_list.questions;
         let descriptions = &self.description_list.descriptions;
-        let mut btm: BTreeMap<u64, (String, u64, u64)> = BTreeMap::new();
-        let mut solution_map: HashMap<u64, String> = HashMap::new();
-        let mut description_map: HashMap<u64, String> = HashMap::new();
+        let mut btm: BTreeMap<i32, (String, i32, i32)> = BTreeMap::new();
+        let mut solution_map: HashMap<i32, String> = HashMap::new();
+        let mut description_map: HashMap<i32, String> = HashMap::new();
         for question in questions {
             let id = question.id;
             let frontend_id = question.frontend_id;
@@ -47,7 +47,7 @@ impl Readme {
         }
         let mut s = "".to_string();
         for level in 1..=3 {
-            let mut rows: Vec<(u64, String, String, String, String)> = vec![];
+            let mut rows: Vec<(i32, String, String, String, String)> = vec![];
             let mut n_questions = 0;
             let mut n_solutions = 0;
             for (&id, question) in &btm {

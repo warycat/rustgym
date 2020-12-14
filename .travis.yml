@@ -23,7 +23,8 @@ script:
 before_deploy:
 - git config --local user.name "Larry Fantasy"
 - git config --local user.email "larry.fantasy@gmail.com"
-- cargo run --verbose
+- diesel setup --database-url rustgym.sqlite
+- cargo run --bin rustgym-readme --verbose
 - cargo build --release --verbose --all
 - tar czvf rustgym.tar.gz target/release
 deploy:
@@ -32,6 +33,7 @@ deploy:
   file: 
   - README.md
   - rustgym.tar.gz
+  - rustgym.sqlite
   skip_cleanup: true
   on:
     tags: true

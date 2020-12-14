@@ -1,12 +1,12 @@
 use super::*;
 
 pub struct Description {
-    pub id: u64,
+    pub id: i32,
     filename: String,
 }
 
 impl Description {
-    fn new(id: u64, filename: String) -> Self {
+    fn new(id: i32, filename: String) -> Self {
         Description { id, filename }
     }
 }
@@ -27,7 +27,7 @@ impl DescriptionList {
         for entry in fs::read_dir(src_dir).unwrap() {
             let filename = entry.unwrap().file_name().to_str().unwrap().to_string();
             let n = filename.len();
-            let id = filename[..n - 3].parse::<u64>().unwrap();
+            let id = filename[..n - 3].parse::<i32>().unwrap();
             let description = Description::new(id, filename);
             descriptions.push(description);
         }

@@ -1,17 +1,18 @@
 use super::*;
+use crate::schema::leetcode_questions;
 use std::fmt;
 
-#[derive(Debug)]
+#[derive(Debug, Queryable, Insertable)]
 pub struct LeetcodeQuestion {
-    pub id: u64,
-    pub frontend_id: u64,
+    pub id: i32,
+    pub frontend_id: i32,
     pub title: String,
     pub slug: String,
-    pub level: u64,
+    pub level: i32,
 }
 
 impl LeetcodeQuestion {
-    pub fn new<S: Into<String>>(id: u64, title: S, slug: S, level: u64, frontend_id: u64) -> Self {
+    pub fn new<S: Into<String>>(id: i32, title: S, slug: S, level: i32, frontend_id: i32) -> Self {
         LeetcodeQuestion {
             id,
             title: title.into(),
