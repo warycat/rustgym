@@ -1,25 +1,16 @@
-#[macro_use]
-extern crate diesel;
-
-#[macro_use]
-extern crate diesel_migrations;
-
-mod consts;
 mod description;
 mod leetcode;
 mod readme;
-pub mod schema;
 mod solution;
 
-use consts::*;
-use description::*;
-use leetcode::*;
-use readme::*;
-use solution::*;
-
 use anyhow::Result;
+use description::*;
 use diesel::prelude::*;
 use diesel::sqlite::SqliteConnection;
+use leetcode::*;
+use readme::*;
+use rustgym_consts::*;
+use solution::*;
 use std::collections::BTreeMap;
 use std::collections::HashMap;
 use std::env;
@@ -27,19 +18,19 @@ use std::fmt;
 use std::fs;
 use std::path::Path;
 
+const TEMPLATE: &str = include_str!("template.md");
+
 type Tags = HashMap<i32, Vec<Tag>>;
 type Tag = (String, String);
 
 const DATABASE_URL: &'static str = "rustgym.sqlite";
 
-embed_migrations!();
-
 fn main() -> Result<()> {
+    use rustgym_schema::schema::leetcode_question::dsl::*;
     let conn = SqliteConnection::establish(DATABASE_URL)?;
-    embedded_migrations::run_with_output(&conn, &mut std::io::stdout())?;
-    let leetcode_json = LeetcodeData::new(leetcode::LEETCODE_JSON_URL, leetcode::LEETCODE_TAG_URL);
+    let leetcode_json = LeetcodeData::new(LEETCODE_JSON_URL, LEETCODE_TAG_URL);
     let questions = leetcode_json.get_questions().unwrap_or_default();
-    diesel::insert_into(schema::leetcode_questions::dsl::leetcode_questions)
+    diesel::insert_into(leetcode_question)
         .values(&questions)
         .execute(&conn)?;
     let question_list = LeetcodeQuestionList::new(questions);

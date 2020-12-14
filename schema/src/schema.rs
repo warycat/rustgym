@@ -1,5 +1,5 @@
 table! {
-    leetcode_questions (id) {
+    leetcode_question (id) {
         id -> Nullable<Integer>,
         frontend_id -> Nullable<Integer>,
         title -> Nullable<Text>,

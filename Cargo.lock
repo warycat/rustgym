@@ -603,16 +603,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "diesel_migrations"
-version = "1.4.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "bf3cde8413353dc7f5d72fa8ce0b99a560a359d2c5ef1e5817ca731cd9008f4c"
-dependencies = [
- "migrations_internals",
- "migrations_macros",
-]
-
-[[package]]
 name = "difference"
 version = "2.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1146,27 +1136,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "migrations_internals"
-version = "1.4.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "2b4fc84e4af020b837029e017966f86a1c2d5e83e64b589963d5047525995860"
-dependencies = [
- "diesel",
-]
-
-[[package]]
-name = "migrations_macros"
-version = "1.4.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9753f12909fd8d923f75ae5c3258cae1ed3c8ec052e1b38c93c21a6d157f789c"
-dependencies = [
- "migrations_internals",
- "proc-macro2",
- "quote",
- "syn",
-]
-
-[[package]]
 name = "mime"
 version = "0.3.16"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1657,15 +1626,28 @@ dependencies = [
 ]
 
 [[package]]
+name = "rustgym-consts"
+version = "0.1.0"
+
+[[package]]
 name = "rustgym-readme"
 version = "0.1.0"
 dependencies = [
  "anyhow",
  "diesel",
- "diesel_migrations",
  "reqwest",
+ "rustgym-consts",
+ "rustgym-schema",
  "rustgym-util 0.2.4",
  "serde_json",
+]
+
+[[package]]
+name = "rustgym-schema"
+version = "0.1.0"
+dependencies = [
+ "diesel",
+ "rustgym-consts",
 ]
 
 [[package]]

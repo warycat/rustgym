@@ -1,4 +1,4 @@
-use super::*;
+use rustgym_schema::LeetcodeQuestion;
 use std::collections::HashMap;
 
 type Tags = HashMap<i32, Vec<Tag>>;

@@ -23,7 +23,7 @@ script:
 before_deploy:
 - git config --local user.name "Larry Fantasy"
 - git config --local user.email "larry.fantasy@gmail.com"
-- diesel setup --database-url rustgym.sqlite
+- diesel migration run --database-url rustgym.sqlite
 - cargo run --bin rustgym-readme --verbose
 - cargo build --release --verbose --all
 - tar czvf rustgym.tar.gz target/release
