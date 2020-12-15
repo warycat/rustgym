@@ -229,6 +229,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |[1678](rustgym/desc/leetcode/1678.md)|[Goal Parser Interpretation](https://leetcode.com/problems/goal-parser-interpretation)|string|[Rust](rustgym/src/leetcode/_1678_goal_parser_interpretation.rs)|
 |167|[Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted)|array two-pointers binary-search|[Rust](rustgym/src/leetcode/_167_two_sum_2.rs)|
 |[1684](rustgym/desc/leetcode/1684.md)|[Count the Number of Consistent Strings](https://leetcode.com/problems/count-the-number-of-consistent-strings)|string|[Rust](rustgym/src/leetcode/_1684_count_the_number_of_consistent_strings.rs)|
+|[1688](rustgym/desc/leetcode/1688.md)|[Count of Matches in Tournament](https://leetcode.com/problems/count-of-matches-in-tournament)|backtracking|[Rust](rustgym/src/leetcode/_1688_count_of_matches_in_tournament.rs)|
 |168|[Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title)|math|[Rust](rustgym/src/leetcode/_168_excel_sheet_column_title.rs)|
 |169|[Majority Element](https://leetcode.com/problems/majority-element)|array divide-and-conquer bit-manipulation|[Rust](rustgym/src/leetcode/_169_majority_element.rs)|
 |170|[Two Sum III - Data structure design](https://leetcode.com/problems/two-sum-iii-data-structure-design)|hash-table design|[Rust](rustgym/src/leetcode/_170_two_sum_3.rs)|
@@ -236,7 +237,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |172|[Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes)|math|[Rust](rustgym/src/leetcode/_172_factorial_trailing_zeroes.rs)|
 |[190](rustgym/desc/leetcode/190.md)|[Reverse Bits](https://leetcode.com/problems/reverse-bits)|bit-manipulation|[Rust](rustgym/src/leetcode/_190_reverse_bits.rs)|
 |191|[Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits)|bit-manipulation|[Rust](rustgym/src/leetcode/_191_number_of_1_bits.rs)|
-|198|[House Robber](https://leetcode.com/problems/house-robber)|dynamic-programming|[Rust](rustgym/src/leetcode/_198_house_robber.rs)|
 |1|[Two Sum](https://leetcode.com/problems/two-sum)|array hash-table|[Rust](rustgym/src/leetcode/_1_two_sum.rs)|
 |202|[Happy Number](https://leetcode.com/problems/happy-number)|hash-table math|[Rust](rustgym/src/leetcode/_202_happy_number.rs)|
 |203|[Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements)|linked-list|[Rust](rustgym/src/leetcode/_203_remove_linked_list_elements.rs)|
@@ -441,9 +441,9 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook)|array|[Rust](rustgym/src/leetcode/_999_available_captures_for_rook.rs)|
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|math|[Rust](rustgym/src/leetcode/_9_palindrome_number.rs)|
 
-# Leetcode Medium 33/819 4.03% <a name='leetcode_medium'></a>
+# Leetcode Medium 33/822 4.01% <a name='leetcode_medium'></a>
 
-|id|819 Medium Questions|Tags|786 Solutions|
+|id|822 Medium Questions|Tags|789 Solutions|
 |---|---|---|---|
 |427|[Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree)||   |
 |558|[Logical OR of Two Binary Grids Represented as Quad-Trees](https://leetcode.com/problems/logical-or-of-two-binary-grids-represented-as-quad-trees)||   |
@@ -805,6 +805,8 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |[1680](rustgym/desc/leetcode/1680.md)|[Concatenation of Consecutive Binary Numbers](https://leetcode.com/problems/concatenation-of-consecutive-binary-numbers)|math|[Rust](rustgym/src/leetcode/_1680_concatenation_of_consecutive_binary_numbers.rs)|
 |[1685](rustgym/desc/leetcode/1685.md)|[Sum of Absolute Differences in a Sorted Array](https://leetcode.com/problems/sum-of-absolute-differences-in-a-sorted-array)|math greedy|[Rust](rustgym/src/leetcode/_1685_sum_of_absolute_differences_in_a_sorted_array.rs)|
 |[1686](rustgym/desc/leetcode/1686.md)|[Stone Game VI](https://leetcode.com/problems/stone-game-vi)|greedy|[Rust](rustgym/src/leetcode/_1686_stone_game_6.rs)|
+|[1689](rustgym/desc/leetcode/1689.md)|[Partitioning Into Minimum Number Of Deci-Binary Numbers](https://leetcode.com/problems/partitioning-into-minimum-number-of-deci-binary-numbers)|greedy|[Rust](rustgym/src/leetcode/_1689_partitioning_into_minimum_number_of_deci_binary_numbers.rs)|
+|[1690](rustgym/desc/leetcode/1690.md)|[Stone Game VII](https://leetcode.com/problems/stone-game-vii)|dynamic-programming|[Rust](rustgym/src/leetcode/_1690_stone_game_7.rs)|
 |16|[3Sum Closest](https://leetcode.com/problems/3sum-closest)|array two-pointers|[Rust](rustgym/src/leetcode/_16_3sum_closest.rs)|
 |173|[Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator)|stack tree design|[Rust](rustgym/src/leetcode/_173_binary_search_tree_iterator.rs)|
 |179|[Largest Number](https://leetcode.com/problems/largest-number)|sort|[Rust](rustgym/src/leetcode/_179_largest_number.rs)|
@@ -813,6 +815,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |187|[Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences)|hash-table bit-manipulation|[Rust](rustgym/src/leetcode/_187_repeated_dna_sequences.rs)|
 |189|[Rotate Array](https://leetcode.com/problems/rotate-array)|array|[Rust](rustgym/src/leetcode/_189_rotate_array.rs)|
 |18|[4Sum](https://leetcode.com/problems/4sum)|array hash-table two-pointers|[Rust](rustgym/src/leetcode/_18_4sum.rs)|
+|198|[House Robber](https://leetcode.com/problems/house-robber)|dynamic-programming|[Rust](rustgym/src/leetcode/_198_house_robber.rs)|
 |199|[Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view)|tree depth-first-search breadth-first-search|[Rust](rustgym/src/leetcode/_199_binary_tree_right_side_view.rs)|
 |19|[Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list)|linked-list two-pointers|[Rust](rustgym/src/leetcode/_19_remove_nth_node_from_end_of_list.rs)|
 |200|[Number of Islands](https://leetcode.com/problems/number-of-islands)|depth-first-search breadth-first-search union-find|[Rust](rustgym/src/leetcode/_200_number_of_islands.rs)|
@@ -1265,9 +1268,9 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |994|[Rotting Oranges](https://leetcode.com/problems/rotting-oranges)|breadth-first-search|[Rust](rustgym/src/leetcode/_994_rotting_oranges.rs)|
 |998|[Maximum Binary Tree II](https://leetcode.com/problems/maximum-binary-tree-ii)|tree|[Rust](rustgym/src/leetcode/_998_maximum_binary_tree_2.rs)|
 
-# Leetcode Hard 115/335 34.33% <a name='leetcode_hard'></a>
+# Leetcode Hard 115/336 34.23% <a name='leetcode_hard'></a>
 
-|id|335 Hard Questions|Tags|220 Solutions|
+|id|336 Hard Questions|Tags|221 Solutions|
 |---|---|---|---|
 |798|[Smallest Rotation with Highest Score](https://leetcode.com/problems/smallest-rotation-with-highest-score)||   |
 |154|[Find Minimum in Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii)|array binary-search|   |
@@ -1476,6 +1479,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |164|[Maximum Gap](https://leetcode.com/problems/maximum-gap)|sort|[Rust](rustgym/src/leetcode/_164_maximum_gap.rs)|
 |[1659](rustgym/desc/leetcode/1659.md)|[Maximize Grid Happiness](https://leetcode.com/problems/maximize-grid-happiness)|dynamic-programming backtracking|[Rust](rustgym/src/leetcode/_1659_maximize_grid_happiness.rs)|
 |1665|[Minimum Initial Energy to Finish Tasks](https://leetcode.com/problems/minimum-initial-energy-to-finish-tasks)|greedy|[Rust](rustgym/src/leetcode/_1665_minimum_initial_energy_to_finish_tasks.rs)|
+|[1691](rustgym/desc/leetcode/1691.md)|[Maximum Height by Stacking Cuboids ](https://leetcode.com/problems/maximum-height-by-stacking-cuboids)|dynamic-programming sort|[Rust](rustgym/src/leetcode/_1691_maximum_height_by_stacking_cuboids.rs)|
 |174|[Dungeon Game](https://leetcode.com/problems/dungeon-game)|binary-search dynamic-programming|[Rust](rustgym/src/leetcode/_174_dungeon_game.rs)|
 |188|[Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv)|dynamic-programming|[Rust](rustgym/src/leetcode/_188_best_time_to_buy_and_sell_stock_4.rs)|
 |212|[Word Search II](https://leetcode.com/problems/word-search-ii)|backtracking trie|[Rust](rustgym/src/leetcode/_212_word_search_2.rs)|

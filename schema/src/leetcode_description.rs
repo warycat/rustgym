@@ -7,7 +7,7 @@ use std::fmt;
 pub struct LeetcodeDescription {
     pub id: i32,
     filename: String,
-    html: String,
+    pub html: String,
 }
 
 impl LeetcodeDescription {

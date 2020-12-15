@@ -1,7 +1,7 @@
 ---
 - hosts: all
   vars:
-    version: v0.0.10
+    TAG: "{{ lookup('env', 'TAG') }}"
   tasks:
     - name: install sqlite
       apt:
@@ -36,17 +36,21 @@
       become: yes
     - name: create version dir
       file:
-        path: '/home/rustgym/{{version}}'
+        path: '/home/rustgym/{{TAG}}'
         state: directory
         mode: '0755'
-    - name: download rustgym
+    - name: download rustgym sqlite
       get_url: 
-        url: 'https://github.com/warycat/rustgym/releases/download/{{version}}/rustgym.tar.gz'
+        url: 'https://github.com/warycat/rustgym/releases/download/{{TAG}}/rustgym.sqlite'
+        dest: /home/rustgym/rustgym.sqlite
+    - name: download rustgym archive
+      get_url: 
+        url: 'https://github.com/warycat/rustgym/releases/download/{{TAG}}/rustgym.tar.gz'
         dest: /home/rustgym/rustgym.tar.gz
     - name: unarchive rustgym
       unarchive:
         src: /home/rustgym/rustgym.tar.gz
-        dest: '/home/rustgym/{{version}}'
+        dest: '/home/rustgym/{{TAG}}'
         remote_src: yes
     - name: Get running processes list from remote host
       ignore_errors: yes
@@ -67,5 +71,5 @@
       shell: "kill -9 {{ item }}"
       with_items: "{{ rustgym_processes.results | select('failed') | map(attribute='item') | list }}"
     - name: start rustgym
-      shell: '/home/rustgym/{{version}}/target/release/rustgym-server >> /home/rustgym/rustgym.log &>> /home/rustgym/rustgym.error.log &'
+      shell: '/home/rustgym/{{TAG}}/target/release/rustgym-server >> /home/rustgym/rustgym.log &>> /home/rustgym/rustgym.error.log &'
 
