@@ -2746,6 +2746,12 @@ mod _1679_max_number_of_k_sum_pairs;
 //
 mod _1680_concatenation_of_consecutive_binary_numbers;
 //
+mod _1684_count_the_number_of_consistent_strings;
+//
+mod _1685_sum_of_absolute_differences_in_a_sorted_array;
+//
+mod _1686_stone_game_6;
+//
 mod _1688_count_of_matches_in_tournament;
 //
 mod _1689_partitioning_into_minimum_number_of_deci_binary_numbers;
