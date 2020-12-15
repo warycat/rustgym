@@ -1,34 +1,24 @@
 use super::*;
-
-pub struct Description {
-    pub id: i32,
-    filename: String,
-}
-
-impl Description {
-    fn new(id: i32, filename: String) -> Self {
-        Description { id, filename }
-    }
-}
-
-impl fmt::Display for Description {
-    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
-        write!(f, "[{}]({}/{})", self.id, LEETCODE_DESC, self.filename)
-    }
-}
+use fs::File;
+use rustgym_schema::leetcode_description::LeetcodeDescription;
+use std::io::Read;
 
 pub struct DescriptionList {
-    pub descriptions: Vec<Description>,
+    pub descriptions: Vec<LeetcodeDescription>,
 }
 
 impl DescriptionList {
     pub fn new(src_dir: std::path::PathBuf) -> Self {
-        let mut descriptions: Vec<Description> = vec![];
+        let mut descriptions: Vec<LeetcodeDescription> = vec![];
         for entry in fs::read_dir(src_dir).unwrap() {
-            let filename = entry.unwrap().file_name().to_str().unwrap().to_string();
+            let dir = entry.unwrap();
+            let filename = dir.file_name().to_str().unwrap().to_string();
             let n = filename.len();
             let id = filename[..n - 3].parse::<i32>().unwrap();
-            let description = Description::new(id, filename);
+            let mut file = File::open(dir.path()).unwrap();
+            let mut html = "".to_string();
+            file.read_to_string(&mut html).unwrap();
+            let description = LeetcodeDescription::new(id, filename, html);
             descriptions.push(description);
         }
         DescriptionList { descriptions }

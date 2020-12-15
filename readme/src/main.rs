@@ -24,6 +24,7 @@ type Tags = HashMap<i32, Vec<Tag>>;
 type Tag = (String, String);
 
 fn main() -> Result<()> {
+    use rustgym_schema::schema::leetcode_description::dsl::*;
     use rustgym_schema::schema::leetcode_question::dsl::*;
     let conn = SqliteConnection::establish(DATABASE_URL)?;
     let leetcode_json = LeetcodeData::new(LEETCODE_JSON_URL, LEETCODE_TAG_URL);
@@ -39,6 +40,10 @@ fn main() -> Result<()> {
     let solution_list = RustSolutionList::new(src_dir);
     let desc_dir = Path::new(&cargo_dir).join("..").join(LEETCODE_DESC);
     let description_list = DescriptionList::new(desc_dir);
+    diesel::insert_into(leetcode_description)
+        .values(&description_list.descriptions)
+        .execute(&conn)?;
+
     let readme = Readme::new(
         TEMPLATE.to_string(),
         solution_list,

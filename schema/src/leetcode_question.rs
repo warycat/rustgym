@@ -2,7 +2,7 @@ use super::schema::leetcode_question;
 use rustgym_consts::*;
 use std::fmt;
 
-#[derive(Debug, Queryable, Insertable, Serialize)]
+#[derive(Debug, Queryable, Insertable)]
 #[table_name = "leetcode_question"]
 pub struct LeetcodeQuestion {
     pub id: i32,

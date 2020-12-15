@@ -1,0 +1,12 @@
+[config]
+default_to_workspace = false
+
+[tasks.rm_sqlite]
+script = ["rm rustgym.sqlite"]
+
+[tasks.migration]
+script = ["diesel migration run --database-url rustgym.sqlite"]
+
+[tasks.readme]
+script = ["cargo run --bin rustgym-readme"]
+dependencies = ["rm_sqlite", "migration"]
