@@ -20,6 +20,7 @@ jobs:
   run:
     needs: build
     runs-on: ubuntu-latest
+    steps:
     - name: Install cargo-make
       run: cargo install cargo-make --verbose
     - name: Install diesel_cli
@@ -33,6 +34,7 @@ jobs:
   deploy:
     needs: run
     runs-on: ubuntu-latest
+    steps:
     - name: Create Release
       id: create_release
       uses: actions/create-release@v1
