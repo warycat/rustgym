@@ -23,7 +23,7 @@ impl RustSolutionList {
                 solutions.push(problem);
             }
         }
-        solutions.sort_by_key(|x| x.id);
+        solutions.sort_by_key(|x| x.question_id);
         RustSolutionList { solutions }
     }
 }

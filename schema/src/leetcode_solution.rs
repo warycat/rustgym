@@ -2,22 +2,12 @@ use super::schema::leetcode_solution;
 use rustgym_consts::*;
 use std::fmt;
 
-#[derive(Debug, Queryable, Insertable)]
+#[derive(Debug, Queryable, Insertable, new)]
 #[table_name = "leetcode_solution"]
 pub struct LeetcodeSolution {
-    pub id: i32,
+    pub question_id: i32,
     filename: String,
     pub source: String,
-}
-
-impl LeetcodeSolution {
-    pub fn new(id: i32, filename: String, source: String) -> Self {
-        LeetcodeSolution {
-            id,
-            filename,
-            source,
-        }
-    }
 }
 
 impl fmt::Display for LeetcodeSolution {

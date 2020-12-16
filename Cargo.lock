@@ -1844,6 +1844,7 @@ dependencies = [
 name = "rustgym-schema"
 version = "0.1.0"
 dependencies = [
+ "derive-new",
  "diesel",
  "rustgym-consts",
  "serde",

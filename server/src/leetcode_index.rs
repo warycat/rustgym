@@ -14,7 +14,7 @@ pub async fn leetcode_index(pool: web::Data<SqlitePool>) -> Result<HttpResponse,
     use rustgym_schema::schema::leetcode_question::dsl::*;
     let conn = conn(pool)?;
     let rows: Vec<LeetcodeIndexRow> = leetcode_question
-        .select((frontend_id, title))
+        .select((qid, title))
         .inner_join(leetcode_description)
         .load(&conn)
         .map_err(ErrorNotFound)?;

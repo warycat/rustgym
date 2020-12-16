@@ -4,6 +4,7 @@ use actix_web::HttpResponse;
 use askama::Template;
 use rustgym_schema::leetcode_description::LeetcodeDescription;
 use rustgym_schema::leetcode_question::LeetcodeQuestion;
+use rustgym_schema::leetcode_solution::LeetcodeSolution;
 
 #[derive(Template, new)]
 #[template(path = "home.j2")]
@@ -14,7 +15,7 @@ pub struct HomeContext<'a> {
 
 #[derive(Queryable)]
 pub struct LeetcodeIndexRow {
-    pub frontend_id: i32,
+    pub qid: i32,
     pub title: String,
 }
 
@@ -29,6 +30,7 @@ pub struct LeetcodeIndexContext {
 pub struct LeetcodeDetailContext {
     pub question: LeetcodeQuestion,
     pub description: LeetcodeDescription,
+    pub solutions: Vec<LeetcodeSolution>,
 }
 
 macro_rules! impl_render_wrapper {

@@ -34,16 +34,15 @@ impl Readme {
         let mut solution_map: HashMap<i32, String> = HashMap::new();
         let mut description_map: HashMap<i32, String> = HashMap::new();
         for question in questions {
-            let id = question.id;
-            let frontend_id = question.frontend_id;
-            btm.insert(id, (question.to_string(), question.level, frontend_id));
+            let qid = question.qid;
+            btm.insert(qid, (question.to_string(), question.level, qid));
         }
         for solution in solutions {
-            let id = solution.id;
+            let id = solution.question_id;
             solution_map.insert(id, solution.to_string());
         }
         for description in descriptions {
-            let id = description.id;
+            let id = description.did;
             description_map.insert(id, description.to_string());
         }
         let mut s = "".to_string();

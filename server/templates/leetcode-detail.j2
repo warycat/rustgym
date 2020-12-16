@@ -1,2 +1,6 @@
 <h1>{{question.title}}</h1>
 <article>{{description.html|safe}}</article>
+<h1>Rust Solution</h1>
+{% for solution in solutions %}
+  <pre>{{solution.source}}</pre>
+{% endfor %}

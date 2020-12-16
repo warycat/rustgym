@@ -16,8 +16,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Install Cargo Make
+    - name: Install cargo-make
       run: cargo install cargo-make --verbose
+    - name: Install diesel_cli
+      run: cargo install diesel_cli --no-default-features --features sqlite
     - name: Build
       run: cargo build --verbose
     - name: Run tests

@@ -1,6 +1,6 @@
 CREATE TABLE leetcode_solution (
-    id       INTEGER NOT NULL
-                     REFERENCES leetcode_question (frontend_id),
+    question_id       INTEGER NOT NULL
+                     REFERENCES leetcode_question (qid),
     filename TEXT    NOT NULL
                      PRIMARY KEY,
     source   TEXT    NOT NULL
