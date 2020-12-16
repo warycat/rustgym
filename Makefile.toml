@@ -14,8 +14,12 @@ dependencies = ["rm_sqlite", "migration"]
 [tasks.docker]
 script = 'docker run --rm --user "$(id -u)":"$(id -g)" -v "$PWD":/usr/src/myapp -w /usr/src/myapp rust:1.48.0 cargo build --release'
 
+[tasks.release]
+script = 'cargo build --release --verbose'
+
 [tasks.archive]
 script = 'tar czvf rustgym.tar.gz target/release'
+dependencies = ["release"]
 
 [tasks.deploy]
 script = [
