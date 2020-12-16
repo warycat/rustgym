@@ -1,5 +1,7 @@
 #[macro_use]
 extern crate diesel;
+#[macro_use]
+extern crate derive_new;
 
 mod app_data;
 mod context;

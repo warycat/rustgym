@@ -1,10 +1,11 @@
 use actix_web::error::ErrorInternalServerError;
 use actix_web::Error;
+use actix_web::HttpResponse;
 use askama::Template;
 use rustgym_schema::leetcode_description::LeetcodeDescription;
 use rustgym_schema::leetcode_question::LeetcodeQuestion;
 
-#[derive(Template)]
+#[derive(Template, new)]
 #[template(path = "home.j2")]
 pub struct HomeContext<'a> {
     pub title: &'a str,
@@ -17,13 +18,13 @@ pub struct LeetcodeIndexRow {
     pub title: String,
 }
 
-#[derive(Template)]
+#[derive(Template, new)]
 #[template(path = "leetcode-index.j2")]
 pub struct LeetcodeIndexContext {
     pub rows: Vec<LeetcodeIndexRow>,
 }
 
-#[derive(Template)]
+#[derive(Template, new)]
 #[template(path = "leetcode-detail.j2")]
 pub struct LeetcodeDetailContext {
     pub question: LeetcodeQuestion,
@@ -33,8 +34,9 @@ pub struct LeetcodeDetailContext {
 macro_rules! impl_render_wrapper {
     ($type: ty) => {
         impl $type {
-            pub fn render_wrapper(&self) -> Result<String, Error> {
-                self.render().map_err(ErrorInternalServerError)
+            pub fn render_wrapper(&self) -> Result<HttpResponse, Error> {
+                let body = self.render().map_err(ErrorInternalServerError)?;
+                Ok(HttpResponse::Ok().content_type("text/html").body(body))
             }
         }
     };
