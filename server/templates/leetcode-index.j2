@@ -1,6 +1,13 @@
 <div><b>leetcode</b></div>
-<div>
+<table>
 {% for row in rows %}
-  <div><a href="{{row.frontend_id}}"> {{row.frontend_id}}. {{row.title}} </a> </div>
+  <tr>
+    <td>
+      {{row.frontend_id}}
+    </td>
+    <td>
+      <a href="{{row.frontend_id}}"> {{row.title}}</a>
+    </td>
+  </tr>
 {% endfor %}
-</div>
+</table>

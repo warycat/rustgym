@@ -22,5 +22,7 @@ jobs:
       run: cargo build --verbose
     - name: Run tests
       run: cargo test --verbose
+    - name: Migration
+      run: cargo make migration
     - name: Readme
       run: cargo make readme
