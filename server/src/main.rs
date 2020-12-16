@@ -20,10 +20,11 @@ use std::env;
 async fn main() -> std::io::Result<()> {
     let pool = db::init_pool(DATABASE_URL).expect("Failed to create pool");
     let tag = env::var("TAG").unwrap_or_default();
+    let title = "RustGym".to_string();
     println!("rustgym server {}", tag);
     HttpServer::new(move || {
         App::new()
-            .data(AppData::new(tag.clone()))
+            .data(AppData::new(tag.clone(), title.clone()))
             .data(pool.clone())
             .service(home::home)
             .service(leetcode_index::leetcode_index)

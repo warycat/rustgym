@@ -1,4 +1,5 @@
-use super::context::LeetcodeDetailContext;
+use super::app_data::AppData;
+use super::context::*;
 use super::db::*;
 use actix_web::error::ErrorNotFound;
 use actix_web::get;
@@ -10,6 +11,7 @@ use rustgym_schema::LeetcodeSolution;
 
 #[get("/leetcode/{id}")]
 async fn leetcode_detail(
+    data: web::Data<AppData>,
     web::Path(id): web::Path<i32>,
     pool: web::Data<SqlitePool>,
 ) -> Result<HttpResponse, Error> {
@@ -30,5 +32,6 @@ async fn leetcode_detail(
         .filter(question_id.eq(id))
         .load(&conn)
         .map_err(ErrorNotFound)?;
-    LeetcodeDetailContext::new(question, description, solutions).render_wrapper()
+    LeetcodeDetailContext::new(AppContext::new(data), question, description, solutions)
+        .render_wrapper()
 }

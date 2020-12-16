@@ -1,6 +1,6 @@
-use super::context::LeetcodeIndexContext;
-use super::context::LeetcodeIndexRow;
+use super::context::*;
 use super::db::*;
+use super::AppData;
 use actix_web::error::ErrorNotFound;
 use actix_web::get;
 use actix_web::web;
@@ -9,7 +9,10 @@ use actix_web::HttpResponse;
 use diesel::prelude::*;
 
 #[get("/leetcode/")]
-pub async fn leetcode_index(pool: web::Data<SqlitePool>) -> Result<HttpResponse, Error> {
+pub async fn leetcode_index(
+    data: web::Data<AppData>,
+    pool: web::Data<SqlitePool>,
+) -> Result<HttpResponse, Error> {
     use rustgym_schema::schema::leetcode_description::dsl::*;
     use rustgym_schema::schema::leetcode_question::dsl::*;
     let conn = conn(pool)?;
@@ -18,5 +21,5 @@ pub async fn leetcode_index(pool: web::Data<SqlitePool>) -> Result<HttpResponse,
         .inner_join(leetcode_description)
         .load(&conn)
         .map_err(ErrorNotFound)?;
-    LeetcodeIndexContext::new(rows).render_wrapper()
+    LeetcodeIndexContext::new(AppContext::new(data), rows).render_wrapper()
 }
