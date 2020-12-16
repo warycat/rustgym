@@ -12,15 +12,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout
+      uses: actions/checkout@v2
     - name: Build
       run: cargo build --verbose
     - name: Run tests
       run: cargo test --verbose
-  run:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
     - name: Install cargo-make
       run: cargo install cargo-make --verbose
     - name: Install diesel_cli
@@ -31,10 +28,6 @@ jobs:
       run: cargo make readme
     - name: Archive
       run: cargo make archive
-  deploy:
-    needs: run
-    runs-on: ubuntu-latest
-    steps:
     - name: Create Release
       id: create_release
       uses: actions/create-release@v1
