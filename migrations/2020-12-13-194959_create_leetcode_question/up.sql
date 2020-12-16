@@ -1,8 +1,6 @@
 CREATE TABLE leetcode_question (
-    id          INTEGER PRIMARY KEY
-                        NOT NULL,
-    frontend_id INTEGER NOT NULL
-                        REFERENCES leetcode_description (id),
+    id          INTEGER NOT NULL,
+    frontend_id INTEGER NOT NULL PRIMARY KEY,
     title       TEXT    NOT NULL,
     slug        TEXT    NOT NULL,
     level       INTEGER NOT NULL

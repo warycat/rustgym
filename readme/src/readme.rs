@@ -1,9 +1,10 @@
 use super::*;
+use rustgym_schema::LeetcodeQuestion;
 
 pub struct Readme {
     template: String,
     solution_list: RustSolutionList,
-    question_list: LeetcodeQuestionList,
+    question_list: Vec<LeetcodeQuestion>,
     description_list: DescriptionList,
     tags: Tags,
 }
@@ -12,7 +13,7 @@ impl Readme {
     pub fn new(
         template: String,
         solution_list: RustSolutionList,
-        question_list: LeetcodeQuestionList,
+        question_list: Vec<LeetcodeQuestion>,
         description_list: DescriptionList,
         tags: Tags,
     ) -> Self {
@@ -27,7 +28,7 @@ impl Readme {
 
     fn table(&self) -> String {
         let solutions = &self.solution_list.solutions;
-        let questions = &self.question_list.questions;
+        let questions = &self.question_list;
         let descriptions = &self.description_list.descriptions;
         let mut btm: BTreeMap<i32, (String, i32, i32)> = BTreeMap::new();
         let mut solution_map: HashMap<i32, String> = HashMap::new();

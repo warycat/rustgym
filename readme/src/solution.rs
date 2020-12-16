@@ -1,35 +1,25 @@
 use super::*;
-
-pub struct RustSolution {
-    pub id: i32,
-    filename: String,
-}
-
-impl RustSolution {
-    fn new(id: i32, filename: String) -> Self {
-        RustSolution { id, filename }
-    }
-}
-
-impl fmt::Display for RustSolution {
-    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
-        write!(f, "[Rust]({}/{})", LEETCODE_SRC, self.filename)
-    }
-}
+use fs::File;
+use rustgym_schema::LeetcodeSolution;
+use std::io::Read;
 
 pub struct RustSolutionList {
-    pub solutions: Vec<RustSolution>,
+    pub solutions: Vec<LeetcodeSolution>,
 }
 
 impl RustSolutionList {
     pub fn new(src_dir: std::path::PathBuf) -> Self {
-        let mut solutions: Vec<RustSolution> = vec![];
+        let mut solutions: Vec<LeetcodeSolution> = vec![];
         for entry in fs::read_dir(src_dir).unwrap() {
-            let filename = entry.unwrap().file_name().to_str().unwrap().to_string();
+            let dir = entry.unwrap();
+            let filename = dir.file_name().to_str().unwrap().to_string();
             if let Some(0) = filename.find('_') {
                 let s: Vec<String> = filename.split('_').map(|s| s.to_string()).collect();
                 let id = s[1].clone().parse::<i32>().unwrap();
-                let problem = RustSolution::new(id, filename);
+                let mut file = File::open(dir.path()).unwrap();
+                let mut source = "".to_string();
+                file.read_to_string(&mut source).unwrap();
+                let problem = LeetcodeSolution::new(id, filename, source);
                 solutions.push(problem);
             }
         }

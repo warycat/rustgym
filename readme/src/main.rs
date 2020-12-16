@@ -26,18 +26,22 @@ type Tag = (String, String);
 fn main() -> Result<()> {
     use rustgym_schema::schema::leetcode_description::dsl::*;
     use rustgym_schema::schema::leetcode_question::dsl::*;
+    use rustgym_schema::schema::leetcode_solution::dsl::*;
     let conn = SqliteConnection::establish(DATABASE_URL)?;
     let leetcode_json = LeetcodeData::new(LEETCODE_JSON_URL, LEETCODE_TAG_URL);
     let questions = leetcode_json.get_questions().unwrap_or_default();
     diesel::insert_into(leetcode_question)
         .values(&questions)
         .execute(&conn)?;
-    let question_list = LeetcodeQuestionList::new(questions);
+    let question_list = questions;
     let tags = leetcode_json.get_tags().unwrap_or_default();
     let cargo_dir = env::var_os(CARGO_MANIFEST_DIR).unwrap();
     let readme_md = Path::new(&cargo_dir).join("..").join(README_MD);
     let src_dir = Path::new(&cargo_dir).join("..").join(LEETCODE_SRC);
     let solution_list = RustSolutionList::new(src_dir);
+    diesel::insert_into(leetcode_solution)
+        .values(&solution_list.solutions)
+        .execute(&conn)?;
     let desc_dir = Path::new(&cargo_dir).join("..").join(LEETCODE_DESC);
     let description_list = DescriptionList::new(desc_dir);
     diesel::insert_into(leetcode_description)
