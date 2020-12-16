@@ -71,5 +71,5 @@
       shell: "kill -9 {{ item }}"
       with_items: "{{ rustgym_processes.results | select('failed') | map(attribute='item') | list }}"
     - name: start rustgym
-      shell: '/home/rustgym/{{TAG}}/target/release/rustgym-server >> /home/rustgym/rustgym.log &>> /home/rustgym/rustgym.error.log &'
+      shell: 'TAG={{TAG}} /home/rustgym/{{TAG}}/target/release/rustgym-server >> /home/rustgym/rustgym.log &>> /home/rustgym/rustgym.error.log &'
 

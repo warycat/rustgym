@@ -38,8 +38,8 @@ jobs:
         release_name: Release ${{ github.ref }}
         draft: false
         prerelease: false
-    - name: Upload Release Asset
-      id: upload-release-asset 
+    - name: Upload sqlite
+      id: upload-sqlite 
       uses: actions/upload-release-asset@v1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -48,3 +48,13 @@ jobs:
         asset_path: ./rustgym.sqlite
         asset_name: rustgym.sqlite
         asset_content_type: application/vnd.sqlite3
+    - name: Upload archive
+      id: upload-archive 
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ./rustgym.tar.gz
+        asset_name: rustgym.tar.gz
+        asset_content_type: application/tar+gzip
