@@ -18,7 +18,7 @@ script = 'docker run --rm --user "$(id -u)":"$(id -g)" -v "$PWD":/usr/src/myapp 
 script = 'cargo build --release --verbose'
 
 [tasks.server]
-script = 'cp rustgym-server target/release/rustgym-server'
+script = 'cp target/release/rustgym-server rustgym-server'
 
 [tasks.deploy]
 script = [
