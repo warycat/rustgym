@@ -26,8 +26,10 @@ jobs:
       run: cargo make migration
     - name: Readme
       run: cargo make readme
-    - name: Archive
-      run: cargo make archive
+    - name: Readme
+      run: cargo build --verbose --release
+    - name: Server
+      run: cargo make server
     - name: Create Release
       id: create_release
       uses: actions/create-release@v1
@@ -48,13 +50,13 @@ jobs:
         asset_path: ./rustgym.sqlite
         asset_name: rustgym.sqlite
         asset_content_type: application/vnd.sqlite3
-    - name: Upload archive
-      id: upload-archive 
+    - name: Upload server
+      id: upload-server 
       uses: actions/upload-release-asset@v1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: ./rustgym.tar.gz
-        asset_name: rustgym.tar.gz
+        asset_path: ./rustgym.server
+        asset_name: rustgym.server
         asset_content_type: application/tar+gzip

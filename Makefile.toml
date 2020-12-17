@@ -11,24 +11,23 @@ script = ["diesel migration run --database-url rustgym.sqlite"]
 script = ["cargo run --bin rustgym-readme"]
 dependencies = ["rm_sqlite", "migration"]
 
-[tasks.docker]
+[tasks.mac]
 script = 'docker run --rm --user "$(id -u)":"$(id -g)" -v "$PWD":/usr/src/myapp -w /usr/src/myapp rust:1.48.0 cargo build --release'
 
-[tasks.release]
+[tasks.linux]
 script = 'cargo build --release --verbose'
 
-[tasks.archive]
-script = 'tar czvf rustgym.tar.gz target/release'
-dependencies = ["release"]
+[tasks.server]
+script = 'cp rustgym-server target/release/rustgym-server'
 
 [tasks.deploy]
 script = [
     "echo $TAG",
     "git tag $TAG",
     "git push origin $TAG",
-    "gh release create $TAG rustgym.sqlite rustgym.tar.gz"
+    "gh release create $TAG rustgym.sqlite rustgym-server"
 ]
-dependencies = ["readme", "docker", "archive"]
+dependencies = ["readme", "mac", "server"]
 
 [tasks.dev]
 script = "cargo watch -x 'run --bin rustgym-server'"
