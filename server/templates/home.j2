@@ -4,8 +4,15 @@
   {{app.title}}
 {% endblock %}
 
-{% block content %}
+{% block navigation %}
 <h1><a href="/">{{app.title}} {{app.tag}}</a></h1>
-<div><a href="https://github.com/warycat/rustgym">Github</a></div>
-<div><a href="/leetcode/">Leetcode</a></div>
+<ul>
+  <li><a href="https://github.com/warycat/rustgym">Github</a></li>
+  <li><a href="https://www.youtube.com/channel/UCV9HzRLPKjI8SttaIYOygsw">Youtube</a></li>
+  <li><a href="/leetcode/">Leetcode</a></li>
+</ul>
+{% endblock %}
+
+{% block content %}
+<p>Welcome to RUST GYM!</p>
 {% endblock %}

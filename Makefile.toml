@@ -31,3 +31,7 @@ dependencies = ["readme", "mac", "server"]
 
 [tasks.dev]
 script = "cargo watch -x 'run --bin rustgym-server'"
+
+[tasks.restart]
+script = "cd infra; ./deploy.sh"
+dependencies = ["deploy"]
