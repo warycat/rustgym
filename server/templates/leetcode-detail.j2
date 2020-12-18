@@ -1,9 +1,13 @@
 {% extends "home.j2" %}
 
+{% block title %}
+  {{app.title}} Leetcode {{question.title}}
+{% endblock %}
+
 {% block content %}
 <h1><a href="/">{{app.title}} {{app.tag}}</a></h1>
-<div><a href="../">Leetcode</a></div>
 <div><a href="https://github.com/warycat/rustgym">Github</a></div>
+<div><a href="/leetcode/">Leetcode</a></div>
 <h1>{{question.title}}</h1>
 <div>{{description.html|safe}}</div>
 <h1>Rust Solution</h1>

@@ -1,37 +1,41 @@
 {% extends "home.j2" %}
 
+{% block title %}
+  {{app.title}} Leetcode
+{% endblock %}
+
 {% block content %}
-  <h1><a href="/">{{app.title}} {{app.tag}}</a></h1>
-  <div><a href="https://github.com/warycat/rustgym">Github</a></div>
-  <div>Leetcode</div>
-  <table class="table-auto border-collapse border border-black-800">
-    <tbody>
-      <thead>
-        <tr>
-          <th class="border border-black-600 text-center">id</th>
-          <th class="border border-black-600">Leetcode</th>
-          <th class="border border-black-600">Level</th>
-        </tr>
-      </thead>
-      {% for row in rows %}
-        <tr>
-          <td class="border border-black-600 text-center">
-            {{row.qid}}
-          </td>
-          <td class="border border-black-600">
-            <a href="{{row.qid}}"> {{row.title}}</a>
-          </td>
-          <td class="border border-black-600">
-            {% if row.level == 1 %}
-              Easy
-            {% else if row.level == 2 %}
-              Medium
-            {% else if row.level == 3%}
-              Hard
-            {% endif %}
-          </td>
-        </tr>
-      {% endfor %}
-    </tbody>
-  </table>
+<h1><a href="/">{{app.title}} {{app.tag}}</a></h1>
+<div><a href="https://github.com/warycat/rustgym">Github</a></div>
+<div><a href="/leetcode/">Leetcode</a></div>
+<table class="table-auto border-collapse border border-black-800">
+  <tbody>
+    <thead>
+      <tr>
+        <th class="border border-black-600 text-center">id</th>
+        <th class="border border-black-600">Leetcode</th>
+        <th class="border border-black-600">Level</th>
+      </tr>
+    </thead>
+    {% for row in rows %}
+      <tr>
+        <td class="border border-black-600 text-center">
+          {{row.qid}}
+        </td>
+        <td class="border border-black-600">
+          <a href="{{row.qid}}"> {{row.title}}</a>
+        </td>
+        <td class="border border-black-600">
+          {% if row.level == 1 %}
+            Easy
+          {% else if row.level == 2 %}
+            Medium
+          {% else if row.level == 3%}
+            Hard
+          {% endif %}
+        </td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
 {% endblock %}
