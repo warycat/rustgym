@@ -13,11 +13,6 @@
         name: nginx
         state: latest
       become: yes
-    - name: stop nginx
-      service:
-        name: nginx
-        state: stopped
-      become: yes
     - name: copy nginx config
       copy:
         src: rustgym-nginx.cfg
@@ -32,26 +27,16 @@
     - name: start nginx
       service:
         name: nginx
-        state: started
+        state: restarted
       become: yes
-    - name: create version dir
-      file:
-        path: '/home/rustgym/{{TAG}}'
-        state: directory
-        mode: '0755'
     - name: download rustgym sqlite
       get_url: 
         url: 'https://github.com/warycat/rustgym/releases/download/{{TAG}}/rustgym.sqlite'
         dest: /home/rustgym/rustgym.sqlite
     - name: download rustgym archive
       get_url: 
-        url: 'https://github.com/warycat/rustgym/releases/download/{{TAG}}/rustgym.tar.gz'
-        dest: /home/rustgym/rustgym.tar.gz
-    - name: unarchive rustgym
-      unarchive:
-        src: /home/rustgym/rustgym.tar.gz
-        dest: '/home/rustgym/{{TAG}}'
-        remote_src: yes
+        url: 'https://github.com/warycat/rustgym/releases/download/{{TAG}}/rustgym-server'
+        dest: /home/rustgym/rustgym-server
     - name: Get running processes list from remote host
       ignore_errors: yes
       shell: "ps -few | grep rustgym-server | awk '{print $2}'"
@@ -70,6 +55,10 @@
       ignore_errors: yes
       shell: "kill -9 {{ item }}"
       with_items: "{{ rustgym_processes.results | select('failed') | map(attribute='item') | list }}"
+    - name: Add permition
+      file: 
+        path: '/home/rustgym/rustgym-server'
+        mode: a+x
     - name: start rustgym
-      shell: 'TAG={{TAG}} /home/rustgym/{{TAG}}/target/release/rustgym-server >> /home/rustgym/rustgym.log &>> /home/rustgym/rustgym.error.log &'
+      shell: 'TAG={{TAG}} /home/rustgym/rustgym-server >> /home/rustgym/rustgym.log &>> /home/rustgym/rustgym.error.log &'
 

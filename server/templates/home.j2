@@ -1,3 +1,11 @@
-<h1>{{app.title}} {{app.tag}}</h1>
-<div><a href="leetcode/">Leetcode</a></div>
+{% extends "base.j2" %}
+
+{% block title %}
+  {{app.title}}
+{% endblock %}
+
+{% block content %}
+<h1><a href="/">{{app.title}} {{app.tag}}</a></h1>
 <div><a href="https://github.com/warycat/rustgym">Github</a></div>
+<div><a href="leetcode/">Leetcode</a></div>
+{% endblock %}

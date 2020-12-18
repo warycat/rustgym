@@ -1,15 +1,27 @@
-<h1><a href="/">{{app.title}} {{app.tag}}</a></h1>
-<div>Leetcode</div>
-<div><a href="https://github.com/warycat/rustgym">Github</a></div>
-<table>
-{% for row in rows %}
-  <tr>
-    <td>
-      {{row.qid}}
-    </td>
-    <td>
-      <a href="{{row.qid}}"> {{row.title}}</a>
-    </td>
-  </tr>
-{% endfor %}
-</table>
+{% extends "home.j2" %}
+
+{% block content %}
+  <h1><a href="/">{{app.title}} {{app.tag}}</a></h1>
+  <div><a href="https://github.com/warycat/rustgym">Github</a></div>
+  <div>Leetcode</div>
+  <table class="table-auto border-collapse border border-black-800">
+    <tbody>
+      <thead>
+        <tr>
+          <th class="border border-black-600 text-center">id</th>
+          <th class="border border-black-600">Leetcode</th>
+        </tr>
+      </thead>
+      {% for row in rows %}
+        <tr>
+          <td class="border border-black-600 text-center">
+            {{row.qid}}
+          </td>
+          <td class="border border-black-600">
+            <a href="{{row.qid}}"> {{row.title}}</a>
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}
