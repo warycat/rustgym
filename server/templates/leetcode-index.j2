@@ -10,6 +10,7 @@
         <tr>
           <th class="border border-black-600 text-center">id</th>
           <th class="border border-black-600">Leetcode</th>
+          <th class="border border-black-600">Level</th>
         </tr>
       </thead>
       {% for row in rows %}
@@ -19,6 +20,15 @@
           </td>
           <td class="border border-black-600">
             <a href="{{row.qid}}"> {{row.title}}</a>
+          </td>
+          <td class="border border-black-600">
+            {% if row.level == 1 %}
+              Easy
+            {% else if row.level == 2 %}
+              Medium
+            {% else if row.level == 3%}
+              Hard
+            {% endif %}
           </td>
         </tr>
       {% endfor %}

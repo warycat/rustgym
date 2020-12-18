@@ -31,6 +31,7 @@ impl AppContext {
 pub struct LeetcodeIndexRow {
     pub qid: i32,
     pub title: String,
+    pub level: i32,
 }
 
 #[derive(Template, new)]
