@@ -5,7 +5,7 @@ use std::fmt;
 #[derive(Debug, Queryable, Insertable, new)]
 #[table_name = "leetcode_question"]
 pub struct LeetcodeQuestion {
-    pub qid: i32,
+    pub id: i32,
     pub title: String,
     pub slug: String,
     pub level: i32,

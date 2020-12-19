@@ -17,9 +17,13 @@ pub async fn leetcode_index(
     use rustgym_schema::schema::leetcode_question::dsl::*;
     let conn = conn(pool)?;
     let rows: Vec<LeetcodeIndexRow> = leetcode_question
-        .select((qid, title, level))
+        .select((
+            rustgym_schema::schema::leetcode_question::dsl::id,
+            title,
+            level,
+        ))
         .inner_join(leetcode_description)
-        .order((level, qid))
+        .order((level, rustgym_schema::schema::leetcode_question::dsl::id))
         .load(&conn)
         .map_err(ErrorNotFound)?;
     LeetcodeIndexContext::new(AppContext::new(data), rows).render_wrapper()

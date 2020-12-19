@@ -4,6 +4,8 @@ use actix_web::web::Data;
 use actix_web::Error;
 use actix_web::HttpResponse;
 use askama::Template;
+use rustgym_schema::adventofcode_description::AdventOfCodeDescription;
+use rustgym_schema::adventofcode_solution::AdventOfCodeSolution;
 use rustgym_schema::leetcode_description::LeetcodeDescription;
 use rustgym_schema::leetcode_question::LeetcodeQuestion;
 use rustgym_schema::leetcode_solution::LeetcodeSolution;
@@ -29,7 +31,7 @@ impl AppContext {
 
 #[derive(Queryable)]
 pub struct LeetcodeIndexRow {
-    pub qid: i32,
+    pub id: i32,
     pub title: String,
     pub level: i32,
 }
@@ -41,6 +43,21 @@ pub struct LeetcodeIndexContext {
     pub rows: Vec<LeetcodeIndexRow>,
 }
 
+#[derive(Queryable)]
+pub struct AdventOfCodeIndexRow {
+    pub id: i32,
+    pub year: i32,
+    pub day: i32,
+    pub title: String,
+}
+
+#[derive(Template, new)]
+#[template(path = "adventofcode-index.j2")]
+pub struct AdventOfCodeIndexContext {
+    pub app: AppContext,
+    pub rows: Vec<AdventOfCodeIndexRow>,
+}
+
 #[derive(Template, new)]
 #[template(path = "leetcode-detail.j2")]
 pub struct LeetcodeDetailContext {
@@ -48,6 +65,14 @@ pub struct LeetcodeDetailContext {
     pub question: LeetcodeQuestion,
     pub description: LeetcodeDescription,
     pub solutions: Vec<LeetcodeSolution>,
+}
+
+#[derive(Template, new)]
+#[template(path = "adventofcode-detail.j2")]
+pub struct AdventOfCodeDetailContext {
+    pub app: AppContext,
+    pub description: AdventOfCodeDescription,
+    pub solution: AdventOfCodeSolution,
 }
 
 macro_rules! impl_render_wrapper {
@@ -63,4 +88,6 @@ macro_rules! impl_render_wrapper {
 
 impl_render_wrapper!(HomeContext);
 impl_render_wrapper!(LeetcodeIndexContext);
+impl_render_wrapper!(AdventOfCodeIndexContext);
 impl_render_wrapper!(LeetcodeDetailContext);
+impl_render_wrapper!(AdventOfCodeDetailContext);

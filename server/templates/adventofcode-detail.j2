@@ -1,0 +1,11 @@
+{% extends "home.j2" %}
+
+{% block title %}
+  {{app.title}} AdventOfCode {{description.title}}
+{% endblock %}
+
+{% block content %}
+<div>{{description.html|safe}}</div>
+<h1>Rust Solution</h1>
+<pre><code class="rust">{{solution.source}}</code></pre>
+{% endblock %}

@@ -3,6 +3,8 @@ extern crate diesel;
 #[macro_use]
 extern crate derive_new;
 
+mod adventofcode_detail;
+mod adventofcode_index;
 mod app_data;
 mod context;
 mod db;
@@ -28,7 +30,9 @@ async fn main() -> std::io::Result<()> {
             .data(pool.clone())
             .service(home::home)
             .service(leetcode_index::leetcode_index)
+            .service(adventofcode_index::adventofcode_index)
             .service(leetcode_detail::leetcode_detail)
+            .service(adventofcode_detail::adventofcode_detail)
     })
     .bind("127.0.0.1:8080")?
     .run()

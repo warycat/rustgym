@@ -31,18 +31,14 @@ impl LeetcodeData {
         let mut questions = vec![];
         for pair in pairs {
             let stat = pair["stat"].as_object().unwrap();
-            let qid = stat["frontend_question_id"].as_i64().unwrap();
+            let id = stat["frontend_question_id"].as_i64().unwrap();
             // let id = stat["question_id"].as_i64().unwrap();
             let title = stat["question__title"].as_str().unwrap();
             let slug = stat["question__title_slug"].as_str().unwrap();
             let difficulty = pair["difficulty"].as_object().unwrap();
             let level = difficulty["level"].as_i64().unwrap();
-            let question = LeetcodeQuestion::new(
-                qid as i32,
-                title.to_string(),
-                slug.to_string(),
-                level as i32,
-            );
+            let question =
+                LeetcodeQuestion::new(id as i32, title.to_string(), slug.to_string(), level as i32);
             questions.push(question);
         }
         Ok(questions)

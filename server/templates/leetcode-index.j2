@@ -5,24 +5,24 @@
 {% endblock %}
 
 {% block content %}
-<table class="table-auto border-collapse border border-black-800">
+<table class="table-auto">
+  <thead>
+    <tr>
+      <th>id</th>
+      <th>Leetcode</th>
+      <th>Level</th>
+    </tr>
+  </thead>
   <tbody>
-    <thead>
-      <tr>
-        <th class="border border-black-600 text-center">id</th>
-        <th class="border border-black-600">Leetcode</th>
-        <th class="border border-black-600">Level</th>
-      </tr>
-    </thead>
     {% for row in rows %}
       <tr>
-        <td class="border border-black-600 text-center">
-          {{row.qid}}
+        <td>
+          {{row.id}}
         </td>
-        <td class="border border-black-600">
-          <a href="{{row.qid}}"> {{row.title}}</a>
+        <td>
+          <a href="{{row.id}}"> {{row.title}}</a>
         </td>
-        <td class="border border-black-600">
+        <td>
           {% if row.level == 1 %}
             Easy
           {% else if row.level == 2 %}

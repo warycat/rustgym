@@ -1,20 +1,22 @@
 use super::*;
+use rustgym_schema::LeetcodeDescription;
 use rustgym_schema::LeetcodeQuestion;
+use rustgym_schema::LeetcodeSolution;
 
 pub struct Readme {
     template: String,
-    solution_list: RustSolutionList,
+    solution_list: Vec<LeetcodeSolution>,
     question_list: Vec<LeetcodeQuestion>,
-    description_list: DescriptionList,
+    description_list: Vec<LeetcodeDescription>,
     tags: Tags,
 }
 
 impl Readme {
     pub fn new(
         template: String,
-        solution_list: RustSolutionList,
+        solution_list: Vec<LeetcodeSolution>,
         question_list: Vec<LeetcodeQuestion>,
-        description_list: DescriptionList,
+        description_list: Vec<LeetcodeDescription>,
         tags: Tags,
     ) -> Self {
         Readme {
@@ -27,22 +29,22 @@ impl Readme {
     }
 
     fn table(&self) -> String {
-        let solutions = &self.solution_list.solutions;
+        let solutions = &self.solution_list;
         let questions = &self.question_list;
-        let descriptions = &self.description_list.descriptions;
+        let descriptions = &self.description_list;
         let mut btm: BTreeMap<i32, (String, i32, i32)> = BTreeMap::new();
         let mut solution_map: HashMap<i32, String> = HashMap::new();
         let mut description_map: HashMap<i32, String> = HashMap::new();
         for question in questions {
-            let qid = question.qid;
-            btm.insert(qid, (question.to_string(), question.level, qid));
+            let id = question.id;
+            btm.insert(id, (question.to_string(), question.level, id));
         }
         for solution in solutions {
             let id = solution.question_id;
             solution_map.insert(id, solution.to_string());
         }
         for description in descriptions {
-            let id = description.did;
+            let id = description.id;
             description_map.insert(id, description.to_string());
         }
         let mut s = "".to_string();

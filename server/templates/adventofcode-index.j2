@@ -1,0 +1,32 @@
+{% extends "home.j2" %}
+
+{% block title %}
+  {{app.title}} AdventOfCode
+{% endblock %}
+
+{% block content %}
+<table class="table-auto">
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th>Day</th>
+      <th>AdventOfCode</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for row in rows %}
+      <tr>
+        <td>
+          {{row.year}}
+        </td>
+        <td>
+          Day{{row.day}}
+        </td>
+        <td>
+          <a href="{{row.id}}"> {{row.title}}</a>
+        </td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

@@ -13,3 +13,5 @@ diesel = { version = "1.4.5", features = ["sqlite"] }
 rustgym-util = { path = "../util" }
 rustgym-schema = { path = "../schema" }
 rustgym-consts = { path = "../consts" }
+walkdir = "2.3.1"
+regex = "1.4.2"
