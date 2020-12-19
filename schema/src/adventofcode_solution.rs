@@ -1,6 +1,4 @@
 use super::schema::adventofcode_solution;
-use rustgym_consts::*;
-use std::fmt;
 
 #[derive(Debug, Queryable, Insertable, new)]
 #[table_name = "adventofcode_solution"]
