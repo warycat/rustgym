@@ -1268,9 +1268,9 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |994|[Rotting Oranges](https://leetcode.com/problems/rotting-oranges)|hash-table|[Rust](rustgym/src/leetcode/_994_rotting_oranges.rs)|
 |998|[Maximum Binary Tree II](https://leetcode.com/problems/maximum-binary-tree-ii)|tree|[Rust](rustgym/src/leetcode/_998_maximum_binary_tree_2.rs)|
 
-# Leetcode Hard 115/336 34.23% <a name='leetcode_hard'></a>
+# Leetcode Hard 116/337 34.42% <a name='leetcode_hard'></a>
 
-|id|336 Hard Questions|Tags|221 Solutions|
+|id|337 Hard Questions|Tags|221 Solutions|
 |---|---|---|---|
 |428|[Serialize and Deserialize N-ary Tree](https://leetcode.com/problems/serialize-and-deserialize-n-ary-tree)||   |
 |431|[Encode N-ary Tree to Binary Tree](https://leetcode.com/problems/encode-n-ary-tree-to-binary-tree)||   |
@@ -1339,6 +1339,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
 |1000|[Minimum Cost to Merge Stones](https://leetcode.com/problems/minimum-cost-to-merge-stones)|dynamic-programming|   |
 |1388|[Pizza With 3n Slices](https://leetcode.com/problems/pizza-with-3n-slices)|dynamic-programming|   |
 |1649|[Create Sorted Array through Instructions](https://leetcode.com/problems/create-sorted-array-through-instructions)|dynamic-programming|   |
+|1692|[Count Ways to Distribute Candies](https://leetcode.com/problems/count-ways-to-distribute-candies)|dynamic-programming|   |
 |691|[Stickers to Spell Word](https://leetcode.com/problems/stickers-to-spell-word)|dynamic-programming backtracking|   |
 |1067|[Digit Count in Range](https://leetcode.com/problems/digit-count-in-range)|dynamic-programming backtracking|   |
 |1531|[String Compression II](https://leetcode.com/problems/string-compression-ii)|dynamic-programming bit-manipulation|   |
