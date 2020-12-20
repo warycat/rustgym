@@ -7,8 +7,6 @@ use actix_web::web;
 use actix_web::Error;
 use actix_web::HttpResponse;
 use diesel::prelude::*;
-use rustgym_schema::AdventOfCodeDescription;
-use rustgym_schema::AdventOfCodeSolution;
 
 #[get("/adventofcode/{id}")]
 async fn adventofcode_detail(

@@ -8,6 +8,8 @@ pub mod day7;
 pub mod day8;
 pub mod day9;
 
+pub mod day10;
+
 // use rustgym_util::*;
 // use std::fmt::Write;
 // use std::io::*;

@@ -57,6 +57,7 @@ fn main() {
     run!("2020/day7.txt", 2020, 7, writer);
     run!("2020/day8.txt", 2020, 8, writer);
     run!("2020/day9.txt", 2020, 9, writer);
+    run!("2020/day10.txt", 2020, 10, writer);
 
     println!("{}", writer);
 }
