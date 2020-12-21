@@ -2759,3 +2759,10 @@ mod _1689_partitioning_into_minimum_number_of_deci_binary_numbers;
 mod _1690_stone_game_7;
 //
 mod _1691_maximum_height_by_stacking_cuboids;
+//
+mod _1694_reformat_phone_number;
+//
+mod _1695_maximum_erasure_value;
+//
+mod _1696_jump_game_6;
+//
