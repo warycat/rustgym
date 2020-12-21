@@ -1832,6 +1832,8 @@ name = "rustgym-readme"
 version = "0.1.0"
 dependencies = [
  "anyhow",
+ "askama",
+ "derive-new",
  "diesel",
  "regex",
  "reqwest",

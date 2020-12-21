@@ -1,9 +1,12 @@
-# RustGym Solutions in Rust [![Docs Status](https://docs.rs/rustgym/badge.svg)](https://docs.rs/rustgym) [![Rust](https://github.com/warycat/rustgym/workflows/Rust/badge.svg)](https://github.com/warycat/rustgym/actions)
+# RUST_GYM Solutions [![Docs Status](https://docs.rs/rustgym/badge.svg)](https://docs.rs/rustgym) [![Rust](https://github.com/warycat/rustgym/workflows/Rust/badge.svg)](https://github.com/warycat/rustgym/actions)
+
+## [Leetcode Solutions in Rust](#leetcode)
+## [AdventOfCode Solutions in Rust](#adventofcode)
 
 This project demostrates how to create **Data Structures** and to implement **Algorithms** using programming language **Rust**
 All the solutions here are crafted with love and their performance beats 99% of other solutions on the leetcode website. Tutorial videos will be added later.
 
-### Please subscribe to our [Rust Gym Youtube Channel](https://www.youtube.com/channel/UCV9HzRLPKjI8SttaIYOygsw) for future videos.
+### Please subscribe to our [RUST_GYM Youtube Channel](https://www.youtube.com/channel/UCV9HzRLPKjI8SttaIYOygsw) for future videos.
 
 <details><summary>Data Structures</summary>
 
@@ -43,1570 +46,14139 @@ All the solutions here are crafted with love and their performance beats 99% of 
 - Find strongly connected components in a graph
 </details>
 
-# Leetcode Solutions in Rust
-- [Leetcode Easy](#leetcode_easy)
-- [Leetcode Medium](#leetcode_medium)
-- [Leetcode Hard](#leetcode_hard)
+<table id="leetcode" class="table-auto">
+  <thead>
+    <tr>
+      <th>id</th>
+      <th>Leetcode</th>
+      <th>Level</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td>
+          1692
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1692"> Count Ways to Distribute Candies</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1682
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1682"> Longest Palindromic Subsequence II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1676
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1676"> Lowest Common Ancestor of a Binary Tree IV</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1666
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1666"> Change the Root of a Binary Tree</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1690
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1690"> Stone Game VII</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1689
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1689"> Partitioning Into Minimum Number Of Deci-Binary Numbers</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1688
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1688"> Count of Matches in Tournament</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1680
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1680"> Concatenation of Consecutive Binary Numbers</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1681
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1681"> Minimum Incompatibility</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1679
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1679"> Max Number of K-Sum Pairs</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1678
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1678"> Goal Parser Interpretation</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1660
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1660"> Correct a Binary Tree</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1675
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1675"> Minimize Deviation in Array</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1674
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1674"> Minimum Moves to Make Array Complementary</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1673
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1673"> Find the Most Competitive Subsequence</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1672
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1672"> Richest Customer Wealth</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1650
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1650"> Lowest Common Ancestor of a Binary Tree III</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1687
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1687"> Delivering Boxes from Storage to Ports</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1686
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1686"> Stone Game VI</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1685
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1685"> Sum of Absolute Differences in a Sorted Array</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1684
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1684"> Count the Number of Consistent Strings</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1665
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1665"> Minimum Initial Energy to Finish Tasks</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1664
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1664"> Ways to Make a Fair Array</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1663
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1663"> Smallest String With A Given Numeric Value</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1662
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1662"> Check If Two String Arrays are Equivalent</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1644
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1644"> Lowest Common Ancestor of a Binary Tree II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1659
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1659"> Maximize Grid Happiness</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1657
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1657"> Determine if Two Strings Are Close</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1658
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1658"> Minimum Operations to Reduce X to Zero</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1656
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1656"> Design an Ordered Stream</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1634
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1634"> Add Two Polynomials Represented as Linked Lists</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1649
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1649"> Create Sorted Array through Instructions</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1648
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1648"> Sell Diminishing-Valued Colored Balls</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1647
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1647"> Minimum Deletions to Make Character Frequencies Unique</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1646
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1646"> Get Maximum in Generated Array</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1628
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1628"> Design an Expression Tree With Evaluate Function</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1670
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1670"> Design Front Middle Back Queue</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1671
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1671"> Minimum Number of Removals to Make Mountain Array</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1669
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1669"> Merge In Between Linked Lists</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1668
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1668"> Maximum Repeating Substring</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1642
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1642"> Furthest Building You Can Reach</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1641
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1641"> Count Sorted Vowel Strings</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1640
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1640"> Check Array Formation Through Concatenation</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1655
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1655"> Distribute Repeating Integers</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1654
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1654"> Minimum Jumps to Reach Home</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1653
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1653"> Minimum Deletions to Make String Balanced</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1652
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1652"> Defuse the Bomb</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1631
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1631"> Path With Minimum Effort</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1630
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1630"> Arithmetic Subarrays</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1629
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1629"> Slowest Key</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1612
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1612"> Check If Two Expression Trees are Equivalent</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1626
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1626"> Best Team With No Conflicts</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1625
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1625"> Lexicographically Smallest String After Applying Operations</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1624
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1624"> Largest Substring Between Two Equal Characters</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1602
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1602"> Find Nearest Right Node in Binary Tree</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1639
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1639"> Number of Ways to Form a Target String Given a Dictionary</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1638
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1638"> Count Substrings That Differ by One Character</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1637
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1637"> Widest Vertical Area Between Two Points Containing No Points</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1636
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1636"> Sort Array by Increasing Frequency</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1617
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1617"> Count Subtrees With Max Distance Between Cities</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1616
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1616"> Split Two Strings to Make Palindrome</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1615
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1615"> Maximal Network Rank</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1614
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1614"> Maximum Nesting Depth of the Parentheses</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1597
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1597"> Build Binary Expression Tree From Infix Expression</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1610
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1610"> Maximum Number of Visible Points</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1611
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1611"> Minimum One Bit Operations to Make Integers Zero</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1609
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1609"> Even Odd Tree</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1608
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1608"> Special Array With X Elements Greater Than or Equal X</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1586
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1586"> Binary Search Tree Iterator II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1622
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1622"> Fancy Sequence</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1620
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1620"> Coordinate With Maximum Network Quality</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1621
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1621"> Number of Sets of K Non-Overlapping Line Segments</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1601
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1601"> Maximum Number of Achievable Transfer Requests</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1600
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1600"> Throne Inheritance</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1599
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1599"> Maximum Profit of Operating a Centennial Wheel</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1598
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1598"> Crawler Log Folder</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1580
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1580"> Put Boxes Into the Warehouse II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1595
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1595"> Minimum Cost to Connect Two Groups of Points</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1594
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1594"> Maximum Non Negative Product in a Matrix</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1593
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1593"> Split a String Into the Max Number of Unique Substrings</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1592
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1592"> Rearrange Spaces Between Words</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1570
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1570"> Dot Product of Two Sparse Vectors</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1605
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1605"> Find Valid Matrix Given Row and Column Sums</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1606
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1606"> Find Servers That Handled Most Number of Requests</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1604
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1604"> Alert Using Same Key-Card Three or More Times in a One Hour Period</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1603
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1603"> Design Parking System</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1585
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1585"> Check If String Is Transformable With Substring Sort Operations</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1584
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1584"> Min Cost to Connect All Points</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1583
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1583"> Count Unhappy Friends</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1582
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1582"> Special Positions in a Binary Matrix</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1564
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1564"> Put Boxes Into the Warehouse I</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1579
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1579"> Remove Max Number of Edges to Keep Graph Fully Traversable</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1578
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1578"> Minimum Deletion Cost to Avoid Repeating Letters</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1577
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1577"> Number of Ways Where Square of Number Is Equal to Product of Two Numbers</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1576
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1576"> Replace All ?&#x27;s to Avoid Consecutive Repeating Characters</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1554
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1554"> Strings Differ by One Character</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1591
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1591"> Strange Printer II</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1589
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1589"> Maximum Sum Obtained of Any Permutation</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1590
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1590"> Make Sum Divisible by P</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1588
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1588"> Sum of All Odd Length Subarrays</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1569
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1569"> Number of Ways to Reorder Array to Get Same BST</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1568
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1568"> Minimum Number of Days to Disconnect Island</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1567
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1567"> Maximum Length of Subarray With Positive Product</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1566
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1566"> Detect Pattern of Length M Repeated K or More Times</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1548
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1548"> The Most Similar Path in a Graph</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1563
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1563"> Stone Game V</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1562
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1562"> Find Latest Group of Size M</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1561
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1561"> Maximum Number of Coins You Can Get</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1560
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1560"> Most Visited Sector in  a Circular Track</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1538
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1538"> Guess the Majority in a Hidden Array</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1575
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1575"> Count All Possible Routes</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1574
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1574"> Shortest Subarray to be Removed to Make Array Sorted</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1573
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1573"> Number of Ways to Split a String</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1572
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1572"> Matrix Diagonal Sum</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1553
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1553"> Minimum Number of Days to Eat N Oranges</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1552
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1552"> Magnetic Force Between Two Balls</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1551
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1551"> Minimum Operations to Make Array Equal</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1533
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1533"> Find the Index of the Large Integer</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1547
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1547"> Minimum Cost to Cut a Stick</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1542
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1542"> Find Longest Awesome Substring</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1545
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1545"> Find Kth Bit in Nth Binary String</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1544
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1544"> Make The String Great</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1522
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1522"> Diameter of N-Ary Tree</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1559
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1559"> Detect Cycles in 2D Grid</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1558
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1558"> Minimum Numbers of Function Calls to Make Target Array</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1557
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1557"> Minimum Number of Vertices to Reach All Nodes</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1556
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1556"> Thousand Separator</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1537
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1537"> Get the Maximum Score</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1536
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1536"> Minimum Swaps to Arrange a Binary Grid</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1535
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1535"> Find the Winner of an Array Game</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1534
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1534"> Count Good Triplets</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1516
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1516"> Move Sub-Tree of N-Ary Tree</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1530
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1530"> Number of Good Leaf Nodes Pairs</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1529
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1529"> Bulb Switcher IV</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1528
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1528"> Shuffle String</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1506
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1506"> Find Root of N-Ary Tree</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1546
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1546"> Maximum Number of Non-Overlapping Subarrays With Sum Equals Target</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1541
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1541"> Minimum Insertions to Balance a Parentheses String</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1540
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1540"> Can Convert String in K Moves</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1539
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1539"> Kth Missing Positive Number</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1521
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1521"> Find a Value of a Mysterious Function Closest to Target</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1520
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1520"> Maximum Number of Non-Overlapping Substrings</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1519
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1519"> Number of Nodes in the Sub-Tree With the Same Label</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1518
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1518"> Water Bottles</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1500
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1500"> Design a File Sharing System</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1515
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1515"> Best Position for a Service Centre</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1531
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1531"> String Compression II</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1513
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1513"> Number of Substrings With Only 1s</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1512
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1512"> Number of Good Pairs</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1490
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1490"> Clone N-ary Tree</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1526
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1526"> Minimum Number of Increments on Subarrays to Form a Target Array</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1525
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1525"> Number of Good Ways to Split a String</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1524
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1524"> Number of Sub-arrays With Odd Sum</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1523
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1523"> Count Odd Numbers in an Interval Range</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1505
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1505"> Minimum Possible Integer After at Most K Adjacent Swaps On Digits</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1504
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1504"> Count Submatrices With All Ones</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1503
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1503"> Last Moment Before All Ants Fall Out of a Plank</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1502
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1502"> Can Make Arithmetic Progression From Sequence</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1485
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1485"> Clone Binary Tree With Random Pointer</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1499
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1499"> Max Value of Equation</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1498
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1498"> Number of Subsequences That Satisfy the Given Sum Condition</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1497
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1497"> Check If Array Pairs Are Divisible by k</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1496
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1496"> Path Crossing</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1474
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1474"> Delete N Nodes After M Nodes of a Linked List</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1510
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1510"> Stone Game IV</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1509
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1509"> Minimum Difference Between Largest and Smallest Value in Three Moves</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1508
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1508"> Range Sum of Sorted Subarray Sums</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1489
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1489"> Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1488
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1488"> Avoid Flood in The City</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1487
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1487"> Making File Names Unique</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1486
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1486"> XOR Operation in an Array</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1469
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1469"> Find All The Lonely Nodes</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1482
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1482"> Minimum Number of Days to Make m Bouquets</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1481
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1481"> Least Number of Unique Integers after K Removals</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1480
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1480"> Running Sum of 1d Array</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1494
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1494"> Parallel Courses II</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1493
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1493"> Longest Subarray of 1&#x27;s After Deleting One Element</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1492
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1492"> The kth Factor of n</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1491
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1491"> Average Salary Excluding the Minimum and Maximum Salary</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1473
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1473"> Paint House III</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1472
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1472"> Design Browser History</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1471
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1471"> The k Strongest Values in an Array</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1470
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1470"> Shuffle the Array</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1467
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1467"> Probability of a Two Boxes Having The Same Number of Distinct Balls</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1466
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1466"> Reorder Routes to Make All Paths Lead to the City Zero</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1465
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1465"> Maximum Area of a Piece of Cake After Horizontal and Vertical Cuts</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1464
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1464"> Maximum Product of Two Elements in an Array</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1477
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1477"> Find Two Non-overlapping Sub-arrays Each With Target Sum</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1476
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1476"> Subrectangle Queries</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1478
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1478"> Allocate Mailboxes</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1475
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1475"> Final Prices With a Special Discount in a Shop</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1458
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1458"> Max Dot Product of Two Subsequences</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1457
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1457"> Pseudo-Palindromic Paths in a Binary Tree</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1456
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1456"> Maximum Number of Vowels in a Substring of Given Length</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1455
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1455"> Check If a Word Occurs As a Prefix of Any Word in a Sentence</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1453
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1453"> Maximum Number of Darts Inside of a Circular Dartboard</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1452
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1452"> People Whose List of Favorite Companies Is Not a Subset of Another List</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1451
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1451"> Rearrange Words in a Sentence</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1450
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1450"> Number of Students Doing Homework at a Given Time</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1463
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1463"> Cherry Pickup II</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1462
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1462"> Course Schedule IV</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1461
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1461"> Check If a String Contains All Binary Codes of Size K</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1460
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1460"> Make Two Arrays Equal by Reversing Sub-arrays</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1444
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1444"> Number of Ways of Cutting a Pizza</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1443
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1443"> Minimum Time to Collect All Apples in a Tree</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1442
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1442"> Count Triplets That Can Form Two Arrays of Equal XOR</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1441
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1441"> Build an Array With Stack Operations</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1439
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1439"> Find the Kth Smallest Sum of a Matrix With Sorted Rows</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1438
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1438"> Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1437
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1437"> Check If All 1&#x27;s Are at Least Length K Places Away</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1436
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1436"> Destination City</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1449
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1449"> Form Largest Integer With Digits That Add up to Target</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1448
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1448"> Count Good Nodes in Binary Tree</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1447
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1447"> Simplified Fractions</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1446
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1446"> Consecutive Characters</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1424
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1424"> Diagonal Traverse II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1423
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1423"> Maximum Points You Can Obtain from Cards</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1422
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1422"> Maximum Score After Splitting a String</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1420
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1420"> Build Array Where You Can Find The Maximum Exactly K Comparisons</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1419
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1419"> Minimum Number of Frogs Croaking</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1418
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1418"> Display Table of Food Orders in a Restaurant</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1417
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1417"> Reformat The String</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1434
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1434"> Number of Ways to Wear Different Hats to Each Other</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1433
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1433"> Check If a String Can Break Another String</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1432
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1432"> Max Difference You Can Get From Changing an Integer</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1431
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1431"> Kids With the Greatest Number of Candies</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1411
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1411"> Number of Ways to Paint N × 3 Grid</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1410
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1410"> HTML Entity Parser</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1409
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1409"> Queries on a Permutation With Key</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1408
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1408"> String Matching in an Array</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1406
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1406"> Stone Game III</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1404
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1404"> Number of Steps to Reduce a Number in Binary Representation to One</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1403
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1403"> Minimum Subsequence in Non-Increasing Order</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1416
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1416"> Restore The Array</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1415
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1415"> The k-th Lexicographical String of All Happy Strings of Length n</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1414
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1414"> Find the Minimum Number of Fibonacci Numbers Whose Sum Is K</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1413
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1413"> Minimum Value to Get Positive Step by Step Sum</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1397
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1397"> Find All Good Strings</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1396
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1396"> Design Underground System</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1395
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1395"> Count Number of Teams</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1394
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1394"> Find Lucky Integer in an Array</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1392
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1392"> Longest Happy Prefix</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1391
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1391"> Check if There is a Valid Path in a Grid</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1389
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1389"> Create Target Array in the Given Order</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1402
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1402"> Reducing Dishes</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1400
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1400"> Construct K Palindrome Strings</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1401
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1401"> Circle and Rectangle Overlapping</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1399
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1399"> Count Largest Group</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1383
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1383"> Maximum Performance of a Team</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1379
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1379"> Find a Corresponding Node of a Binary Tree in a Clone of That Tree</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1381
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1381"> Design a Stack With Increment Operation</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1380
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1380"> Lucky Numbers in a Matrix</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1377
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1377"> Frog Position After T Seconds</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1376
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1376"> Time Needed to Inform All Employees</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1375
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1375"> Bulb Switcher III</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1374
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1374"> Generate a String With Characters That Have Odd Counts</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1388
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1388"> Pizza With 3n Slices</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1387
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1387"> Sort Integers by The Power Value</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1386
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1386"> Cinema Seat Allocation</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1385
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1385"> Find the Distance Value Between Two Arrays</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1368
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1368"> Minimum Cost to Make at Least One Valid Path in a Grid</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1367
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1367"> Linked List in Binary Tree</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1366
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1366"> Rank Teams by Votes</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1365
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1365"> How Many Numbers Are Smaller Than the Current Number</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1354
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1354"> Construct Target Array With Multiple Sums</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1353
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1353"> Maximum Number of Events That Can Be Attended</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1352
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1352"> Product of the Last K Numbers</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1351
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1351"> Count Negative Numbers in a Sorted Matrix</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1373
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1373"> Maximum Sum BST in Binary Tree</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1372
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1372"> Longest ZigZag Path in a Binary Tree</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1371
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1371"> Find the Longest Substring Containing Vowels in Even Counts</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1370
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1370"> Increasing Decreasing String</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1349
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1349"> Maximum Students Taking Exam</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1348
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1348"> Tweet Counts Per Frequency</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1347
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1347"> Minimum Number of Steps to Make Two Strings Anagram</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1346
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1346"> Check If N and Its Double Exist</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1340
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1340"> Jump Game V</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1339
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1339"> Maximum Product of Splitted Binary Tree</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1338
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1338"> Reduce Array Size to The Half</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1337
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1337"> The K Weakest Rows in a Matrix</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1359
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1359"> Count All Valid Pickup and Delivery Options</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1358
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1358"> Number of Substrings Containing All Three Characters</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1357
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1357"> Apply Discount Every n Orders</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1356
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1356"> Sort Integers by The Number of 1 Bits</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1335
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1335"> Minimum Difficulty of a Job Schedule</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1334
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1334"> Find the City With the Smallest Number of Neighbors at a Threshold Distance</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1333
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1333"> Filter Restaurants by Vegan-Friendly, Price and Distance</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1332
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1332"> Remove Palindromic Subsequences</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1326
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1326"> Minimum Number of Taps to Open to Water a Garden</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1325
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1325"> Delete Leaves With a Given Value</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1324
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1324"> Print Words Vertically</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1323
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1323"> Maximum 69 Number</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1345
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1345"> Jump Game IV</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1344
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1344"> Angle Between Hands of a Clock</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1343
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1343"> Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1342
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1342"> Number of Steps to Reduce a Number to Zero</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1320
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1320"> Minimum Distance to Type a Word Using Two Fingers</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1319
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1319"> Number of Operations to Make Network Connected</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1318
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1318"> Minimum Flips to Make a OR b Equal to c</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1317
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1317"> Convert Integer to the Sum of Two No-Zero Integers</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1312
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1312"> Minimum Insertion Steps to Make a String Palindrome</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1311
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1311"> Get Watched Videos by Your Friends</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1310
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1310"> XOR Queries of a Subarray</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1309
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1309"> Decrypt String from Alphabet to Integer Mapping</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1430
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1430"> Check If a String Is a Valid Sequence from Root to Leaves Path in a Binary Tree</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1307
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1307"> Verbal Arithmetic Puzzle</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1306
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1306"> Jump Game III</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1305
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1305"> All Elements in Two Binary Search Trees</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1304
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1304"> Find N Unique Integers Sum up to Zero</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1298
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1298"> Maximum Candies You Can Get from Boxes</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1297
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1297"> Maximum Number of Occurrences of a Substring</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1296
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1296"> Divide Array in Sets of K Consecutive Numbers</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1295
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1295"> Find Numbers with Even Number of Digits</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1293
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1293"> Shortest Path in a Grid with Obstacles Elimination</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1292
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1292"> Maximum Side Length of a Square with Sum Less than or Equal to Threshold</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1290
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1290"> Convert Binary Number in a Linked List to Integer</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1284
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1284"> Minimum Number of Flips to Convert Binary Matrix to Zero Matrix</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1283
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1283"> Find the Smallest Divisor Given a Threshold</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1282
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1282"> Group the People Given the Group Size They Belong To</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1281
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1281"> Subtract the Product and Sum of Digits of an Integer</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1265
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1265"> Print Immutable Linked List in Reverse</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1278
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1278"> Palindrome Partitioning III</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1277
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1277"> Count Square Submatrices with All Ones</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1276
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1276"> Number of Burgers with No Waste of Ingredients</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1275
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1275"> Find Winner on a Tic Tac Toe Game</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1269
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1269"> Number of Ways to Stay in the Same Place After Some Steps</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1268
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1268"> Search Suggestions System</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1267
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1267"> Count Servers that Communicate</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1266
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1266"> Minimum Time Visiting All Points</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1426
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1426"> Counting Elements</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1263
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1263"> Minimum Moves to Move a Box to Their Target Location</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1262
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1262"> Greatest Sum Divisible by Three</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1261
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1261"> Find Elements in a Contaminated Binary Tree</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1260
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1260"> Shift 2D Grid</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1618
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1618"> Maximum Font to Fit a Sentence in a Screen</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1255
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1255"> Maximum Score Words Formed by Letters</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1254
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1254"> Number of Closed Islands</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1253
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1253"> Reconstruct a 2-Row Binary Matrix</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1252
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1252"> Cells with Odd Values in a Matrix</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1428
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1428"> Leftmost Column with at Least a One</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1250
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1250"> Check If It Is a Good Array</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1249
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1249"> Minimum Remove to Make Valid Parentheses</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1248
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1248"> Count Number of Nice Subarrays</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1247
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1247"> Minimum Swaps to Make Strings Equal</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1691
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1691"> Maximum Height by Stacking Cuboids </a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1429
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1429"> First Unique Number</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1227
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1227"> Airplane Seat Assignment Probability</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1240
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1240"> Tiling a Rectangle with the Fewest Squares</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1239
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1239"> Maximum Length of a Concatenated String with Unique Characters</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1238
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1238"> Circular Permutation in Binary Representation</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1237
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1237"> Find Positive Integer Solution for a Given Equation</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1235
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1235"> Maximum Profit in Job Scheduling</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1234
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1234"> Replace the Substring for Balanced String</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1233
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1233"> Remove Sub-Folders from the Filesystem</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1232
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1232"> Check If It Is a Straight Line</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1427
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1427"> Perform String Shifts</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1224
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1224"> Maximum Equal Frequency</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1223
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1223"> Dice Roll Simulation</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1222
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1222"> Queens That Can Attack the King</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1221
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1221"> Split a String in Balanced Strings</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1206
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1206"> Design Skiplist</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1220
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1220"> Count Vowels Permutation</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1219
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1219"> Path with Maximum Gold</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1218
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1218"> Longest Arithmetic Subsequence of Given Difference</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1217
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1217"> Minimum Cost to Move Chips to The Same Position</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1514
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1514"> Path with Maximum Probability</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1210
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1210"> Minimum Moves to Reach Target with Rotations</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1208
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1208"> Get Equal Substrings Within Budget</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1209
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1209"> Remove All Adjacent Duplicates in String II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1207
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1207"> Unique Number of Occurrences</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1203
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1203"> Sort Items by Groups Respecting Dependencies</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1202
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1202"> Smallest String With Swaps</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1201
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1201"> Ugly Number III</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1200
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1200"> Minimum Absolute Difference</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1405
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1405"> Longest Happy String</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1192
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1192"> Critical Connections in a Network</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1191
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1191"> K-Concatenation Maximum Sum</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1190
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1190"> Reverse Substrings Between Each Pair of Parentheses</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1189
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1189"> Maximum Number of Balloons</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1483
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1483"> Kth Ancestor of a Tree Node</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1550
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1550"> Three Consecutive Odds</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1187
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1187"> Make Array Strictly Increasing</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1185
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1185"> Day of the Week</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1186
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1186"> Maximum Subarray Sum with One Deletion</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1184
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1184"> Distance Between Bus Stops</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1425
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1425"> Constrained Subsequence Sum</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1382
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1382"> Balance a Binary Search Tree</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1390
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1390"> Four Divisors</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1507
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1507"> Reformat Date</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1178
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1178"> Number of Valid Words for Each Puzzle</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1177
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1177"> Can Make Palindrome from Substring</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1176
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1176"> Diet Plan Performance</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1175
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1175"> Prime Arrangements</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1363
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1363"> Largest Multiple of Three</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1362
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1362"> Closest Divisors</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1361
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1361"> Validate Binary Tree Nodes</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1360
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1360"> Number of Days Between Two Dates</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1170
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1170"> Compare Strings by Frequency of the Smallest Character</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1169
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1169"> Invalid Transactions</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1236
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1236"> Web Crawler</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1172
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1172"> Dinner Plate Stacks</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1171
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1171"> Remove Zero Sum Consecutive Nodes from Linked List</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1155
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1155"> Number of Dice Rolls With Target Sum</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1157
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1157"> Online Majority Element In Subarray</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1156
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1156"> Swap For Longest Repeated Character Substring</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1154
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1154"> Day of the Year</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1632
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1632"> Rank Transform of a Matrix</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1331
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1331"> Rank Transform of an Array</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1330
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1330"> Reverse Subarray To Maximize Array Value</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1302
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1302"> Deepest Leaves Sum</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1329
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1329"> Sort the Matrix Diagonally</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1328
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1328"> Break a Palindrome</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1147
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1147"> Longest Chunked Palindrome Decomposition</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1143
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1143"> Longest Common Subsequence</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1146
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1146"> Snapshot Array</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1145
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1145"> Binary Tree Coloring Game</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1144
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1144"> Decrease Elements To Make Array Zigzag</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1316
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1316"> Distinct Echo Substrings</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1315
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1315"> Sum of Nodes with Even-Valued Grandparent</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1314
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1314"> Matrix Block Sum</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1313
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1313"> Decompress Run-Length Encoded List</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1140
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1140"> Stone Game II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1139
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1139"> Largest 1-Bordered Square</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1138
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1138"> Alphabet Board Path</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1137
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1137"> N-th Tribonacci Number</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1301
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1301"> Number of Paths with Max Score</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1274
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1274"> Number of Ships in a Rectangle</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1300
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1300"> Sum of Mutated Array Closest to Target</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1299
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1299"> Replace Elements with Greatest Element on Right Side</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1131
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1131"> Maximum of Absolute Value Expression</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1129
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1129"> Shortest Path with Alternating Colors</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1130
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1130"> Minimum Cost Tree From Leaf Values</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1128
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1128"> Number of Equivalent Domino Pairs</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1289
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1289"> Minimum Falling Path Sum II</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1627
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1627"> Graph Connectivity With Threshold</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1288
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1288"> Remove Covered Intervals</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1287
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1287"> Element Appearing More Than 25% In Sorted Array</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1125
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1125"> Smallest Sufficient Team</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1124
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1124"> Longest Well-Performing Interval</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1123
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1123"> Lowest Common Ancestor of Deepest Leaves</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1122
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1122"> Relative Sort Array</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1259
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1259"> Handshakes That Don&#x27;t Cross</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1291
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1291"> Sequential Digits</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1286
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1286"> Iterator for Combination</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1619
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1619"> Mean of Array After Removing Some Elements</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1111
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1111"> Maximum Nesting Depth of Two Valid Parentheses Strings</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1110
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1110"> Delete Nodes And Return Forest</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1109
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1109"> Corporate Flight Bookings</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1108
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1108"> Defanging an IP Address</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1246
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1246"> Palindrome Removal</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1273
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1273"> Delete Tree Nodes</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1272
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1272"> Remove Interval</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1271
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1271"> Hexspeak</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1106
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1106"> Parsing A Boolean Expression</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1105
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1105"> Filling Bookcase Shelves</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1103
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1103"> Distribute Candies to People</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1104
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1104"> Path In Zigzag Labelled Binary Tree</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1231
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1231"> Divide Chocolate</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1258
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1258"> Synonymous Sentences</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1257
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1257"> Smallest Common Region</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1256
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1256"> Encode Number</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1096
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1096"> Brace Expansion II</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1095
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1095"> Find in Mountain Array</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1094
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1094"> Car Pooling</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1093
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1093"> Statistics from a Large Sample</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1216
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1216"> Valid Palindrome III</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1245
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1245"> Tree Diameter</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1244
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1244"> Design A Leaderboard</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1243
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1243"> Array Transformation</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1091
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1091"> Shortest Path in Binary Matrix</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1092
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1092"> Shortest Common Supersequence </a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1090
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1090"> Largest Values From Labels</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1089
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1089"> Duplicate Zeros</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1199
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1199"> Minimum Time to Build Blocks</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1230
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1230"> Toss Strange Coins</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1229
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1229"> Meeting Scheduler</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1228
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1228"> Missing Number In Arithmetic Progression</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1079
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1079"> Letter Tile Possibilities</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1081
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1081"> Smallest Subsequence of Distinct Characters</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1080
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1080"> Insufficient Nodes in Root to Leaf Paths</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1078
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1078"> Occurrences After Bigram</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1183
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1183"> Maximum Number of Ones</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1215
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1215"> Stepping Numbers</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1214
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1214"> Two Sum BSTs</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1213
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1213"> Intersection of Three Sorted Arrays</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1073
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1073"> Adding Two Negabinary Numbers</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1072
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1072"> Flip Columns For Maximum Number of Equal Rows</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1071
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1071"> Greatest Common Divisor of Strings</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1074
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1074"> Number of Submatrices That Sum to Target</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1168
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1168"> Optimize Water Distribution in a Village</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1198
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1198"> Find Smallest Common Element in All Rows</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1197
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1197"> Minimum Knight Moves</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1196
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1196"> How Many Apples Can You Put into the Basket</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1054
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1054"> Distant Barcodes</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1053
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1053"> Previous Permutation With One Swap</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1052
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1052"> Grumpy Bookstore Owner</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1051
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1051"> Height Checker</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1182
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1182"> Shortest Distance to Target Color</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1163
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1163"> Last Substring in Lexicographical Order</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1181
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1181"> Before and After Puzzle</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1180
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1180"> Count Substrings with Only One Distinct Letter</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1049
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1049"> Last Stone Weight II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1048
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1048"> Longest String Chain</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1047
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1047"> Remove All Adjacent Duplicates In String</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1046
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1046"> Last Stone Weight</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1167
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1167"> Minimum Cost to Connect Sticks</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1166
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1166"> Design File System</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1153
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1153"> String Transforms Into Another String</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1165
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1165"> Single-Row Keyboard</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1044
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1044"> Longest Duplicate Substring</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1043
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1043"> Partition Array for Maximum Sum</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1042
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1042"> Flower Planting With No Adjacent</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1041
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1041"> Robot Bounded In Circle</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1121
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1121"> Divide Array Into Increasing Sequences</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1162
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1162"> As Far from Land as Possible</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1161
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1161"> Maximum Level Sum of a Binary Tree</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1037
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1037"> Valid Boomerang</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1038
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1038"> Binary Search Tree to Greater Sum Tree</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1040
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1040"> Moving Stones Until Consecutive II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1160
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1160"> Find Words That Can Be Formed by Characters</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1039
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1039"> Minimum Score Triangulation of Polygon</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1152
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1152"> Analyze User Website Visit Pattern</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1151
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1151"> Minimum Swaps to Group All 1&#x27;s Together</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1036
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1036"> Escape a Large Maze</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1035
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1035"> Uncrossed Lines</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1034
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1034"> Coloring A Border</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1033
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1033"> Moving Stones Until Consecutive</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1150
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1150"> Check If a Number Is Majority Element in a Sorted Array</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1136
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1136"> Parallel Courses</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1135
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1135"> Connecting Cities With Minimum Cost</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1102
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1102"> Path With Maximum Minimum Value</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1133
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1133"> Largest Unique Number</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1032
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1032"> Stream of Characters</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1031
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1031"> Maximum Sum of Two Non-Overlapping Subarrays</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1029
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1029"> Two City Scheduling</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1030
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1030"> Matrix Cells in Distance Order</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1028
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1028"> Recover a Tree From Preorder Traversal</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1026
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1026"> Maximum Difference Between Node and Ancestor</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1120
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1120"> Maximum Average Subtree</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1134
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1134"> Armstrong Number</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1119
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1119"> Remove Vowels from a String</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1118
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1118"> Number of Days in a Month</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1027
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1027"> Longest Arithmetic Subsequence</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1025
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1025"> Divisor Game</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1101
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1101"> The Earliest Moment When Everyone Become Friends</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1100
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1100"> Find K-Length Substrings With No Repeated Characters</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1099
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1099"> Two Sum Less Than K</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1085
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1085"> Sum of Digits in the Minimum Number</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1024
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1024"> Video Stitching</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1023
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1023"> Camelcase Matching</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1022
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1022"> Sum of Root To Leaf Binary Numbers</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1021
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1021"> Remove Outermost Parentheses</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1088
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1088"> Confusing Number II</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1087
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1087"> Brace Expansion</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1065
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1065"> Index Pairs of a String</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1086
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1086"> High Five</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1020
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1020"> Number of Enclaves</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1019
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1019"> Next Greater Node In Linked List</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1018
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1018"> Binary Prefix Divisible By 5</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1017
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1017"> Convert to Base -2</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1056
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1056"> Confusing Number</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1067
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1067"> Digit Count in Range</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1066
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1066"> Campus Bikes II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1064
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1064"> Fixed Point</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1016
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1016"> Binary String With Substrings Representing 1 To N</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1015
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1015"> Smallest Integer Divisible by K</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1014
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1014"> Best Sightseeing Pair</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1013
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1013"> Partition Array Into Three Parts With Equal Sum</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1063
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1063"> Number of Valid Subarrays</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1062
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1062"> Longest Repeating Substring</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1060
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1060"> Missing Element in Sorted Array</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1061
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1061"> Lexicographically Smallest Equivalent String</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1012
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1012"> Numbers With Repeated Digits</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1011
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1011"> Capacity To Ship Packages Within D Days</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1010
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1010"> Pairs of Songs With Total Durations Divisible by 60</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1009
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1009"> Complement of Base 10 Integer</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1058
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1058"> Minimize Rounding Error to Meet Target</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1057
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1057"> Campus Bikes</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1055
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1055"> Shortest Way to Form String</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1008
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1008"> Construct Binary Search Tree from Preorder Traversal</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1007
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1007"> Minimum Domino Rotations For Equal Row</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1006
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1006"> Clumsy Factorial</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1005
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1005"> Maximize Sum Of Array After K Negations</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1004
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1004"> Max Consecutive Ones III</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1003
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1003"> Check If Word Is Valid After Substitutions</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1002
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1002"> Find Common Characters</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1001
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1001"> Grid Illumination</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1000
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1000"> Minimum Cost to Merge Stones</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          999
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/999"> Available Captures for Rook</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          998
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/998"> Maximum Binary Tree II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          997
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/997"> Find the Town Judge</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          996
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/996"> Number of Squareful Arrays</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          995
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/995"> Minimum Number of K Consecutive Bit Flips</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          994
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/994"> Rotting Oranges</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          993
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/993"> Cousins in Binary Tree</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          992
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/992"> Subarrays with K Different Integers</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          991
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/991"> Broken Calculator</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          990
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/990"> Satisfiability of Equality Equations</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          989
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/989"> Add to Array-Form of Integer</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          988
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/988"> Smallest String Starting From Leaf</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          987
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/987"> Vertical Order Traversal of a Binary Tree</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          986
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/986"> Interval List Intersections</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          985
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/985"> Sum of Even Numbers After Queries</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          984
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/984"> String Without AAA or BBB</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          983
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/983"> Minimum Cost For Tickets</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          982
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/982"> Triples with Bitwise AND Equal To Zero</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          981
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/981"> Time Based Key-Value Store</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          980
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/980"> Unique Paths III</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          979
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/979"> Distribute Coins in Binary Tree</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          978
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/978"> Longest Turbulent Subarray</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          977
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/977"> Squares of a Sorted Array</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          976
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/976"> Largest Perimeter Triangle</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          975
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/975"> Odd Even Jump</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          974
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/974"> Subarray Sums Divisible by K</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          973
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/973"> K Closest Points to Origin</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          509
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/509"> Fibonacci Number</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          972
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/972"> Equal Rational Numbers</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          971
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/971"> Flip Binary Tree To Match Preorder Traversal</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          970
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/970"> Powerful Integers</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          969
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/969"> Pancake Sorting</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          968
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/968"> Binary Tree Cameras</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          967
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/967"> Numbers With Same Consecutive Differences</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          966
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/966"> Vowel Spellchecker</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          965
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/965"> Univalued Binary Tree</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          964
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/964"> Least Operators to Express Number</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          963
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/963"> Minimum Area Rectangle II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          962
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/962"> Maximum Width Ramp</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          961
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/961"> N-Repeated Element in Size 2N Array</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          960
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/960"> Delete Columns to Make Sorted III</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          959
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/959"> Regions Cut By Slashes</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          958
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/958"> Check Completeness of a Binary Tree</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          957
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/957"> Prison Cells After N Days</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          956
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/956"> Tallest Billboard</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          955
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/955"> Delete Columns to Make Sorted II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          954
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/954"> Array of Doubled Pairs</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          953
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/953"> Verifying an Alien Dictionary</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          952
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/952"> Largest Component Size by Common Factor</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          951
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/951"> Flip Equivalent Binary Trees</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          950
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/950"> Reveal Cards In Increasing Order</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          949
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/949"> Largest Time for Given Digits</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          948
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/948"> Bag of Tokens</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          947
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/947"> Most Stones Removed with Same Row or Column</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          946
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/946"> Validate Stack Sequences</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          945
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/945"> Minimum Increment to Make Array Unique</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          944
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/944"> Delete Columns to Make Sorted</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          943
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/943"> Find the Shortest Superstring</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          942
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/942"> DI String Match</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          941
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/941"> Valid Mountain Array</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          940
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/940"> Distinct Subsequences II</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          939
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/939"> Minimum Area Rectangle</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          938
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/938"> Range Sum of BST</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          937
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/937"> Reorder Data in Log Files</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          936
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/936"> Stamping The Sequence</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          935
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/935"> Knight Dialer</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          934
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/934"> Shortest Bridge</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          933
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/933"> Number of Recent Calls</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          932
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/932"> Beautiful Array</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          931
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/931"> Minimum Falling Path Sum</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          930
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/930"> Binary Subarrays With Sum</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          929
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/929"> Unique Email Addresses</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          928
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/928"> Minimize Malware Spread II</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          927
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/927"> Three Equal Parts</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          926
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/926"> Flip String to Monotone Increasing</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          925
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/925"> Long Pressed Name</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          924
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/924"> Minimize Malware Spread</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          923
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/923"> 3Sum With Multiplicity</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          922
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/922"> Sort Array By Parity II</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          921
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/921"> Minimum Add to Make Parentheses Valid</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          920
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/920"> Number of Music Playlists</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          919
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/919"> Complete Binary Tree Inserter</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          918
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/918"> Maximum Sum Circular Subarray</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          917
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/917"> Reverse Only Letters</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          916
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/916"> Word Subsets</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          915
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/915"> Partition Array into Disjoint Intervals</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          914
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/914"> X of a Kind in a Deck of Cards</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          913
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/913"> Cat and Mouse</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          912
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/912"> Sort an Array</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          911
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/911"> Online Election</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          910
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/910"> Smallest Range II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          909
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/909"> Snakes and Ladders</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          908
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/908"> Smallest Range I</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          907
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/907"> Sum of Subarray Minimums</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          906
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/906"> Super Palindromes</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          905
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/905"> Sort Array By Parity</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          904
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/904"> Fruit Into Baskets</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          903
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/903"> Valid Permutations for DI Sequence</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          902
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/902"> Numbers At Most N Given Digit Set</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          901
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/901"> Online Stock Span</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          900
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/900"> RLE Iterator</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          899
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/899"> Orderly Queue</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          898
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/898"> Bitwise ORs of Subarrays</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          897
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/897"> Increasing Order Search Tree</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          896
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/896"> Monotonic Array</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          895
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/895"> Maximum Frequency Stack</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          894
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/894"> All Possible Full Binary Trees</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          893
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/893"> Groups of Special-Equivalent Strings</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          892
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/892"> Surface Area of 3D Shapes</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          891
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/891"> Sum of Subsequence Widths</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          890
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/890"> Find and Replace Pattern</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          889
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/889"> Construct Binary Tree from Preorder and Postorder Traversal</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          888
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/888"> Fair Candy Swap</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          887
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/887"> Super Egg Drop</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          886
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/886"> Possible Bipartition</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          885
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/885"> Spiral Matrix III</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          884
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/884"> Uncommon Words from Two Sentences</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          883
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/883"> Projection Area of 3D Shapes</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          882
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/882"> Reachable Nodes In Subdivided Graph</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          881
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/881"> Boats to Save People</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          880
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/880"> Decoded String at Index</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          478
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/478"> Generate Random Point in a Circle</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          497
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/497"> Random Point in Non-overlapping Rectangles</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          519
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/519"> Random Flip Matrix</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          528
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/528"> Random Pick with Weight</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          879
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/879"> Profitable Schemes</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          878
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/878"> Nth Magical Number</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          877
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/877"> Stone Game</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          876
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/876"> Middle of the Linked List</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          875
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/875"> Koko Eating Bananas</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          874
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/874"> Walking Robot Simulation</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          873
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/873"> Length of Longest Fibonacci Subsequence</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          872
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/872"> Leaf-Similar Trees</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          470
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/470"> Implement Rand10() Using Rand7()</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          871
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/871"> Minimum Number of Refueling Stops</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          870
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/870"> Advantage Shuffle</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          869
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/869"> Reordered Power of 2</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          868
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/868"> Binary Gap</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          867
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/867"> Transpose Matrix</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          866
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/866"> Prime Palindrome</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          865
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/865"> Smallest Subtree with all the Deepest Nodes</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          864
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/864"> Shortest Path to Get All Keys</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          710
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/710"> Random Pick with Blacklist</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          863
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/863"> All Nodes Distance K in Binary Tree</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          862
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/862"> Shortest Subarray with Sum at Least K</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          861
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/861"> Score After Flipping Matrix</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          860
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/860"> Lemonade Change</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          859
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/859"> Buddy Strings</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          858
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/858"> Mirror Reflection</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          857
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/857"> Minimum Cost to Hire K Workers</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          856
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/856"> Score of Parentheses</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          855
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/855"> Exam Room</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          854
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/854"> K-Similar Strings</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          853
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/853"> Car Fleet</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          852
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/852"> Peak Index in a Mountain Array</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          851
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/851"> Loud and Rich</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          850
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/850"> Rectangle Area II</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          849
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/849"> Maximize Distance to Closest Person</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          848
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/848"> Shifting Letters</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          847
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/847"> Shortest Path Visiting All Nodes</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          846
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/846"> Hand of Straights</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          845
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/845"> Longest Mountain in Array</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          844
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/844"> Backspace String Compare</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          843
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/843"> Guess the Word</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          842
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/842"> Split Array into Fibonacci Sequence</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          841
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/841"> Keys and Rooms</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          840
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/840"> Magic Squares In Grid</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          839
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/839"> Similar String Groups</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          838
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/838"> Push Dominoes</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          837
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/837"> New 21 Game</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          836
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/836"> Rectangle Overlap</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          489
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/489"> Robot Room Cleaner</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          835
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/835"> Image Overlap</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          834
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/834"> Sum of Distances in Tree</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          833
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/833"> Find And Replace in String</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          832
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/832"> Flipping an Image</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          622
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/622"> Design Circular Queue</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          641
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/641"> Design Circular Deque</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          831
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/831"> Masking Personal Information</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          830
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/830"> Positions of Large Groups</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          829
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/829"> Consecutive Numbers Sum</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          828
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/828"> Count Unique Characters of All Substrings of a Given String</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          827
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/827"> Making A Large Island</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          826
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/826"> Most Profit Assigning Work</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          825
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/825"> Friends Of Appropriate Ages</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          824
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/824"> Goat Latin</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          708
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/708"> Insert into a Sorted Circular Linked List</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          823
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/823"> Binary Trees With Factors</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          822
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/822"> Card Flipping Game</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          821
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/821"> Shortest Distance to a Character</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          820
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/820"> Short Encoding of Words</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          707
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/707"> Design Linked List</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          819
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/819"> Most Common Word</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          818
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/818"> Race Car</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          817
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/817"> Linked List Components</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          816
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/816"> Ambiguous Coordinates</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          815
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/815"> Bus Routes</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          814
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/814"> Binary Tree Pruning</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          813
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/813"> Largest Sum of Averages</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          812
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/812"> Largest Triangle Area</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          811
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/811"> Subdomain Visit Count</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          810
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/810"> Chalkboard XOR Game</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          809
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/809"> Expressive Words</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          808
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/808"> Soup Servings</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          807
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/807"> Max Increase to Keep City Skyline</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          806
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/806"> Number of Lines To Write String</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          805
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/805"> Split Array With Same Average</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          804
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/804"> Unique Morse Code Words</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          803
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/803"> Bricks Falling When Hit</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          802
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/802"> Find Eventual Safe States</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          801
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/801"> Minimum Swaps To Make Sequences Increasing</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          800
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/800"> Similar RGB Color</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          706
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/706"> Design HashMap</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          705
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/705"> Design HashSet</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          799
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/799"> Champagne Tower</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          798
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/798"> Smallest Rotation with Highest Score</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          797
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/797"> All Paths From Source to Target</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          796
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/796"> Rotate String</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          795
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/795"> Number of Subarrays with Bounded Maximum</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          794
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/794"> Valid Tic-Tac-Toe State</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          793
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/793"> Preimage Size of Factorial Zeroes Function</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          792
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/792"> Number of Matching Subsequences</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          791
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/791"> Custom Sort String</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          790
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/790"> Domino and Tromino Tiling</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          789
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/789"> Escape The Ghosts</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          788
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/788"> Rotated Digits</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          787
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/787"> Cheapest Flights Within K Stops</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          786
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/786"> K-th Smallest Prime Fraction</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          785
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/785"> Is Graph Bipartite?</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          784
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/784"> Letter Case Permutation</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          783
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/783"> Minimum Distance Between BST Nodes</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          782
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/782"> Transform to Chessboard</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          781
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/781"> Rabbits in Forest</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          780
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/780"> Reaching Points</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          779
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/779"> K-th Symbol in Grammar</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          778
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/778"> Swim in Rising Water</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          777
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/777"> Swap Adjacent in LR String</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          704
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/704"> Binary Search</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          776
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/776"> Split BST</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          775
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/775"> Global and Local Inversions</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          703
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/703"> Kth Largest Element in a Stream</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          774
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/774"> Minimize Max Distance to Gas Station</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          773
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/773"> Sliding Puzzle</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          702
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/702"> Search in a Sorted Array of Unknown Size</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          772
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/772"> Basic Calculator III</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          701
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/701"> Insert into a Binary Search Tree</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          700
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/700"> Search in a Binary Search Tree</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          771
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/771"> Jewels and Stones</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          770
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/770"> Basic Calculator IV</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          769
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/769"> Max Chunks To Make Sorted</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          768
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/768"> Max Chunks To Make Sorted II</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          767
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/767"> Reorganize String</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          766
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/766"> Toeplitz Matrix</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          590
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/590"> N-ary Tree Postorder Traversal</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          589
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/589"> N-ary Tree Preorder Traversal</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          559
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/559"> Maximum Depth of N-ary Tree</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          558
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/558"> Logical OR of Two Binary Grids Represented as Quad-Trees</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          427
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/427"> Construct Quad Tree</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          431
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/431"> Encode N-ary Tree to Binary Tree</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          765
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/765"> Couples Holding Hands</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          764
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/764"> Largest Plus Sign</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          763
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/763"> Partition Labels</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          762
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/762"> Prime Number of Set Bits in Binary Representation</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          430
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/430"> Flatten a Multilevel Doubly Linked List</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          428
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/428"> Serialize and Deserialize N-ary Tree</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          429
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/429"> N-ary Tree Level Order Traversal</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          761
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/761"> Special Binary String</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          760
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/760"> Find Anagram Mappings</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          759
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/759"> Employee Free Time</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          758
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/758"> Bold Words in String</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          757
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/757"> Set Intersection Size At Least Two</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          426
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/426"> Convert Binary Search Tree to Sorted Doubly Linked List</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          756
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/756"> Pyramid Transition Matrix</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          755
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/755"> Pour Water</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          754
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/754"> Reach a Number</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          753
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/753"> Cracking the Safe</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          752
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/752"> Open the Lock</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          751
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/751"> IP to CIDR</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          750
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/750"> Number Of Corner Rectangles</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          749
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/749"> Contain Virus</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          748
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/748"> Shortest Completing Word</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          747
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/747"> Largest Number At Least Twice of Others</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          746
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/746"> Min Cost Climbing Stairs</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          745
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/745"> Prefix and Suffix Search</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          744
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/744"> Find Smallest Letter Greater Than Target</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          743
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/743"> Network Delay Time</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          742
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/742"> Closest Leaf in a Binary Tree</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          709
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/709"> To Lower Case</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          741
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/741"> Cherry Pickup</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          740
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/740"> Delete and Earn</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          739
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/739"> Daily Temperatures</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          738
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/738"> Monotone Increasing Digits</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          737
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/737"> Sentence Similarity II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          736
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/736"> Parse Lisp Expression</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          735
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/735"> Asteroid Collision</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          734
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/734"> Sentence Similarity</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          733
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/733"> Flood Fill</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          732
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/732"> My Calendar III</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          731
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/731"> My Calendar II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          730
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/730"> Count Different Palindromic Subsequences</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          729
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/729"> My Calendar I</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          728
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/728"> Self Dividing Numbers</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          727
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/727"> Minimum Window Subsequence</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          726
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/726"> Number of Atoms</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          725
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/725"> Split Linked List in Parts</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          724
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/724"> Find Pivot Index</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          723
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/723"> Candy Crush</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          722
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/722"> Remove Comments</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          721
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/721"> Accounts Merge</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          720
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/720"> Longest Word in Dictionary</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          719
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/719"> Find K-th Smallest Pair Distance</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          718
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/718"> Maximum Length of Repeated Subarray</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          717
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/717"> 1-bit and 2-bit Characters</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          716
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/716"> Max Stack</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          715
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/715"> Range Module</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          714
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/714"> Best Time to Buy and Sell Stock with Transaction Fee</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          713
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/713"> Subarray Product Less Than K</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          712
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/712"> Minimum ASCII Delete Sum for Two Strings</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          711
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/711"> Number of Distinct Islands II</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          699
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/699"> Falling Squares</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          698
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/698"> Partition to K Equal Sum Subsets</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          697
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/697"> Degree of an Array</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          696
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/696"> Count Binary Substrings</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          695
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/695"> Max Area of Island</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          694
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/694"> Number of Distinct Islands</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          693
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/693"> Binary Number with Alternating Bits</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          692
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/692"> Top K Frequent Words</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          691
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/691"> Stickers to Spell Word</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          690
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/690"> Employee Importance</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          689
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/689"> Maximum Sum of 3 Non-Overlapping Subarrays</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          688
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/688"> Knight Probability in Chessboard</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          687
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/687"> Longest Univalue Path</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          686
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/686"> Repeated String Match</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          685
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/685"> Redundant Connection II</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          684
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/684"> Redundant Connection</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          683
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/683"> K Empty Slots</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          682
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/682"> Baseball Game</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          681
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/681"> Next Closest Time</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          680
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/680"> Valid Palindrome II</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          679
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/679"> 24 Game</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          678
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/678"> Valid Parenthesis String</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          677
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/677"> Map Sum Pairs</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          676
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/676"> Implement Magic Dictionary</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          675
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/675"> Cut Off Trees for Golf Event</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          674
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/674"> Longest Continuous Increasing Subsequence</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          673
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/673"> Number of Longest Increasing Subsequence</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          672
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/672"> Bulb Switcher II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          671
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/671"> Second Minimum Node In a Binary Tree</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          670
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/670"> Maximum Swap</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          669
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/669"> Trim a Binary Search Tree</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          668
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/668"> Kth Smallest Number in Multiplication Table</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          667
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/667"> Beautiful Arrangement II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          666
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/666"> Path Sum IV</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          665
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/665"> Non-decreasing Array</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          664
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/664"> Strange Printer</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          663
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/663"> Equal Tree Partition</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          662
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/662"> Maximum Width of Binary Tree</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          661
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/661"> Image Smoother</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          660
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/660"> Remove 9</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          659
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/659"> Split Array into Consecutive Subsequences</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          658
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/658"> Find K Closest Elements</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          657
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/657"> Robot Return to Origin</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          656
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/656"> Coin Path</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          655
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/655"> Print Binary Tree</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          654
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/654"> Maximum Binary Tree</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          653
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/653"> Two Sum IV - Input is a BST</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          652
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/652"> Find Duplicate Subtrees</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          651
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/651"> 4 Keys Keyboard</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          650
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/650"> 2 Keys Keyboard</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          649
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/649"> Dota2 Senate</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          648
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/648"> Replace Words</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          647
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/647"> Palindromic Substrings</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          646
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/646"> Maximum Length of Pair Chain</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          645
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/645"> Set Mismatch</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          644
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/644"> Maximum Average Subarray II</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          643
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/643"> Maximum Average Subarray I</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          642
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/642"> Design Search Autocomplete System</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          640
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/640"> Solve the Equation</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          639
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/639"> Decode Ways II</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          638
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/638"> Shopping Offers</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          637
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/637"> Average of Levels in Binary Tree</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          636
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/636"> Exclusive Time of Functions</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          635
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/635"> Design Log Storage System</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          634
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/634"> Find the Derangement of An Array</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          633
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/633"> Sum of Square Numbers</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          632
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/632"> Smallest Range Covering Elements from K Lists</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          631
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/631"> Design Excel Sum Formula</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          630
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/630"> Course Schedule III</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          629
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/629"> K Inverse Pairs Array</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          628
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/628"> Maximum Product of Three Numbers</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          625
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/625"> Minimum Factorization</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          624
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/624"> Maximum Distance in Arrays</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          623
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/623"> Add One Row to Tree</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          621
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/621"> Task Scheduler</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          617
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/617"> Merge Two Binary Trees</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          616
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/616"> Add Bold Tag in String</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          611
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/611"> Valid Triangle Number</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          609
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/609"> Find Duplicate File in System</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          606
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/606"> Construct String from Binary Tree</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          605
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/605"> Can Place Flowers</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          604
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/604"> Design Compressed String Iterator</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          600
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/600"> Non-negative Integers without Consecutive Ones</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          599
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/599"> Minimum Index Sum of Two Lists</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          598
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/598"> Range Addition II</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          594
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/594"> Longest Harmonious Subsequence</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          593
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/593"> Valid Square</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          592
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/592"> Fraction Addition and Subtraction</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          591
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/591"> Tag Validator</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          588
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/588"> Design In-Memory File System</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          587
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/587"> Erect the Fence</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          583
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/583"> Delete Operation for Two Strings</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          582
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/582"> Kill Process</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          581
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/581"> Shortest Unsorted Continuous Subarray</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          576
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/576"> Out of Boundary Paths</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          575
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/575"> Distribute Candies</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          573
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/573"> Squirrel Simulation</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          572
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/572"> Subtree of Another Tree</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          568
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/568"> Maximum Vacation Days</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          567
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/567"> Permutation in String</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          566
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/566"> Reshape the Matrix</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          565
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/565"> Array Nesting</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          564
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/564"> Find the Closest Palindrome</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          563
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/563"> Binary Tree Tilt</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          562
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/562"> Longest Line of Consecutive One in Matrix</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          561
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/561"> Array Partition I</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          560
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/560"> Subarray Sum Equals K</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          557
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/557"> Reverse Words in a String III</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          556
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/556"> Next Greater Element III</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          555
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/555"> Split Concatenated Strings</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          554
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/554"> Brick Wall</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          553
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/553"> Optimal Division</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          552
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/552"> Student Attendance Record II</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          551
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/551"> Student Attendance Record I</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          549
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/549"> Binary Tree Longest Consecutive Sequence II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          548
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/548"> Split Array with Equal Sum</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          547
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/547"> Friend Circles</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          546
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/546"> Remove Boxes</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          545
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/545"> Boundary of Binary Tree</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          544
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/544"> Output Contest Matches</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          543
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/543"> Diameter of Binary Tree</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          542
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/542"> 01 Matrix</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          541
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/541"> Reverse String II</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          540
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/540"> Single Element in a Sorted Array</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          539
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/539"> Minimum Time Difference</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          538
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/538"> Convert BST to Greater Tree</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          537
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/537"> Complex Number Multiplication</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          536
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/536"> Construct Binary Tree from String</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          535
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/535"> Encode and Decode TinyURL</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          533
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/533"> Lonely Pixel II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          532
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/532"> K-diff Pairs in an Array</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          531
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/531"> Lonely Pixel I</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          530
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/530"> Minimum Absolute Difference in BST</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          529
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/529"> Minesweeper</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          527
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/527"> Word Abbreviation</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          526
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/526"> Beautiful Arrangement</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          525
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/525"> Contiguous Array</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          524
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/524"> Longest Word in Dictionary through Deleting</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          523
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/523"> Continuous Subarray Sum</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          522
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/522"> Longest Uncommon Subsequence II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          521
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/521"> Longest Uncommon Subsequence I</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          520
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/520"> Detect Capital</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          518
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/518"> Coin Change 2</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          517
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/517"> Super Washing Machines</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          516
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/516"> Longest Palindromic Subsequence</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          515
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/515"> Find Largest Value in Each Tree Row</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          514
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/514"> Freedom Trail</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          513
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/513"> Find Bottom Left Tree Value</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1059
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1059"> All Paths from Source Lead to Destination</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          510
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/510"> Inorder Successor in BST II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          508
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/508"> Most Frequent Subtree Sum</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          507
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/507"> Perfect Number</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          506
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/506"> Relative Ranks</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          505
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/505"> The Maze II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          504
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/504"> Base 7</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          503
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/503"> Next Greater Element II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          502
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/502"> IPO</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          501
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/501"> Find Mode in Binary Search Tree</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          500
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/500"> Keyboard Row</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          499
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/499"> The Maze III</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          498
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/498"> Diagonal Traverse</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          496
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/496"> Next Greater Element I</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          495
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/495"> Teemo Attacking</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          494
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/494"> Target Sum</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          493
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/493"> Reverse Pairs</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          492
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/492"> Construct the Rectangle</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          491
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/491"> Increasing Subsequences</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          490
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/490"> The Maze</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1643
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1643"> Kth Smallest Instructions</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          488
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/488"> Zuma Game</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          487
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/487"> Max Consecutive Ones II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          486
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/486"> Predict the Winner</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          485
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/485"> Max Consecutive Ones</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          484
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/484"> Find Permutation</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          483
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/483"> Smallest Good Base</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          482
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/482"> License Key Formatting</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          481
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/481"> Magical String</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          480
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/480"> Sliding Window Median</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          479
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/479"> Largest Palindrome Product</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          477
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/477"> Total Hamming Distance</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          476
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/476"> Number Complement</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          475
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/475"> Heaters</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          474
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/474"> Ones and Zeroes</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          473
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/473"> Matchsticks to Square</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          472
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/472"> Concatenated Words</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          471
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/471"> Encode String with Shortest Length</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          469
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/469"> Convex Polygon</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          468
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/468"> Validate IP Address</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          467
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/467"> Unique Substrings in Wraparound String</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          466
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/466"> Count The Repetitions</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          465
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/465"> Optimal Account Balancing</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          464
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/464"> Can I Win</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          463
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/463"> Island Perimeter</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          462
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/462"> Minimum Moves to Equal Array Elements II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          461
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/461"> Hamming Distance</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          460
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/460"> LFU Cache</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          459
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/459"> Repeated Substring Pattern</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          458
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/458"> Poor Pigs</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          457
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/457"> Circular Array Loop</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          456
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/456"> 132 Pattern</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          455
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/455"> Assign Cookies</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          454
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/454"> 4Sum II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          453
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/453"> Minimum Moves to Equal Array Elements</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          452
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/452"> Minimum Number of Arrows to Burst Balloons</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          451
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/451"> Sort Characters By Frequency</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          450
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/450"> Delete Node in a BST</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          449
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/449"> Serialize and Deserialize BST</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          448
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/448"> Find All Numbers Disappeared in an Array</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          447
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/447"> Number of Boomerangs</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          446
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/446"> Arithmetic Slices II - Subsequence</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          445
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/445"> Add Two Numbers II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          444
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/444"> Sequence Reconstruction</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          443
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/443"> String Compression</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          442
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/442"> Find All Duplicates in an Array</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          441
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/441"> Arranging Coins</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          440
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/440"> K-th Smallest in Lexicographical Order</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          439
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/439"> Ternary Expression Parser</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          438
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/438"> Find All Anagrams in a String</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          437
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/437"> Path Sum III</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          436
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/436"> Find Right Interval</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          435
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/435"> Non-overlapping Intervals</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          434
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/434"> Number of Segments in a String</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          433
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/433"> Minimum Genetic Mutation</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          432
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/432"> All O`one Data Structure</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          425
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/425"> Word Squares</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          424
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/424"> Longest Repeating Character Replacement</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          423
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/423"> Reconstruct Original Digits from English</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          422
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/422"> Valid Word Square</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          421
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/421"> Maximum XOR of Two Numbers in an Array</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          420
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/420"> Strong Password Checker</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          419
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/419"> Battleships in a Board</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          418
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/418"> Sentence Screen Fitting</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          417
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/417"> Pacific Atlantic Water Flow</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          416
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/416"> Partition Equal Subset Sum</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          415
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/415"> Add Strings</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          414
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/414"> Third Maximum Number</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          413
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/413"> Arithmetic Slices</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          412
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/412"> Fizz Buzz</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          411
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/411"> Minimum Unique Word Abbreviation</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          410
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/410"> Split Array Largest Sum</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          409
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/409"> Longest Palindrome</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          408
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/408"> Valid Word Abbreviation</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          407
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/407"> Trapping Rain Water II</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          406
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/406"> Queue Reconstruction by Height</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          405
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/405"> Convert a Number to Hexadecimal</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          404
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/404"> Sum of Left Leaves</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          403
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/403"> Frog Jump</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          402
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/402"> Remove K Digits</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          401
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/401"> Binary Watch</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          400
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/400"> Nth Digit</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          399
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/399"> Evaluate Division</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          398
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/398"> Random Pick Index</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          397
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/397"> Integer Replacement</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          396
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/396"> Rotate Function</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          395
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/395"> Longest Substring with At Least K Repeating Characters</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          394
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/394"> Decode String</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          393
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/393"> UTF-8 Validation</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          392
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/392"> Is Subsequence</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          391
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/391"> Perfect Rectangle</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          390
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/390"> Elimination Game</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          389
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/389"> Find the Difference</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          388
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/388"> Longest Absolute File Path</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          387
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/387"> First Unique Character in a String</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          386
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/386"> Lexicographical Numbers</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          385
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/385"> Mini Parser</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          384
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/384"> Shuffle an Array</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          383
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/383"> Ransom Note</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          382
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/382"> Linked List Random Node</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          381
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/381"> Insert Delete GetRandom O(1) - Duplicates allowed</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          380
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/380"> Insert Delete GetRandom O(1)</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          379
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/379"> Design Phone Directory</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          378
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/378"> Kth Smallest Element in a Sorted Matrix</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          377
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/377"> Combination Sum IV</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          376
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/376"> Wiggle Subsequence</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          375
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/375"> Guess Number Higher or Lower II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          374
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/374"> Guess Number Higher or Lower</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          373
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/373"> Find K Pairs with Smallest Sums</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          372
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/372"> Super Pow</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          371
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/371"> Sum of Two Integers</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          370
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/370"> Range Addition</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          369
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/369"> Plus One Linked List</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          368
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/368"> Largest Divisible Subset</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          367
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/367"> Valid Perfect Square</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          366
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/366"> Find Leaves of Binary Tree</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          365
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/365"> Water and Jug Problem</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          364
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/364"> Nested List Weight Sum II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          363
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/363"> Max Sum of Rectangle No Larger Than K</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          362
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/362"> Design Hit Counter</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          361
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/361"> Bomb Enemy</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          360
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/360"> Sort Transformed Array</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          359
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/359"> Logger Rate Limiter</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          358
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/358"> Rearrange String k Distance Apart</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          357
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/357"> Count Numbers with Unique Digits</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          356
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/356"> Line Reflection</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          355
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/355"> Design Twitter</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          354
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/354"> Russian Doll Envelopes</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          353
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/353"> Design Snake Game</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          352
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/352"> Data Stream as Disjoint Intervals</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          351
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/351"> Android Unlock Patterns</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          350
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/350"> Intersection of Two Arrays II</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          349
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/349"> Intersection of Two Arrays</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          348
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/348"> Design Tic-Tac-Toe</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          347
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/347"> Top K Frequent Elements</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          346
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/346"> Moving Average from Data Stream</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          345
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/345"> Reverse Vowels of a String</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          344
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/344"> Reverse String</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          343
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/343"> Integer Break</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          342
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/342"> Power of Four</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          341
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/341"> Flatten Nested List Iterator</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          340
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/340"> Longest Substring with At Most K Distinct Characters</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          339
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/339"> Nested List Weight Sum</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          338
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/338"> Counting Bits</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          337
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/337"> House Robber III</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          336
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/336"> Palindrome Pairs</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          335
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/335"> Self Crossing</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          334
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/334"> Increasing Triplet Subsequence</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          333
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/333"> Largest BST Subtree</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          332
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/332"> Reconstruct Itinerary</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          331
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/331"> Verify Preorder Serialization of a Binary Tree</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          330
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/330"> Patching Array</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          329
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/329"> Longest Increasing Path in a Matrix</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          328
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/328"> Odd Even Linked List</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          327
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/327"> Count of Range Sum</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          326
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/326"> Power of Three</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          325
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/325"> Maximum Size Subarray Sum Equals k</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          324
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/324"> Wiggle Sort II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          323
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/323"> Number of Connected Components in an Undirected Graph</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          322
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/322"> Coin Change</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          321
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/321"> Create Maximum Number</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          320
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/320"> Generalized Abbreviation</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          319
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/319"> Bulb Switcher</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          318
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/318"> Maximum Product of Word Lengths</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          317
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/317"> Shortest Distance from All Buildings</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          316
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/316"> Remove Duplicate Letters</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          315
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/315"> Count of Smaller Numbers After Self</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          314
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/314"> Binary Tree Vertical Order Traversal</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          313
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/313"> Super Ugly Number</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          312
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/312"> Burst Balloons</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          311
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/311"> Sparse Matrix Multiplication</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          310
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/310"> Minimum Height Trees</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          309
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/309"> Best Time to Buy and Sell Stock with Cooldown</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          308
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/308"> Range Sum Query 2D - Mutable</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          307
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/307"> Range Sum Query - Mutable</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          306
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/306"> Additive Number</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          305
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/305"> Number of Islands II</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          304
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/304"> Range Sum Query 2D - Immutable</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          303
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/303"> Range Sum Query - Immutable</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          302
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/302"> Smallest Rectangle Enclosing Black Pixels</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          301
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/301"> Remove Invalid Parentheses</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          300
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/300"> Longest Increasing Subsequence</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          299
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/299"> Bulls and Cows</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          298
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/298"> Binary Tree Longest Consecutive Sequence</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          297
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/297"> Serialize and Deserialize Binary Tree</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          296
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/296"> Best Meeting Point</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          295
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/295"> Find Median from Data Stream</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          294
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/294"> Flip Game II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          293
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/293"> Flip Game</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          292
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/292"> Nim Game</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          291
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/291"> Word Pattern II</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          290
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/290"> Word Pattern</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          289
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/289"> Game of Life</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          288
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/288"> Unique Word Abbreviation</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          287
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/287"> Find the Duplicate Number</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          286
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/286"> Walls and Gates</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          285
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/285"> Inorder Successor in BST</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          284
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/284"> Peeking Iterator</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          283
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/283"> Move Zeroes</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          282
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/282"> Expression Add Operators</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          281
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/281"> Zigzag Iterator</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          280
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/280"> Wiggle Sort</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          279
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/279"> Perfect Squares</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          278
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/278"> First Bad Version</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          277
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/277"> Find the Celebrity</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          276
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/276"> Paint Fence</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          275
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/275"> H-Index II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          274
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/274"> H-Index</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          273
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/273"> Integer to English Words</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          272
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/272"> Closest Binary Search Tree Value II</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          271
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/271"> Encode and Decode Strings</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          270
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/270"> Closest Binary Search Tree Value</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          269
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/269"> Alien Dictionary</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          268
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/268"> Missing Number</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          267
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/267"> Palindrome Permutation II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          266
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/266"> Palindrome Permutation</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          265
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/265"> Paint House II</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          264
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/264"> Ugly Number II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          263
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/263"> Ugly Number</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          261
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/261"> Graph Valid Tree</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          260
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/260"> Single Number III</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          259
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/259"> 3Sum Smaller</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          258
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/258"> Add Digits</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          257
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/257"> Binary Tree Paths</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          256
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/256"> Paint House</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          255
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/255"> Verify Preorder Sequence in Binary Search Tree</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          254
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/254"> Factor Combinations</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          253
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/253"> Meeting Rooms II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          252
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/252"> Meeting Rooms</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          251
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/251"> Flatten 2D Vector</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          250
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/250"> Count Univalue Subtrees</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          249
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/249"> Group Shifted Strings</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          248
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/248"> Strobogrammatic Number III</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          247
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/247"> Strobogrammatic Number II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          246
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/246"> Strobogrammatic Number</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          245
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/245"> Shortest Word Distance III</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          244
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/244"> Shortest Word Distance II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          243
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/243"> Shortest Word Distance</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          242
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/242"> Valid Anagram</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          241
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/241"> Different Ways to Add Parentheses</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          240
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/240"> Search a 2D Matrix II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          239
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/239"> Sliding Window Maximum</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          238
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/238"> Product of Array Except Self</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          237
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/237"> Delete Node in a Linked List</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          236
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/236"> Lowest Common Ancestor of a Binary Tree</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          235
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/235"> Lowest Common Ancestor of a Binary Search Tree</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          234
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/234"> Palindrome Linked List</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          233
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/233"> Number of Digit One</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          232
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/232"> Implement Queue using Stacks</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          231
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/231"> Power of Two</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          230
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/230"> Kth Smallest Element in a BST</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          229
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/229"> Majority Element II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          228
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/228"> Summary Ranges</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          227
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/227"> Basic Calculator II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          226
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/226"> Invert Binary Tree</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          225
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/225"> Implement Stack using Queues</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          224
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/224"> Basic Calculator</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          223
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/223"> Rectangle Area</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          222
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/222"> Count Complete Tree Nodes</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          221
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/221"> Maximal Square</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          220
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/220"> Contains Duplicate III</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          219
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/219"> Contains Duplicate II</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          218
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/218"> The Skyline Problem</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          217
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/217"> Contains Duplicate</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          216
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/216"> Combination Sum III</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          215
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/215"> Kth Largest Element in an Array</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          214
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/214"> Shortest Palindrome</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          213
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/213"> House Robber II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          212
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/212"> Word Search II</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          211
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/211"> Design Add and Search Words Data Structure</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          210
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/210"> Course Schedule II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          209
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/209"> Minimum Size Subarray Sum</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          208
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/208"> Implement Trie (Prefix Tree)</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          207
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/207"> Course Schedule</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          206
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/206"> Reverse Linked List</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          205
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/205"> Isomorphic Strings</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          204
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/204"> Count Primes</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          203
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/203"> Remove Linked List Elements</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          202
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/202"> Happy Number</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          201
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/201"> Bitwise AND of Numbers Range</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          200
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/200"> Number of Islands</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          199
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/199"> Binary Tree Right Side View</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          198
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/198"> House Robber</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          191
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/191"> Number of 1 Bits</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          190
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/190"> Reverse Bits</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          189
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/189"> Rotate Array</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          188
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/188"> Best Time to Buy and Sell Stock IV</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          187
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/187"> Repeated DNA Sequences</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          186
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/186"> Reverse Words in a String II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          179
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/179"> Largest Number</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          174
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/174"> Dungeon Game</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          173
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/173"> Binary Search Tree Iterator</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          172
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/172"> Factorial Trailing Zeroes</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          171
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/171"> Excel Sheet Column Number</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          170
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/170"> Two Sum III - Data structure design</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          169
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/169"> Majority Element</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          168
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/168"> Excel Sheet Column Title</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          167
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/167"> Two Sum II - Input array is sorted</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          166
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/166"> Fraction to Recurring Decimal</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          165
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/165"> Compare Version Numbers</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          164
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/164"> Maximum Gap</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          163
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/163"> Missing Ranges</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          162
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/162"> Find Peak Element</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          161
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/161"> One Edit Distance</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          160
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/160"> Intersection of Two Linked Lists</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          159
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/159"> Longest Substring with At Most Two Distinct Characters</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          158
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/158"> Read N Characters Given Read4 II - Call multiple times</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          157
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/157"> Read N Characters Given Read4</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          156
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/156"> Binary Tree Upside Down</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          155
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/155"> Min Stack</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          154
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/154"> Find Minimum in Rotated Sorted Array II</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          153
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/153"> Find Minimum in Rotated Sorted Array</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          152
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/152"> Maximum Product Subarray</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          151
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/151"> Reverse Words in a String</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          150
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/150"> Evaluate Reverse Polish Notation</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          149
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/149"> Max Points on a Line</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          148
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/148"> Sort List</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          147
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/147"> Insertion Sort List</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          146
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/146"> LRU Cache</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          145
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/145"> Binary Tree Postorder Traversal</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          144
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/144"> Binary Tree Preorder Traversal</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          143
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/143"> Reorder List</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          142
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/142"> Linked List Cycle II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          141
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/141"> Linked List Cycle</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          140
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/140"> Word Break II</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          139
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/139"> Word Break</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          138
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/138"> Copy List with Random Pointer</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          137
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/137"> Single Number II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          136
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/136"> Single Number</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          135
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/135"> Candy</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          134
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/134"> Gas Station</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          133
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/133"> Clone Graph</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          132
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/132"> Palindrome Partitioning II</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          131
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/131"> Palindrome Partitioning</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          130
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/130"> Surrounded Regions</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          129
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/129"> Sum Root to Leaf Numbers</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          128
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/128"> Longest Consecutive Sequence</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          127
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/127"> Word Ladder</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          126
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/126"> Word Ladder II</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          125
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/125"> Valid Palindrome</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          124
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/124"> Binary Tree Maximum Path Sum</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          123
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/123"> Best Time to Buy and Sell Stock III</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          122
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/122"> Best Time to Buy and Sell Stock II</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          121
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/121"> Best Time to Buy and Sell Stock</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          120
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/120"> Triangle</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          119
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/119"> Pascal&#x27;s Triangle II</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          118
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/118"> Pascal&#x27;s Triangle</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          117
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/117"> Populating Next Right Pointers in Each Node II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          116
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/116"> Populating Next Right Pointers in Each Node</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          115
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/115"> Distinct Subsequences</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          114
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/114"> Flatten Binary Tree to Linked List</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          113
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/113"> Path Sum II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          112
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/112"> Path Sum</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          111
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/111"> Minimum Depth of Binary Tree</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          110
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/110"> Balanced Binary Tree</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          109
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/109"> Convert Sorted List to Binary Search Tree</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          108
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/108"> Convert Sorted Array to Binary Search Tree</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          107
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/107"> Binary Tree Level Order Traversal II</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          106
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/106"> Construct Binary Tree from Inorder and Postorder Traversal</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          105
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/105"> Construct Binary Tree from Preorder and Inorder Traversal</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          104
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/104"> Maximum Depth of Binary Tree</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          103
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/103"> Binary Tree Zigzag Level Order Traversal</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          102
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/102"> Binary Tree Level Order Traversal</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          101
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/101"> Symmetric Tree</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          100
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/100"> Same Tree</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          99
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/99"> Recover Binary Search Tree</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          98
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/98"> Validate Binary Search Tree</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          97
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/97"> Interleaving String</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          96
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/96"> Unique Binary Search Trees</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          95
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/95"> Unique Binary Search Trees II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          94
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/94"> Binary Tree Inorder Traversal</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          93
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/93"> Restore IP Addresses</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          92
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/92"> Reverse Linked List II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          91
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/91"> Decode Ways</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          90
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/90"> Subsets II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          89
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/89"> Gray Code</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          88
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/88"> Merge Sorted Array</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          87
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/87"> Scramble String</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          86
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/86"> Partition List</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          85
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/85"> Maximal Rectangle</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          84
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/84"> Largest Rectangle in Histogram</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          83
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/83"> Remove Duplicates from Sorted List</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          82
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/82"> Remove Duplicates from Sorted List II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          81
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/81"> Search in Rotated Sorted Array II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          80
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/80"> Remove Duplicates from Sorted Array II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          79
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/79"> Word Search</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          78
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/78"> Subsets</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          77
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/77"> Combinations</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          76
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/76"> Minimum Window Substring</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          75
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/75"> Sort Colors</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          74
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/74"> Search a 2D Matrix</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          73
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/73"> Set Matrix Zeroes</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          72
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/72"> Edit Distance</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          71
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/71"> Simplify Path</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          70
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/70"> Climbing Stairs</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          69
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/69"> Sqrt(x)</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          68
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/68"> Text Justification</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          67
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/67"> Add Binary</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          66
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/66"> Plus One</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          65
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/65"> Valid Number</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          64
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/64"> Minimum Path Sum</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          63
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/63"> Unique Paths II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          62
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/62"> Unique Paths</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          61
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/61"> Rotate List</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          60
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/60"> Permutation Sequence</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          59
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/59"> Spiral Matrix II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          58
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/58"> Length of Last Word</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          57
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/57"> Insert Interval</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          56
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/56"> Merge Intervals</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          55
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/55"> Jump Game</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          54
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/54"> Spiral Matrix</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          53
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/53"> Maximum Subarray</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          52
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/52"> N-Queens II</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          51
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/51"> N-Queens</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          50
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/50"> Pow(x, n)</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          49
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/49"> Group Anagrams</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          48
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/48"> Rotate Image</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          47
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/47"> Permutations II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          46
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/46"> Permutations</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          45
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/45"> Jump Game II</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          44
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/44"> Wildcard Matching</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          43
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/43"> Multiply Strings</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          42
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/42"> Trapping Rain Water</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          41
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/41"> First Missing Positive</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          40
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/40"> Combination Sum II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          39
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/39"> Combination Sum</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          38
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/38"> Count and Say</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          37
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/37"> Sudoku Solver</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          36
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/36"> Valid Sudoku</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          35
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/35"> Search Insert Position</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          34
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/34"> Find First and Last Position of Element in Sorted Array</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          33
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/33"> Search in Rotated Sorted Array</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          32
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/32"> Longest Valid Parentheses</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          31
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/31"> Next Permutation</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          30
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/30"> Substring with Concatenation of All Words</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          29
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/29"> Divide Two Integers</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          28
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/28"> Implement strStr()</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          27
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/27"> Remove Element</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          26
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/26"> Remove Duplicates from Sorted Array</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          25
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/25"> Reverse Nodes in k-Group</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          24
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/24"> Swap Nodes in Pairs</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          23
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/23"> Merge k Sorted Lists</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          22
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/22"> Generate Parentheses</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          21
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/21"> Merge Two Sorted Lists</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          20
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/20"> Valid Parentheses</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          19
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/19"> Remove Nth Node From End of List</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          18
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/18"> 4Sum</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          17
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/17"> Letter Combinations of a Phone Number</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          16
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/16"> 3Sum Closest</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          15
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/15"> 3Sum</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          14
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/14"> Longest Common Prefix</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          13
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/13"> Roman to Integer</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          12
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/12"> Integer to Roman</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          11
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/11"> Container With Most Water</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          10
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/10"> Regular Expression Matching</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          9
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/9"> Palindrome Number</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          8
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/8"> String to Integer (atoi)</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          7
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/7"> Reverse Integer</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          6
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/6"> ZigZag Conversion</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          5
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/5"> Longest Palindromic Substring</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          4
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/4"> Median of Two Sorted Arrays</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          3
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/3"> Longest Substring Without Repeating Characters</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          2
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/2"> Add Two Numbers</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1"> Two Sum</a>
+        </td>
+        <td>Easy</td>
+      </tr></tbody>
+</table>
 
-# Advent of Code Solutions in Rust
-- [2015](#advent_of_code_2015)
-- [2016](#advent_of_code_2016)
-- [2017](#advent_of_code_2017)
-- [2018](#advent_of_code_2018)
-- [2019](#advent_of_code_2019)
-- [2020](#advent_of_code_2020)
-
-# Leetcode Easy 7/380 1.84% <a name='leetcode_easy'></a>
-
-|id|380 Easy Questions|Tags|373 Solutions|
-|---|---|---|---|
-|559|[Maximum Depth of N-ary Tree](https://leetcode.com/problems/maximum-depth-of-n-ary-tree)||   |
-|589|[N-ary Tree Preorder Traversal](https://leetcode.com/problems/n-ary-tree-preorder-traversal)||   |
-|590|[N-ary Tree Postorder Traversal](https://leetcode.com/problems/n-ary-tree-postorder-traversal)||   |
-|690|[Employee Importance](https://leetcode.com/problems/employee-importance)|hash-table depth-first-search breadth-first-search|   |
-|160|[Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists)|linked-list|   |
-|237|[Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list)|linked-list|   |
-|141|[Linked List Cycle](https://leetcode.com/problems/linked-list-cycle)|linked-list two-pointers|   |
-|1002|[Find Common Characters](https://leetcode.com/problems/find-common-characters)|array|[Rust](rustgym/src/leetcode/_1002_find_common_characters.rs)|
-|1005|[Maximize Sum Of Array After K Negations](https://leetcode.com/problems/maximize-sum-of-array-after-k-negations)|tree|[Rust](rustgym/src/leetcode/_1005_maximize_sum_of_array_after_k_negations.rs)|
-|1009|[Complement of Base 10 Integer](https://leetcode.com/problems/complement-of-base-10-integer)|array sort|[Rust](rustgym/src/leetcode/_1009_complement_of_base_10_integer.rs)|
-|100|[Same Tree](https://leetcode.com/problems/same-tree)|tree depth-first-search|[Rust](rustgym/src/leetcode/_100_same_tree.rs)|
-|1013|[Partition Array Into Three Parts With Equal Sum](https://leetcode.com/problems/partition-array-into-three-parts-with-equal-sum)|array|[Rust](rustgym/src/leetcode/_1013_partition_array_into_three_parts_with_equal_sum.rs)|
-|1018|[Binary Prefix Divisible By 5](https://leetcode.com/problems/binary-prefix-divisible-by-5)|math sort|[Rust](rustgym/src/leetcode/_1018_binary_prefix_divisible_by_5.rs)|
-|101|[Symmetric Tree](https://leetcode.com/problems/symmetric-tree)|tree depth-first-search breadth-first-search|[Rust](rustgym/src/leetcode/_101_symmetric_tree.rs)|
-|1021|[Remove Outermost Parentheses](https://leetcode.com/problems/remove-outermost-parentheses)|tree depth-first-search|[Rust](rustgym/src/leetcode/_1021_remove_outermost_parentheses.rs)|
-|1022|[Sum of Root To Leaf Binary Numbers](https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers)|backtracking depth-first-search|[Rust](rustgym/src/leetcode/_1022_sum_root_to_leaf_binary_number.rs)|
-|1025|[Divisor Game](https://leetcode.com/problems/divisor-game)|dynamic-programming|[Rust](rustgym/src/leetcode/_1025_divisor_game.rs)|
-|1030|[Matrix Cells in Distance Order](https://leetcode.com/problems/matrix-cells-in-distance-order)|tree depth-first-search|[Rust](rustgym/src/leetcode/_1030_matrix_cells_in_distance_order.rs)|
-|1033|[Moving Stones Until Consecutive](https://leetcode.com/problems/moving-stones-until-consecutive)|math greedy|[Rust](rustgym/src/leetcode/_1033_moving_stones_until_consecutive.rs)|
-|1037|[Valid Boomerang](https://leetcode.com/problems/valid-boomerang)|greedy sliding-window|[Rust](rustgym/src/leetcode/_1037_valid_boomerang.rs)|
-|1046|[Last Stone Weight](https://leetcode.com/problems/last-stone-weight)|two-pointers sliding-window|[Rust](rustgym/src/leetcode/_1046_last_stone_weight.rs)|
-|1047|[Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string)|greedy|[Rust](rustgym/src/leetcode/_1047_remove_all_adjacent_duplicates_in_string.rs)|
-|104|[Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree)|tree depth-first-search recursion|[Rust](rustgym/src/leetcode/_104_maximum_depth_of_binary_tree.rs)|
-|1051|[Height Checker](https://leetcode.com/problems/height-checker)|dynamic-programming greedy|[Rust](rustgym/src/leetcode/_1051_height_checker.rs)|
-|1056|[Confusing Number](https://leetcode.com/problems/confusing-number)|array binary-search|[Rust](rustgym/src/leetcode/_1056_confusing_number.rs)|
-|1064|[Fixed Point](https://leetcode.com/problems/fixed-point)|math|[Rust](rustgym/src/leetcode/_1064_fixed_point.rs)|
-|1065|[Index Pairs of a String](https://leetcode.com/problems/index-pairs-of-a-string)|string|[Rust](rustgym/src/leetcode/_1065_index_pairs_of_a_string.rs)|
-|1071|[Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings)|array|[Rust](rustgym/src/leetcode/_1071_greatest_common_divisor_of_strings.rs)|
-|1078|[Occurrences After Bigram](https://leetcode.com/problems/occurrences-after-bigram)|stack|[Rust](rustgym/src/leetcode/_1078_occurrences_after_bigram.rs)|
-|107|[Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii)|tree breadth-first-search|[Rust](rustgym/src/leetcode/_107_binary_tree_level_order_traversal_2.rs)|
-|1085|[Sum of Digits in the Minimum Number](https://leetcode.com/problems/sum-of-digits-in-the-minimum-number)|union-find|[Rust](rustgym/src/leetcode/_1085_sum_of_digits_in_the_minmum_number.rs)|
-|1086|[High Five](https://leetcode.com/problems/high-five)|math dynamic-programming|[Rust](rustgym/src/leetcode/_1086_high_five.rs)|
-|1089|[Duplicate Zeros](https://leetcode.com/problems/duplicate-zeros)|string|[Rust](rustgym/src/leetcode/_1089_duplicate_zeros.rs)|
-|108|[Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree)|tree depth-first-search|[Rust](rustgym/src/leetcode/_108_convert_sorted_array_binary_search_tree.rs)|
-|1099|[Two Sum Less Than K](https://leetcode.com/problems/two-sum-less-than-k)|depth-first-search union-find graph|[Rust](rustgym/src/leetcode/_1099_two_sum_less_than_k.rs)|
-|1103|[Distribute Candies to People](https://leetcode.com/problems/distribute-candies-to-people)|brainteaser|[Rust](rustgym/src/leetcode/_1103_distribute_candies_to_people.rs)|
-|1108|[Defanging an IP Address](https://leetcode.com/problems/defanging-an-ip-address)|array hash-table sort|[Rust](rustgym/src/leetcode/_1108_defanging_an_ip_address.rs)|
-|110|[Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree)|tree depth-first-search recursion|[Rust](rustgym/src/leetcode/_110_balanced_binary_tree.rs)|
-|1118|[Number of Days in a Month](https://leetcode.com/problems/number-of-days-in-a-month)|math|[Rust](rustgym/src/leetcode/_1118_number_of_days_in_a_month.rs)|
-|1119|[Remove Vowels from a String](https://leetcode.com/problems/remove-vowels-from-a-string)|math|[Rust](rustgym/src/leetcode/_1119_remove_vowels_from_a_string.rs)|
-|111|[Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree)|tree depth-first-search breadth-first-search|[Rust](rustgym/src/leetcode/_111_minimum_depth_of_binary_tree.rs)|
-|1122|[Relative Sort Array](https://leetcode.com/problems/relative-sort-array)|hash-table binary-search suffix-array|[Rust](rustgym/src/leetcode/_1122_relative_sort_array.rs)|
-|1128|[Number of Equivalent Domino Pairs](https://leetcode.com/problems/number-of-equivalent-domino-pairs)|stack|[Rust](rustgym/src/leetcode/_1128_number_of_equivalent_domino_pairs.rs)|
-|112|[Path Sum](https://leetcode.com/problems/path-sum)|tree depth-first-search|[Rust](rustgym/src/leetcode/_112_path_sum.rs)|
-|1133|[Largest Unique Number](https://leetcode.com/problems/largest-unique-number)|string suffix-array|[Rust](rustgym/src/leetcode/_1133_largest_unique_number.rs)|
-|1134|[Armstrong Number](https://leetcode.com/problems/armstrong-number)|binary-search|[Rust](rustgym/src/leetcode/_1134_armstrong_number.rs)|
-|1137|[N-th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number)|array|[Rust](rustgym/src/leetcode/_1137_n_th_tribonacci_number.rs)|
-|1150|[Check If a Number Is Majority Element in a Sorted Array](https://leetcode.com/problems/check-if-a-number-is-majority-element-in-a-sorted-array)|binary-search-tree|[Rust](rustgym/src/leetcode/_1150_check_if_a_number_is_majority_element_in_a_sorted_array.rs)|
-|1154|[Day of the Year](https://leetcode.com/problems/day-of-the-year)||[Rust](rustgym/src/leetcode/_1154_day_of_the_year.rs)|
-|1160|[Find Words That Can Be Formed by Characters](https://leetcode.com/problems/find-words-that-can-be-formed-by-characters)|backtracking|[Rust](rustgym/src/leetcode/_1160_find_words_that_can_be_formed_by_characters.rs)|
-|1165|[Single-Row Keyboard](https://leetcode.com/problems/single-row-keyboard)|line-sweep|[Rust](rustgym/src/leetcode/_1165_single_row_keyboard.rs)|
-|1170|[Compare Strings by Frequency of the Smallest Character](https://leetcode.com/problems/compare-strings-by-frequency-of-the-smallest-character)|dynamic-programming|[Rust](rustgym/src/leetcode/_1170_compare_strings_by_frequency_of_the_smallest_character.rs)|
-|1175|[Prime Arrangements](https://leetcode.com/problems/prime-arrangements)|array|[Rust](rustgym/src/leetcode/_1175_prime_arrangements.rs)|
-|1176|[Diet Plan Performance](https://leetcode.com/problems/diet-plan-performance)|hash-table sort design|[Rust](rustgym/src/leetcode/_1176_diet_plan_performance.rs)|
-|1180|[Count Substrings with Only One Distinct Letter](https://leetcode.com/problems/count-substrings-with-only-one-distinct-letter)||[Rust](rustgym/src/leetcode/_1180_count_substring_with_only_one_distinct_letter.rs)|
-|1184|[Distance Between Bus Stops](https://leetcode.com/problems/distance-between-bus-stops)|greedy|[Rust](rustgym/src/leetcode/_1184_distance_between_bus_stops.rs)|
-|1185|[Day of the Week](https://leetcode.com/problems/day-of-the-week)|binary-search|[Rust](rustgym/src/leetcode/_1185_day_of_the_week.rs)|
-|1189|[Maximum Number of Balloons](https://leetcode.com/problems/maximum-number-of-balloons)|math bit-manipulation|[Rust](rustgym/src/leetcode/_1189_maximum_number_of_balloons.rs)|
-|118|[Pascal's Triangle](https://leetcode.com/problems/pascals-triangle)|array|[Rust](rustgym/src/leetcode/_118_pascal_triangle.rs)|
-|1196|[How Many Apples Can You Put into the Basket](https://leetcode.com/problems/how-many-apples-can-you-put-into-the-basket)|dynamic-programming|[Rust](rustgym/src/leetcode/_1196_how_many_apples_can_you_put_into_the_basket.rs)|
-|119|[Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii)|array|[Rust](rustgym/src/leetcode/_119_pascal_triangle_2.rs)|
-|1200|[Minimum Absolute Difference](https://leetcode.com/problems/minimum-absolute-difference)|math line-sweep|[Rust](rustgym/src/leetcode/_1200_minimum_absolute_difference.rs)|
-|1207|[Unique Number of Occurrences](https://leetcode.com/problems/unique-number-of-occurrences)|tree depth-first-search|[Rust](rustgym/src/leetcode/_1207_unique_number_of_occurrences.rs)|
-|1213|[Intersection of Three Sorted Arrays](https://leetcode.com/problems/intersection-of-three-sorted-arrays)|math dynamic-programming|[Rust](rustgym/src/leetcode/_1213_intersection_of_three_sorted_arrays.rs)|
-|1217|[Minimum Cost to Move Chips to The Same Position](https://leetcode.com/problems/minimum-cost-to-move-chips-to-the-same-position)|array sort|[Rust](rustgym/src/leetcode/_1217_play_with_chips.rs)|
-|121|[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock)|array dynamic-programming|[Rust](rustgym/src/leetcode/_121_best_time_to_buy_and_sell_stock.rs)|
-|1221|[Split a String in Balanced Strings](https://leetcode.com/problems/split-a-string-in-balanced-strings)|array|[Rust](rustgym/src/leetcode/_1221_split_a_string_in_balanced_strings.rs)|
-|1228|[Missing Number In Arithmetic Progression](https://leetcode.com/problems/missing-number-in-arithmetic-progression)|dynamic-programming stack tree|[Rust](rustgym/src/leetcode/_1228_missing_number_in_arithmetic_progression.rs)|
-|122|[Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii)|array greedy|[Rust](rustgym/src/leetcode/_122_best_time_to_buy_and_sell_stock_2.rs)|
-|1232|[Check If It Is a Straight Line](https://leetcode.com/problems/check-if-it-is-a-straight-line)|array binary-search|[Rust](rustgym/src/leetcode/_1232_check_if_it_is_a_straight_line.rs)|
-|[1237](rustgym/desc/leetcode/1237.md)|[Find Positive Integer Solution for a Given Equation](https://leetcode.com/problems/find-positive-integer-solution-for-a-given-equation)||[Rust](rustgym/src/leetcode/_1237_find_positive_integer_solution_for_a_given_equation.rs)|
-|1243|[Array Transformation](https://leetcode.com/problems/array-transformation)|tree depth-first-search|[Rust](rustgym/src/leetcode/_1243_array_transformation.rs)|
-|1252|[Cells with Odd Values in a Matrix](https://leetcode.com/problems/cells-with-odd-values-in-a-matrix)|string|[Rust](rustgym/src/leetcode/_1252_cells_with_odd_values_in_a_matrix.rs)|
-|125|[Valid Palindrome](https://leetcode.com/problems/valid-palindrome)|two-pointers string|[Rust](rustgym/src/leetcode/_125_valid_palindrome.rs)|
-|1260|[Shift 2D Grid](https://leetcode.com/problems/shift-2d-grid)|math|[Rust](rustgym/src/leetcode/_1260_shift_2d_grid.rs)|
-|1266|[Minimum Time Visiting All Points](https://leetcode.com/problems/minimum-time-visiting-all-points)||[Rust](rustgym/src/leetcode/_1266_minimum_time_visition_all_points.rs)|
-|1271|[Hexspeak](https://leetcode.com/problems/hexspeak)|depth-first-search breadth-first-search|[Rust](rustgym/src/leetcode/_1271_hexspeak.rs)|
-|1275|[Find Winner on a Tic Tac Toe Game](https://leetcode.com/problems/find-winner-on-a-tic-tac-toe-game)|graph|[Rust](rustgym/src/leetcode/_1275_find_winner_on_a_tic_tac_toe_game.rs)|
-|1281|[Subtract the Product and Sum of Digits of an Integer](https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer)|array string|[Rust](rustgym/src/leetcode/_1281_subtract_the_product_and_sum_of_digits_of_an_integer.rs)|
-|1287|[Element Appearing More Than 25% In Sorted Array](https://leetcode.com/problems/element-appearing-more-than-25-in-sorted-array)|array|[Rust](rustgym/src/leetcode/_1287_element_appearing_more_than_25_in_sorted_array.rs)|
-|1290|[Convert Binary Number in a Linked List to Integer](https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer)|dynamic-programming|[Rust](rustgym/src/leetcode/_1290_convert_binary_number_in_a_linked_list_to_integer.rs)|
-|1295|[Find Numbers with Even Number of Digits](https://leetcode.com/problems/find-numbers-with-even-number-of-digits)||[Rust](rustgym/src/leetcode/_1295_find_numbers_with_even_number_of_digits.rs)|
-|1299|[Replace Elements with Greatest Element on Right Side](https://leetcode.com/problems/replace-elements-with-greatest-element-on-right-side)|dynamic-programming|[Rust](rustgym/src/leetcode/_1299_replace_elements_with_greatest_element_on_right_side.rs)|
-|1304|[Find N Unique Integers Sum up to Zero](https://leetcode.com/problems/find-n-unique-integers-sum-up-to-zero)|dynamic-programming greedy|[Rust](rustgym/src/leetcode/_1304_find_n_unique_integers_sum_up_to_zero.rs)|
-|1309|[Decrypt String from Alphabet to Integer Mapping](https://leetcode.com/problems/decrypt-string-from-alphabet-to-integer-mapping)|depth-first-search graph topological-sort|[Rust](rustgym/src/leetcode/_1309_decrypt_string_from_alphabet_to_integer_mapping.rs)|
-|1313|[Decompress Run-Length Encoded List](https://leetcode.com/problems/decompress-run-length-encoded-list)||[Rust](rustgym/src/leetcode/_1313_decompres_run_length_encoded_list.rs)|
-|1317|[Convert Integer to the Sum of Two No-Zero Integers](https://leetcode.com/problems/convert-integer-to-the-sum-of-two-no-zero-integers)||[Rust](rustgym/src/leetcode/_1317_convert_integer_to_the_sum_of_two_no_zero_integers.rs)|
-|1323|[Maximum 69 Number](https://leetcode.com/problems/maximum-69-number)||[Rust](rustgym/src/leetcode/_1323_maximum_69_number.rs)|
-|1331|[Rank Transform of an Array](https://leetcode.com/problems/rank-transform-of-an-array)|backtracking|[Rust](rustgym/src/leetcode/_1331_rank_transform_of_an_array.rs)|
-|1332|[Remove Palindromic Subsequences](https://leetcode.com/problems/remove-palindromic-subsequences)|dynamic-programming|[Rust](rustgym/src/leetcode/_1332_remove_palindromic_subsequences.rs)|
-|1337|[The K Weakest Rows in a Matrix](https://leetcode.com/problems/the-k-weakest-rows-in-a-matrix)|design|[Rust](rustgym/src/leetcode/_1337_the_k_weakest_rows_in_a_matrix.rs)|
-|1342|[Number of Steps to Reduce a Number to Zero](https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero)|array|[Rust](rustgym/src/leetcode/_1342_number_of_steps_to_reduce_a_number_to_zero.rs)|
-|1346|[Check If N and Its Double Exist](https://leetcode.com/problems/check-if-n-and-its-double-exist)||[Rust](rustgym/src/leetcode/_1346_check_if_n_and_its_double_exist.rs)|
-|1351|[Count Negative Numbers in a Sorted Matrix](https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix)|two-pointers string|[Rust](rustgym/src/leetcode/_1351_count_negative_numbers_in_a_sorted_matrix.rs)|
-|1356|[Sort Integers by The Number of 1 Bits](https://leetcode.com/problems/sort-integers-by-the-number-of-1-bits)||[Rust](rustgym/src/leetcode/_1356_sort_integers_by_the_number_of_1_bits.rs)|
-|1360|[Number of Days Between Two Dates](https://leetcode.com/problems/number-of-days-between-two-dates)|backtracking bit-manipulation|[Rust](rustgym/src/leetcode/_1360_number_of_days_between_two_dates.rs)|
-|1365|[How Many Numbers Are Smaller Than the Current Number](https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number)||[Rust](rustgym/src/leetcode/_1365_how_many_numbers_are_smaller_than_the_current_number.rs)|
-|136|[Single Number](https://leetcode.com/problems/single-number)|hash-table bit-manipulation|[Rust](rustgym/src/leetcode/_136_single_number.rs)|
-|1370|[Increasing Decreasing String](https://leetcode.com/problems/increasing-decreasing-string)|two-pointers|[Rust](rustgym/src/leetcode/_1370_increasing_decreasing_string.rs)|
-|1374|[Generate a String With Characters That Have Odd Counts](https://leetcode.com/problems/generate-a-string-with-characters-that-have-odd-counts)|array|[Rust](rustgym/src/leetcode/_1374_generate_a_string_with_characters_that_have_odd_counts.rs)|
-|1380|[Lucky Numbers in a Matrix](https://leetcode.com/problems/lucky-numbers-in-a-matrix)|depth-first-search|[Rust](rustgym/src/leetcode/_1380_lucky_numbers_in_a_matrix.rs)|
-|1385|[Find the Distance Value Between Two Arrays](https://leetcode.com/problems/find-the-distance-value-between-two-arrays)||[Rust](rustgym/src/leetcode/_1385_find_the_distance_value_between_two_arrays.rs)|
-|1389|[Create Target Array in the Given Order](https://leetcode.com/problems/create-target-array-in-the-given-order)|breadth-first-search|[Rust](rustgym/src/leetcode/_1389_create_target_array_in_the_given_order.rs)|
-|1394|[Find Lucky Integer in an Array](https://leetcode.com/problems/find-lucky-integer-in-an-array)||[Rust](rustgym/src/leetcode/_1394_find_lucky_integer_in_an_array.rs)|
-|1399|[Count Largest Group](https://leetcode.com/problems/count-largest-group)||[Rust](rustgym/src/leetcode/_1399_count_largest_group.rs)|
-|13|[Roman to Integer](https://leetcode.com/problems/roman-to-integer)|math string|[Rust](rustgym/src/leetcode/_13_roman_to_integer.rs)|
-|1403|[Minimum Subsequence in Non-Increasing Order](https://leetcode.com/problems/minimum-subsequence-in-non-increasing-order)|dynamic-programming|[Rust](rustgym/src/leetcode/_1403_minimum_subsequence_in_non_increasing_order.rs)|
-|1408|[String Matching in an Array](https://leetcode.com/problems/string-matching-in-an-array)|binary-search|[Rust](rustgym/src/leetcode/_1408_string_matching_in_an_array.rs)|
-|1413|[Minimum Value to Get Positive Step by Step Sum](https://leetcode.com/problems/minimum-value-to-get-positive-step-by-step-sum)|array binary-search|[Rust](rustgym/src/leetcode/_1413_minimum_value_to_get_positive_step_by_step_sum.rs)|
-|1417|[Reformat The String](https://leetcode.com/problems/reformat-the-string)||[Rust](rustgym/src/leetcode/_1417_reformat_the_string.rs)|
-|1422|[Maximum Score After Splitting a String](https://leetcode.com/problems/maximum-score-after-splitting-a-string)|array greedy|[Rust](rustgym/src/leetcode/_1422_maximum_score_after_splitting_a_string.rs)|
-|1426|[Counting Elements](https://leetcode.com/problems/counting-elements)|array|[Rust](rustgym/src/leetcode/_1426_counting_elements.rs)|
-|1427|[Perform String Shifts](https://leetcode.com/problems/perform-string-shifts)|sort tree|[Rust](rustgym/src/leetcode/_1427_perform_string_shifts.rs)|
-|1431|[Kids With the Greatest Number of Candies](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies)||[Rust](rustgym/src/leetcode/_1431_kids_with_the_greatest_number_of_candies.rs)|
-|1436|[Destination City](https://leetcode.com/problems/destination-city)|hash-table string breadth-first-search|[Rust](rustgym/src/leetcode/_1436_destination_city.rs)|
-|1441|[Build an Array With Stack Operations](https://leetcode.com/problems/build-an-array-with-stack-operations)|bit-manipulation|[Rust](rustgym/src/leetcode/_1441_build_an_array_with_stack_operations.rs)|
-|1446|[Consecutive Characters](https://leetcode.com/problems/consecutive-characters)|math|[Rust](rustgym/src/leetcode/_1446_consecutive_characters.rs)|
-|1450|[Number of Students Doing Homework at a Given Time](https://leetcode.com/problems/number-of-students-doing-homework-at-a-given-time)|tree|[Rust](rustgym/src/leetcode/_1450_number_of_students_doing_homework_at_a_given_time.rs)|
-|1455|[Check If a Word Occurs As a Prefix of Any Word in a Sentence](https://leetcode.com/problems/check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence)|array sort|[Rust](rustgym/src/leetcode/_1455_check_if_a_word_occurs_as_a_prefix_of_any_word_in_a_sentence.rs)|
-|1460|[Make Two Arrays Equal by Reversing Sub-arrays](https://leetcode.com/problems/make-two-arrays-equal-by-reversing-sub-arrays)|string|[Rust](rustgym/src/leetcode/_1460_make_two_arrays_equal_by_reversing_sub_arrays.rs)|
-|1464|[Maximum Product of Two Elements in an Array](https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array)|array greedy|[Rust](rustgym/src/leetcode/_1464_maximum_product_of_two_elements_in_an_array.rs)|
-|1469|[Find All The Lonely Nodes](https://leetcode.com/problems/find-all-the-lonely-nodes)|string|[Rust](rustgym/src/leetcode/_1469_find_all_the_lonely_nodes.rs)|
-|1470|[Shuffle the Array](https://leetcode.com/problems/shuffle-the-array)|design|[Rust](rustgym/src/leetcode/_1470_shuffle_the_array.rs)|
-|1474|[Delete N Nodes After M Nodes of a Linked List](https://leetcode.com/problems/delete-n-nodes-after-m-nodes-of-a-linked-list)|dynamic-programming tree|[Rust](rustgym/src/leetcode/_1474_delete_n_nodes_after_m_nodes_of_a_linked_list.rs)|
-|1475|[Final Prices With a Special Discount in a Shop](https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop)|dynamic-programming binary-search-tree|[Rust](rustgym/src/leetcode/_1475_final_prices_with_a_speial_discount_in_shop.rs)|
-|1480|[Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array)||[Rust](rustgym/src/leetcode/_1480_running_sum_of_1d_array.rs)|
-|1486|[XOR Operation in an Array](https://leetcode.com/problems/xor-operation-in-an-array)|array|[Rust](rustgym/src/leetcode/_1486_xor_operation_in_an_array.rs)|
-|1491|[Average Salary Excluding the Minimum and Maximum Salary](https://leetcode.com/problems/average-salary-excluding-the-minimum-and-maximum-salary)|array|[Rust](rustgym/src/leetcode/_1491_average_salary_excluding_minimum_and_maximum_salary.rs)|
-|1496|[Path Crossing](https://leetcode.com/problems/path-crossing)|array|[Rust](rustgym/src/leetcode/_1496_path_crossing.rs)|
-|14|[Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix)|string|[Rust](rustgym/src/leetcode/_14_longest_common_prefix.rs)|
-|1502|[Can Make Arithmetic Progression From Sequence](https://leetcode.com/problems/can-make-arithmetic-progression-from-sequence)|greedy|[Rust](rustgym/src/leetcode/_1502_can_make_arithmetic_progression_from_sequence.rs)|
-|1507|[Reformat Date](https://leetcode.com/problems/reformat-date)|depth-first-search breadth-first-search|[Rust](rustgym/src/leetcode/_1507_reformat_date.rs)|
-|1512|[Number of Good Pairs](https://leetcode.com/problems/number-of-good-pairs)|design|[Rust](rustgym/src/leetcode/_1512_number_of_good_pairs.rs)|
-|1518|[Water Bottles](https://leetcode.com/problems/water-bottles)||[Rust](rustgym/src/leetcode/_1518_water_bottles.rs)|
-|1523|[Count Odd Numbers in an Interval Range](https://leetcode.com/problems/count-odd-numbers-in-an-interval-range)||[Rust](rustgym/src/leetcode/_1523_cound_odd_numbers_in_interval_range.rs)|
-|1528|[Shuffle String](https://leetcode.com/problems/shuffle-string)|array|[Rust](rustgym/src/leetcode/_1528_shuffle_string.rs)|
-|1534|[Count Good Triplets](https://leetcode.com/problems/count-good-triplets)|string|[Rust](rustgym/src/leetcode/_1534_count_good_triplets.rs)|
-|1539|[Kth Missing Positive Number](https://leetcode.com/problems/kth-missing-positive-number)|array sort|[Rust](rustgym/src/leetcode/_1539_kth_missing_positive_number.rs)|
-|1544|[Make The String Great](https://leetcode.com/problems/make-the-string-great)|tree depth-first-search|[Rust](rustgym/src/leetcode/_1544_make_the_string_great.rs)|
-|1550|[Three Consecutive Odds](https://leetcode.com/problems/three-consecutive-odds)|heap|[Rust](rustgym/src/leetcode/_1550_three_consecutive_odds.rs)|
-|1556|[Thousand Separator](https://leetcode.com/problems/thousand-separator)|array|[Rust](rustgym/src/leetcode/_1556_thousand_separator.rs)|
-|155|[Min Stack](https://leetcode.com/problems/min-stack)|stack design|[Rust](rustgym/src/leetcode/_155_min_stack.rs)|
-|1560|[Most Visited Sector in  a Circular Track](https://leetcode.com/problems/most-visited-sector-in-a-circular-track)|array|[Rust](rustgym/src/leetcode/_1560_most_visited_sector_in_a_circular_track.rs)|
-|1566|[Detect Pattern of Length M Repeated K or More Times](https://leetcode.com/problems/detect-pattern-of-length-m-repeated-k-or-more-times)|string|[Rust](rustgym/src/leetcode/_1566_detect_pattern_of_length_m_repeated_k_or_more_times.rs)|
-|1572|[Matrix Diagonal Sum](https://leetcode.com/problems/matrix-diagonal-sum)|array|[Rust](rustgym/src/leetcode/_1572_matrix_diagonal_sum.rs)|
-|1576|[Replace All ?'s to Avoid Consecutive Repeating Characters](https://leetcode.com/problems/replace-all-s-to-avoid-consecutive-repeating-characters)|tree depth-first-search|[Rust](rustgym/src/leetcode/_1576_replace_all_to_avoid_consecutive_repeating_characters.rs)|
-|[157](rustgym/desc/leetcode/157.md)|[Read N Characters Given Read4](https://leetcode.com/problems/read-n-characters-given-read4)|string|[Rust](rustgym/src/leetcode/_157_read_n_characters_given_read4.rs)|
-|1582|[Special Positions in a Binary Matrix](https://leetcode.com/problems/special-positions-in-a-binary-matrix)|design|[Rust](rustgym/src/leetcode/_1582_special_positions_in_a_binary_matrix.rs)|
-|1588|[Sum of All Odd Length Subarrays](https://leetcode.com/problems/sum-of-all-odd-length-subarrays)||[Rust](rustgym/src/leetcode/_1588_sum_of_all_odd_length_subarrays.rs)|
-|1592|[Rearrange Spaces Between Words](https://leetcode.com/problems/rearrange-spaces-between-words)||[Rust](rustgym/src/leetcode/_1592_rearrange_spaces_between_words.rs)|
-|1598|[Crawler Log Folder](https://leetcode.com/problems/crawler-log-folder)||[Rust](rustgym/src/leetcode/_1598_crawler_log_folder.rs)|
-|1603|[Design Parking System](https://leetcode.com/problems/design-parking-system)|array|[Rust](rustgym/src/leetcode/_1603_design_parking_system.rs)|
-|1608|[Special Array With X Elements Greater Than or Equal X](https://leetcode.com/problems/special-array-with-x-elements-greater-than-or-equal-x)||[Rust](rustgym/src/leetcode/_1608_special_array_with_x_elements_greater_than_or_equal_x.rs)|
-|1614|[Maximum Nesting Depth of the Parentheses](https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses)||[Rust](rustgym/src/leetcode/_1614_maximum_nesting_depth_of_the_parentheses.rs)|
-|1619|[Mean of Array After Removing Some Elements](https://leetcode.com/problems/mean-of-array-after-removing-some-elements)|string|[Rust](rustgym/src/leetcode/_1619_mean_of_array_after_removing_some_elements.rs)|
-|1624|[Largest Substring Between Two Equal Characters](https://leetcode.com/problems/largest-substring-between-two-equal-characters)|hash-table tree depth-first-search breadth-first-search|[Rust](rustgym/src/leetcode/_1624_largest_substring_between_two_equal_characters.rs)|
-|1629|[Slowest Key](https://leetcode.com/problems/slowest-key)|greedy|[Rust](rustgym/src/leetcode/_1629_slowest_key.rs)|
-|[1636](rustgym/desc/leetcode/1636.md)|[Sort Array by Increasing Frequency](https://leetcode.com/problems/sort-array-by-increasing-frequency)|math string|[Rust](rustgym/src/leetcode/_1636_sort_array_by_increasing_frequency.rs)|
-|163|[Missing Ranges](https://leetcode.com/problems/missing-ranges)|array|[Rust](rustgym/src/leetcode/_163_missing_ranges.rs)|
-|[1640](rustgym/desc/leetcode/1640.md)|[Check Array Formation Through Concatenation](https://leetcode.com/problems/check-array-formation-through-concatenation)|array design|[Rust](rustgym/src/leetcode/_1640_check_array_formation_through_concatenation.rs)|
-|[1646](rustgym/desc/leetcode/1646.md)|[Get Maximum in Generated Array](https://leetcode.com/problems/get-maximum-in-generated-array)|array hash-table|[Rust](rustgym/src/leetcode/_1646_get_maximum_in_generated_array.rs)|
-|[1652](rustgym/desc/leetcode/1652.md)|[Defuse the Bomb](https://leetcode.com/problems/defuse-the-bomb)|string|[Rust](rustgym/src/leetcode/_1652_defuse_the_bomb.rs)|
-|[1656](rustgym/desc/leetcode/1656.md)|[Design an Ordered Stream](https://leetcode.com/problems/design-an-ordered-stream)|array|[Rust](rustgym/src/leetcode/_1656_design_an_ordered_stream.rs)|
-|1662|[Check If Two String Arrays are Equivalent](https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent)|greedy|[Rust](rustgym/src/leetcode/_1662_check_if_two_string_arrays_are_equivalent.rs)|
-|[1668](rustgym/desc/leetcode/1668.md)|[Maximum Repeating Substring](https://leetcode.com/problems/maximum-repeating-substring)|string bit-manipulation|[Rust](rustgym/src/leetcode/_1668_maximum_repeating_substring.rs)|
-|1672|[Richest Customer Wealth](https://leetcode.com/problems/richest-customer-wealth)|binary-search|[Rust](rustgym/src/leetcode/_1672_richest_customer_wealth.rs)|
-|[1678](rustgym/desc/leetcode/1678.md)|[Goal Parser Interpretation](https://leetcode.com/problems/goal-parser-interpretation)|string|[Rust](rustgym/src/leetcode/_1678_goal_parser_interpretation.rs)|
-|167|[Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted)|array two-pointers binary-search|[Rust](rustgym/src/leetcode/_167_two_sum_2.rs)|
-|[1684](rustgym/desc/leetcode/1684.md)|[Count the Number of Consistent Strings](https://leetcode.com/problems/count-the-number-of-consistent-strings)|binary-search|[Rust](rustgym/src/leetcode/_1684_count_the_number_of_consistent_strings.rs)|
-|[1688](rustgym/desc/leetcode/1688.md)|[Count of Matches in Tournament](https://leetcode.com/problems/count-of-matches-in-tournament)||[Rust](rustgym/src/leetcode/_1688_count_of_matches_in_tournament.rs)|
-|168|[Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title)|math|[Rust](rustgym/src/leetcode/_168_excel_sheet_column_title.rs)|
-|169|[Majority Element](https://leetcode.com/problems/majority-element)|array divide-and-conquer bit-manipulation|[Rust](rustgym/src/leetcode/_169_majority_element.rs)|
-|170|[Two Sum III - Data structure design](https://leetcode.com/problems/two-sum-iii-data-structure-design)|hash-table design|[Rust](rustgym/src/leetcode/_170_two_sum_3.rs)|
-|171|[Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number)|math|[Rust](rustgym/src/leetcode/_171_excel_sheet_column_number.rs)|
-|172|[Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes)|math|[Rust](rustgym/src/leetcode/_172_factorial_trailing_zeroes.rs)|
-|[190](rustgym/desc/leetcode/190.md)|[Reverse Bits](https://leetcode.com/problems/reverse-bits)|bit-manipulation|[Rust](rustgym/src/leetcode/_190_reverse_bits.rs)|
-|191|[Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits)|bit-manipulation|[Rust](rustgym/src/leetcode/_191_number_of_1_bits.rs)|
-|1|[Two Sum](https://leetcode.com/problems/two-sum)|array hash-table|[Rust](rustgym/src/leetcode/_1_two_sum.rs)|
-|202|[Happy Number](https://leetcode.com/problems/happy-number)|hash-table math|[Rust](rustgym/src/leetcode/_202_happy_number.rs)|
-|203|[Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements)|linked-list|[Rust](rustgym/src/leetcode/_203_remove_linked_list_elements.rs)|
-|204|[Count Primes](https://leetcode.com/problems/count-primes)|hash-table math|[Rust](rustgym/src/leetcode/_204_count_primes.rs)|
-|205|[Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings)|hash-table|[Rust](rustgym/src/leetcode/_205_isomorphic_strings.rs)|
-|206|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list)|linked-list|[Rust](rustgym/src/leetcode/_206_reverse_linked_list.rs)|
-|20|[Valid Parentheses](https://leetcode.com/problems/valid-parentheses)|string stack|[Rust](rustgym/src/leetcode/_20_valid_parentheses.rs)|
-|217|[Contains Duplicate](https://leetcode.com/problems/contains-duplicate)|array hash-table|[Rust](rustgym/src/leetcode/_217_contains_duplicate.rs)|
-|219|[Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii)|array hash-table|[Rust](rustgym/src/leetcode/_219_contains_duplicate_2.rs)|
-|21|[Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists)|linked-list|[Rust](rustgym/src/leetcode/_21_merge_two_sorted_lists.rs)|
-|225|[Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues)|stack design|[Rust](rustgym/src/leetcode/_225_implement_stack_using_queues.rs)|
-|226|[Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree)|tree|[Rust](rustgym/src/leetcode/_226_invert_binary_tree.rs)|
-|228|[Summary Ranges](https://leetcode.com/problems/summary-ranges)|array|[Rust](rustgym/src/leetcode/_228_summary_ranges.rs)|
-|231|[Power of Two](https://leetcode.com/problems/power-of-two)|math bit-manipulation|[Rust](rustgym/src/leetcode/_231_power_of_two.rs)|
-|232|[Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks)|stack design|[Rust](rustgym/src/leetcode/_232_implent_queue_using_stacks.rs)|
-|234|[Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list)|linked-list two-pointers|[Rust](rustgym/src/leetcode/_234_palindrome_linked_list.rs)|
-|[235](rustgym/desc/leetcode/235.md)|[Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree)|tree|[Rust](rustgym/src/leetcode/_235_lowest_common_ancestor_of_a_binary_search_tree.rs)|
-|242|[Valid Anagram](https://leetcode.com/problems/valid-anagram)|hash-table sort|[Rust](rustgym/src/leetcode/_242_valid_anagram.rs)|
-|243|[Shortest Word Distance](https://leetcode.com/problems/shortest-word-distance)|array|[Rust](rustgym/src/leetcode/_243_shortest_word_distance.rs)|
-|246|[Strobogrammatic Number](https://leetcode.com/problems/strobogrammatic-number)|hash-table math|[Rust](rustgym/src/leetcode/_246_strobogrammantic_number.rs)|
-|252|[Meeting Rooms](https://leetcode.com/problems/meeting-rooms)|sort|[Rust](rustgym/src/leetcode/_252_meeting_rooms.rs)|
-|257|[Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths)|tree depth-first-search|[Rust](rustgym/src/leetcode/_257_binary_tree_paths.rs)|
-|258|[Add Digits](https://leetcode.com/problems/add-digits)|math|[Rust](rustgym/src/leetcode/_258_add_digits.rs)|
-|263|[Ugly Number](https://leetcode.com/problems/ugly-number)|math|[Rust](rustgym/src/leetcode/_263_ugly_number.rs)|
-|266|[Palindrome Permutation](https://leetcode.com/problems/palindrome-permutation)|hash-table|[Rust](rustgym/src/leetcode/_266_palindrome_permutation.rs)|
-|268|[Missing Number](https://leetcode.com/problems/missing-number)|array math bit-manipulation|[Rust](rustgym/src/leetcode/_268_missing_number.rs)|
-|26|[Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array)|array two-pointers|[Rust](rustgym/src/leetcode/_26_remove_duplicates_from_sorted_array.rs)|
-|270|[Closest Binary Search Tree Value](https://leetcode.com/problems/closest-binary-search-tree-value)|binary-search tree|[Rust](rustgym/src/leetcode/_270_closest_binary_search_tree_value.rs)|
-|276|[Paint Fence](https://leetcode.com/problems/paint-fence)|dynamic-programming|[Rust](rustgym/src/leetcode/_276_paint_fence.rs)|
-|[278](rustgym/desc/leetcode/278.md)|[First Bad Version](https://leetcode.com/problems/first-bad-version)|binary-search|[Rust](rustgym/src/leetcode/_278_first_bad_version.rs)|
-|27|[Remove Element](https://leetcode.com/problems/remove-element)|array two-pointers|[Rust](rustgym/src/leetcode/_27_remove_element.rs)|
-|283|[Move Zeroes](https://leetcode.com/problems/move-zeroes)|array two-pointers|[Rust](rustgym/src/leetcode/_283_move_zeros.rs)|
-|28|[Implement strStr()](https://leetcode.com/problems/implement-strstr)|two-pointers string|[Rust](rustgym/src/leetcode/_28_implement_str_str.rs)|
-|290|[Word Pattern](https://leetcode.com/problems/word-pattern)|hash-table|[Rust](rustgym/src/leetcode/_290_word_pattern.rs)|
-|292|[Nim Game](https://leetcode.com/problems/nim-game)|brainteaser minimax|[Rust](rustgym/src/leetcode/_292_nim_game.rs)|
-|293|[Flip Game](https://leetcode.com/problems/flip-game)|string|[Rust](rustgym/src/leetcode/_293_flip_game.rs)|
-|303|[Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable)|dynamic-programming|[Rust](rustgym/src/leetcode/_303_range_sum_query.rs)|
-|326|[Power of Three](https://leetcode.com/problems/power-of-three)|math|[Rust](rustgym/src/leetcode/_326_power_of_three.rs)|
-|339|[Nested List Weight Sum](https://leetcode.com/problems/nested-list-weight-sum)|depth-first-search|[Rust](rustgym/src/leetcode/_339_nested_list_weight_sum.rs)|
-|342|[Power of Four](https://leetcode.com/problems/power-of-four)|bit-manipulation|[Rust](rustgym/src/leetcode/_342_power_of_four.rs)|
-|344|[Reverse String](https://leetcode.com/problems/reverse-string)|two-pointers string|[Rust](rustgym/src/leetcode/_344_reverse_string.rs)|
-|345|[Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string)|two-pointers string|[Rust](rustgym/src/leetcode/_345_reverse_vowels_of_a_string.rs)|
-|346|[Moving Average from Data Stream](https://leetcode.com/problems/moving-average-from-data-stream)|design queue|[Rust](rustgym/src/leetcode/_346_moving_average_from_data_stream.rs)|
-|349|[Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays)|hash-table two-pointers binary-search sort|[Rust](rustgym/src/leetcode/_349_intersection_of_two_arrays.rs)|
-|350|[Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii)|hash-table two-pointers binary-search sort|[Rust](rustgym/src/leetcode/_350_intersection_of_two_arrays_2.rs)|
-|359|[Logger Rate Limiter](https://leetcode.com/problems/logger-rate-limiter)|hash-table design|[Rust](rustgym/src/leetcode/_359_logger_rate_limiter.rs)|
-|35|[Search Insert Position](https://leetcode.com/problems/search-insert-position)|array binary-search|[Rust](rustgym/src/leetcode/_35_search_insert_position.rs)|
-|367|[Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square)|math binary-search|[Rust](rustgym/src/leetcode/_367_valid_perfect_square.rs)|
-|374|[Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower)|binary-search|[Rust](rustgym/src/leetcode/_374_guess_number_higher_or_lower.rs)|
-|383|[Ransom Note](https://leetcode.com/problems/ransom-note)|string|[Rust](rustgym/src/leetcode/_383_ransom_note.rs)|
-|387|[First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string)|hash-table string|[Rust](rustgym/src/leetcode/_387_first_unique_character_in_a_string.rs)|
-|389|[Find the Difference](https://leetcode.com/problems/find-the-difference)|hash-table bit-manipulation|[Rust](rustgym/src/leetcode/_389_find_the_difference.rs)|
-|38|[Count and Say](https://leetcode.com/problems/count-and-say)|string|[Rust](rustgym/src/leetcode/_38_count_and_say.rs)|
-|392|[Is Subsequence](https://leetcode.com/problems/is-subsequence)|binary-search dynamic-programming greedy|[Rust](rustgym/src/leetcode/_392_is_subsequence.rs)|
-|401|[Binary Watch](https://leetcode.com/problems/binary-watch)|backtracking bit-manipulation|[Rust](rustgym/src/leetcode/_401_binary_watch.rs)|
-|404|[Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves)|tree|[Rust](rustgym/src/leetcode/_404_sum_of_left_leaves.rs)|
-|405|[Convert a Number to Hexadecimal](https://leetcode.com/problems/convert-a-number-to-hexadecimal)|bit-manipulation|[Rust](rustgym/src/leetcode/_405_convert_a_number_to_hexadecimal.rs)|
-|408|[Valid Word Abbreviation](https://leetcode.com/problems/valid-word-abbreviation)|string|[Rust](rustgym/src/leetcode/_408_valid_word_abbreviation.rs)|
-|409|[Longest Palindrome](https://leetcode.com/problems/longest-palindrome)|hash-table|[Rust](rustgym/src/leetcode/_409_longest_palindrome.rs)|
-|412|[Fizz Buzz](https://leetcode.com/problems/fizz-buzz)||[Rust](rustgym/src/leetcode/_412_fizz_buzz.rs)|
-|414|[Third Maximum Number](https://leetcode.com/problems/third-maximum-number)|array|[Rust](rustgym/src/leetcode/_414_third_maximum_number.rs)|
-|415|[Add Strings](https://leetcode.com/problems/add-strings)|string|[Rust](rustgym/src/leetcode/_415_add_strings.rs)|
-|422|[Valid Word Square](https://leetcode.com/problems/valid-word-square)||[Rust](rustgym/src/leetcode/_422_valid_word_square.rs)|
-|434|[Number of Segments in a String](https://leetcode.com/problems/number-of-segments-in-a-string)|string|[Rust](rustgym/src/leetcode/_434_number_of_segments_in_a_string.rs)|
-|441|[Arranging Coins](https://leetcode.com/problems/arranging-coins)|math binary-search|[Rust](rustgym/src/leetcode/_441_arranging_coins.rs)|
-|448|[Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array)|array|[Rust](rustgym/src/leetcode/_448_find_all_numbers_disappeared_in_an_array.rs)|
-|453|[Minimum Moves to Equal Array Elements](https://leetcode.com/problems/minimum-moves-to-equal-array-elements)|math|[Rust](rustgym/src/leetcode/_453_minimum_moves_to_equal_array_elements.rs)|
-|455|[Assign Cookies](https://leetcode.com/problems/assign-cookies)|greedy|[Rust](rustgym/src/leetcode/_455_assign_cookies.rs)|
-|459|[Repeated Substring Pattern](https://leetcode.com/problems/repeated-substring-pattern)|string|[Rust](rustgym/src/leetcode/_459_repeated_substring_pattern.rs)|
-|461|[Hamming Distance](https://leetcode.com/problems/hamming-distance)|bit-manipulation|[Rust](rustgym/src/leetcode/_461_hamming_distance.rs)|
-|463|[Island Perimeter](https://leetcode.com/problems/island-perimeter)|hash-table|[Rust](rustgym/src/leetcode/_463_island_perimeter.rs)|
-|476|[Number Complement](https://leetcode.com/problems/number-complement)|bit-manipulation|[Rust](rustgym/src/leetcode/_476_number_complement.rs)|
-|482|[License Key Formatting](https://leetcode.com/problems/license-key-formatting)||[Rust](rustgym/src/leetcode/_482_license_key_formatting.rs)|
-|485|[Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones)|array|[Rust](rustgym/src/leetcode/_485_max_consecutive_ones.rs)|
-|492|[Construct the Rectangle](https://leetcode.com/problems/construct-the-rectangle)|math|[Rust](rustgym/src/leetcode/_492_construct_the_rectangle.rs)|
-|496|[Next Greater Element I](https://leetcode.com/problems/next-greater-element-i)|stack|[Rust](rustgym/src/leetcode/_496_next_greater_element_1.rs)|
-|500|[Keyboard Row](https://leetcode.com/problems/keyboard-row)|hash-table|[Rust](rustgym/src/leetcode/_500_keyboard_row.rs)|
-|501|[Find Mode in Binary Search Tree](https://leetcode.com/problems/find-mode-in-binary-search-tree)|tree|[Rust](rustgym/src/leetcode/_501_find_mode_in_binary_search_tree.rs)|
-|504|[Base 7](https://leetcode.com/problems/base-7)||[Rust](rustgym/src/leetcode/_504_base_7.rs)|
-|506|[Relative Ranks](https://leetcode.com/problems/relative-ranks)||[Rust](rustgym/src/leetcode/_506_relative_ranks.rs)|
-|507|[Perfect Number](https://leetcode.com/problems/perfect-number)|math|[Rust](rustgym/src/leetcode/_507_perfect_number.rs)|
-|509|[Fibonacci Number](https://leetcode.com/problems/fibonacci-number)|tree|[Rust](rustgym/src/leetcode/_509_fibonacci_number.rs)|
-|520|[Detect Capital](https://leetcode.com/problems/detect-capital)|string|[Rust](rustgym/src/leetcode/_520_detect_captial.rs)|
-|521|[Longest Uncommon Subsequence I](https://leetcode.com/problems/longest-uncommon-subsequence-i)|string brainteaser|[Rust](rustgym/src/leetcode/_521_longest_uncommon_subsequence_1.rs)|
-|530|[Minimum Absolute Difference in BST](https://leetcode.com/problems/minimum-absolute-difference-in-bst)|tree|[Rust](rustgym/src/leetcode/_530_minimum_absolute_difference_in_bst.rs)|
-|53|[Maximum Subarray](https://leetcode.com/problems/maximum-subarray)|array divide-and-conquer dynamic-programming|[Rust](rustgym/src/leetcode/_53_maximum_subarray.rs)|
-|541|[Reverse String II](https://leetcode.com/problems/reverse-string-ii)|string|[Rust](rustgym/src/leetcode/_541_reverse_string_2.rs)|
-|543|[Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree)|tree|[Rust](rustgym/src/leetcode/_543_diameter_of_binary_tree.rs)|
-|551|[Student Attendance Record I](https://leetcode.com/problems/student-attendance-record-i)|string|[Rust](rustgym/src/leetcode/_551_student_attendance_record_1.rs)|
-|557|[Reverse Words in a String III](https://leetcode.com/problems/reverse-words-in-a-string-iii)|string|[Rust](rustgym/src/leetcode/_557_reverse_words_in_a_string_3.rs)|
-|561|[Array Partition I](https://leetcode.com/problems/array-partition-i)|array|[Rust](rustgym/src/leetcode/_561_array_partition_1.rs)|
-|563|[Binary Tree Tilt](https://leetcode.com/problems/binary-tree-tilt)|tree depth-first-search recursion|[Rust](rustgym/src/leetcode/_563_binary_tree_tilt.rs)|
-|566|[Reshape the Matrix](https://leetcode.com/problems/reshape-the-matrix)|array|[Rust](rustgym/src/leetcode/_566_reshape_the_matrix.rs)|
-|572|[Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree)|tree|[Rust](rustgym/src/leetcode/_572_subtree_of_another_tree.rs)|
-|575|[Distribute Candies](https://leetcode.com/problems/distribute-candies)|hash-table|[Rust](rustgym/src/leetcode/_575_distribute_candies.rs)|
-|58|[Length of Last Word](https://leetcode.com/problems/length-of-last-word)|string|[Rust](rustgym/src/leetcode/_58_length_of_last_word.rs)|
-|594|[Longest Harmonious Subsequence](https://leetcode.com/problems/longest-harmonious-subsequence)|hash-table|[Rust](rustgym/src/leetcode/_594_longest_harmonious_subsequence.rs)|
-|598|[Range Addition II](https://leetcode.com/problems/range-addition-ii)|math|[Rust](rustgym/src/leetcode/_598_range_addition_2.rs)|
-|599|[Minimum Index Sum of Two Lists](https://leetcode.com/problems/minimum-index-sum-of-two-lists)|hash-table|[Rust](rustgym/src/leetcode/_599_minimum_index_sum_of_two_lists.rs)|
-|604|[Design Compressed String Iterator](https://leetcode.com/problems/design-compressed-string-iterator)|design|[Rust](rustgym/src/leetcode/_604_design_compressed_string_iterator.rs)|
-|605|[Can Place Flowers](https://leetcode.com/problems/can-place-flowers)|array greedy|[Rust](rustgym/src/leetcode/_605_can_place_flowers.rs)|
-|606|[Construct String from Binary Tree](https://leetcode.com/problems/construct-string-from-binary-tree)|string tree|[Rust](rustgym/src/leetcode/_606_construct_string_from_binary_tree.rs)|
-|617|[Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees)|tree|[Rust](rustgym/src/leetcode/_617_merge_two_binary_trees.rs)|
-|628|[Maximum Product of Three Numbers](https://leetcode.com/problems/maximum-product-of-three-numbers)|array math|[Rust](rustgym/src/leetcode/_628_maximum_product_of_three_numbers.rs)|
-|637|[Average of Levels in Binary Tree](https://leetcode.com/problems/average-of-levels-in-binary-tree)|tree|[Rust](rustgym/src/leetcode/_637_average_of_levels_in_binary_tree.rs)|
-|643|[Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i)|array|[Rust](rustgym/src/leetcode/_643_maximum_average_subarray_1.rs)|
-|645|[Set Mismatch](https://leetcode.com/problems/set-mismatch)|hash-table math|[Rust](rustgym/src/leetcode/_645_set_mismatch.rs)|
-|653|[Two Sum IV - Input is a BST](https://leetcode.com/problems/two-sum-iv-input-is-a-bst)|tree|[Rust](rustgym/src/leetcode/_653_two_sum_4.rs)|
-|657|[Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin)|string|[Rust](rustgym/src/leetcode/_657_robot_return_to_origin.rs)|
-|661|[Image Smoother](https://leetcode.com/problems/image-smoother)|array|[Rust](rustgym/src/leetcode/_661_image_smoother.rs)|
-|665|[Non-decreasing Array](https://leetcode.com/problems/non-decreasing-array)|array|[Rust](rustgym/src/leetcode/_665_non_decreasing_array.rs)|
-|669|[Trim a Binary Search Tree](https://leetcode.com/problems/trim-a-binary-search-tree)|tree|[Rust](rustgym/src/leetcode/_669_trim_a_binary_search_tree.rs)|
-|66|[Plus One](https://leetcode.com/problems/plus-one)|array|[Rust](rustgym/src/leetcode/_66_plus_one.rs)|
-|671|[Second Minimum Node In a Binary Tree](https://leetcode.com/problems/second-minimum-node-in-a-binary-tree)|tree|[Rust](rustgym/src/leetcode/_671_second_minimum_node_in_a_binary_tree.rs)|
-|674|[Longest Continuous Increasing Subsequence](https://leetcode.com/problems/longest-continuous-increasing-subsequence)|array|[Rust](rustgym/src/leetcode/_674_longest_continuous_increasing_subsequence.rs)|
-|67|[Add Binary](https://leetcode.com/problems/add-binary)|math string|[Rust](rustgym/src/leetcode/_67_add_binary.rs)|
-|680|[Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii)|string|[Rust](rustgym/src/leetcode/_680_valid_palindrome_2.rs)|
-|682|[Baseball Game](https://leetcode.com/problems/baseball-game)|stack|[Rust](rustgym/src/leetcode/_682_baseball_game.rs)|
-|693|[Binary Number with Alternating Bits](https://leetcode.com/problems/binary-number-with-alternating-bits)|bit-manipulation|[Rust](rustgym/src/leetcode/_693_binary_number_with_alternating_bits.rs)|
-|696|[Count Binary Substrings](https://leetcode.com/problems/count-binary-substrings)|string|[Rust](rustgym/src/leetcode/_696_count_binary_substrings.rs)|
-|697|[Degree of an Array](https://leetcode.com/problems/degree-of-an-array)|array|[Rust](rustgym/src/leetcode/_697_degree_of_an_array.rs)|
-|69|[Sqrt(x)](https://leetcode.com/problems/sqrtx)|math binary-search|[Rust](rustgym/src/leetcode/_69_sqrt.rs)|
-|700|[Search in a Binary Search Tree](https://leetcode.com/problems/search-in-a-binary-search-tree)||[Rust](rustgym/src/leetcode/_700_search_in_a_binary_search_tree.rs)|
-|703|[Kth Largest Element in a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream)||[Rust](rustgym/src/leetcode/_703_kth_largest_element_in_a_stream.rs)|
-|704|[Binary Search](https://leetcode.com/problems/binary-search)||[Rust](rustgym/src/leetcode/_704_binary_search.rs)|
-|705|[Design HashSet](https://leetcode.com/problems/design-hashset)||[Rust](rustgym/src/leetcode/_705_design_hash_set.rs)|
-|706|[Design HashMap](https://leetcode.com/problems/design-hashmap)||[Rust](rustgym/src/leetcode/_706_design_hash_map.rs)|
-|709|[To Lower Case](https://leetcode.com/problems/to-lower-case)||[Rust](rustgym/src/leetcode/_709_to_lower_case.rs)|
-|70|[Climbing Stairs](https://leetcode.com/problems/climbing-stairs)|dynamic-programming|[Rust](rustgym/src/leetcode/_70_climbing_stairs.rs)|
-|716|[Max Stack](https://leetcode.com/problems/max-stack)|design|[Rust](rustgym/src/leetcode/_716_max_stack.rs)|
-|717|[1-bit and 2-bit Characters](https://leetcode.com/problems/1-bit-and-2-bit-characters)|array|[Rust](rustgym/src/leetcode/_717_1bit_and_2bit_characters.rs)|
-|720|[Longest Word in Dictionary](https://leetcode.com/problems/longest-word-in-dictionary)|hash-table trie|[Rust](rustgym/src/leetcode/_720_longest_word_in_dictionary.rs)|
-|724|[Find Pivot Index](https://leetcode.com/problems/find-pivot-index)|array|[Rust](rustgym/src/leetcode/_724_find_pivot_index.rs)|
-|728|[Self Dividing Numbers](https://leetcode.com/problems/self-dividing-numbers)|math|[Rust](rustgym/src/leetcode/_728_self_dividing_numbers.rs)|
-|733|[Flood Fill](https://leetcode.com/problems/flood-fill)|depth-first-search|[Rust](rustgym/src/leetcode/_733_flood_fill.rs)|
-|734|[Sentence Similarity](https://leetcode.com/problems/sentence-similarity)|hash-table|[Rust](rustgym/src/leetcode/_734_sentence_similarity.rs)|
-|744|[Find Smallest Letter Greater Than Target](https://leetcode.com/problems/find-smallest-letter-greater-than-target)|heap depth-first-search breadth-first-search graph|[Rust](rustgym/src/leetcode/_744_find_smallest_letter_greater_than_target.rs)|
-|746|[Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs)|trie|[Rust](rustgym/src/leetcode/_746_min_cost_climbing_stairs.rs)|
-|747|[Largest Number At Least Twice of Others](https://leetcode.com/problems/largest-number-at-least-twice-of-others)|array dynamic-programming|[Rust](rustgym/src/leetcode/_747_largest_number_at_least_twice_of_others.rs)|
-|748|[Shortest Completing Word](https://leetcode.com/problems/shortest-completing-word)|array|[Rust](rustgym/src/leetcode/_748_shortest_completing_word.rs)|
-|758|[Bold Words in String](https://leetcode.com/problems/bold-words-in-string)|linked-list divide-and-conquer tree|[Rust](rustgym/src/leetcode/_758_bold_words_in_string.rs)|
-|760|[Find Anagram Mappings](https://leetcode.com/problems/find-anagram-mappings)|string|[Rust](rustgym/src/leetcode/_760_find_anagram_mappings.rs)|
-|762|[Prime Number of Set Bits in Binary Representation](https://leetcode.com/problems/prime-number-of-set-bits-in-binary-representation)|hash-table|[Rust](rustgym/src/leetcode/_762_prime_number_of_set_bits_in_binary_representation.rs)|
-|766|[Toeplitz Matrix](https://leetcode.com/problems/toeplitz-matrix)|linked-list depth-first-search|[Rust](rustgym/src/leetcode/_766_toeplitiz_matrix.rs)|
-|771|[Jewels and Stones](https://leetcode.com/problems/jewels-and-stones)|tree|[Rust](rustgym/src/leetcode/_771_jewels_and_stones.rs)|
-|783|[Minimum Distance Between BST Nodes](https://leetcode.com/problems/minimum-distance-between-bst-nodes)|tree|[Rust](rustgym/src/leetcode/_783_minimum_distance_between_bst_nodes.rs)|
-|788|[Rotated Digits](https://leetcode.com/problems/rotated-digits)|binary-search|[Rust](rustgym/src/leetcode/_788_rotated_digits.rs)|
-|796|[Rotate String](https://leetcode.com/problems/rotate-string)|math|[Rust](rustgym/src/leetcode/_796_rotate_string.rs)|
-|7|[Reverse Integer](https://leetcode.com/problems/reverse-integer)|math|[Rust](rustgym/src/leetcode/_7_reverse_integer.rs)|
-|800|[Similar RGB Color](https://leetcode.com/problems/similar-rgb-color)|backtracking bit-manipulation|[Rust](rustgym/src/leetcode/_800_similar_rgb_color.rs)|
-|804|[Unique Morse Code Words](https://leetcode.com/problems/unique-morse-code-words)|string|[Rust](rustgym/src/leetcode/_804_unique_morse_code_words.rs)|
-|806|[Number of Lines To Write String](https://leetcode.com/problems/number-of-lines-to-write-string)|dynamic-programming|[Rust](rustgym/src/leetcode/_806_number_of_lines_to_write_string.rs)|
-|811|[Subdomain Visit Count](https://leetcode.com/problems/subdomain-visit-count)|array|[Rust](rustgym/src/leetcode/_811_subdomain_visit_count.rs)|
-|812|[Largest Triangle Area](https://leetcode.com/problems/largest-triangle-area)||[Rust](rustgym/src/leetcode/_812_largest_triangle_area.rs)|
-|819|[Most Common Word](https://leetcode.com/problems/most-common-word)|dynamic-programming|[Rust](rustgym/src/leetcode/_819_most_common_word.rs)|
-|821|[Shortest Distance to a Character](https://leetcode.com/problems/shortest-distance-to-a-character)|union-find|[Rust](rustgym/src/leetcode/_821_shortest_distance_to_a_character.rs)|
-|824|[Goat Latin](https://leetcode.com/problems/goat-latin)||[Rust](rustgym/src/leetcode/_824_goat_latin.rs)|
-|830|[Positions of Large Groups](https://leetcode.com/problems/positions-of-large-groups)|math|[Rust](rustgym/src/leetcode/_830_positions_of_large_groups.rs)|
-|832|[Flipping an Image](https://leetcode.com/problems/flipping-an-image)|tree|[Rust](rustgym/src/leetcode/_832_flipping_an_image.rs)|
-|836|[Rectangle Overlap](https://leetcode.com/problems/rectangle-overlap)|dynamic-programming heap|[Rust](rustgym/src/leetcode/_836_rectangle_overlap.rs)|
-|83|[Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list)|linked-list|[Rust](rustgym/src/leetcode/_83_remove_duplicates_from_sorted_list.rs)|
-|844|[Backspace String Compare](https://leetcode.com/problems/backspace-string-compare)||[Rust](rustgym/src/leetcode/_844_backspace_string_compare.rs)|
-|852|[Peak Index in a Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array)|array|[Rust](rustgym/src/leetcode/_852_peak_index_in_a_mountain_array.rs)|
-|859|[Buddy Strings](https://leetcode.com/problems/buddy-strings)|design queue|[Rust](rustgym/src/leetcode/_859_buddy_strings.rs)|
-|860|[Lemonade Change](https://leetcode.com/problems/lemonade-change)|design queue|[Rust](rustgym/src/leetcode/_860_lemonade_change.rs)|
-|867|[Transpose Matrix](https://leetcode.com/problems/transpose-matrix)|dynamic-programming|[Rust](rustgym/src/leetcode/_867_transpose_matrix.rs)|
-|868|[Binary Gap](https://leetcode.com/problems/binary-gap)|two-pointers dynamic-programming|[Rust](rustgym/src/leetcode/_868_binary_gap.rs)|
-|872|[Leaf-Similar Trees](https://leetcode.com/problems/leaf-similar-trees)|string backtracking greedy|[Rust](rustgym/src/leetcode/_872_leaf_similar_trees.rs)|
-|874|[Walking Robot Simulation](https://leetcode.com/problems/walking-robot-simulation)|two-pointers stack|[Rust](rustgym/src/leetcode/_874_walking_robot_simulation.rs)|
-|876|[Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list)|ordered-map|[Rust](rustgym/src/leetcode/_876_middle_of_the_linked_list.rs)|
-|883|[Projection Area of 3D Shapes](https://leetcode.com/problems/projection-area-of-3d-shapes)|sort|[Rust](rustgym/src/leetcode/_883_projection_area_of_3d_shapes.rs)|
-|884|[Uncommon Words from Two Sentences](https://leetcode.com/problems/uncommon-words-from-two-sentences)|breadth-first-search graph|[Rust](rustgym/src/leetcode/_884_uncommon_words_from_two_sentences.rs)|
-|888|[Fair Candy Swap](https://leetcode.com/problems/fair-candy-swap)|math|[Rust](rustgym/src/leetcode/_888_fair_candy_swap.rs)|
-|88|[Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array)|array two-pointers|[Rust](rustgym/src/leetcode/_88_merge_sorted_array.rs)|
-|892|[Surface Area of 3D Shapes](https://leetcode.com/problems/surface-area-of-3d-shapes)|binary-search queue|[Rust](rustgym/src/leetcode/_892_surface_area_of_3d_shapes.rs)|
-|893|[Groups of Special-Equivalent Strings](https://leetcode.com/problems/groups-of-special-equivalent-strings)|tree depth-first-search breadth-first-search|[Rust](rustgym/src/leetcode/_893_groups_of_special_equivalent_string.rs)|
-|896|[Monotonic Array](https://leetcode.com/problems/monotonic-array)|tree depth-first-search breadth-first-search recursion|[Rust](rustgym/src/leetcode/_896_monotonic_array.rs)|
-|897|[Increasing Order Search Tree](https://leetcode.com/problems/increasing-order-search-tree)|math|[Rust](rustgym/src/leetcode/_897_increasing_order_search_tree.rs)|
-|905|[Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity)|array dynamic-programming|[Rust](rustgym/src/leetcode/_905_sort_array_by_parity.rs)|
-|908|[Smallest Range I](https://leetcode.com/problems/smallest-range-i)|linked-list|[Rust](rustgym/src/leetcode/_908_smallest_range_1.rs)|
-|914|[X of a Kind in a Deck of Cards](https://leetcode.com/problems/x-of-a-kind-in-a-deck-of-cards)|binary-search random|[Rust](rustgym/src/leetcode/_914_x_of_a_kind_in_a_deck_of_cards.rs)|
-|917|[Reverse Only Letters](https://leetcode.com/problems/reverse-only-letters)|two-pointers greedy|[Rust](rustgym/src/leetcode/_917_reverse_only_letters.rs)|
-|922|[Sort Array By Parity II](https://leetcode.com/problems/sort-array-by-parity-ii)|depth-first-search graph|[Rust](rustgym/src/leetcode/_922_sort_array_by_parity_2.rs)|
-|925|[Long Pressed Name](https://leetcode.com/problems/long-pressed-name)|tree|[Rust](rustgym/src/leetcode/_925_long_pressed_name.rs)|
-|929|[Unique Email Addresses](https://leetcode.com/problems/unique-email-addresses)|string|[Rust](rustgym/src/leetcode/_929_unique_email_addresses.rs)|
-|933|[Number of Recent Calls](https://leetcode.com/problems/number-of-recent-calls)|tree depth-first-search recursion|[Rust](rustgym/src/leetcode/_933_number_of_recent_calls.rs)|
-|937|[Reorder Data in Log Files](https://leetcode.com/problems/reorder-data-in-log-files)|stack|[Rust](rustgym/src/leetcode/_937_reorder_log_files.rs)|
-|938|[Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst)|math dynamic-programming|[Rust](rustgym/src/leetcode/_938_range_sum_of_bst.rs)|
-|941|[Valid Mountain Array](https://leetcode.com/problems/valid-mountain-array)|array|[Rust](rustgym/src/leetcode/_941_valid_mountain_array.rs)|
-|942|[DI String Match](https://leetcode.com/problems/di-string-match)|math|[Rust](rustgym/src/leetcode/_942_di_string_match.rs)|
-|944|[Delete Columns to Make Sorted](https://leetcode.com/problems/delete-columns-to-make-sorted)|math|[Rust](rustgym/src/leetcode/_944_delete_columns_to_make_sorted.rs)|
-|953|[Verifying an Alien Dictionary](https://leetcode.com/problems/verifying-an-alien-dictionary)|string|[Rust](rustgym/src/leetcode/_953_verifying_an_alien_dictionary.rs)|
-|961|[N-Repeated Element in Size 2N Array](https://leetcode.com/problems/n-repeated-element-in-size-2n-array)|two-pointers string|[Rust](rustgym/src/leetcode/_961_n_repeated_element_in_size_2n_array.rs)|
-|965|[Univalued Binary Tree](https://leetcode.com/problems/univalued-binary-tree)|string|[Rust](rustgym/src/leetcode/_965_univalued_binary_tree.rs)|
-|970|[Powerful Integers](https://leetcode.com/problems/powerful-integers)||[Rust](rustgym/src/leetcode/_970_powerful_integers.rs)|
-|976|[Largest Perimeter Triangle](https://leetcode.com/problems/largest-perimeter-triangle)|hash-table|[Rust](rustgym/src/leetcode/_976_largest_perimeter_triangle.rs)|
-|977|[Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array)|dynamic-programming|[Rust](rustgym/src/leetcode/_977_squares_of_a_sorted_array.rs)|
-|985|[Sum of Even Numbers After Queries](https://leetcode.com/problems/sum-of-even-numbers-after-queries)|two-pointers greedy sort|[Rust](rustgym/src/leetcode/_985_sum_of_even_numbers_after_queries.rs)|
-|989|[Add to Array-Form of Integer](https://leetcode.com/problems/add-to-array-form-of-integer)|math union-find|[Rust](rustgym/src/leetcode/_989_add_to_array_form_of_integer.rs)|
-|993|[Cousins in Binary Tree](https://leetcode.com/problems/cousins-in-binary-tree)|dynamic-programming|[Rust](rustgym/src/leetcode/_993_cousins_in_binary_tree.rs)|
-|997|[Find the Town Judge](https://leetcode.com/problems/find-the-town-judge)||[Rust](rustgym/src/leetcode/_997_find_the_town_judge.rs)|
-|999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook)|depth-first-search union-find graph|[Rust](rustgym/src/leetcode/_999_available_captures_for_rook.rs)|
-|9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|math|[Rust](rustgym/src/leetcode/_9_palindrome_number.rs)|
-
-# Leetcode Medium 33/822 4.01% <a name='leetcode_medium'></a>
-
-|id|822 Medium Questions|Tags|789 Solutions|
-|---|---|---|---|
-|426|[Convert Binary Search Tree to Sorted Doubly Linked List](https://leetcode.com/problems/convert-binary-search-tree-to-sorted-doubly-linked-list)||   |
-|427|[Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree)||   |
-|429|[N-ary Tree Level Order Traversal](https://leetcode.com/problems/n-ary-tree-level-order-traversal)||   |
-|430|[Flatten a Multilevel Doubly Linked List](https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list)||   |
-|510|[Inorder Successor in BST II](https://leetcode.com/problems/inorder-successor-in-bst-ii)||   |
-|558|[Logical OR of Two Binary Grids Represented as Quad-Trees](https://leetcode.com/problems/logical-or-of-two-binary-grids-represented-as-quad-trees)||   |
-|702|[Search in a Sorted Array of Unknown Size](https://leetcode.com/problems/search-in-a-sorted-array-of-unknown-size)||   |
-|708|[Insert into a Sorted Circular Linked List](https://leetcode.com/problems/insert-into-a-sorted-circular-linked-list)||   |
-|1265|[Print Immutable Linked List in Reverse](https://leetcode.com/problems/print-immutable-linked-list-in-reverse)||   |
-|1506|[Find Root of N-Ary Tree](https://leetcode.com/problems/find-root-of-n-ary-tree)||   |
-|1602|[Find Nearest Right Node in Binary Tree](https://leetcode.com/problems/find-nearest-right-node-in-binary-tree)||   |
-|1650|[Lowest Common Ancestor of a Binary Tree III](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iii)||   |
-|1682|[Longest Palindromic Subsequence II](https://leetcode.com/problems/longest-palindromic-subsequence-ii)|array|   |
-|1612|[Check If Two Expression Trees are Equivalent](https://leetcode.com/problems/check-if-two-expression-trees-are-equivalent)|array hash-table|   |
-|1485|[Clone Binary Tree With Random Pointer](https://leetcode.com/problems/clone-binary-tree-with-random-pointer)|breadth-first-search|   |
-|133|[Clone Graph](https://leetcode.com/problems/clone-graph)|depth-first-search breadth-first-search graph|   |
-|284|[Peeking Iterator](https://leetcode.com/problems/peeking-iterator)|design|   |
-|673|[Number of Longest Increasing Subsequence](https://leetcode.com/problems/number-of-longest-increasing-subsequence)|dynamic-programming|   |
-|1522|[Diameter of N-Ary Tree](https://leetcode.com/problems/diameter-of-n-ary-tree)|dynamic-programming|   |
-|1628|[Design an Expression Tree With Evaluate Function](https://leetcode.com/problems/design-an-expression-tree-with-evaluate-function)|dynamic-programming|   |
-|1676|[Lowest Common Ancestor of a Binary Tree IV](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iv)|dynamic-programming|   |
-|1644|[Lowest Common Ancestor of a Binary Tree II](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-ii)|greedy|   |
-|138|[Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer)|hash-table linked-list|   |
-|1634|[Add Two Polynomials Represented as Linked Lists](https://leetcode.com/problems/add-two-polynomials-represented-as-linked-lists)|hash-table tree depth-first-search breadth-first-search|   |
-|1618|[Maximum Font to Fit a Sentence in a Screen](https://leetcode.com/problems/maximum-font-to-fit-a-sentence-in-a-screen)|linked-list|   |
-|142|[Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii)|linked-list two-pointers|   |
-|1379|[Find a Corresponding Node of a Binary Tree in a Clone of That Tree](https://leetcode.com/problems/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree)|math greedy|   |
-|1236|[Web Crawler](https://leetcode.com/problems/web-crawler)|recursion|   |
-|1490|[Clone N-ary Tree](https://leetcode.com/problems/clone-n-ary-tree)|string|   |
-|1660|[Correct a Binary Tree](https://leetcode.com/problems/correct-a-binary-tree)|string|   |
-|1666|[Change the Root of a Binary Tree](https://leetcode.com/problems/change-the-root-of-a-binary-tree)|string stack|   |
-|117|[Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii)|tree depth-first-search|   |
-|116|[Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node)|tree depth-first-search breadth-first-search|   |
-|1003|[Check If Word Is Valid After Substitutions](https://leetcode.com/problems/check-if-word-is-valid-after-substitutions)|math geometry|[Rust](rustgym/src/leetcode/_1003_check_if_word_is_valid_after_substitutions.rs)|
-|1004|[Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii)|math dynamic-programming|[Rust](rustgym/src/leetcode/_1004_max_consecutive_ones_3.rs)|
-|1006|[Clumsy Factorial](https://leetcode.com/problems/clumsy-factorial)|hash-table string|[Rust](rustgym/src/leetcode/_1006_clumsy_factorial.rs)|
-|1007|[Minimum Domino Rotations For Equal Row](https://leetcode.com/problems/minimum-domino-rotations-for-equal-row)|depth-first-search breadth-first-search|[Rust](rustgym/src/leetcode/_1007_minimum_domino_rotations_for_equal_row.rs)|
-|1008|[Construct Binary Search Tree from Preorder Traversal](https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal)|dynamic-programming tree depth-first-search|[Rust](rustgym/src/leetcode/_1008_construct_binary_search_tree_from_preorder_traversal.rs)|
-|1010|[Pairs of Songs With Total Durations Divisible by 60](https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60)|hash-table math|[Rust](rustgym/src/leetcode/_1010_pairs_of_songs_with_total_durations_divisible_by_60.rs)|
-|1011|[Capacity To Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days)|tree depth-first-search|[Rust](rustgym/src/leetcode/_1011_capacity_to_ship_packages_within_d_days.rs)|
-|1014|[Best Sightseeing Pair](https://leetcode.com/problems/best-sightseeing-pair)|divide-and-conquer heap sort|[Rust](rustgym/src/leetcode/_1014_best_sightseeing_pair.rs)|
-|1015|[Smallest Integer Divisible by K](https://leetcode.com/problems/smallest-integer-divisible-by-k)||[Rust](rustgym/src/leetcode/_1015_smallest_integer_divisible_by_k.rs)|
-|1016|[Binary String With Substrings Representing 1 To N](https://leetcode.com/problems/binary-string-with-substrings-representing-1-to-n)|array hash-table|[Rust](rustgym/src/leetcode/_1016_binary_string_with_substrings_representing_1_to_n.rs)|
-|1017|[Convert to Base -2](https://leetcode.com/problems/convert-to-base-2)|dynamic-programming stack ordered-map|[Rust](rustgym/src/leetcode/_1017_convert_to_base_minus_2.rs)|
-|1019|[Next Greater Node In Linked List](https://leetcode.com/problems/next-greater-node-in-linked-list)|array two-pointers|[Rust](rustgym/src/leetcode/_1019_next_greater_node_in_linked_list.rs)|
-|1020|[Number of Enclaves](https://leetcode.com/problems/number-of-enclaves)|array dynamic-programming sliding-window|[Rust](rustgym/src/leetcode/_1020_number_of_enclaves.rs)|
-|1023|[Camelcase Matching](https://leetcode.com/problems/camelcase-matching)|hash-table binary-search|[Rust](rustgym/src/leetcode/_1023_camelcase_matching.rs)|
-|1024|[Video Stitching](https://leetcode.com/problems/video-stitching)|dynamic-programming|[Rust](rustgym/src/leetcode/_1024_video_stitching.rs)|
-|1026|[Maximum Difference Between Node and Ancestor](https://leetcode.com/problems/maximum-difference-between-node-and-ancestor)|greedy|[Rust](rustgym/src/leetcode/_1026_maximum_difference_between_node_and_ancestor.rs)|
-|1027|[Longest Arithmetic Subsequence](https://leetcode.com/problems/longest-arithmetic-subsequence)|array|[Rust](rustgym/src/leetcode/_1027_longest_arithmetic_sequence.rs)|
-|1029|[Two City Scheduling](https://leetcode.com/problems/two-city-scheduling)|hash-table tree|[Rust](rustgym/src/leetcode/_1029_two_city_scheduling.rs)|
-|102|[Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal)|tree breadth-first-search|[Rust](rustgym/src/leetcode/_102_binary_tree_level_order_traversal.rs)|
-|1031|[Maximum Sum of Two Non-Overlapping Subarrays](https://leetcode.com/problems/maximum-sum-of-two-non-overlapping-subarrays)|array|[Rust](rustgym/src/leetcode/_1031_maximum_sum_of_two_non_overlapping_subarrays.rs)|
-|1034|[Coloring A Border](https://leetcode.com/problems/coloring-a-border)|hash-table two-pointers sliding-window|[Rust](rustgym/src/leetcode/_1034_coloring_a_border.rs)|
-|1035|[Uncrossed Lines](https://leetcode.com/problems/uncrossed-lines)|tree breadth-first-search|[Rust](rustgym/src/leetcode/_1035_uncrossed_lines.rs)|
-|1038|[Binary Search Tree to Greater Sum Tree](https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree)|math backtracking graph|[Rust](rustgym/src/leetcode/_1038_binary_search_tree_to_greater_sum_tree.rs)|
-|1039|[Minimum Score Triangulation of Polygon](https://leetcode.com/problems/minimum-score-triangulation-of-polygon)|graph|[Rust](rustgym/src/leetcode/_1039_minimum_score_triangulation_of_polygon.rs)|
-|103|[Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal)|stack tree breadth-first-search|[Rust](rustgym/src/leetcode/_103_binary_tree_zigzag_level_order_traversal.rs)|
-|1040|[Moving Stones Until Consecutive II](https://leetcode.com/problems/moving-stones-until-consecutive-ii)|tree|[Rust](rustgym/src/leetcode/_1040_moving_stones_until_consecutive_2.rs)|
-|1041|[Robot Bounded In Circle](https://leetcode.com/problems/robot-bounded-in-circle)|array|[Rust](rustgym/src/leetcode/_1041_robot_bounded_in_circle.rs)|
-|1042|[Flower Planting With No Adjacent](https://leetcode.com/problems/flower-planting-with-no-adjacent)|dynamic-programming|[Rust](rustgym/src/leetcode/_1042_flower_planting_with_no_adjacent.rs)|
-|1043|[Partition Array for Maximum Sum](https://leetcode.com/problems/partition-array-for-maximum-sum)|hash-table|[Rust](rustgym/src/leetcode/_1043_partition_array_for_maximum_sum.rs)|
-|1048|[Longest String Chain](https://leetcode.com/problems/longest-string-chain)|math|[Rust](rustgym/src/leetcode/_1048_longest_string_chain.rs)|
-|1049|[Last Stone Weight II](https://leetcode.com/problems/last-stone-weight-ii)|array greedy|[Rust](rustgym/src/leetcode/_1049_last_stone_weight_2.rs)|
-|1052|[Grumpy Bookstore Owner](https://leetcode.com/problems/grumpy-bookstore-owner)|greedy sort|[Rust](rustgym/src/leetcode/_1052_grumpy_bookstore_owner.rs)|
-|1053|[Previous Permutation With One Swap](https://leetcode.com/problems/previous-permutation-with-one-swap)|math dynamic-programming greedy|[Rust](rustgym/src/leetcode/_1053_previous_permutation_with_one_swap.rs)|
-|1054|[Distant Barcodes](https://leetcode.com/problems/distant-barcodes)|math|[Rust](rustgym/src/leetcode/_1054_distant_barcodes.rs)|
-|1055|[Shortest Way to Form String](https://leetcode.com/problems/shortest-way-to-form-string)|array|[Rust](rustgym/src/leetcode/_1055_shortest_way_to_form_string.rs)|
-|1057|[Campus Bikes](https://leetcode.com/problems/campus-bikes)|math dynamic-programming|[Rust](rustgym/src/leetcode/_1057_campus_bikes.rs)|
-|1058|[Minimize Rounding Error to Meet Target](https://leetcode.com/problems/minimize-rounding-error-to-meet-target)|depth-first-search union-find|[Rust](rustgym/src/leetcode/_1058_minimize_rounding_error_to_meet_target.rs)|
-|1059|[All Paths from Source Lead to Destination](https://leetcode.com/problems/all-paths-from-source-lead-to-destination)|binary-search|[Rust](rustgym/src/leetcode/_1059_all_paths_from_source_lead_to_destination.rs)|
-|105|[Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal)|array tree depth-first-search|[Rust](rustgym/src/leetcode/_105_construct_binary_tree_from_preorder_and_inorder_traversal.rs)|
-|1060|[Missing Element in Sorted Array](https://leetcode.com/problems/missing-element-in-sorted-array)|string|[Rust](rustgym/src/leetcode/_1060_missing_element_in_sorted_array.rs)|
-|1061|[Lexicographically Smallest Equivalent String](https://leetcode.com/problems/lexicographically-smallest-equivalent-string)|stack|[Rust](rustgym/src/leetcode/_1061_lexicographically_smallest_equivalent_string.rs)|
-|1062|[Longest Repeating Substring](https://leetcode.com/problems/longest-repeating-substring)|array|[Rust](rustgym/src/leetcode/_1062_longest_repeating_substring.rs)|
-|1066|[Campus Bikes II](https://leetcode.com/problems/campus-bikes-ii)|array binary-search|[Rust](rustgym/src/leetcode/_1066_campus_bikes_2.rs)|
-|106|[Construct Binary Tree from Inorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal)|array tree depth-first-search|[Rust](rustgym/src/leetcode/_106_construct_binary_tree_from_inorder_and_postorder_traversal.rs)|
-|1072|[Flip Columns For Maximum Number of Equal Rows](https://leetcode.com/problems/flip-columns-for-maximum-number-of-equal-rows)|linked-list stack|[Rust](rustgym/src/leetcode/_1072_flip_columns_for_maximum_number_of_equal_rows.rs)|
-|1073|[Adding Two Negabinary Numbers](https://leetcode.com/problems/adding-two-negabinary-numbers)|depth-first-search|[Rust](rustgym/src/leetcode/_1073_adding_two_negabinary_numbers.rs)|
-|1079|[Letter Tile Possibilities](https://leetcode.com/problems/letter-tile-possibilities)|tree|[Rust](rustgym/src/leetcode/_1079_letter_tile_possibilities.rs)|
-|1080|[Insufficient Nodes in Root to Leaf Paths](https://leetcode.com/problems/insufficient-nodes-in-root-to-leaf-paths)|string trie|[Rust](rustgym/src/leetcode/_1080_insufficient_nodes_in_root_to_leaf_paths.rs)|
-|1081|[Smallest Subsequence of Distinct Characters](https://leetcode.com/problems/smallest-subsequence-of-distinct-characters)|dynamic-programming|[Rust](rustgym/src/leetcode/_1081_smallest_subsequence_of_distinct_characters.rs)|
-|1087|[Brace Expansion](https://leetcode.com/problems/brace-expansion)|dynamic-programming|[Rust](rustgym/src/leetcode/_1087_brace_expansion.rs)|
-|1090|[Largest Values From Labels](https://leetcode.com/problems/largest-values-from-labels)|math|[Rust](rustgym/src/leetcode/_1090_largest_values_from_labels.rs)|
-|1091|[Shortest Path in Binary Matrix](https://leetcode.com/problems/shortest-path-in-binary-matrix)|tree|[Rust](rustgym/src/leetcode/_1091_shortest_path_in_binary_matrix.rs)|
-|1093|[Statistics from a Large Sample](https://leetcode.com/problems/statistics-from-a-large-sample)|tree depth-first-search|[Rust](rustgym/src/leetcode/_1093_statistics_from_a_large_sample.rs)|
-|1094|[Car Pooling](https://leetcode.com/problems/car-pooling)|sort|[Rust](rustgym/src/leetcode/_1094_car_pooling.rs)|
-|109|[Convert Sorted List to Binary Search Tree](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree)|linked-list depth-first-search|[Rust](rustgym/src/leetcode/_109_convert_sorted_list_to_binary_search_tree.rs)|
-|1100|[Find K-Length Substrings With No Repeated Characters](https://leetcode.com/problems/find-k-length-substrings-with-no-repeated-characters)|union-find graph|[Rust](rustgym/src/leetcode/_1100_find_k_length_substrings_with_no_repeated_characters.rs)|
-|1101|[The Earliest Moment When Everyone Become Friends](https://leetcode.com/problems/the-earliest-moment-when-everyone-become-friends)|dynamic-programming depth-first-search graph|[Rust](rustgym/src/leetcode/_1101_the_earliest_moment_when_everyone_become_friends.rs)|
-|1102|[Path With Maximum Minimum Value](https://leetcode.com/problems/path-with-maximum-minimum-value)|array binary-search|[Rust](rustgym/src/leetcode/_1102_path_with_maximum_minimum_value.rs)|
-|1104|[Path In Zigzag Labelled Binary Tree](https://leetcode.com/problems/path-in-zigzag-labelled-binary-tree)|depth-first-search|[Rust](rustgym/src/leetcode/_1104_path_in_zigzag_labelled_binary_tree.rs)|
-|1105|[Filling Bookcase Shelves](https://leetcode.com/problems/filling-bookcase-shelves)|array|[Rust](rustgym/src/leetcode/_1105_filling_bookcase_shelves.rs)|
-|1109|[Corporate Flight Bookings](https://leetcode.com/problems/corporate-flight-bookings)||[Rust](rustgym/src/leetcode/_1109_corp_flight_bookings.rs)|
-|1110|[Delete Nodes And Return Forest](https://leetcode.com/problems/delete-nodes-and-return-forest)||[Rust](rustgym/src/leetcode/_1110_delete_nodes_and_return_forest.rs)|
-|1111|[Maximum Nesting Depth of Two Valid Parentheses Strings](https://leetcode.com/problems/maximum-nesting-depth-of-two-valid-parentheses-strings)|dynamic-programming|[Rust](rustgym/src/leetcode/_1111_maximum_nesting_depth_of_two_valid_parentheses_strings.rs)|
-|1120|[Maximum Average Subtree](https://leetcode.com/problems/maximum-average-subtree)|graph|[Rust](rustgym/src/leetcode/_1120_maximum_average_subtree.rs)|
-|1123|[Lowest Common Ancestor of Deepest Leaves](https://leetcode.com/problems/lowest-common-ancestor-of-deepest-leaves)|string|[Rust](rustgym/src/leetcode/_1123_lowest_common_ancestor_or_deepest_leaves.rs)|
-|1124|[Longest Well-Performing Interval](https://leetcode.com/problems/longest-well-performing-interval)|graph|[Rust](rustgym/src/leetcode/_1124_longest_well_performing_interval.rs)|
-|1129|[Shortest Path with Alternating Colors](https://leetcode.com/problems/shortest-path-with-alternating-colors)|hash-table dynamic-programming|[Rust](rustgym/src/leetcode/_1129_shortest_path_with_alternating_colors.rs)|
-|1130|[Minimum Cost Tree From Leaf Values](https://leetcode.com/problems/minimum-cost-tree-from-leaf-values)|dynamic-programming|[Rust](rustgym/src/leetcode/_1130_minimum_cost_tree_from_leaf_values.rs)|
-|1131|[Maximum of Absolute Value Expression](https://leetcode.com/problems/maximum-of-absolute-value-expression)|math string|[Rust](rustgym/src/leetcode/_1131_maximum_of_absolute_value_expression.rs)|
-|1135|[Connecting Cities With Minimum Cost](https://leetcode.com/problems/connecting-cities-with-minimum-cost)||[Rust](rustgym/src/leetcode/_1135_connecting_cities_with_minimum_cost.rs)|
-|1138|[Alphabet Board Path](https://leetcode.com/problems/alphabet-board-path)|array sliding-window|[Rust](rustgym/src/leetcode/_1138_alphabet_board_path.rs)|
-|1139|[Largest 1-Bordered Square](https://leetcode.com/problems/largest-1-bordered-square)|array greedy|[Rust](rustgym/src/leetcode/_1139_largest_1_bordered_square.rs)|
-|113|[Path Sum II](https://leetcode.com/problems/path-sum-ii)|tree depth-first-search|[Rust](rustgym/src/leetcode/_113_path_sum_2.rs)|
-|1140|[Stone Game II](https://leetcode.com/problems/stone-game-ii)|heap sort|[Rust](rustgym/src/leetcode/_1140_stone_game_2.rs)|
-|1143|[Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence)|hash-table binary-search|[Rust](rustgym/src/leetcode/_1143_longest_common_subsequence.rs)|
-|1144|[Decrease Elements To Make Array Zigzag](https://leetcode.com/problems/decrease-elements-to-make-array-zigzag)|union-find graph|[Rust](rustgym/src/leetcode/_1144_decrease_elements_to_make_array_zigzag.rs)|
-|1145|[Binary Tree Coloring Game](https://leetcode.com/problems/binary-tree-coloring-game)|array dynamic-programming sliding-window|[Rust](rustgym/src/leetcode/_1145_binary_tree_coloring_game.rs)|
-|1146|[Snapshot Array](https://leetcode.com/problems/snapshot-array)|string|[Rust](rustgym/src/leetcode/_1146_snapshot_array.rs)|
-|114|[Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list)|tree depth-first-search|[Rust](rustgym/src/leetcode/_114_flatten_binary_tree_to_linked_list.rs)|
-|1151|[Minimum Swaps to Group All 1's Together](https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together)|backtracking|[Rust](rustgym/src/leetcode/_1151_minimum_swaps_to_group_all_1s_together.rs)|
-|1152|[Analyze User Website Visit Pattern](https://leetcode.com/problems/analyze-user-website-visit-pattern)|math sort|[Rust](rustgym/src/leetcode/_1152_analyze_user_website_visit_pattern.rs)|
-|1155|[Number of Dice Rolls With Target Sum](https://leetcode.com/problems/number-of-dice-rolls-with-target-sum)||[Rust](rustgym/src/leetcode/_1155_number_of_dice_rolls_with_target_sum.rs)|
-|1156|[Swap For Longest Repeated Character Substring](https://leetcode.com/problems/swap-for-longest-repeated-character-substring)|hash-table|[Rust](rustgym/src/leetcode/_1156_swap_for_longest_repeated_character_substring.rs)|
-|1161|[Maximum Level Sum of a Binary Tree](https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree)||[Rust](rustgym/src/leetcode/_1161_maximum_level_sum_of_a_binary_tree.rs)|
-|1162|[As Far from Land as Possible](https://leetcode.com/problems/as-far-from-land-as-possible)||[Rust](rustgym/src/leetcode/_1162_as_far_from_land_as_possible.rs)|
-|1166|[Design File System](https://leetcode.com/problems/design-file-system)|math dynamic-programming|[Rust](rustgym/src/leetcode/_1166_design_file_system.rs)|
-|1167|[Minimum Cost to Connect Sticks](https://leetcode.com/problems/minimum-cost-to-connect-sticks)|math dynamic-programming|[Rust](rustgym/src/leetcode/_1167_minimum_cost_to_connect_sticks.rs)|
-|1169|[Invalid Transactions](https://leetcode.com/problems/invalid-transactions)|hash-table greedy|[Rust](rustgym/src/leetcode/_1169_invalid_transactions.rs)|
-|1171|[Remove Zero Sum Consecutive Nodes from Linked List](https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list)|breadth-first-search|[Rust](rustgym/src/leetcode/_1171_remove_zero_sum_consecutive_nodes_from_linked_list.rs)|
-|1177|[Can Make Palindrome from Substring](https://leetcode.com/problems/can-make-palindrome-from-substring)|tree depth-first-search breadth-first-search|[Rust](rustgym/src/leetcode/_1177_can_make_palindrome_from_substring.rs)|
-|1181|[Before and After Puzzle](https://leetcode.com/problems/before-and-after-puzzle)||[Rust](rustgym/src/leetcode/_1181_before_and_after_puzzle.rs)|
-|1182|[Shortest Distance to Target Color](https://leetcode.com/problems/shortest-distance-to-target-color)||[Rust](rustgym/src/leetcode/_1182_shortest_distance_to_target_color.rs)|
-|1186|[Maximum Subarray Sum with One Deletion](https://leetcode.com/problems/maximum-subarray-sum-with-one-deletion)||[Rust](rustgym/src/leetcode/_1186_maximum_subarray_sum_with_one_deletion.rs)|
-|1190|[Reverse Substrings Between Each Pair of Parentheses](https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses)|tree|[Rust](rustgym/src/leetcode/_1190_reverse_substrings_between_each_pair_of_parentheses.rs)|
-|1191|[K-Concatenation Maximum Sum](https://leetcode.com/problems/k-concatenation-maximum-sum)|backtracking|[Rust](rustgym/src/leetcode/_1191_k_concatenation_maximum_sum.rs)|
-|1197|[Minimum Knight Moves](https://leetcode.com/problems/minimum-knight-moves)|string|[Rust](rustgym/src/leetcode/_1197_minimum_knight_moves_math.rs)|
-|1198|[Find Smallest Common Element in All Rows](https://leetcode.com/problems/find-smallest-common-element-in-all-rows)||[Rust](rustgym/src/leetcode/_1198_find_smallest_common_element_in_all_rows.rs)|
-|11|[Container With Most Water](https://leetcode.com/problems/container-with-most-water)|array two-pointers|[Rust](rustgym/src/leetcode/_11_container_with_most_water.rs)|
-|1201|[Ugly Number III](https://leetcode.com/problems/ugly-number-iii)|dynamic-programming depth-first-search|[Rust](rustgym/src/leetcode/_1201_ugly_number_3.rs)|
-|1202|[Smallest String With Swaps](https://leetcode.com/problems/smallest-string-with-swaps)|dynamic-programming|[Rust](rustgym/src/leetcode/_1202_smallest_string_with_swaps.rs)|
-|1208|[Get Equal Substrings Within Budget](https://leetcode.com/problems/get-equal-substrings-within-budget)|binary-search greedy|[Rust](rustgym/src/leetcode/_1208_get_equal_substrings_within_budget.rs)|
-|1209|[Remove All Adjacent Duplicates in String II](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii)||[Rust](rustgym/src/leetcode/_1209_remove_all_adjacent_duplicates_in_string_2.rs)|
-|120|[Triangle](https://leetcode.com/problems/triangle)|array dynamic-programming|[Rust](rustgym/src/leetcode/_120_triangle.rs)|
-|1214|[Two Sum BSTs](https://leetcode.com/problems/two-sum-bsts)||[Rust](rustgym/src/leetcode/_1214_two_sum_bsts.rs)|
-|1215|[Stepping Numbers](https://leetcode.com/problems/stepping-numbers)||[Rust](rustgym/src/leetcode/_1215_stepping_numbers.rs)|
-|1218|[Longest Arithmetic Subsequence of Given Difference](https://leetcode.com/problems/longest-arithmetic-subsequence-of-given-difference)|tree depth-first-search|[Rust](rustgym/src/leetcode/_1218_longest_arithmetic_subsequence_of_given_difference.rs)|
-|1219|[Path with Maximum Gold](https://leetcode.com/problems/path-with-maximum-gold)|stack|[Rust](rustgym/src/leetcode/_1219_path_with_maximum_gold.rs)|
-|1222|[Queens That Can Attack the King](https://leetcode.com/problems/queens-that-can-attack-the-king)|greedy sort line-sweep|[Rust](rustgym/src/leetcode/_1222_queens_that_can_attack_the_king.rs)|
-|1223|[Dice Roll Simulation](https://leetcode.com/problems/dice-roll-simulation)|math union-find|[Rust](rustgym/src/leetcode/_1223_dice_roll_simulation.rs)|
-|1227|[Airplane Seat Assignment Probability](https://leetcode.com/problems/airplane-seat-assignment-probability)|array|[Rust](rustgym/src/leetcode/_1227_airplane_seat_assignment_probability.rs)|
-|1229|[Meeting Scheduler](https://leetcode.com/problems/meeting-scheduler)|breadth-first-search graph|[Rust](rustgym/src/leetcode/_1229_meeting_scheduler.rs)|
-|1230|[Toss Strange Coins](https://leetcode.com/problems/toss-strange-coins)|math bit-manipulation|[Rust](rustgym/src/leetcode/_1230_toss_strange_coins.rs)|
-|1233|[Remove Sub-Folders from the Filesystem](https://leetcode.com/problems/remove-sub-folders-from-the-filesystem)|divide-and-conquer|[Rust](rustgym/src/leetcode/_1233_remove_sub_folders_from_the_filesystem.rs)|
-|1234|[Replace the Substring for Balanced String](https://leetcode.com/problems/replace-the-substring-for-balanced-string)|dynamic-programming|[Rust](rustgym/src/leetcode/_1234_replace_the_substring_for_balanced_string.rs)|
-|1238|[Circular Permutation in Binary Representation](https://leetcode.com/problems/circular-permutation-in-binary-representation)|hash-table string|[Rust](rustgym/src/leetcode/_1238_circular_permutation_in_binary_representation.rs)|
-|1239|[Maximum Length of a Concatenated String with Unique Characters](https://leetcode.com/problems/maximum-length-of-a-concatenated-string-with-unique-characters)|dynamic-programming|[Rust](rustgym/src/leetcode/_1239_maximum_length_of_concatenated_string_with_unique_characters.rs)|
-|1244|[Design A Leaderboard](https://leetcode.com/problems/design-a-leaderboard)|string rolling-hash|[Rust](rustgym/src/leetcode/_1244_design_a_leaderboard.rs)|
-|[1245](rustgym/desc/leetcode/1245.md)|[Tree Diameter](https://leetcode.com/problems/tree-diameter)||[Rust](rustgym/src/leetcode/_1245_tree_diameter.rs)|
-|1247|[Minimum Swaps to Make Strings Equal](https://leetcode.com/problems/minimum-swaps-to-make-strings-equal)|array|[Rust](rustgym/src/leetcode/_1247_minimum_swaps_to_make_strings_equal.rs)|
-|1248|[Count Number of Nice Subarrays](https://leetcode.com/problems/count-number-of-nice-subarrays)|tree depth-first-search|[Rust](rustgym/src/leetcode/_1248_count_number_of_nice_subarrays.rs)|
-|1249|[Minimum Remove to Make Valid Parentheses](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses)|array|[Rust](rustgym/src/leetcode/_1249_minimum_remove_to_make_valid_parentheses.rs)|
-|1253|[Reconstruct a 2-Row Binary Matrix](https://leetcode.com/problems/reconstruct-a-2-row-binary-matrix)|array sort|[Rust](rustgym/src/leetcode/_1253_reconstruct_a_2_row_binary_matrix.rs)|
-|1254|[Number of Closed Islands](https://leetcode.com/problems/number-of-closed-islands)|tree depth-first-search|[Rust](rustgym/src/leetcode/_1254_number_of_closed_islands.rs)|
-|1256|[Encode Number](https://leetcode.com/problems/encode-number)|array|[Rust](rustgym/src/leetcode/_1256_encode_number.rs)|
-|1257|[Smallest Common Region](https://leetcode.com/problems/smallest-common-region)|greedy union-find|[Rust](rustgym/src/leetcode/_1257_smallest_common_region.rs)|
-|1258|[Synonymous Sentences](https://leetcode.com/problems/synonymous-sentences)||[Rust](rustgym/src/leetcode/_1258_synonymous_sentences.rs)|
-|1261|[Find Elements in a Contaminated Binary Tree](https://leetcode.com/problems/find-elements-in-a-contaminated-binary-tree)|string|[Rust](rustgym/src/leetcode/_1261_find_elements_in_contaminated_binary_tree.rs)|
-|1262|[Greatest Sum Divisible by Three](https://leetcode.com/problems/greatest-sum-divisible-by-three)|array binary-search segment-tree|[Rust](rustgym/src/leetcode/_1262_greatest_sum_divisible_by_three.rs)|
-|1267|[Count Servers that Communicate](https://leetcode.com/problems/count-servers-that-communicate)|linked-list|[Rust](rustgym/src/leetcode/_1267_count_servers_that_communicate.rs)|
-|1268|[Search Suggestions System](https://leetcode.com/problems/search-suggestions-system)||[Rust](rustgym/src/leetcode/_1268_search_suggestions_system.rs)|
-|1272|[Remove Interval](https://leetcode.com/problems/remove-interval)|array string|[Rust](rustgym/src/leetcode/_1272_remove_interval.rs)|
-|1273|[Delete Tree Nodes](https://leetcode.com/problems/delete-tree-nodes)|array string|[Rust](rustgym/src/leetcode/_1273_delete_tree_nodes.rs)|
-|1276|[Number of Burgers with No Waste of Ingredients](https://leetcode.com/problems/number-of-burgers-with-no-waste-of-ingredients)|math|[Rust](rustgym/src/leetcode/_1276_number_of_burgers_with_no_waste_of_ingredients.rs)|
-|1277|[Count Square Submatrices with All Ones](https://leetcode.com/problems/count-square-submatrices-with-all-ones)|math dynamic-programming|[Rust](rustgym/src/leetcode/_1277_count_square_submatrices_with_all_ones.rs)|
-|127|[Word Ladder](https://leetcode.com/problems/word-ladder)|breadth-first-search|[Rust](rustgym/src/leetcode/_127_word_ladder.rs)|
-|1282|[Group the People Given the Group Size They Belong To](https://leetcode.com/problems/group-the-people-given-the-group-size-they-belong-to)|hash-table bit-manipulation|[Rust](rustgym/src/leetcode/_1282_group_the_people_given_the_group_size_they_belong_to.rs)|
-|1283|[Find the Smallest Divisor Given a Threshold](https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold)|string|[Rust](rustgym/src/leetcode/_1283_find_the_smallest_divisor_given_a_threshold.rs)|
-|1286|[Iterator for Combination](https://leetcode.com/problems/iterator-for-combination)|dynamic-programming|[Rust](rustgym/src/leetcode/_1286_iterator_for_combination.rs)|
-|1288|[Remove Covered Intervals](https://leetcode.com/problems/remove-covered-intervals)|dynamic-programming|[Rust](rustgym/src/leetcode/_1288_remove_covered_intervals.rs)|
-|1291|[Sequential Digits](https://leetcode.com/problems/sequential-digits)||[Rust](rustgym/src/leetcode/_1291_sequential_digits.rs)|
-|1292|[Maximum Side Length of a Square with Sum Less than or Equal to Threshold](https://leetcode.com/problems/maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold)||[Rust](rustgym/src/leetcode/_1292_maximum_side_length_of_a_square_with_sum_less_than_or_equal_to_threshold.rs)|
-|1296|[Divide Array in Sets of K Consecutive Numbers](https://leetcode.com/problems/divide-array-in-sets-of-k-consecutive-numbers)|dynamic-programming|[Rust](rustgym/src/leetcode/_1296_divide_array_in_sets_of_k_consecutive_numbers.rs)|
-|1297|[Maximum Number of Occurrences of a Substring](https://leetcode.com/problems/maximum-number-of-occurrences-of-a-substring)|hash-table string|[Rust](rustgym/src/leetcode/_1297_maximum_number_of_occurrences_of_a_substring.rs)|
-|129|[Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers)|tree depth-first-search|[Rust](rustgym/src/leetcode/_129_sum_root_to_leaf_numbers.rs)|
-|12|[Integer to Roman](https://leetcode.com/problems/integer-to-roman)|math string|[Rust](rustgym/src/leetcode/_12_integer_to_roman.rs)|
-|1300|[Sum of Mutated Array Closest to Target](https://leetcode.com/problems/sum-of-mutated-array-closest-to-target)|depth-first-search|[Rust](rustgym/src/leetcode/_1300_sum_of_mutated_array_closest_to_target.rs)|
-|1302|[Deepest Leaves Sum](https://leetcode.com/problems/deepest-leaves-sum)||[Rust](rustgym/src/leetcode/_1302_deepest_leaves_sum.rs)|
-|1305|[All Elements in Two Binary Search Trees](https://leetcode.com/problems/all-elements-in-two-binary-search-trees)||[Rust](rustgym/src/leetcode/_1305_all_elements_in_two_binary_search_tree.rs)|
-|1306|[Jump Game III](https://leetcode.com/problems/jump-game-iii)|array|[Rust](rustgym/src/leetcode/_1306_jump_game_3.rs)|
-|130|[Surrounded Regions](https://leetcode.com/problems/surrounded-regions)|depth-first-search breadth-first-search union-find|[Rust](rustgym/src/leetcode/_130_surrounded_regions.rs)|
-|1310|[XOR Queries of a Subarray](https://leetcode.com/problems/xor-queries-of-a-subarray)||[Rust](rustgym/src/leetcode/_1310_xor_queries_of_a_subarray.rs)|
-|1311|[Get Watched Videos by Your Friends](https://leetcode.com/problems/get-watched-videos-by-your-friends)||[Rust](rustgym/src/leetcode/_1311_get_watched_videos_by_your_friends.rs)|
-|1314|[Matrix Block Sum](https://leetcode.com/problems/matrix-block-sum)||[Rust](rustgym/src/leetcode/_1314_matrix_block_sum.rs)|
-|1315|[Sum of Nodes with Even-Valued Grandparent](https://leetcode.com/problems/sum-of-nodes-with-even-valued-grandparent)||[Rust](rustgym/src/leetcode/_1315_sum_of_nodes_with_even_valued_grandparent.rs)|
-|1318|[Minimum Flips to Make a OR b Equal to c](https://leetcode.com/problems/minimum-flips-to-make-a-or-b-equal-to-c)||[Rust](rustgym/src/leetcode/_1318_minimum_flips_to_make_a_or_b_equal_to_c.rs)|
-|1319|[Number of Operations to Make Network Connected](https://leetcode.com/problems/number-of-operations-to-make-network-connected)|hash-table|[Rust](rustgym/src/leetcode/_1319_number_of_operations_to_make_network_connected.rs)|
-|131|[Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning)|dynamic-programming backtracking depth-first-search|[Rust](rustgym/src/leetcode/_131_palindrome_partitioning.rs)|
-|1324|[Print Words Vertically](https://leetcode.com/problems/print-words-vertically)||[Rust](rustgym/src/leetcode/_1324_print_words_vertically.rs)|
-|1325|[Delete Leaves With a Given Value](https://leetcode.com/problems/delete-leaves-with-a-given-value)|graph|[Rust](rustgym/src/leetcode/_1325_delete_leaves_with_a_given_value.rs)|
-|1328|[Break a Palindrome](https://leetcode.com/problems/break-a-palindrome)||[Rust](rustgym/src/leetcode/_1328_break_a_palindrome.rs)|
-|1329|[Sort the Matrix Diagonally](https://leetcode.com/problems/sort-the-matrix-diagonally)|array math greedy|[Rust](rustgym/src/leetcode/_1329_sort_the_matrix_diagonally.rs)|
-|1333|[Filter Restaurants by Vegan-Friendly, Price and Distance](https://leetcode.com/problems/filter-restaurants-by-vegan-friendly-price-and-distance)||[Rust](rustgym/src/leetcode/_1333_filter_restaurants_by_vengan_friendly_price_and_distance.rs)|
-|1334|[Find the City With the Smallest Number of Neighbors at a Threshold Distance](https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance)||[Rust](rustgym/src/leetcode/_1334_find_the_city_with_the_smallest_number_of_neighbors_at_a_threshold_distance.rs)|
-|1338|[Reduce Array Size to The Half](https://leetcode.com/problems/reduce-array-size-to-the-half)||[Rust](rustgym/src/leetcode/_1338_reduce_array_size_to_the_half.rs)|
-|1339|[Maximum Product of Splitted Binary Tree](https://leetcode.com/problems/maximum-product-of-splitted-binary-tree)||[Rust](rustgym/src/leetcode/_1339_maximum_product_of_splitted_binary_tree.rs)|
-|1343|[Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold](https://leetcode.com/problems/number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold)|dynamic-programming|[Rust](rustgym/src/leetcode/_1343_number_of_sub_arrays_of_size_k_and_average_greater_than_or_equal_to_threshold.rs)|
-|1344|[Angle Between Hands of a Clock](https://leetcode.com/problems/angle-between-hands-of-a-clock)|hash-table|[Rust](rustgym/src/leetcode/_1344_angle_between_hands_of_a_clock.rs)|
-|1347|[Minimum Number of Steps to Make Two Strings Anagram](https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram)||[Rust](rustgym/src/leetcode/_1347_minimum_number_of_steps_to_make_two_strings_anagram.rs)|
-|1348|[Tweet Counts Per Frequency](https://leetcode.com/problems/tweet-counts-per-frequency)||[Rust](rustgym/src/leetcode/_1348_tweet_counts_per_frequency.rs)|
-|134|[Gas Station](https://leetcode.com/problems/gas-station)|greedy|[Rust](rustgym/src/leetcode/_134_gas_station.rs)|
-|1352|[Product of the Last K Numbers](https://leetcode.com/problems/product-of-the-last-k-numbers)|binary-search dynamic-programming sort|[Rust](rustgym/src/leetcode/_1352_product_of_the_last_k_numbers.rs)|
-|1353|[Maximum Number of Events That Can Be Attended](https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended)||[Rust](rustgym/src/leetcode/_1353_maximum_number_of_events_that_can_be_attended.rs)|
-|1357|[Apply Discount Every n Orders](https://leetcode.com/problems/apply-discount-every-n-orders)||[Rust](rustgym/src/leetcode/_1357_apply_discount_every_n_orders.rs)|
-|1358|[Number of Substrings Containing All Three Characters](https://leetcode.com/problems/number-of-substrings-containing-all-three-characters)|math binary-search|[Rust](rustgym/src/leetcode/_1358_number_of_substrings_containing_all_three_characters.rs)|
-|1361|[Validate Binary Tree Nodes](https://leetcode.com/problems/validate-binary-tree-nodes)|dynamic-programming backtracking|[Rust](rustgym/src/leetcode/_1361_validate_binary_tree_nodes.rs)|
-|1362|[Closest Divisors](https://leetcode.com/problems/closest-divisors)|math dynamic-programming brainteaser|[Rust](rustgym/src/leetcode/_1362_closest_divisors.rs)|
-|1366|[Rank Teams by Votes](https://leetcode.com/problems/rank-teams-by-votes)|hash-table design|[Rust](rustgym/src/leetcode/_1366_rank_teams_by_votes.rs)|
-|1367|[Linked List in Binary Tree](https://leetcode.com/problems/linked-list-in-binary-tree)|dynamic-programming sort|[Rust](rustgym/src/leetcode/_1367_linked_list_in_binary_tree.rs)|
-|1371|[Find the Longest Substring Containing Vowels in Even Counts](https://leetcode.com/problems/find-the-longest-substring-containing-vowels-in-even-counts)|string stack|[Rust](rustgym/src/leetcode/_1371_find_the_longest_substring_containing_vowels_in_even_counts.rs)|
-|1372|[Longest ZigZag Path in a Binary Tree](https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree)|math|[Rust](rustgym/src/leetcode/_1372_longest_zigzag_path_in_a_binary_tree.rs)|
-|1375|[Bulb Switcher III](https://leetcode.com/problems/bulb-switcher-iii)||[Rust](rustgym/src/leetcode/_1375_bulb_switcher_3.rs)|
-|1376|[Time Needed to Inform All Employees](https://leetcode.com/problems/time-needed-to-inform-all-employees)||[Rust](rustgym/src/leetcode/_1376_time_needed_to_inform_all_employees.rs)|
-|137|[Single Number II](https://leetcode.com/problems/single-number-ii)|bit-manipulation|[Rust](rustgym/src/leetcode/_137_single_number_2.rs)|
-|1381|[Design a Stack With Increment Operation](https://leetcode.com/problems/design-a-stack-with-increment-operation)|bit-manipulation|[Rust](rustgym/src/leetcode/_1381_design_a_stack_with_increment_operation.rs)|
-|1382|[Balance a Binary Search Tree](https://leetcode.com/problems/balance-a-binary-search-tree)||[Rust](rustgym/src/leetcode/_1382_balance_a_binary_search_tree.rs)|
-|1386|[Cinema Seat Allocation](https://leetcode.com/problems/cinema-seat-allocation)|array|[Rust](rustgym/src/leetcode/_1386_cinema_seat_allocation.rs)|
-|1387|[Sort Integers by The Power Value](https://leetcode.com/problems/sort-integers-by-the-power-value)|hash-table tree|[Rust](rustgym/src/leetcode/_1387_sort_integers_by_the_power_value.rs)|
-|1390|[Four Divisors](https://leetcode.com/problems/four-divisors)||[Rust](rustgym/src/leetcode/_1390_four_divisors.rs)|
-|1391|[Check if There is a Valid Path in a Grid](https://leetcode.com/problems/check-if-there-is-a-valid-path-in-a-grid)|array|[Rust](rustgym/src/leetcode/_1391_check_if_there_is_a_valid_path_in_a_grid.rs)|
-|1395|[Count Number of Teams](https://leetcode.com/problems/count-number-of-teams)|array geometry|[Rust](rustgym/src/leetcode/_1395_count_number_of_teams.rs)|
-|1396|[Design Underground System](https://leetcode.com/problems/design-underground-system)|array graph|[Rust](rustgym/src/leetcode/_1396_design_underground_system.rs)|
-|139|[Word Break](https://leetcode.com/problems/word-break)|dynamic-programming|[Rust](rustgym/src/leetcode/_139_word_break.rs)|
-|1400|[Construct K Palindrome Strings](https://leetcode.com/problems/construct-k-palindrome-strings)|array|[Rust](rustgym/src/leetcode/_1400_construct_k_palindrome_strings.rs)|
-|1401|[Circle and Rectangle Overlapping](https://leetcode.com/problems/circle-and-rectangle-overlapping)|math greedy|[Rust](rustgym/src/leetcode/_1401_circle_and_rectangle_overlapping.rs)|
-|1404|[Number of Steps to Reduce a Number in Binary Representation to One](https://leetcode.com/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one)||[Rust](rustgym/src/leetcode/_1404_number_of_steps_to_reduce_a_number_in_binary_representation_to_one.rs)|
-|1405|[Longest Happy String](https://leetcode.com/problems/longest-happy-string)||[Rust](rustgym/src/leetcode/_1405_longest_happy_string.rs)|
-|1409|[Queries on a Permutation With Key](https://leetcode.com/problems/queries-on-a-permutation-with-key)|breadth-first-search|[Rust](rustgym/src/leetcode/_1409_queries_on_a_permutation_with_key.rs)|
-|1410|[HTML Entity Parser](https://leetcode.com/problems/html-entity-parser)||[Rust](rustgym/src/leetcode/_1410_html_entity_parser.rs)|
-|1414|[Find the Minimum Number of Fibonacci Numbers Whose Sum Is K](https://leetcode.com/problems/find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k)|breadth-first-search|[Rust](rustgym/src/leetcode/_1414_find_the_minimum_number_of_fibonacci_numbers_whoes_sum_is_k.rs)|
-|1415|[The k-th Lexicographical String of All Happy Strings of Length n](https://leetcode.com/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n)||[Rust](rustgym/src/leetcode/_1415_the_k_th_lexicographical_string_of_all_happy_strings_of_length_n.rs)|
-|1418|[Display Table of Food Orders in a Restaurant](https://leetcode.com/problems/display-table-of-food-orders-in-a-restaurant)||[Rust](rustgym/src/leetcode/_1418_display_table_of_food_orders_in_a_restaurant.rs)|
-|1419|[Minimum Number of Frogs Croaking](https://leetcode.com/problems/minimum-number-of-frogs-croaking)||[Rust](rustgym/src/leetcode/_1419_minimum_number_of_frogs_croaking.rs)|
-|1423|[Maximum Points You Can Obtain from Cards](https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards)|string bit-manipulation|[Rust](rustgym/src/leetcode/_1423_maximum_points_you_can_obtain_from_cards.rs)|
-|1424|[Diagonal Traverse II](https://leetcode.com/problems/diagonal-traverse-ii)|breadth-first-search|[Rust](rustgym/src/leetcode/_1424_diagonal_traversel_2.rs)|
-|[1428](rustgym/desc/leetcode/1428.md)|[Leftmost Column with at Least a One](https://leetcode.com/problems/leftmost-column-with-at-least-a-one)|depth-first-search breadth-first-search recursion|[Rust](rustgym/src/leetcode/_1428_leftmost_column_with_at_least_a_one.rs)|
-|1429|[First Unique Number](https://leetcode.com/problems/first-unique-number)|math backtracking|[Rust](rustgym/src/leetcode/_1429_first_unique_number.rs)|
-|1430|[Check If a String Is a Valid Sequence from Root to Leaves Path in a Binary Tree](https://leetcode.com/problems/check-if-a-string-is-a-valid-sequence-from-root-to-leaves-path-in-a-binary-tree)||[Rust](rustgym/src/leetcode/_1430_chick_if_a_string_is_a_valid_sequence_from_root_to_leaves_path_in_a_binary_tree.rs)|
-|1432|[Max Difference You Can Get From Changing an Integer](https://leetcode.com/problems/max-difference-you-can-get-from-changing-an-integer)|tree|[Rust](rustgym/src/leetcode/_1432_max_difference_you_can_get_from_change_an_integer.rs)|
-|1433|[Check If a String Can Break Another String](https://leetcode.com/problems/check-if-a-string-can-break-another-string)||[Rust](rustgym/src/leetcode/_1433_check_if_a_string_can_break_another_string.rs)|
-|1437|[Check If All 1's Are at Least Length K Places Away](https://leetcode.com/problems/check-if-all-1s-are-at-least-length-k-places-away)|dynamic-programming|[Rust](rustgym/src/leetcode/_1437_check_if_all_1s_are_at_least_length_k_places_away.rs)|
-|1438|[Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit](https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit)||[Rust](rustgym/src/leetcode/_1438_longest_continuous_subarray_with_absolute_diff_less_than_or_equal_to_limit.rs)|
-|143|[Reorder List](https://leetcode.com/problems/reorder-list)|linked-list|[Rust](rustgym/src/leetcode/_143_reorder_list.rs)|
-|1442|[Count Triplets That Can Form Two Arrays of Equal XOR](https://leetcode.com/problems/count-triplets-that-can-form-two-arrays-of-equal-xor)|depth-first-search breadth-first-search union-find|[Rust](rustgym/src/leetcode/_1442_count_triplets_that_can_form_two_arrays_of_equal_xor.rs)|
-|1443|[Minimum Time to Collect All Apples in a Tree](https://leetcode.com/problems/minimum-time-to-collect-all-apples-in-a-tree)|dynamic-programming|[Rust](rustgym/src/leetcode/_1443_minimum_time_to_collect_all_apples_in_a_tree.rs)|
-|1447|[Simplified Fractions](https://leetcode.com/problems/simplified-fractions)|breadth-first-search|[Rust](rustgym/src/leetcode/_1447_simplified_fractions.rs)|
-|1448|[Count Good Nodes in Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree)|math|[Rust](rustgym/src/leetcode/_1448_count_good_nodes_in_binary_tree.rs)|
-|144|[Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal)|stack tree|[Rust](rustgym/src/leetcode/_144_binary_tree_preorder_traversal.rs)|
-|1451|[Rearrange Words in a Sentence](https://leetcode.com/problems/rearrange-words-in-a-sentence)|dynamic-programming greedy|[Rust](rustgym/src/leetcode/_1451_rearrange_words_in_a_sentence.rs)|
-|1452|[People Whose List of Favorite Companies Is Not a Subset of Another List](https://leetcode.com/problems/people-whose-list-of-favorite-companies-is-not-a-subset-of-another-list)||[Rust](rustgym/src/leetcode/_1452_people_whose_list_of_favorite_companies_is_not_a_subset_of_another_list.rs)|
-|1456|[Maximum Number of Vowels in a Substring of Given Length](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length)|graph|[Rust](rustgym/src/leetcode/_1456_maximum_number_of_vowels_in_a_substring_of_given_length.rs)|
-|1457|[Pseudo-Palindromic Paths in a Binary Tree](https://leetcode.com/problems/pseudo-palindromic-paths-in-a-binary-tree)|dynamic-programming|[Rust](rustgym/src/leetcode/_1457_pseudo_palindromic_paths_in_a_binary_tree.rs)|
-|145|[Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal)|stack tree|[Rust](rustgym/src/leetcode/_145_binary_tree_postorder_traversal.rs)|
-|1461|[Check If a String Contains All Binary Codes of Size K](https://leetcode.com/problems/check-if-a-string-contains-all-binary-codes-of-size-k)|math dynamic-programming|[Rust](rustgym/src/leetcode/_1461_check_if_a_string_contains_all_binary_codes_of_size_k.rs)|
-|1462|[Course Schedule IV](https://leetcode.com/problems/course-schedule-iv)||[Rust](rustgym/src/leetcode/_1462_course_schedule_4.rs)|
-|1465|[Maximum Area of a Piece of Cake After Horizontal and Vertical Cuts](https://leetcode.com/problems/maximum-area-of-a-piece-of-cake-after-horizontal-and-vertical-cuts)|dynamic-programming tree depth-first-search|[Rust](rustgym/src/leetcode/_1465_maximum_area_of_a_piece_of_cake_after_horizontal_and_vertical_cuts.rs)|
-|1466|[Reorder Routes to Make All Paths Lead to the City Zero](https://leetcode.com/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero)|dynamic-programming|[Rust](rustgym/src/leetcode/_1466_reorder_routes_to_make_all_paths_lead_to_the_city_zero.rs)|
-|146|[LRU Cache](https://leetcode.com/problems/lru-cache)|design|[Rust](rustgym/src/leetcode/_146_lru_cache.rs)|
-|1471|[The k Strongest Values in an Array](https://leetcode.com/problems/the-k-strongest-values-in-an-array)|dynamic-programming|[Rust](rustgym/src/leetcode/_1471_the_k_strongest_values_in_an_array.rs)|
-|1472|[Design Browser History](https://leetcode.com/problems/design-browser-history)|string sort|[Rust](rustgym/src/leetcode/_1472_design_browser_history.rs)|
-|1476|[Subrectangle Queries](https://leetcode.com/problems/subrectangle-queries)|array binary-search|[Rust](rustgym/src/leetcode/_1476_subrectangle_queries.rs)|
-|1477|[Find Two Non-overlapping Sub-arrays Each With Target Sum](https://leetcode.com/problems/find-two-non-overlapping-sub-arrays-each-with-target-sum)|array design|[Rust](rustgym/src/leetcode/_1477_find_two_non_overlapping_sub_arrays_each_with_target_sum.rs)|
-|147|[Insertion Sort List](https://leetcode.com/problems/insertion-sort-list)|linked-list sort|[Rust](rustgym/src/leetcode/_147_insertion_sort_list.rs)|
-|1481|[Least Number of Unique Integers after K Removals](https://leetcode.com/problems/least-number-of-unique-integers-after-k-removals)||[Rust](rustgym/src/leetcode/_1481_least_number_of_unique_integers_after_k_removals.rs)|
-|1482|[Minimum Number of Days to Make m Bouquets](https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets)|array hash-table|[Rust](rustgym/src/leetcode/_1482_minimum_number_of_days_to_make_m_bouquets.rs)|
-|1487|[Making File Names Unique](https://leetcode.com/problems/making-file-names-unique)|array greedy|[Rust](rustgym/src/leetcode/_1487_making_file_names_unique.rs)|
-|1488|[Avoid Flood in The City](https://leetcode.com/problems/avoid-flood-in-the-city)|sort graph|[Rust](rustgym/src/leetcode/_1488_avoid_flood_in_the_city.rs)|
-|148|[Sort List](https://leetcode.com/problems/sort-list)|linked-list sort|[Rust](rustgym/src/leetcode/_148_sort_list.rs)|
-|1492|[The kth Factor of n](https://leetcode.com/problems/the-kth-factor-of-n)|depth-first-search|[Rust](rustgym/src/leetcode/_1492_the_kth_factor_of_n.rs)|
-|1493|[Longest Subarray of 1's After Deleting One Element](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element)|depth-first-search|[Rust](rustgym/src/leetcode/_1493_longest_subarray_of_1s_after_deleting_one_element.rs)|
-|1497|[Check If Array Pairs Are Divisible by k](https://leetcode.com/problems/check-if-array-pairs-are-divisible-by-k)|stack design|[Rust](rustgym/src/leetcode/_1497_check_if_array_pairs_are_divisible_by_k.rs)|
-|1498|[Number of Subsequences That Satisfy the Given Sum Condition](https://leetcode.com/problems/number-of-subsequences-that-satisfy-the-given-sum-condition)|tree|[Rust](rustgym/src/leetcode/_1498_number_of_subsequences_that_satisfy_the_given_sum_condition.rs)|
-|1500|[Design a File Sharing System](https://leetcode.com/problems/design-a-file-sharing-system)|array|[Rust](rustgym/src/leetcode/_1500_design_a_file_sharing_system.rs)|
-|1503|[Last Moment Before All Ants Fall Out of a Plank](https://leetcode.com/problems/last-moment-before-all-ants-fall-out-of-a-plank)|dynamic-programming|[Rust](rustgym/src/leetcode/_1503_last_moment_before_all_ants_fall_out_of_a_plank.rs)|
-|1504|[Count Submatrices With All Ones](https://leetcode.com/problems/count-submatrices-with-all-ones)||[Rust](rustgym/src/leetcode/_1504_count_submatrices_with_all_ones.rs)|
-|1508|[Range Sum of Sorted Subarray Sums](https://leetcode.com/problems/range-sum-of-sorted-subarray-sums)|string|[Rust](rustgym/src/leetcode/_1508_range_sum_of_sorted_subarray_sums.rs)|
-|1509|[Minimum Difference Between Largest and Smallest Value in Three Moves](https://leetcode.com/problems/minimum-difference-between-largest-and-smallest-value-in-three-moves)||[Rust](rustgym/src/leetcode/_1509_minimum_difference_between_largest_and_smallest_value_in_three_moves.rs)|
-|150|[Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation)|stack|[Rust](rustgym/src/leetcode/_150_evaluate_reverse_polish_notation.rs)|
-|1513|[Number of Substrings With Only 1s](https://leetcode.com/problems/number-of-substrings-with-only-1s)|dynamic-programming|[Rust](rustgym/src/leetcode/_1513_number_of_substrings_with_only_1s.rs)|
-|1514|[Path with Maximum Probability](https://leetcode.com/problems/path-with-maximum-probability)|array|[Rust](rustgym/src/leetcode/_1514_path_with_maximum_probability.rs)|
-|1519|[Number of Nodes in the Sub-Tree With the Same Label](https://leetcode.com/problems/number-of-nodes-in-the-sub-tree-with-the-same-label)|greedy sort|[Rust](rustgym/src/leetcode/_1519_number_of_nodes_in_the_sub_tree_with_the_same_label.rs)|
-|151|[Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string)|string|[Rust](rustgym/src/leetcode/_151_reverse_words_in_a_string.rs)|
-|1524|[Number of Sub-arrays With Odd Sum](https://leetcode.com/problems/number-of-sub-arrays-with-odd-sum)|string|[Rust](rustgym/src/leetcode/_1524_number_of_sub_arrays_with_odd_sum.rs)|
-|1525|[Number of Good Ways to Split a String](https://leetcode.com/problems/number-of-good-ways-to-split-a-string)|array|[Rust](rustgym/src/leetcode/_1525_number_of_good_ways_to_split_a_string.rs)|
-|1529|[Bulb Switcher IV](https://leetcode.com/problems/bulb-switcher-iv)|string|[Rust](rustgym/src/leetcode/_1529_bulb_switcher_5.rs)|
-|152|[Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray)|array dynamic-programming|[Rust](rustgym/src/leetcode/_152_maximum_product_subarray.rs)|
-|1530|[Number of Good Leaf Nodes Pairs](https://leetcode.com/problems/number-of-good-leaf-nodes-pairs)|string greedy|[Rust](rustgym/src/leetcode/_1530_number_of_good_leaf_nodes_pairs.rs)|
-|[1533](rustgym/desc/leetcode/1533.md)|[Find the Index of the Large Integer](https://leetcode.com/problems/find-the-index-of-the-large-integer)|hash-table|[Rust](rustgym/src/leetcode/_1533_find_the_index_of_the_large_integer.rs)|
-|1535|[Find the Winner of an Array Game](https://leetcode.com/problems/find-the-winner-of-an-array-game)|dynamic-programming|[Rust](rustgym/src/leetcode/_1535_find_the_winner_of_an_array_game.rs)|
-|1536|[Minimum Swaps to Arrange a Binary Grid](https://leetcode.com/problems/minimum-swaps-to-arrange-a-binary-grid)||[Rust](rustgym/src/leetcode/_1536_minimum_swaps_to_arrange_a_binary_grid.rs)|
-|[1538](rustgym/desc/leetcode/1538.md)|[Guess the Majority in a Hidden Array](https://leetcode.com/problems/guess-the-majority-in-a-hidden-array)|array dynamic-programming sliding-window|[Rust](rustgym/src/leetcode/_1538_guess_the_majority_in_an_hidden_array.rs)|
-|153|[Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array)|array binary-search|[Rust](rustgym/src/leetcode/_153_find_minimum_in_rotated_sorted_array.rs)|
-|1540|[Can Convert String in K Moves](https://leetcode.com/problems/can-convert-string-in-k-moves)||[Rust](rustgym/src/leetcode/_1540_can_convert_string_in_k_moves.rs)|
-|1541|[Minimum Insertions to Balance a Parentheses String](https://leetcode.com/problems/minimum-insertions-to-balance-a-parentheses-string)||[Rust](rustgym/src/leetcode/_1541_minimum_insertions_to_balance_a_parentheses_string.rs)|
-|1545|[Find Kth Bit in Nth Binary String](https://leetcode.com/problems/find-kth-bit-in-nth-binary-string)|string dynamic-programming|[Rust](rustgym/src/leetcode/_1545_find_kth_bit_in_nth_binary_stringrs.rs)|
-|1546|[Maximum Number of Non-Overlapping Subarrays With Sum Equals Target](https://leetcode.com/problems/maximum-number-of-non-overlapping-subarrays-with-sum-equals-target)||[Rust](rustgym/src/leetcode/_1546_maximum_number_of_non_overlapping_subarrays_with_sum_equals_target.rs)|
-|1551|[Minimum Operations to Make Array Equal](https://leetcode.com/problems/minimum-operations-to-make-array-equal)||[Rust](rustgym/src/leetcode/_1551_minimum_operations_to_make_array_equalrs.rs)|
-|1552|[Magnetic Force Between Two Balls](https://leetcode.com/problems/magnetic-force-between-two-balls)|stack|[Rust](rustgym/src/leetcode/_1552_magnetic_force_between_two_balls.rs)|
-|1554|[Strings Differ by One Character](https://leetcode.com/problems/strings-differ-by-one-character)|tree depth-first-search|[Rust](rustgym/src/leetcode/_1554_strings_differ_by_one_character.rs)|
-|1557|[Minimum Number of Vertices to Reach All Nodes](https://leetcode.com/problems/minimum-number-of-vertices-to-reach-all-nodes)|string bit-manipulation|[Rust](rustgym/src/leetcode/_1557_minimum_number_of_vertices_to_reach_all_nodes.rs)|
-|1558|[Minimum Numbers of Function Calls to Make Target Array](https://leetcode.com/problems/minimum-numbers-of-function-calls-to-make-target-array)|graph|[Rust](rustgym/src/leetcode/_1558_minimum_numbers_of_function_calls_to_make_target_array.rs)|
-|1561|[Maximum Number of Coins You Can Get](https://leetcode.com/problems/maximum-number-of-coins-you-can-get)|string sort|[Rust](rustgym/src/leetcode/_1561_maximum_number_of_coins_you_can_get.rs)|
-|1562|[Find Latest Group of Size M](https://leetcode.com/problems/find-latest-group-of-size-m)|string sort|[Rust](rustgym/src/leetcode/_1562_find_latest_group_of_size_m.rs)|
-|1564|[Put Boxes Into the Warehouse I](https://leetcode.com/problems/put-boxes-into-the-warehouse-i)||[Rust](rustgym/src/leetcode/_1564_pub_boxes_into_the_warehouse_1.rs)|
-|1567|[Maximum Length of Subarray With Positive Product](https://leetcode.com/problems/maximum-length-of-subarray-with-positive-product)|string sliding-window|[Rust](rustgym/src/leetcode/_1567_maximum_length_of_subarray_with_positive_product.rs)|
-|156|[Binary Tree Upside Down](https://leetcode.com/problems/binary-tree-upside-down)|tree|[Rust](rustgym/src/leetcode/_156_binary_tree_upside_down.rs)|
-|1570|[Dot Product of Two Sparse Vectors](https://leetcode.com/problems/dot-product-of-two-sparse-vectors)|array|[Rust](rustgym/src/leetcode/_1570_dot_product_of_two_sparse_vectors.rs)|
-|1573|[Number of Ways to Split a String](https://leetcode.com/problems/number-of-ways-to-split-a-string)|dynamic-programming|[Rust](rustgym/src/leetcode/_1573_number_of_ways_to_split_a_string.rs)|
-|1574|[Shortest Subarray to be Removed to Make Array Sorted](https://leetcode.com/problems/shortest-subarray-to-be-removed-to-make-array-sorted)|array|[Rust](rustgym/src/leetcode/_1574_shortest_subarray_to_be_removed_to_make_array_sorted.rs)|
-|1577|[Number of Ways Where Square of Number Is Equal to Product of Two Numbers](https://leetcode.com/problems/number-of-ways-where-square-of-number-is-equal-to-product-of-two-numbers)|math backtracking|[Rust](rustgym/src/leetcode/_1577_number_of_ways_where_square_of_number_is_equal_to_product_of_two_numbers.rs)|
-|1578|[Minimum Deletion Cost to Avoid Repeating Letters](https://leetcode.com/problems/minimum-deletion-cost-to-avoid-repeating-letters)||[Rust](rustgym/src/leetcode/_1578_minimum_deleteion_cost_to_avoid_repeating_letters.rs)|
-|1580|[Put Boxes Into the Warehouse II](https://leetcode.com/problems/put-boxes-into-the-warehouse-ii)|array|[Rust](rustgym/src/leetcode/_1580_put_boxes_into_the_warehouse_2.rs)|
-|1583|[Count Unhappy Friends](https://leetcode.com/problems/count-unhappy-friends)|dynamic-programming|[Rust](rustgym/src/leetcode/_1583_count_unhappy_friends.rs)|
-|1584|[Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points)|array sort|[Rust](rustgym/src/leetcode/_1584_min_cost_to_connect_all_points.rs)|
-|1586|[Binary Search Tree Iterator II](https://leetcode.com/problems/binary-search-tree-iterator-ii)|array|[Rust](rustgym/src/leetcode/_1586_binary_search_tree_iterator_2.rs)|
-|1589|[Maximum Sum Obtained of Any Permutation](https://leetcode.com/problems/maximum-sum-obtained-of-any-permutation)||[Rust](rustgym/src/leetcode/_1589_maximum_sum_obtained_of_any_permutation.rs)|
-|1590|[Make Sum Divisible by P](https://leetcode.com/problems/make-sum-divisible-by-p)||[Rust](rustgym/src/leetcode/_1590_make_sum_divisible_by_p.rs)|
-|1593|[Split a String Into the Max Number of Unique Substrings](https://leetcode.com/problems/split-a-string-into-the-max-number-of-unique-substrings)||[Rust](rustgym/src/leetcode/_1593_split_a_string_into_the_max_number_of_unique_substrings.rs)|
-|1594|[Maximum Non Negative Product in a Matrix](https://leetcode.com/problems/maximum-non-negative-product-in-a-matrix)||[Rust](rustgym/src/leetcode/_1594_maximum_non_negative_product_in_a_matrix.rs)|
-|1599|[Maximum Profit of Operating a Centennial Wheel](https://leetcode.com/problems/maximum-profit-of-operating-a-centennial-wheel)||[Rust](rustgym/src/leetcode/_1599_maximum_profit_of_operating_a_centennial_wheel.rs)|
-|159|[Longest Substring with At Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters)|hash-table two-pointers string sliding-window|[Rust](rustgym/src/leetcode/_159_longest_substring_with_at_most_two_distinc_characters.rs)|
-|15|[3Sum](https://leetcode.com/problems/3sum)|array two-pointers|[Rust](rustgym/src/leetcode/_15_three_sum.rs)|
-|1600|[Throne Inheritance](https://leetcode.com/problems/throne-inheritance)||[Rust](rustgym/src/leetcode/_1600_throne_inheritance.rs)|
-|1604|[Alert Using Same Key-Card Three or More Times in a One Hour Period](https://leetcode.com/problems/alert-using-same-key-card-three-or-more-times-in-a-one-hour-period)|array sort|[Rust](rustgym/src/leetcode/_1604_alart_using_same_key_card_three_or_more_times_in_a_one_hour_period.rs)|
-|1605|[Find Valid Matrix Given Row and Column Sums](https://leetcode.com/problems/find-valid-matrix-given-row-and-column-sums)|array binary-search|[Rust](rustgym/src/leetcode/_1605_find_valid_matrix_given_row_and_column_sums.rs)|
-|1609|[Even Odd Tree](https://leetcode.com/problems/even-odd-tree)|tree depth-first-search|[Rust](rustgym/src/leetcode/_1609_even_odd_tree.rs)|
-|1615|[Maximal Network Rank](https://leetcode.com/problems/maximal-network-rank)|array sort|[Rust](rustgym/src/leetcode/_1615_maximal_network_rank.rs)|
-|1616|[Split Two Strings to Make Palindrome](https://leetcode.com/problems/split-two-strings-to-make-palindrome)|array sort|[Rust](rustgym/src/leetcode/_1616_split_two_strings_to_make_palindrome.rs)|
-|161|[One Edit Distance](https://leetcode.com/problems/one-edit-distance)|string|[Rust](rustgym/src/leetcode/_161_one_edit_distance.rs)|
-|1620|[Coordinate With Maximum Network Quality](https://leetcode.com/problems/coordinate-with-maximum-network-quality)|array math greedy|[Rust](rustgym/src/leetcode/_1620_coordinate_with_maxium_network_quality.rs)|
-|1621|[Number of Sets of K Non-Overlapping Line Segments](https://leetcode.com/problems/number-of-sets-of-k-non-overlapping-line-segments)|sort sliding-window|[Rust](rustgym/src/leetcode/_1621_number_of_sets_of_k_non_overlapping_line_segments.rs)|
-|1625|[Lexicographically Smallest String After Applying Operations](https://leetcode.com/problems/lexicographically-smallest-string-after-applying-operations)||[Rust](rustgym/src/leetcode/_1625_lexicographically_smaller_string_after_applying_operations.rs)|
-|1626|[Best Team With No Conflicts](https://leetcode.com/problems/best-team-with-no-conflicts)|array sort|[Rust](rustgym/src/leetcode/_1626_best_team_with_no_conflicts.rs)|
-|162|[Find Peak Element](https://leetcode.com/problems/find-peak-element)|array binary-search|[Rust](rustgym/src/leetcode/_162_find_peak_element.rs)|
-|1630|[Arithmetic Subarrays](https://leetcode.com/problems/arithmetic-subarrays)|math|[Rust](rustgym/src/leetcode/_1630_arithmetic_subarrays.rs)|
-|[1631](rustgym/desc/leetcode/1631.md)|[Path With Minimum Effort](https://leetcode.com/problems/path-with-minimum-effort)|array math|[Rust](rustgym/src/leetcode/_1631_path_with_minimum_effort.rs)|
-|[1637](rustgym/desc/leetcode/1637.md)|[Widest Vertical Area Between Two Points Containing No Points](https://leetcode.com/problems/widest-vertical-area-between-two-points-containing-no-points)|string dynamic-programming|[Rust](rustgym/src/leetcode/_1637_widest_vertical_area_between_two_points_containing_no_points.rs)|
-|[1638](rustgym/desc/leetcode/1638.md)|[Count Substrings That Differ by One Character](https://leetcode.com/problems/count-substrings-that-differ-by-one-character)|geometry|[Rust](rustgym/src/leetcode/_1638_count_substrings_that_differ_by_one_characters.rs)|
-|[1641](rustgym/desc/leetcode/1641.md)|[Count Sorted Vowel Strings](https://leetcode.com/problems/count-sorted-vowel-strings)||[Rust](rustgym/src/leetcode/_1641_count_sorted_vowel_strings.rs)|
-|[1642](rustgym/desc/leetcode/1642.md)|[Furthest Building You Can Reach](https://leetcode.com/problems/furthest-building-you-can-reach)|greedy|[Rust](rustgym/src/leetcode/_1642_furthest_building_you_can_reach.rs)|
-|[1647](rustgym/desc/leetcode/1647.md)|[Minimum Deletions to Make Character Frequencies Unique](https://leetcode.com/problems/minimum-deletions-to-make-character-frequencies-unique)|string greedy|[Rust](rustgym/src/leetcode/_1647_minimum_deletions_to_make_character_frequencies_unique.rs)|
-|[1648](rustgym/desc/leetcode/1648.md)|[Sell Diminishing-Valued Colored Balls](https://leetcode.com/problems/sell-diminishing-valued-colored-balls)|string stack|[Rust](rustgym/src/leetcode/_1648_sell_diminishing_valued_colored_balls.rs)|
-|[1653](rustgym/desc/leetcode/1653.md)|[Minimum Deletions to Make String Balanced](https://leetcode.com/problems/minimum-deletions-to-make-string-balanced)|tree depth-first-search|[Rust](rustgym/src/leetcode/_1653_minimum_deletions_to_make_string_balanced.rs)|
-|[1654](rustgym/desc/leetcode/1654.md)|[Minimum Jumps to Reach Home](https://leetcode.com/problems/minimum-jumps-to-reach-home)||[Rust](rustgym/src/leetcode/_1654_minimum_jumps_to_reach_home.rs)|
-|[1657](rustgym/desc/leetcode/1657.md)|[Determine if Two Strings Are Close](https://leetcode.com/problems/determine-if-two-strings-are-close)|array|[Rust](rustgym/src/leetcode/_1657_determine_if_two_strings_are_close.rs)|
-|[1658](rustgym/desc/leetcode/1658.md)|[Minimum Operations to Reduce X to Zero](https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero)|greedy|[Rust](rustgym/src/leetcode/_1658_minimum_operations_to_reduce_x_to_zero.rs)|
-|165|[Compare Version Numbers](https://leetcode.com/problems/compare-version-numbers)|string|[Rust](rustgym/src/leetcode/_165_compare_version_numbers.rs)|
-|1663|[Smallest String With A Given Numeric Value](https://leetcode.com/problems/smallest-string-with-a-given-numeric-value)|depth-first-search|[Rust](rustgym/src/leetcode/_1663_smallest_string_with_a_given_numeric_value.rs)|
-|1664|[Ways to Make a Fair Array](https://leetcode.com/problems/ways-to-make-a-fair-array)||[Rust](rustgym/src/leetcode/_1664_ways_to_make_a_fair_array.rs)|
-|[1669](rustgym/desc/leetcode/1669.md)|[Merge In Between Linked Lists](https://leetcode.com/problems/merge-in-between-linked-lists)|dynamic-programming|[Rust](rustgym/src/leetcode/_1669_merge_in_between_linked_lists.rs)|
-|166|[Fraction to Recurring Decimal](https://leetcode.com/problems/fraction-to-recurring-decimal)|hash-table math|[Rust](rustgym/src/leetcode/_166_fraction_to_recurring_decimal.rs)|
-|[1670](rustgym/desc/leetcode/1670.md)|[Design Front Middle Back Queue](https://leetcode.com/problems/design-front-middle-back-queue)||[Rust](rustgym/src/leetcode/_1670_design_front_middle_back_queue.rs)|
-|[1673](rustgym/desc/leetcode/1673.md)|[Find the Most Competitive Subsequence](https://leetcode.com/problems/find-the-most-competitive-subsequence)||[Rust](rustgym/src/leetcode/_1673_find_the_most_competitive_subsequence.rs)|
-|[1674](rustgym/desc/leetcode/1674.md)|[Minimum Moves to Make Array Complementary](https://leetcode.com/problems/minimum-moves-to-make-array-complementary)|math|[Rust](rustgym/src/leetcode/_1674_minimum_moves_to_make_array_complementary.rs)|
-|[1679](rustgym/desc/leetcode/1679.md)|[Max Number of K-Sum Pairs](https://leetcode.com/problems/max-number-of-k-sum-pairs)|array binary-search|[Rust](rustgym/src/leetcode/_1679_max_number_of_k_sum_pairs.rs)|
-|[1680](rustgym/desc/leetcode/1680.md)|[Concatenation of Consecutive Binary Numbers](https://leetcode.com/problems/concatenation-of-consecutive-binary-numbers)|dynamic-programming|[Rust](rustgym/src/leetcode/_1680_concatenation_of_consecutive_binary_numbers.rs)|
-|[1685](rustgym/desc/leetcode/1685.md)|[Sum of Absolute Differences in a Sorted Array](https://leetcode.com/problems/sum-of-absolute-differences-in-a-sorted-array)|dynamic-programming|[Rust](rustgym/src/leetcode/_1685_sum_of_absolute_differences_in_a_sorted_array.rs)|
-|[1686](rustgym/desc/leetcode/1686.md)|[Stone Game VI](https://leetcode.com/problems/stone-game-vi)||[Rust](rustgym/src/leetcode/_1686_stone_game_6.rs)|
-|[1689](rustgym/desc/leetcode/1689.md)|[Partitioning Into Minimum Number Of Deci-Binary Numbers](https://leetcode.com/problems/partitioning-into-minimum-number-of-deci-binary-numbers)|array|[Rust](rustgym/src/leetcode/_1689_partitioning_into_minimum_number_of_deci_binary_numbers.rs)|
-|[1690](rustgym/desc/leetcode/1690.md)|[Stone Game VII](https://leetcode.com/problems/stone-game-vii)|greedy|[Rust](rustgym/src/leetcode/_1690_stone_game_7.rs)|
-|16|[3Sum Closest](https://leetcode.com/problems/3sum-closest)|array two-pointers|[Rust](rustgym/src/leetcode/_16_3sum_closest.rs)|
-|173|[Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator)|stack tree design|[Rust](rustgym/src/leetcode/_173_binary_search_tree_iterator.rs)|
-|179|[Largest Number](https://leetcode.com/problems/largest-number)|sort|[Rust](rustgym/src/leetcode/_179_largest_number.rs)|
-|17|[Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number)|string backtracking depth-first-search recursion|[Rust](rustgym/src/leetcode/_17_letter_combinations_of_a_phone_number.rs)|
-|186|[Reverse Words in a String II](https://leetcode.com/problems/reverse-words-in-a-string-ii)|string|[Rust](rustgym/src/leetcode/_186_reverse_words_in_a_string_2.rs)|
-|187|[Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences)|hash-table bit-manipulation|[Rust](rustgym/src/leetcode/_187_repeated_dna_sequences.rs)|
-|189|[Rotate Array](https://leetcode.com/problems/rotate-array)|array|[Rust](rustgym/src/leetcode/_189_rotate_array.rs)|
-|18|[4Sum](https://leetcode.com/problems/4sum)|array hash-table two-pointers|[Rust](rustgym/src/leetcode/_18_4sum.rs)|
-|198|[House Robber](https://leetcode.com/problems/house-robber)|dynamic-programming|[Rust](rustgym/src/leetcode/_198_house_robber.rs)|
-|199|[Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view)|tree depth-first-search breadth-first-search|[Rust](rustgym/src/leetcode/_199_binary_tree_right_side_view.rs)|
-|19|[Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list)|linked-list two-pointers|[Rust](rustgym/src/leetcode/_19_remove_nth_node_from_end_of_list.rs)|
-|200|[Number of Islands](https://leetcode.com/problems/number-of-islands)|depth-first-search breadth-first-search union-find|[Rust](rustgym/src/leetcode/_200_number_of_islands.rs)|
-|201|[Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range)|bit-manipulation|[Rust](rustgym/src/leetcode/_201_bitwise_and_of_numbers_range.rs)|
-|207|[Course Schedule](https://leetcode.com/problems/course-schedule)|depth-first-search breadth-first-search graph topological-sort|[Rust](rustgym/src/leetcode/_207_course_schedule.rs)|
-|208|[Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree)|design trie|[Rust](rustgym/src/leetcode/_208_implement_trie.rs)|
-|209|[Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum)|array two-pointers binary-search|[Rust](rustgym/src/leetcode/_209_minimum_size_subarray_sum.rs)|
-|210|[Course Schedule II](https://leetcode.com/problems/course-schedule-ii)|depth-first-search breadth-first-search graph topological-sort|[Rust](rustgym/src/leetcode/_210_course_schedule_2.rs)|
-|211|[Design Add and Search Words Data Structure](https://leetcode.com/problems/design-add-and-search-words-data-structure)|backtracking depth-first-search design trie|[Rust](rustgym/src/leetcode/_211_add_and_search_word_data_structure_design.rs)|
-|213|[House Robber II](https://leetcode.com/problems/house-robber-ii)|dynamic-programming|[Rust](rustgym/src/leetcode/_213_house_robber_2.rs)|
-|215|[Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array)|divide-and-conquer heap|[Rust](rustgym/src/leetcode/_215_kth_largest_element_in_an_array.rs)|
-|216|[Combination Sum III](https://leetcode.com/problems/combination-sum-iii)|array backtracking|[Rust](rustgym/src/leetcode/_216_combination_sum_3.rs)|
-|220|[Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii)|sort ordered-map|[Rust](rustgym/src/leetcode/_220_contains_duplicate_3.rs)|
-|221|[Maximal Square](https://leetcode.com/problems/maximal-square)|dynamic-programming|[Rust](rustgym/src/leetcode/_221_maximal_square.rs)|
-|222|[Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes)|binary-search tree|[Rust](rustgym/src/leetcode/_222_count_complete_tree_nodes.rs)|
-|223|[Rectangle Area](https://leetcode.com/problems/rectangle-area)|math|[Rust](rustgym/src/leetcode/_223_rectangle_area.rs)|
-|227|[Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii)|string stack|[Rust](rustgym/src/leetcode/_227_basic_calculator_2.rs)|
-|229|[Majority Element II](https://leetcode.com/problems/majority-element-ii)|array|[Rust](rustgym/src/leetcode/_229_majority_element_2.rs)|
-|22|[Generate Parentheses](https://leetcode.com/problems/generate-parentheses)|string backtracking|[Rust](rustgym/src/leetcode/_22_generate_parentheses.rs)|
-|230|[Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst)|binary-search tree|[Rust](rustgym/src/leetcode/_230_kth_smallest_element_in_a_bst.rs)|
-|[236](rustgym/desc/leetcode/236.md)|[Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree)|tree|[Rust](rustgym/src/leetcode/_236_lowest_common_ancestor_of_a_binary_tree.rs)|
-|238|[Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self)|array|[Rust](rustgym/src/leetcode/_238_product_of_array_except_self.rs)|
-|[240](rustgym/desc/leetcode/240.md)|[Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii)|binary-search divide-and-conquer|[Rust](rustgym/src/leetcode/_240_search_a_2d_matrix_2.rs)|
-|241|[Different Ways to Add Parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses)|divide-and-conquer|[Rust](rustgym/src/leetcode/_241_different_ways_to_add_parentheses.rs)|
-|244|[Shortest Word Distance II](https://leetcode.com/problems/shortest-word-distance-ii)|hash-table design|[Rust](rustgym/src/leetcode/_244_shortest_word_distance_2.rs)|
-|245|[Shortest Word Distance III](https://leetcode.com/problems/shortest-word-distance-iii)|array|[Rust](rustgym/src/leetcode/_245_shortest_word_distance_3.rs)|
-|247|[Strobogrammatic Number II](https://leetcode.com/problems/strobogrammatic-number-ii)|math recursion|[Rust](rustgym/src/leetcode/_247_strobogrammatic_number_2.rs)|
-|249|[Group Shifted Strings](https://leetcode.com/problems/group-shifted-strings)|hash-table string|[Rust](rustgym/src/leetcode/_249_group_shifted_strings.rs)|
-|24|[Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs)|linked-list|[Rust](rustgym/src/leetcode/_24_swap_nodes_in_pairs.rs)|
-|250|[Count Univalue Subtrees](https://leetcode.com/problems/count-univalue-subtrees)|tree|[Rust](rustgym/src/leetcode/_250_count_univalue_subtrees.rs)|
-|251|[Flatten 2D Vector](https://leetcode.com/problems/flatten-2d-vector)|design|[Rust](rustgym/src/leetcode/_251_flatten_2d_vector.rs)|
-|253|[Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii)|heap greedy sort|[Rust](rustgym/src/leetcode/_253_meeting_rooms_2.rs)|
-|254|[Factor Combinations](https://leetcode.com/problems/factor-combinations)|backtracking|[Rust](rustgym/src/leetcode/_254_factor_combinations.rs)|
-|255|[Verify Preorder Sequence in Binary Search Tree](https://leetcode.com/problems/verify-preorder-sequence-in-binary-search-tree)|stack tree|[Rust](rustgym/src/leetcode/_255_verify_preorder_sequence_in_binary_search_tree.rs)|
-|256|[Paint House](https://leetcode.com/problems/paint-house)|dynamic-programming|[Rust](rustgym/src/leetcode/_256_paint_house.rs)|
-|259|[3Sum Smaller](https://leetcode.com/problems/3sum-smaller)|array two-pointers|[Rust](rustgym/src/leetcode/_259_3sum_smaller.rs)|
-|260|[Single Number III](https://leetcode.com/problems/single-number-iii)|bit-manipulation|[Rust](rustgym/src/leetcode/_260_single_number_3.rs)|
-|261|[Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree)|depth-first-search breadth-first-search union-find graph|[Rust](rustgym/src/leetcode/_261_graph_valid_tree.rs)|
-|264|[Ugly Number II](https://leetcode.com/problems/ugly-number-ii)|math dynamic-programming heap|[Rust](rustgym/src/leetcode/_264_ugly_number_2.rs)|
-|267|[Palindrome Permutation II](https://leetcode.com/problems/palindrome-permutation-ii)|backtracking|[Rust](rustgym/src/leetcode/_267_palindrome_permutation_2.rs)|
-|271|[Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings)|string|[Rust](rustgym/src/leetcode/_271_encode_and_decode_strings.rs)|
-|274|[H-Index](https://leetcode.com/problems/h-index)|hash-table sort|[Rust](rustgym/src/leetcode/_274_h_index.rs)|
-|275|[H-Index II](https://leetcode.com/problems/h-index-ii)|binary-search|[Rust](rustgym/src/leetcode/_275_h_index_2.rs)|
-|[277](rustgym/desc/leetcode/277.md)|[Find the Celebrity](https://leetcode.com/problems/find-the-celebrity)|array|[Rust](rustgym/src/leetcode/_277_find_the_celebrity.rs)|
-|279|[Perfect Squares](https://leetcode.com/problems/perfect-squares)|math dynamic-programming breadth-first-search|[Rust](rustgym/src/leetcode/_279_perfect_squares.rs)|
-|280|[Wiggle Sort](https://leetcode.com/problems/wiggle-sort)|array sort|[Rust](rustgym/src/leetcode/_280_wiggle_sort.rs)|
-|281|[Zigzag Iterator](https://leetcode.com/problems/zigzag-iterator)|design|[Rust](rustgym/src/leetcode/_281_zigzag_iterator.rs)|
-|[285](rustgym/desc/leetcode/285.md)|[Inorder Successor in BST](https://leetcode.com/problems/inorder-successor-in-bst)|tree|[Rust](rustgym/src/leetcode/_285_inorder_successor_in_bst.rs)|
-|286|[Walls and Gates](https://leetcode.com/problems/walls-and-gates)|breadth-first-search|[Rust](rustgym/src/leetcode/_286_walls_and_gates.rs)|
-|287|[Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number)|array two-pointers binary-search|[Rust](rustgym/src/leetcode/_287_find_the_duplicate_number.rs)|
-|288|[Unique Word Abbreviation](https://leetcode.com/problems/unique-word-abbreviation)|hash-table design|[Rust](rustgym/src/leetcode/_288_unique_word_abbreviation.rs)|
-|289|[Game of Life](https://leetcode.com/problems/game-of-life)|array|[Rust](rustgym/src/leetcode/_289_game_of_life.rs)|
-|294|[Flip Game II](https://leetcode.com/problems/flip-game-ii)|backtracking minimax|[Rust](rustgym/src/leetcode/_294_flip_game_2.rs)|
-|298|[Binary Tree Longest Consecutive Sequence](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence)|tree|[Rust](rustgym/src/leetcode/_298_binary_tree_longest_consecutive_sequence.rs)|
-|299|[Bulls and Cows](https://leetcode.com/problems/bulls-and-cows)|hash-table|[Rust](rustgym/src/leetcode/_299_bulls_and_cows.rs)|
-|29|[Divide Two Integers](https://leetcode.com/problems/divide-two-integers)|math binary-search|[Rust](rustgym/src/leetcode/_29_divide_two_integers.rs)|
-|2|[Add Two Numbers](https://leetcode.com/problems/add-two-numbers)|linked-list math|[Rust](rustgym/src/leetcode/_2_add_two_numbers.rs)|
-|300|[Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence)|binary-search dynamic-programming|[Rust](rustgym/src/leetcode/_300_longest_increasing_subsequence.rs)|
-|304|[Range Sum Query 2D - Immutable](https://leetcode.com/problems/range-sum-query-2d-immutable)|dynamic-programming|[Rust](rustgym/src/leetcode/_304_range_sum_query_2d_immutable.rs)|
-|306|[Additive Number](https://leetcode.com/problems/additive-number)|backtracking|[Rust](rustgym/src/leetcode/_306_additive_number.rs)|
-|307|[Range Sum Query - Mutable](https://leetcode.com/problems/range-sum-query-mutable)|binary-indexed-tree segment-tree|[Rust](rustgym/src/leetcode/_307_range_sum_query_mutable.rs)|
-|309|[Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown)|dynamic-programming|[Rust](rustgym/src/leetcode/_309_best_time_to_buy_and_sell_stock_with_cooldown.rs)|
-|310|[Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees)|breadth-first-search graph|[Rust](rustgym/src/leetcode/_310_minimum_height_trees.rs)|
-|311|[Sparse Matrix Multiplication](https://leetcode.com/problems/sparse-matrix-multiplication)|hash-table|[Rust](rustgym/src/leetcode/_311_sparse_matrix_multiplication.rs)|
-|313|[Super Ugly Number](https://leetcode.com/problems/super-ugly-number)|math heap|[Rust](rustgym/src/leetcode/_313_super_ugly_number.rs)|
-|314|[Binary Tree Vertical Order Traversal](https://leetcode.com/problems/binary-tree-vertical-order-traversal)|depth-first-search breadth-first-search|[Rust](rustgym/src/leetcode/_314_binary_tree_vertical_order_traversal.rs)|
-|316|[Remove Duplicate Letters](https://leetcode.com/problems/remove-duplicate-letters)|string stack greedy|[Rust](rustgym/src/leetcode/_316_remove_duplicate_letters.rs)|
-|318|[Maximum Product of Word Lengths](https://leetcode.com/problems/maximum-product-of-word-lengths)|bit-manipulation|[Rust](rustgym/src/leetcode/_318_maximum_product_of_word_lengths.rs)|
-|319|[Bulb Switcher](https://leetcode.com/problems/bulb-switcher)|math brainteaser|[Rust](rustgym/src/leetcode/_319_bulb_switcher.rs)|
-|31|[Next Permutation](https://leetcode.com/problems/next-permutation)|array|[Rust](rustgym/src/leetcode/_31_next_permutation.rs)|
-|320|[Generalized Abbreviation](https://leetcode.com/problems/generalized-abbreviation)|backtracking bit-manipulation|[Rust](rustgym/src/leetcode/_320_generalized_abbreviation.rs)|
-|322|[Coin Change](https://leetcode.com/problems/coin-change)|dynamic-programming|[Rust](rustgym/src/leetcode/_322_coin_change.rs)|
-|323|[Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph)|depth-first-search breadth-first-search union-find graph|[Rust](rustgym/src/leetcode/_323_number_of_connected_components_in_an_unditected_graph.rs)|
-|324|[Wiggle Sort II](https://leetcode.com/problems/wiggle-sort-ii)|sort|[Rust](rustgym/src/leetcode/_324_wiggle_sort_2.rs)|
-|325|[Maximum Size Subarray Sum Equals k](https://leetcode.com/problems/maximum-size-subarray-sum-equals-k)|hash-table|[Rust](rustgym/src/leetcode/_325_maximum_size_subarray_sum_equals_k.rs)|
-|328|[Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list)|linked-list|[Rust](rustgym/src/leetcode/_328_odd_even_linked_list.rs)|
-|331|[Verify Preorder Serialization of a Binary Tree](https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree)|stack|[Rust](rustgym/src/leetcode/_331_verify_preorder_serialization_of_a_binary_tree.rs)|
-|332|[Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary)|depth-first-search graph|[Rust](rustgym/src/leetcode/_332_reconstruct_itinerary.rs)|
-|333|[Largest BST Subtree](https://leetcode.com/problems/largest-bst-subtree)|tree|[Rust](rustgym/src/leetcode/_333_largest_bst_subtree.rs)|
-|334|[Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence)||[Rust](rustgym/src/leetcode/_334_increasing_triplet_subsequence.rs)|
-|337|[House Robber III](https://leetcode.com/problems/house-robber-iii)|dynamic-programming tree depth-first-search|[Rust](rustgym/src/leetcode/_337_house_robber_3.rs)|
-|338|[Counting Bits](https://leetcode.com/problems/counting-bits)|dynamic-programming bit-manipulation|[Rust](rustgym/src/leetcode/_338_counting_bits.rs)|
-|33|[Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array)|array binary-search|[Rust](rustgym/src/leetcode/_33_search_in_rotated_sorted_array.rs)|
-|341|[Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator)|stack design|[Rust](rustgym/src/leetcode/_341_flatten_nested_list_iterator.rs)|
-|343|[Integer Break](https://leetcode.com/problems/integer-break)|math dynamic-programming|[Rust](rustgym/src/leetcode/_343_integer_break.rs)|
-|347|[Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements)|hash-table heap|[Rust](rustgym/src/leetcode/_347_top_k_frequent_elements.rs)|
-|348|[Design Tic-Tac-Toe](https://leetcode.com/problems/design-tic-tac-toe)|design|[Rust](rustgym/src/leetcode/_348_design_tic_tac_toe.rs)|
-|34|[Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array)|array binary-search|[Rust](rustgym/src/leetcode/_34_find_first_and_last_position_of_elements_in_sorted_array.rs)|
-|351|[Android Unlock Patterns](https://leetcode.com/problems/android-unlock-patterns)|dynamic-programming backtracking|[Rust](rustgym/src/leetcode/_351_android_unlock_patterns.rs)|
-|353|[Design Snake Game](https://leetcode.com/problems/design-snake-game)|design queue|[Rust](rustgym/src/leetcode/_353_design_snake_game.rs)|
-|355|[Design Twitter](https://leetcode.com/problems/design-twitter)|hash-table heap design|[Rust](rustgym/src/leetcode/_355_design_twitter.rs)|
-|356|[Line Reflection](https://leetcode.com/problems/line-reflection)|hash-table math|[Rust](rustgym/src/leetcode/_356_line_reflection.rs)|
-|357|[Count Numbers with Unique Digits](https://leetcode.com/problems/count-numbers-with-unique-digits)|math dynamic-programming backtracking|[Rust](rustgym/src/leetcode/_357_count_numbers_with_unique_digits.rs)|
-|360|[Sort Transformed Array](https://leetcode.com/problems/sort-transformed-array)|math two-pointers sort|[Rust](rustgym/src/leetcode/_360_sort_transformed_array.rs)|
-|361|[Bomb Enemy](https://leetcode.com/problems/bomb-enemy)|dynamic-programming|[Rust](rustgym/src/leetcode/_361_bomb_enemy.rs)|
-|362|[Design Hit Counter](https://leetcode.com/problems/design-hit-counter)|design|[Rust](rustgym/src/leetcode/_362_design_hit_counter.rs)|
-|364|[Nested List Weight Sum II](https://leetcode.com/problems/nested-list-weight-sum-ii)|depth-first-search|[Rust](rustgym/src/leetcode/_364_nested_list_weight_sum_2.rs)|
-|365|[Water and Jug Problem](https://leetcode.com/problems/water-and-jug-problem)|math|[Rust](rustgym/src/leetcode/_365_water_and_jug_problem.rs)|
-|366|[Find Leaves of Binary Tree](https://leetcode.com/problems/find-leaves-of-binary-tree)|tree depth-first-search|[Rust](rustgym/src/leetcode/_366_find_leaves_of_binary_tree.rs)|
-|368|[Largest Divisible Subset](https://leetcode.com/problems/largest-divisible-subset)|math dynamic-programming|[Rust](rustgym/src/leetcode/_368_largest_divisible_subset.rs)|
-|369|[Plus One Linked List](https://leetcode.com/problems/plus-one-linked-list)|linked-list recursion|[Rust](rustgym/src/leetcode/_369_plus_one_linked_list.rs)|
-|36|[Valid Sudoku](https://leetcode.com/problems/valid-sudoku)|hash-table|[Rust](rustgym/src/leetcode/_36_valid_sudoku.rs)|
-|370|[Range Addition](https://leetcode.com/problems/range-addition)|array|[Rust](rustgym/src/leetcode/_370_range_addition.rs)|
-|371|[Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers)|bit-manipulation|[Rust](rustgym/src/leetcode/_371_sum_of_two_integers.rs)|
-|372|[Super Pow](https://leetcode.com/problems/super-pow)|math|[Rust](rustgym/src/leetcode/_372_super_pow.rs)|
-|373|[Find K Pairs with Smallest Sums](https://leetcode.com/problems/find-k-pairs-with-smallest-sums)|heap|[Rust](rustgym/src/leetcode/_373_find_k_pairs_with_smallest_sums.rs)|
-|375|[Guess Number Higher or Lower II](https://leetcode.com/problems/guess-number-higher-or-lower-ii)|dynamic-programming minimax|[Rust](rustgym/src/leetcode/_375_guess_number_higher_or_lower_2.rs)|
-|376|[Wiggle Subsequence](https://leetcode.com/problems/wiggle-subsequence)|dynamic-programming greedy|[Rust](rustgym/src/leetcode/_376_wiggle_subsequence.rs)|
-|377|[Combination Sum IV](https://leetcode.com/problems/combination-sum-iv)|dynamic-programming|[Rust](rustgym/src/leetcode/_377_combination_sum_4.rs)|
-|378|[Kth Smallest Element in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix)|binary-search heap|[Rust](rustgym/src/leetcode/_378_kth_smallest_element_in_a_sorted_matrix.rs)|
-|379|[Design Phone Directory](https://leetcode.com/problems/design-phone-directory)|linked-list design|[Rust](rustgym/src/leetcode/_379_design_phone_directory.rs)|
-|380|[Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1)|array hash-table design|[Rust](rustgym/src/leetcode/_380_insert_delete_get_random_o1.rs)|
-|382|[Linked List Random Node](https://leetcode.com/problems/linked-list-random-node)|reservoir-sampling|[Rust](rustgym/src/leetcode/_382_linked_list_random_node.rs)|
-|384|[Shuffle an Array](https://leetcode.com/problems/shuffle-an-array)||[Rust](rustgym/src/leetcode/_384_shuffle_an_array.rs)|
-|385|[Mini Parser](https://leetcode.com/problems/mini-parser)|string stack|[Rust](rustgym/src/leetcode/_385_mini_parser.rs)|
-|386|[Lexicographical Numbers](https://leetcode.com/problems/lexicographical-numbers)||[Rust](rustgym/src/leetcode/_386_lexicographical_numbers.rs)|
-|388|[Longest Absolute File Path](https://leetcode.com/problems/longest-absolute-file-path)||[Rust](rustgym/src/leetcode/_388_longest_absolute_file_path.rs)|
-|390|[Elimination Game](https://leetcode.com/problems/elimination-game)||[Rust](rustgym/src/leetcode/_390_elimination_game.rs)|
-|393|[UTF-8 Validation](https://leetcode.com/problems/utf-8-validation)|bit-manipulation|[Rust](rustgym/src/leetcode/_393_utf8_validation.rs)|
-|394|[Decode String](https://leetcode.com/problems/decode-string)|stack depth-first-search|[Rust](rustgym/src/leetcode/_394_decode_string.rs)|
-|395|[Longest Substring with At Least K Repeating Characters](https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters)|divide-and-conquer recursion sliding-window|[Rust](rustgym/src/leetcode/_395_longest_substring_with_at_least_k_repeating_characters.rs)|
-|396|[Rotate Function](https://leetcode.com/problems/rotate-function)|math|[Rust](rustgym/src/leetcode/_396_rotate_function.rs)|
-|397|[Integer Replacement](https://leetcode.com/problems/integer-replacement)|math bit-manipulation|[Rust](rustgym/src/leetcode/_397_integer_replacement.rs)|
-|398|[Random Pick Index](https://leetcode.com/problems/random-pick-index)|reservoir-sampling|[Rust](rustgym/src/leetcode/_398_random_pick_index.rs)|
-|399|[Evaluate Division](https://leetcode.com/problems/evaluate-division)|union-find graph|[Rust](rustgym/src/leetcode/_399_evaluate_division.rs)|
-|39|[Combination Sum](https://leetcode.com/problems/combination-sum)|array backtracking|[Rust](rustgym/src/leetcode/_39_combination_sum.rs)|
-|3|[Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters)|hash-table two-pointers string sliding-window|[Rust](rustgym/src/leetcode/_3_longest_substring_without_repeating_characters.rs)|
-|400|[Nth Digit](https://leetcode.com/problems/nth-digit)|math|[Rust](rustgym/src/leetcode/_400_nth_digit.rs)|
-|402|[Remove K Digits](https://leetcode.com/problems/remove-k-digits)|stack greedy|[Rust](rustgym/src/leetcode/_402_remove_k_digits.rs)|
-|406|[Queue Reconstruction by Height](https://leetcode.com/problems/queue-reconstruction-by-height)|greedy|[Rust](rustgym/src/leetcode/_406_queue_reconstruction_by_height.rs)|
-|40|[Combination Sum II](https://leetcode.com/problems/combination-sum-ii)|array backtracking|[Rust](rustgym/src/leetcode/_40_combination_sum_2.rs)|
-|413|[Arithmetic Slices](https://leetcode.com/problems/arithmetic-slices)|math dynamic-programming|[Rust](rustgym/src/leetcode/_413_arithmetic_slices.rs)|
-|416|[Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum)|dynamic-programming|[Rust](rustgym/src/leetcode/_416_partition_equal_subset_sum.rs)|
-|417|[Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow)|depth-first-search breadth-first-search|[Rust](rustgym/src/leetcode/_417_pacific_atlantic_water_flow.rs)|
-|418|[Sentence Screen Fitting](https://leetcode.com/problems/sentence-screen-fitting)|dynamic-programming|[Rust](rustgym/src/leetcode/_418_sentence_screen_fitting.rs)|
-|419|[Battleships in a Board](https://leetcode.com/problems/battleships-in-a-board)||[Rust](rustgym/src/leetcode/_419_battleships_in_a_board.rs)|
-|421|[Maximum XOR of Two Numbers in an Array](https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array)|bit-manipulation trie|[Rust](rustgym/src/leetcode/_421_maximum_xor_of_two_numbers_in_an_array.rs)|
-|423|[Reconstruct Original Digits from English](https://leetcode.com/problems/reconstruct-original-digits-from-english)|math|[Rust](rustgym/src/leetcode/_423_reconstruct_original_digits_from_english.rs)|
-|424|[Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement)|two-pointers sliding-window|[Rust](rustgym/src/leetcode/_424_longest_repeating_character_replacement.rs)|
-|433|[Minimum Genetic Mutation](https://leetcode.com/problems/minimum-genetic-mutation)||[Rust](rustgym/src/leetcode/_433_minimum_genetic_mutation.rs)|
-|435|[Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals)|greedy|[Rust](rustgym/src/leetcode/_435_non_overlapping_intervals.rs)|
-|436|[Find Right Interval](https://leetcode.com/problems/find-right-interval)|binary-search|[Rust](rustgym/src/leetcode/_436_find_right_interval.rs)|
-|437|[Path Sum III](https://leetcode.com/problems/path-sum-iii)|tree|[Rust](rustgym/src/leetcode/_437_path_sum_3.rs)|
-|438|[Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string)|hash-table|[Rust](rustgym/src/leetcode/_438_find_all_anagrams_in_a_string.rs)|
-|439|[Ternary Expression Parser](https://leetcode.com/problems/ternary-expression-parser)|stack depth-first-search|[Rust](rustgym/src/leetcode/_439_ternary_expression_parser.rs)|
-|43|[Multiply Strings](https://leetcode.com/problems/multiply-strings)|math string|[Rust](rustgym/src/leetcode/_43_multiply_strings.rs)|
-|442|[Find All Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array)|array|[Rust](rustgym/src/leetcode/_442_find_all_duplicates_in_an_array.rs)|
-|443|[String Compression](https://leetcode.com/problems/string-compression)|string|[Rust](rustgym/src/leetcode/_443_string_compression.rs)|
-|444|[Sequence Reconstruction](https://leetcode.com/problems/sequence-reconstruction)|graph topological-sort|[Rust](rustgym/src/leetcode/_444_sequence_reconstruction.rs)|
-|445|[Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii)|linked-list|[Rust](rustgym/src/leetcode/_445_add_two_numbers_2.rs)|
-|447|[Number of Boomerangs](https://leetcode.com/problems/number-of-boomerangs)|hash-table math|[Rust](rustgym/src/leetcode/_447_number_of_boomerangs.rs)|
-|[449](rustgym/desc/leetcode/449.md)|[Serialize and Deserialize BST](https://leetcode.com/problems/serialize-and-deserialize-bst)|tree|[Rust](rustgym/src/leetcode/_449_serialize_and_deserialize_bst.rs)|
-|450|[Delete Node in a BST](https://leetcode.com/problems/delete-node-in-a-bst)|tree|[Rust](rustgym/src/leetcode/_450_delete_node_in_a_bst.rs)|
-|451|[Sort Characters By Frequency](https://leetcode.com/problems/sort-characters-by-frequency)|hash-table heap|[Rust](rustgym/src/leetcode/_451_sort_characters_by_frequency.rs)|
-|452|[Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons)|greedy sort|[Rust](rustgym/src/leetcode/_452_minimum_number_of_arrows_to_burst_ballons.rs)|
-|454|[4Sum II](https://leetcode.com/problems/4sum-ii)|hash-table binary-search|[Rust](rustgym/src/leetcode/_454_4sum_2.rs)|
-|456|[132 Pattern](https://leetcode.com/problems/132-pattern)|stack|[Rust](rustgym/src/leetcode/_456_132_pattern.rs)|
-|457|[Circular Array Loop](https://leetcode.com/problems/circular-array-loop)|array two-pointers|[Rust](rustgym/src/leetcode/_457_circular_array_loop.rs)|
-|462|[Minimum Moves to Equal Array Elements II](https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii)|math|[Rust](rustgym/src/leetcode/_462_minimum_moves_to_equal_array_elements_2.rs)|
-|464|[Can I Win](https://leetcode.com/problems/can-i-win)|dynamic-programming minimax|[Rust](rustgym/src/leetcode/_464_can_i_win.rs)|
-|467|[Unique Substrings in Wraparound String](https://leetcode.com/problems/unique-substrings-in-wraparound-string)|dynamic-programming|[Rust](rustgym/src/leetcode/_467_unique_substrings_in_wraparound_string.rs)|
-|468|[Validate IP Address](https://leetcode.com/problems/validate-ip-address)|string|[Rust](rustgym/src/leetcode/_468_validate_ip_address.rs)|
-|469|[Convex Polygon](https://leetcode.com/problems/convex-polygon)|math|[Rust](rustgym/src/leetcode/_469_convex_polygon.rs)|
-|46|[Permutations](https://leetcode.com/problems/permutations)|backtracking|[Rust](rustgym/src/leetcode/_46_permutations.rs)|
-|470|[Implement Rand10() Using Rand7()](https://leetcode.com/problems/implement-rand10-using-rand7)||[Rust](rustgym/src/leetcode/_470_implement_rand10_using_rand7.rs)|
-|473|[Matchsticks to Square](https://leetcode.com/problems/matchsticks-to-square)|depth-first-search|[Rust](rustgym/src/leetcode/_473_matchsticks_to_square.rs)|
-|474|[Ones and Zeroes](https://leetcode.com/problems/ones-and-zeroes)|dynamic-programming|[Rust](rustgym/src/leetcode/_474_ones_and_zeroes.rs)|
-|475|[Heaters](https://leetcode.com/problems/heaters)|binary-search|[Rust](rustgym/src/leetcode/_475_heaters.rs)|
-|477|[Total Hamming Distance](https://leetcode.com/problems/total-hamming-distance)|bit-manipulation|[Rust](rustgym/src/leetcode/_477_total_hamming_distance.rs)|
-|478|[Generate Random Point in a Circle](https://leetcode.com/problems/generate-random-point-in-a-circle)||[Rust](rustgym/src/leetcode/_478_generate_random_point_in_circle.rs)|
-|47|[Permutations II](https://leetcode.com/problems/permutations-ii)|backtracking|[Rust](rustgym/src/leetcode/_47_permutations_2.rs)|
-|481|[Magical String](https://leetcode.com/problems/magical-string)||[Rust](rustgym/src/leetcode/_481_magical_string.rs)|
-|484|[Find Permutation](https://leetcode.com/problems/find-permutation)|greedy|[Rust](rustgym/src/leetcode/_484_find_permutation.rs)|
-|486|[Predict the Winner](https://leetcode.com/problems/predict-the-winner)|dynamic-programming minimax|[Rust](rustgym/src/leetcode/_486_predict_the_winner.rs)|
-|487|[Max Consecutive Ones II](https://leetcode.com/problems/max-consecutive-ones-ii)|two-pointers|[Rust](rustgym/src/leetcode/_487_max_consecutive_ones_2.rs)|
-|48|[Rotate Image](https://leetcode.com/problems/rotate-image)|array|[Rust](rustgym/src/leetcode/_48_rotate_image.rs)|
-|490|[The Maze](https://leetcode.com/problems/the-maze)|depth-first-search breadth-first-search|[Rust](rustgym/src/leetcode/_490_the_maze.rs)|
-|491|[Increasing Subsequences](https://leetcode.com/problems/increasing-subsequences)|depth-first-search|[Rust](rustgym/src/leetcode/_491_increasing_subsequences.rs)|
-|494|[Target Sum](https://leetcode.com/problems/target-sum)|dynamic-programming depth-first-search|[Rust](rustgym/src/leetcode/_494_target_sum.rs)|
-|495|[Teemo Attacking](https://leetcode.com/problems/teemo-attacking)|array|[Rust](rustgym/src/leetcode/_495_teemo_attacking.rs)|
-|497|[Random Point in Non-overlapping Rectangles](https://leetcode.com/problems/random-point-in-non-overlapping-rectangles)||[Rust](rustgym/src/leetcode/_497_random_point_in_nonoverlapping_rectangles.rs)|
-|498|[Diagonal Traverse](https://leetcode.com/problems/diagonal-traverse)||[Rust](rustgym/src/leetcode/_498_diagonal_traverse.rs)|
-|49|[Group Anagrams](https://leetcode.com/problems/group-anagrams)|hash-table string|[Rust](rustgym/src/leetcode/_49_group_anagrams.rs)|
-|503|[Next Greater Element II](https://leetcode.com/problems/next-greater-element-ii)|stack|[Rust](rustgym/src/leetcode/_503_next_greater_element_2.rs)|
-|505|[The Maze II](https://leetcode.com/problems/the-maze-ii)|depth-first-search breadth-first-search|[Rust](rustgym/src/leetcode/_505_the_maze_2.rs)|
-|508|[Most Frequent Subtree Sum](https://leetcode.com/problems/most-frequent-subtree-sum)|hash-table tree|[Rust](rustgym/src/leetcode/_508_most_frequent_subtree_sum.rs)|
-|50|[Pow(x, n)](https://leetcode.com/problems/powx-n)|math binary-search|[Rust](rustgym/src/leetcode/_50_pow_x_n.rs)|
-|513|[Find Bottom Left Tree Value](https://leetcode.com/problems/find-bottom-left-tree-value)|tree depth-first-search breadth-first-search|[Rust](rustgym/src/leetcode/_513_find_bottom_left_tree_value.rs)|
-|515|[Find Largest Value in Each Tree Row](https://leetcode.com/problems/find-largest-value-in-each-tree-row)|tree depth-first-search breadth-first-search|[Rust](rustgym/src/leetcode/_515_find_largest_value_in_each_row.rs)|
-|516|[Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence)|dynamic-programming|[Rust](rustgym/src/leetcode/_516_longest_palindromic_subsequence.rs)|
-|518|[Coin Change 2](https://leetcode.com/problems/coin-change-2)||[Rust](rustgym/src/leetcode/_518_coin_change_2.rs)|
-|519|[Random Flip Matrix](https://leetcode.com/problems/random-flip-matrix)||[Rust](rustgym/src/leetcode/_519_random_flip_matrix.rs)|
-|522|[Longest Uncommon Subsequence II](https://leetcode.com/problems/longest-uncommon-subsequence-ii)|string|[Rust](rustgym/src/leetcode/_522_longest_uncommon_subsequence_2.rs)|
-|523|[Continuous Subarray Sum](https://leetcode.com/problems/continuous-subarray-sum)|math dynamic-programming|[Rust](rustgym/src/leetcode/_523_continuous_subarray_sum.rs)|
-|524|[Longest Word in Dictionary through Deleting](https://leetcode.com/problems/longest-word-in-dictionary-through-deleting)|two-pointers sort|[Rust](rustgym/src/leetcode/_524_longest_word_in_dictionary_through_deleting.rs)|
-|525|[Contiguous Array](https://leetcode.com/problems/contiguous-array)|hash-table|[Rust](rustgym/src/leetcode/_525_contiguous_array.rs)|
-|526|[Beautiful Arrangement](https://leetcode.com/problems/beautiful-arrangement)|backtracking|[Rust](rustgym/src/leetcode/_526_beautiful_arrangment.rs)|
-|528|[Random Pick with Weight](https://leetcode.com/problems/random-pick-with-weight)||[Rust](rustgym/src/leetcode/_528_random_pick_with_weight.rs)|
-|529|[Minesweeper](https://leetcode.com/problems/minesweeper)|depth-first-search breadth-first-search|[Rust](rustgym/src/leetcode/_529_minesweeper.rs)|
-|531|[Lonely Pixel I](https://leetcode.com/problems/lonely-pixel-i)|array depth-first-search|[Rust](rustgym/src/leetcode/_531_lonely_pixel_1.rs)|
-|532|[K-diff Pairs in an Array](https://leetcode.com/problems/k-diff-pairs-in-an-array)|array two-pointers|[Rust](rustgym/src/leetcode/_532_k_diff_pairs_in_an_array.rs)|
-|533|[Lonely Pixel II](https://leetcode.com/problems/lonely-pixel-ii)|array|[Rust](rustgym/src/leetcode/_533_lonely_pixel_2.rs)|
-|535|[Encode and Decode TinyURL](https://leetcode.com/problems/encode-and-decode-tinyurl)|hash-table math|[Rust](rustgym/src/leetcode/_535_encode_and_decode_tiny_url.rs)|
-|536|[Construct Binary Tree from String](https://leetcode.com/problems/construct-binary-tree-from-string)|string tree|[Rust](rustgym/src/leetcode/_536_construct_binary_tree_from_string.rs)|
-|537|[Complex Number Multiplication](https://leetcode.com/problems/complex-number-multiplication)|math string|[Rust](rustgym/src/leetcode/_537_complex_number_multiplication.rs)|
-|538|[Convert BST to Greater Tree](https://leetcode.com/problems/convert-bst-to-greater-tree)|tree|[Rust](rustgym/src/leetcode/_538_convert_bst_to_greater_tree.rs)|
-|539|[Minimum Time Difference](https://leetcode.com/problems/minimum-time-difference)|string|[Rust](rustgym/src/leetcode/_539_minimum_time_difference.rs)|
-|540|[Single Element in a Sorted Array](https://leetcode.com/problems/single-element-in-a-sorted-array)|binary-search|[Rust](rustgym/src/leetcode/_540_single_element_in_a_sorted_array.rs)|
-|542|[01 Matrix](https://leetcode.com/problems/01-matrix)|depth-first-search breadth-first-search|[Rust](rustgym/src/leetcode/_542_01_matrix.rs)|
-|544|[Output Contest Matches](https://leetcode.com/problems/output-contest-matches)|string recursion|[Rust](rustgym/src/leetcode/_544_output_contest_matches.rs)|
-|545|[Boundary of Binary Tree](https://leetcode.com/problems/boundary-of-binary-tree)|tree|[Rust](rustgym/src/leetcode/_545_boundary_of_binary_tree.rs)|
-|547|[Friend Circles](https://leetcode.com/problems/friend-circles)|depth-first-search union-find|[Rust](rustgym/src/leetcode/_547_friend_circles.rs)|
-|548|[Split Array with Equal Sum](https://leetcode.com/problems/split-array-with-equal-sum)|array|[Rust](rustgym/src/leetcode/_548_split_array_with_equal_sum.rs)|
-|549|[Binary Tree Longest Consecutive Sequence II](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence-ii)|tree|[Rust](rustgym/src/leetcode/_549_binary_tree_longest_consecutive_sequence_2.rs)|
-|54|[Spiral Matrix](https://leetcode.com/problems/spiral-matrix)|array|[Rust](rustgym/src/leetcode/_54_spiral_matrix.rs)|
-|553|[Optimal Division](https://leetcode.com/problems/optimal-division)|math string|[Rust](rustgym/src/leetcode/_553_optimal_division.rs)|
-|554|[Brick Wall](https://leetcode.com/problems/brick-wall)|hash-table|[Rust](rustgym/src/leetcode/_554_brick_wall.rs)|
-|555|[Split Concatenated Strings](https://leetcode.com/problems/split-concatenated-strings)|string|[Rust](rustgym/src/leetcode/_555_split_concatenated_strings.rs)|
-|556|[Next Greater Element III](https://leetcode.com/problems/next-greater-element-iii)|string|[Rust](rustgym/src/leetcode/_556_next_greater_element_3.rs)|
-|55|[Jump Game](https://leetcode.com/problems/jump-game)|array greedy|[Rust](rustgym/src/leetcode/_55_jump_game.rs)|
-|560|[Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k)|array hash-table|[Rust](rustgym/src/leetcode/_560_subarray_sum_equals_k.rs)|
-|562|[Longest Line of Consecutive One in Matrix](https://leetcode.com/problems/longest-line-of-consecutive-one-in-matrix)|array|[Rust](rustgym/src/leetcode/_562_longest_line_of_consecutive_one_in_matrix.rs)|
-|565|[Array Nesting](https://leetcode.com/problems/array-nesting)|array|[Rust](rustgym/src/leetcode/_565_array_nesting.rs)|
-|567|[Permutation in String](https://leetcode.com/problems/permutation-in-string)|two-pointers sliding-window|[Rust](rustgym/src/leetcode/_567_permutation_in_string.rs)|
-|56|[Merge Intervals](https://leetcode.com/problems/merge-intervals)|array sort|[Rust](rustgym/src/leetcode/_56_merge_intervals.rs)|
-|573|[Squirrel Simulation](https://leetcode.com/problems/squirrel-simulation)|math|[Rust](rustgym/src/leetcode/_573_squirrel_simulation.rs)|
-|576|[Out of Boundary Paths](https://leetcode.com/problems/out-of-boundary-paths)|dynamic-programming depth-first-search|[Rust](rustgym/src/leetcode/_576_out_of_boundary_paths.rs)|
-|57|[Insert Interval](https://leetcode.com/problems/insert-interval)|array sort|[Rust](rustgym/src/leetcode/_57_insert_interval.rs)|
-|581|[Shortest Unsorted Continuous Subarray](https://leetcode.com/problems/shortest-unsorted-continuous-subarray)|array|[Rust](rustgym/src/leetcode/_581_shortest_unsorted_continuous_subarray.rs)|
-|582|[Kill Process](https://leetcode.com/problems/kill-process)|tree queue|[Rust](rustgym/src/leetcode/_582_kill_process.rs)|
-|583|[Delete Operation for Two Strings](https://leetcode.com/problems/delete-operation-for-two-strings)|string|[Rust](rustgym/src/leetcode/_583_delete_operation_for_two_strings.rs)|
-|592|[Fraction Addition and Subtraction](https://leetcode.com/problems/fraction-addition-and-subtraction)|math|[Rust](rustgym/src/leetcode/_592_fraction_addition_and_subtraction.rs)|
-|593|[Valid Square](https://leetcode.com/problems/valid-square)|math|[Rust](rustgym/src/leetcode/_593_valid_square.rs)|
-|59|[Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii)|array|[Rust](rustgym/src/leetcode/_59_spiral_matrix_2.rs)|
-|5|[Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring)|string dynamic-programming|[Rust](rustgym/src/leetcode/_5_longest_palindromic_substring.rs)|
-|609|[Find Duplicate File in System](https://leetcode.com/problems/find-duplicate-file-in-system)|hash-table string|[Rust](rustgym/src/leetcode/_609_find_duplicate_file_in_system.rs)|
-|611|[Valid Triangle Number](https://leetcode.com/problems/valid-triangle-number)|array|[Rust](rustgym/src/leetcode/_611_valid_triangle_number.rs)|
-|616|[Add Bold Tag in String](https://leetcode.com/problems/add-bold-tag-in-string)|string|[Rust](rustgym/src/leetcode/_616_add_bold_tag_in_string.rs)|
-|61|[Rotate List](https://leetcode.com/problems/rotate-list)|linked-list two-pointers|[Rust](rustgym/src/leetcode/_61_rotate_list.rs)|
-|621|[Task Scheduler](https://leetcode.com/problems/task-scheduler)|array greedy queue|[Rust](rustgym/src/leetcode/_621_task_scheduler.rs)|
-|622|[Design Circular Queue](https://leetcode.com/problems/design-circular-queue)||[Rust](rustgym/src/leetcode/_622_design_circular_queue.rs)|
-|623|[Add One Row to Tree](https://leetcode.com/problems/add-one-row-to-tree)|tree|[Rust](rustgym/src/leetcode/_623_add_one_row_to_tree.rs)|
-|624|[Maximum Distance in Arrays](https://leetcode.com/problems/maximum-distance-in-arrays)|array hash-table|[Rust](rustgym/src/leetcode/_624_maximum_distance_in_arrays.rs)|
-|625|[Minimum Factorization](https://leetcode.com/problems/minimum-factorization)|math recursion|[Rust](rustgym/src/leetcode/_625_minimum_factorization.rs)|
-|62|[Unique Paths](https://leetcode.com/problems/unique-paths)|array dynamic-programming|[Rust](rustgym/src/leetcode/_62_unique_paths.rs)|
-|633|[Sum of Square Numbers](https://leetcode.com/problems/sum-of-square-numbers)|math|[Rust](rustgym/src/leetcode/_633_sum_of_square_numbers.rs)|
-|634|[Find the Derangement of An Array](https://leetcode.com/problems/find-the-derangement-of-an-array)|math|[Rust](rustgym/src/leetcode/_634_find_the_derangement_of_an_array.rs)|
-|635|[Design Log Storage System](https://leetcode.com/problems/design-log-storage-system)|string design|[Rust](rustgym/src/leetcode/_635_design_log_storage_system.rs)|
-|636|[Exclusive Time of Functions](https://leetcode.com/problems/exclusive-time-of-functions)|stack|[Rust](rustgym/src/leetcode/_636_exclusive_time_of_functions.rs)|
-|638|[Shopping Offers](https://leetcode.com/problems/shopping-offers)|dynamic-programming depth-first-search|[Rust](rustgym/src/leetcode/_638_shopping_offers.rs)|
-|63|[Unique Paths II](https://leetcode.com/problems/unique-paths-ii)|array dynamic-programming|[Rust](rustgym/src/leetcode/_63_unique_paths_2.rs)|
-|640|[Solve the Equation](https://leetcode.com/problems/solve-the-equation)|math|[Rust](rustgym/src/leetcode/_640_solve_the_equation.rs)|
-|641|[Design Circular Deque](https://leetcode.com/problems/design-circular-deque)||[Rust](rustgym/src/leetcode/_641_design_circular_deque.rs)|
-|646|[Maximum Length of Pair Chain](https://leetcode.com/problems/maximum-length-of-pair-chain)|dynamic-programming|[Rust](rustgym/src/leetcode/_646_maximum_length_of_pair_chain.rs)|
-|647|[Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings)|string dynamic-programming|[Rust](rustgym/src/leetcode/_647_palindromic_substrings.rs)|
-|648|[Replace Words](https://leetcode.com/problems/replace-words)|hash-table trie|[Rust](rustgym/src/leetcode/_648_replace_words.rs)|
-|649|[Dota2 Senate](https://leetcode.com/problems/dota2-senate)|greedy|[Rust](rustgym/src/leetcode/_649_dota2_senate.rs)|
-|64|[Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum)|array dynamic-programming|[Rust](rustgym/src/leetcode/_64_minimum_path_sum.rs)|
-|650|[2 Keys Keyboard](https://leetcode.com/problems/2-keys-keyboard)|dynamic-programming|[Rust](rustgym/src/leetcode/_650_2_keys_keyboard.rs)|
-|651|[4 Keys Keyboard](https://leetcode.com/problems/4-keys-keyboard)|math dynamic-programming greedy|[Rust](rustgym/src/leetcode/_651_4_keys_keyboard.rs)|
-|652|[Find Duplicate Subtrees](https://leetcode.com/problems/find-duplicate-subtrees)|tree|[Rust](rustgym/src/leetcode/_652_find_duplicate_subtrees.rs)|
-|654|[Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree)|tree|[Rust](rustgym/src/leetcode/_654_maximum_binary_tree.rs)|
-|655|[Print Binary Tree](https://leetcode.com/problems/print-binary-tree)|tree|[Rust](rustgym/src/leetcode/_655_print_binary_tree.rs)|
-|658|[Find K Closest Elements](https://leetcode.com/problems/find-k-closest-elements)|binary-search|[Rust](rustgym/src/leetcode/_658_find_k_cloest_elements.rs)|
-|659|[Split Array into Consecutive Subsequences](https://leetcode.com/problems/split-array-into-consecutive-subsequences)|heap greedy|[Rust](rustgym/src/leetcode/_659_split_array_into_consecutive_subsequences.rs)|
-|662|[Maximum Width of Binary Tree](https://leetcode.com/problems/maximum-width-of-binary-tree)|tree|[Rust](rustgym/src/leetcode/_662_maximum_width_of_binary_tree.rs)|
-|663|[Equal Tree Partition](https://leetcode.com/problems/equal-tree-partition)|tree|[Rust](rustgym/src/leetcode/_663_equal_tree_partition.rs)|
-|666|[Path Sum IV](https://leetcode.com/problems/path-sum-iv)|tree|[Rust](rustgym/src/leetcode/_666_path_sum_4.rs)|
-|667|[Beautiful Arrangement II](https://leetcode.com/problems/beautiful-arrangement-ii)|array|[Rust](rustgym/src/leetcode/_667_beautiful_arrangement_2.rs)|
-|670|[Maximum Swap](https://leetcode.com/problems/maximum-swap)|array math|[Rust](rustgym/src/leetcode/_670_maximum_swap.rs)|
-|672|[Bulb Switcher II](https://leetcode.com/problems/bulb-switcher-ii)|math|[Rust](rustgym/src/leetcode/_672_bulb_switcher_2.rs)|
-|676|[Implement Magic Dictionary](https://leetcode.com/problems/implement-magic-dictionary)|hash-table trie|[Rust](rustgym/src/leetcode/_676_implement_magic_dictionary.rs)|
-|677|[Map Sum Pairs](https://leetcode.com/problems/map-sum-pairs)|trie|[Rust](rustgym/src/leetcode/_677_map_sum_pairs.rs)|
-|678|[Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string)|string|[Rust](rustgym/src/leetcode/_678_valid_parenthesis_string.rs)|
-|681|[Next Closest Time](https://leetcode.com/problems/next-closest-time)|string|[Rust](rustgym/src/leetcode/_681_next_closest_time.rs)|
-|684|[Redundant Connection](https://leetcode.com/problems/redundant-connection)|tree union-find graph|[Rust](rustgym/src/leetcode/_684_redundant_connection.rs)|
-|686|[Repeated String Match](https://leetcode.com/problems/repeated-string-match)|string|[Rust](rustgym/src/leetcode/_686_repeated_string_match.rs)|
-|687|[Longest Univalue Path](https://leetcode.com/problems/longest-univalue-path)|tree recursion|[Rust](rustgym/src/leetcode/_687_longest_univalue_path.rs)|
-|688|[Knight Probability in Chessboard](https://leetcode.com/problems/knight-probability-in-chessboard)|dynamic-programming|[Rust](rustgym/src/leetcode/_688_knight_probability_in_chessboard.rs)|
-|692|[Top K Frequent Words](https://leetcode.com/problems/top-k-frequent-words)|hash-table heap trie|[Rust](rustgym/src/leetcode/_692_top_k_frequent_words.rs)|
-|694|[Number of Distinct Islands](https://leetcode.com/problems/number-of-distinct-islands)|hash-table depth-first-search|[Rust](rustgym/src/leetcode/_694_number_of_distinct_islands.rs)|
-|695|[Max Area of Island](https://leetcode.com/problems/max-area-of-island)|array depth-first-search|[Rust](rustgym/src/leetcode/_695_max_area_of_island.rs)|
-|698|[Partition to K Equal Sum Subsets](https://leetcode.com/problems/partition-to-k-equal-sum-subsets)|dynamic-programming recursion|[Rust](rustgym/src/leetcode/_698_partition_to_k_equal_sum_subsets.rs)|
-|6|[ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion)|string|[Rust](rustgym/src/leetcode/_6_zigzag_conversion.rs)|
-|701|[Insert into a Binary Search Tree](https://leetcode.com/problems/insert-into-a-binary-search-tree)||[Rust](rustgym/src/leetcode/_701_insert_into_a_binary_search_tree.rs)|
-|707|[Design Linked List](https://leetcode.com/problems/design-linked-list)||[Rust](rustgym/src/leetcode/_707_design_linked_list.rs)|
-|712|[Minimum ASCII Delete Sum for Two Strings](https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings)|dynamic-programming|[Rust](rustgym/src/leetcode/_712_minimum_ascii_delete_sum_for_two_string.rs)|
-|713|[Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k)|array two-pointers|[Rust](rustgym/src/leetcode/_713_subarray_product_less_than_k.rs)|
-|714|[Best Time to Buy and Sell Stock with Transaction Fee](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee)|array dynamic-programming greedy|[Rust](rustgym/src/leetcode/_714_best_time_to_buy_and_sell_stock_with_transaction_fee.rs)|
-|718|[Maximum Length of Repeated Subarray](https://leetcode.com/problems/maximum-length-of-repeated-subarray)|array hash-table binary-search dynamic-programming|[Rust](rustgym/src/leetcode/_718_maximum_length_of_repeated_subarray.rs)|
-|71|[Simplify Path](https://leetcode.com/problems/simplify-path)|string stack|[Rust](rustgym/src/leetcode/_71_simplify_path.rs)|
-|721|[Accounts Merge](https://leetcode.com/problems/accounts-merge)|depth-first-search union-find|[Rust](rustgym/src/leetcode/_721_accounts_merge.rs)|
-|722|[Remove Comments](https://leetcode.com/problems/remove-comments)|string|[Rust](rustgym/src/leetcode/_722_remove_comments.rs)|
-|723|[Candy Crush](https://leetcode.com/problems/candy-crush)|array two-pointers|[Rust](rustgym/src/leetcode/_723_candy_crush.rs)|
-|725|[Split Linked List in Parts](https://leetcode.com/problems/split-linked-list-in-parts)|linked-list|[Rust](rustgym/src/leetcode/_725_split_linked_list_in_parts.rs)|
-|729|[My Calendar I](https://leetcode.com/problems/my-calendar-i)|array|[Rust](rustgym/src/leetcode/_729_my_calendar_1.rs)|
-|731|[My Calendar II](https://leetcode.com/problems/my-calendar-ii)|ordered-map|[Rust](rustgym/src/leetcode/_731_my_calendar_2.rs)|
-|735|[Asteroid Collision](https://leetcode.com/problems/asteroid-collision)|stack|[Rust](rustgym/src/leetcode/_735_asteroid_collision.rs)|
-|737|[Sentence Similarity II](https://leetcode.com/problems/sentence-similarity-ii)|depth-first-search union-find|[Rust](rustgym/src/leetcode/_737_sentence_similarity_2.rs)|
-|738|[Monotone Increasing Digits](https://leetcode.com/problems/monotone-increasing-digits)|greedy|[Rust](rustgym/src/leetcode/_738_monotone_increasing_digits.rs)|
-|739|[Daily Temperatures](https://leetcode.com/problems/daily-temperatures)|hash-table stack|[Rust](rustgym/src/leetcode/_739_daily_temperatures.rs)|
-|73|[Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes)|array|[Rust](rustgym/src/leetcode/_73_set_matrix_zeroes.rs)|
-|740|[Delete and Earn](https://leetcode.com/problems/delete-and-earn)|dynamic-programming|[Rust](rustgym/src/leetcode/_740_delete_and_earn.rs)|
-|742|[Closest Leaf in a Binary Tree](https://leetcode.com/problems/closest-leaf-in-a-binary-tree)|string|[Rust](rustgym/src/leetcode/_742_closest_leaf_in_binary_tree.rs)|
-|743|[Network Delay Time](https://leetcode.com/problems/network-delay-time)|tree|[Rust](rustgym/src/leetcode/_743_network_delay_time.rs)|
-|74|[Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix)|array binary-search|[Rust](rustgym/src/leetcode/_74_search_a_2d_matrix.rs)|
-|750|[Number Of Corner Rectangles](https://leetcode.com/problems/number-of-corner-rectangles)|depth-first-search|[Rust](rustgym/src/leetcode/_750_number_of_corner_rectangles.rs)|
-|751|[IP to CIDR](https://leetcode.com/problems/ip-to-cidr)|dynamic-programming|[Rust](rustgym/src/leetcode/_751_ip_to_cidr.rs)|
-|752|[Open the Lock](https://leetcode.com/problems/open-the-lock)|bit-manipulation|[Rust](rustgym/src/leetcode/_752_open_the_lock.rs)|
-|754|[Reach a Number](https://leetcode.com/problems/reach-a-number)|math depth-first-search|[Rust](rustgym/src/leetcode/_754_reach_a_number.rs)|
-|755|[Pour Water](https://leetcode.com/problems/pour-water)|math|[Rust](rustgym/src/leetcode/_755_pour_water.rs)|
-|756|[Pyramid Transition Matrix](https://leetcode.com/problems/pyramid-transition-matrix)|array|[Rust](rustgym/src/leetcode/_756_pyramid_transition_matrix.rs)|
-|75|[Sort Colors](https://leetcode.com/problems/sort-colors)|array two-pointers sort|[Rust](rustgym/src/leetcode/_75_sort_colors.rs)|
-|763|[Partition Labels](https://leetcode.com/problems/partition-labels)|string recursion|[Rust](rustgym/src/leetcode/_763_partition_labels.rs)|
-|764|[Largest Plus Sign](https://leetcode.com/problems/largest-plus-sign)|tree breadth-first-search|[Rust](rustgym/src/leetcode/_764_largest_plus_sign.rs)|
-|[767](rustgym/desc/leetcode/767.md)|[Reorganize String](https://leetcode.com/problems/reorganize-string)|bit-manipulation|[Rust](rustgym/src/leetcode/_767_reorganize_string.rs)|
-|769|[Max Chunks To Make Sorted](https://leetcode.com/problems/max-chunks-to-make-sorted)|dynamic-programming|[Rust](rustgym/src/leetcode/_769_max_chunks_to_make_sorted.rs)|
-|775|[Global and Local Inversions](https://leetcode.com/problems/global-and-local-inversions)|tree|[Rust](rustgym/src/leetcode/_775_global_and_local_inversions.rs)|
-|776|[Split BST](https://leetcode.com/problems/split-bst)|tree|[Rust](rustgym/src/leetcode/_776_split_bst.rs)|
-|777|[Swap Adjacent in LR String](https://leetcode.com/problems/swap-adjacent-in-lr-string)|array|[Rust](rustgym/src/leetcode/_777_swap_adjacent_in_lr_string.rs)|
-|779|[K-th Symbol in Grammar](https://leetcode.com/problems/k-th-symbol-in-grammar)|array|[Rust](rustgym/src/leetcode/_779_kth_symbol_in_grammar.rs)|
-|77|[Combinations](https://leetcode.com/problems/combinations)|backtracking|[Rust](rustgym/src/leetcode/_77_combinations.rs)|
-|781|[Rabbits in Forest](https://leetcode.com/problems/rabbits-in-forest)|hash-table string stack|[Rust](rustgym/src/leetcode/_781_rabbits_in_forest.rs)|
-|784|[Letter Case Permutation](https://leetcode.com/problems/letter-case-permutation)|tree|[Rust](rustgym/src/leetcode/_784_letter_case_permutation.rs)|
-|785|[Is Graph Bipartite?](https://leetcode.com/problems/is-graph-bipartite)|string stack|[Rust](rustgym/src/leetcode/_785_is_graph_bipartite.rs)|
-|787|[Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops)|breadth-first-search|[Rust](rustgym/src/leetcode/_787_cheapest_flights_within_k_stops.rs)|
-|789|[Escape The Ghosts](https://leetcode.com/problems/escape-the-ghosts)|heap design|[Rust](rustgym/src/leetcode/_789_escape_the_ghosts.rs)|
-|78|[Subsets](https://leetcode.com/problems/subsets)|array backtracking bit-manipulation|[Rust](rustgym/src/leetcode/_78_subsets.rs)|
-|790|[Domino and Tromino Tiling](https://leetcode.com/problems/domino-and-tromino-tiling)|array math|[Rust](rustgym/src/leetcode/_790_domino_and_tromino_tiling.rs)|
-|791|[Custom Sort String](https://leetcode.com/problems/custom-sort-string)|tree recursion|[Rust](rustgym/src/leetcode/_791_custom_sort_string.rs)|
-|792|[Number of Matching Subsequences](https://leetcode.com/problems/number-of-matching-subsequences)|binary-search|[Rust](rustgym/src/leetcode/_792_number_of_matching_subsequences.rs)|
-|794|[Valid Tic-Tac-Toe State](https://leetcode.com/problems/valid-tic-tac-toe-state)|binary-search heap depth-first-search union-find|[Rust](rustgym/src/leetcode/_794_valid_tic_tac_toe_state.rs)|
-|795|[Number of Subarrays with Bounded Maximum](https://leetcode.com/problems/number-of-subarrays-with-bounded-maximum)|recursion|[Rust](rustgym/src/leetcode/_795_number_of_subarrays_with_bounded_maximum.rs)|
-|797|[All Paths From Source to Target](https://leetcode.com/problems/all-paths-from-source-to-target)|hash-table math|[Rust](rustgym/src/leetcode/_797_all_paths_from_source_to_target.rs)|
-|799|[Champagne Tower](https://leetcode.com/problems/champagne-tower)|tree recursion|[Rust](rustgym/src/leetcode/_799_champagne_tower.rs)|
-|79|[Word Search](https://leetcode.com/problems/word-search)|array backtracking|[Rust](rustgym/src/leetcode/_79_word_search.rs)|
-|801|[Minimum Swaps To Make Sequences Increasing](https://leetcode.com/problems/minimum-swaps-to-make-sequences-increasing)|depth-first-search breadth-first-search graph|[Rust](rustgym/src/leetcode/_801_minimum_swaps_to_make_sequences_increasing.rs)|
-|802|[Find Eventual Safe States](https://leetcode.com/problems/find-eventual-safe-states)|binary-search heap|[Rust](rustgym/src/leetcode/_802_find_eventual_safe_states.rs)|
-|807|[Max Increase to Keep City Skyline](https://leetcode.com/problems/max-increase-to-keep-city-skyline)|string|[Rust](rustgym/src/leetcode/_807_max_increase_to_keep_city_skyline.rs)|
-|808|[Soup Servings](https://leetcode.com/problems/soup-servings)|array|[Rust](rustgym/src/leetcode/_808_soup_servings.rs)|
-|809|[Expressive Words](https://leetcode.com/problems/expressive-words)|binary-search|[Rust](rustgym/src/leetcode/_809_expressive_words.rs)|
-|80|[Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii)|array two-pointers|[Rust](rustgym/src/leetcode/_80_remove_duplicates_from_sorted_array_2.rs)|
-|813|[Largest Sum of Averages](https://leetcode.com/problems/largest-sum-of-averages)|backtracking depth-first-search graph|[Rust](rustgym/src/leetcode/_813_largest_sum_of_averages.rs)|
-|814|[Binary Tree Pruning](https://leetcode.com/problems/binary-tree-pruning)||[Rust](rustgym/src/leetcode/_814_binary_tree_pruning.rs)|
-|816|[Ambiguous Coordinates](https://leetcode.com/problems/ambiguous-coordinates)|hash-table design|[Rust](rustgym/src/leetcode/_816_ambiguous_coordinates.rs)|
-|817|[Linked List Components](https://leetcode.com/problems/linked-list-components)|hash-table design|[Rust](rustgym/src/leetcode/_817_linked_list_components.rs)|
-|81|[Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii)|array binary-search|[Rust](rustgym/src/leetcode/_81_search_in_rotated_sorted_array_2.rs)|
-|820|[Short Encoding of Words](https://leetcode.com/problems/short-encoding-of-words)|depth-first-search graph|[Rust](rustgym/src/leetcode/_820_short_encoding_of_words.rs)|
-|822|[Card Flipping Game](https://leetcode.com/problems/card-flipping-game)|string|[Rust](rustgym/src/leetcode/_822_card_flipping_game.rs)|
-|823|[Binary Trees With Factors](https://leetcode.com/problems/binary-trees-with-factors)|math|[Rust](rustgym/src/leetcode/_823_binary_trees_with_factors.rs)|
-|825|[Friends Of Appropriate Ages](https://leetcode.com/problems/friends-of-appropriate-ages)||[Rust](rustgym/src/leetcode/_825_friends_of_appropriate_ages.rs)|
-|826|[Most Profit Assigning Work](https://leetcode.com/problems/most-profit-assigning-work)|dynamic-programming|[Rust](rustgym/src/leetcode/_826_most_profix_assigning_work.rs)|
-|82|[Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii)|linked-list|[Rust](rustgym/src/leetcode/_82_remove_duplicates_from_sorted_list_2.rs)|
-|831|[Masking Personal Information](https://leetcode.com/problems/masking-personal-information)|dynamic-programming|[Rust](rustgym/src/leetcode/_831_masking_personal_information.rs)|
-|833|[Find And Replace in String](https://leetcode.com/problems/find-and-replace-in-string)|breadth-first-search|[Rust](rustgym/src/leetcode/_833_find_and_replace_in_string.rs)|
-|835|[Image Overlap](https://leetcode.com/problems/image-overlap)|linked-list|[Rust](rustgym/src/leetcode/_835_image_overlap.rs)|
-|837|[New 21 Game](https://leetcode.com/problems/new-21-game)|string|[Rust](rustgym/src/leetcode/_837_new_21_game.rs)|
-|838|[Push Dominoes](https://leetcode.com/problems/push-dominoes)|linked-list design|[Rust](rustgym/src/leetcode/_838_push_dominoes.rs)|
-|840|[Magic Squares In Grid](https://leetcode.com/problems/magic-squares-in-grid)||[Rust](rustgym/src/leetcode/_840_magic_squares_in_grid.rs)|
-|841|[Keys and Rooms](https://leetcode.com/problems/keys-and-rooms)||[Rust](rustgym/src/leetcode/_841_keys_and_rooms.rs)|
-|842|[Split Array into Fibonacci Sequence](https://leetcode.com/problems/split-array-into-fibonacci-sequence)||[Rust](rustgym/src/leetcode/_842_split_array_into_fibonacci_sequence.rs)|
-|845|[Longest Mountain in Array](https://leetcode.com/problems/longest-mountain-in-array)||[Rust](rustgym/src/leetcode/_845_longest_mountain_in_array.rs)|
-|846|[Hand of Straights](https://leetcode.com/problems/hand-of-straights)||[Rust](rustgym/src/leetcode/_846_hand_of_straights.rs)|
-|848|[Shifting Letters](https://leetcode.com/problems/shifting-letters)||[Rust](rustgym/src/leetcode/_848_shifting_letters.rs)|
-|849|[Maximize Distance to Closest Person](https://leetcode.com/problems/maximize-distance-to-closest-person)||[Rust](rustgym/src/leetcode/_849_maximize_distance_to_closest_person.rs)|
-|851|[Loud and Rich](https://leetcode.com/problems/loud-and-rich)|string|[Rust](rustgym/src/leetcode/_851_loud_and_rich.rs)|
-|853|[Car Fleet](https://leetcode.com/problems/car-fleet)|two-pointers|[Rust](rustgym/src/leetcode/_853_car_fleet.rs)|
-|855|[Exam Room](https://leetcode.com/problems/exam-room)|two-pointers|[Rust](rustgym/src/leetcode/_855_exam_room.rs)|
-|856|[Score of Parentheses](https://leetcode.com/problems/score-of-parentheses)|math|[Rust](rustgym/src/leetcode/_856_score_of_parentheses.rs)|
-|858|[Mirror Reflection](https://leetcode.com/problems/mirror-reflection)|string|[Rust](rustgym/src/leetcode/_858_mirror_reflection.rs)|
-|861|[Score After Flipping Matrix](https://leetcode.com/problems/score-after-flipping-matrix)|array|[Rust](rustgym/src/leetcode/_861_score_after_flipping_matrix.rs)|
-|[863](rustgym/desc/leetcode/863.md)|[All Nodes Distance K in Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree)|tree depth-first-search|[Rust](rustgym/src/leetcode/_863_all_nodes_distance_k_in_binary_tree.rs)|
-|865|[Smallest Subtree with all the Deepest Nodes](https://leetcode.com/problems/smallest-subtree-with-all-the-deepest-nodes)|depth-first-search|[Rust](rustgym/src/leetcode/_865_smallest_subtree_with_all_the_deepest_nodes.rs)|
-|866|[Prime Palindrome](https://leetcode.com/problems/prime-palindrome)|math|[Rust](rustgym/src/leetcode/_866_prime_palindrome.rs)|
-|869|[Reordered Power of 2](https://leetcode.com/problems/reordered-power-of-2)|depth-first-search union-find graph|[Rust](rustgym/src/leetcode/_869_reordered_power_of_2.rs)|
-|86|[Partition List](https://leetcode.com/problems/partition-list)|linked-list two-pointers|[Rust](rustgym/src/leetcode/_86_partition_list.rs)|
-|870|[Advantage Shuffle](https://leetcode.com/problems/advantage-shuffle)|array|[Rust](rustgym/src/leetcode/_870_advantage_shuffle.rs)|
-|873|[Length of Longest Fibonacci Subsequence](https://leetcode.com/problems/length-of-longest-fibonacci-subsequence)|minimax|[Rust](rustgym/src/leetcode/_873_length_of_longest_fibonacci_subsequence.rs)|
-|875|[Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas)|two-pointers|[Rust](rustgym/src/leetcode/_875_koko_eating_bananas.rs)|
-|877|[Stone Game](https://leetcode.com/problems/stone-game)|dynamic-programming breadth-first-search|[Rust](rustgym/src/leetcode/_877_stone_game.rs)|
-|880|[Decoded String at Index](https://leetcode.com/problems/decoded-string-at-index)|segment-tree line-sweep|[Rust](rustgym/src/leetcode/_880_decoded_string_at_index.rs)|
-|881|[Boats to Save People](https://leetcode.com/problems/boats-to-save-people)|depth-first-search|[Rust](rustgym/src/leetcode/_881_boats_to_save_people.rs)|
-|885|[Spiral Matrix III](https://leetcode.com/problems/spiral-matrix-iii)|ordered-map|[Rust](rustgym/src/leetcode/_885_spiral_matrix_3.rs)|
-|886|[Possible Bipartition](https://leetcode.com/problems/possible-bipartition)|string stack|[Rust](rustgym/src/leetcode/_886_possible_bipartition.rs)|
-|889|[Construct Binary Tree from Preorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal)|string|[Rust](rustgym/src/leetcode/_889_construct_binary_tree_from_preorder_and_postorder_traversal.rs)|
-|890|[Find and Replace Pattern](https://leetcode.com/problems/find-and-replace-pattern)|greedy|[Rust](rustgym/src/leetcode/_890_find_and_replace_pattern.rs)|
-|894|[All Possible Full Binary Trees](https://leetcode.com/problems/all-possible-full-binary-trees)|hash-table binary-search sort random|[Rust](rustgym/src/leetcode/_894_all_possible_full_binary_trees.rs)|
-|898|[Bitwise ORs of Subarrays](https://leetcode.com/problems/bitwise-ors-of-subarrays)|array|[Rust](rustgym/src/leetcode/_898_bitwise_ors_of_subarrays.rs)|
-|89|[Gray Code](https://leetcode.com/problems/gray-code)|backtracking|[Rust](rustgym/src/leetcode/_89_gray_code.rs)|
-|8|[String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi)|math string|[Rust](rustgym/src/leetcode/_8_string_to_integer.rs)|
-|900|[RLE Iterator](https://leetcode.com/problems/rle-iterator)|math|[Rust](rustgym/src/leetcode/_900_rle_iterator.rs)|
-|901|[Online Stock Span](https://leetcode.com/problems/online-stock-span)|array greedy|[Rust](rustgym/src/leetcode/_901_online_stock_span.rs)|
-|904|[Fruit Into Baskets](https://leetcode.com/problems/fruit-into-baskets)|tree depth-first-search|[Rust](rustgym/src/leetcode/_904_fruit_into_baskets.rs)|
-|907|[Sum of Subarray Minimums](https://leetcode.com/problems/sum-of-subarray-minimums)|binary-search|[Rust](rustgym/src/leetcode/_907_sum_of_subarray_minimums.rs)|
-|909|[Snakes and Ladders](https://leetcode.com/problems/snakes-and-ladders)|math dynamic-programming minimax|[Rust](rustgym/src/leetcode/_909_snakes_and_ladders.rs)|
-|90|[Subsets II](https://leetcode.com/problems/subsets-ii)|array backtracking|[Rust](rustgym/src/leetcode/_90_subsets_2.rs)|
-|910|[Smallest Range II](https://leetcode.com/problems/smallest-range-ii)|math binary-search|[Rust](rustgym/src/leetcode/_910_smallest_range_2.rs)|
-|911|[Online Election](https://leetcode.com/problems/online-election)|dynamic-programming|[Rust](rustgym/src/leetcode/_911_online_election.rs)|
-|912|[Sort an Array](https://leetcode.com/problems/sort-an-array)|binary-search random|[Rust](rustgym/src/leetcode/_912_sort_an_array.rs)|
-|915|[Partition Array into Disjoint Intervals](https://leetcode.com/problems/partition-array-into-disjoint-intervals)|math random rejection-sampling|[Rust](rustgym/src/leetcode/_915_partition_array_into_disjoint_intervals.rs)|
-|916|[Word Subsets](https://leetcode.com/problems/word-subsets)|stack|[Rust](rustgym/src/leetcode/_916_word_subsets.rs)|
-|918|[Maximum Sum Circular Subarray](https://leetcode.com/problems/maximum-sum-circular-subarray)|heap|[Rust](rustgym/src/leetcode/_918_maximum_sum_circular_subarray.rs)|
-|919|[Complete Binary Tree Inserter](https://leetcode.com/problems/complete-binary-tree-inserter)|math|[Rust](rustgym/src/leetcode/_919_complete_binary_tree_inserter.rs)|
-|[91](rustgym/desc/leetcode/91.md)|[Decode Ways](https://leetcode.com/problems/decode-ways)|string dynamic-programming|[Rust](rustgym/src/leetcode/_91_decode_ways.rs)|
-|921|[Minimum Add to Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid)|math|[Rust](rustgym/src/leetcode/_921_minimum_add_to_make_parentheses_valid.rs)|
-|923|[3Sum With Multiplicity](https://leetcode.com/problems/3sum-with-multiplicity)|math binary-search dynamic-programming|[Rust](rustgym/src/leetcode/_923_3sum_with_multiplicity.rs)|
-|926|[Flip String to Monotone Increasing](https://leetcode.com/problems/flip-string-to-monotone-increasing)|string|[Rust](rustgym/src/leetcode/_926_flip_string_to_monotone_increasing.rs)|
-|92|[Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii)|linked-list|[Rust](rustgym/src/leetcode/_92_reverse_linked_list_2.rs)|
-|930|[Binary Subarrays With Sum](https://leetcode.com/problems/binary-subarrays-with-sum)|tree recursion|[Rust](rustgym/src/leetcode/_930_binary_subarrays_with_sum.rs)|
-|931|[Minimum Falling Path Sum](https://leetcode.com/problems/minimum-falling-path-sum)|hash-table stack|[Rust](rustgym/src/leetcode/_931_minimum_falling_path_sum.rs)|
-|932|[Beautiful Array](https://leetcode.com/problems/beautiful-array)|array|[Rust](rustgym/src/leetcode/_932_beautiful_array.rs)|
-|934|[Shortest Bridge](https://leetcode.com/problems/shortest-bridge)|dynamic-programming bit-manipulation|[Rust](rustgym/src/leetcode/_934_shortest_bridge.rs)|
-|935|[Knight Dialer](https://leetcode.com/problems/knight-dialer)|math string|[Rust](rustgym/src/leetcode/_935_knight_dialer.rs)|
-|939|[Minimum Area Rectangle](https://leetcode.com/problems/minimum-area-rectangle)|divide-and-conquer dynamic-programming|[Rust](rustgym/src/leetcode/_939_minimum_area_rectangle.rs)|
-|93|[Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses)|string backtracking|[Rust](rustgym/src/leetcode/_93_restore_ip_addresses.rs)|
-|945|[Minimum Increment to Make Array Unique](https://leetcode.com/problems/minimum-increment-to-make-array-unique)|breadth-first-search|[Rust](rustgym/src/leetcode/_945_minimum_increment_to_make_array_unique.rs)|
-|946|[Validate Stack Sequences](https://leetcode.com/problems/validate-stack-sequences)|math greedy|[Rust](rustgym/src/leetcode/_946_validate_stack_sequences.rs)|
-|947|[Most Stones Removed with Same Row or Column](https://leetcode.com/problems/most-stones-removed-with-same-row-or-column)|binary-search|[Rust](rustgym/src/leetcode/_947_most_stones_removed_with_same_row_or_column.rs)|
-|948|[Bag of Tokens](https://leetcode.com/problems/bag-of-tokens)||[Rust](rustgym/src/leetcode/_948_bag_of_tokens.rs)|
-|949|[Largest Time for Given Digits](https://leetcode.com/problems/largest-time-for-given-digits)|breadth-first-search minimax|[Rust](rustgym/src/leetcode/_949_largest_time_for_given_digits.rs)|
-|94|[Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal)|hash-table stack tree|[Rust](rustgym/src/leetcode/_94_binary_tree_inorder_traversal.rs)|
-|950|[Reveal Cards In Increasing Order](https://leetcode.com/problems/reveal-cards-in-increasing-order)|array math|[Rust](rustgym/src/leetcode/_950_reveal_cards_in_increasing_order.rs)|
-|951|[Flip Equivalent Binary Trees](https://leetcode.com/problems/flip-equivalent-binary-trees)|array|[Rust](rustgym/src/leetcode/_951_flip_equivalent_binary_trees.rs)|
-|954|[Array of Doubled Pairs](https://leetcode.com/problems/array-of-doubled-pairs)|array|[Rust](rustgym/src/leetcode/_954_array_of_doubled_pairs.rs)|
-|955|[Delete Columns to Make Sorted II](https://leetcode.com/problems/delete-columns-to-make-sorted-ii)|tree|[Rust](rustgym/src/leetcode/_955_delete_columns_to_make_sorted_2.rs)|
-|957|[Prison Cells After N Days](https://leetcode.com/problems/prison-cells-after-n-days)|stack greedy|[Rust](rustgym/src/leetcode/_957_prison_cells_after_n_days.rs)|
-|958|[Check Completeness of a Binary Tree](https://leetcode.com/problems/check-completeness-of-a-binary-tree)|array sort|[Rust](rustgym/src/leetcode/_958_check_completeness_of_a_binary_tree.rs)|
-|959|[Regions Cut By Slashes](https://leetcode.com/problems/regions-cut-by-slashes)|two-pointers|[Rust](rustgym/src/leetcode/_959_regions_cut_by_slashes.rs)|
-|95|[Unique Binary Search Trees II](https://leetcode.com/problems/unique-binary-search-trees-ii)|dynamic-programming tree|[Rust](rustgym/src/leetcode/_95_unique_binary_search_trees_2.rs)|
-|962|[Maximum Width Ramp](https://leetcode.com/problems/maximum-width-ramp)|array|[Rust](rustgym/src/leetcode/_962_maximum_with_ramp.rs)|
-|963|[Minimum Area Rectangle II](https://leetcode.com/problems/minimum-area-rectangle-ii)|math binary-search greedy|[Rust](rustgym/src/leetcode/_963_minimum_area_rectangle_2.rs)|
-|966|[Vowel Spellchecker](https://leetcode.com/problems/vowel-spellchecker)|hash-table two-pointers|[Rust](rustgym/src/leetcode/_966_vowel_spellchecker.rs)|
-|967|[Numbers With Same Consecutive Differences](https://leetcode.com/problems/numbers-with-same-consecutive-differences)|dynamic-programming|[Rust](rustgym/src/leetcode/_967_numbers_with_same_consecutive_differences.rs)|
-|969|[Pancake Sorting](https://leetcode.com/problems/pancake-sorting)|queue|[Rust](rustgym/src/leetcode/_969_pancake_sorting.rs)|
-|96|[Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees)|dynamic-programming tree|[Rust](rustgym/src/leetcode/_96_unique_binary_search_trees.rs)|
-|971|[Flip Binary Tree To Match Preorder Traversal](https://leetcode.com/problems/flip-binary-tree-to-match-preorder-traversal)|depth-first-search breadth-first-search|[Rust](rustgym/src/leetcode/_971_flip_binary_tree_to_match_preorder_traversal.rs)|
-|973|[K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin)|string greedy|[Rust](rustgym/src/leetcode/_973_k_closest_points_to_origin.rs)|
-|974|[Subarray Sums Divisible by K](https://leetcode.com/problems/subarray-sums-divisible-by-k)|string|[Rust](rustgym/src/leetcode/_974_subarray_sums_divisible_by_k.rs)|
-|978|[Longest Turbulent Subarray](https://leetcode.com/problems/longest-turbulent-subarray)|array|[Rust](rustgym/src/leetcode/_978_longest_turbulent_subarray.rs)|
-|979|[Distribute Coins in Binary Tree](https://leetcode.com/problems/distribute-coins-in-binary-tree)|math|[Rust](rustgym/src/leetcode/_979_distribute_coins_in_binary_tree.rs)|
-|981|[Time Based Key-Value Store](https://leetcode.com/problems/time-based-key-value-store)|greedy|[Rust](rustgym/src/leetcode/_981_time_based_key_value_store.rs)|
-|983|[Minimum Cost For Tickets](https://leetcode.com/problems/minimum-cost-for-tickets)|stack|[Rust](rustgym/src/leetcode/_983_minimum_cost_for_tickets.rs)|
-|984|[String Without AAA or BBB](https://leetcode.com/problems/string-without-aaa-or-bbb)|depth-first-search union-find|[Rust](rustgym/src/leetcode/_984_string_without_aaa_or_bbb.rs)|
-|986|[Interval List Intersections](https://leetcode.com/problems/interval-list-intersections)|math|[Rust](rustgym/src/leetcode/_986_interval_list_intersections.rs)|
-|987|[Vertical Order Traversal of a Binary Tree](https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree)|array|[Rust](rustgym/src/leetcode/_987_vertical_order_traversal_of_a_binary_tree.rs)|
-|988|[Smallest String Starting From Leaf](https://leetcode.com/problems/smallest-string-starting-from-leaf)|tree|[Rust](rustgym/src/leetcode/_988_smallest_string_starting_from_leaf.rs)|
-|98|[Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree)|tree depth-first-search recursion|[Rust](rustgym/src/leetcode/_98_validate_binary_search_tree.rs)|
-|990|[Satisfiability of Equality Equations](https://leetcode.com/problems/satisfiability-of-equality-equations)|hash-table|[Rust](rustgym/src/leetcode/_990_satisfiability_of_equality_equations.rs)|
-|991|[Broken Calculator](https://leetcode.com/problems/broken-calculator)|array hash-table|[Rust](rustgym/src/leetcode/_991_broken_calculator.rs)|
-|994|[Rotting Oranges](https://leetcode.com/problems/rotting-oranges)|hash-table|[Rust](rustgym/src/leetcode/_994_rotting_oranges.rs)|
-|998|[Maximum Binary Tree II](https://leetcode.com/problems/maximum-binary-tree-ii)|tree|[Rust](rustgym/src/leetcode/_998_maximum_binary_tree_2.rs)|
-
-# Leetcode Hard 116/337 34.42% <a name='leetcode_hard'></a>
-
-|id|337 Hard Questions|Tags|221 Solutions|
-|---|---|---|---|
-|428|[Serialize and Deserialize N-ary Tree](https://leetcode.com/problems/serialize-and-deserialize-n-ary-tree)||   |
-|431|[Encode N-ary Tree to Binary Tree](https://leetcode.com/problems/encode-n-ary-tree-to-binary-tree)||   |
-|839|[Similar String Groups](https://leetcode.com/problems/similar-string-groups)||   |
-|843|[Guess the Word](https://leetcode.com/problems/guess-the-word)||   |
-|995|[Minimum Number of K Consecutive Bit Flips](https://leetcode.com/problems/minimum-number-of-k-consecutive-bit-flips)||   |
-|996|[Number of Squareful Arrays](https://leetcode.com/problems/number-of-squareful-arrays)||   |
-|1088|[Confusing Number II](https://leetcode.com/problems/confusing-number-ii)||   |
-|1153|[String Transforms Into Another String](https://leetcode.com/problems/string-transforms-into-another-string)||   |
-|1187|[Make Array Strictly Increasing](https://leetcode.com/problems/make-array-strictly-increasing)||   |
-|1246|[Palindrome Removal](https://leetcode.com/problems/palindrome-removal)||   |
-|1269|[Number of Ways to Stay in the Same Place After Some Steps](https://leetcode.com/problems/number-of-ways-to-stay-in-the-same-place-after-some-steps)||   |
-|1301|[Number of Paths with Max Score](https://leetcode.com/problems/number-of-paths-with-max-score)||   |
-|1316|[Distinct Echo Substrings](https://leetcode.com/problems/distinct-echo-substrings)||   |
-|1354|[Construct Target Array With Multiple Sums](https://leetcode.com/problems/construct-target-array-with-multiple-sums)||   |
-|1363|[Largest Multiple of Three](https://leetcode.com/problems/largest-multiple-of-three)||   |
-|1373|[Maximum Sum BST in Binary Tree](https://leetcode.com/problems/maximum-sum-bst-in-binary-tree)||   |
-|1392|[Longest Happy Prefix](https://leetcode.com/problems/longest-happy-prefix)||   |
-|1416|[Restore The Array](https://leetcode.com/problems/restore-the-array)||   |
-|1425|[Constrained Subsequence Sum](https://leetcode.com/problems/constrained-subsequence-sum)||   |
-|1453|[Maximum Number of Darts Inside of a Circular Dartboard](https://leetcode.com/problems/maximum-number-of-darts-inside-of-a-circular-dartboard)||   |
-|1467|[Probability of a Two Boxes Having The Same Number of Distinct Balls](https://leetcode.com/problems/probability-of-a-two-boxes-having-the-same-number-of-distinct-balls)||   |
-|1494|[Parallel Courses II](https://leetcode.com/problems/parallel-courses-ii)||   |
-|1597|[Build Binary Expression Tree From Infix Expression](https://leetcode.com/problems/build-binary-expression-tree-from-infix-expression)||   |
-|1601|[Maximum Number of Achievable Transfer Requests](https://leetcode.com/problems/maximum-number-of-achievable-transfer-requests)||   |
-|1606|[Find Servers That Handled Most Number of Requests](https://leetcode.com/problems/find-servers-that-handled-most-number-of-requests)||   |
-|1639|[Number of Ways to Form a Target String Given a Dictionary](https://leetcode.com/problems/number-of-ways-to-form-a-target-string-given-a-dictionary)||   |
-|1671|[Minimum Number of Removals to Make Mountain Array](https://leetcode.com/problems/minimum-number-of-removals-to-make-mountain-array)||   |
-|1681|[Minimum Incompatibility](https://leetcode.com/problems/minimum-incompatibility)||   |
-|857|[Minimum Cost to Hire K Workers](https://leetcode.com/problems/minimum-cost-to-hire-k-workers)|array|   |
-|864|[Shortest Path to Get All Keys](https://leetcode.com/problems/shortest-path-to-get-all-keys)|array|   |
-|879|[Profitable Schemes](https://leetcode.com/problems/profitable-schemes)|array|   |
-|936|[Stamping The Sequence](https://leetcode.com/problems/stamping-the-sequence)|array|   |
-|1293|[Shortest Path in a Grid with Obstacles Elimination](https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination)|array|   |
-|1505|[Minimum Possible Integer After at Most K Adjacent Swaps On Digits](https://leetcode.com/problems/minimum-possible-integer-after-at-most-k-adjacent-swaps-on-digits)|array|   |
-|154|[Find Minimum in Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii)|array binary-search|   |
-|644|[Maximum Average Subarray II](https://leetcode.com/problems/maximum-average-subarray-ii)|array binary-search|   |
-|1675|[Minimize Deviation in Array](https://leetcode.com/problems/minimize-deviation-in-array)|array binary-search|   |
-|1610|[Maximum Number of Visible Points](https://leetcode.com/problems/maximum-number-of-visible-points)|array bit-manipulation|   |
-|798|[Smallest Rotation with Highest Score](https://leetcode.com/problems/smallest-rotation-with-highest-score)|array math|   |
-|927|[Three Equal Parts](https://leetcode.com/problems/three-equal-parts)|array math|   |
-|1345|[Jump Game IV](https://leetcode.com/problems/jump-game-iv)|array math|   |
-|1349|[Maximum Students Taking Exam](https://leetcode.com/problems/maximum-students-taking-exam)|array math geometry|   |
-|1622|[Fancy Sequence](https://leetcode.com/problems/fancy-sequence)|array sliding-window|   |
-|1483|[Kth Ancestor of a Tree Node](https://leetcode.com/problems/kth-ancestor-of-a-tree-node)|array sort|   |
-|943|[Find the Shortest Superstring](https://leetcode.com/problems/find-the-shortest-superstring)|array stack|   |
-|1516|[Move Sub-Tree of N-Ary Tree](https://leetcode.com/problems/move-sub-tree-of-n-ary-tree)|backtracking|   |
-|308|[Range Sum Query 2D - Mutable](https://leetcode.com/problems/range-sum-query-2d-mutable)|binary-indexed-tree segment-tree|   |
-|745|[Prefix and Suffix Search](https://leetcode.com/problems/prefix-and-suffix-search)|binary-search|   |
-|882|[Reachable Nodes In Subdivided Graph](https://leetcode.com/problems/reachable-nodes-in-subdivided-graph)|binary-search|   |
-|327|[Count of Range Sum](https://leetcode.com/problems/count-of-range-sum)|binary-search divide-and-conquer sort binary-indexed-tree segment-tree|   |
-|757|[Set Intersection Size At Least Two](https://leetcode.com/problems/set-intersection-size-at-least-two)|bit-manipulation depth-first-search|   |
-|793|[Preimage Size of Factorial Zeroes Function](https://leetcode.com/problems/preimage-size-of-factorial-zeroes-function)|brainteaser|   |
-|1157|[Online Majority Element In Subarray](https://leetcode.com/problems/online-majority-element-in-subarray)|depth-first-search|   |
-|964|[Least Operators to Express Number](https://leetcode.com/problems/least-operators-to-express-number)|depth-first-search union-find graph|   |
-|968|[Binary Tree Cameras](https://leetcode.com/problems/binary-tree-cameras)|divide-and-conquer|   |
-|466|[Count The Repetitions](https://leetcode.com/problems/count-the-repetitions)|dynamic-programming|   |
-|489|[Robot Room Cleaner](https://leetcode.com/problems/robot-room-cleaner)|dynamic-programming|   |
-|600|[Non-negative Integers without Consecutive Ones](https://leetcode.com/problems/non-negative-integers-without-consecutive-ones)|dynamic-programming|   |
-|629|[K Inverse Pairs Array](https://leetcode.com/problems/k-inverse-pairs-array)|dynamic-programming|   |
-|639|[Decode Ways II](https://leetcode.com/problems/decode-ways-ii)|dynamic-programming|   |
-|656|[Coin Path](https://leetcode.com/problems/coin-path)|dynamic-programming|   |
-|741|[Cherry Pickup](https://leetcode.com/problems/cherry-pickup)|dynamic-programming|   |
-|956|[Tallest Billboard](https://leetcode.com/problems/tallest-billboard)|dynamic-programming|   |
-|972|[Equal Rational Numbers](https://leetcode.com/problems/equal-rational-numbers)|dynamic-programming|   |
-|1000|[Minimum Cost to Merge Stones](https://leetcode.com/problems/minimum-cost-to-merge-stones)|dynamic-programming|   |
-|1388|[Pizza With 3n Slices](https://leetcode.com/problems/pizza-with-3n-slices)|dynamic-programming|   |
-|1649|[Create Sorted Array through Instructions](https://leetcode.com/problems/create-sorted-array-through-instructions)|dynamic-programming|   |
-|1692|[Count Ways to Distribute Candies](https://leetcode.com/problems/count-ways-to-distribute-candies)|dynamic-programming|   |
-|691|[Stickers to Spell Word](https://leetcode.com/problems/stickers-to-spell-word)|dynamic-programming backtracking|   |
-|1067|[Digit Count in Range](https://leetcode.com/problems/digit-count-in-range)|dynamic-programming backtracking|   |
-|1531|[String Compression II](https://leetcode.com/problems/string-compression-ii)|dynamic-programming bit-manipulation|   |
-|664|[Strange Printer](https://leetcode.com/problems/strange-printer)|dynamic-programming depth-first-search|   |
-|1687|[Delivering Boxes from Storage to Ports](https://leetcode.com/problems/delivering-boxes-from-storage-to-ports)|dynamic-programming graph|   |
-|902|[Numbers At Most N Given Digit Set](https://leetcode.com/problems/numbers-at-most-n-given-digit-set)|dynamic-programming heap|   |
-|803|[Bricks Falling When Hit](https://leetcode.com/problems/bricks-falling-when-hit)|dynamic-programming heap breadth-first-search|   |
-|587|[Erect the Fence](https://leetcode.com/problems/erect-the-fence)|geometry|   |
-|759|[Employee Free Time](https://leetcode.com/problems/employee-free-time)|greedy|   |
-|906|[Super Palindromes](https://leetcode.com/problems/super-palindromes)|greedy|   |
-|1095|[Find in Mountain Array](https://leetcode.com/problems/find-in-mountain-array)|greedy|   |
-|749|[Contain Virus](https://leetcode.com/problems/contain-virus)|hash-table|   |
-|782|[Transform to Chessboard](https://leetcode.com/problems/transform-to-chessboard)|hash-table|   |
-|920|[Number of Music Playlists](https://leetcode.com/problems/number-of-music-playlists)|hash-table|   |
-|1001|[Grid Illumination](https://leetcode.com/problems/grid-illumination)|hash-table|   |
-|711|[Number of Distinct Islands II](https://leetcode.com/problems/number-of-distinct-islands-ii)|hash-table depth-first-search|   |
-|1125|[Smallest Sufficient Team](https://leetcode.com/problems/smallest-sufficient-team)|hash-table design|   |
-|887|[Super Egg Drop](https://leetcode.com/problems/super-egg-drop)|heap|   |
-|850|[Rectangle Area II](https://leetcode.com/problems/rectangle-area-ii)|linked-list|   |
-|335|[Self Crossing](https://leetcode.com/problems/self-crossing)|math|   |
-|805|[Split Array With Same Average](https://leetcode.com/problems/split-array-with-same-average)|math|   |
-|1012|[Numbers With Repeated Digits](https://leetcode.com/problems/numbers-with-repeated-digits)|math|   |
-|483|[Smallest Good Base](https://leetcode.com/problems/smallest-good-base)|math binary-search|   |
-|1307|[Verbal Arithmetic Puzzle](https://leetcode.com/problems/verbal-arithmetic-puzzle)|math binary-search|   |
-|928|[Minimize Malware Spread II](https://leetcode.com/problems/minimize-malware-spread-ii)|math geometry|   |
-|810|[Chalkboard XOR Game](https://leetcode.com/problems/chalkboard-xor-game)|math recursion|   |
-|1199|[Minimum Time to Build Blocks](https://leetcode.com/problems/minimum-time-to-build-blocks)|math string|   |
-|913|[Cat and Mouse](https://leetcode.com/problems/cat-and-mouse)|random|   |
-|903|[Valid Permutations for DI Sequence](https://leetcode.com/problems/valid-permutations-for-di-sequence)|random rejection-sampling|   |
-|699|[Falling Squares](https://leetcode.com/problems/falling-squares)|segment-tree ordered-map|   |
-|715|[Range Module](https://leetcode.com/problems/range-module)|segment-tree ordered-map|   |
-|1458|[Max Dot Product of Two Subsequences](https://leetcode.com/problems/max-dot-product-of-two-subsequences)|sort bit-manipulation|   |
-|158|[Read N Characters Given Read4 II - Call multiple times](https://leetcode.com/problems/read-n-characters-given-read4-ii-call-multiple-times)|string|   |
-|736|[Parse Lisp Expression](https://leetcode.com/problems/parse-lisp-expression)|string|   |
-|834|[Sum of Distances in Tree](https://leetcode.com/problems/sum-of-distances-in-tree)|string|   |
-|878|[Nth Magical Number](https://leetcode.com/problems/nth-magical-number)|string|   |
-|952|[Largest Component Size by Common Factor](https://leetcode.com/problems/largest-component-size-by-common-factor)|string|   |
-|1397|[Find All Good Strings](https://leetcode.com/problems/find-all-good-strings)|string|   |
-|1434|[Number of Ways to Wear Different Hats to Each Other](https://leetcode.com/problems/number-of-ways-to-wear-different-hats-to-each-other)|string|   |
-|1449|[Form Largest Integer With Digits That Add up to Target](https://leetcode.com/problems/form-largest-integer-with-digits-that-add-up-to-target)|string|   |
-|1632|[Rank Transform of a Matrix](https://leetcode.com/problems/rank-transform-of-a-matrix)|string bit-manipulation|   |
-|730|[Count Different Palindromic Subsequences](https://leetcode.com/problems/count-different-palindromic-subsequences)|string dynamic-programming|   |
-|1178|[Number of Valid Words for Each Puzzle](https://leetcode.com/problems/number-of-valid-words-for-each-puzzle)|string dynamic-programming|   |
-|591|[Tag Validator](https://leetcode.com/problems/tag-validator)|string stack|   |
-|1655|[Distribute Repeating Integers](https://leetcode.com/problems/distribute-repeating-integers)|tree|   |
-|975|[Odd Even Jump](https://leetcode.com/problems/odd-even-jump)|tree depth-first-search recursion|   |
-|685|[Redundant Connection II](https://leetcode.com/problems/redundant-connection-ii)|tree depth-first-search union-find graph|   |
-|940|[Distinct Subsequences II](https://leetcode.com/problems/distinct-subsequences-ii)|two-pointers|   |
-|1028|[Recover a Tree From Preorder Traversal](https://leetcode.com/problems/recover-a-tree-from-preorder-traversal)|two-pointers|[Rust](rustgym/src/leetcode/_1028_recover_a_tree_from_preorder_traversal.rs)|
-|1032|[Stream of Characters](https://leetcode.com/problems/stream-of-characters)|union-find graph|[Rust](rustgym/src/leetcode/_1032_stream_of_characters.rs)|
-|[1036](rustgym/desc/leetcode/1036.md)|[Escape a Large Maze](https://leetcode.com/problems/escape-a-large-maze)|breadth-first-search|[Rust](rustgym/src/leetcode/_1036_escape_a_large_maze.rs)|
-|1044|[Longest Duplicate Substring](https://leetcode.com/problems/longest-duplicate-substring)|array hash-table|[Rust](rustgym/src/leetcode/_1044_longest_duplicate_substring.rs)|
-|1063|[Number of Valid Subarrays](https://leetcode.com/problems/number-of-valid-subarrays)|array|[Rust](rustgym/src/leetcode/_1063_number_of_valid_subarrays.rs)|
-|1074|[Number of Submatrices That Sum to Target](https://leetcode.com/problems/number-of-submatrices-that-sum-to-target)|array hash-table sort|[Rust](rustgym/src/leetcode/_1074_number_of_submatrices_that_sum_to_target.rs)|
-|1092|[Shortest Common Supersequence ](https://leetcode.com/problems/shortest-common-supersequence)|tree depth-first-search|[Rust](rustgym/src/leetcode/_1092_shortest_common_supersequence.rs)|
-|1096|[Brace Expansion II](https://leetcode.com/problems/brace-expansion-ii)|array|[Rust](rustgym/src/leetcode/_1096_brace_expansion_2.rs)|
-|10|[Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching)|string dynamic-programming backtracking|[Rust](rustgym/src/leetcode/_10_regular_expression_matching.rs)|
-|1106|[Parsing A Boolean Expression](https://leetcode.com/problems/parsing-a-boolean-expression)|breadth-first-search|[Rust](rustgym/src/leetcode/_1106_parsing_a_boolean_expression.rs)|
-|1121|[Divide Array Into Increasing Sequences](https://leetcode.com/problems/divide-array-into-increasing-sequences)|dynamic-programming|[Rust](rustgym/src/leetcode/_1121_divide_array_into_increasing_sequences.rs)|
-|1136|[Parallel Courses](https://leetcode.com/problems/parallel-courses)||[Rust](rustgym/src/leetcode/_1136_parallel_courses.rs)|
-|1147|[Longest Chunked Palindrome Decomposition](https://leetcode.com/problems/longest-chunked-palindrome-decomposition)|hash-table|[Rust](rustgym/src/leetcode/_1147_longest_chunked_palindrome_decomposition.rs)|
-|115|[Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences)|string dynamic-programming|[Rust](rustgym/src/leetcode/_115_distinct_subsequences.rs)|
-|[1163](rustgym/desc/leetcode/1163.md)|[Last Substring in Lexicographical Order](https://leetcode.com/problems/last-substring-in-lexicographical-order)||[Rust](rustgym/src/leetcode/_1163_last_substring_in_lexicographical_order.rs)|
-|1168|[Optimize Water Distribution in a Village](https://leetcode.com/problems/optimize-water-distribution-in-a-village)|array|[Rust](rustgym/src/leetcode/_1168_optimize_water_distribution_in_a_village.rs)|
-|[1172](rustgym/desc/leetcode/1172.md)|[Dinner Plate Stacks](https://leetcode.com/problems/dinner-plate-stacks)||[Rust](rustgym/src/leetcode/_1172_dinner_plate_stacks.rs)|
-|1183|[Maximum Number of Ones](https://leetcode.com/problems/maximum-number-of-ones)|math two-pointers|[Rust](rustgym/src/leetcode/_1183_maximum_number_of_ones.rs)|
-|1192|[Critical Connections in a Network](https://leetcode.com/problems/critical-connections-in-a-network)|binary-search greedy|[Rust](rustgym/src/leetcode/_1192_critical_connections_in_a_network.rs)|
-|1203|[Sort Items by Groups Respecting Dependencies](https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies)||[Rust](rustgym/src/leetcode/_1203_sort_items_by_groups_respecting_dependencies.rs)|
-|1206|[Design Skiplist](https://leetcode.com/problems/design-skiplist)|array math|[Rust](rustgym/src/leetcode/_1206_design_skiplist.rs)|
-|[1210](rustgym/desc/leetcode/1210.md)|[Minimum Moves to Reach Target with Rotations](https://leetcode.com/problems/minimum-moves-to-reach-target-with-rotations)|array|[Rust](rustgym/src/leetcode/_1210_minimum_moves_to_reach_target_with_rotations.rs)|
-|1216|[Valid Palindrome III](https://leetcode.com/problems/valid-palindrome-iii)||[Rust](rustgym/src/leetcode/_1216_valid_palindrome_3.rs)|
-|1220|[Count Vowels Permutation](https://leetcode.com/problems/count-vowels-permutation)|dynamic-programming bit-manipulation|[Rust](rustgym/src/leetcode/_1220_count_vowels_permutation.rs)|
-|[1224](rustgym/desc/leetcode/1224.md)|[Maximum Equal Frequency](https://leetcode.com/problems/maximum-equal-frequency)|dynamic-programming|[Rust](rustgym/src/leetcode/_1224_maximum_equal_frequency.rs)|
-|1231|[Divide Chocolate](https://leetcode.com/problems/divide-chocolate)|array|[Rust](rustgym/src/leetcode/_1231_divide_chocolate.rs)|
-|1235|[Maximum Profit in Job Scheduling](https://leetcode.com/problems/maximum-profit-in-job-scheduling)||[Rust](rustgym/src/leetcode/_1235_maximum_profit_in_job_scheduling.rs)|
-|123|[Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii)|array dynamic-programming|[Rust](rustgym/src/leetcode/_123_best_time_to_buy_and_sell_stock_3.rs)|
-|1240|[Tiling a Rectangle with the Fewest Squares](https://leetcode.com/problems/tiling-a-rectangle-with-the-fewest-squares)|dynamic-programming|[Rust](rustgym/src/leetcode/_1240_tiling_a_rectangle_with_the_fewest_squares.rs)|
-|124|[Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum)|tree depth-first-search recursion|[Rust](rustgym/src/leetcode/_124_binary_tree_maximum_path_sum.rs)|
-|1250|[Check If It Is a Good Array](https://leetcode.com/problems/check-if-it-is-a-good-array)|dynamic-programming|[Rust](rustgym/src/leetcode/_1250_check_if_it_is_a_good_array.rs)|
-|1255|[Maximum Score Words Formed by Letters](https://leetcode.com/problems/maximum-score-words-formed-by-letters)|array math|[Rust](rustgym/src/leetcode/_1255_maximum_score_words_formed_by_letters.rs)|
-|1259|[Handshakes That Don't Cross](https://leetcode.com/problems/handshakes-that-dont-cross)||[Rust](rustgym/src/leetcode/_1259_handshakes_that_don_t_cross.rs)|
-|[1263](rustgym/desc/leetcode/1263.md)|[Minimum Moves to Move a Box to Their Target Location](https://leetcode.com/problems/minimum-moves-to-move-a-box-to-their-target-location)|dynamic-programming|[Rust](rustgym/src/leetcode/_1263_minimum_moves_to_move_a_box_to_their_target_location.rs)|
-|126|[Word Ladder II](https://leetcode.com/problems/word-ladder-ii)|array string backtracking breadth-first-search|[Rust](rustgym/src/leetcode/_126_word_ladder_2.rs)|
-|[1274](rustgym/desc/leetcode/1274.md)|[Number of Ships in a Rectangle](https://leetcode.com/problems/number-of-ships-in-a-rectangle)||[Rust](rustgym/src/leetcode/_1274_number_of_ships_in_rectangle.rs)|
-|1278|[Palindrome Partitioning III](https://leetcode.com/problems/palindrome-partitioning-iii)||[Rust](rustgym/src/leetcode/_1278_palindrome_partitioning_3.rs)|
-|1284|[Minimum Number of Flips to Convert Binary Matrix to Zero Matrix](https://leetcode.com/problems/minimum-number-of-flips-to-convert-binary-matrix-to-zero-matrix)|math|[Rust](rustgym/src/leetcode/_1284_minimum_number_of_flips_to_convert_binary_matrix_to_zero_matrix.rs)|
-|1289|[Minimum Falling Path Sum II](https://leetcode.com/problems/minimum-falling-path-sum-ii)|array|[Rust](rustgym/src/leetcode/_1289_minimum_falling_path_sum_2.rs)|
-|128|[Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence)|array union-find|[Rust](rustgym/src/leetcode/_128_longest_consecutive_sequence.rs)|
-|1298|[Maximum Candies You Can Get from Boxes](https://leetcode.com/problems/maximum-candies-you-can-get-from-boxes)|stack|[Rust](rustgym/src/leetcode/_1298_maximum_candies_you_can_get_from_boxes.rs)|
-|1312|[Minimum Insertion Steps to Make a String Palindrome](https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome)||[Rust](rustgym/src/leetcode/_1312_minimum_insertion_steps_to_make_a_string_palindrome.rs)|
-|1320|[Minimum Distance to Type a Word Using Two Fingers](https://leetcode.com/problems/minimum-distance-to-type-a-word-using-two-fingers)|stack|[Rust](rustgym/src/leetcode/_1320_minimum_distance_to_type_a_word_using_two_fingers.rs)|
-|1326|[Minimum Number of Taps to Open to Water a Garden](https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden)||[Rust](rustgym/src/leetcode/_1326_minimum_number_of_taps_to_open_to_water_a_garden.rs)|
-|132|[Palindrome Partitioning II](https://leetcode.com/problems/palindrome-partitioning-ii)|dynamic-programming|[Rust](rustgym/src/leetcode/_132_palindrome_partitioning_2.rs)|
-|[1330](rustgym/desc/leetcode/1330.md)|[Reverse Subarray To Maximize Array Value](https://leetcode.com/problems/reverse-subarray-to-maximize-array-value)|math dynamic-programming|[Rust](rustgym/src/leetcode/_1330_reverse_subarray_to_maximize_array_value.rs)|
-|1335|[Minimum Difficulty of a Job Schedule](https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule)||[Rust](rustgym/src/leetcode/_1335_minimum_difficulty_of_a_job_schedule.rs)|
-|1340|[Jump Game V](https://leetcode.com/problems/jump-game-v)||[Rust](rustgym/src/leetcode/_1340_jump_game_5.rs)|
-|1359|[Count All Valid Pickup and Delivery Options](https://leetcode.com/problems/count-all-valid-pickup-and-delivery-options)|math|[Rust](rustgym/src/leetcode/_1359_count_all_valid_pickup_and_delivery_options.rs)|
-|135|[Candy](https://leetcode.com/problems/candy)|greedy|[Rust](rustgym/src/leetcode/_135_candy.rs)|
-|1368|[Minimum Cost to Make at Least One Valid Path in a Grid](https://leetcode.com/problems/minimum-cost-to-make-at-least-one-valid-path-in-a-grid)|depth-first-search breadth-first-search|[Rust](rustgym/src/leetcode/_1368_minimum_cost_to_make_at_least_one_valid_path_in_a_grid.rs)|
-|[1377](rustgym/desc/leetcode/1377.md)|[Frog Position After T Seconds](https://leetcode.com/problems/frog-position-after-t-seconds)||[Rust](rustgym/src/leetcode/_1377_frog_position_after_t_seconds.rs)|
-|1383|[Maximum Performance of a Team](https://leetcode.com/problems/maximum-performance-of-a-team)||[Rust](rustgym/src/leetcode/_1383_maximum_performance_of_a_team.rs)|
-|1402|[Reducing Dishes](https://leetcode.com/problems/reducing-dishes)|array dynamic-programming|[Rust](rustgym/src/leetcode/_1402_reducing_dishes.rs)|
-|1406|[Stone Game III](https://leetcode.com/problems/stone-game-iii)|math|[Rust](rustgym/src/leetcode/_1406_stone_game_3.rs)|
-|140|[Word Break II](https://leetcode.com/problems/word-break-ii)|dynamic-programming backtracking|[Rust](rustgym/src/leetcode/_140_word_break_2.rs)|
-|1411|[Number of Ways to Paint N × 3 Grid](https://leetcode.com/problems/number-of-ways-to-paint-n-3-grid)|linked-list bit-manipulation|[Rust](rustgym/src/leetcode/_1411_number_of_ways_to_paint_n3_grid.rs)|
-|1420|[Build Array Where You Can Find The Maximum Exactly K Comparisons](https://leetcode.com/problems/build-array-where-you-can-find-the-maximum-exactly-k-comparisons)||[Rust](rustgym/src/leetcode/_1420_build_array_where_you_can_find_the_maximum_exactly_k_comparisons.rs)|
-|1439|[Find the Kth Smallest Sum of a Matrix With Sorted Rows](https://leetcode.com/problems/find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows)||[Rust](rustgym/src/leetcode/_1439_find_kth_smallest_sum_of_a_matrix_with_sorted_rows.rs)|
-|1444|[Number of Ways of Cutting a Pizza](https://leetcode.com/problems/number-of-ways-of-cutting-a-pizza)|bit-manipulation|[Rust](rustgym/src/leetcode/_1444_number_of_ways_of_cutting_a_pizza.rs)|
-|1463|[Cherry Pickup II](https://leetcode.com/problems/cherry-pickup-ii)|array binary-search|[Rust](rustgym/src/leetcode/_1463_cherry_pickup_2.rs)|
-|1473|[Paint House III](https://leetcode.com/problems/paint-house-iii)|string|[Rust](rustgym/src/leetcode/_1473_paint_house_3.rs)|
-|1478|[Allocate Mailboxes](https://leetcode.com/problems/allocate-mailboxes)|greedy sort segment-tree|[Rust](rustgym/src/leetcode/_1478_allocate_mailboxes.rs)|
-|1489|[Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree](https://leetcode.com/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree)|dynamic-programming|[Rust](rustgym/src/leetcode/_1489_find_critical_and_pseudo_critical_edges_in_minimum_spanning_tree.rs)|
-|[1499](rustgym/desc/leetcode/1499.md)|[Max Value of Equation](https://leetcode.com/problems/max-value-of-equation)|greedy sort|[Rust](rustgym/src/leetcode/_1499_max_value_of_equation.rs)|
-|149|[Max Points on a Line](https://leetcode.com/problems/max-points-on-a-line)|hash-table math|[Rust](rustgym/src/leetcode/_149_max_points_on_a_line.rs)|
-|1510|[Stone Game IV](https://leetcode.com/problems/stone-game-iv)|array|[Rust](rustgym/src/leetcode/_1510_stone_game_4.rs)|
-|1515|[Best Position for a Service Centre](https://leetcode.com/problems/best-position-for-a-service-centre)|array greedy|[Rust](rustgym/src/leetcode/_1515_best_position_for_a_service_center.rs)|
-|1520|[Maximum Number of Non-Overlapping Substrings](https://leetcode.com/problems/maximum-number-of-non-overlapping-substrings)|string bit-manipulation|[Rust](rustgym/src/leetcode/_1520_maximum_number_of_non_overlapping_substrings.rs)|
-|1521|[Find a Value of a Mysterious Function Closest to Target](https://leetcode.com/problems/find-a-value-of-a-mysterious-function-closest-to-target)||[Rust](rustgym/src/leetcode/_1521_find_a_value_of_mysterious_function_closest_to_target.rs)|
-|1526|[Minimum Number of Increments on Subarrays to Form a Target Array](https://leetcode.com/problems/minimum-number-of-increments-on-subarrays-to-form-a-target-array)|string stack|[Rust](rustgym/src/leetcode/_1526_minimum_number_of_increments_on_subarrays_to_form_a_target_array.rs)|
-|1537|[Get the Maximum Score](https://leetcode.com/problems/get-the-maximum-score)|string|[Rust](rustgym/src/leetcode/_1537_get_the_maximum_score.rs)|
-|1542|[Find Longest Awesome Substring](https://leetcode.com/problems/find-longest-awesome-substring)|string|[Rust](rustgym/src/leetcode/_1542_find_longest_awesome_substring.rs)|
-|1547|[Minimum Cost to Cut a Stick](https://leetcode.com/problems/minimum-cost-to-cut-a-stick)|string|[Rust](rustgym/src/leetcode/_1547_minimum_cost_to_cut_a_stick.rs)|
-|1548|[The Most Similar Path in a Graph](https://leetcode.com/problems/the-most-similar-path-in-a-graph)|array|[Rust](rustgym/src/leetcode/_1548_the_most_similar_path_in_a_graph.rs)|
-|1553|[Minimum Number of Days to Eat N Oranges](https://leetcode.com/problems/minimum-number-of-days-to-eat-n-oranges)|array math bit-manipulation|[Rust](rustgym/src/leetcode/_1553_minimum_number_of_days_to_eat_n_oranges.rs)|
-|1559|[Detect Cycles in 2D Grid](https://leetcode.com/problems/detect-cycles-in-2d-grid)|dynamic-programming|[Rust](rustgym/src/leetcode/_1559_detect_cycles_in_2d_grid.rs)|
-|1563|[Stone Game V](https://leetcode.com/problems/stone-game-v)|geometry|[Rust](rustgym/src/leetcode/_1563_stone_game_5.rs)|
-|1568|[Minimum Number of Days to Disconnect Island](https://leetcode.com/problems/minimum-number-of-days-to-disconnect-island)|bit-manipulation tree depth-first-search|[Rust](rustgym/src/leetcode/_1568_minimum_number_of_days_to_disconnect_island.rs)|
-|1569|[Number of Ways to Reorder Array to Get Same BST](https://leetcode.com/problems/number-of-ways-to-reorder-array-to-get-same-bst)|dynamic-programming|[Rust](rustgym/src/leetcode/_1569_number_of_ways_to_reorder_array_to_get_same_bst.rs)|
-|1575|[Count All Possible Routes](https://leetcode.com/problems/count-all-possible-routes)|array|[Rust](rustgym/src/leetcode/_1575_count_all_possible_routes.rs)|
-|1579|[Remove Max Number of Edges to Keep Graph Fully Traversable](https://leetcode.com/problems/remove-max-number-of-edges-to-keep-graph-fully-traversable)||[Rust](rustgym/src/leetcode/_1579_remove_max_number_of_edges_to_keep_graph_fully_traversable.rs)|
-|1585|[Check If String Is Transformable With Substring Sort Operations](https://leetcode.com/problems/check-if-string-is-transformable-with-substring-sort-operations)|math|[Rust](rustgym/src/leetcode/_1585_check_if_string_is_transformable_with_substring_sort_operations.rs)|
-|[1591](rustgym/desc/leetcode/1591.md)|[Strange Printer II](https://leetcode.com/problems/strange-printer-ii)||[Rust](rustgym/src/leetcode/_1591_strange_printer_2.rs)|
-|1595|[Minimum Cost to Connect Two Groups of Points](https://leetcode.com/problems/minimum-cost-to-connect-two-groups-of-points)||[Rust](rustgym/src/leetcode/_1595_minimum_cost_to_connect_two_groups_of_points.rs)|
-|[1611](rustgym/desc/leetcode/1611.md)|[Minimum One Bit Operations to Make Integers Zero](https://leetcode.com/problems/minimum-one-bit-operations-to-make-integers-zero)|hash-table string|[Rust](rustgym/src/leetcode/_1611_minimum_one_bit_operations_to_make_integers_zero.rs)|
-|[1617](rustgym/desc/leetcode/1617.md)|[Count Subtrees With Max Distance Between Cities](https://leetcode.com/problems/count-subtrees-with-max-distance-between-cities)|dynamic-programming|[Rust](rustgym/src/leetcode/_1617_count_subtrees_with_max_distance_between_cities.rs)|
-|1627|[Graph Connectivity With Threshold](https://leetcode.com/problems/graph-connectivity-with-threshold)|array brainteaser|[Rust](rustgym/src/leetcode/_1627_graph_connectivity_with_threshold.rs)|
-|[1643](rustgym/desc/leetcode/1643.md)|[Kth Smallest Instructions](https://leetcode.com/problems/kth-smallest-instructions)|depth-first-search breadth-first-search|[Rust](rustgym/src/leetcode/_1643_kth_smallest_instructions.rs)|
-|164|[Maximum Gap](https://leetcode.com/problems/maximum-gap)|sort|[Rust](rustgym/src/leetcode/_164_maximum_gap.rs)|
-|[1659](rustgym/desc/leetcode/1659.md)|[Maximize Grid Happiness](https://leetcode.com/problems/maximize-grid-happiness)|dynamic-programming|[Rust](rustgym/src/leetcode/_1659_maximize_grid_happiness.rs)|
-|1665|[Minimum Initial Energy to Finish Tasks](https://leetcode.com/problems/minimum-initial-energy-to-finish-tasks)||[Rust](rustgym/src/leetcode/_1665_minimum_initial_energy_to_finish_tasks.rs)|
-|[1691](rustgym/desc/leetcode/1691.md)|[Maximum Height by Stacking Cuboids ](https://leetcode.com/problems/maximum-height-by-stacking-cuboids)|greedy|[Rust](rustgym/src/leetcode/_1691_maximum_height_by_stacking_cuboids.rs)|
-|174|[Dungeon Game](https://leetcode.com/problems/dungeon-game)|binary-search dynamic-programming|[Rust](rustgym/src/leetcode/_174_dungeon_game.rs)|
-|188|[Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv)|dynamic-programming|[Rust](rustgym/src/leetcode/_188_best_time_to_buy_and_sell_stock_4.rs)|
-|212|[Word Search II](https://leetcode.com/problems/word-search-ii)|backtracking trie|[Rust](rustgym/src/leetcode/_212_word_search_2.rs)|
-|214|[Shortest Palindrome](https://leetcode.com/problems/shortest-palindrome)|string|[Rust](rustgym/src/leetcode/_214_shortest_palindrome.rs)|
-|218|[The Skyline Problem](https://leetcode.com/problems/the-skyline-problem)|divide-and-conquer heap binary-indexed-tree segment-tree line-sweep|[Rust](rustgym/src/leetcode/_218_the_skyline_problem.rs)|
-|224|[Basic Calculator](https://leetcode.com/problems/basic-calculator)|math stack|[Rust](rustgym/src/leetcode/_224_basic_calculator.rs)|
-|233|[Number of Digit One](https://leetcode.com/problems/number-of-digit-one)|math|[Rust](rustgym/src/leetcode/_233_number_of_digit_one.rs)|
-|239|[Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum)|heap sliding-window dequeue|[Rust](rustgym/src/leetcode/_239_sliding_window_maximum.rs)|
-|23|[Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists)|linked-list divide-and-conquer heap|[Rust](rustgym/src/leetcode/_23_merge_k_sorted_lists.rs)|
-|248|[Strobogrammatic Number III](https://leetcode.com/problems/strobogrammatic-number-iii)|math recursion|[Rust](rustgym/src/leetcode/_248_strobogrammatic_number_3.rs)|
-|25|[Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group)|linked-list|[Rust](rustgym/src/leetcode/_25_reverse_nodes_in_k_group.rs)|
-|265|[Paint House II](https://leetcode.com/problems/paint-house-ii)|dynamic-programming|[Rust](rustgym/src/leetcode/_265_paint_house_2.rs)|
-|269|[Alien Dictionary](https://leetcode.com/problems/alien-dictionary)|graph topological-sort|[Rust](rustgym/src/leetcode/_269_alien_dictionary.rs)|
-|272|[Closest Binary Search Tree Value II](https://leetcode.com/problems/closest-binary-search-tree-value-ii)|stack tree|[Rust](rustgym/src/leetcode/_272_closest_binary_search_tree_value_2.rs)|
-|273|[Integer to English Words](https://leetcode.com/problems/integer-to-english-words)|math string|[Rust](rustgym/src/leetcode/_273_integer_to_english_words.rs)|
-|282|[Expression Add Operators](https://leetcode.com/problems/expression-add-operators)|divide-and-conquer|[Rust](rustgym/src/leetcode/_282_expression_add_operators.rs)|
-|291|[Word Pattern II](https://leetcode.com/problems/word-pattern-ii)|backtracking|[Rust](rustgym/src/leetcode/_291_word_pattern_2.rs)|
-|295|[Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream)|heap design|[Rust](rustgym/src/leetcode/_295_find_median_from_data_stream.rs)|
-|296|[Best Meeting Point](https://leetcode.com/problems/best-meeting-point)|math sort|[Rust](rustgym/src/leetcode/_296_best_meeting_point.rs)|
-|[297](rustgym/desc/leetcode/297.md)|[Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree)|tree design|[Rust](rustgym/src/leetcode/_297_serialize_and_deserialize_binary_tree.rs)|
-|301|[Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses)|depth-first-search breadth-first-search|[Rust](rustgym/src/leetcode/_301_remove_invalid_parentheses.rs)|
-|302|[Smallest Rectangle Enclosing Black Pixels](https://leetcode.com/problems/smallest-rectangle-enclosing-black-pixels)|binary-search|[Rust](rustgym/src/leetcode/_302_smallest_rectangle_enclosing_black_pixels.rs)|
-|305|[Number of Islands II](https://leetcode.com/problems/number-of-islands-ii)|union-find|[Rust](rustgym/src/leetcode/_305_number_of_islands_2.rs)|
-|30|[Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words)|hash-table two-pointers string|[Rust](rustgym/src/leetcode/_30_substring_with_concatenation_of_all_words.rs)|
-|312|[Burst Balloons](https://leetcode.com/problems/burst-balloons)|divide-and-conquer dynamic-programming|[Rust](rustgym/src/leetcode/_312_burst_balloons.rs)|
-|315|[Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self)|binary-search divide-and-conquer sort binary-indexed-tree segment-tree|[Rust](rustgym/src/leetcode/_315_count_of_smaller_numbers_after_self.rs)|
-|317|[Shortest Distance from All Buildings](https://leetcode.com/problems/shortest-distance-from-all-buildings)|breadth-first-search|[Rust](rustgym/src/leetcode/_317_shortest_distance_from_all_buildings.rs)|
-|321|[Create Maximum Number](https://leetcode.com/problems/create-maximum-number)|dynamic-programming greedy|[Rust](rustgym/src/leetcode/_321_create_maximum_number.rs)|
-|329|[Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix)|depth-first-search topological-sort memoization|[Rust](rustgym/src/leetcode/_329_longest_increasing_path_in_a_matrix.rs)|
-|32|[Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses)|string dynamic-programming|[Rust](rustgym/src/leetcode/_32_longest_valid_parentheses.rs)|
-|330|[Patching Array](https://leetcode.com/problems/patching-array)|greedy|[Rust](rustgym/src/leetcode/_330_patching_array.rs)|
-|336|[Palindrome Pairs](https://leetcode.com/problems/palindrome-pairs)|hash-table string trie|[Rust](rustgym/src/leetcode/_336_palindrome_pairs.rs)|
-|340|[Longest Substring with At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters)|hash-table string sliding-window|[Rust](rustgym/src/leetcode/_340_longest_substring_with_at_most_k_distinct_characters.rs)|
-|352|[Data Stream as Disjoint Intervals](https://leetcode.com/problems/data-stream-as-disjoint-intervals)|binary-search ordered-map|[Rust](rustgym/src/leetcode/_352_data_stream_as_disjoint_intervals.rs)|
-|354|[Russian Doll Envelopes](https://leetcode.com/problems/russian-doll-envelopes)|binary-search dynamic-programming|[Rust](rustgym/src/leetcode/_354_russian_doll_envelopes.rs)|
-|358|[Rearrange String k Distance Apart](https://leetcode.com/problems/rearrange-string-k-distance-apart)|hash-table heap greedy|[Rust](rustgym/src/leetcode/_358_rearrange_string_k_distance_apart.rs)|
-|363|[Max Sum of Rectangle No Larger Than K](https://leetcode.com/problems/max-sum-of-rectangle-no-larger-than-k)|binary-search dynamic-programming queue|[Rust](rustgym/src/leetcode/_363_max_sum_of_rectangle_no_larger_than_k.rs)|
-|37|[Sudoku Solver](https://leetcode.com/problems/sudoku-solver)|hash-table backtracking|[Rust](rustgym/src/leetcode/_37_sudoku_solver.rs)|
-|381|[Insert Delete GetRandom O(1) - Duplicates allowed](https://leetcode.com/problems/insert-delete-getrandom-o1-duplicates-allowed)|array hash-table design|[Rust](rustgym/src/leetcode/_381_insert_delete_get_random_o1_duplicate_allowed.rs)|
-|391|[Perfect Rectangle](https://leetcode.com/problems/perfect-rectangle)|line-sweep|[Rust](rustgym/src/leetcode/_391_perfect_rectangle.rs)|
-|403|[Frog Jump](https://leetcode.com/problems/frog-jump)|dynamic-programming|[Rust](rustgym/src/leetcode/_403_frog_jump.rs)|
-|407|[Trapping Rain Water II](https://leetcode.com/problems/trapping-rain-water-ii)|heap breadth-first-search|[Rust](rustgym/src/leetcode/_407_trapping_rain_water_2.rs)|
-|410|[Split Array Largest Sum](https://leetcode.com/problems/split-array-largest-sum)|binary-search dynamic-programming|[Rust](rustgym/src/leetcode/_410_split_array_largest_sum.rs)|
-|411|[Minimum Unique Word Abbreviation](https://leetcode.com/problems/minimum-unique-word-abbreviation)|backtracking bit-manipulation|[Rust](rustgym/src/leetcode/_411_minimum_unique_word_abbreviation.rs)|
-|41|[First Missing Positive](https://leetcode.com/problems/first-missing-positive)|array|[Rust](rustgym/src/leetcode/_41_first_missing_positive.rs)|
-|420|[Strong Password Checker](https://leetcode.com/problems/strong-password-checker)||[Rust](rustgym/src/leetcode/_420_strong_password_checker.rs)|
-|425|[Word Squares](https://leetcode.com/problems/word-squares)|backtracking trie|[Rust](rustgym/src/leetcode/_425_word_squares.rs)|
-|42|[Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water)|array two-pointers stack|[Rust](rustgym/src/leetcode/_42_trapping_rain_water.rs)|
-|432|[All O`one Data Structure](https://leetcode.com/problems/all-oone-data-structure)|design|[Rust](rustgym/src/leetcode/_432_all_o_one_data_structure.rs)|
-|[440](rustgym/desc/leetcode/440.md)|[K-th Smallest in Lexicographical Order](https://leetcode.com/problems/k-th-smallest-in-lexicographical-order)||[Rust](rustgym/src/leetcode/_440_k_th_smallest_in_lexicographical_order.rs)|
-|446|[Arithmetic Slices II - Subsequence](https://leetcode.com/problems/arithmetic-slices-ii-subsequence)|dynamic-programming|[Rust](rustgym/src/leetcode/_446_arithmetic_slices_2_subsequence.rs)|
-|44|[Wildcard Matching](https://leetcode.com/problems/wildcard-matching)|string dynamic-programming backtracking greedy|[Rust](rustgym/src/leetcode/_44_wildcard_matching.rs)|
-|458|[Poor Pigs](https://leetcode.com/problems/poor-pigs)|math|[Rust](rustgym/src/leetcode/_458_poor_pigs.rs)|
-|45|[Jump Game II](https://leetcode.com/problems/jump-game-ii)|array greedy|[Rust](rustgym/src/leetcode/_45_jump_game_2.rs)|
-|460|[LFU Cache](https://leetcode.com/problems/lfu-cache)|design|[Rust](rustgym/src/leetcode/_460_lfu_cache.rs)|
-|465|[Optimal Account Balancing](https://leetcode.com/problems/optimal-account-balancing)||[Rust](rustgym/src/leetcode/_465_optimal_account_balancing.rs)|
-|471|[Encode String with Shortest Length](https://leetcode.com/problems/encode-string-with-shortest-length)|dynamic-programming|[Rust](rustgym/src/leetcode/_471_encode_string_with_shortest_length.rs)|
-|472|[Concatenated Words](https://leetcode.com/problems/concatenated-words)|dynamic-programming depth-first-search trie|[Rust](rustgym/src/leetcode/_472_concatenated_words.rs)|
-|479|[Largest Palindrome Product](https://leetcode.com/problems/largest-palindrome-product)||[Rust](rustgym/src/leetcode/_479_largest_palindrome_product.rs)|
-|480|[Sliding Window Median](https://leetcode.com/problems/sliding-window-median)|sliding-window|[Rust](rustgym/src/leetcode/_480_sliding_window_median.rs)|
-|488|[Zuma Game](https://leetcode.com/problems/zuma-game)|depth-first-search|[Rust](rustgym/src/leetcode/_488_zuma_game.rs)|
-|493|[Reverse Pairs](https://leetcode.com/problems/reverse-pairs)|binary-search divide-and-conquer sort binary-indexed-tree segment-tree|[Rust](rustgym/src/leetcode/_493_reverse_pairs.rs)|
-|499|[The Maze III](https://leetcode.com/problems/the-maze-iii)|depth-first-search breadth-first-search|[Rust](rustgym/src/leetcode/_499_the_maze_3.rs)|
-|4|[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays)|array binary-search divide-and-conquer|[Rust](rustgym/src/leetcode/_4_median_of_two_sorted_arrays.rs)|
-|502|[IPO](https://leetcode.com/problems/ipo)|heap greedy|[Rust](rustgym/src/leetcode/_502_ipo.rs)|
-|514|[Freedom Trail](https://leetcode.com/problems/freedom-trail)|divide-and-conquer dynamic-programming depth-first-search|[Rust](rustgym/src/leetcode/_514_freedom_trail.rs)|
-|517|[Super Washing Machines](https://leetcode.com/problems/super-washing-machines)|math dynamic-programming|[Rust](rustgym/src/leetcode/_517_super_washing_machines.rs)|
-|51|[N-Queens](https://leetcode.com/problems/n-queens)|backtracking|[Rust](rustgym/src/leetcode/_51_n_queens.rs)|
-|527|[Word Abbreviation](https://leetcode.com/problems/word-abbreviation)|string sort|[Rust](rustgym/src/leetcode/_527_word_abbreviation.rs)|
-|52|[N-Queens II](https://leetcode.com/problems/n-queens-ii)|backtracking|[Rust](rustgym/src/leetcode/_52_n_queens_2.rs)|
-|546|[Remove Boxes](https://leetcode.com/problems/remove-boxes)|dynamic-programming depth-first-search|[Rust](rustgym/src/leetcode/_546_remove_boxes.rs)|
-|552|[Student Attendance Record II](https://leetcode.com/problems/student-attendance-record-ii)|dynamic-programming|[Rust](rustgym/src/leetcode/_552_student_attendance_record_2.rs)|
-|564|[Find the Closest Palindrome](https://leetcode.com/problems/find-the-closest-palindrome)|string|[Rust](rustgym/src/leetcode/_564_find_the_closest_palindrome.rs)|
-|[568](rustgym/desc/leetcode/568.md)|[Maximum Vacation Days](https://leetcode.com/problems/maximum-vacation-days)|dynamic-programming|[Rust](rustgym/src/leetcode/_568_maximum_vacation_days.rs)|
-|588|[Design In-Memory File System](https://leetcode.com/problems/design-in-memory-file-system)|design|[Rust](rustgym/src/leetcode/_588_design_in_memory_file_system.rs)|
-|60|[Permutation Sequence](https://leetcode.com/problems/permutation-sequence)|math backtracking|[Rust](rustgym/src/leetcode/_60_permutation_sequence.rs)|
-|630|[Course Schedule III](https://leetcode.com/problems/course-schedule-iii)|greedy|[Rust](rustgym/src/leetcode/_630_course_schedule_3.rs)|
-|[631](rustgym/desc/leetcode/631.md)|[Design Excel Sum Formula](https://leetcode.com/problems/design-excel-sum-formula)|design|[Rust](rustgym/src/leetcode/_631_design_excel_sum_formula.rs)|
-|632|[Smallest Range Covering Elements from K Lists](https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists)|hash-table two-pointers string|[Rust](rustgym/src/leetcode/_632_smallest_range_covering_elements_from_k_lists.rs)|
-|642|[Design Search Autocomplete System](https://leetcode.com/problems/design-search-autocomplete-system)|design trie|[Rust](rustgym/src/leetcode/_642_design_search_autocomplete_system.rs)|
-|65|[Valid Number](https://leetcode.com/problems/valid-number)|math string|[Rust](rustgym/src/leetcode/_65_valid_number.rs)|
-|660|[Remove 9](https://leetcode.com/problems/remove-9)|math|[Rust](rustgym/src/leetcode/_660_remove_9.rs)|
-|668|[Kth Smallest Number in Multiplication Table](https://leetcode.com/problems/kth-smallest-number-in-multiplication-table)|binary-search|[Rust](rustgym/src/leetcode/_668_kth_smallest_number_in_multiplication.rs)|
-|675|[Cut Off Trees for Golf Event](https://leetcode.com/problems/cut-off-trees-for-golf-event)|breadth-first-search|[Rust](rustgym/src/leetcode/_675_cut_off_trees_for_golf_event.rs)|
-|679|[24 Game](https://leetcode.com/problems/24-game)|depth-first-search|[Rust](rustgym/src/leetcode/_679_24_game.rs)|
-|[683](rustgym/desc/leetcode/683.md)|[K Empty Slots](https://leetcode.com/problems/k-empty-slots)|ordered-map|[Rust](rustgym/src/leetcode/_683_k_empty_slots.rs)|
-|689|[Maximum Sum of 3 Non-Overlapping Subarrays](https://leetcode.com/problems/maximum-sum-of-3-non-overlapping-subarrays)|array dynamic-programming|[Rust](rustgym/src/leetcode/_689_maximum_sum_of_3_non_overlapping_subarrays.rs)|
-|68|[Text Justification](https://leetcode.com/problems/text-justification)|string|[Rust](rustgym/src/leetcode/_68_text_justification.rs)|
-|[710](rustgym/desc/leetcode/710.md)|[Random Pick with Blacklist](https://leetcode.com/problems/random-pick-with-blacklist)||[Rust](rustgym/src/leetcode/_710_random_pick_with_blacklist.rs)|
-|[719](rustgym/desc/leetcode/719.md)|[Find K-th Smallest Pair Distance](https://leetcode.com/problems/find-k-th-smallest-pair-distance)|array binary-search heap|[Rust](rustgym/src/leetcode/_719_find_kth_smallest_pair_distance.rs)|
-|726|[Number of Atoms](https://leetcode.com/problems/number-of-atoms)|hash-table stack recursion|[Rust](rustgym/src/leetcode/_726_number_of_atoms.rs)|
-|727|[Minimum Window Subsequence](https://leetcode.com/problems/minimum-window-subsequence)|dynamic-programming sliding-window|[Rust](rustgym/src/leetcode/_727_minimum_window_subsequence.rs)|
-|72|[Edit Distance](https://leetcode.com/problems/edit-distance)|string dynamic-programming|[Rust](rustgym/src/leetcode/_72_edit_distance.rs)|
-|732|[My Calendar III](https://leetcode.com/problems/my-calendar-iii)|segment-tree ordered-map|[Rust](rustgym/src/leetcode/_732_my_calendar_3.rs)|
-|[753](rustgym/desc/leetcode/753.md)|[Cracking the Safe](https://leetcode.com/problems/cracking-the-safe)|breadth-first-search|[Rust](rustgym/src/leetcode/_753_cracking_the_safe.rs)|
-|761|[Special Binary String](https://leetcode.com/problems/special-binary-string)|heap greedy|[Rust](rustgym/src/leetcode/_761_special_binary_string.rs)|
-|765|[Couples Holding Hands](https://leetcode.com/problems/couples-holding-hands)|tree|[Rust](rustgym/src/leetcode/_765_couples_holding_hands.rs)|
-|768|[Max Chunks To Make Sorted II](https://leetcode.com/problems/max-chunks-to-make-sorted-ii)|two-pointers greedy|[Rust](rustgym/src/leetcode/_768_max_chunks_to_make_sorted_2.rs)|
-|76|[Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring)|hash-table two-pointers string sliding-window|[Rust](rustgym/src/leetcode/_76_minimum_window_substring.rs)|
-|770|[Basic Calculator IV](https://leetcode.com/problems/basic-calculator-iv)|greedy union-find graph|[Rust](rustgym/src/leetcode/_770_basic_calculator_4.rs)|
-|772|[Basic Calculator III](https://leetcode.com/problems/basic-calculator-iii)||[Rust](rustgym/src/leetcode/_772_basic_calculator_3.rs)|
-|773|[Sliding Puzzle](https://leetcode.com/problems/sliding-puzzle)||[Rust](rustgym/src/leetcode/_773_sliding_puzzle.rs)|
-|774|[Minimize Max Distance to Gas Station](https://leetcode.com/problems/minimize-max-distance-to-gas-station)|tree depth-first-search breadth-first-search|[Rust](rustgym/src/leetcode/_774_minimize_max_distance_to_gas_station.rs)|
-|778|[Swim in Rising Water](https://leetcode.com/problems/swim-in-rising-water)|string heap greedy sort|[Rust](rustgym/src/leetcode/_778_swim_in_rising_water.rs)|
-|780|[Reaching Points](https://leetcode.com/problems/reaching-points)|array|[Rust](rustgym/src/leetcode/_780_reaching_points.rs)|
-|786|[K-th Smallest Prime Fraction](https://leetcode.com/problems/k-th-smallest-prime-fraction)|binary-search|[Rust](rustgym/src/leetcode/_786_kth_smallest_prime_faction.rs)|
-|815|[Bus Routes](https://leetcode.com/problems/bus-routes)|dynamic-programming|[Rust](rustgym/src/leetcode/_815_bus_routes.rs)|
-|818|[Race Car](https://leetcode.com/problems/race-car)|math string|[Rust](rustgym/src/leetcode/_818_race_car.rs)|
-|827|[Making A Large Island](https://leetcode.com/problems/making-a-large-island)|string|[Rust](rustgym/src/leetcode/_827_making_a_large_island.rs)|
-|828|[Count Unique Characters of All Substrings of a Given String](https://leetcode.com/problems/count-unique-characters-of-all-substrings-of-a-given-string)|math|[Rust](rustgym/src/leetcode/_828_count_unique_characters_of_a_given_string.rs)|
-|829|[Consecutive Numbers Sum](https://leetcode.com/problems/consecutive-numbers-sum)|hash-table|[Rust](rustgym/src/leetcode/_829_consecutive_numbers_sum.rs)|
-|847|[Shortest Path Visiting All Nodes](https://leetcode.com/problems/shortest-path-visiting-all-nodes)||[Rust](rustgym/src/leetcode/_847_shortest_path_visiting_all_nodes.rs)|
-|84|[Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram)|array stack|[Rust](rustgym/src/leetcode/_84_largest_rectangle_in_histogram.rs)|
-|854|[K-Similar Strings](https://leetcode.com/problems/k-similar-strings)|depth-first-search|[Rust](rustgym/src/leetcode/_854_k_similar_strings.rs)|
-|85|[Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle)|array hash-table dynamic-programming stack|[Rust](rustgym/src/leetcode/_85_maximal_rectangle.rs)|
-|862|[Shortest Subarray with Sum at Least K](https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k)|string|[Rust](rustgym/src/leetcode/_862_shortest_subarray_with_sum_at_least_k.rs)|
-|871|[Minimum Number of Refueling Stops](https://leetcode.com/problems/minimum-number-of-refueling-stops)|depth-first-search graph|[Rust](rustgym/src/leetcode/_871_minimum_number_of_refueling_stops.rs)|
-|87|[Scramble String](https://leetcode.com/problems/scramble-string)|string dynamic-programming|[Rust](rustgym/src/leetcode/_87_scramble_string.rs)|
-|[891](rustgym/desc/leetcode/891.md)|[Sum of Subsequence Widths](https://leetcode.com/problems/sum-of-subsequence-widths)|greedy|[Rust](rustgym/src/leetcode/_891_sum_of_subsequence_widths.rs)|
-|895|[Maximum Frequency Stack](https://leetcode.com/problems/maximum-frequency-stack)|heap breadth-first-search|[Rust](rustgym/src/leetcode/_895_maximum_frequency_stack.rs)|
-|899|[Orderly Queue](https://leetcode.com/problems/orderly-queue)|math|[Rust](rustgym/src/leetcode/_899_orderly_queue.rs)|
-|[924](rustgym/desc/leetcode/924.md)|[Minimize Malware Spread](https://leetcode.com/problems/minimize-malware-spread)|array|[Rust](rustgym/src/leetcode/_924_minimize_malware_spread.rs)|
-|960|[Delete Columns to Make Sorted III](https://leetcode.com/problems/delete-columns-to-make-sorted-iii)|depth-first-search union-find|[Rust](rustgym/src/leetcode/_960_delete_columns_to_make_sorted_3.rs)|
-|97|[Interleaving String](https://leetcode.com/problems/interleaving-string)|string dynamic-programming|[Rust](rustgym/src/leetcode/_97_interleaving_string.rs)|
-|980|[Unique Paths III](https://leetcode.com/problems/unique-paths-iii)|dynamic-programming|[Rust](rustgym/src/leetcode/_980_unique_paths_3.rs)|
-|982|[Triples with Bitwise AND Equal To Zero](https://leetcode.com/problems/triples-with-bitwise-and-equal-to-zero)|array|[Rust](rustgym/src/leetcode/_982_triples_with_bitwise_and_equal_to_zero.rs)|
-|992|[Subarrays with K Different Integers](https://leetcode.com/problems/subarrays-with-k-different-integers)|greedy|[Rust](rustgym/src/leetcode/_992_subarrays_with_k_different_integers.rs)|
-|99|[Recover Binary Search Tree](https://leetcode.com/problems/recover-binary-search-tree)|tree depth-first-search|[Rust](rustgym/src/leetcode/_99_recover_binary_search_tree.rs)|
-
+<table id="adventofcode" class="table-auto">
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th>Day</th>
+      <th>AdventOfCode</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td>
+          2015
+        </td>
+        <td>
+          Day1
+        </td>
+        <td>
+          <a href="http://rustgym.com/adventofcode/201501"> Not Quite Lisp</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          2015
+        </td>
+        <td>
+          Day10
+        </td>
+        <td>
+          <a href="http://rustgym.com/adventofcode/201510"> Elves Look, Elves Say</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          2015
+        </td>
+        <td>
+          Day11
+        </td>
+        <td>
+          <a href="http://rustgym.com/adventofcode/201511"> Corporate Policy</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          2015
+        </td>
+        <td>
+          Day12
+        </td>
+        <td>
+          <a href="http://rustgym.com/adventofcode/201512"> JSAbacusFramework.io</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          2015
+        </td>
+        <td>
+          Day2
+        </td>
+        <td>
+          <a href="http://rustgym.com/adventofcode/201502"> I Was Told There Would Be No Math</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          2015
+        </td>
+        <td>
+          Day3
+        </td>
+        <td>
+          <a href="http://rustgym.com/adventofcode/201503"> Perfectly Spherical Houses in a Vacuum</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          2015
+        </td>
+        <td>
+          Day4
+        </td>
+        <td>
+          <a href="http://rustgym.com/adventofcode/201504"> The Ideal Stocking Stuffer</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          2015
+        </td>
+        <td>
+          Day5
+        </td>
+        <td>
+          <a href="http://rustgym.com/adventofcode/201505"> Doesn&#x27;t He Have Intern-Elves For This?</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          2015
+        </td>
+        <td>
+          Day6
+        </td>
+        <td>
+          <a href="http://rustgym.com/adventofcode/201506"> Probably a Fire Hazard</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          2015
+        </td>
+        <td>
+          Day7
+        </td>
+        <td>
+          <a href="http://rustgym.com/adventofcode/201507"> Some Assembly Required</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          2015
+        </td>
+        <td>
+          Day8
+        </td>
+        <td>
+          <a href="http://rustgym.com/adventofcode/201508"> Matchsticks</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          2015
+        </td>
+        <td>
+          Day9
+        </td>
+        <td>
+          <a href="http://rustgym.com/adventofcode/201509"> All in a Single Night</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          2020
+        </td>
+        <td>
+          Day1
+        </td>
+        <td>
+          <a href="http://rustgym.com/adventofcode/202001"> Report Repair</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          2020
+        </td>
+        <td>
+          Day10
+        </td>
+        <td>
+          <a href="http://rustgym.com/adventofcode/202010"> Adapter Array</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          2020
+        </td>
+        <td>
+          Day11
+        </td>
+        <td>
+          <a href="http://rustgym.com/adventofcode/202011"> Seating System</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          2020
+        </td>
+        <td>
+          Day12
+        </td>
+        <td>
+          <a href="http://rustgym.com/adventofcode/202012"> Rain Risk</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          2020
+        </td>
+        <td>
+          Day2
+        </td>
+        <td>
+          <a href="http://rustgym.com/adventofcode/202002"> Password Philosophy</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          2020
+        </td>
+        <td>
+          Day3
+        </td>
+        <td>
+          <a href="http://rustgym.com/adventofcode/202003"> Toboggan Trajectory</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          2020
+        </td>
+        <td>
+          Day4
+        </td>
+        <td>
+          <a href="http://rustgym.com/adventofcode/202004"> Passport Processing</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          2020
+        </td>
+        <td>
+          Day5
+        </td>
+        <td>
+          <a href="http://rustgym.com/adventofcode/202005"> Binary Boarding</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          2020
+        </td>
+        <td>
+          Day6
+        </td>
+        <td>
+          <a href="http://rustgym.com/adventofcode/202006"> Custom Customs</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          2020
+        </td>
+        <td>
+          Day7
+        </td>
+        <td>
+          <a href="http://rustgym.com/adventofcode/202007"> Handy Haversacks</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          2020
+        </td>
+        <td>
+          Day8
+        </td>
+        <td>
+          <a href="http://rustgym.com/adventofcode/202008"> Handheld Halting</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          2020
+        </td>
+        <td>
+          Day9
+        </td>
+        <td>
+          <a href="http://rustgym.com/adventofcode/202009"> Encoding Error</a>
+        </td>
+      </tr></tbody>
+</table>
