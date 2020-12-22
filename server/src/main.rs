@@ -11,6 +11,7 @@ mod db;
 mod home;
 mod leetcode_detail;
 mod leetcode_index;
+mod sitemap;
 
 use actix_web::App;
 use actix_web::HttpServer;
@@ -33,6 +34,7 @@ async fn main() -> std::io::Result<()> {
             .service(adventofcode_index::adventofcode_index)
             .service(leetcode_detail::leetcode_detail)
             .service(adventofcode_detail::adventofcode_detail)
+            .service(sitemap::sitemap_txt)
     })
     .bind("127.0.0.1:8080")?
     .run()

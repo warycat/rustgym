@@ -75,6 +75,13 @@ pub struct AdventOfCodeDetailContext {
     pub solution: AdventOfCodeSolution,
 }
 
+#[derive(Template, new)]
+#[template(path = "sitemap.j2")]
+pub struct SitemapContext {
+    pub leetcode_rows: Vec<LeetcodeDescription>,
+    pub adventofcode_rows: Vec<AdventOfCodeDescription>,
+}
+
 macro_rules! impl_render_wrapper {
     ($type: ty) => {
         impl $type {
@@ -84,6 +91,13 @@ macro_rules! impl_render_wrapper {
             }
         }
     };
+}
+
+impl SitemapContext {
+    pub fn render_wrapper(&self) -> Result<HttpResponse, Error> {
+        let body = self.render().map_err(ErrorInternalServerError)?;
+        Ok(HttpResponse::Ok().content_type("text/txt").body(body))
+    }
 }
 
 impl_render_wrapper!(HomeContext);
