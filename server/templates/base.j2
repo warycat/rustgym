@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"/>
     <link rel="stylesheet" href="https://unpkg.com/@tailwindcss/typography@0.2.x/dist/typography.min.css"/>
     <link rel="stylesheet" href="//unpkg.com/@highlightjs/cdn-assets@10.4.1/styles/stackoverflow-dark.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="//unpkg.com/@highlightjs/cdn-assets@10.4.1/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-661DVJ18N4"></script>
@@ -17,7 +18,7 @@
     {% block head %}{% endblock %}
   </head>
   <body>
-    <div id="content" class="md:container md:mx-auto prose prose-2xl" >
+    <div id="content" class="md:container md:mx-auto prose" >
       {% block navigation %}{% endblock %}
       {% block content %}{% endblock %}
     </div>
