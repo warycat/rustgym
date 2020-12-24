@@ -3477,6 +3477,15 @@ All the solutions here are crafted with love and their performance beats 99% of 
       </tr>
       <tr>
         <td>
+          1694
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1694"> Reformat Phone Number</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
           2
         </td>
         <td>
@@ -10875,6 +10884,24 @@ All the solutions here are crafted with love and their performance beats 99% of 
       </tr>
       <tr>
         <td>
+          1695
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1695"> Maximum Erasure Value</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1696
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1696"> Jump Game VI</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
           4
         </td>
         <td>
@@ -13905,6 +13932,15 @@ All the solutions here are crafted with love and their performance beats 99% of 
           <a href="http://rustgym.com/leetcode/1692"> Count Ways to Distribute Candies</a>
         </td>
         <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1697
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1697"> Checking Existence of Edge Length Limited Paths</a>
+        </td>
+        <td>Hard</td>
       </tr></tbody>
 </table>
 
@@ -14190,6 +14226,39 @@ All the solutions here are crafted with love and their performance beats 99% of 
         </td>
         <td>
           <a href="http://rustgym.com/adventofcode/202013"> Shuttle Search</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          2020
+        </td>
+        <td>
+          Day14
+        </td>
+        <td>
+          <a href="http://rustgym.com/adventofcode/202014"> Docking Data</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          2020
+        </td>
+        <td>
+          Day15
+        </td>
+        <td>
+          <a href="http://rustgym.com/adventofcode/202015"> Rambunctious Recitation</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          2020
+        </td>
+        <td>
+          Day16
+        </td>
+        <td>
+          <a href="http://rustgym.com/adventofcode/202016"> Ticket Translation</a>
         </td>
       </tr></tbody>
 </table>

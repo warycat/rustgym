@@ -14,6 +14,7 @@ pub mod day12;
 pub mod day13;
 pub mod day14;
 pub mod day15;
+pub mod day16;
 
 // use rustgym_util::*;
 // use std::fmt::Write;

@@ -23,7 +23,7 @@ use std::env;
 async fn main() -> std::io::Result<()> {
     let pool = db::init_pool(DATABASE_URL).expect("Failed to create pool");
     let tag = env::var("TAG").unwrap_or_default();
-    let title = "RUST_GYM".to_string();
+    let title = "RUST GYM".to_string();
     println!("rustgym server {}", tag);
     HttpServer::new(move || {
         App::new()
