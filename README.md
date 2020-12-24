@@ -1,4 +1,4 @@
-# RUST_GYM Solutions [![Docs Status](https://docs.rs/rustgym/badge.svg)](https://docs.rs/rustgym) [![Rust](https://github.com/warycat/rustgym/workflows/Rust/badge.svg)](https://github.com/warycat/rustgym/actions)
+# [RUST GYM](http://rustgym.com) Rust Solutions [![Docs Status](https://docs.rs/rustgym/badge.svg)](https://docs.rs/rustgym) [![Rust](https://github.com/warycat/rustgym/workflows/Rust/badge.svg)](https://github.com/warycat/rustgym/actions)
 
 ## [Leetcode Solutions in Rust](#leetcode)
 ## [AdventOfCode Solutions in Rust](#adventofcode)
@@ -6,7 +6,7 @@
 This project demostrates how to create **Data Structures** and to implement **Algorithms** using programming language **Rust**
 All the solutions here are crafted with love and their performance beats 99% of other solutions on the leetcode website. Tutorial videos will be added later.
 
-### Please subscribe to our [RUST_GYM Youtube Channel](https://www.youtube.com/channel/UCV9HzRLPKjI8SttaIYOygsw) for future videos.
+### Please subscribe to our [RUST GYM Youtube Channel](https://www.youtube.com/channel/UCV9HzRLPKjI8SttaIYOygsw) for future videos.
 
 <details><summary>Data Structures</summary>
 
