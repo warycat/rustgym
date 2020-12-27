@@ -2768,3 +2768,8 @@ mod _1695_maximum_erasure_value;
 //
 mod _1696_jump_game_6;
 //
+mod _1704_determine_if_string_halves_are_alike;
+//
+mod _1705_maximum_number_of_eaten_apples;
+//
+mod _1706_where_will_the_ball_fall;

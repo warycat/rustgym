@@ -14260,5 +14260,38 @@ All the solutions here are crafted with love and their performance beats 99% of 
         <td>
           <a href="http://rustgym.com/adventofcode/202016"> Ticket Translation</a>
         </td>
+      </tr>
+      <tr>
+        <td>
+          2020
+        </td>
+        <td>
+          Day17
+        </td>
+        <td>
+          <a href="http://rustgym.com/adventofcode/202017"> Conway Cubes</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          2020
+        </td>
+        <td>
+          Day18
+        </td>
+        <td>
+          <a href="http://rustgym.com/adventofcode/202018"> Operation Order</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          2020
+        </td>
+        <td>
+          Day19
+        </td>
+        <td>
+          <a href="http://rustgym.com/adventofcode/202019"> Monster Messages</a>
+        </td>
       </tr></tbody>
 </table>
