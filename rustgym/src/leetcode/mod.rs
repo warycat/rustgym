@@ -1388,6 +1388,8 @@ mod _802_find_eventual_safe_states;
 //
 mod _804_unique_morse_code_words;
 //
+mod _805_split_array_with_same_average;
+//
 mod _806_number_of_lines_to_write_string;
 //
 mod _807_max_increase_to_keep_city_skyline;
@@ -2733,6 +2735,8 @@ mod _1668_maximum_repeating_substring;
 mod _1669_merge_in_between_linked_lists;
 //
 mod _1670_design_front_middle_back_queue;
+//
+mod _1671_minimum_number_of_removals_to_make_mountain_array;
 //
 mod _1672_richest_customer_wealth;
 //
