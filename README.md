@@ -3486,6 +3486,24 @@ All the solutions here are crafted with love and their performance beats 99% of 
       </tr>
       <tr>
         <td>
+          1700
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1700"> Number of Students Unable to Eat Lunch</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1704
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1704"> Determine if String Halves Are Alike</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
           2
         </td>
         <td>
@@ -4075,15 +4093,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
         </td>
         <td>
           <a href="http://rustgym.com/leetcode/120"> Triangle</a>
-        </td>
-        <td>Medium</td>
-      </tr>
-      <tr>
-        <td>
-          127
-        </td>
-        <td>
-          <a href="http://rustgym.com/leetcode/127"> Word Ladder</a>
         </td>
         <td>Medium</td>
       </tr>
@@ -5056,6 +5065,15 @@ All the solutions here are crafted with love and their performance beats 99% of 
         </td>
         <td>
           <a href="http://rustgym.com/leetcode/338"> Counting Bits</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          340
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/340"> Longest Substring with At Most K Distinct Characters</a>
         </td>
         <td>Medium</td>
       </tr>
@@ -10902,6 +10920,51 @@ All the solutions here are crafted with love and their performance beats 99% of 
       </tr>
       <tr>
         <td>
+          1698
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1698"> Number of Distinct Substrings in a String</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1701
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1701"> Average Waiting Time</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1702
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1702"> Maximum Binary String After Change</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1705
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1705"> Maximum Number of Eaten Apples</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1706
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1706"> Where Will the Ball Fall</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
           4
         </td>
         <td>
@@ -11140,6 +11203,15 @@ All the solutions here are crafted with love and their performance beats 99% of 
         </td>
         <td>
           <a href="http://rustgym.com/leetcode/126"> Word Ladder II</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          127
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/127"> Word Ladder</a>
         </td>
         <td>Hard</td>
       </tr>
@@ -11491,15 +11563,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
         </td>
         <td>
           <a href="http://rustgym.com/leetcode/336"> Palindrome Pairs</a>
-        </td>
-        <td>Hard</td>
-      </tr>
-      <tr>
-        <td>
-          340
-        </td>
-        <td>
-          <a href="http://rustgym.com/leetcode/340"> Longest Substring with At Most K Distinct Characters</a>
         </td>
         <td>Hard</td>
       </tr>
@@ -13939,6 +14002,24 @@ All the solutions here are crafted with love and their performance beats 99% of 
         </td>
         <td>
           <a href="http://rustgym.com/leetcode/1697"> Checking Existence of Edge Length Limited Paths</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1703
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1703"> Minimum Adjacent Swaps for K Consecutive Ones</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1707
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1707"> Maximum XOR With an Element From Array</a>
         </td>
         <td>Hard</td>
       </tr></tbody>

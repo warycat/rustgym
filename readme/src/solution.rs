@@ -8,17 +8,19 @@ use walkdir::WalkDir;
 
 pub fn all_leetcode_solutions(src_dir: std::path::PathBuf) -> Vec<LeetcodeSolution> {
     let mut solutions: Vec<LeetcodeSolution> = vec![];
-    for entry in fs::read_dir(src_dir).unwrap() {
-        let dir = entry.unwrap();
-        let filename = dir.file_name().to_str().unwrap().to_string();
-        if let Some(0) = filename.find('_') {
-            let s: Vec<String> = filename.split('_').map(|s| s.to_string()).collect();
-            let id = s[1].clone().parse::<i32>().unwrap();
-            let mut file = File::open(dir.path()).unwrap();
-            let mut source = "".to_string();
-            file.read_to_string(&mut source).unwrap();
-            let problem = LeetcodeSolution::new(id, filename, source);
-            solutions.push(problem);
+    for entry in WalkDir::new(src_dir) {
+        let entry = entry.unwrap();
+        if entry.file_type().is_file() {
+            let filename = entry.file_name().to_str().unwrap().to_string();
+            if let Some(0) = filename.find('_') {
+                let s: Vec<String> = filename.split('_').map(|s| s.to_string()).collect();
+                let id = s[1].clone().parse::<i32>().unwrap();
+                let mut file = File::open(entry.path()).unwrap();
+                let mut source = "".to_string();
+                file.read_to_string(&mut source).unwrap();
+                let problem = LeetcodeSolution::new(id, filename, source);
+                solutions.push(problem);
+            }
         }
     }
     solutions.sort_by_key(|x| x.question_id);

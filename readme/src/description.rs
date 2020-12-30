@@ -8,16 +8,18 @@ use walkdir::WalkDir;
 
 pub fn all_leetcode_descriptions(src_dir: std::path::PathBuf) -> Vec<LeetcodeDescription> {
     let mut descriptions: Vec<LeetcodeDescription> = vec![];
-    for entry in fs::read_dir(src_dir).unwrap() {
-        let dir = entry.unwrap();
-        let filename = dir.file_name().to_str().unwrap().to_string();
-        let n = filename.len();
-        let id = filename[..n - 3].parse::<i32>().unwrap();
-        let mut file = File::open(dir.path()).unwrap();
-        let mut html = "".to_string();
-        file.read_to_string(&mut html).unwrap();
-        let description = LeetcodeDescription::new(id, filename, html);
-        descriptions.push(description);
+    for entry in WalkDir::new(src_dir) {
+        let entry = entry.unwrap();
+        if entry.file_type().is_file() {
+            let filename = entry.file_name().to_str().unwrap().to_string();
+            let n = filename.len();
+            let id = filename[..n - 3].parse::<i32>().unwrap();
+            let mut file = File::open(entry.path()).unwrap();
+            let mut html = "".to_string();
+            file.read_to_string(&mut html).unwrap();
+            let description = LeetcodeDescription::new(id, filename, html);
+            descriptions.push(description);
+        }
     }
     descriptions
 }
