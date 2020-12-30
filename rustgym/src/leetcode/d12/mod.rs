@@ -72,6 +72,8 @@ mod _1244_design_a_leaderboard;
 //
 mod _1245_tree_diameter;
 //
+mod _1246_palindrome_removal;
+//
 mod _1247_minimum_swaps_to_make_strings_equal;
 //
 mod _1248_count_number_of_nice_subarrays;

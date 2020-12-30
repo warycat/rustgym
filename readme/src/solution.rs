@@ -34,7 +34,6 @@ pub fn all_adventofcode_solutions(src_dir: std::path::PathBuf) -> Vec<AdventOfCo
         let entry = entry.unwrap();
         if entry.file_type().is_file() {
             let filename = entry.file_name().to_str().unwrap().to_string();
-
             let path = entry.path();
             let path_str = path.to_str().unwrap();
             if let Some(caps) = re_year_day.captures(path_str) {

@@ -44,6 +44,8 @@ mod _725_split_linked_list_in_parts;
 //
 mod _726_number_of_atoms;
 //
+mod _727_minimum_window_subsequence;
+//
 mod _728_self_dividing_numbers;
 //
 mod _729_my_calendar_1;

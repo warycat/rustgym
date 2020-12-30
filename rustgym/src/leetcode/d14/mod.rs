@@ -90,6 +90,8 @@ mod _1456_maximum_number_of_vowels_in_a_substring_of_given_length;
 //
 mod _1457_pseudo_palindromic_paths_in_a_binary_tree;
 //
+mod _1458_max_dot_product_of_two_subsequences;
+//
 mod _1460_make_two_arrays_equal_by_reversing_sub_arrays;
 //
 mod _1461_check_if_a_string_contains_all_binary_codes_of_size_k;
