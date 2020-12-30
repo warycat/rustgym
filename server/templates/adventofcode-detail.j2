@@ -1,11 +1,11 @@
 {% extends "home.j2" %}
 
 {% block title %}
-  {{app.title}} AdventOfCode {{description.title}} Rust Solution
+  {{app.title}} AdventOfCode {{description.year}} Day {{description.year}} {{description.title}} Rust Solution
 {% endblock %}
 
 {% block content %}
 <div>{{description.html|safe}}</div>
-<h1>Rust Solution</h1>
+<h2>Rust Solution</h2>
 <pre><code class="rust">{{solution.source}}</code></pre>
 {% endblock %}

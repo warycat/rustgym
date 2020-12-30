@@ -1,6 +1,6 @@
 #!/bin/bash
-TAG=v0.1.5
-VM_NAME=rustgym-17
+TAG=v0.1.7
+VM_NAME=rustgym-19
 
 IMAGE=debian-10-buster-v20201216
 IMAGE_FAMILY=debian-10

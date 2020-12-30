@@ -1,13 +1,13 @@
 {% extends "home.j2" %}
 
 {% block title %}
-  {{app.title}} Leetcode {{question.title}} Rust Solution
+  {{app.title}} Leetcode {{question.id}} {{question.title}} Rust Solution
 {% endblock %}
 
 {% block content %}
-<h1>{{question.title}}</h1>
+<h1>{{question.id}}. {{question.title}}</h1>
 <div>{{description.html|safe}}</div>
-<h1>Rust Solution</h1>
+<h2>Rust Solution</h2>
 {% for solution in solutions %}
   <pre><code class="rust">{{solution.source}}</code></pre>
 {% endfor %}
