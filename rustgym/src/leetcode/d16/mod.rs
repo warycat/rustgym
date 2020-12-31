@@ -102,6 +102,8 @@ mod _1679_max_number_of_k_sum_pairs;
 //
 mod _1680_concatenation_of_consecutive_binary_numbers;
 //
+mod _1681_minimum_incompatibility;
+//
 mod _1682_longest_palindromic_subsequence_2;
 //
 mod _1684_count_the_number_of_consistent_strings;

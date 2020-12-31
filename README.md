@@ -6180,7 +6180,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
           547
         </td>
         <td>
-          <a href="http://rustgym.com/leetcode/547"> Friend Circles</a>
+          <a href="http://rustgym.com/leetcode/547"> Number of Provinces</a>
         </td>
         <td>Medium</td>
       </tr>
@@ -10960,6 +10960,15 @@ All the solutions here are crafted with love and their performance beats 99% of 
         </td>
         <td>
           <a href="http://rustgym.com/leetcode/1706"> Where Will the Ball Fall</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1708
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1708"> Largest Subarray Length K</a>
         </td>
         <td>Medium</td>
       </tr>

@@ -114,6 +114,8 @@ mod _970_powerful_integers;
 //
 mod _971_flip_binary_tree_to_match_preorder_traversal;
 //
+mod _972_equal_rational_numbers;
+//
 mod _973_k_closest_points_to_origin;
 //
 mod _974_subarray_sums_divisible_by_k;
