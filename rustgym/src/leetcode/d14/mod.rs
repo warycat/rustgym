@@ -146,6 +146,8 @@ mod _1492_the_kth_factor_of_n;
 //
 mod _1493_longest_subarray_of_1s_after_deleting_one_element;
 //
+mod _1494_parallel_courses_2;
+//
 mod _1496_path_crossing;
 //
 mod _1497_check_if_array_pairs_are_divisible_by_k;

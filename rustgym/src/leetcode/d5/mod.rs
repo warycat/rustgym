@@ -138,6 +138,8 @@ mod _583_delete_operation_for_two_strings;
 //
 mod _588_design_in_memory_file_system;
 //
+mod _591_tag_validator;
+//
 mod _592_fraction_addition_and_subtraction;
 //
 mod _593_valid_square;
