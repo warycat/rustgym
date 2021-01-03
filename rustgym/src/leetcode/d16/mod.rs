@@ -128,4 +128,6 @@ mod _1695_maximum_erasure_value;
 //
 mod _1696_jump_game_6;
 //
+mod _1697_checking_existence_of_edge_length_limited_paths;
+//
 mod _1698_number_of_distinct_substrings_in_a_string;
