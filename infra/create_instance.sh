@@ -1,6 +1,6 @@
 #!/bin/bash
-TAG=v0.1.8
-VM_NAME=rustgym-28
+TAG=v0.1.9
+VM_NAME=rustgym-29
 SERVER_NAME=rustgym.com
 WORK_DIR=/root
 EMAIL=larry.fantasy@gmail.com
@@ -31,7 +31,7 @@ ln -s /etc/nginx/sites-available/rustgym-nginx.cfg /etc/nginx/sites-enabled/defa
 cd $WORK_DIR
 cat <<EOF > certbot.sh
 #!/bin/bash
-certbot --nginx --non-interactive --agree-tos -m $EMAIL -d $SERVER_NAME
+certbot --nginx --redirect --non-interactive --agree-tos -m $EMAIL -d $SERVER_NAME
 EOF
 chmod u+x certbot.sh
 curl -LJO https://github.com/warycat/rustgym/releases/download/$TAG/rustgym.sqlite --output rustgym.sqlite
