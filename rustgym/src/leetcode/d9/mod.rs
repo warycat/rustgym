@@ -2,6 +2,8 @@ mod _900_rle_iterator;
 //
 mod _901_online_stock_span;
 //
+mod _903_valid_permutations_for_di_sequence;
+//
 mod _904_fruit_into_baskets;
 //
 mod _905_sort_array_by_parity;
