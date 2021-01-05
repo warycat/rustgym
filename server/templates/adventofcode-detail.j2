@@ -8,4 +8,12 @@
 <div>{{description.html|safe}}</div>
 <h2>Rust Solution</h2>
 <pre><code class="rust">{{solution.source}}</code></pre>
+<div class="bg-white px-6 py-4 my-3  mx-auto shadow rounded-md flex items-center">
+  <a target="_blank" href="https://adventofcode.com/{{description.year}}/day/{{description.day}}">
+    <button type="button" class="border border-indigo-500 bg-indigo-500 text-white rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-indigo-600 focus:outline-none focus:shadow-outline">Practice</button>
+  </a>
+  <a target="_blank" href="https://github.com/warycat/rustgym/issues/new?title=AdventOfCode {{description.year}} Day {{description.day}} {{description.title}}">
+    <button type="button" class="border border-green-500 bg-green-500 text-white rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-green-600 focus:outline-none focus:shadow-outline">New issue</button>
+  </a>
+</div>
 {% endblock %}
