@@ -11,6 +11,7 @@ mod db;
 mod home;
 mod leetcode_detail;
 mod leetcode_index;
+mod robots;
 mod sitemap;
 
 use actix_web::App;
@@ -34,6 +35,7 @@ async fn main() -> std::io::Result<()> {
             .service(adventofcode_index::adventofcode_index)
             .service(leetcode_detail::leetcode_detail)
             .service(adventofcode_detail::adventofcode_detail)
+            .service(robots::robots_txt)
             .service(sitemap::sitemap_txt)
     })
     .bind("127.0.0.1:8080")?

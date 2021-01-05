@@ -82,6 +82,10 @@ pub struct SitemapContext {
     pub adventofcode_rows: Vec<AdventOfCodeDescription>,
 }
 
+#[derive(Template, new)]
+#[template(path = "robots.j2")]
+pub struct RobotsContext {}
+
 macro_rules! impl_render_wrapper {
     ($type: ty) => {
         impl $type {
@@ -93,11 +97,15 @@ macro_rules! impl_render_wrapper {
     };
 }
 
-impl SitemapContext {
-    pub fn render_wrapper(&self) -> Result<HttpResponse, Error> {
-        let body = self.render().map_err(ErrorInternalServerError)?;
-        Ok(HttpResponse::Ok().content_type("text/txt").body(body))
-    }
+macro_rules! impl_txt_render_wrapper {
+    ($type: ty) => {
+        impl $type {
+            pub fn render_wrapper(&self) -> Result<HttpResponse, Error> {
+                let body = self.render().map_err(ErrorInternalServerError)?;
+                Ok(HttpResponse::Ok().content_type("text/txt").body(body))
+            }
+        }
+    };
 }
 
 impl_render_wrapper!(HomeContext);
@@ -105,3 +113,6 @@ impl_render_wrapper!(LeetcodeIndexContext);
 impl_render_wrapper!(AdventOfCodeIndexContext);
 impl_render_wrapper!(LeetcodeDetailContext);
 impl_render_wrapper!(AdventOfCodeDetailContext);
+
+impl_txt_render_wrapper!(SitemapContext);
+impl_txt_render_wrapper!(RobotsContext);
