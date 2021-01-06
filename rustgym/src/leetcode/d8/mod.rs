@@ -100,6 +100,8 @@ mod _855_exam_room;
 //
 mod _856_score_of_parentheses;
 //
+mod _857_minimum_cost_to_hire_k_workers;
+//
 mod _858_mirror_reflection;
 //
 mod _859_buddy_strings;
