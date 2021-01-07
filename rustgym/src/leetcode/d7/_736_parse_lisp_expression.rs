@@ -31,6 +31,9 @@ impl Solution {
             Op('(') => {
                 let res = Self::eval_complex_expr(it, stacks).unwrap();
                 let close = it.next().unwrap();
+                if close != Op(')') {
+                    panic!();
+                }
                 Some(res)
             }
             Var(id) => Some(stacks[id].last().copied().unwrap()),

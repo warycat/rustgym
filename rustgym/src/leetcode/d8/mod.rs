@@ -76,6 +76,8 @@ mod _841_keys_and_rooms;
 //
 mod _842_split_array_into_fibonacci_sequence;
 //
+mod _843_guess_the_word;
+//
 mod _844_backspace_string_compare;
 //
 mod _845_longest_mountain_in_array;
