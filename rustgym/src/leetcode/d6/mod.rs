@@ -102,6 +102,8 @@ mod _671_second_minimum_node_in_a_binary_tree;
 //
 mod _672_bulb_switcher_2;
 //
+mod _673_number_of_longest_increasing_subsequence;
+//
 mod _674_longest_continuous_increasing_subsequence;
 //
 mod _675_cut_off_trees_for_golf_event;

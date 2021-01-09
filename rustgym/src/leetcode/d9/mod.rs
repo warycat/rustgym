@@ -160,6 +160,8 @@ mod _993_cousins_in_binary_tree;
 //
 mod _994_rotting_oranges;
 //
+mod _995_minimum_number_of_k_consecutive_bit_flips;
+//
 mod _997_find_the_town_judge;
 //
 mod _998_maximum_binary_tree_2;

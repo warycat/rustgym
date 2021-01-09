@@ -22,6 +22,8 @@ mod _1313_decompres_run_length_encoded_list;
 //
 mod _1315_sum_of_nodes_with_even_valued_grandparent;
 //
+mod _1316_distinct_echo_substrings;
+//
 mod _1317_convert_integer_to_the_sum_of_two_no_zero_integers;
 //
 mod _1318_minimum_flips_to_make_a_or_b_equal_to_c;
