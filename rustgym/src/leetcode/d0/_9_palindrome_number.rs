@@ -5,14 +5,16 @@ impl Solution {
         if x < 0 {
             return false;
         }
-        let mut y = 0;
-        let mut z = x;
-        while z > 0 {
-            y *= 10;
-            y += z % 10;
-            z /= 10;
+        let mut reversed = 0;
+        let mut number = x;
+        while number > 0 {
+            reversed = reversed * 10 + number % 10;
+            number /= 10;
         }
-        x == y
+        x == reversed
+        // or compare original number as a string with the reversed string
+        // let x_str = x.abs().to_string();
+        // x >= 0 && x_str == x_str.chars().rev().collect::<String>()
     }
 }
 
