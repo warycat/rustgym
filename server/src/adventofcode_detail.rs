@@ -5,12 +5,14 @@ use actix_web::error::ErrorNotFound;
 use actix_web::get;
 use actix_web::web;
 use actix_web::Error;
+use actix_web::HttpRequest;
 use actix_web::HttpResponse;
 use diesel::prelude::*;
 
 #[get("/adventofcode/{id}")]
 async fn adventofcode_detail(
     data: web::Data<AppData>,
+    req: HttpRequest,
     web::Path(id_): web::Path<i32>,
     pool: web::Data<SqlitePool>,
 ) -> Result<HttpResponse, Error> {
@@ -25,5 +27,11 @@ async fn adventofcode_detail(
         .find(id_)
         .first(&conn)
         .map_err(ErrorNotFound)?;
-    AdventOfCodeDetailContext::new(AppContext::new(data), description, solution).render_wrapper()
+    AdventOfCodeDetailContext::new(
+        AppContext::new(data),
+        req.path().to_string(),
+        description,
+        solution,
+    )
+    .render_wrapper()
 }

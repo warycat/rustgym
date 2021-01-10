@@ -19,6 +19,7 @@ pub struct AppContext {
 #[template(path = "home.j2")]
 pub struct HomeContext {
     pub app: AppContext,
+    pub path: String,
 }
 
 impl AppContext {
@@ -40,6 +41,7 @@ pub struct LeetcodeIndexRow {
 #[template(path = "leetcode-index.j2")]
 pub struct LeetcodeIndexContext {
     pub app: AppContext,
+    pub path: String,
     pub rows: Vec<LeetcodeIndexRow>,
 }
 
@@ -55,6 +57,7 @@ pub struct AdventOfCodeIndexRow {
 #[template(path = "adventofcode-index.j2")]
 pub struct AdventOfCodeIndexContext {
     pub app: AppContext,
+    pub path: String,
     pub rows: Vec<AdventOfCodeIndexRow>,
 }
 
@@ -62,6 +65,7 @@ pub struct AdventOfCodeIndexContext {
 #[template(path = "leetcode-detail.j2")]
 pub struct LeetcodeDetailContext {
     pub app: AppContext,
+    pub path: String,
     pub question: LeetcodeQuestion,
     pub description: LeetcodeDescription,
     pub solutions: Vec<LeetcodeSolution>,
@@ -71,6 +75,7 @@ pub struct LeetcodeDetailContext {
 #[template(path = "adventofcode-detail.j2")]
 pub struct AdventOfCodeDetailContext {
     pub app: AppContext,
+    pub path: String,
     pub description: AdventOfCodeDescription,
     pub solution: AdventOfCodeSolution,
 }

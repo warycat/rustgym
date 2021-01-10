@@ -5,12 +5,14 @@ use actix_web::error::ErrorNotFound;
 use actix_web::get;
 use actix_web::web;
 use actix_web::Error;
+use actix_web::HttpRequest;
 use actix_web::HttpResponse;
 use diesel::prelude::*;
 
 #[get("/leetcode/")]
 pub async fn leetcode_index(
     data: web::Data<AppData>,
+    req: HttpRequest,
     pool: web::Data<SqlitePool>,
 ) -> Result<HttpResponse, Error> {
     use rustgym_schema::schema::leetcode_description::dsl::*;
@@ -26,5 +28,5 @@ pub async fn leetcode_index(
         .order((level, rustgym_schema::schema::leetcode_question::dsl::id))
         .load(&conn)
         .map_err(ErrorNotFound)?;
-    LeetcodeIndexContext::new(AppContext::new(data), rows).render_wrapper()
+    LeetcodeIndexContext::new(AppContext::new(data), req.path().to_string(), rows).render_wrapper()
 }
