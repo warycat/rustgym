@@ -3513,6 +3513,15 @@ All the solutions here are crafted with love and their performance beats 99% of 
       </tr>
       <tr>
         <td>
+          1710
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1710"> Maximum Units on a Truck</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
           2
         </td>
         <td>
@@ -10974,6 +10983,24 @@ All the solutions here are crafted with love and their performance beats 99% of 
       </tr>
       <tr>
         <td>
+          1711
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1711"> Count Good Meals</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1712
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1712"> Ways to Split Array Into Three Subarrays</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
           4
         </td>
         <td>
@@ -14029,6 +14056,24 @@ All the solutions here are crafted with love and their performance beats 99% of 
         </td>
         <td>
           <a href="http://rustgym.com/leetcode/1707"> Maximum XOR With an Element From Array</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1713
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1713"> Minimum Operations to Make a Subsequence</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1714
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1714"> Sum Of Special Evenly-Spaced Elements In Array</a>
         </td>
         <td>Hard</td>
       </tr></tbody>
