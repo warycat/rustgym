@@ -1,38 +1,25 @@
 struct Solution;
 
 impl Solution {
-    fn reverse(x: i32) -> i32 {
-        let mut abs = x.abs();
-        let sign = x.signum();
-        let mut y: i32 = 0;
-        while abs > 0 {
-            if let Some(v) = y.checked_mul(10) {
-                y = v;
-            } else {
-                return 0;
-            }
-            if let Some(v) = y.checked_add(abs % 10) {
-                y = v;
-            } else {
-                return 0;
-            }
-            abs /= 10;
+    pub fn reverse(x: i32) -> i32 {
+        let x_str = x.abs().to_string().chars().rev().collect::<String>();
+        if let Ok(y) = x_str.parse::<i32>() {
+            x.signum() * y
+        } else {
+            0
         }
-        y * sign
     }
 }
 
 #[test]
-fn overflow() {
-    assert_eq!(Solution::reverse(2_147_483_647), 0);
-}
-
-#[test]
-fn pass() {
-    assert_eq!(Solution::reverse(123_456_789), 987_654_321);
-}
-
-#[test]
-fn negative() {
-    assert_eq!(Solution::reverse(-123), -321);
+fn test() {
+    let x = 2_147_483_647;
+    let res = 0;
+    assert_eq!(Solution::reverse(x), res);
+    let x = 123_456_789;
+    let res = 987_654_321;
+    assert_eq!(Solution::reverse(x), res);
+    let x = -123;
+    let res = -321;
+    assert_eq!(Solution::reverse(x), res);
 }
