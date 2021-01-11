@@ -25,3 +25,9 @@ mod _1716_calculate_money_in_leetcode_bank;
 mod _1717_maximum_score_from_removing_substrings;
 //
 mod _1718_construct_the_lexicographically_largest_valid_sequence;
+//
+mod _1720_decode_xored_array;
+//
+mod _1721_swapping_nodes_in_a_linked_list;
+//
+mod _1722_minimize_hamming_distance_after_swap_operations;
