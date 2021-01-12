@@ -15,6 +15,7 @@ diesel = { version = "1.4.5", features = [
 ] }
 rustgym-schema = { path = "../schema" }
 rustgym-consts = { path = "../consts" }
+rustgym-characters = {path = "../characters" }
 r2d2 = "0.8.9"
 uuid = "0.8.1"
 serde = "1.0.118"
@@ -25,3 +26,4 @@ failure = "0.1.8"
 lazy_static = "1.4.0"
 askama = "0.10.5"
 derive-new = "0.5.8"
+rand = "0.8.1"

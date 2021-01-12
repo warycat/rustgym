@@ -20,6 +20,7 @@ pub struct AppContext {
 pub struct HomeContext {
     pub app: AppContext,
     pub path: String,
+    pub name: String,
 }
 
 impl AppContext {
