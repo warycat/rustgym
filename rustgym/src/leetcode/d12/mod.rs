@@ -150,6 +150,8 @@ mod _1291_sequential_digits;
 //
 mod _1292_maximum_side_length_of_a_square_with_sum_less_than_or_equal_to_threshold;
 //
+mod _1293_shortest_path_in_a_grid_with_obstacles_elimination;
+//
 mod _1295_find_numbers_with_even_number_of_digits;
 //
 mod _1296_divide_array_in_sets_of_k_consecutive_numbers;

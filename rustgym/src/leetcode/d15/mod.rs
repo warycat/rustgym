@@ -44,6 +44,8 @@ mod _1529_bulb_switcher_5;
 //
 mod _1530_number_of_good_leaf_nodes_pairs;
 //
+mod _1531_string_compression_2;
+//
 mod _1533_find_the_index_of_the_large_integer;
 //
 mod _1534_count_good_triplets;

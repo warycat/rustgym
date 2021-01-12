@@ -16,6 +16,8 @@ mod _808_soup_servings;
 //
 mod _809_expressive_words;
 //
+mod _810_chalkboard_xor_game;
+//
 mod _811_subdomain_visit_count;
 //
 mod _812_largest_triangle_area;
