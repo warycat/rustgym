@@ -16,4 +16,8 @@ jobs:
       run: cargo build --verbose
     - name: Run tests
       run: cargo test --verbose
+    - name: Install wasm-pack
+      uses: jetli/wasm-pack-action@v0.3.0
+    - name: Run client test
+      run: wasm-pack test client --node
 

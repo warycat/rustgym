@@ -17,8 +17,23 @@ script = 'docker run --rm --user "$(id -u)":"$(id -g)" -v "$PWD":/usr/src/myapp 
 [tasks.linux]
 script = 'cargo build --release --verbose'
 
-[tasks.server]
+[tasks.copy-server]
 script = 'cp target/release/rustgym-server rustgym-server'
+
+[tasks.wasm-pack]
+script = 'wasm-pack build client --target web'
+
+[tasks.copy-client]
+script = 'cp -R client/pkg/ pkg/'
+
+[tasks.archive-client]
+script = "tar -czvf pkg.tar.gz pkg"
+dependencies = ["copy-client"]
+
+
+[tasks.watch-client]
+run_task = {name = ["wasm-pack", "copy-client"]}
+watch = { postpone = true,  watch = ["./client/"]}
 
 [tasks.deploy]
 script = [
@@ -27,10 +42,13 @@ script = [
     "git push origin $TAG",
     "gh release create $TAG rustgym.sqlite rustgym-server"
 ]
-dependencies = ["readme", "mac", "server"]
+dependencies = ["readme", "mac", "copy-server", "wasm-pack", "copy-client"]
+
+[tasks.watch-server]
+script = "cargo watch -x 'run --bin rustgym-server'"
 
 [tasks.dev]
-script = "cargo watch -x 'run --bin rustgym-server'"
+run_task = { name = ["watch-server", "watch-client"], parallel = true }
 
 [tasks.restart]
 script = "cd infra; ./deploy.sh"

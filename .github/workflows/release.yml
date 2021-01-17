@@ -26,10 +26,16 @@ jobs:
       run: cargo make migration
     - name: Readme
       run: cargo make readme
-    - name: Readme
+    - name: Build Server
       run: cargo build --verbose --release
-    - name: Server
-      run: cargo make server
+    - name: Copy Server
+      run: cargo make copy-server
+    - name: Install wasm-pack
+      uses: jetli/wasm-pack-action@v0.3.0
+    - name: Build client
+      run: cargo make wasm-pack
+    - name: Archive client
+      run: cargo make archive-client
     - name: Create Release
       id: create_release
       uses: actions/create-release@v1
@@ -59,4 +65,14 @@ jobs:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: ./rustgym-server
         asset_name: rustgym-server
+        asset_content_type: application/octet-stream
+    - name: Upload pkg
+      id: upload-pkg 
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ./pkg.tar.gz
+        asset_name: pkg.tar.gz
         asset_content_type: application/octet-stream

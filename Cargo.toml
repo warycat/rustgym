@@ -1,2 +1,2 @@
 [workspace]
-members = ["rustgym", "util", "readme", "server", "schema", "consts", "characters"]
+members = ["rustgym", "util", "readme", "server", "schema", "consts", "characters", "client"]

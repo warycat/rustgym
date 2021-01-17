@@ -1,7 +1,8 @@
 **/target
 **/*.rs.bk
+pkg/
 .vscode
 .DS_Store
 .idea
 *.sqlite
-rustgym-server
+*.tar.gz
