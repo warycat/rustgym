@@ -30,7 +30,6 @@ script = 'cp -R client/pkg/ pkg/'
 script = "tar -czvf pkg.tar.gz pkg"
 dependencies = ["copy-client"]
 
-
 [tasks.watch-client]
 run_task = {name = ["wasm-pack", "copy-client"]}
 watch = { postpone = true,  watch = ["./client/"]}
@@ -45,7 +44,7 @@ script = [
 dependencies = ["readme", "mac", "copy-server", "wasm-pack", "copy-client"]
 
 [tasks.watch-server]
-script = "cargo watch -x 'run --bin rustgym-server'"
+script = "cargo watch -w server -x 'run --bin rustgym-server'"
 
 [tasks.dev]
 run_task = { name = ["watch-server", "watch-client"], parallel = true }

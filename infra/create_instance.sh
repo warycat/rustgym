@@ -1,6 +1,6 @@
 #!/bin/bash
-TAG=v0.1.11
-VM_NAME=rustgym-32
+TAG=v0.1.12
+VM_NAME=rustgym-33
 SERVER_NAME=rustgym.com
 WORK_DIR=/root
 EMAIL=larry.fantasy@gmail.com
@@ -36,7 +36,9 @@ EOF
 chmod u+x certbot.sh
 curl -LJO https://github.com/warycat/rustgym/releases/download/$TAG/rustgym.sqlite --output rustgym.sqlite
 curl -LJO https://github.com/warycat/rustgym/releases/download/$TAG/rustgym-server --output rustgym-server
+curl -LJO https://github.com/warycat/rustgym/releases/download/$TAG/pkg.tar.gz --output pkg.tar.gz
 chmod u+x rustgym-server
+tar -xzf pkg.tar.gz
 TAG=$TAG ./rustgym-server >> rustgym.log &>> rustgym.error.log &
 systemctl restart nginx
 "
