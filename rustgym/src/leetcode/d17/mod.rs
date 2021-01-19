@@ -31,3 +31,7 @@ mod _1720_decode_xored_array;
 mod _1721_swapping_nodes_in_a_linked_list;
 //
 mod _1722_minimize_hamming_distance_after_swap_operations;
+//
+mod _1725_number_of_rectangles_that_can_form_the_largest_square;
+//
+mod _1726_tuple_with_same_product;

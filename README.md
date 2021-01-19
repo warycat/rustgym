@@ -3522,6 +3522,33 @@ All the solutions here are crafted with love and their performance beats 99% of 
       </tr>
       <tr>
         <td>
+          1716
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1716"> Calculate Money in Leetcode Bank</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1720
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1720"> Decode XORed Array</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1725
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1725"> Number Of Rectangles That Can Form The Largest Square</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
           2
         </td>
         <td>
@@ -11001,6 +11028,60 @@ All the solutions here are crafted with love and their performance beats 99% of 
       </tr>
       <tr>
         <td>
+          1717
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1717"> Maximum Score From Removing Substrings</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1718
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1718"> Construct the Lexicographically Largest Valid Sequence</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1721
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1721"> Swapping Nodes in a Linked List</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1722
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1722"> Minimize Hamming Distance After Swap Operations</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1726
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1726"> Tuple with Same Product</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1727
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1727"> Largest Submatrix With Rearrangements</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
           4
         </td>
         <td>
@@ -14074,6 +14155,42 @@ All the solutions here are crafted with love and their performance beats 99% of 
         </td>
         <td>
           <a href="http://rustgym.com/leetcode/1714"> Sum Of Special Evenly-Spaced Elements In Array</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1719
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1719"> Number Of Ways To Reconstruct A Tree</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1723
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1723"> Find Minimum Time to Finish All Jobs</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1724
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1724"> Checking Existence of Edge Length Limited Paths II</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1728
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1728"> Cat and Mouse II</a>
         </td>
         <td>Hard</td>
       </tr></tbody>
