@@ -1,9 +1,12 @@
 #!/bin/bash
 TAG=v0.2.0
-VM_NAME=rustgym-0
+VM_NAME=rustgym-6
 SERVER_NAME=rustgym.com
 WORK_DIR=/root
 EMAIL=larry.fantasy@gmail.com
+
+HTTP_UPGRADE='$http_upgrade'
+HOST='$host'
 
 IMAGE=debian-10-buster-v20201216
 IMAGE_FAMILY=debian-10
@@ -16,13 +19,17 @@ gcloud compute instances create $VM_NAME \
     --metadata startup-script="#! /bin/bash
 apt update
 apt -y install nginx sqlite3 certbot python-certbot-nginx
-cat <<EOF > /etc/nginx/sites-available/rustgym-nginx.cfg
+cat <<\EOF > /etc/nginx/sites-available/rustgym-nginx.cfg
 server {
     listen 80 default_server;
     listen [::]:80 default_server;
     server_name $SERVER_NAME;
     location / {
         proxy_pass http://127.0.0.1:8080;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $HTTP_UPGRADE;
+        proxy_set_header Connection \"upgrade\";
+        proxy_set_header Host $HOST;
     }
 }
 EOF
