@@ -1,6 +1,6 @@
 #!/bin/bash
-TAG=v0.1.12
-VM_NAME=rustgym-33
+TAG=v0.2.0
+VM_NAME=rustgym-0
 SERVER_NAME=rustgym.com
 WORK_DIR=/root
 EMAIL=larry.fantasy@gmail.com

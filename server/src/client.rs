@@ -2,8 +2,6 @@ use actix_files::NamedFile;
 use actix_web::get;
 use actix_web::HttpRequest;
 use actix_web::Result;
-use rustgym_consts::*;
-use std::path::Path;
 use std::path::PathBuf;
 
 #[get("/pkg/{filename:.*}")]

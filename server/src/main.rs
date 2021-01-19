@@ -14,23 +14,26 @@ mod leetcode_detail;
 mod leetcode_index;
 mod robots;
 mod sitemap;
+mod websocket;
 
 use actix_session::CookieSession;
 use actix_web::middleware::Logger;
+use actix_web::web;
 use actix_web::App;
 use actix_web::HttpServer;
 use app_data::AppData;
+use log::info;
 use rustgym_consts::*;
 use std::env;
 
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
-    std::env::set_var("RUST_LOG", "actix_server=info,actix_web=info");
+    std::env::set_var("RUST_LOG", "info");
     env_logger::init();
     let pool = db::init_pool(DATABASE_URL).expect("Failed to create pool");
     let tag = env::var("TAG").unwrap_or_default();
     let title = "RUST GYM".to_string();
-    println!("RUST GYM Server {}", tag);
+    info!("RUST GYM Server {}", tag);
     HttpServer::new(move || {
         App::new()
             .wrap(Logger::default())
@@ -45,6 +48,7 @@ async fn main() -> std::io::Result<()> {
             .service(robots::robots_txt)
             .service(sitemap::sitemap_txt)
             .service(client::client_files)
+            .service(web::resource("/ws/").to(websocket::ws_index))
     })
     .bind("127.0.0.1:8080")?
     .run()

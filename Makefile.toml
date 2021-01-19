@@ -21,18 +21,21 @@ script = 'cargo build --release --verbose'
 script = 'cp target/release/rustgym-server rustgym-server'
 
 [tasks.wasm-pack]
-script = 'wasm-pack build client --target web'
+script = 'wasm-pack build wasm --target web'
 
-[tasks.copy-client]
-script = 'cp -R client/pkg/ pkg/'
+[tasks.clean-pkg]
+script = "rm -rf pkg/"
 
-[tasks.archive-client]
+[tasks.copy-wasm]
+script = 'cp -R wasm/pkg/ pkg/'
+
+[tasks.archive-wasm]
 script = "tar -czvf pkg.tar.gz pkg"
-dependencies = ["copy-client"]
+dependencies = ["copy-wasm"]
 
-[tasks.watch-client]
-run_task = {name = ["wasm-pack", "copy-client"]}
-watch = { postpone = true,  watch = ["./client/"]}
+[tasks.watch-wasm]
+run_task = { name = ["wasm-pack", "clean-pkg", "copy-wasm"] }
+watch = { postpone = true, watch = ["./wasm/", "./message/"] }
 
 [tasks.deploy]
 script = [
@@ -41,13 +44,13 @@ script = [
     "git push origin $TAG",
     "gh release create $TAG rustgym.sqlite rustgym-server"
 ]
-dependencies = ["readme", "mac", "copy-server", "wasm-pack", "copy-client"]
+dependencies = ["readme", "mac", "copy-server", "wasm-pack", "copy-wasm"]
 
 [tasks.watch-server]
-script = "cargo watch -w server -x 'run --bin rustgym-server'"
+script = "cargo watch -w server -w message -x 'run --bin rustgym-server'"
 
 [tasks.dev]
-run_task = { name = ["watch-server", "watch-client"], parallel = true }
+run_task = { name = ["watch-server", "watch-wasm"], parallel = true }
 
 [tasks.restart]
 script = "cd infra; ./deploy.sh"

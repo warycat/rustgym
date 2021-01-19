@@ -23,9 +23,9 @@
       gtag('config', 'G-661DVJ18N4');
     </script>
     <script type="module">
-      import init from './pkg/rustgym_client.js';
+      import init from '/pkg/rustgym_wasm.js';
       async function run() {
-        window.CLIENT = await init();
+        window.WASM = await init();
       }
       run();
     </script>
