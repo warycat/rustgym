@@ -21,20 +21,13 @@ script = 'cargo build --release --verbose'
 script = 'cp target/release/rustgym-server rustgym-server'
 
 [tasks.wasm-pack]
-script = 'wasm-pack build wasm --target web'
-
-[tasks.clean-pkg]
-script = "rm -rf pkg/"
-
-[tasks.copy-wasm]
-script = 'cp -R wasm/pkg/ pkg/'
+script = 'wasm-pack build wasm --target web --out-dir ../pkg'
 
 [tasks.archive-wasm]
 script = "tar -czvf pkg.tar.gz pkg"
-dependencies = ["copy-wasm"]
 
 [tasks.watch-wasm]
-run_task = { name = ["wasm-pack", "clean-pkg", "copy-wasm"] }
+run_task = { name = ["wasm-pack"] }
 watch = { postpone = true, watch = ["./wasm/", "./message/"] }
 
 [tasks.deploy]
@@ -42,9 +35,9 @@ script = [
     "echo $TAG",
     "git tag $TAG",
     "git push origin $TAG",
-    "gh release create $TAG rustgym.sqlite rustgym-server"
+    "gh release create $TAG rustgym.sqlite rustgym-server pkg.tar.gz"
 ]
-dependencies = ["readme", "mac", "copy-server", "wasm-pack", "copy-wasm"]
+dependencies = ["readme", "mac", "copy-server", "wasm-pack", "archive-wasm"]
 
 [tasks.watch-server]
 script = "cargo watch -w server -w message -x 'run --bin rustgym-server'"

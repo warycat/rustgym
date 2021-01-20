@@ -26,6 +26,6 @@ mod tests {
     use super::CHARACTERS;
     #[test]
     fn characters() {
-        assert_eq!(CHARACTERS.len(), 17);
+        assert_eq!(CHARACTERS.len(), 20);
     }
 }
