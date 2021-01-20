@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block content %}
-<h1>{{question.id}}. {{question.title}}</h1>
+<h2>{{question.id}}. {{question.title}}</h2>
 <div>{{description.html|safe}}</div>
 <h2>Rust Solution</h2>
 {% for solution in solutions %}

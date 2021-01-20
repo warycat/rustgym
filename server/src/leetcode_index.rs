@@ -25,7 +25,7 @@ pub async fn leetcode_index(
             level,
         ))
         .inner_join(leetcode_description)
-        .order((level, rustgym_schema::schema::leetcode_question::dsl::id))
+        .order(rustgym_schema::schema::leetcode_question::dsl::id)
         .load(&conn)
         .map_err(ErrorNotFound)?;
     LeetcodeIndexContext::new(AppContext::new(data), req.path().to_string(), rows).render_wrapper()

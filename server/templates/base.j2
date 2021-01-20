@@ -13,9 +13,12 @@
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="origin-trial" content="AoLaAmCleB9Y9nuO10wIngBj95JTQz+qbvXxAkplkF9Sj5lg1Rxmr5fqkgqF1AsD4BS6dzgZ7n3rxKB/8+O3iAYAAABleyJvcmlnaW4iOiJodHRwczovL3J1c3RneW0uY29tOjQ0MyIsImZlYXR1cmUiOiJRdWljVHJhbnNwb3J0IiwiZXhwaXJ5IjoxNjEzOTY0MDUxLCJpc1N1YmRvbWFpbiI6dHJ1ZX0=">
-    <script src="//unpkg.com/@highlightjs/cdn-assets@10.4.1/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-661DVJ18N4"></script>
+    <script defer src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js"></script>
+    <script defer src="//unpkg.com/@highlightjs/cdn-assets@10.4.1/highlight.min.js"></script>
+    <script src="https://www.googletagmanager.com/gtag/js?id=G-661DVJ18N4"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -32,18 +35,16 @@
     {% block head %}{% endblock %}
   </head>
   <body>
-    <div id="content" class="md:container md:mx-auto prose" >
+    <div id="content" class="sm:container sm:mx-auto prose sm:prose-xl">
       {% block navigation %}{% endblock %}
-      {% block content %}{% endblock %}
+      <div class="px-3">
+        {% block content %}{% endblock %}
+      </div>
     </div>
   </body>
-  <footer class="text-center">
-      <div class="mt-16 flex flex-col items-center">
-          <div class="text-center py-6">
-            <p class="text-sm  mb-2">
-                2021 RUST GYM
-            </p>
-          </div>
-      </div>
+  <footer>
+    <div id="footer" class="text-center">
+    {% block footer %}{% endblock %}
+    </div>
   </footer>
 </html>
