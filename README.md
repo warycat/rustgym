@@ -2514,15 +2514,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
       </tr>
       <tr>
         <td>
-          1170
-        </td>
-        <td>
-          <a href="http://rustgym.com/leetcode/1170"> Compare Strings by Frequency of the Smallest Character</a>
-        </td>
-        <td>Easy</td>
-      </tr>
-      <tr>
-        <td>
           1175
         </td>
         <td>
@@ -8854,6 +8845,15 @@ All the solutions here are crafted with love and their performance beats 99% of 
         </td>
         <td>
           <a href="http://rustgym.com/leetcode/1169"> Invalid Transactions</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1170
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1170"> Compare Strings by Frequency of the Smallest Character</a>
         </td>
         <td>Medium</td>
       </tr>
