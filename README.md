@@ -2640,15 +2640,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
       </tr>
       <tr>
         <td>
-          1237
-        </td>
-        <td>
-          <a href="http://rustgym.com/leetcode/1237"> Find Positive Integer Solution for a Given Equation</a>
-        </td>
-        <td>Easy</td>
-      </tr>
-      <tr>
-        <td>
           1243
         </td>
         <td>
@@ -3013,6 +3004,15 @@ All the solutions here are crafted with love and their performance beats 99% of 
         </td>
         <td>
           <a href="http://rustgym.com/leetcode/1436"> Destination City</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1437
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1437"> Check If All 1&#x27;s Are at Least Length K Places Away</a>
         </td>
         <td>Easy</td>
       </tr>
@@ -9021,15 +9021,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
       </tr>
       <tr>
         <td>
-          1223
-        </td>
-        <td>
-          <a href="http://rustgym.com/leetcode/1223"> Dice Roll Simulation</a>
-        </td>
-        <td>Medium</td>
-      </tr>
-      <tr>
-        <td>
           1227
         </td>
         <td>
@@ -9079,6 +9070,15 @@ All the solutions here are crafted with love and their performance beats 99% of 
         </td>
         <td>
           <a href="http://rustgym.com/leetcode/1236"> Web Crawler</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1237
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1237"> Find Positive Integer Solution for a Given Equation</a>
         </td>
         <td>Medium</td>
       </tr>
@@ -9880,15 +9880,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
         </td>
         <td>
           <a href="http://rustgym.com/leetcode/1433"> Check If a String Can Break Another String</a>
-        </td>
-        <td>Medium</td>
-      </tr>
-      <tr>
-        <td>
-          1437
-        </td>
-        <td>
-          <a href="http://rustgym.com/leetcode/1437"> Check If All 1&#x27;s Are at Least Length K Places Away</a>
         </td>
         <td>Medium</td>
       </tr>
@@ -11077,6 +11068,15 @@ All the solutions here are crafted with love and their performance beats 99% of 
         </td>
         <td>
           <a href="http://rustgym.com/leetcode/1727"> Largest Submatrix With Rearrangements</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1730
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1730"> Shortest Path to Get Food</a>
         </td>
         <td>Medium</td>
       </tr>
@@ -13210,6 +13210,15 @@ All the solutions here are crafted with love and their performance beats 99% of 
         </td>
         <td>
           <a href="http://rustgym.com/leetcode/1220"> Count Vowels Permutation</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1223
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1223"> Dice Roll Simulation</a>
         </td>
         <td>Hard</td>
       </tr>
