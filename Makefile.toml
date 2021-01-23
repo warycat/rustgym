@@ -41,6 +41,7 @@ dependencies = ["readme", "mac", "copy-server", "wasm-pack", "archive-wasm"]
 
 [tasks.watch-server]
 script = "cargo watch -w server -w message -x 'run --bin rustgym-server'"
+dependencies = ["wasm-pack"]
 
 [tasks.dev]
 run_task = { name = ["watch-server", "watch-wasm"], parallel = true }
