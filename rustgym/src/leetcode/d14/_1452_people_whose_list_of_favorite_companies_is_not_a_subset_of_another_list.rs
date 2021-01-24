@@ -1,12 +1,11 @@
 struct Solution;
 use std::collections::HashSet;
-use std::iter::FromIterator;
 
 impl Solution {
     fn people_indexes(favorite_companies: Vec<Vec<String>>) -> Vec<i32> {
         let people: Vec<HashSet<String>> = favorite_companies
             .into_iter()
-            .map(|v| HashSet::from_iter(v.into_iter()))
+            .map(|v| v.into_iter().collect())
             .collect();
         let n = people.len();
         let mut res = vec![];

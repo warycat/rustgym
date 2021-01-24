@@ -19,10 +19,10 @@ impl Solution {
         n: usize,
     ) -> bool {
         if start == n {
-            s == ""
+            s.is_empty()
         } else {
             let i = (pattern[start] as u8 - b'a') as usize;
-            if map[i] != "" {
+            if !map[i].is_empty() {
                 let size = map[i].len();
                 if s.starts_with(&map[i]) {
                     Self::dfs(start + 1, map, set, pattern, &s[size..], n)

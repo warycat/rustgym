@@ -1,9 +1,10 @@
 struct Solution;
 
+const M: usize = 1440;
+
 impl Solution {
     fn find_min_difference(time_points: Vec<String>) -> i32 {
         let n = time_points.len();
-        const M: usize = 1440 as usize;
         if n > M {
             return 0;
         }

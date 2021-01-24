@@ -2,7 +2,6 @@
 struct Solution;
 use std::cmp::Reverse;
 use std::collections::BinaryHeap;
-use std::iter::FromIterator;
 
 struct UnionFind {
     parent: Vec<usize>,
@@ -46,13 +45,13 @@ type Log = (Reverse<i32>, usize, usize);
 
 impl Solution {
     fn earliest_acq(logs: Vec<Vec<i32>>, n: i32) -> i32 {
-        let mut pq = BinaryHeap::from_iter(
-            logs.iter()
-                .map(|v| (Reverse(v[0]), v[1] as usize, v[2] as usize)),
-        );
+        let mut queue: BinaryHeap<Log> = logs
+            .iter()
+            .map(|v| (Reverse(v[0]), v[1] as usize, v[2] as usize))
+            .collect();
         let n = n as usize;
         let mut uf = UnionFind::new(n);
-        while let Some(log) = pq.pop() {
+        while let Some(log) = queue.pop() {
             if uf.union(log.1, log.2) == 1 {
                 return (log.0).0;
             }

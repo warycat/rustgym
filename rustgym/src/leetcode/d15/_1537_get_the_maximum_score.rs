@@ -2,16 +2,14 @@ struct Solution;
 
 use std::collections::BTreeSet;
 use std::collections::HashSet;
-use std::iter::FromIterator;
 
 const MOD: i64 = 1_000_000_007;
 
 impl Solution {
     fn max_sum(nums1: Vec<i32>, nums2: Vec<i32>) -> i32 {
-        let set1: HashSet<i32> = HashSet::from_iter(nums1.iter().copied());
-        let set2: HashSet<i32> = HashSet::from_iter(nums2.iter().copied());
-        let all: BTreeSet<i32> =
-            BTreeSet::from_iter(nums1.iter().copied().chain(nums2.iter().copied()));
+        let set1: HashSet<i32> = nums1.iter().copied().collect();
+        let set2: HashSet<i32> = nums2.iter().copied().collect();
+        let all: BTreeSet<i32> = nums1.iter().copied().chain(nums2.iter().copied()).collect();
         let mut prev1 = 0;
         let mut prev2 = 0;
         let mut res = 0;

@@ -3,7 +3,6 @@ use std::collections::HashMap;
 use std::collections::HashSet;
 use std::fmt::Write;
 use std::io::*;
-use std::iter::FromIterator;
 
 pub fn solve(reader: &mut dyn BufRead, writer: &mut dyn Write) {
     let mut it = reader.lines().map(|l| l.unwrap());
@@ -11,7 +10,7 @@ pub fn solve(reader: &mut dyn BufRead, writer: &mut dyn Write) {
     let mut departure_fields: Vec<usize> = vec![];
     let mut fid = 0;
     while let Some(line) = it.next() {
-        if line == "" {
+        if line.is_empty() {
             break;
         } else {
             let parts: Vec<_> = line.split_whitespace().collect();
@@ -110,7 +109,7 @@ fn departure_product(
             }
         }
     }
-    let mut unknown: HashSet<usize> = HashSet::from_iter(0..n);
+    let mut unknown: HashSet<usize> = (0..n).collect();
     let mut field_map: HashMap<usize, usize> = HashMap::new();
     while !unknown.is_empty() {
         let unknown_copy: Vec<usize> = unknown.iter().copied().collect();

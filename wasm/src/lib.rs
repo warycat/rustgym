@@ -52,10 +52,6 @@ pub fn start_websocket() -> Result<(), JsValue> {
             let len = array.byte_length() as usize;
             console_log!("Arraybuffer received {}bytes: {:?}", len, array.to_vec());
             cloned_ws.set_binary_type(web_sys::BinaryType::Blob);
-            match cloned_ws.send_with_u8_array(&vec![5, 6, 7, 8]) {
-                Ok(_) => console_log!("binary message successfully sent"),
-                Err(err) => console_log!("error sending message: {:?}", err),
-            }
         } else if let Ok(blob) = e.data().dyn_into::<web_sys::Blob>() {
             console_log!("message event, received blob: {:?}", blob);
             let fr = web_sys::FileReader::new().unwrap();

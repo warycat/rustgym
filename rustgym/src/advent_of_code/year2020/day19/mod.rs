@@ -8,7 +8,7 @@ pub fn solve(reader: &mut dyn BufRead, writer: &mut dyn Write) {
     let mut rules: HashMap<i32, Rule> = HashMap::new();
     let mut messages: Vec<Vec<char>> = vec![];
     while let Some(line) = it.next() {
-        if line == "" {
+        if line.is_empty() {
             break;
         }
         let parts: Vec<String> = line.split(':').map(|s| s.to_string()).collect();

@@ -2,7 +2,10 @@ struct Solution;
 
 impl Solution {
     fn reformat_number(number: String) -> String {
-        let nums: Vec<char> = number.chars().filter(|&c| c >= '0' && c <= '9').collect();
+        let nums: Vec<char> = number
+            .chars()
+            .filter(|&c| ('0'..='9').contains(&c))
+            .collect();
         let mut res = "".to_string();
         let n = nums.len();
         let mut i = 0;

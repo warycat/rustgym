@@ -2,7 +2,7 @@ struct Solution;
 
 impl Solution {
     fn prime_palindrome(n: i32) -> i32 {
-        if 8 <= n && n <= 11 {
+        if (8..=11).contains(&n) {
             return 11;
         }
         for i in 1..100_000 {

@@ -15,7 +15,8 @@ impl FileSystem {
     fn create_path(&mut self, path: String, value: i32) -> bool {
         let index = path.rfind('/').unwrap();
         let parent = &path[0..index];
-        if !self.paths.contains_key(&path) && (parent == "" || self.paths.contains_key(parent)) {
+        if !self.paths.contains_key(&path) && (parent.is_empty() || self.paths.contains_key(parent))
+        {
             self.paths.insert(path, value);
             true
         } else {

@@ -1,5 +1,4 @@
 use std::collections::HashSet;
-use std::iter::FromIterator;
 
 struct PhoneDirectory {
     available: HashSet<i32>,
@@ -7,7 +6,7 @@ struct PhoneDirectory {
 
 impl PhoneDirectory {
     fn new(max_numbers: i32) -> Self {
-        let available = HashSet::from_iter(0..max_numbers);
+        let available = (0..max_numbers).collect();
         PhoneDirectory { available }
     }
 

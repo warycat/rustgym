@@ -13,7 +13,7 @@ impl Preorder for TreeLink {
             cur.push(val);
             if node.left.is_none() && node.right.is_none() {
                 let s: String = cur.iter().rev().copied().collect();
-                if min == "" {
+                if min.is_empty() {
                     *min = s;
                 } else {
                     if s < *min {

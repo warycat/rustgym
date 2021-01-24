@@ -13,10 +13,10 @@ impl Solution {
         for i in 1..n {
             let first = s[i];
             let second = s[i - 1] * 10 + s[i];
-            if first >= 1 && first <= 9 {
+            if (1..=9).contains(&first) {
                 a[i + 1] += a[i];
             }
-            if second >= 10 && second <= 26 {
+            if (10..=26).contains(&second) {
                 a[i + 1] += a[i - 1];
             }
         }

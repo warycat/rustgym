@@ -1,10 +1,9 @@
 struct Solution;
 use std::collections::HashSet;
-use std::iter::FromIterator;
 
 impl Solution {
     fn count_consistent_strings(allowed: String, words: Vec<String>) -> i32 {
-        let hs: HashSet<char> = HashSet::from_iter(allowed.chars());
+        let hs: HashSet<char> = allowed.chars().collect();
         words
             .into_iter()
             .filter(|w| w.chars().all(|c| hs.contains(&c)))

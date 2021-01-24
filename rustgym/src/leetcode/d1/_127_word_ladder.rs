@@ -5,8 +5,10 @@ use std::iter::FromIterator;
 impl Solution {
     fn ladder_length(begin_word: String, end_word: String, word_list: Vec<String>) -> i32 {
         let n = begin_word.len();
-        let mut unused_set: HashSet<Vec<u8>> =
-            HashSet::from_iter(word_list.into_iter().map(|s| s.as_bytes().to_vec()));
+        let mut unused_set: HashSet<Vec<u8>> = word_list
+            .into_iter()
+            .map(|s| s.as_bytes().to_vec())
+            .collect();
         let begin_word = begin_word.as_bytes().to_vec();
         let end_word = end_word.as_bytes().to_vec();
         if !unused_set.contains(&end_word) {

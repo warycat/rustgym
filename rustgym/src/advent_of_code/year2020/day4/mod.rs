@@ -14,7 +14,7 @@ pub fn solve(reader: &mut dyn BufRead, writer: &mut dyn Write) {
         let mut set1: HashSet<String> = HashSet::new();
         let mut set2: HashSet<String> = HashSet::new();
         while let Some(line) = it.next() {
-            if line == "" {
+            if line.is_empty() {
                 break;
             } else {
                 for pair in line.split_whitespace() {
@@ -53,7 +53,7 @@ fn byr(value: &str) -> bool {
         return false;
     }
     if let Ok(year) = value.parse::<i32>() {
-        1920 <= year && year <= 2002
+        (1920..=2002).contains(&year)
     } else {
         false
     }
@@ -64,7 +64,7 @@ fn iyr(value: &str) -> bool {
         return false;
     }
     if let Ok(year) = value.parse::<i32>() {
-        2010 <= year && year <= 2020
+        (2010..=2020).contains(&year)
     } else {
         false
     }
@@ -75,7 +75,7 @@ fn eyr(value: &str) -> bool {
         return false;
     }
     if let Ok(year) = value.parse::<i32>() {
-        2020 <= year && year <= 2030
+        (2020..=2030).contains(&year)
     } else {
         false
     }
@@ -110,7 +110,7 @@ fn hcl(value: &str) -> bool {
     }
     for _ in 0..6 {
         let c = it.next().unwrap();
-        if !(c >= '0' && c <= '9' || c >= 'a' && c <= 'f') {
+        if !(('0'..='9').contains(&c) || ('a'..='f').contains(&c)) {
             return false;
         }
     }
@@ -149,7 +149,7 @@ fn pid(value: &str) -> bool {
     let mut it = value.chars();
     for _ in 0..9 {
         let c = it.next().unwrap();
-        if !(c >= '0' && c <= '9') {
+        if !('0'..='9').contains(&c) {
             return false;
         }
     }

@@ -13,7 +13,7 @@ pub fn solve(reader: &mut dyn BufRead, writer: &mut dyn Write) {
         let mut count: HashMap<char, usize> = HashMap::new();
         let mut k: usize = 0;
         while let Some(line) = it.next() {
-            if line == "" {
+            if line.is_empty() {
                 break;
             } else {
                 k += 1;

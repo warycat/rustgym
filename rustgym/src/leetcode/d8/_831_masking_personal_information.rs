@@ -6,7 +6,7 @@ impl Solution {
             let s = s.to_lowercase();
             format!("{}*****{}", &s[0..1], &s[i - 1..])
         } else {
-            let digits: String = s.chars().filter(|&c| c >= '0' && c <= '9').collect();
+            let digits: String = s.chars().filter(|&c| ('0'..='9').contains(&c)).collect();
             let n = digits.len();
             match digits.len() {
                 13 => format!("+***-***-***-{}", &digits[n - 4..]),

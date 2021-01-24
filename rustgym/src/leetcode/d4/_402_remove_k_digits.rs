@@ -19,8 +19,8 @@ impl Solution {
             k -= 1;
         }
 
-        let res = stack.into_iter().skip_while(|&c| c == '0').collect();
-        if res == "" {
+        let res: String = stack.into_iter().skip_while(|&c| c == '0').collect();
+        if res.is_empty() {
             "0".to_string()
         } else {
             res

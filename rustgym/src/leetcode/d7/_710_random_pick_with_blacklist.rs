@@ -1,7 +1,6 @@
 use rand::prelude::*;
 use std::collections::HashMap;
 use std::collections::HashSet;
-use std::iter::FromIterator;
 
 struct Solution {
     rng: ThreadRng,
@@ -16,7 +15,7 @@ impl Solution {
         let rng = thread_rng();
         blacklist.sort_unstable();
         let m = blacklist.len();
-        let set: HashSet<i32> = HashSet::from_iter(blacklist.iter().copied());
+        let set: HashSet<i32> = blacklist.iter().copied().collect();
         let mut map: HashMap<usize, usize> = HashMap::new();
         let mut j = 0;
         for i in n - m..n {

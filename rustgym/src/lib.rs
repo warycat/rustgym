@@ -102,15 +102,15 @@ extern crate rustgym_util;
 #[allow(clippy::too_many_arguments)]
 mod leetcode;
 
-#[allow(dead_code)]
 #[deny(clippy::all)]
+#[allow(dead_code)]
 #[allow(clippy::collapsible_if)]
 #[allow(clippy::needless_range_loop)]
 #[allow(clippy::too_many_arguments)]
 mod hackerrank;
 
-#[allow(dead_code)]
 #[deny(clippy::all)]
+#[allow(dead_code)]
 #[allow(clippy::collapsible_if)]
 #[allow(clippy::needless_range_loop)]
 #[allow(clippy::too_many_arguments)]
