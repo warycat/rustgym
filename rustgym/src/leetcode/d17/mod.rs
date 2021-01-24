@@ -35,3 +35,9 @@ mod _1722_minimize_hamming_distance_after_swap_operations;
 mod _1725_number_of_rectangles_that_can_form_the_largest_square;
 //
 mod _1726_tuple_with_same_product;
+//
+mod _1736_latest_time_by_replacing_hidden_digits;
+//
+mod _1737_change_minimum_characters_to_satisfy_one_of_three_conditions;
+//
+mod _1738_find_kth_largest_xor_coordinate_value;
