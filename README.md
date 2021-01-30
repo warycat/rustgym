@@ -777,15 +777,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
       </tr>
       <tr>
         <td>
-          339
-        </td>
-        <td>
-          <a href="http://rustgym.com/leetcode/339"> Nested List Weight Sum</a>
-        </td>
-        <td>Easy</td>
-      </tr>
-      <tr>
-        <td>
           342
         </td>
         <td>
@@ -1411,24 +1402,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
         </td>
         <td>
           <a href="http://rustgym.com/leetcode/661"> Image Smoother</a>
-        </td>
-        <td>Easy</td>
-      </tr>
-      <tr>
-        <td>
-          665
-        </td>
-        <td>
-          <a href="http://rustgym.com/leetcode/665"> Non-decreasing Array</a>
-        </td>
-        <td>Easy</td>
-      </tr>
-      <tr>
-        <td>
-          669
-        </td>
-        <td>
-          <a href="http://rustgym.com/leetcode/669"> Trim a Binary Search Tree</a>
         </td>
         <td>Easy</td>
       </tr>
@@ -3540,6 +3513,33 @@ All the solutions here are crafted with love and their performance beats 99% of 
       </tr>
       <tr>
         <td>
+          1732
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1732"> Find the Highest Altitude</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1736
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1736"> Latest Time by Replacing Hidden Digits</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1740
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1740"> Find Distance in a Binary Tree</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
           2
         </td>
         <td>
@@ -4863,6 +4863,15 @@ All the solutions here are crafted with love and their performance beats 99% of 
       </tr>
       <tr>
         <td>
+          291
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/291"> Word Pattern II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
           294
         </td>
         <td>
@@ -5101,6 +5110,15 @@ All the solutions here are crafted with love and their performance beats 99% of 
         </td>
         <td>
           <a href="http://rustgym.com/leetcode/338"> Counting Bits</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          339
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/339"> Nested List Weight Sum</a>
         </td>
         <td>Medium</td>
       </tr>
@@ -6636,6 +6654,15 @@ All the solutions here are crafted with love and their performance beats 99% of 
       </tr>
       <tr>
         <td>
+          665
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/665"> Non-decreasing Array</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
           666
         </td>
         <td>
@@ -6649,6 +6676,15 @@ All the solutions here are crafted with love and their performance beats 99% of 
         </td>
         <td>
           <a href="http://rustgym.com/leetcode/667"> Beautiful Arrangement II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          669
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/669"> Trim a Binary Search Tree</a>
         </td>
         <td>Medium</td>
       </tr>
@@ -8062,15 +8098,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
         </td>
         <td>
           <a href="http://rustgym.com/leetcode/986"> Interval List Intersections</a>
-        </td>
-        <td>Medium</td>
-      </tr>
-      <tr>
-        <td>
-          987
-        </td>
-        <td>
-          <a href="http://rustgym.com/leetcode/987"> Vertical Order Traversal of a Binary Tree</a>
         </td>
         <td>Medium</td>
       </tr>
@@ -11082,6 +11109,42 @@ All the solutions here are crafted with love and their performance beats 99% of 
       </tr>
       <tr>
         <td>
+          1733
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1733"> Minimum Number of People to Teach</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1734
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1734"> Decode XORed Permutation</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1737
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1737"> Change Minimum Characters to Satisfy One of Three Conditions</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1738
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1738"> Find Kth Largest XOR Coordinate Value</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
           4
         </td>
         <td>
@@ -11527,15 +11590,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
         </td>
         <td>
           <a href="http://rustgym.com/leetcode/282"> Expression Add Operators</a>
-        </td>
-        <td>Hard</td>
-      </tr>
-      <tr>
-        <td>
-          291
-        </td>
-        <td>
-          <a href="http://rustgym.com/leetcode/291"> Word Pattern II</a>
         </td>
         <td>Hard</td>
       </tr>
@@ -12882,6 +12936,15 @@ All the solutions here are crafted with love and their performance beats 99% of 
       </tr>
       <tr>
         <td>
+          987
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/987"> Vertical Order Traversal of a Binary Tree</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
           992
         </td>
         <td>
@@ -14200,6 +14263,24 @@ All the solutions here are crafted with love and their performance beats 99% of 
         </td>
         <td>
           <a href="http://rustgym.com/leetcode/1728"> Cat and Mouse II</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1735
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1735"> Count Ways to Make Array With Product</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1739
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1739"> Building Boxes</a>
         </td>
         <td>Hard</td>
       </tr></tbody>
