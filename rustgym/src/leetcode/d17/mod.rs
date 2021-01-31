@@ -41,3 +41,11 @@ mod _1736_latest_time_by_replacing_hidden_digits;
 mod _1737_change_minimum_characters_to_satisfy_one_of_three_conditions;
 //
 mod _1738_find_kth_largest_xor_coordinate_value;
+//
+mod _1742_maximum_number_of_balls_in_a_box;
+//
+mod _1743_restore_the_array_from_adjacent_pairs;
+//
+mod _1744_can_you_eat_your_favorite_candy_on_your_favorite_day;
+//
+mod _1745_palindrome_partitioning_4;
