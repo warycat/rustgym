@@ -3531,15 +3531,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
       </tr>
       <tr>
         <td>
-          1740
-        </td>
-        <td>
-          <a href="http://rustgym.com/leetcode/1740"> Find Distance in a Binary Tree</a>
-        </td>
-        <td>Easy</td>
-      </tr>
-      <tr>
-        <td>
           2
         </td>
         <td>
@@ -11140,6 +11131,15 @@ All the solutions here are crafted with love and their performance beats 99% of 
         </td>
         <td>
           <a href="http://rustgym.com/leetcode/1738"> Find Kth Largest XOR Coordinate Value</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1740
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1740"> Find Distance in a Binary Tree</a>
         </td>
         <td>Medium</td>
       </tr>
