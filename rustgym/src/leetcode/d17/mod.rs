@@ -36,6 +36,10 @@ mod _1725_number_of_rectangles_that_can_form_the_largest_square;
 //
 mod _1726_tuple_with_same_product;
 //
+mod _1730_shortest_path_to_get_food;
+//
+mod _1732_find_the_highest_altitude;
+//
 mod _1736_latest_time_by_replacing_hidden_digits;
 //
 mod _1737_change_minimum_characters_to_satisfy_one_of_three_conditions;
