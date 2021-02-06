@@ -42,6 +42,8 @@ mod _1732_find_the_highest_altitude;
 //
 mod _1733_minimum_number_of_people_to_teach;
 //
+mod _1734_decode_xored_permutation;
+//
 mod _1736_latest_time_by_replacing_hidden_digits;
 //
 mod _1737_change_minimum_characters_to_satisfy_one_of_three_conditions;
@@ -57,3 +59,5 @@ mod _1743_restore_the_array_from_adjacent_pairs;
 mod _1744_can_you_eat_your_favorite_candy_on_your_favorite_day;
 //
 mod _1745_palindrome_partitioning_4;
+//
+mod _1746_maximum_subarray_sum_after_one_operation;
