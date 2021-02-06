@@ -40,11 +40,15 @@ mod _1730_shortest_path_to_get_food;
 //
 mod _1732_find_the_highest_altitude;
 //
+mod _1733_minimum_number_of_people_to_teach;
+//
 mod _1736_latest_time_by_replacing_hidden_digits;
 //
 mod _1737_change_minimum_characters_to_satisfy_one_of_three_conditions;
 //
 mod _1738_find_kth_largest_xor_coordinate_value;
+//
+mod _1740_find_distance_in_a_binary_tree;
 //
 mod _1742_maximum_number_of_balls_in_a_box;
 //
