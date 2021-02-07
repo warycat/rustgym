@@ -1,4 +1,5 @@
-use super::AppData;
+use crate::session_data::SessionData;
+use crate::AppData;
 use actix_web::error::ErrorInternalServerError;
 use actix_web::web::Data;
 use actix_web::Error;
@@ -19,8 +20,8 @@ pub struct AppContext {
 #[template(path = "home.j2")]
 pub struct HomeContext {
     pub app: AppContext,
+    pub session: SessionData,
     pub path: String,
-    pub name: String,
 }
 
 impl AppContext {
@@ -42,6 +43,7 @@ pub struct LeetcodeIndexRow {
 #[template(path = "leetcode-index.j2")]
 pub struct LeetcodeIndexContext {
     pub app: AppContext,
+    pub session: SessionData,
     pub path: String,
     pub rows: Vec<LeetcodeIndexRow>,
 }
@@ -58,6 +60,7 @@ pub struct AdventOfCodeIndexRow {
 #[template(path = "adventofcode-index.j2")]
 pub struct AdventOfCodeIndexContext {
     pub app: AppContext,
+    pub session: SessionData,
     pub path: String,
     pub rows: Vec<AdventOfCodeIndexRow>,
 }
@@ -66,6 +69,7 @@ pub struct AdventOfCodeIndexContext {
 #[template(path = "leetcode-detail.j2")]
 pub struct LeetcodeDetailContext {
     pub app: AppContext,
+    pub session: SessionData,
     pub path: String,
     pub question: LeetcodeQuestion,
     pub description: LeetcodeDescription,
@@ -76,6 +80,7 @@ pub struct LeetcodeDetailContext {
 #[template(path = "adventofcode-detail.j2")]
 pub struct AdventOfCodeDetailContext {
     pub app: AppContext,
+    pub session: SessionData,
     pub path: String,
     pub description: AdventOfCodeDescription,
     pub solution: AdventOfCodeSolution,

@@ -438,9 +438,9 @@ dependencies = [
 
 [[package]]
 name = "anyhow"
-version = "1.0.35"
+version = "1.0.38"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "2c0df63cb2955042487fad3aefd2c6e3ae7389ac5dc1beb28921de0b69f779d4"
+checksum = "afddf7f520a80dbf76e6f50a35bca42a2331ef227a28b3b6dc5c2e2338d114b1"
 
 [[package]]
 name = "arrayvec"
@@ -2232,6 +2232,8 @@ version = "0.1.0"
 dependencies = [
  "actix",
  "actix-files",
+ "actix-http",
+ "actix-service",
  "actix-session",
  "actix-web",
  "actix-web-actors",
@@ -2918,6 +2920,10 @@ name = "uuid"
 version = "0.8.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "9fde2f6a4bea1d6e007c4ad38c6839fa71cbb63b6dbf5b595aa38dc9b1093c11"
+dependencies = [
+ "rand 0.7.3",
+ "serde",
+]
 
 [[package]]
 name = "v_escape"

@@ -24,7 +24,7 @@ web-sys = { version = "0.3.46", features = [
     "MessageEvent",
     "ProgressEvent",
     "WebSocket",
-    "Location"
+    "Location",
 ] }
 serde_json = "1.0.61"
 

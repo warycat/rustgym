@@ -3,16 +3,13 @@ extern crate diesel;
 #[macro_use]
 extern crate derive_new;
 
-mod adventofcode_detail;
-mod adventofcode_index;
 mod app_data;
 mod client;
 mod context;
 mod db;
-mod home;
-mod leetcode_detail;
-mod leetcode_index;
 mod robots;
+mod routes;
+mod session_data;
 mod sitemap;
 mod websocket;
 
@@ -40,11 +37,11 @@ async fn main() -> std::io::Result<()> {
             .wrap(CookieSession::signed(&[0; 32]).secure(false))
             .data(AppData::new(tag.clone(), title.clone()))
             .data(pool.clone())
-            .service(home::home)
-            .service(leetcode_index::leetcode_index)
-            .service(adventofcode_index::adventofcode_index)
-            .service(leetcode_detail::leetcode_detail)
-            .service(adventofcode_detail::adventofcode_detail)
+            .service(routes::home::home)
+            .service(routes::leetcode_index::leetcode_index)
+            .service(routes::adventofcode_index::adventofcode_index)
+            .service(routes::leetcode_detail::leetcode_detail)
+            .service(routes::adventofcode_detail::adventofcode_detail)
             .service(robots::robots_txt)
             .service(sitemap::sitemap_txt)
             .service(client::client_files)

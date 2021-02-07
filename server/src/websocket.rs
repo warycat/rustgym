@@ -1,6 +1,8 @@
 use std::time::{Duration, Instant};
 
+use crate::session_data::update_session;
 use actix::prelude::*;
+use actix_session::Session;
 use actix_web::web;
 use actix_web::Error;
 use actix_web::HttpRequest;
@@ -13,7 +15,13 @@ const HEARTBEAT_INTERVAL: Duration = Duration::from_secs(5);
 const CLIENT_TIMEOUT: Duration = Duration::from_secs(10);
 
 /// do websocket handshake and start `MyWebSocket` actor
-pub async fn ws_index(r: HttpRequest, stream: web::Payload) -> Result<HttpResponse, Error> {
+pub async fn ws_index(
+    r: HttpRequest,
+    stream: web::Payload,
+    session: Session,
+) -> Result<HttpResponse, Error> {
+    let session_data = update_session(session)?;
+    info!("{:?}", session_data);
     info!("{:?}", r);
     let res = ws::start(MyWebSocket::new(), &r, stream);
     info!("{:?}", res);
