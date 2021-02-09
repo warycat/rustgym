@@ -30,12 +30,13 @@ async fn main() -> std::io::Result<()> {
     let pool = db::init_pool(DATABASE_URL).expect("Failed to create pool");
     let tag = env::var("TAG").unwrap_or_default();
     let title = "RUST GYM".to_string();
+    let app_data = AppData::new(tag.clone(), title.clone());
     info!("RUST GYM Server {}", tag);
     HttpServer::new(move || {
         App::new()
             .wrap(Logger::default())
             .wrap(CookieSession::signed(&[0; 32]).secure(false))
-            .data(AppData::new(tag.clone(), title.clone()))
+            .data(app_data.clone())
             .data(pool.clone())
             .service(routes::home::home)
             .service(routes::leetcode_index::leetcode_index)

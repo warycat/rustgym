@@ -13,13 +13,12 @@ pub struct SessionData {
 }
 
 pub fn update_session(session: Session) -> Result<SessionData, Error> {
-    let count = if let Some(count) = session.get::<i32>("counter")? {
-        session.set("counter", count + 1)?;
+    let count = if let Some(count) = session.get::<i32>("count")? {
         count + 1
     } else {
-        session.set("counter", 1)?;
         1
     };
+    session.set("count", count)?;
 
     let name = if let Some(name) = session.get::<String>("name")? {
         name
@@ -27,15 +26,16 @@ pub fn update_session(session: Session) -> Result<SessionData, Error> {
         let n = CHARACTERS.len();
         let k = thread_rng().gen::<usize>();
         let name = CHARACTERS[k % n];
-        session.set("name", name.to_string())?;
         name.to_string()
     };
+    session.set("name", name.to_string())?;
 
     let uuid = if let Some(uuid) = session.get::<Uuid>("uuid")? {
         uuid
     } else {
         Uuid::new_v4()
     };
+    session.set("uuid", uuid)?;
 
     let session_data = SessionData { count, name, uuid };
     Ok(session_data)

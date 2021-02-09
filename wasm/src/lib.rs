@@ -1,5 +1,5 @@
 mod utils;
-use rustgym_message::Message;
+use rustgym_msg::Msg;
 use wasm_bindgen::prelude::*;
 use wasm_bindgen::JsCast;
 use web_sys::{ErrorEvent, Location, MessageEvent, WebSocket, Window};
@@ -42,27 +42,10 @@ pub fn start_websocket() -> Result<(), JsValue> {
     ws.set_binary_type(web_sys::BinaryType::Arraybuffer);
     let cloned_ws = ws.clone();
     let onmessage_callback = Closure::wrap(Box::new(move |e: MessageEvent| {
-        if let Ok(abuf) = e.data().dyn_into::<js_sys::ArrayBuffer>() {
-            console_log!("message event, received arraybuffer: {:?}", abuf);
-            let array = js_sys::Uint8Array::new(&abuf);
-            let len = array.byte_length() as usize;
-            console_log!("Arraybuffer received {}bytes: {:?}", len, array.to_vec());
-            cloned_ws.set_binary_type(web_sys::BinaryType::Blob);
-        } else if let Ok(blob) = e.data().dyn_into::<web_sys::Blob>() {
-            console_log!("message event, received blob: {:?}", blob);
-            let fr = web_sys::FileReader::new().unwrap();
-            let fr_c = fr.clone();
-            let onloadend_cb = Closure::wrap(Box::new(move |_e: web_sys::ProgressEvent| {
-                let array = js_sys::Uint8Array::new(&fr_c.result().unwrap());
-                let len = array.byte_length() as usize;
-                console_log!("Blob received {}bytes: {:?}", len, array.to_vec());
-            })
-                as Box<dyn FnMut(web_sys::ProgressEvent)>);
-            fr.set_onloadend(Some(onloadend_cb.as_ref().unchecked_ref()));
-            fr.read_as_array_buffer(&blob).expect("blob not readable");
-            onloadend_cb.forget();
-        } else if let Ok(txt) = e.data().dyn_into::<js_sys::JsString>() {
-            console_log!("message event, received Text: {:?}", txt);
+        if let Ok(txt) = e.data().dyn_into::<js_sys::JsString>() {
+            let json: String = txt.into();
+            let msg: Msg = serde_json::from_str(&json).expect("json");
+            console_log!("message event, received Text: {:?}", msg);
         } else {
             console_log!("message event, received Unknown: {:?}", e.data());
         }
@@ -79,19 +62,7 @@ pub fn start_websocket() -> Result<(), JsValue> {
 
     let cloned_ws = ws.clone();
     let onopen_callback = Closure::wrap(Box::new(move |_| {
-        match cloned_ws.send_with_str("open") {
-            Ok(x) => console_log!("message successfully sent {:?}", x),
-            Err(err) => console_log!("error sending message: {:?}", err),
-        };
-        let msg = serde_json::to_string(&Message::Ping).expect("ping");
-        match cloned_ws.send_with_str(&msg) {
-            Ok(x) => console_log!("message successfully sent {:?}", x),
-            Err(err) => console_log!("error sending message: {:?}", err),
-        };
-        let msg = serde_json::to_string(&Message::Login {
-            name: "larry".to_string(),
-        })
-        .expect("login");
+        let msg = serde_json::to_string(&Msg::ReqRegistorClient).expect("registor");
         match cloned_ws.send_with_str(&msg) {
             Ok(x) => console_log!("message successfully sent {:?}", x),
             Err(err) => console_log!("error sending message: {:?}", err),

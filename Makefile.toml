@@ -28,7 +28,7 @@ script = "tar -czvf pkg.tar.gz pkg"
 
 [tasks.watch-wasm]
 run_task = { name = ["wasm-pack"] }
-watch = { postpone = true, watch = ["./wasm/", "./message/"] }
+watch = { postpone = true, watch = ["./wasm/", "./msg/"] }
 
 [tasks.deploy]
 script = [
@@ -40,7 +40,7 @@ script = [
 dependencies = ["readme", "mac", "copy-server", "wasm-pack", "archive-wasm"]
 
 [tasks.watch-server]
-script = "cargo watch -w server -w message -x 'run --bin rustgym-server'"
+script = "cargo watch -w server -w msg -x 'run --bin rustgym-server'"
 dependencies = ["wasm-pack"]
 
 [tasks.dev]
