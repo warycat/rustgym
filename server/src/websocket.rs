@@ -6,14 +6,13 @@ use actix_web::Error;
 use actix_web::HttpRequest;
 use actix_web::HttpResponse;
 use actix_web_actors::ws;
+use log::debug;
 use log::info;
+use rustgym_consts::*;
 use rustgym_msg::Msg;
 use serde::{Deserialize, Serialize};
-use std::time::{Duration, Instant};
+use std::time::Instant;
 use uuid::Uuid;
-
-const HEARTBEAT_INTERVAL: Duration = Duration::from_secs(5);
-const CLIENT_TIMEOUT: Duration = Duration::from_secs(10);
 
 #[derive(Message, Debug, Deserialize, Serialize)]
 #[rtype(result = "()")]
@@ -23,7 +22,6 @@ struct Envelope {
     msg: Msg,
 }
 
-/// do websocket handshake and start `MyWebSocket` actor
 pub async fn ws_index(
     r: HttpRequest,
     stream: web::Payload,
@@ -31,10 +29,7 @@ pub async fn ws_index(
 ) -> Result<HttpResponse, Error> {
     let session_data = update_session(session)?;
     let session_uuid = session_data.uuid;
-    info!("{:?}", r);
-    let res = ws::start(SocketClient::new(session_uuid), &r, stream);
-    info!("{:?}", res);
-    res
+    ws::start(SocketClient::new(session_uuid), &r, stream)
 }
 
 struct SocketClient {
@@ -61,8 +56,7 @@ impl SocketClient {
                 ctx.stop();
                 return;
             }
-
-            ctx.ping(b"");
+            ctx.ping(act.uuid.as_bytes());
         });
     }
 }
@@ -70,17 +64,14 @@ impl SocketClient {
 impl Actor for SocketClient {
     type Context = ws::WebsocketContext<Self>;
 
-    /// Method is called on actor start. We start the heartbeat process here.
     fn started(&mut self, ctx: &mut Self::Context) {
         self.hb(ctx);
     }
 }
 
-/// Handler for `ws::Message`
 impl StreamHandler<Result<ws::Message, ws::ProtocolError>> for SocketClient {
     fn handle(&mut self, msg: Result<ws::Message, ws::ProtocolError>, ctx: &mut Self::Context) {
-        // process websocket messages
-        info!("WS: {:?}", msg);
+        debug!("WS: {:?}", msg);
         match msg {
             Ok(ws::Message::Ping(msg)) => {
                 self.hb = Instant::now();
@@ -96,8 +87,9 @@ impl StreamHandler<Result<ws::Message, ws::ProtocolError>> for SocketClient {
                         session_uuid: self.session_uuid,
                         msg,
                     };
-                    println!("{:?}", envelope);
+                    info!("{:?}", envelope);
                 } else {
+                    info!("{:?}", text);
                     ctx.text(text)
                 }
             }

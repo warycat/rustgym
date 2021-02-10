@@ -40,7 +40,6 @@ pub fn start_websocket() -> Result<(), JsValue> {
     console_log!("{}", wsurl);
     let ws = WebSocket::new(&wsurl)?;
     ws.set_binary_type(web_sys::BinaryType::Arraybuffer);
-    let cloned_ws = ws.clone();
     let onmessage_callback = Closure::wrap(Box::new(move |e: MessageEvent| {
         if let Ok(txt) = e.data().dyn_into::<js_sys::JsString>() {
             let json: String = txt.into();

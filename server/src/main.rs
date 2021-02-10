@@ -7,10 +7,8 @@ mod app_data;
 mod client;
 mod context;
 mod db;
-mod robots;
 mod routes;
 mod session_data;
-mod sitemap;
 mod websocket;
 
 use actix_session::CookieSession;
@@ -43,8 +41,8 @@ async fn main() -> std::io::Result<()> {
             .service(routes::adventofcode_index::adventofcode_index)
             .service(routes::leetcode_detail::leetcode_detail)
             .service(routes::adventofcode_detail::adventofcode_detail)
-            .service(robots::robots_txt)
-            .service(sitemap::sitemap_txt)
+            .service(routes::robots::robots_txt)
+            .service(routes::sitemap::sitemap_txt)
             .service(client::client_files)
             .service(web::resource("/ws/").to(websocket::ws_index))
     })
