@@ -6,17 +6,23 @@ edition = "2018"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [dependencies]
+rustgym-schema = { path = "../schema" }
+rustgym-consts = { path = "../consts" }
+rustgym-characters = { path = "../characters" }
+rustgym-msg = { path = "../msg" }
+actix = "0.10.0"
 actix-web = "3"
+actix-web-actors = "3.0.0"
+actix-files = "0.5.0"
+serde_json = "1.0.61"
+actix-service = "1.0.6"
+actix-session = "0.4.0"
 diesel = { version = "1.4.5", features = [
     "sqlite",
     "r2d2",
     "chrono",
     "uuidv07"
 ] }
-rustgym-schema = { path = "../schema" }
-rustgym-consts = { path = "../consts" }
-rustgym-characters = { path = "../characters" }
-rustgym-msg = { path = "../msg" }
 r2d2 = "0.8.9"
 serde = "1.0.118"
 chrono = "0.4.19"
@@ -27,14 +33,7 @@ lazy_static = "1.4.0"
 askama = "0.10.5"
 derive-new = "0.5.8"
 rand = "0.8.1"
-actix-session = "0.4.0"
 log = "0.4.13"
 env_logger = "0.8.2"
-actix-files = "0.5.0"
-actix = "0.10.0"
-actix-web-actors = "3.0.0"
-serde_json = "1.0.61"
-actix-service = "1.0.6"
-actix-http = "2.2.0"
 uuid = { version = "0.8", features = ["serde", "v4"] }
 fluvio = "0.4.1"

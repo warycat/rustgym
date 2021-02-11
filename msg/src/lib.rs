@@ -1,18 +1,19 @@
 use serde::{Deserialize, Serialize};
+use std::collections::HashSet;
 use uuid::Uuid;
 
 #[derive(Serialize, Deserialize, Debug)]
 pub enum Msg {
     Ping,
     Pong,
-    ReqRegistorClient,
-    ResRegistorClient {
-        client_uuid: Uuid,
-        session_uuid: Uuid,
-        name: String,
-    },
-    ReqUnRegistorClient {
-        client_uuid: Uuid,
-        session_uuid: Uuid,
-    },
+    RegistorClient(ClientInfo),
+    UnRegistorClient(ClientInfo),
+    SessionClients(HashSet<Uuid>),
+}
+
+#[derive(Serialize, Deserialize, Debug, Clone)]
+pub struct ClientInfo {
+    pub session_uuid: Uuid,
+    pub client_uuid: Uuid,
+    pub name: String,
 }

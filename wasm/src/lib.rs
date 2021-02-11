@@ -59,14 +59,7 @@ pub fn start_websocket() -> Result<(), JsValue> {
     ws.set_onerror(Some(onerror_callback.as_ref().unchecked_ref()));
     onerror_callback.forget();
 
-    let cloned_ws = ws.clone();
-    let onopen_callback = Closure::wrap(Box::new(move |_| {
-        let msg = serde_json::to_string(&Msg::ReqRegistorClient).expect("registor");
-        match cloned_ws.send_with_str(&msg) {
-            Ok(x) => console_log!("message successfully sent {:?}", x),
-            Err(err) => console_log!("error sending message: {:?}", err),
-        };
-    }) as Box<dyn FnMut(JsValue)>);
+    let onopen_callback = Closure::wrap(Box::new(move |_| {}) as Box<dyn FnMut(JsValue)>);
     ws.set_onopen(Some(onopen_callback.as_ref().unchecked_ref()));
     onopen_callback.forget();
 

@@ -2935,7 +2935,6 @@ version = "0.1.0"
 dependencies = [
  "actix",
  "actix-files",
- "actix-http",
  "actix-service",
  "actix-session",
  "actix-web",
