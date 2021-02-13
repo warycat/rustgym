@@ -11235,6 +11235,15 @@ All the solutions here are crafted with love and their performance beats 99% of 
       </tr>
       <tr>
         <td>
+          1756
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1756"> Design Most Recently Used Queue</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
           4
         </td>
         <td>
