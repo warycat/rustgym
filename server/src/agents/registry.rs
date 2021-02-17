@@ -8,7 +8,7 @@ use std::collections::HashMap;
 use std::collections::HashSet;
 use uuid::Uuid;
 
-#[derive(Debug, Clone)]
+#[derive(Clone)]
 pub struct RegistryAgent {
     all_session_clients: HashMap<Uuid, HashSet<Uuid>>,
     all_clients: HashMap<Uuid, Addr<SocketClient>>,
@@ -18,29 +18,35 @@ impl RegistryAgent {
     pub fn new() -> Self {
         let all_session_clients = HashMap::new();
         let all_clients = HashMap::new();
+
         RegistryAgent {
             all_session_clients,
             all_clients,
         }
     }
-    fn update_session_clients(&self, session_uuid: Uuid, session_clients: HashSet<Uuid>) {
-        for &client_uuid in &session_clients {
-            if let Some(client_addr) = self.all_clients.get(&client_uuid) {
-                let client_addr_clone = client_addr.clone();
-                let msg = Msg::SessionClients(session_clients.clone());
-                let envelope = Envelope {
-                    session_uuid,
-                    client_uuid,
-                    msg,
-                };
-                let package = Package {
-                    client_addr: client_addr_clone,
-                    envelope,
-                };
-                client_addr.do_send(package);
-            } else {
-                error!("{} recipient not found", client_uuid)
+
+    fn update_session_clients(&self, session_uuid: Uuid, msg: Msg) {
+        if let Some(session_clients) = self.all_session_clients.get(&session_uuid) {
+            for &client_uuid in session_clients {
+                if let Some(client_addr) = self.all_clients.get(&client_uuid) {
+                    let msg = msg.clone();
+                    let client_addr_clone = client_addr.clone();
+                    let envelope = Envelope {
+                        session_uuid,
+                        client_uuid,
+                        msg,
+                    };
+                    let package = Package {
+                        client_addr: client_addr_clone,
+                        envelope,
+                    };
+                    client_addr.do_send(package);
+                } else {
+                    error!("{} recipient not found", client_uuid)
+                }
             }
+        } else {
+            error!("{} not found", session_uuid);
         }
     }
 }
@@ -52,7 +58,7 @@ impl Actor for RegistryAgent {
 impl Handler<Package> for RegistryAgent {
     type Result = ();
 
-    fn handle(&mut self, package: Package, _: &mut Context<Self>) {
+    fn handle(&mut self, package: Package, _ctx: &mut Context<Self>) {
         let Package {
             client_addr,
             envelope,
@@ -75,7 +81,8 @@ impl Handler<Package> for RegistryAgent {
                     .all_session_clients
                     .get(&session_uuid)
                     .expect("session clients");
-                self.update_session_clients(session_uuid, session_clients.clone());
+                let msg = Msg::SessionClients(session_clients.clone());
+                self.update_session_clients(session_uuid, msg);
             }
             UnRegistorClient(_) => {
                 self.all_session_clients
@@ -87,7 +94,8 @@ impl Handler<Package> for RegistryAgent {
                     .all_session_clients
                     .get(&session_uuid)
                     .expect("session clients");
-                self.update_session_clients(session_uuid, session_clients.clone());
+                let msg = Msg::SessionClients(session_clients.clone());
+                self.update_session_clients(session_uuid, msg);
             }
             _ => {}
         }

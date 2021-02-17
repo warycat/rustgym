@@ -33,7 +33,7 @@ async fn main() -> std::io::Result<()> {
     let app_data = AppData::new(tag.clone(), title.clone());
 
     // Start chat server actor
-    let registry_agent = RegistryAgent::new().start();
+    let registry_addr = RegistryAgent::new().start();
     info!("RUST GYM Server {}", tag);
     HttpServer::new(move || {
         App::new()
@@ -41,7 +41,7 @@ async fn main() -> std::io::Result<()> {
             .wrap(CookieSession::signed(&[0; 32]).secure(false))
             .data(app_data.clone())
             .data(pool.clone())
-            .data(registry_agent.clone())
+            .data(registry_addr.clone())
             .service(routes::home::home)
             .service(routes::leetcode_index::leetcode_index)
             .service(routes::adventofcode_index::adventofcode_index)

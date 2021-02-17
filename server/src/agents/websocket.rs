@@ -33,14 +33,11 @@ pub async fn ws_index(
         session_uuid,
         name,
     };
-    ws::start(
-        SocketClient::new(client_info, registry_addr.get_ref().clone()),
-        &r,
-        stream,
-    )
+    let socket_client = SocketClient::new(client_info, registry_addr.get_ref().clone());
+    ws::start(socket_client, &r, stream)
 }
 
-#[derive(Debug, Clone)]
+#[derive(Clone)]
 pub struct SocketClient {
     hb: Instant,
     client_info: ClientInfo,
@@ -97,6 +94,7 @@ impl Actor for SocketClient {
         let envelope = self.make_envelope(msg);
         let package = self.make_package(ctx, envelope);
         self.registry_addr.do_send(package);
+        // ctx.add_message_stream();
         self.hb(ctx);
     }
 
