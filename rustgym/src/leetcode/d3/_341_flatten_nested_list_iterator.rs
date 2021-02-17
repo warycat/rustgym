@@ -7,13 +7,13 @@ struct NestedIterator {
 }
 
 trait ToVec {
-    fn to_vec(self) -> Vec<i32>;
+    fn to_vec(&self) -> Vec<i32>;
 }
 
 impl ToVec for NestedInteger {
-    fn to_vec(self) -> Vec<i32> {
+    fn to_vec(&self) -> Vec<i32> {
         match self {
-            NestedInteger::Int(x) => vec![x],
+            NestedInteger::Int(x) => vec![*x],
             NestedInteger::List(v) => {
                 let mut res = vec![];
                 for x in v {
