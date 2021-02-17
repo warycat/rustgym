@@ -2091,15 +2091,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
       </tr>
       <tr>
         <td>
-          970
-        </td>
-        <td>
-          <a href="http://rustgym.com/leetcode/970"> Powerful Integers</a>
-        </td>
-        <td>Easy</td>
-      </tr>
-      <tr>
-        <td>
           976
         </td>
         <td>
@@ -3526,6 +3517,33 @@ All the solutions here are crafted with love and their performance beats 99% of 
         </td>
         <td>
           <a href="http://rustgym.com/leetcode/1736"> Latest Time by Replacing Hidden Digits</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1742
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1742"> Maximum Number of Balls in a Box</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1748
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1748"> Sum of Unique Elements</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1752
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1752"> Check if Array Is Sorted and Rotated</a>
         </td>
         <td>Easy</td>
       </tr>
@@ -8013,6 +8031,15 @@ All the solutions here are crafted with love and their performance beats 99% of 
       </tr>
       <tr>
         <td>
+          970
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/970"> Powerful Integers</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
           971
         </td>
         <td>
@@ -11140,6 +11167,78 @@ All the solutions here are crafted with love and their performance beats 99% of 
         </td>
         <td>
           <a href="http://rustgym.com/leetcode/1740"> Find Distance in a Binary Tree</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1743
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1743"> Restore the Array From Adjacent Pairs</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1744
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1744"> Can You Eat Your Favorite Candy on Your Favorite Day?</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1746
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1746"> Maximum Subarray Sum After One Operation</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1749
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1749"> Maximum Absolute Sum of Any Subarray</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1750
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1750"> Minimum Length of String After Deleting Similar Ends</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1753
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1753"> Maximum Score From Removing Stones</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1754
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1754"> Largest Merge Of Two Strings</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1756
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1756"> Design Most Recently Used Queue</a>
         </td>
         <td>Medium</td>
       </tr>
@@ -14281,6 +14380,33 @@ All the solutions here are crafted with love and their performance beats 99% of 
         </td>
         <td>
           <a href="http://rustgym.com/leetcode/1739"> Building Boxes</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1745
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1745"> Palindrome Partitioning IV</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1751
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1751"> Maximum Number of Events That Can Be Attended II</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1755
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1755"> Closest Subsequence Sum</a>
         </td>
         <td>Hard</td>
       </tr></tbody>
