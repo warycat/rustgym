@@ -10,7 +10,7 @@ impl Solution {
             for _ in 0..k {
                 s += &word;
             }
-            if sequence.find(&s).is_some() {
+            if sequence.contains(&s) {
                 break;
             }
             k -= 1;

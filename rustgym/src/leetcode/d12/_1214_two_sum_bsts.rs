@@ -48,20 +48,16 @@ impl TreeIter {
 impl Iterator for TreeIter {
     type Item = i32;
     fn next(&mut self) -> Option<Self::Item> {
-        if let Some(top) = self.stack.pop() {
-            if let Some(node) = top {
-                let val = node.borrow().val;
-                if self.forward {
-                    let right = node.borrow_mut().right.take();
-                    self.stack.append(&mut right.all_left());
-                } else {
-                    let left = node.borrow_mut().left.take();
-                    self.stack.append(&mut left.all_right());
-                }
-                Some(val)
+        if let Some(Some(node)) = self.stack.pop() {
+            let val = node.borrow().val;
+            if self.forward {
+                let right = node.borrow_mut().right.take();
+                self.stack.append(&mut right.all_left());
             } else {
-                None
+                let left = node.borrow_mut().left.take();
+                self.stack.append(&mut left.all_right());
             }
+            Some(val)
         } else {
             None
         }

@@ -9,7 +9,7 @@ impl Solution {
         }
         t += &s;
         t += &s;
-        t[1..2 * n - 1].find(&s).is_some()
+        t[1..2 * n - 1].contains(&s)
     }
 }
 
