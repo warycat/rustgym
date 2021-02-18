@@ -61,3 +61,9 @@ mod _1744_can_you_eat_your_favorite_candy_on_your_favorite_day;
 mod _1745_palindrome_partitioning_4;
 //
 mod _1746_maximum_subarray_sum_after_one_operation;
+//
+mod _1748_sum_of_unique_elements;
+//
+mod _1752_check_if_array_is_sorted_and_rotated;
+//
+mod _1758_minimum_changes_to_make_alternating_binary_string;
