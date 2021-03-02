@@ -67,3 +67,7 @@ mod _1748_sum_of_unique_elements;
 mod _1752_check_if_array_is_sorted_and_rotated;
 //
 mod _1758_minimum_changes_to_make_alternating_binary_string;
+//
+mod _1769_minimum_number_of_operations_to_move_all_balls_to_each_box;
+//
+mod _1773_count_items_matching_a_rule;
