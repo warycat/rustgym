@@ -1,9 +1,12 @@
 #!/bin/bash
 TAG=v0.2.4
-VM_NAME=rustgym-10
+VM_NAME=rustgym-16
 SERVER_NAME=rustgym.com
 WORK_DIR=/root
 EMAIL=larry.fantasy@gmail.com
+RUSTGYM_DOWNLOAD=https://github.com/warycat/rustgym/releases/download
+SONIC_DOWNLOAD=https://github.com/valeriansaliou/sonic/releases/download
+SONIC_TAG=v1.3.0
 
 HTTP_UPGRADE='$http_upgrade'
 HOST='$host'
@@ -18,7 +21,33 @@ gcloud compute instances create $VM_NAME \
     --tags http-server,https-server \
     --metadata startup-script="#! /bin/bash
 apt update
-apt -y install nginx sqlite3 certbot python-certbot-nginx
+apt -y install nginx sqlite3 certbot python-certbot-nginx telnet
+cd $WORK_DIR
+
+cat <<EOF > certbot.sh
+#!/bin/bash
+certbot --nginx --redirect --non-interactive --agree-tos -m $EMAIL -d $SERVER_NAME
+EOF
+chmod u+x certbot.sh
+
+curl -LJO $SONIC_DOWNLOAD/$SONIC_TAG/$SONIC_TAG-x86_64.tar.gz
+tar -xzf $SONIC_TAG-x86_64.tar.gz
+mv sonic/sonic sonic-server
+mv sonic/config.cfg .
+rm $SONIC_TAG-x86_64.tar.gz
+rmdir sonic
+mkdir -p data/store/kv
+mkdir -p data/store/fst
+./sonic-server >> sonic.log &>> sonic.error.log &
+
+curl -LJO $RUSTGYM_DOWNLOAD/$TAG/pkg.tar.gz
+tar -xzf pkg.tar.gz
+rm pkg.tar.gz
+curl -LJO $RUSTGYM_DOWNLOAD/$TAG/rustgym.sqlite
+curl -LJO $RUSTGYM_DOWNLOAD/$TAG/rustgym-server
+chmod u+x rustgym-server
+TAG=$TAG ./rustgym-server >> rustgym.log &>> rustgym.error.log &
+
 cat <<\EOF > /etc/nginx/sites-available/rustgym-nginx.cfg
 server {
     listen 80 default_server;
@@ -35,17 +64,5 @@ server {
 EOF
 rm /etc/nginx/sites-enabled/default
 ln -s /etc/nginx/sites-available/rustgym-nginx.cfg /etc/nginx/sites-enabled/default
-cd $WORK_DIR
-cat <<EOF > certbot.sh
-#!/bin/bash
-certbot --nginx --redirect --non-interactive --agree-tos -m $EMAIL -d $SERVER_NAME
-EOF
-chmod u+x certbot.sh
-curl -LJO https://github.com/warycat/rustgym/releases/download/$TAG/rustgym.sqlite --output rustgym.sqlite
-curl -LJO https://github.com/warycat/rustgym/releases/download/$TAG/rustgym-server --output rustgym-server
-curl -LJO https://github.com/warycat/rustgym/releases/download/$TAG/pkg.tar.gz --output pkg.tar.gz
-chmod u+x rustgym-server
-tar -xzf pkg.tar.gz
-TAG=$TAG ./rustgym-server >> rustgym.log &>> rustgym.error.log &
 systemctl restart nginx
 "
