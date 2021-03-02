@@ -28,8 +28,6 @@ impl Solution {
             }
         }
         let mut res = vec![0; n];
-        dbg!(&left);
-        dbg!(&right);
         for i in 0..n {
             res[i] = left[i] + right[i];
         }
