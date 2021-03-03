@@ -15,3 +15,5 @@ pub const ADVENTOFCODE_DESC: &str = "rustgym/desc/advent_of_code";
 pub const DATABASE_URL: &str = "rustgym.sqlite";
 pub const HEARTBEAT_INTERVAL: Duration = Duration::from_secs(5);
 pub const CLIENT_TIMEOUT: Duration = Duration::from_secs(10);
+pub const SONIC_URL: &str = "localhost:1491";
+pub const SONIC_PASS: &str = "SecretPassword";

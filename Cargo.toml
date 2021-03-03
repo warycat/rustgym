@@ -8,5 +8,6 @@ members = [
     "consts",
     "characters",
     "wasm",
-    "msg"
+    "msg",
+    "ingest"
 ]

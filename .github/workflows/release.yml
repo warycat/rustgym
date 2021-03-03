@@ -3,7 +3,7 @@ name: Release
 on:
   push:
     tags:
-      - 'v*'
+      - "v*"
 
 env:
   CARGO_TERM_COLOR: always
@@ -12,73 +12,85 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2
-    - name: Stable with rustfmt and clippy
-      uses: actions-rs/toolchain@v1
-      with:
-        profile: minimal
-        toolchain: stable
-        components: rustfmt, clippy
-    - name: Build
-      run: cargo build --verbose
-    - name: Run tests
-      run: cargo test --verbose
-    - name: Install cargo-make
-      run: cargo install cargo-make --verbose
-    - name: Install diesel_cli
-      run: cargo install diesel_cli --no-default-features --features sqlite
-    - name: Migration
-      run: cargo make migration
-    - name: Readme
-      run: cargo make readme
-    - name: Build Server
-      run: cargo build --verbose --release
-    - name: Copy Server
-      run: cargo make copy-server
-    - name: Install wasm-pack
-      uses: jetli/wasm-pack-action@v0.3.0
-    - name: Build wasm
-      run: cargo make wasm-pack
-    - name: Archive wasm
-      run: cargo make archive-wasm
-    - name: Create Release
-      id: create_release
-      uses: actions/create-release@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        tag_name: ${{ github.ref }}
-        release_name: Release ${{ github.ref }}
-        draft: false
-        prerelease: false
-    - name: Upload sqlite
-      id: upload-sqlite 
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: ./rustgym.sqlite
-        asset_name: rustgym.sqlite
-        asset_content_type: application/vnd.sqlite3
-    - name: Upload server
-      id: upload-server 
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: ./rustgym-server
-        asset_name: rustgym-server
-        asset_content_type: application/octet-stream
-    - name: Upload pkg
-      id: upload-pkg 
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: ./pkg.tar.gz
-        asset_name: pkg.tar.gz
-        asset_content_type: application/octet-stream
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Stable with rustfmt and clippy
+        uses: actions-rs/toolchain@v1
+        with:
+          profile: minimal
+          toolchain: stable
+          components: rustfmt, clippy
+      - name: Build
+        run: cargo build --verbose
+      - name: Run tests
+        run: cargo test --verbose
+      - name: Install cargo-make
+        run: cargo install cargo-make --verbose
+      - name: Install diesel_cli
+        run: cargo install diesel_cli --no-default-features --features sqlite
+      - name: Run migration
+        run: cargo make migration
+      - name: Make readme
+        run: cargo make readme
+      - name: Build release
+        run: cargo build --verbose --release
+      - name: Copy server
+        run: cargo make copy-server
+      - name: Copy ingest
+        run: cargo make copy-ingest
+      - name: Install wasm-pack
+        uses: jetli/wasm-pack-action@v0.3.0
+      - name: Build wasm
+        run: cargo make wasm-pack
+      - name: Archive wasm
+        run: cargo make archive-wasm
+      - name: Create release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
+          draft: false
+          prerelease: false
+      - name: Upload sqlite
+        id: upload-sqlite
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./rustgym.sqlite
+          asset_name: rustgym.sqlite
+          asset_content_type: application/vnd.sqlite3
+      - name: Upload server
+        id: upload-server
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./rustgym-server
+          asset_name: rustgym-server
+          asset_content_type: application/octet-stream
+      - name: Upload ingest
+        id: upload-ingest
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./rustgym-ingest
+          asset_name: rustgym-ingest
+          asset_content_type: application/octet-stream
+      - name: Upload pkg
+        id: upload-pkg
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./pkg.tar.gz
+          asset_name: pkg.tar.gz
+          asset_content_type: application/octet-stream

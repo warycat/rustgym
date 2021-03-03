@@ -20,6 +20,9 @@ script = 'cargo build --release --verbose'
 [tasks.copy-server]
 script = 'cp target/release/rustgym-server rustgym-server'
 
+[tasks.copy-ingest]
+script = 'cp target/release/rustgym-ingest rustgym-ingest'
+
 [tasks.wasm-pack]
 script = 'wasm-pack build wasm --target web --out-dir ../pkg'
 
