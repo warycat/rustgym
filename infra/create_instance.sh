@@ -45,8 +45,10 @@ tar -xzf pkg.tar.gz
 rm pkg.tar.gz
 curl -LJO $RUSTGYM_DOWNLOAD/$TAG/rustgym.sqlite
 curl -LJO $RUSTGYM_DOWNLOAD/$TAG/rustgym-server
+curl -LJO $RUSTGYM_DOWNLOAD/$TAG/rustgym-ingest
+./rustgym-ingest >> ingest.log &>> ingest.error.log &
 chmod u+x rustgym-server
-TAG=$TAG ./rustgym-server >> rustgym.log &>> rustgym.error.log &
+TAG=$TAG ./rustgym-server >> server.log &>> server.error.log &
 
 cat <<\EOF > /etc/nginx/sites-available/rustgym-nginx.cfg
 server {
