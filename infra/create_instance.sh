@@ -1,5 +1,5 @@
 #!/bin/bash
-TAG=v0.2.6
+TAG=v0.2.7
 VM_NAME=rustgym-18
 SERVER_NAME=rustgym.com
 WORK_DIR=/root
