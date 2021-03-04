@@ -10,3 +10,10 @@ async fn client_files(req: HttpRequest) -> Result<NamedFile> {
     let path: PathBuf = ["pkg", filename].iter().collect();
     Ok(NamedFile::open(path)?)
 }
+
+#[get("/static/{filename:.*}")]
+async fn static_files(req: HttpRequest) -> Result<NamedFile> {
+    let filename = req.match_info().query("filename");
+    let path: PathBuf = ["static", filename].iter().collect();
+    Ok(NamedFile::open(path)?)
+}

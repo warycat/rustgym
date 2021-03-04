@@ -94,3 +94,13 @@ jobs:
           asset_path: ./pkg.tar.gz
           asset_name: pkg.tar.gz
           asset_content_type: application/octet-stream
+      - name: Upload static
+        id: upload-static
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./static.tar.gz
+          asset_name: static.tar.gz
+          asset_content_type: application/octet-stream

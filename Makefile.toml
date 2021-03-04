@@ -11,12 +11,6 @@ script = ["diesel migration run --database-url rustgym.sqlite"]
 script = ["cargo run --bin rustgym-readme"]
 dependencies = ["rm_sqlite", "migration"]
 
-[tasks.mac]
-script = 'docker run --rm --user "$(id -u)":"$(id -g)" -v "$PWD":/usr/src/myapp -w /usr/src/myapp rust:1.48.0 cargo build --release'
-
-[tasks.linux]
-script = 'cargo build --release --verbose'
-
 [tasks.copy-server]
 script = 'cp target/release/rustgym-server rustgym-server'
 
@@ -29,18 +23,12 @@ script = 'wasm-pack build wasm --target web --out-dir ../pkg'
 [tasks.archive-wasm]
 script = "tar -czvf pkg.tar.gz pkg"
 
+[tasks.archive-static]
+script = "tar -czvf static.tar.gz static"
+
 [tasks.watch-wasm]
 run_task = { name = ["wasm-pack"] }
 watch = { postpone = true, watch = ["./wasm/", "./msg/"] }
-
-[tasks.deploy]
-script = [
-    "echo $TAG",
-    "git tag $TAG",
-    "git push origin $TAG",
-    "gh release create $TAG rustgym.sqlite rustgym-server pkg.tar.gz"
-]
-dependencies = ["readme", "mac", "copy-server", "wasm-pack", "archive-wasm"]
 
 [tasks.watch-server]
 script = "cargo watch -w server -w msg -x 'run --bin rustgym-server'"
@@ -48,7 +36,3 @@ dependencies = ["wasm-pack"]
 
 [tasks.dev]
 run_task = { name = ["watch-server", "watch-wasm"], parallel = true }
-
-[tasks.restart]
-script = "cd infra; ./deploy.sh"
-dependencies = ["deploy"]

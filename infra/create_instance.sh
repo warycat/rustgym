@@ -1,6 +1,6 @@
 #!/bin/bash
-TAG=v0.2.5
-VM_NAME=rustgym-16
+TAG=v0.2.6
+VM_NAME=rustgym-18
 SERVER_NAME=rustgym.com
 WORK_DIR=/root
 EMAIL=larry.fantasy@gmail.com
@@ -43,9 +43,13 @@ mkdir -p data/store/fst
 curl -LJO $RUSTGYM_DOWNLOAD/$TAG/pkg.tar.gz
 tar -xzf pkg.tar.gz
 rm pkg.tar.gz
+curl -LJO $RUSTGYM_DOWNLOAD/$TAG/static.tar.gz
+tar -xzf static.tar.gz
+rm static.tar.gz
 curl -LJO $RUSTGYM_DOWNLOAD/$TAG/rustgym.sqlite
 curl -LJO $RUSTGYM_DOWNLOAD/$TAG/rustgym-server
 curl -LJO $RUSTGYM_DOWNLOAD/$TAG/rustgym-ingest
+chmod u+x rustgym-ingest
 ./rustgym-ingest >> ingest.log &>> ingest.error.log &
 chmod u+x rustgym-server
 TAG=$TAG ./rustgym-server >> server.log &>> server.error.log &

@@ -5,9 +5,9 @@ extern crate derive_new;
 
 mod agents;
 mod app_data;
-mod client;
 mod context;
 mod db;
+mod files;
 mod routes;
 mod session_data;
 
@@ -49,7 +49,8 @@ async fn main() -> std::io::Result<()> {
             .service(routes::adventofcode_detail::adventofcode_detail)
             .service(routes::robots::robots_txt)
             .service(routes::sitemap::sitemap_txt)
-            .service(client::client_files)
+            .service(files::client_files)
+            .service(files::static_files)
             .service(web::resource("/ws/").to(agents::websocket::ws_index))
     })
     .bind("127.0.0.1:8080")?
