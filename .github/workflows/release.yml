@@ -44,6 +44,8 @@ jobs:
         run: cargo make wasm-pack
       - name: Archive wasm
         run: cargo make archive-wasm
+      - name: Archive static
+        run: cargo make archive-static
       - name: Create release
         id: create_release
         uses: actions/create-release@v1
