@@ -9,6 +9,10 @@ pub enum Msg {
     RegistorClient(ClientInfo),
     UnRegistorClient(ClientInfo),
     SessionClients(HashSet<Uuid>),
+    SearchText(String),
+    SearchSuggestions(Vec<String>),
+    QueryText(String),
+    QueryResults(Vec<(String, String)>),
 }
 
 #[derive(Serialize, Deserialize, Debug, Clone)]

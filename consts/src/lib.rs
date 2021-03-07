@@ -17,3 +17,5 @@ pub const HEARTBEAT_INTERVAL: Duration = Duration::from_secs(5);
 pub const CLIENT_TIMEOUT: Duration = Duration::from_secs(10);
 pub const SONIC_URL: &str = "localhost:1491";
 pub const SONIC_PASS: &str = "SecretPassword";
+pub const SONIC_COLLECTION: &str = "collection";
+pub const SONIC_BUCKET: &str = "bucket";

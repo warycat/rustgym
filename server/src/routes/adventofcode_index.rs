@@ -11,7 +11,7 @@ use actix_web::HttpRequest;
 use actix_web::HttpResponse;
 use diesel::prelude::*;
 
-#[get("/adventofcode/")]
+#[get("/adventofcode")]
 pub async fn adventofcode_index(
     data: web::Data<AppData>,
     req: HttpRequest,

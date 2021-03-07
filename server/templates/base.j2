@@ -2,23 +2,16 @@
 <html lang="en">
   <head>
     <title>{% block title %}RUST GYM{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="origin-trial" content="AoLaAmCleB9Y9nuO10wIngBj95JTQz+qbvXxAkplkF9Sj5lg1Rxmr5fqkgqF1AsD4BS6dzgZ7n3rxKB/8+O3iAYAAABleyJvcmlnaW4iOiJodHRwczovL3J1c3RneW0uY29tOjQ0MyIsImZlYXR1cmUiOiJRdWljVHJhbnNwb3J0IiwiZXhwaXJ5IjoxNjEzOTY0MDUxLCJpc1N1YmRvbWFpbiI6dHJ1ZX0=">
     <link rel="stylesheet" href="/static/tailwind.min.css"/>
     <link rel="stylesheet" href="/static/typography.min.css"/>
     <link rel="stylesheet" href="/static/stackoverflow-dark.min.css"/>
+    <link rel="stylesheet" href="/static/app.css"/>
     <link rel="canonical" href="https://rustgym.com{{path|safe}}" />
-    <style>
-      .prose strong {
-        color:#f08d49;
-      }
-    </style>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="origin-trial" content="AoLaAmCleB9Y9nuO10wIngBj95JTQz+qbvXxAkplkF9Sj5lg1Rxmr5fqkgqF1AsD4BS6dzgZ7n3rxKB/8+O3iAYAAABleyJvcmlnaW4iOiJodHRwczovL3J1c3RneW0uY29tOjQ0MyIsImZlYXR1cmUiOiJRdWljVHJhbnNwb3J0IiwiZXhwaXJ5IjoxNjEzOTY0MDUxLCJpc1N1YmRvbWFpbiI6dHJ1ZX0=">
     <script src="/static/alpine.min.js"></script>
     <script src="/static/highlight.min.js"></script>
     <script src="https://www.googletagmanager.com/gtag/js?id=G-661DVJ18N4"></script>
-    <script>
-      hljs.initHighlightingOnLoad();
-    </script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -33,6 +26,7 @@
       run();
     </script>
     <script>
+      hljs.initHighlightingOnLoad();
       console.log("{{session.uuid}}");
       console.log("{{session.name}}");
       console.log("{{session.count}}");

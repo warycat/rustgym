@@ -18,6 +18,7 @@ use actix_web::web;
 use actix_web::App;
 use actix_web::HttpServer;
 use agents::registry::RegistryAgent;
+use agents::search::SearchAgent;
 use app_data::AppData;
 use log::info;
 use rustgym_consts::*;
@@ -31,9 +32,8 @@ async fn main() -> std::io::Result<()> {
     let tag = env::var("TAG").unwrap_or_default();
     let title = "RUST GYM".to_string();
     let app_data = AppData::new(tag.clone(), title.clone());
-
-    // Start chat server actor
-    let registry_addr = RegistryAgent::new().start();
+    let search_addr = SearchAgent::new().start();
+    let registry_addr = RegistryAgent::new(search_addr).start();
     info!("RUST GYM Server {}", tag);
     HttpServer::new(move || {
         App::new()

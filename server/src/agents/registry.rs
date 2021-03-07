@@ -1,5 +1,6 @@
 use crate::agents::envelope::Envelope;
 use crate::agents::package::Package;
+use crate::agents::search::SearchAgent;
 use crate::agents::websocket::SocketClient;
 use actix::prelude::*;
 use log::error;
@@ -10,16 +11,18 @@ use uuid::Uuid;
 
 #[derive(Clone)]
 pub struct RegistryAgent {
+    search_addr: Addr<SearchAgent>,
     all_session_clients: HashMap<Uuid, HashSet<Uuid>>,
     all_clients: HashMap<Uuid, Addr<SocketClient>>,
 }
 
 impl RegistryAgent {
-    pub fn new() -> Self {
+    pub fn new(search_addr: Addr<SearchAgent>) -> Self {
         let all_session_clients = HashMap::new();
         let all_clients = HashMap::new();
 
         RegistryAgent {
+            search_addr,
             all_session_clients,
             all_clients,
         }
@@ -62,7 +65,7 @@ impl Handler<Package> for RegistryAgent {
         let Package {
             client_addr,
             envelope,
-        } = package;
+        } = package.clone();
         let Envelope {
             client_uuid,
             session_uuid,
@@ -71,6 +74,11 @@ impl Handler<Package> for RegistryAgent {
 
         use Msg::*;
         match msg {
+            Ping => {}
+            Pong => {}
+            SessionClients(_) => {}
+            SearchSuggestions(_) => {}
+            QueryResults(_) => {}
             RegistorClient(_) => {
                 self.all_session_clients
                     .entry(session_uuid)
@@ -97,7 +105,12 @@ impl Handler<Package> for RegistryAgent {
                 let msg = Msg::SessionClients(session_clients.clone());
                 self.update_session_clients(session_uuid, msg);
             }
-            _ => {}
+            SearchText(_) => {
+                self.search_addr.do_send(package);
+            }
+            QueryText(_) => {
+                self.search_addr.do_send(package);
+            }
         }
     }
 }

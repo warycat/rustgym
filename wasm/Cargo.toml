@@ -28,6 +28,8 @@ web-sys = { version = "0.3.46", features = [
 ] }
 serde_json = "1.0.62"
 uuid = { version = "0.8", features = ["serde", "v4", "wasm-bindgen"] }
+seed = "0.8.0"
+anyhow = "1.0.38"
 
 [dev-dependencies]
 wasm-bindgen-test = "0.3.13"

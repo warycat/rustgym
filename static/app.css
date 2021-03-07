@@ -1,0 +1,31 @@
+.prose strong {
+  color: #f08d49;
+}
+
+.searchbar .autocom-box {
+  position: absolute;
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+  max-height: 280px;
+  overflow-y: auto;
+  background-color: white;
+}
+
+.searchbar.active .autocom-box {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.autocom-box div {
+  display: none;
+  cursor: default;
+  border-radius: 3px;
+}
+
+.searchbar.active .autocom-box div {
+  display: block;
+}
+.autocom-box div:hover {
+  background: #efefef;
+}

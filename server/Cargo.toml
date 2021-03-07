@@ -37,3 +37,5 @@ rustgym-schema = { path = "../schema" }
 serde = "1.0.118"
 serde_json = "1.0.61"
 uuid = { version = "0.8", features = ["serde", "v4"] }
+sonic-channel = "0.4.0"
+tokio = "1.2.0"
