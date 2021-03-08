@@ -2418,6 +2418,7 @@ dependencies = [
 name = "rustgym-msg"
 version = "0.1.0"
 dependencies = [
+ "derive-new",
  "serde",
  "serde_json",
  "uuid",
@@ -2501,6 +2502,7 @@ dependencies = [
  "anyhow",
  "console_error_panic_hook",
  "js-sys",
+ "rustgym-consts",
  "rustgym-msg",
  "seed",
  "serde_json",

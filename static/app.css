@@ -5,27 +5,28 @@
 .searchbar .autocom-box {
   position: absolute;
   padding: 0;
-  opacity: 0;
-  pointer-events: none;
+  opacity: 1;
+  pointer-events: auto;
   max-height: 280px;
   overflow-y: auto;
   background-color: white;
 }
 
-.searchbar.active .autocom-box {
+.searchbar.empty .autocom-box {
   opacity: 1;
-  pointer-events: auto;
+  pointer-events: none;
 }
 
 .autocom-box div {
-  display: none;
+  display: block;
   cursor: default;
   border-radius: 3px;
 }
 
-.searchbar.active .autocom-box div {
-  display: block;
+.empty {
+  display: none;
 }
+
 .autocom-box div:hover {
   background: #efefef;
 }

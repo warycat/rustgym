@@ -20,8 +20,15 @@ pub fn update(msg: Message, model: &mut Model, orders: &mut impl Orders<Message>
             };
         }
         QueryText(search_text) => {
-            model.search_text = search_text;
-            model.suggestions = vec![];
+            model.search_text = search_text.clone();
+            model.search_suggestions = vec![];
+            if let Err(err) = model
+                .web_socket
+                .send_json(&rustgym_msg::Msg::QueryText(search_text))
+            {
+                console_log!("error");
+                orders.send_msg(WebSocketError(err));
+            };
         }
         KeyDown(event) => {
             let key_code = event.key_code();
@@ -35,38 +42,28 @@ pub fn update(msg: Message, model: &mut Model, orders: &mut impl Orders<Message>
             match msg {
                 Msg::Ping => {}
                 Msg::Pong => {}
-                Msg::RegistorClient(client_info) => {
-                    console_log!("{:?}", client_info);
-                }
-                Msg::UnRegistorClient(client_info) => {
-                    console_log!("{:?}", client_info);
-                }
-                Msg::SessionClients(session_clients) => {
-                    console_log!("{:?}", session_clients);
-                }
-                Msg::SearchText(search_text) => {
-                    console_log!("{:?}", search_text);
-                }
+                Msg::RegistorClient(_) => {}
+                Msg::UnRegistorClient(_) => {}
+                Msg::SessionClients(_) => {}
+                Msg::SearchText(_) => {}
+                Msg::QueryText(_) => {}
                 Msg::SearchSuggestions(suggestions) => {
-                    console_log!("{:?}", suggestions);
-                    model.suggestions = suggestions;
+                    model.search_suggestions = suggestions;
                 }
-                Msg::QueryText(text) => {
-                    console_log!("{:?}", text);
-                }
-                Msg::QueryResults(results) => {
-                    model.results = results;
+                Msg::QueryResults(mut query_results) => {
+                    query_results.reverse();
+                    model.query_results = query_results;
                 }
             }
         }
         WebSocketError(err) => {
             model.web_socket_errors.push(err);
         }
-        WebSocketOpened => {
-            model.web_socket.send_text("Ping").expect("Ping");
+        WebSocketClosed(close_event) => {
+            console_log!("WebSocketClosed {:?}", close_event);
         }
-        WebSocketClosed(_) => {
-            // model.connected = false;
+        WebSocketOpened => {
+            console_log!("WebSocketOpened");
         }
         WebSocketFailed => {
             console_log!("WebSocketFailed");

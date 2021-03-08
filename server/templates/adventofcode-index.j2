@@ -23,7 +23,7 @@
           Day {{row.day}}
         </td>
         <td>
-          <a href="/adventofcode/{{row.id}}"> {{row.title}}</a>
+          <a href="{{row.href()}}"> {{row.title}}</a>
         </td>
       </tr>
     {% endfor %}

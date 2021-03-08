@@ -11,6 +11,7 @@ use actix_web::HttpRequest;
 use actix_web::HttpResponse;
 use diesel::prelude::*;
 use rustgym_schema::LeetcodeDescription;
+use rustgym_schema::LeetcodeQuestion;
 use rustgym_schema::LeetcodeSolution;
 
 #[get("/leetcode/{id}")]
@@ -32,7 +33,7 @@ async fn leetcode_detail(
         .map_err(ErrorNotFound)
         // remove after most descriptions are added.
         .unwrap_or_else(|_| LeetcodeDescription::new(id_, "".to_string(), "".to_string()));
-    let question = leetcode_question
+    let question: LeetcodeQuestion = leetcode_question
         .filter(rustgym_schema::schema::leetcode_question::dsl::id.eq(id_))
         .first(&conn)
         .map_err(ErrorNotFound)?;

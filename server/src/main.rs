@@ -20,6 +20,7 @@ use actix_web::HttpServer;
 use agents::registry::RegistryAgent;
 use agents::search::SearchAgent;
 use app_data::AppData;
+use db::*;
 use log::info;
 use rustgym_consts::*;
 use std::env;
@@ -28,11 +29,11 @@ use std::env;
 async fn main() -> std::io::Result<()> {
     std::env::set_var("RUST_LOG", "info");
     env_logger::init();
-    let pool = db::init_pool(DATABASE_URL).expect("Failed to create pool");
+    let pool: SqlitePool = db::init_pool(DATABASE_URL).expect("Failed to create pool");
     let tag = env::var("TAG").unwrap_or_default();
     let title = "RUST GYM".to_string();
     let app_data = AppData::new(tag.clone(), title.clone());
-    let search_addr = SearchAgent::new().start();
+    let search_addr = SearchAgent::new(pool.clone()).start();
     let registry_addr = RegistryAgent::new(search_addr).start();
     info!("RUST GYM Server {}", tag);
     HttpServer::new(move || {

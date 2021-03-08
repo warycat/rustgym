@@ -20,3 +20,22 @@ impl fmt::Display for LeetcodeQuestion {
         )
     }
 }
+
+impl LeetcodeQuestion {
+    pub fn level_str(&self) -> &str {
+        match self.level {
+            1 => "Easy",
+            2 => "Medium",
+            3 => "Hard",
+            _ => "",
+        }
+    }
+
+    pub fn href(&self) -> String {
+        format!("/leetcode/{}", self.id)
+    }
+
+    pub fn from(&self) -> String {
+        format!("Leetcode {}", self.level_str())
+    }
+}

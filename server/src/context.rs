@@ -39,6 +39,21 @@ pub struct LeetcodeIndexRow {
     pub level: i32,
 }
 
+impl LeetcodeIndexRow {
+    pub fn level_str(&self) -> &str {
+        match self.level {
+            1 => "Easy",
+            2 => "Medium",
+            3 => "Hard",
+            _ => "",
+        }
+    }
+
+    pub fn href(&self) -> String {
+        format!("/leetcode/{}", self.id)
+    }
+}
+
 #[derive(Template, new)]
 #[template(path = "leetcode-index.j2")]
 pub struct LeetcodeIndexContext {
@@ -63,6 +78,12 @@ pub struct AdventOfCodeIndexContext {
     pub session: SessionData,
     pub path: String,
     pub rows: Vec<AdventOfCodeIndexRow>,
+}
+
+impl AdventOfCodeIndexRow {
+    pub fn href(&self) -> String {
+        format!("/adventofcode/{}", self.id)
+    }
 }
 
 #[derive(Template, new)]

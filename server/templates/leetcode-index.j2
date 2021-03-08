@@ -21,16 +21,10 @@
           {{row.id}}
         </td>
         <td>
-          <a href="/leetcode/{{row.id}}"> {{row.title}}</a>
+          <a href="{{row.href()}}"> {{row.title}}</a>
         </td>
         <td>
-          {% if row.level == 1 %}
-            Easy
-          {% else if row.level == 2 %}
-            Medium
-          {% else if row.level == 3%}
-            Hard
-          {% endif %}
+          {{ row.level_str() }}
         </td>
       </tr>
     {% endfor %}

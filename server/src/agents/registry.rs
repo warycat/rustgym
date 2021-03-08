@@ -4,6 +4,7 @@ use crate::agents::search::SearchAgent;
 use crate::agents::websocket::SocketClient;
 use actix::prelude::*;
 use log::error;
+use rustgym_msg::ClientInfo;
 use rustgym_msg::Msg;
 use std::collections::HashMap;
 use std::collections::HashSet;
@@ -12,7 +13,7 @@ use uuid::Uuid;
 #[derive(Clone)]
 pub struct RegistryAgent {
     search_addr: Addr<SearchAgent>,
-    all_session_clients: HashMap<Uuid, HashSet<Uuid>>,
+    all_session_clients: HashMap<Uuid, HashSet<ClientInfo>>,
     all_clients: HashMap<Uuid, Addr<SocketClient>>,
 }
 
@@ -30,22 +31,15 @@ impl RegistryAgent {
 
     fn update_session_clients(&self, session_uuid: Uuid, msg: Msg) {
         if let Some(session_clients) = self.all_session_clients.get(&session_uuid) {
-            for &client_uuid in session_clients {
-                if let Some(client_addr) = self.all_clients.get(&client_uuid) {
+            for client_info in session_clients.iter() {
+                if let Some(client_addr) = self.all_clients.get(&client_info.client_uuid) {
                     let msg = msg.clone();
                     let client_addr_clone = client_addr.clone();
-                    let envelope = Envelope {
-                        session_uuid,
-                        client_uuid,
-                        msg,
-                    };
-                    let package = Package {
-                        client_addr: client_addr_clone,
-                        envelope,
-                    };
+                    let envelope = Envelope::new(client_info.clone(), msg);
+                    let package = Package::new(client_addr_clone, envelope);
                     client_addr.do_send(package);
                 } else {
-                    error!("{} recipient not found", client_uuid)
+                    error!("{} recipient not found", client_info.client_uuid);
                 }
             }
         } else {
@@ -66,12 +60,7 @@ impl Handler<Package> for RegistryAgent {
             client_addr,
             envelope,
         } = package.clone();
-        let Envelope {
-            client_uuid,
-            session_uuid,
-            msg,
-        } = envelope;
-
+        let Envelope { client_info, msg } = envelope;
         use Msg::*;
         match msg {
             Ping => {}
@@ -80,10 +69,12 @@ impl Handler<Package> for RegistryAgent {
             SearchSuggestions(_) => {}
             QueryResults(_) => {}
             RegistorClient(_) => {
+                let session_uuid = client_info.session_uuid;
+                let client_uuid = client_info.client_uuid;
                 self.all_session_clients
-                    .entry(session_uuid)
+                    .entry(client_info.session_uuid)
                     .or_default()
-                    .insert(client_uuid);
+                    .insert(client_info);
                 self.all_clients.entry(client_uuid).or_insert(client_addr);
                 let session_clients = self
                     .all_session_clients
@@ -94,16 +85,16 @@ impl Handler<Package> for RegistryAgent {
             }
             UnRegistorClient(_) => {
                 self.all_session_clients
-                    .entry(session_uuid)
+                    .entry(client_info.session_uuid)
                     .or_default()
-                    .remove(&client_uuid);
-                self.all_clients.remove(&client_uuid);
+                    .remove(&client_info);
+                self.all_clients.remove(&client_info.client_uuid);
                 let session_clients = self
                     .all_session_clients
-                    .get(&session_uuid)
+                    .get(&client_info.session_uuid)
                     .expect("session clients");
                 let msg = Msg::SessionClients(session_clients.clone());
-                self.update_session_clients(session_uuid, msg);
+                self.update_session_clients(client_info.session_uuid, msg);
             }
             SearchText(_) => {
                 self.search_addr.do_send(package);

@@ -10,3 +10,13 @@ pub struct AdventOfCodeDescription {
     filename: String,
     pub html: String,
 }
+
+impl AdventOfCodeDescription {
+    pub fn href(&self) -> String {
+        format!("/adventofcode/{}", self.id)
+    }
+
+    pub fn from(&self) -> String {
+        format!("AdventOfCode {}", self.year)
+    }
+}

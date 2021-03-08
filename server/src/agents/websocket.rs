@@ -54,22 +54,10 @@ impl SocketClient {
         }
     }
 
-    fn make_envelope(&self, msg: Msg) -> Envelope {
-        let session_uuid = self.client_info.session_uuid;
-        let client_uuid = self.client_info.client_uuid;
-        Envelope {
-            session_uuid,
-            client_uuid,
-            msg,
-        }
-    }
-
-    fn make_package(&self, ctx: &mut <Self as Actor>::Context, envelope: Envelope) -> Package {
+    fn make_package(&self, ctx: &mut <Self as Actor>::Context, msg: Msg) -> Package {
+        let envelope = Envelope::new(self.client_info.clone(), msg);
         let client_addr = ctx.address();
-        Package {
-            client_addr,
-            envelope,
-        }
+        Package::new(client_addr, envelope)
     }
 
     fn hb(&self, ctx: &mut <Self as Actor>::Context) {
@@ -91,8 +79,7 @@ impl Actor for SocketClient {
         let msg = Msg::RegistorClient(self.client_info.clone());
         let json = serde_json::to_string(&msg).expect("json");
         ctx.text(json);
-        let envelope = self.make_envelope(msg);
-        let package = self.make_package(ctx, envelope);
+        let package = self.make_package(ctx, msg);
         self.registry_addr.do_send(package);
         // ctx.add_message_stream();
         self.hb(ctx);
@@ -100,8 +87,7 @@ impl Actor for SocketClient {
 
     fn stopping(&mut self, ctx: &mut Self::Context) -> actix::Running {
         let msg = Msg::UnRegistorClient(self.client_info.clone());
-        let envelope = self.make_envelope(msg);
-        let package = self.make_package(ctx, envelope);
+        let package = self.make_package(ctx, msg);
         self.registry_addr.do_send(package);
         self.hb(ctx);
         actix::Running::Stop
@@ -112,9 +98,7 @@ impl Handler<Package> for SocketClient {
     type Result = ();
 
     fn handle(&mut self, package: Package, ctx: &mut Self::Context) {
-        let Package { envelope, .. } = package;
-        let Envelope { msg, .. } = envelope;
-        let json = serde_json::to_string(&msg).expect("json");
+        let json = serde_json::to_string(&package.envelope.msg).expect("json");
         ctx.text(json);
     }
 }
@@ -133,8 +117,7 @@ impl StreamHandler<Result<ws::Message, ws::ProtocolError>> for SocketClient {
             Ok(ws::Message::Text(text)) => {
                 if let Ok(msg) = serde_json::from_str::<Msg>(&text) {
                     info!("{:?}", msg);
-                    let envelope = self.make_envelope(msg);
-                    let package = self.make_package(ctx, envelope);
+                    let package = self.make_package(ctx, msg);
                     self.registry_addr.do_send(package);
                 } else {
                     info!("{:?}", text);

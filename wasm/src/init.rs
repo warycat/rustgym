@@ -37,12 +37,12 @@ pub fn init(url: Url, orders: &mut impl Orders<Message>) -> Model {
         }
     }
     let web_socket_errors = vec![];
-    let suggestions = vec![];
-    let results = vec![];
+    let search_suggestions = vec![];
+    let query_results = vec![];
     Model {
         search_text,
-        suggestions,
-        results,
+        search_suggestions,
+        query_results,
         web_socket,
         web_socket_errors,
     }

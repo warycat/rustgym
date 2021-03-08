@@ -19,3 +19,5 @@ pub const SONIC_URL: &str = "localhost:1491";
 pub const SONIC_PASS: &str = "SecretPassword";
 pub const SONIC_COLLECTION: &str = "collection";
 pub const SONIC_BUCKET: &str = "bucket";
+
+pub const SEARCH_PLACEHOLDER: &str = "Search Rust Solutions";

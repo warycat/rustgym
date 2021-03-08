@@ -1,11 +1,9 @@
-use uuid::Uuid;
-
+use rustgym_msg::ClientInfo;
 use rustgym_msg::Msg;
 use serde::{Deserialize, Serialize};
 
-#[derive(Debug, Deserialize, Serialize, Clone)]
+#[derive(Debug, Deserialize, Serialize, Clone, new)]
 pub struct Envelope {
-    pub client_uuid: Uuid,
-    pub session_uuid: Uuid,
+    pub client_info: ClientInfo,
     pub msg: Msg,
 }
