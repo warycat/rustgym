@@ -2385,10 +2385,17 @@ name = "rustgym"
 version = "0.2.0"
 dependencies = [
  "assert_approx_eq",
- "md5",
- "paste",
  "pretty_assertions",
  "rand 0.7.3",
+ "rustgym-util 0.2.4 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "rustgym-adventofcode"
+version = "0.1.0"
+dependencies = [
+ "md5",
+ "paste",
  "rayon",
  "rustgym-util 0.2.4 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde_json",
@@ -2412,6 +2419,16 @@ dependencies = [
  "rustgym-consts",
  "rustgym-schema",
  "sonic-channel",
+]
+
+[[package]]
+name = "rustgym-leetcode"
+version = "0.1.0"
+dependencies = [
+ "assert_approx_eq",
+ "paste",
+ "rand 0.7.3",
+ "rustgym-util 0.2.4 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]

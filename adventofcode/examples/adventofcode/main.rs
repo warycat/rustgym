@@ -1,4 +1,3 @@
-use rustgym::advent_of_code;
 use std::fmt::Write;
 use std::io::*;
 use std::time::Instant;
@@ -9,7 +8,7 @@ macro_rules! run {
             let start = Instant::now();
             let mut reader = BufReader::new(include_str!($file).as_bytes());
             writeln!(&mut $writer, "\nday{}", $day).unwrap();
-            advent_of_code::[< year $year >]::[< day $day >]::solve(&mut reader, &mut $writer);
+            rustgym_adventofcode::[< year $year >]::[< day $day >]::solve(&mut reader, &mut $writer);
             let duration = start.elapsed();
             writeln!($writer, "{:?}", duration).unwrap();
         }

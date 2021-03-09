@@ -26,7 +26,7 @@ pub fn init(url: Url, orders: &mut impl Orders<Message>) -> Model {
                 Err(err) => Message::WebSocketError(err),
             },
         )
-        .on_close(|close_event| Message::WebSocketClosed(close_event))
+        .on_close(Message::WebSocketClosed)
         .on_error(|| Message::WebSocketFailed)
         .build_and_open()
         .expect("web_socket");

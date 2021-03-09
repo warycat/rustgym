@@ -9,5 +9,7 @@ members = [
     "characters",
     "wasm",
     "msg",
-    "ingest"
+    "ingest",
+    "leetcode",
+    "adventofcode",
 ]

@@ -92,16 +92,6 @@
 //! }
 //! ```
 //! when submitting to leetcode online judge.
-#[cfg_attr(test, macro_use)]
-extern crate rustgym_util;
-
-#[deny(clippy::all)]
-#[allow(dead_code)]
-#[allow(clippy::collapsible_if)]
-#[allow(clippy::needless_range_loop)]
-#[allow(clippy::too_many_arguments)]
-#[allow(clippy::suspicious_operation_groupings)]
-mod leetcode;
 
 #[deny(clippy::all)]
 #[allow(dead_code)]
@@ -109,11 +99,3 @@ mod leetcode;
 #[allow(clippy::needless_range_loop)]
 #[allow(clippy::too_many_arguments)]
 mod hackerrank;
-
-#[deny(clippy::all)]
-#[allow(dead_code)]
-#[allow(clippy::collapsible_if)]
-#[allow(clippy::needless_range_loop)]
-#[allow(clippy::too_many_arguments)]
-#[allow(clippy::while_let_on_iterator)]
-pub mod advent_of_code;

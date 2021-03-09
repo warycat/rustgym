@@ -156,15 +156,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
       </tr>
       <tr>
         <td>
-          38
-        </td>
-        <td>
-          <a href="http://rustgym.com/leetcode/38"> Count and Say</a>
-        </td>
-        <td>Easy</td>
-      </tr>
-      <tr>
-        <td>
           53
         </td>
         <td>
@@ -259,15 +250,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
         </td>
         <td>
           <a href="http://rustgym.com/leetcode/104"> Maximum Depth of Binary Tree</a>
-        </td>
-        <td>Easy</td>
-      </tr>
-      <tr>
-        <td>
-          107
-        </td>
-        <td>
-          <a href="http://rustgym.com/leetcode/107"> Binary Tree Level Order Traversal II</a>
         </td>
         <td>Easy</td>
       </tr>
@@ -700,15 +682,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
         </td>
         <td>
           <a href="http://rustgym.com/leetcode/270"> Closest Binary Search Tree Value</a>
-        </td>
-        <td>Easy</td>
-      </tr>
-      <tr>
-        <td>
-          276
-        </td>
-        <td>
-          <a href="http://rustgym.com/leetcode/276"> Paint Fence</a>
         </td>
         <td>Easy</td>
       </tr>
@@ -3549,6 +3522,60 @@ All the solutions here are crafted with love and their performance beats 99% of 
       </tr>
       <tr>
         <td>
+          1758
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1758"> Minimum Changes To Make Alternating Binary String</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1763
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1763"> Longest Nice Substring</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1768
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1768"> Merge Strings Alternately</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1773
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1773"> Count Items Matching a Rule</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1779
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1779"> Find Nearest Point That Has the Same X or Y Coordinate</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1784
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1784"> Check if Binary String Has at Most One Segment of Ones</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
           2
         </td>
         <td>
@@ -3715,6 +3742,15 @@ All the solutions here are crafted with love and their performance beats 99% of 
         </td>
         <td>
           <a href="http://rustgym.com/leetcode/36"> Valid Sudoku</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          38
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/38"> Count and Say</a>
         </td>
         <td>Medium</td>
       </tr>
@@ -4084,6 +4120,15 @@ All the solutions here are crafted with love and their performance beats 99% of 
         </td>
         <td>
           <a href="http://rustgym.com/leetcode/106"> Construct Binary Tree from Inorder and Postorder Traversal</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          107
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/107"> Binary Tree Level Order Traversal II</a>
         </td>
         <td>Medium</td>
       </tr>
@@ -4777,6 +4822,15 @@ All the solutions here are crafted with love and their performance beats 99% of 
         </td>
         <td>
           <a href="http://rustgym.com/leetcode/275"> H-Index II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          276
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/276"> Paint Fence</a>
         </td>
         <td>Medium</td>
       </tr>
@@ -8751,6 +8805,15 @@ All the solutions here are crafted with love and their performance beats 99% of 
       </tr>
       <tr>
         <td>
+          1136
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1136"> Parallel Courses</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
           1138
         </td>
         <td>
@@ -11244,6 +11307,141 @@ All the solutions here are crafted with love and their performance beats 99% of 
       </tr>
       <tr>
         <td>
+          1759
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1759"> Count Number of Homogenous Substrings</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1760
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1760"> Minimum Limit of Balls in a Bag</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1762
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1762"> Buildings With an Ocean View</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1764
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1764"> Form Array by Concatenating Subarrays of Another Array</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1765
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1765"> Map of Highest Peak</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1769
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1769"> Minimum Number of Operations to Move All Balls to Each Box</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1770
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1770"> Maximum Score from Performing Multiplication Operations</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1772
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1772"> Sort Features by Popularity</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1774
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1774"> Closest Dessert Cost</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1775
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1775"> Equal Sum Arrays With Minimum Number of Operations</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1778
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1778"> Shortest Path in a Hidden Grid</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1780
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1780"> Check if Number is a Sum of Powers of Three</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1781
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1781"> Sum of Beauty of All Substrings</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1785
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1785"> Minimum Elements to Add to Form a Given Sum</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1786
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1786"> Number of Restricted Paths From First to Last Node</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
           4
         </td>
         <td>
@@ -13224,15 +13422,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
       </tr>
       <tr>
         <td>
-          1136
-        </td>
-        <td>
-          <a href="http://rustgym.com/leetcode/1136"> Parallel Courses</a>
-        </td>
-        <td>Hard</td>
-      </tr>
-      <tr>
-        <td>
           1147
         </td>
         <td>
@@ -14407,6 +14596,60 @@ All the solutions here are crafted with love and their performance beats 99% of 
         </td>
         <td>
           <a href="http://rustgym.com/leetcode/1755"> Closest Subsequence Sum</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1761
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1761"> Minimum Degree of a Connected Trio in a Graph</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1766
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1766"> Tree of Coprimes</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1771
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1771"> Maximize Palindrome Length From Subsequences</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1776
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1776"> Car Fleet II</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1782
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1782"> Count Pairs Of Nodes</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1787
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1787"> Make the XOR of All Segments Equal to Zero</a>
         </td>
         <td>Hard</td>
       </tr></tbody>

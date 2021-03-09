@@ -1,7 +1,7 @@
 use crate::message::Message;
 use crate::model::Model;
-use seed::{prelude::*, *};
 use rustgym_consts::*;
+use seed::{prelude::*, *};
 
 pub fn view(model: &Model) -> Node<Message> {
     div![
@@ -33,8 +33,8 @@ pub fn view(model: &Model) -> Node<Message> {
                         At::Placeholder => SEARCH_PLACEHOLDER,
                         At::Value => model.search_text,
                     },
-                    input_ev(Ev::Input, |text| Message::SearchTextChanged(text)),
-                    keyboard_ev("keydown", |e| Message::KeyDown(e))
+                    input_ev(Ev::Input, Message::SearchTextChanged),
+                    keyboard_ev("keydown", Message::KeyDown)
                 ],
                 div![
                     C!["autocom-box w-full border rounded-md", IF!(model.search_suggestions.is_empty() => "empty")],
@@ -45,8 +45,7 @@ pub fn view(model: &Model) -> Node<Message> {
                             suggestion_clone.to_string(),
                             ev(Ev::Click, |_| Message::QueryText(suggestion_clone))
                         ]
-                    }
-                    )
+                    })
                 ]
             ]
         ],
@@ -71,7 +70,7 @@ pub fn view(model: &Model) -> Node<Message> {
                         ],
                         td![result.from.to_string()]
                     ]
-                )          
+                )
             ],
         ]
     ]

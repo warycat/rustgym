@@ -4,9 +4,10 @@ use regex::Regex;
 use rustgym_schema::AdventOfCodeSolution;
 use rustgym_schema::LeetcodeSolution;
 use std::io::Read;
+use std::path::Path;
 use walkdir::WalkDir;
 
-pub fn all_leetcode_solutions(src_dir: std::path::PathBuf) -> Vec<LeetcodeSolution> {
+pub fn all_leetcode_solutions(src_dir: &Path) -> Vec<LeetcodeSolution> {
     let mut solutions: Vec<LeetcodeSolution> = vec![];
     for entry in WalkDir::new(src_dir) {
         let entry = entry.unwrap();
@@ -27,7 +28,7 @@ pub fn all_leetcode_solutions(src_dir: std::path::PathBuf) -> Vec<LeetcodeSoluti
     solutions
 }
 
-pub fn all_adventofcode_solutions(src_dir: std::path::PathBuf) -> Vec<AdventOfCodeSolution> {
+pub fn all_adventofcode_solutions(src_dir: &Path) -> Vec<AdventOfCodeSolution> {
     let mut solutions: Vec<AdventOfCodeSolution> = vec![];
     let re_year_day = Regex::new(r"(\d+)/day(\d+)/mod.rs").unwrap();
     for entry in WalkDir::new(src_dir) {

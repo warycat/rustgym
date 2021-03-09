@@ -1,5 +1,5 @@
 #[macro_export]
-macro_rules! advent_of_code {
+macro_rules! adventofcode {
     ($name:ident, $input:expr, $output:expr) => {
         #[test]
         fn $name() {
@@ -14,7 +14,7 @@ macro_rules! advent_of_code {
 }
 
 #[macro_export]
-macro_rules! advent_of_code_ignore {
+macro_rules! adventofcode_ignore {
     ($name:ident, $input:expr, $output:expr) => {
         #[test]
         #[ignore]

@@ -1,0 +1,13 @@
+[package]
+name = "rustgym-adventofcode"
+version = "0.1.0"
+authors = ["Larry Fantasy <larry.fantasy@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[dependencies]
+serde_json = "1.0.60"
+rustgym-util = "0.2.4"
+rayon = "1.5.0"
+md5 = "0.7.0"
+paste = "1.0.3"
