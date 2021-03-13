@@ -18,5 +18,5 @@ fn repeated_string(s: String, n: usize) -> usize {
     all * (n / m) + part
 }
 
-hackerrank!(test00, "input00.txt", "output00.txt");
-hackerrank!(test01, "input01.txt", "output01.txt");
+test_gen!(test00, "input00.txt", "output00.txt");
+test_gen!(test01, "input01.txt", "output01.txt");

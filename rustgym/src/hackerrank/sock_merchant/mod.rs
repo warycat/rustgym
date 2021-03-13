@@ -27,5 +27,5 @@ fn sock_merchant(n: usize, arr: Vec<i32>) -> usize {
     res
 }
 
-hackerrank!(test00, "input00.txt", "output00.txt");
-hackerrank!(test08, "input08.txt", "output08.txt");
+test_gen!(test00, "input00.txt", "output00.txt");
+test_gen!(test08, "input08.txt", "output08.txt");

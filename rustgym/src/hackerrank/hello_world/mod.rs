@@ -8,5 +8,5 @@ fn solve(reader: &mut dyn BufRead, writer: &mut dyn Write) {
     write!(writer, "{}", line).unwrap();
 }
 
-hackerrank!(test00, "input00.txt", "output00.txt");
-hackerrank!(test01, "input01.txt", "output01.txt");
+test_gen!(test00, "input00.txt", "output00.txt");
+test_gen!(test01, "input01.txt", "output01.txt");

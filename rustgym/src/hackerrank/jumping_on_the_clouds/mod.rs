@@ -32,5 +32,5 @@ fn jumping_on_the_clouds(n: usize, c: Vec<i32>) -> usize {
     dp[n - 1]
 }
 
-hackerrank!(test00, "input00.txt", "output00.txt");
-hackerrank!(test01, "input01.txt", "output01.txt");
+test_gen!(test00, "input00.txt", "output00.txt");
+test_gen!(test01, "input01.txt", "output01.txt");

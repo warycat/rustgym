@@ -1570,6 +1570,10 @@ dependencies = [
 ]
 
 [[package]]
+name = "kickstart"
+version = "0.1.0"
+
+[[package]]
 name = "language-tags"
 version = "0.2.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2387,7 +2391,7 @@ dependencies = [
  "assert_approx_eq",
  "pretty_assertions",
  "rand 0.7.3",
- "rustgym-util 0.2.4 (registry+https://github.com/rust-lang/crates.io-index)",
+ "rustgym-util 0.2.4",
 ]
 
 [[package]]

@@ -1,5 +1,5 @@
 #[macro_export]
-macro_rules! hackerrank {
+macro_rules! test_gen {
     ($name:ident, $input:expr, $output:expr) => {
         #[test]
         fn $name() {
