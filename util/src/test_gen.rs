@@ -7,7 +7,7 @@ macro_rules! test_gen {
             let output = include_str!($output);
             let mut reader = BufReader::new(input.as_bytes());
             let mut writer = "".to_string();
-            solve(&mut reader, &mut writer);
+            assert!(solve(&mut reader, &mut writer).is_ok());
             assert_eq!(writer, output);
         }
     };

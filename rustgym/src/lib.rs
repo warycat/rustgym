@@ -92,10 +92,3 @@
 //! }
 //! ```
 //! when submitting to leetcode online judge.
-
-#[deny(clippy::all)]
-#[allow(dead_code)]
-#[allow(clippy::collapsible_if)]
-#[allow(clippy::needless_range_loop)]
-#[allow(clippy::too_many_arguments)]
-mod hackerrank;

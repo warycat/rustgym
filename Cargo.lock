@@ -1570,10 +1570,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "kickstart"
-version = "0.1.0"
-
-[[package]]
 name = "language-tags"
 version = "0.2.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2414,6 +2410,13 @@ name = "rustgym-consts"
 version = "0.1.0"
 
 [[package]]
+name = "rustgym-hackerrank"
+version = "0.1.0"
+dependencies = [
+ "rustgym-util 0.2.4",
+]
+
+[[package]]
 name = "rustgym-ingest"
 version = "0.1.0"
 dependencies = [
@@ -2423,6 +2426,13 @@ dependencies = [
  "rustgym-consts",
  "rustgym-schema",
  "sonic-channel",
+]
+
+[[package]]
+name = "rustgym-kickstart"
+version = "0.1.0"
+dependencies = [
+ "rustgym-util 0.2.4",
 ]
 
 [[package]]

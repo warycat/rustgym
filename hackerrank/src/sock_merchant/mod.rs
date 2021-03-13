@@ -3,16 +3,17 @@ use std::collections::HashMap;
 use std::fmt::Write;
 use std::io::*;
 
-fn solve(reader: &mut dyn BufRead, writer: &mut dyn Write) {
+fn solve(reader: &mut dyn BufRead, writer: &mut dyn Write) -> RustGymResult {
     let mut it = reader.lines().map(|l| l.unwrap());
-    let n = it.next().unwrap().parse::<usize>().unwrap();
+    let n = it.next().unwrap().parse::<usize>()?;
     let arr: Vec<i32> = it
         .next()
         .unwrap()
         .split_whitespace()
         .map(|s| s.parse::<i32>().unwrap())
         .collect();
-    write!(writer, "{}", sock_merchant(n, arr)).unwrap();
+    write!(writer, "{}", sock_merchant(n, arr))?;
+    Ok(())
 }
 
 fn sock_merchant(n: usize, arr: Vec<i32>) -> usize {

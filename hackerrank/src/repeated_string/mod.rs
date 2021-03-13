@@ -2,12 +2,13 @@ use rustgym_util::*;
 use std::fmt::Write;
 use std::io::*;
 
-fn solve(reader: &mut dyn BufRead, writer: &mut dyn Write) {
+fn solve(reader: &mut dyn BufRead, writer: &mut dyn Write) -> RustGymResult {
     let mut it = reader.lines().map(|l| l.unwrap());
     let s = it.next().unwrap();
-    let n = it.next().unwrap().parse::<usize>().unwrap();
+    let n = it.next().unwrap().parse::<usize>()?;
     let res = repeated_string(s, n);
-    writeln!(writer, "{}", res).unwrap();
+    writeln!(writer, "{}", res)?;
+    Ok(())
 }
 
 fn repeated_string(s: String, n: usize) -> usize {

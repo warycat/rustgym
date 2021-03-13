@@ -13,4 +13,5 @@ members = [
     "leetcode",
     "adventofcode",
     "kickstart",
+    "hackerrank",
 ]
