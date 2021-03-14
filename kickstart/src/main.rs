@@ -5,6 +5,7 @@
 #![allow(clippy::too_many_arguments)]
 
 mod year2013;
+mod year2020;
 
 use std::fmt::Write;
 use std::io::*;
