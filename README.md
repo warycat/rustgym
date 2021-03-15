@@ -3783,6 +3783,15 @@ All the solutions here are crafted with love and their performance beats 99% of 
       </tr>
       <tr>
         <td>
+          45
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/45"> Jump Game II</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
           46
         </td>
         <td>
@@ -11532,15 +11541,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
       </tr>
       <tr>
         <td>
-          45
-        </td>
-        <td>
-          <a href="http://rustgym.com/leetcode/45"> Jump Game II</a>
-        </td>
-        <td>Hard</td>
-      </tr>
-      <tr>
-        <td>
           51
         </td>
         <td>
@@ -14650,6 +14650,15 @@ All the solutions here are crafted with love and their performance beats 99% of 
         </td>
         <td>
           <a href="http://rustgym.com/leetcode/1787"> Make the XOR of All Segments Equal to Zero</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1788
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1788"> Maximize the Beauty of the Garden</a>
         </td>
         <td>Hard</td>
       </tr></tbody>

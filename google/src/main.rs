@@ -3,9 +3,7 @@
 #![allow(clippy::collapsible_if)]
 #![allow(clippy::needless_range_loop)]
 #![allow(clippy::too_many_arguments)]
-
-mod year2013;
-mod year2020;
+#![allow(clippy::suspicious_operation_groupings)]
 
 use std::fmt::Write;
 use std::io::*;
@@ -50,3 +48,6 @@ fn solve(reader: &mut dyn BufRead, writer: &mut dyn Write) -> RustGymResult {
     write!(writer, "{}", line)?;
     Ok(())
 }
+
+mod codejam;
+mod kickstart;
