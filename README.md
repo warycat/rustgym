@@ -3576,6 +3576,15 @@ All the solutions here are crafted with love and their performance beats 99% of 
       </tr>
       <tr>
         <td>
+          1790
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1790"> Check if One String Swap Can Make Strings Equal</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
           2
         </td>
         <td>
@@ -11451,6 +11460,24 @@ All the solutions here are crafted with love and their performance beats 99% of 
       </tr>
       <tr>
         <td>
+          1791
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1791"> Find Center of Star Graph</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1792
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1792"> Maximum Average Pass Ratio</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
           4
         </td>
         <td>
@@ -14661,6 +14688,15 @@ All the solutions here are crafted with love and their performance beats 99% of 
           <a href="http://rustgym.com/leetcode/1788"> Maximize the Beauty of the Garden</a>
         </td>
         <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1793
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1793"> Maximum Score of a Good Subarray</a>
+        </td>
+        <td>Hard</td>
       </tr></tbody>
 </table>
 
@@ -15012,6 +15048,78 @@ All the solutions here are crafted with love and their performance beats 99% of 
         </td>
         <td>
           <a href="http://rustgym.com/adventofcode/202019"> Monster Messages</a>
+        </td>
+      </tr></tbody>
+</table>
+
+<table id="google" class="table-auto">
+  <thead>
+    <tr>
+      <th>Division</th>
+      <th>Year</th>
+      <th>Round</th>
+      <th>Google</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td>CodeJam</td>
+        <td>
+          2008
+        </td>
+        <td>
+          Round1
+        </td>
+        <td>
+          <a href="http://rustgym.com/google/120080101"> fly swatter</a>
+        </td>
+      </tr>
+      <tr>
+        <td>KickStart</td>
+        <td>
+          2013
+        </td>
+        <td>
+          Round1
+        </td>
+        <td>
+          <a href="http://rustgym.com/google/220130101"> moist</a>
+        </td>
+      </tr>
+      <tr>
+        <td>KickStart</td>
+        <td>
+          2013
+        </td>
+        <td>
+          Round1
+        </td>
+        <td>
+          <a href="http://rustgym.com/google/220130102"> captain hammer</a>
+        </td>
+      </tr>
+      <tr>
+        <td>KickStart</td>
+        <td>
+          2013
+        </td>
+        <td>
+          Round1
+        </td>
+        <td>
+          <a href="http://rustgym.com/google/220130103"> bad horse</a>
+        </td>
+      </tr>
+      <tr>
+        <td>KickStart</td>
+        <td>
+          2020
+        </td>
+        <td>
+          Round1
+        </td>
+        <td>
+          <a href="http://rustgym.com/google/220200101"> allocation</a>
         </td>
       </tr></tbody>
 </table>

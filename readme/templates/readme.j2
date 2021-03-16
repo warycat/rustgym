@@ -101,3 +101,38 @@ All the solutions here are crafted with love and their performance beats 99% of 
     {%- endfor -%}
   </tbody>
 </table>
+
+<table id="google" class="table-auto">
+  <thead>
+    <tr>
+      <th>Division</th>
+      <th>Year</th>
+      <th>Round</th>
+      <th>Google</th>
+    </tr>
+  </thead>
+  <tbody>
+    {%- for row in google_problems %}
+      <tr>
+        <td>
+          {%- if row.division == 1 -%}
+            CodeJam
+          {%- else if row.division == 2 -%}
+            KickStart
+          {%- else -%}
+            Unknown
+          {%- endif -%}
+        </td>
+        <td>
+          {{row.year}}
+        </td>
+        <td>
+          Round{{row.round}}
+        </td>
+        <td>
+          <a href="http://rustgym.com/google/{{row.id}}"> {{row.title}}</a>
+        </td>
+      </tr>
+    {%- endfor -%}
+  </tbody>
+</table>

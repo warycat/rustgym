@@ -10,3 +10,4 @@ diesel = { version = "1.4.5", features = ["sqlite"] }
 rustgym-consts = { path = "../consts" }
 serde = "1.0.118"
 derive-new = "0.5.8"
+regex = "1.4.2"

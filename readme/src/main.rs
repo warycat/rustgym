@@ -1,4 +1,5 @@
 mod description;
+mod google;
 mod leetcode;
 mod solution;
 
@@ -10,9 +11,11 @@ use askama::Template;
 use description::*;
 use diesel::prelude::*;
 use diesel::sqlite::SqliteConnection;
+use google::*;
 use leetcode::*;
 use rustgym_consts::*;
 use rustgym_schema::AdventOfCodeDescription;
+use rustgym_schema::GoogleProblem;
 use rustgym_schema::LeetcodeQuestion;
 use solution::*;
 use std::fs;
@@ -23,6 +26,7 @@ use std::path::Path;
 struct ReadmeContext {
     leetcode_questions: Vec<LeetcodeQuestion>,
     adventofcode_descriptions: Vec<AdventOfCodeDescription>,
+    google_problems: Vec<GoogleProblem>,
 }
 
 // type Tags = HashMap<i32, Vec<Tag>>;
@@ -31,6 +35,7 @@ struct ReadmeContext {
 fn main() -> Result<()> {
     use rustgym_schema::schema::adventofcode_description::dsl::*;
     use rustgym_schema::schema::adventofcode_solution::dsl::*;
+    use rustgym_schema::schema::google_problem::dsl::*;
     use rustgym_schema::schema::leetcode_description::dsl::*;
     use rustgym_schema::schema::leetcode_question::dsl::*;
     use rustgym_schema::schema::leetcode_solution::dsl::*;
@@ -74,20 +79,34 @@ fn main() -> Result<()> {
         .values(&adventofcode_solutions)
         .execute(&conn)?;
 
+    let google_src_dir = Path::new(GOOGLE_SRC);
+    let google_problems: Vec<GoogleProblem> = all_google_problems(google_src_dir);
+    diesel::insert_into(google_problem)
+        .values(google_problems)
+        .execute(&conn)?;
+
     let leetcode_questions: Vec<LeetcodeQuestion> = leetcode_question
         .order((
             rustgym_schema::schema::leetcode_question::dsl::level,
             rustgym_schema::schema::leetcode_question::dsl::id,
         ))
         .load(&conn)?;
+
     let adventofcode_descriptions = adventofcode_description
         .order((
             rustgym_schema::schema::adventofcode_description::year,
             rustgym_schema::schema::adventofcode_description::day,
         ))
         .load(&conn)?;
-    let readme_text: String =
-        ReadmeContext::new(leetcode_questions, adventofcode_descriptions).render()?;
+
+    let google_problems = google_problem.load(&conn)?;
+
+    let readme_text: String = ReadmeContext::new(
+        leetcode_questions,
+        adventofcode_descriptions,
+        google_problems,
+    )
+    .render()?;
     let readme_md = Path::new(README_MD);
     fs::write(&readme_md, readme_text).unwrap();
     Ok(())

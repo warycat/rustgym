@@ -20,6 +20,20 @@ table! {
 }
 
 table! {
+    google_problem (id) {
+        id -> Integer,
+        division -> Integer,
+        year -> Integer,
+        round -> Integer,
+        number -> Integer,
+        title -> Text,
+        problem -> Text,
+        solution -> Text,
+        analysis -> Text,
+    }
+}
+
+table! {
     leetcode_description (id) {
         id -> Integer,
         filename -> Text,
@@ -50,6 +64,7 @@ joinable!(leetcode_solution -> leetcode_question (question_id));
 allow_tables_to_appear_in_same_query!(
     adventofcode_description,
     adventofcode_solution,
+    google_problem,
     leetcode_description,
     leetcode_question,
     leetcode_solution,

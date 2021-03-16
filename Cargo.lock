@@ -2478,6 +2478,7 @@ version = "0.1.0"
 dependencies = [
  "derive-new",
  "diesel",
+ "regex",
  "rustgym-consts",
  "serde",
 ]
