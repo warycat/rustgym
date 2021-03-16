@@ -2410,6 +2410,13 @@ name = "rustgym-consts"
 version = "0.1.0"
 
 [[package]]
+name = "rustgym-google"
+version = "0.1.0"
+dependencies = [
+ "rustgym-util 0.2.4",
+]
+
+[[package]]
 name = "rustgym-hackerrank"
 version = "0.1.0"
 dependencies = [
@@ -2426,13 +2433,6 @@ dependencies = [
  "rustgym-consts",
  "rustgym-schema",
  "sonic-channel",
-]
-
-[[package]]
-name = "rustgym-kickstart"
-version = "0.1.0"
-dependencies = [
- "rustgym-util 0.2.4",
 ]
 
 [[package]]
@@ -2478,6 +2478,7 @@ version = "0.1.0"
 dependencies = [
  "derive-new",
  "diesel",
+ "regex",
  "rustgym-consts",
  "serde",
 ]

@@ -1,5 +1,5 @@
 [package]
-name = "rustgym-kickstart"
+name = "rustgym-google"
 version = "0.1.0"
 authors = ["Larry Fantasy <larry.fantasy@gmail.com>"]
 edition = "2018"

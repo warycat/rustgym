@@ -3576,6 +3576,15 @@ All the solutions here are crafted with love and their performance beats 99% of 
       </tr>
       <tr>
         <td>
+          1790
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1790"> Check if One String Swap Can Make Strings Equal</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
           2
         </td>
         <td>
@@ -3778,6 +3787,15 @@ All the solutions here are crafted with love and their performance beats 99% of 
         </td>
         <td>
           <a href="http://rustgym.com/leetcode/43"> Multiply Strings</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          45
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/45"> Jump Game II</a>
         </td>
         <td>Medium</td>
       </tr>
@@ -11442,6 +11460,24 @@ All the solutions here are crafted with love and their performance beats 99% of 
       </tr>
       <tr>
         <td>
+          1791
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1791"> Find Center of Star Graph</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1792
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1792"> Maximum Average Pass Ratio</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
           4
         </td>
         <td>
@@ -11527,15 +11563,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
         </td>
         <td>
           <a href="http://rustgym.com/leetcode/44"> Wildcard Matching</a>
-        </td>
-        <td>Hard</td>
-      </tr>
-      <tr>
-        <td>
-          45
-        </td>
-        <td>
-          <a href="http://rustgym.com/leetcode/45"> Jump Game II</a>
         </td>
         <td>Hard</td>
       </tr>
@@ -14652,6 +14679,24 @@ All the solutions here are crafted with love and their performance beats 99% of 
           <a href="http://rustgym.com/leetcode/1787"> Make the XOR of All Segments Equal to Zero</a>
         </td>
         <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1788
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1788"> Maximize the Beauty of the Garden</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1793
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1793"> Maximum Score of a Good Subarray</a>
+        </td>
+        <td>Hard</td>
       </tr></tbody>
 </table>
 
@@ -14669,7 +14714,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
           2015
         </td>
         <td>
-          Day1
+          1
         </td>
         <td>
           <a href="http://rustgym.com/adventofcode/201501"> Not Quite Lisp</a>
@@ -14680,7 +14725,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
           2015
         </td>
         <td>
-          Day2
+          2
         </td>
         <td>
           <a href="http://rustgym.com/adventofcode/201502"> I Was Told There Would Be No Math</a>
@@ -14691,7 +14736,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
           2015
         </td>
         <td>
-          Day3
+          3
         </td>
         <td>
           <a href="http://rustgym.com/adventofcode/201503"> Perfectly Spherical Houses in a Vacuum</a>
@@ -14702,7 +14747,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
           2015
         </td>
         <td>
-          Day4
+          4
         </td>
         <td>
           <a href="http://rustgym.com/adventofcode/201504"> The Ideal Stocking Stuffer</a>
@@ -14713,7 +14758,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
           2015
         </td>
         <td>
-          Day5
+          5
         </td>
         <td>
           <a href="http://rustgym.com/adventofcode/201505"> Doesn&#x27;t He Have Intern-Elves For This?</a>
@@ -14724,7 +14769,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
           2015
         </td>
         <td>
-          Day6
+          6
         </td>
         <td>
           <a href="http://rustgym.com/adventofcode/201506"> Probably a Fire Hazard</a>
@@ -14735,7 +14780,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
           2015
         </td>
         <td>
-          Day7
+          7
         </td>
         <td>
           <a href="http://rustgym.com/adventofcode/201507"> Some Assembly Required</a>
@@ -14746,7 +14791,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
           2015
         </td>
         <td>
-          Day8
+          8
         </td>
         <td>
           <a href="http://rustgym.com/adventofcode/201508"> Matchsticks</a>
@@ -14757,7 +14802,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
           2015
         </td>
         <td>
-          Day9
+          9
         </td>
         <td>
           <a href="http://rustgym.com/adventofcode/201509"> All in a Single Night</a>
@@ -14768,7 +14813,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
           2015
         </td>
         <td>
-          Day10
+          10
         </td>
         <td>
           <a href="http://rustgym.com/adventofcode/201510"> Elves Look, Elves Say</a>
@@ -14779,7 +14824,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
           2015
         </td>
         <td>
-          Day11
+          11
         </td>
         <td>
           <a href="http://rustgym.com/adventofcode/201511"> Corporate Policy</a>
@@ -14790,7 +14835,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
           2015
         </td>
         <td>
-          Day12
+          12
         </td>
         <td>
           <a href="http://rustgym.com/adventofcode/201512"> JSAbacusFramework.io</a>
@@ -14801,7 +14846,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
           2020
         </td>
         <td>
-          Day1
+          1
         </td>
         <td>
           <a href="http://rustgym.com/adventofcode/202001"> Report Repair</a>
@@ -14812,7 +14857,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
           2020
         </td>
         <td>
-          Day2
+          2
         </td>
         <td>
           <a href="http://rustgym.com/adventofcode/202002"> Password Philosophy</a>
@@ -14823,7 +14868,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
           2020
         </td>
         <td>
-          Day3
+          3
         </td>
         <td>
           <a href="http://rustgym.com/adventofcode/202003"> Toboggan Trajectory</a>
@@ -14834,7 +14879,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
           2020
         </td>
         <td>
-          Day4
+          4
         </td>
         <td>
           <a href="http://rustgym.com/adventofcode/202004"> Passport Processing</a>
@@ -14845,7 +14890,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
           2020
         </td>
         <td>
-          Day5
+          5
         </td>
         <td>
           <a href="http://rustgym.com/adventofcode/202005"> Binary Boarding</a>
@@ -14856,7 +14901,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
           2020
         </td>
         <td>
-          Day6
+          6
         </td>
         <td>
           <a href="http://rustgym.com/adventofcode/202006"> Custom Customs</a>
@@ -14867,7 +14912,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
           2020
         </td>
         <td>
-          Day7
+          7
         </td>
         <td>
           <a href="http://rustgym.com/adventofcode/202007"> Handy Haversacks</a>
@@ -14878,7 +14923,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
           2020
         </td>
         <td>
-          Day8
+          8
         </td>
         <td>
           <a href="http://rustgym.com/adventofcode/202008"> Handheld Halting</a>
@@ -14889,7 +14934,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
           2020
         </td>
         <td>
-          Day9
+          9
         </td>
         <td>
           <a href="http://rustgym.com/adventofcode/202009"> Encoding Error</a>
@@ -14900,7 +14945,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
           2020
         </td>
         <td>
-          Day10
+          10
         </td>
         <td>
           <a href="http://rustgym.com/adventofcode/202010"> Adapter Array</a>
@@ -14911,7 +14956,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
           2020
         </td>
         <td>
-          Day11
+          11
         </td>
         <td>
           <a href="http://rustgym.com/adventofcode/202011"> Seating System</a>
@@ -14922,7 +14967,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
           2020
         </td>
         <td>
-          Day12
+          12
         </td>
         <td>
           <a href="http://rustgym.com/adventofcode/202012"> Rain Risk</a>
@@ -14933,7 +14978,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
           2020
         </td>
         <td>
-          Day13
+          13
         </td>
         <td>
           <a href="http://rustgym.com/adventofcode/202013"> Shuttle Search</a>
@@ -14944,7 +14989,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
           2020
         </td>
         <td>
-          Day14
+          14
         </td>
         <td>
           <a href="http://rustgym.com/adventofcode/202014"> Docking Data</a>
@@ -14955,7 +15000,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
           2020
         </td>
         <td>
-          Day15
+          15
         </td>
         <td>
           <a href="http://rustgym.com/adventofcode/202015"> Rambunctious Recitation</a>
@@ -14966,7 +15011,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
           2020
         </td>
         <td>
-          Day16
+          16
         </td>
         <td>
           <a href="http://rustgym.com/adventofcode/202016"> Ticket Translation</a>
@@ -14977,7 +15022,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
           2020
         </td>
         <td>
-          Day17
+          17
         </td>
         <td>
           <a href="http://rustgym.com/adventofcode/202017"> Conway Cubes</a>
@@ -14988,7 +15033,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
           2020
         </td>
         <td>
-          Day18
+          18
         </td>
         <td>
           <a href="http://rustgym.com/adventofcode/202018"> Operation Order</a>
@@ -14999,10 +15044,82 @@ All the solutions here are crafted with love and their performance beats 99% of 
           2020
         </td>
         <td>
-          Day19
+          19
         </td>
         <td>
           <a href="http://rustgym.com/adventofcode/202019"> Monster Messages</a>
+        </td>
+      </tr></tbody>
+</table>
+
+<table id="google" class="table-auto">
+  <thead>
+    <tr>
+      <th>Division</th>
+      <th>Year</th>
+      <th>Round</th>
+      <th>Google</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td>CodeJam</td>
+        <td>
+          2008
+        </td>
+        <td>
+          1
+        </td>
+        <td>
+          <a href="http://rustgym.com/google/120080101"> fly swatter</a>
+        </td>
+      </tr>
+      <tr>
+        <td>KickStart</td>
+        <td>
+          2013
+        </td>
+        <td>
+          1
+        </td>
+        <td>
+          <a href="http://rustgym.com/google/220130101"> moist</a>
+        </td>
+      </tr>
+      <tr>
+        <td>KickStart</td>
+        <td>
+          2013
+        </td>
+        <td>
+          1
+        </td>
+        <td>
+          <a href="http://rustgym.com/google/220130102"> captain hammer</a>
+        </td>
+      </tr>
+      <tr>
+        <td>KickStart</td>
+        <td>
+          2013
+        </td>
+        <td>
+          1
+        </td>
+        <td>
+          <a href="http://rustgym.com/google/220130103"> bad horse</a>
+        </td>
+      </tr>
+      <tr>
+        <td>KickStart</td>
+        <td>
+          2020
+        </td>
+        <td>
+          1
+        </td>
+        <td>
+          <a href="http://rustgym.com/google/220200101"> allocation</a>
         </td>
       </tr></tbody>
 </table>

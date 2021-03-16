@@ -9,6 +9,7 @@ pub const LEETCODE_SRC: &str = "leetcode/src/";
 pub const LEETCODE_DESC: &str = "leetcode/desc/";
 pub const ADVENTOFCODE_SRC: &str = "adventofcode/src/";
 pub const ADVENTOFCODE_DESC: &str = "adventofcode/desc/";
+pub const GOOGLE_SRC: &str = "google/src/";
 // pub const HACKERRANK_SRC: &str = "rustgym/src/hackerrank";
 // pub const HACKERRANK_DESC: &str = "rustgym/desc/hackerrank";
 

@@ -40,4 +40,8 @@ impl UnionFind {
     pub fn group(&self) -> usize {
         self.group
     }
+
+    pub fn size(&self) -> usize {
+        self.n
+    }
 }
