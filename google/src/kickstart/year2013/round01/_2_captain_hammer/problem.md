@@ -38,37 +38,3 @@ Memory limit: 1 GB.<br>
 1 ≤ <b>D</b> ≤ 10000;<br>
 It is guaranteed that each test case will be solvable.
 </p>
-
-  <h3>Sample</h3>
-  <div class="problem-io-wrapper">
-  <table>
-  <tbody><tr>
-  <td>
-  <br>
-  <span class="io-table-header">Input</span>
-  <br>&nbsp;
-  </td>
-  <td>
-  <br>
-  <span class="io-table-header">Output</span>
-  <br>&nbsp;
-  </td>
-  </tr>
-  <tr>
-  <td>
-  <pre class="io-content">3
-98 980
-98 490
-299 1234
-
-  </pre>
-  </td>
-  <td>
-  <pre class="io-content">Case #1: 45.0000000
-Case #2: 15.0000000
-Case #3: 3.8870928
-
-  </pre>
-  </td></tr></tbody></table>
-  </div>
-  </p>

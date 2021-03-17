@@ -7,6 +7,8 @@ CREATE TABLE google_problem (
     number   INTEGER NOT NULL,
     title    TEXT    NOT NULL,
     problem  TEXT    NOT NULL,
+    input    TEXT    NOT NULL,
+    output   TEXT    NOT NULL,
     solution TEXT    NOT NULL,
     analysis TEXT    NOT NULL
 );

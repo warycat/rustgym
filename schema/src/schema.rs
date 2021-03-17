@@ -28,6 +28,8 @@ table! {
         number -> Integer,
         title -> Text,
         problem -> Text,
+        input -> Text,
+        output -> Text,
         solution -> Text,
         analysis -> Text,
     }

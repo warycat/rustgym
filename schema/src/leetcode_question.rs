@@ -38,4 +38,8 @@ impl LeetcodeQuestion {
     pub fn from(&self) -> String {
         format!("Leetcode {}", self.level_str())
     }
+
+    pub fn practice_url(&self) -> String {
+        format!("https://leetcode.com/problems/{}/", self.slug)
+    }
 }

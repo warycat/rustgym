@@ -33,39 +33,3 @@ Each pair will contain two distinct League members.
 <p>
 1 ≤ <b>M</b> ≤ 100.
 </p>
-
-<h3>Sample</h3>
-<div class="problem-io-wrapper">
-<table>
-<tbody><tr>
-<td>
-<br>
-<span class="io-table-header">Input</span>
-<br>&nbsp;
-</td>
-<td>
-<br>
-<span class="io-table-header">Output</span>
-<br>&nbsp;
-</td>
-</tr>
-<tr>
-<td>
-<code>
-2<br>
-1<br>
-Dead_Bowie Fake_Thomas_Jefferson<br>
-3<br>
-Dead_Bowie Fake_Thomas_Jefferson<br>
-Fake_Thomas_Jefferson Fury_Leika<br>
-Fury_Leika Dead_Bowie<br>
-</code>
-</td>
-<td>
-<code>
-Case #1: Yes<br>
-Case #2: No<br>
-<br>
-</code>
-</td></tr></tbody></table>
-</div></p>

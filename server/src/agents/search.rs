@@ -9,6 +9,7 @@ use rustgym_consts::*;
 use rustgym_msg::Msg;
 use rustgym_msg::QueryResult;
 use rustgym_schema::AdventOfCodeDescription;
+use rustgym_schema::GoogleProblem;
 use rustgym_schema::LeetcodeQuestion;
 use sonic_channel::*;
 
@@ -120,6 +121,7 @@ fn cleanup(text: String) -> String {
 
 fn get_results(objects: Vec<String>, pool: &SqlitePool) -> Result<Vec<QueryResult>> {
     use rustgym_schema::schema::adventofcode_description::dsl::*;
+    use rustgym_schema::schema::google_problem::dsl::*;
     use rustgym_schema::schema::leetcode_question::dsl::*;
     let mut res = vec![];
     let conn = pool.get()?;
@@ -149,6 +151,19 @@ fn get_results(objects: Vec<String>, pool: &SqlitePool) -> Result<Vec<QueryResul
                     description.title.to_string(),
                     description.href(),
                     description.from(),
+                );
+                res.push(query_result);
+            }
+            "google" => {
+                let id_ = parts[1].parse::<i32>()?;
+                let item: GoogleProblem = google_problem
+                    .filter(rustgym_schema::schema::google_problem::dsl::id.eq(id_))
+                    .first(&conn)?;
+                let query_result = QueryResult::new(
+                    parts[1].to_string(),
+                    item.title.to_string(),
+                    item.href(),
+                    item.from(),
                 );
                 res.push(query_result);
             }

@@ -3,6 +3,7 @@ use diesel::prelude::*;
 use diesel::sqlite::SqliteConnection;
 use rustgym_consts::*;
 use rustgym_schema::AdventOfCodeDescription;
+use rustgym_schema::GoogleProblem;
 use rustgym_schema::LeetcodeDescription;
 use rustgym_schema::LeetcodeQuestion;
 use sonic_channel::*;
@@ -18,6 +19,7 @@ fn cleanup(html: String) -> String {
 
 fn main() -> Result<()> {
     use rustgym_schema::schema::adventofcode_description::dsl::*;
+    use rustgym_schema::schema::google_problem::dsl::*;
     use rustgym_schema::schema::leetcode_description::dsl::*;
     use rustgym_schema::schema::leetcode_question::dsl::*;
 
@@ -48,5 +50,13 @@ fn main() -> Result<()> {
         channel.push(SONIC_COLLECTION, SONIC_BUCKET, &object, &text)?;
     }
 
+    let google_problems: Vec<GoogleProblem> = google_problem.load(&conn)?;
+    for item in google_problems {
+        let object = format!("google_{}", item.id);
+        let text = cleanup(item.title);
+        channel.push(SONIC_COLLECTION, SONIC_BUCKET, &object, &text)?;
+        let text = cleanup(item.problem);
+        channel.push(SONIC_COLLECTION, SONIC_BUCKET, &object, &text)?;
+    }
     Ok(())
 }

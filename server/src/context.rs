@@ -7,6 +7,7 @@ use actix_web::HttpResponse;
 use askama::Template;
 use rustgym_schema::adventofcode_description::AdventOfCodeDescription;
 use rustgym_schema::adventofcode_solution::AdventOfCodeSolution;
+use rustgym_schema::google_problem::GoogleProblem;
 use rustgym_schema::leetcode_description::LeetcodeDescription;
 use rustgym_schema::leetcode_question::LeetcodeQuestion;
 use rustgym_schema::leetcode_solution::LeetcodeSolution;
@@ -86,6 +87,31 @@ impl AdventOfCodeIndexRow {
     }
 }
 
+#[derive(Queryable, Clone)]
+pub struct GoogleIndexRow {
+    pub id: i32,
+    pub division: i32,
+    pub year: i32,
+    pub round: i32,
+    pub title: String,
+}
+
+impl GoogleIndexRow {
+    pub fn href(&self) -> String {
+        format!("/google/{}", self.id)
+    }
+}
+
+#[derive(Template, new)]
+#[template(path = "google-index.j2")]
+pub struct GoogleIndexContext {
+    pub app: AppContext,
+    pub session: SessionData,
+    pub path: String,
+    pub codejam_rows: Vec<GoogleIndexRow>,
+    pub kickstart_rows: Vec<GoogleIndexRow>,
+}
+
 #[derive(Template, new)]
 #[template(path = "leetcode-detail.j2")]
 pub struct LeetcodeDetailContext {
@@ -105,6 +131,15 @@ pub struct AdventOfCodeDetailContext {
     pub path: String,
     pub description: AdventOfCodeDescription,
     pub solution: AdventOfCodeSolution,
+}
+
+#[derive(Template, new)]
+#[template(path = "google-detail.j2")]
+pub struct GoogleDetailContext {
+    pub app: AppContext,
+    pub session: SessionData,
+    pub path: String,
+    pub item: GoogleProblem,
 }
 
 #[derive(Template, new)]
@@ -145,6 +180,8 @@ impl_render_wrapper!(LeetcodeIndexContext);
 impl_render_wrapper!(AdventOfCodeIndexContext);
 impl_render_wrapper!(LeetcodeDetailContext);
 impl_render_wrapper!(AdventOfCodeDetailContext);
+impl_render_wrapper!(GoogleIndexContext);
+impl_render_wrapper!(GoogleDetailContext);
 
 impl_txt_render_wrapper!(SitemapContext);
 impl_txt_render_wrapper!(RobotsContext);

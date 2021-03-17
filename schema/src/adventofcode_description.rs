@@ -19,4 +19,8 @@ impl AdventOfCodeDescription {
     pub fn from(&self) -> String {
         format!("AdventOfCode {}", self.year)
     }
+
+    pub fn practice_url(&self) -> String {
+        format!("https://adventofcode.com/{}/day/{}", self.year, self.day)
+    }
 }
