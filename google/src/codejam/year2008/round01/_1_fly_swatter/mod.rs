@@ -2,20 +2,15 @@ use rustgym_util::*;
 use std::fmt::Write;
 use std::io::*;
 
-fn solve(reader: &mut dyn BufRead, writer: &mut dyn Write) -> RustGymResult {
-    let mut it = reader.lines().map(|l| l.unwrap());
-    let t = it.next().unwrap().parse::<usize>()?;
-    for i in 1..=t {
-        let vals: Vec<f64> = it
-            .next()
-            .unwrap()
-            .split_whitespace()
-            .map(|s| s.parse::<f64>().unwrap())
-            .collect();
-        let res = probability(vals[0], vals[1], vals[2], vals[3], vals[4]);
-        writeln!(writer, "Case #{}: {:.6}", i, res)?;
-    }
-    Ok(())
+fn solve(case_no: usize, reader: &mut impl BufRead, writer: &mut impl Write) {
+    let args: Vec<f64> = reader.parse_vec();
+    let f = args[0];
+    let r0 = args[1];
+    let t = args[2];
+    let r = args[3];
+    let g = args[4];
+    let res = probability(f, r0, t, r, g);
+    writeln!(writer, "Case #{}: {:.6}", case_no, res).unwrap();
 }
 
 fn probability(f: f64, r0: f64, t: f64, r: f64, g: f64) -> f64 {
@@ -67,4 +62,4 @@ fn circle_segment(radius: f64, theta: f64) -> f64 {
     radius * radius * (theta - theta.sin()) / 2.0
 }
 
-test_gen!(test, "input.txt", "output.txt");
+google_test_gen!(test, "input.txt", "output.txt");

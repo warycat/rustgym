@@ -5,13 +5,13 @@
 {% endblock %}
 
 {% block content %}
+<h2>{{item.title}}</h2>
 <div>{{item.problem|safe}}</div>
 <h2>Sample Input & Output</h2>
 <pre>{{item.input}}</pre>
 <pre>{{item.output}}</pre>
 <h2>Rust Solution</h2>
 <pre><code class="rust">{{item.solution}}</code></pre>
-<h2>Analysis</h2>
 <div>{{item.analysis|safe}}</div>
 
 <div class="grid grid-cols-2 flex justify-between">

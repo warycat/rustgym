@@ -3,17 +3,10 @@ use std::collections::HashMap;
 use std::fmt::Write;
 use std::io::*;
 
-fn solve(reader: &mut dyn BufRead, writer: &mut dyn Write) -> RustGymResult {
-    let mut it = reader.lines().map(|l| l.unwrap());
-    let n = it.next().unwrap().parse::<usize>()?;
-    let arr: Vec<i32> = it
-        .next()
-        .unwrap()
-        .split_whitespace()
-        .map(|s| s.parse::<i32>().unwrap())
-        .collect();
-    write!(writer, "{}", sock_merchant(n, arr))?;
-    Ok(())
+fn solve(reader: &mut impl BufRead, writer: &mut impl Write) {
+    let n: usize = reader.parse_line();
+    let arr: Vec<i32> = reader.parse_vec();
+    write!(writer, "{}", sock_merchant(n, arr)).unwrap();
 }
 
 fn sock_merchant(n: usize, arr: Vec<i32>) -> usize {

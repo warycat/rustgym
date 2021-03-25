@@ -2,18 +2,11 @@ use rustgym_util::*;
 use std::fmt::Write;
 use std::io::*;
 
-fn solve(reader: &mut dyn BufRead, writer: &mut dyn Write) -> RustGymResult {
-    let mut it = reader.lines().map(|l| l.unwrap());
-    let n = it.next().unwrap().parse::<usize>()?;
-    let c: Vec<i32> = it
-        .next()
-        .unwrap()
-        .split_whitespace()
-        .map(|s| s.parse::<i32>().unwrap())
-        .collect();
+fn solve(reader: &mut impl BufRead, writer: &mut impl Write) {
+    let n = reader.parse_line();
+    let c: Vec<i32> = reader.parse_vec();
     let res = jumping_on_the_clouds(n, c);
     write!(writer, "{}", res).unwrap();
-    Ok(())
 }
 
 fn jumping_on_the_clouds(n: usize, c: Vec<i32>) -> usize {

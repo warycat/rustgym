@@ -1,11 +1,3 @@
-#![deny(clippy::all)]
-#![allow(dead_code)]
-#![allow(clippy::collapsible_if)]
-#![allow(clippy::needless_range_loop)]
-#![allow(clippy::too_many_arguments)]
-#![allow(clippy::suspicious_operation_groupings)]
-
-use std::fmt::Write;
 use std::io::*;
 
 pub trait RustGymRead: BufRead {
@@ -81,20 +73,3 @@ pub trait RustGymRead: BufRead {
 }
 
 impl<R: BufRead> RustGymRead for R {}
-fn main() {
-    let mut res = "".to_string();
-    let mut reader = BufReader::new(stdin());
-    let t: usize = reader.parse_line();
-    for i in 1..=t {
-        solve(i, &mut reader, &mut res);
-    }
-    print!("{}", res);
-}
-
-fn solve(case_no: usize, reader: &mut impl BufRead, writer: &mut impl Write) {
-    let line = reader.collect_string();
-    writeln!(writer, "Case #{}: {}", case_no, line).unwrap();
-}
-
-mod codejam;
-mod kickstart;

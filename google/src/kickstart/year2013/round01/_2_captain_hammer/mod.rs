@@ -2,20 +2,12 @@ use rustgym_util::*;
 use std::fmt::Write;
 use std::io::*;
 
-fn solve(reader: &mut dyn BufRead, writer: &mut dyn Write) -> RustGymResult {
-    let mut it = reader.lines().map(|l| l.unwrap());
-    let t = it.next().unwrap().parse::<usize>()?;
-    for i in 1..=t {
-        let nums: Vec<f64> = it
-            .next()
-            .unwrap()
-            .split_whitespace()
-            .map(|s| s.parse::<f64>().unwrap())
-            .collect();
-        let res = degree(nums[0], nums[1]);
-        writeln!(writer, "Case #{}: {:.7}", i, res)?;
-    }
-    Ok(())
+fn solve(case_no: usize, reader: &mut impl BufRead, writer: &mut impl Write) {
+    let args: Vec<f64> = reader.parse_vec();
+    let v = args[0];
+    let d = args[1];
+    let res = degree(v, d);
+    writeln!(writer, "Case #{}: {:.7}", case_no, res).unwrap();
 }
 
 fn degree(v: f64, d: f64) -> f64 {
@@ -39,4 +31,4 @@ fn degree(v: f64, d: f64) -> f64 {
     }
 }
 
-test_gen!(test, "input.txt", "output.txt");
+google_test_gen!(test, "input.txt", "output.txt");

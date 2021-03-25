@@ -13,16 +13,14 @@ use rustgym_util::*;
 use std::fmt::Write;
 use std::io::*;
 
-fn solve(reader: &mut dyn BufRead, writer: &mut dyn Write) -> RustGymResult {
-    let mut it = reader.lines().map(|l| l.unwrap());
-    let line = it.next().unwrap();
-    write!(writer, "{}", line)?;
-    Ok(())
+fn solve(reader: &mut impl RustGymRead, writer: &mut impl Write) {
+    let line: i32 = reader.parse_line();
+    write!(writer, "{}", line).unwrap();
 }
 
-fn main() -> RustGymResult {
+fn main() {
     let mut res = "".to_string();
-    solve(&mut BufReader::new(stdin()), &mut res)?;
+    let mut reader = BufReader::new(stdin());
+    solve(&mut reader, &mut res);
     print!("{}", res);
-    Ok(())
 }
