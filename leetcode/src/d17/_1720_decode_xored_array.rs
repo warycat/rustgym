@@ -3,8 +3,7 @@ struct Solution;
 impl Solution {
     fn decode(encoded: Vec<i32>, first: i32) -> Vec<i32> {
         let n = encoded.len();
-        let mut res = vec![];
-        res.push(first);
+        let mut res = vec![first];
         for i in 0..n {
             res.push(res[i] ^ encoded[i]);
         }

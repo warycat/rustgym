@@ -5,8 +5,7 @@ struct CBTInserter {
 
 impl CBTInserter {
     fn new(root: TreeLink) -> Self {
-        let mut stack: Vec<TreeLink> = vec![];
-        stack.push(root);
+        let mut stack: Vec<TreeLink> = vec![root];
         let mut i = 0;
         while i < stack.len() {
             let left = stack[i].as_mut().unwrap().borrow_mut().left.clone();

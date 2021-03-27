@@ -2442,7 +2442,7 @@ dependencies = [
  "assert_approx_eq",
  "paste",
  "rand 0.7.3",
- "rustgym-util 0.2.4 (registry+https://github.com/rust-lang/crates.io-index)",
+ "rustgym-util 0.2.4",
 ]
 
 [[package]]

@@ -9,8 +9,7 @@ impl Solution {
             w.push(nums[i]);
         }
         w.sort_unstable();
-        let mut res = vec![];
-        res.push(Self::median(&w, k));
+        let mut res = vec![Self::median(&w, k)];
         for i in k..n {
             let pos = w.binary_search(&nums[i - k]).unwrap_or_else(|e| e);
             w.remove(pos);

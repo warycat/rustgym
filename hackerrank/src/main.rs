@@ -3,6 +3,7 @@
 #![allow(clippy::collapsible_if)]
 #![allow(clippy::needless_range_loop)]
 #![allow(clippy::too_many_arguments)]
+#![allow(unused_imports)]
 
 mod hello_world;
 mod jumping_on_the_clouds;

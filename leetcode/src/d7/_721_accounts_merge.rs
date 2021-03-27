@@ -1,39 +1,9 @@
 struct Solution;
 
+use rustgym_util::*;
 use std::collections::BTreeMap;
 use std::collections::BTreeSet;
 use std::collections::HashMap;
-
-struct UnionFind {
-    parent: Vec<usize>,
-    n: usize,
-}
-
-impl UnionFind {
-    fn new(n: usize) -> Self {
-        let parent = (0..n).collect();
-        UnionFind { parent, n }
-    }
-
-    fn find(&mut self, i: usize) -> usize {
-        let j = self.parent[i];
-        if i == j {
-            i
-        } else {
-            let k = self.find(j);
-            self.parent[i] = k;
-            k
-        }
-    }
-
-    fn union(&mut self, mut i: usize, mut j: usize) {
-        i = self.find(i);
-        j = self.find(j);
-        if i != j {
-            self.parent[i] = j;
-        }
-    }
-}
 
 impl Solution {
     fn accounts_merge(accounts: Vec<Vec<String>>) -> Vec<Vec<String>> {
@@ -75,8 +45,7 @@ impl Solution {
             hm.entry(group_id).or_default().insert(i);
         }
         for (group_id, ids) in hm.into_iter() {
-            let mut v: Vec<String> = vec![];
-            v.push(owners[group_id].clone());
+            let mut v: Vec<String> = vec![owners[group_id].clone()];
             for id in ids {
                 v.push(emails[id].to_string());
             }
