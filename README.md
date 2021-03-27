@@ -2,6 +2,7 @@
 
 ## [Leetcode Solutions in Rust](#leetcode)
 ## [AdventOfCode Solutions in Rust](#adventofcode)
+## [Google Solutions in Rust](#google)
 
 This project demostrates how to create **Data Structures** and to implement **Algorithms** using programming language **Rust**
 All the solutions here are crafted with love and their performance beats 99% of other solutions on the leetcode website. Tutorial videos will be added later.
@@ -34,11 +35,11 @@ All the solutions here are crafted with love and their performance beats 99% of 
 - DFS Graph
 - Dijkstra’s Algorithm
 - Tree Traversals
-    - BFS
-    - DFS
-        - in-order
-        - pre-order
-        - post-order
+  - BFS
+  - DFS
+    - in-order
+    - pre-order
+    - post-order
 - Topological Sort
 - Detect cycle in an undirected graph
 - Detect a cycle in a directed graph
@@ -3585,6 +3586,24 @@ All the solutions here are crafted with love and their performance beats 99% of 
       </tr>
       <tr>
         <td>
+          1796
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1796"> Second Largest Digit in a String</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1800
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1800"> Maximum Ascending Subarray Sum</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
           2
         </td>
         <td>
@@ -4093,6 +4112,15 @@ All the solutions here are crafted with love and their performance beats 99% of 
         </td>
         <td>
           <a href="http://rustgym.com/leetcode/96"> Unique Binary Search Trees</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          97
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/97"> Interleaving String</a>
         </td>
         <td>Medium</td>
       </tr>
@@ -11478,6 +11506,60 @@ All the solutions here are crafted with love and their performance beats 99% of 
       </tr>
       <tr>
         <td>
+          1794
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1794"> Count Pairs of Equal Substrings With Minimum Difference</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1797
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1797"> Design Authentication Manager</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1798
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1798"> Maximum Number of Consecutive Values You Can Make</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1801
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1801"> Number of Orders in the Backlog</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1802
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1802"> Maximum Value at a Given Index in a Bounded Array</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1804
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1804"> Implement Trie II (Prefix Tree)</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
           4
         </td>
         <td>
@@ -11653,15 +11735,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
         </td>
         <td>
           <a href="http://rustgym.com/leetcode/87"> Scramble String</a>
-        </td>
-        <td>Hard</td>
-      </tr>
-      <tr>
-        <td>
-          97
-        </td>
-        <td>
-          <a href="http://rustgym.com/leetcode/97"> Interleaving String</a>
         </td>
         <td>Hard</td>
       </tr>
@@ -14697,6 +14770,24 @@ All the solutions here are crafted with love and their performance beats 99% of 
           <a href="http://rustgym.com/leetcode/1793"> Maximum Score of a Good Subarray</a>
         </td>
         <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1799
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1799"> Maximize Score After N Operations</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1803
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1803"> Count Pairs With XOR in a Range</a>
+        </td>
+        <td>Hard</td>
       </tr></tbody>
 </table>
 
@@ -15120,6 +15211,54 @@ All the solutions here are crafted with love and their performance beats 99% of 
         </td>
         <td>
           <a href="http://rustgym.com/google/220200101"> allocation</a>
+        </td>
+      </tr>
+      <tr>
+        <td>KickStart</td>
+        <td>
+          2021
+        </td>
+        <td>
+          1
+        </td>
+        <td>
+          <a href="http://rustgym.com/google/220210101"> k goodness string</a>
+        </td>
+      </tr>
+      <tr>
+        <td>KickStart</td>
+        <td>
+          2021
+        </td>
+        <td>
+          1
+        </td>
+        <td>
+          <a href="http://rustgym.com/google/220210102"> l shaped plots</a>
+        </td>
+      </tr>
+      <tr>
+        <td>KickStart</td>
+        <td>
+          2021
+        </td>
+        <td>
+          1
+        </td>
+        <td>
+          <a href="http://rustgym.com/google/220210103"> rabbit house</a>
+        </td>
+      </tr>
+      <tr>
+        <td>KickStart</td>
+        <td>
+          2021
+        </td>
+        <td>
+          1
+        </td>
+        <td>
+          <a href="http://rustgym.com/google/220210104"> checksum</a>
         </td>
       </tr></tbody>
 </table>
