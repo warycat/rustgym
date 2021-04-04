@@ -2,8 +2,8 @@ struct Solution;
 
 impl Solution {
     fn add_binary(a: String, b: String) -> String {
-        let aa = i32::from_str_radix(&a, 2).unwrap_or(0);
-        let bb = i32::from_str_radix(&b, 2).unwrap_or(0);
+        let aa = i128::from_str_radix(&a, 2).unwrap_or(0);
+        let bb = i128::from_str_radix(&b, 2).unwrap_or(0);
         format!("{:b}", aa + bb)
     }
 }
