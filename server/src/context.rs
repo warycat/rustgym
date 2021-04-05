@@ -147,6 +147,7 @@ pub struct GoogleDetailContext {
 pub struct SitemapContext {
     pub leetcode_rows: Vec<LeetcodeDescription>,
     pub adventofcode_rows: Vec<AdventOfCodeDescription>,
+    pub google_rows: Vec<GoogleProblem>,
 }
 
 #[derive(Template, new)]

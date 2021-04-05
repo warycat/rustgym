@@ -1,9 +1,13 @@
-https://rustgym.com/
-https://rustgym.com/leetcode/
+https://rustgym.com
+https://rustgym.com/leetcode
 {%- for row in leetcode_rows %}
 https://rustgym.com/leetcode/{{row.id}}
 {%- endfor %}
-https://rustgym.com/adventofcode/
+https://rustgym.com/adventofcode
 {%- for row in adventofcode_rows %}
-https://rustgym.com/adventofcode/{{row.id}}
+https://rustgym.com{{row.href()|safe}}
+{%- endfor %}
+https://rustgym.com/google
+{%- for row in google_rows %}
+https://rustgym.com{{row.href()|safe}}
 {%- endfor %}
