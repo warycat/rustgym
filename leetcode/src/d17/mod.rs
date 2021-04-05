@@ -71,3 +71,11 @@ mod _1758_minimum_changes_to_make_alternating_binary_string;
 mod _1769_minimum_number_of_operations_to_move_all_balls_to_each_box;
 //
 mod _1773_count_items_matching_a_rule;
+//
+mod _1779_find_nearest_point_that_has_the_same_x_or_y_coordinate;
+//
+mod _1784_check_if_binary_string_has_at_most_one_segment_of_ones;
+//
+mod _1790_check_if_one_string_swap_can_make_strings_equal;
+//
+mod _1796_second_largest_digit_in_a_string;
