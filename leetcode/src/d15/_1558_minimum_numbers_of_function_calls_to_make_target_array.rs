@@ -13,7 +13,7 @@ impl Solution {
             }
             max_width = max_width.max(width);
         }
-        (ones + max_width - 1) as i32
+        ((ones + max_width) as i32 - 1).max(0)
     }
 }
 
@@ -33,5 +33,8 @@ fn test() {
     assert_eq!(Solution::min_operations(nums), res);
     let nums = vec![2, 4, 8, 16];
     let res = 8;
+    assert_eq!(Solution::min_operations(nums), res);
+    let nums = vec![0];
+    let res = 0;
     assert_eq!(Solution::min_operations(nums), res);
 }
