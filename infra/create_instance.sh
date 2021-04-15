@@ -1,6 +1,6 @@
 #!/bin/bash
 TAG=v0.2.11
-VM_NAME=rustgym-23
+VM_NAME=rustgym-24
 SERVER_NAME=rustgym.com
 WORK_DIR=/root
 EMAIL=larry.fantasy@gmail.com
@@ -21,7 +21,7 @@ gcloud compute instances create $VM_NAME \
     --tags http-server,https-server \
     --metadata startup-script="#! /bin/bash
 apt update
-apt -y install nginx sqlite3 certbot python-certbot-nginx telnet
+apt -y install nginx sqlite3 certbot python-certbot-nginx telnet build-essential
 cd $WORK_DIR
 
 cat <<EOF > certbot.sh
