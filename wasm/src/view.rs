@@ -72,6 +72,9 @@ pub fn view(model: &Model) -> Node<Message> {
                     ]
                 )
             ],
-        ]
+        ],
+        video![
+            C!["video"]
+        ],
     ]
 }
