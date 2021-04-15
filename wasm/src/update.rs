@@ -15,7 +15,7 @@ pub fn update(msg: Message, model: &mut Model, orders: &mut impl Orders<Message>
                 .web_socket
                 .send_json(&rustgym_msg::Msg::SearchText(search_text))
             {
-                console_log!("error");
+                log!("error");
                 orders.send_msg(WebSocketError(err));
             };
         }
@@ -26,7 +26,7 @@ pub fn update(msg: Message, model: &mut Model, orders: &mut impl Orders<Message>
                 .web_socket
                 .send_json(&rustgym_msg::Msg::QueryText(search_text))
             {
-                console_log!("error");
+                log!("error");
                 orders.send_msg(WebSocketError(err));
             };
         }
@@ -38,7 +38,7 @@ pub fn update(msg: Message, model: &mut Model, orders: &mut impl Orders<Message>
             }
         }
         WebSocketMsg(msg) => {
-            console_log!("{:?}", msg);
+            log!(msg);
             match msg {
                 Msg::Ping => {}
                 Msg::Pong => {}
@@ -60,13 +60,13 @@ pub fn update(msg: Message, model: &mut Model, orders: &mut impl Orders<Message>
             model.web_socket_errors.push(err);
         }
         WebSocketClosed(close_event) => {
-            console_log!("WebSocketClosed {:?}", close_event);
+            log!("WebSocketClosed {:?}", close_event);
         }
         WebSocketOpened => {
-            console_log!("WebSocketOpened");
+            log!("WebSocketOpened");
         }
         WebSocketFailed => {
-            console_log!("WebSocketFailed");
+            log!("WebSocketFailed");
         }
     }
 }

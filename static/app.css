@@ -30,3 +30,7 @@
 .autocom-box div:hover {
   background: #efefef;
 }
+
+.video {
+  margin: auto;
+}
