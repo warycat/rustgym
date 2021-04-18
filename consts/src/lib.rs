@@ -22,3 +22,5 @@ pub const SONIC_COLLECTION: &str = "collection";
 pub const SONIC_BUCKET: &str = "bucket";
 
 pub const SEARCH_PLACEHOLDER: &str = "Search Rust Solutions";
+
+pub const TIME_SLICE: i32 = 100;

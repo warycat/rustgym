@@ -54,6 +54,7 @@ async fn main() -> std::io::Result<()> {
             .service(routes::sitemap::sitemap_txt)
             .service(files::client_files)
             .service(files::static_files)
+            .service(files::stream_files)
             .service(web::resource("/ws/").to(agents::websocket::ws_index))
     })
     .bind("127.0.0.1:8080")?

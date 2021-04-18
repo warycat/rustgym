@@ -1,5 +1,4 @@
-// use crate::envelope::Envelope;
-use crate::agents::envelope::Envelope;
+use crate::agents::chunk::Chunk;
 use crate::agents::package::Package;
 use crate::agents::registry::RegistryAgent;
 use crate::session_data::update_session;
@@ -15,6 +14,9 @@ use log::info;
 use rustgym_consts::*;
 use rustgym_msg::ClientInfo;
 use rustgym_msg::Msg;
+use std::cell::RefCell;
+use std::fs::File;
+use std::rc::Rc;
 use std::time::Instant;
 use uuid::Uuid;
 
@@ -42,22 +44,19 @@ pub struct SocketClient {
     hb: Instant,
     client_info: ClientInfo,
     registry_addr: Addr<RegistryAgent>,
+    upload_stream: Option<Rc<RefCell<File>>>,
 }
 
 impl SocketClient {
     fn new(client_info: ClientInfo, registry_addr: Addr<RegistryAgent>) -> Self {
         let hb = Instant::now();
+        let upload_stream = None;
         Self {
             hb,
             client_info,
             registry_addr,
+            upload_stream,
         }
-    }
-
-    fn make_package(&self, ctx: &mut <Self as Actor>::Context, msg: Msg) -> Package {
-        let envelope = Envelope::new(self.client_info.clone(), msg);
-        let client_addr = ctx.address();
-        Package::new(client_addr, envelope)
     }
 
     fn hb(&self, ctx: &mut <Self as Actor>::Context) {
@@ -79,7 +78,9 @@ impl Actor for SocketClient {
         let msg = Msg::RegistorClient(self.client_info.clone());
         let json = serde_json::to_string(&msg).expect("json");
         ctx.text(json);
-        let package = self.make_package(ctx, msg);
+        let address = ctx.address();
+        let client_info = self.client_info.clone();
+        let package = Package::from_message(address, client_info, msg);
         self.registry_addr.do_send(package);
         // ctx.add_message_stream();
         self.hb(ctx);
@@ -87,7 +88,9 @@ impl Actor for SocketClient {
 
     fn stopping(&mut self, ctx: &mut Self::Context) -> actix::Running {
         let msg = Msg::UnRegistorClient(self.client_info.clone());
-        let package = self.make_package(ctx, msg);
+        let address = ctx.address();
+        let client_info = self.client_info.clone();
+        let package = Package::from_message(address, client_info, msg);
         self.registry_addr.do_send(package);
         self.hb(ctx);
         actix::Running::Stop
@@ -117,14 +120,22 @@ impl StreamHandler<Result<ws::Message, ws::ProtocolError>> for SocketClient {
             Ok(ws::Message::Text(text)) => {
                 if let Ok(msg) = serde_json::from_str::<Msg>(&text) {
                     info!("{:?}", msg);
-                    let package = self.make_package(ctx, msg);
+                    let address = ctx.address();
+                    let client_info = self.client_info.clone();
+                    let package = Package::from_message(address, client_info, msg);
                     self.registry_addr.do_send(package);
                 } else {
                     info!("{:?}", text);
                     ctx.text(text)
                 }
             }
-            Ok(ws::Message::Binary(bin)) => ctx.binary(bin),
+            Ok(ws::Message::Binary(bytes)) => {
+                info!("{} {:?}", self.client_info.client_uuid, bytes.len());
+                let address = ctx.address();
+                let client_info = self.client_info.clone();
+                let chuck = Chunk::new(address, client_info, bytes);
+                self.registry_addr.do_send(chuck);
+            }
             Ok(ws::Message::Close(reason)) => {
                 ctx.close(reason);
                 ctx.stop();

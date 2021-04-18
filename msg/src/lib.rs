@@ -16,6 +16,7 @@ pub enum Msg {
     SearchSuggestions(Vec<String>),
     QueryText(String),
     QueryResults(Vec<QueryResult>),
+    StreamStart(String),
 }
 
 #[derive(Serialize, Deserialize, Debug, Clone, Hash, Eq, PartialEq, new)]

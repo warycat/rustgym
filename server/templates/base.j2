@@ -21,7 +21,11 @@
     <script type="module">
       import init from '/pkg/rustgym_wasm.js';
       async function run() {
-        window.WASM = await init();
+        try {
+          window.WASM = await init();
+        } catch(e) {
+          console.error(e);
+        }
       }
       run();
     </script>

@@ -34,5 +34,8 @@ watch = { postpone = true, watch = ["./wasm/", "./msg/"] }
 script = "cargo watch -w server -w msg -x 'run --bin rustgym-server'"
 dependencies = ["wasm-pack"]
 
+[tasks.sonic]
+script = "sonic -c infra/config.cfg"
+
 [tasks.dev]
-run_task = { name = ["watch-server", "watch-wasm"], parallel = true }
+run_task = { name = ["sonic", "watch-server", "watch-wasm"], parallel = true }

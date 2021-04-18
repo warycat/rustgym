@@ -1,3 +1,4 @@
+pub mod chunk;
 pub mod envelope;
 pub mod package;
 pub mod registry;

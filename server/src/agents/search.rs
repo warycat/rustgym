@@ -54,6 +54,7 @@ impl Handler<Package> for SearchAgent {
             RegistorClient(_) => {}
             UnRegistorClient(_) => {}
             QueryResults(_) => {}
+            StreamStart(_) => {}
             SearchText(text) => {
                 let text: String = cleanup(text);
                 let search_words: Vec<String> =
