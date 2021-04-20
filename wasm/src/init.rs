@@ -1,7 +1,7 @@
 use crate::message::Message;
 use crate::model::Model;
 use crate::utils::*;
-use seed::{prelude::*, *};
+use seed::prelude::*;
 use std::cell::RefCell;
 use std::rc::Rc;
 
@@ -20,7 +20,7 @@ fn web_socket(orders: &mut impl Orders<Message>) -> WebSocket {
         .expect("web_socket")
 }
 
-pub fn init(url: seed::Url, orders: &mut impl Orders<Message>) -> Model {
+pub fn init(_url: seed::Url, orders: &mut impl Orders<Message>) -> Model {
     orders.subscribe(Message::UrlChanged);
 
     let web_socket = Rc::new(RefCell::new(web_socket(orders)));

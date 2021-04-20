@@ -38,5 +38,5 @@ serde = "1.0.118"
 serde_json = "1.0.61"
 uuid = { version = "0.8", features = ["serde", "v4"] }
 sonic-channel = "0.4.0"
-tokio = "1.2.0"
+tokio = { version = "1.5.0", features = ["sync"] }
 uaparser = "0.4.0"

@@ -6,3 +6,4 @@ pkg/
 .idea
 *.sqlite
 *.tar.gz
+stream/

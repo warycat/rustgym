@@ -5,14 +5,19 @@ use crate::agents::search::SearchAgent;
 use crate::agents::websocket::SocketClient;
 use actix::prelude::*;
 use log::{error, info};
+use rustgym_consts::*;
 use rustgym_msg::ClientInfo;
 use rustgym_msg::Msg;
 use std::cell::RefCell;
 use std::collections::HashMap;
 use std::collections::HashSet;
 use std::fs::File;
+use std::fs::OpenOptions;
+use std::io::prelude::*;
 use std::process::Command;
 use std::rc::Rc;
+use std::sync::Arc;
+use std::sync::Mutex;
 use uuid::Uuid;
 
 #[derive(Clone)]
@@ -20,17 +25,20 @@ pub struct RegistryAgent {
     search_addr: Addr<SearchAgent>,
     all_session_clients: HashMap<Uuid, HashSet<ClientInfo>>,
     all_clients: HashMap<Uuid, Addr<SocketClient>>,
+    all_streams: HashMap<Uuid, Rc<RefCell<File>>>,
 }
 
 impl RegistryAgent {
     pub fn new(search_addr: Addr<SearchAgent>) -> Self {
         let all_session_clients = HashMap::new();
         let all_clients = HashMap::new();
+        let all_streams = HashMap::new();
 
         RegistryAgent {
             search_addr,
             all_session_clients,
             all_clients,
+            all_streams,
         }
     }
 
@@ -99,6 +107,8 @@ impl Handler<Package> for RegistryAgent {
                     .get(&client_info.session_uuid)
                     .expect("session clients");
                 let msg = Msg::SessionClients(session_clients.clone());
+                let client_uuid = client_info.client_uuid;
+                self.all_streams.remove(&client_uuid);
                 self.update_session_clients(client_info.session_uuid, msg);
             }
             SearchText(_) => {
@@ -109,13 +119,16 @@ impl Handler<Package> for RegistryAgent {
             }
             StreamStart(mime_type) => {
                 let client_uuid = client_info.client_uuid;
-                let ext = match mime_type.as_str() {
-                    "video/mp4" => "mp4",
-                    _ => "",
-                };
-                if !ext.is_empty() {
-                    let file_name = format!("stream/{}.{}", client_uuid, ext);
-                    let file: File = File::create(&file_name).expect("file");
+                if mime_type == MIME_TYPE {
+                    let file_name = format!("stream/{}.{}", client_uuid, "webm");
+                    let file = OpenOptions::new()
+                        .write(true)
+                        .create(true)
+                        .open(file_name)
+                        .expect("file");
+                    self.all_streams
+                        .entry(client_uuid)
+                        .or_insert(Rc::new(RefCell::new(file)));
                 }
 
                 // let ffplay = Command::new("ffplay")
@@ -137,6 +150,15 @@ impl Handler<Chunk> for RegistryAgent {
             client_info,
             bytes,
         } = chunk.clone();
-        info!("{}", bytes.len());
+        if let Some(file) = self.all_streams.get(&client_info.client_uuid) {
+            match file.borrow_mut().write_all(&bytes) {
+                Ok(_) => {
+                    info!("{}", bytes.len())
+                }
+                Err(e) => {
+                    error!("{}", e);
+                }
+            }
+        }
     }
 }

@@ -48,23 +48,11 @@ pub fn update(msg: Message, model: &mut Model, orders: &mut impl Orders<Message>
                 Msg::Ping => {}
                 Msg::Pong => {}
                 Msg::RegistorClient(client_info) => {
-                    let ClientInfo {
-                        name,
-                        client_uuid,
-                        session_uuid,
-                        chrome,
-                    } = client_info;
-                    if chrome {
+                    if client_info.chrome {
                         orders.perform_cmd(async {
-                            Message::MediaStreamReady(
-                                get_media_stream().await.expect("media stream"),
-                            )
+                            let media_stream = get_media_stream().await.expect("media stream");
+                            Message::MediaStreamReady(media_stream)
                         });
-                        // let media_stream: MediaStream = join!(async { media_stream().await.expect("media stream") }).0;
-                        // spawn_local(
-                        //     // let media_source = media_source(&media_stream).await.unwrap();
-                        // });
-                        // let media_recorder = media_recorder(&media_stream).expect("media recorder");
                     }
                 }
                 Msg::UnRegistorClient(_) => {}

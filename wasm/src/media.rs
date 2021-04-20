@@ -1,5 +1,4 @@
 use crate::model::Model;
-use crate::utils::*;
 
 use js_sys::{ArrayBuffer, Uint8Array};
 use rustgym_consts::*;
@@ -7,11 +6,11 @@ use seed::{prelude::*, *};
 use wasm_bindgen_futures::JsFuture;
 use web_sys::{
     Blob, BlobEvent, Event, EventTarget, FileReader, HtmlVideoElement, MediaDevices, MediaRecorder,
-    MediaSource, MediaStream, MediaStreamConstraints, Navigator, Url,
+    MediaRecorderOptions, MediaSource, MediaStream, MediaStreamConstraints, Navigator, Url,
 };
 
 pub async fn get_media_stream() -> Result<MediaStream, JsValue> {
-    let navigator: Navigator = navigator();
+    let navigator: Navigator = window().navigator();
     let media_devices: MediaDevices = navigator.media_devices()?;
     let mut constraints = MediaStreamConstraints::new();
     constraints.audio(&JsValue::from_bool(true));
@@ -23,10 +22,7 @@ pub async fn get_media_stream() -> Result<MediaStream, JsValue> {
 
 pub fn media_source(media_stream: &MediaStream) -> Result<MediaSource, JsValue> {
     let media_source: MediaSource = MediaSource::new()?;
-    let video: HtmlVideoElement = crate::utils::document()
-        .query_selector("video")?
-        .unwrap()
-        .dyn_into()?;
+    let video: HtmlVideoElement = document().query_selector("video")?.unwrap().dyn_into()?;
     let url = Url::create_object_url_with_source(&media_source);
     video.set_src_object(Some(media_stream));
     // video.play();
@@ -39,7 +35,10 @@ pub fn media_recorder(
     model: &mut Model,
 ) -> Result<MediaRecorder, JsValue> {
     log!("media_recorder");
-    let media_recorder: MediaRecorder = MediaRecorder::new_with_media_stream(media_stream)?;
+    let mut options = MediaRecorderOptions::new();
+    options.mime_type(MIME_TYPE);
+    let media_recorder: MediaRecorder =
+        MediaRecorder::new_with_media_stream_and_media_recorder_options(media_stream, &options)?;
     let wc = model.web_socket.clone();
     let onstart_cb = Closure::wrap(Box::new(move |event: Event| {
         let target: EventTarget = event.target().unwrap();
