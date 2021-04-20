@@ -24,6 +24,7 @@ pub struct ClientInfo {
     pub session_uuid: Uuid,
     pub client_uuid: Uuid,
     pub name: String,
+    pub chrome: bool,
 }
 
 #[derive(Serialize, Deserialize, Debug, Clone, new)]

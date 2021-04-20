@@ -585,6 +585,21 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "904dfeac50f3cdaba28fc6f57fdcddb75f49ed61346676a78c4ffe55877802fd"
 
 [[package]]
+name = "bit-set"
+version = "0.5.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6e11e16035ea35e4e5997b393eacbf6f63983188f7a2ad25bfb13465f5ad59de"
+dependencies = [
+ "bit-vec",
+]
+
+[[package]]
+name = "bit-vec"
+version = "0.6.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "349f9b6a179ed607305526ca489b34ad0a41aed5f7980fa90eb03160b69598fb"
+
+[[package]]
 name = "bitflags"
 version = "1.2.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1028,6 +1043,16 @@ dependencies = [
  "quote",
  "syn",
  "synstructure",
+]
+
+[[package]]
+name = "fancy-regex"
+version = "0.3.5"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ae91abf6555234338687bb47913978d275539235fcb77ba9863b779090b42b14"
+dependencies = [
+ "bit-set",
+ "regex",
 ]
 
 [[package]]
@@ -2452,6 +2477,7 @@ dependencies = [
  "derive-new",
  "serde",
  "serde_json",
+ "uaparser",
  "uuid",
 ]
 
@@ -2514,6 +2540,7 @@ dependencies = [
  "serde_json",
  "sonic-channel",
  "tokio 1.2.0",
+ "uaparser",
  "uuid",
 ]
 
@@ -2708,6 +2735,18 @@ dependencies = [
  "itoa",
  "ryu",
  "serde",
+]
+
+[[package]]
+name = "serde_yaml"
+version = "0.8.17"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "15654ed4ab61726bf918a39cb8d98a2e2995b002387807fa6ba58fdf7f59bb23"
+dependencies = [
+ "dtoa",
+ "linked-hash-map",
+ "serde",
+ "yaml-rust",
 ]
 
 [[package]]
@@ -3207,6 +3246,19 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "373c8a200f9e67a0c95e62a4f52fbf80c23b4381c05a17845531982fa99e6b33"
 
 [[package]]
+name = "uaparser"
+version = "0.4.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "1f36c3f6f1893391ac4db205cd54226c69957f0b78ecd61ce503e38d447e5de7"
+dependencies = [
+ "derive_more",
+ "fancy-regex",
+ "serde",
+ "serde_derive",
+ "serde_yaml",
+]
+
+[[package]]
 name = "unicase"
 version = "2.6.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3567,4 +3619,13 @@ dependencies = [
  "mac",
  "markup5ever",
  "time 0.1.44",
+]
+
+[[package]]
+name = "yaml-rust"
+version = "0.4.5"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "56c1936c4cc7a1c9ab21a1ebb602eb942ba868cbd44a99cb7cdc5892335e1c85"
+dependencies = [
+ "linked-hash-map",
 ]

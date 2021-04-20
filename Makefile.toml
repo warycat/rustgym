@@ -1,6 +1,9 @@
 [config]
 default_to_workspace = false
 
+[task.uap]
+script = "git submodule update --init"
+
 [tasks.rm_sqlite]
 script = ["rm rustgym.sqlite"]
 

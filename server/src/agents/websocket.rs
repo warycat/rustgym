@@ -1,6 +1,7 @@
 use crate::agents::chunk::Chunk;
 use crate::agents::package::Package;
 use crate::agents::registry::RegistryAgent;
+use crate::agents::uap::{UapAgent, UserAgentRequest};
 use crate::session_data::update_session;
 use actix::prelude::*;
 use actix_session::Session;
@@ -18,14 +19,22 @@ use std::cell::RefCell;
 use std::fs::File;
 use std::rc::Rc;
 use std::time::Instant;
+use uaparser::UserAgent;
 use uuid::Uuid;
 
 pub async fn ws_index(
-    r: HttpRequest,
+    req: HttpRequest,
     stream: web::Payload,
     session: Session,
     registry_addr: web::Data<Addr<RegistryAgent>>,
+    uap_addr: web::Data<Addr<UapAgent>>,
 ) -> Result<HttpResponse, Error> {
+    let uaq = UserAgentRequest::from_request(&req)?;
+    let chrome = if let Ok(Some(ua)) = uap_addr.get_ref().send(uaq).await {
+        ua.family == "Chrome"
+    } else {
+        false
+    };
     let session_data = update_session(session)?;
     let session_uuid = session_data.uuid;
     let name = session_data.name;
@@ -34,9 +43,10 @@ pub async fn ws_index(
         client_uuid,
         session_uuid,
         name,
+        chrome,
     };
     let socket_client = SocketClient::new(client_info, registry_addr.get_ref().clone());
-    ws::start(socket_client, &r, stream)
+    ws::start(socket_client, &req, stream)
 }
 
 #[derive(Clone)]

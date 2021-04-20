@@ -1,6 +1,7 @@
 use seed::prelude::*;
 
 mod init;
+mod media;
 mod message;
 mod model;
 mod update;

@@ -19,6 +19,7 @@ use actix_web::App;
 use actix_web::HttpServer;
 use agents::registry::RegistryAgent;
 use agents::search::SearchAgent;
+use agents::uap::UapAgent;
 use app_data::AppData;
 use db::*;
 use log::info;
@@ -35,6 +36,8 @@ async fn main() -> std::io::Result<()> {
     let app_data = AppData::new(tag.clone(), title.clone());
     let search_addr = SearchAgent::new(pool.clone()).start();
     let registry_addr = RegistryAgent::new(search_addr).start();
+    let uap_addr = UapAgent::new().start();
+
     info!("RUST GYM Server {}", tag);
     HttpServer::new(move || {
         App::new()
@@ -43,6 +46,7 @@ async fn main() -> std::io::Result<()> {
             .data(app_data.clone())
             .data(pool.clone())
             .data(registry_addr.clone())
+            .data(uap_addr.clone())
             .service(routes::home::home)
             .service(routes::leetcode_index::leetcode_index)
             .service(routes::adventofcode_index::adventofcode_index)
