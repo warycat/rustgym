@@ -6,16 +6,12 @@ use seed::{prelude::*, *};
 use wasm_bindgen_futures::JsFuture;
 use web_sys::{
     Blob, BlobEvent, Event, EventTarget, FileReader, HtmlVideoElement, MediaDevices, MediaRecorder,
-    MediaRecorderOptions, MediaSource, MediaStream, MediaStreamConstraints,
-    MediaTrackSupportedConstraints, Navigator, Url,
+    MediaRecorderOptions, MediaSource, MediaStream, MediaStreamConstraints, Navigator, Url,
 };
 
 pub async fn get_media_stream() -> Result<MediaStream, JsValue> {
     let navigator: Navigator = window().navigator();
     let media_devices: MediaDevices = navigator.media_devices()?;
-    let supported_constraints: MediaTrackSupportedConstraints =
-        media_devices.get_supported_constraints();
-    log!(supported_constraints);
     let mut constraints = MediaStreamConstraints::new();
     constraints.audio(&JsValue::from_bool(true));
     constraints.video(&JsValue::from_bool(true));

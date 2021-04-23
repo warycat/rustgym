@@ -1,6 +1,6 @@
 #!/bin/bash
-TAG=v0.2.11
-VM_NAME=rustgym-24
+TAG=v0.3.0
+VM_NAME=rustgym-25
 SERVER_NAME=rustgym.com
 WORK_DIR=/root
 EMAIL=larry.fantasy@gmail.com
@@ -21,7 +21,7 @@ gcloud compute instances create $VM_NAME \
     --tags http-server,https-server \
     --metadata startup-script="#! /bin/bash
 apt update
-apt -y install nginx sqlite3 certbot python-certbot-nginx telnet build-essential
+apt -y install nginx sqlite3 certbot python-certbot-nginx telnet build-essential ffmpeg git
 cd $WORK_DIR
 
 cat <<EOF > certbot.sh
@@ -52,6 +52,8 @@ curl -LJO $RUSTGYM_DOWNLOAD/$TAG/rustgym-ingest
 chmod u+x rustgym-ingest
 ./rustgym-ingest >> ingest.log &>> ingest.error.log &
 chmod u+x rustgym-server
+mkdir stream
+git clone https://github.com/ua-parser/uap-core.git
 TAG=$TAG ./rustgym-server >> server.log &>> server.error.log &
 
 cat <<\EOF > /etc/nginx/sites-available/rustgym-nginx.cfg
