@@ -25,6 +25,7 @@ use db::*;
 use log::info;
 use rustgym_consts::*;
 use std::env;
+use std::process::Command;
 
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
@@ -37,7 +38,10 @@ async fn main() -> std::io::Result<()> {
     let search_addr = SearchAgent::new(pool.clone()).start();
     let registry_addr = RegistryAgent::new(search_addr).start();
     let uap_addr = UapAgent::new().start();
-
+    Command::new("mkdir")
+        .arg(STREAM_DIR)
+        .output()
+        .expect("Create Stream Dir");
     info!("RUST GYM Server {}", tag);
     HttpServer::new(move || {
         App::new()

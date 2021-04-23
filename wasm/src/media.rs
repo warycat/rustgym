@@ -66,7 +66,6 @@ pub fn media_recorder(
             let mut bytes = vec![0; size as usize];
             arr.copy_to(&mut bytes);
             wcc.borrow().send_bytes(&bytes).expect("send bytes");
-            log!(bytes.len());
         }) as Box<dyn FnMut(Event)>);
         file_reader.set_onload(Some(onload.as_ref().unchecked_ref()));
         onload.forget();

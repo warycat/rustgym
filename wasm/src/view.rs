@@ -80,7 +80,7 @@ pub fn view(model: &Model) -> Node<Message> {
                     C!["video"],
                     source![
                         attrs!{
-                            At::Src => format!("/stream/{}.m3u8", client.client_uuid.to_string()),
+                            At::Src => format!("/stream/{}/playlist.m3u8", client.client_uuid.to_string()),
                             At::Type => "application/x-mpegURL"
                         }
                     ],

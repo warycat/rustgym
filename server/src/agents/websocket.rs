@@ -146,7 +146,6 @@ impl StreamHandler<Result<ws::Message, ws::ProtocolError>> for SocketClient {
                 }
             }
             Ok(ws::Message::Binary(bytes)) => {
-                info!("{} {:?}", self.client_info.client_uuid, bytes.len());
                 let client_info = self.client_info.clone();
                 let chuck = Chunk::new(client_info, bytes);
                 self.registry_addr.do_send(chuck);

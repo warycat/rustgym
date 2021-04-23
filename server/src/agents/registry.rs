@@ -3,15 +3,23 @@ use crate::agents::envelope::Envelope;
 use crate::agents::search::SearchAgent;
 use crate::agents::websocket::SocketClient;
 use actix::prelude::*;
+use anyhow::Result;
 use log::{error, info};
+use notify::op;
+use notify::{raw_watcher, RawEvent, RecursiveMode, Watcher};
 use rustgym_consts::*;
 use rustgym_msg::ClientInfo;
 use rustgym_msg::*;
 use std::cell::RefCell;
 use std::collections::HashMap;
 use std::io::Write;
+use std::path::Path;
+use std::path::PathBuf;
 use std::process::{Child, Command, Stdio};
 use std::rc::Rc;
+use std::sync::mpsc;
+use std::thread::sleep;
+use std::time::Duration;
 use uuid::Uuid;
 
 #[derive(Clone)]
@@ -88,7 +96,7 @@ impl Actor for RegistryAgent {
 impl Handler<Envelope> for RegistryAgent {
     type Result = ();
 
-    fn handle(&mut self, envelope: Envelope, _ctx: &mut Context<Self>) {
+    fn handle(&mut self, envelope: Envelope, ctx: &mut Context<Self>) {
         let Envelope {
             client_addr,
             client_info,
@@ -107,8 +115,14 @@ impl Handler<Envelope> for RegistryAgent {
                 }
                 MsgIn::StreamStart(mime_type) => {
                     if mime_type == MIME_TYPE {
-                        info!("{}", client_uuid);
-                        let playlist = format!("{}/{}.m3u8", STREAM_DIR, client_uuid);
+                        let hls_dir = format!("{}/{}", STREAM_DIR, client_uuid);
+                        Command::new("mkdir")
+                            .arg(&hls_dir)
+                            .output()
+                            .expect("hls dir");
+                        let playlist_path_str =
+                            format!("{}/{}/playlist.m3u8", STREAM_DIR, client_uuid);
+                        let playlist_path = Path::new(&playlist_path_str);
                         let ffmpeg = Command::new("ffmpeg")
                             .args(&[
                                 "-i",
@@ -121,19 +135,21 @@ impl Handler<Envelope> for RegistryAgent {
                                 "0.1",
                                 "-hls_flags",
                                 "delete_segments",
-                                &playlist,
+                                &playlist_path_str,
                             ])
                             .stdin(Stdio::piped())
                             .spawn()
                             .expect("ffmpeg");
                         self.all_streams
                             .insert(client_uuid, Rc::new(RefCell::new(ffmpeg)));
-                        if let Some(client_info) = self.all_clients.get_mut(&client_uuid) {
-                            client_info.streaming = true;
-                        }
-                        let all_clients = self.all_clients();
-                        let msg_out = MsgOut::AllClients(all_clients);
-                        self.update_all_clients(msg_out);
+                        ctx.run_later(Duration::from_secs(3), move |act, _| {
+                            if let Some(client_info) = act.all_clients.get_mut(&client_uuid) {
+                                client_info.streaming = true;
+                            }
+                            let all_clients = act.all_clients();
+                            let msg_out = MsgOut::AllClients(all_clients);
+                            act.update_all_clients(msg_out);
+                        });
                     }
                 }
                 _ => {
@@ -174,13 +190,23 @@ impl Handler<Chunk> for RegistryAgent {
         let client_uuid = client_info.client_uuid;
         if let Some(ffmpeg) = self.all_streams.get(&client_uuid) {
             match ffmpeg.borrow().stdin.as_ref().unwrap().write_all(&bytes) {
-                Ok(_) => {
-                    info!("{}", bytes.len())
-                }
+                Ok(_) => {}
                 Err(e) => {
                     error!("{}", e);
                 }
             }
         }
     }
+}
+
+fn wait_until_file_created(file_path: &Path) -> bool {
+    for i in 0..10 {
+        info!("{} {:?} {}", i, file_path, file_path.is_file());
+        if file_path.exists() {
+            return true;
+        } else {
+            sleep(Duration::from_secs(1));
+        }
+    }
+    false
 }
