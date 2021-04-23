@@ -1,8 +1,7 @@
 use crate::media::*;
 use crate::message::Message;
 use crate::model::Model;
-use rustgym_msg::ClientInfo;
-use rustgym_msg::Msg;
+use rustgym_msg::*;
 use seed::{prelude::*, *};
 use web_sys::MediaRecorder;
 
@@ -17,7 +16,7 @@ pub fn update(msg: Message, model: &mut Model, orders: &mut impl Orders<Message>
             if let Err(err) = model
                 .web_socket
                 .borrow()
-                .send_json(&rustgym_msg::Msg::SearchText(search_text))
+                .send_json(&rustgym_msg::MsgIn::SearchText(search_text))
             {
                 log!("error");
                 orders.send_msg(WebSocketError(err));
@@ -29,7 +28,7 @@ pub fn update(msg: Message, model: &mut Model, orders: &mut impl Orders<Message>
             if let Err(err) = model
                 .web_socket
                 .borrow()
-                .send_json(&rustgym_msg::Msg::QueryText(search_text))
+                .send_json(&rustgym_msg::MsgIn::QueryText(search_text))
             {
                 log!("error");
                 orders.send_msg(WebSocketError(err));
@@ -45,9 +44,7 @@ pub fn update(msg: Message, model: &mut Model, orders: &mut impl Orders<Message>
         WebSocketMsg(msg) => {
             log!(msg);
             match msg {
-                Msg::Ping => {}
-                Msg::Pong => {}
-                Msg::RegistorClient(client_info) => {
+                MsgOut::RegistorClient(client_info) => {
                     if client_info.chrome {
                         orders.perform_cmd(async {
                             let media_stream = get_media_stream().await.expect("media stream");
@@ -55,17 +52,20 @@ pub fn update(msg: Message, model: &mut Model, orders: &mut impl Orders<Message>
                         });
                     }
                 }
-                Msg::UnRegistorClient(_) => {}
-                Msg::SessionClients(_) => {}
-                Msg::SearchText(_) => {}
-                Msg::QueryText(_) => {}
-                Msg::StreamStart(_) => {}
-                Msg::SearchSuggestions(suggestions) => {
+                MsgOut::UnRegistorClient(_) => {}
+                MsgOut::SessionClients(_) => {}
+                MsgOut::SearchSuggestions(suggestions) => {
                     model.search_suggestions = suggestions;
                 }
-                Msg::QueryResults(mut query_results) => {
+                MsgOut::QueryResults(mut query_results) => {
                     query_results.reverse();
                     model.query_results = query_results;
+                }
+                MsgOut::AllClients(all_clients) => {
+                    orders.send_msg(Message::AllClients(all_clients));
+                }
+                _ => {
+                    log!("error", msg);
                 }
             }
         }
@@ -86,6 +86,9 @@ pub fn update(msg: Message, model: &mut Model, orders: &mut impl Orders<Message>
             let media_recorder: MediaRecorder =
                 media_recorder(&media_stream, model).expect("media recorder");
             model.media_stream = Some(media_stream);
+        }
+        AllClients(all_clients) => {
+            model.all_clients = all_clients;
         }
     }
 }

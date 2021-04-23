@@ -73,8 +73,23 @@ pub fn view(model: &Model) -> Node<Message> {
                 )
             ],
         ],
-        video![
-            C!["video"]
-        ],
+        model.all_clients.iter().filter(|client| client.streaming).map(|client|
+            div![
+                div![client.client_uuid.to_string()],
+                video![
+                    C!["video"],
+                    source![
+                        attrs!{
+                            At::Src => format!("/stream/{}.m3u8", client.client_uuid.to_string()),
+                            At::Type => "application/x-mpegURL"
+                        }
+                    ],
+                    attrs!{
+                        At::AutoPlay => true,
+                        At::Controls => true,
+                    }
+                ]
+            ]
+        )
     ]
 }

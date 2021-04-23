@@ -7,16 +7,29 @@ use uuid::Uuid;
 
 #[derive(Serialize, Deserialize, Debug, Clone)]
 pub enum Msg {
+    In(MsgIn),
+    Out(MsgOut),
+}
+
+#[derive(Serialize, Deserialize, Debug, Clone)]
+pub enum MsgIn {
+    Ping,
+    Pong,
+    SearchText(String),
+    QueryText(String),
+    StreamStart(String),
+}
+
+#[derive(Serialize, Deserialize, Debug, Clone)]
+pub enum MsgOut {
     Ping,
     Pong,
     RegistorClient(ClientInfo),
     UnRegistorClient(ClientInfo),
-    SessionClients(HashSet<ClientInfo>),
-    SearchText(String),
+    SessionClients(Vec<ClientInfo>),
+    AllClients(Vec<ClientInfo>),
     SearchSuggestions(Vec<String>),
-    QueryText(String),
     QueryResults(Vec<QueryResult>),
-    StreamStart(String),
 }
 
 #[derive(Serialize, Deserialize, Debug, Clone, Hash, Eq, PartialEq, new)]
@@ -25,6 +38,7 @@ pub struct ClientInfo {
     pub client_uuid: Uuid,
     pub name: String,
     pub chrome: bool,
+    pub streaming: bool,
 }
 
 #[derive(Serialize, Deserialize, Debug, Clone, new)]

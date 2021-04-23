@@ -24,4 +24,5 @@ pub const SONIC_BUCKET: &str = "bucket";
 pub const SEARCH_PLACEHOLDER: &str = "Search Rust Solutions";
 
 pub const TIME_SLICE: i32 = 100;
-pub const MIME_TYPE: &str = "video/webm;codecs=vp8,opus";
+pub const MIME_TYPE: &str = "video/x-matroska;codecs=avc1,opus";
+pub const STREAM_DIR: &str = "/Users/larry/Documents/rustgym/stream";

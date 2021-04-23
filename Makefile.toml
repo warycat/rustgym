@@ -31,10 +31,10 @@ script = "tar -czvf static.tar.gz static"
 
 [tasks.watch-wasm]
 run_task = { name = ["wasm-pack"] }
-watch = { postpone = true, watch = ["./wasm/", "./msg/"] }
+watch = { postpone = true, watch = ["./wasm/", "./msg/", "./consts"] }
 
 [tasks.watch-server]
-script = "cargo watch -w server -w msg -x 'run --bin rustgym-server'"
+script = "cargo watch -w server -w msg -w consts -x 'run --bin rustgym-server'"
 dependencies = ["wasm-pack"]
 
 [tasks.sonic]

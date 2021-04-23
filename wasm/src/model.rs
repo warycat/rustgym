@@ -1,4 +1,4 @@
-use rustgym_msg::QueryResult;
+use rustgym_msg::*;
 use seed::prelude::*;
 use std::cell::RefCell;
 use std::rc::Rc;
@@ -11,4 +11,5 @@ pub struct Model {
     pub web_socket: Rc<RefCell<WebSocket>>,
     pub web_socket_errors: Vec<WebSocketError>,
     pub media_stream: Option<MediaStream>,
+    pub all_clients: Vec<ClientInfo>,
 }

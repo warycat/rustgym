@@ -6,12 +6,16 @@ use seed::{prelude::*, *};
 use wasm_bindgen_futures::JsFuture;
 use web_sys::{
     Blob, BlobEvent, Event, EventTarget, FileReader, HtmlVideoElement, MediaDevices, MediaRecorder,
-    MediaRecorderOptions, MediaSource, MediaStream, MediaStreamConstraints, Navigator, Url,
+    MediaRecorderOptions, MediaSource, MediaStream, MediaStreamConstraints,
+    MediaTrackSupportedConstraints, Navigator, Url,
 };
 
 pub async fn get_media_stream() -> Result<MediaStream, JsValue> {
     let navigator: Navigator = window().navigator();
     let media_devices: MediaDevices = navigator.media_devices()?;
+    let supported_constraints: MediaTrackSupportedConstraints =
+        media_devices.get_supported_constraints();
+    log!(supported_constraints);
     let mut constraints = MediaStreamConstraints::new();
     constraints.audio(&JsValue::from_bool(true));
     constraints.video(&JsValue::from_bool(true));
@@ -46,7 +50,7 @@ pub fn media_recorder(
         let mime_type = media_recorder.mime_type();
         log!(mime_type);
         wc.borrow()
-            .send_json(&rustgym_msg::Msg::StreamStart(mime_type))
+            .send_json(&rustgym_msg::MsgIn::StreamStart(mime_type))
             .expect("strart stream");
     }) as Box<dyn FnMut(Event)>);
     media_recorder.set_onstart(Some(onstart_cb.as_ref().unchecked_ref()));

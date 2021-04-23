@@ -1,13 +1,13 @@
 use crate::agents::envelope::Envelope;
-use crate::agents::package::Package;
 use crate::db::*;
 use actix::prelude::*;
 use anyhow::Result;
 use diesel::prelude::*;
+use log::error;
 use log::info;
 use rustgym_consts::*;
-use rustgym_msg::Msg;
 use rustgym_msg::QueryResult;
+use rustgym_msg::*;
 use rustgym_schema::AdventOfCodeDescription;
 use rustgym_schema::GoogleProblem;
 use rustgym_schema::LeetcodeQuestion;
@@ -36,45 +36,59 @@ impl Actor for SearchAgent {
     type Context = Context<Self>;
 }
 
-impl Handler<Package> for SearchAgent {
+impl Handler<Envelope> for SearchAgent {
     type Result = ();
-    fn handle(&mut self, package: Package, _ctx: &mut Context<Self>) {
-        let Package {
+    fn handle(&mut self, envelope: Envelope, _ctx: &mut Context<Self>) {
+        let Envelope {
             client_addr,
-            envelope,
-        } = package;
-        let Envelope { client_info, msg } = envelope;
+            client_info,
+            msg,
+        } = envelope;
 
-        use Msg::*;
         match msg {
-            Ping => {}
-            Pong => {}
-            SessionClients(_) => {}
-            SearchSuggestions(_) => {}
-            RegistorClient(_) => {}
-            UnRegistorClient(_) => {}
-            QueryResults(_) => {}
-            StreamStart(_) => {}
-            SearchText(text) => {
-                let text: String = cleanup(text);
-                let search_words: Vec<String> =
-                    text.split_whitespace().map(|s| s.to_string()).collect();
-                if let Some(last) = search_words.last() {
-                    info!("{}", last);
-                    let mut suggestions = vec![];
-
+            Msg::In(msg_in) => match msg_in {
+                MsgIn::SearchText(text) => {
+                    let text: String = cleanup(text);
+                    let search_words: Vec<String> =
+                        text.split_whitespace().map(|s| s.to_string()).collect();
+                    if let Some(last) = search_words.last() {
+                        info!("{}", last);
+                        let mut suggestions = vec![];
+                        match self
+                            .search_channel
+                            .suggest(SONIC_COLLECTION, SONIC_BUCKET, last)
+                        {
+                            Ok(words) => {
+                                info!("{:?}", words);
+                                for word in words {
+                                    let mut words = search_words.to_vec();
+                                    words.pop();
+                                    words.push(word);
+                                    let suggestion: String = words.join(" ");
+                                    suggestions.push(suggestion);
+                                }
+                            }
+                            Err(err) => {
+                                info!("reconnect {:?}", err);
+                                self.reconnect();
+                            }
+                        }
+                        let msg_out = MsgOut::SearchSuggestions(suggestions);
+                        let envelope =
+                            Envelope::from_msg_out(client_addr.clone(), client_info, msg_out);
+                        client_addr.do_send(envelope);
+                    }
+                }
+                MsgIn::QueryText(text) => {
+                    let text: String = cleanup(text);
+                    let mut query_results: Vec<QueryResult> = vec![];
                     match self
                         .search_channel
-                        .suggest(SONIC_COLLECTION, SONIC_BUCKET, last)
+                        .query(SONIC_COLLECTION, SONIC_BUCKET, &text)
                     {
-                        Ok(words) => {
-                            info!("{:?}", words);
-                            for word in words {
-                                let mut words = search_words.to_vec();
-                                words.pop();
-                                words.push(word);
-                                let suggestion: String = words.join(" ");
-                                suggestions.push(suggestion);
+                        Ok(objects) => {
+                            if let Ok(results) = get_results(objects, &self.pool) {
+                                query_results = results;
                             }
                         }
                         Err(err) => {
@@ -82,33 +96,17 @@ impl Handler<Package> for SearchAgent {
                             self.reconnect();
                         }
                     }
-                    let msg = Msg::SearchSuggestions(suggestions);
-                    let envelope = Envelope::new(client_info, msg);
-                    let package = Package::new(client_addr.clone(), envelope);
-                    client_addr.do_send(package);
+                    let msg_out = MsgOut::QueryResults(query_results);
+                    let envelope =
+                        Envelope::from_msg_out(client_addr.clone(), client_info, msg_out);
+                    client_addr.do_send(envelope);
                 }
-            }
-            QueryText(text) => {
-                let text: String = cleanup(text);
-                let mut query_results: Vec<QueryResult> = vec![];
-                match self
-                    .search_channel
-                    .query(SONIC_COLLECTION, SONIC_BUCKET, &text)
-                {
-                    Ok(objects) => {
-                        if let Ok(results) = get_results(objects, &self.pool) {
-                            query_results = results;
-                        }
-                    }
-                    Err(err) => {
-                        info!("reconnect {:?}", err);
-                        self.reconnect();
-                    }
+                _ => {
+                    error!("{:?}", msg_in);
                 }
-                let msg = Msg::QueryResults(query_results);
-                let envelope = Envelope::new(client_info, msg);
-                let package = Package::new(client_addr.clone(), envelope);
-                client_addr.do_send(package);
+            },
+            Msg::Out(msg_out) => {
+                error!("{:?}", msg_out);
             }
         }
     }

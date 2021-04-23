@@ -9,7 +9,7 @@ fn web_socket(orders: &mut impl Orders<Message>) -> WebSocket {
     WebSocket::builder(wsurl().expect("url"), orders)
         .on_open(|| Message::WebSocketOpened)
         .on_message(
-            |msg: WebSocketMessage| match msg.json::<rustgym_msg::Msg>() {
+            |msg: WebSocketMessage| match msg.json::<rustgym_msg::MsgOut>() {
                 Ok(msg) => Message::WebSocketMsg(msg),
                 Err(err) => Message::WebSocketError(err),
             },
@@ -29,6 +29,7 @@ pub fn init(_url: seed::Url, orders: &mut impl Orders<Message>) -> Model {
     let search_suggestions = vec![];
     let query_results = vec![];
     let media_stream = None;
+    let all_clients = vec![];
     Model {
         search_text,
         search_suggestions,
@@ -36,5 +37,6 @@ pub fn init(_url: seed::Url, orders: &mut impl Orders<Message>) -> Model {
         web_socket,
         web_socket_errors,
         media_stream,
+        all_clients,
     }
 }
