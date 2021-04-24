@@ -48,3 +48,9 @@ pub struct QueryResult {
     pub href: String,
     pub from: String,
 }
+
+#[derive(Serialize, Deserialize, Debug, Clone, new)]
+pub struct MsgBin {
+    pub uuid: Uuid,
+    pub bytes: Vec<u8>,
+}

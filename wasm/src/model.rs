@@ -5,6 +5,7 @@ use std::rc::Rc;
 use web_sys::MediaStream;
 
 pub struct Model {
+    pub client_info: Option<ClientInfo>,
     pub search_text: String,
     pub search_suggestions: Vec<String>,
     pub query_results: Vec<QueryResult>,

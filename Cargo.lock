@@ -585,6 +585,15 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "904dfeac50f3cdaba28fc6f57fdcddb75f49ed61346676a78c4ffe55877802fd"
 
 [[package]]
+name = "bincode"
+version = "1.3.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b1f45e9417d87227c7a56d22e471c6206462cba514c7590c09aff4cf6d1ddcad"
+dependencies = [
+ "serde",
+]
+
+[[package]]
 name = "bit-set"
 version = "0.5.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2638,6 +2647,7 @@ dependencies = [
  "actix-web-actors",
  "anyhow",
  "askama",
+ "bincode",
  "chrono",
  "derive-new",
  "diesel",
@@ -2677,6 +2687,7 @@ name = "rustgym-wasm"
 version = "0.1.0"
 dependencies = [
  "anyhow",
+ "bincode",
  "console_error_panic_hook",
  "js-sys",
  "rustgym-consts",

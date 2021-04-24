@@ -1,6 +1,6 @@
 #!/bin/bash
-TAG=v0.3.0
-VM_NAME=rustgym-25
+TAG=v0.3.2
+VM_NAME=rustgym-27
 SERVER_NAME=rustgym.com
 WORK_DIR=/root
 EMAIL=larry.fantasy@gmail.com
@@ -52,7 +52,6 @@ curl -LJO $RUSTGYM_DOWNLOAD/$TAG/rustgym-ingest
 chmod u+x rustgym-ingest
 ./rustgym-ingest >> ingest.log &>> ingest.error.log &
 chmod u+x rustgym-server
-mkdir stream
 git clone https://github.com/ua-parser/uap-core.git
 TAG=$TAG ./rustgym-server >> server.log &>> server.error.log &
 

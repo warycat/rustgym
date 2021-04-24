@@ -2,6 +2,7 @@ use crate::model::Model;
 
 use js_sys::{ArrayBuffer, Uint8Array};
 use rustgym_consts::*;
+use rustgym_msg::*;
 use seed::{prelude::*, *};
 use wasm_bindgen_futures::JsFuture;
 use web_sys::{
@@ -53,6 +54,7 @@ pub fn media_recorder(
     onstart_cb.forget();
 
     let wc = model.web_socket.clone();
+    let uuid = model.client_info.as_ref().unwrap().client_uuid;
     let ondataavailable_cb = Closure::wrap(Box::new(move |event: BlobEvent| {
         let blob: Blob = event.data().unwrap();
         let wcc = wc.clone();
@@ -65,7 +67,9 @@ pub fn media_recorder(
             let size = buf.byte_length();
             let mut bytes = vec![0; size as usize];
             arr.copy_to(&mut bytes);
-            wcc.borrow().send_bytes(&bytes).expect("send bytes");
+            let msg_bin = MsgBin::new(uuid, bytes);
+            let encoded: Vec<u8> = bincode::serialize(&msg_bin).unwrap();
+            wcc.borrow().send_bytes(&encoded).expect("send bytes");
         }) as Box<dyn FnMut(Event)>);
         file_reader.set_onload(Some(onload.as_ref().unchecked_ref()));
         onload.forget();

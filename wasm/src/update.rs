@@ -41,16 +41,17 @@ pub fn update(msg: Message, model: &mut Model, orders: &mut impl Orders<Message>
                 orders.send_msg(Message::QueryText(model.search_text.to_string()));
             }
         }
-        WebSocketMsg(msg) => {
-            log!(msg);
-            match msg {
+        WebSocketMsgOut(msg_out) => {
+            log!(msg_out);
+            match msg_out {
                 MsgOut::RegistorClient(client_info) => {
-                    if client_info.chrome {
-                        orders.perform_cmd(async {
-                            let media_stream = get_media_stream().await.expect("media stream");
-                            Message::MediaStreamReady(media_stream)
-                        });
-                    }
+                    // if client_info.chrome {
+                    //     orders.perform_cmd(async {
+                    //         let media_stream = get_media_stream().await.expect("media stream");
+                    //         Message::MediaStreamReady(media_stream)
+                    //     });
+                    // }
+                    model.client_info = Some(client_info);
                 }
                 MsgOut::UnRegistorClient(_) => {}
                 MsgOut::SessionClients(_) => {}
@@ -65,9 +66,12 @@ pub fn update(msg: Message, model: &mut Model, orders: &mut impl Orders<Message>
                     orders.send_msg(Message::AllClients(all_clients));
                 }
                 _ => {
-                    log!("error", msg);
+                    log!("error", msg_out);
                 }
             }
+        }
+        WebSocketMsgBin(msg_bin) => {
+            log!(msg_bin.uuid);
         }
         WebSocketError(err) => {
             model.web_socket_errors.push(err);

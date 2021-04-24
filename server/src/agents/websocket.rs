@@ -158,3 +158,11 @@ impl StreamHandler<Result<ws::Message, ws::ProtocolError>> for SocketClient {
         }
     }
 }
+
+impl Handler<Chunk> for SocketClient {
+    type Result = ();
+
+    fn handle(&mut self, chunk: Chunk, ctx: &mut Self::Context) {
+        ctx.binary(chunk.bytes);
+    }
+}

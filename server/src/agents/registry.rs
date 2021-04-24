@@ -3,22 +3,15 @@ use crate::agents::envelope::Envelope;
 use crate::agents::search::SearchAgent;
 use crate::agents::websocket::SocketClient;
 use actix::prelude::*;
-use anyhow::Result;
 use log::{error, info};
-use notify::op;
-use notify::{raw_watcher, RawEvent, RecursiveMode, Watcher};
 use rustgym_consts::*;
 use rustgym_msg::ClientInfo;
 use rustgym_msg::*;
 use std::cell::RefCell;
 use std::collections::HashMap;
 use std::io::Write;
-use std::path::Path;
-use std::path::PathBuf;
 use std::process::{Child, Command, Stdio};
 use std::rc::Rc;
-use std::sync::mpsc;
-use std::thread::sleep;
 use std::time::Duration;
 use uuid::Uuid;
 
@@ -87,6 +80,12 @@ impl RegistryAgent {
             }
         }
     }
+
+    fn boardcast_chunk(&self, chunk: Chunk) {
+        for socket in self.all_sockets.values() {
+            socket.do_send(chunk.clone());
+        }
+    }
 }
 
 impl Actor for RegistryAgent {
@@ -122,7 +121,6 @@ impl Handler<Envelope> for RegistryAgent {
                             .expect("hls dir");
                         let playlist_path_str =
                             format!("{}/{}/playlist.m3u8", STREAM_DIR, client_uuid);
-                        let playlist_path = Path::new(&playlist_path_str);
                         let ffmpeg = Command::new("ffmpeg")
                             .args(&[
                                 "-i",
@@ -187,9 +185,17 @@ impl Handler<Chunk> for RegistryAgent {
 
     fn handle(&mut self, chunk: Chunk, _ctx: &mut Context<Self>) {
         let Chunk { client_info, bytes } = chunk.clone();
+        let msg_bin: MsgBin = bincode::deserialize(&bytes).unwrap();
         let client_uuid = client_info.client_uuid;
+        self.boardcast_chunk(chunk);
         if let Some(ffmpeg) = self.all_streams.get(&client_uuid) {
-            match ffmpeg.borrow().stdin.as_ref().unwrap().write_all(&bytes) {
+            match ffmpeg
+                .borrow()
+                .stdin
+                .as_ref()
+                .unwrap()
+                .write_all(&msg_bin.bytes)
+            {
                 Ok(_) => {}
                 Err(e) => {
                     error!("{}", e);
@@ -197,16 +203,4 @@ impl Handler<Chunk> for RegistryAgent {
             }
         }
     }
-}
-
-fn wait_until_file_created(file_path: &Path) -> bool {
-    for i in 0..10 {
-        info!("{} {:?} {}", i, file_path, file_path.is_file());
-        if file_path.exists() {
-            return true;
-        } else {
-            sleep(Duration::from_secs(1));
-        }
-    }
-    false
 }
