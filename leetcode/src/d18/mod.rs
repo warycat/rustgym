@@ -9,9 +9,13 @@ mod _1816_truncate_sentence;
 //
 mod _1822_sign_of_the_product_of_an_array;
 //
+mod _1824_minimum_sideway_jumps;
+//
 mod _1826_faulty_sensor;
 //
 mod _1827_minimum_operations_to_make_the_array_increasing;
+//
+mod _1828_queries_on_number_of_points_inside_a_circle;
 //
 mod _1829_maximum_xor_for_each_query;
 //
@@ -24,5 +28,7 @@ mod _1834_single_threaded_cpu;
 mod _1836_remove_duplicates_from_an_unsorted_linked_list;
 //
 mod _1837_sum_of_digits_in_base_k;
+//
+mod _1838_frequency_of_the_most_frequent_element;
 //
 mod _1839_longest_substring_of_all_vowels_in_order;
