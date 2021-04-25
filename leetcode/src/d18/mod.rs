@@ -22,3 +22,7 @@ mod _1833_maximum_ice_cream_bars;
 mod _1834_single_threaded_cpu;
 //
 mod _1836_remove_duplicates_from_an_unsorted_linked_list;
+//
+mod _1837_sum_of_digits_in_base_k;
+//
+mod _1839_longest_substring_of_all_vowels_in_order;
