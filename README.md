@@ -3604,6 +3604,69 @@ All the solutions here are crafted with love and their performance beats 99% of 
       </tr>
       <tr>
         <td>
+          1805
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1805"> Number of Different Integers in a String</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1812
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1812"> Determine Color of a Chessboard Square</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1816
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1816"> Truncate Sentence</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1822
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1822"> Sign of the Product of an Array</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1826
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1826"> Faulty Sensor</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1827
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1827"> Minimum Operations to Make the Array Increasing</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1832
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1832"> Check if the Sentence Is Pangram</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
           2
         </td>
         <td>
@@ -11560,6 +11623,141 @@ All the solutions here are crafted with love and their performance beats 99% of 
       </tr>
       <tr>
         <td>
+          1806
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1806"> Minimum Number of Operations to Reinitialize a Permutation</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1807
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1807"> Evaluate the Bracket Pairs of a String</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1810
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1810"> Minimum Path Cost in a Hidden Grid</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1813
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1813"> Sentence Similarity III</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1814
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1814"> Count Nice Pairs in an Array</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1817
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1817"> Finding the Users Active Minutes</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1818
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1818"> Minimum Absolute Sum Difference</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1820
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1820"> Maximum Number of Accepted Invitations</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1823
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1823"> Find the Winner of the Circular Game</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1824
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1824"> Minimum Sideway Jumps</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1828
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1828"> Queries on Number of Points Inside a Circle</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1829
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1829"> Maximum XOR for Each Query</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1833
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1833"> Maximum Ice Cream Bars</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1834
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1834"> Single-Threaded CPU</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1836
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1836"> Remove Duplicates From an Unsorted Linked List</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
           4
         </td>
         <td>
@@ -14786,6 +14984,60 @@ All the solutions here are crafted with love and their performance beats 99% of 
         </td>
         <td>
           <a href="http://rustgym.com/leetcode/1803"> Count Pairs With XOR in a Range</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1808
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1808"> Maximize Number of Nice Divisors</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1815
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1815"> Maximum Number of Groups Getting Fresh Donuts</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1819
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1819"> Number of Different Subsequences GCDs</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1825
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1825"> Finding MK Average</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1830
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1830"> Minimum Number of Operations to Make String Sorted</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1835
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1835"> Find XOR Sum of All Pairs Bitwise AND</a>
         </td>
         <td>Hard</td>
       </tr></tbody>
