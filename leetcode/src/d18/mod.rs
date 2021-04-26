@@ -5,9 +5,17 @@ mod _1805_number_of_different_integers_in_a_string;
 //
 mod _1812_determine_color_of_a_chessboard_square;
 //
+mod _1814_count_nice_pairs_in_an_array;
+//
 mod _1816_truncate_sentence;
 //
+mod _1817_finding_the_users_active_minutes;
+//
+mod _1818_minimum_absolute_sum_difference;
+//
 mod _1822_sign_of_the_product_of_an_array;
+//
+mod _1823_find_the_winner_of_the_circular_game;
 //
 mod _1824_minimum_sideway_jumps;
 //
