@@ -28,7 +28,7 @@ impl ArrayReader {
 }
 
 impl Solution {
-    pub fn get_majority(reader: &ArrayReader) -> i32 {
+    fn get_majority(reader: &ArrayReader) -> i32 {
         let n = reader.length() as usize;
         let mut zero = 1;
         let mut one = 0;

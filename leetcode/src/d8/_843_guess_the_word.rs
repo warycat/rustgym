@@ -11,7 +11,7 @@ fn exact_matches(a: &str, b: &str) -> usize {
 }
 
 impl Solution {
-    pub fn find_secret_word(words: Vec<String>, master: &Master) {
+    fn find_secret_word(words: Vec<String>, master: &Master) {
         let n = words.len();
         let mut matrix: Vec<Vec<usize>> = vec![vec![0; n]; n];
         let mut excluded: Vec<bool> = vec![false; n];

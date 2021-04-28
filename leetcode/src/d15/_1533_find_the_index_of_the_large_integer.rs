@@ -48,7 +48,7 @@ impl ArrayReader {
 }
 
 impl Solution {
-    pub fn get_index(reader: &ArrayReader) -> i32 {
+    fn get_index(reader: &ArrayReader) -> i32 {
         let n = reader.length();
         let mut l = 0;
         let mut r = n - 1;

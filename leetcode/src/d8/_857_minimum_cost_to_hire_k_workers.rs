@@ -3,7 +3,7 @@ struct Solution;
 use std::collections::BinaryHeap;
 
 impl Solution {
-    pub fn mincost_to_hire_workers(quality: Vec<i32>, wage: Vec<i32>, k: i32) -> f64 {
+    fn mincost_to_hire_workers(quality: Vec<i32>, wage: Vec<i32>, k: i32) -> f64 {
         let k = k as usize;
         let n = quality.len();
         let mut workers: Vec<usize> = (0..n).collect();
