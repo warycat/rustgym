@@ -1,6 +1,12 @@
 //
 mod _1800_maximum_ascending_subarray_sum;
 //
+mod _1801_number_of_orders_in_the_backlog;
+//
+mod _1802_maximum_value_at_a_given_index_in_a_bounded_array;
+//
+mod _1804_implement_trie_2;
+//
 mod _1805_number_of_different_integers_in_a_string;
 //
 mod _1806_minimum_number_of_operations_to_reinitialize_a_permutation;

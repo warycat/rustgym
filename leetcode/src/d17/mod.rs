@@ -79,3 +79,5 @@ mod _1784_check_if_binary_string_has_at_most_one_segment_of_ones;
 mod _1790_check_if_one_string_swap_can_make_strings_equal;
 //
 mod _1796_second_largest_digit_in_a_string;
+//
+mod _1798_maximum_number_of_consecutive_values_you_can_make;
