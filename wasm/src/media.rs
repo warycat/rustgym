@@ -1,13 +1,16 @@
-use crate::model::Model;
-
+use crate::message::Message;
 use js_sys::{ArrayBuffer, Uint8Array};
 use rustgym_consts::*;
 use rustgym_msg::*;
 use seed::{prelude::*, *};
+use std::cell::RefCell;
+use std::rc::Rc;
+use uuid::Uuid;
 use wasm_bindgen_futures::JsFuture;
 use web_sys::{
-    Blob, BlobEvent, Event, EventTarget, FileReader, HtmlVideoElement, MediaDevices, MediaRecorder,
-    MediaRecorderOptions, MediaSource, MediaStream, MediaStreamConstraints, Navigator, Url,
+    Blob, BlobEvent, Event, EventTarget, FileReader, MediaDevices, MediaRecorder,
+    MediaRecorderOptions, MediaSource, MediaStream, MediaStreamConstraints, Navigator,
+    SourceBuffer, SourceBufferAppendMode, Url,
 };
 
 pub async fn get_media_stream() -> Result<MediaStream, JsValue> {
@@ -21,26 +24,35 @@ pub async fn get_media_stream() -> Result<MediaStream, JsValue> {
     Ok(media_stream)
 }
 
-pub fn media_source(media_stream: &MediaStream) -> Result<MediaSource, JsValue> {
+pub fn media_source_url(
+    uuid: Uuid,
+    msg_sender: Rc<dyn Fn(Option<Message>)>,
+) -> Result<String, JsValue> {
     let media_source: MediaSource = MediaSource::new()?;
-    let video: HtmlVideoElement = document().query_selector("video")?.unwrap().dyn_into()?;
-    let url = Url::create_object_url_with_source(&media_source);
-    video.set_src_object(Some(media_stream));
-    // video.play();
-    log!(url);
-    Ok(media_source)
+    let onsouceopen_cb = Closure::wrap(Box::new(move |event: Event| {
+        let target: EventTarget = event.target().unwrap();
+        let media_source: MediaSource = target.dyn_into().unwrap();
+        let source_buffer: SourceBuffer = media_source.add_source_buffer(&MIME_TYPE).unwrap();
+        source_buffer.set_mode(SourceBufferAppendMode::Segments);
+        msg_sender(Some(Message::SourceBuffer(uuid, source_buffer)));
+    }) as Box<dyn FnMut(Event)>);
+    media_source.set_onsourceopen(Some(onsouceopen_cb.as_ref().unchecked_ref()));
+    onsouceopen_cb.forget();
+    let url = Url::create_object_url_with_source(&media_source)?;
+    Ok(url)
 }
 
 pub fn media_recorder(
+    uuid: Uuid,
     media_stream: &MediaStream,
-    model: &mut Model,
+    web_socket: Rc<RefCell<seed::prelude::WebSocket>>,
 ) -> Result<MediaRecorder, JsValue> {
     log!("media_recorder");
     let mut options = MediaRecorderOptions::new();
     options.mime_type(MIME_TYPE);
     let media_recorder: MediaRecorder =
         MediaRecorder::new_with_media_stream_and_media_recorder_options(media_stream, &options)?;
-    let wc = model.web_socket.clone();
+    let wc = web_socket.clone();
     let onstart_cb = Closure::wrap(Box::new(move |event: Event| {
         let target: EventTarget = event.target().unwrap();
         let media_recorder: MediaRecorder = target.dyn_into().unwrap();
@@ -53,8 +65,7 @@ pub fn media_recorder(
     media_recorder.set_onstart(Some(onstart_cb.as_ref().unchecked_ref()));
     onstart_cb.forget();
 
-    let wc = model.web_socket.clone();
-    let uuid = model.client_info.as_ref().unwrap().client_uuid;
+    let wc = web_socket.clone();
     let ondataavailable_cb = Closure::wrap(Box::new(move |event: BlobEvent| {
         let blob: Blob = event.data().unwrap();
         let wcc = wc.clone();

@@ -73,23 +73,8 @@ pub fn view(model: &Model) -> Node<Message> {
                 )
             ],
         ],
-        // model.all_clients.iter().filter(|client| client.streaming).map(|client|
-        //     div![
-        //         div![client.client_uuid.to_string()],
-        //         video![
-        //             C!["video"],
-        //             source![
-        //                 attrs!{
-        //                     At::Src => format!("/stream/{}/playlist.m3u8", client.client_uuid.to_string()),
-        //                     At::Type => "application/x-mpegURL"
-        //                 }
-        //             ],
-        //             attrs!{
-        //                 At::AutoPlay => true,
-        //                 At::Controls => true,
-        //             }
-        //         ]
-        //     ]
-        // ),
+        model.all_source_urls.values().map(|source_url|
+            video![attrs!{At::AutoPlay => true,At::Src => source_url}]
+        )
     ]
 }

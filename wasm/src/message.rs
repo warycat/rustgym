@@ -1,6 +1,7 @@
 use rustgym_msg::*;
 use seed::prelude::*;
-use web_sys::MediaStream;
+use uuid::Uuid;
+use web_sys::{MediaStream, SourceBuffer};
 
 pub enum Message {
     UrlChanged(subs::UrlChanged),
@@ -12,6 +13,7 @@ pub enum Message {
     WebSocketClosed(CloseEvent),
     WebSocketError(WebSocketError),
     MediaStreamReady(MediaStream),
+    SourceBuffer(Uuid, SourceBuffer),
     AllClients(Vec<ClientInfo>),
     WebSocketOpened,
     WebSocketFailed,

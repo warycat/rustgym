@@ -7,6 +7,7 @@ mod model;
 mod update;
 mod utils;
 mod view;
+mod websocket;
 
 #[wasm_bindgen(start)]
 pub fn start() -> Result<(), JsValue> {

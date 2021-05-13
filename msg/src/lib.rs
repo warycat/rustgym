@@ -2,7 +2,6 @@
 extern crate derive_new;
 
 use serde::{Deserialize, Serialize};
-use std::collections::HashSet;
 use uuid::Uuid;
 
 #[derive(Serialize, Deserialize, Debug, Clone)]

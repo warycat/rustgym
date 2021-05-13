@@ -93,7 +93,6 @@ impl Actor for SocketClient {
         let address = ctx.address();
         let envelop = Envelope::from_msg_out(address, self.client_info.clone(), msg_out);
         self.registry_addr.do_send(envelop);
-        // ctx.add_message_stream();
         self.hb(ctx);
     }
 
@@ -102,7 +101,6 @@ impl Actor for SocketClient {
         let address = ctx.address();
         let envelop = Envelope::from_msg_out(address, self.client_info.clone(), msg_out);
         self.registry_addr.do_send(envelop);
-        self.hb(ctx);
         actix::Running::Stop
     }
 }
