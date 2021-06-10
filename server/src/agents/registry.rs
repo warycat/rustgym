@@ -15,26 +15,6 @@ use std::rc::Rc;
 use std::time::Duration;
 use uuid::Uuid;
 
-/*
-    let ffmpeg = Command::new("ffmpeg")
-        .args(&[
-            "-i",
-            "-",
-            "-f",
-            "hls",
-            "-c:v",
-            "copy",
-            "-hls_time",
-            "0.1",
-            "-hls_flags",
-            "delete_segments",
-            &playlist_path_str,
-        ])
-        .stdin(Stdio::piped())
-        .spawn()
-        .expect("ffmpeg");
-*/
-
 #[derive(Clone)]
 pub struct RegistryAgent {
     search_addr: Addr<SearchAgent>,

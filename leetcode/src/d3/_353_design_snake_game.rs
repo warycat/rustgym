@@ -44,8 +44,8 @@ impl SnakeGame {
             body,
             food,
             screen,
-            m,
             n,
+            m,
             score,
         }
     }

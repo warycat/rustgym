@@ -26,9 +26,9 @@ impl Chessboard {
             queens.insert(queen);
         }
         Chessboard {
-            king,
-            queens,
             directions,
+            queens,
+            king,
         }
     }
     fn contains(&self, point: &[i32]) -> bool {

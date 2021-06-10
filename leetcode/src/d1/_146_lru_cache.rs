@@ -212,11 +212,7 @@ impl LRUCache {
 
     fn get_ref(&mut self, key: i32) -> Option<NodeRef> {
         if let Some(weak) = self.hash_map.remove(&key) {
-            if let Some(node_ref) = weak.upgrade() {
-                Some(node_ref)
-            } else {
-                None
-            }
+            weak.upgrade()
         } else {
             None
         }

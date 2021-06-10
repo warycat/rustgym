@@ -51,7 +51,7 @@ impl AutocompleteSystem {
             trie.insert(s, times[i] as usize);
         }
         let buffer: Vec<char> = vec![];
-        AutocompleteSystem { trie, buffer }
+        AutocompleteSystem { buffer, trie }
     }
 
     fn input(&mut self, c: char) -> Vec<String> {

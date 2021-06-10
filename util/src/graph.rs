@@ -70,11 +70,11 @@ impl Graph {
         let stack = vec![];
         Graph {
             n,
-            time,
+            edges,
             adj,
             nodes,
-            edges,
             stack,
+            time,
         }
     }
 

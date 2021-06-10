@@ -14,7 +14,7 @@ impl FileSharing {
     fn new(m: i32) -> Self {
         let ids = BinaryHeap::new();
         let files = BTreeMap::new();
-        FileSharing { m, files, ids }
+        FileSharing { ids, files, m }
     }
 
     fn join(&mut self, owned_chunks: Vec<i32>) -> i32 {

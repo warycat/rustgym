@@ -11,7 +11,7 @@ impl Instruction {
     fn new(s: String) -> Self {
         let val = s[1..].parse::<i32>().unwrap();
         let c = s.chars().next().unwrap();
-        Instruction { val, c }
+        Instruction { c, val }
     }
 }
 

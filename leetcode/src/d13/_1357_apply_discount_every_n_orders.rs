@@ -19,8 +19,8 @@ impl Cashier {
         Cashier {
             n,
             index,
-            inventory,
             discount,
+            inventory,
         }
     }
     fn get_bill(&mut self, products: Vec<i32>, amount: Vec<i32>) -> f64 {

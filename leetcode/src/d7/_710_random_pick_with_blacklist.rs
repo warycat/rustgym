@@ -24,7 +24,7 @@ impl Solution {
                 j += 1;
             }
         }
-        Solution { rng, n, m, map }
+        Solution { rng, map, m, n }
     }
 
     fn pick(&mut self) -> i32 {

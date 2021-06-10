@@ -17,8 +17,8 @@ impl UnionFind {
         UnionFind {
             parent,
             size,
-            n,
             group,
+            n,
         }
     }
 

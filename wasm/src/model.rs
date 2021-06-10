@@ -41,8 +41,8 @@ impl Model {
             web_socket,
             web_socket_errors,
             all_clients,
-            all_source_buffers,
             all_source_urls,
+            all_source_buffers,
             media_stream,
             media_recorder,
         }
