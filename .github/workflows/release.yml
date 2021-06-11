@@ -26,6 +26,8 @@ jobs:
         run: cargo test --verbose
       - name: Install cargo-make
         run: cargo install cargo-make --verbose
+      - name: Run wasm test
+        run: cargo make wasm-test
       - name: Install diesel_cli
         run: cargo install diesel_cli --no-default-features --features sqlite
       - name: Run migration

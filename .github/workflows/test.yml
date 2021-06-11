@@ -24,6 +24,8 @@ jobs:
       run: cargo test --verbose
     - name: Install wasm-pack
       uses: jetli/wasm-pack-action@v0.3.0
+    - name: Install cargo-make
+      run: cargo install cargo-make --verbose
     - name: Run wasm test
-      run: wasm-pack test wasm --node
+      run: cargo make wasm-test
 

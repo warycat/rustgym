@@ -42,3 +42,6 @@ script = "sonic -c infra/config.cfg"
 
 [tasks.dev]
 run_task = { name = ["sonic", "watch-server", "watch-wasm"], parallel = true }
+
+[tasks.wasm-test]
+script = ["wasm-pack test wasm --headless --chrome"]
