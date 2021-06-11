@@ -229,6 +229,15 @@ All the solutions here are crafted with love and their performance beats 99% of 
       </tr>
       <tr>
         <td>
+          94
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/94"> Binary Tree Inorder Traversal</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
           100
         </td>
         <td>
@@ -350,6 +359,24 @@ All the solutions here are crafted with love and their performance beats 99% of 
         </td>
         <td>
           <a href="http://rustgym.com/leetcode/141"> Linked List Cycle</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          144
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/144"> Binary Tree Preorder Traversal</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          145
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/145"> Binary Tree Postorder Traversal</a>
         </td>
         <td>Easy</td>
       </tr>
@@ -751,6 +778,15 @@ All the solutions here are crafted with love and their performance beats 99% of 
       </tr>
       <tr>
         <td>
+          338
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/338"> Counting Bits</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
           342
         </td>
         <td>
@@ -1052,6 +1088,15 @@ All the solutions here are crafted with love and their performance beats 99% of 
         </td>
         <td>
           <a href="http://rustgym.com/leetcode/492"> Construct the Rectangle</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          495
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/495"> Teemo Attacking</a>
         </td>
         <td>Easy</td>
       </tr>
@@ -1601,15 +1646,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
         </td>
         <td>
           <a href="http://rustgym.com/leetcode/748"> Shortest Completing Word</a>
-        </td>
-        <td>Easy</td>
-      </tr>
-      <tr>
-        <td>
-          758
-        </td>
-        <td>
-          <a href="http://rustgym.com/leetcode/758"> Bold Words in String</a>
         </td>
         <td>Easy</td>
       </tr>
@@ -3667,6 +3703,96 @@ All the solutions here are crafted with love and their performance beats 99% of 
       </tr>
       <tr>
         <td>
+          1837
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1837"> Sum of Digits in Base K</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1844
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1844"> Replace All Digits with Characters</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1848
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1848"> Minimum Distance to the Target Element</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1854
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1854"> Maximum Population Year</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1859
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1859"> Sorting the Sentence</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1863
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1863"> Sum of All Subset XOR Totals</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1869
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1869"> Longer Contiguous Segments of Ones than Zeros</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1876
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1876"> Substrings of Size Three with Distinct Characters</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1880
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1880"> Check if Word Equals Summation of Two Words</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1886
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1886"> Determine Whether Matrix Can Be Obtained By Rotation</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
           2
         </td>
         <td>
@@ -4153,15 +4279,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
       </tr>
       <tr>
         <td>
-          94
-        </td>
-        <td>
-          <a href="http://rustgym.com/leetcode/94"> Binary Tree Inorder Traversal</a>
-        </td>
-        <td>Medium</td>
-      </tr>
-      <tr>
-        <td>
           95
         </td>
         <td>
@@ -4193,6 +4310,15 @@ All the solutions here are crafted with love and their performance beats 99% of 
         </td>
         <td>
           <a href="http://rustgym.com/leetcode/98"> Validate Binary Search Tree</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          99
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/99"> Recover Binary Search Tree</a>
         </td>
         <td>Medium</td>
       </tr>
@@ -4297,6 +4423,15 @@ All the solutions here are crafted with love and their performance beats 99% of 
       </tr>
       <tr>
         <td>
+          128
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/128"> Longest Consecutive Sequence</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
           129
         </td>
         <td>
@@ -4382,24 +4517,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
         </td>
         <td>
           <a href="http://rustgym.com/leetcode/143"> Reorder List</a>
-        </td>
-        <td>Medium</td>
-      </tr>
-      <tr>
-        <td>
-          144
-        </td>
-        <td>
-          <a href="http://rustgym.com/leetcode/144"> Binary Tree Preorder Traversal</a>
-        </td>
-        <td>Medium</td>
-      </tr>
-      <tr>
-        <td>
-          145
-        </td>
-        <td>
-          <a href="http://rustgym.com/leetcode/145"> Binary Tree Postorder Traversal</a>
         </td>
         <td>Medium</td>
       </tr>
@@ -5278,15 +5395,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
       </tr>
       <tr>
         <td>
-          338
-        </td>
-        <td>
-          <a href="http://rustgym.com/leetcode/338"> Counting Bits</a>
-        </td>
-        <td>Medium</td>
-      </tr>
-      <tr>
-        <td>
           339
         </td>
         <td>
@@ -6119,15 +6227,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
         </td>
         <td>
           <a href="http://rustgym.com/leetcode/494"> Target Sum</a>
-        </td>
-        <td>Medium</td>
-      </tr>
-      <tr>
-        <td>
-          495
-        </td>
-        <td>
-          <a href="http://rustgym.com/leetcode/495"> Teemo Attacking</a>
         </td>
         <td>Medium</td>
       </tr>
@@ -7235,6 +7334,15 @@ All the solutions here are crafted with love and their performance beats 99% of 
         </td>
         <td>
           <a href="http://rustgym.com/leetcode/756"> Pyramid Transition Matrix</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          758
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/758"> Bold Words in String</a>
         </td>
         <td>Medium</td>
       </tr>
@@ -11758,6 +11866,240 @@ All the solutions here are crafted with love and their performance beats 99% of 
       </tr>
       <tr>
         <td>
+          1838
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1838"> Frequency of the Most Frequent Element</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1839
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1839"> Longest Substring Of All Vowels in Order</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1845
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1845"> Seat Reservation Manager</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1846
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1846"> Maximum Element After Decreasing and Rearranging</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1849
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1849"> Splitting a String Into Descending Consecutive Values</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1850
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1850"> Minimum Adjacent Swaps to Reach the Kth Smallest Number</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1852
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1852"> Distinct Numbers in Each Subarray</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1855
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1855"> Maximum Distance Between a Pair of Values</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1856
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1856"> Maximum Subarray Min-Product</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1858
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1858"> Longest Word With All Prefixes</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1860
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1860"> Incremental Memory Leak</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1861
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1861"> Rotating the Box</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1864
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1864"> Minimum Number of Swaps to Make the Binary String Alternating</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1865
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1865"> Finding Pairs With a Certain Sum</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1868
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1868"> Product of Two Run-Length Encoded Arrays</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1870
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1870"> Minimum Speed to Arrive on Time</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1871
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1871"> Jump Game VII</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1874
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1874"> Minimize Product Sum of Two Arrays</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1877
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1877"> Minimize Maximum Pair Sum in Array</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1878
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1878"> Get Biggest Three Rhombus Sums in a Grid</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1881
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1881"> Maximum Value after Insertion</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1882
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1882"> Process Tasks Using Servers</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1884
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1884"> Egg Drop With 2 Eggs and N Floors</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1885
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1885"> Count Pairs in Two Arrays</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1887
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1887"> Reduction Operations to Make the Array Elements Equal</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1888
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1888"> Minimum Number of Flips to Make the Binary String Alternating</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
           4
         </td>
         <td>
@@ -11938,15 +12280,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
       </tr>
       <tr>
         <td>
-          99
-        </td>
-        <td>
-          <a href="http://rustgym.com/leetcode/99"> Recover Binary Search Tree</a>
-        </td>
-        <td>Hard</td>
-      </tr>
-      <tr>
-        <td>
           115
         </td>
         <td>
@@ -11987,15 +12320,6 @@ All the solutions here are crafted with love and their performance beats 99% of 
         </td>
         <td>
           <a href="http://rustgym.com/leetcode/127"> Word Ladder</a>
-        </td>
-        <td>Hard</td>
-      </tr>
-      <tr>
-        <td>
-          128
-        </td>
-        <td>
-          <a href="http://rustgym.com/leetcode/128"> Longest Consecutive Sequence</a>
         </td>
         <td>Hard</td>
       </tr>
@@ -15038,6 +15362,105 @@ All the solutions here are crafted with love and their performance beats 99% of 
         </td>
         <td>
           <a href="http://rustgym.com/leetcode/1835"> Find XOR Sum of All Pairs Bitwise AND</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1840
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1840"> Maximum Building Height</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1842
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1842"> Next Palindrome Using Same Digits</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1847
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1847"> Closest Room</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1851
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1851"> Minimum Interval to Include Each Query</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1857
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1857"> Largest Color Value in a Directed Graph</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1862
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1862"> Sum of Floored Pairs</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1866
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1866"> Number of Ways to Rearrange Sticks With K Sticks Visible</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1872
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1872"> Stone Game VIII</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1879
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1879"> Minimum XOR Sum of Two Arrays</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1883
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1883"> Minimum Skips to Arrive at Meeting On Time</a>
+        </td>
+        <td>Hard</td>
+      </tr>
+      <tr>
+        <td>
+          1889
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1889"> Minimum Space Wasted From Packaging</a>
         </td>
         <td>Hard</td>
       </tr></tbody>
