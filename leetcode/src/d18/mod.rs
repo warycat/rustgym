@@ -54,3 +54,19 @@ mod _1837_sum_of_digits_in_base_k;
 mod _1838_frequency_of_the_most_frequent_element;
 //
 mod _1839_longest_substring_of_all_vowels_in_order;
+//
+mod _1844_replace_all_digits_with_characters;
+//
+mod _1848_minimum_distance_to_the_target_element;
+//
+mod _1859_sorting_the_sentence;
+//
+mod _1863_sum_of_all_subset_xor_totals;
+//
+mod _1869_longer_contiguous_segments_of_ones_than_zeros;
+//
+mod _1876_substrings_of_size_three_with_distinct_characters;
+//
+mod _1880_check_if_word_equals_summation_of_two_words;
+//
+mod _1886_determine_whether_matrix_can_be_obtained_by_rotation;
