@@ -30,10 +30,14 @@ pub async fn ws_index(
     uap_addr: web::Data<Addr<UapAgent>>,
 ) -> Result<HttpResponse, Error> {
     let uaq = UserAgentRequest::from_request(&req)?;
-    let chrome = if let Ok(Some(ua)) = uap_addr.get_ref().send(uaq).await {
-        ua.family == "Chrome"
+    let user_agent = if let Ok(Some(ua)) = uap_addr.get_ref().send(uaq).await {
+        let family = ua.family;
+        let major = ua.major;
+        let minor = ua.minor;
+        let patch = ua.patch;
+        Some(rustgym_msg::UserAgent::new(family, major, minor, patch))
     } else {
-        false
+        None
     };
     let session_data = update_session(session)?;
     let session_uuid = session_data.uuid;
@@ -44,7 +48,7 @@ pub async fn ws_index(
         client_uuid,
         session_uuid,
         name,
-        chrome,
+        user_agent,
         streaming,
     };
     let socket_client = SocketClient::new(client_info, registry_addr.get_ref().clone());

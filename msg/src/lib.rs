@@ -32,11 +32,19 @@ pub enum MsgOut {
 }
 
 #[derive(Serialize, Deserialize, Debug, Clone, Hash, Eq, PartialEq, new)]
+pub struct UserAgent {
+    pub family: String,
+    pub major: Option<String>,
+    pub minor: Option<String>,
+    pub patch: Option<String>,
+}
+
+#[derive(Serialize, Deserialize, Debug, Clone, Hash, Eq, PartialEq, new)]
 pub struct ClientInfo {
     pub session_uuid: Uuid,
     pub client_uuid: Uuid,
     pub name: String,
-    pub chrome: bool,
+    pub user_agent: Option<UserAgent>,
     pub streaming: bool,
 }
 

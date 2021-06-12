@@ -1,3 +1,4 @@
+use crate::device::*;
 use crate::media::*;
 use crate::message::Message;
 use crate::model::Model;
@@ -46,6 +47,9 @@ pub fn update(msg: Message, model: &mut Model, orders: &mut impl Orders<Message>
             log!(msg_out);
             match msg_out {
                 MsgOut::RegistorClient(client_info) => {
+                    if let Some(user_agent) = client_info.user_agent.as_ref() {
+                        log!(user_agent.detect_device());
+                    }
                     // let uuid = client_info.client_uuid;
                     if model.client_info.is_none() {
                         // if client_info.chrome {
