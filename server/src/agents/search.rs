@@ -41,7 +41,7 @@ impl Handler<Envelope> for SearchAgent {
     fn handle(&mut self, envelope: Envelope, _ctx: &mut Context<Self>) {
         let Envelope {
             client_addr,
-            client_info,
+            client_uuid,
             msg,
         } = envelope;
 
@@ -51,9 +51,9 @@ impl Handler<Envelope> for SearchAgent {
                     let text: String = cleanup(text);
                     let search_words: Vec<String> =
                         text.split_whitespace().map(|s| s.to_string()).collect();
+                    let mut suggestions = vec![];
                     if let Some(last) = search_words.last() {
                         info!("{}", last);
-                        let mut suggestions = vec![];
                         match self
                             .search_channel
                             .suggest(SONIC_COLLECTION, SONIC_BUCKET, last)
@@ -73,11 +73,11 @@ impl Handler<Envelope> for SearchAgent {
                                 self.reconnect();
                             }
                         }
-                        let msg_out = MsgOut::SearchSuggestions(suggestions);
-                        let envelope =
-                            Envelope::from_msg_out(client_addr.clone(), client_info, msg_out);
-                        client_addr.do_send(envelope);
                     }
+                    let msg_out = MsgOut::SearchSuggestions(suggestions);
+                    let envelope =
+                        Envelope::from_msg_out(client_addr.clone(), client_uuid, msg_out);
+                    client_addr.do_send(envelope);
                 }
                 MsgIn::QueryText(text) => {
                     let text: String = cleanup(text);
@@ -98,7 +98,7 @@ impl Handler<Envelope> for SearchAgent {
                     }
                     let msg_out = MsgOut::QueryResults(query_results);
                     let envelope =
-                        Envelope::from_msg_out(client_addr.clone(), client_info, msg_out);
+                        Envelope::from_msg_out(client_addr.clone(), client_uuid, msg_out);
                     client_addr.do_send(envelope);
                 }
                 _ => {

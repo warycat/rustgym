@@ -16,19 +16,58 @@ pub enum MsgIn {
     Pong,
     SearchText(String),
     QueryText(String),
-    StreamStart(String),
+    StreamStart {
+        client_uuid: Uuid,
+    },
+    Offer {
+        caller: Uuid,
+        callee: Uuid,
+        offer_sdp: String,
+    },
+    Answer {
+        caller: Uuid,
+        callee: Uuid,
+        answer_sdp: String,
+    },
+    IceCandidate {
+        local: Uuid,
+        remote: Uuid,
+        candidate: String,
+        sdp_mid: String,
+        sdp_m_line_index: u16,
+    },
 }
 
 #[derive(Serialize, Deserialize, Debug, Clone)]
 pub enum MsgOut {
     Ping,
     Pong,
-    RegistorClient(ClientInfo),
-    UnRegistorClient(ClientInfo),
-    SessionClients(Vec<ClientInfo>),
-    AllClients(Vec<ClientInfo>),
     SearchSuggestions(Vec<String>),
     QueryResults(Vec<QueryResult>),
+    RegistorClient(ClientInfo),
+    UnRegistorClient(ClientInfo),
+    StreamStart {
+        client_uuid: Uuid,
+    },
+    Offer {
+        caller: Uuid,
+        callee: Uuid,
+        offer_sdp: String,
+    },
+    Answer {
+        caller: Uuid,
+        callee: Uuid,
+        answer_sdp: String,
+    },
+    IceCandidate {
+        local: Uuid,
+        remote: Uuid,
+        candidate: String,
+        sdp_mid: String,
+        sdp_m_line_index: u16,
+    },
+    SessionClients(Vec<ClientInfo>),
+    AllClients(Vec<ClientInfo>),
 }
 
 #[derive(Serialize, Deserialize, Debug, Clone, Hash, Eq, PartialEq, new)]

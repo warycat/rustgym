@@ -1,4 +1,3 @@
-use crate::agents::chunk::Chunk;
 use crate::agents::envelope::Envelope;
 use crate::agents::registry::RegistryAgent;
 use crate::agents::uap::{UapAgent, UserAgentRequest};
@@ -92,10 +91,8 @@ impl Actor for SocketClient {
 
     fn started(&mut self, ctx: &mut Self::Context) {
         let msg_out = MsgOut::RegistorClient(self.client_info.clone());
-        let json = serde_json::to_string(&msg_out).expect("json");
-        ctx.text(json);
         let address = ctx.address();
-        let envelop = Envelope::from_msg_out(address, self.client_info.clone(), msg_out);
+        let envelop = Envelope::from_msg_out(address, self.client_info.client_uuid, msg_out);
         self.registry_addr.do_send(envelop);
         self.hb(ctx);
     }
@@ -103,7 +100,7 @@ impl Actor for SocketClient {
     fn stopping(&mut self, ctx: &mut Self::Context) -> actix::Running {
         let msg_out = MsgOut::UnRegistorClient(self.client_info.clone());
         let address = ctx.address();
-        let envelop = Envelope::from_msg_out(address, self.client_info.clone(), msg_out);
+        let envelop = Envelope::from_msg_out(address, self.client_info.client_uuid, msg_out);
         self.registry_addr.do_send(envelop);
         actix::Running::Stop
     }
@@ -140,31 +137,20 @@ impl StreamHandler<Result<ws::Message, ws::ProtocolError>> for SocketClient {
                 if let Ok(msg_in) = serde_json::from_str::<MsgIn>(&text) {
                     info!("{:?}", msg_in);
                     let address = ctx.address();
-                    let envelope = Envelope::from_msg_in(address, self.client_info.clone(), msg_in);
+                    let envelope =
+                        Envelope::from_msg_in(address, self.client_info.client_uuid, msg_in);
                     self.registry_addr.do_send(envelope);
                 } else {
                     info!("{:?}", text);
                     ctx.text(text)
                 }
             }
-            Ok(ws::Message::Binary(bytes)) => {
-                let client_info = self.client_info.clone();
-                let chuck = Chunk::new(client_info, bytes);
-                self.registry_addr.do_send(chuck);
-            }
+            Ok(ws::Message::Binary(_)) => {}
             Ok(ws::Message::Close(reason)) => {
                 ctx.close(reason);
                 ctx.stop();
             }
             _ => ctx.stop(),
         }
-    }
-}
-
-impl Handler<Chunk> for SocketClient {
-    type Result = ();
-
-    fn handle(&mut self, chunk: Chunk, ctx: &mut Self::Context) {
-        ctx.binary(chunk.bytes);
     }
 }

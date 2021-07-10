@@ -31,18 +31,57 @@
     </script>
     <script>
       hljs.initHighlightingOnLoad();
-      console.log("{{session.uuid}}");
-      console.log("{{session.name}}");
-      console.log("{{session.count}}");
+      console.log("session.uuid {{session.uuid}}");
+      console.log("session.name {{session.name}}");
+      console.log("session.count {{session.count}}");
     </script>
     {% block head %}{% endblock %}
   </head>
   <body>
-    <div id="content" class="sm:container sm:mx-auto prose sm:prose-xl">
+    <div id="body" class="sm:mx-auto">
       {% block navigation %}{% endblock %}
-      <div class="container mx-auto px-3" id="app"></div>
-      <div class="px-3">
+      <div id="searchbar" class="px-3 prose sm:prose-xl container mx-auto">
+        <div class="searchbar">
+          <div class="relative mt-3 mx-auto">
+            <span class="absolute inset-y-0 left-0 pl-3 flex items-center">
+              <svg class="h-5 w-5 text-gray-500" viewBox="0 0 24 24" fill="none">
+                <path d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"></path>
+              </svg>
+            </span>
+            <input
+              id="search_input"
+              class="w-full border rounded-md pl-10 pr-4 py-2 focus:border-blue-500 focus:outline-none focus:shadow-outline" 
+              type="text"
+              placeholder="Search Rust Solutions"
+              value=""
+            />
+            <div
+              id="search_suggestions"
+              class="autocom-box w-full border rounded-md empty"
+            >
+            </div>
+          </div>
+        </div>
+        <table id="search_table" class="table-auto empty">
+          <thead>
+            <tr>
+              <th>id</th>
+              <th>title</th>
+              <th>from</th>
+            </tr>
+          </thead>
+          <tbody id="search_results">
+          </tbody>
+        </table>
+      </div>
+      <div id="content" class="px-3 py-3 prose sm:prose-xl container mx-auto">
         {% block content %}{% endblock %}
+      </div>
+      <div id="video_scroller">
+        <div id="remote_videos" class="videos">
+          <video id="local_video" class="remote" autoplay>
+          </video>
+        </div>
       </div>
     </div>
   </body>

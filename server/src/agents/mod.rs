@@ -1,4 +1,3 @@
-pub mod chunk;
 pub mod envelope;
 pub mod registry;
 pub mod search;

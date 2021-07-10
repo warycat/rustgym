@@ -1,23 +1,37 @@
-use seed::prelude::*;
-use wasm_bindgen_test::wasm_bindgen_test_configure;
+use wasm_bindgen::prelude::*;
 use wasm_bindgen_test::*;
-
 wasm_bindgen_test_configure!(run_in_browser);
 
-mod device;
-mod init;
+macro_rules! console_dbg {
+    ($($arg:tt)*) => {
+        console_log!("{} {}: {}", file!(), line!(), &format_args!($($arg)*))
+    };
+}
+
+mod client;
 mod media;
-mod message;
-mod model;
-mod update;
+mod pc;
+mod searchbar;
 mod utils;
-mod view;
-mod websocket;
+
+use client::*;
+use media::MediaClient;
+use searchbar::SearchBar;
+use utils::*;
 
 #[wasm_bindgen(start)]
-pub fn start() -> Result<(), JsValue> {
+pub async fn start() -> Result<(), JsValue> {
     utils::set_panic_hook();
-    App::start("app", init::init, update::update, view::view);
+    get_client();
+    let searchbar = SearchBar::new(
+        search_input(),
+        search_suggestions(),
+        search_table(),
+        search_results(),
+    );
+    set_searchbar(searchbar);
+    let media_client = MediaClient::new(local_video(), remote_videos());
+    set_media_client(media_client);
     Ok(())
 }
 

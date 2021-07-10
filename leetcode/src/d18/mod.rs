@@ -59,6 +59,8 @@ mod _1844_replace_all_digits_with_characters;
 //
 mod _1848_minimum_distance_to_the_target_element;
 //
+mod _1854_maximum_population_year;
+//
 mod _1859_sorting_the_sentence;
 //
 mod _1863_sum_of_all_subset_xor_totals;
@@ -70,3 +72,5 @@ mod _1876_substrings_of_size_three_with_distinct_characters;
 mod _1880_check_if_word_equals_summation_of_two_words;
 //
 mod _1886_determine_whether_matrix_can_be_obtained_by_rotation;
+//
+mod _1893_check_if_all_the_integers_in_a_range_are_covered;
