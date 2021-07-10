@@ -45,4 +45,4 @@ run_task = { name = ["sonic", "watch-server", "watch-wasm"], parallel = true }
 
 [tasks.wasm-test]
 command = "wasm-pack"
-args = ["test", "wasm", "--headless", "--chrome"]
+args = ["test", "--chrome", "--headless", "wasm"]
