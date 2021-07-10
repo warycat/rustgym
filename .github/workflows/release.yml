@@ -26,6 +26,8 @@ jobs:
         run: cargo test --verbose
       - name: Install cargo-make
         run: cargo install cargo-make --verbose
+      - name: Install wasm-pack
+        uses: jetli/wasm-pack-action@v0.3.0
       - name: Run wasm test
         run: cargo make wasm-test
       - name: Install diesel_cli
@@ -40,8 +42,6 @@ jobs:
         run: cargo make copy-server
       - name: Copy ingest
         run: cargo make copy-ingest
-      - name: Install wasm-pack
-        uses: jetli/wasm-pack-action@v0.3.0
       - name: Build wasm
         run: cargo make wasm-pack
       - name: Archive wasm
