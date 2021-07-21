@@ -26,6 +26,8 @@ jobs:
       uses: jetli/wasm-pack-action@v0.3.0
     - name: Install cargo-make
       run: cargo install cargo-make --verbose
+    - name: Create ignore.env
+      run: touch infra/ignore.env
     - name: Run wasm test
       run: cargo make wasm-test
 
