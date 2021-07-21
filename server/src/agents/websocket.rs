@@ -1,6 +1,7 @@
 use crate::agents::envelope::Envelope;
 use crate::agents::registry::RegistryAgent;
 use crate::agents::uap::{UapAgent, UserAgentRequest};
+use crate::app_data::AppData;
 use crate::session_data::update_session;
 use actix::prelude::*;
 use actix_session::Session;
@@ -9,19 +10,37 @@ use actix_web::Error;
 use actix_web::HttpRequest;
 use actix_web::HttpResponse;
 use actix_web_actors::ws;
+use chrono::Utc;
+use data_encoding::BASE64;
 use log::debug;
 use log::error;
 use log::info;
+use ring::hmac;
 use rustgym_consts::*;
 use rustgym_msg::ClientInfo;
 use rustgym_msg::*;
-use std::cell::RefCell;
-use std::fs::File;
-use std::rc::Rc;
 use std::time::Instant;
 use uuid::Uuid;
 
+pub fn generate_turn_rest_api_cred(
+    name: &str,
+    turn_static_auth_secret: &str,
+    ttl: i64,
+) -> (String, String) {
+    let now = Utc::now();
+    let timestamp = now.timestamp() + ttl;
+    let usercombo = format!("{}:{}", timestamp, name);
+    let signed_key = hmac::Key::new(
+        hmac::HMAC_SHA1_FOR_LEGACY_USE_ONLY,
+        turn_static_auth_secret.as_bytes(),
+    );
+    let signature = hmac::sign(&signed_key, usercombo.as_bytes());
+    let credential = BASE64.encode(signature.as_ref());
+    (usercombo, credential)
+}
+
 pub async fn ws_index(
+    data: web::Data<AppData>,
     req: HttpRequest,
     stream: web::Payload,
     session: Session,
@@ -40,15 +59,35 @@ pub async fn ws_index(
     };
     let session_data = update_session(session)?;
     let session_uuid = session_data.uuid;
-    let name = session_data.name;
-    let streaming = false;
+    let name = session_data.name.to_string();
     let client_uuid = Uuid::new_v4();
+    let (usercombo, credential) = generate_turn_rest_api_cred(
+        &name,
+        &data.turn_static_auth_secret.borrow().to_string(),
+        3600 * 24,
+    );
+    let stun_server = IceServer::new(
+        "stun:rustgym.com".to_string(),
+        usercombo.clone(),
+        credential.clone(),
+    );
+    let turn_server = IceServer::new(
+        "turn:rustgym.com".to_string(),
+        usercombo.clone(),
+        credential.clone(),
+    );
+    let turns_server = IceServer::new(
+        "turns:rustgym.com".to_string(),
+        usercombo.clone(),
+        credential.clone(),
+    );
+    let ice_servers = vec![stun_server, turn_server, turns_server];
     let client_info = ClientInfo {
         client_uuid,
         session_uuid,
         name,
         user_agent,
-        streaming,
+        ice_servers,
     };
     let socket_client = SocketClient::new(client_info, registry_addr.get_ref().clone());
     ws::start(socket_client, &req, stream)
@@ -59,18 +98,15 @@ pub struct SocketClient {
     hb: Instant,
     client_info: ClientInfo,
     registry_addr: Addr<RegistryAgent>,
-    upload_stream: Option<Rc<RefCell<File>>>,
 }
 
 impl SocketClient {
     fn new(client_info: ClientInfo, registry_addr: Addr<RegistryAgent>) -> Self {
         let hb = Instant::now();
-        let upload_stream = None;
         Self {
             hb,
             client_info,
             registry_addr,
-            upload_stream,
         }
     }
 

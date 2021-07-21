@@ -1,27 +1,20 @@
 #!/bin/bash
-TAG=v0.4.0
-VM_NAME=rustgym-27
-SERVER_NAME=rustgym.com
-WORK_DIR=/root
-EMAIL=larry.fantasy@gmail.com
-RUSTGYM_DOWNLOAD=https://github.com/warycat/rustgym/releases/download
-SONIC_DOWNLOAD=https://github.com/valeriansaliou/sonic/releases/download
-SONIC_TAG=v1.3.0
+source infra/ignore.env
+source infra/const.env
 
+echo $VM_NAME $TAG
+
+#escape keys
 HTTP_UPGRADE='$http_upgrade'
 HOST='$host'
 
-IMAGE=debian-10-buster-v20201216
-IMAGE_FAMILY=debian-10
-MACHINE_TYPE=e2-micro
-ZONE=us-central1-a
 gcloud compute instances create $VM_NAME \
     --machine-type $MACHINE_TYPE \
     --zone $ZONE \
-    --tags http-server,https-server \
-    --metadata startup-script="#! /bin/bash
+    --tags http-server,https-server,stun-server \
+    --metadata startup-script="#!/bin/bash
 apt update
-apt -y install nginx sqlite3 certbot python-certbot-nginx telnet build-essential ffmpeg git
+apt -y install nginx sqlite3 certbot python-certbot-nginx telnet build-essential git coturn
 cd $WORK_DIR
 
 cat <<EOF > certbot.sh
@@ -29,6 +22,12 @@ cat <<EOF > certbot.sh
 certbot --nginx --redirect --non-interactive --agree-tos -m $EMAIL -d $SERVER_NAME
 EOF
 chmod u+x certbot.sh
+
+cat <<EOF > coturn.sh
+#!/bin/bash
+turnserver -n --verbose --secure-stun --use-auth-secret --static-auth-secret=$TURN_STATIC_AUTH_SECRET --fingerprint --realm=$TURN_REALM --external-ip=$TURN_EXTERNAL_IP --cert=$TURN_CERT --pkey=$TURN_PKEY --cli-password=$TURN_CLI_PASSWORD 1> turnserver.log 2> turnserver.error.log &
+EOF
+chmod u+x coturn.sh
 
 curl -LJO $SONIC_DOWNLOAD/$SONIC_TAG/$SONIC_TAG-x86_64.tar.gz
 tar -xzf $SONIC_TAG-x86_64.tar.gz
@@ -38,7 +37,7 @@ rm $SONIC_TAG-x86_64.tar.gz
 rmdir sonic
 mkdir -p data/store/kv
 mkdir -p data/store/fst
-./sonic-server >> sonic.log &>> sonic.error.log &
+./sonic-server 1> sonic.log 2> sonic.error.log &
 
 curl -LJO $RUSTGYM_DOWNLOAD/$TAG/pkg.tar.gz
 tar -xzf pkg.tar.gz
@@ -50,10 +49,10 @@ curl -LJO $RUSTGYM_DOWNLOAD/$TAG/rustgym.sqlite
 curl -LJO $RUSTGYM_DOWNLOAD/$TAG/rustgym-server
 curl -LJO $RUSTGYM_DOWNLOAD/$TAG/rustgym-ingest
 chmod u+x rustgym-ingest
-./rustgym-ingest >> ingest.log &>> ingest.error.log &
+./rustgym-ingest 1> ingest.log 2> ingest.error.log &
 chmod u+x rustgym-server
 git clone https://github.com/ua-parser/uap-core.git
-TAG=$TAG ./rustgym-server >> server.log &>> server.error.log &
+TAG=$TAG ./rustgym-server 1> server.log 2> server.error.log &
 
 cat <<\EOF > /etc/nginx/sites-available/rustgym-nginx.cfg
 server {
@@ -72,4 +71,5 @@ EOF
 rm /etc/nginx/sites-enabled/default
 ln -s /etc/nginx/sites-available/rustgym-nginx.cfg /etc/nginx/sites-enabled/default
 systemctl restart nginx
+echo FINISHED
 "

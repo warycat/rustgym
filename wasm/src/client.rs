@@ -243,7 +243,8 @@ async fn create_offer(
     callee: Uuid,
     media_stream: &MediaStream,
 ) -> Result<(PeerConnection, String), JsValue> {
-    let pc = PeerConnection::new(caller, callee)?;
+    let local_client_info = get_client().client_info.expect("local_client_info");
+    let pc = PeerConnection::new(caller, callee, local_client_info.ice_servers)?;
     let tracks = media_stream.get_tracks().to_vec();
     for item in tracks {
         let media_stream_track: MediaStreamTrack = item.dyn_into().unwrap();
@@ -268,7 +269,8 @@ async fn create_answer(
     offer_sdp: String,
 ) -> Result<(PeerConnection, String), JsValue> {
     console_dbg!("create_answer");
-    let pc = PeerConnection::new(callee, caller)?;
+    let local_client_info = get_client().client_info.expect("local_client_info");
+    let pc = PeerConnection::new(callee, caller, local_client_info.ice_servers)?;
     let mut offer_obj = RtcSessionDescriptionInit::new(RtcSdpType::Offer);
     offer_obj.sdp(&offer_sdp);
     let srd_promise = pc.set_remote_description(&offer_obj);

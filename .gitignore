@@ -7,3 +7,4 @@ pkg/
 *.sqlite
 *.tar.gz
 stream/
+data/

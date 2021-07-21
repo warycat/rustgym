@@ -7,8 +7,3 @@ export function constraints() {
         audio: true,
     };
 }
-
-export function ice_servers() {
-    let servers = [{urls:["stun:stun.l.google.com:19302"]}];
-    return servers;
-}

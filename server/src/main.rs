@@ -32,9 +32,12 @@ async fn main() -> std::io::Result<()> {
     std::env::set_var("RUST_LOG", "info");
     env_logger::init();
     let pool: SqlitePool = db::init_pool(DATABASE_URL).expect("Failed to create pool");
-    let tag = env::var("TAG").unwrap_or_default();
+    let tag = env::var("TAG").expect("TAG");
+    let turn_static_auth_secret =
+        env::var("TURN_STATIC_AUTH_SECRET").expect("TURN_STATIC_AUTH_SECRET");
     let title = "RUST GYM".to_string();
-    let app_data = AppData::new(tag.clone(), title.clone());
+    info!("{} {}", title, tag);
+    let app_data = AppData::new(tag, title, turn_static_auth_secret);
     let search_addr = SearchAgent::new(pool.clone()).start();
     let registry_addr = RegistryAgent::new(search_addr).start();
     let uap_addr = UapAgent::new().start();
@@ -42,7 +45,6 @@ async fn main() -> std::io::Result<()> {
         .arg(STREAM_DIR)
         .output()
         .expect("Create Stream Dir");
-    info!("RUST GYM Server {}", tag);
     HttpServer::new(move || {
         App::new()
             .wrap(Logger::default())

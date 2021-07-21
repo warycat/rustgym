@@ -1,3 +1,5 @@
+env_files = ["infra/ignore.env", "infra/const.env"]
+
 [config]
 default_to_workspace = false
 

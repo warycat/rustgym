@@ -1,5 +1,5 @@
 use crate::client::*;
-use crate::utils::*;
+use rustgym_msg::*;
 use std::ops::Deref;
 use uuid::Uuid;
 use wasm_bindgen::prelude::*;
@@ -18,9 +18,12 @@ pub struct PeerConnection {
 }
 
 impl PeerConnection {
-    pub fn new(local: Uuid, remote: Uuid) -> Result<Self, JsValue> {
+    pub fn new(local: Uuid, remote: Uuid, ice_servers: Vec<IceServer>) -> Result<Self, JsValue> {
         let mut config = RtcConfiguration::new();
-        config.ice_servers(&ice_servers());
+        console_dbg!("{:?}", ice_servers);
+        let ice_servers = JsValue::from_serde(&ice_servers)
+            .map_err(|e| JsValue::from_str(&format!("{:?}", e)))?;
+        config.ice_servers(&ice_servers);
         let pc = RtcPeerConnection::new_with_configuration(&config)?;
         let onicecandidate_cb = Closure::wrap(Box::new(move |e: RtcPeerConnectionIceEvent| {
             if let Some(candidate_obj) = e.candidate() {

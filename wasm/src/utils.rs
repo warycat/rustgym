@@ -12,7 +12,6 @@ use web_sys::{
 #[wasm_bindgen(module = "/helper.js")]
 extern "C" {
     pub fn constraints() -> JsValue;
-    pub fn ice_servers() -> JsValue;
 }
 
 pub fn set_panic_hook() {

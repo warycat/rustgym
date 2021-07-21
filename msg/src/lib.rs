@@ -84,10 +84,10 @@ pub struct ClientInfo {
     pub client_uuid: Uuid,
     pub name: String,
     pub user_agent: Option<UserAgent>,
-    pub streaming: bool,
+    pub ice_servers: Vec<IceServer>,
 }
 
-#[derive(Serialize, Deserialize, Debug, Clone, new)]
+#[derive(Serialize, Deserialize, Debug, Clone, Hash, Eq, PartialEq, new)]
 pub struct QueryResult {
     pub id: String,
     pub title: String,
@@ -95,8 +95,15 @@ pub struct QueryResult {
     pub from: String,
 }
 
-#[derive(Serialize, Deserialize, Debug, Clone, new)]
+#[derive(Serialize, Deserialize, Debug, Clone, Hash, Eq, PartialEq, new)]
 pub struct MsgBin {
     pub uuid: Uuid,
     pub bytes: Vec<u8>,
+}
+
+#[derive(Serialize, Deserialize, Debug, Clone, Hash, Eq, PartialEq, new)]
+pub struct IceServer {
+    urls: String,
+    username: String,
+    credential: String,
 }
