@@ -52,7 +52,7 @@ chmod u+x rustgym-ingest
 ./rustgym-ingest 1> ingest.log 2> ingest.error.log &
 chmod u+x rustgym-server
 git clone https://github.com/ua-parser/uap-core.git
-TAG=$TAG ./rustgym-server 1> server.log 2> server.error.log &
+TAG=$TAG TURN_STATIC_AUTH_SECRET=$TURN_STATIC_AUTH_SECRET ./rustgym-server 1> server.log 2> server.error.log &
 
 cat <<\EOF > /etc/nginx/sites-available/rustgym-nginx.cfg
 server {
