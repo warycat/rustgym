@@ -12,6 +12,8 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v2
+      with:
+        submodules: true
     - name: Stable with rustfmt and clippy
       uses: actions-rs/toolchain@v1
       with:
