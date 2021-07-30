@@ -21,7 +21,7 @@ use utils::*;
 
 #[wasm_bindgen(start)]
 pub async fn start() -> Result<(), JsValue> {
-    utils::set_panic_hook();
+    set_panic_hook();
     get_client();
     let searchbar = SearchBar::new(
         search_input(),

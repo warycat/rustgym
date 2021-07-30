@@ -25,7 +25,7 @@ chmod u+x certbot.sh
 
 cat <<EOF > coturn.sh
 #!/bin/bash
-turnserver -n --verbose --secure-stun --use-auth-secret --static-auth-secret=$TURN_STATIC_AUTH_SECRET --fingerprint --realm=$TURN_REALM --external-ip=$TURN_EXTERNAL_IP --cert=$TURN_CERT --pkey=$TURN_PKEY --cli-password=$TURN_CLI_PASSWORD 1> turnserver.log 2> turnserver.error.log &
+turnserver -n --verbose --use-auth-secret --static-auth-secret=$TURN_STATIC_AUTH_SECRET --fingerprint --realm=$TURN_REALM --external-ip=$TURN_EXTERNAL_IP --cert=$TURN_CERT --pkey=$TURN_PKEY --cli-password=$TURN_CLI_PASSWORD 1> turnserver.log 2> turnserver.error.log &
 EOF
 chmod u+x coturn.sh
 

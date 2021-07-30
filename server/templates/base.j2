@@ -18,12 +18,14 @@
       gtag('js', new Date());
       gtag('config', 'G-661DVJ18N4');
     </script>
-    <script type="module">
-      import init from '/pkg/rustgym_wasm.js';
+    <script src="/pkg/rustgym_wasm.js"></script>
+    <script>
+      const { start } = wasm_bindgen;
       async function run() {
         try {
-          window.WASM = await init();
-        } catch(e) {
+          await wasm_bindgen('./pkg/rustgym_wasm_bg.wasm');
+          await start();
+        } catch(e) { 
           console.error(e);
         }
       }

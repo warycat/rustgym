@@ -1,4 +1,5 @@
 use rustgym_msg::ClientInfo;
+use serde::{Deserialize, Serialize};
 use wasm_bindgen::prelude::*;
 use wasm_bindgen::*;
 use wasm_bindgen_futures::JsFuture;
@@ -9,9 +10,21 @@ use web_sys::{
     MediaDevices, MediaStream, MediaStreamConstraints, Navigator, Window,
 };
 
-#[wasm_bindgen(module = "/helper.js")]
-extern "C" {
-    pub fn constraints() -> JsValue;
+#[derive(Serialize, Deserialize, Debug, Clone, Hash, Eq, PartialEq)]
+struct JsSide {
+    ideal: i32,
+}
+
+#[derive(Serialize, Deserialize, Debug, Clone, Hash, Eq, PartialEq)]
+struct JsVideo {
+    width: JsSide,
+    height: JsSide,
+}
+
+#[derive(Serialize, Deserialize, Debug, Clone, Hash, Eq, PartialEq)]
+struct JsConstraints {
+    video: JsVideo,
+    audio: bool,
 }
 
 pub fn set_panic_hook() {
@@ -132,7 +145,16 @@ pub fn remote_videos() -> HtmlDivElement {
 pub async fn get_media_stream() -> Result<MediaStream, JsValue> {
     let navigator = navigator();
     let media_devices: MediaDevices = navigator.media_devices()?;
-    let constraints = MediaStreamConstraints::from(constraints());
+    let js_constraints = JsConstraints {
+        video: JsVideo {
+            width: JsSide { ideal: 320 },
+            height: JsSide { ideal: 240 },
+        },
+        audio: true,
+    };
+
+    let constraints =
+        MediaStreamConstraints::from(JsValue::from_serde(&js_constraints).expect("js_constrants"));
     let get_user_media_promise = media_devices.get_user_media_with_constraints(&constraints)?;
     let media_stream: MediaStream = JsFuture::from(get_user_media_promise).await?.dyn_into()?;
     Ok(media_stream)

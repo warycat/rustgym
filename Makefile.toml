@@ -23,7 +23,7 @@ script = 'cp target/release/rustgym-server rustgym-server'
 script = 'cp target/release/rustgym-ingest rustgym-ingest'
 
 [tasks.wasm-pack]
-script = 'wasm-pack build wasm --target web --out-dir ../pkg'
+script = 'wasm-pack build wasm --target no-modules --out-dir ../pkg'
 
 [tasks.archive-wasm]
 script = "tar -czvf pkg.tar.gz pkg"
@@ -33,7 +33,7 @@ script = "tar -czvf static.tar.gz static"
 
 [tasks.watch-wasm]
 run_task = { name = ["wasm-pack"] }
-watch = { postpone = true, watch = ["./wasm/", "./msg/", "./consts"] }
+watch = { postpone = true, watch = ["./wasm", "./msg", "./consts"] }
 
 [tasks.watch-server]
 script = "cargo watch -w server -w msg -w consts -x 'run --bin rustgym-server'"
@@ -48,3 +48,10 @@ run_task = { name = ["sonic", "watch-server", "watch-wasm"], parallel = true }
 [tasks.wasm-test]
 command = "wasm-pack"
 args = ["test", "--chrome", "--headless", "wasm"]
+
+[tasks.tfrs-test]
+script = "cargo test -p rustgym-tfrs"
+
+[tasks.watch-tfrs-test]
+run_task = { name = ["tfrs-test"] }
+watch = { postpone = true, watch = ["./tfrs", "./tfrs-sys"] }

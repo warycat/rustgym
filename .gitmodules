@@ -1,3 +1,6 @@
 [submodule "uap-core"]
 	path = uap-core
 	url = https://github.com/ua-parser/uap-core.git
+[submodule "XNNPACK"]
+	path = XNNPACK
+	url = https://github.com/google/XNNPACK.git
