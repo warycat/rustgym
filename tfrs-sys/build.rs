@@ -17,6 +17,7 @@ fn main() {
     println!("cargo:rustc-link-lib=static=clog");
     let bindings = builder()
         .header("wrapper.h")
+        .clang_arg(&format!("-I/{}/include", dst.display()))
         .parse_callbacks(Box::new(bindgen::CargoCallbacks))
         .generate()
         .unwrap();
