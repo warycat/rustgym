@@ -1,4 +1,5 @@
 use crate::core::TensorData;
+use crate::core::{Shape, ShapeLike};
 
 pub struct Tensor {
     data: TensorData,
@@ -8,7 +9,7 @@ pub struct Tensor {
 
 impl PartialEq for Tensor {
     fn eq(&self, other: &Tensor) -> bool {
-        self.data == other.data
+        self.shape == other.shape && self.data == other.data
     }
 }
 
@@ -19,7 +20,8 @@ impl std::fmt::Debug for Tensor {
 }
 
 impl Tensor {
-    pub fn new(data: TensorData, shape: Vec<usize>) -> Self {
+    pub fn new(data: TensorData, shape: Shape) -> Self {
+        assert_eq!(data.size(), shape.tensor_size());
         let disposal_callbacks = vec![];
         Tensor {
             data,

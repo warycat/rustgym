@@ -5,7 +5,7 @@ use std::ptr::null;
 use tfrs_sys::{pthreadpool, pthreadpool_create, xnn_initialize};
 
 #[derive(Debug)]
-pub struct TenserFlow {
+pub struct TensorFlow {
     last_id: TensorId,
     tensors: HashMap<TensorId, Tensor>,
     pub threadpool: *mut pthreadpool,
@@ -13,7 +13,7 @@ pub struct TenserFlow {
     prelu_op_cache: HashMap<f32, i32>,
 }
 
-impl TenserFlow {
+impl TensorFlow {
     pub fn new(num_cores: u64) -> Self {
         let last_id = 0;
         let tensors = HashMap::new();
@@ -21,7 +21,7 @@ impl TenserFlow {
         let threadpool = unsafe { pthreadpool_create(num_cores) };
         let xnn_operator_count = 0;
         unsafe { xnn_initialize(null()) };
-        TenserFlow {
+        TensorFlow {
             last_id,
             tensors,
             threadpool,
@@ -30,12 +30,16 @@ impl TenserFlow {
         }
     }
 
-    pub fn get_tensor_info(&self, tensor_id: TensorId) -> Option<&Tensor> {
-        self.tensors.get(&tensor_id)
+    pub fn default() -> Self {
+        TensorFlow::new(NUM_CORES)
     }
 
-    pub fn get_tensor_info_mut(&mut self, tensor_id: TensorId) -> Option<&mut Tensor> {
-        self.tensors.get_mut(&tensor_id)
+    pub fn get_tensor_info(&self, tensor_id: TensorId) -> &Tensor {
+        self.tensors.get(&tensor_id).expect("tensor")
+    }
+
+    pub fn get_tensor_info_mut(&mut self, tensor_id: TensorId) -> &mut Tensor {
+        self.tensors.get_mut(&tensor_id).expect("tensor")
     }
 
     pub fn num_tensors(&self) -> usize {
@@ -56,13 +60,13 @@ impl TenserFlow {
 
 #[test]
 fn test_register_tensor() {
-    let mut tf = TenserFlow::new(NUM_CORES);
+    let mut tf = TensorFlow::default();
     let tensor_data = TensorData::I32(vec![1, 2]);
     let size = tensor_data.size();
     assert_eq!(0, tf.num_tensors());
     let tensor_id = tf.register_tensor(tensor_data, vec![2]);
     assert_eq!(1, tf.num_tensors());
-    let tensor = tf.get_tensor_info(1).expect("tensor");
+    let tensor = tf.get_tensor_info(1);
     assert_eq!(size, tensor.size());
     tf.dispose_tensor(tensor_id);
     assert_eq!(0, tf.num_tensors());
@@ -75,7 +79,7 @@ fn test_dispose_callback() {
 
     let tensor_0_callback_count: Rc<RefCell<i32>> = Rc::new(RefCell::new(0));
     {
-        let mut tf = TenserFlow::new(NUM_CORES);
+        let mut tf = TensorFlow::default();
         assert_eq!(0, tf.num_tensors());
         let values_0 = TensorData::F32(vec![1.0, 2.0]);
         let tensor_id_0 = tf.register_tensor(values_0, vec![2]);
@@ -84,10 +88,8 @@ fn test_dispose_callback() {
             *tensor_0_callback_count_clone.borrow_mut() += 1;
         });
         tf.get_tensor_info_mut(tensor_id_0)
-            .expect("tensor_0")
             .register_disposal_callback(callback.clone());
         tf.get_tensor_info_mut(tensor_id_0)
-            .expect("tensor_0")
             .register_disposal_callback(callback);
     }
     let val = tensor_0_callback_count.borrow();

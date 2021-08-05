@@ -5,10 +5,10 @@ use tfrs_sys::{
     pthreadpool, xnn_create_prelu_nc_f32, xnn_operator_t, xnn_run_operator, xnn_setup_prelu_nc_f32,
 };
 
-impl TenserFlow {
+impl TensorFlow {
     pub fn prelu(&mut self, x_id: TensorId, alpha_id: TensorId) -> TensorId {
-        let x = self.get_tensor_info(x_id).expect("tensor");
-        let alpha = self.get_tensor_info(alpha_id).expect("tensor");
+        let x = self.get_tensor_info(x_id);
+        let alpha = self.get_tensor_info(alpha_id);
         let (output, shape) = prelu(x, alpha, self.threadpool);
         self.register_tensor(output, shape)
     }
@@ -44,12 +44,12 @@ fn prelu(x: &Tensor, alpha: &Tensor, threadpool: *mut pthreadpool) -> (TensorDat
 
 #[test]
 fn test_prelu() {
-    let mut tf = TenserFlow::new(NUM_CORES);
+    let mut tf = TensorFlow::default();
     let x = tf.tensor1d(vec![-1.0, 2.0, -3.0, 4.0]);
     let alpha = tf.scalar(0.1);
     let res = tf.prelu(x, alpha);
     assert_eq!(
-        tf.get_tensor_info(res).expect("tensor").data(),
+        tf.get_tensor_info(res).data(),
         &TensorData::F32(vec![-0.1, 2.0, -0.3, 4.0])
     );
 }

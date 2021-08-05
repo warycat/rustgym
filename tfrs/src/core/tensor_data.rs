@@ -1,6 +1,6 @@
 use std::ffi::c_void;
 
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub enum TensorData {
     F32(Vec<f32>),
     I32(Vec<i32>),
