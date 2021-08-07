@@ -7,10 +7,8 @@ impl Solution {
         let mut sum = 0;
         let mut max_sum = 0;
         for i in 0..n {
-            if i < m {
-                sum += data[i];
-            } else {
-                sum += data[i];
+            sum += data[i];
+            if i >= m {
                 sum -= data[i - m];
             }
             max_sum = max_sum.max(sum);

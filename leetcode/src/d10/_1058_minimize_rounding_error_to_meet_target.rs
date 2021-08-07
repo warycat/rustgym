@@ -20,7 +20,7 @@ impl Solution {
             }
         }
         let mut sum = 0.0;
-        diff.sort_by(|a, b| a.partial_cmp(&b).unwrap());
+        diff.sort_by(|a, b| a.partial_cmp(b).unwrap());
         for i in 0..diff.len() {
             if i < m {
                 sum += diff[i];

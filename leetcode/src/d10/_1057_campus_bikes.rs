@@ -36,7 +36,7 @@ impl Ord for Pair {
 
 impl PartialOrd for Pair {
     fn partial_cmp(&self, other: &Pair) -> Option<Ordering> {
-        Some(self.cmp(&other))
+        Some(self.cmp(other))
     }
 }
 

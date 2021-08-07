@@ -20,14 +20,13 @@ impl Solution {
                 if x >> 7 & 0b1 == 0 {
                     continue;
                 }
-                return false;
             } else {
                 if x >> 6 & 0b11 == 0b10 {
                     count -= 1;
                     continue;
                 }
-                return false;
             }
+            return false;
         }
         count == 0
     }

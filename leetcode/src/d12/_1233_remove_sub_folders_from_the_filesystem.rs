@@ -9,7 +9,7 @@ impl Solution {
         }
         let mut res = vec![];
         for s in &hs {
-            if !Self::is_subfolder(&s, &hs) {
+            if !Self::is_subfolder(s, &hs) {
                 res.push(s.clone());
             }
         }

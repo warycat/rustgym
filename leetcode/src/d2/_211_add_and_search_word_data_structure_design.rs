@@ -28,7 +28,7 @@ impl Trie {
             }
         } else {
             if let Some(child) = self.children.get(&c) {
-                return Self::search(&child, &s[1..]);
+                return Self::search(child, &s[1..]);
             } else {
                 return false;
             }

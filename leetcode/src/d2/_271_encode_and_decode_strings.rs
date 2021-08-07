@@ -1,5 +1,4 @@
 struct Codec;
-use std::iter::FromIterator;
 
 impl Codec {
     fn new() -> Self {
@@ -27,7 +26,7 @@ impl Codec {
         for _ in 0..n {
             let m = Self::decode_usize(&v[index..index + 4]);
             index += 4;
-            let ss = String::from_iter(v[index..index + m].iter());
+            let ss: String = v[index..index + m].iter().collect();
             index += m;
             res.push(ss);
         }

@@ -22,7 +22,7 @@ impl Trie {
     fn search(&self, stream: &[char]) -> bool {
         let mut link = self;
         for c in stream.iter().rev() {
-            if let Some(next) = link.children.get(&c) {
+            if let Some(next) = link.children.get(c) {
                 link = next;
                 if next.end {
                     return true;

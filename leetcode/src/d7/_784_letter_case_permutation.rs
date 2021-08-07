@@ -12,13 +12,11 @@ impl Solution {
                 Self::permutation(s, n, i + 1, t, res);
                 t.pop();
                 t.push(upper);
-                Self::permutation(s, n, i + 1, t, res);
-                t.pop();
             } else {
                 t.push(s[i]);
-                Self::permutation(s, n, i + 1, t, res);
-                t.pop();
             }
+            Self::permutation(s, n, i + 1, t, res);
+            t.pop();
         }
     }
     fn letter_case_permutation(s: String) -> Vec<String> {

@@ -20,7 +20,7 @@ impl Solution {
             let m = source.len();
             let target = &targets[j];
             if i + m <= s.len() && &s[i..i + m] == source {
-                s.replace_range(i..i + m, &target);
+                s.replace_range(i..i + m, target);
             }
         }
         s

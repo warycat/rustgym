@@ -16,8 +16,8 @@ impl SecondMinimum for TreeLink {
                 *min = Some(node.val);
             }
             if min.unwrap() == node.val {
-                let min_left = Self::find_second_minimum_value(&left, min);
-                let min_right = Self::find_second_minimum_value(&right, min);
+                let min_left = Self::find_second_minimum_value(left, min);
+                let min_right = Self::find_second_minimum_value(right, min);
                 Self::option_min(min_left, min_right)
             } else {
                 Some(node.val)

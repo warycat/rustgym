@@ -18,8 +18,8 @@ impl Dict {
 
         for s in wordlist.iter().rev() {
             same.insert(s.to_string());
-            capitlization.insert(Self::hash1(&s), s.to_string());
-            vowel_error.insert(Self::hash2(&s), s.to_string());
+            capitlization.insert(Self::hash1(s), s.to_string());
+            vowel_error.insert(Self::hash2(s), s.to_string());
         }
         Dict {
             same,

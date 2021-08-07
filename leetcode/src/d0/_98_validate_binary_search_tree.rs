@@ -35,7 +35,9 @@ impl Solution {
 #[test]
 fn test() {
     let root = tree!(2, tree!(1), tree!(3));
-    assert_eq!(Solution::is_valid_bst(root), true);
+    let res = true;
+    assert_eq!(Solution::is_valid_bst(root), res);
     let root = tree!(5, tree!(1), tree!(4, tree!(3), tree!(6)));
-    assert_eq!(Solution::is_valid_bst(root), false);
+    let res = false;
+    assert_eq!(Solution::is_valid_bst(root), res);
 }

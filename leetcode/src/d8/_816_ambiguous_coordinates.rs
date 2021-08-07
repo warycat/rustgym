@@ -1,5 +1,4 @@
 struct Solution;
-use std::iter::FromIterator;
 
 trait Nums {
     fn nums(self) -> Vec<String>;
@@ -10,8 +9,8 @@ impl Nums for &[char] {
         let n = self.len();
         let mut res = vec![];
         for i in 1..=n {
-            let left = String::from_iter(self[..i].iter());
-            let right = String::from_iter(self[i..].iter());
+            let left: String = self[..i].iter().collect();
+            let right: String = self[i..].iter().collect();
             if left.starts_with('0') && left != "0" {
                 continue;
             }

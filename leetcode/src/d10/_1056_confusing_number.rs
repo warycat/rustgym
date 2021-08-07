@@ -31,8 +31,16 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(Solution::confusing_number(6), true);
-    assert_eq!(Solution::confusing_number(89), true);
-    assert_eq!(Solution::confusing_number(11), false);
-    assert_eq!(Solution::confusing_number(25), false);
+    let n = 6;
+    let res = true;
+    assert_eq!(Solution::confusing_number(n), res);
+    let n = 89;
+    let res = true;
+    assert_eq!(Solution::confusing_number(n), res);
+    let n = 11;
+    let res = false;
+    assert_eq!(Solution::confusing_number(n), res);
+    let n = 25;
+    let res = false;
+    assert_eq!(Solution::confusing_number(n), res);
 }

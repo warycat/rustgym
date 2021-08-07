@@ -80,8 +80,10 @@ impl WordSearch {
 fn test() {
     let board = vec_vec_char![];
     let word = "AC".to_string();
-    assert_eq!(Solution::exist(board, word), false);
+    let res = false;
+    assert_eq!(Solution::exist(board, word), res);
     let board = vec_vec_char![['A', 'C'], ['A', 'D']];
     let word = "".to_string();
-    assert_eq!(Solution::exist(board, word), false);
+    let res = false;
+    assert_eq!(Solution::exist(board, word), res);
 }

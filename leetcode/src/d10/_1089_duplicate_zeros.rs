@@ -12,7 +12,6 @@ impl Solution {
                     arr[j] = arr[i];
                 }
                 i -= 1;
-                j -= 1;
             } else {
                 if j < n {
                     arr[j] = 0;
@@ -22,8 +21,8 @@ impl Solution {
                 if j < n {
                     arr[j] = 0;
                 }
-                j -= 1;
             }
+            j -= 1;
         }
         if arr[i] != 0 {
             arr[j] = arr[i];

@@ -11,7 +11,6 @@ impl Solution {
         count[(min - b'a') as usize]
     }
     fn num_smaller_by_frequency(queries: Vec<String>, words: Vec<String>) -> Vec<i32> {
-        let f_queries: Vec<usize> = queries.iter().map(|s| Self::f(s)).collect();
         let f_words: Vec<usize> = words.iter().map(|s| Self::f(s)).collect();
         let mut counts = vec![0; 12];
         for f in f_words {
@@ -20,7 +19,11 @@ impl Solution {
         for i in (1..10).rev() {
             counts[i] += counts[i + 1];
         }
-        f_queries.into_iter().map(|f| counts[f + 1]).collect()
+        queries
+            .iter()
+            .map(|s| Self::f(s))
+            .map(|f| counts[f + 1])
+            .collect()
     }
 }
 

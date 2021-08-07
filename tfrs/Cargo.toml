@@ -9,3 +9,5 @@ edition = "2018"
 tfrs-sys = { path = "../tfrs-sys" }
 log = "0.4.14"
 env_logger = "0.9.0"
+csv = "1.1.6"
+serde = { version = "1.0.127", features = ["derive"] }

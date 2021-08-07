@@ -53,11 +53,13 @@ impl Solution {
 #[test]
 fn test() {
     let a = tree!(3, tree!(9), tree!(20, tree!(15), tree!(7)));
-    assert_eq!(Solution::is_balanced(a), true);
+    let res = true;
+    assert_eq!(Solution::is_balanced(a), res);
     let b = tree!(
         1,
         tree!(2, tree!(3, tree!(4), tree!(4)), tree!(3)),
         tree!(2)
     );
-    assert_eq!(Solution::is_balanced(b), false);
+    let res = false;
+    assert_eq!(Solution::is_balanced(b), res);
 }

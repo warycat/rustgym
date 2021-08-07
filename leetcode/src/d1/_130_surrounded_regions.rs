@@ -12,7 +12,7 @@ impl Solution {
             for j in 0..m {
                 if i == 0 || j == 0 || i == n - 1 || j == m - 1 {
                     if board[i][j] == 'O' && !visited[i][j] {
-                        Self::dfs(i, j, &mut visited, &board, n, m);
+                        Self::dfs(i, j, &mut visited, board, n, m);
                     }
                 }
             }

@@ -9,10 +9,8 @@ impl Solution {
         while i < n && j < m {
             if s[i..=i] == t[j..=j] {
                 i += 1;
-                j += 1;
-            } else {
-                j += 1;
             }
+            j += 1;
         }
         i == n
     }

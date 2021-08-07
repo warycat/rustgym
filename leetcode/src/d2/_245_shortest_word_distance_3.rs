@@ -8,17 +8,15 @@ impl Solution {
             hm.entry(word).or_default().push(i);
         }
         let mut min = std::usize::MAX;
+        let indexes1 = &hm[&word1];
+        let indexes2 = &hm[&word2];
+        let n1 = indexes1.len();
+        let n2 = indexes2.len();
         if word1 == word2 {
-            let indexes = &hm[&word1];
-            let n = indexes.len();
-            for i in 1..n {
-                min = min.min(indexes[i] - indexes[i - 1]);
+            for i in 1..n1 {
+                min = min.min(indexes1[i] - indexes1[i - 1]);
             }
         } else {
-            let indexes1 = &hm[&word1];
-            let indexes2 = &hm[&word2];
-            let n1 = indexes1.len();
-            let n2 = indexes2.len();
             let mut i1 = 0;
             let mut i2 = 0;
             while i1 < n1 && i2 < n2 {

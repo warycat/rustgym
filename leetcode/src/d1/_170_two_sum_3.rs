@@ -47,6 +47,10 @@ fn test() {
     two_some.add(1);
     two_some.add(3);
     two_some.add(5);
-    assert_eq!(two_some.find(4), true);
-    assert_eq!(two_some.find(7), false);
+    let value = 4;
+    let res = true;
+    assert_eq!(two_some.find(value), res);
+    let value = 7;
+    let res = false;
+    assert_eq!(two_some.find(value), res);
 }

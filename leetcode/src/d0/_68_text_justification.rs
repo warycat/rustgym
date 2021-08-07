@@ -12,11 +12,10 @@ impl Solution {
             if width + queue.len() + word.len() > max_width as usize {
                 res.push(Self::make_a_line(&mut queue, max_width, width));
                 width = word.len();
-                queue.push_back(word);
             } else {
                 width += word.len();
-                queue.push_back(word);
             }
+            queue.push_back(word);
         }
         res.push(Self::make_the_last_line(&mut queue, max_width, width));
         res

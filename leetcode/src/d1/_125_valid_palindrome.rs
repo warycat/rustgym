@@ -15,9 +15,10 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(
-        Solution::is_palindrome("A man, a plan, a canal: Panama".to_string()),
-        true
-    );
-    assert_eq!(Solution::is_palindrome("race a car".to_string()), false);
+    let s = "A man, a plan, a canal: Panama".to_string();
+    let res = true;
+    assert_eq!(Solution::is_palindrome(s), res);
+    let s = "race a car".to_string();
+    let res = false;
+    assert_eq!(Solution::is_palindrome(s), res);
 }

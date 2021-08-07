@@ -19,5 +19,6 @@ fn test() {
         tree!(2, tree!(1), tree!(1)),
         tree!(2, tree!(1), tree!(1))
     );
-    assert_eq!(Solution::is_same_tree(p, q), true);
+    let res = true;
+    assert_eq!(Solution::is_same_tree(p, q), res);
 }

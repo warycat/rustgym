@@ -12,7 +12,7 @@ impl Solution {
         for c in target.chars() {
             if let Some(indexes) = pos.get(&c) {
                 loop {
-                    let index = Self::next(start, &indexes);
+                    let index = Self::next(start, indexes);
                     if index == 0 {
                         start = 0;
                         res += 1;

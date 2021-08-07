@@ -42,5 +42,6 @@ fn test() {
         tree!(2, tree!(1), tree!(1)),
         tree!(2, tree!(1), tree!(1))
     );
-    assert_eq!(Solution::is_symmetric(q), true)
+    let res = true;
+    assert_eq!(Solution::is_symmetric(q), res);
 }

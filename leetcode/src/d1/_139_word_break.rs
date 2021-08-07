@@ -24,11 +24,14 @@ impl Solution {
 fn test() {
     let s = "leetcode".to_string();
     let word_dict = vec_string!["leet", "code"];
-    assert_eq!(Solution::word_break(s, word_dict), true);
+    let res = true;
+    assert_eq!(Solution::word_break(s, word_dict), res);
     let s = "applepenapple".to_string();
     let word_dict = vec_string!["apple", "pen"];
-    assert_eq!(Solution::word_break(s, word_dict), true);
+    let res = true;
+    assert_eq!(Solution::word_break(s, word_dict), res);
     let s = "catsandog".to_string();
     let word_dict = vec_string!["cats", "dog", "sand", "and", "cat"];
-    assert_eq!(Solution::word_break(s, word_dict), false);
+    let res = false;
+    assert_eq!(Solution::word_break(s, word_dict), res);
 }

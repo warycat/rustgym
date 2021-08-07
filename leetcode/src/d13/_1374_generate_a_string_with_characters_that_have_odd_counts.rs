@@ -2,7 +2,7 @@ struct Solution;
 
 impl Solution {
     fn generate_the_string(n: i32) -> String {
-        let mut s: String = std::iter::repeat('a').take((n - 1) as usize).collect();
+        let mut s: String = "a".repeat((n - 1) as usize);
         s.push(if n % 2 == 0 { 'b' } else { 'a' });
         s
     }

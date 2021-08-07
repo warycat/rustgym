@@ -20,6 +20,10 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(Solution::is_palindrome(-123), false);
-    assert_eq!(Solution::is_palindrome(12321), true);
+    let x = -123;
+    let res = false;
+    assert_eq!(Solution::is_palindrome(x), res);
+    let x = 12321;
+    let res = true;
+    assert_eq!(Solution::is_palindrome(x), res);
 }

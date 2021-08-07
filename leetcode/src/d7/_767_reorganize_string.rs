@@ -13,7 +13,7 @@ impl Solution {
                 return "".to_string();
             }
         }
-        s.sort_unstable_by_key(|c| (hm[&c], *c));
+        s.sort_unstable_by_key(|c| (hm[c], *c));
         s[0..n / 2].reverse();
         let mut queue: VecDeque<char> = VecDeque::new();
         for c in s {
