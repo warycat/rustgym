@@ -51,8 +51,8 @@ fn is_valid(message: &[char], rules: &HashMap<i32, Rule>) -> bool {
         n - 1,
         Rule::List(vec![0]),
         &mut HashMap::new(),
-        &message,
-        &rules,
+        message,
+        rules,
     )
 }
 

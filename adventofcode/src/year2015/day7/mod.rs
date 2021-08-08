@@ -58,7 +58,7 @@ fn eval(
         }
     }
     while let Some(tok) = queue.pop_front() {
-        *values.entry(tok.clone()).or_default() = eval_stmt(&stmt[&tok], &values, o);
+        *values.entry(tok.clone()).or_default() = eval_stmt(&stmt[&tok], values, o);
         for v in adj.get(&tok).unwrap_or(&vec![]) {
             *indegree.entry(v.clone()).or_default() -= 1;
             if indegree[v] == 0 {
@@ -90,7 +90,7 @@ fn eval_tok(tok: &Tok, values: &HashMap<Tok, u16>, o: &HashMap<Tok, u16>) -> u16
             if let Some(&val) = o.get(tok) {
                 val
             } else {
-                values[&tok]
+                values[tok]
             }
         }
         _ => panic!(),

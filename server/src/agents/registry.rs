@@ -2,7 +2,7 @@ use crate::agents::envelope::Envelope;
 use crate::agents::search::SearchAgent;
 use crate::agents::websocket::SocketClient;
 use actix::prelude::*;
-use log::{error, info};
+use log::error;
 use rustgym_msg::ClientInfo;
 use rustgym_msg::*;
 use std::collections::HashMap;
@@ -25,10 +25,6 @@ impl RegistryAgent {
             all_sockets,
             all_clients,
         }
-    }
-
-    fn all_clients(&self) -> Vec<ClientInfo> {
-        self.all_clients.values().cloned().collect()
     }
 
     fn update_all_clients(&self, msg_out: MsgOut) {
@@ -62,7 +58,7 @@ impl Actor for RegistryAgent {
 impl Handler<Envelope> for RegistryAgent {
     type Result = ();
 
-    fn handle(&mut self, envelope: Envelope, ctx: &mut Context<Self>) {
+    fn handle(&mut self, envelope: Envelope, _ctx: &mut Context<Self>) {
         let Envelope {
             client_addr,
             client_uuid,
