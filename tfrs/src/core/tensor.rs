@@ -1,6 +1,8 @@
 use crate::core::TensorData;
 use crate::core::{Shape, ShapeLike};
 
+pub type TensorId = u64;
+
 pub struct Tensor {
     data: TensorData,
     shape: Vec<usize>,
