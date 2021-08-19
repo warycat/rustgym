@@ -42,16 +42,21 @@ fn main() -> Result<()> {
 
     let conn = SqliteConnection::establish(DATABASE_URL)?;
 
-    let leetcode_json = LeetcodeData::new(
-        LEETCODE_JSON_URL,
-        // LEETCODE_TAG_URL
-    );
-    // let tags = leetcode_json.get_tags().unwrap_or_default();
+    let leetcode_algorithms_json = LeetcodeData::new(LEETCODE_ALGORITHMS_URL);
+    let leetcode_concurrency_json = LeetcodeData::new(LEETCODE_CONCURRENCY_URL);
 
-    let leetcode_questions = leetcode_json.get_questions().unwrap_or_default();
+    let leetcode_algorithms_questions =
+        leetcode_algorithms_json.get_questions().unwrap_or_default();
+    let leetcode_concurrency_questions = leetcode_concurrency_json
+        .get_questions()
+        .unwrap_or_default();
 
     diesel::insert_into(leetcode_question)
-        .values(&leetcode_questions)
+        .values(&leetcode_algorithms_questions)
+        .execute(&conn)?;
+
+    diesel::insert_into(leetcode_question)
+        .values(&leetcode_concurrency_questions)
         .execute(&conn)?;
 
     let src_dir = Path::new(LEETCODE_SRC);

@@ -2335,6 +2335,15 @@ All the solutions here are crafted with love and their performance beats 99% of 
       </tr>
       <tr>
         <td>
+          1114
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1114"> Print in Order</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
           1118
         </td>
         <td>
@@ -2609,6 +2618,15 @@ All the solutions here are crafted with love and their performance beats 99% of 
         </td>
         <td>
           <a href="http://rustgym.com/leetcode/1275"> Find Winner on a Tic Tac Toe Game</a>
+        </td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>
+          1279
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1279"> Traffic Light Controlled Intersection</a>
         </td>
         <td>Easy</td>
       </tr>
@@ -9103,6 +9121,33 @@ All the solutions here are crafted with love and their performance beats 99% of 
       </tr>
       <tr>
         <td>
+          1115
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1115"> Print FooBar Alternately</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1116
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1116"> Print Zero Even Odd</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1117
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1117"> Building H2O</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
           1120
         </td>
         <td>
@@ -9373,6 +9418,15 @@ All the solutions here are crafted with love and their performance beats 99% of 
       </tr>
       <tr>
         <td>
+          1188
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1188"> Design Bounded Blocking Queue</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
           1190
         </td>
         <td>
@@ -9386,6 +9440,15 @@ All the solutions here are crafted with love and their performance beats 99% of 
         </td>
         <td>
           <a href="http://rustgym.com/leetcode/1191"> K-Concatenation Maximum Sum</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1195
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1195"> Fizz Buzz Multithreaded</a>
         </td>
         <td>Medium</td>
       </tr>
@@ -9490,6 +9553,15 @@ All the solutions here are crafted with love and their performance beats 99% of 
       </tr>
       <tr>
         <td>
+          1226
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1226"> The Dining Philosophers</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
           1227
         </td>
         <td>
@@ -9566,6 +9638,15 @@ All the solutions here are crafted with love and their performance beats 99% of 
         </td>
         <td>
           <a href="http://rustgym.com/leetcode/1239"> Maximum Length of a Concatenated String with Unique Characters</a>
+        </td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>
+          1242
+        </td>
+        <td>
+          <a href="http://rustgym.com/leetcode/1242"> Web Crawler Multithreaded</a>
         </td>
         <td>Medium</td>
       </tr>
