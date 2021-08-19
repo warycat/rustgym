@@ -63,9 +63,12 @@ fn main() -> Result<()> {
 
     let leetcode_desc_dir = Path::new(LEETCODE_DESC);
     let leetcode_descriptions = all_leetcode_descriptions(&leetcode_desc_dir);
-    diesel::insert_into(leetcode_description)
-        .values(&leetcode_descriptions)
-        .execute(&conn)?;
+    for description in leetcode_descriptions {
+        println!("{}", description);
+        diesel::insert_into(leetcode_description)
+            .values(&description)
+            .execute(&conn)?;
+    }
 
     let adventofcode_desc_dir = Path::new(ADVENTOFCODE_DESC);
     let adventofcode_descriptions = all_adventofcode_descriptions(adventofcode_desc_dir);
