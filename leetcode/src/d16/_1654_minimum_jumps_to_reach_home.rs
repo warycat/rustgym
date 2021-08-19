@@ -13,7 +13,6 @@ impl Solution {
         visited.insert((0, false));
         queue.push_back((0, false, 0));
         while let Some((pos, backjump, step)) = queue.pop_front() {
-            dbg!(pos);
             if pos == x {
                 return step;
             }

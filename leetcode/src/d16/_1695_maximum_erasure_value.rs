@@ -20,7 +20,6 @@ impl Solution {
                 }
                 left += 1;
             }
-            dbg!(sum);
             res = res.max(sum);
         }
         res

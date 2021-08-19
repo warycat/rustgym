@@ -10,3 +10,5 @@ rustgym-util = { path = "../util" }
 rand = "0.7.3"
 assert_approx_eq = "1.1.0"
 paste = "1.0.3"
+pretty_assertions = "0.7.2"
+threadpool = "1.8.1"

@@ -4,8 +4,6 @@ impl Solution {
     fn is_rational_equal(s: String, t: String) -> bool {
         let a = Self::parse(s);
         let b = Self::parse(t);
-        dbg!(a);
-        dbg!(b);
         (a - b).abs() < std::f64::EPSILON
     }
 

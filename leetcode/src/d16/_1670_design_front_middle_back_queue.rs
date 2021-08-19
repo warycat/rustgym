@@ -76,15 +76,10 @@ impl FrontMiddleBackQueue {
 fn test() {
     let mut q = FrontMiddleBackQueue::new();
     q.push_front(1);
-    dbg!(&q);
     q.push_back(2);
-    dbg!(&q);
     q.push_middle(3);
-    dbg!(&q);
     q.push_middle(4);
-    dbg!(&q);
     assert_eq!(q.pop_front(), 1);
-    dbg!(&q);
     assert_eq!(q.pop_middle(), 3);
     assert_eq!(q.pop_middle(), 4);
     assert_eq!(q.pop_back(), 2);

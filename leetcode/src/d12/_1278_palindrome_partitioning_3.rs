@@ -8,7 +8,6 @@ impl Solution {
         let k = k as usize;
         let mut memo: HashMap<(usize, usize, usize), i32> = HashMap::new();
         let res = Self::dp(0, n, k, &mut memo, &s);
-        dbg!(memo);
         res
     }
 

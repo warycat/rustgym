@@ -7,6 +7,7 @@
 #![allow(clippy::too_many_arguments)]
 #![allow(clippy::suspicious_operation_groupings)]
 #![allow(clippy::bool_assert_comparison)]
+#![allow(clippy::mutex_atomic)]
 
 #[cfg_attr(test, macro_use)]
 extern crate rustgym_util;

@@ -21,7 +21,6 @@ impl Solution {
                 cur += nums[i];
                 cur %= p;
                 let comp = (cur + p - total) % p;
-                dbg!(comp);
                 if let Some(j) = index.get(&comp) {
                     res = res.min(i + 1 - j);
                 }

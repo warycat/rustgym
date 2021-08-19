@@ -44,7 +44,6 @@ impl Solution {
         let min_cost = Self::mst(std::usize::MAX, std::usize::MAX, &sorted_index, &edges, n);
         let mut critical = vec![];
         let mut noncritical = vec![];
-        dbg!(min_cost);
         for i in 0..m {
             if Self::mst(i, std::usize::MAX, &sorted_index, &edges, n) > min_cost {
                 critical.push(i as i32);

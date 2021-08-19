@@ -20,7 +20,6 @@ impl Solution {
         for i in 1..=m {
             res += n.min(x / i);
         }
-        dbg!(res);
         res
     }
 }

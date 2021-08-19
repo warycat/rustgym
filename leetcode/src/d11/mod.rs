@@ -20,6 +20,14 @@ mod _1110_delete_nodes_and_return_forest;
 //
 mod _1111_maximum_nesting_depth_of_two_valid_parentheses_strings;
 //
+mod _1114_print_in_order;
+//
+mod _1115_print_foobar_alternately;
+//
+mod _1116_print_zero_even_odd;
+//
+mod _1117_building_h2o;
+//
 mod _1118_number_of_days_in_a_month;
 //
 mod _1119_remove_vowels_from_a_string;
@@ -124,6 +132,8 @@ mod _1185_day_of_the_week;
 //
 mod _1186_maximum_subarray_sum_with_one_deletion;
 //
+mod _1188_design_bounded_blocking_queue;
+//
 mod _1189_maximum_number_of_balloons;
 //
 mod _1190_reverse_substrings_between_each_pair_of_parentheses;
@@ -131,6 +141,8 @@ mod _1190_reverse_substrings_between_each_pair_of_parentheses;
 mod _1191_k_concatenation_maximum_sum;
 //
 mod _1192_critical_connections_in_a_network;
+//
+mod _1195_fizz_buzz_multithreaded;
 //
 mod _1196_how_many_apples_can_you_put_into_the_basket;
 //

@@ -40,6 +40,8 @@ mod _1223_dice_roll_simulation;
 //
 mod _1224_maximum_equal_frequency;
 //
+mod _1226_the_dining_philosophers;
+//
 mod _1227_airplane_seat_assignment_probability;
 //
 mod _1228_missing_number_in_arithmetic_progression;
@@ -65,6 +67,8 @@ mod _1238_circular_permutation_in_binary_representation;
 mod _1239_maximum_length_of_concatenated_string_with_unique_characters;
 //
 mod _1240_tiling_a_rectangle_with_the_fewest_squares;
+//
+mod _1242_web_crawler_multithreaded;
 //
 mod _1243_array_transformation;
 //
@@ -127,6 +131,8 @@ mod _1276_number_of_burgers_with_no_waste_of_ingredients;
 mod _1277_count_square_submatrices_with_all_ones;
 //
 mod _1278_palindrome_partitioning_3;
+//
+mod _1279_traffic_light_controlled_intersection;
 //
 mod _1281_subtract_the_product_and_sum_of_digits_of_an_integer;
 //
