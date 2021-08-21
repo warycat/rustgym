@@ -104,10 +104,9 @@ impl Client {
     }
 
     pub fn on_query_text(&self, query_text: String) -> Result<(), JsValue> {
-        self.searchbar
-            .as_ref()
-            .expect("searchbar")
-            .close_search_suggestions()?;
+        let searchbar = self.searchbar.as_ref().expect("searchbar");
+        searchbar.update_search_input(&query_text);
+        searchbar.close_search_suggestions()?;
         self.send_json(MsgIn::QueryText(query_text))?;
         Ok(())
     }

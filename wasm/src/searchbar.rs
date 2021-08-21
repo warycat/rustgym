@@ -99,6 +99,10 @@ impl SearchBar {
         self.search_suggestions.class_list().add_1("empty")
     }
 
+    pub fn update_search_input(&self, text: &str) {
+        self.search_input.set_value(text);
+    }
+
     pub fn update_search_suggestions(
         &self,
         search_suggestions: Vec<String>,
