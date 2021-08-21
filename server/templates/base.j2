@@ -23,7 +23,7 @@
       const { start } = wasm_bindgen;
       async function run() {
         try {
-          await wasm_bindgen('./pkg/rustgym_wasm_bg.wasm');
+          await wasm_bindgen('/pkg/rustgym_wasm_bg.wasm');
           await start();
         } catch(e) { 
           console.error(e);
