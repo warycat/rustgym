@@ -1,3 +1,6 @@
+#![allow(clippy::needless_range_loop)]
+#![allow(clippy::too_many_arguments)]
+
 mod core;
 mod creation;
 mod ops;

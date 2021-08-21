@@ -41,17 +41,17 @@ impl MediaClient {
     }
 
     pub fn add_remote_video(&mut self, remote: Uuid) -> Result<(), JsValue> {
-        if let None = self.video_elements.get(&remote) {
+        if self.video_elements.get(&remote).is_none() {
             let video = video();
             video.set_id(&remote.to_string());
             video.set_autoplay(true);
             video.class_list().add_1("remote")?;
             let media_stream = MediaStream::new()?;
             if let Some(video_track) = self.video_tracks.get(&remote) {
-                media_stream.add_track(&video_track);
+                media_stream.add_track(video_track);
             }
             if let Some(audio_track) = self.audio_tracks.get(&remote) {
-                media_stream.add_track(&audio_track);
+                media_stream.add_track(audio_track);
             }
             video.set_src_object(Some(&media_stream));
             self.media_streams.insert(remote, media_stream);

@@ -2,7 +2,7 @@ use crate::core::*;
 
 impl TensorFlow {
     pub fn concat(&mut self, tensors: Vec<TensorId>, axis: usize) -> TensorId {
-        assert!(tensors.len() > 0);
+        assert!(!tensors.is_empty());
         let size = tensors.len();
         let first_id = tensors[0];
         let first_tensor = self.get_tensor_info(first_id);

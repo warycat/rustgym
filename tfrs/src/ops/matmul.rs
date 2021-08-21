@@ -63,7 +63,7 @@ fn matmul(a: &Tensor, b: &Tensor, threadpool: *mut pthreadpool) -> (TensorData, 
         );
         xnn_run_operator(fully_connected_op, threadpool);
     }
-    (output, shape.clone())
+    (output, shape)
 }
 
 #[test]

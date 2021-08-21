@@ -173,5 +173,5 @@ impl MediaSupport for ClientInfo {
 
 #[wasm_bindgen_test]
 async fn test() {
-    assert_eq!(get_media_stream().await.is_ok(), true);
+    assert!(get_media_stream().await.is_ok());
 }

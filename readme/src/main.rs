@@ -61,13 +61,13 @@ fn main() -> Result<()> {
 
     let src_dir = Path::new(LEETCODE_SRC);
 
-    let leetcode_solutions = all_leetcode_solutions(&src_dir);
+    let leetcode_solutions = all_leetcode_solutions(src_dir);
     diesel::insert_into(leetcode_solution)
         .values(&leetcode_solutions)
         .execute(&conn)?;
 
     let leetcode_desc_dir = Path::new(LEETCODE_DESC);
-    let leetcode_descriptions = all_leetcode_descriptions(&leetcode_desc_dir);
+    let leetcode_descriptions = all_leetcode_descriptions(leetcode_desc_dir);
     for description in leetcode_descriptions {
         println!("{}", description);
         diesel::insert_into(leetcode_description)

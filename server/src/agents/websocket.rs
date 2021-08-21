@@ -59,7 +59,7 @@ pub async fn ws_index(
     };
     let session_data = update_session(session)?;
     let session_uuid = session_data.uuid;
-    let name = session_data.name.to_string();
+    let name = session_data.name;
     let client_uuid = Uuid::new_v4();
     let (usercombo, credential) = generate_turn_rest_api_cred(
         &name,
@@ -78,8 +78,8 @@ pub async fn ws_index(
     );
     let turns_server = IceServer::new(
         "turns:rustgym.com".to_string(),
-        usercombo.clone(),
-        credential.clone(),
+        usercombo,
+        credential,
     );
     let ice_servers = vec![stun_server, turn_server, turns_server];
     let client_info = ClientInfo {

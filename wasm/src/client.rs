@@ -247,7 +247,7 @@ async fn create_offer(
     let tracks = media_stream.get_tracks().to_vec();
     for item in tracks {
         let media_stream_track: MediaStreamTrack = item.dyn_into().unwrap();
-        pc.add_track_0(&media_stream_track, &media_stream);
+        pc.add_track_0(&media_stream_track, media_stream);
     }
 
     let offer = JsFuture::from(pc.create_offer()).await?;
@@ -278,7 +278,7 @@ async fn create_answer(
     let tracks = media_stream.get_tracks().to_vec();
     for item in tracks {
         let media_stream_track: MediaStreamTrack = item.dyn_into().unwrap();
-        pc.add_track_0(&media_stream_track, &media_stream);
+        pc.add_track_0(&media_stream_track, media_stream);
     }
 
     let answer = JsFuture::from(pc.create_answer()).await?;

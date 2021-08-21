@@ -82,11 +82,9 @@ impl Graph {
         for edge in edges {
             let u = edge[0] as usize;
             let v = edge[1] as usize;
+            self.adj[u].insert(v);
             if !directed {
-                self.adj[u].insert(v);
                 self.adj[v].insert(u);
-            } else {
-                self.adj[u].insert(v);
             }
         }
     }

@@ -38,7 +38,7 @@ impl ResultRow {
     fn new(query_result: QueryResult) -> Result<Self, JsValue> {
         let tr = tr();
         let id = tr.insert_cell()?;
-        id.set_inner_text(&query_result.id.to_string());
+        id.set_inner_text(&query_result.id);
         let title = tr.insert_cell()?;
         let link = a();
         link.set_href(&query_result.href);

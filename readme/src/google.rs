@@ -11,7 +11,7 @@ pub fn all_google_problems(path: &Path) -> Vec<GoogleProblem> {
         if entry.file_type().is_file() {
             let filename = entry.file_name().to_str().unwrap().to_string();
             let path: &Path = entry.path();
-            if let Some(google_problem) = GoogleProblem::with_path(&path) {
+            if let Some(google_problem) = GoogleProblem::with_path(path) {
                 match filename.as_str() {
                     "analysis.md" => {
                         hm.entry(google_problem.id)
