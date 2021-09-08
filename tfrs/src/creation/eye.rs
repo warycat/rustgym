@@ -1,4 +1,4 @@
-use crate::{TensorData, TensorFlow, TensorId};
+use crate::core::*;
 
 impl TensorFlow {
     pub fn eye(&mut self, n: usize) -> TensorId {
@@ -7,18 +7,19 @@ impl TensorFlow {
             values[i * n + i] = 1.0;
         }
         let shape = vec![n, n];
-        self.register_tensor(TensorData::F32(values), shape)
+        let tensor = Tensor::new(values, shape);
+        self.register(tensor)
     }
 }
 
 #[test]
 fn test() {
     let mut tf = TensorFlow::default();
-    let a = tf.eye(3);
-    let tensor = tf.get_tensor_info(a);
-    assert_eq!(tensor.shape(), &vec![3, 3]);
-    assert_eq!(
-        tensor.data(),
-        &TensorData::F32(vec![1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0])
+    let a_id = tf.eye(3);
+    let a = tf.get(a_id);
+    let b = Tensor::new(
+        vec![1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0],
+        vec![3, 3],
     );
+    assert_eq!(a.as_f32(), b.as_ref());
 }

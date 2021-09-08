@@ -34,4 +34,3 @@ pub async fn start() -> Result<(), JsValue> {
     set_media_client(media_client);
     Ok(())
 }
-

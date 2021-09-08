@@ -8,14 +8,14 @@ use tfrs_sys::{
 
 impl TensorFlow {
     pub fn matmul(&mut self, a_id: TensorId, b_id: TensorId) -> TensorId {
-        let a = self.get_tensor_info(a_id);
-        let b = self.get_tensor_info(b_id);
-        let (output, shape) = matmul(a, b, self.threadpool);
-        self.register_tensor(output, shape)
+        let a = self.get_f32(a_id);
+        let b = self.get_f32(b_id);
+        let c = matmul(a, b, self.threadpool);
+        self.register(c)
     }
 }
 
-fn matmul(a: &Tensor, b: &Tensor, threadpool: *mut pthreadpool) -> (TensorData, Shape) {
+fn matmul(a: &Tensor<f32>, b: &Tensor<f32>, threadpool: *mut pthreadpool) -> Box<Tensor<f32>> {
     let a_shape = a.shape();
     let b_shape = b.shape();
     assert_eq!(a_shape.rank(), 2);
@@ -26,7 +26,7 @@ fn matmul(a: &Tensor, b: &Tensor, threadpool: *mut pthreadpool) -> (TensorData, 
     assert_eq!(shared_dim, b_shape[0]);
 
     let shape = vec![left_dim, right_dim];
-    let output = TensorData::F32(vec![0.0; shape.tensor_size()]);
+    let output = Tensor::new(vec![0.0; shape.tensor_size()], shape);
     let out_buf = output.buf_mut() as *mut f32;
     let a_buf = a.buf();
     let b_buf = b.buf();
@@ -63,22 +63,24 @@ fn matmul(a: &Tensor, b: &Tensor, threadpool: *mut pthreadpool) -> (TensorData, 
         );
         xnn_run_operator(fully_connected_op, threadpool);
     }
-    (output, shape)
+    output
 }
 
 #[test]
 fn test_matmul() {
     let mut tf = TensorFlow::default();
-    let x = tf.tensor2d(vec![2.0], vec![1, 1]);
-    let m = tf.matmul(x, x);
-    let mm = tf.get_tensor_info(m);
-    assert_eq!(mm.data(), &TensorData::F32(vec![4.0]));
-    assert_eq!(mm.shape(), &vec![1, 1]);
+    let x_id = tf.tensor2d(vec![2.0], vec![1, 1]);
+    let y_id = tf.matmul(x_id, x_id);
+    let z_id = tf.tensor2d(vec![4.0], vec![1, 1]);
+    let y = tf.get_f32(y_id);
+    let z = tf.get_f32(z_id);
+    assert_eq!(y, z);
 
-    let a = tf.tensor2d(vec![1.0, 2.0], vec![1, 2]);
-    let b = tf.tensor2d(vec![1.0, 2.0, 3.0, 4.0], vec![2, 2]);
-    let c = tf.matmul(a, b);
-    let cc = tf.get_tensor_info(c);
-    assert_eq!(cc.data(), &TensorData::F32(vec![7.0, 10.0]));
-    assert_eq!(cc.shape(), &vec![1, 2]);
+    let a_id = tf.tensor2d(vec![1.0, 2.0], vec![1, 2]);
+    let b_id = tf.tensor2d(vec![1.0, 2.0, 3.0, 4.0], vec![2, 2]);
+    let c_id = tf.matmul(a_id, b_id);
+    let d_id = tf.tensor2d(vec![7.0, 10.0], vec![1, 2]);
+    let c = tf.get_f32(c_id);
+    let d = tf.get_f32(d_id);
+    assert_eq!(c, d);
 }

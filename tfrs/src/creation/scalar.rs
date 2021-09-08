@@ -1,8 +1,8 @@
-use crate::{TensorData, TensorFlow, TensorId};
+use crate::core::*;
 
 impl TensorFlow {
-    pub fn scalar(&mut self, value: f32) -> TensorId {
-        let tensor_data = TensorData::F32(vec![value]);
-        self.register_tensor(tensor_data, vec![])
+    pub fn scalar<T: TensorValue>(&mut self, value: T) -> TensorId {
+        let tensor = Tensor::new(vec![value], vec![]);
+        self.register(tensor)
     }
 }

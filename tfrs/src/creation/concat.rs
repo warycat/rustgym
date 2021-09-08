@@ -2,38 +2,26 @@ use crate::core::*;
 
 impl TensorFlow {
     pub fn concat(&mut self, tensors: Vec<TensorId>, axis: usize) -> TensorId {
+        use TensorId::*;
         assert!(!tensors.is_empty());
-        let size = tensors.len();
         let first_id = tensors[0];
-        let first_tensor = self.get_tensor_info(first_id);
-        let first_shape = first_tensor.shape();
-        let rank = first_shape.len();
-        let mut out_shape = first_shape.clone();
-        for i in 1..size {
-            let tensor_id = tensors[i];
-            let tensor = self.get_tensor_info(tensor_id);
-            let shape = tensor.shape();
-            for j in 0..rank {
-                if j == axis {
-                    out_shape[axis] += shape[axis];
-                } else {
-                    assert!(shape[j] == first_shape[j]);
-                }
+        self.register(match first_id {
+            F32(_) => {
+                let tensors_f32: Vec<&Tensor<f32>> =
+                    tensors.iter().map(|&id| self.get(id).as_f32()).collect();
+                concat(tensors_f32, axis)
             }
-        }
-        let mut out_values = vec![0.0; out_shape.tensor_size()];
-        let mut offset = 0;
-        for i in 0..size {
-            let id = tensors[i];
-            let tensor = self.get_tensor_info(id);
-            let values = tensor.data();
-            let shape = tensor.shape();
-            for j in 0..shape.tensor_size() {
-                out_values[offset + j] = values.get_f32(j);
+            I32(_) => {
+                let tensors_i32: Vec<&Tensor<i32>> =
+                    tensors.iter().map(|&id| self.get(id).as_i32()).collect();
+                concat(tensors_i32, axis)
             }
-            offset += tensor.size();
-        }
-        self.register_tensor(TensorData::F32(out_values), out_shape)
+            Bool(_) => {
+                let tensors_bool: Vec<&Tensor<bool>> =
+                    tensors.iter().map(|&id| self.get(id).as_bool()).collect();
+                concat(tensors_bool, axis)
+            }
+        })
     }
 
     pub fn concat1d(&mut self, tensors: Vec<TensorId>) -> TensorId {
@@ -41,113 +29,128 @@ impl TensorFlow {
     }
 }
 
+fn concat<T: TensorValue>(tensors: Vec<&Tensor<T>>, axis: usize) -> Box<Tensor<T>> {
+    assert!(!tensors.is_empty());
+    let size = tensors.len();
+    let first_tensor = tensors[0];
+    let first_shape = first_tensor.shape();
+    let rank = first_shape.len();
+    let mut out_shape = first_shape.clone();
+    for i in 1..size {
+        let tensor = tensors[i];
+        let shape = tensor.shape();
+        for j in 0..rank {
+            if j == axis {
+                out_shape[axis] += shape[axis];
+            } else {
+                assert!(shape[j] == first_shape[j]);
+            }
+        }
+    }
+    let mut out_values = vec![T::default(); out_shape.tensor_size()];
+    let mut offset = 0;
+    for i in 0..size {
+        let tensor = tensors[i];
+        let data = tensor.data();
+        let shape = tensor.shape();
+        out_values[offset..(offset + shape.tensor_size())]
+            .clone_from_slice(&data[..shape.tensor_size()]);
+        offset += tensor.size();
+    }
+    Tensor::new(out_values, out_shape)
+}
+
 #[test]
 fn test_concat1d() {
     let mut tf = TensorFlow::default();
 
-    let a = tf.tensor1d(vec![3.0]);
-    let b = tf.tensor1d(vec![5.0]);
-    let res = tf.concat1d(vec![a, b]);
-    let res_tensor = tf.get_tensor_info(res);
-    let ans_data = TensorData::F32(vec![3.0, 5.0]);
-    assert_eq!(res_tensor.data(), &ans_data);
+    let a_id = tf.tensor1d(vec![3]);
+    let b_id = tf.tensor1d(vec![5]);
+    let c_id = tf.concat1d(vec![a_id, b_id]);
+    let c = tf.get(c_id);
+    let d = Tensor::new(vec![3, 5], vec![2]);
+    assert_eq!(c.as_i32(), d.as_ref());
 
-    let a = tf.tensor1d(vec![3.0]);
-    let b = tf.tensor1d(vec![5.0, 7.0]);
-    let res = tf.concat1d(vec![a, b]);
-    let res_tensor = tf.get_tensor_info(res);
-    let ans_data = TensorData::F32(vec![3.0, 5.0, 7.0]);
-    assert_eq!(res_tensor.data(), &ans_data);
+    let a_id = tf.tensor1d(vec![3]);
+    let b_id = tf.tensor1d(vec![5, 7]);
+    let c_id = tf.concat1d(vec![a_id, b_id]);
+    let c = tf.get(c_id);
+    let d = Tensor::new(vec![3, 5, 7], vec![3]);
+    assert_eq!(c.as_i32(), d.as_ref());
 
-    let a = tf.tensor1d(vec![3.0]);
-    let b = tf.tensor1d(vec![5.0]);
-    let c = tf.tensor1d(vec![7.0]);
-    let d = tf.tensor1d(vec![9.0]);
-    let res = tf.concat1d(vec![a, b, c, d]);
-    let res_tensor = tf.get_tensor_info(res);
-    let ans_data = TensorData::F32(vec![3.0, 5.0, 7.0, 9.0]);
-    assert_eq!(res_tensor.data(), &ans_data);
+    let a_id = tf.tensor1d(vec![3]);
+    let b_id = tf.tensor1d(vec![5]);
+    let c_id = tf.tensor1d(vec![7]);
+    let d_id = tf.tensor1d(vec![9]);
+    let e_id = tf.concat1d(vec![a_id, b_id, c_id, d_id]);
+    let e = tf.get(e_id);
+    let f = Tensor::new(vec![3, 5, 7, 9], vec![4]);
+    assert_eq!(e.as_i32(), f.as_ref());
 
-    let a = tf.tensor1d(vec![3.0]);
-    let res = tf.concat1d(vec![a]);
-    let res_tensor = tf.get_tensor_info(res);
-    let ans_data = TensorData::F32(vec![3.0]);
-    assert_eq!(res_tensor.data(), &ans_data);
+    let a_id = tf.tensor1d(vec![3]);
+    let b_id = tf.concat1d(vec![a_id]);
+    let b = tf.get(b_id);
+    let c = Tensor::new(vec![3], vec![1]);
+    assert_eq!(b.as_i32(), c.as_ref());
 
-    let a = tf.tensor2d(vec![3.0], vec![1, 1]);
-    let b = tf.tensor2d(vec![5.0], vec![1, 1]);
+    let a_id = tf.tensor2d(vec![3], vec![1, 1]);
+    let b_id = tf.tensor2d(vec![5], vec![1, 1]);
     let axis = 0;
-    let res = tf.concat(vec![a, b], axis);
-    let res_tensor = tf.get_tensor_info(res);
-    let ans_data = TensorData::F32(vec![3.0, 5.0]);
-    let ans_shape = vec![2, 1];
-    assert_eq!(res_tensor.data(), &ans_data);
-    assert_eq!(res_tensor.shape(), &ans_shape);
+    let c_id = tf.concat(vec![a_id, b_id], axis);
+    let c = tf.get(c_id);
+    let d = Tensor::new(vec![3, 5], vec![2, 1]);
+    assert_eq!(c.as_i32(), d.as_ref());
 
-    let a = tf.tensor2d(vec![3.0], vec![1, 1]);
-    let b = tf.tensor2d(vec![5.0], vec![1, 1]);
+    let a_id = tf.tensor2d(vec![3], vec![1, 1]);
+    let b_id = tf.tensor2d(vec![5], vec![1, 1]);
     let axis = 1;
-    let res = tf.concat(vec![a, b], axis);
-    let res_tensor = tf.get_tensor_info(res);
-    let ans_data = TensorData::F32(vec![3.0, 5.0]);
-    let ans_shape = vec![1, 2];
-    assert_eq!(res_tensor.data(), &ans_data);
-    assert_eq!(res_tensor.shape(), &ans_shape);
+    let c_id = tf.concat(vec![a_id, b_id], axis);
+    let c = tf.get(c_id);
+    let d = Tensor::new(vec![3, 5], vec![1, 2]);
+    assert_eq!(c.as_i32(), d.as_ref());
 }
 
 #[test]
 fn test_concat2d() {
     let mut tf = TensorFlow::default();
 
-    let a = tf.tensor2d(vec![1.0, 2.0, 3.0, 4.0], vec![2, 2]);
-    let b = tf.tensor2d(vec![5.0, 6.0], vec![1, 2]);
-    let c = tf.tensor2d(vec![7.0, 8.0], vec![1, 2]);
+    let a_id = tf.tensor2d(vec![1, 2, 3, 4], vec![2, 2]);
+    let b_id = tf.tensor2d(vec![5, 6], vec![1, 2]);
+    let c_id = tf.tensor2d(vec![7, 8], vec![1, 2]);
     let axis = 0;
-    let res = tf.concat(vec![a, b, c], axis);
-    let res_tensor = tf.get_tensor_info(res);
-    let ans_data = TensorData::F32(vec![1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0]);
-    let ans_shape = vec![4, 2];
-    assert_eq!(res_tensor.data(), &ans_data);
-    assert_eq!(res_tensor.shape(), &ans_shape);
+    let d_id = tf.concat(vec![a_id, b_id, c_id], axis);
+    let d = tf.get(d_id);
+    let e = Tensor::new(vec![1, 2, 3, 4, 5, 6, 7, 8], vec![4, 2]);
+    assert_eq!(d.as_i32(), e.as_ref());
 
-    let a = tf.tensor2d(vec![1.0, 2.0, 3.0, 4.0], vec![2, 2]);
-    let b = tf.tensor2d(vec![5.0, 6.0, 7.0, 8.0], vec![2, 2]);
-    let c = tf.tensor2d(vec![9.0, 10.0, 11.0, 12.0], vec![2, 2]);
+    let a_id = tf.tensor2d(vec![1, 2, 3, 4], vec![2, 2]);
+    let b_id = tf.tensor2d(vec![5, 6, 7, 8], vec![2, 2]);
+    let c_id = tf.tensor2d(vec![9, 10, 11, 12], vec![2, 2]);
     let axis = 1;
-    let res = tf.concat(vec![a, b, c], axis);
-    let res_tensor = tf.get_tensor_info(res);
-    let ans_data = TensorData::F32(vec![
-        1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0,
-    ]);
-    let ans_shape = vec![2, 6];
-    assert_eq!(res_tensor.data(), &ans_data);
-    assert_eq!(res_tensor.shape(), &ans_shape);
+    let d_id = tf.concat(vec![a_id, b_id, c_id], axis);
+    let d = tf.get(d_id);
+    let e = Tensor::new(vec![1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], vec![2, 6]);
+    assert_eq!(d.as_i32(), e.as_ref());
 
-    let a = tf.tensor2d(vec![3.0], vec![1, 1]);
-    let b = tf.tensor2d(vec![5.0], vec![1, 1]);
+    let a_id = tf.tensor2d(vec![3], vec![1, 1]);
+    let b_id = tf.tensor2d(vec![5], vec![1, 1]);
     let axis = 0;
-    let res = tf.concat(vec![a, b], axis);
-    let res_tensor = tf.get_tensor_info(res);
-    let ans_data = TensorData::F32(vec![3.0, 5.0]);
-    let ans_shape = vec![2, 1];
-    assert_eq!(res_tensor.data(), &ans_data);
-    assert_eq!(res_tensor.shape(), &ans_shape);
+    let c_id = tf.concat(vec![a_id, b_id], axis);
+    let c = tf.get(c_id);
+    let d = Tensor::new(vec![3, 5], vec![2, 1]);
+    assert_eq!(c.as_i32(), d.as_ref());
 
-    let a = tf.tensor2d(vec![], vec![0, 5]);
-    let b = tf.tensor2d(vec![], vec![0, 5]);
-    let c = tf.tensor2d(vec![], vec![0, 5]);
+    let a_id = tf.tensor2d::<i32>(vec![], vec![0, 5]);
+    let b_id = tf.tensor2d::<i32>(vec![], vec![0, 5]);
+    let c_id = tf.tensor2d::<i32>(vec![], vec![0, 5]);
     let axis = 0;
-    let res = tf.concat(vec![a, b, c], axis);
-    let res_tensor = tf.get_tensor_info(res);
-    let ans_data = TensorData::F32(vec![]);
-    let ans_shape = vec![0, 5];
-    assert_eq!(res_tensor.data(), &ans_data);
-    assert_eq!(res_tensor.shape(), &ans_shape);
+    let d_id = tf.concat(vec![a_id, b_id, c_id], axis);
+    let d = tf.get(d_id);
+    let e = Tensor::new(vec![], vec![0, 5]);
+    assert_eq!(d.as_i32(), e.as_ref());
     let axis = 1;
-    let res = tf.concat(vec![a, b, c], axis);
-    let res_tensor = tf.get_tensor_info(res);
-    let ans_data = TensorData::F32(vec![]);
-    let ans_shape = vec![0, 15];
-    assert_eq!(res_tensor.data(), &ans_data);
-    assert_eq!(res_tensor.shape(), &ans_shape);
+    let d_id = tf.concat(vec![a_id, b_id, c_id], axis);
+    let d = tf.get(d_id);
+    let e = Tensor::new(vec![], vec![0, 15]);
+    assert_eq!(d.as_i32(), e.as_ref());
 }

@@ -1,9 +1,9 @@
-use crate::core::{TensorData, TensorFlow, TensorId};
+use crate::core::*;
 
 impl TensorFlow {
-    pub fn tensor1d(&mut self, values: Vec<f32>) -> TensorId {
+    pub fn tensor1d<T: TensorValue>(&mut self, values: Vec<T>) -> TensorId {
         let shape = vec![values.len()];
-        let tensor_data = TensorData::F32(values);
-        self.register_tensor(tensor_data, shape)
+        let tensor = Tensor::new(values, shape);
+        self.register(tensor)
     }
 }

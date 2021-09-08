@@ -1,4 +1,7 @@
-mod add;
+mod arithmetic;
 mod binary;
-mod matmul;
-mod prelu;
+mod math;
+mod matrix;
+mod normalization;
+mod reduction;
+mod unary;

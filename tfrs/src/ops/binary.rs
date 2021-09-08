@@ -7,7 +7,11 @@ use tfrs_sys::{
 #[macro_export]
 macro_rules! binary_xnn_f32 {
     ($name:ident, $create_op:expr, $setup_op:expr) => {
-        pub fn $name(a: &Tensor, b: &Tensor, threadpool: *mut pthreadpool) -> (TensorData, Shape) {
+        pub fn $name(
+            a: &Tensor<f32>,
+            b: &Tensor<f32>,
+            threadpool: *mut pthreadpool,
+        ) -> Box<Tensor<f32>> {
             let a_shape = a.shape();
             let b_shape = b.shape();
             assert_eq!(a_shape, b_shape);
@@ -22,7 +26,7 @@ macro_rules! binary_xnn_f32 {
             let b_shape_ptr = b_shape.buf() as *const size_t;
             let a_buf = a.buf() as *const f32;
             let b_buf = b.buf() as *const f32;
-            let output = TensorData::F32(vec![0.0; shape.tensor_size()]);
+            let output = Tensor::new(vec![0.0; shape.tensor_size()], shape);
             let out_buf = output.buf_mut() as *mut f32;
             unsafe {
                 $create_op(output_min, output_max, flags, &mut binary_op);
@@ -39,7 +43,7 @@ macro_rules! binary_xnn_f32 {
                 );
                 xnn_run_operator(binary_op, threadpool);
             }
-            (output, shape)
+            output
         }
     };
 }

@@ -76,11 +76,7 @@ pub async fn ws_index(
         usercombo.clone(),
         credential.clone(),
     );
-    let turns_server = IceServer::new(
-        "turns:rustgym.com".to_string(),
-        usercombo,
-        credential,
-    );
+    let turns_server = IceServer::new("turns:rustgym.com".to_string(), usercombo, credential);
     let ice_servers = vec![stun_server, turn_server, turns_server];
     let client_info = ClientInfo {
         client_uuid,
