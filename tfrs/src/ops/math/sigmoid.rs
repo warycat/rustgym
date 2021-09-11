@@ -23,5 +23,5 @@ fn test() {
     ]);
     let y = tf.get_f32(y_id);
     let z = tf.get_f32(z_id);
-    assert_eq!(y, z);
+    assert_tensor_f32_eq!(y, z);
 }
