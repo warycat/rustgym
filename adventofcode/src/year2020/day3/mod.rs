@@ -35,4 +35,4 @@ fn number_of_trees(grid: &[Vec<char>], right: usize, down: usize) -> i32 {
     res
 }
 
-advent_of_code!(test, "input.txt", "output.txt");
+adventofcode!(test, "input.txt", "output.txt");

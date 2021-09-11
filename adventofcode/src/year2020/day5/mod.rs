@@ -38,4 +38,4 @@ fn middle(hs: &HashSet<i32>) -> i32 {
     0
 }
 
-advent_of_code!(test, "input.txt", "output.txt");
+adventofcode!(test, "input.txt", "output.txt");

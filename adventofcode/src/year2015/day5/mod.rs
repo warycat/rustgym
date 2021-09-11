@@ -47,4 +47,4 @@ fn nice2(s: &str) -> bool {
     rule1 && rule2
 }
 
-advent_of_code!(test, "input.txt", "output.txt");
+adventofcode!(test, "input.txt", "output.txt");

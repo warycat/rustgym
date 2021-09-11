@@ -54,4 +54,4 @@ fn encryption_weakness(nums: &[i64], sum: i64) -> i64 {
     max + min
 }
 
-advent_of_code_ignore!(test, "input.txt", "output.txt");
+adventofcode_ignore!(test, "input.txt", "output.txt");

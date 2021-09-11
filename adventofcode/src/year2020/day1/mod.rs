@@ -35,4 +35,4 @@ fn product_of_three_sum(mut entries: Vec<i32>, sum: i32) -> i32 {
     0
 }
 
-advent_of_code!(test, "input.txt", "output.txt");
+adventofcode!(test, "input.txt", "output.txt");

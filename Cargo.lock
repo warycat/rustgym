@@ -2706,7 +2706,7 @@ dependencies = [
  "assert_approx_eq",
  "pretty_assertions 0.6.1",
  "rand 0.7.3",
- "rustgym-util 0.2.4",
+ "rustgym-util",
 ]
 
 [[package]]
@@ -2716,7 +2716,7 @@ dependencies = [
  "md5",
  "paste",
  "rayon",
- "rustgym-util 0.2.4 (registry+https://github.com/rust-lang/crates.io-index)",
+ "rustgym-util",
  "serde_json",
 ]
 
@@ -2732,14 +2732,14 @@ version = "0.1.0"
 name = "rustgym-google"
 version = "0.1.0"
 dependencies = [
- "rustgym-util 0.2.4",
+ "rustgym-util",
 ]
 
 [[package]]
 name = "rustgym-hackerrank"
 version = "0.1.0"
 dependencies = [
- "rustgym-util 0.2.4",
+ "rustgym-util",
 ]
 
 [[package]]
@@ -2762,7 +2762,7 @@ dependencies = [
  "paste",
  "pretty_assertions 0.7.2",
  "rand 0.7.3",
- "rustgym-util 0.2.4",
+ "rustgym-util",
  "threadpool",
 ]
 
@@ -2792,7 +2792,7 @@ dependencies = [
  "reqwest",
  "rustgym-consts",
  "rustgym-schema",
- "rustgym-util 0.2.4",
+ "rustgym-util",
  "serde_json",
  "walkdir",
 ]
@@ -2864,12 +2864,6 @@ dependencies = [
 [[package]]
 name = "rustgym-util"
 version = "0.2.4"
-
-[[package]]
-name = "rustgym-util"
-version = "0.2.4"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5c8a8f5ba6923cfbdf16a942af93b4fbe277cce212eef52a58c676f4e8ba44ba"
 
 [[package]]
 name = "rustgym-wasm"

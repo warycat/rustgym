@@ -112,4 +112,4 @@ fn simulate2(mut grid: Vec<Vec<char>>) -> i32 {
     }
 }
 
-advent_of_code!(test, "input.txt", "output.txt");
+adventofcode!(test, "input.txt", "output.txt");

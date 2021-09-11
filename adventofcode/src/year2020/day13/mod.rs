@@ -61,4 +61,4 @@ fn earliest_time(ids: &[(i32, i32)]) -> i64 {
     }
 }
 
-advent_of_code!(test, "input.txt", "output.txt");
+adventofcode!(test, "input.txt", "output.txt");

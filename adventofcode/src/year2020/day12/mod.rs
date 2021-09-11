@@ -159,4 +159,4 @@ fn manhattan_distance2(instructions: &[Instruction]) -> i32 {
     state.ship.x.abs() + state.ship.y.abs()
 }
 
-advent_of_code!(test, "input.txt", "output.txt");
+adventofcode!(test, "input.txt", "output.txt");

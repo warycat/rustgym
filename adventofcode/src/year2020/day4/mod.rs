@@ -156,4 +156,4 @@ fn pid(value: &str) -> bool {
     true
 }
 
-advent_of_code!(test, "input.txt", "output.txt");
+adventofcode!(test, "input.txt", "output.txt");

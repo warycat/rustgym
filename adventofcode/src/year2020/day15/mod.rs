@@ -41,4 +41,4 @@ fn sequence(nums: &[i32], end: usize) -> i32 {
     next
 }
 
-advent_of_code_ignore!(test, "input.txt", "output.txt");
+adventofcode_ignore!(test, "input.txt", "output.txt");

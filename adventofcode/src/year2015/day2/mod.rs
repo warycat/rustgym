@@ -39,4 +39,4 @@ fn ribbon(sides: &[i32]) -> i32 {
     product + min * 2
 }
 
-advent_of_code!(test, "input.txt", "output.txt");
+adventofcode!(test, "input.txt", "output.txt");

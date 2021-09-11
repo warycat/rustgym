@@ -29,4 +29,4 @@ pub mod day19;
 //     writeln!(writer, "{}", res2).unwrap();
 // }
 
-// advent_of_code!(test, "input.txt", "output.txt");
+// adventofcode!(test, "input.txt", "output.txt");

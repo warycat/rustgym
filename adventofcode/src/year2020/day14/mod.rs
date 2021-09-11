@@ -126,4 +126,4 @@ fn decode(instructions: &[Instruction]) -> u64 {
     vm.sum()
 }
 
-advent_of_code!(test, "input.txt", "output.txt");
+adventofcode!(test, "input.txt", "output.txt");

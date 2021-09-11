@@ -51,4 +51,4 @@ fn part2(adapters: &[i32]) -> i64 {
     dp[n - 1]
 }
 
-advent_of_code!(test, "input.txt", "output.txt");
+adventofcode!(test, "input.txt", "output.txt");

@@ -39,4 +39,4 @@ fn dfs2(val: &Value, red: &Value) -> i64 {
     }
 }
 
-advent_of_code!(test, "input.txt", "output.txt");
+adventofcode!(test, "input.txt", "output.txt");

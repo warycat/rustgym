@@ -19,4 +19,4 @@ pub fn solve(reader: &mut dyn BufRead, writer: &mut dyn Write) {
     writeln!(writer, "{}", res2).unwrap();
 }
 
-advent_of_code!(test, "input.txt", "output.txt");
+adventofcode!(test, "input.txt", "output.txt");

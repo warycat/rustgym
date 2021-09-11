@@ -63,4 +63,4 @@ fn light2(grid: &mut Vec<Vec<i32>>, cmd: i32, cord1: &[usize], cord2: &[usize]) 
     }
 }
 
-advent_of_code!(test, "input.txt", "output.txt");
+adventofcode!(test, "input.txt", "output.txt");

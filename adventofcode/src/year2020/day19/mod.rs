@@ -95,4 +95,4 @@ fn dp(
     }
 }
 
-advent_of_code_ignore!(test, "input.txt", "output.txt");
+adventofcode_ignore!(test, "input.txt", "output.txt");

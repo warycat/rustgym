@@ -130,4 +130,4 @@ fn term2(it: &mut Peekable<Iter<Tok>>) -> i64 {
     }
 }
 
-advent_of_code!(test, "input.txt", "output.txt");
+adventofcode!(test, "input.txt", "output.txt");

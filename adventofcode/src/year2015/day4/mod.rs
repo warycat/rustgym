@@ -25,4 +25,4 @@ fn search(max: usize, line: &str, prefix: &str) -> usize {
         .unwrap()
 }
 
-advent_of_code_ignore!(test, "input.txt", "output.txt");
+adventofcode_ignore!(test, "input.txt", "output.txt");

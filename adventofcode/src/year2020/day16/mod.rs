@@ -134,4 +134,4 @@ fn in_range(t: i32, range: &[i32; 4]) -> bool {
     range[0] <= t && t <= range[1] || range[2] <= t && t <= range[3]
 }
 
-advent_of_code!(test, "input.txt", "output.txt");
+adventofcode!(test, "input.txt", "output.txt");

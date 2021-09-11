@@ -78,4 +78,4 @@ fn dfs2(u: usize, visited: &mut Vec<bool>, adj: &[Vec<(usize, i32)>], n: usize) 
     res
 }
 
-advent_of_code!(test, "input.txt", "output.txt");
+adventofcode!(test, "input.txt", "output.txt");
