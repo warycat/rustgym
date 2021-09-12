@@ -1,8 +1,6 @@
 use crate::core::*;
 use std::ptr::null_mut;
-use tfrs_sys::{
-    pthreadpool, size_t, xnn_create_add_nd_f32, xnn_run_operator, xnn_setup_add_nd_f32,
-};
+use tfrs_sys::{pthreadpool, xnn_create_add_nd_f32, xnn_run_operator, xnn_setup_add_nd_f32};
 
 #[macro_export]
 macro_rules! binary_xnn_f32 {
@@ -20,10 +18,10 @@ macro_rules! binary_xnn_f32 {
             let output_min = f32::NEG_INFINITY;
             let output_max = f32::INFINITY;
             let flags = 0;
-            let a_shape_len = a_shape.len() as u64;
-            let a_shape_ptr = a_shape.buf() as *const size_t;
-            let b_shape_len = b_shape.len() as u64;
-            let b_shape_ptr = b_shape.buf() as *const size_t;
+            let a_shape_len = a_shape.len();
+            let a_shape_ptr = a_shape.buf() as *const usize;
+            let b_shape_len = b_shape.len();
+            let b_shape_ptr = b_shape.buf() as *const usize;
             let a_buf = a.buf() as *const f32;
             let b_buf = b.buf() as *const f32;
             let output = Tensor::new(vec![0.0; shape.tensor_size()], shape);

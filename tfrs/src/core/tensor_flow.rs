@@ -46,7 +46,7 @@ pub struct TensorFlow {
 }
 
 impl TensorFlow {
-    pub fn new(num_cores: u64) -> Self {
+    pub fn new(num_cores: usize) -> Self {
         let last_id = 0;
         let tensors = HashMap::new();
         let prelu_op_cache = HashMap::new();

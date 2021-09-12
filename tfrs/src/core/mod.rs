@@ -6,7 +6,7 @@ pub use shape::*;
 pub use tensor::*;
 pub use tensor_flow::*;
 
-pub const NUM_CORES: u64 = 2;
+pub const NUM_CORES: usize = 2;
 
 pub enum DataType {
     F32,

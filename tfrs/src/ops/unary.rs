@@ -19,7 +19,7 @@ macro_rules! unary_xnn_f32 {
             let x_buf = x.buf() as *const f32;
             let output = Tensor::new(vec![0.0; size], shape);
             let out_buf = output.buf_mut() as *mut f32;
-            let batch = size as u64;
+            let batch = size;
             unsafe {
                 $create_op(channels, input_stride, output_stride, flags, &mut unary_op);
                 $setup_op(unary_op, batch, x_buf, out_buf, threadpool);

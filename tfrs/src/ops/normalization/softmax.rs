@@ -17,7 +17,7 @@ pub fn softmax(x: &Tensor<f32>, threadpool: *mut pthreadpool) -> Box<Tensor<f32>
     let shape = x_shape.clone();
     let mut unary_op = null_mut();
     let size = shape.tensor_size();
-    let channels = size as u64;
+    let channels = size;
     let input_stride = channels;
     let output_stride = channels;
     let flags = 0;

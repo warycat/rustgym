@@ -17,7 +17,7 @@ impl TensorFlow {
 fn prelu(x: &Tensor<f32>, alpha: &Tensor<f32>, threadpool: *mut pthreadpool) -> Box<Tensor<f32>> {
     let shape = x.shape();
     let x_size = shape[0];
-    let batch_size = x_size as u64;
+    let batch_size = x_size;
     let x_buf = x.buf();
     let output = Tensor::new(vec![0.0; x_size], shape.clone());
     let out_buf = output.buf_mut() as *mut f32;

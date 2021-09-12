@@ -30,15 +30,15 @@ fn matmul(a: &Tensor<f32>, b: &Tensor<f32>, threadpool: *mut pthreadpool) -> Box
     let out_buf = output.buf_mut() as *mut f32;
     let a_buf = a.buf();
     let b_buf = b.buf();
-    let input_channels = shared_dim as u64;
-    let output_channels = right_dim as u64;
+    let input_channels = shared_dim;
+    let output_channels = right_dim;
     let input_stride = input_channels;
     let output_stride = output_channels;
     let bias_buf = null_mut();
     let output_min = f32::NEG_INFINITY;
     let output_max = f32::INFINITY;
     let flags = XNN_FLAG_TRANSPOSE_WEIGHTS;
-    let batch_size = left_dim as u64;
+    let batch_size = left_dim;
     let mut fully_connected_op = null_mut();
 
     unsafe {
