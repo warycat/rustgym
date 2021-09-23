@@ -106,8 +106,8 @@ fn test() {
         pool.execute(move || fizzbuzz.fizzbuzz(|| tx.send("fizzbuzz".to_string()).unwrap()));
     }
     {
-        let fizzbuzz = fizzbuzz.clone();
-        let tx = tx.clone();
+        let fizzbuzz = fizzbuzz;
+        let tx = tx;
         pool.execute(move || fizzbuzz.number(|x| tx.send(format!("{}", x)).unwrap()));
     }
     pool.join();
