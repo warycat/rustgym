@@ -4,7 +4,7 @@
 ## [AdventOfCode Solutions in Rust](#adventofcode)
 ## [Google Solutions in Rust](#google)
 
-This project demostrates how to create **Data Structures** and to implement **Algorithms** using programming language **Rust**
+This project demonstrates how to create **Data Structures** and to implement **Algorithms** using programming language **Rust**
 All the solutions here are crafted with love and their performance beats 99% of other solutions on the leetcode website. Tutorial videos will be added later.
 
 ### Please subscribe to our [RUST GYM Youtube Channel](https://www.youtube.com/channel/UCV9HzRLPKjI8SttaIYOygsw) for future videos.

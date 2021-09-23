@@ -52,8 +52,8 @@ fn test() {
         });
     }
     {
-        let tx = tx.clone();
-        let foo_bar = foo_bar.clone();
+        let tx = tx;
+        let foo_bar = foo_bar;
         pool.execute(move || {
             foo_bar.bar(|| tx.send("bar".to_string()).unwrap());
         });
