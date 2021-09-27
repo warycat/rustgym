@@ -14,3 +14,13 @@ mod _1929_concatenation_of_array;
 mod _1933_check_if_string_is_decomposable_into_value_equal_substrings;
 //
 mod _1935_maximum_number_of_words_you_can_type;
+//
+mod _1941_check_if_all_characters_have_equal_number_of_occurrences;
+//
+mod _1945_sum_of_digits_of_string_after_convert;
+//
+mod _1952_three_divisors;
+//
+mod _1957_delete_characters_to_make_fancy_string;
+//
+mod _1961_check_if_string_is_a_prefix_of_array;
