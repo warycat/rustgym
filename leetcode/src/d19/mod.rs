@@ -34,3 +34,7 @@ mod _1974_minimum_time_to_type_word_using_special_typewriter;
 mod _1979_find_greatest_common_divisor_of_array;
 //
 mod _1984_minimum_difference_between_highest_and_lowest_of_k_scores;
+//
+mod _1991_find_the_middle_index_in_array;
+//
+mod _1995_count_special_quadruplets;
