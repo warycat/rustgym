@@ -36,6 +36,8 @@ mod _1725_number_of_rectangles_that_can_form_the_largest_square;
 //
 mod _1726_tuple_with_same_product;
 //
+mod _1727_largest_submatrix_with_rearrangements;
+//
 mod _1730_shortest_path_to_get_food;
 //
 mod _1732_find_the_highest_altitude;
@@ -67,6 +69,8 @@ mod _1748_sum_of_unique_elements;
 mod _1752_check_if_array_is_sorted_and_rotated;
 //
 mod _1758_minimum_changes_to_make_alternating_binary_string;
+//
+mod _1762_buildings_with_an_ocean_view;
 //
 mod _1769_minimum_number_of_operations_to_move_all_balls_to_each_box;
 //
