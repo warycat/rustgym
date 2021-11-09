@@ -55,3 +55,31 @@ script = "cargo test -p rustgym-tfrs"
 [tasks.watch-tfrs-test]
 run_task = { name = ["tfrs-test"] }
 watch = { postpone = true, watch = ["./tfrs", "./tfrs-sys"] }
+
+[tasks.build-mini]
+command = "cargo"
+args = [
+    "build",
+    "--release",
+    "--target",
+    "aarch64-apple-darwin",
+    "--bin",
+    "${APP_NAME}"
+]
+
+[tasks.copy-mini]
+command = "scp"
+args = [
+    "./target/aarch64-apple-darwin/release/${APP_NAME}",
+    "mini:~/${APP_NAME}"
+]
+dependencies = ["build-mini"]
+
+[tasks.run-mini]
+command = "ssh"
+args = ["mini", "./${APP_NAME}"]
+dependencies = ["copy-mini"]
+
+[tasks.run-local]
+command = "cargo"
+args = ["run", "--release", "--bin", "${APP_NAME}"]
