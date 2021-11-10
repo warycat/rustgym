@@ -15,7 +15,5 @@ members = [
     "google",
     "hackerrank",
     "mnist-data",
-    "metaldnn",
-    "metaldnn-sys",
-    "mnist",
+    "nes",
 ]

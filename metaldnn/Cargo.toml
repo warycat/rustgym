@@ -7,7 +7,6 @@ edition = "2018"
 [dependencies]
 once_cell = "1.8.0"
 metaldnn-sys = { path = "../metaldnn-sys" }
-metal = "0.23.1"
 derivative = "2.2.0"
 objc = { version = "0.2.7", features = ["objc_exception"] }
 
