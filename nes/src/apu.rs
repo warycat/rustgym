@@ -1,5 +1,4 @@
 use crate::base::*;
-use crate::cpu::Cpu;
 use crate::sound::Sound;
 use crate::state::SaveLoad;
 
@@ -30,4 +29,8 @@ pub trait Channel {
     fn get_volume(&self, channel: u32) -> u32;
     fn get_oscillator_clock(rate: &Cycle, fixed: &u32);
     fn get_cpu_clock_base(&self) -> Cycle;
+    fn get_cpu_clock_divider(&self) -> u32;
+    fn get_cpu_clock(&self, clock: u32) -> Cycle;
+    fn is_muted(&self) -> bool;
+    fn is_genie(&self) -> bool;
 }
