@@ -2,10 +2,20 @@ use crate::cpu::Cpu;
 use crate::iomap::IoMap;
 use crate::ram::*;
 
+#[derive(Debug)]
 pub struct Bus {
     ram: Ram,
     // ppu: Ppu,
     // apu: Apu,
+}
+
+impl Bus {
+    pub fn new() -> Self {
+        Bus { ram: Ram::new() }
+    }
+    pub fn reset(&mut self) {
+        self.ram.reset();
+    }
 }
 
 impl IoMap for Bus {

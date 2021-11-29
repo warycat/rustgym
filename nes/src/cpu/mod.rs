@@ -56,10 +56,11 @@ pub enum Level {
 // fn immediate_read(&mut self) -> u8;
 // fn zero_page_read(&mut self) -> u8;
 
+#[derive(Debug)]
 pub struct Cpu {
-    a: u8,
-    x: u8,
-    y: u8,
+    pub a: u8,
+    pub x: u8,
+    pub y: u8,
     s: u8,
     flags: Flags,
     pc: u16,
@@ -67,6 +68,28 @@ pub struct Cpu {
 }
 
 impl Cpu {
+    pub fn new() -> Self {
+        Cpu {
+            a: 0,
+            x: 0,
+            y: 0,
+            s: 0,
+            pc: 0,
+            flags: Flags::new(),
+            bus: Bus::new(),
+        }
+    }
+
+    pub fn reset(&mut self) {
+        self.a = 0;
+        self.x = 0;
+        self.y = 0;
+        self.s = 0;
+        self.pc = 0;
+        self.flags.reset();
+        self.bus.reset();
+    }
+
     pub fn fetch8(&mut self) -> u8 {
         let byte = self.bus.peek8(self.pc);
         self.pc += 1;

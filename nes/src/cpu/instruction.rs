@@ -2,26 +2,32 @@ use crate::cpu::flags::*;
 use crate::cpu::Cpu;
 
 pub trait Instruction {
+    // LoaD Accumulator
     fn lda(&mut self, byte: u8);
-    fn ldx(&mut self) {}
-    // load index register y from memory
-    fn ldy(&mut self) {}
+    // LoaD X register
+    fn ldx(&mut self, byte: u8);
+    // LoaD Y register
+    fn ldy(&mut self, byte: u8);
 
-    // store accumulator to memory
-    fn sta(&mut self) {}
-    // store index register x to memroy
-    fn stx(&mut self) {}
-    // store index register y to memory
-    fn sty(&mut self) {}
+    // STore Accumulator
+    fn sta(&mut self) -> u8;
+    // STore X register
+    fn stx(&mut self) -> u8;
+    // STore Y register
+    fn sty(&mut self) -> u8;
 
-    // transfer accumulator to index register x
-    fn tax(&mut self) {}
-    // transfer accumulator to index register y
-    fn tay(&mut self) {}
-    // transfer index register x to accumulator
-    fn txa(&mut self) {}
-    // transfer index register y to accumulator
-    fn tya(&mut self) {}
+    // Transfer A to X
+    fn tax(&mut self);
+    // Transfer X to A
+    fn txa(&mut self);
+    // Transfer A to Y
+    fn tay(&mut self);
+    // Transfer Y to A
+    fn tya(&mut self);
+    // Transfer Stack ptr to X
+    fn tsx(&mut self);
+    // Transfer X to Stack ptr
+    fn txs(&mut self);
 
     // jump
     fn jmp_abs(&mut self) {}
@@ -113,10 +119,6 @@ pub trait Instruction {
     fn pla(&mut self) {}
     // pull status flags from stack
     fn plp(&mut self) {}
-    // transfer stack pointer to index register x
-    fn tsx(&mut self) {}
-    // transfer index register x to stack pointer
-    fn txs(&mut self) {}
 
     fn anc(&mut self) {}
     fn ane(&mut self) {}
@@ -149,33 +151,43 @@ pub trait Instruction {
 }
 
 impl Instruction for Cpu {
-    fn lda(&mut self, val: u8) {
-        self.a = val;
-        self.flags.z = z(val);
-        self.flags.n = z(val);
+    fn lda(&mut self, byte: u8) {
+        self.a = self.flags.set_zn(byte);
     }
-    // load index register x from memory
-    fn ldx(&mut self) {}
-    // load index register y from memory
-    fn ldy(&mut self) {}
+    fn ldx(&mut self, byte: u8) {
+        self.x = self.flags.set_zn(byte);
+    }
+    fn ldy(&mut self, byte: u8) {
+        self.y = self.flags.set_zn(byte);
+    }
+    fn sta(&mut self) -> u8 {
+        self.a
+    }
+    fn stx(&mut self) -> u8 {
+        self.x
+    }
+    fn sty(&mut self) -> u8 {
+        self.y
+    }
 
-    // store accumulator to memory
-    fn sta(&mut self) {}
-    // store index register x to memroy
-    fn stx(&mut self) {}
-    // store index register y to memory
-    fn sty(&mut self) {}
-
-    // transfer accumulator to index register x
     fn tax(&mut self) {
-        self.x = self.a;
+        self.x = self.flags.set_zn(self.a);
     }
-    // transfer accumulator to index register y
-    fn tay(&mut self) {}
-    // transfer index register x to accumulator
-    fn txa(&mut self) {}
-    // transfer index register y to accumulator
-    fn tya(&mut self) {}
+    fn tay(&mut self) {
+        self.y = self.flags.set_zn(self.a);
+    }
+    fn txa(&mut self) {
+        self.a = self.flags.set_zn(self.x);
+    }
+    fn tya(&mut self) {
+        self.a = self.flags.set_zn(self.y);
+    }
+    fn tsx(&mut self) {
+        self.x = self.flags.set_zn(self.s);
+    }
+    fn txs(&mut self) {
+        self.s = self.x;
+    }
 
     // jump
     fn jmp_abs(&mut self) {}
@@ -268,9 +280,6 @@ impl Instruction for Cpu {
     // pull status flags from stack
     fn plp(&mut self) {}
     // transfer stack pointer to index register x
-    fn tsx(&mut self) {}
-    // transfer index register x to stack pointer
-    fn txs(&mut self) {}
 
     fn anc(&mut self) {}
     fn ane(&mut self) {}
