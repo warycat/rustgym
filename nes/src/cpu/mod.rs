@@ -73,7 +73,7 @@ impl Cpu {
             a: 0,
             x: 0,
             y: 0,
-            s: 0,
+            s: 0xFD,
             pc: 0,
             flags: Flags::new(),
             bus: Bus::new(),
@@ -85,20 +85,39 @@ impl Cpu {
         self.x = 0;
         self.y = 0;
         self.s = 0;
-        self.pc = 0;
+        self.pc = 0xFD;
         self.flags.reset();
         self.bus.reset();
     }
 
     pub fn fetch8(&mut self) -> u8 {
-        let byte = self.bus.peek8(self.pc);
+        let byte = self.peek8(self.pc);
         self.pc += 1;
         byte
     }
     pub fn fetch16(&mut self) -> u16 {
-        let byte = self.bus.peek16(self.pc);
+        let byte = self.peek16(self.pc);
         self.pc += 2;
         byte
+    }
+    pub fn push8(&mut self, byte: u8) {
+        let addr = 0x100 + self.s as u16;
+        self.poke8(addr, byte);
+        self.s -= 1;
+    }
+    pub fn push16(&mut self, word: u16) {
+        let bytes = word.to_le_bytes();
+        self.push8(bytes[1]);
+        self.push8(bytes[0]);
+    }
+    pub fn pop8(&mut self) -> u8 {
+        self.s += 1;
+        let addr = 0x100 + self.s as u16;
+        self.peek8(addr)
+    }
+    pub fn pop16(&mut self) -> u16 {
+        let bytes = [self.pop8(), self.pop8()];
+        u16::from_le_bytes(bytes)
     }
 }
 
@@ -109,4 +128,12 @@ impl IoMap for Cpu {
     fn poke8(&mut self, address: u16, byte: u8) {
         self.bus.poke8(address, byte);
     }
+}
+
+#[test]
+fn test() {
+    let mut cpu = Cpu::new();
+    let val = 0x0002;
+    cpu.push16(val);
+    assert_eq!(cpu.pop16(), val);
 }

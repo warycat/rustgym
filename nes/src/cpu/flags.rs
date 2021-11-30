@@ -13,7 +13,6 @@ pub struct Flags {
     pub c: u8,
     pub z: u8,
     pub i: u8,
-    pub d: u8,
     pub b: u8,
     pub v: u8,
     pub n: u8,
@@ -26,7 +25,7 @@ impl fmt::Debug for Flags {
         s.push(if self.v == 0 { '_' } else { 'V' });
         s.push('-');
         s.push(if self.b == 0 { '_' } else { 'B' });
-        s.push(if self.d == 0 { '_' } else { 'D' });
+        s.push('-');
         s.push(if self.i == 0 { '_' } else { 'I' });
         s.push(if self.z == 0 { '_' } else { 'Z' });
         s.push(if self.c == 0 { '_' } else { 'C' });
@@ -40,7 +39,6 @@ impl Flags {
             c: 0,
             z: 0,
             i: 0,
-            d: 0,
             b: 0,
             v: 0,
             n: 0,
@@ -50,7 +48,6 @@ impl Flags {
         self.c = 0;
         self.z = 0;
         self.i = 0;
-        self.d = 0;
         self.b = 0;
         self.v = 0;
         self.n = 0;
@@ -59,6 +56,17 @@ impl Flags {
         self.z = z(byte);
         self.n = n(byte);
         byte
+    }
+    pub fn unpack(&mut self, byte: u8) {
+        self.c = 0;
+        self.z = 0;
+        self.i = 0;
+        self.b = 0;
+        self.v = 0;
+        self.n = 0;
+    }
+    pub fn pack(&self) -> u8 {
+        self.c | self.z | self.i | self.b | self.v | self.n
     }
 }
 

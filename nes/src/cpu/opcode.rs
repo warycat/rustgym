@@ -46,6 +46,13 @@ trait Opcode {
     fn x8a(&mut self);
     fn x9a(&mut self);
     fn x98(&mut self);
+
+    fn x4c(&mut self);
+    fn x6c(&mut self);
+    fn x20(&mut self);
+    fn x60(&mut self);
+    fn x00(&mut self);
+    fn x40(&mut self);
 }
 
 macro_rules! instruction_read {
@@ -140,6 +147,13 @@ impl Opcode for Cpu {
     instruction!(x8a, txa);
     instruction!(x9a, txs);
     instruction!(x98, tya);
+
+    instruction!(x4c, jmpa);
+    instruction!(x6c, jmpi);
+    instruction!(x20, jsr);
+    instruction!(x60, rts);
+    instruction!(x00, brk);
+    instruction!(x40, rti);
 }
 
 #[test]

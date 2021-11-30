@@ -1,5 +1,7 @@
+use crate::base::*;
 use crate::cpu::flags::*;
 use crate::cpu::Cpu;
+use crate::iomap::IoMap;
 
 pub trait Instruction {
     // LoaD Accumulator
@@ -29,15 +31,18 @@ pub trait Instruction {
     // Transfer X to Stack ptr
     fn txs(&mut self);
 
-    // jump
-    fn jmp_abs(&mut self) {}
-    fn jmp_ind(&mut self) {}
-    // jump to subroutine
-    fn jsr(&mut self) {}
-    // return from subroutine
-    fn rts(&mut self) {}
-    // return from interrupt
-    fn rti(&mut self) {}
+    // JuMP absolute
+    fn jmpa(&mut self);
+    // JuMP indirect
+    fn jmpi(&mut self);
+    // Jump to SubRoutine
+    fn jsr(&mut self);
+    // ReTurn from Subroutine
+    fn rts(&mut self);
+    // BReaK
+    fn brk(&mut self);
+    // ReTurn from Interrupt
+    fn rti(&mut self);
 
     // branch if not equal
     fn bne(&mut self) {}
@@ -142,8 +147,6 @@ pub trait Instruction {
     fn dop(&mut self) {}
     fn top(&mut self) {}
 
-    // software break (interrupt)
-    fn brk(&mut self) {}
     fn jam(&mut self) {}
 
     // no operation
@@ -188,16 +191,33 @@ impl Instruction for Cpu {
     fn txs(&mut self) {
         self.s = self.x;
     }
-
-    // jump
-    fn jmp_abs(&mut self) {}
-    fn jmp_ind(&mut self) {}
-    // jump to subroutine
-    fn jsr(&mut self) {}
-    // return from subroutine
-    fn rts(&mut self) {}
-    // return from interrupt
-    fn rti(&mut self) {}
+    fn jmpa(&mut self) {
+        self.pc = self.peek16(self.pc);
+    }
+    fn jmpi(&mut self) {
+        let addr = self.peek16(self.pc);
+        let lo = self.peek8(addr) as u16;
+        let hi = self.peek8(addr & 0xFF00 | (addr + 1) & 0x00FF) as u16;
+        self.pc = lo | hi << 8;
+    }
+    fn jsr(&mut self) {
+        self.push16(self.pc + 1);
+        self.pc = self.peek16(self.pc);
+    }
+    fn rts(&mut self) {
+        self.pc = self.pop16() + 1;
+    }
+    fn brk(&mut self) {
+        self.push16(self.pc + 1);
+        self.push8(self.flags.pack() | B);
+        self.flags.i = I;
+        self.pc = self.peek16(IRQ_VECTOR);
+    }
+    fn rti(&mut self) {
+        let packed = self.pop8();
+        self.flags.unpack(packed);
+        self.pc = self.pop16();
+    }
 
     // branch if not equal
     fn bne(&mut self) {}
@@ -303,8 +323,6 @@ impl Instruction for Cpu {
     fn dop(&mut self) {}
     fn top(&mut self) {}
 
-    // software break (interrupt)
-    fn brk(&mut self) {}
     fn jam(&mut self) {}
 
     // no operation
