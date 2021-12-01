@@ -1,6 +1,6 @@
-pub type cstring = *const u8;
-pub type wcstring = *const char;
-pub type ibool = u32;
+pub type Cstring = *const u8;
+pub type Wcstring = *const char;
+pub type Ibool = u32;
 pub type Data = u32;
 pub type Address = u32;
 pub type Cycle = u32;
@@ -92,52 +92,52 @@ const RESULT_WARN_SAVEDATA_LOST: Result = Result::Ok(6);
 const RESULT_WARN_DATA_REPLACED: Result = Result::Ok(8);
 
 pub enum Region {
-    REGION_NTSC,
-    REGION_PAL,
+    NTSC,
+    PAL,
 }
 
 pub enum System {
-    SYSTEM_NES_NTSC,
-    SYSTEM_NES_PAL,
-    SYSTEM_NES_PAL_A,
-    SYSTEM_NES_PAL_B,
-    SYSTEM_FAMICOM,
-    SYSTEM_DENDY,
-    SYSTEM_VS_UNISYSTEM,
-    SYSTEM_VS_DUALSYSTEM,
-    SYSTEM_PLAYCHOICE_10,
+    NTSC,
+    PAL,
+    PAL_A,
+    PAL_B,
+    FAMICOM,
+    DENDY,
+    VS_UNISYSTEM,
+    VS_DUALSYSTEM,
+    PLAYCHOICE_10,
 }
 
 pub enum FavoredSystem {
-    FAVORED_NES_NTSC,
-    FAVORED_NES_PAL,
-    FAVORED_FAMICOM,
-    FAVORED_DENDY,
+    NTSC,
+    PAL,
+    FAMICOM,
+    DENDY,
 }
 
 pub enum CpuModel {
-    CPU_RP2A03,
-    CPU_RP2A07,
-    CPU_DENDY,
+    RP2A03,
+    RP2A07,
+    DENDY,
 }
 
 pub enum PpuModel {
-    PPU_RP2C02,
-    PPU_RP2C03B,
-    PPU_RP2C03G,
-    PPU_RP2C04_0001,
-    PPU_RP2C04_0002,
-    PPU_RP2C04_0003,
-    PPU_RP2C04_0004,
-    PPU_RC2C03B,
-    PPU_RC2C03C,
-    PPU_RC2C05_01,
-    PPU_RC2C05_02,
-    PPU_RC2C05_03,
-    PPU_RC2C05_04,
-    PPU_RC2C05_05,
-    PPU_RP2C07,
-    PPU_DENDY,
+    RP2C02,
+    RP2C03B,
+    RP2C03G,
+    RP2C04_0001,
+    RP2C04_0002,
+    RP2C04_0003,
+    RP2C04_0004,
+    RC2C03B,
+    RC2C03C,
+    RC2C05_01,
+    RC2C05_02,
+    RC2C05_03,
+    RC2C05_04,
+    RC2C05_05,
+    RP2C07,
+    DENDY,
 }
 
 pub const CLK_M2_MUL: u32 = 6;

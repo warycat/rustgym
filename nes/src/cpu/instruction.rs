@@ -2,6 +2,7 @@ use crate::base::*;
 use crate::cpu::flags::*;
 use crate::cpu::Cpu;
 use crate::iomap::IoMap;
+use std::num::Wrapping;
 
 pub trait Instruction {
     // LoaD Accumulator
@@ -44,113 +45,113 @@ pub trait Instruction {
     // ReTurn from Interrupt
     fn rti(&mut self);
 
-    // branch if not equal
-    fn bne(&mut self) {}
-    // branch if equal
-    fn beq(&mut self) {}
-    // branch if negative
-    fn bmi(&mut self) {}
-    // branch if plus
-    fn bpl(&mut self) {}
-    // branch if carry set
-    fn bcs(&mut self) {}
-    // branch if carry clear
-    fn bcc(&mut self) {}
-    // branch if overflow set
-    fn bvs(&mut self) {}
-    // branch if overflow clear
-    fn bvc(&mut self) {}
+    // ADd with Carry
+    fn adc(&mut self, byte: u8);
+    // SuBtract with Carry
+    fn sbc(&mut self, byte: u8);
+    // bitwise AND with accumulator
+    fn and(&mut self, byte: u8);
+    // bitwise OR with Accumulator
+    fn ora(&mut self, byte: u8);
+    // bitwise Exclusive OR
+    fn eor(&mut self, byte: u8);
+    // test BITs
+    fn bit(&mut self, byte: u8);
+    // CoMPare accumulator
+    fn cmp(&mut self, byte: u8);
+    // ComPare X register
+    fn cpx(&mut self, byte: u8);
+    // ComPare Y register
+    fn cpy(&mut self, byte: u8);
 
-    // add memory and carry to accumulator
-    fn adc(&mut self) {}
-    // subtract memory with borrow from accumulator
-    fn sbc(&mut self) {}
-    // add accumulator with memory
-    fn and(&mut self) {}
-    // or accumulator with memory
-    fn ora(&mut self) {}
-    // exclusive-or accumulator with memory
-    fn eor(&mut self) {}
-    // test memory bits against accumulator
-    fn bit(&mut self) {}
-    // compare accumulator with memory
-    fn cmp(&mut self) {}
-    // compare index register x with memory
-    fn cpx(&mut self) {}
-    // compare index register y with memory
-    fn cpy(&mut self) {}
+    // CLear Carry
+    fn clc(&mut self);
+    // SEt Carry
+    fn sec(&mut self);
+    // SEt Interrupt
+    fn sei(&mut self);
+    // CLear Interrupt
+    fn cli(&mut self);
+    // CLear oVerflow
+    fn clv(&mut self);
+    // CLear Decimal
+    fn cld(&mut self);
+    // SEt Decimal
+    fn sed(&mut self);
+
+    // Branch on Not Equal
+    fn bne(&mut self);
+    // Branch on EQual
+    fn beq(&mut self);
+    // Branch on MInus
+    fn bmi(&mut self);
+    // Branch on PLus
+    fn bpl(&mut self);
+    // Branch on Carry Set
+    fn bcs(&mut self);
+    // Branch on Carry Clear
+    fn bcc(&mut self);
+    // Branch on oVerflow Set
+    fn bvs(&mut self);
+    // Branch on oVerflow Clear
+    fn bvc(&mut self);
 
     // shift memory or accumulator left one bit
-    fn asl(&mut self) {}
+    fn asl(&mut self);
     // logical shift memory or accumulator right
-    fn lsr(&mut self) {}
+    fn lsr(&mut self);
     // rotate memory or accumulator left one bit
-    fn rol(&mut self) {}
+    fn rol(&mut self);
     // rotate memory or accumulator right one bit
-    fn ror(&mut self) {}
+    fn ror(&mut self);
     // decrement
-    fn dec(&mut self) {}
+    fn dec(&mut self);
     // increment
-    fn inc(&mut self) {}
+    fn inc(&mut self);
     // decrement index register x
-    fn dex(&mut self) {}
+    fn dex(&mut self);
     // decrement index register y
-    fn dey(&mut self) {}
+    fn dey(&mut self);
     // increment index register x
-    fn inx(&mut self) {}
+    fn inx(&mut self);
     // increment index register y
-    fn iny(&mut self) {}
-
-    // clear carry flag
-    fn clc(&mut self) {}
-    // set carry flag
-    fn sec(&mut self) {}
-    // clear decimal mode flag
-    fn cld(&mut self) {}
-    // set decimal mode flag
-    fn sed(&mut self) {}
-    // clear overflow flag
-    fn clv(&mut self) {}
-    // set interrupt-disable flag
-    fn sei(&mut self) {}
-    // clear interrupt-disable flag
-    fn cli(&mut self) {}
+    fn iny(&mut self);
 
     // push accumulator onto stack
-    fn pha(&mut self) {}
+    fn pha(&mut self);
     // push status flags onto stack
-    fn php(&mut self) {}
+    fn php(&mut self);
     // pull accumulator from stack
-    fn pla(&mut self) {}
+    fn pla(&mut self);
     // pull status flags from stack
-    fn plp(&mut self) {}
+    fn plp(&mut self);
 
-    fn anc(&mut self) {}
-    fn ane(&mut self) {}
-    fn arr(&mut self) {}
-    fn asr(&mut self) {}
-    fn dcp(&mut self) {}
-    fn lsb(&mut self) {}
-    fn las(&mut self) {}
-    fn lax(&mut self) {}
-    fn lxa(&mut self) {}
-    fn rla(&mut self) {}
-    fn rra(&mut self) {}
-    fn sax(&mut self) {}
-    fn sbx(&mut self) {}
-    fn sha(&mut self) {}
-    fn shs(&mut self) {}
-    fn shx(&mut self) {}
-    fn shy(&mut self) {}
-    fn slo(&mut self) {}
-    fn sre(&mut self) {}
-    fn dop(&mut self) {}
-    fn top(&mut self) {}
+    fn anc(&mut self);
+    fn ane(&mut self);
+    fn arr(&mut self);
+    fn asr(&mut self);
+    fn dcp(&mut self);
+    fn lsb(&mut self);
+    fn las(&mut self);
+    fn lax(&mut self);
+    fn lxa(&mut self);
+    fn rla(&mut self);
+    fn rra(&mut self);
+    fn sax(&mut self);
+    fn sbx(&mut self);
+    fn sha(&mut self);
+    fn shs(&mut self);
+    fn shx(&mut self);
+    fn shy(&mut self);
+    fn slo(&mut self);
+    fn sre(&mut self);
+    fn dop(&mut self);
+    fn top(&mut self);
 
-    fn jam(&mut self) {}
+    fn jam(&mut self);
 
     // no operation
-    fn nop(&mut self) {}
+    fn nop(&mut self);
 }
 
 impl Instruction for Cpu {
@@ -172,7 +173,6 @@ impl Instruction for Cpu {
     fn sty(&mut self) -> u8 {
         self.y
     }
-
     fn tax(&mut self) {
         self.x = self.flags.set_zn(self.a);
     }
@@ -218,8 +218,70 @@ impl Instruction for Cpu {
         self.flags.unpack(packed);
         self.pc = self.pop16();
     }
+    fn adc(&mut self, byte: u8) {
+        let word = self.a as u16 + byte as u16 + self.flags.c as u16;
+        let res = word as u8;
+        self.flags.v = overflow(self.a, byte, res);
+        self.flags.c = carry16(word, 0x100);
+        self.a = self.flags.set_zn(res);
+    }
+    fn sbc(&mut self, byte: u8) {
+        self.adc(byte ^ 0xFF)
+    }
+    fn and(&mut self, byte: u8) {
+        let byte = self.a & byte;
+        self.a = self.flags.set_zn(byte);
+    }
+    fn ora(&mut self, byte: u8) {
+        let byte = self.a | byte;
+        self.a = self.flags.set_zn(byte);
+    }
+    fn eor(&mut self, byte: u8) {
+        let byte = self.a | byte;
+        self.a = self.flags.set_zn(byte);
+    }
+    fn bit(&mut self, byte: u8) {
+        let byte = self.a & byte;
+        self.flags.set_zn(byte);
+        self.flags.v = byte & V;
+    }
+    fn cmp(&mut self, byte: u8) {
+        let word = (Wrapping(self.a as u16) - Wrapping(byte as u16)).0;
+        self.flags.c = carry16(!word, 0x100);
+        self.flags.set_zn(word as u8);
+    }
+    fn cpx(&mut self, byte: u8) {
+        let word = (Wrapping(self.x as u16) - Wrapping(byte as u16)).0;
+        self.flags.c = carry16(!word, 0x100);
+        self.flags.set_zn(word as u8);
+    }
+    fn cpy(&mut self, byte: u8) {
+        let word = (Wrapping(self.y as u16) - Wrapping(byte as u16)).0;
+        self.flags.c = carry16(!word, 0x100);
+        self.flags.set_zn(word as u8);
+    }
+    fn clc(&mut self) {
+        self.flags.c = 0;
+    }
+    fn sec(&mut self) {
+        self.flags.c = C;
+    }
+    fn cli(&mut self) {
+        self.flags.i = 0;
+    }
+    fn sei(&mut self) {
+        self.flags.i = I;
+    }
+    fn clv(&mut self) {
+        self.flags.v = 0;
+    }
+    fn cld(&mut self) {
+        self.flags.d = 0;
+    }
+    fn sed(&mut self) {
+        self.flags.d = D;
+    }
 
-    // branch if not equal
     fn bne(&mut self) {}
     // branch if equal
     fn beq(&mut self) {}
@@ -235,25 +297,6 @@ impl Instruction for Cpu {
     fn bvs(&mut self) {}
     // branch if overflow clear
     fn bvc(&mut self) {}
-
-    // add memory and carry to accumulator
-    fn adc(&mut self) {}
-    // subtract memory with borrow from accumulator
-    fn sbc(&mut self) {}
-    // add accumulator with memory
-    fn and(&mut self) {}
-    // or accumulator with memory
-    fn ora(&mut self) {}
-    // exclusive-or accumulator with memory
-    fn eor(&mut self) {}
-    // test memory bits against accumulator
-    fn bit(&mut self) {}
-    // compare accumulator with memory
-    fn cmp(&mut self) {}
-    // compare index register x with memory
-    fn cpx(&mut self) {}
-    // compare index register y with memory
-    fn cpy(&mut self) {}
 
     // shift memory or accumulator left one bit
     fn asl(&mut self) {}
@@ -275,21 +318,6 @@ impl Instruction for Cpu {
     fn inx(&mut self) {}
     // increment index register y
     fn iny(&mut self) {}
-
-    // clear carry flag
-    fn clc(&mut self) {}
-    // set carry flag
-    fn sec(&mut self) {}
-    // clear decimal mode flag
-    fn cld(&mut self) {}
-    // set decimal mode flag
-    fn sed(&mut self) {}
-    // clear overflow flag
-    fn clv(&mut self) {}
-    // set interrupt-disable flag
-    fn sei(&mut self) {}
-    // clear interrupt-disable flag
-    fn cli(&mut self) {}
 
     // push accumulator onto stack
     fn pha(&mut self) {}
