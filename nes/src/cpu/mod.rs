@@ -5,13 +5,9 @@ mod opcode;
 
 use crate::base::*;
 use crate::bus::*;
-use crate::hook::*;
+use crate::header::Header;
 use crate::iomap::IoMap;
-use crate::sound::Sound;
-use crate::state::SaveLoad;
-use addressing::Addressing;
 use flags::Flags;
-use instruction::Instruction;
 use opcode::*;
 
 pub const CYCLE_MAX: u32 = !0;
@@ -119,6 +115,11 @@ impl Cpu {
         let bytes = [self.pop8(), self.pop8()];
         u16::from_le_bytes(bytes)
     }
+    pub fn exec(&mut self) {
+        let opcode = Opcode(self.fetch8());
+        println!("{:x} {}", self.pc, opcode.name());
+        opcode.exec(self);
+    }
 }
 
 impl IoMap for Cpu {
@@ -132,8 +133,8 @@ impl IoMap for Cpu {
 
 #[test]
 fn test() {
+    let nestest = include_bytes!("../../carts/nestest.nes");
+    let header = Header::new(nestest);
+    dbg!(header);
     let mut cpu = Cpu::new();
-    let val = 0x0002;
-    cpu.push16(val);
-    assert_eq!(cpu.pop16(), val);
 }

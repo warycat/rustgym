@@ -1,4 +1,3 @@
-use crate::cpu::Cpu;
 use crate::iomap::IoMap;
 use crate::ram::*;
 

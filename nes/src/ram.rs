@@ -26,9 +26,9 @@ impl fmt::Debug for Ram {
 
 impl IoMap for Ram {
     fn peek8(&self, address: u16) -> u8 {
-        self.bytes[address as usize & 0x7ff]
+        self.bytes[address as usize & 0x7FF]
     }
     fn poke8(&mut self, address: u16, byte: u8) {
-        self.bytes[address as usize & 0x7ff] = byte;
+        self.bytes[address as usize & 0x7FF] = byte;
     }
 }

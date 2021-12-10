@@ -1,4 +1,3 @@
-use bincode;
 use serde::{Deserialize, Serialize};
 use std::env;
 use std::io;

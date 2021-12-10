@@ -4,98 +4,106 @@ pub type Ibool = u32;
 pub type Data = u32;
 pub type Address = u32;
 pub type Cycle = u32;
-pub type Result = std::result::Result<i32, i32>;
 
-/**
- * NTSC/PAL region mismatch.
- */
-const RESULT_ERR_WRONG_MODE: Result = Result::Err(-13);
-/**
- * Missing FDS BIOS.
- */
-const RESULT_ERR_MISSING_BIOS: Result = Result::Err(-12);
-/**
- * Unsupported or malformed mapper.
- */
-const RESULT_ERR_UNSUPPORTED_MAPPER: Result = Result::Err(-11);
-/**
- * Vs DualSystem is unsupported.
- */
-const RESULT_ERR_UNSUPPORTED_VSSYSTEM: Result = Result::Err(-10);
-/**
- * File format version is no longer supported.
- */
-const RESULT_ERR_UNSUPPORTED_FILE_VERSION: Result = Result::Err(-9);
-/**
- * Unsupported operation.
- */
-const RESULT_ERR_UNSUPPORTED: Result = Result::Err(-8);
-/**
- * Invalid CRC checksum.
- */
-const RESULT_ERR_INVALID_CRC: Result = Result::Err(-7);
-/**
- * Corrupt file.
- */
-const RESULT_ERR_CORRUPT_FILE: Result = Result::Err(-6);
-/**
- * Invalid file.
- */
-const RESULT_ERR_INVALID_FILE: Result = Result::Err(-5);
-/**
- * Invalid parameter(s).
- */
-const RESULT_ERR_INVALID_PARAM: Result = Result::Err(-4);
-/**
- * System not ready.
- */
-const RESULT_ERR_NOT_READY: Result = Result::Err(-3);
-/**
- * Out of memory.
- */
-const RESULT_ERR_OUT_OF_MEMORY: Result = Result::Err(-2);
-/**
- * Generic error.
- */
-const RESULT_ERR_GENERIC: Result = Result::Err(-1);
-/**
- * Success.
- */
-const RESULT_OK: Result = Result::Ok(0);
-/**
- * Success but operation had no effect.
- */
-const RESULT_NOP: Result = Result::Ok(1);
-/**
- * Success but image dump may be bad.
- */
-const RESULT_WARN_BAD_DUMP: Result = Result::Ok(2);
-/**
- * Success but PRG-ROM may be bad.
- */
-const RESULT_WARN_BAD_PROM: Result = Result::Ok(3);
-/**
- * Success but CHR-ROM may be bad.
- */
-const RESULT_WARN_BAD_CROM: Result = Result::Ok(4);
-/**
- * Success but file header may have incorrect data.
- */
-const RESULT_WARN_BAD_FILE_HEADER: Result = Result::Ok(5);
-/**
- * Success but save data has been lost.
- */
-const RESULT_WARN_SAVEDATA_LOST: Result = Result::Ok(6);
-/**
- * Success but data may have been replaced.
- */
-const RESULT_WARN_DATA_REPLACED: Result = Result::Ok(8);
+#[derive(Debug)]
+pub enum NesError {
+    /**
+     * NTSC/PAL region mismatch.
+     */
+    WRONG_MODE,
+    /**
+     * Missing FDS BIOS.
+     */
+    MISSING_BIOS,
+    /**
+     * Unsupported or malformed mapper.
+     */
+    UNSUPPORTED_MAPPER,
+    /**
+     * Vs DualSystem is unsupported.
+     */
+    UNSUPPORTED_VSSYSTEM,
+    /**
+     * File format version is no longer supported.
+     */
+    UNSUPPORTED_FILE_VERSION,
+    /**
+     * Unsupported operation.
+     */
+    UNSUPPORTED,
+    /**
+     * Invalid CRC checksum.
+     */
+    INVALID_CRC,
+    /**
+     * Corrupt file.
+     */
+    CORRUPT_FILE,
+    /**
+     * Invalid file.
+     */
+    INVALID_FILE,
+    /**
+     * Invalid parameter(s).
+     */
+    INVALID_PARAM,
+    /**
+     * System not ready.
+     */
+    NOT_READY,
+    /**
+     * Out of memory.
+     */
+    OUT_OF_MEMORY,
+    /**
+     * Generic error.
+     */
+    GENERIC,
+}
 
+#[derive(Debug)]
+pub enum NesWarning {
+    /**
+     * Success.
+     */
+    OK,
+    /**
+     * Success but operation had no effect.
+     */
+    NOP,
+    /**
+     * Success but image dump may be bad.
+     */
+    BAD_DUMP,
+    /**
+     * Success but PRG-ROM may be bad.
+     */
+    BAD_PROM,
+    /**
+     * Success but CHR-ROM may be bad.
+     */
+    BAD_CROM,
+    /**
+     * Success but file header may have incorrect data.
+     */
+    BAD_FILE_HEADER,
+    /**
+     * Success but save data has been lost.
+     */
+    SAVEDATA_LOST,
+    /**
+     * Success but data may have been replaced.
+     */
+    DATA_REPLACED,
+}
+
+#[derive(Debug)]
 pub enum Region {
     NTSC,
     PAL,
 }
 
+#[derive(Debug)]
 pub enum System {
     NTSC,
     PAL,
@@ -108,6 +116,7 @@ pub enum System {
     PLAYCHOICE_10,
 }
 
+#[derive(Debug)]
 pub enum FavoredSystem {
     NTSC,
     PAL,
@@ -115,12 +124,14 @@ pub enum FavoredSystem {
     DENDY,
 }
 
+#[derive(Debug)]
 pub enum CpuModel {
     RP2A03,
     RP2A07,
     DENDY,
 }
 
+#[derive(Debug)]
 pub enum PpuModel {
     RP2C02,
     RP2C03B,
@@ -138,6 +149,13 @@ pub enum PpuModel {
     RC2C05_05,
     RP2C07,
     DENDY,
+}
+
+#[derive(Debug)]
+pub enum Mirroring {
+    HORIZONTAL,
+    VERTICAL,
+    FOURSCREEN,
 }
 
 pub const CLK_M2_MUL: u32 = 6;

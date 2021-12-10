@@ -18,7 +18,7 @@ pub fn solve(reader: &mut dyn BufRead, writer: &mut dyn Write) {
     let mut values1: HashMap<Tok, u16> = HashMap::new();
     let mut values2: HashMap<Tok, u16> = HashMap::new();
     for line in it {
-        let mut tokens: Vec<Tok> = line.split_whitespace().map(|s| parse_token(s)).collect();
+        let mut tokens: Vec<Tok> = line.split_whitespace().map(parse_token).collect();
         let last = tokens.pop().unwrap();
         tokens.pop();
         stmt.insert(last.clone(), tokens.to_vec());

@@ -33,11 +33,9 @@ pub trait Instruction {
     fn txs(&mut self);
 
     // JuMP absolute
-    fn jmpa(&mut self);
-    // JuMP indirect
-    fn jmpi(&mut self);
+    fn jmp(&mut self, word: u16);
     // Jump to SubRoutine
-    fn jsr(&mut self);
+    fn jsr(&mut self, word: u16);
     // ReTurn from Subroutine
     fn rts(&mut self);
     // BReaK
@@ -79,50 +77,51 @@ pub trait Instruction {
     // SEt Decimal
     fn sed(&mut self);
 
-    // Branch on Not Equal
-    fn bne(&mut self);
-    // Branch on EQual
-    fn beq(&mut self);
-    // Branch on MInus
-    fn bmi(&mut self);
     // Branch on PLus
-    fn bpl(&mut self);
-    // Branch on Carry Set
-    fn bcs(&mut self);
-    // Branch on Carry Clear
-    fn bcc(&mut self);
-    // Branch on oVerflow Set
-    fn bvs(&mut self);
+    fn bpl(&mut self, byte: i8);
+    // Branch on MInus
+    fn bmi(&mut self, byte: i8);
     // Branch on oVerflow Clear
-    fn bvc(&mut self);
+    fn bvc(&mut self, byte: i8);
+    // Branch on oVerflow Set
+    fn bvs(&mut self, byte: i8);
+    // Branch on Carry Clear
+    fn bcc(&mut self, byte: i8);
+    // Branch on Carry Set
+    fn bcs(&mut self, byte: i8);
+    // Branch on EQual
+    fn beq(&mut self, byte: i8);
+    // Branch on Not Equal
+    fn bne(&mut self, byte: i8);
 
-    // shift memory or accumulator left one bit
-    fn asl(&mut self);
-    // logical shift memory or accumulator right
-    fn lsr(&mut self);
-    // rotate memory or accumulator left one bit
-    fn rol(&mut self);
-    // rotate memory or accumulator right one bit
-    fn ror(&mut self);
-    // decrement
-    fn dec(&mut self);
-    // increment
-    fn inc(&mut self);
-    // decrement index register x
+    // Arithmetic Shift Left
+    fn asl(&mut self, byte: u8) -> u8;
+    // Logical Shift Right
+    fn lsr(&mut self, byte: u8) -> u8;
+    // ROtate Left
+    fn rol(&mut self, byte: u8) -> u8;
+    // ROtate Right
+    fn ror(&mut self, byte: u8) -> u8;
+    // DECrement memory
+    fn dec(&mut self, byte: u8) -> u8;
+    // INCrement memory
+    fn inc(&mut self, byte: u8) -> u8;
+
+    // DEcrement X
     fn dex(&mut self);
-    // decrement index register y
-    fn dey(&mut self);
-    // increment index register x
+    // INcrement X
     fn inx(&mut self);
-    // increment index register y
+    // DEcrement Y
+    fn dey(&mut self);
+    // INcrement Y
     fn iny(&mut self);
 
-    // push accumulator onto stack
+    // PusH Accumulator
     fn pha(&mut self);
+    // PuLl Accumulator
+    fn pla(&mut self);
     // push status flags onto stack
     fn php(&mut self);
-    // pull accumulator from stack
-    fn pla(&mut self);
     // pull status flags from stack
     fn plp(&mut self);
 
@@ -149,8 +148,6 @@ pub trait Instruction {
     fn top(&mut self);
 
     fn jam(&mut self);
-
-    // no operation
     fn nop(&mut self);
 }
 
@@ -191,18 +188,12 @@ impl Instruction for Cpu {
     fn txs(&mut self) {
         self.s = self.x;
     }
-    fn jmpa(&mut self) {
-        self.pc = self.peek16(self.pc);
+    fn jmp(&mut self, word: u16) {
+        self.pc = word;
     }
-    fn jmpi(&mut self) {
-        let addr = self.peek16(self.pc);
-        let lo = self.peek8(addr) as u16;
-        let hi = self.peek8(addr & 0xFF00 | (addr + 1) & 0x00FF) as u16;
-        self.pc = lo | hi << 8;
-    }
-    fn jsr(&mut self) {
-        self.push16(self.pc + 1);
-        self.pc = self.peek16(self.pc);
+    fn jsr(&mut self, word: u16) {
+        self.push16(word - 1);
+        self.pc = word;
     }
     fn rts(&mut self) {
         self.pc = self.pop16() + 1;
@@ -282,52 +273,105 @@ impl Instruction for Cpu {
         self.flags.d = D;
     }
 
-    fn bne(&mut self) {}
-    // branch if equal
-    fn beq(&mut self) {}
-    // branch if negative
-    fn bmi(&mut self) {}
-    // branch if plus
-    fn bpl(&mut self) {}
-    // branch if carry set
-    fn bcs(&mut self) {}
-    // branch if carry clear
-    fn bcc(&mut self) {}
-    // branch if overflow set
-    fn bvs(&mut self) {}
-    // branch if overflow clear
-    fn bvc(&mut self) {}
+    fn bpl(&mut self, byte: i8) {
+        if self.flags.n == 0 {
+            self.pc = self.pc.wrapping_add(byte as u16);
+        }
+    }
+    fn bmi(&mut self, byte: i8) {
+        if self.flags.n == N {
+            self.pc = self.pc.wrapping_add(byte as u16);
+        }
+    }
+    fn bvc(&mut self, byte: i8) {
+        if self.flags.v == 0 {
+            self.pc = self.pc.wrapping_add(byte as u16);
+        }
+    }
+    fn bvs(&mut self, byte: i8) {
+        if self.flags.v == V {
+            self.pc = self.pc.wrapping_add(byte as u16);
+        }
+    }
+    fn bcc(&mut self, byte: i8) {
+        if self.flags.c == 0 {
+            self.pc = self.pc.wrapping_add(byte as u16);
+        }
+    }
+    fn bcs(&mut self, byte: i8) {
+        if self.flags.c == C {
+            self.pc = self.pc.wrapping_add(byte as u16);
+        }
+    }
+    fn bne(&mut self, byte: i8) {
+        if self.flags.z == 0 {
+            self.pc = self.pc.wrapping_add(byte as u16);
+        }
+    }
+    fn beq(&mut self, byte: i8) {
+        if self.flags.z == Z {
+            self.pc = self.pc.wrapping_add(byte as u16);
+        }
+    }
+    fn asl(&mut self, byte: u8) -> u8 {
+        self.flags.c = carry8(byte, 0x80);
+        self.flags.set_zn(byte << 1)
+    }
+    fn lsr(&mut self, byte: u8) -> u8 {
+        self.flags.c = carry8(byte, 0x01);
+        self.flags.set_zn(byte >> 1)
+    }
+    fn rol(&mut self, byte: u8) -> u8 {
+        let c = self.flags.c;
+        self.flags.c = carry8(byte, 0x80);
+        self.flags.set_zn(byte << 1 | c)
+    }
+    fn ror(&mut self, byte: u8) -> u8 {
+        let c = self.flags.c;
+        self.flags.c = carry8(byte, 0x01);
+        self.flags.set_zn(byte >> 1 | c << 7)
+    }
+    fn dec(&mut self, byte: u8) -> u8 {
+        let byte = byte.wrapping_sub(1);
+        self.flags.set_zn(byte)
+    }
+    fn inc(&mut self, byte: u8) -> u8 {
+        let byte = byte.wrapping_add(1);
+        self.flags.set_zn(byte)
+    }
+    fn dex(&mut self) {
+        let byte = self.x.wrapping_sub(1);
+        self.x = self.flags.set_zn(byte);
+    }
+    fn dey(&mut self) {
+        let byte = self.y.wrapping_sub(1);
+        self.y = self.flags.set_zn(byte);
+    }
+    fn inx(&mut self) {
+        let byte = self.x.wrapping_add(1);
+        self.x = self.flags.set_zn(byte);
+    }
+    fn iny(&mut self) {
+        let byte = self.y.wrapping_add(1);
+        self.y = self.flags.set_zn(byte);
+    }
 
-    // shift memory or accumulator left one bit
-    fn asl(&mut self) {}
-    // logical shift memory or accumulator right
-    fn lsr(&mut self) {}
-    // rotate memory or accumulator left one bit
-    fn rol(&mut self) {}
-    // rotate memory or accumulator right one bit
-    fn ror(&mut self) {}
-    // decrement
-    fn dec(&mut self) {}
-    // increment
-    fn inc(&mut self) {}
-    // decrement index register x
-    fn dex(&mut self) {}
-    // decrement index register y
-    fn dey(&mut self) {}
-    // increment index register x
-    fn inx(&mut self) {}
-    // increment index register y
-    fn iny(&mut self) {}
-
-    // push accumulator onto stack
-    fn pha(&mut self) {}
-    // push status flags onto stack
-    fn php(&mut self) {}
-    // pull accumulator from stack
-    fn pla(&mut self) {}
-    // pull status flags from stack
-    fn plp(&mut self) {}
-    // transfer stack pointer to index register x
+    fn pha(&mut self) {
+        let byte = self.a;
+        self.push8(byte);
+    }
+    fn pla(&mut self) {
+        let byte = self.pop8();
+        self.a = self.flags.set_zn(byte);
+    }
+    fn php(&mut self) {
+        let byte = self.flags.pack();
+        self.push8(byte);
+    }
+    fn plp(&mut self) {
+        let byte = self.pop8();
+        self.flags.unpack(byte);
+    }
 
     fn anc(&mut self) {}
     fn ane(&mut self) {}

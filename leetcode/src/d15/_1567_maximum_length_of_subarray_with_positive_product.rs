@@ -3,7 +3,7 @@ struct Solution;
 impl Solution {
     fn get_max_len(nums: Vec<i32>) -> i32 {
         nums.split(|&x| x == 0)
-            .map(|v| Self::max_length(v))
+            .map(Self::max_length)
             .max()
             .unwrap_or(0)
     }

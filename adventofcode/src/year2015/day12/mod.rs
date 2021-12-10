@@ -19,7 +19,7 @@ fn dfs1(val: &Value) -> i64 {
     match val {
         Value::Number(num) => num.as_i64().unwrap(),
         Value::Object(obj) => obj.iter().map(|(_, v)| dfs1(v)).sum(),
-        Value::Array(arr) => arr.iter().map(|v| dfs1(v)).sum(),
+        Value::Array(arr) => arr.iter().map(dfs1).sum(),
         _ => 0,
     }
 }
