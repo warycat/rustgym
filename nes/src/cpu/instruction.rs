@@ -125,26 +125,26 @@ pub trait Instruction {
     // pull status flags from stack
     fn plp(&mut self);
 
-    fn anc(&mut self);
-    fn ane(&mut self);
-    fn arr(&mut self);
-    fn asr(&mut self);
-    fn dcp(&mut self);
-    fn lsb(&mut self);
-    fn las(&mut self);
-    fn lax(&mut self);
-    fn lxa(&mut self);
-    fn rla(&mut self);
-    fn rra(&mut self);
-    fn sax(&mut self);
-    fn sbx(&mut self);
-    fn sha(&mut self);
-    fn shs(&mut self);
-    fn shx(&mut self);
-    fn shy(&mut self);
-    fn slo(&mut self);
-    fn sre(&mut self);
-    fn dop(&mut self);
+    fn anc(&mut self, byte: u8);
+    fn ane(&mut self, byte: u8);
+    fn arr(&mut self, byte: u8);
+    fn asr(&mut self, byte: u8);
+    fn dcp(&mut self, byte: u8) -> u8;
+    fn isb(&mut self, byte: u8) -> u8;
+    fn las(&mut self, byte: u8);
+    fn lax(&mut self, byte: u8);
+    fn lxa(&mut self, byte: u8);
+    fn rla(&mut self, byte: u8) -> u8;
+    fn rra(&mut self, byte: u8) -> u8;
+    fn sax(&mut self) -> u8;
+    fn sbx(&mut self, byte: u8);
+    fn sha(&mut self) -> u8;
+    fn shs(&mut self) -> u8;
+    fn shx(&mut self) -> u8;
+    fn shy(&mut self) -> u8;
+    fn slo(&mut self, byte: u8) -> u8;
+    fn sre(&mut self, byte: u8) -> u8;
+    fn dop(&mut self, byte: u8);
     fn top(&mut self);
 
     fn jam(&mut self);
@@ -192,11 +192,13 @@ impl Instruction for Cpu {
         self.pc = word;
     }
     fn jsr(&mut self, word: u16) {
-        self.push16(word - 1);
+        let addr = self.pc - 1;
+        self.push16(addr);
         self.pc = word;
     }
     fn rts(&mut self) {
-        self.pc = self.pop16() + 1;
+        let addr = self.pop16() + 1;
+        self.pc = addr
     }
     fn brk(&mut self) {
         self.push16(self.pc + 1);
@@ -205,14 +207,14 @@ impl Instruction for Cpu {
         self.pc = self.peek16(IRQ_VECTOR);
     }
     fn rti(&mut self) {
-        let packed = self.pop8();
-        self.flags.unpack(packed);
+        let byte = self.pop8();
+        self.flags.unpack(byte);
         self.pc = self.pop16();
     }
     fn adc(&mut self, byte: u8) {
         let word = self.a as u16 + byte as u16 + self.flags.c as u16;
         let res = word as u8;
-        self.flags.v = overflow(self.a, byte, res);
+        self.flags.v = overflow_adc(self.a, byte, res);
         self.flags.c = carry16(word, 0x100);
         self.a = self.flags.set_zn(res);
     }
@@ -228,13 +230,13 @@ impl Instruction for Cpu {
         self.a = self.flags.set_zn(byte);
     }
     fn eor(&mut self, byte: u8) {
-        let byte = self.a | byte;
+        let byte = self.a ^ byte;
         self.a = self.flags.set_zn(byte);
     }
     fn bit(&mut self, byte: u8) {
-        let byte = self.a & byte;
-        self.flags.set_zn(byte);
-        self.flags.v = byte & V;
+        self.flags.z = if self.a & byte == 0 { Z } else { 0 };
+        self.flags.n = if byte & 0x80 != 0 { N } else { 0 };
+        self.flags.v = if byte & 0x40 != 0 { V } else { 0 };
     }
     fn cmp(&mut self, byte: u8) {
         let word = (Wrapping(self.a as u16) - Wrapping(byte as u16)).0;
@@ -365,7 +367,7 @@ impl Instruction for Cpu {
         self.a = self.flags.set_zn(byte);
     }
     fn php(&mut self) {
-        let byte = self.flags.pack();
+        let byte = self.flags.pack() | B;
         self.push8(byte);
     }
     fn plp(&mut self) {
@@ -373,26 +375,101 @@ impl Instruction for Cpu {
         self.flags.unpack(byte);
     }
 
-    fn anc(&mut self) {}
-    fn ane(&mut self) {}
-    fn arr(&mut self) {}
-    fn asr(&mut self) {}
-    fn dcp(&mut self) {}
-    fn lsb(&mut self) {}
-    fn las(&mut self) {}
-    fn lax(&mut self) {}
-    fn lxa(&mut self) {}
-    fn rla(&mut self) {}
-    fn rra(&mut self) {}
-    fn sax(&mut self) {}
-    fn sbx(&mut self) {}
-    fn sha(&mut self) {}
-    fn shs(&mut self) {}
-    fn shx(&mut self) {}
-    fn shy(&mut self) {}
-    fn slo(&mut self) {}
-    fn sre(&mut self) {}
-    fn dop(&mut self) {}
+    fn anc(&mut self, byte: u8) {
+        let byte = self.a & byte;
+        self.a = self.flags.set_zn(byte);
+        self.flags.c = carry8(byte, 0x80);
+    }
+    fn ane(&mut self, byte: u8) {
+        let byte = (self.a | 0xEE) & self.x & byte;
+        self.a = self.flags.set_zn(byte);
+    }
+    fn arr(&mut self, byte: u8) {
+        let byte = (byte & self.a) >> 1 | self.flags.c << 7;
+        self.a = self.flags.set_zn(byte);
+        self.flags.c = carry8(byte, 0x40);
+        self.flags.v = overflow_arr(byte);
+    }
+    fn asr(&mut self, byte: u8) {
+        let byte = self.a & byte;
+        self.flags.c = carry8(byte, 0x01);
+        let byte = byte >> 1;
+        self.a = self.flags.set_zn(byte);
+    }
+    fn dcp(&mut self, byte: u8) -> u8 {
+        let byte = byte.wrapping_sub(1);
+        self.cmp(byte);
+        byte
+    }
+    fn isb(&mut self, byte: u8) -> u8 {
+        let byte = byte.wrapping_add(1);
+        self.sbc(byte);
+        byte
+    }
+    fn las(&mut self, byte: u8) {
+        let byte = self.s & byte;
+        self.x = byte;
+        self.a = byte;
+        self.s = byte;
+        self.flags.set_zn(byte);
+    }
+    fn lax(&mut self, byte: u8) {
+        self.a = byte;
+        self.x = byte;
+        self.flags.set_zn(byte);
+    }
+    fn lxa(&mut self, byte: u8) {
+        self.a = byte;
+        self.x = byte;
+        self.flags.set_zn(byte);
+    }
+    fn rla(&mut self, byte: u8) -> u8 {
+        let carry = self.flags.c;
+        self.flags.c = carry8(byte, 0x80);
+        let byte = byte << 1 | carry;
+        self.a = self.flags.set_zn(self.a & byte);
+        byte
+    }
+    fn rra(&mut self, byte: u8) -> u8 {
+        let carry = self.flags.c << 7;
+        self.flags.c = carry8(byte, 0x01);
+        let byte = byte >> 1 | carry;
+        self.adc(byte);
+        byte
+    }
+    fn sax(&mut self) -> u8 {
+        self.a & self.x
+    }
+    fn sbx(&mut self, byte: u8) {
+        let word = (Wrapping((self.a & self.x) as u16) - Wrapping(byte as u16)).0;
+        self.flags.c = carry16(!word, 0x100);
+        self.flags.set_zn(word as u8);
+    }
+    fn sha(&mut self) -> u8 {
+        panic!();
+    }
+    fn shs(&mut self) -> u8 {
+        panic!();
+    }
+    fn shx(&mut self) -> u8 {
+        panic!();
+    }
+    fn shy(&mut self) -> u8 {
+        panic!();
+    }
+    fn slo(&mut self, byte: u8) -> u8 {
+        self.flags.c = carry8(byte, 0x80);
+        let byte = byte << 1;
+        self.a = self.flags.set_zn(self.a | byte);
+        byte
+    }
+    fn sre(&mut self, byte: u8) -> u8 {
+        self.flags.c = carry8(byte, 0x01);
+        let byte = byte >> 1;
+        self.a = self.flags.set_zn(self.a ^ byte);
+        byte
+    }
+    fn dop(&mut self, byte: u8) {}
     fn top(&mut self) {}
 
     fn jam(&mut self) {}

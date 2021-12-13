@@ -15,8 +15,8 @@ pub const D: u8 = 0x08;
 // brk
 pub const B: u8 = 0x10;
 
-// unsused
-// pub const R: u8 = 0x20;
+// reserved
+pub const R: u8 = 0x20;
 
 // overflow
 pub const V: u8 = 0x40;
@@ -28,8 +28,9 @@ pub struct Flags {
     pub c: u8,
     pub z: u8,
     pub i: u8,
-    pub b: u8,
     pub d: u8,
+    pub b: u8,
+    pub r: u8,
     pub v: u8,
     pub n: u8,
 }
@@ -54,9 +55,10 @@ impl Flags {
         Flags {
             c: 0,
             z: 0,
-            i: 0,
+            i: I,
             d: 0,
             b: 0,
+            r: R,
             v: 0,
             n: 0,
         }
@@ -67,6 +69,7 @@ impl Flags {
         self.i = 0;
         self.d = 0;
         self.b = 0;
+        self.r = R;
         self.v = 0;
         self.n = 0;
     }
@@ -80,12 +83,13 @@ impl Flags {
         self.z = byte & Z;
         self.i = byte & I;
         self.d = byte & D;
-        self.b = byte & B;
+        self.b = 0;
+        self.r = R;
         self.v = byte & V;
         self.n = byte & N;
     }
     pub fn pack(&self) -> u8 {
-        self.c | self.z | self.i | self.d | self.b | self.v | self.n
+        self.c | self.z | self.i | self.d | self.b | self.r | self.v | self.n
     }
 }
 
@@ -101,8 +105,16 @@ fn z(val: u8) -> u8 {
     }
 }
 
-pub fn overflow(a: u8, val: u8, res: u8) -> u8 {
+pub fn overflow_adc(a: u8, val: u8, res: u8) -> u8 {
     if (res ^ val) & (a ^ res) & 0x80 != 0 {
+        V
+    } else {
+        0
+    }
+}
+
+pub fn overflow_arr(byte: u8) -> u8 {
+    if (byte >> 6 ^ byte >> 5) & 0x01 != 0 {
         V
     } else {
         0
@@ -127,12 +139,12 @@ pub fn carry8(byte: u8, bit: u8) -> u8 {
 
 #[test]
 fn test_overflow() {
-    assert_eq!(overflow(80, 16, 96), 0);
-    assert_eq!(overflow(80, 80, 160), V);
-    assert_eq!(overflow(80, 144, 224), 0);
-    assert_eq!(overflow(80, 208, 32), 0);
-    assert_eq!(overflow(208, 16, 224), 0);
-    assert_eq!(overflow(208, 80, 32), 0);
-    assert_eq!(overflow(208, 144, 96), V);
-    assert_eq!(overflow(208, 208, 160), 0);
+    assert_eq!(overflow_adc(80, 16, 96), 0);
+    assert_eq!(overflow_adc(80, 80, 160), V);
+    assert_eq!(overflow_adc(80, 144, 224), 0);
+    assert_eq!(overflow_adc(80, 208, 32), 0);
+    assert_eq!(overflow_adc(208, 16, 224), 0);
+    assert_eq!(overflow_adc(208, 80, 32), 0);
+    assert_eq!(overflow_adc(208, 144, 96), V);
+    assert_eq!(overflow_adc(208, 208, 160), 0);
 }

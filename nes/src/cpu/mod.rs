@@ -5,8 +5,8 @@ mod opcode;
 
 use crate::base::*;
 use crate::bus::*;
-use crate::header::Header;
 use crate::iomap::IoMap;
+use colored::*;
 use flags::Flags;
 use opcode::*;
 
@@ -117,7 +117,6 @@ impl Cpu {
     }
     pub fn exec(&mut self) {
         let opcode = Opcode(self.fetch8());
-        println!("{:x} {}", self.pc, opcode.name());
         opcode.exec(self);
     }
 }
@@ -127,14 +126,34 @@ impl IoMap for Cpu {
         self.bus.peek8(address)
     }
     fn poke8(&mut self, address: u16, byte: u8) {
+        println!("{} ${:04X} #{:02X}", "poke".red(), address, byte);
         self.bus.poke8(address, byte);
     }
 }
 
 #[test]
 fn test() {
-    let nestest = include_bytes!("../../carts/nestest.nes");
-    let header = Header::new(nestest);
-    dbg!(header);
+    let nestest = include_bytes!("../../test/nestest.nes");
+    let testlog = include_str!("../../test/nestest.log");
     let mut cpu = Cpu::new();
+    cpu.bus.insert_cartridge(nestest);
+    cpu.pc = 0xC000;
+    for line in testlog.split('\n').take(8980) {
+        println!("{}", line);
+        let pc = &line[0..4];
+        let name = &line[16..16 + 3];
+        let a = &line[48..48 + 4];
+        let x = &line[53..53 + 4];
+        let y = &line[58..58 + 4];
+        let p = &line[63..63 + 4];
+        let s = &line[68..68 + 5];
+        assert_eq!(pc, format!("{:04X}", cpu.pc));
+        assert_eq!(name, Opcode(cpu.peek8(cpu.pc)).name());
+        assert_eq!(a, format!("A:{:02X}", cpu.a));
+        assert_eq!(x, format!("X:{:02X}", cpu.x));
+        assert_eq!(y, format!("Y:{:02X}", cpu.y));
+        assert_eq!(p, format!("P:{:02X}", cpu.flags.pack()));
+        assert_eq!(s, format!("SP:{:02X}", cpu.s));
+        cpu.exec();
+    }
 }
