@@ -20,11 +20,12 @@
     </script>
     <script src="/pkg/rustgym_wasm.js"></script>
     <script>
-      const { start } = wasm_bindgen;
+      const { start, start_nes} = wasm_bindgen;
       async function run() {
         try {
           await wasm_bindgen('/pkg/rustgym_wasm_bg.wasm');
           await start();
+          {% block script %}{% endblock %}
         } catch(e) { 
           console.error(e);
         }

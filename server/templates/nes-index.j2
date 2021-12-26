@@ -1,0 +1,34 @@
+{% extends "home.j2" %}
+
+{% block title %}
+  {{app.title}} Nes Emulator
+{% endblock %}
+
+
+{% block content %}
+<table class="table-auto">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for row in rows %}
+      <tr>
+        <td>
+          <a href="{{row.href()}}">
+            <figure>
+              <img src={{row.image}} alt={{row.title}} />
+              <figcaption>{{row.title}}</figcaption>
+            </figure>
+          </a>
+        </td>
+        <td>
+          {{ row.description }}
+        </td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

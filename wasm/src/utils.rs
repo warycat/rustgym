@@ -5,9 +5,10 @@ use wasm_bindgen::*;
 use wasm_bindgen_futures::JsFuture;
 use wasm_bindgen_test::*;
 use web_sys::{
-    window, Document, HtmlAnchorElement, HtmlDivElement, HtmlElement, HtmlInputElement,
-    HtmlTableElement, HtmlTableRowElement, HtmlTableSectionElement, HtmlVideoElement, Location,
-    MediaDevices, MediaStream, MediaStreamConstraints, Navigator, Window,
+    window, Document, HtmlAnchorElement, HtmlCanvasElement, HtmlDivElement, HtmlElement,
+    HtmlInputElement, HtmlTableElement, HtmlTableRowElement, HtmlTableSectionElement,
+    HtmlVideoElement, Location, MediaDevices, MediaStream, MediaStreamConstraints, Navigator,
+    Window,
 };
 
 #[derive(Serialize, Deserialize, Debug, Clone, Hash, Eq, PartialEq)]
@@ -139,6 +140,14 @@ pub fn remote_videos() -> HtmlDivElement {
         .get_element_by_id("remote_videos")
         .expect("get_element_by_id")
         .dyn_into::<HtmlDivElement>()
+        .expect("HtmlDivElement")
+}
+
+pub fn nes_canvas() -> HtmlCanvasElement {
+    document()
+        .get_element_by_id("nes_canvas")
+        .expect("get_element_by_id")
+        .dyn_into::<HtmlCanvasElement>()
         .expect("HtmlDivElement")
 }
 

@@ -10,6 +10,7 @@ use actix_web::Error;
 use actix_web::HttpRequest;
 use actix_web::HttpResponse;
 use diesel::prelude::*;
+use rustgym_schema::*;
 
 #[get("/adventofcode/{id}")]
 async fn adventofcode_detail(
@@ -20,8 +21,8 @@ async fn adventofcode_detail(
     session: Session,
 ) -> Result<HttpResponse, Error> {
     let session_data = update_session(session)?;
-    use rustgym_schema::schema::adventofcode_description::dsl::*;
-    use rustgym_schema::schema::adventofcode_solution::dsl::*;
+    use schema::adventofcode_description::dsl::*;
+    use schema::adventofcode_solution::dsl::*;
     let conn = conn(pool)?;
     let description = adventofcode_description
         .find(id_)

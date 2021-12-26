@@ -10,6 +10,7 @@ use actix_web::Error;
 use actix_web::HttpRequest;
 use actix_web::HttpResponse;
 use diesel::prelude::*;
+use rustgym_schema::*;
 
 #[get("/adventofcode")]
 pub async fn adventofcode_index(
@@ -19,7 +20,7 @@ pub async fn adventofcode_index(
     session: Session,
 ) -> Result<HttpResponse, Error> {
     let session_data = update_session(session)?;
-    use rustgym_schema::schema::adventofcode_description::dsl::*;
+    use schema::adventofcode_description::dsl::*;
     let conn = conn(pool)?;
     let rows: Vec<AdventOfCodeIndexRow> = adventofcode_description
         .select((id, year, day, title))

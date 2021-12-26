@@ -1,5 +1,3 @@
-use crate::base::*;
-use crate::header::Header;
 use crate::iomap::IoMap;
 use std::fmt;
 

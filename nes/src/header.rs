@@ -24,7 +24,7 @@ impl Header {
         Header { header }
     }
     pub fn version(&self) -> HeaderVersion {
-        if self.header[7] & 0x0C == 0x80 {
+        if self.header[7] & 0x0C == 0x08 {
             V2
         } else {
             V1

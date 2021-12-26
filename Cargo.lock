@@ -2093,6 +2093,16 @@ dependencies = [
 ]
 
 [[package]]
+name = "openvgdb"
+version = "0.1.0"
+dependencies = [
+ "diesel",
+ "md5",
+ "rustgym-consts",
+ "rustgym-schema",
+]
+
+[[package]]
 name = "output_vt100"
 version = "0.1.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"

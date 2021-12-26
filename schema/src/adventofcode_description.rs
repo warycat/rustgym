@@ -1,4 +1,4 @@
-use super::schema::adventofcode_description;
+use crate::schema::adventofcode_description;
 
 #[derive(Debug, Queryable, Insertable, new)]
 #[table_name = "adventofcode_description"]

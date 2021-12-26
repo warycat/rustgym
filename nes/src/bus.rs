@@ -1,4 +1,3 @@
-use crate::base::*;
 use crate::header::Header;
 use crate::iomap::IoMap;
 use crate::prg_rom::PrgRom;

@@ -1,7 +1,7 @@
+use crate::app_data::AppData;
 use crate::context::*;
 use crate::db::*;
 use crate::session_data::update_session;
-use crate::AppData;
 use actix_session::Session;
 use actix_web::error::ErrorNotFound;
 use actix_web::get;
@@ -12,28 +12,22 @@ use actix_web::HttpResponse;
 use diesel::prelude::*;
 use rustgym_schema::*;
 
-#[get("/leetcode")]
-pub async fn leetcode_index(
+#[get("/nes/{id}")]
+async fn nes_detail(
     data: web::Data<AppData>,
     req: HttpRequest,
     pool: web::Data<SqlitePool>,
     session: Session,
 ) -> Result<HttpResponse, Error> {
     let session_data = update_session(session)?;
-    use schema::leetcode_description::dsl::*;
-    use schema::leetcode_question::dsl::*;
+    use schema::nes_rom::dsl::*;
     let conn = conn(pool)?;
-    let rows: Vec<LeetcodeIndexRow> = leetcode_question
-        .select((schema::leetcode_question::dsl::id, title, level))
-        .inner_join(leetcode_description)
-        .order(schema::leetcode_question::dsl::id)
-        .load(&conn)
-        .map_err(ErrorNotFound)?;
-    LeetcodeIndexContext::new(
+    let rom: NesRom = nes_rom.find(id).first(&conn).map_err(ErrorNotFound)?;
+    NesDetailContext::new(
         AppContext::new(data),
         session_data,
         req.path().to_string(),
-        rows,
+        rom,
     )
     .render_wrapper()
 }

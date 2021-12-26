@@ -1,4 +1,4 @@
-use super::schema::leetcode_solution;
+use crate::schema::leetcode_solution;
 use rustgym_consts::*;
 use std::fmt;
 

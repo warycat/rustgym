@@ -1,4 +1,5 @@
 #![allow(non_camel_case_types)]
+#![allow(clippy::collapsible_else_if)]
 pub mod apu;
 pub mod base;
 pub mod bus;

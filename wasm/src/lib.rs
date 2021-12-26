@@ -10,12 +10,14 @@ macro_rules! console_dbg {
 
 mod client;
 mod media;
+mod nes_emulator;
 mod pc;
 mod searchbar;
 mod utils;
 
 use client::*;
 use media::MediaClient;
+use nes_emulator::NesEmulator;
 use searchbar::SearchBar;
 use utils::*;
 
@@ -32,5 +34,12 @@ pub async fn start() -> Result<(), JsValue> {
     set_searchbar(searchbar);
     let media_client = MediaClient::new(local_video(), remote_videos());
     set_media_client(media_client);
+    Ok(())
+}
+
+#[wasm_bindgen]
+pub async fn start_nes(filename: String, md5: String) -> Result<(), JsValue> {
+    console_log!("nes_start {:?} {:?}", filename, md5);
+    let nes_emulator = NesEmulator::new(nes_canvas(), filename, md5);
     Ok(())
 }

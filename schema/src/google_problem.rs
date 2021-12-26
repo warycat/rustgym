@@ -1,4 +1,4 @@
-use super::schema::google_problem;
+use crate::schema::google_problem;
 use regex::Regex;
 use std::path::Path;
 

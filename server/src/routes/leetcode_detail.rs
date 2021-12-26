@@ -10,9 +10,7 @@ use actix_web::Error;
 use actix_web::HttpRequest;
 use actix_web::HttpResponse;
 use diesel::prelude::*;
-use rustgym_schema::LeetcodeDescription;
-use rustgym_schema::LeetcodeQuestion;
-use rustgym_schema::LeetcodeSolution;
+use rustgym_schema::*;
 
 #[get("/leetcode/{id}")]
 async fn leetcode_detail(
@@ -23,9 +21,9 @@ async fn leetcode_detail(
     session: Session,
 ) -> Result<HttpResponse, Error> {
     let session_data = update_session(session)?;
-    use rustgym_schema::schema::leetcode_description::dsl::*;
-    use rustgym_schema::schema::leetcode_question::dsl::*;
-    use rustgym_schema::schema::leetcode_solution::dsl::*;
+    use schema::leetcode_description::dsl::*;
+    use schema::leetcode_question::dsl::*;
+    use schema::leetcode_solution::dsl::*;
     let conn = conn(pool)?;
     let description = leetcode_description
         .find(id_)

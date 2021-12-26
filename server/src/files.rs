@@ -18,9 +18,9 @@ async fn static_files(req: HttpRequest) -> Result<NamedFile> {
     Ok(NamedFile::open(path)?)
 }
 
-#[get("/stream/{filename:.*}")]
-async fn stream_files(req: HttpRequest) -> Result<NamedFile> {
+#[get("/data/{filename:.*}")]
+async fn data_files(req: HttpRequest) -> Result<NamedFile> {
     let filename = req.match_info().query("filename");
-    let path: PathBuf = ["stream", filename].iter().collect();
+    let path: PathBuf = ["data", filename].iter().collect();
     Ok(NamedFile::open(path)?)
 }

@@ -16,4 +16,5 @@ members = [
     "hackerrank",
     "mnist-data",
     "nes",
+    "openvgdb",
 ]

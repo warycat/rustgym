@@ -5,5 +5,7 @@ pub mod google_index;
 pub mod home;
 pub mod leetcode_detail;
 pub mod leetcode_index;
+pub mod nes_detail;
+pub mod nes_index;
 pub mod robots;
 pub mod sitemap;

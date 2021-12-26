@@ -9,6 +9,11 @@ script = "git submodule update --init"
 [tasks.rm_sqlite]
 script = ["rm rustgym.sqlite"]
 
+[tasks.print-schema]
+script = [
+    "diesel print-schema run --database-url rustgym.sqlite >> schema/schema.rs"
+]
+
 [tasks.migration]
 script = ["diesel migration run --database-url rustgym.sqlite"]
 

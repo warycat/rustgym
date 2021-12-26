@@ -1,4 +1,4 @@
-use super::schema::adventofcode_solution;
+use crate::schema::adventofcode_solution;
 
 #[derive(Debug, Queryable, Insertable, new)]
 #[table_name = "adventofcode_solution"]

@@ -1,8 +1,8 @@
 use super::*;
 use fs::File;
 use regex::Regex;
-use rustgym_schema::adventofcode_description::AdventOfCodeDescription;
-use rustgym_schema::leetcode_description::LeetcodeDescription;
+use rustgym_schema::AdventOfCodeDescription;
+use rustgym_schema::LeetcodeDescription;
 use std::io::Read;
 use std::path::Path;
 use walkdir::WalkDir;

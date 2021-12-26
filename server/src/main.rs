@@ -54,6 +54,8 @@ async fn main() -> std::io::Result<()> {
             .data(registry_addr.clone())
             .data(uap_addr.clone())
             .service(routes::home::home)
+            .service(routes::nes_index::nes_index)
+            .service(routes::nes_detail::nes_detail)
             .service(routes::leetcode_index::leetcode_index)
             .service(routes::adventofcode_index::adventofcode_index)
             .service(routes::google_index::google_index)
@@ -64,7 +66,7 @@ async fn main() -> std::io::Result<()> {
             .service(routes::sitemap::sitemap_txt)
             .service(files::client_files)
             .service(files::static_files)
-            .service(files::stream_files)
+            .service(files::data_files)
             .service(web::resource("/ws/").to(agents::websocket::ws_index))
     })
     .bind("127.0.0.1:8080")?

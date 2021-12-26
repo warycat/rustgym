@@ -1,0 +1,20 @@
+{% extends "home.j2" %}
+
+{% block title %}
+  {{app.title}} Nes Emulator {{rom.title}}
+{% endblock %}
+
+
+{% block content %}
+    <canvas 
+        id="nes_canvas"
+        width=256
+        height=240
+        class="mx-auto"
+    >
+    </canvas>
+{% endblock %}
+
+{% block script %} 
+    await start_nes("{{rom.filename}}", "{{rom.md5}}");
+{% endblock %}

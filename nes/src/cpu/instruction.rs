@@ -469,7 +469,7 @@ impl Instruction for Cpu {
         self.a = self.flags.set_zn(self.a ^ byte);
         byte
     }
-    fn dop(&mut self, byte: u8) {}
+    fn dop(&mut self, _byte: u8) {}
     fn top(&mut self) {}
 
     fn jam(&mut self) {}

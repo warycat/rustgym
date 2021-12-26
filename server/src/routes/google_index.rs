@@ -10,6 +10,7 @@ use actix_web::Error;
 use actix_web::HttpRequest;
 use actix_web::HttpResponse;
 use diesel::prelude::*;
+use rustgym_schema::*;
 
 #[get("/google")]
 pub async fn google_index(
@@ -19,7 +20,7 @@ pub async fn google_index(
     session: Session,
 ) -> Result<HttpResponse, Error> {
     let session_data = update_session(session)?;
-    use rustgym_schema::schema::google_problem::dsl::*;
+    use schema::google_problem::dsl::*;
     let conn = conn(pool)?;
     let all_rows: Vec<GoogleIndexRow> = google_problem
         .select((id, division, year, round, title))

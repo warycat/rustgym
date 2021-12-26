@@ -10,7 +10,7 @@ use actix_web::Error;
 use actix_web::HttpRequest;
 use actix_web::HttpResponse;
 use diesel::prelude::*;
-use rustgym_schema::GoogleProblem;
+use rustgym_schema::*;
 
 #[get("/google/{id}")]
 async fn google_detail(
@@ -21,7 +21,7 @@ async fn google_detail(
     session: Session,
 ) -> Result<HttpResponse, Error> {
     let session_data = update_session(session)?;
-    use rustgym_schema::schema::google_problem::dsl::*;
+    use schema::google_problem::dsl::*;
     let conn = conn(pool)?;
     let item: GoogleProblem = google_problem
         .find(id_)
