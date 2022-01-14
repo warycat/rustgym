@@ -1,5 +1,3 @@
-#[macro_use]
-extern crate diesel;
 use diesel::insert_into;
 use diesel::prelude::*;
 use diesel::sqlite::SqliteConnection;

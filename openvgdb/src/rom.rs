@@ -1,5 +1,3 @@
-use crate::schema::*;
-
 #[derive(Debug, Queryable)]
 pub struct RomData {
     pub romID: Option<i32>,

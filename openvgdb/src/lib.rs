@@ -5,7 +5,9 @@ use diesel::sqlite::SqliteConnection;
 use md5;
 use rustgym_consts::*;
 use std::fs::*;
+#[allow(non_snake_case)]
 mod rom;
+#[allow(non_snake_case)]
 mod schema;
 use rom::RomData;
 use rustgym_schema::*;
