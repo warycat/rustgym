@@ -16,6 +16,8 @@ jobs:
         uses: actions/checkout@v2
         with:
           submodules: true
+      - name: update apt
+        run: sudo apt-get update
       - name: Install libudev
         run: sudo apt-get install -y libudev-dev
       - name: Stable with rustfmt and clippy
