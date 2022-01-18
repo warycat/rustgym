@@ -9,5 +9,6 @@ pub mod hook;
 pub mod iomap;
 pub mod prg_rom;
 pub mod ram;
+pub mod screen;
 pub mod sound;
 pub mod state;

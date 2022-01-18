@@ -5,10 +5,10 @@ use wasm_bindgen::*;
 use wasm_bindgen_futures::JsFuture;
 use wasm_bindgen_test::*;
 use web_sys::{
-    window, Document, HtmlAnchorElement, HtmlCanvasElement, HtmlDivElement, HtmlElement,
+    window, Document, Gamepad, HtmlAnchorElement, HtmlCanvasElement, HtmlDivElement, HtmlElement,
     HtmlInputElement, HtmlTableElement, HtmlTableRowElement, HtmlTableSectionElement,
     HtmlVideoElement, Location, MediaDevices, MediaStream, MediaStreamConstraints, Navigator,
-    Window,
+    Performance, Window,
 };
 
 #[derive(Serialize, Deserialize, Debug, Clone, Hash, Eq, PartialEq)]
@@ -41,6 +41,12 @@ pub fn document() -> Document {
 pub fn navigator() -> Navigator {
     let window: Window = window().expect("window");
     window.navigator()
+}
+
+pub fn now() -> f64 {
+    let window: Window = window().expect("window");
+    let performance = window.performance().expect("performace");
+    performance.now()
 }
 
 pub fn wsurl() -> String {
@@ -151,6 +157,14 @@ pub fn nes_canvas() -> HtmlCanvasElement {
         .expect("HtmlDivElement")
 }
 
+pub fn fps_div() -> HtmlDivElement {
+    document()
+        .get_element_by_id("fps")
+        .expect("get_element_by_id")
+        .dyn_into::<HtmlDivElement>()
+        .expect("HtmlDivElement")
+}
+
 pub async fn get_media_stream() -> Result<MediaStream, JsValue> {
     let navigator = navigator();
     let media_devices: MediaDevices = navigator.media_devices()?;
@@ -167,6 +181,26 @@ pub async fn get_media_stream() -> Result<MediaStream, JsValue> {
     let get_user_media_promise = media_devices.get_user_media_with_constraints(&constraints)?;
     let media_stream: MediaStream = JsFuture::from(get_user_media_promise).await?.dyn_into()?;
     Ok(media_stream)
+}
+
+pub fn get_gamepads() -> Result<Vec<Gamepad>, JsValue> {
+    let navigator = navigator();
+    let gamepads = navigator.get_gamepads()?;
+    let gamepads = gamepads.to_vec();
+    let mut res: Vec<Gamepad> = vec![];
+    for gamepad in gamepads {
+        if let Ok(g) = gamepad.dyn_into::<Gamepad>() {
+            res.push(g);
+        }
+    }
+    Ok(res)
+}
+
+pub fn request_animation_frame(f: &Closure<dyn FnMut()>) {
+    let window: Window = window().expect("window");
+    window
+        .request_animation_frame(f.as_ref().unchecked_ref())
+        .expect("should register `requestAnimationFrame` OK");
 }
 
 pub trait MediaSupport {

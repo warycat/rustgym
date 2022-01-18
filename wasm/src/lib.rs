@@ -17,6 +17,9 @@ mod utils;
 
 use client::*;
 use media::MediaClient;
+#[macro_use]
+extern crate derive_new;
+
 use nes_emulator::NesEmulator;
 use searchbar::SearchBar;
 use utils::*;
@@ -41,5 +44,6 @@ pub async fn start() -> Result<(), JsValue> {
 pub async fn start_nes(filename: String, md5: String) -> Result<(), JsValue> {
     console_log!("nes_start {:?} {:?}", filename, md5);
     let nes_emulator = NesEmulator::new(nes_canvas(), filename, md5);
+    nes_emulator.run();
     Ok(())
 }

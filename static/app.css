@@ -57,3 +57,8 @@
   display: inline-block;
   z-index: 30;
 }
+
+#nes_canvas {
+  width: 512px;
+  height: 480px;
+}
