@@ -7,28 +7,32 @@ default_to_workspace = false
 script = "git submodule update --init"
 
 [tasks.rm_sqlite]
-script = ["rm rustgym.sqlite"]
+script = "rm ${RUSTGYM_SQLITE}"
 
 [tasks.print-schema]
-script = [
-    "diesel print-schema run --database-url rustgym.sqlite >> schema/schema.rs"
-]
+script = "diesel print-schema run --database-url ${RUSTGYM_SQLITE} > schema/src/schema.rs"
 
 [tasks.migration]
-script = ["diesel migration run --database-url rustgym.sqlite"]
+script = "diesel migration run --database-url ${RUSTGYM_SQLITE}"
 
 [tasks.readme]
-script = ["cargo run --bin rustgym-readme"]
+script = "cargo run --bin rustgym-readme"
 dependencies = ["rm_sqlite", "migration"]
 
-[tasks.copy-server]
-script = 'cp target/release/rustgym-server rustgym-server'
-
-[tasks.copy-ingest]
-script = 'cp target/release/rustgym-ingest rustgym-ingest'
+[tasks.openvgdb]
+script = [
+    "curl -LJO ${OPENVGDB_DOWNLOAD_ZIP}",
+    "unzip openvgdb.zip",
+    "mv openvgdb.sqlite ${OPENVGDB_SQLITE}",
+    "rm openvgdb.zip",
+    "cargo run --bin openvgdb"
+]
 
 [tasks.wasm-pack]
-script = 'wasm-pack build wasm --target no-modules --out-dir ../pkg'
+script = "wasm-pack build wasm --target no-modules --out-dir ../pkg"
+
+[tasks.bin-pack]
+script = ["cargo build --release", "tar -czvf bin.tar.gz -T infra/bin.txt"]
 
 [tasks.archive-wasm]
 script = "tar -czvf pkg.tar.gz pkg"
@@ -45,7 +49,7 @@ script = "cargo watch -w server -w msg -w consts -x 'run --bin rustgym-server'"
 dependencies = ["wasm-pack"]
 
 [tasks.sonic]
-script = "sonic -c infra/config.cfg"
+script = "sonic -c infra/sonic.cfg"
 
 [tasks.dev]
 run_task = { name = ["sonic", "watch-server", "watch-wasm"], parallel = true }
@@ -53,13 +57,6 @@ run_task = { name = ["sonic", "watch-server", "watch-wasm"], parallel = true }
 [tasks.wasm-test]
 command = "wasm-pack"
 args = ["test", "--chrome", "--headless", "wasm"]
-
-[tasks.tfrs-test]
-script = "cargo test -p rustgym-tfrs"
-
-[tasks.watch-tfrs-test]
-run_task = { name = ["tfrs-test"] }
-watch = { postpone = true, watch = ["./tfrs", "./tfrs-sys"] }
 
 [tasks.build-mini]
 command = "cargo"

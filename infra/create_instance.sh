@@ -16,28 +16,34 @@ gcloud compute instances create $VM_NAME \
 apt update
 apt -y install nginx sqlite3 certbot python-certbot-nginx telnet build-essential git coturn
 cd $WORK_DIR
+mkdir script
+mkdir data
+mkdir log
+mkdir config
 
-cat <<EOF > certbot.sh
+gsutil -m cp -r gs://rustgym.appspot.com/data/sqlite/ gs://rustgym.appspot.com/data/nes/ data/
+
+cat <<EOF > script/certbot.sh
 #!/bin/bash
 certbot --nginx --redirect --non-interactive --agree-tos -m $EMAIL -d $SERVER_NAME
 EOF
-chmod u+x certbot.sh
+chmod u+x script/certbot.sh
 
-cat <<EOF > coturn.sh
+cat <<EOF > script/coturn.sh
 #!/bin/bash
 turnserver -n --verbose --use-auth-secret --static-auth-secret=$TURN_STATIC_AUTH_SECRET --fingerprint --realm=$TURN_REALM --external-ip=$TURN_EXTERNAL_IP --cert=$TURN_CERT --pkey=$TURN_PKEY --cli-password=$TURN_CLI_PASSWORD 1> turnserver.log 2> turnserver.error.log &
 EOF
-chmod u+x coturn.sh
+chmod u+x script/coturn.sh
 
 curl -LJO $SONIC_DOWNLOAD/$SONIC_TAG/$SONIC_TAG-x86_64.tar.gz
 tar -xzf $SONIC_TAG-x86_64.tar.gz
 mv sonic/sonic sonic-server
-mv sonic/config.cfg .
+mv sonic/config.cfg config/sonic.cfg
 rm $SONIC_TAG-x86_64.tar.gz
 rmdir sonic
 mkdir -p data/store/kv
 mkdir -p data/store/fst
-./sonic-server 1> sonic.log 2> sonic.error.log &
+./sonic-server -c config/sonic.cfg 1> log/sonic.log 2> log/sonic.error.log &
 
 curl -LJO $RUSTGYM_DOWNLOAD/$TAG/pkg.tar.gz
 tar -xzf pkg.tar.gz
@@ -45,14 +51,14 @@ rm pkg.tar.gz
 curl -LJO $RUSTGYM_DOWNLOAD/$TAG/static.tar.gz
 tar -xzf static.tar.gz
 rm static.tar.gz
-curl -LJO $RUSTGYM_DOWNLOAD/$TAG/rustgym.sqlite
-curl -LJO $RUSTGYM_DOWNLOAD/$TAG/rustgym-server
-curl -LJO $RUSTGYM_DOWNLOAD/$TAG/rustgym-ingest
-chmod u+x rustgym-ingest
-./rustgym-ingest 1> ingest.log 2> ingest.error.log &
-chmod u+x rustgym-server
+curl -LJO $RUSTGYM_DOWNLOAD/$TAG/bin.tar.gz
+tar -xzf bin.tar.gz
+rm bin.tar.gz
+chmod u+x target/release/rustgym-ingest
+./target/release/rustgym-ingest 1> log/ingest.log 2> log/ingest.error.log &
+chmod u+x target/release/rustgym-server
 git clone https://github.com/ua-parser/uap-core.git
-TAG=$TAG TURN_STATIC_AUTH_SECRET=$TURN_STATIC_AUTH_SECRET ./rustgym-server 1> server.log 2> server.error.log &
+TAG=$TAG TURN_STATIC_AUTH_SECRET=$TURN_STATIC_AUTH_SECRET ./target/release/rustgym-server 1> log/server.log 2> log/server.error.log &
 
 cat <<\EOF > /etc/nginx/sites-available/rustgym-nginx.cfg
 server {

@@ -41,16 +41,10 @@ jobs:
 
       - name: Install diesel_cli
         run: cargo install diesel_cli --no-default-features --features sqlite
-      - name: Run migration
-        run: cargo make migration
-      - name: Make readme
-        run: cargo make readme
       - name: Build release
         run: cargo build --verbose --release
-      - name: Copy server
-        run: cargo make copy-server
-      - name: Copy ingest
-        run: cargo make copy-ingest
+      - name: Archive bin
+        run: cargo make bin-pack
       - name: Build wasm
         run: cargo make wasm-pack
       - name: Archive wasm
@@ -67,35 +61,15 @@ jobs:
           release_name: Release ${{ github.ref }}
           draft: false
           prerelease: false
-      - name: Upload sqlite
-        id: upload-sqlite
+      - name: Upload bin
+        id: upload-bin
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./rustgym.sqlite
-          asset_name: rustgym.sqlite
-          asset_content_type: application/vnd.sqlite3
-      - name: Upload server
-        id: upload-server
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./rustgym-server
-          asset_name: rustgym-server
-          asset_content_type: application/octet-stream
-      - name: Upload ingest
-        id: upload-ingest
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./rustgym-ingest
-          asset_name: rustgym-ingest
+          asset_path: ./bin.tar.gz
+          asset_name: bin.tar.gz
           asset_content_type: application/octet-stream
       - name: Upload pkg
         id: upload-pkg
