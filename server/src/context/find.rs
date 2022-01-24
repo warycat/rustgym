@@ -1,8 +1,8 @@
 use crate::context::*;
 
 #[derive(Template, new)]
-#[template(path = "home.j2")]
-pub struct HomeContext {
+#[template(path = "find.j2")]
+pub struct FindContext {
     pub app: AppContext,
     pub session: SessionData,
     pub path: String,

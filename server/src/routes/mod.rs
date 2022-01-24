@@ -1,5 +1,6 @@
 pub mod adventofcode_detail;
 pub mod adventofcode_index;
+pub mod find;
 pub mod google_detail;
 pub mod google_index;
 pub mod home;

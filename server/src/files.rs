@@ -24,3 +24,9 @@ async fn data_files(req: HttpRequest) -> Result<NamedFile> {
     let path: PathBuf = ["data", filename].iter().collect();
     Ok(NamedFile::open(path)?)
 }
+
+#[get("/favicon.ico")]
+async fn favicon_file(_req: HttpRequest) -> Result<NamedFile> {
+    let path: PathBuf = ["static", "ico", "windows.ico"].iter().collect();
+    Ok(NamedFile::open(path)?)
+}

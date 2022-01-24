@@ -9,6 +9,7 @@ macro_rules! console_dbg {
 }
 
 mod client;
+mod desktop;
 mod media;
 mod nes_emulator;
 mod pc;
@@ -28,22 +29,30 @@ use utils::*;
 pub async fn start() -> Result<(), JsValue> {
     set_panic_hook();
     get_client();
-    let searchbar = SearchBar::new(
-        search_input(),
-        search_suggestions(),
-        search_table(),
-        search_results(),
-    );
-    set_searchbar(searchbar);
     let media_client = MediaClient::new(local_video(), remote_videos());
     set_media_client(media_client);
     Ok(())
 }
 
 #[wasm_bindgen]
+pub async fn start_find() -> Result<(), JsValue> {
+    console_log!("start_find");
+    let searchbar = SearchBar::new(
+        search_input(),
+        search_suggestions(),
+        search_suggestions_parent(),
+        search_table(),
+        search_results(),
+    );
+    set_searchbar(searchbar);
+    Ok(())
+}
+
+#[wasm_bindgen]
 pub async fn start_nes(filename: String, md5: String) -> Result<(), JsValue> {
-    console_log!("nes_start {:?} {:?}", filename, md5);
-    let nes_emulator = NesEmulator::new(nes_canvas(), filename, md5);
+    console_log!("start_nes {:?} {:?}", filename, md5);
+    let mut nes_emulator = NesEmulator::new(nes_canvas(), filename, md5);
+    nes_emulator.load_rom().await?;
     nes_emulator.run();
     Ok(())
 }

@@ -1,37 +1,54 @@
-{% extends "home.j2" %}
+{% extends "desktop.j2" %}
 
 {% block title %}
-  {{app.title}} Leetcode {{question.id}} {{question.title}} Rust Solution
+    {{app.title}} Leetcode {{question.id}} {{question.title}} Rust Solution
 {% endblock %}
 
 {% block content %}
-<h2>{{question.id}}. {{question.title}}</h2>
-<div>{{description.html|safe}}</div>
-<h2>Rust Solution</h2>
-{% for solution in solutions %}
-  <pre><code class="rust">{{solution.source}}</code></pre>
-{% endfor %}
+<div class="component">
+    <div class="window" >
+        <div class="title-bar">
+            <div class="title-bar-text">{{question.id}}. {{question.title}}</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <p>{{description.html|safe}}</p>
+            <section class="field-row" style="justify-content: flex-end">
+                <a target="_blank" href="{{question.practice_url()}}">
+                    <button>Practice</button>
+                </a>
+                <a target="_blank" href="http://twitter.com/share?text={{app.title}} Leetcode {{question.id}} {{question.title}} Rust Solution&url=https://rustgym.com/leetcode/{{question.id}}&hashtags=rustgym,leetcode,rust">
+                    <button>Tweet</button>
+                </a>
+                <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=rustgym.com/leetcode/{{question.id}}" >
+                    <button>Facebook</button>
+                </a>
+                <a target="_blank" href="https://github.com/warycat/rustgym/issues/new?title=Leetcode {{question.id}} {{question.title}}">
+                    <button type="button">Issue</button>
+                </a>
+            </section>
+        </div>
+    </div>
 
-<div class="grid grid-cols-2 flex justify-between">
-  <div class="flex">
-    <a target="_blank" href="{{question.practice_url()}}">
-      <button type="button" class="border border-yellow-400 bg-yellow-400 text-white rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-yellow-500 focus:outline-none focus:shadow-outline">Practice</button>
-    </a>
-  </div>
-  
-  <div class="flex justify-end">
-    <a target="_blank" href="http://twitter.com/share?text={{app.title}} Leetcode {{question.id}} {{question.title}} Rust Solution&url=https://rustgym.com/leetcode/{{question.id}}&hashtags=rustgym,leetcode,rust">
-      <button type="button" class="border border-blue-400 bg-blue-400 text-white rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-blue-500 focus:outline-none focus:shadow-outline">Tweet</button>
-    </a>
-    <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=rustgym.com/leetcode/{{question.id}}" >
-      <button type="button" class="border border-blue-600 bg-blue-600 text-white rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-blue-700 focus:outline-none focus:shadow-outline">Facebook</button>
-    </a>
-  </div>
+    <div class="window" >
+        <div class="title-bar">
+            <div class="title-bar-text">{{question.id}}. {{question.title}}</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            {% for solution in solutions %}
+                <pre><code class="rust">{{solution.source}}</code></pre>
+            {% endfor %}
+        </div>
+    </div>
+
 </div>
-
-<div>
-  <p>Having problems with this solution? <a href="https://github.com/warycat/rustgym/issues/new?title=Leetcode {{question.id}} {{question.title}}">Click here</a> to submit an issue on github.</p>
-</div>
-
-
 {% endblock %}

@@ -1,3 +1,4 @@
+use js_sys::Uint8Array;
 use rustgym_msg::ClientInfo;
 use serde::{Deserialize, Serialize};
 use wasm_bindgen::prelude::*;
@@ -5,10 +6,11 @@ use wasm_bindgen::*;
 use wasm_bindgen_futures::JsFuture;
 use wasm_bindgen_test::*;
 use web_sys::{
-    window, Document, Gamepad, HtmlAnchorElement, HtmlCanvasElement, HtmlDivElement, HtmlElement,
-    HtmlInputElement, HtmlTableElement, HtmlTableRowElement, HtmlTableSectionElement,
+    window, Blob, Document, Gamepad, HtmlAnchorElement, HtmlButtonElement, HtmlCanvasElement,
+    HtmlDivElement, HtmlElement, HtmlInputElement, HtmlLiElement, HtmlParagraphElement,
+    HtmlTableElement, HtmlTableRowElement, HtmlTableSectionElement, HtmlUListElement,
     HtmlVideoElement, Location, MediaDevices, MediaStream, MediaStreamConstraints, Navigator,
-    Performance, Window,
+    Request, Response, Window,
 };
 
 #[derive(Serialize, Deserialize, Debug, Clone, Hash, Eq, PartialEq)]
@@ -62,6 +64,22 @@ pub fn wsurl() -> String {
     format!("{}{}/ws/", ws_protocol, host)
 }
 
+pub fn start_button() -> HtmlButtonElement {
+    document()
+        .get_element_by_id("start_button")
+        .expect("get_element_by_id")
+        .dyn_into::<HtmlButtonElement>()
+        .expect("HtmlButtonElement")
+}
+
+pub fn start_menu() -> HtmlDivElement {
+    document()
+        .get_element_by_id("start_menu")
+        .expect("get_element_by_id")
+        .dyn_into::<HtmlDivElement>()
+        .expect("HtmlDivElement")
+}
+
 pub fn search_input() -> HtmlInputElement {
     document()
         .get_element_by_id("search_input")
@@ -70,20 +88,48 @@ pub fn search_input() -> HtmlInputElement {
         .expect("HtmlInputElement")
 }
 
-pub fn search_suggestions() -> HtmlDivElement {
+pub fn search_suggestions() -> HtmlUListElement {
     document()
         .get_element_by_id("search_suggestions")
+        .expect("get_element_by_id")
+        .dyn_into::<HtmlUListElement>()
+        .expect("HtmlUListElement")
+}
+
+pub fn search_suggestions_parent() -> HtmlDivElement {
+    document()
+        .get_element_by_id("search_suggestions_parent")
         .expect("get_element_by_id")
         .dyn_into::<HtmlDivElement>()
         .expect("HtmlDivElement")
 }
 
-pub fn div() -> HtmlDivElement {
-    document()
+pub fn div_class(class_name: &str) -> HtmlDivElement {
+    let div = document()
         .create_element("div")
         .expect("create_element")
         .dyn_into::<HtmlDivElement>()
-        .expect("HtmlDivElement")
+        .expect("HtmlDivElement");
+    div.set_class_name(class_name);
+    div
+}
+
+pub fn button_label(label: &str) -> HtmlButtonElement {
+    let button = document()
+        .create_element("button")
+        .expect("create_element")
+        .dyn_into::<HtmlButtonElement>()
+        .expect("HtmlButtonElement");
+    button.set_attribute("aria-label", label);
+    button
+}
+
+pub fn li() -> HtmlLiElement {
+    document()
+        .create_element("li")
+        .expect("create_element")
+        .dyn_into::<HtmlLiElement>()
+        .expect("HtmlLiElement")
 }
 
 pub fn search_table() -> HtmlTableElement {
@@ -133,6 +179,28 @@ pub fn video() -> HtmlVideoElement {
         .expect("HtmlVideoElement")
 }
 
+pub fn video_window(id: &str, name: &str, video: HtmlVideoElement) -> HtmlDivElement {
+    let title_bar_text = div_class("title-bar-text");
+    title_bar_text.set_text_content(Some(name));
+    let title_bar_controls = div_class("title-bar-controls");
+    let minimize = button_label("Minimize");
+    let maximize = button_label("Maximize");
+    let close = button_label("Close");
+    title_bar_controls
+        .append_with_node_3(&minimize, &maximize, &close)
+        .expect("title_bar_controls");
+    let title_bar = div_class("title-bar");
+    title_bar
+        .append_with_node_2(&title_bar_text, &title_bar_controls)
+        .expect("title_bar");
+    let window_body = div_class("window-body");
+    window_body.append_with_node_1(&video).expect("window_body");
+    let root = div_class("window video");
+    root.append_with_node_2(&title_bar, &window_body)
+        .expect("root");
+    root
+}
+
 pub fn local_video() -> HtmlVideoElement {
     document()
         .get_element_by_id("local_video")
@@ -157,12 +225,12 @@ pub fn nes_canvas() -> HtmlCanvasElement {
         .expect("HtmlDivElement")
 }
 
-pub fn fps_div() -> HtmlDivElement {
+pub fn fps_p() -> HtmlParagraphElement {
     document()
         .get_element_by_id("fps")
         .expect("get_element_by_id")
-        .dyn_into::<HtmlDivElement>()
-        .expect("HtmlDivElement")
+        .dyn_into::<HtmlParagraphElement>()
+        .expect("HtmlParagraphElement")
 }
 
 pub async fn get_media_stream() -> Result<MediaStream, JsValue> {
@@ -181,6 +249,18 @@ pub async fn get_media_stream() -> Result<MediaStream, JsValue> {
     let get_user_media_promise = media_devices.get_user_media_with_constraints(&constraints)?;
     let media_stream: MediaStream = JsFuture::from(get_user_media_promise).await?.dyn_into()?;
     Ok(media_stream)
+}
+
+pub async fn fetch_bytes_with_request(request: &Request) -> Result<Vec<u8>, JsValue> {
+    let window: Window = window().expect("window");
+    let resp_value = JsFuture::from(window.fetch_with_request(request)).await?;
+    let resp: Response = resp_value.dyn_into().expect("response");
+    let blob_value = JsFuture::from(resp.blob()?).await?;
+    let blob: Blob = blob_value.dyn_into().expect("blob");
+    let array_value = JsFuture::from(blob.array_buffer()).await?;
+    let uint8_array = Uint8Array::new(&array_value);
+    let bytes = uint8_array.to_vec();
+    Ok(bytes)
 }
 
 pub fn get_gamepads() -> Result<Vec<Gamepad>, JsValue> {

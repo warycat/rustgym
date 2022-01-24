@@ -1,3 +1,4 @@
+use crate::desktop::Desktop;
 use crate::media::MediaClient;
 use crate::pc::PeerConnection;
 use crate::searchbar::*;
@@ -21,6 +22,7 @@ use web_sys::{
 pub struct Client {
     client_info: Option<ClientInfo>,
     ws: WebSocket,
+    _desktop: Desktop,
     searchbar: Option<SearchBar>,
     media_client: Option<MediaClient>,
     media_stream: Option<MediaStream>,
@@ -34,6 +36,7 @@ impl Client {
         let searchbar = None;
         let media_stream = None;
         let pcs = HashMap::new();
+        let _desktop = Desktop::new(start_menu(), start_button());
 
         let ws = WebSocket::new(&wsurl()).expect("WebSocket");
         let onmessage_cb = Closure::wrap(Box::new(move |e: MessageEvent| {
@@ -57,6 +60,7 @@ impl Client {
             client_info,
             media_client,
             media_stream,
+            _desktop,
             searchbar,
             pcs,
         }

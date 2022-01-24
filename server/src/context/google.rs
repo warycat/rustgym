@@ -21,8 +21,8 @@ pub struct GoogleIndexContext {
     pub app: AppContext,
     pub session: SessionData,
     pub path: String,
-    pub codejam_rows: Vec<GoogleIndexRow>,
-    pub kickstart_rows: Vec<GoogleIndexRow>,
+    pub rows_codejam: Vec<GoogleIndexRow>,
+    pub rows_kickstart: Vec<GoogleIndexRow>,
 }
 
 #[derive(Template, new)]

@@ -7,8 +7,8 @@ use wasm_bindgen::JsCast;
 use wasm_bindgen_test::console_log;
 
 use web_sys::{
-    HtmlCanvasElement, WebGl2RenderingContext, WebGlProgram, WebGlRenderingContext, WebGlShader,
-    WebGlUniformLocation,
+    HtmlCanvasElement, Request, RequestInit, RequestMode, Response, WebGl2RenderingContext,
+    WebGlProgram, WebGlRenderingContext, WebGlShader, WebGlUniformLocation,
 };
 
 const VERTEX_SHADER: u32 = WebGlRenderingContext::VERTEX_SHADER;
@@ -43,6 +43,16 @@ impl NesEmulator {
         }
     }
 
+    pub async fn load_rom(&mut self) -> Result<(), JsValue> {
+        let mut opts = RequestInit::new();
+        opts.method("GET");
+        let url = format!("/data/nes/{}", self.filename);
+        let request = Request::new_with_str_and_init(&url, &opts)?;
+        let bytes = fetch_bytes_with_request(&request).await?;
+        console_dbg!("{}", bytes.len());
+        Ok(())
+    }
+
     pub fn run(self) {
         let f = Rc::new(RefCell::new(None));
         let g = f.clone();
@@ -62,8 +72,8 @@ impl NesEmulator {
                 sum -= queue.pop_front().unwrap();
             }
             let average = sum / queue.len() as f64;
-            let status = format!("fps: {:.1}", average);
-            fps_div().set_text_content(Some(&status));
+            let status = format!("FPS: {:.1}", average);
+            fps_p().set_text_content(Some(&status));
             last = now;
             let gamepads = get_gamepads().unwrap();
             let mut r = 0.0;

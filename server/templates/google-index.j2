@@ -1,58 +1,83 @@
-{% extends "home.j2" %}
+{% extends "desktop.j2" %}
 
 {% block title %}
   {{app.title}} Google Coding Competitions Rust Solutions
 {% endblock %}
 
 {% block content %}
-<table class="table-auto">
-  <thead>
-    <tr>
-      <th>Year</th>
-      <th>Round</th>
-      <th>CodeJam {{codejam_rows.len()}} Rust Solutions</th>
-    </tr>
-  </thead>
-  <tbody>
-    {% for row in codejam_rows %}
-      <tr>
-        <td>
-          {{row.year}}
-        </td>
-        <td>
-          {{row.round}}
-        </td>
-        <td>
-          <a href="{{row.href()}}"> {{row.title}}</a>
-        </td>
-      </tr>
-    {% endfor %}
-  </tbody>
-</table>
-
-<table class="table-auto">
-  <thead>
-    <tr>
-      <th>Year</th>
-      <th>Round</th>
-      <th>KickStart {{kickstart_rows.len()}} Rust Solutions</th>
-    </tr>
-  </thead>
-  <tbody>
-    {% for row in kickstart_rows %}
-      <tr>
-        <td>
-          {{row.year}}
-        </td>
-        <td>
-          {{row.round}}
-        </td>
-        <td>
-          <a href="{{row.href()}}"> {{row.title}}</a>
-        </td>
-      </tr>
-    {% endfor %}
-  </tbody>
-</table>
-
+<div class="component">
+    <div class="window" >
+        <div class="title-bar">
+            <div class="title-bar-text">CodeJam Solutions</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <table class="table-auto">
+                <thead>
+                <tr>
+                    <th>Year</th>
+                    <th>Round</th>
+                    <th>CodeJam {{rows_codejam.len()}} Rust Solutions</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for row in rows_codejam %}
+                    <tr>
+                    <td>
+                        {{row.year}}
+                    </td>
+                    <td>
+                        {{row.round}}
+                    </td>
+                    <td>
+                        <a href="{{row.href()}}"> {{row.title}}</a>
+                    </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="window" >
+        <div class="title-bar">
+            <div class="title-bar-text">KickStart Solutions</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <table class="table-auto">
+                <thead>
+                    <tr>
+                    <th>Year</th>
+                    <th>Round</th>
+                    <th>KickStart {{rows_kickstart.len()}} Rust Solutions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for row in rows_kickstart %}
+                    <tr>
+                        <td>
+                            {{row.year}}
+                        </td>
+                        <td>
+                            {{row.round}}
+                        </td>
+                        <td>
+                            <a href="{{row.href()}}"> {{row.title}}</a>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
 {% endblock %}
+

@@ -35,7 +35,7 @@ async fn main() -> std::io::Result<()> {
     let tag = env::var("TAG").expect("TAG");
     let turn_static_auth_secret =
         env::var("TURN_STATIC_AUTH_SECRET").expect("TURN_STATIC_AUTH_SECRET");
-    let title = "RUST GYM".to_string();
+    let title = "Rust Gym".to_string();
     info!("{} {}", title, tag);
     let app_data = AppData::new(tag, title, turn_static_auth_secret);
     let search_addr = SearchAgent::new(pool.clone()).start();
@@ -54,6 +54,7 @@ async fn main() -> std::io::Result<()> {
             .data(registry_addr.clone())
             .data(uap_addr.clone())
             .service(routes::home::home)
+            .service(routes::find::find)
             .service(routes::nes_index::nes_index)
             .service(routes::nes_detail::nes_detail)
             .service(routes::leetcode_index::leetcode_index)
@@ -67,6 +68,7 @@ async fn main() -> std::io::Result<()> {
             .service(files::client_files)
             .service(files::static_files)
             .service(files::data_files)
+            .service(files::favicon_file)
             .service(web::resource("/ws/").to(agents::websocket::ws_index))
     })
     .bind("127.0.0.1:8080")?

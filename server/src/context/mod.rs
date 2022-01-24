@@ -1,4 +1,6 @@
 mod adventofcode;
+mod app;
+mod find;
 mod google;
 mod home;
 mod leetcode;
@@ -6,6 +8,8 @@ mod nes;
 mod sitemap;
 
 pub use adventofcode::*;
+pub use app::*;
+pub use find::*;
 pub use google::*;
 pub use home::*;
 pub use leetcode::*;
@@ -52,6 +56,7 @@ impl_render_wrapper!(GoogleIndexContext);
 impl_render_wrapper!(GoogleDetailContext);
 impl_render_wrapper!(NesIndexContext);
 impl_render_wrapper!(NesDetailContext);
+impl_render_wrapper!(FindContext);
 
 impl_txt_render_wrapper!(SitemapContext);
 impl_txt_render_wrapper!(RobotsContext);

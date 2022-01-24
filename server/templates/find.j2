@@ -1,0 +1,48 @@
+{% extends "desktop.j2" %}
+
+{% block title %}
+	{{ app.title }} Find
+{% endblock %}
+
+{% block content %}
+<div class="component">
+    <div class="window" >
+        <div class="title-bar">
+            <div class="title-bar-text">Find</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <div id="searchbar" class="searchbar" >
+                <input
+                    id="search_input"
+                    type="text"
+                    placeholder="Search Rust Gym"
+                    value=""
+                />
+                <div id="search_suggestions_parent" class="hidden">
+                    <ul id="search_suggestions" class="tree-view"></ul>
+                </div>
+                <table id="search_table" class="hidden" >
+                    <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>title</th>
+                        <th>from</th>
+                    </tr>
+                    </thead>
+                    <tbody id="search_results">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block script %} 
+    await start_find();
+{% endblock %}

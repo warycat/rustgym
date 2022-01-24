@@ -1,57 +1,35 @@
-{% extends "base.j2" %}
+{% extends "desktop.j2" %}
 
 {% block title %}
-  {{ app.title }} Rust Solutions
-{% endblock %}
-
-{% block navigation %}
-<div id="navigation" x-data="{ isOpen: false }" class="bg-white sticky top-0 z-50">
-  <header>
-    <div class="container mx-auto px-6 py-3">
-      <div class="flex items-center justify-between">
-        <div class="w-full text-gray-700 sm:text-center text-2xl font-semibold">
-          <a href="/">{{app.title}} {{app.tag}}</a>
-        </div>
-        <div class="flex items-center justify-end">
-          <div class="flex sm:hidden">
-            <button @click="isOpen = !isOpen" type="button" class="text-gray-600 hover:text-gray-500 focus:outline-none focus:text-gray-500" aria-label="toggle menu">
-              <svg viewBox="0 0 24 24" class="h-6 w-6 fill-current">
-                <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"></path>
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-      <nav :class="isOpen ? '' : 'hidden'" class="sm:flex sm:justify-center sm:items-center mt-4">
-        <div class="flex flex-col sm:flex-row">
-          <a class="mt-3 text-gray-600 hover:underline sm:mx-3 sm:mt-0" href="/nes">Nes</a>
-          <a class="mt-3 text-gray-600 hover:underline sm:mx-3 sm:mt-0" href="/leetcode">Leetcode</a>
-          <a class="mt-3 text-gray-600 hover:underline sm:mx-3 sm:mt-0" href="/adventofcode">AdventOfCode</a>
-          <a class="mt-3 text-gray-600 hover:underline sm:mx-3 sm:mt-0" href="/google">Google</a>
-          <a class="mt-3 text-gray-600 hover:underline sm:mx-3 sm:mt-0" href="https://github.com/warycat/rustgym">Github</a>
-          <a class="mt-3 text-gray-600 hover:underline sm:mx-3 sm:mt-0" href="https://www.youtube.com/channel/UCV9HzRLPKjI8SttaIYOygsw">Youtube</a>
-          <a class="mt-3 text-gray-600 hover:underline sm:mx-3 sm:mt-0" href="https://discord.gg/8pvjGNe">Discord</a>
-        </div>
-      </nav>
-    </div>
-  </header>
-</div>
+	{{ app.title }} Home
 {% endblock %}
 
 {% block content %}
-<div class="container mx-auto px-6 py-3">
-  <div class="text-center">
-    Hello {{ session.name }}! Welcome to RUST GYM!!
-  </div>
-</div>
+    <div class="apps">
+        <div class="app">
+            <a href="/leetcode">
+                <img class="app-icon" src="/static/ico/executable.ico">
+            </a>
+            <div>Leetcode Solutions</div>
+        </div>
+        <div class="app">
+            <a href="/google">
+                <img class="app-icon" src="/static/ico/executable.ico">
+            </a>
+            <div>Google Solutions</div>
+        </div>
+        <div class="app">
+            <a href="/adventofcode">
+                <img class="app-icon" src="/static/ico/executable.ico">
+            </a>
+            <div>AoC Solutions</div>
+        </div>
+        <div class="app">
+            <a href="/nes">
+                <img class="app-icon" src="/static/ico/executable.ico">
+            </a>
+            <div>Nes Games</div>
+        </div>
+    </div>
 {% endblock %}
 
-{% block footer %}
-  <div class="mt-16 flex flex-col items-center">
-    <div class="text-center py-6">
-      <p class="text-sm mb-2">
-        2021 RUST GYM
-      </p>
-    </div>
-  </div>
-{% endblock %}

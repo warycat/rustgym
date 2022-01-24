@@ -1,33 +1,123 @@
-{% extends "home.j2" %}
+{% extends "desktop.j2" %}
 
 {% block title %}
-  {{app.title}} Leetcode Rust Solutions
+{{app.title}} Leetcode Rust Solutions
 {% endblock %}
 
 
 {% block content %}
-<table class="table-auto">
-  <thead>
-    <tr>
-      <th>id</th>
-      <th>Leetcode {{rows.len()}} Rust Solutions</th>
-      <th>Level</th>
-    </tr>
-  </thead>
-  <tbody>
-    {% for row in rows %}
-      <tr>
-        <td>
-          {{row.id}}
-        </td>
-        <td>
-          <a href="{{row.href()}}"> {{row.title}}</a>
-        </td>
-        <td>
-          {{ row.level_str() }}
-        </td>
-      </tr>
-    {% endfor %}
-  </tbody>
-</table>
+<div class="component">
+
+    <div class="window" >
+        <div class="title-bar">
+            <div class="title-bar-text">Leetcode Easy Solutions</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <table>
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>Leetcode {{rows_easy.len()}} Easy Solutions</th>
+                        <th>Level</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for row in rows_easy %}
+                <tr>
+                    <td>
+                        {{row.id}}
+                    </td>
+                    <td>
+                        <a href="{{row.href()}}"> {{row.title}}</a>
+                    </td>
+                    <td>
+                        {{row.level_str()}}
+                    </td>
+                </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="window" >
+        <div class="title-bar">
+            <div class="title-bar-text">Leetcode Medium Solutions</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <table>
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>Leetcode {{rows_medium.len()}} Medium Solutions</th>
+                        <th>Level</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for row in rows_medium %}
+                <tr>
+                    <td>
+                        {{row.id}}
+                    </td>
+                    <td>
+                        <a href="{{row.href()}}"> {{row.title}}</a>
+                    </td>
+                    <td>
+                        {{row.level_str()}}
+                    </td>
+                </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="window" >
+        <div class="title-bar">
+            <div class="title-bar-text">Leetcode Hard Solutions</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <table>
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>Leetcode {{rows_hard.len()}} Hard Solutions</th>
+                        <th>Level</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for row in rows_hard %}
+                <tr>
+                    <td>
+                        {{row.id}}
+                    </td>
+                    <td>
+                        <a href="{{row.href()}}"> {{row.title}}</a>
+                    </td>
+                    <td>
+                        {{row.level_str()}}
+                    </td>
+                </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
 {% endblock %}

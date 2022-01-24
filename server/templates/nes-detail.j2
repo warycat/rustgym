@@ -1,4 +1,4 @@
-{% extends "home.j2" %}
+{% extends "desktop.j2" %}
 
 {% block title %}
   {{app.title}} Nes Emulator {{rom.title}}
@@ -6,14 +6,31 @@
 
 
 {% block content %}
-    <canvas 
-        id="nes_canvas"
-        width=256
-        height=240
-        class="mx-auto"
-    >
-    </canvas>
-    <div id="fps">fps: 60</div>
+    <div class="component">
+        <div class="window" >
+            <div class="title-bar">
+            <div class="title-bar-text">{{rom.title}}</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+            </div>
+            </div>
+            <div class="window-body">
+                <canvas 
+                    id="nes_canvas"
+                    width=256
+                    height=240
+                    class="mx-auto"
+                >
+                </canvas>
+            </div>
+            <div class="status-bar">
+                <p id="fps" class="status-bar-field">FPS: 60</p>
+            </div>
+        </div>
+    </div>
+
 {% endblock %}
 
 {% block script %} 
