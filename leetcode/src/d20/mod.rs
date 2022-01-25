@@ -24,3 +24,11 @@ mod _2057_smallest_index_with_equal_value;
 mod _2062_count_vowel_substrings_of_a_string;
 //
 mod _2068_check_whether_two_strings_are_almost_equivalent;
+//
+mod _2073_time_needed_to_buy_tickets;
+//
+mod _2085_count_common_words_with_one_occurrence;
+//
+mod _2089_find_target_indices_after_sorting_array;
+//
+mod _2094_finding_3_digit_even_numbers;
