@@ -3,7 +3,7 @@ struct Solution;
 impl Solution {
     fn remove_duplicates(nums: &mut Vec<i32>) -> i32 {
         let n = nums.len();
-        if n == 0 {
+        if n <= 0 {
             return 0;
         }
         let mut last = nums[0];
@@ -15,6 +15,8 @@ impl Solution {
                 size += 1;
             }
         }
+        nums.resize(size, 0);
+        nums.shrink_to_fit();
         size as i32
     }
 }
