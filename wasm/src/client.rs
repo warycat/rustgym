@@ -5,6 +5,7 @@ use crate::searchbar::*;
 use crate::utils::*;
 use js_sys::JsString;
 use js_sys::Reflect;
+use log::info;
 use rustgym_msg::*;
 use std::cell::RefCell;
 use std::collections::HashMap;
@@ -12,7 +13,6 @@ use uuid::Uuid;
 use wasm_bindgen::prelude::*;
 use wasm_bindgen::*;
 use wasm_bindgen_futures::*;
-use wasm_bindgen_test::*;
 use web_sys::{
     MediaStream, MediaStreamTrack, MessageEvent, RtcIceCandidate, RtcIceCandidateInit, RtcSdpType,
     RtcSessionDescriptionInit, WebSocket,
@@ -40,15 +40,14 @@ impl Client {
 
         let ws = WebSocket::new(&wsurl()).expect("WebSocket");
         let onmessage_cb = Closure::wrap(Box::new(move |e: MessageEvent| {
-            if let Ok(js_json) = e.data().dyn_into::<JsString>() {
-                let rust_json: String = js_json.into();
-                match serde_json::from_str::<MsgOut>(&rust_json) {
-                    Ok(msg) => {
-                        process(msg);
-                    }
-                    Err(err) => {
-                        console_dbg!("{}", err);
-                    }
+            let js_json: JsString = e.data().dyn_into().unwrap();
+            let rust_json: String = js_json.into();
+            match serde_json::from_str::<MsgOut>(&rust_json) {
+                Ok(msg) => {
+                    process(msg);
+                }
+                Err(err) => {
+                    info!("{}", err);
                 }
             }
         }) as Box<dyn FnMut(_)>);
@@ -155,7 +154,7 @@ pub fn process(message: MsgOut) {
         match res {
             Ok(_) => {}
             Err(err) => {
-                console_dbg!("{:?}", err);
+                info!("{:?}", err);
             }
         }
     });
@@ -169,7 +168,7 @@ async fn process_ice_candidate(
     sdp_m_line_index: u16,
 ) -> Result<(), JsValue> {
     if let Some(pc) = get_client().pcs.get(&remote) {
-        console_dbg!("ice {} {}", remote, candidate);
+        info!("ice {} {}", remote, candidate);
         let mut candidate_init = RtcIceCandidateInit::new(&candidate);
         candidate_init.sdp_mid(Some(&sdp_mid));
         candidate_init.sdp_m_line_index(Some(sdp_m_line_index));
@@ -181,7 +180,7 @@ async fn process_ice_candidate(
 }
 
 async fn process_offer(caller: Uuid, callee: Uuid, offer_sdp: String) -> Result<(), JsValue> {
-    console_dbg!("process_offer");
+    info!("process_offer");
     let media_stream = get_client().media_stream.expect("media_stream");
     let (pc, answer_sdp) = create_answer(caller, callee, &media_stream, offer_sdp).await?;
     set_peerconnection(caller, pc);
@@ -190,7 +189,7 @@ async fn process_offer(caller: Uuid, callee: Uuid, offer_sdp: String) -> Result<
 }
 
 async fn process_answer(_caller: Uuid, callee: Uuid, answer_sdp: String) -> Result<(), JsValue> {
-    console_dbg!("process_answer");
+    info!("process_answer");
     let mut answer_obj = RtcSessionDescriptionInit::new(RtcSdpType::Answer);
     answer_obj.sdp(&answer_sdp);
     let srd_promise = get_client()
@@ -204,8 +203,8 @@ async fn process_answer(_caller: Uuid, callee: Uuid, answer_sdp: String) -> Resu
 
 async fn process_register_client(client_info: ClientInfo) -> Result<(), JsValue> {
     if get_client().client_info.is_none() {
-        console_dbg!("set local {}", client_info.client_uuid);
-        console_dbg!(
+        info!("set local {}", client_info.client_uuid);
+        info!(
             "{:?}",
             client_info.user_agent.as_ref().expect("useragent").family
         );
@@ -227,7 +226,7 @@ async fn start_call(client_uuid: Uuid) -> Result<(), JsValue> {
     let caller = local_client_info.client_uuid;
     let callee = client_uuid;
     if callee != caller {
-        console_dbg!("start_call");
+        info!("start_call");
         let (pc, offer_sdp) = create_offer(
             caller,
             callee,
@@ -271,7 +270,7 @@ async fn create_answer(
     media_stream: &MediaStream,
     offer_sdp: String,
 ) -> Result<(PeerConnection, String), JsValue> {
-    console_dbg!("create_answer");
+    info!("create_answer");
     let local_client_info = get_client().client_info.expect("local_client_info");
     let pc = PeerConnection::new(callee, caller, local_client_info.ice_servers)?;
     let mut offer_obj = RtcSessionDescriptionInit::new(RtcSdpType::Offer);
@@ -297,7 +296,7 @@ async fn create_answer(
 }
 
 fn render_search_suggestions(search_suggestions: Vec<String>) -> Result<(), JsValue> {
-    console_dbg!("{:?}", search_suggestions);
+    info!("{:?}", search_suggestions);
     get_client()
         .searchbar
         .expect("searchbar")
@@ -305,7 +304,7 @@ fn render_search_suggestions(search_suggestions: Vec<String>) -> Result<(), JsVa
 }
 
 fn render_query_results(query_results: Vec<QueryResult>) -> Result<(), JsValue> {
-    console_dbg!("{:?}", query_results);
+    info!("{:?}", query_results);
     get_client()
         .searchbar
         .expect("searchbar")
@@ -377,7 +376,7 @@ pub fn add_remote_track(remote: Uuid, track: MediaStreamTrack) {
                 .expect("add_remote_audio_track");
         }
         _ => {
-            console_dbg!("{:?} {}", track, track.kind());
+            info!("{:?} {}", track, track.kind());
         }
     });
 }

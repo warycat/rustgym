@@ -1,15 +1,10 @@
-use wasm_bindgen::prelude::*;
-use wasm_bindgen_test::*;
-wasm_bindgen_test_configure!(run_in_browser);
-
-macro_rules! console_dbg {
-    ($($arg:tt)*) => {
-        console_log!("{} {}: {}", file!(), line!(), &format_args!($($arg)*))
-    };
-}
+#[macro_use]
+extern crate derive_new;
 
 mod client;
 mod desktop;
+mod gamepad;
+mod logger;
 mod media;
 mod nes_emulator;
 mod pc;
@@ -17,16 +12,16 @@ mod searchbar;
 mod utils;
 
 use client::*;
+use log::info;
 use media::MediaClient;
-#[macro_use]
-extern crate derive_new;
-
 use nes_emulator::NesEmulator;
 use searchbar::SearchBar;
 use utils::*;
+use wasm_bindgen::prelude::*;
 
-#[wasm_bindgen(start)]
+#[wasm_bindgen]
 pub async fn start() -> Result<(), JsValue> {
+    logger::init()?;
     set_panic_hook();
     get_client();
     let media_client = MediaClient::new(local_video(), remote_videos());
@@ -36,7 +31,7 @@ pub async fn start() -> Result<(), JsValue> {
 
 #[wasm_bindgen]
 pub async fn start_find() -> Result<(), JsValue> {
-    console_log!("start_find");
+    info!("start_find");
     let searchbar = SearchBar::new(
         search_input(),
         search_suggestions(),
@@ -50,7 +45,7 @@ pub async fn start_find() -> Result<(), JsValue> {
 
 #[wasm_bindgen]
 pub async fn start_nes(filename: String, md5: String) -> Result<(), JsValue> {
-    console_log!("start_nes {:?} {:?}", filename, md5);
+    info!("start_nes {:?} {:?}", filename, md5);
     let mut nes_emulator = NesEmulator::new(nes_canvas(), filename, md5);
     nes_emulator.load_rom().await?;
     nes_emulator.run();

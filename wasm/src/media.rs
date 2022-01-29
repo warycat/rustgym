@@ -1,8 +1,8 @@
 use crate::utils::*;
+use log::info;
 use std::collections::HashMap;
 use uuid::Uuid;
 use wasm_bindgen::*;
-use wasm_bindgen_test::*;
 use web_sys::{HtmlDivElement, HtmlVideoElement, MediaStream, MediaStreamTrack};
 
 #[derive(Debug, Clone)]
@@ -68,7 +68,7 @@ impl MediaClient {
         if let Some(el) = self.video_elements.remove(&remote) {
             self.remote_videos.remove_child(&el)?;
         } else {
-            console_dbg!("else {}", remote);
+            info!("else {}", remote);
         }
         Ok(())
     }

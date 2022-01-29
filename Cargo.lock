@@ -2623,6 +2623,9 @@ version = "0.1.0"
 [[package]]
 name = "rustgym-consts"
 version = "0.1.0"
+dependencies = [
+ "log",
+]
 
 [[package]]
 name = "rustgym-google"
@@ -2767,6 +2770,9 @@ dependencies = [
  "derive-new",
  "js-sys",
  "lazy_static",
+ "log",
+ "md5",
+ "nes",
  "rustgym-consts",
  "rustgym-msg",
  "serde",

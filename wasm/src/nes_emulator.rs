@@ -1,14 +1,15 @@
 use crate::utils::*;
+use log::{error, info};
+use nes::nes_header::NesHeader;
 use std::cell::RefCell;
 use std::collections::VecDeque;
 use std::rc::Rc;
 use wasm_bindgen::prelude::*;
 use wasm_bindgen::JsCast;
-use wasm_bindgen_test::console_log;
 
 use web_sys::{
-    HtmlCanvasElement, Request, RequestInit, RequestMode, Response, WebGl2RenderingContext,
-    WebGlProgram, WebGlRenderingContext, WebGlShader, WebGlUniformLocation,
+    HtmlCanvasElement, Request, RequestInit, WebGl2RenderingContext, WebGlProgram,
+    WebGlRenderingContext, WebGlShader, WebGlUniformLocation,
 };
 
 const VERTEX_SHADER: u32 = WebGlRenderingContext::VERTEX_SHADER;
@@ -21,10 +22,11 @@ const LINK_STATUS: u32 = WebGlRenderingContext::LINK_STATUS;
 const COMPILE_STATUS: u32 = WebGlRenderingContext::COMPILE_STATUS;
 const TRIANGLE_STRIP: u32 = WebGlRenderingContext::TRIANGLE_STRIP;
 
+const _AUDIO_SAMPLE_RATE: u32 = 44100;
+
 pub struct NesEmulator {
     ctx: WebGl2RenderingContext,
     uniforms: Vec<WebGlUniformLocation>,
-    canvas: HtmlCanvasElement,
     filename: String,
     md5: String,
 }
@@ -37,7 +39,6 @@ impl NesEmulator {
         NesEmulator {
             ctx,
             uniforms,
-            canvas,
             filename,
             md5,
         }
@@ -49,7 +50,14 @@ impl NesEmulator {
         let url = format!("/data/nes/{}", self.filename);
         let request = Request::new_with_str_and_init(&url, &opts)?;
         let bytes = fetch_bytes_with_request(&request).await?;
-        console_dbg!("{}", bytes.len());
+        info!("{}", bytes.len());
+        let digest = md5::compute(&bytes[16..]);
+        if self.md5 != format!("{:X}", digest) {
+            error!("md5");
+        }
+        let nes_header = NesHeader::new(&bytes);
+        info!("{:?}", nes_header.version());
+
         Ok(())
     }
 
@@ -75,14 +83,12 @@ impl NesEmulator {
             let status = format!("FPS: {:.1}", average);
             fps_p().set_text_content(Some(&status));
             last = now;
-            let gamepads = get_gamepads().unwrap();
+            let gamepads = get_gamepads();
             let mut r = 0.0;
             let mut g = 0.0;
             for gamepad in gamepads {
-                let axes = gamepad.axes().to_vec();
-                let axes: Vec<f64> = axes.into_iter().map(|v| v.as_f64().unwrap()).collect();
-                r = (axes[0] + 1.0) / 2.0;
-                g = (axes[1] + 1.0) / 2.0;
+                r = (gamepad.axes[0] + 1.0) / 2.0;
+                g = (gamepad.axes[1] + 1.0) / 2.0;
             }
             ctx.uniform4f(Some(&self.uniforms[0]), r as f32, g as f32, 0.0, 1.0);
             draw_rect(&ctx, Rect::new(100, 100, 100, 100));
@@ -103,10 +109,7 @@ struct Rect {
 fn init(
     canvas: &HtmlCanvasElement,
 ) -> Result<(WebGl2RenderingContext, Vec<WebGlUniformLocation>), JsValue> {
-    let ctx: WebGl2RenderingContext = canvas
-        .get_context("webgl2")?
-        .unwrap()
-        .dyn_into::<WebGl2RenderingContext>()?;
+    let ctx: WebGl2RenderingContext = canvas.get_context("webgl2")?.unwrap().dyn_into()?;
 
     let vert_shader = compile_shader(&ctx, VERTEX_SHADER, include_str!("../shaders/nes.vert"))?;
     let frag_shader = compile_shader(&ctx, FRAGMENT_SHADER, include_str!("../shaders/nes.frag"))?;

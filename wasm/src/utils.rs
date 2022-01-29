@@ -1,3 +1,4 @@
+use crate::gamepad::Gamepad;
 use js_sys::Uint8Array;
 use rustgym_msg::ClientInfo;
 use serde::{Deserialize, Serialize};
@@ -6,7 +7,7 @@ use wasm_bindgen::*;
 use wasm_bindgen_futures::JsFuture;
 use wasm_bindgen_test::*;
 use web_sys::{
-    window, Blob, Document, Gamepad, HtmlAnchorElement, HtmlButtonElement, HtmlCanvasElement,
+    window, Blob, Document, HtmlAnchorElement, HtmlButtonElement, HtmlCanvasElement,
     HtmlDivElement, HtmlElement, HtmlInputElement, HtmlLiElement, HtmlParagraphElement,
     HtmlTableElement, HtmlTableRowElement, HtmlTableSectionElement, HtmlUListElement,
     HtmlVideoElement, Location, MediaDevices, MediaStream, MediaStreamConstraints, Navigator,
@@ -68,7 +69,7 @@ pub fn start_button() -> HtmlButtonElement {
     document()
         .get_element_by_id("start_button")
         .expect("get_element_by_id")
-        .dyn_into::<HtmlButtonElement>()
+        .dyn_into()
         .expect("HtmlButtonElement")
 }
 
@@ -76,7 +77,7 @@ pub fn start_menu() -> HtmlDivElement {
     document()
         .get_element_by_id("start_menu")
         .expect("get_element_by_id")
-        .dyn_into::<HtmlDivElement>()
+        .dyn_into()
         .expect("HtmlDivElement")
 }
 
@@ -84,7 +85,7 @@ pub fn search_input() -> HtmlInputElement {
     document()
         .get_element_by_id("search_input")
         .expect("get_element_by_id")
-        .dyn_into::<HtmlInputElement>()
+        .dyn_into()
         .expect("HtmlInputElement")
 }
 
@@ -92,7 +93,7 @@ pub fn search_suggestions() -> HtmlUListElement {
     document()
         .get_element_by_id("search_suggestions")
         .expect("get_element_by_id")
-        .dyn_into::<HtmlUListElement>()
+        .dyn_into()
         .expect("HtmlUListElement")
 }
 
@@ -100,27 +101,27 @@ pub fn search_suggestions_parent() -> HtmlDivElement {
     document()
         .get_element_by_id("search_suggestions_parent")
         .expect("get_element_by_id")
-        .dyn_into::<HtmlDivElement>()
+        .dyn_into()
         .expect("HtmlDivElement")
 }
 
 pub fn div_class(class_name: &str) -> HtmlDivElement {
-    let div = document()
+    let div: HtmlDivElement = document()
         .create_element("div")
         .expect("create_element")
-        .dyn_into::<HtmlDivElement>()
+        .dyn_into()
         .expect("HtmlDivElement");
     div.set_class_name(class_name);
     div
 }
 
 pub fn button_label(label: &str) -> HtmlButtonElement {
-    let button = document()
+    let button: HtmlButtonElement = document()
         .create_element("button")
         .expect("create_element")
-        .dyn_into::<HtmlButtonElement>()
+        .dyn_into()
         .expect("HtmlButtonElement");
-    button.set_attribute("aria-label", label);
+    button.set_attribute("aria-label", label).unwrap();
     button
 }
 
@@ -128,7 +129,7 @@ pub fn li() -> HtmlLiElement {
     document()
         .create_element("li")
         .expect("create_element")
-        .dyn_into::<HtmlLiElement>()
+        .dyn_into()
         .expect("HtmlLiElement")
 }
 
@@ -136,7 +137,7 @@ pub fn search_table() -> HtmlTableElement {
     document()
         .get_element_by_id("search_table")
         .expect("get_element_by_id")
-        .dyn_into::<HtmlTableElement>()
+        .dyn_into()
         .expect("HtmlTableElement")
 }
 
@@ -144,7 +145,7 @@ pub fn search_results() -> HtmlTableSectionElement {
     document()
         .get_element_by_id("search_results")
         .expect("get_element_by_id")
-        .dyn_into::<HtmlTableSectionElement>()
+        .dyn_into()
         .expect("HtmlTableSectionElement")
 }
 
@@ -159,7 +160,7 @@ pub fn tr() -> HtmlTableRowElement {
     document()
         .create_element("tr")
         .expect("create_element")
-        .dyn_into::<HtmlTableRowElement>()
+        .dyn_into()
         .expect("HtmlTableRowElement")
 }
 
@@ -167,7 +168,7 @@ pub fn a() -> HtmlAnchorElement {
     document()
         .create_element("a")
         .expect("create_element")
-        .dyn_into::<HtmlAnchorElement>()
+        .dyn_into()
         .expect("HtmlAnchorElement")
 }
 
@@ -175,11 +176,11 @@ pub fn video() -> HtmlVideoElement {
     document()
         .create_element("video")
         .expect("create_element")
-        .dyn_into::<HtmlVideoElement>()
+        .dyn_into()
         .expect("HtmlVideoElement")
 }
 
-pub fn video_window(id: &str, name: &str, video: HtmlVideoElement) -> HtmlDivElement {
+pub fn video_window(_id: &str, name: &str, video: HtmlVideoElement) -> HtmlDivElement {
     let title_bar_text = div_class("title-bar-text");
     title_bar_text.set_text_content(Some(name));
     let title_bar_controls = div_class("title-bar-controls");
@@ -205,7 +206,7 @@ pub fn local_video() -> HtmlVideoElement {
     document()
         .get_element_by_id("local_video")
         .expect("get_element_by_id")
-        .dyn_into::<HtmlVideoElement>()
+        .dyn_into()
         .expect("HtmlVideoElement")
 }
 
@@ -213,7 +214,7 @@ pub fn remote_videos() -> HtmlDivElement {
     document()
         .get_element_by_id("remote_videos")
         .expect("get_element_by_id")
-        .dyn_into::<HtmlDivElement>()
+        .dyn_into()
         .expect("HtmlDivElement")
 }
 
@@ -221,7 +222,7 @@ pub fn nes_canvas() -> HtmlCanvasElement {
     document()
         .get_element_by_id("nes_canvas")
         .expect("get_element_by_id")
-        .dyn_into::<HtmlCanvasElement>()
+        .dyn_into()
         .expect("HtmlDivElement")
 }
 
@@ -229,7 +230,7 @@ pub fn fps_p() -> HtmlParagraphElement {
     document()
         .get_element_by_id("fps")
         .expect("get_element_by_id")
-        .dyn_into::<HtmlParagraphElement>()
+        .dyn_into()
         .expect("HtmlParagraphElement")
 }
 
@@ -263,17 +264,18 @@ pub async fn fetch_bytes_with_request(request: &Request) -> Result<Vec<u8>, JsVa
     Ok(bytes)
 }
 
-pub fn get_gamepads() -> Result<Vec<Gamepad>, JsValue> {
+pub fn get_gamepads() -> Vec<Gamepad> {
     let navigator = navigator();
-    let gamepads = navigator.get_gamepads()?;
+    let gamepads = navigator.get_gamepads().unwrap();
     let gamepads = gamepads.to_vec();
     let mut res: Vec<Gamepad> = vec![];
     for gamepad in gamepads {
-        if let Ok(g) = gamepad.dyn_into::<Gamepad>() {
-            res.push(g);
+        if let Ok(gamepad) = gamepad.dyn_into::<web_sys::Gamepad>() {
+            let gamepad: Gamepad = gamepad.into();
+            res.push(gamepad);
         }
     }
-    Ok(res)
+    res
 }
 
 pub fn request_animation_frame(f: &Closure<dyn FnMut()>) {
