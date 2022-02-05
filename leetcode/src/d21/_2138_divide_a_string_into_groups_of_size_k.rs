@@ -23,6 +23,6 @@ fn test() {
     let s = "abcdefghij".to_string();
     let k = 3;
     let fill = 'x';
-    let res = vec_string!["abc", "def", "ghi", "jxx",];
+    let res = vec_string!["abc", "def", "ghi", "jxx"];
     assert_eq!(Solution::divide_string(s, k, fill), res);
 }
