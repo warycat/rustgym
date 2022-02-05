@@ -1,32 +1,47 @@
-{% extends "home.j2" %}
+{% extends "desktop.j2" %}
 
 {% block title %}
   {{app.title}} AdventOfCode Rust Solutions
 {% endblock %}
 
 {% block content %}
-<table class="table-auto">
-  <thead>
-    <tr>
-      <th>Year</th>
-      <th>Day</th>
-      <th>AdventOfCode {{rows.len()}} Rust Solutions</th>
-    </tr>
-  </thead>
-  <tbody>
-    {% for row in rows %}
-      <tr>
-        <td>
-          {{row.year}}
-        </td>
-        <td>
-          {{row.day}}
-        </td>
-        <td>
-          <a href="{{row.href()}}"> {{row.title}}</a>
-        </td>
-      </tr>
-    {% endfor %}
-  </tbody>
-</table>
+<div class="component">
+    <div class="window" >
+        <div class="title-bar">
+            <div class="title-bar-text">AdventOfCode Solutions</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <table class="table-auto">
+            <thead>
+                <tr>
+                <th>Year</th>
+                <th>Day</th>
+                <th>AdventOfCode {{rows.len()}} Rust Solutions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in rows %}
+                <tr>
+                    <td>
+                        {{row.year}}
+                    </td>
+                    <td>
+                        {{row.day}}
+                    </td>
+                    <td>
+                        <a href="{{row.href()}}"> {{row.title}}</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+            </table>
+        </div>
+    </div>
+</div>
 {% endblock %}
+

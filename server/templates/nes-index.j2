@@ -1,34 +1,36 @@
-{% extends "home.j2" %}
+{% extends "desktop.j2" %}
 
 {% block title %}
-  {{app.title}} Nes Emulator
+  {{app.title}} Nes Games
 {% endblock %}
 
 
 {% block content %}
-<table class="table-auto">
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    {% for row in rows %}
-      <tr>
-        <td>
-          <a href="{{row.href()}}">
-            <figure>
+  <div class="component">
+    <div class="window" >
+      <div class="title-bar">
+        <div class="title-bar-text">Nes Games</div>
+        <div class="title-bar-controls">
+          <button aria-label="Minimize"></button>
+          <button aria-label="Maximize"></button>
+          <button aria-label="Close"></button>
+        </div>
+      </div>
+      <div class="window-body">
+        {% for row in rows %}
+        <div class="rom-body">
+          <div class="rom-image">
+            <a href="{{row.href()}}">
               <img src={{row.image}} alt={{row.title}} />
-              <figcaption>{{row.title}}</figcaption>
-            </figure>
-          </a>
-        </td>
-        <td>
-          {{ row.description }}
-        </td>
-      </tr>
-    {% endfor %}
-  </tbody>
-</table>
+            </a>
+          </div>
+          <div class="rom-detail">
+            <h4>{{ row.title }}</h4>
+            <blockquote>{{ row.description }}</blockquote>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
 {% endblock %}

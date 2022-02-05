@@ -1,5 +1,5 @@
-use crate::header::Header;
 use crate::iomap::IoMap;
+use crate::nes_header::NesHeader;
 use crate::prg_rom::PrgRom;
 use crate::ram::*;
 
@@ -22,8 +22,8 @@ impl Bus {
         self.ram.reset();
     }
     pub fn insert_cartridge(&mut self, data: &[u8]) {
-        let header = Header::new(data);
-        let prg_rom = PrgRom::new(header.mapper(), &data[header.prg_rom_range()]);
+        let nes_header = NesHeader::new(data);
+        let prg_rom = PrgRom::new(nes_header.mapper_id(), &data[nes_header.prg_rom_range()]);
         self.prg_rom = Some(prg_rom);
     }
 }

@@ -15,6 +15,8 @@ impl Solution {
                 size += 1;
             }
         }
+        nums.resize(size, 0);
+        nums.shrink_to_fit();
         size as i32
     }
 }

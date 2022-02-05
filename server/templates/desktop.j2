@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>{% block title %}RUST GYM{% endblock %}</title>
+        <link rel="stylesheet" href="/static/css/vs.css"/>
+        <link rel="stylesheet" href="/static/css/98.css"/>
+        <link rel="stylesheet" href="/static/css/desktop.css"/>
+        <link rel="canonical" href="https://rustgym.com{{path|safe}}" />
+        <script src="https://www.googletagmanager.com/gtag/js?id=G-661DVJ18N4"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-661DVJ18N4');
+        </script>
+        <script src="/static/highlight.min.js"></script>
+        <script src="/pkg/rustgym_wasm.js"></script>
+        <script>
+            hljs.initHighlightingOnLoad();
+            console.log("session.uuid {{session.uuid}}");
+            console.log("session.name {{session.name}}");
+            console.log("session.count {{session.count}}");
+        </script>
+        {% block head %}{% endblock %}
+    </head>
+
+    <body>
+        {% block content %}{% endblock %}
+    </body>
+
+    <footer>
+        <div id="remote_videos" class="component remote-videos">
+            <div class="window video" >
+                <div class="title-bar">
+                    <div class="title-bar-text">{{ session.name }}</div>
+                    <div class="title-bar-controls">
+                        <button aria-label="Minimize"></button>
+                        <button aria-label="Maximize"></button>
+                        <button aria-label="Close"></button>
+                    </div>
+                </div>
+                <div class="window-body">
+                    <video id="local_video" autoplay></video>
+                </div>
+            </div>
+        </div>
+
+        <div id="start_menu" class="win98 hidden">
+            <div class="menu">
+                <div class="menu-sidebar">
+                    <div class="headline">
+                        <strong>{{app.title}}</strong>
+                    </div>
+                </div>
+                <ul class="menu-content">
+
+                    <li class="item folder">
+                        <img class="icon" src="/static/gif/programs.gif">
+                        Programs
+                        <ul class="menu-content">
+                            <li class="item">
+                                <a href="/leetcode">
+                                    <img class="icon" src="/static/gif/exe.gif">
+                                    Leetcode Solutions
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="/google">
+                                    <img class="icon" src="/static/gif/exe.gif">
+                                    Google Solutions
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="/adventofcode">
+                                    <img class="icon" src="/static/gif/exe.gif">
+                                    AoC Solutions
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="/nes">
+                                    <img class="icon" src="/static/gif/exe.gif">
+                                    Nes Games
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="item folder">
+                        <img class="icon" src="/static/gif/favourites.gif">
+                        Favorites
+                        <ul class="menu-content">
+                            <li class="item">
+                                <a href="https://www.youtube.com/channel/UCV9HzRLPKjI8SttaIYOygsw">
+                                    <img class="icon" src="/static/gif/documents.gif">
+                                    Youtube Channel
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="https://space.bilibili.com/492001202/">
+                                    <img class="icon" src="/static/gif/documents.gif">
+                                    Bilibili Channel
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="item folder">
+                        <img class="icon" src="/static/gif/documents.gif">
+                        Documents
+                        <ul class="menu-content">
+                            <li class="item">
+                                <a href="https://github.com/sponsors/warycat">
+                                    <img class="icon" src="/static/gif/txt.gif">
+                                    Github Sponsor.txt
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="https://doc.rust-lang.org/book/">
+                                    <img class="icon" src="/static/gif/txt.gif">
+                                    The Rust Book.txt
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="item folder">
+                        <img class="icon" src="/static/gif/settings.gif">
+                        Settings
+                    </li>
+
+                    <li class="item">
+                        <a href="/find">
+                            <img class="icon" src="/static/gif/find.gif">
+                            Find
+                        </a>
+                    </li>
+
+                    <li class="item">
+                        <a href="https://github.com/warycat/rustgym">
+                            <img class="icon" src="/static/gif/help.gif">
+                            Github
+                        </a>
+                    </li>
+
+                    <li class="item">
+                        <a href="https://discord.gg/8pvjGNe">
+                            <img class="icon" src="/static/gif/run.gif">
+                            Members
+                        </a>
+                    </li>
+
+                    <li class="divider"></li>
+
+                    <li class="item">
+                        <img class="icon" src="/static/gif/logoff.gif">
+                        Sign In
+                    </li>
+
+                    <li class="item">
+                        <a href="/">
+                            <img class="icon" src="/static/gif/shutdown.gif">
+                            Sign Off
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="taskbar" style="z-index: 5000;">
+            <button id="start_button" title="Click here to begin.">
+                <img src="/static/ico/windows.ico">
+                <span>Start</span>
+            </button>
+            <div class="taskbar-divider"></div>
+            <!-- TODO: pinned apps and resizing handles -->
+            <div class="tasks"></div>
+            <div class="taskbar-divider"></div>
+            <div class="tray">
+                <div class="tray-icons">
+                    <img class="tray-icon" src="/static/ico/user_world.ico" title="Connect" >
+                    <img class="tray-icon" src="/static/ico/loudspeaker_rays.ico" title="Volume" >
+                </div>
+                <div class="taskbar-time"  title="Thursday, January 20, 07:39 PM">00:00:00</div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const { start, start_nes, start_find} = wasm_bindgen;
+        async function run() {
+            try {
+                await wasm_bindgen('/pkg/rustgym_wasm_bg.wasm');
+                await start();
+                {% block script %}{% endblock %}
+            } catch(e) { 
+                console.error(e);
+            }
+        }
+        run();
+    </script>
+</html>
+
+
+

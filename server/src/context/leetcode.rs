@@ -28,7 +28,9 @@ pub struct LeetcodeIndexContext {
     pub app: AppContext,
     pub session: SessionData,
     pub path: String,
-    pub rows: Vec<LeetcodeIndexRow>,
+    pub rows_easy: Vec<LeetcodeIndexRow>,
+    pub rows_medium: Vec<LeetcodeIndexRow>,
+    pub rows_hard: Vec<LeetcodeIndexRow>,
 }
 
 #[derive(Template, new)]

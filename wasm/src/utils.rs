@@ -1,3 +1,5 @@
+use crate::gamepad::Gamepad;
+use js_sys::Uint8Array;
 use rustgym_msg::ClientInfo;
 use serde::{Deserialize, Serialize};
 use wasm_bindgen::prelude::*;
@@ -5,10 +7,11 @@ use wasm_bindgen::*;
 use wasm_bindgen_futures::JsFuture;
 use wasm_bindgen_test::*;
 use web_sys::{
-    window, Document, HtmlAnchorElement, HtmlCanvasElement, HtmlDivElement, HtmlElement,
-    HtmlInputElement, HtmlTableElement, HtmlTableRowElement, HtmlTableSectionElement,
+    window, Blob, Document, HtmlAnchorElement, HtmlButtonElement, HtmlCanvasElement,
+    HtmlDivElement, HtmlElement, HtmlInputElement, HtmlLiElement, HtmlParagraphElement,
+    HtmlTableElement, HtmlTableRowElement, HtmlTableSectionElement, HtmlUListElement,
     HtmlVideoElement, Location, MediaDevices, MediaStream, MediaStreamConstraints, Navigator,
-    Window,
+    Request, Response, Window,
 };
 
 #[derive(Serialize, Deserialize, Debug, Clone, Hash, Eq, PartialEq)]
@@ -43,6 +46,12 @@ pub fn navigator() -> Navigator {
     window.navigator()
 }
 
+pub fn now() -> f64 {
+    let window: Window = window().expect("window");
+    let performance = window.performance().expect("performace");
+    performance.now()
+}
+
 pub fn wsurl() -> String {
     let window: Window = window().expect("window");
     let location: Location = window.location();
@@ -56,35 +65,79 @@ pub fn wsurl() -> String {
     format!("{}{}/ws/", ws_protocol, host)
 }
 
+pub fn start_button() -> HtmlButtonElement {
+    document()
+        .get_element_by_id("start_button")
+        .expect("get_element_by_id")
+        .dyn_into()
+        .expect("HtmlButtonElement")
+}
+
+pub fn start_menu() -> HtmlDivElement {
+    document()
+        .get_element_by_id("start_menu")
+        .expect("get_element_by_id")
+        .dyn_into()
+        .expect("HtmlDivElement")
+}
+
 pub fn search_input() -> HtmlInputElement {
     document()
         .get_element_by_id("search_input")
         .expect("get_element_by_id")
-        .dyn_into::<HtmlInputElement>()
+        .dyn_into()
         .expect("HtmlInputElement")
 }
 
-pub fn search_suggestions() -> HtmlDivElement {
+pub fn search_suggestions() -> HtmlUListElement {
     document()
         .get_element_by_id("search_suggestions")
         .expect("get_element_by_id")
-        .dyn_into::<HtmlDivElement>()
+        .dyn_into()
+        .expect("HtmlUListElement")
+}
+
+pub fn search_suggestions_parent() -> HtmlDivElement {
+    document()
+        .get_element_by_id("search_suggestions_parent")
+        .expect("get_element_by_id")
+        .dyn_into()
         .expect("HtmlDivElement")
 }
 
-pub fn div() -> HtmlDivElement {
-    document()
+pub fn div_class(class_name: &str) -> HtmlDivElement {
+    let div: HtmlDivElement = document()
         .create_element("div")
         .expect("create_element")
-        .dyn_into::<HtmlDivElement>()
-        .expect("HtmlDivElement")
+        .dyn_into()
+        .expect("HtmlDivElement");
+    div.set_class_name(class_name);
+    div
+}
+
+pub fn button_label(label: &str) -> HtmlButtonElement {
+    let button: HtmlButtonElement = document()
+        .create_element("button")
+        .expect("create_element")
+        .dyn_into()
+        .expect("HtmlButtonElement");
+    button.set_attribute("aria-label", label).unwrap();
+    button
+}
+
+pub fn li() -> HtmlLiElement {
+    document()
+        .create_element("li")
+        .expect("create_element")
+        .dyn_into()
+        .expect("HtmlLiElement")
 }
 
 pub fn search_table() -> HtmlTableElement {
     document()
         .get_element_by_id("search_table")
         .expect("get_element_by_id")
-        .dyn_into::<HtmlTableElement>()
+        .dyn_into()
         .expect("HtmlTableElement")
 }
 
@@ -92,7 +145,7 @@ pub fn search_results() -> HtmlTableSectionElement {
     document()
         .get_element_by_id("search_results")
         .expect("get_element_by_id")
-        .dyn_into::<HtmlTableSectionElement>()
+        .dyn_into()
         .expect("HtmlTableSectionElement")
 }
 
@@ -107,7 +160,7 @@ pub fn tr() -> HtmlTableRowElement {
     document()
         .create_element("tr")
         .expect("create_element")
-        .dyn_into::<HtmlTableRowElement>()
+        .dyn_into()
         .expect("HtmlTableRowElement")
 }
 
@@ -115,7 +168,7 @@ pub fn a() -> HtmlAnchorElement {
     document()
         .create_element("a")
         .expect("create_element")
-        .dyn_into::<HtmlAnchorElement>()
+        .dyn_into()
         .expect("HtmlAnchorElement")
 }
 
@@ -123,15 +176,37 @@ pub fn video() -> HtmlVideoElement {
     document()
         .create_element("video")
         .expect("create_element")
-        .dyn_into::<HtmlVideoElement>()
+        .dyn_into()
         .expect("HtmlVideoElement")
+}
+
+pub fn video_window(_id: &str, name: &str, video: HtmlVideoElement) -> HtmlDivElement {
+    let title_bar_text = div_class("title-bar-text");
+    title_bar_text.set_text_content(Some(name));
+    let title_bar_controls = div_class("title-bar-controls");
+    let minimize = button_label("Minimize");
+    let maximize = button_label("Maximize");
+    let close = button_label("Close");
+    title_bar_controls
+        .append_with_node_3(&minimize, &maximize, &close)
+        .expect("title_bar_controls");
+    let title_bar = div_class("title-bar");
+    title_bar
+        .append_with_node_2(&title_bar_text, &title_bar_controls)
+        .expect("title_bar");
+    let window_body = div_class("window-body");
+    window_body.append_with_node_1(&video).expect("window_body");
+    let root = div_class("window video");
+    root.append_with_node_2(&title_bar, &window_body)
+        .expect("root");
+    root
 }
 
 pub fn local_video() -> HtmlVideoElement {
     document()
         .get_element_by_id("local_video")
         .expect("get_element_by_id")
-        .dyn_into::<HtmlVideoElement>()
+        .dyn_into()
         .expect("HtmlVideoElement")
 }
 
@@ -139,7 +214,7 @@ pub fn remote_videos() -> HtmlDivElement {
     document()
         .get_element_by_id("remote_videos")
         .expect("get_element_by_id")
-        .dyn_into::<HtmlDivElement>()
+        .dyn_into()
         .expect("HtmlDivElement")
 }
 
@@ -147,8 +222,16 @@ pub fn nes_canvas() -> HtmlCanvasElement {
     document()
         .get_element_by_id("nes_canvas")
         .expect("get_element_by_id")
-        .dyn_into::<HtmlCanvasElement>()
+        .dyn_into()
         .expect("HtmlDivElement")
+}
+
+pub fn fps_p() -> HtmlParagraphElement {
+    document()
+        .get_element_by_id("fps")
+        .expect("get_element_by_id")
+        .dyn_into()
+        .expect("HtmlParagraphElement")
 }
 
 pub async fn get_media_stream() -> Result<MediaStream, JsValue> {
@@ -167,6 +250,39 @@ pub async fn get_media_stream() -> Result<MediaStream, JsValue> {
     let get_user_media_promise = media_devices.get_user_media_with_constraints(&constraints)?;
     let media_stream: MediaStream = JsFuture::from(get_user_media_promise).await?.dyn_into()?;
     Ok(media_stream)
+}
+
+pub async fn fetch_bytes_with_request(request: &Request) -> Result<Vec<u8>, JsValue> {
+    let window: Window = window().expect("window");
+    let resp_value = JsFuture::from(window.fetch_with_request(request)).await?;
+    let resp: Response = resp_value.dyn_into().expect("response");
+    let blob_value = JsFuture::from(resp.blob()?).await?;
+    let blob: Blob = blob_value.dyn_into().expect("blob");
+    let array_value = JsFuture::from(blob.array_buffer()).await?;
+    let uint8_array = Uint8Array::new(&array_value);
+    let bytes = uint8_array.to_vec();
+    Ok(bytes)
+}
+
+pub fn get_gamepads() -> Vec<Gamepad> {
+    let navigator = navigator();
+    let gamepads = navigator.get_gamepads().unwrap();
+    let gamepads = gamepads.to_vec();
+    let mut res: Vec<Gamepad> = vec![];
+    for gamepad in gamepads {
+        if let Ok(gamepad) = gamepad.dyn_into::<web_sys::Gamepad>() {
+            let gamepad: Gamepad = gamepad.into();
+            res.push(gamepad);
+        }
+    }
+    res
+}
+
+pub fn request_animation_frame(f: &Closure<dyn FnMut()>) {
+    let window: Window = window().expect("window");
+    window
+        .request_animation_frame(f.as_ref().unchecked_ref())
+        .expect("should register `requestAnimationFrame` OK");
 }
 
 pub trait MediaSupport {

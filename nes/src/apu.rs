@@ -11,10 +11,10 @@ pub trait Apu: SaveLoad {
     fn write_frame_ctrl(&mut self, data: u32);
     fn clock(&self) -> Cycle;
     fn clock_dma(&self, read_address: u32);
-    fn set_sample_rate(&mut self, rate: u32) -> Result<NesWarning, NesError>;
-    fn set_sample_bits(&mut self, bits: u32) -> Result<NesWarning, NesError>;
-    fn set_speed(&mut self, speed: u32) -> Result<NesWarning, NesError>;
-    fn set_volume(&mut self, channel: u32, volume: u32) -> Result<NesWarning, NesError>;
+    fn set_sample_rate(&mut self, rate: u32) -> Result<(), ()>;
+    fn set_sample_bits(&mut self, bits: u32) -> Result<(), ()>;
+    fn set_speed(&mut self, speed: u32) -> Result<(), ()>;
+    fn set_volume(&mut self, channel: u32, volume: u32) -> Result<(), ()>;
     fn get_volume(&self, channel: u32) -> u32;
     fn get_ctrl(&self) -> u32;
     fn mute(&mut self, mute: bool);

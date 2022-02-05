@@ -66,7 +66,15 @@ mod _1746_maximum_subarray_sum_after_one_operation;
 //
 mod _1748_sum_of_unique_elements;
 //
+mod _1749_maximum_absolute_sum_of_any_subarray;
+//
+mod _1750_minimum_length_of_string_after_deleting_similar_ends;
+//
 mod _1752_check_if_array_is_sorted_and_rotated;
+//
+mod _1753_maximum_score_from_removing_stones;
+//
+mod _1754_largest_merge_of_two_strings;
 //
 mod _1758_minimum_changes_to_make_alternating_binary_string;
 //

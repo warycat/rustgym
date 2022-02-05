@@ -1,33 +1,53 @@
-{% extends "home.j2" %}
+{% extends "desktop.j2" %}
 
 {% block title %}
   {{app.title}} AdventOfCode {{description.year}} Day {{description.day}} {{description.title}} Rust Solution
 {% endblock %}
 
 {% block content %}
-<div>{{description.html|safe}}</div>
-<h2>Rust Solution</h2>
-<pre><code class="rust">{{solution.source}}</code></pre>
+<div class="component">
+    <div class="window" >
+        <div class="title-bar">
+            <div class="title-bar-text">{{description.title}}</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <div>{{description.html|safe}}</div>
+            <section class="field-row" style="justify-content: flex-end">
+                <a target="_blank" href="{{description.practice_url()}}">
+                    <button>Practice</button>
+                </a>
+                <a target="_blank" href="http://twitter.com/share?text={{app.title}} AdventOfCode {{description.year}} Day {{description.day}} {{description.title}} Rust Solution&url=https://rustgym.com{{description.href()}}&hashtags=rustgym,adventofcode,rust">
+                    <button>Tweet</button>
+                </a>
+                <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=rustgym.com{{description.href()}}" >
+                    <button>Facebook</button>
+                </a>
+                <a target="_blank" href="https://github.com/warycat/rustgym/issues/new?title=AdventOfCode {{description.year}} Day {{description.day}} {{description.title}}">
+                    <button type="button">Issue</button>
+                </a>
+            </section>
+        </div>
+    </div>
 
-<div class="grid grid-cols-2 flex justify-between">
-  <div class="flex">
-    <a target="_blank" href="{{description.practice_url()}}">
-      <button type="button" class="border border-green-500 bg-green-500 text-white rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-green-500 focus:outline-none focus:shadow-outline">Practice</button>
-    </a>
-  </div>
-  
-  <div class="flex justify-end">
-  <a target="_blank" href="http://twitter.com/share?text={{app.title}} AdventOfCode {{description.year}} Day {{description.day}} {{description.title}} Rust Solution&url=https://rustgym.com{{description.href()}}&hashtags=rustgym,adventofcode,rust">
-    <button type="button" class="border border-blue-400 bg-blue-400 text-white rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-blue-500 focus:outline-none focus:shadow-outline">Tweet</button>
-  </a> 
-    <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=rustgym.com{{description.href()}}" >
-      <button type="button" class="border border-blue-600 bg-blue-600 text-white rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-blue-700 focus:outline-none focus:shadow-outline">Facebook</button>
-    </a>
-  </div>
-</div>
+    <div class="window" >
+        <div class="title-bar">
+            <div class="title-bar-text">{{description.title}}</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+          <pre><code class="rust">{{solution.source}}</code></pre>
+        </div>
+    </div>
 
-
-<div>
-  <p>Having problems with this solution? <a href="https://github.com/warycat/rustgym/issues/new?title=AdventOfCode {{description.year}} Day {{description.day}} {{description.title}}">Click here</a> to submit an issue on github.</p>
 </div>
 {% endblock %}
+

@@ -1,38 +1,72 @@
-{% extends "home.j2" %}
+{% extends "desktop.j2" %}
 
 {% block title %}
   {{app.title}} Google {{item.division()}} Year {{item.year}} Round {{item.round}} {{item.title}} Rust Solution
 {% endblock %}
 
 {% block content %}
-<h2>{{item.title}}</h2>
-<div>{{item.problem|safe}}</div>
-<h2>Sample Input & Output</h2>
-<pre>{{item.input}}</pre>
-<pre>{{item.output}}</pre>
-<h2>Rust Solution</h2>
-<pre><code class="rust">{{item.solution}}</code></pre>
-<div>{{item.analysis|safe}}</div>
+<div class="component">
+    <div class="window" >
+        <div class="title-bar">
+            <div class="title-bar-text">{{item.title}}</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <div>{{item.problem|safe}}</div>
+            <h4>Input</h4>
+            <pre>{{item.input}}</pre>
+            <h4>Output</h4>
+            <pre>{{item.output}}</pre>
+            <section class="field-row" style="justify-content: flex-end">
+                <a target="_blank" href="{{item.practice_url()}}">
+                    <button>Practice</button>
+                </a>
+                <a target="_blank" href="http://twitter.com/share?text={{app.title}} Google {{item.division()}} {{item.year}} Round {{item.round}} {{item.title}} Rust Solution&url=https://rustgym.com{{item.href()}}&hashtags=rustgym,google,rust">
+                    <button>Tweet</button>
+                </a>
+                <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=rustgym.com{{item.href()}}" >
+                    <button>Facebook</button>
+                </a>
+                <a target="_blank" href="https://github.com/warycat/rustgym/issues/new?title=Google {{item.division()}} {{item.year}} Round {{item.round}} {{item.title}}">
+                    <button type="button">Issue</button>
+                </a>
+            </section>
+        </div>
+    </div>
 
-<div class="grid grid-cols-2 flex justify-between">
-  <div class="flex">
-    <a target="_blank" href="{{item.practice_url()}}">
-      <button type="button" class="border border-green-500 bg-green-500 text-white rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-green-500 focus:outline-none focus:shadow-outline">Practice</button>
-    </a>
-  </div>
-  
-  <div class="flex justify-end">
-  <a target="_blank" href="http://twitter.com/share?text={{app.title}} Google {{item.division()}} {{item.year}} Round {{item.round}} {{item.title}} Rust Solution&url=https://rustgym.com{{item.href()}}&hashtags=rustgym,google,rust">
-    <button type="button" class="border border-blue-400 bg-blue-400 text-white rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-blue-500 focus:outline-none focus:shadow-outline">Tweet</button>
-  </a> 
-    <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=rustgym.com{{item.href()}}" >
-      <button type="button" class="border border-blue-600 bg-blue-600 text-white rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-blue-700 focus:outline-none focus:shadow-outline">Facebook</button>
-    </a>
-  </div>
-</div>
+    {% if !item.analysis.is_empty() %}
+    <div class="window" >
+        <div class="title-bar">
+            <div class="title-bar-text">{{item.title}}</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <code>{{item.analysis|safe}}</code>
+        </div>
+    </div>
+    {% endif %}
 
+    <div class="window" >
+        <div class="title-bar">
+            <div class="title-bar-text">{{item.title}}</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <pre><code class="rust">{{item.solution}}</code></pre>
+        </div>
+    </div>
 
-<div>
-  <p>Having problems with this solution? <a href="https://github.com/warycat/rustgym/issues/new?title=Google {{item.division()}} {{item.year}} Round {{item.round}} {{item.title}}">Click here</a> to submit an issue on github.</p>
 </div>
 {% endblock %}

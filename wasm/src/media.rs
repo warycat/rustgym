@@ -1,15 +1,15 @@
 use crate::utils::*;
+use log::info;
 use std::collections::HashMap;
 use uuid::Uuid;
 use wasm_bindgen::*;
-use wasm_bindgen_test::*;
 use web_sys::{HtmlDivElement, HtmlVideoElement, MediaStream, MediaStreamTrack};
 
 #[derive(Debug, Clone)]
 pub struct MediaClient {
     local_video: HtmlVideoElement,
     remote_videos: HtmlDivElement,
-    video_elements: HashMap<Uuid, HtmlVideoElement>,
+    video_elements: HashMap<Uuid, HtmlDivElement>,
     media_streams: HashMap<Uuid, MediaStream>,
     video_tracks: HashMap<Uuid, MediaStreamTrack>,
     audio_tracks: HashMap<Uuid, MediaStreamTrack>,
@@ -45,7 +45,6 @@ impl MediaClient {
             let video = video();
             video.set_id(&remote.to_string());
             video.set_autoplay(true);
-            video.class_list().add_1("remote")?;
             let media_stream = MediaStream::new()?;
             if let Some(video_track) = self.video_tracks.get(&remote) {
                 media_stream.add_track(video_track);
@@ -54,9 +53,10 @@ impl MediaClient {
                 media_stream.add_track(audio_track);
             }
             video.set_src_object(Some(&media_stream));
+            let video_window = video_window(&remote.to_string(), &remote.to_string(), video);
             self.media_streams.insert(remote, media_stream);
-            self.remote_videos.append_with_node_1(&video)?;
-            self.video_elements.insert(remote, video);
+            self.remote_videos.append_with_node_1(&video_window)?;
+            self.video_elements.insert(remote, video_window);
         }
         Ok(())
     }
@@ -68,7 +68,7 @@ impl MediaClient {
         if let Some(el) = self.video_elements.remove(&remote) {
             self.remote_videos.remove_child(&el)?;
         } else {
-            console_dbg!("else {}", remote);
+            info!("else {}", remote);
         }
         Ok(())
     }

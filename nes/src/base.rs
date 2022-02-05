@@ -5,157 +5,49 @@ pub type Data = u32;
 pub type Address = u32;
 pub type Cycle = u32;
 
-#[derive(Debug)]
-pub enum NesError {
-    /**
-     * NTSC/PAL region mismatch.
-     */
-    WRONG_MODE,
-    /**
-     * Missing FDS BIOS.
-     */
-    MISSING_BIOS,
-    /**
-     * Unsupported or malformed mapper.
-     */
-    UNSUPPORTED_MAPPER,
-    /**
-     * Vs DualSystem is unsupported.
-     */
-    UNSUPPORTED_VSSYSTEM,
-    /**
-     * File format version is no longer supported.
-     */
-    UNSUPPORTED_FILE_VERSION,
-    /**
-     * Unsupported operation.
-     */
-    UNSUPPORTED,
-    /**
-     * Invalid CRC checksum.
-     */
-    INVALID_CRC,
-    /**
-     * Corrupt file.
-     */
-    CORRUPT_FILE,
-    /**
-     * Invalid file.
-     */
-    INVALID_FILE,
-    /**
-     * Invalid parameter(s).
-     */
-    INVALID_PARAM,
-    /**
-     * System not ready.
-     */
-    NOT_READY,
-    /**
-     * Out of memory.
-     */
-    OUT_OF_MEMORY,
-    /**
-     * Generic error.
-     */
-    GENERIC,
+pub enum GameSystem {
+    NesNtsc,
+    NesPal,
+    Famicom,
+    Dendy,
+    VsSystem,
+    Playchoice,
+    Fds,
+    Unknown,
 }
 
-#[derive(Debug)]
-pub enum NesWarning {
-    /**
-     * Success.
-     */
-    OK,
-    /**
-     * Success but operation had no effect.
-     */
-    NOP,
-    /**
-     * Success but image dump may be bad.
-     */
-    BAD_DUMP,
-    /**
-     * Success but PRG-ROM may be bad.
-     */
-    BAD_PROM,
-    /**
-     * Success but CHR-ROM may be bad.
-     */
-    BAD_CROM,
-    /**
-     * Success but file header may have incorrect data.
-     */
-    BAD_FILE_HEADER,
-    /**
-     * Success but save data has been lost.
-     */
-    SAVEDATA_LOST,
-    /**
-     * Success but data may have been replaced.
-     */
-    DATA_REPLACED,
+pub enum MirroringType {
+    Horizontal,
+    Vertical,
+    ScreenAOnly,
+    ScreenBOnly,
+    FourScreens,
 }
 
-#[derive(Debug)]
-pub enum Region {
-    NTSC,
-    PAL,
-}
-
-#[derive(Debug)]
-pub enum System {
-    NTSC,
-    PAL,
-    PAL_A,
-    PAL_B,
-    FAMICOM,
-    DENDY,
-    VS_UNISYSTEM,
-    VS_DUALSYSTEM,
-    PLAYCHOICE_10,
-}
-
-#[derive(Debug)]
-pub enum FavoredSystem {
-    NTSC,
-    PAL,
-    FAMICOM,
-    DENDY,
-}
-
-#[derive(Debug)]
-pub enum CpuModel {
-    RP2A03,
-    RP2A07,
-    DENDY,
-}
-
-#[derive(Debug)]
 pub enum PpuModel {
-    RP2C02,
-    RP2C03B,
-    RP2C03G,
-    RP2C04_0001,
-    RP2C04_0002,
-    RP2C04_0003,
-    RP2C04_0004,
-    RC2C03B,
-    RC2C03C,
-    RC2C05_01,
-    RC2C05_02,
-    RC2C05_03,
-    RC2C05_04,
-    RC2C05_05,
-    RP2C07,
-    DENDY,
+    Ppu2C02,
+    Ppu2C03,
+    Ppu2C04A,
+    Ppu2C04B,
+    Ppu2C04C,
+    Ppu2C04D,
+    Ppu2C05A,
+    Ppu2C05B,
+    Ppu2C05C,
+    Ppu2C05D,
+    Ppu2C05E,
 }
 
-#[derive(Debug)]
-pub enum Mirroring {
-    HORIZONTAL,
-    VERTICAL,
-    FOURSCREEN,
+pub enum BusConflictType {
+    Default,
+    Yes,
+    No,
+}
+
+pub enum MemoryOperation {
+    Read,
+    Write,
+    Any,
 }
 
 pub const CLK_M2_MUL: u32 = 6;
