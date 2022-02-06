@@ -17,5 +17,3 @@ mod _2138_divide_a_string_into_groups_of_size_k;
 mod _2144_minimum_cost_of_buying_candies_with_discount;
 //
 mod _2148_count_elements_with_strictly_smaller_and_greater_elements;
-//
-mod _2138_divide_a_string_into_groups_of_size_k;
