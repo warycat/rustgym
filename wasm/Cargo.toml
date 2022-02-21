@@ -33,6 +33,7 @@ web-sys = { version = "0.3.51", features = [
     "Blob",
     "BlobEvent",
     "CanvasRenderingContext2d",
+    "ConstrainLongRange",
     "CssStyleDeclaration",
     "Document",
     "DomTokenList",
@@ -106,15 +107,19 @@ web-sys = { version = "0.3.51", features = [
     "SourceBufferAppendMode",
     "WebGl2RenderingContext",
     "WebGlBuffer",
+    "WebGlContextAttributes",
     "WebGlProgram",
     "WebGlRenderingContext",
     "WebGlShader",
+    "WebGlTexture",
     "WebGlUniformLocation",
     "WebGlVertexArrayObject",
     "WebSocket",
     "Window",
 ] }
 webrtc-sdp = "0.3.8"
+png = "0.17.2"
+rand = "0.8.4"
 
 [dev-dependencies]
 wasm-bindgen-test = "0.3.24"

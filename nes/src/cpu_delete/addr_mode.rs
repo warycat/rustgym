@@ -1,39 +1,49 @@
-use crate::cpu::Cpu;
-use crate::iomap::IoMap;
+use crate::*;
 
 #[derive(Debug)]
-pub enum Addressing {
-    IMP,
-    IMM,
-    ZP0,
-    ZPX,
-    ZPY,
-    ABS,
-    ABX,
-    ABY,
-    IND,
-    IZX,
-    IZY,
-    REL,
+pub enum AddrMode {
+    Non,
+    Acc,
+    Imp,
+    Imm,
+    Rel,
+    Zpg,
+    Abs,
+    ZpX,
+    ZpY,
+    Ind,
+    AbX,
+    AbsY,
+    IndX,
+    IndY,
+    InYW,
+    AbXW,
+    AbYW,
+}
+use AddrMode::*;
+
+impl Default for AddrMode {
+    fn default() -> Self {
+        Non
+    }
 }
 
-use Addressing::*;
-
-impl Addressing {
+impl AddrMode {
     fn byte_size(&self) -> usize {
         match self {
-            IMP => 0,
-            IMM => 1,
-            ZP0 => 1,
-            ZPX => 1,
-            ZPY => 1,
-            ABS => 2,
-            ABX => 1,
-            ABY => 1,
-            IND => 2,
-            IZX => 1,
-            IZY => 1,
-            REL => 2,
+            Imp => 0,
+            Imm => 1,
+            Zpg => 1,
+            ZpX => 1,
+            ZpY => 1,
+            Abs => 2,
+            AbX => 1,
+            AbsY => 1,
+            Ind => 2,
+            IndX => 1,
+            IndY => 1,
+            Rel => 2,
+            _ => 0,
         }
     }
 }
@@ -105,3 +115,22 @@ impl AddressingMode for Cpu {
         byte as i8
     }
 }
+
+pub static ADDR_MODE: [AddrMode; 0x100] = [
+    Imp, IndX, Non, IndX, Zpg, Zpg, Zpg, Zpg, Imp, Imm, Acc, Imm, Abs, Abs, Abs, Abs, //
+    Rel, IndY, Non, InYW, ZpX, ZpX, ZpX, ZpX, Imp, AbsY, Imp, AbYW, AbX, AbX, AbXW, AbXW, //
+    Abs, IndX, Non, IndX, Zpg, Zpg, Zpg, Zpg, Imp, Imm, Acc, Imm, Abs, Abs, Abs, Abs, //
+    Rel, IndY, Non, InYW, ZpX, ZpX, ZpX, ZpX, Imp, AbsY, Imp, AbYW, AbX, AbX, AbXW, AbXW, //
+    Imp, IndX, Non, IndX, Zpg, Zpg, Zpg, Zpg, Imp, Imm, Acc, Imm, Abs, Abs, Abs, Abs, //
+    Rel, IndY, Non, InYW, ZpX, ZpX, ZpX, ZpX, Imp, AbsY, Imp, AbYW, AbX, AbX, AbXW, AbXW, //
+    Imp, IndX, Non, IndX, Zpg, Zpg, Zpg, Zpg, Imp, Imm, Acc, Imm, Ind, Abs, Abs, Abs, //
+    Rel, IndY, Non, InYW, ZpX, ZpX, ZpX, ZpX, Imp, AbsY, Imp, AbYW, AbX, AbX, AbXW, AbXW, //
+    Imm, IndX, Imm, IndX, Zpg, Zpg, Zpg, Zpg, Imp, Imm, Imp, Imm, Abs, Abs, Abs, Abs, //
+    Rel, InYW, Non, InYW, ZpX, ZpX, ZpY, ZpY, Imp, AbYW, Imp, AbYW, AbXW, AbXW, AbYW, AbYW, //
+    Imm, IndX, Imm, IndX, Zpg, Zpg, Zpg, Zpg, Imp, Imm, Imp, Imm, Abs, Abs, Abs, Abs, //
+    Rel, IndY, Non, IndY, ZpX, ZpX, ZpY, ZpY, Imp, AbsY, Imp, AbsY, AbX, AbX, AbsY, AbsY, //
+    Imm, IndX, Imm, IndX, Zpg, Zpg, Zpg, Zpg, Imp, Imm, Imp, Imm, Abs, Abs, Abs, Abs, //
+    Rel, IndY, Non, InYW, ZpX, ZpX, ZpX, ZpX, Imp, AbsY, Imp, AbYW, AbX, AbX, AbXW, AbXW, //
+    Imm, IndX, Imm, IndX, Zpg, Zpg, Zpg, Zpg, Imp, Imm, Imp, Imm, Abs, Abs, Abs, Abs, //
+    Rel, IndY, Non, InYW, ZpX, ZpX, ZpX, ZpX, Imp, AbsY, Imp, AbYW, AbX, AbX, AbXW, AbXW, //
+];

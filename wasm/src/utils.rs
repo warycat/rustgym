@@ -1,35 +1,17 @@
 use crate::gamepad::Gamepad;
 use js_sys::Uint8Array;
 use rustgym_msg::ClientInfo;
-use serde::{Deserialize, Serialize};
 use wasm_bindgen::prelude::*;
 use wasm_bindgen::*;
 use wasm_bindgen_futures::JsFuture;
 use wasm_bindgen_test::*;
 use web_sys::{
-    window, Blob, Document, HtmlAnchorElement, HtmlButtonElement, HtmlCanvasElement,
-    HtmlDivElement, HtmlElement, HtmlInputElement, HtmlLiElement, HtmlParagraphElement,
-    HtmlTableElement, HtmlTableRowElement, HtmlTableSectionElement, HtmlUListElement,
-    HtmlVideoElement, Location, MediaDevices, MediaStream, MediaStreamConstraints, Navigator,
-    Request, Response, Window,
+    window, Blob, ConstrainLongRange, Document, HtmlAnchorElement, HtmlButtonElement,
+    HtmlCanvasElement, HtmlDivElement, HtmlElement, HtmlInputElement, HtmlLiElement,
+    HtmlParagraphElement, HtmlTableElement, HtmlTableRowElement, HtmlTableSectionElement,
+    HtmlUListElement, HtmlVideoElement, Location, MediaDevices, MediaStream,
+    MediaStreamConstraints, MediaTrackConstraints, Navigator, Request, Response, Window,
 };
-
-#[derive(Serialize, Deserialize, Debug, Clone, Hash, Eq, PartialEq)]
-struct JsSide {
-    ideal: i32,
-}
-
-#[derive(Serialize, Deserialize, Debug, Clone, Hash, Eq, PartialEq)]
-struct JsVideo {
-    width: JsSide,
-    height: JsSide,
-}
-
-#[derive(Serialize, Deserialize, Debug, Clone, Hash, Eq, PartialEq)]
-struct JsConstraints {
-    video: JsVideo,
-    audio: bool,
-}
 
 pub fn set_panic_hook() {
     #[cfg(feature = "console_error_panic_hook")]
@@ -234,20 +216,25 @@ pub fn fps_p() -> HtmlParagraphElement {
         .expect("HtmlParagraphElement")
 }
 
+fn media_constraints() -> MediaStreamConstraints {
+    let mut width = ConstrainLongRange::new();
+    width.ideal(320);
+    let mut height = ConstrainLongRange::new();
+    height.ideal(240);
+    let mut video_constraints = MediaTrackConstraints::new();
+    video_constraints.width(&width);
+    video_constraints.height(&height);
+    let mut media_constraints = MediaStreamConstraints::new();
+    media_constraints.audio(&JsValue::from_bool(true));
+    media_constraints.video(&video_constraints);
+    media_constraints
+}
+
 pub async fn get_media_stream() -> Result<MediaStream, JsValue> {
     let navigator = navigator();
     let media_devices: MediaDevices = navigator.media_devices()?;
-    let js_constraints = JsConstraints {
-        video: JsVideo {
-            width: JsSide { ideal: 320 },
-            height: JsSide { ideal: 240 },
-        },
-        audio: true,
-    };
-
-    let constraints =
-        MediaStreamConstraints::from(JsValue::from_serde(&js_constraints).expect("js_constrants"));
-    let get_user_media_promise = media_devices.get_user_media_with_constraints(&constraints)?;
+    let get_user_media_promise =
+        media_devices.get_user_media_with_constraints(&media_constraints())?;
     let media_stream: MediaStream = JsFuture::from(get_user_media_promise).await?.dyn_into()?;
     Ok(media_stream)
 }

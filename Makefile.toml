@@ -42,7 +42,7 @@ script = "tar -czvf static.tar.gz static"
 
 [tasks.watch-wasm]
 run_task = { name = ["wasm-pack"] }
-watch = { postpone = true, watch = ["./wasm", "./msg", "./consts"] }
+watch = { postpone = true, watch = ["./wasm", "./msg", "./consts", "./nes"] }
 
 [tasks.watch-server]
 script = "cargo watch -w server -w msg -w consts -x 'run --bin rustgym-server'"

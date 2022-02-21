@@ -24,12 +24,157 @@ Supported mappers:
 -----------------------------------------------------------------
 */
 
-use crate::rom::RomData;
+use crate::*;
+use log::{debug, info};
+use std::ops::RangeInclusive;
 
-trait Mapper {
-    fn init(&self, rom_data: &RomData);
-    fn prg_page_size(&self) -> usize;
-    fn chr_page_size(&self) -> usize;
-    fn select_prg_page(slot: usize, page: usize);
-    fn select_chr_page(slot: usize, page: usize);
+bitflags! {
+    pub struct MemoryAccessType: i8 {
+        const Unspecified = -1;
+        const NoAccess = 0x00;
+        const Read = 0x01;
+        const Write = 0x02;
+        const ReadWrite = 0x03;
+    }
 }
+
+impl Default for MemoryAccessType {
+    fn default() -> Self {
+        MemoryAccessType::Unspecified
+    }
+}
+
+pub enum PrgMemoryType {
+    PrgRom,
+    SaveRam,
+    WorkRam,
+}
+
+pub enum ChrMemoryType {
+    Default,
+    ChrRom,
+    ChrRam,
+    NametableRam,
+}
+
+impl Default for Box<dyn Mapper> {
+    fn default() -> Self {
+        Box::new(Nrom::default())
+    }
+}
+
+pub trait Mapper {
+    fn id(&self) -> u8;
+
+    fn base_mapper(&mut self) -> &mut BaseMapper;
+
+    fn prg_page_size(&mut self) -> u16;
+
+    fn chr_page_size(&mut self) -> u16;
+
+    fn read_ram(&mut self, addr: u16) -> u8 {
+        let hi = self.base_mapper().prg_pages[(addr >> 8) as usize];
+        let lo = addr & 0xFF;
+        let addr = lo | hi;
+        self.base_mapper().prg_rom[addr as usize]
+    }
+
+    fn write_ram(&mut self, addr: u16, byte: u8) {
+        let hi = self.base_mapper().prg_pages[(addr >> 8) as usize];
+        let lo = addr & 0xFF;
+        let addr = lo | hi;
+        self.base_mapper().prg_rom[addr as usize] = byte;
+    }
+
+    fn read_vram(&mut self, addr: u16) -> u8 {
+        todo!()
+    }
+
+    fn write_vram(&mut self, addr: u16, byte: u8) {
+        todo!()
+    }
+
+    fn select_prg_page(&mut self, slot: u16, page: u16, prg_memory_type: PrgMemoryType) {
+        let start_addr = 0x8000 + slot * self.prg_page_size();
+        let end_addr = start_addr + (self.prg_page_size() - 1);
+        debug!("prg start_addr 0x{:04X}", start_addr);
+        debug!("prg end_addr 0x{:04X}", end_addr);
+        let start_slot = start_addr >> 8;
+        let end_slot = end_addr >> 8;
+        debug!("prg start_slot 0x{:04X}", start_slot);
+        debug!("prg end_slot 0x{:04X}", end_slot);
+        let mut page_addr = page * self.prg_page_size();
+        let mask = self.base_mapper().prg_mask;
+        for slot in start_slot..=end_slot {
+            self.base_mapper().prg_pages[slot as usize] = page_addr & mask;
+            page_addr += 0x100;
+        }
+    }
+    fn select_chr_page(&mut self, slot: u16, page: u16, chr_memory_type: ChrMemoryType) {
+        let start_addr = slot * self.chr_page_size();
+        let end_addr = start_addr + (self.chr_page_size() - 1);
+        debug!("chr start_addr {:04x}", start_addr);
+        debug!("chr end_addr {:04x}", end_addr);
+        let start_slot = start_addr >> 8;
+        let end_slot = end_addr >> 8;
+        debug!("chr start_slot 0x{:04X}", start_slot);
+        debug!("chr end_slot 0x{:04X}", end_slot);
+        let mut page_addr = page * self.chr_page_size();
+        let mask = self.base_mapper().chr_mask;
+        for slot in start_slot..=end_slot {
+            self.base_mapper().chr_pages[slot as usize] = page_addr & mask;
+            page_addr += 0x100;
+        }
+    }
+
+    fn bus_conflicts(&self) -> bool {
+        false
+    }
+
+    fn prg_size(&mut self) -> u16 {
+        self.base_mapper().prg_rom.len() as u16
+    }
+
+    fn prg_page_count(&mut self) -> u16 {
+        let prg_page_size = self.prg_page_size();
+        let prg_size = self.prg_size();
+        if prg_page_size > 0 {
+            prg_size / prg_page_size
+        } else {
+            0
+        }
+    }
+
+    fn chr_size(&mut self) -> u16 {
+        self.base_mapper().chr_rom.len() as u16
+    }
+
+    fn chr_page_count(&mut self) -> u16 {
+        let chr_page_size = self.chr_page_size();
+        let chr_size = self.chr_size();
+        if chr_page_size > 0 {
+            chr_size / chr_page_size
+        } else {
+            0
+        }
+    }
+}
+
+impl dyn Mapper {
+    pub fn new(rom_file: &VirtualFile) -> Box<dyn Mapper> {
+        let rom_data = RomData::new(rom_file);
+        let mut this = match rom_data.info.mapper_id {
+            0 => Box::new(Nrom::new(&rom_data)),
+            _ => panic!(),
+        };
+        debug!("prg_pages {:04x?}", this.base_mapper().prg_pages);
+        debug!("chr_pages {:04x?}", this.base_mapper().chr_pages);
+        this
+    }
+}
+
+mod base_mapper;
+mod nrom;
+
+pub use base_mapper::*;
+pub use nrom::*;

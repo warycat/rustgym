@@ -4,154 +4,154 @@ use crate::cpu::Cpu;
 use crate::iomap::IoMap;
 use std::num::Wrapping;
 
-pub trait Instruction {
-    // LoaD Accumulator
-    fn lda(&mut self, byte: u8);
-    // LoaD X register
-    fn ldx(&mut self, byte: u8);
-    // LoaD Y register
-    fn ldy(&mut self, byte: u8);
+// pub trait Instruction {
+//     // LoaD Accumulator
+//     fn lda(&mut self, byte: u8);
+//     // LoaD X register
+//     fn ldx(&mut self, byte: u8);
+//     // LoaD Y register
+//     fn ldy(&mut self, byte: u8);
 
-    // STore Accumulator
-    fn sta(&mut self) -> u8;
-    // STore X register
-    fn stx(&mut self) -> u8;
-    // STore Y register
-    fn sty(&mut self) -> u8;
+//     // STore Accumulator
+//     fn sta(&mut self) -> u8;
+//     // STore X register
+//     fn stx(&mut self) -> u8;
+//     // STore Y register
+//     fn sty(&mut self) -> u8;
 
-    // Transfer A to X
-    fn tax(&mut self);
-    // Transfer X to A
-    fn txa(&mut self);
-    // Transfer A to Y
-    fn tay(&mut self);
-    // Transfer Y to A
-    fn tya(&mut self);
-    // Transfer Stack ptr to X
-    fn tsx(&mut self);
-    // Transfer X to Stack ptr
-    fn txs(&mut self);
+//     // Transfer A to X
+//     fn tax(&mut self);
+//     // Transfer X to A
+//     fn txa(&mut self);
+//     // Transfer A to Y
+//     fn tay(&mut self);
+//     // Transfer Y to A
+//     fn tya(&mut self);
+//     // Transfer Stack ptr to X
+//     fn tsx(&mut self);
+//     // Transfer X to Stack ptr
+//     fn txs(&mut self);
 
-    // JuMP absolute
-    fn jmp(&mut self, word: u16);
-    // Jump to SubRoutine
-    fn jsr(&mut self, word: u16);
-    // ReTurn from Subroutine
-    fn rts(&mut self);
-    // BReaK
-    fn brk(&mut self);
-    // ReTurn from Interrupt
-    fn rti(&mut self);
+//     // JuMP absolute
+//     fn jmp(&mut self, word: u16);
+//     // Jump to SubRoutine
+//     fn jsr(&mut self, word: u16);
+//     // ReTurn from Subroutine
+//     fn rts(&mut self);
+//     // BReaK
+//     fn brk(&mut self);
+//     // ReTurn from Interrupt
+//     fn rti(&mut self);
 
-    // ADd with Carry
-    fn adc(&mut self, byte: u8);
-    // SuBtract with Carry
-    fn sbc(&mut self, byte: u8);
-    // bitwise AND with accumulator
-    fn and(&mut self, byte: u8);
-    // bitwise OR with Accumulator
-    fn ora(&mut self, byte: u8);
-    // bitwise Exclusive OR
-    fn eor(&mut self, byte: u8);
-    // test BITs
-    fn bit(&mut self, byte: u8);
-    // CoMPare accumulator
-    fn cmp(&mut self, byte: u8);
-    // ComPare X register
-    fn cpx(&mut self, byte: u8);
-    // ComPare Y register
-    fn cpy(&mut self, byte: u8);
+//     // ADd with Carry
+//     fn adc(&mut self, byte: u8);
+//     // SuBtract with Carry
+//     fn sbc(&mut self, byte: u8);
+//     // bitwise AND with accumulator
+//     fn and(&mut self, byte: u8);
+//     // bitwise OR with Accumulator
+//     fn ora(&mut self, byte: u8);
+//     // bitwise Exclusive OR
+//     fn eor(&mut self, byte: u8);
+//     // test BITs
+//     fn bit(&mut self, byte: u8);
+//     // CoMPare accumulator
+//     fn cmp(&mut self, byte: u8);
+//     // ComPare X register
+//     fn cpx(&mut self, byte: u8);
+//     // ComPare Y register
+//     fn cpy(&mut self, byte: u8);
 
-    // CLear Carry
-    fn clc(&mut self);
-    // SEt Carry
-    fn sec(&mut self);
-    // SEt Interrupt
-    fn sei(&mut self);
-    // CLear Interrupt
-    fn cli(&mut self);
-    // CLear oVerflow
-    fn clv(&mut self);
-    // CLear Decimal
-    fn cld(&mut self);
-    // SEt Decimal
-    fn sed(&mut self);
+//     // CLear Carry
+//     fn clc(&mut self);
+//     // SEt Carry
+//     fn sec(&mut self);
+//     // SEt Interrupt
+//     fn sei(&mut self);
+//     // CLear Interrupt
+//     fn cli(&mut self);
+//     // CLear oVerflow
+//     fn clv(&mut self);
+//     // CLear Decimal
+//     fn cld(&mut self);
+//     // SEt Decimal
+//     fn sed(&mut self);
 
-    // Branch on PLus
-    fn bpl(&mut self, byte: i8);
-    // Branch on MInus
-    fn bmi(&mut self, byte: i8);
-    // Branch on oVerflow Clear
-    fn bvc(&mut self, byte: i8);
-    // Branch on oVerflow Set
-    fn bvs(&mut self, byte: i8);
-    // Branch on Carry Clear
-    fn bcc(&mut self, byte: i8);
-    // Branch on Carry Set
-    fn bcs(&mut self, byte: i8);
-    // Branch on EQual
-    fn beq(&mut self, byte: i8);
-    // Branch on Not Equal
-    fn bne(&mut self, byte: i8);
+//     // Branch on PLus
+//     fn bpl(&mut self, byte: i8);
+//     // Branch on MInus
+//     fn bmi(&mut self, byte: i8);
+//     // Branch on oVerflow Clear
+//     fn bvc(&mut self, byte: i8);
+//     // Branch on oVerflow Set
+//     fn bvs(&mut self, byte: i8);
+//     // Branch on Carry Clear
+//     fn bcc(&mut self, byte: i8);
+//     // Branch on Carry Set
+//     fn bcs(&mut self, byte: i8);
+//     // Branch on EQual
+//     fn beq(&mut self, byte: i8);
+//     // Branch on Not Equal
+//     fn bne(&mut self, byte: i8);
 
-    // Arithmetic Shift Left
-    fn asl(&mut self, byte: u8) -> u8;
-    // Logical Shift Right
-    fn lsr(&mut self, byte: u8) -> u8;
-    // ROtate Left
-    fn rol(&mut self, byte: u8) -> u8;
-    // ROtate Right
-    fn ror(&mut self, byte: u8) -> u8;
-    // DECrement memory
-    fn dec(&mut self, byte: u8) -> u8;
-    // INCrement memory
-    fn inc(&mut self, byte: u8) -> u8;
+//     // Arithmetic Shift Left
+//     fn asl(&mut self, byte: u8) -> u8;
+//     // Logical Shift Right
+//     fn lsr(&mut self, byte: u8) -> u8;
+//     // ROtate Left
+//     fn rol(&mut self, byte: u8) -> u8;
+//     // ROtate Right
+//     fn ror(&mut self, byte: u8) -> u8;
+//     // DECrement memory
+//     fn dec(&mut self, byte: u8) -> u8;
+//     // INCrement memory
+//     fn inc(&mut self, byte: u8) -> u8;
 
-    // DEcrement X
-    fn dex(&mut self);
-    // INcrement X
-    fn inx(&mut self);
-    // DEcrement Y
-    fn dey(&mut self);
-    // INcrement Y
-    fn iny(&mut self);
+//     // DEcrement X
+//     fn dex(&mut self);
+//     // INcrement X
+//     fn inx(&mut self);
+//     // DEcrement Y
+//     fn dey(&mut self);
+//     // INcrement Y
+//     fn iny(&mut self);
 
-    // PusH Accumulator
-    fn pha(&mut self);
-    // PuLl Accumulator
-    fn pla(&mut self);
-    // push status flags onto stack
-    fn php(&mut self);
-    // pull status flags from stack
-    fn plp(&mut self);
+//     // PusH Accumulator
+//     fn pha(&mut self);
+//     // PuLl Accumulator
+//     fn pla(&mut self);
+//     // push status flags onto stack
+//     fn php(&mut self);
+//     // pull status flags from stack
+//     fn plp(&mut self);
 
-    fn anc(&mut self, byte: u8);
-    fn ane(&mut self, byte: u8);
-    fn arr(&mut self, byte: u8);
-    fn asr(&mut self, byte: u8);
-    fn dcp(&mut self, byte: u8) -> u8;
-    fn isb(&mut self, byte: u8) -> u8;
-    fn las(&mut self, byte: u8);
-    fn lax(&mut self, byte: u8);
-    fn lxa(&mut self, byte: u8);
-    fn rla(&mut self, byte: u8) -> u8;
-    fn rra(&mut self, byte: u8) -> u8;
-    fn sax(&mut self) -> u8;
-    fn sbx(&mut self, byte: u8);
-    fn sha(&mut self) -> u8;
-    fn shs(&mut self) -> u8;
-    fn shx(&mut self) -> u8;
-    fn shy(&mut self) -> u8;
-    fn slo(&mut self, byte: u8) -> u8;
-    fn sre(&mut self, byte: u8) -> u8;
-    fn dop(&mut self, byte: u8);
-    fn top(&mut self);
+//     fn anc(&mut self, byte: u8);
+//     fn ane(&mut self, byte: u8);
+//     fn arr(&mut self, byte: u8);
+//     fn asr(&mut self, byte: u8);
+//     fn dcp(&mut self, byte: u8) -> u8;
+//     fn isb(&mut self, byte: u8) -> u8;
+//     fn las(&mut self, byte: u8);
+//     fn lax(&mut self, byte: u8);
+//     fn lxa(&mut self, byte: u8);
+//     fn rla(&mut self, byte: u8) -> u8;
+//     fn rra(&mut self, byte: u8) -> u8;
+//     fn sax(&mut self) -> u8;
+//     fn sbx(&mut self, byte: u8);
+//     fn sha(&mut self) -> u8;
+//     fn shs(&mut self) -> u8;
+//     fn shx(&mut self) -> u8;
+//     fn shy(&mut self) -> u8;
+//     fn slo(&mut self, byte: u8) -> u8;
+//     fn sre(&mut self, byte: u8) -> u8;
+//     fn dop(&mut self, byte: u8);
+//     fn top(&mut self);
 
-    fn jam(&mut self);
-    fn nop(&mut self);
-}
+//     fn jam(&mut self);
+//     fn nop(&mut self);
+// }
 
-impl Instruction for Cpu {
+impl Cpu {
     fn lda(&mut self, byte: u8) {
         self.a = self.flags.set_zn(byte);
     }

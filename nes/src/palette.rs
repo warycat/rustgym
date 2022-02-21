@@ -1,5 +1,11 @@
 pub struct Palette([u32; 0x40]);
 
+impl Default for Palette {
+    fn default() -> Self {
+        PALETTE_DEFAULT
+    }
+}
+
 pub const PALETTE_DEFAULT: Palette = Palette([
     0xFF666666, 0xFF002A88, 0xFF1412A7, 0xFF3B00A4, 0xFF5C007E, 0xFF6E0040, 0xFF6C0600, 0xFF561D00,
     0xFF333500, 0xFF0B4800, 0xFF005200, 0xFF004F08, 0xFF00404D, 0xFF000000, 0xFF000000, 0xFF000000,

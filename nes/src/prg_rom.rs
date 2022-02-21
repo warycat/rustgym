@@ -1,4 +1,4 @@
-use crate::iomap::IoMap;
+use crate::*;
 use std::fmt;
 
 pub struct PrgRom {
@@ -23,16 +23,16 @@ impl fmt::Debug for PrgRom {
     }
 }
 
-impl IoMap for PrgRom {
-    fn peek8(&self, address: u16) -> u8 {
-        let addr = address & 0x3FFF;
-        match self.mapper {
-            0 => self.bytes[addr as usize],
-            _ => 0,
-        }
-    }
-    fn poke8(&mut self, address: u16, byte: u8) {
-        let addr = address & 0x3FFF;
-        self.bytes[addr as usize] = byte;
-    }
-}
+// impl MemoryHandler for PrgRom {
+//     fn peek8(&mut self, address: u16) -> u8 {
+//         let addr = address & 0x3FFF;
+//         match self.mapper {
+//             0 => self.bytes[addr as usize],
+//             _ => 0,
+//         }
+//     }
+//     fn poke8(&mut self, address: u16, byte: u8) {
+//         let addr = address & 0x3FFF;
+//         self.bytes[addr as usize] = byte;
+//     }
+// }

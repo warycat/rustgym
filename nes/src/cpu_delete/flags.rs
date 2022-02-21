@@ -24,6 +24,7 @@ pub const V: u8 = 0x40;
 // negative
 pub const N: u8 = 0x80;
 
+#[derive(Default)]
 pub struct Flags {
     pub c: u8,
     pub z: u8,
