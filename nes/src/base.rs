@@ -240,6 +240,6 @@ pub const PIXEL_COUNT: usize = 256 * 240;
 pub const OUTPUT_BUFFER_SIZE: usize = 256 * 240 * 2;
 pub const OAM_DECAY_CYCLE_COUNT: usize = 3000;
 
-pub const DONKEY_KONG: &[u8] = include_bytes!("../../data/nes/Donkey Kong (World) (Rev A).nes");
-pub const SUPER_MARIO: &[u8] = include_bytes!("../../data/nes/Super Mario Bros (E).nes");
+// pub const DONKEY_KONG: &[u8] = include_bytes!("../../data/nes/Donkey Kong (World) (Rev A).nes");
+// pub const SUPER_MARIO: &[u8] = include_bytes!("../../data/nes/Super Mario Bros (E).nes");
 pub const NES_TEST: &[u8] = include_bytes!("../test/nestest.nes");
