@@ -84,7 +84,7 @@ impl MemoryManager {
     pub fn read_byte(console: &mut Console, addr: u16) -> u8 {
         let byte = match addr {
             0x0000..=0x1FFF => console.internal_ram.read_byte(addr),
-            0x2000..=0x3FFF => console.ppu.read_byte(addr),
+            0x2000..=0x3FFF => Ppu::read_byte(console, addr),
             0x4000..=0x4017 => console.apu.read_byte(addr),
             0x4018..=0xFFFF => console.mapper.read_ram(addr),
         };
@@ -94,7 +94,7 @@ impl MemoryManager {
     pub fn write_byte(console: &mut Console, addr: u16, byte: u8) {
         match addr {
             0x0000..=0x1FFF => console.internal_ram.write_byte(addr, byte),
-            0x2000..=0x3FFF => console.ppu.write_byte(addr, byte),
+            0x2000..=0x3FFF => Ppu::write_byte(console, addr, byte),
             0x4000..=0x4017 => console.apu.write_byte(addr, byte),
             0x4018..=0xFFFF => console.mapper.write_ram(addr, byte),
         }

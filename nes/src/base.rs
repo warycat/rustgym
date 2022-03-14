@@ -21,6 +21,7 @@ impl Default for MirroringType {
     }
 }
 
+#[derive(PartialEq, Eq)]
 pub enum NesModel {
     Auto,
     Ntsc,
@@ -239,6 +240,11 @@ pub const SCREEN_HEIGHT: usize = 240;
 pub const PIXEL_COUNT: usize = 256 * 240;
 pub const OUTPUT_BUFFER_SIZE: usize = 256 * 240 * 2;
 pub const OAM_DECAY_CYCLE_COUNT: usize = 3000;
+
+pub const PALETTE_RAM_BOOT_VALUES: &[u8] = &[
+    0x09, 0x01, 0x00, 0x01, 0x00, 0x02, 0x02, 0x0D, 0x08, 0x10, 0x08, 0x24, 0x00, 0x00, 0x04, 0x2C,
+    0x09, 0x01, 0x34, 0x03, 0x00, 0x04, 0x00, 0x14, 0x08, 0x3A, 0x00, 0x02, 0x00, 0x20, 0x2C, 0x08,
+];
 
 // pub const DONKEY_KONG: &[u8] = include_bytes!("../../data/nes/Donkey Kong (World) (Rev A).nes");
 // pub const SUPER_MARIO: &[u8] = include_bytes!("../../data/nes/Super Mario Bros (E).nes");

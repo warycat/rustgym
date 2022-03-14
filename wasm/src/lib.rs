@@ -9,14 +9,17 @@ mod media;
 mod nes_emulator;
 mod pc;
 mod searchbar;
+mod shaders;
 mod utils;
 
-use client::*;
+pub use client::*;
+pub use media::*;
+pub use nes_emulator::*;
+pub use searchbar::*;
+pub use shaders::*;
+pub use utils::*;
+
 use log::info;
-use media::MediaClient;
-use nes_emulator::NesEmulator;
-use searchbar::SearchBar;
-use utils::*;
 use wasm_bindgen::prelude::*;
 
 #[wasm_bindgen]

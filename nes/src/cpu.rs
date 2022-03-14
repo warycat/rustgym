@@ -543,6 +543,41 @@ fn las(console: &mut Console) {
     todo!()
 }
 
+const OP_CODES: [&str; 0x100] = [
+    "brk", "ora", "hlt", "slo", "nop", "ora", "asl", "slo", "php", "ora", "asl", "aac", "nop",
+    "ora", "asl", "slo", // 00
+    "bpl", "ora", "hlt", "slo", "nop", "ora", "asl", "slo", "clc", "ora", "nop", "slo", "nop",
+    "ora", "asl", "slo", // 10
+    "jsr", "and", "hlt", "rla", "bit", "and", "rol", "rla", "plp", "and", "rol", "aac", "bit",
+    "and", "rol", "rla", // 20
+    "bmi", "and", "hlt", "rla", "nop", "and", "rol", "rla", "sec", "and", "nop", "rla", "nop",
+    "and", "rol", "rla", // 30
+    "rti", "eor", "hlt", "sre", "nop", "eor", "lsr", "sre", "pha", "eor", "lsr", "asr", "jmp",
+    "eor", "lsr", "sre", // 40
+    "bvc", "eor", "hlt", "sre", "nop", "eor", "lsr", "sre", "cli", "eor", "nop", "sre", "nop",
+    "eor", "lsr", "sre", // 50
+    "rts", "adc", "hlt", "rra", "nop", "adc", "ror", "rra", "pla", "adc", "ror", "arr", "jmp",
+    "adc", "ror", "rra", // 60
+    "bvs", "adc", "hlt", "rra", "nop", "adc", "ror", "rra", "sei", "adc", "nop", "rra", "nop",
+    "adc", "ror", "rra", // 70
+    "nop", "sta", "nop", "sax", "sty", "sta", "stx", "sax", "dey", "nop", "txa", "unk", "sty",
+    "sta", "stx", "sax", // 80
+    "bcc", "sta", "hlt", "axa", "sty", "sta", "stx", "sax", "tya", "sta", "txs", "tas", "sya",
+    "sta", "sxa", "axa", // 90
+    "ldy", "lda", "ldx", "lax", "ldy", "lda", "ldx", "lax", "tay", "lda", "tax", "atx", "ldy",
+    "lda", "ldx", "lax", // A0
+    "bcs", "lda", "hlt", "lax", "ldy", "lda", "ldx", "lax", "clv", "lda", "tsx", "las", "ldy",
+    "lda", "ldx", "lax", // B0
+    "cpy", "cpa", "nop", "dcp", "cpy", "cpa", "dec", "dcp", "iny", "cpa", "dex", "axs", "cpy",
+    "cpa", "dec", "dcp", // C0
+    "bne", "cpa", "hlt", "dcp", "nop", "cpa", "dec", "dcp", "cld", "cpa", "nop", "dcp", "nop",
+    "cpa", "dec", "dcp", // D0
+    "cpx", "sbc", "nop", "isb", "cpx", "sbc", "inc", "isb", "inx", "sbc", "nop", "sbc", "cpx",
+    "sbc", "inc", "isb", // E0
+    "beq", "sbc", "hlt", "isb", "nop", "sbc", "inc", "isb", "sed", "sbc", "nop", "isb", "nop",
+    "sbc", "inc", "isb", // F0
+];
+
 //  +00  +01  +02  +03  +04  +05  +06  +07  +08  +09  +0A  +0B  +0C  +0D  +0E  +0F
 const OP_TABLE: [Func; 0x100] = [
     brk, ora, hlt, slo, nop, ora, asl, slo, php, ora, asl, aac, nop, ora, asl, slo, // 00
@@ -666,7 +701,7 @@ pub struct Cpu {
     sprite_dma_transfer: bool,
     dmc_dma_running: bool,
     need_dummy_read: bool,
-    sprite_dma_offset: u8,
+    sprite_dma_offset: u16,
     state: CpuState,
     prev_run_irq: bool,
     run_irq: bool,
@@ -722,24 +757,73 @@ impl Cpu {
     }
 
     fn process_pending_dma(console: &mut Console, read_addr: u16) {
-        // if !console.cpu.need_halt {
-        //     return;
-        // }
-        // Cpu::start_cpu_cycle(console, true);
-        // MemoryManager::read_byte(console, read_addr);
-        // Cpu::end_cpu_cycle(console, true);
-        // console.cpu.need_halt = false;
-        // let mut sprite_dma_counter = 0;
-        // let mut sprite_read_addr = 0;
-        // let mut read_value = 0;
-        // let skip_dummy_reads = read_addr == 0x4016 || read_addr == 0x4017;
-        // while console.cpu.dmc_dma_running || console.cpu.sprite_dma_transfer {
-        //     let get_cycle = console.cpu.cycle_count & 0x01 == 0;
-        //     if get_cycle {
+        if !console.cpu.need_halt {
+            return;
+        }
+        Cpu::start_cpu_cycle(console, true);
+        MemoryManager::read_byte(console, read_addr);
+        Cpu::end_cpu_cycle(console, true);
+        console.cpu.need_halt = false;
+        let mut sprite_dma_counter = 0;
+        let mut sprite_read_addr = 0;
+        let mut read_value = 0;
+        let skip_dummy_reads = read_addr == 0x4016 || read_addr == 0x4017;
+        while console.cpu.dmc_dma_running || console.cpu.sprite_dma_transfer {
+            let cpu = &mut console.cpu;
+            let get_cycle = cpu.cycle_count & 0x01 == 0;
+            if get_cycle {
+                let cpu = &mut console.cpu;
+                if cpu.dmc_dma_running && !cpu.need_halt && !cpu.need_dummy_read {
+                    Cpu::process_cycle(console);
+                    // read_value = MemoryManager::read_byte(console.apu, addr: u16)
+                    Cpu::end_cpu_cycle(console, true);
+                    console.cpu.dmc_dma_running = false;
+                    todo!();
+                } else if cpu.sprite_dma_transfer {
+                    Cpu::process_cycle(console);
+                    read_value = MemoryManager::read_byte(
+                        console,
+                        console.cpu.sprite_dma_offset * 0x100 + sprite_read_addr,
+                    );
+                    Cpu::end_cpu_cycle(console, true);
+                    sprite_read_addr += 1;
+                    sprite_dma_counter += 1;
+                } else {
+                    assert!(cpu.need_halt || cpu.need_dummy_read);
+                    Cpu::process_cycle(console);
+                    if skip_dummy_reads {
+                        MemoryManager::read_byte(console, read_addr);
+                    }
+                    Cpu::end_cpu_cycle(console, true);
+                }
+            } else {
+                if cpu.sprite_dma_transfer && sprite_dma_counter & 0x01 == 0x01 {
+                    Cpu::process_cycle(console);
+                    MemoryManager::write_byte(console, 0x2004, read_value);
+                    Cpu::end_cpu_cycle(console, true);
+                    let cpu = &mut console.cpu;
+                    sprite_dma_counter += 1;
+                    if sprite_dma_counter == 0x200 {
+                        cpu.sprite_dma_transfer = false;
+                    }
+                } else {
+                    Cpu::process_cycle(console);
+                    if skip_dummy_reads {
+                        MemoryManager::read_byte(console, read_addr);
+                    }
+                    Cpu::end_cpu_cycle(console, true);
+                }
+            }
+        }
+    }
 
-        //     }
-        // }
-        todo!()
+    fn process_cycle(console: &mut Console) {
+        if console.cpu.need_halt {
+            console.cpu.need_halt = false;
+        } else if console.cpu.need_dummy_read {
+            console.cpu.need_dummy_read = false;
+        }
+        Cpu::start_cpu_cycle(console, true);
     }
 
     fn fetch_operand(console: &mut Console) -> Operand {
@@ -919,7 +1003,7 @@ impl Cpu {
     }
 
     fn memory_read(console: &mut Console, addr: u16) -> u8 {
-        //Cpu::process_pending_dma(console, addr);
+        Cpu::process_pending_dma(console, addr);
         Cpu::start_cpu_cycle(console, true);
         let value = MemoryManager::read_byte(console, addr);
         Cpu::end_cpu_cycle(console, true);
@@ -1104,15 +1188,14 @@ impl Cpu {
             console.cpu.sp = 0xfd;
             console.cpu.x = 0;
             console.cpu.y = 0;
-            console.cpu.ps = PsFlags::Interrupt;
+            console.cpu.ps = PsFlags::Reserved | PsFlags::Interrupt;
             console.cpu.run_irq = false;
         }
 
-        console.cpu.cycle_count = 0;
+        console.cpu.cycle_count = -1;
         console.cpu.master_clock = 0;
-        let cpu_offset = 0;
-        console.cpu.ppu_offset = 1;
-        console.cpu.master_clock = CPU_DIVIDER + cpu_offset;
+        // why 5?
+        console.cpu.ppu_offset = 5;
         for _ in 0..8 {
             Cpu::start_cpu_cycle(console, true);
             Cpu::end_cpu_cycle(console, true);
@@ -1167,9 +1250,7 @@ impl Cpu {
             console.cpu.start_clock_count + 1
         };
         console.cpu.cycle_count += 1;
-        console
-            .ppu
-            .run(console.cpu.master_clock - console.cpu.ppu_offset);
+        Ppu::run(console, console.cpu.master_clock - console.cpu.ppu_offset);
         console.process_cpu_clock();
     }
 
@@ -1179,9 +1260,7 @@ impl Cpu {
         } else {
             console.cpu.end_clock_count - 1
         };
-        console
-            .ppu
-            .run(console.cpu.master_clock - console.cpu.ppu_offset);
+        Ppu::run(console, console.cpu.master_clock - console.cpu.ppu_offset);
         console.cpu.prev_need_nmi = console.cpu.need_nmi;
         if console.cpu.prev_nmi_flag && console.cpu.nmi_flag {
             console.cpu.need_nmi = true;
@@ -1189,7 +1268,7 @@ impl Cpu {
         console.cpu.prev_nmi_flag = console.cpu.nmi_flag;
         console.cpu.prev_run_irq = console.cpu.run_irq;
     }
-    pub fn new(console: &mut Console) -> Self {
+    pub fn new() -> Self {
         let mut this = Cpu::default();
         this.start_clock_count = 6;
         this.end_clock_count = 6;
@@ -1201,7 +1280,6 @@ impl Cpu {
         this.dmc_dma_running = false;
         this.last_crash_warning = 0;
         this.irq_mask = 0xFF;
-        this.pc = MemoryManager::read_word(console, RESET_VECTOR);
         this.debug_pc = this.pc;
         this.a = 0;
         this.sp = 0xfd;
@@ -1234,15 +1312,21 @@ fn test() {
         let y = &line[58..58 + 4];
         let p = &line[63..63 + 4];
         let s = &line[68..68 + 5];
-        let _ppu = &line[74..74 + 11];
+        let ppu_xy = &line[74..74 + 11];
+        let ppu_x = &ppu_xy[4..7];
+        let ppu_y = &ppu_xy[8..11];
         let cyc = &line[86..];
-        assert_eq!(pc, format!("{:04X}", console.cpu.pc));
-        assert_eq!(a, format!("A:{:02X}", console.cpu.a));
-        assert_eq!(x, format!("X:{:02X}", console.cpu.x));
-        assert_eq!(y, format!("Y:{:02X}", console.cpu.y));
-        assert_eq!(p, format!("P:{:02X}", console.cpu.ps));
-        assert_eq!(s, format!("SP:{:02X}", console.cpu.sp));
-        assert_eq!(cyc, format!("CYC:{}", console.cpu.cycle_count));
+        let ppu = &mut console.ppu;
+        let cpu = &mut console.cpu;
+        assert_eq!(pc, format!("{:04X}", cpu.pc));
+        assert_eq!(a, format!("A:{:02X}", cpu.a));
+        assert_eq!(x, format!("X:{:02X}", cpu.x));
+        assert_eq!(y, format!("Y:{:02X}", cpu.y));
+        assert_eq!(p, format!("P:{:02X}", cpu.ps));
+        assert_eq!(s, format!("SP:{:02X}", cpu.sp));
+        assert_eq!(ppu_x, format!("{:3}", ppu.scanline));
+        assert_eq!(ppu_y, format!("{:3}", ppu.cycle));
+        assert_eq!(cyc, format!("CYC:{}", cpu.cycle_count));
         Cpu::exec(&mut console);
     }
 }

@@ -348,7 +348,12 @@ impl Debugger {
         x_scroll: u8,
         update_horizontal_scroll_only: bool,
     ) {
-        todo!()
+        self.ppu_scroll_x =
+            (addr & 0x1F) << 3 | x_scroll as u16 | if addr & 0x400 == 0x400 { 0x100 } else { 0 };
+        if update_horizontal_scroll_only {
+            self.ppu_scroll_y = ((addr & 0x3E0) >> 2 | (addr & 0x7000) >> 12)
+                + if addr & 0x800 == 0x800 { 240 } else { 0 };
+        }
     }
 
     pub fn add_debug_event(&mut self, debug_event: DebugEvent) {

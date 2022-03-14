@@ -35,8 +35,8 @@ pub struct RomInfo {
     has_battery: bool,
     has_trainer: bool,
     mirroring_type: MirroringType,
-    hash_info: HashInfo,
     nes_header: NesHeader,
+    pub hash_info: HashInfo,
     pub mapper_id: u8,
     pub format: RomFormat,
 }
@@ -86,7 +86,7 @@ impl RomData {
         this.info.hash_info.crc32 = CASTAGNOLI.checksum(&rom_file.data);
         this.info.hash_info.prg_crc32 = CASTAGNOLI.checksum(&this.prg_rom);
         this.info.hash_info.prg_chr_crc32 = CASTAGNOLI.checksum(&rom_file.data[16..]);
-        this.info.hash_info.prg_chr_md5 = format!("{:x}", md5::compute(&rom_file.data[16..]));
+        this.info.hash_info.prg_chr_md5 = format!("{:X}", md5::compute(&rom_file.data[16..]));
         debug!("FILE CRC32: {:X}", this.info.hash_info.crc32);
         debug!("PRG CRC32: {:X}", this.info.hash_info.prg_crc32);
         debug!("PRG+CHR CRC32: {:X}", this.info.hash_info.prg_chr_crc32);

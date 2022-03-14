@@ -56,16 +56,23 @@ pub struct CartridgeState {
 
 #[derive(Default)]
 pub struct PpuState {
-    constrol: u8,
-    mask: u8,
-    status: u8,
-    sprite_ram_addr: u32,
-    video_ram_addr: u16,
-    x_scroll: u8,
-    tem_video_ram_addr: u16,
-    write_toggle: bool,
-    high_bit_shift: u16,
-    low_bit_shift: u16,
+    pub control_flags: PpuControlFlags,
+    pub mask_flags: PpuMaskFlags,
+    pub status_flags: PpuStatusFlags,
+    pub sprite_ram_addr: u8,
+    pub video_ram_addr: u16,
+    pub x_scroll: u8,
+    pub tmp_video_ram_addr: u16,
+    pub write_toggle: bool,
+    pub high_bit_shift: u16,
+    pub low_bit_shift: u16,
+    pub scanline: i32,
+    pub cycle: u32,
+    pub frame_count: u32,
+    pub nmi_scanline: i32,
+    pub safe_oam_scanline: u32,
+    pub bus_address: u16,
+    pub memory_read_buffer: u8,
 }
 
 #[derive(Default)]

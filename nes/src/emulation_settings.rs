@@ -345,6 +345,7 @@ pub struct EmulationSettings {
     pub master_volume: f64,
     pub channel_pannings: Vec<f64>,
     pub band_gains: Vec<f64>,
+    pub bands: Vec<f64>,
     pub equalizer_bands: Vec<f64>,
     pub equalizer_filter: EqualizerFilter,
     pub sample_rate: u32,
@@ -388,6 +389,37 @@ pub struct EmulationSettings {
 }
 
 impl EmulationSettings {
+    pub fn new() -> Self {
+        let mut this = EmulationSettings::default();
+        this.audio_latency = 50;
+        this.channel_volumes = vec![1.0; 11];
+        this.channel_pannings = vec![1.0; 11];
+        this.band_gains = vec![0.0; 20];
+        this.bands = vec![
+            40.0, 56.0, 80.0, 113.0, 160.0, 225.0, 320.0, 450.0, 600.0, 750.0, 1000.0, 2000.0,
+            3000.0, 4000.0, 5000.0, 6000.0, 7000.0, 10000.0, 12500.0, 15000.0,
+        ];
+        this.master_volume = 1.0;
+        this.volume_reduction = 0.75;
+        this.sample_rate = 48000;
+        this.emulation_speed = 100;
+        this.turbo_speed = 300;
+        this.rewind_speed = 100;
+        this.rewind_buffer_size = 300;
+        this.video_scale = 1.0;
+        this.custom_aspect_ratio = 1.0;
+        this.background_enabled = true;
+        this.sprites_enabled = true;
+        this.exclusive_refresh_rate = 60;
+        this.controller_deadzone_size = 2;
+        this.input_poll_scanline = 241;
+        this.nsf_auto_detect_silence_delay = 3000;
+        this.nsf_move_to_next_track_time = 120;
+        this.nsf_disable_apt_irq = true;
+        this.auto_save_delay = 5;
+        this
+    }
+
     fn get_version() -> u32 {
         (VERSION.0 as u32) << 16 | (VERSION.1 as u32) << 8 | VERSION.0 as u32
     }

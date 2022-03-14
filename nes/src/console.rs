@@ -47,9 +47,7 @@ impl Console {
     fn load_hd_pack(&mut self, rom_file: VirtualFile, patch: VirtualFile) {
         todo!()
     }
-    fn update_nes_model(&mut self, send_notification: bool) {
-        todo!()
-    }
+
     fn get_frame_delay(&self) -> f64 {
         todo!()
     }
@@ -75,15 +73,14 @@ impl Console {
     }
 
     pub fn new(rom_file: &VirtualFile) -> Self {
-        let mut console = Console::default();
-        console.mapper = <dyn Mapper>::new(rom_file);
-        console.cpu = Cpu::new(&mut console);
-        console.ppu = Ppu::new();
-        for _ in 0..8 {
-            Cpu::start_cpu_cycle(&mut console, true);
-            Cpu::end_cpu_cycle(&mut console, true);
-        }
-        console
+        let mut this = Console::default();
+        this.mapper = <dyn Mapper>::new(rom_file);
+        this.cpu = Cpu::new();
+        this.ppu = Ppu::new();
+        this.emulation_settings = EmulationSettings::new();
+        Ppu::reset(&mut this);
+        Cpu::reset(&mut this, false);
+        this
     }
 
     pub fn save_batteries(&mut self) {
