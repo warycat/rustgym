@@ -72,12 +72,13 @@ impl Console {
         self.apu.process_cpu_clock();
     }
 
-    pub fn new(rom_file: &VirtualFile) -> Self {
+    pub fn new(rom_file: &VirtualFile, renderer: Box<dyn RenderingDevice>) -> Self {
         let mut this = Console::default();
         this.mapper = <dyn Mapper>::new(rom_file);
         this.cpu = Cpu::new();
         this.ppu = Ppu::new();
         this.emulation_settings = EmulationSettings::new();
+        this.video_renderer = VideoRenderer::new(renderer);
         Ppu::reset(&mut this);
         Cpu::reset(&mut this, false);
         this
@@ -111,7 +112,10 @@ impl Console {
     }
 
     pub fn run_frame(&mut self) {
-        todo!()
+        let frame_count = self.ppu.frame_count;
+        while self.ppu.frame_count == frame_count {
+            Cpu::exec(self);
+        }
     }
 
     pub fn update_hd_pack_mode(&mut self) -> bool {
@@ -209,12 +213,4 @@ impl Console {
     pub fn is_hd_ppu(&self) -> bool {
         todo!()
     }
-}
-
-#[test]
-fn test() {
-    logger_init();
-    let rom = VirtualFile::new("Nes Test", NES_TEST);
-    let console = Console::new(&rom);
-    assert_eq!(console.mapper.id(), 0);
 }

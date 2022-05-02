@@ -32,10 +32,10 @@ pub struct OpenBus {
 }
 
 impl OpenBus {
-    fn set_open_bus(&mut self, value: u8) {
+    pub fn set_open_bus(&mut self, value: u8) {
         self.last_read_value = value;
     }
-    fn get_open_bus(&self) -> u8 {
+    pub fn get_open_bus(&self) -> u8 {
         self.last_read_value
     }
 }
@@ -85,7 +85,8 @@ impl MemoryManager {
         let byte = match addr {
             0x0000..=0x1FFF => console.internal_ram.read_byte(addr),
             0x2000..=0x3FFF => Ppu::read_byte(console, addr),
-            0x4000..=0x4017 => console.apu.read_byte(addr),
+            0x4000..=0x4015 => console.apu.read_byte(addr),
+            0x4016..=0x4017 => ControlManager::read_byte(console, addr),
             0x4018..=0xFFFF => console.mapper.read_ram(addr),
         };
         console.open_bus.set_open_bus(byte);
@@ -95,7 +96,8 @@ impl MemoryManager {
         match addr {
             0x0000..=0x1FFF => console.internal_ram.write_byte(addr, byte),
             0x2000..=0x3FFF => Ppu::write_byte(console, addr, byte),
-            0x4000..=0x4017 => console.apu.write_byte(addr, byte),
+            0x4000..=0x4015 => console.apu.write_byte(addr, byte),
+            0x4016..=0x4017 => ControlManager::write_byte(console, addr, byte),
             0x4018..=0xFFFF => console.mapper.write_ram(addr, byte),
         }
     }

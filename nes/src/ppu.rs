@@ -277,18 +277,20 @@ impl Ppu {
         }
     }
 
-    fn update_video_ram_addr(&mut self) {
-        if self.scanline >= 240 || !self.rendering_enabled {
-            self.video_ram_addr = (self.video_ram_addr
-                + if self.control_flags.contains(PpuControlFlags::VerticalWrite) {
+    fn update_video_ram_addr(console: &mut Console) {
+        let ppu = &mut console.ppu;
+        if ppu.scanline >= 240 || !ppu.rendering_enabled {
+            ppu.video_ram_addr = (ppu.video_ram_addr
+                + if ppu.control_flags.contains(PpuControlFlags::VerticalWrite) {
                     0x20
                 } else {
                     0x00
                 })
                 & 0x7FFF;
+            Ppu::set_bus_address(console, console.ppu.video_ram_addr & 0x3FFF);
         } else {
-            self.inc_horizontal_scrolling();
-            self.inc_vertical_scrolling();
+            ppu.inc_horizontal_scrolling();
+            ppu.inc_vertical_scrolling();
         }
     }
 
@@ -698,8 +700,9 @@ impl Ppu {
         todo!()
     }
 
-    fn send_frame(&mut self) {
-        todo!()
+    fn send_frame(console: &mut Console) {
+        todo!();
+        // console.video_decoder.update_frame();
     }
 
     fn update_state(&mut self) {
@@ -710,8 +713,9 @@ impl Ppu {
         todo!()
     }
 
-    fn set_bus_address(&mut self, addr: u16) {
-        todo!()
+    fn set_bus_address(console: &mut Console, addr: u16) {
+        console.ppu.bus_address = addr;
+        console.mapper.notify_vram_address_change(addr);
     }
 
     fn read_vram(&mut self, addr: u16) -> u8 {
@@ -862,6 +866,10 @@ impl Ppu {
                 Ppu::update_minimum_draw_cycles(console);
             }
             let ppu = &mut console.ppu;
+            if ppu.scanline == console.emulation_settings.input_poll_scanline {
+                console.control_manager.update_input_state();
+            }
+
             if ppu.scanline == -1 {
                 console
                     .ppu
@@ -872,7 +880,9 @@ impl Ppu {
                 ppu.current_output_buffer_index += 1;
                 ppu.current_output_buffer_index %= 2;
             } else if ppu.scanline == 240 {
-                ppu.frame_count += 1;
+                Ppu::set_bus_address(console, console.ppu.video_ram_addr);
+                Ppu::send_frame(console);
+                console.ppu.frame_count += 1;
             }
         } else {
             ppu.cycle += 1;
@@ -901,10 +911,6 @@ impl Ppu {
             Ppu::exec(console);
             console.ppu.master_clock += PPU_DIVIDER;
         }
-    }
-
-    pub fn get_frame_count(&self) -> u32 {
-        todo!()
     }
 
     pub fn get_frame_cycle(&self) -> u32 {
@@ -978,7 +984,8 @@ impl Ppu {
                     } else {
                         open_bus_mask = 0x00;
                     }
-                    ppu.update_video_ram_addr();
+                    Ppu::update_video_ram_addr(console);
+                    let ppu = &mut console.ppu;
                     ppu.ignore_vram_read = 6;
                     ppu.need_state_update = true;
                 }
@@ -1023,4 +1030,16 @@ impl Ppu {
             _ => {}
         }
     }
+}
+
+#[test]
+fn test() {
+    logger_init();
+    let rom = VirtualFile::new("Nes Test", NES_TEST);
+    let mut console = Console::new(&rom, Box::new(BaseRenderer::default()));
+    assert_eq!(console.mapper.id(), 0);
+    console.run_frame();
+    assert_eq!(console.ppu.frame_count, 2);
+    console.run_frame();
+    assert_eq!(console.ppu.frame_count, 3);
 }

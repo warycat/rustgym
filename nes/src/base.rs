@@ -5,6 +5,17 @@ pub type Data = u32;
 pub type Address = u32;
 pub type Cycle = u32;
 
+#[derive(Debug, Default)]
+pub struct Gamepad {
+    pub id: String,
+    pub index: u32,
+    pub pressed: Vec<bool>,
+    pub touched: Vec<bool>,
+    pub value: Vec<f64>,
+    pub axes: Vec<f64>,
+    pub timestamp: f64,
+}
+
 #[derive(Clone, Copy, Debug)]
 pub enum MirroringType {
     None,

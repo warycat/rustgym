@@ -1,4 +1,3 @@
-use crate::gamepad::Gamepad;
 use js_sys::Uint8Array;
 use rustgym_msg::ClientInfo;
 use wasm_bindgen::prelude::*;
@@ -6,11 +5,12 @@ use wasm_bindgen::*;
 use wasm_bindgen_futures::JsFuture;
 use wasm_bindgen_test::*;
 use web_sys::{
-    window, Blob, ConstrainLongRange, Document, HtmlAnchorElement, HtmlButtonElement,
-    HtmlCanvasElement, HtmlDivElement, HtmlElement, HtmlInputElement, HtmlLiElement,
-    HtmlParagraphElement, HtmlTableElement, HtmlTableRowElement, HtmlTableSectionElement,
-    HtmlUListElement, HtmlVideoElement, Location, MediaDevices, MediaStream,
-    MediaStreamConstraints, MediaTrackConstraints, Navigator, Request, Response, Window,
+    window, Blob, ConstrainLongRange, Document, GamepadButton, HtmlAnchorElement,
+    HtmlButtonElement, HtmlCanvasElement, HtmlDivElement, HtmlElement, HtmlInputElement,
+    HtmlLiElement, HtmlParagraphElement, HtmlTableElement, HtmlTableRowElement,
+    HtmlTableSectionElement, HtmlUListElement, HtmlVideoElement, Location, MediaDevices,
+    MediaStream, MediaStreamConstraints, MediaTrackConstraints, Navigator, Request, Response,
+    Window,
 };
 
 pub fn set_panic_hook() {
@@ -251,14 +251,36 @@ pub async fn fetch_bytes_with_request(request: &Request) -> Result<Vec<u8>, JsVa
     Ok(bytes)
 }
 
-pub fn get_gamepads() -> Vec<Gamepad> {
+fn new_gamepad(gamepad: web_sys::Gamepad) -> nes::Gamepad {
+    let id = gamepad.id();
+    let index = gamepad.index();
+    let axes = gamepad.axes().to_vec();
+    let axes = axes.into_iter().map(|v| v.as_f64().unwrap()).collect();
+    let buttons = gamepad.buttons().to_vec();
+    let buttons: Vec<GamepadButton> = buttons.into_iter().map(|b| b.dyn_into().unwrap()).collect();
+    let pressed = buttons.iter().map(|b| b.pressed()).collect();
+    let touched = buttons.iter().map(|b| b.touched()).collect();
+    let value = buttons.iter().map(|b| b.value()).collect();
+    let timestamp = gamepad.timestamp();
+    nes::Gamepad {
+        id,
+        index,
+        pressed,
+        touched,
+        value,
+        axes,
+        timestamp,
+    }
+}
+
+pub fn get_gamepads() -> Vec<nes::Gamepad> {
     let navigator = navigator();
     let gamepads = navigator.get_gamepads().unwrap();
     let gamepads = gamepads.to_vec();
-    let mut res: Vec<Gamepad> = vec![];
+    let mut res: Vec<nes::Gamepad> = vec![];
     for gamepad in gamepads {
         if let Ok(gamepad) = gamepad.dyn_into::<web_sys::Gamepad>() {
-            let gamepad: Gamepad = gamepad.into();
+            let gamepad: nes::Gamepad = new_gamepad(gamepad);
             res.push(gamepad);
         }
     }

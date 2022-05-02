@@ -1300,12 +1300,11 @@ impl Cpu {
 fn test() {
     logger_init();
     let rom = VirtualFile::new("Nes Test", NES_TEST);
-    let mut console = Console::new(&rom);
+    let mut console = Console::new(&rom, Box::new(BaseRenderer::default()));
     let testlog = include_str!("../test/nestest.log");
     debug!("{:02x?}", console.mapper.base_mapper().prg_rom);
     console.cpu.pc = 0xC000;
     for line in testlog.lines() {
-        println!("{}", line);
         let pc = &line[0..4];
         let a = &line[48..48 + 4];
         let x = &line[53..53 + 4];

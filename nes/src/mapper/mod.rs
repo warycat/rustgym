@@ -73,17 +73,19 @@ pub trait Mapper {
     fn chr_page_size(&mut self) -> u16;
 
     fn read_ram(&mut self, addr: u16) -> u8 {
-        let hi = self.base_mapper().prg_pages[(addr >> 8) as usize];
+        let proto = self.base_mapper();
+        let hi = proto.prg_pages[(addr >> 8) as usize];
         let lo = addr & 0xFF;
         let addr = lo | hi;
-        self.base_mapper().prg_rom[addr as usize]
+        proto.prg_rom[addr as usize]
     }
 
     fn write_ram(&mut self, addr: u16, byte: u8) {
-        let hi = self.base_mapper().prg_pages[(addr >> 8) as usize];
+        let proto = self.base_mapper();
+        let hi = proto.prg_pages[(addr >> 8) as usize];
         let lo = addr & 0xFF;
         let addr = lo | hi;
-        self.base_mapper().prg_rom[addr as usize] = byte;
+        proto.prg_rom[addr as usize] = byte;
     }
 
     fn read_vram(&mut self, addr: u16) -> u8 {
@@ -104,9 +106,10 @@ pub trait Mapper {
         debug!("prg start_slot 0x{:04X}", start_slot);
         debug!("prg end_slot 0x{:04X}", end_slot);
         let mut page_addr = page * self.prg_page_size();
-        let mask = self.base_mapper().prg_mask;
+        let proto = self.base_mapper();
+        let mask = proto.prg_mask;
         for slot in start_slot..=end_slot {
-            self.base_mapper().prg_pages[slot as usize] = page_addr & mask;
+            proto.prg_pages[slot as usize] = page_addr & mask;
             page_addr += 0x100;
         }
     }
@@ -120,9 +123,10 @@ pub trait Mapper {
         debug!("chr start_slot 0x{:04X}", start_slot);
         debug!("chr end_slot 0x{:04X}", end_slot);
         let mut page_addr = page * self.chr_page_size();
-        let mask = self.base_mapper().chr_mask;
+        let proto = self.base_mapper();
+        let mask = proto.chr_mask;
         for slot in start_slot..=end_slot {
-            self.base_mapper().chr_pages[slot as usize] = page_addr & mask;
+            proto.chr_pages[slot as usize] = page_addr & mask;
             page_addr += 0x100;
         }
     }
@@ -158,6 +162,8 @@ pub trait Mapper {
             0
         }
     }
+
+    fn notify_vram_address_change(&mut self, addr: u16) {}
 }
 
 impl dyn Mapper {

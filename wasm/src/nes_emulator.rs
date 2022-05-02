@@ -47,7 +47,7 @@ fn init(canvas: &HtmlCanvasElement) -> Result<(WebGl2RenderingContext, Program),
     Ok((ctx, program))
 }
 
-fn draw(ctx: &WebGl2RenderingContext, program: &Program) {
+fn draw(ctx: &WebGl2RenderingContext, program: &Program, pixels: &[u8; 256 * 256 * 4]) {
     ctx.use_program(Some(&program.shader_program));
     let buffer = ctx.create_buffer().unwrap();
     ctx.bind_buffer(ARRAY_BUFFER, Some(&buffer));
@@ -56,8 +56,6 @@ fn draw(ctx: &WebGl2RenderingContext, program: &Program) {
     let positions = [0, 0, 256, 0, 0, 256, 256, 256];
     let (_, bytes, _) = unsafe { positions.align_to::<u8>() };
     ctx.buffer_data_with_u8_array(ARRAY_BUFFER, bytes, STATIC_DRAW);
-    let mut bytes = [0; 256 * 256 * 4];
-    randomize_rgbav(&mut bytes);
     ctx.tex_image_2d_with_i32_and_i32_and_i32_and_format_and_type_and_opt_u8_array(
         TEXTURE_2D,
         0,
@@ -67,7 +65,7 @@ fn draw(ctx: &WebGl2RenderingContext, program: &Program) {
         0,
         RGBA,
         UNSIGNED_BYTE,
-        Some(&bytes),
+        Some(pixels),
     )
     .unwrap();
     ctx.draw_arrays(TRIANGLE_STRIP, 0, 4);
@@ -107,7 +105,7 @@ impl NesEmulator {
             error!("md5");
         }
         let rom = VirtualFile::new(&self.filename, &bytes);
-        let console = Console::new(&rom);
+        let console = Console::new(&rom, Box::new(BaseRenderer::default()));
         self.console = Some(console);
         Ok(())
     }
@@ -122,8 +120,16 @@ impl NesEmulator {
         let queue_size = 100;
 
         let mut console = self.console.take().unwrap();
+        console.control_manager = ControlManager::new(|| get_gamepads());
+        let mut bytes = [0; 256 * 256 * 4];
         *g.borrow_mut() = Some(Closure::wrap(Box::new(move || {
-            console.run_single_frame();
+            PAUSED.with(|value| {
+                let paused = *value.borrow();
+                if !paused {
+                    console.run_single_frame();
+                    randomize_rgbav(&mut bytes);
+                }
+            });
             let now = now();
             let delta = now - last;
             let fps = 1000.0 / delta;
@@ -136,11 +142,9 @@ impl NesEmulator {
             let status = format!("FPS: {:.1}", average);
             fps_p().set_text_content(Some(&status));
             last = now;
-            let gamepads = get_gamepads();
-            for gamepad in gamepads {}
             ctx.clear_color(0.0, 0.0, 0.0, 1.0);
             ctx.clear(COLOR_BUFFER_BIT);
-            draw(&ctx, &self.program);
+            draw(&ctx, &self.program, &bytes);
             request_animation_frame(f.borrow().as_ref().unwrap());
         }) as Box<dyn FnMut()>));
         request_animation_frame(g.borrow().as_ref().unwrap());

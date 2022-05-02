@@ -277,25 +277,6 @@ impl Default for ExpansionPortDevice {
     }
 }
 
-pub enum ControllerType {
-    None,
-    StandardController,
-    Zapper,
-    ArkanoidController,
-    SnesController,
-    PowerPad,
-    SnesMouse,
-    SuborMouse,
-    VsZapper,
-    VbController,
-}
-
-impl Default for ControllerType {
-    fn default() -> Self {
-        ControllerType::None
-    }
-}
-
 pub enum InputDisplayPosition {
     TopLeft,
     TopRight,
