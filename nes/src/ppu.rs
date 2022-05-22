@@ -678,7 +678,7 @@ impl Ppu {
         tile.palette_offset + background_color
     }
 
-    fn current_buffer(&mut self) -> &mut Vec<u16> {
+    fn current_output_buffer(&mut self) -> &mut Vec<u16> {
         &mut self.output_buffers[self.current_output_buffer_index as usize]
     }
 
@@ -689,20 +689,19 @@ impl Ppu {
             let color = Ppu::get_pixel_color(console);
             let ppu = &mut console.ppu;
             let color = if color & 0x03 != 0 { color as usize } else { 0 };
-            ppu.current_buffer()[offset] = ppu.palette_ram[color] as u16;
+            ppu.current_output_buffer()[offset] = ppu.palette_ram[color] as u16;
         } else {
             let color = (ppu.video_ram_addr & 0x1F) as usize;
-            ppu.current_buffer()[offset] = ppu.palette_ram[color] as u16;
+            ppu.current_output_buffer()[offset] = ppu.palette_ram[color] as u16;
         }
     }
 
-    fn update_grayscale_and_intensify_bits(&mut self) {
-        todo!()
-    }
-
     fn send_frame(console: &mut Console) {
-        todo!();
-        // console.video_decoder.update_frame();
+        VideoDecoder::update_frame_sync(console);
+        console.ppu.enable_oam_decay = console
+            .emulation_settings
+            .flags
+            .contains(EmulationFlags::EnableOamDecay);
     }
 
     fn update_state(&mut self) {

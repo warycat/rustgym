@@ -4,8 +4,6 @@ use std::any::{Any, TypeId};
 #[derive(Default)]
 pub struct Console {
     auto_save_manager: AutoSaveManager,
-    hd_pack_builder: HdPackBuilder,
-    hd_audio_device: HdAudioDevice,
     paused: bool,
     stop: bool,
     running: bool,
@@ -29,13 +27,13 @@ pub struct Console {
     pub control_manager: ControlManager,
     pub memory_manager: MemoryManager,
     pub cheat_manager: CheatManager,
+    pub rewind_manager: RewindManager,
     pub history_viewer: HistoryViewer,
     pub system_action_manager: SystemActionManager,
     pub debugger: Debugger,
     pub rom_file: VirtualFile,
     pub patch_file: VirtualFile,
     pub nes_model: NesModel,
-    pub hd_pack_data: HdPackData,
     pub internal_ram: InternalRam,
     pub open_bus: OpenBus,
 }
@@ -79,6 +77,8 @@ impl Console {
         this.ppu = Ppu::new();
         this.emulation_settings = EmulationSettings::new();
         this.video_renderer = VideoRenderer::new(renderer);
+        this.video_decoder = VideoDecoder::new();
+        this.rewind_manager = RewindManager::new();
         Ppu::reset(&mut this);
         Cpu::reset(&mut this, false);
         this
@@ -167,10 +167,6 @@ impl Console {
     }
 
     pub fn load_state(load_stream: impl std::io::Read) {
-        todo!()
-    }
-
-    pub fn get_frame_count(&self) -> u32 {
         todo!()
     }
 
