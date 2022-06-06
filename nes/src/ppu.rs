@@ -192,6 +192,7 @@ pub struct Ppu {
     pub frame_count: u32,
     pub scanline: i32,
     pub secondary_sprite_ram: Vec<u8>,
+    pub settings: EmulationFlags,
 }
 
 impl Ppu {
@@ -355,10 +356,7 @@ impl Ppu {
                     }
                     if ppu.sprite_ram_addr >= 0x08
                         && ppu.rendering_enabled
-                        && console
-                            .emulation_settings
-                            .flags
-                            .contains(EmulationFlags::DisableOamAddrBug)
+                        && ppu.settings.contains(EmulationFlags::DisableOamAddrBug)
                     {
                         let addr = ppu.sprite_ram_addr & 0xF8 + (ppu.cycle - 1) as u8;
                         let byte = ppu.read_sprite_ram(addr);
@@ -587,8 +585,8 @@ impl Ppu {
 
     fn process_oam_corruption(console: &mut Console) {
         if !console
-            .emulation_settings
-            .flags
+            .ppu
+            .settings
             .contains(EmulationFlags::EnablePpuOamRowCorruption)
         {
             return;
@@ -604,13 +602,11 @@ impl Ppu {
         }
     }
 
-    fn update_minimum_draw_cycles(console: &mut Console) {
-        let ppu = &mut console.ppu;
-        ppu.minimum_draw_bg_cycle = if ppu.mask_flags.contains(PpuMaskFlags::BackgroundEnabled) {
-            if ppu.mask_flags.contains(PpuMaskFlags::BackgroundMask)
-                || console
-                    .emulation_settings
-                    .flags
+    fn update_minimum_draw_cycles(&mut self) {
+        self.minimum_draw_bg_cycle = if self.mask_flags.contains(PpuMaskFlags::BackgroundEnabled) {
+            if self.mask_flags.contains(PpuMaskFlags::BackgroundMask)
+                || self
+                    .settings
                     .contains(EmulationFlags::ForceBackgroundFirstColumn)
             {
                 0
@@ -678,7 +674,7 @@ impl Ppu {
         tile.palette_offset + background_color
     }
 
-    fn current_output_buffer(&mut self) -> &mut Vec<u16> {
+    pub fn current_output_buffer(&mut self) -> &mut Vec<u16> {
         &mut self.output_buffers[self.current_output_buffer_index as usize]
     }
 
@@ -699,8 +695,8 @@ impl Ppu {
     fn send_frame(console: &mut Console) {
         VideoDecoder::update_frame_sync(console);
         console.ppu.enable_oam_decay = console
-            .emulation_settings
-            .flags
+            .ppu
+            .settings
             .contains(EmulationFlags::EnableOamDecay);
     }
 
@@ -725,8 +721,9 @@ impl Ppu {
         todo!()
     }
 
-    pub fn new() -> Self {
+    pub fn new(settings: EmulationFlags) -> Self {
         let mut this = Ppu::default();
+        this.settings = settings;
         this.master_clock = 0;
         this.output_buffers = vec![vec![0; 256 * 240]; 2];
         this.open_bus_decay_stamp = vec![0; 8];
@@ -783,7 +780,7 @@ impl Ppu {
         ppu.update_vram_addr_delay = 0;
         ppu.update_vram_addr = 0;
         ppu.oam_decay_cycles = vec![0; 0x40];
-        Ppu::update_minimum_draw_cycles(console);
+        ppu.update_minimum_draw_cycles();
     }
 
     pub fn debug_send_frame(&mut self) {
@@ -862,7 +859,8 @@ impl Ppu {
                 if ppu.rendering_enabled {
                     Ppu::process_oam_corruption(console);
                 }
-                Ppu::update_minimum_draw_cycles(console);
+                let ppu = &mut console.ppu;
+                ppu.update_minimum_draw_cycles();
             }
             let ppu = &mut console.ppu;
             if ppu.scanline == console.emulation_settings.input_poll_scanline {
@@ -945,8 +943,8 @@ impl Ppu {
             }
             SpriteData => {
                 if console
-                    .emulation_settings
-                    .flags
+                    .ppu
+                    .settings
                     .contains(EmulationFlags::DisablePpu2004Reads)
                 {
                     let ppu = &mut console.ppu;
@@ -974,10 +972,11 @@ impl Ppu {
                     ppu.memory_read_buffer = ppu.read_vram(ppu.bus_address & 0x3FFF);
                     if ppu.bus_address & 0x3FFF >= 0x3F00
                         && !console
-                            .emulation_settings
-                            .flags
+                            .ppu
+                            .settings
                             .contains(EmulationFlags::DisablePaletteRead)
                     {
+                        let ppu = &mut console.ppu;
                         return_value = ppu.read_palette_ram(ppu.bus_address) | ppu.open_bus & 0xC0;
                         open_bus_mask = 0xC0;
                     } else {

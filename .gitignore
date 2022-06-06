@@ -8,3 +8,4 @@ pkg/
 *.tar.gz
 stream/
 data/
+bundle.tar

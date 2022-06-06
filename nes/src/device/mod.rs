@@ -1,10 +1,8 @@
 use crate::*;
 use std::any::Any;
 
-mod base_device;
 mod standard_controler;
 
-pub use base_device::*;
 pub use standard_controler::*;
 
 pub trait Device: MemoryHandler {
@@ -37,4 +35,23 @@ pub trait Device: MemoryHandler {
     }
 
     fn as_any(&mut self) -> &mut dyn Any;
+}
+
+#[derive(Default, Clone)]
+pub struct ControlDeviceState(Vec<u8>);
+
+#[derive(Default)]
+pub struct BaseDevice {
+    state: ControlDeviceState,
+    pub strobe: bool,
+}
+
+impl BaseDevice {
+    pub fn get_raw_state(&self) -> ControlDeviceState {
+        self.state.clone()
+    }
+
+    pub fn clear_state(&mut self) {
+        self.state = ControlDeviceState::default();
+    }
 }

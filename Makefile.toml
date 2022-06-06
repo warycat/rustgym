@@ -1,4 +1,4 @@
-env_files = ["infra/ignore.env", "infra/const.env"]
+env_files = ["scripts/ignore.env", "scripts/const.env"]
 
 [config]
 default_to_workspace = false
@@ -28,17 +28,13 @@ script = [
     "cargo run --bin openvgdb"
 ]
 
-[tasks.wasm-pack]
-script = "wasm-pack build wasm --target no-modules --out-dir ../pkg"
+[tasks.wasm]
+command = "wasm-pack"
+args = ["build", "wasm", "--target", "no-modules", "--out-dir", "../pkg"]
 
-[tasks.bin-pack]
-script = ["cargo build --release", "tar -czvf bin.tar.gz -T infra/bin.txt"]
-
-[tasks.archive-wasm]
-script = "tar -czvf pkg.tar.gz pkg"
-
-[tasks.archive-static]
-script = "tar -czvf static.tar.gz static"
+[tasks.release]
+command = "cargo"
+args = ["build", "--release", "--target", "x86_64-unknown-linux-musl"]
 
 [tasks.watch-wasm]
 run_task = { name = ["wasm-pack"] }
@@ -46,10 +42,10 @@ watch = { postpone = true, watch = ["./wasm", "./msg", "./consts", "./nes"] }
 
 [tasks.watch-server]
 script = "cargo watch -w server -w msg -w consts -x 'run --bin rustgym-server'"
-dependencies = ["wasm-pack"]
+dependencies = ["wasm"]
 
 [tasks.sonic]
-script = "sonic -c infra/sonic.cfg"
+script = "sonic -c config/sonic.cfg"
 
 [tasks.dev]
 run_task = { name = ["sonic", "watch-server", "watch-wasm"], parallel = true }
@@ -58,30 +54,39 @@ run_task = { name = ["sonic", "watch-server", "watch-wasm"], parallel = true }
 command = "wasm-pack"
 args = ["test", "--chrome", "--headless", "wasm"]
 
-[tasks.build-mini]
-command = "cargo"
+[tasks.create-instance]
+command = "gcloud"
 args = [
-    "build",
-    "--release",
-    "--target",
-    "aarch64-apple-darwin",
-    "--bin",
-    "${APP_NAME}"
+    "compute",
+    "instances",
+    "create",
+    "${VM_NAME}",
+    "--machine-type",
+    "${MACHINE_TYPE}",
+    "--zone",
+    "${ZONE}",
+    "--tags",
+    "http-server,https-server,stun-server"
 ]
 
-[tasks.copy-mini]
-command = "scp"
-args = [
-    "./target/aarch64-apple-darwin/release/${APP_NAME}",
-    "mini:~/${APP_NAME}"
-]
-dependencies = ["build-mini"]
-
-[tasks.run-mini]
+[tasks.ssh]
 command = "ssh"
-args = ["mini", "./${APP_NAME}"]
-dependencies = ["copy-mini"]
+args = ["${VM_NAME}.us-central1-a.${PROJECT}"]
 
-[tasks.run-local]
-command = "cargo"
-args = ["run", "--release", "--bin", "${APP_NAME}"]
+[tasks.bundle]
+command = "tar"
+args = ["-cvvf", "bundle.tar", "-T", "bundle.txt"]
+dependencies = ["release", "wasm"]
+
+[tasks.deploy]
+command = "scp"
+args = ["bundle.tar", "${VM_NAME}.us-central1-a.${PROJECT}:~"]
+dependencies = ["bundle"]
+
+[tasks.copy-scripts]
+command = "scp"
+args = ["-r", "scripts", "${VM_NAME}.us-central1-a.${PROJECT}:~"]
+
+[tasks.copy-config]
+command = "scp"
+args = ["-r", "config", "${VM_NAME}.us-central1-a.${PROJECT}:~"]

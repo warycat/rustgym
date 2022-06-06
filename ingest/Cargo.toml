@@ -8,7 +8,12 @@ edition = "2018"
 [dependencies]
 sonic-channel = { version = "0.4.0", features = ["ingest", "control"] }
 anyhow = "1.0.38"
-diesel = { version = "1.4.5", features = ["sqlite"] }
+diesel = { version = "1.4.8", features = [
+    "sqlite",
+    "r2d2",
+    "chrono",
+    "uuidv07"
+] }
 rustgym-schema = { path = "../schema" }
 rustgym-consts = { path = "../consts" }
 html2text = "0.2.1"

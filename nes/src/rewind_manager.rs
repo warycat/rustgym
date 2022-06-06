@@ -8,4 +8,8 @@ impl RewindManager {
         let this = RewindManager::default();
         this
     }
+
+    pub fn send_frame(&mut self, ppu_output_buffer: &mut Vec<u16>, synchronous: bool) {
+        todo!()
+    }
 }

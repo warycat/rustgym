@@ -120,7 +120,7 @@ impl NesEmulator {
         let queue_size = 100;
 
         let mut console = self.console.take().unwrap();
-        console.control_manager = ControlManager::new(|| get_gamepads());
+        console.control_manager = ControlManager::new(EmulationFlags::default(), || get_gamepads());
         let mut bytes = [0; 256 * 256 * 4];
         *g.borrow_mut() = Some(Closure::wrap(Box::new(move || {
             PAUSED.with(|value| {

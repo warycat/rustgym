@@ -25,13 +25,15 @@ impl Default for ControllerType {
 
 #[derive(Default)]
 pub struct ControlManager {
+    settings: EmulationFlags,
     control_devices: HashMap<u32, StandardController>,
     input_poll: Option<Box<dyn Fn() -> Vec<Gamepad>>>,
 }
 
 impl ControlManager {
-    pub fn new(input_poll: impl Fn() -> Vec<Gamepad> + 'static) -> Self {
+    pub fn new(settings: EmulationFlags, input_poll: impl Fn() -> Vec<Gamepad> + 'static) -> Self {
         let mut this = ControlManager::default();
+        this.settings = settings;
         this.input_poll = Some(Box::new(input_poll));
         this
     }
@@ -70,8 +72,8 @@ impl ControlManager {
         match console.emulation_settings.console_type {
             ConsoleType::Nes => {
                 if console
-                    .emulation_settings
-                    .flags
+                    .control_manager
+                    .settings
                     .contains(EmulationFlags::UseNes101Hvc101Behavior)
                 {
                     if port == 0 {

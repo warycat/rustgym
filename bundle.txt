@@ -1,0 +1,9 @@
+target/x86_64-unknown-linux-musl/release/openvgdb
+target/x86_64-unknown-linux-musl/release/rustgym-server
+target/x86_64-unknown-linux-musl/release/rustgym-readme
+target/x86_64-unknown-linux-musl/release/rustgym-ingest
+config/
+scripts/
+pkg/
+data/
+static/

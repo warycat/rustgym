@@ -151,6 +151,7 @@ impl OverscanDimensions {
     }
 }
 
+#[derive(Clone, Copy)]
 pub enum VideoFilterType {
     None,
     Ntsc,
@@ -318,7 +319,7 @@ pub struct EmulationSettings {
     need_controller_update: bool,
     controller_deadzone_size: u32,
     pub ppu_palette_argb: Palette,
-    pub flags: EmulationFlags,
+    flags: EmulationFlags,
     pub display_language: Language,
     pub nes_model: NesModel,
     pub ppu_model: PpuModel,

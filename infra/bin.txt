@@ -1,4 +1,0 @@
-target/release/openvgdb
-target/release/rustgym-server
-target/release/rustgym-readme
-target/release/rustgym-ingest

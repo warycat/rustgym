@@ -74,10 +74,10 @@ impl Console {
         let mut this = Console::default();
         this.mapper = <dyn Mapper>::new(rom_file);
         this.cpu = Cpu::new();
-        this.ppu = Ppu::new();
+        this.ppu = Ppu::new(EmulationFlags::default());
         this.emulation_settings = EmulationSettings::new();
         this.video_renderer = VideoRenderer::new(renderer);
-        this.video_decoder = VideoDecoder::new();
+        this.video_decoder = VideoDecoder::new(EmulationFlags::default());
         this.rewind_manager = RewindManager::new();
         Ppu::reset(&mut this);
         Cpu::reset(&mut this, false);

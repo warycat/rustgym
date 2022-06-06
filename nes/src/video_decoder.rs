@@ -9,6 +9,7 @@ pub struct ScreenSize {
 
 #[derive(Default)]
 pub struct VideoDecoder {
+    settings: EmulationFlags,
     frame_number: u32,
     hud: VideoHud,
     pub frame_count: u32,
@@ -22,22 +23,34 @@ pub struct VideoDecoder {
 }
 
 impl VideoDecoder {
-    fn update_video_filter(&mut self) {
-        todo!()
-    }
-
     fn decode_thread(&mut self) {
         todo!()
     }
 
-    pub fn new() -> Self {
-        let this = VideoDecoder::default();
+    pub fn new(settings: EmulationFlags) -> Self {
+        let mut this = VideoDecoder::default();
+        this.settings = settings;
         this
     }
 
     fn decode_frame(console: &mut Console, synchronous: bool) {
-        todo!()
-        // console.rewind_manager.send_frame();
+        let video_filter_type = console.emulation_settings.video_filter_type;
+        console.video_decoder.video_filter = match video_filter_type {
+            VideoFilterType::None => None,
+            _ => None,
+        };
+
+        if let Some(video_filter) = console.video_decoder.video_filter.as_ref() {
+            video_filter.send_frame(
+                &mut console.ppu.current_output_buffer(),
+                console.video_decoder.frame_number,
+            );
+        }
+        let screen_size = console.video_decoder.get_screen_size(true);
+
+        console
+            .rewind_manager
+            .send_frame(console.ppu.current_output_buffer(), synchronous);
     }
 
     fn take_screenshot(&mut self) {
@@ -52,7 +65,6 @@ impl VideoDecoder {
         if console.emulation_settings.is_run_ahead_frame {
             return;
         }
-
         console.video_decoder.frame_number = console.ppu.frame_count;
         VideoDecoder::decode_frame(console, true);
         console.video_decoder.frame_count += 1;
