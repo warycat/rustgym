@@ -23,7 +23,7 @@ impl Solution {
 #[test]
 fn test() {
     assert_eq!(
-        Solution::check_x_matrix(vec_vec![
+        Solution::check_x_matrix(vec_vec_i32![
             [2, 0, 0, 1],
             [0, 3, 1, 0],
             [0, 5, 2, 0],
@@ -32,7 +32,7 @@ fn test() {
         true
     );
     assert_eq!(
-        Solution::check_x_matrix(vec_vec![[5, 7, 0], [0, 3, 1], [0, 5, 0]]),
+        Solution::check_x_matrix(vec_vec_i32![[5, 7, 0], [0, 3, 1], [0, 5, 0]]),
         false
     );
 }
