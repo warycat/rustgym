@@ -426,6 +426,12 @@ dependencies = [
 ]
 
 [[package]]
+name = "ahash"
+version = "0.3.8"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e8fd72866655d1904d6b0997d0b07ba561047d070fbe29de039031c641b61217"
+
+[[package]]
 name = "aho-corasick"
 version = "0.7.15"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1510,6 +1516,16 @@ dependencies = [
 
 [[package]]
 name = "hashbrown"
+version = "0.7.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "96282e96bfcd3da0d3aa9938bedf1e50df3269b6db08b4876d2da0bb1a0841cf"
+dependencies = [
+ "ahash",
+ "autocfg",
+]
+
+[[package]]
+name = "hashbrown"
 version = "0.11.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "ab5ef0d4909ef3724cc8cce6ccc8572c5c817592e9285f5464f8e86f8bd3726e"
@@ -1688,7 +1704,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "bc633605454125dec4b66843673f01c7df2b89479b32e0ed634e43a91cff62a5"
 dependencies = [
  "autocfg",
- "hashbrown",
+ "hashbrown 0.11.2",
 ]
 
 [[package]]
@@ -1849,9 +1865,9 @@ dependencies = [
 
 [[package]]
 name = "log"
-version = "0.4.14"
+version = "0.4.17"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "51b9bbe6c47d51fc3e1a9b945965946b4c44142ab8792c50835a980d362c2710"
+checksum = "abb12e687cfb44aa40f41fc3978ef76448f9b6038cad6aef4259d3c095a2382e"
 dependencies = [
  "cfg-if 1.0.0",
 ]
@@ -3177,12 +3193,12 @@ dependencies = [
 
 [[package]]
 name = "sonic-channel"
-version = "0.4.1"
+version = "1.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "40f7d12f8414b37be2353ff2ce8589726df9304e0922c9441ed6a8030174aba7"
+checksum = "2de18b1a8ca223b1abf49fd306403ac334f98cb2c4ea04252d9cbfb8b0f5ffb9"
 dependencies = [
- "lazy_static",
- "regex",
+ "log",
+ "whatlang",
 ]
 
 [[package]]
@@ -3898,6 +3914,15 @@ checksum = "98db6ff463a94d727ee7c1188bab33146468add6dfb94df30a1f4a3495a700d9"
 dependencies = [
  "log",
  "url",
+]
+
+[[package]]
+name = "whatlang"
+version = "0.12.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "7a346d2eb29c03618693ed24a29d1acd0c3f2cb08ae58b9669d7461e033cf703"
+dependencies = [
+ "hashbrown 0.7.2",
 ]
 
 [[package]]

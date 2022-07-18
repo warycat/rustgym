@@ -6,7 +6,7 @@ edition = "2018"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [dependencies]
-sonic-channel = { version = "0.4.0", features = ["ingest", "control"] }
+sonic-channel = { version = "1.0", features = ["ingest", "control"] }
 anyhow = "1.0.38"
 diesel = { version = "1.4.8", features = [
     "sqlite",
