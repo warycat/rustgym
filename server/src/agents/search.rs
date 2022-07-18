@@ -45,6 +45,8 @@ impl Handler<Envelope> for SearchAgent {
             msg,
         } = envelope;
 
+        let dest = Dest::col_buc(SONIC_COLLECTION, SONIC_BUCKET);
+
         match msg {
             Msg::In(msg_in) => match msg_in {
                 MsgIn::SearchText(text) => {
@@ -54,10 +56,7 @@ impl Handler<Envelope> for SearchAgent {
                     let mut suggestions = vec![];
                     if let Some(last) = search_words.last() {
                         info!("{}", last);
-                        match self
-                            .search_channel
-                            .suggest(SONIC_COLLECTION, SONIC_BUCKET, last)
-                        {
+                        match self.search_channel.suggest(SuggestRequest::new(dest, last)) {
                             Ok(words) => {
                                 info!("{:?}", words);
                                 for word in words {
@@ -82,10 +81,7 @@ impl Handler<Envelope> for SearchAgent {
                 MsgIn::QueryText(text) => {
                     let text: String = cleanup(text);
                     let mut query_results: Vec<QueryResult> = vec![];
-                    match self
-                        .search_channel
-                        .query(SONIC_COLLECTION, SONIC_BUCKET, &text)
-                    {
+                    match self.search_channel.query(QueryRequest::new(dest, &text)) {
                         Ok(objects) => {
                             if let Ok(results) = get_results(objects, &self.pool) {
                                 query_results = results;
