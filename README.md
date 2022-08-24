@@ -61,7 +61,7 @@ All the solutions here are crafted with love and their performance beats 99% of 
           1
         </td>
         <td>
-          <a href="http://rustgym.com/leetcode/1"> Two Sum</a>
+          <a href="https://rustgym.com/leetcode/1"> Two Sum</a>
         </td>
         <td>Easy</td>
       </tr>
