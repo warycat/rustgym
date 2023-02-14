@@ -17,4 +17,5 @@ members = [
     "mnist-data",
     "nes",
     "openvgdb",
+    "concept",
 ]
