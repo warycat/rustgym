@@ -45,30 +45,53 @@ class Stack:
     def size(self):
         return len(self.items)
 
-    # Define a method to reverse the stack using recursion
+   # Define a method to reverse the stack using recursion
     def reverse(self):
+        # Print the start of the reverse function
+        print("Start of reverse function")
+        # Print the stack
+        print("Stack:", self.items)
         # Base case: if the stack is empty, do nothing
         if self.is_empty():
+            # Print the end of the reverse function
+            print("End of reverse function based on empty stack")
             return
         # Recursive case: pop the top element and store it
         item = self.pop()
+        # Print the item
+        print("Item:", item)
         # Reverse the remaining stack
         self.reverse()
         # Insert the popped element at the bottom of the stack
         self.insert_at_bottom(item)
+        # Print the end of the reverse function
+        print("Finally End of reverse function")
 
     # Define a helper method to insert an element at the bottom of the stack
     def insert_at_bottom(self, item):
+        # Print the start of the insert_at_bottom function
+        print("Start of insert_at_bottom function")
+        # Print the stack
+        print("Stack:", self.items)
+        # Print the item
+        print("Item:", item)
         # Base case: if the stack is empty, push the item
         if self.is_empty():
             self.push(item)
+            # Print the end of the insert_at_bottom function
+            print("End of insert_at_bottom function based on empty stack")
+            return
         # Recursive case: pop the top element and store it
         else:
             temp = self.pop()
+            # Print the temp
+            print("Temp:", temp)
             # Insert the item at the bottom of the remaining stack
             self.insert_at_bottom(item)
             # Push the popped element back to the stack
             self.push(temp)
+            # Print the end of the insert_at_bottom function
+            print("End of insert_at_bottom function")
 
 
 # Create an object of the Stack class
