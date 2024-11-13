@@ -1,5 +1,3 @@
-use crate::ControlManager;
-
 #[derive(Default)]
 pub struct RewindManager {}
 
@@ -9,7 +7,7 @@ impl RewindManager {
         this
     }
 
-    pub fn send_frame(&mut self, ppu_output_buffer: &mut Vec<u16>, synchronous: bool) {
+    pub fn send_frame(&mut self, _ppu_output_buffer: &mut Vec<u16>, _synchronous: bool) {
         todo!()
     }
 }

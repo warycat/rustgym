@@ -1,6 +1,4 @@
 use crate::*;
-use log::info;
-use std::cell::RefCell;
 
 pub trait MemoryHandler {
     fn read_byte(&mut self, addr: u16) -> u8;
@@ -75,7 +73,7 @@ impl MemoryHandler for InternalRam {
 pub struct MemoryManager {}
 
 impl MemoryManager {
-    pub fn reset(&mut self, soft_reset: bool) {
+    pub fn reset(&mut self, _soft_reset: bool) {
         todo!()
     }
 }

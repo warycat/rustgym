@@ -1,3 +1,4 @@
+#![allow(dead_code)]
 #![allow(clippy::collapsible_else_if)]
 #![allow(non_upper_case_globals)]
 use bitflags::bitflags;
@@ -68,7 +69,6 @@ pub use auto_save_manager::*;
 pub use base::*;
 pub use battery_manager::*;
 pub use breakpoint::*;
-pub use bus::*;
 pub use cheat_manager::*;
 pub use code_data_logger::*;
 pub use code_runner::*;
@@ -104,7 +104,6 @@ pub use ppu::*;
 pub use prg_rom::*;
 pub use profiler::*;
 pub use renderer::*;
-pub use rewind_manager::*;
 pub use rewind_manager::*;
 pub use rom::*;
 pub use rotate_filter::*;

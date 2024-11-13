@@ -46,7 +46,7 @@ impl VideoDecoder {
                 console.video_decoder.frame_number,
             );
         }
-        let screen_size = console.video_decoder.get_screen_size(true);
+        let _screen_size = console.video_decoder.get_screen_size(true);
 
         console
             .rewind_manager
@@ -57,7 +57,7 @@ impl VideoDecoder {
         todo!()
     }
 
-    fn get_screen_size(&self, ignore_scale: bool) -> ScreenSize {
+    fn get_screen_size(&self, _ignore_scale: bool) -> ScreenSize {
         todo!()
     }
 
@@ -70,7 +70,7 @@ impl VideoDecoder {
         console.video_decoder.frame_count += 1;
     }
 
-    fn update_frame(&self, ppu_output_buffer: &mut Vec<u16>) {
+    fn update_frame(&self, _ppu_output_buffer: &mut Vec<u16>) {
         todo!()
     }
 

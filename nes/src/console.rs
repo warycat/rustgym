@@ -1,17 +1,16 @@
 use crate::*;
-use std::any::{Any, TypeId};
 
 #[derive(Default)]
 pub struct Console {
-    auto_save_manager: AutoSaveManager,
-    paused: bool,
-    stop: bool,
-    running: bool,
-    stop_code: i32,
-    pause_on_next_frame_requested: bool,
-    reset_run_timers: bool,
-    disable_oc_next_frame: bool,
-    initialized: bool,
+    _auto_save_manager: AutoSaveManager,
+    _paused: bool,
+    _stop: bool,
+    _running: bool,
+    _stop_code: i32,
+    _pause_on_next_frame_requested: bool,
+    _reset_run_timers: bool,
+    _disable_oc_next_frame: bool,
+    _initialized: bool,
     pub battery_manager: BatteryManager,
     pub save_state_manager: SaveStateManager,
     pub video_decoder: VideoDecoder,
@@ -39,10 +38,10 @@ pub struct Console {
 }
 
 impl Console {
-    fn run_frame_with_run_ahead(&mut self, run_ahead_state: impl std::io::Write) {
+    fn run_frame_with_run_ahead(&mut self, _run_ahead_state: impl std::io::Write) {
         todo!()
     }
-    fn load_hd_pack(&mut self, rom_file: VirtualFile, patch: VirtualFile) {
+    fn load_hd_pack(&mut self, _rom_file: VirtualFile, _patch: VirtualFile) {
         todo!()
     }
 
@@ -51,10 +50,10 @@ impl Console {
     }
     fn display_debug_information(
         &self,
-        last_frame: f64,
-        last_frame_min: &mut f64,
-        last_frame_max: &mut f64,
-        frame_durations: [f64; 60],
+        _last_frame: f64,
+        _last_frame_min: &mut f64,
+        _last_frame_max: &mut f64,
+        _frame_durations: [f64; 60],
     ) {
         todo!()
     }
@@ -130,11 +129,11 @@ impl Console {
         todo!()
     }
 
-    pub fn input_barcode(&mut self, barcode: u64, digit_count: u64) {
+    pub fn input_barcode(&mut self, _barcode: u64, _digit_count: u64) {
         todo!()
     }
 
-    pub fn reset(&mut self, soft_reset: bool) {
+    pub fn reset(&mut self, _soft_reset: bool) {
         todo!()
     }
 
@@ -142,11 +141,11 @@ impl Console {
         todo!()
     }
 
-    pub fn reload_rom(&mut self, for_power_cycle: bool) {
+    pub fn reload_rom(&mut self, _for_power_cycle: bool) {
         todo!()
     }
 
-    pub fn reset_components(&mut self, soft_reset: bool) {
+    pub fn reset_components(&mut self, _soft_reset: bool) {
         todo!()
     }
 
@@ -162,11 +161,11 @@ impl Console {
         todo!()
     }
 
-    pub fn save_state(save_stream: impl std::io::Write) {
+    pub fn save_state(_save_stream: impl std::io::Write) {
         todo!()
     }
 
-    pub fn load_state(load_stream: impl std::io::Read) {
+    pub fn load_state(_load_stream: impl std::io::Read) {
         todo!()
     }
 
@@ -194,7 +193,7 @@ impl Console {
         todo!()
     }
 
-    pub fn set_next_frame_overclock_status(&mut self, disabled: bool) {
+    pub fn set_next_frame_overclock_status(&mut self, _disabled: bool) {
         todo!()
     }
 

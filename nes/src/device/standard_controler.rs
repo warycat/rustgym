@@ -1,7 +1,5 @@
 use crate::*;
-use bitflags::bitflags;
 use std::any::Any;
-use std::convert::From;
 
 const STANDARD_MAPPING: [usize; 8] = [0, 1, 8, 9, 12, 13, 14, 15];
 
@@ -52,11 +50,11 @@ impl Device for StandardController {
 }
 
 impl MemoryHandler for StandardController {
-    fn read_byte(&mut self, addr: u16) -> u8 {
+    fn read_byte(&mut self, _addr: u16) -> u8 {
         todo!()
     }
 
-    fn write_byte(&mut self, addr: u16, byte: u8) {
+    fn write_byte(&mut self, _addr: u16, _byte: u8) {
         todo!()
     }
 }

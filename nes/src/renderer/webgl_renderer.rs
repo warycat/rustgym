@@ -10,7 +10,7 @@ impl WebGlRenderer {
 }
 
 impl RenderingDevice for WebGlRenderer {
-    fn update_frame(&self, framebuffer: &mut [u8], width: usize, height: usize) {
+    fn update_frame(&self, _framebuffer: &mut [u8], _width: usize, _height: usize) {
         todo!();
     }
     fn render(&self) {
@@ -21,9 +21,9 @@ impl RenderingDevice for WebGlRenderer {
     }
     fn set_fullscreen_mode(
         &mut self,
-        fullscreen: bool,
-        monitor_width: usize,
-        monitor_height: usize,
+        _fullscreen: bool,
+        _monitor_width: usize,
+        _monitor_height: usize,
     ) {
         todo!();
     }

@@ -8,7 +8,7 @@ pub trait VideoFilter {
     fn base_video_filter_mut(&mut self) -> &mut BaseVideoFilter;
     fn base_video_filter(&self) -> &BaseVideoFilter;
 
-    fn apply_filter(&self, ppu_output_buffer: &mut Vec<u16>) {
+    fn apply_filter(&self, _ppu_output_buffer: &mut Vec<u16>) {
         todo!()
     }
 
@@ -20,11 +20,11 @@ pub trait VideoFilter {
         todo!()
     }
 
-    fn send_frame(&self, ppu_output_buffer: &mut Vec<u16>, frame_number: u32) {
+    fn send_frame(&self, _ppu_output_buffer: &mut Vec<u16>, _frame_number: u32) {
         todo!()
     }
 
-    fn take_screenshot(&self, rom_name: String, filter_type: VideoFilterType) {
+    fn take_screenshot(&self, _rom_name: String, _filter_type: VideoFilterType) {
         todo!()
     }
 

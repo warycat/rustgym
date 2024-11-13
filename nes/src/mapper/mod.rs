@@ -90,15 +90,15 @@ pub trait Mapper {
         proto.prg_rom[addr as usize] = byte;
     }
 
-    fn read_vram(&mut self, addr: u16) -> u8 {
+    fn read_vram(&mut self, _addr: u16) -> u8 {
         todo!()
     }
 
-    fn write_vram(&mut self, addr: u16, byte: u8) {
+    fn write_vram(&mut self, _addr: u16, _byte: u8) {
         todo!()
     }
 
-    fn select_prg_page(&mut self, slot: u16, page: u16, prg_memory_type: PrgMemoryType) {
+    fn select_prg_page(&mut self, slot: u16, page: u16, _prg_memory_type: PrgMemoryType) {
         let start_addr = 0x8000 + slot * self.prg_page_size();
         let end_addr = start_addr + (self.prg_page_size() - 1);
         debug!("prg start_addr 0x{:04X}", start_addr);
@@ -115,7 +115,7 @@ pub trait Mapper {
             page_addr += 0x100;
         }
     }
-    fn select_chr_page(&mut self, slot: u16, page: u16, chr_memory_type: ChrMemoryType) {
+    fn select_chr_page(&mut self, slot: u16, page: u16, _chr_memory_type: ChrMemoryType) {
         let start_addr = slot * self.chr_page_size();
         let end_addr = start_addr + (self.chr_page_size() - 1);
         debug!("chr start_addr {:04x}", start_addr);
@@ -165,7 +165,7 @@ pub trait Mapper {
         }
     }
 
-    fn notify_vram_address_change(&mut self, addr: u16) {}
+    fn notify_vram_address_change(&mut self, _addr: u16) {}
 }
 
 impl dyn Mapper {
@@ -230,7 +230,7 @@ impl BaseMapper {
         todo!()
     }
 
-    fn validate_address_range(&self, start_addr: u16, end_addr: u16) -> bool {
+    fn validate_address_range(&self, _start_addr: u16, _end_addr: u16) -> bool {
         todo!()
     }
 
@@ -250,38 +250,38 @@ impl BaseMapper {
         todo!()
     }
 
-    fn write_register(&mut self, addr: usize, byte: u8) {
+    fn write_register(&mut self, _addr: usize, _byte: u8) {
         todo!()
     }
 
-    fn read_register(&mut self, addr: u16) -> u8 {
+    fn read_register(&mut self, _addr: u16) -> u8 {
         todo!()
     }
 
     fn set_cpu_memory_mapping(
-        start_addr: u16,
-        end_addr: u16,
-        page_number: u16,
-        prg_memory_type: PrgMemoryType,
-        access_type: i8,
+        _start_addr: u16,
+        _end_addr: u16,
+        _page_number: u16,
+        _prg_memory_type: PrgMemoryType,
+        _access_type: i8,
     ) {
         todo!()
     }
 
-    fn remove_cpu_memory_mapping(&mut self, start_addr: u16, end_addr: u16) {
+    fn remove_cpu_memory_mapping(&mut self, _start_addr: u16, _end_addr: u16) {
         todo!()
     }
 
     fn set_ppu_memory_mapping(
-        start_addr: u16,
-        end_addr: u16,
-        page_number: u16,
-        chr_memory_type: ChrMemoryType,
+        _start_addr: u16,
+        _end_addr: u16,
+        _page_number: u16,
+        _chr_memory_type: ChrMemoryType,
     ) {
         todo!()
     }
 
-    fn remove_ppu_memory_mapping(&mut self, start_addr: u16, end_addr: u16) {
+    fn remove_ppu_memory_mapping(&mut self, _start_addr: u16, _end_addr: u16) {
         todo!()
     }
 
@@ -293,7 +293,7 @@ impl BaseMapper {
         todo!()
     }
 
-    fn get_power_on_byte(&self, default_value: u8) -> u8 {
+    fn get_power_on_byte(&self, _default_value: u8) -> u8 {
         todo!()
     }
 
@@ -305,20 +305,20 @@ impl BaseMapper {
         todo!()
     }
 
-    fn initialize_chr_ram(&mut self, chr_ram_size: usize) {
+    fn initialize_chr_ram(&mut self, _chr_ram_size: usize) {
         todo!()
     }
 
     fn add_register_range(
         &mut self,
-        start_addr: u16,
-        end_addr: u16,
-        memory_operation: MemoryOperation,
+        _start_addr: u16,
+        _end_addr: u16,
+        _memory_operation: MemoryOperation,
     ) {
         todo!()
     }
 
-    fn remove_register_range(start_addr: u16, end_addr: u16, memory_operation: MemoryOperation) {
+    fn remove_register_range(_start_addr: u16, _end_addr: u16, _memory_operation: MemoryOperation) {
         todo!()
     }
 
@@ -326,15 +326,15 @@ impl BaseMapper {
         todo!()
     }
 
-    fn get_nametable(&self, nametable_index: u8) -> &Vec<u8> {
+    fn get_nametable(&self, _nametable_index: u8) -> &Vec<u8> {
         todo!()
     }
 
-    fn set_nametable(&mut self, index: usize, nametable_index: u8) {
+    fn set_nametable(&mut self, _index: usize, _nametable_index: u8) {
         todo!()
     }
 
-    fn set_mirroring_type(&mut self, mirroring_type: MirroringType) {
+    fn set_mirroring_type(&mut self, _mirroring_type: MirroringType) {
         todo!()
     }
 
@@ -368,7 +368,7 @@ impl BaseMapper {
         this
     }
 
-    pub fn reset(&mut self, soft_reset: bool) {
+    pub fn reset(&mut self, _soft_reset: bool) {
         todo!()
     }
 
@@ -376,13 +376,13 @@ impl BaseMapper {
         todo!()
     }
 
-    pub fn set_nes_model(&mut self, model: NesModel) {
+    pub fn set_nes_model(&mut self, _model: NesModel) {
         todo!()
     }
 
-    pub fn process_cpu_clock(console: &mut Console) {}
+    pub fn process_cpu_clock(_console: &mut Console) {}
 
-    pub fn notify_vram_address_change(addr: u16) {
+    pub fn notify_vram_address_change(_addr: u16) {
         todo!()
     }
 
@@ -390,31 +390,31 @@ impl BaseMapper {
         todo!()
     }
 
-    pub fn apply_samples(&mut self, buffer: Vec<i16>, volume: f64) {
+    pub fn apply_samples(&mut self, _buffer: Vec<i16>, _volume: f64) {
         todo!()
     }
 
-    pub fn read_ram(&mut self, addr: usize) {
+    pub fn read_ram(&mut self, _addr: usize) {
         todo!()
     }
 
-    pub fn write_ram(&mut self, addr: u16, byte: u8) {
+    pub fn write_ram(&mut self, _addr: u16, _byte: u8) {
         todo!()
     }
 
-    pub fn write_prg_ram(&mut self, addr: u16, byte: u8) {
+    pub fn write_prg_ram(&mut self, _addr: u16, _byte: u8) {
         todo!()
     }
 
-    pub fn read_vram(&mut self, addr: u16) -> u8 {
+    pub fn read_vram(&mut self, _addr: u16) -> u8 {
         todo!()
     }
 
-    pub fn write_vram(&mut self, addr: u16, byte: u8) {
+    pub fn write_vram(&mut self, _addr: u16, _byte: u8) {
         todo!()
     }
 
-    pub fn copy_chr_tile(&self, addr: u32, dest: &mut Vec<u8>) {
+    pub fn copy_chr_tile(&self, _addr: u32, _dest: &mut Vec<u8>) {
         todo!()
     }
 
@@ -430,31 +430,31 @@ impl BaseMapper {
         todo!()
     }
 
-    pub fn get_memory_value(&mut self, memory_type: DebugMemoryType, addr: u16) -> u8 {
+    pub fn get_memory_value(&mut self, _memory_type: DebugMemoryType, _addr: u16) -> u8 {
         todo!()
     }
 
-    pub fn set_memory_value(&mut self, memory_type: DebugMemoryType, addr: u16, byte: u8) {
+    pub fn set_memory_value(&mut self, _memory_type: DebugMemoryType, _addr: u16, _byte: u8) {
         todo!()
     }
 
-    pub fn get_memory_size(&self, memory_type: DebugMemoryType) -> usize {
+    pub fn get_memory_size(&self, _memory_type: DebugMemoryType) -> usize {
         todo!()
     }
 
-    pub fn copy_memory(&self, debug_memory: DebugMemoryType, buffer: &mut Vec<u8>) {
+    pub fn copy_memory(&self, _debug_memory: DebugMemoryType, _buffer: &mut Vec<u8>) {
         todo!()
     }
 
-    pub fn get_cpu_absolute_address_and_type(&self, relative_addr: u32) -> CpuAddressInfo {
+    pub fn get_cpu_absolute_address_and_type(&self, _relative_addr: u32) -> CpuAddressInfo {
         todo!()
     }
 
-    pub fn get_ppu_absolute_address_and_type(&self, relative_addr: u32) -> PpuAddressInfo {
+    pub fn get_ppu_absolute_address_and_type(&self, _relative_addr: u32) -> PpuAddressInfo {
         todo!()
     }
 
-    pub fn to_absolute_address(&self, addr: u16) -> usize {
+    pub fn to_absolute_address(&self, _addr: u16) -> usize {
         todo!()
     }
 }

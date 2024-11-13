@@ -120,13 +120,13 @@ pub enum PpuAddressType {
 }
 
 pub struct CpuAddressInfo {
-    address: i32,
-    address_type: CpuAddressType,
+    _address: i32,
+    _address_type: CpuAddressType,
 }
 
 pub struct PpuAddressInfo {
-    address: i32,
-    address_type: PpuAddressType,
+    _address: i32,
+    _address_type: PpuAddressType,
 }
 
 pub enum EvalResultType {

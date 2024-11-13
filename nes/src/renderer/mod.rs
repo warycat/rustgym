@@ -17,15 +17,15 @@ pub trait RenderingDevice {
 
 #[derive(Default)]
 pub struct BaseRenderer {
-    fps_timer: Timer,
-    last_frame_count: u32,
-    last_rendered_frame_count: u32,
-    current_fps: u32,
-    current_rendered_fps: u32,
+    _fps_timer: Timer,
+    _last_frame_count: u32,
+    _last_rendered_frame_count: u32,
+    _current_fps: u32,
+    _current_rendered_fps: u32,
 }
 
 impl RenderingDevice for BaseRenderer {
-    fn update_frame(&self, framebuffer: &mut [u8], width: usize, height: usize) {
+    fn update_frame(&self, _framebuffer: &mut [u8], _width: usize, _height: usize) {
         todo!();
     }
     fn render(&self) {
@@ -36,9 +36,9 @@ impl RenderingDevice for BaseRenderer {
     }
     fn set_fullscreen_mode(
         &mut self,
-        fullscreen: bool,
-        monitor_width: usize,
-        monitor_height: usize,
+        _fullscreen: bool,
+        _monitor_width: usize,
+        _monitor_height: usize,
     ) {
         todo!();
     }
@@ -49,15 +49,15 @@ impl BaseRenderer {
         todo!();
     }
 
-    fn wrap_text(utf8_text: String, max_line_width: f64, line_count: u32) -> String {
+    fn wrap_text(_utf8_text: String, _max_line_width: f64, _line_count: u32) -> String {
         todo!()
     }
 
-    fn measure_string(&self, text: String) -> f64 {
+    fn measure_string(&self, _text: String) -> f64 {
         todo!()
     }
 
-    fn contains_character(&self, character: char) -> bool {
+    fn contains_character(&self, _character: char) -> bool {
         todo!()
     }
 
@@ -65,7 +65,7 @@ impl BaseRenderer {
         todo!()
     }
 
-    fn display_message(&self, title: String, message: String) {
+    fn display_message(&self, _title: String, _message: String) {
         todo!()
     }
 
@@ -73,27 +73,36 @@ impl BaseRenderer {
         todo!();
     }
 
-    fn draw_string(&self, message: String, x: i32, y: i32, r: u8, g: u8, b: u8, opacity: u8) {
+    fn draw_string(
+        &self,
+        _message: String,
+        _x: i32,
+        _y: i32,
+        _r: u8,
+        _g: u8,
+        _b: u8,
+        _opacity: u8,
+    ) {
         todo!();
     }
 
-    fn show_fps_counter(console: &mut Console, line_number: i32) {
+    fn show_fps_counter(_console: &mut Console, _line_number: i32) {
         todo!();
     }
 
-    fn show_lag_counter(console: &mut Console, line_number: i32) {
+    fn show_lag_counter(_console: &mut Console, _line_number: i32) {
         todo!();
     }
 
-    fn show_frame_counter(console: &mut Console, line_number: i32) {
+    fn show_frame_counter(_console: &mut Console, _line_number: i32) {
         todo!();
     }
 
-    fn show_game_counter(console: &mut Console, line_number: i32) {
+    fn show_game_counter(_console: &mut Console, _line_number: i32) {
         todo!();
     }
 
-    fn show_counters(console: &mut Console) {
+    fn show_counters(_console: &mut Console) {
         todo!();
     }
 }

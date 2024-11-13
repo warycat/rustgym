@@ -1,5 +1,4 @@
 use crate::*;
-use log::{debug, info};
 
 #[derive(Debug)]
 pub enum PpuRegister {
@@ -208,11 +207,11 @@ impl Ppu {
         self.control_flags = PpuControlFlags::from_bits(byte).unwrap();
     }
 
-    fn set_mask_register(&mut self, byte: u8) {
+    fn set_mask_register(&mut self, _byte: u8) {
         todo!()
     }
 
-    fn process_tmp_addr_scroll_glitch(normal_addr: u16, value: u16, mask: u16) {
+    fn process_tmp_addr_scroll_glitch(_normal_addr: u16, _value: u16, _mask: u16) {
         todo!()
     }
 
@@ -549,11 +548,11 @@ impl Ppu {
 
     fn load_sprite(
         &mut self,
-        sprite_y: u8,
-        tile_index: u8,
-        attributes: u8,
-        sprite_x: u8,
-        extra_sprite: bool,
+        _sprite_y: u8,
+        _tile_index: u8,
+        _attributes: u8,
+        _sprite_x: u8,
+        _extra_sprite: bool,
     ) {
         todo!()
     }
@@ -571,11 +570,11 @@ impl Ppu {
         self.high_bit_shift <<= 1;
     }
 
-    fn read_sprite_ram(&mut self, addr: u8) -> u8 {
+    fn read_sprite_ram(&mut self, _addr: u8) -> u8 {
         todo!()
     }
 
-    fn write_sprite_ram(&mut self, addr: u8, byte: u8) {
+    fn write_sprite_ram(&mut self, _addr: u8, _byte: u8) {
         todo!()
     }
 
@@ -636,7 +635,7 @@ impl Ppu {
         if ppu.has_sprite[ppu.cycle as usize] && ppu.cycle > ppu.minimum_draw_sprite_cycle {
             for i in 0..ppu.sprite_count as usize {
                 let shift = ppu.cycle - ppu.sprite_tiles[i].sprite_x as u32 - 1;
-                if shift >= 0 && shift < 8 {
+                if shift < 8 {
                     let sprite_color = if ppu.sprite_tiles[i].horizontal_mirror {
                         (ppu.sprite_tiles[i].low_byte >> shift) & 0x01
                             | ((ppu.sprite_tiles[i].high_byte >> shift) & 0x01) << 1
@@ -713,11 +712,11 @@ impl Ppu {
         console.mapper.notify_vram_address_change(addr);
     }
 
-    fn read_vram(&mut self, addr: u16) -> u8 {
+    fn read_vram(&mut self, _addr: u16) -> u8 {
         todo!()
     }
 
-    fn write_vram(&mut self, addr: u16, byte: u8) {
+    fn write_vram(&mut self, _addr: u16, _byte: u8) {
         todo!()
     }
 
@@ -787,11 +786,11 @@ impl Ppu {
         todo!()
     }
 
-    pub fn get_screen_buffer(&self, previous_buffer: bool) -> &[u16] {
+    pub fn get_screen_buffer(&self, _previous_buffer: bool) -> &[u16] {
         todo!()
     }
 
-    pub fn debug_copy_output_buffer(&mut self, target: &[u16]) {
+    pub fn debug_copy_output_buffer(&mut self, _target: &[u16]) {
         todo!()
     }
 
@@ -835,11 +834,11 @@ impl Ppu {
         }
     }
 
-    pub fn read_palette_ram(&mut self, addr: u16) -> u8 {
+    pub fn read_palette_ram(&mut self, _addr: u16) -> u8 {
         todo!()
     }
 
-    pub fn write_palette_ram(&mut self, addr: u16, byte: u8) {
+    pub fn write_palette_ram(&mut self, _addr: u16, _byte: u8) {
         todo!()
     }
 
@@ -914,7 +913,7 @@ impl Ppu {
         todo!()
     }
 
-    pub fn get_pixel_brightness(&self, x: u8, y: u8) -> u32 {
+    pub fn get_pixel_brightness(&self, _x: u8, _y: u8) -> u32 {
         todo!()
     }
 
@@ -922,7 +921,7 @@ impl Ppu {
         todo!()
     }
 
-    pub fn get_pixel(&self, x: u8, y: u8) -> u16 {
+    pub fn get_pixel(&self, _x: u8, _y: u8) -> u16 {
         todo!()
     }
 

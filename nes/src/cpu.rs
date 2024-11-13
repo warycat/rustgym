@@ -1,5 +1,4 @@
 use crate::*;
-use log::{debug, error, info};
 
 macro_rules! iif {
     ($cond:expr, $iftrue:expr, $iffalse:expr) => {
@@ -1157,7 +1156,7 @@ impl Cpu {
         Operand::Address(addr)
     }
 
-    pub fn run_dma_transfer(&mut self, offset: u8) {
+    pub fn run_dma_transfer(&mut self, _offset: u8) {
         todo!()
     }
 
@@ -1165,7 +1164,7 @@ impl Cpu {
         todo!()
     }
 
-    pub fn set_debug_pc(value: u16) {
+    pub fn set_debug_pc(_value: u16) {
         todo!()
     }
 
@@ -1212,7 +1211,7 @@ impl Cpu {
         }
     }
 
-    pub fn irq(console: &mut Console) {
+    pub fn irq(_console: &mut Console) {
         todo!()
     }
 
@@ -1302,7 +1301,7 @@ fn test() {
     let rom = VirtualFile::new("Nes Test", NES_TEST);
     let mut console = Console::new(&rom, Box::new(BaseRenderer::default()));
     let testlog = include_str!("../test/nestest.log");
-    debug!("{:02x?}", console.mapper.base_mapper().prg_rom);
+    log::debug!("{:02x?}", console.mapper.base_mapper().prg_rom);
     console.cpu.pc = 0xC000;
     for line in testlog.lines() {
         let pc = &line[0..4];
