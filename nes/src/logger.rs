@@ -10,7 +10,7 @@ pub fn logger_init() {
                 writeln!(
                     buf,
                     "[{} {}:{}] - {}",
-                    buf.default_styled_level(record.level()),
+                    buf.default_level_style(record.level()),
                     record.file().unwrap(),
                     record.line().unwrap(),
                     record.args()
