@@ -1,5 +1,5 @@
 [<img src="abao_ai_flux_logo.jpg" width="384" height="640"/>](https://t.me/abao_ai_flux)
-[<img src="abao_ai_flux_qr.jpg" width="384" height="640" style="object-fit: cover" />](https://t.me/abao_ai_flux)
+[<img src="abao_ai_flux_qr.jpg" width="384" height="640" />](https://t.me/abao_ai_flux)
 
 - Leetcode Solutions in Rust
 - AdventOfCode Solutions in Rust
