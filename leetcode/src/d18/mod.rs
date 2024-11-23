@@ -63,6 +63,8 @@ mod _1854_maximum_population_year;
 //
 mod _1859_sorting_the_sentence;
 //
+mod _1861_rotating_the_box;
+//
 mod _1863_sum_of_all_subset_xor_totals;
 //
 mod _1869_longer_contiguous_segments_of_ones_than_zeros;
