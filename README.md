@@ -1,5 +1,4 @@
-[<img src="abao_ai_flux_logo.jpg" width="384" height="640"/>](https://t.me/abao_ai_flux)
-[<img src="abao_ai_flux_qr.jpg" width="384" height="640" />](https://t.me/abao_ai_flux)
+# @abao_ai_bot in [Telegram](https://t.me/abao_ai_group) and [Discord](https://discord.gg/kE49hhkafu)
 
 - Leetcode Solutions in Rust
 - AdventOfCode Solutions in Rust
